@@ -8,11 +8,11 @@ An AI-based web panel (SaaS) for e-commerce sellers. Start: **Trendyol + Hepsibu
 Modules, all in one panel:
 1. **SEO title & description writer**: knows each marketplace's current ranking factors and listing rules; writes search-optimised, rule-compliant titles and descriptions.
 2. **Compliance shield**: checks texts against marketplace rules, Reklam Kurulu / advertising law and category claim rules; rewrites them to comply.
-3. **Image generation**: Claude writes the image prompts from our rule set (marketplace image rules + compliance); an image model (OpenAI) renders them. Target: 4 images per product per day.
-4. **Customer question & review replies**.
+3. **Image generation**: Claude writes the image prompts from our rule set (marketplace image rules + compliance); an image model renders them (provider-agnostic, see Decisions). Target: 4 images per product per day.
+4. **Customer question replies** (review replies later: no official review API found on Trendyol/Hepsiburada).
 5. **Profitability analysis** (later, after the marketplace integrations).
 
-Architecture rule: **every customer request first goes to the central AI coordinator**, which routes it to the right module/agent and to the external platforms (Trendyol, Hepsiburada, OpenAI), then merges the result.
+Architecture rule: **every customer request first goes to the central AI coordinator**, which routes it to the right module/agent and to the external platforms (Trendyol, Hepsiburada, image models), then merges the result.
 
 ## Decisions so far
 - Team: Claude + the agents below. No outside developers.
