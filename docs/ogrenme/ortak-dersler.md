@@ -5,3 +5,5 @@
 - 2026-10-26: Mono anlatım stereoya kopyalanınca LUFS ~+3 ölçülür → normalizasyon son stereo dosyada (`tools/render-son.sh`).
 - 2026-10-26: Whisper aynı sese ±2 kelime oynar; tek sayıya değil tekrar eden hatalara bak.
 - 2026-10-26: Hugging Face `trust_remote_code` gerektiren modeller güvenlik nedeniyle çalıştırılamıyor; yerel ağırlık + bilinen kütüphane kullan.
+- 2026-10-26: raw.githubusercontent.com curl ile erişilebilir (github.com sayfaları WebFetch'te içerik vermeyebilir); freemusicarchive.org erişilebilir.
+- 2026-10-26: Lisans kuralı (tüm medya): ticari kullanıma izin vermeyen (NC/ND, "kişisel kullanım") müzik, efekt, ses modeli ve görsel kullanılmaz; her dış varlığın kaynağı + lisansı üretim klasöründe kayıtlı olmalı.

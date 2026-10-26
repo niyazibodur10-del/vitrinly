@@ -12,7 +12,7 @@ Hedef kitle: finansa ilgili gençler + genel izleyici. Video dili: **İngilizce*
 
 ## Sistemin yaptığı / Niyazi'nin yaptığı
 - **Sistem:** araştırma, viralite analizi, 10 senaryo, eleme, metin, ses temizliği, karakter animasyonu ve dudak senkronu, kurgu, müzik/efekt, altyazı, thumbnail, başlık, açıklama, etiketler, bölümler.
-- **Niyazi:** seslendirme metnini kendi sesiyle okur, karakter görselini ve kalite referans videosunu verir, hakemin seçtiği senaryoyu ve son videoyu onaylar.
+- **Niyazi:** (anlatıcı sesi artık ücretsiz yapay zekâ sesi — Niyazi kararı 2026-10-26; kendi okuması yedek yol) karakter görselini ve kalite referans videosunu verir, hakemin seçtiği senaryoyu ve son videoyu onaylar.
 - **Onaysız yapılmaz:** YouTube'a yükleme/yayın, para harcanan her servis (ücretli API, abonelik), dışarıya mesaj, geri alınamaz adımlar.
 
 ## Koordinatör kuralı (Niyazi kararı 2026-10-26)
@@ -29,10 +29,14 @@ Hedef kitle: finansa ilgili gençler + genel izleyici. Video dili: **İngilizce*
 5. `viralite-analisti` → her senaryoyu `docs/viralite-modeli.md` ile puanlar, ilk 3'ü bırakır.
 6. `finans-dogrulayici` → rakam/olay doğrulaması + "not financial advice" / yanıltıcı içerik / YouTube politika riski kontrolü.
 7. `hakem` → tek kazananı seçer, gerekçesini yazar, **Niyazi'ye onaya sunar.**
-8. Onaydan sonra: `senaryo-yazari` tam metin + `ses-yonetmeni` okuma metni → Niyazi okur → `ses-muhendisi` temizler.
-9. `animasyon-yonetmeni` (karakter + sahneler, Remotion) → `kurgu-editoru` (montaj, müzik, altyazı, render).
-10. `thumbnail-tasarimcisi` + `youtube-paketleyici` (başlık, açıklama, etiket, bölümler).
-11. `hakem` son kalite kontrolü → Niyazi onayı → yükleme (onaylı).
+8. Onaydan sonra: `senaryo-yazari` tam metin → `finans-dogrulayici` → `ses-yonetmeni` anlatıcı sesi (varsayılan: ücretsiz yapay zekâ TTS, Niyazi talebi 2026-10-26; yedek: Niyazi'nin okuma metni) → `ses-muhendisi` temizler, ölçer, kelime zamanlarını çıkarır.
+   Paralel: `gorsel-varlik-sanatcisi` (karakter parçaları, ağız şekilleri, sahne illüstrasyonları/prompt'ları) + `muzik-ses-tasarimcisi` (lisans güvenli müzik/SFX, cue listesi).
+9. `animasyon-yonetmeni` (rig, dudak senkronu, kamera, sahneler — Remotion) → `muzik-ses-tasarimcisi` (anlatıma göre miks stem'leri) → `kurgu-editoru` (montaj, altyazı, render, Shorts kesitleri).
+10. `thumbnail-tasarimcisi` + `youtube-paketleyici` (başlık, açıklama, etiket, bölümler, atıflar).
+11. `hakem` son kalite kontrolü (her teslimatı `docs/ajan-karnesi.md`'ye puanlar) → Niyazi onayı → yükleme (onaylı).
+
+Sürekli: `uretim-muhendisi` kurulum, Remotion altyapısı, render hattı ve `tools/` betiklerinin sahibi (her araç arızası ona). `ik-direktoru` kadroyu, skill'leri ve karneyi denetler; işe alır/çıkarır (`docs/kadro-degisiklikleri.md`).
+Ekip (17): showrunner, trend-avcisi, kanal-analisti, senaryo-yazari, viralite-analisti, finans-dogrulayici, hakem, ses-yonetmeni, ses-muhendisi, gorsel-varlik-sanatcisi, muzik-ses-tasarimcisi, animasyon-yonetmeni, kurgu-editoru, thumbnail-tasarimcisi, youtube-paketleyici, uretim-muhendisi, ik-direktoru. Protokol: `docs/ajan-protokolu.md`; hafıza: `.claude/agents/hafiza/<ad>.md`.
 
 Her ajan işini **test ederek** teslim eder (bkz. `docs/kalite-kapilari.md`): test çıktısı olmadan teslim yok.
 
@@ -42,7 +46,7 @@ Her ajan işini **test ederek** teslim eder (bkz. `docs/kalite-kapilari.md`): te
 - Görsel stil (bkz. `docs/referans-analizi.md`): sahne başına tutarlı, detaylı illüstrasyon (kalın kontur, cel-shading, soğuk arka plan + sıcak karakter) + sinematik kamera (zoom/pan/punch-in) + hızlı kesme + anahtar kelimesi renkli kelime kelime altyazı + büyük sayı grafikleri.
 - Karakter: `assets/karakter/karakter-karti.md` — **2D** (Niyazi kararı 2026-10-26: 3D karakter sayfasının aynısı, 2D çizgi film stiline çevrilir; referans videonun çizim diliyle uyumlu). Konuşan sahneler: katmanlı 2D rig (kafa, gövde, kol, el, bacak, 9 ağız şekli, göz kırpma) + Rhubarb dudak senkronu. Diğer sahneler: karakterli illüstrasyon + kamera; kilit hareket anları image-to-video (kör testle).
 - Format: ana video 16:9 uzun; aynı sahnelerden 9:16 Shorts kesitleri.
-- Ses temizliği: ffmpeg (highpass, de-ess, loudnorm −14 LUFS) + DeepFilterNet gürültü giderme. Altyazı: Whisper (kelime zamanlı) → SRT + videoya gömülü.
+- Ses temizliği: ffmpeg (highpass, de-ess, loudnorm −14 LUFS) + RNNoise gürültü giderme (`tools/ses/temizle.sh`). Altyazı: Whisper (kelime zamanlı) → SRT + videoya gömülü.
 - Kurgu kodda: `video/` Remotion projesi (4.0.539; pilot `video/src/pilot/`). Render: `tools/render-son.sh <Id> <çıkış>` (son ses normalizasyonu dahil). Yeni konteynerde önce `tools/kurulum.sh` (Rhubarb derleme, Whisper, büyütme modeli).
 - Yazı tipleri yerel (`video/public/fonts`): render tarayıcısı Google Fonts'a erişemiyor.
 - API anahtarları **asla repoya veya sohbete yazılmaz**; bulut ortamının secret/ortam değişkeni ayarında durur. `YOUTUBE_API_KEY` = YouTube Data API v3 (salt okuma: rakip ve kendi kanal istatistikleri). Yükleme için ileride OAuth gerekir; yükleme her zaman Niyazi onaylı.
