@@ -36,6 +36,13 @@ ALTIN, YESIL, BEYAZ, LACI_KOYU = (255, 200, 61), (46, 212, 125), (255, 255, 255)
 
 
 # ---------------------------------------------------------------- yardımcılar
+ETIKET = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+
+
+def etiket(px):
+    return ImageFont.truetype(ETIKET, px) if os.path.exists(ETIKET) else font("Anton-400.woff2", px)
+
+
 def font(ad, px):
     f = ImageFont.truetype(os.path.join(FONT, ad), px)
     if "Fredoka" in ad:                 # değişken yazı tipi: Pillow varsayılanı Light (300)
@@ -120,11 +127,12 @@ def arkaplan(seed=7, sahne=None, grafik=True):
         kar = Image.new("RGB", (W, H), LACI_UST)
         return Image.blend(s, kar, 0.35).convert("RGBA")
     bg = dikey_gradyan(W, H, LACI_UST, LACI_ALT).convert("RGBA")
-    d = ImageDraw.Draw(bg)
-    for x in range(0, W, 128):           # silik ızgara
-        d.line([(x, 0), (x, H)], fill=(255, 255, 255, 10), width=2)
+    izg = Image.new("RGBA", (W, H)); d = ImageDraw.Draw(izg)   # silik ızgara (ayrı katman: RGBA'ya doğrudan çizim karışmaz)
+    for x in range(0, W, 128):
+        d.line([(x, 0), (x, H)], fill=(120, 160, 255, 22), width=2)
     for y in range(SY % 106, H, 106):
-        d.line([(0, y), (W, y)], fill=(255, 255, 255, 10), width=2)
+        d.line([(0, y), (W, y)], fill=(120, 160, 255, 22), width=2)
+    bg = Image.alpha_composite(bg, izg)
     r = np.random.default_rng(seed)
     # silüet şehir (2 katman), tepeler güvenli bant içine uzanır → masaüstü bantta görünür
     for katman, (renk, hmin, hmax, pen) in enumerate([((20, 40, 78), 260, 620, (255, 214, 120, 60)),
@@ -170,17 +178,21 @@ def cizgi_grafik(seed, x0=-20, x1=W - 120, y0=1180, y1=600, kalin=16):
     return lay
 
 
-def karakter_yerlestir(bg, kar, cx, ust_y, kenar=10, isik=(255, 190, 90)):
-    """Karakteri alt kenara oturt (bel kesiti çerçeve dışına), sıcak arka ışık + açık kontur (lacivertte siyah gömlek ayrışsın)."""
-    olcek = (H - ust_y) / kar.height
-    k = kar.resize((round(kar.width * olcek), H - ust_y), Image.LANCZOS)
+def karakter_yerlestir(bg, kar, cx, ust_y, yukseklik=None, kenar=10, isik=(255, 190, 90)):
+    """Karakteri alt kenara oturt (bel kesiti tuval dışında kalır), sıcak arka ışık + açık kontur (lacivertte siyah gömlek ayrışsın).
+    yukseklik > H - ust_y ise karakter tuvalin altından taşar (kafa büyür, el/kol bant dışına iner)."""
+    yuk = max(yukseklik or 0, H - ust_y)
+    olcek = yuk / kar.height
+    k = kar.resize((round(kar.width * olcek), yuk), Image.LANCZOS)
     x = int(cx - k.width / 2)
     bg = Image.alpha_composite(bg, radyal(W, H, cx, ust_y + k.height * 0.35, k.height * 0.75, isik, 0.55))
     a = k.split()[3]
     kont = a.filter(ImageFilter.MaxFilter(kenar * 2 + 1)).filter(ImageFilter.GaussianBlur(1.2))
     kl = Image.new("RGBA", k.size, (255, 236, 200, 0)); kl.putalpha(kont)
     bg.alpha_composite(kl, (x, ust_y)); bg.alpha_composite(k, (x, ust_y))
-    return bg, (x, ust_y, x + k.width, H), olcek
+    al = np.asarray(k)[..., 3] > 128; sol = int(np.argmax(al.any(0)))
+    uc_y = ust_y + int(np.where(al[:, sol])[0].mean())          # en soldaki nokta (işaret eden el ucu)
+    return bg, (x, ust_y, x + k.width, H), kafa_kutusu(k, x, ust_y), (x + sol, uc_y)
 
 
 def metin_katmani(parcalar):
@@ -212,28 +224,33 @@ def sigdir(metin, ad, genislik, maks=400):
 
 
 # ---------------------------------------------------------------- banner adayları
-def metin_blogu(x0, x1, ust, slogan, ritim, hiza="sol"):
-    """Kanal adı + slogan + yayın ritmi; dikeyde güvenli bant içine sığar. Dönüş: parcalar, hap kutusu."""
+def metin_blogu(x0, x1, ust, slogan, ritim, hiza="sol", alt=None, ad_maks=210, ritim_px=54):
+    """Kanal adı + slogan + yayın ritmi; dikeyde [ust, alt] içine sığar (alt varsayılan: bant altı - 34)."""
+    alt = alt or (SY + SH - 34)
     gen = x1 - x0
     ad1, ad2 = "FINANCIAL ", "RISE"
-    px = min(sigdir(ad1 + ad2, "Anton-400.woff2", gen), 210)
-    fa = font("Anton-400.woff2", px)
-    b = fa.getbbox(ad1 + ad2); w1 = fa.getlength(ad1)
-    tw = b[2]
+    px = min(sigdir(ad1 + ad2, "Anton-400.woff2", gen), ad_maks)
+    sl_px = min(sigdir(slogan, "Fredoka-700.woff2", gen), 64)
+    fr = font("Anton-400.woff2", ritim_px); br = fr.getbbox(ritim)
+    hap_h = (br[3] - br[1]) + 36
+    while True:
+        fa = font("Anton-400.woff2", px); b = fa.getbbox(ad1 + ad2)
+        fs = font("Fredoka-700.woff2", sl_px); bs = fs.getbbox(slogan)
+        top = (b[3] - b[1]) + 30 + (bs[3] - bs[1]) + 30 + hap_h
+        if ust + top <= alt or px < 60:
+            break
+        px -= 4; sl_px = max(40, sl_px - 1)
+    w1 = fa.getlength(ad1); tw = b[2]
     xs = x0 if hiza == "sol" else x0 + (gen - tw) // 2
     y_ad = ust - b[1]
-    fs = font("Fredoka-700.woff2", min(sigdir(slogan, "Fredoka-700.woff2", gen), 62))
-    bs = fs.getbbox(slogan)
-    y_sl = ust + (b[3] - b[1]) + 34 - bs[1]
+    y_sl = ust + (b[3] - b[1]) + 30 - bs[1]
     xs_sl = xs if hiza == "sol" else x0 + (gen - bs[2]) // 2
-    fr = font("Anton-400.woff2", 44)
-    br = fr.getbbox(ritim)
     hy0 = y_sl + bs[3] + 30
-    hx0 = xs if hiza == "sol" else x0 + (gen - (br[2] + 56)) // 2
-    hk = (hx0, hy0, hx0 + br[2] + 56, hy0 + (br[3] - br[1]) + 34)
+    hx0 = xs if hiza == "sol" else x0 + (gen - (br[2] + 60)) // 2
+    hk = (hx0, hy0, hx0 + br[2] + 60, hy0 + hap_h)
     parcalar = [(ad1, fa, BEYAZ, (xs, y_ad), 10, 0, None), (ad2, fa, ALTIN, (xs + w1, y_ad), 10, 0, None),
                 (slogan, fs, BEYAZ, (xs_sl, y_sl), 6, 0, None),
-                (ritim, fr, LACI_KOYU, (hx0 + 28, hy0 + 17 - br[1]), 0, 0, None)]
+                (ritim, fr, LACI_KOYU, (hx0 + 30, hy0 + 18 - br[1]), 0, 0, None)]
     return parcalar, hk
 
 
@@ -241,17 +258,18 @@ def banner(aday, a):
     if aday == "A":       # karakter solda (sevinçli) + şehir + yükselen grafik, metin sağda
         bg = arkaplan(sahne=a.arkaplan)
         kar = kes(a.banner_karakter)
-        bg, kk, _ = karakter_yerlestir(bg, kar, SX + 300, SY + 18)
+        bg, kk, kafa, _ = karakter_yerlestir(bg, kar, SX + 300, SY + 22, yukseklik=a.a_yukseklik)
+        uc = None
         parcalar, hk = metin_blogu(SX + 640, SX + SW - 30, SY + 48, a.slogan, a.ritim)
     elif aday == "B":     # karakter sağda ekranın soluna, metne işaret ediyor
         bg = arkaplan(sahne=a.arkaplan)
         kar = kes(a.banner_isaret)
         # işaret eden el kutunun solunda; yüz kutunun sağ ~%60'ında → yüzü güvenli alanın sağ kısmına koy
-        bg, kk, _ = karakter_yerlestir(bg, kar, SX + SW - 300, SY + 40)
+        bg, kk, kafa, uc = karakter_yerlestir(bg, kar, SX + SW - 300, SY + 40)
         parcalar, hk = metin_blogu(SX + 30, SX + 830, SY + 48, a.slogan, a.ritim)
     elif aday == "C":     # minimal logo-tipi: karakter yok, ortalı yazı + ok
         bg = arkaplan(sahne=a.arkaplan)
-        kk = None
+        kk = kafa = uc = None
         parcalar, hk = metin_blogu(SX + 120, SX + SW - 120, SY + 40, a.slogan, a.ritim, hiza="orta")
     else:
         raise SystemExit("aday A/B/C")
@@ -259,14 +277,14 @@ def banner(aday, a):
     mlay, kutular = metin_katmani(parcalar)
     zemin = Image.alpha_composite(bg, lay)       # hap dahil, metin hariç → kontrast ölçümü zemini
     son = Image.alpha_composite(zemin, mlay).convert("RGB")
-    return son, zemin.convert("RGB"), kutular, kk, hk
+    return son, zemin.convert("RGB"), kutular, kk, hk, kafa, uc
 
 
 def kontrast(zemin, kutular):
     z = np.asarray(zemin); sonuc = []
     for k in kutular:
         m = np.asarray(k["maske"]) > 0
-        x0, y0, x1, y1 = k["kutu"]
+        x0, y0, x1, y1 = (int(round(v)) for v in k["kutu"])
         pad = 12
         bolge = np.zeros_like(m); bolge[max(0, y0 - pad):y1 + pad, max(0, x0 - pad):x1 + pad] = True
         arka = z[bolge & ~m]
@@ -290,9 +308,16 @@ def guvenli_alan_testi(kutular, kk, hk, yuz_kutu=None):
     return sorun
 
 
-def kafa_kutusu(kk, kar_img_olcekli_alpha=None):
-    # kafa: karakter kutusunun üst %30'u, merkez sütunun ±%22'si (paket-v1 duruşları için yaklaşık)
-    return kk
+def kafa_kutusu(k, x, y):
+    """Kafa kutusu: alfa maskesinin en üst noktasını içeren bileşen, karakter boyunun üst %22'si."""
+    import cv2
+    a = (np.asarray(k)[..., 3] > 128).astype(np.uint8)
+    ust = int(np.argmax(a.any(1))); h = int(k.height * 0.22)
+    dilim = a[ust:ust + h].copy()
+    n, lab = cv2.connectedComponents(dilim, 8)
+    tx = int(np.argmax(dilim[0])); c = lab[0, tx]
+    ys, xs = np.where(lab == c)
+    return (x + int(xs.min()), y + ust + int(ys.min()), x + int(xs.max()), y + ust + int(ys.max()))
 
 
 def onizleme(son, ad, hedef):
@@ -317,7 +342,7 @@ def onizleme(son, ad, hedef):
     gw = 1320; gh = sum(im.height + 60 for _, im in satirlar) + 20
     sheet = Image.new("RGB", (gw, gh), (235, 235, 235)); sd = ImageDraw.Draw(sheet); y = 10
     for t, im in satirlar:
-        sd.text((18, y + 8), t, font=font("Fredoka-700.woff2", 28), fill=(20, 20, 20)); y += 48
+        sd.text((18, y + 8), t, font=etiket(24), fill=(20, 20, 20)); y += 48
         sheet.paste(im, (18, y)); y += im.height + 12
     sheet.save(os.path.join(hedef, f"{ad}-kirpmalar.jpg"), quality=88)
     return mb1
@@ -342,6 +367,8 @@ def buyut_esrgan(img):
 
 def portre_kes(yol, esrgan=True, onbellek=None):
     """Kafa+omuz kare kesimi (RGBA, 1600x1600). Kafa tepesi alfa maskesinden bulunur."""
+    if onbellek and os.path.exists(onbellek):
+        return Image.open(onbellek).convert("RGBA")
     kar = kes(yol)
     a = np.asarray(kar)[..., 3] > 128
     ust = np.argmax(a.any(1))
@@ -350,8 +377,6 @@ def portre_kes(yol, esrgan=True, onbellek=None):
     kenar = int(kar.height * 0.62)           # kare boyu: kafa + omuz
     x0 = cx - kenar // 2; y0 = max(0, ust - int(kenar * 0.08))
     kare = Image.new("RGBA", (kenar, kenar)); kare.alpha_composite(kar.crop((x0, y0, x0 + kenar, y0 + kenar)))
-    if onbellek and os.path.exists(onbellek):
-        return Image.open(onbellek).convert("RGBA")
     if esrgan:
         rgb = Image.new("RGB", kare.size, (128, 128, 128)); rgb.paste(kare, mask=kare.split()[3])
         b = buyut_esrgan(rgb).resize((1600, 1600), Image.LANCZOS)
@@ -438,6 +463,7 @@ def main():
     ap.add_argument("--profil-adaylar", default="P1,P2,P3")
     ap.add_argument("--kazanan-banner", default=None)
     ap.add_argument("--kazanan-profil", default=None)
+    ap.add_argument("--a-yukseklik", type=int, default=1180, help="A adayında karakter boyu (px); >918 ise tuval altından taşar")
     ap.add_argument("--esrgan", type=int, default=1)
     a = ap.parse_args()
     on = os.path.join(a.cikis, "onizleme"); os.makedirs(on, exist_ok=True)
@@ -446,16 +472,18 @@ def main():
     for aday in [x for x in a.adaylar.split(",") if x]:
         for si, sl in enumerate([a.slogan, a.slogan_alt]):
             a2 = argparse.Namespace(**{**vars(a), "slogan": sl})
-            son, zemin, kutular, kk, hk = banner(aday, a2)
+            son, zemin, kutular, kk, hk, kafa, uc = banner(aday, a2)
             ad = f"banner-{aday}-s{si + 1}"
             yol = os.path.join(on, ad + ".jpg"); son.save(yol, quality=92, optimize=True, subsampling=0)
             mb = onizleme(son, ad, on)
-            fa = font("Fredoka-700.woff2", 10)
             # mobil gerçek boyda metin yüksekliği (CSS px): kutu yüksekliği x 390/1546
             yuk = {k["metin"].strip(): round((k["kutu"][3] - k["kutu"][1]) * 390 / SW, 1) for k in kutular}
             olc["banner"][ad] = {"slogan": sl, "kontrast": kontrast(zemin, kutular),
-                                 "guvenli_alan_tasmasi": guvenli_alan_testi(kutular, kk, hk),
+                                 "guvenli_alan_tasmasi": guvenli_alan_testi(kutular, kk, hk, kafa),
                                  "karakter_kutusu": [int(v) for v in kk] if kk else None,
+                                 "kafa_kutusu": [int(v) for v in kafa] if kafa else None,
+                                 "isaret_eli_ucu": list(uc) if uc else None,
+                                 "isaret_eli_mobil_bantta": (SX <= uc[0] <= SX + SW and SY <= uc[1] <= SY + SH) if uc else None,
                                  "mobil_390px_metin_yuksekligi_css_px": yuk,
                                  "dosya_bayt": os.path.getsize(yol)}
             print(ad, json.dumps(olc["banner"][ad]["guvenli_alan_tasmasi"]), yuk)
@@ -463,7 +491,7 @@ def main():
     portre = None
     for aday in [x for x in a.profil_adaylar.split(",") if x]:
         if aday != "P2" and portre is None:
-            portre = portre_kes(a.profil_karakter, bool(a.esrgan), os.path.join(on, "_portre-onbellek.png"))
+            portre = portre_kes(a.profil_karakter, bool(a.esrgan), os.path.join(on, "_portre-" + os.path.splitext(os.path.basename(a.profil_karakter))[0] + ".png"))
         p = profil(aday, a, portre)
         yol = os.path.join(on, f"profil-{aday}.png"); p.save(yol, optimize=True)
         olc["profil"][aday] = {**profil_olc(p), "dosya_bayt": os.path.getsize(yol)}
@@ -478,7 +506,7 @@ def main():
             sheet.paste(p.resize((300, 300), Image.LANCZOS), (x, 60))
             sheet.paste(k98, (x, 380), k98); sheet.paste(k36, (x + 120, 380), k36)
             b36 = k36.resize((144, 144), Image.NEAREST); sheet.paste(b36, (x + 180, 380), b36)
-            sd.text((x, 540), "98 px · 36 px · 36 px x4", font=font("Fredoka-700.woff2", 22), fill=(60, 60, 60))
+            sd.text((x, 540), "98 px · 36 px · 36 px x4", font=etiket(20), fill=(60, 60, 60))
         sheet.save(os.path.join(on, "profil-karsilastirma.png"))
         # koyu temada da (YouTube karanlık mod #0f0f0f)
         sheet2 = Image.new("RGB", sheet.size, (15, 15, 15)); sheet2.paste(sheet.crop((0, 370, sheet.width, 540)), (0, 0))
@@ -497,7 +525,7 @@ def main():
                                  "dosya_bayt": os.path.getsize(hedef)}
     if a.kazanan_profil:
         if a.kazanan_profil != "P2" and portre is None:
-            portre = portre_kes(a.profil_karakter, bool(a.esrgan), os.path.join(on, "_portre-onbellek.png"))
+            portre = portre_kes(a.profil_karakter, bool(a.esrgan), os.path.join(on, "_portre-" + os.path.splitext(os.path.basename(a.profil_karakter))[0] + ".png"))
         p = profil(a.kazanan_profil, a, portre)
         hedef = os.path.join(a.cikis, "profil-800.png"); p.save(hedef, optimize=True)
         olc["kazanan_profil"] = {"aday": a.kazanan_profil, "boyut": list(p.size), "dosya_bayt": os.path.getsize(hedef)}
