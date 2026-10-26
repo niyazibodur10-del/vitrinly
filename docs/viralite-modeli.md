@@ -1,7 +1,7 @@
 # Viralite modeli v0.1
 
 Amaç: senaryoları üretmeden önce viral olma potansiyeline göre sıralamak.
-Format kararı: **2D karakter anlatımlı, Türkçe uzun video** (10–20 dk).
+Format kararı: **2D karakter anlatımlı, İngilizce uzun video** (≥10 dk).
 **Durum:** Bütün ağırlıklar, bonuslar ve cezalar **tahmindir [T]**. Bkz. "Kalibrasyon durumu".
 Hesap elle yapılmaz, `tools/viralite.py` ile yapılır. Ağırlıklar betikte tek yerde tanımlı (`OLCUTLER`); bu tablo onunla
 aynı olmalı (`python3 tools/viralite.py --dokuman docs/viralite-modeli.md` denetler).
@@ -18,7 +18,7 @@ Veri sadece kanal ortalaması olarak bulunabildiyse skor "ort. bazlı" diye etik
 | 1 | Merak boşluğu | 0.20 | Başlık ve thumbnail "ne oldu / ne olacak?" dedirtiyor mu? |
 | 2 | Kanıtlı talep | 0.15 | Konu veya açı rakiplerde outlier üretti mi, aramada ilgi var mı? |
 | 3 | Hook gücü | 0.10 | İlk 15 sn'de net vaat ve gerilim kurulabilir mi? |
-| 4 | Kişisel bağ | 0.15 | İzleyicinin cebine veya hayatına dokunuyor mu (TR izleyici)? |
+| 4 | Kişisel bağ | 0.15 | İzleyicinin cebine veya hayatına dokunuyor mu (global İngilizce izleyici)? |
 | 5 | Zamanlama | 0.10 | Şu an konuşuluyor mu, tarihsel bir yıldönümü var mı? |
 | 6 | Hikâye gerilimi | 0.15 | Kahraman, kötü adam, dönüm noktası var mı? Karakter oynayabiliyor mu? |
 | 7 | Görselleştirilebilirlik | 0.10 | 2D animasyonla güçlü anlatılabilir mi (metafor, grafik)? |

@@ -1,13 +1,13 @@
 # Finans Animasyon Kanalı — proje talimatları
 
-Kullanıcı (Niyazi) kanalın sahibidir ve son onayı verir. Türkçe konuş.
+Kullanıcı (Niyazi) kanalın sahibidir ve son onayı verir. Niyazi ile Türkçe konuş; **video içeriği İngilizce**.
 Bu repo artık yalnızca bu YouTube kanalı içindir. Eski Vitrinly ürünü ve Nutrigold bu projede KULLANILMAZ
 (global `~/.claude/CLAUDE.md` içindeki Nutrigold talimatları bu repoda geçersizdir; Niyazi isterse açılır).
 
 ## Ürün
-YouTube'da **uzun (10–20 dk) animasyonlu finans videoları**. Bir maskot karakter anlatır.
+YouTube'da **uzun (en az 10 dk; hedef 10–14 dk) animasyonlu finans videoları**. Bir maskot karakter anlatır.
 Konular: güncel finans haberleri, geçmişin büyük finans olayları, geleceğe dair olası senaryolar.
-Hedef kitle: finansa ilgili gençler + genel izleyici. Dil: Türkçe. Kanal kopya değil, özgün.
+Hedef kitle: finansa ilgili gençler + genel izleyici. Video dili: **İngilizce** (Niyazi kararı 2026-10-26), global kitle. Kanal kopya değil, özgün. Plan: `docs/plan.html` (https://claude.ai/artifact/Ggxzsp9VT8GFhpzuoGgh56).
 
 ## Sistemin yaptığı / Niyazi'nin yaptığı
 - **Sistem:** araştırma, viralite analizi, 10 senaryo, eleme, metin, ses temizliği, karakter animasyonu ve dudak senkronu, kurgu, müzik/efekt, altyazı, thumbnail, başlık, açıklama, etiketler, bölümler.
@@ -20,7 +20,7 @@ Hedef kitle: finansa ilgili gençler + genel izleyici. Dil: Türkçe. Kanal kopy
 3. `kanal-analisti` → nişin en iyi 5 kanalı + outlier videolar → `docs/rakip-analizi.md` (yalnız desen çıkarılır, kopya yok).
 4. `senaryo-yazari` → **10 senaryo** (hook + yapı + karakter anı).
 5. `viralite-analisti` → her senaryoyu `docs/viralite-modeli.md` ile puanlar, ilk 3'ü bırakır.
-6. `finans-dogrulayici` → rakam/olay doğrulaması + yatırım tavsiyesi/SPK riski kontrolü.
+6. `finans-dogrulayici` → rakam/olay doğrulaması + "not financial advice" / yanıltıcı içerik / YouTube politika riski kontrolü.
 7. `hakem` → tek kazananı seçer, gerekçesini yazar, **Niyazi'ye onaya sunar.**
 8. Onaydan sonra: `senaryo-yazari` tam metin + `ses-yonetmeni` okuma metni → Niyazi okur → `ses-muhendisi` temizler.
 9. `animasyon-yonetmeni` (karakter + sahneler, Remotion) → `kurgu-editoru` (montaj, müzik, altyazı, render).
@@ -31,7 +31,7 @@ Her ajan işini **test ederek** teslim eder (bkz. `docs/kalite-kapilari.md`): te
 
 ## Teknik kararlar
 - Video motoru: **Remotion** (React ile programatik video). Resmi skill: `.claude/skills/remotion-best-practices`.
-- Dudak senkronu: **Rhubarb Lip Sync** (sesten ağız şekli A–H, X zaman çizelgesi). Türkçe için `--recognizer phonetic`.
+- Dudak senkronu: **Rhubarb Lip Sync** (sesten ağız şekli A–H, X zaman çizelgesi). İngilizce için varsayılan PocketSphinx tanıyıcı (en isabetli mod). GitHub indirmesi ağda kapalı → kaynak koddan derlenir.
 - Görsel stil (bkz. `docs/referans-analizi.md`): sahne başına tutarlı, detaylı illüstrasyon (kalın kontur, cel-shading, soğuk arka plan + sıcak karakter) + sinematik kamera (zoom/pan/punch-in) + hızlı kesme + anahtar kelimesi renkli kelime kelime altyazı + büyük sayı grafikleri.
 - Karakter: `assets/karakter/karakter-karti.md` — **2D** (Niyazi kararı 2026-10-26: 3D karakter sayfasının aynısı, 2D çizgi film stiline çevrilir; referans videonun çizim diliyle uyumlu). Konuşan sahneler: katmanlı 2D rig (kafa, gövde, kol, el, bacak, 9 ağız şekli, göz kırpma) + Rhubarb dudak senkronu. Diğer sahneler: karakterli illüstrasyon + kamera; kilit hareket anları image-to-video (kör testle).
 - Format: ana video 16:9 uzun; aynı sahnelerden 9:16 Shorts kesitleri.

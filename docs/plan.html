@@ -1,0 +1,190 @@
+<title>Finans Animasyon Kanalı Planı</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: tek kolon okuma sayfası; bölümler sıralı, tablolar kendi kaydırma kutusunda, zaman çizelgesi gerçek sıra olduğu için numaralı */
+:root{
+  --bg:#f3f4f1; --surface:#ffffff; --fg:#1d2321; --muted:#5d6763; --line:#d9dcd6;
+  --accent:#1f6f54; --accent-soft:#e2efe9; --warn:#9a5b12; --warn-soft:#f6ebdc;
+  --display:"Fraunces",Georgia,serif; --body:"Source Sans 3","Segoe UI",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#141917; --surface:#1c2320; --fg:#e7ebe8; --muted:#9ba7a1; --line:#2f3934;
+  --accent:#6cc7a2; --accent-soft:#1f3a2f; --warn:#e3a85c; --warn-soft:#3a2c1a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141917; --surface:#1c2320; --fg:#e7ebe8; --muted:#9ba7a1; --line:#2f3934;
+  --accent:#6cc7a2; --accent-soft:#1f3a2f; --warn:#e3a85c; --warn-soft:#3a2c1a; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.6}
+.wrap{max-width:860px;margin:0 auto;padding-block:40px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:40px}
+header{display:grid;gap:10px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--display);font-size:clamp(30px,5vw,44px);line-height:1.1;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-size:26px;line-height:1.2;margin:0 0 12px;text-wrap:balance}
+h3{font-size:18px;margin:0 0 6px}
+p{margin:0 0 12px;max-width:68ch}
+ul,ol{margin:0 0 12px;padding-left:22px;max-width:68ch}
+li{margin-bottom:6px}
+section{display:grid;gap:6px;min-width:0}
+.lede{font-size:19px;color:var(--muted);max-width:62ch}
+.decisions{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:8px}
+.decision{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;min-width:0}
+.decision b{display:block;font-size:13px;color:var(--muted);font-weight:600;letter-spacing:.02em}
+.decision span{font-size:18px;font-weight:700}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:15px;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:13px;color:var(--muted);font-weight:600;background:var(--bg)}
+tr:last-child td{border-bottom:0}
+td.t{font-family:var(--mono);font-size:13px;white-space:nowrap}
+.pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.pillar{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px;min-width:0}
+.pillar .tag{font-family:var(--mono);font-size:12px;color:var(--accent)}
+.pillar p{font-size:15px}
+.pillar ul{font-size:15px}
+.note{background:var(--warn-soft);border-left:3px solid var(--warn);padding:12px 16px;border-radius:0 8px 8px 0;font-size:15px}
+.note p:last-child{margin:0}
+.label{font-family:var(--mono);font-size:11px;padding:1px 6px;border-radius:4px;background:var(--accent-soft);color:var(--accent);white-space:nowrap}
+.label.est{background:var(--warn-soft);color:var(--warn)}
+ol.road{list-style:none;padding:0;display:grid;gap:12px;counter-reset:w}
+ol.road li{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px 14px 56px;position:relative;counter-increment:w;margin:0;max-width:none}
+ol.road li::before{content:counter(w);position:absolute;left:16px;top:13px;width:26px;height:26px;border-radius:50%;background:var(--accent);color:var(--surface);font-weight:700;display:grid;place-items:center;font-size:14px}
+.ask li{margin-bottom:10px}
+footer{font-size:14px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
+a{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">Plan v1 · 26 Ekim 2026 · Niyazi onayına</div>
+  <h1>İngilizce animasyonlu finans kanalı: üretim ve yayın planı</h1>
+  <p class="lede">Sabit bir 2D karakter, finansın geçmişini, bugününü ve olası geleceğini hikâye olarak anlatır. Ses senin, gerisini sistem üretir. Bu plan neyi, hangi sırayla, kimin yapacağını ve nelerin onay beklediğini gösterir.</p>
+  <div class="decisions">
+    <div class="decision"><b>Dil</b><span>İngilizce, global kitle</span></div>
+    <div class="decision"><b>Süre</b><span>En az 10 dk, hedef 11–13 dk</span></div>
+    <div class="decision"><b>Anlatıcı</b><span>2D karakter, senin sesin</span></div>
+    <div class="decision"><b>Tempo</b><span>Pilottan sonra haftada 1 video</span></div>
+  </div>
+</header>
+
+<section>
+  <h2>Konumlandırma</h2>
+  <p>Rakip analizinde öne çıkan 5 kanalın hiçbiri aynı anda üç şeyi yapmıyor: <b>yalnız finans</b>, <b>tekrar eden bir karakter</b> ve <b>geçmiş, bugün, gelecek</b> üçlüsü. The Infographics Show her konuya giriyor, Economics Explained karaktersiz, OverSimplified finans değil ve pasif. Boşluk burada.</p>
+  <p>Anlatım dili referans videondaki gibi ikinci tekil şahıs: “You’re a banker in 1929. It’s Thursday morning…” Karakter olayı anlatmaz, olayın içinde yaşar. Bu, hikâye gerilimini (viralite modelinde en yüksek ağırlıklı ölçütlerden biri) doğrudan üretir.</p>
+</section>
+
+<section>
+  <h2>İçerik sütunları</h2>
+  <p>Üç sütun dönüşümlü yayınlanır. Aşağıdaki konular <b>örnektir</b>; her videonun konusu 10 senaryo, viralite puanı ve hakem kararıyla seçilir.</p>
+  <div class="pillars">
+    <div class="pillar"><div class="tag">A · GEÇMİŞ</div><h3>The Collapse</h3><p>Büyük çöküşler, balonlar, imparatorluklar. Raf ömrü en uzun sütun.</p><ul><li>1929 crash, Tulip mania</li><li>Weimar hyperinflation</li><li>Lehman, FTX, SVB</li></ul></div>
+    <div class="pillar"><div class="tag">B · BUGÜN</div><h3>Money News, Explained</h3><p>Haberden 7–10 gün içinde yayınlanan açıklama. Keşfedilmenin en hızlı yolu.</p><ul><li>Faiz kararları, enflasyon verisi</li><li>Büyük şirket iflasları, birleşmeler</li><li>Kripto ve piyasa olayları</li></ul></div>
+    <div class="pillar"><div class="tag">C · GELECEK</div><h3>What If…</h3><p>Olası senaryolar; tahmin değil, “ya olursa” diye sunulur.</p><ul><li>What if the dollar lost reserve status?</li><li>What if AI replaced 30% of jobs?</li><li>What if your bank went digital-only?</li></ul></div>
+  </div>
+  <p>Pilot: ilk 3 video her sütundan birer tane. 5. videodan sonra sütun oranı kendi verimize göre ayarlanır.</p>
+</section>
+
+<section>
+  <h2>Video şablonu (12 dk ≈ 1.800 kelime)</h2>
+  <p>İngilizce anlatımda yaklaşık 150 kelime/dk hesabıyla. Her video bu iskeleti kullanır ama yapısı konuya göre değişir; birbirinin kopyası şablon videolar YouTube politikasında risklidir (aşağıda).</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Zaman</th><th>Bölüm</th><th>Görsel tempo</th></tr></thead>
+    <tbody>
+      <tr><td class="t">0:00–0:15</td><td>Soğuk açılış: olayın en gerilimli anı + soru. İlk 15 saniyede net vaat.</td><td>1,5–2 sn’de bir yeni görsel</td></tr>
+      <tr><td class="t">0:15–1:00</td><td>Bahis: bu neden önemli, izleyicinin cebine nasıl dokunuyor</td><td>2–3 sn</td></tr>
+      <tr><td class="t">1:00–10:30</td><td>4–6 bölüm, her biri ~2 dk; her bölüm açık bir soruyla biter. ~6. dakikada dönüş/sürpriz.</td><td>4–6 sn, rakamlar büyük grafikle</td></tr>
+      <tr><td class="t">10:30–11:30</td><td>“Bu sana ne anlatıyor”: ders, tavsiye değil</td><td>Karakter konuşma planı</td></tr>
+      <tr><td class="t">11:30–12:00</td><td>Sonraki videoya kanca + uç ekran</td><td>Uç ekran şablonu</td></tr>
+    </tbody>
+  </table></div>
+  <p>Karakterin konuştuğu planlar sürenin yaklaşık dörtte biri; geri kalanı karakterli sahne çizimleri, kamera hareketi ve bilgi grafikleri. SRT altyazı her videoya yüklenir; ekrana gömülü kelime kelime altyazı ilk dakikada ve kilit rakamlarda kullanılır, A/B testiyle genişletilir.</p>
+</section>
+
+<section>
+  <h2>Bir videonun üretim akışı</h2>
+  <p>Süreler <span class="label est">tahmin</span>; pilotta ölçülüp güncellenecek. Senin payına düşen süre kalın.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Gün</th><th>İş</th><th>Kim</th><th>Senin süren</th></tr></thead>
+    <tbody>
+      <tr><td class="t">1</td><td>Konu araştırması, 10 senaryo, viralite puanı, doğrulama, hakem kararı</td><td>showrunner → hakem</td><td><b>~10 dk</b> onay</td></tr>
+      <tr><td class="t">2</td><td>Tam metin (İngilizce), kaynak doğrulama, okuma metni</td><td>senaryo-yazari, finans-dogrulayici, ses-yonetmeni</td><td>—</td></tr>
+      <tr><td class="t">3</td><td>Seslendirme: 12 dk metin, parça parça</td><td>Sen</td><td><b>~40–60 dk</b></td></tr>
+      <tr><td class="t">3–5</td><td>Ses temizliği, kelime zamanları, sahne listesi, ~150–200 çizim, dudak senkronu, kurgu, müzik</td><td>ses-muhendisi, animasyon-yonetmeni, kurgu-editoru</td><td>—</td></tr>
+      <tr><td class="t">6</td><td>3 thumbnail, başlık, açıklama, bölümler, hakem son kontrol</td><td>thumbnail, paketleyici, hakem</td><td><b>~20 dk</b> son onay</td></tr>
+      <tr><td class="t">7</td><td>Yayın (senin “yükle” onayınla) ve 2–3 Shorts kesiti</td><td>Sistem</td><td>—</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <h2>Ses: İngilizce ve senin sesin</h2>
+  <p>Gerçek insan sesi hem izleyici bağı hem YouTube politikası için avantaj. Risk: aksan ve akıcılık izlenme süresini düşürebilir. Bunu tahminle değil testle çözelim:</p>
+  <ol>
+    <li>Sana 60 saniyelik İngilizce bir test metni veririm (kısa cümleler, zor kelime yok).</li>
+    <li>Kaydı temizler, Whisper’ın kelime hata oranıyla netliği ölçerim ve hakem dinler.</li>
+    <li>Sonuç iyiyse kendi sesinle devam. Değilse önerim metni sadeleştirmek; son seçenek senin sesinden ses klonu (ElevenLabs vb.), ücretli olduğu için ancak senin onayınla.</li>
+  </ol>
+  <p>Dudak senkronu için İngilizce iyi haber: Rhubarb Lip Sync’in en isabetli modu İngilizce. Ağ GitHub indirmelerini engellediği için kaynak koddan derleyeceğim.</p>
+</section>
+
+<section>
+  <h2>Görsel üretim ve maliyet</h2>
+  <p>Video başına ~150–200 çizim gerekir <span class="label est">hesap</span>. İki yol:</p>
+  <ul>
+    <li><b>Gemini uygulamasında elle:</b> ek ücret yok, ama video başına saatlerce senin emeğin. Sürdürülemez; yalnız karakter seti için kullanıyoruz.</li>
+    <li><b>Gemini API ile otomatik (önerim):</b> üçüncü taraf fiyat takipçilerine göre görsel başına yaklaşık $0,04 (Gemini 2.5 Flash Image) ile $0,07–0,10 (Nano Banana 2, 1K–2K) arası. 200 görsel × bu fiyatlar ≈ <b>video başına $8–20</b> <span class="label est">hesap, fiyat doğrulanacak</span>. Google AI Pro aboneliğinin aylık ~$10 Cloud kredisi bunun bir kısmını karşılar.</li>
+  </ul>
+  <p>Kilit hareket anları (yürüme, koşma) için görselden video modeli kör testle seçilir; fiyatı test öncesi sana sunulur. Müzik: YouTube Audio Library (ücretsiz, lisanslı). Hiçbir ücretli servis senin onayın olmadan açılmaz.</p>
+</section>
+
+<section>
+  <h2>YouTube politikası ve riskler</h2>
+  <div class="note">
+    <p>16 Temmuz 2026’da YouTube “inauthentic content” kuralını netleştirdi. Kazanç dışı bırakılan üç grup bildiriliyor: şablon/seri üretim içerik, rahatsız edici içerik ve <b>finans gibi hassas konularda tavsiye veren yapay zekâ personaları</b>. Kaynaklar üçüncü taraf bloglar; YouTube’un kendi metnini ağ kısıtı yüzünden okuyamadım.</p>
+  </div>
+  <p>Kanalı bu çizginin güvenli tarafında tutan kurallar (sistemde zorunlu):</p>
+  <ul>
+    <li>Anlatıcı açıkça çizgi film karakteri, uzman veya danışman gibi sunulmaz. Ses gerçek bir insan, yani sen.</li>
+    <li>Tavsiye yok: “buy/sell” dili yok, gelecek her zaman “scenario”. Açıklamada “not financial advice” notu.</li>
+    <li>Her video özgün araştırma ve kaynak listesi içerir; finans-dogrulayici her rakamı doğrular.</li>
+    <li>Videolar birbirinin şablon kopyası olmaz: konuya göre farklı yapı, sahne ve açılış.</li>
+  </ul>
+  <p>Kazanç tarafında: ara reklam (mid-roll) eşiği 2020’den beri 8 dk olarak biliniyor (bugünkü durumu doğrulanmadı), 10+ dk videolar bunu karşılar. YPP girişi için 1.000 abone ve 4.000 saat izlenme eşiği biliniyor; Şubat 2027’de eşiğin artacağı iddiası tek kaynakta geçiyor, doğrulanmadı.</p>
+</section>
+
+<section>
+  <h2>Yol haritası</h2>
+  <ol class="road">
+    <li><b>Bu hafta: temel.</b> Karakter görselleri (E0–E14), 60 sn İngilizce ses testi, kanal ve karakter adı. Ben: Remotion projesi, Rhubarb derlemesi ve 60 sn pilot klip (konuşan karakter, dudak senkronu, altyazı, sahne geçişleri).</li>
+    <li><b>2. hafta: Video 1.</b> <code>/yeni-video</code> → 10 senaryo → hakem → senin onayın → üretim.</li>
+    <li><b>3. hafta:</b> Video 1 yayında, Video 2 üretimde. Shorts kesitleri.</li>
+    <li><b>4–6. hafta:</b> Video 2 ve 3 yayında; üç sütun da denenmiş olur. Her videonun 7. ve 28. gün değerlendirmesi.</li>
+    <li><b>5. videodan sonra:</b> viralite modeli kendi verimizle yeniden ayarlanır; tempo (haftada 1 veya 2) ve sütun oranı veriyle kararlaştırılır.</li>
+  </ol>
+</section>
+
+<section>
+  <h2>Ölçüm</h2>
+  <p>Her video için tıklanma oranı (CTR), ortalama izlenme süresi ve yüzdesi, ilk 30 sn tutma, geri dönen izleyici. Hedef rakamı uydurmuyorum: ilk 5 video bize kendi başlangıç çizgimizi verecek, hedefler ondan sonra konacak.</p>
+</section>
+
+<section class="ask">
+  <h2>Senden beklenenler</h2>
+  <ol>
+    <li><b>Planı onayla</b> ya da değiştirmek istediğin yeri söyle.</li>
+    <li><b>Karakter görselleri:</b> önce E0 ana görseli (<code>assets/karakter/2d-duzenleme-promptlari.md</code>).</li>
+    <li><b>Kanal ve karakter adı:</b> varsa söyle; yoksa ad önerileri hazırlarım.</li>
+    <li><b>60 sn İngilizce ses testi:</b> metni onaydan sonra gönderiyorum.</li>
+    <li><b>Görsel API bütçesi:</b> video başına ~$8–20 aralığı için onay (fiyatı doğruladıktan sonra kesin rakamla tekrar sorarım).</li>
+    <li><b>İsteğe bağlı:</b> ücretsiz YouTube Data API anahtarı (rakiplerin gerçek izlenme verisi için).</li>
+  </ol>
+</section>
+
+<footer>
+  Kaynaklar: rakip ve viralite verisi <code>docs/rakip-analizi.md</code>, <code>docs/viralite-modeli.md</code>.
+  YouTube politika: <a href="https://creatorblade.com/blog/youtube-inauthentic-content-policy-2026-stay-monetized">creatorblade</a>, <a href="https://outlierkit.com/blog/youtube-updates-july-2026">outlierkit</a>, <a href="https://air.io/en/monetization/youtube-monetization-policy-changes-2026-a-complete-dated-timeline">AIR Media-Tech</a>.
+  Görsel fiyatları: <a href="https://intuitionlabs.ai/articles/ai-image-generation-pricing-google-openai">IntuitionLabs</a>, <a href="https://www.myarchitectai.com/blog/nano-banana-api-pricing">MyArchitectAI</a>.
+  Mid-roll: <a href="https://www.tubefilter.com/2020/07/07/youtube-lowering-minimum-video-length-mid-roll-ads/">Tubefilter (2020)</a>.
+</footer>
+</div>
