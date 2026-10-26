@@ -24,7 +24,7 @@ Hedef kitle: finansa ilgili gençler + genel izleyici. Video dili: **İngilizce*
 
 ## Akış (her video) — `/bugunun-videosu` başlatır
 **Tetik cümlesi kuralı:** Niyazi "Bugünün videosu gelsin" (veya "bugünün videosunu yap", "yeni video gelsin" gibi aynı anlamda bir şey) dediğinde koordinatör başka soru sormadan `.claude/commands/bugunun-videosu.md` akışını başlatır. Tam akış, teslim dosyaları, kalite kapıları ve RED döngüsü o dosyadadır.
-Hedef tempo: haftada 3 uzun video + 6 Shorts (`docs/yayin-takvimi.md`). Kapasite ve dış bağımlılıklar: `docs/uretim-kapasitesi.md`.
+Hedef tempo: **haftada 2 uzun video + 4 Shorts** (Niyazi kararı 2026-10-26; önceki plan 3+6; kalite kapısı ve "inauthentic/seri üretim" riski nedeniyle tempo kalitenin arkasında; `docs/yayin-takvimi.md`). Kapasite ve dış bağımlılıklar: `docs/uretim-kapasitesi.md`.
 Alt ajanları yalnız koordinatör çağırır (alt ajan alt ajan çağıramaz). Paralel adımlar tek mesajda birlikte çağrılır. Durum `uretim/<tarih>-<slug>/durum.md`'de tutulur; oturum koparsa ilk geçmemiş adımdan devam edilir.
 1. **F0 Açılış:** koordinatör (`showrunner` kuralları) slot, sütun, stok ve klasörü belirler ‖ `uretim-muhendisi` ortamı kurar.
 2. **F1 Araştırma:** `trend-avcisi` ‖ `kanal-analisti`.
