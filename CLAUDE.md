@@ -20,10 +20,13 @@ Architecture rule: **every customer request first goes to the central AI coordin
 - Image pipeline is **provider-agnostic** (not tied to OpenAI): real seller photo → background removal (open-source, own server) → AI scene edit via an edit model (candidates: Qwen Image Edit, FLUX Kontext/FLUX.2 via fal.ai or Cloudflare Workers AI) → text/infographics rendered by our own code (AI models garble Turkish text). Pick the model by a blind quality test. No usable free API tier exists for production volume (OpenAI none; Gemini image API paid-only per late-2026 snippets; Cloudflare 10k neurons/day ≈ a handful of images, fine for testing). Image costs go into plans as credits.
 - Niyazi's subscriptions: **Google AI Pro** (includes ~$10/month Google Cloud credit usable on the Gemini API → Gemini image model joins the blind test and covers early volume; must be activated via Google Developer Program, credits expire), **Photoroom Pro** and **Canva Pro** (app subscriptions, no SaaS API rights: Photoroom API is billed separately, Canva Autofill API needs Enterprise) → use them for benchmarks, template design and our own marketing, not as the customer-facing engine.
 
-## Team (in ~/.claude/agents)
+## Team (in this repo's .claude/agents, loaded every session)
 - Software: frontend-developer, backend-architect, code-reviewer, architect-review, debugger, test-automator, security-auditor, performance-engineer, typescript-pro, python-pro, playwright-pro.
 - Design: ui-designer, design-system-architect, accessibility-expert, design-ux-architect, design-visual-storyteller, design-image-prompt-engineer.
-- Skills: frontend-design, canvas-design, theme-factory, visual-design-foundations, design-system-patterns, responsive-design, tailwind-design-system, nextjs-app-router-patterns; plus the marketing/product/commercial plugin skills.
+- Skills: the engineering-skills, engineering-advanced-skills, product-skills, design, marketing and commercial plugin skills (each agent file names the ones it uses). Earlier skills (frontend-design, tailwind-design-system, nextjs-app-router-patterns etc.) are no longer installed.
+
+## Memory
+Read `docs/hafiza.md` at the start of every session: status, learnings and open work. Containers are reset and old transcripts do not carry over, so update it and commit whenever a decision or important fact comes in.
 
 ## How we work
 - Niyazi's requests come to you first; you split them, hand them to the right agents in parallel, merge the results and report.
