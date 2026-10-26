@@ -2,7 +2,7 @@
 # Remotion render + son ses normalizasyonu (stereo ölçümde -14 LUFS, tepe -1 dBTP).
 # Mono anlatım stereoya kopyalanınca ~+3 LU ölçülür; bu yüzden normalizasyon son dosyada yapılır.
 # Kullanım: tools/render-son.sh <CompositionId> <cikis.mp4> [ek remotion render bayrakları, ör. --frames=0-299 --concurrency=4]
-#   RENDER_ESZAMANLI (varsayılan 4) = Remotion --concurrency. Ölçüm 2026-10-26, 4 vCPU, Pilot 14,1 sn:
+#   RENDER_ESZAMANLI (varsayılan nproc; Remotion çekirdek sayısından fazlasını reddeder) = Remotion --concurrency. Ölçüm 2026-10-26, 4 vCPU, Pilot 14,1 sn:
 #   varsayılan (2) vs 4 vs 6 → docs/uretim-hatti-testi.md. Ara dosyalar $TMPDIR'da, çıkışta silinir (trap).
 #   Süre dökümü stderr'e: render / loudnorm ölçüm / son kodlama.
 # Elenen: Remotion'ın kendi ses normalizasyonu (yok); render içinde loudnorm (mono kaynak, +3 LU sapma).
@@ -14,7 +14,7 @@ case "$OUT" in /*) ;; *) OUT="$PWD/$OUT";; esac
 TMP="$(mktemp -d)"; trap 'rm -rf "$TMP"' EXIT
 t0=$(date +%s.%N)
 (cd "$ROOT/video" && npx remotion render "$ID" "$TMP/ham.mp4" --browser-executable="$B" --codec=h264 --crf=18 \
-  --concurrency="${RENDER_ESZAMANLI:-4}" --log=error "$@")
+  --concurrency="${RENDER_ESZAMANLI:-$(nproc)}" --log=error "$@")
 t1=$(date +%s.%N)
 J=$(ffmpeg -hide_banner -nostats -i "$TMP/ham.mp4" -af loudnorm=I=-14:TP=-1:LRA=11:print_format=json -f null - 2>&1 | sed -n '/^{/,/^}/p')
 g(){ echo "$J" | python3 -c "import sys,json;print(json.load(sys.stdin)['$1'])"; }
