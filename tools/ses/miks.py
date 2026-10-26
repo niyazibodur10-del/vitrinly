@@ -2,7 +2,7 @@
 """Anlatım + alt müzik (ducking) + efektler -> stereo miks, son dosyada -14 LUFS / TP -1.
 
 Kullanım:
-  miks.py <anlatim.wav> <muzik> <cikis.m4a> [--muzik-db -12] [--duck-db 9] [--giris 2.0] [--cikis-sn 3.0]
+  miks.py <anlatim.wav> <muzik> <cikis.m4a> [--muzik-db -6] [--duck-db 6] [--giris 2.0] [--cikis-sn 3.0]
           [--efekt dosya.flac@saniye@dB ...]   (saniye anlatımın başına göre; dB efekt kazancı)
 Mantık:
   - Müzik önce kendi başına -14 LUFS'a ölçeklenir, sonra --muzik-db (konuşma yokken yatak seviyesi) uygulanır.
@@ -42,8 +42,8 @@ def kisa_lufs_dizisi(yol):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("anlatim"); ap.add_argument("muzik"); ap.add_argument("cikis")
-    ap.add_argument("--muzik-db", type=float, default=-12)
-    ap.add_argument("--duck-db", type=float, default=9)
+    ap.add_argument("--muzik-db", type=float, default=-6)  # pilot v2 kararı (tts/rapor.md: -6/6 → medyan ~24 dB)
+    ap.add_argument("--duck-db", type=float, default=6)
     ap.add_argument("--giris", type=float, default=2.0)
     ap.add_argument("--cikis-sn", type=float, default=3.0)
     ap.add_argument("--efekt", action="append", default=[])

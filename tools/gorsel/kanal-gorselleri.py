@@ -365,7 +365,7 @@ def buyut_esrgan(img):
         return img.resize((img.width * 4, img.height * 4), Image.LANCZOS)
 
 
-def portre_kes(yol, esrgan=True, onbellek=None):
+def portre_kes(yol, esrgan=True, onbellek=None, oran=0.47):
     """Kafa+omuz kare kesimi (RGBA, 1600x1600). Kafa tepesi alfa maskesinden bulunur."""
     if onbellek and os.path.exists(onbellek):
         return Image.open(onbellek).convert("RGBA")
@@ -374,8 +374,8 @@ def portre_kes(yol, esrgan=True, onbellek=None):
     ust = np.argmax(a.any(1))
     satir = a[ust:ust + int(kar.height * 0.25)]
     xs = np.where(satir.any(0))[0]; cx = int((xs.min() + xs.max()) / 2)
-    kenar = int(kar.height * 0.62)           # kare boyu: kafa + omuz
-    x0 = cx - kenar // 2; y0 = max(0, ust - int(kenar * 0.08))
+    kenar = int(kar.height * oran)           # kare boyu: kafa dairenin ~%75'i (36 px'te yüz seçilsin)
+    x0 = cx - kenar // 2; y0 = max(0, ust - int(kenar * 0.07))
     kare = Image.new("RGBA", (kenar, kenar)); kare.alpha_composite(kar.crop((x0, y0, x0 + kenar, y0 + kenar)))
     if esrgan:
         rgb = Image.new("RGB", kare.size, (128, 128, 128)); rgb.paste(kare, mask=kare.split()[3])
@@ -393,23 +393,31 @@ def portre_kes(yol, esrgan=True, onbellek=None):
 
 
 def profil(aday, a, portre):
+    """P1 lacivert zemin + altın halka (marka) · P4 yeşil zemin · P2 FR monogramı · P3 P1 + ok rozeti."""
     S = 1600
-    if aday in ("P1", "P3"):
-        bg = Image.new("RGBA", (S, S), YESIL + (255,)) if a.profil_zemin == "yesil" else \
-            dikey_gradyan(S, S, (255, 214, 92), (255, 168, 40)).convert("RGBA")
-        # yükselen grafik silüeti (zemin üstünde silik)
-        d = ImageDraw.Draw(bg)
-        p = grafik_noktalari(3, 0, S, S * 0.86, S * 0.30, n=12)
-        d.line(p, fill=(255, 255, 255, 255), width=40, joint="curve")
-        kont = portre.split()[3].filter(ImageFilter.MaxFilter(25))
-        kl = Image.new("RGBA", portre.size, (255, 255, 255, 0)); kl.putalpha(kont)
-        bg.alpha_composite(kl, (0, 60)); bg.alpha_composite(portre, (0, 60))
+    if aday in ("P1", "P3", "P4"):
+        if aday == "P4":
+            bg = Image.new("RGBA", (S, S), YESIL + (255,))
+        else:
+            bg = dikey_gradyan(S, S, LACI_ALT, LACI_UST).convert("RGBA")
+            bg = Image.alpha_composite(bg, radyal(S, S, S / 2, S * 0.42, S * 0.62, (255, 190, 90), 0.55))
+        # yükselen grafik (zeminde, yüzün arkasında)
+        gl = Image.new("RGBA", (S, S)); d = ImageDraw.Draw(gl)
+        p = grafik_noktalari(3, 0, S, S * 0.86, S * 0.22, n=10)
+        d.line(p, fill=(BEYAZ if aday == "P4" else YESIL) + (255,), width=46, joint="curve")
+        bg = Image.alpha_composite(bg, gl)
+        kont = portre.split()[3].filter(ImageFilter.MaxFilter(29)).filter(ImageFilter.GaussianBlur(1.5))
+        kl = Image.new("RGBA", portre.size, (255, 240, 210, 0)); kl.putalpha(kont)
+        bg.alpha_composite(kl, (0, 40)); bg.alpha_composite(portre, (0, 40))
+        if aday != "P4":   # daire kenarında altın halka (koyu temada daireyi belirginleştirir)
+            ImageDraw.Draw(bg).ellipse([22, 22, S - 22, S - 22], outline=ALTIN + (255,), width=44)
         if aday == "P3":   # sağ altta yükselen ok rozeti
-            r = 250; cx, cy = S - 330, S - 330
-            ImageDraw.Draw(bg).ellipse([cx - r, cy - r, cx + r, cy + r], fill=LACI_KOYU + (255,), outline=BEYAZ + (255,), width=30)
-            ok = [(cx - 120, cy + 90), (cx - 20, cy - 10), (cx + 30, cy + 40), (cx + 120, cy - 60)]
-            dd = ImageDraw.Draw(bg); dd.line(ok, fill=YESIL + (255,), width=46, joint="curve")
-            dd.polygon([(cx + 150, cy - 95), (cx + 40, cy - 85), (cx + 140, cy + 15)], fill=YESIL + (255,))
+            r = 230; cx, cy = S - 360, S - 360
+            dd = ImageDraw.Draw(bg)
+            dd.ellipse([cx - r, cy - r, cx + r, cy + r], fill=YESIL + (255,), outline=BEYAZ + (255,), width=26)
+            ok = [(cx - 120, cy + 90), (cx - 20, cy - 10), (cx + 30, cy + 40), (cx + 110, cy - 50)]
+            dd.line(ok, fill=BEYAZ + (255,), width=46, joint="curve")
+            dd.polygon([(cx + 150, cy - 95), (cx + 40, cy - 85), (cx + 140, cy + 15)], fill=BEYAZ + (255,))
     elif aday == "P2":     # FR monogramı + ok
         bg = dikey_gradyan(S, S, LACI_ALT, LACI_UST).convert("RGBA")
         f = font("Anton-400.woff2", 900)
@@ -422,7 +430,7 @@ def profil(aday, a, portre):
         v = np.array([bx - ax, by - ay]); v /= np.linalg.norm(v); n = np.array([-v[1], v[0]])
         d.polygon([tuple(np.array([bx, by]) + v * 110), tuple(np.array([bx, by]) + n * 80), tuple(np.array([bx, by]) - n * 80)], fill=YESIL + (255,))
     else:
-        raise SystemExit("profil P1/P2/P3")
+        raise SystemExit("profil P1/P2/P3/P4")
     return bg.convert("RGB").resize((800, 800), Image.LANCZOS)
 
 
@@ -435,15 +443,32 @@ def daire_onizleme(p, boyutlar=(98, 36)):
     return out
 
 
+def lab(c):
+    import cv2
+    a = np.asarray(c, dtype=np.uint8).reshape(-1, 1, 3)
+    L = cv2.cvtColor(a, cv2.COLOR_RGB2LAB).reshape(-1, 3).astype(np.float64)
+    return np.column_stack([L[:, 0] * 100 / 255, L[:, 1] - 128, L[:, 2] - 128])
+
+
 def profil_olc(p):
-    """Daire içinde: karakter/şekil siluetinin zemine karşı WCAG oranı (zemin = dış halka medyanı)."""
-    a = np.asarray(p).astype(np.float64); s = a.shape[0]
+    """Daire içi ölçüm: zemin = halkanın hemen içi (r 0.80–0.88) medyanı; ten ve saç/gömlek (koyu) medyanları.
+    WCAG oranı yalnız parlaklık; ΔE76 renk tonu farkını da yakalar (ten-yeşil gibi)."""
+    a = np.asarray(p.convert("RGB")); s = a.shape[0]
     yy, xx = np.mgrid[0:s, 0:s]; r = np.sqrt((xx - s / 2) ** 2 + (yy - s / 2) ** 2) / (s / 2)
-    icerik = a[(r < 0.6)]; L = lum(icerik)
-    halka = a[(r > 0.9) & (r < 1.0)]; Lz = float(np.median(lum(halka)))
-    ratios = wcag(L, Lz)
-    return {"zemin_lum": round(Lz, 3), "merkez_%50_wcag_medyan": round(float(np.median(ratios)), 2),
-            "merkez_piksellerin_3:1_ustu_orani": round(float((ratios >= 3).mean()), 3)}
+    zem = a[(r > 0.80) & (r < 0.88) & (yy < s * 0.45)]          # üst halka: karakterin dışı
+    z = np.median(zem, 0); Lz = float(lum(z))
+    ic = a[r < 0.75].astype(int); R, G, B = ic[:, 0], ic[:, 1], ic[:, 2]
+    ten = ic[(R > G) & (G > B) & (R - B > 60) & (R > 150)]
+    koyu = ic[ic.max(1) < 60]
+    out = {"zemin_rgb": [int(v) for v in z], "ten_orani_daire_ici": round(len(ten) / len(ic), 3)}
+    if len(ten):
+        t = np.median(ten, 0)
+        out["ten_zemin_wcag"] = round(float(wcag(lum(t), Lz)), 2)
+        out["ten_zemin_dE76"] = round(float(np.linalg.norm(lab([t])[0] - lab([z])[0])), 1)
+    if len(koyu):
+        k = np.median(koyu, 0)
+        out["sac_gomlek_zemin_wcag"] = round(float(wcag(lum(k), Lz)), 2)
+    return out
 
 
 # ---------------------------------------------------------------- ana akış
@@ -457,10 +482,9 @@ def main():
     ap.add_argument("--slogan", default="Money stories, animated.")
     ap.add_argument("--slogan-alt", default="Past crashes. Today's news. What's next.")
     ap.add_argument("--ritim", default="NEW VIDEOS  TUE · FRI · SUN")
-    ap.add_argument("--profil-zemin", default="yesil", choices=["yesil", "altin"])
     ap.add_argument("--cikis", default=os.path.join(KOK, "uretim", "kanal-kimligi"))
     ap.add_argument("--adaylar", default="A,B,C")
-    ap.add_argument("--profil-adaylar", default="P1,P2,P3")
+    ap.add_argument("--profil-adaylar", default="P1,P2,P3,P4")
     ap.add_argument("--kazanan-banner", default=None)
     ap.add_argument("--kazanan-profil", default=None)
     ap.add_argument("--a-yukseklik", type=int, default=1140, help="A adayında karakter boyu (px); >918 ise tuval altından taşar")
@@ -491,13 +515,13 @@ def main():
     portre = None
     for aday in [x for x in a.profil_adaylar.split(",") if x]:
         if aday != "P2" and portre is None:
-            portre = portre_kes(a.profil_karakter, bool(a.esrgan), os.path.join(on, "_portre-" + os.path.splitext(os.path.basename(a.profil_karakter))[0] + ".png"))
+            portre = portre_kes(a.profil_karakter, bool(a.esrgan), os.path.join(on, "_portre-" + os.path.splitext(os.path.basename(a.profil_karakter))[0] + "-047.png"))
         p = profil(aday, a, portre)
         yol = os.path.join(on, f"profil-{aday}.png"); p.save(yol, optimize=True)
         olc["profil"][aday] = {**profil_olc(p), "dosya_bayt": os.path.getsize(yol)}
     # profil karşılaştırma tablosu: 800 / 98 / 36 (gerçek boy) + 36'nın x4 büyütmesi (göz için)
     if olc["profil"]:
-        ads = list(olc["profil"]); sheet = Image.new("RGB", (len(ads) * 420 + 20, 620), (245, 245, 245))
+        ads = list(olc["profil"]); sheet = Image.new("RGB", (len(ads) * 420 + 20, 620), (249, 249, 249))
         sd = ImageDraw.Draw(sheet)
         for i, ad in enumerate(ads):
             p = Image.open(os.path.join(on, f"profil-{ad}.png")); x = 20 + i * 420
@@ -525,7 +549,7 @@ def main():
                                  "dosya_bayt": os.path.getsize(hedef)}
     if a.kazanan_profil:
         if a.kazanan_profil != "P2" and portre is None:
-            portre = portre_kes(a.profil_karakter, bool(a.esrgan), os.path.join(on, "_portre-" + os.path.splitext(os.path.basename(a.profil_karakter))[0] + ".png"))
+            portre = portre_kes(a.profil_karakter, bool(a.esrgan), os.path.join(on, "_portre-" + os.path.splitext(os.path.basename(a.profil_karakter))[0] + "-047.png"))
         p = profil(a.kazanan_profil, a, portre)
         hedef = os.path.join(a.cikis, "profil-800.png"); p.save(hedef, optimize=True)
         olc["kazanan_profil"] = {"aday": a.kazanan_profil, "boyut": list(p.size), "dosya_bayt": os.path.getsize(hedef)}
