@@ -33,7 +33,7 @@ Her ajan işini **test ederek** teslim eder (bkz. `docs/kalite-kapilari.md`): te
 - Video motoru: **Remotion** (React ile programatik video). Resmi skill: `.claude/skills/remotion-best-practices`.
 - Dudak senkronu: **Rhubarb Lip Sync** (sesten ağız şekli A–H, X zaman çizelgesi). Türkçe için `--recognizer phonetic`.
 - Görsel stil (bkz. `docs/referans-analizi.md`): sahne başına tutarlı, detaylı illüstrasyon (kalın kontur, cel-shading, soğuk arka plan + sıcak karakter) + sinematik kamera (zoom/pan/punch-in) + hızlı kesme + anahtar kelimesi renkli kelime kelime altyazı + büyük sayı grafikleri.
-- Karakter: `assets/karakter/karakter-karti.md` (yarı gerçekçi 3D görünüm, siyah gömlek). Bu yüz tipinde 2D ağız değiştirme yapay durur → konuşan sahnelerde **ses güdümlü AI konuşan-karakter modeli** (Niyazi'nin temiz sesi + karakter görseli → dudak, mimik, el/vücut hareketi; Hedra Omnia, Kling Avatar v2 vb., kör testle seçilir). Rig + Rhubarb yedek yöntem. Diğer sahneler: karakterli illüstrasyon + kamera; kilit hareket anları image-to-video.
+- Karakter: `assets/karakter/karakter-karti.md` — **2D** (Niyazi kararı 2026-10-26: 3D karakter sayfasının aynısı, 2D çizgi film stiline çevrilir; referans videonun çizim diliyle uyumlu). Konuşan sahneler: katmanlı 2D rig (kafa, gövde, kol, el, bacak, 9 ağız şekli, göz kırpma) + Rhubarb dudak senkronu. Diğer sahneler: karakterli illüstrasyon + kamera; kilit hareket anları image-to-video (kör testle).
 - Format: ana video 16:9 uzun; aynı sahnelerden 9:16 Shorts kesitleri.
 - Ses temizliği: ffmpeg (highpass, de-ess, loudnorm −14 LUFS) + DeepFilterNet gürültü giderme. Altyazı: Whisper (kelime zamanlı) → SRT + videoya gömülü.
 - Kurgu kodda: `video/` Remotion projesi (henüz kurulmadı).
