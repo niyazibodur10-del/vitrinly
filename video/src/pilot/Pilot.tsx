@@ -5,16 +5,21 @@ import { Karakter } from "./Karakter";
 import { BirikimSahne, SabahArka, Yil1923 } from "./Sahneler";
 import { Altyazi } from "./Altyazi";
 
-export const PILOT_SURE = 18.8; // sn, public/pilot-ses.wav
+// Pilot v2 sesi: Kokoro am_fenrir 0.9 anlatım + CC0 müzik/efekt miksi (1.0 sn müzik girişi, 2.0 sn çıkış).
+// Zamanlar uretim/ses-testi/pilot/v2/anlatim-v2-kelimeler.json (+1.0 sn ofset) ve agiz-zamanlari.json'dan.
+export const PILOT_SURE = 14.1; // sn, public/pilot-ses.wav (14.10 sn)
 
 // Sahne sınırları (sn, ses zamanına göre)
 const S = {
-  sabah: [0, 4.5],
-  birikim: [4.5, 9.4],
-  sasirma: [9.4, 11.9],
-  yil: [11.9, 16.4],
-  final: [16.4, PILOT_SURE],
+  sabah: [0, 2.8], // "Imagine waking up one morning" (konuşma 1.00–2.80)
+  birikim: [2.8, 6.5], // "and your savings ... coffee" (2.80–5.92)
+  sasirma: [6.5, 8.0], // "Sounds impossible?" (6.76–7.58)
+  yil: [8.0, 10.3], // "In 1923, in Germany," (8.24–10.14)
+  final: [10.3, PILOT_SURE], // "that's exactly what happened." (10.48–11.88) + müzik çıkışı
 } as const;
+
+// Kelime tetikli animasyonlar (Whisper kelime başlangıcı, ses zamanı)
+const KELIME = { cup: 5.1, Germany: 9.68 } as const;
 
 // Sequence içindeki karakter, ses zamanını sahne başlangıcı + yerel kareden hesaplar
 const KarakterPlan: React.FC<{
@@ -53,7 +58,7 @@ export const Pilot: React.FC = () => {
 
       {/* 2: "and your savings are worth less than a cup of coffee" — grafik + köşede konuşan karakter */}
       <Sequence {...seq(S.birikim)}>
-        <BirikimSahne sure={S.birikim[1] - S.birikim[0]} fincanAn={7.42 - S.birikim[0]} />
+        <BirikimSahne sure={S.birikim[1] - S.birikim[0]} fincanAn={KELIME.cup - S.birikim[0]} />
         <KarakterPlan bas={S.birikim[0]} x={1420} y={640} olcek={0.42} tohum={5} />
       </Sequence>
 
@@ -65,7 +70,7 @@ export const Pilot: React.FC = () => {
 
       {/* 4: "In 1923, in Germany" — eski kâğıt, yıl ve mühür */}
       <Sequence {...seq(S.yil)}>
-        <Yil1923 muhurAn={15.6 - S.yil[0]} />
+        <Yil1923 muhurAn={KELIME.Germany - S.yil[0]} />
       </Sequence>
 
       {/* 5: "that's exactly what happened" — ciddi ton, soğuk ışık */}

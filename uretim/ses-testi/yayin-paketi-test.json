@@ -3,11 +3,11 @@
   "_not": "API TEST YÜKLEMESİ (Adım 8, kilit kontrolü): private, planlamasız. Niyazi talimatı 2026-10-26. Test sonrası silinir.",
   "tur": "uzun",
   "dosyalar": {
-    "video": "pilot/pilot-v1.mp4",
+    "video": "pilot/pilot-v2.mp4",
     "thumbnail": "pilot/thumbnail-ornek.jpg",
     "altyazilar": [
       {
-        "dosya": "pilot/pilot-v1.en.srt",
+        "dosya": "pilot/pilot-v2.en.srt",
         "dil": "en",
         "ad": "English"
       }

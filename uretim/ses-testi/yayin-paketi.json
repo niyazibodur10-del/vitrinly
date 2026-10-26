@@ -3,10 +3,10 @@
   "_not": "TEST paketi (pilot klip). Yayınlanmaz; tools/yayin/yukle.py --dry-run / --manuel-paket testi icin.",
   "tur": "uzun",
   "dosyalar": {
-    "video": "pilot/pilot-v1.mp4",
+    "video": "pilot/pilot-v2.mp4",
     "thumbnail": "pilot/thumbnail-ornek.jpg",
     "altyazilar": [
-      {"dosya": "pilot/pilot-v1.en.srt", "dil": "en", "ad": "English"}
+      {"dosya": "pilot/pilot-v2.en.srt", "dil": "en", "ad": "English"}
     ]
   },
   "metadata": {

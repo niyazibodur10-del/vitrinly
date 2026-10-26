@@ -13,3 +13,5 @@
 - 2026-10-26: Karakter görseli düşük çözünürlüklü sayfadan ×4 büyütüldü (Real-ESRGAN) → yakın planda yumuşak; ≥2048 px tek görsel olmadan yakın plan kullanma.
 - 2026-10-26: GrabCut kesme (`tools/karakter/kes.py`) + renk tabanlı kenar temizliği çalıştı, ama bölge koordinatları görsele özel; yeni görselde yeniden ayarlanmalı (artık bu iş gorsel-varlik-sanatcisi'nde).
 - 2026-10-26: Tek görselden kol/el hareketi yapılamıyor; jest pozları (E11–E14) ayrı parça olarak gerekli.
+- 2026-10-26 (pilot v2): v1 yanlış sesle (Niyazi okuması) render edilmişti. **Render öncesi `video/public/*-ses.wav` kaynağını kontrol et**: karar verilen anlatıcı mı (am_fenrir 0.9), müzik/efekt miksi var mı. Ses değişince PILOT_SURE, sahne sınırları ve kelime tetikleri (`KELIME` sabiti) yeniden hesaplanır; sabit sayı gömme.
+- 2026-10-26: Rhubarb'ı müzikli miks yerine temiz anlatım (+müzik girişi kadar baş boşluğu) üzerinde çalıştır: senkron korelasyonu 0.52 vs 0.40 (ikisi de 1 kare gecikme).
