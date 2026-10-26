@@ -16,3 +16,7 @@ Açık konular:
 ## Güncelleme (2026-10-26, gorsel-varlik-sanatcisi)
 - Tam çözünürlük çözüldü: Canva çalışma tuvali `DAHZHv3mU9w` (1920x1080) + `insert_fill` + `export-design png` → `test2-mutfak-tam.png` 1920x1080. Adımlar: `tools/gorsel/canva-indir.md`. Canva üretimlerinin doğal boyutu 1680x944.
 - Tutarlılık 7 görselde ölçüldü (paket-v1): taban+düzenleme yöntemi tutarlı, sıfırdan üretim değil. Bkz. `assets/karakter/karakter-karti.md` → "Canva karakter kilidi prompt'u".
+
+## Bağlantı kontrolü (2026-10-26, koordinatör, kanal öncesi denetim)
+- `search-designs` ✅ (export tuvali `DAHZHv3mU9w` 1920x1080 erişilebilir) · `list-brand-kits` ✅ (1 marka kiti `kAFwxg7XRn8`).
+- `generate-image` düzenleme yöntemi (referans: taban `MAHZHqW0_Uo` + sayfa `MAHZHpeQGdM`, LANDSCAPE_16_9): "şehir silüeti önünde altın para tutuyor" → `MAHZInD7qDk`, ~25 sn, SUCCESS. Görsel kontrol: yüz, saç, sakal, siyah gömlek, kol saati, çizim stili korunmuş ✅. Ek ücret yok (abonelik AI hakkı).
