@@ -1,8 +1,5 @@
-# Vitrinly (working name)
+# Finans animasyon kanalı
 
-AI panel for marketplace sellers (start: Trendyol + Hepsiburada).
-
-Modules: SEO title & description writer · compliance shield · rule-based image generation · question & review replies · profitability (later).
-Every request goes through a central AI coordinator that routes it to the right module and platform.
-
-See `docs/` for product decisions and research.
+Animasyonlu, maskot karakter anlatımlı uzun form finans YouTube videolarını üreten ajan sistemi.
+Kurallar ve akış: `CLAUDE.md`. Komutlar: `/yeni-video`, `/senaryo-onayla`, `/ses-isle`, `/video-uret`, `/rakip-analizi`.
+Remotion skill'i: `remotion-dev/skills` (commit 6c67adc) — `.claude/skills/remotion-best-practices`.
