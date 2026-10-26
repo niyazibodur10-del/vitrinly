@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Financial Rise — kanal banner'ı (2560x1440) ve profil fotoğrafı (800x800) üretici + testler.
+"""Kanal (şimdilik Financial Rise; ad --ad ile değişir) — banner'ı (2560x1440) ve profil fotoğrafı (800x800) üretici + testler.
 
 Çalıştırma (repo kökünden):
   ~/.finansal-arac/venv/bin/python tools/gorsel/kanal-gorselleri.py            # tüm adaylar + testler
@@ -233,33 +233,65 @@ def sigdir(metin, ad, genislik, maks=400):
 
 
 # ---------------------------------------------------------------- banner adayları
-def metin_blogu(x0, x1, ust, slogan, ritim, hiza="sol", alt=None, ad_maks=210, ritim_px=54):
-    """Kanal adı + slogan + yayın ritmi; dikeyde [ust, alt] içine sığar (alt varsayılan: bant altı - 34)."""
+def ad_secenekleri(ad):
+    """Tek satır + kelime sınırından tüm iki satırlık bölmeler."""
+    k = ad.split(); out = [[ad]]
+    for i in range(1, len(k)):
+        out.append([" ".join(k[:i]), " ".join(k[i:])])
+    return out
+
+
+def metin_blogu(x0, x1, ust, ad, slogan, ritim, hiza="sol", alt=None, ad_maks=210, ritim_px=54):
+    """Kanal adı (son kelime altın; tek kelimeyse tamamı) + slogan + yayın ritmi; dikeyde [ust, alt] içine sığar."""
     alt = alt or (SY + SH - 34)
     gen = x1 - x0
-    ad1, ad2 = "FINANCIAL ", "RISE"
-    px = min(sigdir(ad1 + ad2, "Anton-400.woff2", gen), ad_maks)
     sl_px = min(sigdir(slogan, "Fredoka-700.woff2", gen), 64)
     fr = font("Anton-400.woff2", ritim_px); br = fr.getbbox(ritim)
     hap_h = (br[3] - br[1]) + 36
-    while True:
-        fa = font("Anton-400.woff2", px); b = fa.getbbox(ad1 + ad2)
-        fs = font("Fredoka-700.woff2", sl_px); bs = fs.getbbox(slogan)
-        top = (b[3] - b[1]) + 30 + (bs[3] - bs[1]) + 30 + hap_h
-        if ust + top <= alt or px < 60:
-            break
-        px -= 4; sl_px = max(40, sl_px - 1)
-    w1 = fa.getlength(ad1); tw = b[2]
-    xs = x0 if hiza == "sol" else x0 + (gen - tw) // 2
-    y_ad = ust - b[1]
-    y_sl = ust + (b[3] - b[1]) + 30 - bs[1]
-    xs_sl = xs if hiza == "sol" else x0 + (gen - bs[2]) // 2
+    ara = 14
+    en_iyi = None
+    for satirlar in ad_secenekleri(ad.upper()):
+        px = min(min(sigdir(t, "Anton-400.woff2", gen) for t in satirlar), ad_maks)
+        sp = sl_px
+        while True:   # önce adı küçült (slogan okunur kalsın), ad 90 px altına inerse sloganı da küçült
+            fa = font("Anton-400.woff2", px)
+            cap = fa.getbbox("H")[3] - fa.getbbox("H")[1]
+            ad_h = cap * len(satirlar) + ara * (len(satirlar) - 1)
+            fs = font("Fredoka-700.woff2", sp); bs = fs.getbbox(slogan)
+            if ust + ad_h + 30 + (bs[3] - bs[1]) + 30 + hap_h <= alt or px < 50:
+                break
+            if px > 90 or sp <= 38:
+                px -= 2
+            else:
+                sp -= 1
+        # tek satır eşitlikte tercih edilir (%10 avantaj)
+        puan = px * (1.1 if len(satirlar) == 1 else 1.0)
+        if en_iyi is None or puan > en_iyi[0]:
+            en_iyi = (puan, satirlar, px, sp, fa, cap, ad_h, fs, bs)
+    _, satirlar, px, sl_px, fa, cap, ad_h, fs, bs = en_iyi
+    parcalar = []
+    son_kelime_vurgu = len(ad.split()) > 1
+    hy = fa.getbbox("H")[1]
+    for i, satir in enumerate(satirlar):
+        y = ust + i * (cap + ara) - hy
+        tw = fa.getlength(satir)
+        xs = x0 if hiza == "sol" else x0 + (gen - tw) // 2
+        if i == len(satirlar) - 1:
+            if son_kelime_vurgu and " " in satir:
+                on, son = satir.rsplit(" ", 1); on += " "
+                parcalar += [(on, fa, BEYAZ, (xs, y), 10, 0, None), (son, fa, ALTIN, (xs + fa.getlength(on), y), 10, 0, None)]
+            else:
+                parcalar.append((satir, fa, ALTIN if (son_kelime_vurgu or len(satirlar) == 1) else BEYAZ, (xs, y), 10, 0, None))
+        else:
+            parcalar.append((satir, fa, BEYAZ, (xs, y), 10, 0, None))
+    xs0 = x0 if hiza == "sol" else None
+    y_sl = ust + ad_h + 30 - bs[1]
+    xs_sl = x0 if hiza == "sol" else x0 + (gen - bs[2]) // 2
     hy0 = y_sl + bs[3] + 30
-    hx0 = xs if hiza == "sol" else x0 + (gen - (br[2] + 60)) // 2
+    hx0 = x0 if hiza == "sol" else x0 + (gen - (br[2] + 60)) // 2
     hk = (hx0, hy0, hx0 + br[2] + 60, hy0 + hap_h)
-    parcalar = [(ad1, fa, BEYAZ, (xs, y_ad), 10, 0, None), (ad2, fa, ALTIN, (xs + w1, y_ad), 10, 0, None),
-                (slogan, fs, BEYAZ, (xs_sl, y_sl), 6, 0, None),
-                (ritim, fr, LACI_KOYU, (hx0 + 30, hy0 + 18 - br[1]), 0, 0, None)]
+    parcalar += [(slogan, fs, BEYAZ, (xs_sl, y_sl), 6, 0, None),
+                 (ritim, fr, LACI_KOYU, (hx0 + 30, hy0 + 18 - br[1]), 0, 0, None)]
     return parcalar, hk
 
 
@@ -269,17 +301,17 @@ def banner(aday, a):
         kar = kes(a.banner_karakter)
         bg, kk, kafa, _ = karakter_yerlestir(bg, kar, SX + 300, SY + 22, yukseklik=a.a_yukseklik)
         uc = None
-        parcalar, hk = metin_blogu(SX + 640, SX + SW - 30, SY + 48, a.slogan, a.ritim)
+        parcalar, hk = metin_blogu(SX + 640, SX + SW - 30, SY + 48, a.ad, a.slogan, a.ritim)
     elif aday == "B":     # karakter sağda ekranın soluna, metne işaret ediyor
         bg = arkaplan(sahne=a.arkaplan)
         kar = kes(a.banner_isaret)
         # işaret eden el kutunun solunda; yüz kutunun sağ ~%60'ında → yüzü güvenli alanın sağ kısmına koy
         bg, kk, kafa, uc = karakter_yerlestir(bg, kar, SX + SW - 300, SY + 40)
-        parcalar, hk = metin_blogu(SX + 30, SX + 830, SY + 48, a.slogan, a.ritim)
+        parcalar, hk = metin_blogu(SX + 30, SX + 830, SY + 48, a.ad, a.slogan, a.ritim)
     elif aday == "C":     # minimal logo-tipi: karakter yok, ortalı yazı + ok
         bg = arkaplan(sahne=a.arkaplan)
         kk = kafa = uc = None
-        parcalar, hk = metin_blogu(SX + 120, SX + SW - 120, SY + 40, a.slogan, a.ritim, hiza="orta")
+        parcalar, hk = metin_blogu(SX + 120, SX + SW - 120, SY + 40, a.ad, a.slogan, a.ritim, hiza="orta")
     else:
         raise SystemExit("aday A/B/C")
     lay = Image.new("RGBA", (W, H)); hap(lay, hk, ALTIN)
@@ -429,10 +461,11 @@ def profil(aday, a, portre):
             dd.polygon([(cx + 150, cy - 95), (cx + 40, cy - 85), (cx + 140, cy + 15)], fill=BEYAZ + (255,))
     elif aday == "P2":     # FR monogramı + ok
         bg = dikey_gradyan(S, S, LACI_ALT, LACI_UST).convert("RGBA")
-        f = font("Anton-400.woff2", 900)
-        d = ImageDraw.Draw(bg); bb = d.textbbox((0, 0), "FR", font=f)
+        bh = "".join(k[0] for k in a.ad.upper().split())[:3] or "?"
+        f = font("Anton-400.woff2", 900 if len(bh) <= 2 else 640)
+        d = ImageDraw.Draw(bg); bb = d.textbbox((0, 0), bh, font=f)
         x = (S - (bb[2] - bb[0])) // 2 - bb[0]; y = (S - (bb[3] - bb[1])) // 2 - bb[1] + 40
-        d.text((x, y), "F", font=f, fill=BEYAZ + (255,)); d.text((x + f.getlength("F"), y), "R", font=f, fill=ALTIN + (255,))
+        d.text((x, y), bh[:-1], font=f, fill=BEYAZ + (255,)); d.text((x + f.getlength(bh[:-1]), y), bh[-1], font=f, fill=ALTIN + (255,))
         p = grafik_noktalari(5, 260, S - 300, S * 0.80, S * 0.24, n=7)
         d.line(p, fill=YESIL + (255,), width=60, joint="curve")
         (ax, ay), (bx, by) = p[-2], p[-1]
@@ -491,6 +524,7 @@ def main():
     ap.add_argument("--banner-isaret", default=os.path.join(pk, "c-isaret.png"))
     ap.add_argument("--profil-karakter", default=os.path.join(pk, "a-konusma-kapali.png"))
     ap.add_argument("--arkaplan", default=None, help="Canva 16:9 sahne (opsiyonel); yoksa kodla çizilir")
+    ap.add_argument("--ad", default="FINANCIAL RISE", help="kanal adı (6–20 karakter test edildi); son kelime altın renkte")
     ap.add_argument("--slogan", default="Money stories, animated.")
     ap.add_argument("--slogan-alt", default="Past crashes. Today's news. What's next.")
     ap.add_argument("--ritim", default="NEW VIDEOS  TUE · FRI · SUN")
