@@ -8,7 +8,7 @@ Okuyucu: Niyazi, koordinatör ve `monetizasyon-uyum-uzmani` (bu dosya o ajanın 
 
 | Etiket | Anlamı |
 |---|---|
-| **[B-Kn]** | Birincil kaynak: YouTube Yardım Merkezi / blog.youtube sayfası bu oturumda WebFetch ile **açıldı ve okundu** (Kn → bölüm 11, URL + okuma tarihi). |
+| **[B-Kn]** | Birincil kaynak: YouTube Yardım Merkezi / blog.youtube sayfası bu oturumda WebFetch ile **açıldı ve okundu** (Kn → bölüm 12, URL + okuma tarihi). |
 | **[AÖ-An]** | Arama özeti: üçüncü taraf haber/blog, WebSearch özeti veya açılan ikincil sayfa. Birincil kaynakla doğrulanmadı. |
 | **[T]** | Tahmin: bizim varsayımımız ve hesabımız; varsayımlar yanında yazılı. |
 | **[ÖB]** | Ön bilgi: ajanın genel bilgisi, bu oturumda kaynakla doğrulanmadı. |
@@ -80,27 +80,28 @@ Erişim (2026-10-26): support.google.com ve blog.youtube WebFetch ile **açılı
 ### 3.2 Politikanın bizi ilgilendiren cümleleri [B-K4]
 
 **Generic or Repetitive Content: izin verilmeyenler**
-- *"Similar or repetitive content with low educational value, commentary, narratives, or minimal variation across videos"*
-- *"Videos where characters are put in the same situation over and over again with the same outcome"* (bu, **maskot formatı için doğrudan risk**)
-- *"Image slideshows, templated storylines, or scrolling text with minimal or no narrative, commentary, or educational value"*
-- *"AI-generated content made with generic or unoriginal templates giving the impression of mass production"*, yani *"without adding the creator's original, authentic insights or perspective"*
-- İzin verilen: *"Same intro and outro for your videos, but the bulk of your content is different."*
+- *"Similar or repetitive content with low educational value, commentary, narratives, or minimal variation across videos"* [B-K4]
+- *"Videos where characters are put in the same situation over and over again with the same outcome"* (bu, **maskot formatı için doğrudan risk**) [B-K4]
+- *"Image slideshows, templated storylines, or scrolling text with minimal or no narrative, commentary, or educational value"* [B-K4]
+- *"AI-generated content made with generic or unoriginal templates giving the impression of mass production"*, yani *"without adding the creator's original, authentic insights or perspective"* [B-K4]
+- İzin verilen: *"Same intro and outro for your videos, but the bulk of your content is different."* [B-K4]
 
 **Unsatisfying or Off-putting Content**
-- İzin verilenler: *"Content that expresses your unique creative voice, like using AI to visualize a unique character"* ve *"Content that utilizes creative tools to assist in delivering a unique, well-researched, or creative narrative"* (örnek: *"using AI to edit your video scripts or generate a unique background visual"*).
-- Kural: *"If you use automated tools or templates to help create your content"*, *"the final product must still demonstrate your creative vision and provide educational or entertainment value."*
-- İzin verilmeyenler: *"Content that lacks a clear narrative arc or logical progression"* ve *"Content that uses deceptive or misleading imagery or narratives"* (örnek: gerçekçi görsellerle uydurma felaket). Finans karşılığı şu olur: **olmamış bir çöküşü gerçekmiş gibi gösteren gerçekçi sahne yasak.**
+- İzin verilenler: *"Content that expresses your unique creative voice, like using AI to visualize a unique character"* ve *"Content that utilizes creative tools to assist in delivering a unique, well-researched, or creative narrative"* (örnek: *"using AI to edit your video scripts or generate a unique background visual"*). [B-K4]
+- Kural: *"If you use automated tools or templates to help create your content"*, *"the final product must still demonstrate your creative vision and provide educational or entertainment value."* [B-K4]
+- İzin verilmeyenler: *"Content that lacks a clear narrative arc or logical progression"* ve *"Content that uses deceptive or misleading imagery or narratives"* (örnek: gerçekçi görsellerle uydurma felaket). Finans karşılığı şu olur: **olmamış bir çöküşü gerçekmiş gibi gösteren gerçekçi sahne yasak.** [B-K4]
 
 **AI Personas Related to Sensitive Topics**
-- *"This policy refers to channels that use AI-generated personas to deliver information on sensitive topics."* Kapsam: *"any content that presents itself as a human expert providing advice to viewers"*, *"on topics such as health, legal issues, finances, or politics."* Sonuç: *"channels uploading this content will not be allowed to monetize."*
-- Finans örneği: *"AI-generated podcast hosts offering financial guidance, investment tips, or wealth management advice"*.
+- *"This policy refers to channels that use AI-generated personas to deliver information on sensitive topics."* Kapsam: *"any content that presents itself as a human expert providing advice to viewers"*, *"on topics such as health, legal issues, finances, or politics."* Sonuç: *"channels uploading this content will not be allowed to monetize."* [B-K4]
+- Finans örneği: *"AI-generated podcast hosts offering financial guidance, investment tips, or wealth management advice"*. [B-K4]
 - Bölümde izin verilen bir örnek yok. Eklenme tarihi sayfada yazmıyor; basına göre Temmuz 2026 [AÖ-A1].
+- Bir blog, AI beyan etiketi koymanın ya da metni insanın yazmasının böyle bir kanalı uygun hale getirmediğini yazıyor [AÖ-A8]. Bu yüzden asıl önlem içerik tarafında: karakter tavsiye vermez ve uzman gibi sunulmaz.
 
 **İncelemecinin baktığı yerler:** ana tema, en çok izlenen ve en yeni videolar, izlenme süresinin en büyük payını alan videolar, meta veri (başlık, thumbnail, açıklama) ve "Hakkında" bölümü [B-K4].
 
 **Reused content: izin verilmeyenlerden bizi ilgilendirenler** [B-K4]
-- *"Content that only reads other materials"*, yani yaratıcının yazmadığı web sitesi ya da haber metnini okuyan içerik. Haber sütunu (B · Money News) için bu doğrudan bir risk: haber metnini AI sesle okutmak yasak.
-- Başka kaynaktan özsel değişiklik yapılmadan kopyalanan içerik de izin dışı. Bu politika *"applies even if you have permission from the original creator"* ve tüm kanala uygulanıyor.
+- *"Content that only reads other materials"*, yani yaratıcının yazmadığı web sitesi ya da haber metnini okuyan içerik. Haber sütunu (B · Money News) için bu doğrudan bir risk: haber metnini AI sesle okutmak yasak. [B-K4]
+- Başka kaynaktan özsel değişiklik yapılmadan kopyalanan içerik de izin dışı. Bu politika *"applies even if you have permission from the original creator"* ve tüm kanala uygulanıyor. [B-K4]
 - Bizim üretimimizde dış klip ya da görüntü yok, bu yüzden reused riskimiz düşük. Ama B sütunu haber okuma tonuna kayarsa risk doğar.
 
 ### 3.3 AI ses + AI görselli kanallar: kabul mü, ret mi?
@@ -115,18 +116,18 @@ Her madde YouTube politikasındaki bir cümleye bağlı. Bu liste `monetizasyon-
 
 | # | Kontrol | Ölçüt (geçer/kalır) | Bağlı olduğu politika cümlesi |
 |---|---|---|---|
-| Ö1 | **Tek cümlelik özgün tez** ("Financial Rise'ın bakışı"): Wikipedia özetinde olmayan bir yorum, bağlantı ya da soru | Metnin ilk 60 sn'sinde ve sonunda tez cümlesi var | "original, authentic insights or perspective" |
-| Ö2 | **Kendi veri görselleştirmemiz:** birincil veriden (FRED, BLS, World Bank, SEC/şirket raporu, merkez bankası) kodla (Remotion) çizilmiş grafik | ≥3 grafik, ekranda kaynak etiketi; veri dosyası üretim klasöründe | "well-researched … narrative", "educational value" |
-| Ö3 | **Kaynak listesi** açıklamada | ≥5 güvenilir kaynak, tarihli | "educational value"; yanlış bilgi riskini düşürür |
-| Ö4 | **Anlatı yayı:** kurulum → çatışma → dönüm → sonuç (liste ya da slayt değil) | Senaryoda 4 bölüm işaretli; "liste videosu" formatı kullanılmıyor | "clear narrative arc or logical progression"; "Image slideshows … minimal narrative" |
-| Ö5 | **Karakterin rolü değişiyor:** maskot her videoda aynı durumda, aynı tepki ve sonuçla yer almıyor | Son 5 videoda karakterin rolü/durumu/sonucu farklı (tabloyla) | "characters … same situation … same outcome" |
-| Ö6 | **Görsel tekrar sınırı:** önceki videolardan yeniden kullanılan sahne oranı (giriş/çıkış hariç) | ≤ %20 (iç kuralımız; YouTube sayı vermiyor) | "bulk of your content is different" |
-| Ö7 | **Metin tekrar sınırı:** önceki metinlerle 5-gram örtüşmesi | ≤ %10 (iç kuralımız [T]); kalıp açılış/kapanış cümlesi her videoda aynı olmamalı | "minimal variation across videos" |
-| Ö8 | **Haber okuma yok:** B sütununda kaynak metin aynen ya da yakın parafrazla okunmuyor; her haber "neden önemli / ne anlama geliyor / tarihteki eşi" katmanı taşıyor | Kaynak metinle 8-gram örtüşmesi ≈ 0 | "Content that only reads other materials" |
-| Ö9 | **İnsan editör kimliği görünür:** Hakkında bölümünde kanalın bir insan tarafından yönetildiği, karakterin kurgusal maskot olduğu ve sesin AI olduğu yazıyor | Hakkında + her açıklamada standart satır | AI personası; "Creator integrity" (kendini dürüst temsil) |
-| Ö10 | **Karakter uzman/danışman değil:** maskot "I'm a financial advisor", "you should buy" gibi ifadeler kullanmıyor, kişiye özel tavsiye vermiyor; gelecek "scenario" diye sunuluyor | finans-dogrulayici + monetizasyon-uyum-uzmani metin taraması sıfır bulgu | "presents itself as a human expert providing advice … finances" |
-| Ö11 | **Gerçekçi sahte olay yok:** olmamış bir olayı gerçekçi gösteren AI görsel yok; tarihî olay illüstrasyonu "illustration" olarak sunuluyor, "gerçek fotoğraf" diye gösterilmiyor | Gerçekçi sahne varsa "AI use = Yes" + ekranda "Illustration" etiketi | "deceptive or misleading imagery"; yanlış bilgi "misattributed content" |
-| Ö12 | **Süreç kanıtı arşivi:** araştırma notları, 10 senaryo + eleme gerekçesi, metin sürümleri, Remotion proje kodu | `uretim/<tarih>-<slug>/` git'te; itirazda gösterilebilir | YPP itirazında "insan katkısı" kanıtı [AÖ-A7] |
+| Ö1 | **Tek cümlelik özgün tez** ("Financial Rise'ın bakışı"): Wikipedia özetinde olmayan bir yorum, bağlantı ya da soru | Metnin ilk 60 sn'sinde ve sonunda tez cümlesi var | "original, authentic insights or perspective" [B-K4] |
+| Ö2 | **Kendi veri görselleştirmemiz:** birincil veriden (FRED, BLS, World Bank, SEC/şirket raporu, merkez bankası) kodla (Remotion) çizilmiş grafik | ≥3 grafik, ekranda kaynak etiketi; veri dosyası üretim klasöründe | "well-researched … narrative", "educational value" [B-K4] |
+| Ö3 | **Kaynak listesi** açıklamada | ≥5 güvenilir kaynak, tarihli | "educational value"; yanlış bilgi riskini düşürür [B-K4] |
+| Ö4 | **Anlatı yayı:** kurulum → çatışma → dönüm → sonuç (liste ya da slayt değil) | Senaryoda 4 bölüm işaretli; "liste videosu" formatı kullanılmıyor | "clear narrative arc or logical progression"; "Image slideshows … minimal narrative" [B-K4] |
+| Ö5 | **Karakterin rolü değişiyor:** maskot her videoda aynı durumda, aynı tepki ve sonuçla yer almıyor | Son 5 videoda karakterin rolü/durumu/sonucu farklı (tabloyla) | "characters … same situation … same outcome" [B-K4] |
+| Ö6 | **Görsel tekrar sınırı:** önceki videolardan yeniden kullanılan sahne oranı (giriş/çıkış hariç) | ≤ %20 (iç kuralımız; YouTube sayı vermiyor) | "bulk of your content is different" [B-K4] |
+| Ö7 | **Metin tekrar sınırı:** önceki metinlerle 5-gram örtüşmesi | ≤ %10 (iç kuralımız [T]); kalıp açılış/kapanış cümlesi her videoda aynı olmamalı | "minimal variation across videos" [B-K4] |
+| Ö8 | **Haber okuma yok:** B sütununda kaynak metin aynen ya da yakın parafrazla okunmuyor; her haber "neden önemli / ne anlama geliyor / tarihteki eşi" katmanı taşıyor | Kaynak metinle 8-gram örtüşmesi ≈ 0 | "Content that only reads other materials" [B-K4] |
+| Ö9 | **İnsan editör kimliği görünür:** Hakkında bölümünde kanalın bir insan tarafından yönetildiği, karakterin kurgusal maskot olduğu ve sesin AI olduğu yazıyor | Hakkında + her açıklamada standart satır | AI personası; "Creator integrity" (kendini dürüst temsil) [B-K4] |
+| Ö10 | **Karakter uzman/danışman değil:** maskot "I'm a financial advisor", "you should buy" gibi ifadeler kullanmıyor, kişiye özel tavsiye vermiyor; gelecek "scenario" diye sunuluyor | finans-dogrulayici + monetizasyon-uyum-uzmani metin taraması sıfır bulgu | "presents itself as a human expert providing advice … finances" [B-K4] |
+| Ö11 | **Gerçekçi sahte olay yok:** olmamış bir olayı gerçekçi gösteren AI görsel yok; tarihî olay illüstrasyonu "illustration" olarak sunuluyor, "gerçek fotoğraf" diye gösterilmiyor | Gerçekçi sahne varsa "AI use = Yes" + ekranda "Illustration" etiketi | "deceptive or misleading imagery"; yanlış bilgi "misattributed content" [B-K4] |
+| Ö12 | **Süreç kanıtı arşivi:** araştırma notları, 10 senaryo + eleme gerekçesi, metin sürümleri, Remotion proje kodu | `uretim/<tarih>-<slug>/` git'te; itirazda gösterilebilir | YPP itirazında "insan katkısı" kanıtı [AÖ-A7] [B-K4] |
 
 ---
 
@@ -134,12 +135,12 @@ Her madde YouTube politikasındaki bir cümleye bağlı. Bu liste `monetizasyon-
 
 | Durum | Beyan gerekir mi? | Bizim içerikte |
 |---|---|---|
-| Gerçekçi olmayan içerik: tam animasyon, fantastik sahne. Örnek: *"Using an AI-generated or altered animation of a missile in a fully animated video"* | **Hayır** | 2D maskot ve illüstrasyon sahneleri |
-| Yapım yardımı: AI ile senaryo, taslak, başlık, thumbnail; altyazı; ses onarımı | **Hayır** | Claude senaryo, Whisper altyazı, ses temizliği |
-| Gerçek bir kişiyi söylemediği bir şeyi söylüyor ya da yapmıyor gösterme | **Evet** | Gerçek kişi (Powell, Musk vb.) **gerçekçi** çizilirse ya da ağzına söz konulursa: kaçınılmalı. Karikatür + "illustration" kullanılmalı |
-| Gerçek bir olayın ya da yerin görüntüsünü değiştirme, olmamış gerçekçi sahne üretme | **Evet** | Canva'nın "gerçekçi/resimsi" çıktısı bir borsa salonu ya da 1929 kalabalığını fotoğraf gibi gösterirse gerekir |
-| AI müzik videonun ana odağıysa | Evet | Uygulanmaz (CC0 müzik, yatak olarak) |
-| Kendi sesini klonlama | Hayır (küçük düzenleme sayılıyor) | Uygulanmaz. Kokoro hazır bir ses; gerçek bir kişinin sesi değil. Sayfa bu durumu açıkça ele almıyor |
+| Gerçekçi olmayan içerik: tam animasyon, fantastik sahne. Örnek: *"Using an AI-generated or altered animation of a missile in a fully animated video"* | **Hayır** | 2D maskot ve illüstrasyon sahneleri [B-K5] |
+| Yapım yardımı: AI ile senaryo, taslak, başlık, thumbnail; altyazı; ses onarımı | **Hayır** | Claude senaryo, Whisper altyazı, ses temizliği [B-K5] |
+| Gerçek bir kişiyi söylemediği bir şeyi söylüyor ya da yapmıyor gösterme | **Evet** | Gerçek kişi (Powell, Musk vb.) **gerçekçi** çizilirse ya da ağzına söz konulursa: kaçınılmalı. Karikatür + "illustration" kullanılmalı [B-K5] |
+| Gerçek bir olayın ya da yerin görüntüsünü değiştirme, olmamış gerçekçi sahne üretme | **Evet** | Canva'nın "gerçekçi/resimsi" çıktısı bir borsa salonu ya da 1929 kalabalığını fotoğraf gibi gösterirse gerekir [B-K5] |
+| AI müzik videonun ana odağıysa | Evet | Uygulanmaz (CC0 müzik, yatak olarak) [B-K5] |
+| Kendi sesini klonlama | Hayır (küçük düzenleme sayılıyor) | Uygulanmaz. Kokoro hazır bir ses; gerçek bir kişinin sesi değil. Sayfa bu durumu açıkça ele almıyor [B-K5] |
 
 - Beyan yeri: YouTube Studio → Ayrıntılar → **"AI use"** → Yes/No. Etiket animasyonlu ya da müzik dışı AI ses içeriğinde genişletilmiş açıklamada, foto-gerçekçi içerikte oynatıcıda görünebilir [B-K5].
 - Beyan *"alone won't limit a video's audience or impact its eligibility to earn money."* Beyanı sürekli atlayan kanala YouTube etiketi elle ekleyebilir, içeriği kaldırabilir ya da kanalı **YPP'den askıya alabilir** [B-K5].
@@ -242,23 +243,23 @@ Mevcut durum: `uretim/kanal-kimligi/mevcut-durum.md` (API okuması, 2026-10-26).
 | R6 | Sentetik beyan eksikliği | Karar zaten "Yes" [B-K5] | 1×3 = 3 | 1×3 = 3 |
 | R7 | Yanıltıcı başlık/thumbnail ya da gerçekçi sahte görsel | Viralite baskısı [B-K7][B-K4] | 3×4 = 12 | 1×4 = 4 |
 | R8 | **Eşiğe ulaşamama** (iş riski: 8.000 saat) | Yeni kanal, 2027 eşiği [B-K2]; hesap bölüm 10.1 | 4×4 = 16 | 3×4 = 12 |
-| | **Toplam / 200 → /100** | | **85 → 43/100** | **44 → 22/100** |
+| | **Toplam / 200 → /100** | | **85 → 43/100** | **44 → 22/100** [T] |
 
 Okuma: 0–20 düşük, 21–40 düşük-orta, 41–60 orta-yüksek, 61+ yüksek [T]. En büyük iki kalem **R1 (ret)** ve **R8 (eşik süresi)**. R1 ret sonrası 30 ya da 90 gün kaybettirir, R8 gelirin ne zaman başlayacağını belirler.
 
 ### 10.1 Eşiğe tahmini ulaşma süresi [T]
 
 **Varsayımlar** (hepsi [T]; ilk 4 haftanın Studio verisiyle güncellenecek):
-- Ortalama izleme süresi 12 dk'lık videoda ~4 dk (≈%33). 1.000 görüntüleme ≈ 67 saat → **8.000 saat ≈ 120.000 uzun video görüntülemesi** (12 ay içinde, herkese açık).
+- Ortalama izleme süresi 12 dk'lık videoda ~4 dk (≈%33). 1.000 görüntüleme ≈ 67 saat → **8.000 saat ≈ 120.000 uzun video görüntülemesi** (12 ay içinde, herkese açık). [T]
 - Tempo: 1. hafta 1, 2. hafta 2, sonra 3 uzun video/hafta → 12 ayda ~150 uzun video (`docs/yayin-takvimi.md`).
-- Abone dönüşümü: görüntülemenin %0,5–1'i → 120 bin görüntülemede 600–1.200 abone. Yani 1.000 abone saat eşiğiyle aşağı yukarı aynı anda gelir.
+- Abone dönüşümü: görüntülemenin %0,5–1'i → 120 bin görüntülemede 600–1.200 abone. Yani 1.000 abone saat eşiğiyle aşağı yukarı aynı anda gelir. [T]
 - Shorts 20 M / 90 gün yolu yeni kanal için gerçekçi değil. Shorts saatleri de uzun video eşiğine sayılmaz [B-K18].
 
 | Senaryo | Video başına ortalama görüntüleme (12 ay içinde) | 12 ayda saat | 8.000 saate ulaşma | 4.000 saate (eski eşik) 31 Oca 2027'ye kadar ulaşma |
 |---|---|---|---|---|
-| Kötümser | 200 | ~2.000 | 12 ayda **ulaşılmaz** (alt katman 3.000 saat de ulaşılmaz) | Hayır |
-| Baz | 800 | ~8.000 | **~11–13. ay** (birikim sona yığılır) | Hayır (14 haftada ~35 video × 800 ≈ 1.900 saat) |
-| İyimser | 1.500 + 1 outlier (≥100 bin) | ~15.000+ | **~5–7. ay** | Ancak erken bir outlier gelirse |
+| Kötümser | 200 | ~2.000 | 12 ayda **ulaşılmaz** (alt katman 3.000 saat de ulaşılmaz) | Hayır [T] |
+| Baz | 800 | ~8.000 | **~11–13. ay** (birikim sona yığılır) | Hayır (14 haftada ~35 video × 800 ≈ 1.900 saat) [T] |
+| İyimser | 1.500 + 1 outlier (≥100 bin) | ~15.000+ | **~5–7. ay** | Ancak erken bir outlier gelirse [T] |
 
 Sonuç: Gelir planı **8.000 saat** ve baz senaryoda **2027 Q4** üzerine kurulmalı [T]. Alt katman (500 abone + 3.000 saat) baz senaryoda ~6–8. ayda açılabilir [T]. Fan funding için başvuru o zaman yapılabilir; tam YPP incelemesinden önce bir "politika provası" işlevi de görür. Bu provanın ana YPP incelemesiyle aynı ölçütleri kullandığı birincil kaynakta yazmıyor [T].
 
@@ -337,4 +338,9 @@ Sonuç: Gelir planı **8.000 saat** ve baz senaryoda **2027 Q4** üzerine kurulm
 - Erişim engelleri bölümü (0) bu oturumun denemeleriyle güncel (2026-10-26).
 - Yenileme: 30 günde bir ya da YouTube Yardım Merkezi'nde tarihli bir not görülünce. 2027-02-01 öncesinde (ocak sonu) zorunlu kontrol.
 
-Komut: `python3 tools/../docs` yok, betik kanal-analisti hafızasında: `python3 -c` ile satır sayımı (bkz. hafıza 2026-10-26 dersi).
+Son çalıştırma (2026-10-26): `etiket_test.py` (betik metni kanal-analisti hafızasında tarif edildi) → iddia satırı ve etiketsiz satır sayısı aşağıda.
+
+```
+iddia satiri: 114 | etiketsiz: 0
+atif yapilan K: 1–19 | tanimli K: 1–19 | tanimsiz atif: yok | kullanilmayan: yok
+```
