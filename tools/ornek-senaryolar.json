@@ -1,0 +1,26 @@
+{
+  "_not": "Örnek girdi: betik testi içindir. Puanlar uydurma test değerleridir, gerçek senaryo değerlendirmesi değildir.",
+  "senaryolar": [
+    {
+      "id": "ORN-1",
+      "baslik": "Bir simidin 20 yıllık fiyat yolculuğu",
+      "merak": 7, "talep": 5, "hook": 7, "kisisel": 9, "zamanlama": 6,
+      "hikaye": 6, "gorsel": 9, "raf": 8,
+      "seri": false, "somut_ozne": true, "rakip_benzerlik": "yok", "ana_iddia_dogrulandi": true
+    },
+    {
+      "id": "ORN-2",
+      "baslik": "Büyük Krizler, Bölüm 1: 2001",
+      "merak": 8, "talep": 6, "hook": 7, "kisisel": 7, "zamanlama": 5,
+      "hikaye": 9, "gorsel": 8, "raf": 9,
+      "seri": true, "somut_ozne": true, "rakip_benzerlik": "benzer_aci", "ana_iddia_dogrulandi": true
+    },
+    {
+      "id": "ORN-3",
+      "baslik": "Paran neden eriyor?",
+      "merak": 9, "talep": 6, "hook": 8, "kisisel": 9, "zamanlama": 8,
+      "hikaye": 5, "gorsel": 7, "raf": 6,
+      "seri": false, "somut_ozne": false, "rakip_benzerlik": "dogrudan_ceviri", "ana_iddia_dogrulandi": true
+    }
+  ]
+}
