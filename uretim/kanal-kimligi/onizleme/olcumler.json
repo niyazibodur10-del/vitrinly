@@ -79,7 +79,7 @@
     "Money stories, animated.": 15.4,
     "NEW VIDEOS  TUE · FRI · SUN": 11.6
    },
-   "dosya_bayt": 419540
+   "dosya_bayt": 424746
   },
   "banner-A-s2": {
    "slogan": "Past crashes. Today's news. What's next.",
@@ -154,7 +154,7 @@
     "Past crashes. Today's news. What's next.": 12.1,
     "NEW VIDEOS  TUE · FRI · SUN": 11.6
    },
-   "dosya_bayt": 420816
+   "dosya_bayt": 425845
   },
   "banner-B-s1": {
    "slogan": "Money stories, animated.",
@@ -232,7 +232,7 @@
     "Money stories, animated.": 15.9,
     "NEW VIDEOS  TUE · FRI · SUN": 11.6
    },
-   "dosya_bayt": 407819
+   "dosya_bayt": 412786
   },
   "banner-B-s2": {
    "slogan": "Past crashes. Today's news. What's next.",
@@ -310,7 +310,7 @@
     "Past crashes. Today's news. What's next.": 11.1,
     "NEW VIDEOS  TUE · FRI · SUN": 11.6
    },
-   "dosya_bayt": 410423
+   "dosya_bayt": 415389
   },
   "banner-C-s1": {
    "slogan": "Money stories, animated.",
@@ -456,7 +456,7 @@
    "ten_zemin_wcag": 6.68,
    "ten_zemin_dE76": 85.2,
    "sac_gomlek_zemin_wcag": 1.21,
-   "dosya_bayt": 479857
+   "dosya_bayt": 475949
   },
   "P2": {
    "zemin_rgb": [
@@ -483,8 +483,8 @@
    "daire_kenari_koyu_tema_wcag": 12.4,
    "ten_zemin_wcag": 6.68,
    "ten_zemin_dE76": 85.2,
-   "sac_gomlek_zemin_wcag": 1.25,
-   "dosya_bayt": 465737
+   "sac_gomlek_zemin_wcag": 1.24,
+   "dosya_bayt": 462828
   },
   "P4": {
    "zemin_rgb": [
@@ -498,7 +498,7 @@
    "ten_zemin_wcag": 1.11,
    "ten_zemin_dE76": 91.9,
    "sac_gomlek_zemin_wcag": 9.63,
-   "dosya_bayt": 431591
+   "dosya_bayt": 428118
   }
  },
  "kazanan_banner": {
@@ -508,7 +508,7 @@
    1440
   ],
   "jpeg_kalite": 92,
-  "dosya_bayt": 420816
+  "dosya_bayt": 425845
  },
  "kazanan_profil": {
   "aday": "P4",
@@ -516,6 +516,6 @@
    800,
    800
   ],
-  "dosya_bayt": 431591
+  "dosya_bayt": 428118
  }
 }
