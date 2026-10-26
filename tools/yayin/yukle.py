@@ -7,6 +7,7 @@
 #   python3 tools/yayin/yukle.py uretim/<klasör>/yayin-paketi.json                   # yükle (cihaz akışı)
 #   python3 tools/yayin/yukle.py uretim/<klasör>/yayin-paketi.json --akis yerel      # Niyazi'nin bilgisayarında, altyazı dahil
 #   python3 tools/yayin/yukle.py --sil VIDEO_ID [--onayli]                         # bizim yüklediğimiz videoyu sil (Niyazi onayıyla)
+#   python3 tools/yayin/yukle.py --yetki-al / --yetki-iptal                         # kalıcı yetkiyi bir kez al / kaldır
 #   python3 tools/yayin/yukle.py --erisim-testi                                      # kimliksiz uç nokta erişimi
 #
 # Paket şeması (yollar paket dosyasına göre göreli; ayrıntı ve varsayılanlar: yayin_paket.SEMA):
@@ -19,7 +20,7 @@
 #    "oynatma_listesi_id": null, "onay": {"niyazi_onayi": false, "tarih": null}}
 #
 # Onay kapısı: gerçek yükleme yalnız paket "onay.niyazi_onayi": true ise başlar; ayrıca cihaz kodunu Niyazi girer.
-# Token yalnız bellekte; iş bitince iptal edilir. Kimlik: YOUTUBE_OAUTH_CLIENT_ID / YOUTUBE_OAUTH_CLIENT_SECRET.
+# Kalıcı yetki: ilk seferde kod girilir, yenileme tokenı repo dışında saklanır (yayin_api başlığı); sonra kod sorulmaz. Kimlik: YOUTUBE_OAUTH_CLIENT_ID / YOUTUBE_OAUTH_CLIENT_SECRET.
 #
 # Adaylar ve eleme (2026-10-26):
 #   Yetki  A) cihaz akışı, "youtube" kapsamı — KAZANAN (telefondan 30 sn; tarayıcı/sunucu gerekmez; konteynerde çalışır).
@@ -50,7 +51,25 @@ def main():
     ap.add_argument("--erisim-testi", action="store_true", help="Google uç noktalarına kimliksiz erişim testi")
     ap.add_argument("--sil", metavar="VIDEO_ID", help="yayin-sonucu.txt kaydı olan videoyu sil (geri alınamaz)")
     ap.add_argument("--onayli", action="store_true", help="--sil için: Niyazi silmeyi onayladı")
+    ap.add_argument("--yetki-al", action="store_true", help="kalıcı yetkiyi bir kez al (cihaz kodu) ve sakla")
+    ap.add_argument("--yetki-iptal", action="store_true", help="kalıcı yetkiyi Google'da iptal et ve yerel dosyayı sil")
     a = ap.parse_args()
+
+    if a.yetki_al:
+        try:
+            _, kapsam, kalici = api.yetki_al(a.akis)
+        except api.ApiHatasi as e:
+            print(f"YETKİ HATASI: {e}"); return 4
+        print(f"Tamam (kapsam: {kapsam}, kalıcı: {kalici})."); return 0 if kalici else 4
+    if a.yetki_iptal:
+        yt, kaynak = api.yenileme_tokeni()
+        if not yt:
+            print("Kayıtlı kalıcı yetki yok."); return 0
+        print(f"Google iptal: HTTP {api.iptal(yt)} ({kaynak})")
+        if os.path.isfile(api.YENILEME_DOSYASI): os.remove(api.YENILEME_DOSYASI)
+        if kaynak == "ortam değişkeni":
+            print("Not: YOUTUBE_OAUTH_REFRESH_TOKEN ortam ayarından da silinmeli.")
+        return 0
 
     if a.sil:
         return sil(a.sil, a.onayli, a.akis)
@@ -99,11 +118,10 @@ def main():
         print("REDDEDİLDİ: paket 'onay.niyazi_onayi' true değil. Yükleme yalnız Niyazi onayıyla yapılır.")
         return 3
     try:
-        cid, sec = api.kimlik_bilgisi()
-        token, kapsam = (api.cihaz_akisi if a.akis == "cihaz" else api.yerel_akis)(cid, sec)
+        token, kapsam, kalici = api.yetki_al(a.akis)
     except api.ApiHatasi as e:
         print(f"YETKİ HATASI: {e}"); return 4
-    print(f"Yetki alındı (kapsam: {kapsam}); token yalnız bellekte.")
+    print(f"Yetki alındı (kapsam: {kapsam}); erişim tokenı yalnız bellekte.")
     kok = p["_kok"]
     try:
         print("1) videos.insert …")
@@ -135,7 +153,7 @@ def main():
     except api.ApiHatasi as e:
         print(f"API HATASI: {e}"); return 5
     finally:
-        print(f"Token iptal: HTTP {api.iptal(token)}")
+        if not kalici: print(f"Token iptal: HTTP {api.iptal(token)}")
         token = None
 
 
@@ -150,8 +168,7 @@ def sil(vid, onayli, akis):
     if not onayli:
         print("REDDEDİLDİ: --onayli yok. Silme geri alınamaz; yalnız Niyazi onayıyla yapılır."); return 3
     try:
-        cid, sec = api.kimlik_bilgisi()
-        token, _ = (api.cihaz_akisi if akis == "cihaz" else api.yerel_akis)(cid, sec)
+        token, _, kalici = api.yetki_al(akis)
     except api.ApiHatasi as e:
         print(f"YETKİ HATASI: {e}"); return 4
     try:
@@ -169,7 +186,7 @@ def sil(vid, onayli, akis):
     except api.ApiHatasi as e:
         print(f"API HATASI: {e}"); return 5
     finally:
-        print(f"Token iptal: HTTP {api.iptal(token)}")
+        if not kalici: print(f"Token iptal: HTTP {api.iptal(token)}")
 
 
 if __name__ == "__main__":

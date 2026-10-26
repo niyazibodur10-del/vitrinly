@@ -1,6 +1,10 @@
 # Google OAuth (cihaz akışı / yerel loopback) + YouTube Data API v3 çağrıları. Yalnız stdlib (urllib; HTTPS_PROXY'ye uyar).
-# GÜVENLİK: istemci kimliği/sırrı yalnız ortam değişkeninden okunur; erişim tokenı yalnız bellekte tutulur,
-# diske/loga yazılmaz ve iş bitince oauth2.googleapis.com/revoke ile iptal edilir. Yenileme tokenı kullanılmaz.
+# GÜVENLİK: istemci kimliği/sırrı yalnız ortam değişkeninden okunur; erişim tokenı yalnız bellekte tutulur, diske/loga yazılmaz.
+# Kalıcı yetki (Niyazi kararı 2026-10-26: "onay sende kalsın, sürekli kod girmeyelim"): ilk cihaz akışında gelen yenileme
+# tokenı repo DIŞINDA saklanır — öncelik YOUTUBE_OAUTH_REFRESH_TOKEN ortam değişkeni (bulut ortamı ayarı, oturumlar arası
+# kalıcı), yoksa ~/.finansal-arac/youtube-yenileme-tokeni (izin 600, konteyner silinince gider). Varsa her yüklemede
+# kod sorulmaz. Yenileme tokenıyla alınan erişim tokenı iptal EDİLMEZ (Google'da erişim tokenını iptal etmek bağlı
+# yenileme tokenını da iptal eder); süresi ~1 saatte kendiliğinden dolar. İzni kaldırmak: yukle.py --yetki-iptal.
 #
 # Kapsam doğrulaması (developers.google.com/identity/protocols/oauth2/limited-input-device, "Allowed scopes",
 # sayfa güncelleme 2026-10-16, 2026-10-26 okundu): cihaz akışı YouTube için YALNIZ
@@ -65,6 +69,61 @@ def _json(b):
     except ValueError: return {"ham": b[:300].decode("utf-8", "replace")}
 
 
+YENILEME_DOSYASI = os.path.join(os.environ.get("ARAC_DIZINI", os.path.expanduser("~/.finansal-arac")),
+                                "youtube-yenileme-tokeni")
+
+
+def yenileme_tokeni():
+    """(token, kaynak) veya (None, None). Değer asla yazdırılmaz."""
+    t = os.environ.get("YOUTUBE_OAUTH_REFRESH_TOKEN", "").strip()
+    if t: return t, "ortam değişkeni"
+    if os.path.isfile(YENILEME_DOSYASI):
+        t = open(YENILEME_DOSYASI, encoding="utf-8").read().strip()
+        if t: return t, YENILEME_DOSYASI
+    return None, None
+
+
+def yenileme_kaydet(t):
+    os.makedirs(os.path.dirname(YENILEME_DOSYASI), exist_ok=True)
+    fd = os.open(YENILEME_DOSYASI, os.O_WRONLY | os.O_CREAT | os.O_TRUNC, 0o600)
+    with os.fdopen(fd, "w", encoding="utf-8") as f:
+        f.write(t)
+    os.chmod(YENILEME_DOSYASI, 0o600)
+
+
+def yenile(cid, sec, yt):
+    s, _, b = istek(TOKEN_URL, _form({"client_id": cid, "client_secret": sec, "refresh_token": yt,
+                                       "grant_type": "refresh_token"}))
+    j = _json(b)
+    if s != 200 or "access_token" not in j:
+        raise ApiHatasi(f"yenileme {s}: {j.get('error')} {j.get('error_description', '')} "
+                        "(token iptal edilmiş/süresi dolmuş olabilir → yukle.py --yetki-al)")
+    return j["access_token"], j.get("scope", "")
+
+
+def yetki_al(akis="cihaz", cikti=print):
+    """(erisim_tokeni, kapsam, kalici). kalici=True ise erişim tokenı iptal edilmemeli."""
+    cid, sec = kimlik_bilgisi()
+    yt, kaynak = yenileme_tokeni()
+    if yt:
+        try:
+            tok, kapsam = yenile(cid, sec, yt)
+            cikti(f"Kalıcı yetki kullanıldı ({kaynak}); kod gerekmedi.")
+            return tok, kapsam, True
+        except ApiHatasi as e:
+            cikti(f"Kalıcı yetki geçersiz: {e} → cihaz akışına geçiliyor.")
+    yeni = {}
+    if akis == "cihaz":
+        tok, kapsam = cihaz_akisi(cid, sec, yenileme=lambda t: yeni.update(t=t), cikti=cikti)
+    else:
+        tok, kapsam = yerel_akis(cid, sec, cikti=cikti)
+    if yeni.get("t"):
+        yenileme_kaydet(yeni["t"])
+        cikti(f"Kalıcı yetki kaydedildi: {YENILEME_DOSYASI} (izin 600, repo dışı). Sonraki işlemlerde kod sorulmaz.")
+        return tok, kapsam, True
+    return tok, kapsam, False
+
+
 def kimlik_bilgisi():
     cid, sec = os.environ.get("YOUTUBE_OAUTH_CLIENT_ID"), os.environ.get("YOUTUBE_OAUTH_CLIENT_SECRET")
     if not cid or not sec:
@@ -73,7 +132,7 @@ def kimlik_bilgisi():
 
 
 # ---------- yetkilendirme ----------
-def cihaz_akisi(cid, sec, kapsam=KAPSAM_CIHAZ, cikti=print):
+def cihaz_akisi(cid, sec, kapsam=KAPSAM_CIHAZ, cikti=print, yenileme=None):
     s, _, b = istek(CIHAZ_URL, _form({"client_id": cid, "scope": kapsam}))
     j = _json(b)
     if s != 200:
@@ -90,6 +149,7 @@ def cihaz_akisi(cid, sec, kapsam=KAPSAM_CIHAZ, cikti=print):
                                            "grant_type": "urn:ietf:params:oauth:grant-type:device_code"}))
         t = _json(b)
         if s == 200 and "access_token" in t:
+            if yenileme and t.get("refresh_token"): yenileme(t["refresh_token"])
             return t["access_token"], t.get("scope", kapsam)
         hata = t.get("error")
         if hata == "authorization_pending": continue

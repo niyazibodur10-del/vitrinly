@@ -230,5 +230,43 @@ class CihazAkisi(unittest.TestCase):
                 if v is not None: os.environ[k] = v
 
 
+class KaliciYetki(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.mkdtemp()
+        self.eski = (api.YENILEME_DOSYASI, api.istek, api.time.sleep, os.environ.pop("YOUTUBE_OAUTH_REFRESH_TOKEN", None))
+        api.YENILEME_DOSYASI = os.path.join(self.tmp, "yt")
+        os.environ.setdefault("YOUTUBE_OAUTH_CLIENT_ID", "cid"); os.environ.setdefault("YOUTUBE_OAUTH_CLIENT_SECRET", "sec")
+        api.time.sleep = lambda *_: None
+
+    def tearDown(self):
+        api.YENILEME_DOSYASI, api.istek, api.time.sleep, env = self.eski
+        if env is not None: os.environ["YOUTUBE_OAUTH_REFRESH_TOKEN"] = env
+
+    def test_ilk_sefer_kaydeder_sonra_kod_sormaz(self):
+        cevaplar = [
+            (200, {}, b'{"device_code":"D","user_code":"X","verification_url":"u","expires_in":1800,"interval":5}'),
+            (200, {}, b'{"access_token":"A1","refresh_token":"R1","scope":"s"}'),
+        ]
+        api.istek = lambda *a, **k: cevaplar.pop(0)
+        self.assertEqual(api.yetki_al(cikti=lambda *a: None), ("A1", "s", True))
+        self.assertEqual(open(api.YENILEME_DOSYASI).read(), "R1")
+        self.assertEqual(os.stat(api.YENILEME_DOSYASI).st_mode & 0o777, 0o600)
+        govdeler = []
+        api.istek = lambda url, veri=None, *a, **k: (govdeler.append(veri), (200, {}, b'{"access_token":"A2","scope":"s"}'))[1]
+        self.assertEqual(api.yetki_al(cikti=lambda *a: None), ("A2", "s", True))
+        self.assertIn(b"grant_type=refresh_token", govdeler[0])  # cihaz kodu istenmedi
+
+    def test_gecersiz_yenilemede_cihaz_akisina_doner(self):
+        api.yenileme_kaydet("ESKI")
+        cevaplar = [
+            (400, {}, b'{"error":"invalid_grant"}'),
+            (200, {}, b'{"device_code":"D","user_code":"X","verification_url":"u","expires_in":1800,"interval":5}'),
+            (200, {}, b'{"access_token":"A3","refresh_token":"R3","scope":"s"}'),
+        ]
+        api.istek = lambda *a, **k: cevaplar.pop(0)
+        self.assertEqual(api.yetki_al(cikti=lambda *a: None)[0], "A3")
+        self.assertEqual(open(api.YENILEME_DOSYASI).read(), "R3")
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
