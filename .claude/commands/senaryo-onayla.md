@@ -3,6 +3,6 @@ description: Yedek yol (Niyazi kendi sesiyle okuyacaksa) — hakemin seçtiği s
 argument-hint: [üretim klasörü] [değişiklik notu]
 ---
 Klasör ve not: $ARGUMENTS (klasör boşsa en son `uretim/` klasörü).
-senaryo-yazari tam metni yazsın → finans-dogrulayici doğrulasın → ses-yonetmeni `okuma-metni.md` hazırlasın.
+senaryo-yazari tam metni yazsın → finans-dogrulayici ‖ monetizasyon-uyum-uzmani denetlesin → ses-yonetmeni `okuma-metni.md` hazırlasın.
 Sonunda Niyazi'ye okuma metnini parçalar halinde ve kayıt talimatını göster. Commit + push.
 Not: Senaryo seçimi Niyazi onayı gerektirmez (2026-10-26). Varsayılan akış `/bugunun-videosu`'dur; bu komut yalnız anlatımı Niyazi okuyacaksa F3'ün yerine kullanılır.
