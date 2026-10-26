@@ -10,7 +10,7 @@ Kullanım:
 - `--ses` iki sesin karışımı için `am_michael+am_puck` biçimini kabul eder (vektör ortalaması).
 - Çıkış: 24 kHz mono float WAV (ham) + aynı adla `.zaman.json` (cümle başlangıç/bitiş).
   Yayın seviyesine getirmek için: tools/ses/tts-son.sh <ham.wav> <cikis.wav>  (48 kHz, -14 LUFS, TP -1)
-Kurulum: pip install kokoro soundfile  (espeak-ng gerekmez; misaki + en_core_web_sm yeterli)
+Kurulum: pip install kokoro soundfile  (misaki G2P; sözlük dışı kelimeler için espeakng_loader paketiyle gelen espeak-ng)
 """
 import argparse, json, re
 import numpy as np, soundfile as sf
