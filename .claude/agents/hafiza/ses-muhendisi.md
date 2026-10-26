@@ -16,3 +16,4 @@
 - 2026-10-26: Cümle kırpmada 5 ms ön pay "No boring charts" başındaki /n/'yi yedi (Whisper "news/videos" duydu, 3 varyantta tekrar) → ön pay 30 ms, son pay 50 ms. Tekrarlayan tek kelime hatası = kesme/işleme hatası şüphesi.
 - 2026-10-26: Kokoro çıktısının tepe/ortalama oranı ~23 dB → doğrusal loudnorm −14.9'da kalır; önce hafif kompresör + kazanç + sınırlayıcı, sonra loudnorm (`tools/ses/tts-son.sh`). AAC kodlaması tepeyi ~0.1–0.3 dB yükseltir → TP hedefi −1.5.
 - 2026-10-26: Müzik-konuşma farkı K-ağırlıklı anlık LUFS ile ölçülür (ebur128 M); 100 Hz üstü ağırlıksız RMS bas ağırlıklı müzikte farkı ~10 dB fazla gösterdi. Miks doğrulaması: son miks dosyasında Whisper WER (müzik maskelemiyor mu?).
+- 2026-10-26: Kör testte Niyazi yedek sesi (am_fenrir 0.9) seçti; varsayılan anlatıcı artık o. Uzun metinde tını/tempo tutarlılığını bu sesle ölç.
