@@ -75,7 +75,7 @@ def analyze(path):
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument('dir'); ap.add_argument('--ref', default='a-konusma-kapali.png')
-    ap.add_argument('--kontak', default=None); ap.add_argument('--json', default=None)
+    ap.add_argument('--kontak', default=None); ap.add_argument('--kart', default=None, help='referans karakter sayfası (kontakta ilk kare)'); ap.add_argument('--json', default=None)
     a = ap.parse_args()
     files = sorted(f for f in glob.glob(os.path.join(a.dir, '*.png')))
     res = {os.path.basename(f): analyze(f) for f in files}
@@ -106,9 +106,14 @@ def main():
             t = cv2.resize(im, (640,360)); cv2.rectangle(t,(0,0),(640,34),(0,0,0),-1)
             cv2.putText(t, n, (8,25), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255,255,255), 2)
             # kafa yakın plan
-            hc = cv2.resize(x['path'] and cv2.imread(x['path'])[y0:y1, x0:x1], (300,360))
+            hc = cv2.resize(cv2.imread(x['path'])[y0:y1, x0:x1], (300,360))
             thumbs.append(np.hstack([t, hc]))
-        extra = [p for p in sys.argv if p.startswith('--extra=')]
+        if a.kart:
+            k = cv2.imread(a.kart); kh, kw = k.shape[:2]; s_ = min(940/kw, 360/kh)
+            k = cv2.resize(k, (int(kw*s_), int(kh*s_))); tile = np.full((360,940,3), 40, np.uint8)
+            oy, ox = (360-k.shape[0])//2, (940-k.shape[1])//2; tile[oy:oy+k.shape[0], ox:ox+k.shape[1]] = k
+            cv2.putText(tile, 'REFERANS', (8,25), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0,255,255), 2)
+            thumbs.insert(0, tile)
         cols = 2; pad = np.zeros_like(thumbs[0])
         while len(thumbs) % cols: thumbs.append(pad)
         grid = np.vstack([np.hstack(thumbs[i:i+cols]) for i in range(0, len(thumbs), cols)])
