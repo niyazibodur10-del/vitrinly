@@ -23,14 +23,14 @@ if [ ! -x "$ARAC/rhubarb/build/rhubarb/rhubarb" ]; then
   sed -i 's/^cmake_policy(SET CMP0167 OLD).*/if(POLICY CMP0167)\n  cmake_policy(SET CMP0167 OLD)\nendif()/' "$ARAC/rhubarb/rhubarb/CMakeLists.txt"
   mkdir -p "$ARAC/rhubarb/build" && (cd "$ARAC/rhubarb/build" && cmake .. -DCMAKE_BUILD_TYPE=Release >/dev/null && make -j"$(nproc)" rhubarb >/dev/null)
 fi
-if [ ! -x "$ARAC/venv/bin/python" ] || ! "$ARAC/venv/bin/python" -c "import faster_whisper, spandrel, cv2, soundfile" 2>/dev/null; then
+if [ ! -x "$ARAC/venv/bin/python" ] || ! "$ARAC/venv/bin/python" -c "import importlib.util as u,sys; sys.exit(not all(u.find_spec(m) for m in ['faster_whisper','spandrel','cv2','soundfile','torch']))" 2>/dev/null; then
   adim "Python venv (Whisper, torch CPU, spandrel, opencv)"
   python3 -m venv "$ARAC/venv"
   "$ARAC/venv/bin/pip" -q install faster-whisper soundfile opencv-python-headless
   "$ARAC/venv/bin/pip" -q install torch torchvision --index-url https://download.pytorch.org/whl/cpu
   "$ARAC/venv/bin/pip" -q install spandrel
 fi
-if [ ! -x "$ARAC/kokoro-venv/bin/python" ] || ! "$ARAC/kokoro-venv/bin/python" -c "import kokoro, soundfile, en_core_web_sm" 2>/dev/null; then
+if [ ! -x "$ARAC/kokoro-venv/bin/python" ] || ! "$ARAC/kokoro-venv/bin/python" -c "import importlib.util as u,sys; sys.exit(not all(u.find_spec(m) for m in ['kokoro','misaki','soundfile','en_core_web_sm','torch']))" 2>/dev/null; then
   adim "Kokoro TTS ortamı (python3.12)"
   command -v python3.12 >/dev/null && python3.12 -c "import ensurepip" 2>/dev/null || { apt-get update -q >/dev/null; apt-get install -y -q python3.12 python3.12-venv; }
   python3.12 -m venv "$ARAC/kokoro-venv"
