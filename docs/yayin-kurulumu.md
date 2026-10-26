@@ -2,9 +2,19 @@
 
 Amaç: Niyazi onay verdikten sonra videoyu sistemin yüklemesi (`tools/yayin/yukle.py`). Kimlik bilgisi asla repoya
 veya sohbete yazılmaz; yalnız bulut ortamının ortam değişkeni ayarına girilir. Her yüklemede Niyazi telefonda
-google.com/device adresine 8 haneli kodu girer (≈30 sn); erişim tokenı diske yazılmaz, iş bitince iptal edilir.
+google.com/device adresine 8 haneli kodu girer (≈30 sn); ilk seferden sonra kalıcı yetki kullanılır (bkz. Güncel durum).
 
 Kontrol tarihi: 2026-10-26. Bilgiler resmi Google sayfalarından okundu (kaynaklar en altta).
+
+## Güncel durum (2026-10-26)
+- Adım 1–8 tamam. Test yüklemesi (private) görünürlüğü değiştirilebildi → **kilit yok, Adım 9 gerekmez.** Test videosu silindi.
+- **Kalıcı yetki** (Niyazi kararı): her yüklemede kod girilmez. `yukle.py --yetki-al` bir kez çalışır, yenileme tokenı
+  `~/.finansal-arac/youtube-yenileme-tokeni` (600, repo dışı) dosyasına yazılır; oturumlar arası kalıcılık için değer
+  bulut ortamına `YOUTUBE_OAUTH_REFRESH_TOKEN` olarak eklenir (yeni oturumda okunur). İptal: `--yetki-iptal`.
+- **7 gün sınırı (doğrulandı, developers.google.com/identity/protocols/oauth2):** "Testing" yayın durumundaki harici
+  uygulamaya verilen yenileme tokenı 7 günde dolar. Kalıcı olması için https://console.cloud.google.com/auth/audience →
+  **Publish app**, sonra `--yetki-al` tekrar. Yayındaki uygulamada token 6 ay kullanılmazsa veya iptal edilirse düşer.
+- Silme: `yukle.py --sil VIDEO_ID --onayli` (yalnız `yayin-sonucu.txt` kaydı olan kendi yüklemelerimiz).
 
 ## Önce bilmeniz gereken 3 şey (doğrulanmış)
 
