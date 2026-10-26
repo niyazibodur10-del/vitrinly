@@ -76,10 +76,10 @@ def main():
            "-map", "[mstem]", "-c:a", "pcm_f32le", f"{tmp}/m.wav")
     if r.returncode: sys.exit(r.stderr)
     # son stereo dosyada 2 geçişli loudnorm
-    j = sh("ffmpeg", "-hide_banner", "-nostats", "-i", ham, "-af", "loudnorm=I=-14:TP=-1:LRA=11:print_format=json",
+    j = sh("ffmpeg", "-hide_banner", "-nostats", "-i", ham, "-af", "loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json",
            "-f", "null", "-").stderr
     m = json.loads(j[j.rfind("{"):j.rfind("}") + 1])
-    ln = (f"loudnorm=I=-14:TP=-1:LRA=11:measured_I={m['input_i']}:measured_TP={m['input_tp']}:"
+    ln = (f"loudnorm=I=-14:TP=-1.5:LRA=11:measured_I={m['input_i']}:measured_TP={m['input_tp']}:"
           f"measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true")
     r = sh("ffmpeg", "-v", "error", "-y", "-i", ham, "-af", ln + ",aresample=48000", "-c:a", "aac", "-b:a", "192k",
            a.cikis)

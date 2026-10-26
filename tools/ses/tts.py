@@ -60,10 +60,11 @@ def main():
         ses_parca = [x.numpy() if hasattr(x, "numpy") else np.asarray(x)
                      for _, _, x in pipe(c, voice=ses, speed=a.hiz, split_pattern=None)]
         y = np.concatenate(ses_parca).astype(np.float32)
-        # baş/son sessizliği kırp (-50 dB), 5 ms yumuşak geçiş
+        # baş/son sessizliği kırp (-50 dB); başta 30 ms, sonda 50 ms pay bırak
+        # (5 ms pay "No ..." gibi nazal/yumuşak başlangıçları yiyordu: Whisper "news"/"videos" duydu)
         nz = np.where(np.abs(y) > 10 ** (-50 / 20))[0]
         if len(nz):
-            y = y[max(nz[0] - 120, 0): nz[-1] + 240]
+            y = y[max(nz[0] - 720, 0): nz[-1] + 1200]
         f = min(120, len(y) // 4)
         y[:f] *= np.linspace(0, 1, f); y[-f:] *= np.linspace(1, 0, f)
         zaman.append({"metin": c, "bas": round(t, 3), "son": round(t + len(y) / SR, 3)})
