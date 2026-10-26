@@ -32,7 +32,9 @@ Her ajan işini **test ederek** teslim eder (bkz. `docs/kalite-kapilari.md`): te
 ## Teknik kararlar
 - Video motoru: **Remotion** (React ile programatik video). Resmi skill: `.claude/skills/remotion-best-practices`.
 - Dudak senkronu: **Rhubarb Lip Sync** (sesten ağız şekli A–H, X zaman çizelgesi). Türkçe için `--recognizer phonetic`.
-- Karakter: Niyazi'nin görseli katmanlara ayrılır (kafa, gövde, kollar, eller, bacaklar, 9 ağız şekli, göz kırpma) ve Remotion'da kemik/pivot ile hareket ettirilir. Kalite referansı gelince AI image-to-video (ör. Hedra Omnia, Kling Avatar) ile kör test yapılır; seçim teste göre.
+- Görsel stil (bkz. `docs/referans-analizi.md`): sahne başına tutarlı, detaylı illüstrasyon (kalın kontur, cel-shading, soğuk arka plan + sıcak karakter) + sinematik kamera (zoom/pan/punch-in) + hızlı kesme + anahtar kelimesi renkli kelime kelime altyazı + büyük sayı grafikleri.
+- Karakter hibrit: anlatıcı sahnelerinde katmanlı rig (kafa, gövde, kol, el, bacak, 9 ağız şekli, göz kırpma) + Rhubarb dudak senkronu; önemli hareket anlarında AI image-to-video (Hedra Omnia, Kling Avatar vb., kör testle seçilir); diğer sahneler illüstrasyon + kamera.
+- Format: ana video 16:9 uzun; aynı sahnelerden 9:16 Shorts kesitleri.
 - Ses temizliği: ffmpeg (highpass, de-ess, loudnorm −14 LUFS) + DeepFilterNet gürültü giderme. Altyazı: Whisper (kelime zamanlı) → SRT + videoya gömülü.
 - Kurgu kodda: `video/` Remotion projesi (henüz kurulmadı).
 
