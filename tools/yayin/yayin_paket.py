@@ -157,7 +157,7 @@ def tam_aciklama(p):
     a = p["metadata"]["aciklama"]
     bl = p["metadata"].get("bolumler") or []
     if not bl:
-        return a.replace("{BOLUMLER}", "").rstrip()
+        return re.sub(r"\n{3,}", "\n\n", a.replace("{BOLUMLER}", "")).strip()
     t = "Chapters:\n" + bolum_metni(bl)
     return a.replace("{BOLUMLER}", t) if "{BOLUMLER}" in a else a.rstrip() + "\n\n" + t
 
@@ -168,7 +168,8 @@ _SRT_ZAMAN = re.compile(r"(\d{2}):(\d{2}):(\d{2})[,.](\d{3})\s*-->\s*(\d{2}):(\d
 def srt_kontrol(yol):
     """(blok sayısı, son bitiş sn, hata listesi)."""
     hatalar, onceki, son = [], -1.0, 0.0
-    t = open(yol, encoding="utf-8-sig").read().replace("\r\n", "\n").strip()
+    with open(yol, encoding="utf-8-sig") as f:
+        t = f.read().replace("\r\n", "\n").strip()
     bloklar = [b for b in re.split(r"\n\s*\n", t) if b.strip()]
     for i, b in enumerate(bloklar, 1):
         m = _SRT_ZAMAN.search(b)
@@ -393,6 +394,10 @@ def manuel_paket(p, cikis):
     if p["tur"] == "shorts": sat.append("| Shorts | dikey, ≤3 dk, başlık/açıklamada #Shorts var |")
     sat += ["", "## 7. Son kontrol", "", "- [ ] Hakem son kalite kontrolü geçti, Niyazi onayı verildi",
             "- [ ] Kontroller sekmesinde telif / uygunluk uyarısı yok", "- [ ] Planlanan saat doğru (Türkiye saati)", ""]
+    n = 0
+    for i, s in enumerate(sat):  # bölüm başlıklarını sırayla numarala (isteğe bağlı bölümler atlanınca boşluk kalmasın)
+        if s.startswith("## "):
+            n += 1; sat[i] = f"## {n}. " + s.split(". ", 1)[1]
     with open(os.path.join(cikis, "YAYIN.md"), "w", encoding="utf-8") as f:
         f.write("\n".join(sat))
     return os.path.join(cikis, "YAYIN.md")
