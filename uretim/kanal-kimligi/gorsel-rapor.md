@@ -70,3 +70,6 @@ Kazanan gerekçesi: küçük boyutta şekil tanıma büyük ölçüde parlaklık
 - Kaynak karakter görseli 1680x944'ten büyütülmüş. Banner'da ölçek yaklaşık 1.06 olduğundan sorun yok. Profilde Real-ESRGAN kullanıldı; daha keskin profil için Canva K3 isteğe bağlı.
 - Kırpma bölgeleri (masaüstü, tablet) [AÖ]. YouTube Studio'nun yükleme önizlemesi kesin sonucu gösterir. Yükleme öncesi orada göz kontrolü önerilir (Niyazi onayıyla).
 - Profil fotoğrafı API ile değiştirilemiyor (`mevcut-durum.md`); Studio'dan Niyazi yükler. Banner `channelBanners.insert` ile yüklenebilir, ama yalnız onayla.
+
+## Güncelleme (2026-10-26, koordinatör)
+Kanal adı Toonomy oldu; yayındaki banner `--ad "TOONOMY" --ritim "NEW VIDEOS EVERY WEEK"` ile yeniden üretildi ve yüklendi. "TUE · FRI · SUN" artık kullanılmıyor (takvim v2: Çar/Paz; gün sözü tempo kanıtlanınca).

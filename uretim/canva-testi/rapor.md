@@ -10,7 +10,7 @@ Maliyet: Canva Pro/Business aylık yapay zekâ hakkından 2 üretim; ek ücret y
 
 Açık konular:
 - Bağlayıcı yalnız 199x112 önizleme döndürüyor; tam çözünürlüklü dosyayı otomatik çekmenin yolu henüz yok (seçenekler: Canva tasarımına yerleştirip export-design, veya Niyazi'nin Canva'dan indirmesi). → uretim-muhendisi'ne iş.
-- Aylık hak sayısı hesapta görünüyor (AI usage tracker); haftada 3 video × ~150 sahne için yeterli olup olmadığı ölçülmeli.
+- Aylık hak sayısı hesapta görünüyor (AI usage tracker); haftada 2 uzun video (takvim v2) × ~150 sahne için yeterli olup olmadığı ölçülmeli.
 - Tutarlılık 2 görselde iyi; 10+ görselde ölçülmeli (gorsel-varlik-sanatcisi stil testi).
 
 ## Güncelleme (2026-10-26, gorsel-varlik-sanatcisi)

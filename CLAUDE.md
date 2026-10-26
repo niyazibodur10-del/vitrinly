@@ -46,6 +46,22 @@ Ekip (18): showrunner, trend-avcisi, kanal-analisti, senaryo-yazari, viralite-an
 
 Her ajan işini **test ederek** teslim eder (bkz. `docs/kalite-kapilari.md`): test çıktısı olmadan teslim yok.
 
+## Kanalın canlı durumu (2026-10-26; değişince burası güncellenir)
+- **Kanal:** Toonomy · @toonomy (eski Financial Rise / @finansialrise). Maskot anlatıcı **Leo** (kurgusal çizgi karakter, danışman değil).
+- **Ayarlar (API ile uygulandı):** açıklama + anahtar kelimeler `uretim/kanal-kimligi/kanal-paketi.json`; varsayılan dil `en`; **ülke TR** (YPP uygunluğu ikamete bağlı — değiştirilmez); videolarda coğrafi kısıt yok (küresel yayın); banner "TOONOMY / NEW VIDEOS EVERY WEEK" yüklü. Profil fotoğrafı `uretim/kanal-kimligi/profil-800.png` (Niyazi Studio'dan yükler; API desteklemiyor). Kayıt: `uretim/kanal-kimligi/mevcut-durum.md`.
+- **Eski 4 video (2025-07) gizli** (Niyazi onayı); silinmedi.
+- **Oynatma listeleri:** 5 liste planlı, her biri ilgili ilk video yüklenince `tools/yayin/kanal.py` ile açılır (boş liste yok).
+- **Takvim v2:** haftada 2 uzun (Çar 12:00 ET = B güncel haber; Paz 12:00 ET = A tarih / C gelecek dönüşümlü) + 4 Shorts (`docs/yayin-takvimi.md`). Gün sözü kanal metnine ancak tempo 4 hafta art arda tutulunca yazılır.
+- **YPP hedefi:** 1 Şubat 2027'den yeni başvuranlar için 1.000 abone + 8.000 saat/12 ay (veya 20 M Shorts/90 gün) — doğrulandı (support.google.com/youtube/answer/12843009). Başa baş: video başına ~1.165 görüntüleme (4 dk izleme) [tahmin]. İlk 8 videodan sonra 28 günlük ortalama buna gitmiyorsa koordinatör Niyazi'ye tempo/format kararı getirir. Plan ve riskler: `docs/monetizasyon.md`.
+- **Yetkiler:** YouTube kalıcı yetki (yükle/sil/kanal ayarı kodsuz; `YOUTUBE_OAUTH_REFRESH_TOKEN` ortam değişkeni veya `~/.finansal-arac/youtube-yenileme-tokeni`); OAuth uygulaması "Testing" ise 7 günde düşer → Niyazi "Publish app". Analitik (CTR/AVD) için `yt-analytics.readonly` kapsamı henüz yok (bir kez yeniden yetki gerekir). Canva bağlayıcısı bağlı ve test edildi.
+- **Niyazi'nin yetki çerçevesi:** kanal ayarlarını koordinatör yapar (Niyazi 2026-10-26: "ayarların tamamını sen yap"); yayındaki içeriğin görünürlüğü/silinmesi, bitmiş videonun yayını, para harcama ve dış mesaj yine Niyazi onaylı.
+
+## Sürekli öğrenme (Niyazi kuralı: her ajan alanında dünyanın en iyisi olur ve sürekli eğitilir)
+- Her teslimden sonra ajan hafızasına (`.claude/agents/hafiza/<ad>.md`) ders yazar; birden çok ajanı ilgilendiren ders `docs/ogrenme/ortak-dersler.md`'ye.
+- **F12 yayın sonrası** (48 sa/7 g/28 g) `kanal-analisti` raporundaki "sonraki video için 3 ders" ilgili ajanların hafızasına işlenir; `viralite-analisti` modeli kalibre eder.
+- `hakem` her teslimi `docs/ajan-karnesi.md`'ye puanlar; **her 5 videoda** `ik-direktoru` kadro + skill denetimi yapar (eğit / değiştir / işe al, `docs/kadro-degisiklikleri.md`), `monetizasyon-uyum-uzmani` kanal düzeyi özgünlük denetimi yapar, `uretim-muhendisi` hattı (`tools/kurulum.sh`, testler) yeniden doğrular.
+- Yeni oturumda koordinatör önce bu dosyayı, `docs/kalite-kapilari.md`'yi ve ilgili ajan hafızasını okur; yeni konteynerde `tools/kurulum.sh` (≈4–6 dk ilk, sonra ≈2 sn).
+
 ## Teknik kararlar
 - Video motoru: **Remotion** (React ile programatik video). Resmi skill: `.claude/skills/remotion-best-practices`.
 - Dudak senkronu: **Rhubarb Lip Sync** (sesten ağız şekli A–H, X zaman çizelgesi). İngilizce için varsayılan PocketSphinx tanıyıcı (en isabetli mod). GitHub indirmesi ağda kapalı → kaynak koddan derlenir.
