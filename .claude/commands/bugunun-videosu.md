@@ -88,7 +88,7 @@ Teslim `08-kurgu/final-16x9.mp4`, `08-kurgu/altyazi.srt`, `08-kurgu/shorts-1.mp4
 | Ajan | İş | Teslim | Kapı |
 |---|---|---|---|
 | `thumbnail-tasarimcisi` | Render karelerinden **3 thumbnail varyantı** (A/B/C, 1280x720) | `09-paket/thumbnail-A.png`, `09-paket/thumbnail-B.png`, `09-paket/thumbnail-C.png`, `09-paket/thumb-rapor.md` | Thumbnail: 168x94'te okunuyor, metin ≤4 kelime |
-| `youtube-paketleyici` | Son başlık + 4 yedek, açıklama (kaynaklar, yasal not, lisans atıfları, AI ses notu), SEO, etiketler, hashtag'ler, **gerçek zamanlardan bölümler**, pinli yorum, Shorts paketleri, `yayin-paketi.json` | `09-paket/paket.md`, `09-paket/yayin-paketi.json` | Paket: başlık ≤60 karakter, bölümler gerçek zamanlara denk; JSON şema kapısı |
+| `youtube-paketleyici` | Son başlık + 4 yedek, açıklama (kaynaklar, yasal not, lisans atıfları, AI ses notu), SEO, etiketler, hashtag'ler, **gerçek zamanlardan bölümler**, pinli yorum, Shorts paketleri. Yayın paketleri yükleme aracının şemasında yazılır (bkz. bölüm 3) | `09-paket/paket.md`, `09-paket/yayin-paketi.json`, `09-paket/yayin-paketi-shorts-1.json`, `09-paket/yayin-paketi-shorts-2.json` | Paket: başlık ≤60 karakter, bölümler gerçek zamanlara denk. Yayın paketi kapısı: `--dry-run` 0 hata |
 | `viralite-analisti` | Bitmiş paketin (başlık + thumbnail + ilk 15 sn) **viralite puanı**, F2 tahminiyle fark | `09-paket/viralite-son.md` | Viralite: betik 2 kez çalışıp aynı sonuç |
 
 ### F9 — Hakem son kontrol
@@ -105,9 +105,10 @@ Koordinatör `teslim/` klasörünü kurar (bkz. bölüm 3), `YAYIN.md`'yi yazar,
 Niyazi'den yanıt gelmeden yayın adımına geçilmez.
 
 ### F11 — Yayın (yalnız Niyazi'nin açık onayıyla)
-- Niyazi "yayınla / yükle / onay" derse koordinatör, **uretim-muhendisi'nin `tools/yayin/` aracıyla** `teslim/yayin-paketi.json`'u yükler. Aracın komutu ve parametreleri aracın kendi README'sinde tanımlıdır. Bu akış onu yalnız çağırır, kendi yükleme kodu yazmaz.
-- Varsayılan: ana video **private + publishAt** (takvim slotu). Shorts takvimdeki kendi slotlarına zamanlanır. Thumbnail A yüklenir; B ve C, YouTube Studio "Test & Compare" için `YAYIN.md`'de Niyazi'ye bırakılır (API'de karşılığı doğrulanmadı).
-- Araç yoksa veya API projesi denetimden geçmediyse (yüklemeler private'a kilitli) bu durum Niyazi'ye bildirilir ve elle yükleme adımları `YAYIN.md`'de verilir.
+- Niyazi "yayınla / yükle / onay" derse koordinatör `teslim/` içindeki üç paketin (`yayin-paketi.json`, `yayin-paketi-shorts-1.json`, `yayin-paketi-shorts-2.json`) `onay.niyazi_onayi` alanını `true`, `onay.tarih` alanını bugünün tarihi yapar. Sonra **uretim-muhendisi'nin aracını** her paket için çağırır: `python3 tools/yayin/yukle.py uretim/<klasör>/teslim/<paket>.json`. Kurulum ve cihaz kodu adımları `docs/yayin-kurulumu.md`'de. Bu akış aracı yalnız çağırır, kendi yükleme kodunu yazmaz. Aracın arayüzü değişirse kaynak araçtır (`tools/yayin/`), bu dosya ona uydurulur.
+- Varsayılan: ana video **private + yayin_zamani** (takvim slotu). Shorts takvimdeki kendi slotlarına zamanlanır. Thumbnail A yüklenir; B ve C, YouTube Studio "Test & Compare" için `YAYIN.md`'de Niyazi'ye bırakılır (API'de karşılığı doğrulanmadı).
+- Cihaz akışı altyazı (SRT) yükleyemez (`docs/yayin-kurulumu.md`). SRT, `YAYIN.md`'deki adımla Studio'dan eklenir.
+- OAuth tanımlı değilse, denetim kilidi çıkarsa ya da araç hata verirse `python3 tools/yayin/yukle.py <paket> --manuel-paket` ile Studio klasörü üretilir ve elle yükleme adımları Niyazi'ye verilir.
 - Yükleme çıktısı (video ID'leri, planlanan saatler) `teslim/yayin-kaydi.json`'a yazılır. `docs/yayin-takvimi.md` stok tablosu güncellenir. Kararı `c-level-skills:decision-logger` biçimiyle `durum.md` sonuna yaz.
 - Niyazi "şunu değiştir" derse değişiklik ilgili ajana gider (bölüm 1'deki döngü), F9 ve F10 tekrarlanır.
 - Yayından 7 ve 28 gün sonra `kanal-analisti` performans verisini çıkarır. Bu veri `viralite-analisti` kalibrasyonuna girer.
@@ -119,37 +120,19 @@ Niyazi'den yanıt gelmeden yayın adımına geçilmez.
 | `shorts-1.mp4`, `shorts-2.mp4` | kurgu-editoru (F7) |
 | `thumbnail-A.png`, `thumbnail-B.png`, `thumbnail-C.png` | thumbnail-tasarimcisi (F8) |
 | `altyazi.srt` | kurgu-editoru (F7) |
-| `yayin-paketi.json` | youtube-paketleyici (F8) |
+| `yayin-paketi.json` (uzun video), `yayin-paketi-shorts-1.json`, `yayin-paketi-shorts-2.json` | youtube-paketleyici (F8) |
 | `hakem-raporu.md` | hakem (F9) |
 | `YAYIN.md` | koordinatör (F10): tek sayfa özet |
 
-`yayin-paketi.json` asgari şeması (yükleme aracıyla sözleşme; değişiklik uretim-muhendisi ile birlikte yapılır):
-```json
-{
-  "surum": 1,
-  "slug": "…",
-  "uzun": {
-    "dosya": "final-16x9.mp4", "baslik": "…", "aciklama": "…", "etiketler": ["…"],
-    "kategori_id": "27", "dil": "en", "altyazi": "altyazi.srt",
-    "thumbnail": "thumbnail-A.png", "thumbnail_yedek": ["thumbnail-B.png", "thumbnail-C.png"],
-    "gizlilik": "private", "yayin_zamani_utc": "YYYY-MM-DDTHH:MM:SSZ",
-    "cocuklara_yonelik": false, "sentetik_icerik_beyani": false, "bolumler": [["0:00", "…"]]
-  },
-  "shorts": [
-    {"dosya": "shorts-1.mp4", "baslik": "…", "aciklama": "…", "etiketler": ["…"], "yayin_zamani_utc": "…", "ilgili_video": "uzun"},
-    {"dosya": "shorts-2.mp4", "baslik": "…", "aciklama": "…", "etiketler": ["…"], "yayin_zamani_utc": "…", "ilgili_video": "uzun"}
-  ]
-}
-```
-Kategori (27 = Education) ve sentetik içerik beyanı youtube-paketleyici'nin kararıdır. Bu değerler örnektir.
+**Yayın paketi şeması** yükleme aracının sözleşmesidir: `tools/yayin/yayin_paket.py` → `SEMA` (`"sema": "yayin-paketi/1"`). Her video için **ayrı paket** yazılır (`"tur": "uzun"` ya da `"shorts"`). Dosya yolları paketin klasörüne göredir. Alanlar: `dosyalar.video`, `dosyalar.thumbnail`, `dosyalar.altyazilar`, `metadata.baslik`, `metadata.aciklama`, `metadata.etiketler`, `metadata.bolumler`, `metadata.kategori_id`, `durum.gizlilik`, `durum.yayin_zamani` (saat dilimli ISO 8601), `durum.cocuklara_ozel`, `durum.sentetik_medya`, `onay.niyazi_onayi`, `onay.tarih`. `onay.niyazi_onayi` F10'a kadar **false** kalır; araç false iken yüklemeyi reddeder. Kategori ve sentetik medya beyanı youtube-paketleyici'nin kararıdır.
 
 ## 4. Ek kapılar (bu akışa özgü)
 | Aşama | Test | Geçme ölçütü |
 |---|---|---|
 | Shorts | ffprobe + ilk 2 sn kare + altyazı güvenli alanı | 1080x1920, ≤60 sn, ilk 2 sn'de kendi kancası, metin alt %20'ye ve sağ kenar düğmelerine binmiyor, −14 LUFS ±1 |
 | Ön doğrulama | 10 senaryo tablosu | her senaryoda YEŞİL/SARI/KIRMIZI + gerekçe |
-| Yayın paketi | JSON ayrıştırma + dosya varlığı | JSON geçerli, adı geçen her dosya `teslim/` içinde, yayın zamanı takvim slotuna denk, başlık ≤60 karakter |
-| Teslim paketi | dosya listesi | bölüm 3'teki 9 dosyanın hepsi var, hakem ONAY |
+| Yayın paketi | `python3 tools/yayin/yukle.py <paket> --dry-run` (3 paket) | 0 hata; adı geçen her dosya `teslim/` içinde; yayın zamanı takvim slotuna denk; başlık ≤60 karakter; `onay.niyazi_onayi` false |
+| Teslim paketi | dosya listesi | bölüm 3'teki 12 dosyanın hepsi var, hakem ONAY |
 
 ## 5. Ajan çağrı sırası (özet)
 ```
@@ -161,6 +144,6 @@ F4  (ses-yonetmeni → ses-muhendisi) ‖ gorsel-varlik-sanatcisi ‖ muzik-ses-
 F5  animasyon-yonetmeni (10–20 sn test → tam)  ‖  F6 muzik-ses-tasarimcisi (miks)
 F7  kurgu-editoru (16:9 + 2 Shorts)
 F8  thumbnail-tasarimcisi ‖ youtube-paketleyici ‖ viralite-analisti
-F9  hakem → F10 Niyazi'ye teslim → DUR → F11 yalnız onayla: tools/yayin/ (uretim-muhendisi aracı)
+F9  hakem → F10 Niyazi'ye teslim → DUR → F11 yalnız onayla: tools/yayin/yukle.py (uretim-muhendisi aracı)
 Her aşamada araç sorunu → uretim-muhendisi. 2 RED sonrası → koordinatör eskalasyonu; tekrarlayan sorun → ik-direktoru.
 ```

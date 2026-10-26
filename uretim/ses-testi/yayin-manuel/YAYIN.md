@@ -1,6 +1,6 @@
 # YAYIN — Germany 1923: When Your Savings Became Worth Less Than a Cup of Coffee
 
-Paket: `uretim/ses-testi/yayin-paketi.json` · üretildi 26.10.2026 17:44 · tür: **uzun**
+Paket: `uretim/ses-testi/yayin-paketi.json` · üretildi 26.10.2026 17:48 · tür: **uzun**
 
 YouTube Studio (bilgisayar tarayıcısı önerilir; altyazı ve thumbnail yükleme mobil uygulamada sınırlı):
 studio.youtube.com → **Oluştur → Video yükle**. Aşağıdaki kutuları sırayla kopyala-yapıştır.
@@ -33,7 +33,7 @@ This video is for educational purposes only and is not financial advice. Scenari
 hyperinflation, Weimar Germany, 1923, inflation explained, financial history, economics, Financial Rise
 ```
 
-## 6. Ayarlar (Studio'da işaretle)
+## 5. Ayarlar (Studio'da işaretle)
 
 | Ayar | Değer |
 |---|---|
@@ -44,7 +44,7 @@ hyperinflation, Weimar Germany, 1923, inflation explained, financial history, ec
 | Lisans | Standart YouTube Lisansı · Yerleştirmeye izin: Evet |
 | Görünürlük | **private** → Planla: 02.11.2026 18:00 (Türkiye saati, UTC+3) — UTC 2026-11-02 15:00 |
 
-## 7. Son kontrol
+## 6. Son kontrol
 
 - [ ] Hakem son kalite kontrolü geçti, Niyazi onayı verildi
 - [ ] Kontroller sekmesinde telif / uygunluk uyarısı yok

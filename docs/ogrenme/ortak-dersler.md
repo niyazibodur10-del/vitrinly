@@ -7,3 +7,4 @@
 - 2026-10-26: Hugging Face `trust_remote_code` gerektiren modeller güvenlik nedeniyle çalıştırılamıyor; yerel ağırlık + bilinen kütüphane kullan.
 - 2026-10-26: raw.githubusercontent.com curl ile erişilebilir (github.com sayfaları WebFetch'te içerik vermeyebilir); freemusicarchive.org erişilebilir.
 - 2026-10-26: Lisans kuralı (tüm medya): ticari kullanıma izin vermeyen (NC/ND, "kişisel kullanım") müzik, efekt, ses modeli ve görsel kullanılmaz; her dış varlığın kaynağı + lisansı üretim klasöründe kayıtlı olmalı.
+- 2026-10-26: YouTube yayını: `tools/yayin/yukle.py` (paket şeması başlık yorumunda). Cihaz akışıyla altyazı yüklenemez (kapsam yok) → altyazı Studio'dan; tam animasyon "değiştirilmiş/yapay içerik" beyanı gerektirmeyebilir (YouTube yardım 14328491: gerçekçi olmayan animasyon muaf) — `durum.sentetik_medya` video başına hakem/finans-dogrulayici kararı. Oauth/googleapis/accounts.google.com konteynerden erişilebilir.
