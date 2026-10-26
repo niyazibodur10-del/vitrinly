@@ -1,5 +1,7 @@
 # 2D karakter — düzenleme (edit) prompt'ları v2
 
+> Not (2026-10-26, Niyazi kararı): varsayılan üretim yolu **Canva bağlayıcısı** (`generate-image`, referans = karakter sayfası; ek ücret yok; çağrıları koordinatör yapar, prompt ve değerlendirme gorsel-varlik-sanatcisi). Aşağıdaki prompt'lar Canva için de girdi olarak kullanılır; sohbet uygulamasıyla elle üretim yalnız yedek yoldur. Ücretli görsel API kullanılmıyor.
+
 Neden: sohbet modelleri istenen her şeyi tek bir sayfaya sıkıştırıyor (1264x843, ağızlar karakterin yüzüne/sakalına uymuyor,
 ayaklar çıplak). Rig için **aynı görselin sadece bir yeri değişmiş kopyaları** gerekiyor. Bunu en tutarlı yapan yöntem:
 tek ana görsel üret, sonra **aynı sohbette** onu düzenlet. Değişen bölgeyi ben otomatik keserim (fark maskesi).

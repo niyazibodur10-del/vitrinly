@@ -42,6 +42,7 @@ Not: ABD ile İngiltere yaz saatine farklı tarihlerde geçer. Mart ve Ekim–Ka
 
 ## 3. Stok kuralı
 - **Her an en az 1 uzun video stokta durur.** Stok videosu kalite kapılarından geçmiş, hakem ONAY'ı almış ve Niyazi'nin onayladığı ama yayınlanmamış videodur.
+- Stok video dosyası git'te durmaz (~450 MB). Depolama önerisi (Niyazi onayı bekliyor, `.claude/commands/bugunun-videosu.md` bölüm 3): dosya teslimde Niyazi'ye gönderilir, yüklendikten sonra YouTube'daki kopya arşiv sayılır.
 - Stok videosu **raf ömrü uzun** bir sütundan seçilir (A veya C). B (haber) stoklanmaz, çünkü 7–10 günde bayatlar.
 - Stok ayrıca **en az 2 Shorts** içerir (herhangi bir uzun videodan, zamana bağlı olmayan kesitler).
 - Niyazi stok videosunu onaylarken onayın biçimi açıkça sorulur: "**herhangi bir slotta yayınlanabilir**". Bu onay yoksa stok video da kendi slotu için ayrıca onay bekler.

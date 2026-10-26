@@ -130,10 +130,10 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 
 <section>
   <h2>Görsel üretim ve maliyet</h2>
-  <p>Video başına ~150–200 çizim gerekir <span class="label est">hesap</span>. İki yol:</p>
+  <p>Video başına ~150–200 çizim gerekir <span class="label est">hesap</span>. Karar (26 Ekim 2026): görseller <b>Canva bağlayıcısıyla</b> üretilir.</p>
   <ul>
-    <li><b>Gemini uygulamasında elle:</b> ek ücret yok, ama video başına saatlerce senin emeğin. Sürdürülemez; yalnız karakter seti için kullanıyoruz.</li>
-    <li><b>Gemini API ile otomatik (önerim):</b> üçüncü taraf fiyat takipçilerine göre görsel başına yaklaşık $0,04 (Gemini 2.5 Flash Image) ile $0,07–0,10 (Nano Banana 2, 1K–2K) arası. 200 görsel × bu fiyatlar ≈ <b>video başına $8–20</b> <span class="label est">hesap, fiyat doğrulanacak</span>. Google AI Pro aboneliğinin aylık ~$10 Cloud kredisi bunun bir kısmını karşılar.</li>
+    <li><b>Canva (seçilen yol):</b> senin mevcut Canva aboneliğin, ek ücret yok. Karakter sayfası referans verilerek sahne ve thumbnail görselleri üretilir. Stil referanstan daha gerçekçi/resimsi olabilir; şart olan karakterin her sahnede tutarlı olması. İlk 2 görsellik test geçti (<code>uretim/canva-testi/rapor.md</code>). Açık konular: aylık yapay zekâ hakkının haftalık tempoya yetip yetmediği ve tam çözünürlüklü dosyanın otomatik alınması.</li>
+    <li><b>Ücretli görsel API:</b> kullanılmıyor (ödeme gerektiriyor).</li>
   </ul>
   <p>Kilit hareket anları (yürüme, koşma) için görselden video modeli kör testle seçilir; fiyatı test öncesi sana sunulur. Müzik: YouTube Audio Library (ücretsiz, lisanslı). Hiçbir ücretli servis senin onayın olmadan açılmaz.</p>
 </section>
@@ -176,7 +176,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
     <li><b>Karakter görselleri:</b> önce E0 ana görseli (<code>assets/karakter/2d-duzenleme-promptlari.md</code>).</li>
     <li><b>Kanal ve karakter adı:</b> varsa söyle; yoksa ad önerileri hazırlarım.</li>
     <li><b>60 sn İngilizce ses testi:</b> metni onaydan sonra gönderiyorum.</li>
-    <li><b>Görsel API bütçesi:</b> video başına ~$8–20 aralığı için onay (fiyatı doğruladıktan sonra kesin rakamla tekrar sorarım).</li>
+    <li><b>Görsel üretim:</b> Canva hesabının bağlı kalması (ek ücret yok; ayrı görsel bütçesi gerekmiyor).</li>
     <li><b>İsteğe bağlı:</b> ücretsiz YouTube Data API anahtarı (rakiplerin gerçek izlenme verisi için).</li>
   </ol>
 </section>
@@ -184,7 +184,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 <footer>
   Kaynaklar: rakip ve viralite verisi <code>docs/rakip-analizi.md</code>, <code>docs/viralite-modeli.md</code>.
   YouTube politika: <a href="https://creatorblade.com/blog/youtube-inauthentic-content-policy-2026-stay-monetized">creatorblade</a>, <a href="https://outlierkit.com/blog/youtube-updates-july-2026">outlierkit</a>, <a href="https://air.io/en/monetization/youtube-monetization-policy-changes-2026-a-complete-dated-timeline">AIR Media-Tech</a>.
-  Görsel fiyatları: <a href="https://intuitionlabs.ai/articles/ai-image-generation-pricing-google-openai">IntuitionLabs</a>, <a href="https://www.myarchitectai.com/blog/nano-banana-api-pricing">MyArchitectAI</a>.
+  Görsel üretim testi: <code>uretim/canva-testi/rapor.md</code>.
   Mid-roll: <a href="https://www.tubefilter.com/2020/07/07/youtube-lowering-minimum-video-length-mid-roll-ads/">Tubefilter (2020)</a>.
 </footer>
 </div>

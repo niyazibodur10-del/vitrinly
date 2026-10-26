@@ -1,5 +1,7 @@
 # 2D karakter üretim prompt'ları (v1)
 
+> Not (2026-10-26, Niyazi kararı): varsayılan üretim yolu **Canva bağlayıcısı** (`generate-image`, referans = karakter sayfası; ek ücret yok; çağrıları koordinatör yapar, prompt ve değerlendirme gorsel-varlik-sanatcisi). Aşağıdaki prompt'lar Canva için de girdi olarak kullanılır; sohbet uygulamasıyla elle üretim yalnız yedek yoldur. Ücretli görsel API kullanılmıyor.
+
 Kullanım: Gemini uygulaması (Google AI Pro aboneliğin) veya ChatGPT'de **yeni sohbet** aç, `karakter-sayfasi-v1.png`'yi ekle,
 prompt'u aynen yapıştır. Her çıktıyı en yüksek çözünürlükte indir ve bana gönder. Ek ücretli servis gerekmez.
 Sıra önemli: önce P1; beğenince P2–P4'te P1 çıktısını da referans olarak ekle.
