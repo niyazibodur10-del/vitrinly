@@ -15,6 +15,12 @@ Hedef kitle: finansa ilgili gençler + genel izleyici. Video dili: **İngilizce*
 - **Niyazi:** seslendirme metnini kendi sesiyle okur, karakter görselini ve kalite referans videosunu verir, hakemin seçtiği senaryoyu ve son videoyu onaylar.
 - **Onaysız yapılmaz:** YouTube'a yükleme/yayın, para harcanan her servis (ücretli API, abonelik), dışarıya mesaj, geri alınamaz adımlar.
 
+## Koordinatör kuralı (Niyazi kararı 2026-10-26)
+- Claude (koordinatör) **işi kendisi yapmaz**: görevi böler, doğru ajana verir, sonucu birleştirir, Niyazi'ye raporlar. Kendisi yalnız commit/push ve dosya düzeni gibi idari adımları yapar.
+- Her ajan `docs/ajan-protokolu.md`'ye uyar: hafızasını okur → 2–3 aday üretir → test eder, kendisi eler → nihai sonucu kanıtla verir → hafızasına ders yazar (`.claude/agents/hafiza/`).
+- Uygun ajan yoksa veya bir ajan yetersizse `ik-direktoru` dünyanın en iyisini işe alır, gerekirse işten çıkarıp yenisini alır (`docs/kadro-degisiklikleri.md`, `docs/ajan-karnesi.md`). `hakem` her teslimatı karneye puanlar.
+- Oturum içinde yeni yazılan ajanlar alt ajan türü olarak görünmez: koordinatör onları genel amaçlı ajana ajan dosyasını okutarak çalıştırır.
+
 ## Akış (her video) — `/yeni-video` başlatır
 1. `showrunner` (baş ajan) görevi açar, `uretim/<tarih>-<slug>/` klasörünü kurar, ajanları dağıtır.
 2. `trend-avcisi` → güncel/geçmiş/gelecek finans konu havuzu (kaynaklı).
