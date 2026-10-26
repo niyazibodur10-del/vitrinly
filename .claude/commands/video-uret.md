@@ -8,7 +8,7 @@ Bu komut `.claude/commands/bugunun-videosu.md` akışının **F3–F10** fazlar�
 
 Kısaca:
 - F3: `senaryo-yazari` tam metin + Shorts kancaları → `finans-dogrulayici` → metin kilidi.
-- F4: (`ses-yonetmeni` → `ses-muhendisi`) ‖ `gorsel-varlik-sanatcisi` ‖ `muzik-ses-tasarimcisi` ‖ `thumbnail-tasarimcisi` + `youtube-paketleyici` taslakları.
+- F4: (`ses-yonetmeni` TTS → `ses-muhendisi`) ‖ `gorsel-varlik-sanatcisi` (Canva prompt paketi → koordinatör Canva `generate-image` çağrıları → ajan değerlendirmesi) ‖ `muzik-ses-tasarimcisi` ‖ `thumbnail-tasarimcisi` + `youtube-paketleyici` taslakları.
 - F5: `animasyon-yonetmeni`, önce 10–20 sn kritik yol testi (≤2 kare senkron).
 - F6: `muzik-ses-tasarimcisi` miksi, F5 ile paralel.
 - F7: `kurgu-editoru` final 16:9 + SRT + 2 Shorts.
@@ -16,5 +16,5 @@ Kısaca:
 - F9: `hakem` son kontrol.
 - F10: `teslim/` paketi + `YAYIN.md` → Niyazi'ye sun → **DUR**.
 
-Araç sorunu her aşamada `uretim-muhendisi`'ne gider. RED döngüsü en fazla 2 tur sürer, sonra koordinatöre eskalasyon. Para harcayan adım yalnız onaylı bütçe tavanı içinde yapılır (`docs/uretim-kapasitesi.md`).
+Araç sorunu her aşamada `uretim-muhendisi`'ne gider. RED döngüsü en fazla 2 tur sürer, sonra koordinatöre eskalasyon. Ek para harcayan adım yalnız onaylı bütçe tavanı içinde yapılır (`docs/uretim-kapasitesi.md`); Canva aboneliği içindeki görsel üretimi ek harcama sayılmaz. Final video git'e girmez; depolama önerisi (Niyazi onayı bekliyor) `bugunun-videosu.md` bölüm 3'te.
 YouTube'a yükleme (F11) yalnız Niyazi "yayınla/yükle" deyince yapılır, `tools/yayin/` aracıyla (sahibi `uretim-muhendisi`).

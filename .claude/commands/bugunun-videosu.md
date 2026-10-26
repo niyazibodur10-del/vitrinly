@@ -8,14 +8,15 @@ Konu/sütun ipucu: $ARGUMENTS (boşsa sütun `docs/yayin-takvimi.md` rotasyonund
 
 **Kim yürütür:** Ana oturumdaki koordinatör, `showrunner`'ın çalışma kurallarıyla yürütür. **Alt ajanları yalnız koordinatör çağırır**, çünkü alt ajanlar alt ajan çağıramaz. "Paralel" yazan adımlarda ajan çağrıları **tek mesajda birlikte** yapılır.
 **Niyazi'nin rolü:** Yalnız F10'da bitmiş videoyu onaylar. Senaryo seçimi tamamen ajanlardadır; hakemin senaryo kararı Niyazi'ye sorulmaz.
-**Onaysız yapılmaz:** Para harcayan servis (görsel API, image-to-video, ücretli TTS), YouTube'a her türlü yükleme (private dahil), dışarıya mesaj ve geri alınamaz adımlar. Bütçe onayı önceden verilmişse (`docs/uretim-kapasitesi.md` → "Onaylı bütçe") onaylı tavana kadar harcanabilir; tavan aşılacaksa durulur ve Niyazi'ye sorulur.
+**Görsel ve ses kaynağı (Niyazi kararları 2026-10-26):** Sahne ve thumbnail görselleri Canva bağlayıcısıyla üretilir (Niyazi'nin aboneliği, ek ücret yok; ücretli görsel API kullanılmaz). Canva çağrılarını (`mcp__Canva__*`) koordinatör veya araç erişimi olan ajan yapar; ajanlar prompt'u ve değerlendirmeyi hazırlar. Anlatıcı sesi ücretsiz yapay zekâ sesidir (TTS); Niyazi'nin okuması yedek yoldur (`/senaryo-onayla`, `/ses-isle`).
+**Onaysız yapılmaz:** Para harcayan servis (ücretli görsel API, image-to-video, ücretli TTS), YouTube'a her türlü yükleme (private dahil), dışarıya mesaj ve geri alınamaz adımlar. Bütçe onayı önceden verilmişse (`docs/uretim-kapasitesi.md` → "Onaylı bütçe") onaylı tavana kadar harcanabilir; tavan aşılacaksa durulur ve Niyazi'ye sorulur.
 
 ## 0. Genel kurallar
 - **Klasör:** `uretim/<YYYY-MM-DD>-<slug>/`. Slug F2'deki hakem kararından sonra belli olur. O zamana kadar `uretim/<YYYY-MM-DD>-secim/` kullanılır, F2'nin sonunda `git mv` ile yeniden adlandırılır.
 - **`durum.md`** (sahibi showrunner/koordinatör) her adımdan sonra güncellenir. Sütunlar: adım | sahip ajan | durum (BEKLİYOR / SÜRÜYOR / GEÇTİ / RED-1 / RED-2 / ESKALASYON) | teslim dosyası | test kanıtı (komut + sonuç) | başlangıç–bitiş saati. Oturum koparsa akış `durum.md`'deki ilk GEÇMEMİŞ adımdan devam eder. Baştan başlanmaz.
 - **Teslim kuralı:** Her ajan, protokol (`docs/ajan-protokolu.md`) gereği 2–3 aday, test, eleme ve hafıza dersiyle teslim eder. **Test çıktısı yoksa teslim alınmaz** ve iş geri gönderilir. Bu bir RED turu sayılmaz, ama `durum.md`'ye not edilir.
 - **Kalite kapıları:** `docs/kalite-kapilari.md` ve bu dosyadaki "Ek kapılar".
-- **Commit:** Her faz sonunda `git add` + commit + push yapılır (konteyner silinir). Mesaj: `<slug>: F<n> <özet>`. 100 MB'ı aşan medya git'e girmez. Saklama yeri `docs/uretim-kapasitesi.md` → "Depolama" bölümüne göre seçilir.
+- **Commit:** Her faz sonunda `git add` + commit + push yapılır (konteyner silinir). Mesaj: `<slug>: F<n> <özet>`. 100 MB'ı aşan medya git'e girmez. Final video ve Shorts dosyaları git'e girmez (`.gitignore`); depolama bölüm 3'teki öneriye göre (Niyazi onayı bekliyor).
 - **Kod yeri:** Remotion sahneleri `video/src/videolar/<slug>/` altında olur (sahibi animasyon-yonetmeni). Ortak bileşenler `video/src/ortak/` altında olur (sahibi uretim-muhendisi).
 
 ## 1. RED → düzeltme döngüsü ve eskalasyon
@@ -60,11 +61,11 @@ Konu/sütun ipucu: $ARGUMENTS (boşsa sütun `docs/yayin-takvimi.md` rotasyonund
 | Kol | Ajan | İş | Teslim | Kapı |
 |---|---|---|---|---|
 | Ses | `ses-yonetmeni` → sonra `ses-muhendisi` | TTS okuma metni (telaffuz düzeltmeleri) → Kokoro ile anlatım (`tools/ses/tts.py`) → son işlem (`tools/ses/tts-son.sh`), Whisper kelime zamanları | `04-ses/anlatim.wav`, `04-ses/kelimeler.json`, `04-ses/ses-rapor.md` | Anlatıcı sesi (TTS): WER ≤ %10, kanal adı doğru. Ses: −14 LUFS ±1, TP ≤ −1 dBTP |
-| Görsel | `gorsel-varlik-sanatcisi` | GÖRSEL sütunundan sahne listesi → sahne illüstrasyonları (16:9 + 9:16 güvenli alan), karakter pozları, kontakt sayfası, lisans/üretim kaydı | `05-gorsel/sahne-listesi.md`, `05-gorsel/sahneler/`, `05-gorsel/kontakt.png` | Görsel varlık: karakter kartına uygun, sahne ≥1920x1080, kesme artığı yok |
+| Görsel | `gorsel-varlik-sanatcisi` (+ koordinatör Canva çağrıları) | GÖRSEL sütunundan sahne listesi → Canva prompt paketi → koordinatör Canva `generate-image` ile üretir → ajan sahne illüstrasyonlarını (16:9 + 9:16 güvenli alan), karakter pozlarını değerlendirir, kontakt sayfası, üretim kaydı (prompt + Canva media ID) | `05-gorsel/sahne-listesi.md`, `05-gorsel/canva-promptlari.md`, `05-gorsel/sahneler/`, `05-gorsel/kontakt.png` | Görsel varlık: karakter kartına uygun, sahne ≥1920x1080, kesme artığı yok |
 | Müzik | `muzik-ses-tasarimcisi` | Sütuna ve tona göre müzik/SFX adayları + lisans kaydı (zamanlama F6'da) | `06-muzik/lisans-kaydi.md`, `06-muzik/adaylar.md` | Müzik/SFX: her dosya lisans kaydında, NC/ND yok |
 | Paket taslağı | `thumbnail-tasarimcisi` + `youtube-paketleyici` (paralel) | 3 thumbnail konsepti (taslak) + 5 başlık varyantı, açıklama taslağı, etiketler, Shorts başlıkları | `09-paket/thumb-konsept.md`, `09-paket/paket-taslak.md` | Taslak: başlık ≤60 karakter, thumbnail metni ≤4 kelime |
 
-Görsel kol **para harcar** (görsel API). Onaylı bütçe yoksa veya tavan aşılacaksa sahneler B planına geçer: kodla çizilen grafik/harita/sayaç sahneleri + mevcut karakter varlıkları. Durum Niyazi'ye F10'da raporlanır. Onaysız harcama yapılmaz.
+Görsel kol **ek para harcamaz**: Canva bağlayıcısı Niyazi'nin mevcut aboneliğindeki aylık yapay zekâ hakkını kullanır. Stil gerçekçi/resimsi olabilir; şart karakterin her sahnede tutarlı olmasıdır. Aylık Canva hakkı biterse, tam çözünürlüklü dosya alınamazsa veya tutarlılık kapısı geçmezse sahneler B planına geçer: kodla çizilen grafik/harita/sayaç sahneleri + mevcut karakter varlıkları. Kullanılan Canva üretim sayısı ve B planına geçen sahneler Niyazi'ye F10'da raporlanır. Ücretli görsel API veya image-to-video onaysız açılmaz.
 
 ### F5 — Animasyon (ses kolu ve görsel kol GEÇTİ olunca)
 `animasyon-yonetmeni`:
@@ -99,7 +100,8 @@ Koordinatör `teslim/` klasörünü kurar (bkz. bölüm 3), `YAYIN.md`'yi yazar,
 - Video başlığı, sütun, süre, hedef yayın slotu (ET + TRT).
 - Viralite puanı (F2 tahmini → son), ilk 3 senaryonun puanları ve kazananın neden seçildiği (bilgi amaçlı, onay sorulmaz).
 - Hakem kararı ve kapı tablosunun özeti.
-- Riskler (doğrulama, politika, B planına geçen sahneler, harcanan bütçe).
+- Riskler (doğrulama, politika, B planına geçen sahneler, Canva AI hakkı kullanımı, varsa onaylı harcama).
+- Final video dosyası (bölüm 3'teki depolama önerisine göre Niyazi'ye dosya olarak gönderilir; git'te yalnız önizleme + metadata).
 - **Niyazi'nin yapacağı tek şey:** "Videoyu izle; `yayınla` ya da `şunu değiştir: …` de."
 
 Niyazi'den yanıt gelmeden yayın adımına geçilmez.
@@ -124,6 +126,12 @@ Niyazi'den yanıt gelmeden yayın adımına geçilmez.
 | `hakem-raporu.md` | hakem (F9) |
 | `YAYIN.md` | koordinatör (F10): tek sayfa özet |
 
+**Final video depolama — öneri (Niyazi onayı bekliyor):** 12 dk final video ~450 MB'tır [H] ve GitHub'ın dosya başına 100 MB sınırını aşar; konteyner de oturum sonunda silinir. Öneri:
+- Final video (ve Shorts) teslimde **Niyazi'ye dosya olarak gönderilir**; Niyazi onaylayıp YouTube'a yüklenince **YouTube'daki video arşiv sayılır**.
+- `uretim/<klasör>/` altında git'e yalnız küçük önizleme (ör. `teslim/onizleme-*.mp4`, düşük çözünürlük, <25 MB) + metadata (`yayin-paketi*.json`, `YAYIN.md`, `hakem-raporu.md`, thumbnail'lar, SRT) girer.
+- `.gitignore`: `uretim/**/final/*.mp4`, `uretim/**/teslim/*.mp4`, `uretim/**/08-kurgu/*.mp4` (önizlemeler `!uretim/**/*onizleme*.mp4` ile hariç). Ayrıntı: `docs/uretim-kapasitesi.md` bölüm 6, satır 5.
+- Onay gelene kadar geçici olarak böyle çalışılır (git zaten 100 MB üstü dosyayı kabul etmez, `.gitignore` geri alınabilir); Niyazi başka bir yer (Drive, Git LFS vb.) seçerse bu bölüm güncellenir.
+
 **Yayın paketi şeması** yükleme aracının sözleşmesidir: `tools/yayin/yayin_paket.py` → `SEMA` (`"sema": "yayin-paketi/1"`). Her video için **ayrı paket** yazılır (`"tur": "uzun"` ya da `"shorts"`). Dosya yolları paketin klasörüne göredir. Alanlar: `dosyalar.video`, `dosyalar.thumbnail`, `dosyalar.altyazilar`, `metadata.baslik`, `metadata.aciklama`, `metadata.etiketler`, `metadata.bolumler`, `metadata.kategori_id`, `durum.gizlilik`, `durum.yayin_zamani` (saat dilimli ISO 8601), `durum.cocuklara_ozel`, `durum.sentetik_medya`, `onay.niyazi_onayi`, `onay.tarih`. `onay.niyazi_onayi` F10'a kadar **false** kalır; araç false iken yüklemeyi reddeder. Kategori ve sentetik medya beyanı youtube-paketleyici'nin kararıdır.
 
 ## 4. Ek kapılar (bu akışa özgü)
@@ -132,7 +140,7 @@ Niyazi'den yanıt gelmeden yayın adımına geçilmez.
 | Shorts | ffprobe + ilk 2 sn kare + altyazı güvenli alanı | 1080x1920, ≤60 sn, ilk 2 sn'de kendi kancası, metin alt %20'ye ve sağ kenar düğmelerine binmiyor, −14 LUFS ±1 |
 | Ön doğrulama | 10 senaryo tablosu | her senaryoda YEŞİL/SARI/KIRMIZI + gerekçe |
 | Yayın paketi | `python3 tools/yayin/yukle.py <paket> --dry-run` (3 paket) | 0 hata; adı geçen her dosya `teslim/` içinde; yayın zamanı takvim slotuna denk; başlık ≤60 karakter; `onay.niyazi_onayi` false |
-| Teslim paketi | dosya listesi | bölüm 3'teki 12 dosyanın hepsi var, hakem ONAY |
+| Teslim paketi | dosya listesi | bölüm 3'teki 12 dosyanın hepsi yerel diskte var (final mp4'ler git'e girmez, önizleme girer), hakem ONAY |
 
 ## 5. Ajan çağrı sırası (özet)
 ```

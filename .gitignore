@@ -1,2 +1,8 @@
 *.wav
 __pycache__/
+# Final video git'e girmez (~450 MB > GitHub 100 MB sınırı). Depolama önerisi Niyazi onayı bekliyor:
+# .claude/commands/bugunun-videosu.md bölüm 3, docs/uretim-kapasitesi.md bölüm 6.
+uretim/**/final/*.mp4
+uretim/**/teslim/*.mp4
+uretim/**/08-kurgu/*.mp4
+!uretim/**/*onizleme*.mp4

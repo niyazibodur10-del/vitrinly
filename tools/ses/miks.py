@@ -32,13 +32,11 @@ def sure(yol):
     return float(sh("ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", yol).stdout)
 
 
-def kisa_lufs_dizisi(yol, sr=48000):
-    """400 ms pencere / 100 ms adım RMS seviyesi (dB, 100 Hz üstü) — iki stem arasındaki farkı ölçmek için."""
-    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", yol, "-ac", "1", "-ar", str(sr), "-af", "highpass=f=100",
-                          "-f", "f32le", "-"], capture_output=True).stdout
-    x = np.frombuffer(raw, np.float32).astype(float)
-    w, h = int(0.4 * sr), int(0.1 * sr)
-    return np.array([10 * np.log10(np.mean(x[i:i + w] ** 2) + 1e-12) for i in range(0, len(x) - w, h)])
+def kisa_lufs_dizisi(yol):
+    """ebur128 anlık (M, 400 ms, K-ağırlıklı) LUFS dizisi, 100 ms adım — iki stem arasındaki farkı ölçmek için."""
+    r = subprocess.run(["ffmpeg", "-hide_banner", "-nostats", "-i", yol, "-af", "ebur128",
+                        "-f", "null", "-"], capture_output=True, text=True).stderr
+    return np.array([float(x) for x in re.findall(r"\] t:\s*[\d.]+\s+TARGET:\S+ LUFS\s+M:\s*(-?[\d.]+|-inf)", r)])
 
 
 def main():
@@ -89,15 +87,14 @@ def main():
     # ölçüm: konuşma anlarında anlatım - müzik farkı
     v, mu = kisa_lufs_dizisi(f"{tmp}/v.wav"), kisa_lufs_dizisi(f"{tmp}/m.wav")
     n = min(len(v), len(mu)); v, mu = v[:n], mu[:n]
-    konusma = v > (np.max(v) - 20)
+    konusma = v > (np.median(v[v > -70]) - 6)  # anlatımın aktif olduğu pencereler
     fark = v[konusma] - mu[konusma]
-    yatak = mu[: int(a.giris * 10) - 4]  # giriş (yalnız müzik) bölümü
     son = lufs(a.cikis)
     out = {"cikis": a.cikis, "sure_sn": round(sure(a.cikis), 2), "son_I_LUFS": son["I"], "son_TP_dBTP": son["TP"],
            "son_LRA": son["LRA"], "konusma_alti_fark_dB_medyan": round(float(np.median(fark)), 1),
            "konusma_alti_fark_dB_p10_p90": [round(float(np.percentile(fark, 10)), 1),
                                             round(float(np.percentile(fark, 90)), 1)],
-           "giris_yatak_vs_konusma_dB": round(float(np.median(v[konusma]) - np.median(yatak)), 1) if len(yatak) else None,
+           "muzik_yatak_LUFS_konusmasiz": round(-14 + a.muzik_db, 1),
            "sidechain_oran": round(oran, 1), "muzik_kazanc_dB": round(mk, 1)}
     print(json.dumps(out, ensure_ascii=False))
 
