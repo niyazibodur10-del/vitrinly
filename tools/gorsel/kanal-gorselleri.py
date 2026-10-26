@@ -92,6 +92,15 @@ def kes(yol):
     return img.crop(img.getbbox())
 
 
+def kontur_maskesi(alfa, yaricap):
+    """Dairesel çekirdekle genişletme (kare MaxFilter köşeli/basamaklı kontur verir) + yumuşatma."""
+    import cv2
+    k = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (2 * yaricap + 1, 2 * yaricap + 1))
+    m = cv2.dilate(np.asarray(alfa), k)
+    m = cv2.GaussianBlur(m, (0, 0), max(1.0, yaricap * 0.12))
+    return Image.fromarray(np.clip((m.astype(np.float32) - 64) * 255 / 128, 0, 255).astype(np.uint8))
+
+
 def dikey_gradyan(w, h, ust, alt):
     t = np.linspace(0, 1, h)[:, None, None]
     g = np.array(ust)[None, None] * (1 - t) + np.array(alt)[None, None] * t
@@ -187,7 +196,7 @@ def karakter_yerlestir(bg, kar, cx, ust_y, yukseklik=None, kenar=10, isik=(255, 
     x = int(cx - k.width / 2)
     bg = Image.alpha_composite(bg, radyal(W, H, cx, ust_y + k.height * 0.35, k.height * 0.75, isik, 0.55))
     a = k.split()[3]
-    kont = a.filter(ImageFilter.MaxFilter(kenar * 2 + 1)).filter(ImageFilter.GaussianBlur(1.2))
+    kont = kontur_maskesi(a, kenar)
     kl = Image.new("RGBA", k.size, (255, 236, 200, 0)); kl.putalpha(kont)
     bg.alpha_composite(kl, (x, ust_y)); bg.alpha_composite(k, (x, ust_y))
     al = np.asarray(k)[..., 3] > 128; sol = int(np.argmax(al.any(0)))
@@ -406,7 +415,7 @@ def profil(aday, a, portre):
         p = grafik_noktalari(3, 0, S, S * 0.86, S * 0.22, n=10)
         d.line(p, fill=(BEYAZ if aday == "P4" else YESIL) + (255,), width=46, joint="curve")
         bg = Image.alpha_composite(bg, gl)
-        kont = portre.split()[3].filter(ImageFilter.MaxFilter(29)).filter(ImageFilter.GaussianBlur(1.5))
+        kont = kontur_maskesi(portre.split()[3], 14)
         kl = Image.new("RGBA", portre.size, (255, 240, 210, 0)); kl.putalpha(kont)
         bg.alpha_composite(kl, (0, 40)); bg.alpha_composite(portre, (0, 40))
         if aday != "P4":   # daire kenarında altın halka (koyu temada daireyi belirginleştirir)
@@ -460,7 +469,10 @@ def profil_olc(p):
     ic = a[r < 0.75].astype(int); R, G, B = ic[:, 0], ic[:, 1], ic[:, 2]
     ten = ic[(R > G) & (G > B) & (R - B > 60) & (R > 150)]
     koyu = ic[ic.max(1) < 60]
-    out = {"zemin_rgb": [int(v) for v in z], "ten_orani_daire_ici": round(len(ten) / len(ic), 3)}
+    kenar = a[(r > 0.92) & (r < 1.0)]; Lk = float(np.median(lum(kenar)))
+    out = {"zemin_rgb": [int(v) for v in z], "ten_orani_daire_ici": round(len(ten) / len(ic), 3),
+           "daire_kenari_acik_tema_wcag": round(float(wcag(Lk, 1.0)), 2),
+           "daire_kenari_koyu_tema_wcag": round(float(wcag(Lk, float(lum((15, 15, 15))))), 2)}
     if len(ten):
         t = np.median(ten, 0)
         out["ten_zemin_wcag"] = round(float(wcag(lum(t), Lz)), 2)
@@ -532,9 +544,15 @@ def main():
             b36 = k36.resize((144, 144), Image.NEAREST); sheet.paste(b36, (x + 180, 380), b36)
             sd.text((x, 540), "98 px · 36 px · 36 px x4", font=etiket(20), fill=(60, 60, 60))
         sheet.save(os.path.join(on, "profil-karsilastirma.png"))
-        # koyu temada da (YouTube karanlık mod #0f0f0f)
-        sheet2 = Image.new("RGB", sheet.size, (15, 15, 15)); sheet2.paste(sheet.crop((0, 370, sheet.width, 540)), (0, 0))
-        sheet2.crop((0, 0, sheet.width, 170)).save(os.path.join(on, "profil-karsilastirma-koyu.png"))
+        # açık (#ffffff) ve koyu (#0f0f0f) YouTube temasında 98 / 36 px yan yana
+        tema = Image.new("RGB", (len(ads) * 220 + 20, 300), (255, 255, 255)); td = ImageDraw.Draw(tema)
+        td.rectangle([0, 150, tema.width, 300], fill=(15, 15, 15))
+        for i, ad in enumerate(ads):
+            p = Image.open(os.path.join(on, f"profil-{ad}.png")); k98, k36 = daire_onizleme(p); x = 20 + i * 220
+            for yb, renk in ((0, (0, 0, 0)), (150, (240, 240, 240))):
+                tema.paste(k98, (x, yb + 26), k98); tema.paste(k36, (x + 110, yb + 26), k36)
+                td.text((x + 110, yb + 70), ad, font=etiket(22), fill=renk)
+        tema.save(os.path.join(on, "profil-tema-acik-koyu.png"))
 
     if a.kazanan_banner:
         aday, _, s = a.kazanan_banner.partition("-")
