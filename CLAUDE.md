@@ -37,7 +37,8 @@ Her ajan işini **test ederek** teslim eder (bkz. `docs/kalite-kapilari.md`): te
 - Karakter: `assets/karakter/karakter-karti.md` — **2D** (Niyazi kararı 2026-10-26: 3D karakter sayfasının aynısı, 2D çizgi film stiline çevrilir; referans videonun çizim diliyle uyumlu). Konuşan sahneler: katmanlı 2D rig (kafa, gövde, kol, el, bacak, 9 ağız şekli, göz kırpma) + Rhubarb dudak senkronu. Diğer sahneler: karakterli illüstrasyon + kamera; kilit hareket anları image-to-video (kör testle).
 - Format: ana video 16:9 uzun; aynı sahnelerden 9:16 Shorts kesitleri.
 - Ses temizliği: ffmpeg (highpass, de-ess, loudnorm −14 LUFS) + DeepFilterNet gürültü giderme. Altyazı: Whisper (kelime zamanlı) → SRT + videoya gömülü.
-- Kurgu kodda: `video/` Remotion projesi (henüz kurulmadı).
+- Kurgu kodda: `video/` Remotion projesi (4.0.539; pilot `video/src/pilot/`). Render: `tools/render-son.sh <Id> <çıkış>` (son ses normalizasyonu dahil). Yeni konteynerde önce `tools/kurulum.sh` (Rhubarb derleme, Whisper, büyütme modeli).
+- Yazı tipleri yerel (`video/public/fonts`): render tarayıcısı Google Fonts'a erişemiyor.
 - API anahtarları **asla repoya veya sohbete yazılmaz**; bulut ortamının secret/ortam değişkeni ayarında durur. `YOUTUBE_API_KEY` = YouTube Data API v3 (salt okuma: rakip ve kendi kanal istatistikleri). Yükleme için ileride OAuth gerekir; yükleme her zaman Niyazi onaylı.
 
 ## Kurallar
