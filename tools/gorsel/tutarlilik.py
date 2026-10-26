@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Karakter paketi tutarlılık testi (OpenCV).
-Kullanım: python3 -I tools/gorsel/tutarlilik.py <paket_klasoru> [--ref a-konusma-kapali.png] [--kontak kontak.jpg]
+Kullanım: ~/.finansal-arac/venv/bin/python -I tools/gorsel/tutarlilik.py <paket_klasoru> [--ref a-konusma-kapali.png] [--kontak kontak.jpg]
 Yöntem: düz arka planı köşe renginden ayırır -> ön plan maskesi. Maskede renk bölgeleri:
   ten  = turuncu-ten tonu (HSV H 5-25, S>60, V>110)
   sac  = kafa kutusunun üst %35'indeki koyu pikseller (V<90)

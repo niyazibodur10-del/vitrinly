@@ -52,7 +52,7 @@ export const SabahArka: React.FC<{ karartma?: number }> = ({ karartma = 0 }) => 
 };
 
 // Birikim -> bir fincan kahve
-export const BirikimSahne: React.FC<{ sure: number; fincanAn: number }> = ({ sure, fincanAn }) => {
+export const BirikimSahne: React.FC<{ sure: number; fincanAn: number }> = ({ fincanAn }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = frame / fps;
