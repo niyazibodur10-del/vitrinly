@@ -6,17 +6,17 @@
   "oynatma_listeleri": [
     {
       "baslik": "Money News, Explained",
-      "aciklama": "This week's biggest money news, explained with animation: interest rate decisions, inflation reports, bank failures, big mergers and market moves. What happened, why it happened and what it could mean for everyday people, in plain English. New episodes every Tuesday.\n\nEducational content, not financial advice. Narration voice is AI-generated.",
+      "aciklama": "This week's biggest money news, explained with animation: interest rate decisions, inflation reports, bank failures, big mergers and market moves. What happened, why it happened and what it could mean for everyday people, in plain English. New episodes every Wednesday.\n\nEducational content, not financial advice. Narration voice is AI-generated.",
       "gizlilik": "public"
     },
     {
       "baslik": "The Collapse: Financial History Explained",
-      "aciklama": "The biggest financial crashes, bubbles and collapses in history, told as animated stories: the 1929 stock market crash, Weimar hyperinflation, tulip mania, Lehman Brothers, FTX and more. Step inside each crisis, see how it unfolded and what it teaches us about money today. New episodes every Sunday.\n\nEducational content, not financial advice. Narration voice is AI-generated.",
+      "aciklama": "The biggest financial crashes, bubbles and collapses in history, told as animated stories: the 1929 stock market crash, Weimar hyperinflation, tulip mania, Lehman Brothers, FTX and more. Step inside each crisis, see how it unfolded and what it teaches us about money today. New episodes every other Sunday.\n\nEducational content, not financial advice. Narration voice is AI-generated.",
       "gizlilik": "public"
     },
     {
       "baslik": "What If…? Future of Money Scenarios",
-      "aciklama": "Animated what-if scenarios about the future of money: What if the dollar lost its reserve status? What if AI replaced millions of jobs? What if your bank went digital-only? Each episode explores a plausible scenario step by step. These are scenarios, not predictions. New episodes every Friday.\n\nEducational content, not financial advice. Narration voice is AI-generated.",
+      "aciklama": "Animated what-if scenarios about the future of money: What if the dollar lost its reserve status? What if AI replaced millions of jobs? What if your bank went digital-only? Each episode explores a plausible scenario step by step. These are scenarios, not predictions. New episodes every other Sunday.\n\nEducational content, not financial advice. Narration voice is AI-generated.",
       "gizlilik": "public"
     },
     {
@@ -31,5 +31,5 @@
     }
   ],
   "fragman_video_id": null,
-  "_not": "Tam tempoya (Salı/Cuma/Pazar) geçilince ritim satırı güncellenir; iş e-postası Niyazi verince eklenir. Listeler ilk ilgili video yüklenince açılır (boş liste yayınlanmaz)."
+  "_not": "Tam tempo (Çarşamba + Pazar, 2 uzun + 4 Shorts/hafta; docs/yayin-takvimi.md v2) art arda 4 hafta tutulunca ritim satırı güncellenir; iş e-postası Niyazi verince eklenir. Listeler ilk ilgili video yüklenince açılır (boş liste yayınlanmaz)."
 }

@@ -8,3 +8,7 @@
 - 2026-10-26: Kritik yol ~9–18 saat [T], 1 numaralı darboğaz animasyon sahne kodlaması (F5). Haftada 3'e geçmeden önce sahne şablon kütüphanesi + 60 sn P2 uçtan uca test şart; geçiş planı 1 → 2 → 3/hafta.
 - 2026-10-26: 12 dk 1080p video ≈ 450 MB [H] → git'e girmez (100 MB sınırı). Teslim depolaması her planda baştan çözülmeli.
 - 2026-10-26: Ajan-adı denetim betiği ilk sürümde tek kelimelik adları (hakem, showrunner) kaçırdı → betiği her zaman bir negatif testle (sahte ajan adı) sına.
+- 2026-10-26 (takvim v2, 2+4): Tempo kararı değişince yalnız takvimi değil **gelir modelini aynı formülle** yeniden hesapla. 3→2/hafta, 8.000 saat başa başını 800'den ~1.165 görüntüleme/videoya çıkardı; 365 günlük kayan pencere yüzünden sabit görüntülemede "geç ulaşılır" değil "hiç ulaşılmaz" (tavan ~5.550 saat). Doğrusal uzatma tuzağına düşme.
+- 2026-10-26: Eski formülü yeni rakamla çalıştırmadan önce eski sonucu yeniden üret (150 video → baz 12,0 ay, iyimser 6,4 ay = eski tablo). Yöntemin aynı olduğu böyle kanıtlanır.
+- 2026-10-26: 2 slotta en iyi dağılım: haber (B) sabit hafta içi gün (Çarşamba), raf ömrü uzun A/C dönüşümlü en güçlü güne (Pazar). Üç sütunu iki slota sırayla döndürmek gün sözünü ve haber tazeliğini bozar. B'nin A/C'ye göre değeri 4. hafta 28 günlük saat verisiyle kararlaştırılır.
+- 2026-10-26: Gün referansı değişikliğinde tüm repoyu tara (`grep -i "tuesday|TUE ·|Salı"`): banner (`uretim/kanal-kimligi/gorsel-rapor.md`, "TUE · FRI · SUN") ve ajan hafızaları da etkileniyor; kapsam dışıysa rapora sahipli iş olarak yaz.

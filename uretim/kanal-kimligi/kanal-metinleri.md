@@ -29,7 +29,7 @@ Financial Rise turns complex money events into animated stories you can follow, 
 
 Every video is researched and fact-checked, with sources in its description.
 
-New long videos every Tuesday, Friday and Sunday, plus Shorts.
+New long videos every Wednesday and Sunday, plus Shorts.
 
 Educational content, not financial advice. We never tell you what to buy or sell.
 Narration voice is AI-generated. The narrator is a cartoon character, not a financial advisor.
@@ -39,7 +39,7 @@ Business inquiries: [iş e-postası]
 
 **Neden böyle:** İlk satır arama önizlemesinde görünen kısım; marka adı zaten başlıkta göründüğü için ilk 150 karakter adla değil, aranan kavramlarla (animated finance, money news explained, financial crashes, what if scenarios) doluyor. Üç madde = üç sütun = üç oynatma listesi adı (tutarlı vaat). "We never tell you what to buy or sell" ve "The narrator is a cartoon character, not a financial advisor" satırları, YouTube'un "AI Personas Related to Sensitive Topics" kuralına (kendini insan uzman gibi sunup finans tavsiyesi veren YZ personası) karşı açık bir ayrım koyar (`docs/ogrenme/ortak-dersler.md`, support.google.com/youtube/answer/1311392).
 
-**Ritim satırı uyarısı:** Takvimin geçiş planına göre 1–2. haftada tam tempo yok (`docs/yayin-takvimi.md` §3). Tam tempoya (3 uzun/hafta) gelene kadar şu satır kullanılsın, sonra kazanan satıra geçilsin:
+**Ritim satırı uyarısı:** Takvimin geçiş planına göre ilk haftalarda tam tempo yok (`docs/yayin-takvimi.md` v2 §6). Tam tempo (2 uzun + 4 Shorts/hafta, Çarşamba + Pazar) art arda 4 hafta tutulana kadar şu satır kullanılsın, sonra kazanan satıra geçilsin:
 `New animated finance stories every week, plus Shorts.` (Söz verip tutmamak abone güvenini düşürür [T].)
 
 ### Elenen adaylar
@@ -77,9 +77,9 @@ Eski anahtar kelimeler (wealth stories, billionaire mindset, rags to riches, how
 Sıra kanal ana sayfasındaki raf sırasıdır. Başlık sütun adını taşır (videonun başlığıyla aynı kelime ailesi → oturum süresi ve arama).
 | # | Liste | İçine giren | Ne zaman açılır |
 |---|---|---|---|
-| 1 | Money News, Explained | B sütunu (Salı) | İlk B videosuyla |
-| 2 | The Collapse: Financial History Explained | A sütunu (Pazar) | İlk A videosuyla |
-| 3 | What If…? Future of Money Scenarios | C sütunu (Cuma) | İlk C videosuyla |
+| 1 | Money News, Explained | B sütunu (her Çarşamba) | İlk B videosuyla |
+| 2 | The Collapse: Financial History Explained | A sütunu (Pazar, C ile dönüşümlü) | İlk A videosuyla |
+| 3 | What If…? Future of Money Scenarios | C sütunu (Pazar, A ile dönüşümlü) | İlk C videosuyla |
 | 4 | Money Stories in 60 Seconds \| Shorts | Tüm Shorts | İlk Shorts'la |
 | 5 | Start Here: Best of Financial Rise | Her sütunun en iyi videosu (+ fragman) — "abone olmayan" ana sayfa rafı | 3 sütun da yayında olunca (en erken 3. video) |
 
@@ -87,21 +87,21 @@ Kural: **boş liste herkese açık yayınlanmaz** (boş raf kanalı yarım göst
 
 #### 1. Money News, Explained
 ```text
-This week's biggest money news, explained with animation: interest rate decisions, inflation reports, bank failures, big mergers and market moves. What happened, why it happened and what it could mean for everyday people, in plain English. New episodes every Tuesday.
+This week's biggest money news, explained with animation: interest rate decisions, inflation reports, bank failures, big mergers and market moves. What happened, why it happened and what it could mean for everyday people, in plain English. New episodes every Wednesday.
 
 Educational content, not financial advice. Narration voice is AI-generated.
 ```
 
 #### 2. The Collapse: Financial History Explained
 ```text
-The biggest financial crashes, bubbles and collapses in history, told as animated stories: the 1929 stock market crash, Weimar hyperinflation, tulip mania, Lehman Brothers, FTX and more. Step inside each crisis, see how it unfolded and what it teaches us about money today. New episodes every Sunday.
+The biggest financial crashes, bubbles and collapses in history, told as animated stories: the 1929 stock market crash, Weimar hyperinflation, tulip mania, Lehman Brothers, FTX and more. Step inside each crisis, see how it unfolded and what it teaches us about money today. New episodes every other Sunday.
 
 Educational content, not financial advice. Narration voice is AI-generated.
 ```
 
 #### 3. What If…? Future of Money Scenarios
 ```text
-Animated what-if scenarios about the future of money: What if the dollar lost its reserve status? What if AI replaced millions of jobs? What if your bank went digital-only? Each episode explores a plausible scenario step by step. These are scenarios, not predictions. New episodes every Friday.
+Animated what-if scenarios about the future of money: What if the dollar lost its reserve status? What if AI replaced millions of jobs? What if your bank went digital-only? Each episode explores a plausible scenario step by step. These are scenarios, not predictions. New episodes every other Sunday.
 
 Educational content, not financial advice. Narration voice is AI-generated.
 ```
@@ -134,7 +134,7 @@ Elenen yapılar: (a) yalnız 3 sütun listesi — Shorts ve yeni ziyaretçi raf�
 | 21–26 sn | İlk B videosundan haber/grafik sahnesi | The money news everyone is talking about, explained in plain English. |
 | 26–31 sn | İlk C videosundan senaryo sahnesi | And bold what-if scenarios. What if the dollar lost its crown? |
 | 31–38 sn | Hızlı 3'lü montaj, büyük sayı grafikleri | No jargon. No hype. Just how money really works, and why it matters to you. |
-| 38–48 sn | Maskot + "TUE · FRI · SUN" kartı + abone butonu; altta küçük yazı: "Educational content, not financial advice" | New videos every Tuesday, Friday and Sunday. Subscribe, and see your wallet a little differently. |
+| 38–48 sn | Maskot + "WED · SUN" kartı + abone butonu; altta küçük yazı: "Educational content, not financial advice" | New videos every Wednesday and Sunday. Subscribe, and see your wallet a little differently. |
 
 - **Malzeme:** 0–11 sn hazır (`uretim/ses-testi/pilot/pilot-v2.mp4`, metin `okuma-metni.md` P01–P02; aynı ses/hız). 11–17 sn ve 31–48 sn için `okuma-metni.md` P03–P05'ten uyarlanmış yeni satırlar TTS ile üretilir. 17–31 sn **ilk üç videodan** (her sütundan bir) birer kesit ister → fragman **3 sütun da yayınlandıktan sonra** üretilir. O zamana kadar abone olmayanlar için öne çıkan video = en iyi tutma oranlı ilk video (`fragman_video_id: null`, video yüklenince doldurulur).
 - **Kurallar:** ilk 5 saniyede kanca (selamlama yok), kanal vaadi tek cümle, üç sütun adıyla birebir, ritim söylenir, tavsiye/kazanç vaadi yok. Tam tempo yoksa son satır "New animated stories every week." olur. Yüklemede altered/synthetic beyanı video bazında kararlaştırılır (animasyon muaf olabilir; YZ ses beyanı açıklamada).
