@@ -121,6 +121,7 @@ def main():
             s, _, b = api.istek(f"{api.API}/playlists?part=snippet,status", json.dumps(g).encode(),
                                 api._yetki(token, {"Content-Type": "application/json; charset=UTF-8"}))
             print(f"3) liste oluşturuldu: {l['baslik']} → {api._kontrol('playlists.insert', s, b)['id']}")
+        import time; time.sleep(15)  # channels.list güncellemeyi ~10-15 sn gecikmeyle döndürüyor (2026-10-26 ölçümü)
         print("Kontrol: " + json.dumps({kk: str(vv)[:60] for kk, vv in kanal_oku(token)["brandingSettings"]["channel"].items()},
                                        ensure_ascii=False))
         return 0

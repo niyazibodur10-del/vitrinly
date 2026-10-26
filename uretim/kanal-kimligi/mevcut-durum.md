@@ -16,3 +16,8 @@
 
 API ile değiştirilebilir: açıklama, anahtar kelimeler, ülke, varsayılan dil, banner (channelBanners.insert, ≥2048x1152, ≤6 MB, 16:9), kanal fragmanı, oynatma listeleri.
 API ile değiştirilemez: profil fotoğrafı, kanal adı, @tanıtıcı (Studio).
+
+## Uygulandı (2026-10-26, Niyazi talimatı "ayarların tamamını sen yap")
+- Açıklama (905 karakter, kanal-paketi.json), anahtar kelimeler (25 ifade), varsayılan dil `en` → channels.update ✅ (API okumasında ~15 sn sonra göründü).
+- Ülke **TR** bırakıldı: YPP uygunluğu kanal ülkesine bağlı ve içerik üreticinin programın açık olduğu ülkede yaşaması şart (support.google.com/youtube/answer/2976814, answer/72851). Videolarda coğrafi kısıt yok → küresel yayın; reklam geliri izleyicinin ülkesine göre.
+- Oynatma listeleri: ilgili ilk video yüklenince açılacak (boş liste yok). Banner: görsel hazır olunca. Eski 4 video: Niyazi kararı bekleniyor (öneri gizli).

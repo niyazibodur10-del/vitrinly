@@ -1,5 +1,5 @@
 {
-  "aciklama": "Animated finance stories: today's money news explained, history's biggest financial crashes, and \"what if\" scenarios for the future of money.\n\nFinancial Rise turns complex money events into animated stories you can follow, told by our cartoon narrator:\n• Money News, Explained: interest rates, inflation, bank failures and market moves, broken down while they are still news.\n• The Collapse: the 1929 crash, Weimar hyperinflation, tulip mania, Lehman and other moments that reshaped money.\n• What If…: plausible scenarios about the dollar, AI, banks and the economy. Scenarios, not predictions.\n\nEvery video is researched and fact-checked, with sources in its description.\n\nNew long videos every Tuesday, Friday and Sunday, plus Shorts.\n\nEducational content, not financial advice. We never tell you what to buy or sell.\nNarration voice is AI-generated. The narrator is a cartoon character, not a financial advisor.\n\nBusiness inquiries: [iş e-postası]",
+  "aciklama": "Animated finance stories: today's money news explained, history's biggest financial crashes, and \"what if\" scenarios for the future of money.\n\nFinancial Rise turns complex money events into animated stories you can follow, told by our cartoon narrator:\n• Money News, Explained: interest rates, inflation, bank failures and market moves, broken down while they are still news.\n• The Collapse: the 1929 crash, Weimar hyperinflation, tulip mania, Lehman and other moments that reshaped money.\n• What If…: plausible scenarios about the dollar, AI, banks and the economy. Scenarios, not predictions.\n\nEvery video is researched and fact-checked, with sources in its description.\n\nNew animated finance stories every week, plus Shorts.\n\nEducational content, not financial advice. We never tell you what to buy or sell.\nNarration voice is AI-generated. The narrator is a cartoon character, not a financial advisor.",
   "anahtar_kelimeler": "\"Financial Rise\" \"animated finance\" \"finance explained\" \"money news explained\" \"financial news\" \"financial history\" \"economic history\" \"stock market crash\" \"1929 crash\" hyperinflation \"Weimar Germany\" \"financial crisis\" \"bank collapse\" \"economic bubbles\" \"what if scenarios\" \"future of money\" \"economy explained\" inflation \"interest rates\" recession \"federal reserve\" \"stock market\" crypto \"finance animation\" economics",
   "varsayilan_dil": "en",
   "ulke": "TR",
@@ -30,5 +30,6 @@
       "gizlilik": "public"
     }
   ],
-  "fragman_video_id": null
+  "fragman_video_id": null,
+  "_not": "Tam tempoya (Salı/Cuma/Pazar) geçilince ritim satırı güncellenir; iş e-postası Niyazi verince eklenir. Listeler ilk ilgili video yüklenince açılır (boş liste yayınlanmaz)."
 }

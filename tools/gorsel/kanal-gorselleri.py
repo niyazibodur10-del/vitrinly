@@ -118,7 +118,7 @@ def grafik_noktalari(seed, x0, x1, y0, y1, n=26):
     return list(zip(xs, ys))
 
 
-def arkaplan(seed=7, sahne=None, grafik=True):
+def arkaplan(seed=7, sahne=None, grafik=True, grafik_y=(1180, 600)):
     if sahne:  # Canva sahnesi: 16:9 → 2560x1440 kapla, hafif karart (metin kontrastı için)
         s = Image.open(sahne).convert("RGB")
         s = s.resize((W, int(s.height * W / s.width)), Image.LANCZOS) if s.width / s.height <= W / H else \
@@ -151,7 +151,7 @@ def arkaplan(seed=7, sahne=None, grafik=True):
             x += bw + int(r.integers(4, 22))
         bg = Image.alpha_composite(bg, lay)
     if grafik:
-        bg = Image.alpha_composite(bg, cizgi_grafik(seed))
+        bg = Image.alpha_composite(bg, cizgi_grafik(seed, y0=grafik_y[0], y1=grafik_y[1]))
     return bg
 
 
@@ -256,7 +256,7 @@ def metin_blogu(x0, x1, ust, slogan, ritim, hiza="sol", alt=None, ad_maks=210, r
 
 def banner(aday, a):
     if aday == "A":       # karakter solda (sevinçli) + şehir + yükselen grafik, metin sağda
-        bg = arkaplan(sahne=a.arkaplan)
+        bg = arkaplan(sahne=a.arkaplan, grafik_y=(1330, 700))   # grafik metnin altından geçer
         kar = kes(a.banner_karakter)
         bg, kk, kafa, _ = karakter_yerlestir(bg, kar, SX + 300, SY + 22, yukseklik=a.a_yukseklik)
         uc = None
@@ -463,7 +463,7 @@ def main():
     ap.add_argument("--profil-adaylar", default="P1,P2,P3")
     ap.add_argument("--kazanan-banner", default=None)
     ap.add_argument("--kazanan-profil", default=None)
-    ap.add_argument("--a-yukseklik", type=int, default=1180, help="A adayında karakter boyu (px); >918 ise tuval altından taşar")
+    ap.add_argument("--a-yukseklik", type=int, default=1140, help="A adayında karakter boyu (px); >918 ise tuval altından taşar")
     ap.add_argument("--esrgan", type=int, default=1)
     a = ap.parse_args()
     on = os.path.join(a.cikis, "onizleme"); os.makedirs(on, exist_ok=True)
