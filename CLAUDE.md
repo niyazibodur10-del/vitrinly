@@ -47,6 +47,7 @@ Her ajan işini **test ederek** teslim eder (bkz. `docs/kalite-kapilari.md`): te
 ## Teknik kararlar
 - Video motoru: **Remotion** (React ile programatik video). Resmi skill: `.claude/skills/remotion-best-practices`.
 - Dudak senkronu: **Rhubarb Lip Sync** (sesten ağız şekli A–H, X zaman çizelgesi). İngilizce için varsayılan PocketSphinx tanıyıcı (en isabetli mod). GitHub indirmesi ağda kapalı → kaynak koddan derlenir.
+- **Stil kararı (Niyazi, 2026-10-26):** görseller referanstan daha gerçekçi/resimsi olabilir; şart olan **karakterin her sahnede tutarlı ve tekrar eden** olması. Sahne ve thumbnail görselleri Canva bağlayıcısı (`generate-image`, referans = karakter sayfası, Niyazi'nin Canva aboneliği, ek ücret yok) ile üretilir; test: `uretim/canva-testi/rapor.md`. Gemini API kullanılmıyor (ödeme gerektiriyor).
 - Görsel stil (bkz. `docs/referans-analizi.md`): sahne başına tutarlı, detaylı illüstrasyon (kalın kontur, cel-shading, soğuk arka plan + sıcak karakter) + sinematik kamera (zoom/pan/punch-in) + hızlı kesme + anahtar kelimesi renkli kelime kelime altyazı + büyük sayı grafikleri.
 - Karakter: `assets/karakter/karakter-karti.md` — **2D** (Niyazi kararı 2026-10-26: 3D karakter sayfasının aynısı, 2D çizgi film stiline çevrilir; referans videonun çizim diliyle uyumlu). Konuşan sahneler: katmanlı 2D rig (kafa, gövde, kol, el, bacak, 9 ağız şekli, göz kırpma) + Rhubarb dudak senkronu. Diğer sahneler: karakterli illüstrasyon + kamera; kilit hareket anları image-to-video (kör testle).
 - Format: ana video 16:9 uzun; aynı sahnelerden 9:16 Shorts kesitleri.

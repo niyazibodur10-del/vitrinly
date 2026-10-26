@@ -58,7 +58,7 @@ Seçim: **P2 varsayılan, P1 haftada en fazla 1 vitrin videosu, P3 yalnız B pla
 - Shorts ek yükü küçüktür: video başına ~30–45 dk [T]. Kesitler aynı sahnelerden çıkar, render ~11 dk [H] sürer. Bu yüzden 6 Shorts ana kısıt değildir.
 - **Bugün mümkün değil.** Aşağıdaki şart bağımlılıklar eksik. Görsel API ve karakter görselleri olmadan yalnız P3 yapılabilir.
 - **Öneri (geçiş):** 1. hafta 1 uzun + 2 Shorts + 1 stok video, 2. hafta 2 + 4, 3. hafta 3 + 6. Her adımın ölçülen süresi bu dosyaya işlenir. 3. haftada kritik yol >12 saat ise tempo haftada 2'de tutulur ve sahne kütüphanesi tamamlanınca yeniden denenir.
-- Politika riski [AÖ, plan v1]: YouTube'un 2026-07 "inauthentic content" netleştirmesi seri/şablon üretimi ve finansta tavsiye veren yapay zekâ personalarını hedef alıyor. **Haftada 3 + TTS anlatıcı bu riski artırır.** Önlemler: her videoda özgün araştırma ve kaynak listesi, değişen yapı ve açılış, tavsiye dili yok, karakter uzman gibi sunulmaz, TTS kullanımı açıklamada belirtilir (paketleyici kararı). finans-dogrulayici bu kontrolleri her videoda yapar.
+- Politika riski [AÖ, plan v1]: YouTube'un 2026-07 "inauthentic content" netleştirmesi seri/şablon üretimi ve finansta tavsiye veren yapay zekâ personalarını hedef alıyor. **Haftada 3 + TTS anlatıcı bu riski artırır.** Önlemler: her videoda özgün araştırma ve kaynak listesi, değişen yapı ve açılış, tavsiye dili yok, karakter uzman gibi sunulmaz, TTS kullanımı açıklamada belirtilir (youtube-paketleyici kararı). finans-dogrulayici bu kontrolleri her videoda yapar.
 
 ## 6. Dış bağımlılıklar (şart olanlar)
 | # | Bağımlılık | Kimden | Durum (2026-10-26) | Yoksa |
