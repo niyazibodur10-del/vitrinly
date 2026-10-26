@@ -7,6 +7,7 @@ Bu repo artık yalnızca bu YouTube kanalı içindir. Eski Vitrinly ürünü ve 
 ## Ürün
 Kanal adı: **Financial Rise** (Niyazi kararı 2026-10-26). Karakter adı: henüz yok.
 YouTube'da **uzun (en az 10 dk; hedef 10–14 dk) animasyonlu finans videoları**. Bir maskot karakter anlatır.
+**Ana hedef: para kazanma (YPP kabulü + sürdürülebilir gelir)** — kalite ve politika uyumu buna göre (Niyazi 2026-10-26; `docs/monetizasyon.md`).
 Konular: güncel finans haberleri, geçmişin büyük finans olayları, geleceğe dair olası senaryolar.
 Hedef kitle: finansa ilgili gençler + genel izleyici. Video dili: **İngilizce** (Niyazi kararı 2026-10-26), global kitle. Kanal kopya değil, özgün. Plan: `docs/plan.html` (https://claude.ai/artifact/Ggxzsp9VT8GFhpzuoGgh56).
 
@@ -27,20 +28,21 @@ Hedef tempo: haftada 3 uzun video + 6 Shorts (`docs/yayin-takvimi.md`). Kapasite
 Alt ajanları yalnız koordinatör çağırır (alt ajan alt ajan çağıramaz). Paralel adımlar tek mesajda birlikte çağrılır. Durum `uretim/<tarih>-<slug>/durum.md`'de tutulur; oturum koparsa ilk geçmemiş adımdan devam edilir.
 1. **F0 Açılış:** koordinatör (`showrunner` kuralları) slot, sütun, stok ve klasörü belirler ‖ `uretim-muhendisi` ortamı kurar.
 2. **F1 Araştırma:** `trend-avcisi` ‖ `kanal-analisti`.
-3. **F2 Seçim:** `senaryo-yazari` (en az 10 senaryo) → `viralite-analisti` (ilk 3) ‖ `finans-dogrulayici` (risk taraması) → `hakem` kazanan + yedek seçer. **Karar kesindir, Niyazi'ye sorulmaz.**
-4. **F3 Metin:** `senaryo-yazari` tam metin + Shorts kancaları → `finans-dogrulayici` → metin kilidi.
+3. **F2 Seçim:** `senaryo-yazari` (en az 10 senaryo) → `viralite-analisti` (ilk 3) ‖ `finans-dogrulayici` (risk taraması) ‖ `monetizasyon-uyum-uzmani` (politika ön taraması) → `hakem` kazanan + yedek seçer. **Karar kesindir, Niyazi'ye sorulmaz.**
+4. **F3 Metin:** `senaryo-yazari` tam metin + Shorts kancaları → `finans-dogrulayici` ‖ `monetizasyon-uyum-uzmani` → metin kilidi.
 5. **F4 Paralel kollar:** (`ses-yonetmeni` TTS → `ses-muhendisi`) ‖ `gorsel-varlik-sanatcisi` ‖ `muzik-ses-tasarimcisi` ‖ `thumbnail-tasarimcisi` + `youtube-paketleyici` taslakları.
 6. **F5/F6:** `animasyon-yonetmeni` (önce 10–20 sn kritik yol testi, sonra tüm sahneler + 9:16) ‖ `muzik-ses-tasarimcisi` miks stem'leri.
 7. **F7 Kurgu:** `kurgu-editoru` final 16:9 + SRT + **2 Shorts** (9:16, ≤60 sn, kendi hook'u).
-8. **F8 Paket:** `thumbnail-tasarimcisi` (3 varyant) ‖ `youtube-paketleyici` (başlık, açıklama, SEO, etiketler, bölümler, `yayin-paketi.json`) ‖ `viralite-analisti` (son viralite puanı).
+8. **F8 Paket:** `thumbnail-tasarimcisi` (3 varyant) ‖ `youtube-paketleyici` (başlık, açıklama, SEO, etiketler, bölümler, `yayin-paketi.json`) ‖ `viralite-analisti` (son viralite puanı) → `monetizasyon-uyum-uzmani` (`politika-raporu.md`).
 9. **F9 Hakem** son kalite kontrolü (kapıları kendisi ölçer, karneyi doldurur).
 10. **F10 Teslim:** `uretim/<tarih>-<slug>/teslim/` (final video, 2 Shorts, 3 thumbnail, `yayin-paketi.json`, `YAYIN.md`, hakem raporu) → Niyazi'ye tek sayfa → **DUR**.
 11. **F11 Yayın yalnız Niyazi onayıyla:** `uretim-muhendisi`'nin `tools/yayin/` aracı `yayin-paketi.json` ile planlı yükleme yapar (takvim slotu).
+12. **F12 Yayın sonrası** (48 sa / 7 g / 28 g): `kanal-analisti` performans raporu → `viralite-analisti` kalibrasyon; dersler sonraki videoya.
 Kapıdan kalan iş düzeltme listesiyle aynı ajana döner. **2 düzeltme turundan sonra hâlâ kalıyorsa koordinatöre eskalasyon** olur: araç → `uretim-muhendisi`, B planı sahne, yedek senaryo, gecikme kuralı, tekrarlayan sorunda `ik-direktoru`.
-Parça komutlar: `/yeni-video` (yalnız F0–F2, ön araştırma ve stok için), `/video-uret` (seçimi yapılmış veya yarım kalan üretimi ilk geçmemiş adımdan, F3–F10, sürdürür), `/senaryo-onayla` ve `/ses-isle` (Niyazi'nin kendi okuması yedek yolu).
+Parça komutlar: `/yeni-video` (yalnız F0–F2, ön araştırma ve stok için), `/video-uret` (seçimi yapılmış veya yarım kalan üretimi ilk geçmemiş adımdan, F3–F10, sürdürür), `/kanal-acilisi` (kanal kimliği + YPP hazırlığı), `/senaryo-onayla` ve `/ses-isle` (Niyazi'nin kendi okuması yedek yolu).
 
 Sürekli: `uretim-muhendisi` kurulum, Remotion altyapısı, render hattı ve `tools/` betiklerinin sahibi (her araç arızası ona). `ik-direktoru` kadroyu, skill'leri ve karneyi denetler; işe alır/çıkarır (`docs/kadro-degisiklikleri.md`).
-Ekip (17): showrunner, trend-avcisi, kanal-analisti, senaryo-yazari, viralite-analisti, finans-dogrulayici, hakem, ses-yonetmeni, ses-muhendisi, gorsel-varlik-sanatcisi, muzik-ses-tasarimcisi, animasyon-yonetmeni, kurgu-editoru, thumbnail-tasarimcisi, youtube-paketleyici, uretim-muhendisi, ik-direktoru. Protokol: `docs/ajan-protokolu.md`; hafıza: `.claude/agents/hafiza/<ad>.md`.
+Ekip (18): showrunner, trend-avcisi, kanal-analisti, senaryo-yazari, viralite-analisti, finans-dogrulayici, hakem, ses-yonetmeni, ses-muhendisi, gorsel-varlik-sanatcisi, muzik-ses-tasarimcisi, animasyon-yonetmeni, kurgu-editoru, thumbnail-tasarimcisi, youtube-paketleyici, uretim-muhendisi, ik-direktoru, monetizasyon-uyum-uzmani. Protokol: `docs/ajan-protokolu.md`; hafıza: `.claude/agents/hafiza/<ad>.md`.
 
 Her ajan işini **test ederek** teslim eder (bkz. `docs/kalite-kapilari.md`): test çıktısı olmadan teslim yok.
 
