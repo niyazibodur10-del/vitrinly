@@ -7,6 +7,7 @@ argument-hint: [isteğe bağlı konu/sütun ipucu]
 Konu/sütun ipucu: $ARGUMENTS (boşsa sütun `docs/yayin-takvimi.md` rotasyonundan, konu sistemden gelir).
 
 **Kim yürütür:** Ana oturumdaki koordinatör, `showrunner`'ın çalışma kurallarıyla yürütür. **Alt ajanları yalnız koordinatör çağırır**, çünkü alt ajanlar alt ajan çağıramaz. "Paralel" yazan adımlarda ajan çağrıları **tek mesajda birlikte** yapılır.
+**Ana hedef:** kanalın para kazanması (YouTube Partner Programı'na kabul + sürdürülebilir gelir). Bu yüzden her video politika kapısından (monetizasyon-uyum-uzmani, F2/F3/F8) ve retention kapısından geçer; yayından sonra performans verisi sonraki videoya geri beslenir (F12).
 **Niyazi'nin rolü:** Yalnız F10'da bitmiş videoyu onaylar. Senaryo seçimi tamamen ajanlardadır; hakemin senaryo kararı Niyazi'ye sorulmaz.
 **Görsel ve ses kaynağı (Niyazi kararları 2026-10-26):** Sahne ve thumbnail görselleri Canva bağlayıcısıyla üretilir (Niyazi'nin aboneliği, ek ücret yok; ücretli görsel API kullanılmaz). Canva çağrılarını (`mcp__Canva__*`) koordinatör veya araç erişimi olan ajan yapar; ajanlar prompt'u ve değerlendirmeyi hazırlar. Anlatıcı sesi ücretsiz yapay zekâ sesidir (TTS); Niyazi'nin okuması yedek yoldur (`/senaryo-onayla`, `/ses-isle`).
 **Onaysız yapılmaz:** Para harcayan servis (ücretli görsel API, image-to-video, ücretli TTS), YouTube'a her türlü yükleme (private dahil), dışarıya mesaj ve geri alınamaz adımlar. Bütçe onayı önceden verilmişse (`docs/uretim-kapasitesi.md` → "Onaylı bütçe") onaylı tavana kadar harcanabilir; tavan aşılacaksa durulur ve Niyazi'ye sorulur.
@@ -17,7 +18,7 @@ Konu/sütun ipucu: $ARGUMENTS (boşsa sütun `docs/yayin-takvimi.md` rotasyonund
 - **Teslim kuralı:** Her ajan, protokol (`docs/ajan-protokolu.md`) gereği 2–3 aday, test, eleme ve hafıza dersiyle teslim eder. **Test çıktısı yoksa teslim alınmaz** ve iş geri gönderilir. Bu bir RED turu sayılmaz, ama `durum.md`'ye not edilir.
 - **Kalite kapıları:** `docs/kalite-kapilari.md` ve bu dosyadaki "Ek kapılar".
 - **Commit:** Her faz sonunda `git add` + commit + push yapılır (konteyner silinir). Mesaj: `<slug>: F<n> <özet>`. 100 MB'ı aşan medya git'e girmez. Final video ve Shorts dosyaları git'e girmez (`.gitignore`); depolama bölüm 3'teki öneriye göre (Niyazi onayı bekliyor).
-- **Kod yeri:** Remotion sahneleri `video/src/videolar/<slug>/` altında olur (sahibi animasyon-yonetmeni). Ortak bileşenler `video/src/ortak/` altında olur (sahibi uretim-muhendisi).
+- **Kod yeri:** Remotion sahneleri `video/src/videolar/<slug>/` altında olur (sahibi animasyon-yonetmeni). Ortak bileşenler `video/src/ortak/` altında olur (sahibi uretim-muhendisi; klasör ilk ortak bileşenle oluşturulur).
 
 ## 1. RED → düzeltme döngüsü ve eskalasyon
 1. Kapıdan kalan iş, **düzeltme listesiyle** (hangi ölçüm, beklenen ve ölçülen değer) aynı ajana geri döner. Durum `RED-1` olur.
@@ -48,13 +49,14 @@ Konu/sütun ipucu: $ARGUMENTS (boşsa sütun `docs/yayin-takvimi.md` rotasyonund
 1. `senaryo-yazari` → **en az 10 senaryo** yazar (hook, yapı, karakter anı, sütun, görselleştirme notu). Teslim `02-senaryo/senaryolar.md`. Kapı: Senaryolar (en az 5 farklı açı türü).
 2. **Paralel:**
    - `viralite-analisti` → `tools/viralite.py` ile hepsini puanlar ve **ilk 3'ü** bırakır. Teslim `02-senaryo/viralite.md`. Kapı: Viralite (betik 2 kez çalışıp aynı sonuç).
-   - `finans-dogrulayici` → 10 senaryonun hepsine risk taraması yapar: doğrulanabilirlik, tavsiye dili, karalama, YouTube finans politikası. Teslim `02-senaryo/on-dogrulama.md`. Kapı: Her senaryoya YEŞİL/SARI/KIRMIZI + gerekçe. KIRMIZI olan senaryo elenir.
-3. `hakem` → ilk 3 içinden **tek kazanan + yedek** seçer. Karar **kesindir**, Niyazi'ye sorulmaz. Teslim `02-senaryo/senaryo-karari.md` (kazanan, gerekçe, ilk 3'ün puan tablosu, riskler). Kapı: kazanan KIRMIZI değil; ilk 3 aynı tabloda; her birine "neden kaybedebilir" maddesi yazılmış.
+   - `finans-dogrulayici` → 10 senaryonun hepsine risk taraması yapar: doğrulanabilirlik, tavsiye dili, karalama, yanıltıcı bilgi. Teslim `02-senaryo/on-dogrulama.md`. Kapı: Her senaryoya YEŞİL/SARI/KIRMIZI + gerekçe. KIRMIZI olan senaryo elenir.
+   - `monetizasyon-uyum-uzmani` → 10 senaryoya para kazanma/reklam uygunluğu ön taraması: reklam dostu kategoriler (hassas olay, sarsıcı içerik, tartışmalı konu), şablon tekrarı (önceki videolarla aynı yapı/sonuç), AI personası, gerçekçi sahte olay riski. Teslim `02-senaryo/politika-on-tarama.md`. Kapı: Her senaryoya YEŞİL/SARI/KIRMIZI + politika kaynağı. KIRMIZI olan senaryo elenir.
+3. `hakem` → ilk 3 içinden **tek kazanan + yedek** seçer. Karar **kesindir**, Niyazi'ye sorulmaz. Teslim `02-senaryo/senaryo-karari.md` (kazanan, gerekçe, ilk 3'ün puan tablosu, riskler). Kapı: kazanan iki taramada da KIRMIZI değil; ilk 3 aynı tabloda; her birine "neden kaybedebilir" maddesi yazılmış.
 4. Klasör slug'la yeniden adlandırılır, commit atılır.
 
 ### F3 — Tam metin ve doğrulama (sıralı)
-1. `senaryo-yazari` → tam İngilizce metin: anlatım + GÖRSEL sütunu (sahne başına) + 2 Shorts için kanca/kesit önerisi. Teslim `03-metin/metin.md`. Kapı: Metin (≥1.500 kelime, ±%10, ilk 15 sn'de net vaat, en geç 90 sn'de bir yeniden kanca).
-2. `finans-dogrulayici` → metindeki tüm rakam, tarih ve olayları doğrular; yasal notu ve "scenario" dilini denetler. Teslim `03-metin/dogrulama.md`. Kapı: Doğrulama (doğrulanamayan rakam kalmadı). RED gelirse metin senaryo-yazari'ye döner, düzeltilmiş metin yeniden doğrulanır.
+1. `senaryo-yazari` → tam İngilizce metin: anlatım + GÖRSEL sütunu (sahne başına) + 2 Shorts için kanca/kesit önerisi. Teslim `03-metin/metin.md`. Kapı: Metin (≥1.500 kelime, ±%10, ilk 15 sn'de net vaat, en geç 90 sn'de bir yeniden kanca) + Retention (metin): ilk 30 sn planı ve retention haritası var, ilk 60 sn'de abone çağrısı yok.
+2. **Paralel:** `finans-dogrulayici` → metindeki tüm rakam, tarih ve olayları doğrular; yasal notu ve "scenario" dilini denetler. Teslim `03-metin/dogrulama.md`. Kapı: Doğrulama (doğrulanamayan rakam kalmadı). ‖ `monetizasyon-uyum-uzmani` → metni para kazanma politikalarına göre denetler (anlamlı anlatı/yorum, maskot tavsiye vermiyor, ilk 30 sn ve başlıkta reklam dostu dil, önceki metinlerle kalıp tekrarı). Teslim `03-metin/politika-denetimi.md`. Kapı: YPP politika (metin) — KIRMIZI bulgu yok. RED gelirse metin senaryo-yazari'ye döner, düzeltilmiş metin ikisinden de yeniden geçer.
 3. **Metin kilidi.** Bundan sonra metin değişirse ses, animasyon ve kurgu yeniden üretilir. Bu yüzden değişiklik yalnız RED düzeltmesi için yapılır.
 
 ### F4 — Üretim kolları (dört kol paralel; metin kilidinden hemen sonra)
@@ -83,7 +85,7 @@ Teslim `07-animasyon/test-10sn.mp4`, `07-animasyon/senkron-rapor.md`, `video/src
 1. Ana video (16:9) birleştirilir, tempo ve geçişler kurulur, kelime kelime gömülü altyazı eklenir, SRT çıkarılır. Render `tools/render-son.sh` ile yapılır.
 2. **2 Shorts** hazırlanır (9:16, ≤60 sn). Her biri **kendi hook'uyla** açılır (ilk 2 sn), aynı sahnelerden yeniden kadrajlanır. Kancayı taşıyacak sahne eksikse koordinatöre "ek sahne" talebi iletilir; koordinatör bunu animasyon-yonetmeni'ne (gerekirse gorsel-varlik-sanatcisi'ne) verir. Shorts için 3–5 aday bölüm seçilir, ilk 2 sn testinden geçen 2 tanesi kalır.
 
-Teslim `08-kurgu/final-16x9.mp4`, `08-kurgu/altyazi.srt`, `08-kurgu/shorts-1.mp4`, `08-kurgu/shorts-2.mp4`, `08-kurgu/kurgu-rapor.md`. Kapı: Kurgu, Altyazı, Ses (son dosyada) ve aşağıdaki Shorts kapısı.
+Teslim `08-kurgu/final-16x9.mp4`, `08-kurgu/altyazi.srt`, `08-kurgu/shorts-1.mp4`, `08-kurgu/shorts-2.mp4`, `08-kurgu/kurgu-rapor.md`. Kapı: Kurgu, Altyazı, Ses (son dosyada), Retention (kurgu: ilk görsel değişim ≤3 sn, kanal intro'su yok) ve aşağıdaki Shorts kapısı.
 
 ### F8 — Son paket (paralel)
 | Ajan | İş | Teslim | Kapı |
@@ -91,9 +93,10 @@ Teslim `08-kurgu/final-16x9.mp4`, `08-kurgu/altyazi.srt`, `08-kurgu/shorts-1.mp4
 | `thumbnail-tasarimcisi` | Render karelerinden **3 thumbnail varyantı** (A/B/C, 1280x720) | `09-paket/thumbnail-A.png`, `09-paket/thumbnail-B.png`, `09-paket/thumbnail-C.png`, `09-paket/thumb-rapor.md` | Thumbnail: 168x94'te okunuyor, metin ≤4 kelime |
 | `youtube-paketleyici` | Son başlık + 4 yedek, açıklama (kaynaklar, yasal not, lisans atıfları, AI ses notu), SEO, etiketler, hashtag'ler, **gerçek zamanlardan bölümler**, pinli yorum, Shorts paketleri. Yayın paketleri yükleme aracının şemasında yazılır (bkz. bölüm 3) | `09-paket/paket.md`, `09-paket/yayin-paketi.json`, `09-paket/yayin-paketi-shorts-1.json`, `09-paket/yayin-paketi-shorts-2.json` | Paket: başlık ≤60 karakter, bölümler gerçek zamanlara denk. Yayın paketi kapısı: `--dry-run` 0 hata |
 | `viralite-analisti` | Bitmiş paketin (başlık + thumbnail + ilk 15 sn) **viralite puanı**, F2 tahminiyle fark | `09-paket/viralite-son.md` | Viralite: betik 2 kez çalışıp aynı sonuç |
+| `monetizasyon-uyum-uzmani` | Paket + final video politika denetimi: başlık/thumbnail içerikle tutarlı, AI beyanı kararı (`durum.sentetik_medya`) ve açıklama satırı, reklam uygunluğu öz beyan yanıtları, lisans kaydı + Content ID itiraz kanıtı, reused/dış görüntü yok, özgünlük ve insan katkısı kanıtı, yeniden kullanılan sahne oranı. Taslak paketler F8 içinde ona gider, kararı youtube-paketleyici pakete işler | `09-paket/politika-raporu.md` | YPP politika kapısı (`docs/kalite-kapilari.md`) |
 
 ### F9 — Hakem son kontrol
-`hakem` → bütün kapıları **kendisi yeniden ölçer** (ffprobe, ebur128, `tools/senkron-testi.py`, altyazı hizası, thumbnail küçültme, lisans kaydı, yasal not, Shorts kapısı). Karneyi doldurur. Teslim `hakem-raporu.md`: ONAY veya RED + düzeltme listesi. RED alan iş ilgili ajana döner (bölüm 1'deki döngü), sonra yeniden F9 yapılır.
+`hakem` → bütün kapıları **kendisi yeniden ölçer** (ffprobe, ebur128, `tools/senkron-testi.py`, altyazı hizası, thumbnail küçültme, lisans kaydı, yasal not, Shorts kapısı, YPP politika kapısı, retention kapısı). Karneyi doldurur. Teslim `hakem-raporu.md`: ONAY veya RED + düzeltme listesi. RED alan iş ilgili ajana döner (bölüm 1'deki döngü), sonra yeniden F9 yapılır.
 
 ### F10 — Teslim paketi ve Niyazi'ye sunum → DUR
 Koordinatör `teslim/` klasörünü kurar (bkz. bölüm 3), `YAYIN.md`'yi yazar, commit/push eder ve Niyazi'ye **tek sayfa** sunar:
@@ -113,7 +116,15 @@ Niyazi'den yanıt gelmeden yayın adımına geçilmez.
 - OAuth tanımlı değilse, denetim kilidi çıkarsa ya da araç hata verirse `python3 tools/yayin/yukle.py <paket> --manuel-paket` ile Studio klasörü üretilir ve elle yükleme adımları Niyazi'ye verilir.
 - Yükleme çıktısı (video ID'leri, planlanan saatler) `teslim/yayin-kaydi.json`'a yazılır. `docs/yayin-takvimi.md` stok tablosu güncellenir. Kararı `c-level-skills:decision-logger` biçimiyle `durum.md` sonuna yaz.
 - Niyazi "şunu değiştir" derse değişiklik ilgili ajana gider (bölüm 1'deki döngü), F9 ve F10 tekrarlanır.
-- Yayından 7 ve 28 gün sonra `kanal-analisti` performans verisini çıkarır. Bu veri `viralite-analisti` kalibrasyonuna girer.
+- `YAYIN.md`'deki Studio adımları: SRT yükleme, Shorts'a "ilgili video" olarak uzun videonun bağlanması, uç ekran, oynatma listesi, reklam uygunluğu öz beyan yanıtları (`politika-raporu.md`), Test & Compare (B ve C).
+
+### F12 — Yayın sonrası geri besleme (48 saat, 7 gün, 28 gün)
+| Ajan | İş | Teslim | Kapı |
+|---|---|---|---|
+| `kanal-analisti` | Gösterim, CTR, AVD ve ortalama izlenme yüzdesi, ilk 30 sn tutma ve düşüş noktaları (sahneye eşlenmiş), trafik kaynakları (Shorts → uzun dahil), abone kazanımı, Test & Compare sonucu, YPP ilerlemesi | `yayin-sonrasi/performans-<48s\|7g\|28g>.md` | Yayın sonrası analiz kapısı: her sayının kaynağı (API / Studio dışa aktarımı) ve tarihi var; "sonraki video için 3 ders" yazıldı |
+| `viralite-analisti` | 7 ve 28 gün verisiyle tahmin–gerçek karşılaştırması, model kalibrasyonu | `yayin-sonrasi/kalibrasyon.md` | Viralite: betik 2 kez çalışıp aynı sonuç |
+| `youtube-paketleyici` | (Niyazi onayıyla) yorum yanıtları; düşük CTR'de (kanal-analisti önerisiyle) başlık/thumbnail değişikliği önerisi — değişiklik yalnız Niyazi onayıyla yayına girer | `yayin-sonrasi/paket-guncelleme.md` | Öneri gerekçeli ve veriye bağlı |
+Dersler sonraki videonun F1'ine girer (trend-avcisi, senaryo-yazari, kurgu-editoru, thumbnail-tasarimcisi bu raporları okur). Her 5 videoda bir `monetizasyon-uyum-uzmani` kanal düzeyi özgünlük denetimi ve `docs/ypp-hazirlik.md` güncellemesi yapar.
 
 ## 3. Teslim paketi: `uretim/<tarih>-<slug>/teslim/`
 | Dosya | Kaynak |
@@ -123,6 +134,7 @@ Niyazi'den yanıt gelmeden yayın adımına geçilmez.
 | `thumbnail-A.png`, `thumbnail-B.png`, `thumbnail-C.png` | thumbnail-tasarimcisi (F8) |
 | `altyazi.srt` | kurgu-editoru (F7) |
 | `yayin-paketi.json` (uzun video), `yayin-paketi-shorts-1.json`, `yayin-paketi-shorts-2.json` | youtube-paketleyici (F8) |
+| `politika-raporu.md` | monetizasyon-uyum-uzmani (F8) |
 | `hakem-raporu.md` | hakem (F9) |
 | `YAYIN.md` | koordinatör (F10): tek sayfa özet |
 
@@ -132,7 +144,7 @@ Niyazi'den yanıt gelmeden yayın adımına geçilmez.
 - `.gitignore`: `uretim/**/final/*.mp4`, `uretim/**/teslim/*.mp4`, `uretim/**/08-kurgu/*.mp4` (önizlemeler `!uretim/**/*onizleme*.mp4` ile hariç). Ayrıntı: `docs/uretim-kapasitesi.md` bölüm 6, satır 5.
 - Onay gelene kadar geçici olarak böyle çalışılır (git zaten 100 MB üstü dosyayı kabul etmez, `.gitignore` geri alınabilir); Niyazi başka bir yer (Drive, Git LFS vb.) seçerse bu bölüm güncellenir.
 
-**Yayın paketi şeması** yükleme aracının sözleşmesidir: `tools/yayin/yayin_paket.py` → `SEMA` (`"sema": "yayin-paketi/1"`). Her video için **ayrı paket** yazılır (`"tur": "uzun"` ya da `"shorts"`). Dosya yolları paketin klasörüne göredir. Alanlar: `dosyalar.video`, `dosyalar.thumbnail`, `dosyalar.altyazilar`, `metadata.baslik`, `metadata.aciklama`, `metadata.etiketler`, `metadata.bolumler`, `metadata.kategori_id`, `durum.gizlilik`, `durum.yayin_zamani` (saat dilimli ISO 8601), `durum.cocuklara_ozel`, `durum.sentetik_medya`, `onay.niyazi_onayi`, `onay.tarih`. `onay.niyazi_onayi` F10'a kadar **false** kalır; araç false iken yüklemeyi reddeder. Kategori ve sentetik medya beyanı youtube-paketleyici'nin kararıdır.
+**Yayın paketi şeması** yükleme aracının sözleşmesidir: `tools/yayin/yayin_paket.py` → `SEMA` (`"sema": "yayin-paketi/1"`). Her video için **ayrı paket** yazılır (`"tur": "uzun"` ya da `"shorts"`). Dosya yolları paketin klasörüne göredir. Alanlar: `dosyalar.video`, `dosyalar.thumbnail`, `dosyalar.altyazilar`, `metadata.baslik`, `metadata.aciklama`, `metadata.etiketler`, `metadata.bolumler`, `metadata.kategori_id`, `durum.gizlilik`, `durum.yayin_zamani` (saat dilimli ISO 8601), `durum.cocuklara_ozel`, `durum.sentetik_medya`, `onay.niyazi_onayi`, `onay.tarih`. `onay.niyazi_onayi` F10'a kadar **false** kalır; araç false iken yüklemeyi reddeder. Kategori youtube-paketleyici'nin kararıdır; sentetik medya beyanı (`durum.sentetik_medya`) monetizasyon-uyum-uzmani'nin kararıdır (`politika-raporu.md`), youtube-paketleyici pakete işler.
 
 ## 4. Ek kapılar (bu akışa özgü)
 | Aşama | Test | Geçme ölçütü |
@@ -140,18 +152,19 @@ Niyazi'den yanıt gelmeden yayın adımına geçilmez.
 | Shorts | ffprobe + ilk 2 sn kare + altyazı güvenli alanı | 1080x1920, ≤60 sn, ilk 2 sn'de kendi kancası, metin alt %20'ye ve sağ kenar düğmelerine binmiyor, −14 LUFS ±1 |
 | Ön doğrulama | 10 senaryo tablosu | her senaryoda YEŞİL/SARI/KIRMIZI + gerekçe |
 | Yayın paketi | `python3 tools/yayin/yukle.py <paket> --dry-run` (3 paket) | 0 hata; adı geçen her dosya `teslim/` içinde; yayın zamanı takvim slotuna denk; başlık ≤60 karakter; `onay.niyazi_onayi` false |
-| Teslim paketi | dosya listesi | bölüm 3'teki 12 dosyanın hepsi yerel diskte var (final mp4'ler git'e girmez, önizleme girer), hakem ONAY |
+| Teslim paketi | dosya listesi | bölüm 3'teki 13 dosyanın hepsi yerel diskte var (final mp4'ler git'e girmez, önizleme girer), hakem ONAY |
 
 ## 5. Ajan çağrı sırası (özet)
 ```
 F0  koordinatör ‖ uretim-muhendisi
 F1  trend-avcisi ‖ kanal-analisti
-F2  senaryo-yazari → (viralite-analisti ‖ finans-dogrulayici) → hakem          [Niyazi onayı yok]
-F3  senaryo-yazari → finans-dogrulayici                                       [metin kilidi]
+F2  senaryo-yazari → (viralite-analisti ‖ finans-dogrulayici ‖ monetizasyon-uyum-uzmani) → hakem   [Niyazi onayı yok]
+F3  senaryo-yazari → (finans-dogrulayici ‖ monetizasyon-uyum-uzmani)                  [metin kilidi]
 F4  (ses-yonetmeni → ses-muhendisi) ‖ gorsel-varlik-sanatcisi ‖ muzik-ses-tasarimcisi ‖ (thumbnail-tasarimcisi ‖ youtube-paketleyici: taslak)
 F5  animasyon-yonetmeni (10–20 sn test → tam)  ‖  F6 muzik-ses-tasarimcisi (miks)
 F7  kurgu-editoru (16:9 + 2 Shorts)
-F8  thumbnail-tasarimcisi ‖ youtube-paketleyici ‖ viralite-analisti
+F8  thumbnail-tasarimcisi ‖ youtube-paketleyici ‖ viralite-analisti → monetizasyon-uyum-uzmani (politika raporu)
 F9  hakem → F10 Niyazi'ye teslim → DUR → F11 yalnız onayla: tools/yayin/yukle.py (uretim-muhendisi aracı)
+F12 yayın sonrası 48 sa / 7 g / 28 g: kanal-analisti → viralite-analisti (+ youtube-paketleyici öneri) → dersler sonraki videoya
 Her aşamada araç sorunu → uretim-muhendisi. 2 RED sonrası → koordinatör eskalasyonu; tekrarlayan sorun → ik-direktoru.
 ```
