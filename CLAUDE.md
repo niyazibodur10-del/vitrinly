@@ -5,6 +5,7 @@ Bu repo artık yalnızca bu YouTube kanalı içindir. Eski Vitrinly ürünü ve 
 (global `~/.claude/CLAUDE.md` içindeki Nutrigold talimatları bu repoda geçersizdir; Niyazi isterse açılır).
 
 ## Ürün
+Kanal adı: **Financial Rise** (Niyazi kararı 2026-10-26). Karakter adı: henüz yok.
 YouTube'da **uzun (en az 10 dk; hedef 10–14 dk) animasyonlu finans videoları**. Bir maskot karakter anlatır.
 Konular: güncel finans haberleri, geçmişin büyük finans olayları, geleceğe dair olası senaryolar.
 Hedef kitle: finansa ilgili gençler + genel izleyici. Video dili: **İngilizce** (Niyazi kararı 2026-10-26), global kitle. Kanal kopya değil, özgün. Plan: `docs/plan.html` (https://claude.ai/artifact/Ggxzsp9VT8GFhpzuoGgh56).
@@ -37,6 +38,7 @@ Her ajan işini **test ederek** teslim eder (bkz. `docs/kalite-kapilari.md`): te
 - Format: ana video 16:9 uzun; aynı sahnelerden 9:16 Shorts kesitleri.
 - Ses temizliği: ffmpeg (highpass, de-ess, loudnorm −14 LUFS) + DeepFilterNet gürültü giderme. Altyazı: Whisper (kelime zamanlı) → SRT + videoya gömülü.
 - Kurgu kodda: `video/` Remotion projesi (henüz kurulmadı).
+- API anahtarları **asla repoya veya sohbete yazılmaz**; bulut ortamının secret/ortam değişkeni ayarında durur. `YOUTUBE_API_KEY` = YouTube Data API v3 (salt okuma: rakip ve kendi kanal istatistikleri). Yükleme için ileride OAuth gerekir; yükleme her zaman Niyazi onaylı.
 
 ## Kurallar
 - Rakam uydurma. Doğrulanmış (kaynaklı), arama özeti, tahmin ayrı etiketlenir.
