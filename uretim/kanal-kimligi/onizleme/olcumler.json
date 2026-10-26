@@ -5,157 +5,25 @@
   2053,
   931
  ],
- "banner": {
-  "banner-A-s1": {
-   "slogan": "Money stories, animated.",
-   "kontrast": [
-    {
-     "metin": "FINANCIAL",
-     "dolgu": "#ffffff",
-     "wcag_en_kotu_%5": 13.39,
-     "wcag_medyan": 17.06,
-     "kutu": [
-      1147,
-      556,
-      1751,
-      690
-     ]
-    },
-    {
-     "metin": "RISE",
-     "dolgu": "#ffc83d",
-     "wcag_en_kotu_%5": 11.05,
-     "wcag_medyan": 11.16,
-     "kutu": [
-      1751,
-      556,
-      1994,
-      690
-     ]
-    },
-    {
-     "metin": "Money stories, animated.",
-     "dolgu": "#ffffff",
-     "wcag_en_kotu_%5": 12.18,
-     "wcag_medyan": 16.37,
-     "kutu": [
-      1147,
-      720,
-      1857,
-      781
-     ]
-    },
-    {
-     "metin": "NEW VIDEOS  TUE · FRI · SUN",
-     "dolgu": "#0a1328",
-     "wcag_en_kotu_%5": 11.95,
-     "wcag_medyan": 11.95,
-     "kutu": [
-      1177,
-      829,
-      1722,
-      875
-     ]
-    }
-   ],
-   "guvenli_alan_tasmasi": [],
-   "karakter_kutusu": [
-    211,
-    530,
-    1403,
-    1440
-   ],
-   "kafa_kutusu": [
-    626,
-    530,
-    962,
-    788
-   ],
-   "isaret_eli_ucu": null,
-   "isaret_eli_mobil_bantta": null,
-   "mobil_390px_metin_yuksekligi_css_px": {
-    "FINANCIAL": 33.8,
-    "RISE": 33.8,
-    "Money stories, animated.": 15.4,
-    "NEW VIDEOS  TUE · FRI · SUN": 11.6
-   },
-   "dosya_bayt": 418697
+ "banner": {},
+ "profil": {
+  "P1": {
+   "zemin_lum": 0.491,
+   "merkez_%50_wcag_medyan": 1.12,
+   "merkez_piksellerin_3:1_ustu_orani": 0.243,
+   "dosya_bayt": 343300
   },
-  "banner-A-s2": {
-   "slogan": "Past crashes. Today's news. What's next.",
-   "kontrast": [
-    {
-     "metin": "FINANCIAL",
-     "dolgu": "#ffffff",
-     "wcag_en_kotu_%5": 13.37,
-     "wcag_medyan": 17.06,
-     "kutu": [
-      1147,
-      556,
-      1767,
-      694
-     ]
-    },
-    {
-     "metin": "RISE",
-     "dolgu": "#ffc83d",
-     "wcag_en_kotu_%5": 11.05,
-     "wcag_medyan": 11.16,
-     "kutu": [
-      1767,
-      556,
-      2016,
-      694
-     ]
-    },
-    {
-     "metin": "Past crashes. Today's news. What's next.",
-     "dolgu": "#ffffff",
-     "wcag_en_kotu_%5": 12.23,
-     "wcag_medyan": 16.71,
-     "kutu": [
-      1147,
-      724,
-      2017,
-      772
-     ]
-    },
-    {
-     "metin": "NEW VIDEOS  TUE · FRI · SUN",
-     "dolgu": "#0a1328",
-     "wcag_en_kotu_%5": 11.95,
-     "wcag_medyan": 11.95,
-     "kutu": [
-      1177,
-      820,
-      1722,
-      866
-     ]
-    }
-   ],
-   "guvenli_alan_tasmasi": [],
-   "karakter_kutusu": [
-    211,
-    530,
-    1403,
-    1440
-   ],
-   "kafa_kutusu": [
-    626,
-    530,
-    962,
-    788
-   ],
-   "isaret_eli_ucu": null,
-   "isaret_eli_mobil_bantta": null,
-   "mobil_390px_metin_yuksekligi_css_px": {
-    "FINANCIAL": 34.8,
-    "RISE": 34.8,
-    "Past crashes. Today's news. What's next.": 12.1,
-    "NEW VIDEOS  TUE · FRI · SUN": 11.6
-   },
-   "dosya_bayt": 419752
+  "P2": {
+   "zemin_lum": 0.012,
+   "merkez_%50_wcag_medyan": 9.97,
+   "merkez_piksellerin_3:1_ustu_orani": 0.584,
+   "dosya_bayt": 24457
+  },
+  "P3": {
+   "zemin_lum": 0.491,
+   "merkez_%50_wcag_medyan": 1.12,
+   "merkez_piksellerin_3:1_ustu_orani": 0.233,
+   "dosya_bayt": 338198
   }
- },
- "profil": {}
+ }
 }
