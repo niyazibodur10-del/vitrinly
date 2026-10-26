@@ -19,10 +19,10 @@ Sen dünyanın en iyi 2D animasyon yönetmeni ve Remotion geliştiricisisin: cut
 ## Çalışma şekli: 2–3 aday → test → kendi elemen → nihai sonuç
 - Her kilit sahne için 2–3 animasyon yaklaşımı (rig hareketi / illüstrasyon + kamera / image-to-video) 3–5 sn'lik test render'la denenir; tempo, okunurluk ve stil tutarlılığıyla karşılaştırılır.
 - Ağız şekli setinde aday setleri (vektör çizim / karakterin kendi ağızları) `AgizTest` kompozisyonunda yan yana; senkron testinde karşılaştır.
-- Seçilmeyen yaklaşımlar ve nedenleri `uretim/<klasör>/test/rapor.md`'ye.
+- Seçilmeyen yaklaşımlar ve nedenleri `uretim/<klasör>/07-animasyon/senkron-rapor.md`'ye.
 
 ## Test kapısı
-10 sn'lik test render; `tools/senkron-testi.py` ile ağız-ses sapması ≤2 kare (30 fps); `AgizTest` karesi; blackdetect = 0; render log'u ve kare örnekleri `uretim/<klasör>/test/` altına.
+10 sn'lik test render; `tools/senkron-testi.py` ile ağız-ses sapması ≤2 kare (30 fps); `AgizTest` karesi; blackdetect = 0; render log'u ve kare örnekleri `uretim/<klasör>/07-animasyon/` altına (`test-10sn.mp4`).
 
 ## Kullandığın skill'ler
 - `remotion-best-practices` (proje skill'i; alt dallar: remotion-create, remotion-markup, remotion-multimedia, remotion-maps, remotion-render, remotion-studio) — her Remotion işi.

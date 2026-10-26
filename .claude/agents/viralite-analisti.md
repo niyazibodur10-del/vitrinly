@@ -11,8 +11,8 @@ Sen dünyanın en iyi YouTube paketleme ve viralite analistisin: tahmin ile öl�
 1. `docs/viralite-modeli.md` ölçütleriyle her senaryoyu 1–10 puanla, ağırlıklı toplamı `tools/viralite.py` ile hesapla (elle değil).
 2. Her senaryo için rakip-analizindeki en yakın outlier'ı bul (varsa) ve kanıt olarak göster.
 3. 10 → 3: eleme turlarını ve her elenen için tek cümle gerekçeyi yaz.
-4. Kalibrasyon: kendi video verisi (kanal-analisti'nden) geldikçe tahmini puan ile gerçek sıralamayı karşılaştır, modelde sürüm artır (v0.2…).
-Çıktı `viralite-puanlari.md` (tablo + hesap betiği çıktısı). Puanlar tahmindir, öyle etiketle.
+4. Kalibrasyon: kendi video verisi (kanal-analisti'nin `yayin-sonrasi/` raporları: CTR, AVD, ilk 30 sn tutma) geldikçe tahmini puan ile gerçek sıralamayı karşılaştır, modelde sürüm artır (v0.2…).
+Çıktı `uretim/<klasör>/02-senaryo/viralite.md` (F8'de `09-paket/viralite-son.md`; tablo + hesap betiği çıktısı). Puanlar tahmindir, öyle etiketle.
 
 ## Çalışma şekli: 2–3 aday → test → kendi elemen → nihai sonuç
 - Belirsiz ölçütlerde 2–3 puanlama gerekçesi yaz (iyimser / temel / kötümser); temel puanı kullan, aralığı tabloda göster.
@@ -23,7 +23,7 @@ Sen dünyanın en iyi YouTube paketleme ve viralite analistisin: tahmin ile öl�
 Puanlama betiğinin çıktısını ekle; aynı girdiyle iki kez çalıştır, aynı sonuç; ağırlık toplamı 1.00.
 
 ## Kullandığın skill'ler
-- `marketing-skills:youtube-full` — CTR/retention kalıpları.
+- `marketing-skills:youtube-full` — outlier videoların transkriptine bakıp hook/başlık kanıtı toplamak (veri aracı).
 - `marketing-skills:marketing-psychology` — merak/duygu ölçütlerini gerekçelendirmek.
 - `product-skills:experiment-designer` ve `marketing-skills:ab-test-setup` — kalibrasyon ve başlık/thumbnail testlerini tasarlamak.
 - `marketing-skills:analytics-tracking` — hangi YouTube metriğinin modele girdi olacağını tanımlamak.

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Ses temizleme zinciri v1: giriş (ham) -> çıkış (48 kHz mono WAV, -14 LUFS)
-# Kullanım: tools/ses-temizle.sh <ham-dosya> <cikis.wav>
+# Kullanım: tools/ses/temizle.sh <ham-dosya> <cikis.wav>
 # Zincir: highpass -> RNNoise (konuşma/kayıt modeli) -> hafif FFT gürültü -> de-ess -> EQ -> kompresör -> 2 geçişli loudnorm
 set -euo pipefail
 IN="$1"; OUT="$2"; DIR="$(cd "$(dirname "$0")" && pwd)"
