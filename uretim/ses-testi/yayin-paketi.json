@@ -6,13 +6,25 @@
     "video": "pilot/pilot-v2.mp4",
     "thumbnail": "pilot/thumbnail-ornek.jpg",
     "altyazilar": [
-      {"dosya": "pilot/pilot-v2.en.srt", "dil": "en", "ad": "English"}
+      {
+        "dosya": "pilot/pilot-v2.en.srt",
+        "dil": "en",
+        "ad": "English"
+      }
     ]
   },
   "metadata": {
     "baslik": "Germany 1923: When Your Savings Became Worth Less Than a Cup of Coffee",
-    "aciklama": "In 1923, prices in Germany doubled every few days. People carried cash in wheelbarrows and a loaf of bread cost billions of marks. How did it happen, and what can it teach us today?\n\n{BOLUMLER}\n\nThis video is for educational purposes only and is not financial advice. Scenarios about the future are illustrations, not predictions.\n\n#history #inflation #finance",
-    "etiketler": ["hyperinflation", "Weimar Germany", "1923", "inflation explained", "financial history", "economics", "Financial Rise"],
+    "aciklama": "In 1923, prices in Germany doubled every few days. People carried cash in wheelbarrows and a loaf of bread cost billions of marks. How did it happen, and what can it teach us today?\n\n{BOLUMLER}\n\nThis video is for educational purposes only and is not financial advice. Scenarios about the future are illustrations, not predictions.\n\nNarration voice is AI-generated.\n\n#history #inflation #finance",
+    "etiketler": [
+      "hyperinflation",
+      "Weimar Germany",
+      "1923",
+      "inflation explained",
+      "financial history",
+      "economics",
+      "Financial Rise"
+    ],
     "bolumler": [],
     "kategori_id": "27",
     "varsayilan_dil": "en",
@@ -27,5 +39,8 @@
     "gomulebilir": true
   },
   "oynatma_listesi_id": null,
-  "onay": {"niyazi_onayi": false, "tarih": null}
+  "onay": {
+    "niyazi_onayi": false,
+    "tarih": null
+  }
 }
