@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Kanal (şimdilik Financial Rise; ad --ad ile değişir) — banner'ı (2560x1440) ve profil fotoğrafı (800x800) üretici + testler.
+"""Kanal (Toonomy; ad --ad ile değişir) — banner'ı (2560x1440) ve profil fotoğrafı (800x800) üretici + testler.
 
 Çalıştırma (repo kökünden):
   ~/.finansal-arac/venv/bin/python tools/gorsel/kanal-gorselleri.py            # tüm adaylar + testler

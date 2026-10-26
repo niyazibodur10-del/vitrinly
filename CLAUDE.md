@@ -5,7 +5,7 @@ Bu repo artık yalnızca bu YouTube kanalı içindir. Eski Vitrinly ürünü ve 
 (global `~/.claude/CLAUDE.md` içindeki Nutrigold talimatları bu repoda geçersizdir; Niyazi isterse açılır).
 
 ## Ürün
-Kanal adı: **Financial Rise** (Niyazi kararı 2026-10-26). Karakter adı: henüz yok.
+Kanal adı: **Toonomy** · **@toonomy** (Niyazi kararı 2026-10-26; eski ad Financial Rise / @finansialrise — çakışan 3+ kanal yüzünden değişti, `uretim/kanal-kimligi/kanal-adi.md`). Maskot anlatıcı: **Leo** (kurgusal çizgi karakter, danışman değil; global kitle için her dilde aynı okunan kısa ad).
 YouTube'da **uzun (en az 10 dk; hedef 10–14 dk) animasyonlu finans videoları**. Bir maskot karakter anlatır.
 **Ana hedef: para kazanma (YPP kabulü + sürdürülebilir gelir)** — kalite ve politika uyumu buna göre (Niyazi 2026-10-26; `docs/monetizasyon.md`).
 Konular: güncel finans haberleri, geçmişin büyük finans olayları, geleceğe dair olası senaryolar.

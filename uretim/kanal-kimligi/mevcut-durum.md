@@ -22,3 +22,4 @@ API ile değiştirilemez: profil fotoğrafı, kanal adı, @tanıtıcı (Studio).
 - Ülke **TR** bırakıldı: YPP uygunluğu kanal ülkesine bağlı ve içerik üreticinin programın açık olduğu ülkede yaşaması şart (support.google.com/youtube/answer/2976814, answer/72851). Videolarda coğrafi kısıt yok → küresel yayın; reklam geliri izleyicinin ülkesine göre.
 - Oynatma listeleri: ilgili ilk video yüklenince açılacak (boş liste yok). Banner: görsel hazır olunca. Eski 4 video: Niyazi kararı bekleniyor (öneri gizli).
 - Eski 4 video **gizliye alındı** (Niyazi onayı 2026-10-26, videos.update status.privacyStatus=private; kontrol okumasında 4/4 private). Geri almak: Studio'da görünürlük → Herkese açık.
+- **Ad değişti:** Toonomy · @toonomy (Niyazi, Studio). Maskot: Leo. Açıklama + anahtar kelimeler Toonomy/Leo ile güncellendi; **banner yüklendi** (TOONOMY, "NEW VIDEOS EVERY WEEK"; bannerExternalUrl yenilendi). Profil fotoğrafı (`profil-800.png`) Niyazi Studio'dan yükleyecek.

@@ -10,26 +10,14 @@
    "slogan": "Money stories, animated.",
    "kontrast": [
     {
-     "metin": "FINANCIAL",
-     "dolgu": "#ffffff",
-     "wcag_en_kotu_%5": 13.55,
-     "wcag_medyan": 17.08,
+     "metin": "TOONOMY",
+     "dolgu": "#ffc83d",
+     "wcag_en_kotu_%5": 8.63,
+     "wcag_medyan": 10.84,
      "kutu": [
       1147,
       555,
-      1767,
-      693
-     ]
-    },
-    {
-     "metin": "RISE",
-     "dolgu": "#ffc83d",
-     "wcag_en_kotu_%5": 11.05,
-     "wcag_medyan": 11.16,
-     "kutu": [
-      1767,
-      555,
-      2016,
+      1707,
       693
      ]
     },
@@ -46,14 +34,14 @@
      ]
     },
     {
-     "metin": "NEW VIDEOS  TUE · FRI · SUN",
+     "metin": "NEW VIDEOS EVERY WEEK",
      "dolgu": "#0a1328",
      "wcag_en_kotu_%5": 11.95,
      "wcag_medyan": 11.95,
      "kutu": [
       1177,
       833,
-      1722,
+      1669,
       879
      ]
     }
@@ -74,62 +62,49 @@
    "isaret_eli_ucu": null,
    "isaret_eli_mobil_bantta": null,
    "mobil_390px_metin_yuksekligi_css_px": {
-    "FINANCIAL": 34.8,
-    "RISE": 34.8,
+    "TOONOMY": 34.8,
     "Money stories, animated.": 15.9,
-    "NEW VIDEOS  TUE · FRI · SUN": 11.6
+    "NEW VIDEOS EVERY WEEK": 11.6
    },
-   "dosya_bayt": 424588
+   "dosya_bayt": 421175
   },
   "banner-A-s2": {
    "slogan": "Past crashes. Today's news. What's next.",
    "kontrast": [
     {
-     "metin": "FINANCIAL",
-     "dolgu": "#ffffff",
-     "wcag_en_kotu_%5": 13.55,
-     "wcag_medyan": 17.08,
+     "metin": "TOONOMY",
+     "dolgu": "#ffc83d",
+     "wcag_en_kotu_%5": 8.63,
+     "wcag_medyan": 10.94,
      "kutu": [
       1147,
       555,
-      1767,
-      693
-     ]
-    },
-    {
-     "metin": "RISE",
-     "dolgu": "#ffc83d",
-     "wcag_en_kotu_%5": 11.05,
-     "wcag_medyan": 11.16,
-     "kutu": [
-      1767,
-      555,
-      2016,
-      693
+      1771,
+      708
      ]
     },
     {
      "metin": "Past crashes. Today's news. What's next.",
      "dolgu": "#ffffff",
-     "wcag_en_kotu_%5": 12.43,
-     "wcag_medyan": 16.86,
+     "wcag_en_kotu_%5": 12.2,
+     "wcag_medyan": 16.73,
      "kutu": [
       1147,
-      722,
+      737,
       2017,
-      770
+      785
      ]
     },
     {
-     "metin": "NEW VIDEOS  TUE · FRI · SUN",
+     "metin": "NEW VIDEOS EVERY WEEK",
      "dolgu": "#0a1328",
      "wcag_en_kotu_%5": 11.95,
      "wcag_medyan": 11.95,
      "kutu": [
       1177,
-      818,
-      1722,
-      864
+      833,
+      1669,
+      879
      ]
     }
    ],
@@ -149,343 +124,14 @@
    "isaret_eli_ucu": null,
    "isaret_eli_mobil_bantta": null,
    "mobil_390px_metin_yuksekligi_css_px": {
-    "FINANCIAL": 34.8,
-    "RISE": 34.8,
+    "TOONOMY": 38.6,
     "Past crashes. Today's news. What's next.": 12.1,
-    "NEW VIDEOS  TUE · FRI · SUN": 11.6
+    "NEW VIDEOS EVERY WEEK": 11.6
    },
-   "dosya_bayt": 423126
-  },
-  "banner-B-s1": {
-   "slogan": "Money stories, animated.",
-   "kontrast": [
-    {
-     "metin": "FINANCIAL",
-     "dolgu": "#ffffff",
-     "wcag_en_kotu_%5": 17.08,
-     "wcag_medyan": 17.26,
-     "kutu": [
-      537,
-      555,
-      1102,
-      681
-     ]
-    },
-    {
-     "metin": "RISE",
-     "dolgu": "#ffc83d",
-     "wcag_en_kotu_%5": 10.24,
-     "wcag_medyan": 11.05,
-     "kutu": [
-      1102,
-      555,
-      1329,
-      681
-     ]
-    },
-    {
-     "metin": "Money stories, animated.",
-     "dolgu": "#ffffff",
-     "wcag_en_kotu_%5": 16.0,
-     "wcag_medyan": 16.88,
-     "kutu": [
-      537,
-      710,
-      1258,
-      773
-     ]
-    },
-    {
-     "metin": "NEW VIDEOS  TUE · FRI · SUN",
-     "dolgu": "#0a1328",
-     "wcag_en_kotu_%5": 11.95,
-     "wcag_medyan": 11.95,
-     "kutu": [
-      567,
-      821,
-      1112,
-      867
-     ]
-    }
-   ],
-   "guvenli_alan_tasmasi": [],
-   "karakter_kutusu": [
-    1304,
-    548,
-    2201,
-    1440
-   ],
-   "kafa_kutusu": [
-    1764,
-    548,
-    1998,
-    743
-   ],
-   "isaret_eli_ucu": [
-    1305,
-    1006
-   ],
-   "isaret_eli_mobil_bantta": false,
-   "mobil_390px_metin_yuksekligi_css_px": {
-    "FINANCIAL": 31.8,
-    "RISE": 31.8,
-    "Money stories, animated.": 15.9,
-    "NEW VIDEOS  TUE · FRI · SUN": 11.6
-   },
-   "dosya_bayt": 413377
-  },
-  "banner-B-s2": {
-   "slogan": "Past crashes. Today's news. What's next.",
-   "kontrast": [
-    {
-     "metin": "FINANCIAL",
-     "dolgu": "#ffffff",
-     "wcag_en_kotu_%5": 17.08,
-     "wcag_medyan": 17.26,
-     "kutu": [
-      537,
-      555,
-      1102,
-      681
-     ]
-    },
-    {
-     "metin": "RISE",
-     "dolgu": "#ffc83d",
-     "wcag_en_kotu_%5": 10.24,
-     "wcag_medyan": 11.05,
-     "kutu": [
-      1102,
-      555,
-      1329,
-      681
-     ]
-    },
-    {
-     "metin": "Past crashes. Today's news. What's next.",
-     "dolgu": "#ffffff",
-     "wcag_en_kotu_%5": 15.25,
-     "wcag_medyan": 17.03,
-     "kutu": [
-      537,
-      710,
-      1334,
-      754
-     ]
-    },
-    {
-     "metin": "NEW VIDEOS  TUE · FRI · SUN",
-     "dolgu": "#0a1328",
-     "wcag_en_kotu_%5": 11.95,
-     "wcag_medyan": 11.95,
-     "kutu": [
-      567,
-      802,
-      1112,
-      848
-     ]
-    }
-   ],
-   "guvenli_alan_tasmasi": [],
-   "karakter_kutusu": [
-    1304,
-    548,
-    2201,
-    1440
-   ],
-   "kafa_kutusu": [
-    1764,
-    548,
-    1998,
-    743
-   ],
-   "isaret_eli_ucu": [
-    1305,
-    1006
-   ],
-   "isaret_eli_mobil_bantta": false,
-   "mobil_390px_metin_yuksekligi_css_px": {
-    "FINANCIAL": 31.8,
-    "RISE": 31.8,
-    "Past crashes. Today's news. What's next.": 11.1,
-    "NEW VIDEOS  TUE · FRI · SUN": 11.6
-   },
-   "dosya_bayt": 405299
-  },
-  "banner-C-s1": {
-   "slogan": "Money stories, animated.",
-   "kontrast": [
-    {
-     "metin": "FINANCIAL",
-     "dolgu": "#ffffff",
-     "wcag_en_kotu_%5": 17.08,
-     "wcag_medyan": 17.26,
-     "kutu": [
-      817,
-      547,
-      1476,
-      693
-     ]
-    },
-    {
-     "metin": "RISE",
-     "dolgu": "#ffc83d",
-     "wcag_en_kotu_%5": 11.05,
-     "wcag_medyan": 11.16,
-     "kutu": [
-      1476,
-      547,
-      1741,
-      693
-     ]
-    },
-    {
-     "metin": "Money stories, animated.",
-     "dolgu": "#ffffff",
-     "wcag_en_kotu_%5": 16.85,
-     "wcag_medyan": 16.88,
-     "kutu": [
-      919,
-      722,
-      1640,
-      785
-     ]
-    },
-    {
-     "metin": "NEW VIDEOS  TUE · FRI · SUN",
-     "dolgu": "#0a1328",
-     "wcag_en_kotu_%5": 11.95,
-     "wcag_medyan": 11.95,
-     "kutu": [
-      1007,
-      833,
-      1552,
-      879
-     ]
-    }
-   ],
-   "guvenli_alan_tasmasi": [],
-   "karakter_kutusu": null,
-   "kafa_kutusu": null,
-   "isaret_eli_ucu": null,
-   "isaret_eli_mobil_bantta": null,
-   "mobil_390px_metin_yuksekligi_css_px": {
-    "FINANCIAL": 36.8,
-    "RISE": 36.8,
-    "Money stories, animated.": 15.9,
-    "NEW VIDEOS  TUE · FRI · SUN": 11.6
-   },
-   "dosya_bayt": 320750
-  },
-  "banner-C-s2": {
-   "slogan": "Past crashes. Today's news. What's next.",
-   "kontrast": [
-    {
-     "metin": "FINANCIAL",
-     "dolgu": "#ffffff",
-     "wcag_en_kotu_%5": 17.08,
-     "wcag_medyan": 17.26,
-     "kutu": [
-      817,
-      547,
-      1476,
-      693
-     ]
-    },
-    {
-     "metin": "RISE",
-     "dolgu": "#ffc83d",
-     "wcag_en_kotu_%5": 11.05,
-     "wcag_medyan": 11.16,
-     "kutu": [
-      1476,
-      547,
-      1741,
-      693
-     ]
-    },
-    {
-     "metin": "Past crashes. Today's news. What's next.",
-     "dolgu": "#ffffff",
-     "wcag_en_kotu_%5": 11.9,
-     "wcag_medyan": 16.88,
-     "kutu": [
-      700,
-      722,
-      1859,
-      785
-     ]
-    },
-    {
-     "metin": "NEW VIDEOS  TUE · FRI · SUN",
-     "dolgu": "#0a1328",
-     "wcag_en_kotu_%5": 11.95,
-     "wcag_medyan": 11.95,
-     "kutu": [
-      1007,
-      833,
-      1552,
-      879
-     ]
-    }
-   ],
-   "guvenli_alan_tasmasi": [],
-   "karakter_kutusu": null,
-   "kafa_kutusu": null,
-   "isaret_eli_ucu": null,
-   "isaret_eli_mobil_bantta": null,
-   "mobil_390px_metin_yuksekligi_css_px": {
-    "FINANCIAL": 36.8,
-    "RISE": 36.8,
-    "Past crashes. Today's news. What's next.": 15.9,
-    "NEW VIDEOS  TUE · FRI · SUN": 11.6
-   },
-   "dosya_bayt": 331096
+   "dosya_bayt": 425990
   }
  },
  "profil": {
-  "P1": {
-   "zemin_rgb": [
-    35,
-    41,
-    63
-   ],
-   "ten_orani_daire_ici": 0.445,
-   "daire_kenari_acik_tema_wcag": 1.55,
-   "daire_kenari_koyu_tema_wcag": 12.4,
-   "ten_zemin_wcag": 6.68,
-   "ten_zemin_dE76": 85.2,
-   "sac_gomlek_zemin_wcag": 1.21,
-   "dosya_bayt": 475949
-  },
-  "P2": {
-   "zemin_rgb": [
-    16,
-    34,
-    69
-   ],
-   "ten_orani_daire_ici": 0.2,
-   "daire_kenari_acik_tema_wcag": 17.08,
-   "daire_kenari_koyu_tema_wcag": 1.12,
-   "ten_zemin_wcag": 10.16,
-   "ten_zemin_dE76": 118.5,
-   "sac_gomlek_zemin_wcag": 1.12,
-   "dosya_bayt": 24457
-  },
-  "P3": {
-   "zemin_rgb": [
-    35,
-    41,
-    63
-   ],
-   "ten_orani_daire_ici": 0.435,
-   "daire_kenari_acik_tema_wcag": 1.55,
-   "daire_kenari_koyu_tema_wcag": 12.4,
-   "ten_zemin_wcag": 6.68,
-   "ten_zemin_dE76": 85.2,
-   "sac_gomlek_zemin_wcag": 1.24,
-   "dosya_bayt": 462828
-  },
   "P4": {
    "zemin_rgb": [
     46,
@@ -508,7 +154,7 @@
    1440
   ],
   "jpeg_kalite": 92,
-  "dosya_bayt": 423126
+  "dosya_bayt": 425990
  },
  "kazanan_profil": {
   "aday": "P4",

@@ -1,4 +1,4 @@
-# Yayın takvimi — Financial Rise (v1, 2026-10-26)
+# Yayın takvimi — Toonomy (v1, 2026-10-26)
 
 Hedef: haftada **3 uzun video** (≥10 dk) + **6 Shorts** (her uzun videodan 2). Üretim `/bugunun-videosu` ile yapılır.
 Etiketler: **[AÖ]** arama özeti (üçüncü taraf blog/araştırma), **[T]** tahmin, **[H]** hesap. Burada ölçülmüş kendi verimiz yok. İlk 4 haftadan sonra YouTube Studio verisiyle yeniden ayarlanır.

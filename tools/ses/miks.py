@@ -12,7 +12,7 @@ Mantık:
   - Son stereo dosya 2 geçişli loudnorm ile -14 LUFS / TP -1'e getirilir (ortak ders: normalizasyon son stereo dosyada).
   - Ölçüm: konuşma bölümlerinde anlatım ve bastırılmış müzik ayrı ayrı (kısa süreli LUFS) ölçülür, fark raporlanır.
 """
-import argparse, json, re, subprocess, sys, tempfile, os
+import argparse, atexit, json, re, shutil, subprocess, sys, tempfile, os
 import numpy as np
 
 
@@ -49,7 +49,7 @@ def main():
     ap.add_argument("--efekt", action="append", default=[])
     a = ap.parse_args()
 
-    tmp = tempfile.mkdtemp()
+    tmp = tempfile.mkdtemp(); atexit.register(shutil.rmtree, tmp, True)  # ara WAV'lar (12 dk ≈ 0,8 GB) birikmesin
     ds = sure(a.anlatim); top = a.giris + ds + a.cikis_sn
     mk = -14 - lufs(a.muzik)["I"] + a.muzik_db  # müzik kazancı
     # sidechain: oran, --duck-db kadar bastırma verecek şekilde (eşik üstü ~12 dB konuşma enerjisi varsayımı)

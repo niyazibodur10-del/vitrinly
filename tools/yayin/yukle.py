@@ -42,7 +42,7 @@ import yayin_paket as pk  # noqa: E402
 
 
 def main():
-    ap = argparse.ArgumentParser(description="YouTube yayın aracı (Financial Rise)")
+    ap = argparse.ArgumentParser(description="YouTube yayın aracı (Toonomy)")
     ap.add_argument("paket", nargs="?", help="uretim/<klasör>/yayin-paketi.json")
     ap.add_argument("--dry-run", action="store_true", help="yalnız doğrula; ağ çağrısı yok")
     ap.add_argument("--manuel-paket", nargs="?", const="", metavar="KLASOR",

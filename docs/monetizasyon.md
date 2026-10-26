@@ -1,4 +1,4 @@
-# Para kazanma (YPP) ve politika uyumu: Financial Rise
+# Para kazanma (YPP) ve politika uyumu: Toonomy (eski adı Financial Rise)
 
 Hazırlayan: kanal-analisti · Araştırma ve okuma tarihi: **2026-10-26** (aksi yazılmadıkça her kaynak bu tarihte okundu).
 Kapsam: YouTube Partner Programı (YPP) eşikleri, kanal para kazanma politikaları (inauthentic, reused, AI personası), sentetik içerik beyanı, reklam dostu yönergeler, finans içerik riskleri, telif, kanal kurulumu, risk puanı ve aksiyon listesi.
@@ -116,7 +116,7 @@ Her madde YouTube politikasındaki bir cümleye bağlı. Bu liste `monetizasyon-
 
 | # | Kontrol | Ölçüt (geçer/kalır) | Bağlı olduğu politika cümlesi |
 |---|---|---|---|
-| Ö1 | **Tek cümlelik özgün tez** ("Financial Rise'ın bakışı"): Wikipedia özetinde olmayan bir yorum, bağlantı ya da soru | Metnin ilk 60 sn'sinde ve sonunda tez cümlesi var | "original, authentic insights or perspective" [B-K4] |
+| Ö1 | **Tek cümlelik özgün tez** ("Toonomy'nin bakışı"): Wikipedia özetinde olmayan bir yorum, bağlantı ya da soru | Metnin ilk 60 sn'sinde ve sonunda tez cümlesi var | "original, authentic insights or perspective" [B-K4] |
 | Ö2 | **Kendi veri görselleştirmemiz:** birincil veriden (FRED, BLS, World Bank, SEC/şirket raporu, merkez bankası) kodla (Remotion) çizilmiş grafik | ≥3 grafik, ekranda kaynak etiketi; veri dosyası üretim klasöründe | "well-researched … narrative", "educational value" [B-K4] |
 | Ö3 | **Kaynak listesi** açıklamada | ≥5 güvenilir kaynak, tarihli | "educational value"; yanlış bilgi riskini düşürür [B-K4] |
 | Ö4 | **Anlatı yayı:** kurulum → çatışma → dönüm → sonuç (liste ya da slayt değil) | Senaryoda 4 bölüm işaretli; "liste videosu" formatı kullanılmıyor | "clear narrative arc or logical progression"; "Image slideshows … minimal narrative" [B-K4] |

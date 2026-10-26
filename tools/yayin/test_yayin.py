@@ -9,6 +9,7 @@ import json
 import os
 import struct
 import sys
+import shutil
 import tempfile
 import threading
 import unittest
@@ -241,6 +242,7 @@ class KaliciYetki(unittest.TestCase):
     def tearDown(self):
         api.YENILEME_DOSYASI, api.istek, api.time.sleep, env = self.eski
         if env is not None: os.environ["YOUTUBE_OAUTH_REFRESH_TOKEN"] = env
+        shutil.rmtree(self.tmp, ignore_errors=True)
 
     def test_ilk_sefer_kaydeder_sonra_kod_sormaz(self):
         cevaplar = [

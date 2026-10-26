@@ -3,7 +3,7 @@
 Karar (Niyazi, 2026-10-26): v1'deki 3D karakterin aynısı **2D**'ye çevrilir. v1 sayfası tasarım kaynağıdır.
 **Ana 2D referans:** `karakter-sayfasi-2d-v1.png` (1536x1024, Niyazi, 2026-10-26) — görünüşler, 9 ifade (konuşma dahil), 9 poz (yürüme, koşma, konuşma, işaret, sunum, oturma, telefon, toplantı, düşünme), 6 sahne örneği. Stil: ince kontur + yumuşak gölgeli 2D illüstrasyon. Eksik: tek tek yüksek çözünürlüklü görseller, ağız şekilleri, ayrık parçalar.
 
-Kaynak: `karakter-sayfasi-v1.png` (Niyazi, 2026-10-26). Adı: henüz yok.
+Kaynak: `karakter-sayfasi-v1.png` (Niyazi, 2026-10-26). Adı: **Leo** (Niyazi kararı 2026-10-26; global kitle için kısa, her dilde aynı okunan ad; kurgusal çizgi anlatıcı, danışman değil). Görsel tanım aşağıdaki gibi kalır (tutarlılık için).
 Bu kart her görsel/video üretim prompt'una **aynen** eklenir; tutarlılık buna bağlı.
 
 ## Tanım (prompt bloğu — İngilizce, modeller için)

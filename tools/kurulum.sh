@@ -13,15 +13,19 @@
 # - Remotion: `npm ci` yalnız package-lock.json değiştiyse (damga: node_modules/.kurulum-kilit) → ikinci çalıştırma saniyeler.
 # Ölçüm (2026-10-26, 4 vCPU): ikinci çalıştırma ~2 sn; sıfırdan kurulum için docs/uretim-hatti-testi.md.
 set -euo pipefail
-ROOT="$(cd "$(dirname "$0")/.." && pwd)"; ARAC="${ARAC_DIZINI:-$HOME/.finansal-arac}"; mkdir -p "$ARAC"
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"; ARAC="${ARAC_DIZINI:-$HOME/.finansal-arac}"; mkdir -p "$ARAC"; ARAC="$(cd "$ARAC" && pwd -P)"
 adim(){ echo "[kurulum $(date +%T)] $*"; }
+# espeak-ng veri yolu ~160 karakterde kesiliyor → uzun ARAC_DIZINI'nde Kokoro "phontab: No such file" verir (2026-10-26 ölçümü:
+# 174 karakterlik yol kırıldı, /root/... çalıştı). Veri yolu = $ARAC + 70 karakter.
+[ $(( ${#ARAC} + 70 )) -lt 150 ] || { echo "HATA: ARAC_DIZINI çok uzun (${#ARAC} karakter; en çok 79): $ARAC" >&2; exit 1; }
 if [ ! -x "$ARAC/rhubarb/build/rhubarb/rhubarb" ]; then
   adim "Rhubarb derleniyor"
   command -v cmake >/dev/null && dpkg -s libboost-dev >/dev/null 2>&1 || { apt-get update -q >/dev/null; apt-get install -y -q libboost-dev cmake g++; }
   rm -rf "$ARAC/rhubarb"; git clone -q --depth 1 https://github.com/DanielSWolf/rhubarb-lip-sync.git "$ARAC/rhubarb"
   # CMake 3.28'de CMP0167 politikası yok → koşullu yap
   sed -i 's/^cmake_policy(SET CMP0167 OLD).*/if(POLICY CMP0167)\n  cmake_policy(SET CMP0167 OLD)\nendif()/' "$ARAC/rhubarb/rhubarb/CMakeLists.txt"
-  mkdir -p "$ARAC/rhubarb/build" && (cd "$ARAC/rhubarb/build" && cmake .. -DCMAKE_BUILD_TYPE=Release >/dev/null && make -j"$(nproc)" rhubarb >/dev/null)
+  mkdir -p "$ARAC/rhubarb/build" && (cd "$ARAC/rhubarb/build" && cmake .. -DCMAKE_BUILD_TYPE=Release >/dev/null && make -j"$(nproc)" rhubarb >"$ARAC/rhubarb-derleme.log" 2>&1) \
+    || { tail -30 "$ARAC/rhubarb-derleme.log" >&2; exit 1; }
 fi
 if [ ! -x "$ARAC/venv/bin/python" ] || ! "$ARAC/venv/bin/python" -c "import importlib.util as u,sys; sys.exit(not all(u.find_spec(m) for m in ['faster_whisper','spandrel','cv2','soundfile','torch']))" 2>/dev/null; then
   adim "Python venv (Whisper, torch CPU, spandrel, opencv)"

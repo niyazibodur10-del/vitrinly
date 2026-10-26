@@ -67,7 +67,7 @@ def banner_yukle(token, yol):
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Kanal kimliği aracı (Financial Rise)")
+    ap = argparse.ArgumentParser(description="Kanal kimliği aracı (Toonomy)")
     ap.add_argument("paket")
     ap.add_argument("--banner", help="banner görseli (jpg/png)")
     ap.add_argument("--uygula", action="store_true", help="değişiklikleri kanala uygula")

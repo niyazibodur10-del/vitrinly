@@ -174,3 +174,11 @@ Ayrıca güncellenecek: `kanal-metinleri.md` §1 açıklama metni, `docs/monetiz
 - **Alan adı:** toonomy.com 2026-10-26'da kayıtsızdı [ölçüm]. Satın almak para harcamak demek → yalnız Niyazi kararıyla.
 - **Sosyal medya (X/Instagram/TikTok) kullanıcı adları:** ölçülmedi [bilinmiyor].
 - **Ana dili İngilizce olan biriyle sesli test:** "Toonomy" deyip yazdırma (Tonomy karışmasını ölçmek için, 5 kişi).
+
+## Karar (2026-10-26)
+- Niyazi **Toonomy / @toonomy** adını onayladı ve Studio'da değiştirdi (API okuması: "Toonomy @toonomy").
+- Maskot adı **Emre reddedildi** (Niyazi: kitle global, Türk adı mantıksız). Koordinatör kararı: **Leo**.
+  Gerekçe: 3 harf, İngilizce/İspanyolca/Almanca/Türkçe vb. hepsinde aynı okunur ve yazılır, thumbnail'da kısa;
+  ünlü bir finans kişiliğiyle karışmıyor (Felix → Ben Felix, Tony → Tony Robbins, Max → Max Keiser elendi;
+  "Leo Finance" adlı kanallar 0–6 aboneli [ölçüm, YouTube API]). Kanal adı maskot adı değil (AI persona politikası);
+  açıklamada "Leo is a fictional cartoon character, not a financial advisor."
