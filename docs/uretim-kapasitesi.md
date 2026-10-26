@@ -7,7 +7,7 @@ Henüz hiçbir tam video üretilmedi. Süreler pilot klip (18,8 sn) ve ajanları
 ## 1. Ölçülen tek veri: render hızı [Ö]
 - Ortam: 4 vCPU, 15 GB RAM, Remotion 4.0.539, `tools/render-son.sh` (h264 crf18 + 2 geçişli loudnorm).
 - `Pilot` (18,8 sn, 564 kare, 1080p30): toplam **110,7 sn**. Sabit yük (bundle + tarayıcı, 2 kare) 6,6 sn, kalan ~104 sn. Yani ~5,4 kare/sn, **gerçek sürenin ~5,5 katı**.
-- 12 dk video (21.600 kare) için **~66 dk** [H]. 2 Shorts (2×60 sn) için ~11 dk [H]. Gerçek videonun büyük bitmap'leri ve kamera hareketleri render'ı yavaşlatabilir [T]. Remotion `--concurrency` ayarı denenmedi (uretim-muhendisi'nin işi).
+- 12 dk video (21.600 kare) için **~66 dk** [H]. 2 Shorts (2×60 sn) için ~11 dk [H]. Gerçek videonun büyük bitmap'leri ve kamera hareketleri render'ı yavaşlatabilir [T]. **Güncelleme 2026-10-26 (hat testi, `docs/uretim-hatti-testi.md`):** Pilot v2 (423 kare) `--concurrency=4` ile ~8–10 kare/sn [Ö] → 12 dk ≈ 36–45 dk [H]; düzeltme turunda `tools/render-parca.sh` yalnız değişen parçayı render eder (~4–6 dk). TTS, Whisper ve Rhubarb artık kurulu ve ölçüldü (aynı belge).
 - Dosya boyutu: pilot 11,7 MB / 18,8 sn, yani ~0,62 MB/sn. 12 dk ≈ **~450 MB** [H]. Bu, GitHub'ın dosya başına 100 MB sınırını aşar (bkz. bölüm 6).
 
 ## 2. Bir uzun video: adım süreleri (duvar saati, [T] aksi belirtilmedikçe)
