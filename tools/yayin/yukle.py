@@ -6,6 +6,7 @@
 #   python3 tools/yayin/yukle.py uretim/<klasör>/yayin-paketi.json --manuel-paket    # Studio klasörü + YAYIN.md
 #   python3 tools/yayin/yukle.py uretim/<klasör>/yayin-paketi.json                   # yükle (cihaz akışı)
 #   python3 tools/yayin/yukle.py uretim/<klasör>/yayin-paketi.json --akis yerel      # Niyazi'nin bilgisayarında, altyazı dahil
+#   python3 tools/yayin/yukle.py --sil VIDEO_ID [--onayli]                         # bizim yüklediğimiz videoyu sil (Niyazi onayıyla)
 #   python3 tools/yayin/yukle.py --erisim-testi                                      # kimliksiz uç nokta erişimi
 #
 # Paket şeması (yollar paket dosyasına göre göreli; ayrıntı ve varsayılanlar: yayin_paket.SEMA):
@@ -47,7 +48,12 @@ def main():
                     help="YouTube Studio'dan elle yükleme klasörü üret (varsayılan: <paket klasörü>/yayin-manuel)")
     ap.add_argument("--akis", choices=["cihaz", "yerel"], default="cihaz", help="OAuth akışı (varsayılan cihaz)")
     ap.add_argument("--erisim-testi", action="store_true", help="Google uç noktalarına kimliksiz erişim testi")
+    ap.add_argument("--sil", metavar="VIDEO_ID", help="yayin-sonucu.txt kaydı olan videoyu sil (geri alınamaz)")
+    ap.add_argument("--onayli", action="store_true", help="--sil için: Niyazi silmeyi onayladı")
     a = ap.parse_args()
+
+    if a.sil:
+        return sil(a.sil, a.onayli, a.akis)
 
     if a.erisim_testi:
         print("Erişim testi (kimlik bilgisi yok; yalnız HTTP durum kodu):")
@@ -131,6 +137,39 @@ def main():
     finally:
         print(f"Token iptal: HTTP {api.iptal(token)}")
         token = None
+
+
+def sil(vid, onayli, akis):
+    """Yalnız bu aracın yüklediği (uretim/**/yayin-sonucu.txt'de kaydı olan) videoyu, Niyazi onayıyla siler."""
+    import glob
+    kok = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "uretim")
+    kayitlar = [y for y in glob.glob(os.path.join(kok, "**", "yayin-sonucu.txt"), recursive=True)
+                if f"video_id={vid} " in open(y, encoding="utf-8").read()]
+    if not kayitlar:
+        print(f"REDDEDİLDİ: {vid} için yayin-sonucu.txt kaydı yok; yalnız bu aracın yüklediği videolar silinir."); return 3
+    if not onayli:
+        print("REDDEDİLDİ: --onayli yok. Silme geri alınamaz; yalnız Niyazi onayıyla yapılır."); return 3
+    try:
+        cid, sec = api.kimlik_bilgisi()
+        token, _ = (api.cihaz_akisi if akis == "cihaz" else api.yerel_akis)(cid, sec)
+    except api.ApiHatasi as e:
+        print(f"YETKİ HATASI: {e}"); return 4
+    try:
+        baslik = api.video_basligi(token, vid)
+        if baslik is None:
+            print(f"Video bulunamadı (zaten silinmiş olabilir): {vid}"); return 5
+        print(f"Siliniyor: {vid} · {baslik}")
+        api.video_sil(token, vid)
+        kalan = api.video_basligi(token, vid)
+        print("Silindi (videos.list boş döndü)." if kalan is None else f"UYARI: video hâlâ listede: {kalan}")
+        for y in kayitlar:
+            with open(y, "a", encoding="utf-8") as f:
+                f.write(f"{dt.datetime.now(dt.timezone.utc):%Y-%m-%dT%H:%M:%SZ} video_id={vid} SILINDI\n")
+        return 0 if kalan is None else 5
+    except api.ApiHatasi as e:
+        print(f"API HATASI: {e}"); return 5
+    finally:
+        print(f"Token iptal: HTTP {api.iptal(token)}")
 
 
 if __name__ == "__main__":

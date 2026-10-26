@@ -230,6 +230,18 @@ def video_durumu(token, video_id):
     return (j.get("items") or [{}])[0]
 
 
+def video_basligi(token, video_id):
+    s, _, b = istek(f"{API}/videos?part=snippet&id={video_id}", None, _yetki(token))
+    j = _kontrol("videos.list", s, b)
+    return ((j.get("items") or [{}])[0].get("snippet") or {}).get("title")
+
+
+def video_sil(token, video_id):
+    """videos.delete (geri alınamaz; 204 beklenir)."""
+    s, _, b = istek(f"{API}/videos?id={video_id}", None, _yetki(token), yontem="DELETE")
+    _kontrol("videos.delete", s, b, beklenen=(204,))
+
+
 # ---------- erişim testi (kimliksiz; yalnız HTTP durum kodu) ----------
 ERISIM_HEDEFLERI = [
     ("POST", CIHAZ_URL, _form({"client_id": "erisim-testi", "scope": KAPSAM_CIHAZ}), "401 invalid_client = erişim var"),
