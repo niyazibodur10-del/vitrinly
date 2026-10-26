@@ -6,7 +6,7 @@
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"; ARAC="${ARAC_DIZINI:-$HOME/.finansal-arac}"; mkdir -p "$ARAC"
 if [ ! -x "$ARAC/rhubarb/build/rhubarb/rhubarb" ]; then
-  command -v cmake >/dev/null && dpkg -s libboost-dev >/dev/null 2>&1 || apt-get install -y -q libboost-dev cmake g++
+  command -v cmake >/dev/null && dpkg -s libboost-dev >/dev/null 2>&1 || { apt-get update -q >/dev/null; apt-get install -y -q libboost-dev cmake g++; }
   git clone -q --depth 1 https://github.com/DanielSWolf/rhubarb-lip-sync.git "$ARAC/rhubarb"
   # CMake 3.28'de CMP0167 politikası yok → koşullu yap
   sed -i 's/^cmake_policy(SET CMP0167 OLD).*/if(POLICY CMP0167)\n  cmake_policy(SET CMP0167 OLD)\nendif()/' "$ARAC/rhubarb/rhubarb/CMakeLists.txt"
