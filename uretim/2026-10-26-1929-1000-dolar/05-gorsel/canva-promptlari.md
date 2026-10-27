@@ -332,30 +332,30 @@ Kaynak: Canva AI (`generate-image`), Niyazi'nin hesabı, Canva Kullanım Koşull
 
 | Id | Deneme | Canva media ID | Üretim tarihi (UTC) | Ham dosya | Karar |
 |---|---|---|---|---|---|
-| C01 | 1 | | | canva-ham/C01.png | |
-| C02 | 1 | | | canva-ham/C02.png | |
+| C01 | 1 | MAHZMVzdpqQ | 2026-10-27 09:50 | canva-ham/C01.png | KABUL (rapor.md) |
+| C02 | 1 | MAHZMdkmnN0 | 2026-10-27 09:50 | canva-ham/C02.png | KABUL (rapor.md) |
 | C03 | 1 | | | canva-ham/C03.png | |
 | C04 | 1 | | | canva-ham/C04.png | |
 | C05 | 1 | | | canva-ham/C05.png | |
-| C06 | 1 | | | canva-ham/C06.png | |
-| C07 | 1 | | | canva-ham/C07.png | |
-| C08 | 1 | | | canva-ham/C08.png | |
-| C09 | 1 | | | canva-ham/C09.png | |
-| C10 | 1 | | | canva-ham/C10.png | |
-| C11 | 1 | | | canva-ham/C11.png | |
+| C06 | 1 | MAHZMRc8cCA | 2026-10-27 09:50 | canva-ham/C06.png | KABUL (rapor.md) |
+| C07 | 1 | MAHZMeBO7dI | 2026-10-27 09:50 | canva-ham/C07.png | KABUL (rapor.md) |
+| C08 | 1 | MAHZMVNWYYg | 2026-10-27 09:50 | canva-ham/C08.png | KABUL (rapor.md) |
+| C09 | 1 | MAHZMaSYoyg | 2026-10-27 10:00 | canva-ham/C09.png | KABUL (rapor.md) |
+| C10 | 1 | MAHZMW-dAug | 2026-10-27 10:00 | canva-ham/C10.png | KABUL (rapor.md) |
+| C11 | 1 | MAHZMeA_toQ | 2026-10-27 10:00 | canva-ham/C11.png | RED (rapor.md) |
 | C12 | 1 | | | canva-ham/C12.png | |
 | C13 | 1 | | | canva-ham/C13.png | |
 | C14 | 1 | | | canva-ham/C14.png | |
 | C15 | 1 | | | canva-ham/C15.png | |
-| C16 | 1 | | | canva-ham/C16.png | |
-| C17 | 1 | | | canva-ham/C17.png | |
-| C18 | 1 | | | canva-ham/C18.png | |
-| C19 | 1 | | | canva-ham/C19.png | |
+| C16 | 1 | MAHZMV2vMzc | 2026-10-27 10:00 | canva-ham/C16.png | KABUL (rapor.md) |
+| C17 | 1 | MAHZMQUEnkg | 2026-10-27 10:00 | canva-ham/C17.png | KABUL (rapor.md) |
+| C18 | 1 | MAHZMcBq1IA | 2026-10-27 10:00 | canva-ham/C18.png | KABUL (rapor.md) |
+| C19 | 1 | MAHZMW-dF0U | 2026-10-27 10:00 | canva-ham/C19.png | KABUL (rapor.md) |
 | C20 | 1 | | | canva-ham/C20.png | |
 | C21 | 1 | | | canva-ham/C21.png | |
 | C22 | 1 | | | canva-ham/C22.png | |
 
-**Video başına Canva kullanımı (F10 raporu için):** üretilen = (doldurulacak) / çekirdek plan 19 / tavan 27.
+**Video başına Canva kullanımı (F10 raporu için):** üretilen = 12 (2026-10-27, dalga 1–2; C11 tekrarı bekliyor) / çekirdek plan 19 / tavan 27.
 
 ## 6. Denetim
 `python3 -I araclar/prompt-kontrol.py canva-promptlari.md` → her Cxx: kimlik/kilit bloğu birebir, sayfa referansı (Leo'lu), yazı yasağı, aspectRatio, kabul ölçütü, id sırası. Çıktı: `araclar/prompt-kontrol-cikti.txt`.
