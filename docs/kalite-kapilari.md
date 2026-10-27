@@ -18,7 +18,7 @@ Ana hedef: kanalın para kazanması (YPP kabulü + sürdürülebilir gelir). Pol
 | Müzik/SFX | lisans kaydı + miksli dilim WER + seviye ölçümü | her dosya lisans kaydında, anlaşılırlık bozulmadı, NC/ND yok |
 | Görsel varlık | kontakt sayfası + çözünürlük listesi | karakter kartına uygun ve sahneler arası tutarlı (stil gerçekçi/resimsi olabilir), karakter ≥2048 px, sahne ≥1920x1080, kesme artığı yok, üretim kaydı (Canva prompt + media ID) |
 | Araç/kurulum | temiz ortamda kurulum + örnek render | hatasız kurulum, kompozisyonlar listeleniyor, örnek render kapılardan geçiyor |
-| Dudak senkronu | `tools/senkron-testi.py` + `AgizTest` karesi | ağız-ses sapması ≤2 kare |
+| Dudak senkronu | `tools/senkron-testi.py --araliklar <ekranda ağız aralıkları>` (+ tam sahne; `--ofset` sahne kesiti, `--bant formant` ek bilgi) + `AgizTest` karesi | ağız-ses sapması ≤2 kare (ağzın göründüğü aralıklarda; dış ses bölümü kapıya girmez) |
 | Kurgu | ffprobe + kare örnekleri | 1080p+, doğru fps, siyah kare/boşluk yok |
 | Retention (kurgu) | ilk 30 sn kesim listesi | ilk görsel değişim ≤3 sn, ilk 30 sn'de kanal intro'su/logo animasyonu yok, retention haritasındaki her yeniden kancada görsel/ses vurgusu, sonra her 5–10 sn'de görsel değişim |
 | Altyazı | yazım + hiza | yazım hatası yok, ±150 ms |
