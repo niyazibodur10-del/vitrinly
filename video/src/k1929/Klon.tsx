@@ -1,7 +1,7 @@
 import React from "react";
-import { Easing, Img, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
-import { POZ } from "./veri";
-import { fredoka, k } from "./ortak";
+import { Easing, Img, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { Kutu, POZ } from "./veri";
+import { fredoka } from "./ortak";
 
 // Klon Leo (Stock / Bank / Box): aynı Leo kesiğinin kopyası + renkli yaka kartı (KOD).
 // Yürüme: tek yürüme pozu (C04 / C05) + adım ritminde dikey zıplama, adım eğimi ve ezilme-uzama (2 adım/sn);
@@ -32,13 +32,15 @@ export const Klon: React.FC<{
   isim?: { metin: string; an: number; son: number };
   ezil?: number; // varsa bu anda utangaç büzülme (kahkaha anı)
   tohum?: number;
-}> = ({ yurume, durus, xBas, xBit, bas, bit, ayakY, boy, rozet, isim, ezil, tohum = 0 }) => {
+  klasor?: string;
+  pozlar?: Record<string, Kutu>;
+}> = ({ yurume, durus, xBas, xBit, bas, bit, ayakY, boy, rozet, isim, ezil, tohum = 0, klasor = "k1929", pozlar = POZ }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = frame / fps;
   const yuruyor = t < bit;
   const poz: PozAd = yuruyor ? yurume : durus;
-  const kutu = POZ[poz];
+  const kutu = pozlar[poz];
   const olcek = boy / kutu.h;
   const x = interpolate(t, [bas, bit], [xBas, xBit], {
     extrapolateLeft: "clamp",
@@ -72,7 +74,7 @@ export const Klon: React.FC<{
         scale: `${(1 + nefes) * otur * (1 + 0.03 * buz)} ${(1 - nefes * 0.3) * otur * ezUz * (1 - 0.05 * buz)}`,
       }}
     >
-      <Img src={k(`leo-${poz}.png`)} style={{ width: w, height: boy }} />
+      <Img src={staticFile(`${klasor}/leo-${poz}.png`)} style={{ width: w, height: boy }} />
       {/* yaka kartı */}
       <div
         style={{

@@ -1,15 +1,20 @@
 import React from "react";
-import { Img, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
-import { AGIZ_YAMA, Cue, SUNUCU, YAMA } from "./veri";
-import { k } from "./ortak";
+import { Img, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { AGIZ_YAMA, Cue, Kutu, SUNUCU, YAMA } from "./veri";
 
 // Konuşan Leo rig'i (cut-out): bel üstü poz (a / C12; aynı kadraj) + Rhubarb ağız yamaları + göz kırpma + tek göz kırpma.
 // Yamalar 05-gorsel/rig/rig-yamalar.json konumlarında (SUNUCU kırpım kutusuna göre). Eşleme: A,X = taban · B,G = C07 ·
 // C,H = C08 · D = b (yalnız a pozunda piksel hizalı; C12'de C08) · E = C09 · F = C10.
 // Kafa yüz merkezi (kırpım koordinatı) — kamera/punch-in odakları için dışarı verilir.
-export const YUZ = { x: 940 - SUNUCU.x, y: 330 - SUNUCU.y };
+export type Rig = { klasor: string; kutu: Kutu; yama: Record<string, Kutu> };
+export const RIG_KRITIK: Rig = { klasor: "k1929", kutu: SUNUCU, yama: YAMA };
+export const yuzRig = (r: Rig) => ({ x: 940 - r.kutu.x, y: 330 - r.kutu.y });
+export const YUZ = yuzRig(RIG_KRITIK);
 
-export type SunucuPoz = "a" | "C12";
+// Rig uyumlu pozlar (kafa a ile hizalı → ağız yamaları çalışır); diğerleri ifade pozu (ağız/göz sabit)
+export type SunucuPoz = "a" | "C12" | "C13" | "C14" | "C21" | "balt" | "c" | "d" | "e" | "f" | "C20";
+const AGIZ_UYUMLU = new Set(["a", "C12", "C13", "C14", "C21", "balt"]);
+const GOZ_UYUMLU = new Set(["a", "C12", "C13", "C14", "C21"]);
 
 const sekilBul = (cues: Cue[], t: number): string => {
   for (const c of cues) if (t >= c.start && t < c.end) return c.value;
@@ -28,9 +33,9 @@ const kirpiyor = (t: number, tohum: number): boolean => {
   return false;
 };
 
-const Yama: React.FC<{ ad: string }> = ({ ad }) => {
-  const y = YAMA[ad];
-  return <Img src={k(`${ad}.png`)} style={{ position: "absolute", left: y.x, top: y.y, width: y.w, height: y.h }} />;
+const Yama: React.FC<{ ad: string; rig: Rig }> = ({ ad, rig }) => {
+  const y = rig.yama[ad];
+  return <Img src={staticFile(`${rig.klasor}/${ad}.png`)} style={{ position: "absolute", left: y.x, top: y.y, width: y.w, height: y.h }} />;
 };
 
 export const Sunucu: React.FC<{
@@ -42,15 +47,19 @@ export const Sunucu: React.FC<{
   giris?: boolean; // poz değişiminde 5 karelik oturma (pose-to-pose pop)
   zorlaSekil?: string; // AgizTest için
   style?: React.CSSProperties;
-}> = ({ cues, ofs, poz = "a", tohum = 1, wink, giris = false, zorlaSekil, style }) => {
+  rig?: Rig;
+  konusmaz?: boolean; // dış ses sırasında ağız kapalı
+}> = ({ cues, ofs, poz = "a", tohum = 1, wink, giris = false, zorlaSekil, style, rig = RIG_KRITIK, konusmaz = false }) => {
+  const SUNUCU = rig.kutu;
+  const YUZ = yuzRig(rig);
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = frame / fps + ofs;
-  const sekil = zorlaSekil ?? sekilBul(cues, t);
+  const sekil = zorlaSekil ?? (konusmaz || !AGIZ_UYUMLU.has(poz) ? "X" : sekilBul(cues, t));
   const konusuyor = sekil !== "X" && sekil !== "A";
   const winkVar = wink && t >= wink[0] && t < wink[1];
   const winkYakin = wink && t > wink[0] - 0.7 && t < wink[1] + 0.4; // tek göz kırpma çevresinde normal kırpma yok
-  const kirp = !winkYakin && !zorlaSekil && kirpiyor(t, tohum);
+  const kirp = !winkYakin && !zorlaSekil && GOZ_UYUMLU.has(poz) && kirpiyor(t, tohum);
   // Nefes (3.4 sn) + hafif gövde salınımı; konuşurken küçük baş-gövde vurgusu
   const nefes = Math.sin((t / 3.4) * Math.PI * 2) * 0.005;
   const salinim = Math.sin((t / 4.3) * Math.PI * 2) * 0.35 + (konusuyor ? Math.sin(t * Math.PI * 2 * 1.6) * 0.25 : 0);
@@ -69,10 +78,10 @@ export const Sunucu: React.FC<{
         ...style,
       }}
     >
-      <Img src={k(`leo-${tabanD ? "b" : poz}.png`)} style={{ position: "absolute", left: 0, top: 0, width: SUNUCU.w, height: SUNUCU.h }} />
-      {!tabanD && yamaAd ? <Yama ad={yamaAd} /> : null}
-      {kirp ? <Yama ad="goz-kapali-C06" /> : null}
-      {winkVar ? <Yama ad="goz-tek-C06" /> : null}
+      <Img src={staticFile(`${rig.klasor}/leo-${tabanD ? "b" : poz}.png`)} style={{ position: "absolute", left: 0, top: 0, width: SUNUCU.w, height: SUNUCU.h }} />
+      {!tabanD && yamaAd ? <Yama ad={yamaAd} rig={rig} /> : null}
+      {kirp ? <Yama ad="goz-kapali-C06" rig={rig} /> : null}
+      {winkVar ? <Yama ad="goz-tek-C06" rig={rig} /> : null}
     </div>
   );
 };

@@ -45,11 +45,11 @@ for ci, c in enumerate(C):
     # alt-kelimeler
     ra, rb = [], []  # (alt, ref_idx)
     for k, r in enumerate(ref):
-        for x in ho.norm(r) or [re.sub(r"\W", "", r.lower()) or "_"]:
+        for x in ho.norm_eski(r) or [re.sub(r"\W", "", r.lower()) or "_"]:
             ra.append(x); rb.append(k)
     wa, wt, wsrc = [], [], []  # alt, (s,e,p), Whisper indeksi
     for i in wi:
-        w = W[i]; parts = ho.norm(w["w"]) or ["_"]; n = len(parts); d = (w["e"] - w["s"]) / n
+        w = W[i]; parts = ho.norm_eski(w["w"]) or ["_"]; n = len(parts); d = (w["e"] - w["s"]) / n
         for j, x in enumerate(parts):
             wa.append(x); wt.append((w["s"] + j * d, w["s"] + (j + 1) * d, w["p"])); wsrc.append(i)
     zam = [None] * len(ra); kay = [None] * len(ra)
