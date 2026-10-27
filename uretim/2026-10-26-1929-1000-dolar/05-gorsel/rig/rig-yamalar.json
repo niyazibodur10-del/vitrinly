@@ -1,0 +1,124 @@
+{
+ "taban": "/home/user/vitrinly/assets/karakter/paket-v1/a-konusma-kapali.png",
+ "kanvas": [
+  1920,
+  1080
+ ],
+ "not": "yamalar 1920x1080 tuval koordinatında; leo/a-konusma-kapali.png (M4 kesik) ya da paket-v1 a üstüne konum_xy'ye bindirilir",
+ "yamalar": {
+  "goz-kapali-C06": {
+   "kaynak": "canva-ham/C06.png",
+   "bolge": "goz",
+   "konum_xy": [
+    816,
+    161
+   ],
+   "boyut_wh": [
+    247,
+    128
+   ],
+   "ham_fark_tum_%": 0.726,
+   "bolge_disi_ham_%": 0.558,
+   "bolge_disi_acilmis_%": 0.386,
+   "dikis_halka_fark_%": 12.47,
+   "geri_kurma_kutu_ort_abs": 2.99,
+   "geri_kurma_degisen_px_ort_abs": 6.28,
+   "kabul_hiza": true
+  },
+  "agiz-B-C07": {
+   "kaynak": "canva-ham/C07.png",
+   "bolge": "agiz",
+   "konum_xy": [
+    816,
+    266
+   ],
+   "boyut_wh": [
+    241,
+    188
+   ],
+   "ham_fark_tum_%": 0.996,
+   "bolge_disi_ham_%": 0.5,
+   "bolge_disi_acilmis_%": 0.369,
+   "dikis_halka_fark_%": 3.43,
+   "geri_kurma_kutu_ort_abs": 2.38,
+   "geri_kurma_degisen_px_ort_abs": 1.1,
+   "kabul_hiza": true
+  },
+  "agiz-C-C08": {
+   "kaynak": "canva-ham/C08.png",
+   "bolge": "agiz",
+   "konum_xy": [
+    829,
+    267
+   ],
+   "boyut_wh": [
+    199,
+    158
+   ],
+   "ham_fark_tum_%": 0.561,
+   "bolge_disi_ham_%": 0.179,
+   "bolge_disi_acilmis_%": 0.069,
+   "dikis_halka_fark_%": 1.38,
+   "geri_kurma_kutu_ort_abs": 2.9,
+   "geri_kurma_degisen_px_ort_abs": 0.27,
+   "kabul_hiza": true
+  },
+  "agiz-E-C09": {
+   "kaynak": "canva-ham/C09.png",
+   "bolge": "agiz",
+   "konum_xy": [
+    816,
+    266
+   ],
+   "boyut_wh": [
+    248,
+    188
+   ],
+   "ham_fark_tum_%": 1.088,
+   "bolge_disi_ham_%": 0.61,
+   "bolge_disi_acilmis_%": 0.465,
+   "dikis_halka_fark_%": 4.84,
+   "geri_kurma_kutu_ort_abs": 2.42,
+   "geri_kurma_degisen_px_ort_abs": 1.51,
+   "kabul_hiza": true
+  },
+  "agiz-F-C10": {
+   "kaynak": "canva-ham/C10.png",
+   "bolge": "agiz",
+   "konum_xy": [
+    816,
+    266
+   ],
+   "boyut_wh": [
+    248,
+    188
+   ],
+   "ham_fark_tum_%": 0.99,
+   "bolge_disi_ham_%": 0.631,
+   "bolge_disi_acilmis_%": 0.492,
+   "dikis_halka_fark_%": 5.0,
+   "geri_kurma_kutu_ort_abs": 2.09,
+   "geri_kurma_degisen_px_ort_abs": 2.57,
+   "kabul_hiza": true
+  },
+  "agiz-notr-C11": {
+   "kaynak": "canva-ham/C11.png",
+   "bolge": "agiz",
+   "konum_xy": [
+    816,
+    266
+   ],
+   "boyut_wh": [
+    220,
+    187
+   ],
+   "ham_fark_tum_%": 0.408,
+   "bolge_disi_ham_%": 0.283,
+   "bolge_disi_acilmis_%": 0.153,
+   "dikis_halka_fark_%": 3.2,
+   "geri_kurma_kutu_ort_abs": 3.39,
+   "geri_kurma_degisen_px_ort_abs": 2.73,
+   "kabul_hiza": true
+  }
+ }
+}
