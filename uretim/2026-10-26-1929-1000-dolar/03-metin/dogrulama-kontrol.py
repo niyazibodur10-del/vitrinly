@@ -98,6 +98,10 @@ GORSEL_MAP = {
     "+3.7%": "C30", "$964": "C31", "100": "C32", "72.8": "C32", "−27.2%": "C32", "2022": "C32",
     "113.5": "C32", "+13.5%": "C32", "881": "C32", "$250,000": "C33", "33": "C13", "5": "Y", "7": "Y",
     "26": "C32",
+    # RED-1 sonrası (2026-10-27): doğrulayıcının kendi verdiği değerler
+    "≈299,": "C06b", "≈299": "C06b",   # S06 görsel notu: 28 Eki öncesi kapanış 298,97 (D-2)
+    "61": "C27",                         # S19 G2: 1934 toplam askıya alma 9 + 52 (D-5)
+    "42": "C32", "48": "C32",            # S21 G5 eksen: Eyl 1929→Mar 1933 = 42 ay, Eyl 2022→Eyl 2026 = 48 ay (Ö-1)
 }
 VALID_SMALL_STRUCT = {"one", "two", "three"}  # "three doors", "one door", "two answers": yapı
 
@@ -115,6 +119,8 @@ def main(path):
             if len(cells) >= 2:
                 rows.append((scene, cells[0], " | ".join(cells[1:])))
     shorts = re.findall(r"\*\*(?:Kendi hook'u|Kapanış satırı)[^:]*:\*\* \"([^\"]+)\"", md)
+    # RED-1 sonrası: Shorts'un okunacak tam metni de taranır (kesit sınırları değişti)
+    shorts += re.findall(r"\*\*Okunacak tam metin[^:]*:\*\* <<([^>]+)>>", md)
 
     unmapped, cnt = [], collections.Counter()
     print("## ANLATIM (yazıyla sayılar)")
@@ -122,6 +128,8 @@ def main(path):
         for raw, val in words_numbers(an):
             key = int(val) if float(val).is_integer() else val
             tag = ANLATIM_MAP.get(key)
+            if raw.lower() == "thousands":  # S10 "Thousands never did." (D-3) -> FDIC "About 4,000 banks never reopened"
+                tag = "C22/C25"
             if tag is None and raw.lower() in VALID_SMALL_STRUCT:
                 tag = "Y"
             cnt["anlatim"] += 1

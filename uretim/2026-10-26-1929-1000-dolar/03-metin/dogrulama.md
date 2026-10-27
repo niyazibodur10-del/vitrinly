@@ -140,3 +140,32 @@ Yazarın `veri/hesap.py`'si de çalıştırıldı: iki koşu aynı, `hesap-cikti
 - WIKI günlük kapanışları [AÖ]; anlatımda yalnız FRH-29'un yuvarlak değerleri kullanılıyor, D-2 sayı eklemiyor.
 - Hulbert "average stock", Shiller S&P Composite; Dow'a özgü toplam getiri başa başı hesaplanmadı. Metin "one well-known analysis" dediği için kabul.
 - F4 sonrası metin değişirse bu dosyadaki kontrol betiği yeniden çalıştırılmalı.
+
+## 7. RED-1 sonrası yeniden doğrulama (2026-10-27) — **GEÇTİ**
+**Denetlenen:** `metin.md` v2 (commit d874c1b, §14 değişiklik tablosu). Metni değiştirmedim.
+
+| Madde | Kontrol (grep, metin.md) | Sonuç |
+|---|---|---|
+| D-1 | S05 ANLATIM "sometimes as little as ten percent" ✓ · ekran "PART DOWN, REST BORROWED · SOMETIMES ONLY 10% DOWN" + BDT ✓ · §7 BDT satırı, §8 satır 5 "≥%10 (1929 ortasında tipik %40–50)" ✓ · eski "typically ten"/"TYPICALLY 10"/"90%" yalnız §14 "Eski" sütununda | birebir |
+| D-2 | S06 "prices swing up and down, with sudden drops and quick recoveries" ✓ · görsel not "dalgalı, aşağı eğimli, ≈299, sayı etiketi yok" ✓ | birebir |
+| D-3 | S10 "Some reopened later. Thousands never did." ✓ · §8 satır 37 kaynak notu ✓ · "within a few months"/"closed for good" yalnız §14'te | birebir |
+| D-4 | S16 "buying just as much as Box Leo's" ✓ · G4 iki alt satır ✓ · S19 "the same gain in buying power, without the gamble" ✓ · Shorts 1 tam metninde S16 cümlesi dahil ✓ | birebir |
+| D-5 | S19 G2 1934 çubuğu "61" + "9 insured" dilimi, FDIC-BH3 s.31 (9 + 52 = 61 [H]) ✓ | birebir |
+| D-6 | Shorts 1 hook "the smartest-looking door was the worst one." ✓ · §11 P2 güncel ✓ · "most people" yalnız §10 editör notu ve §11 eski metin alıntısında (okunmuyor) | birebir |
+| Ö-1 | G5 x ekseni "42 MONTHS" ‖ "48 MONTHS": Eyl 1929→Mar 1933 = 42 ay, Eyl 2022→Eyl 2026 = 48 ay [H] | DOĞRU, kabul. Anlatımı değiştirmeme gerekçesi (yeni rakam getirmemek) yerinde |
+| Ö-2 | S22 ekran "$2,500 per depositor (1934) → at least $250,000 per depositor, per insured bank (today)" | DOĞRU (FDIC-BH3 + FDIC-DI "per depositor, per insured bank, for each account ownership category"; "at least" korunmuş) |
+| Ö-3 | §7: HUL'a Shiller/Kasım 1936 notu ✓ · BEA-666 "[D] BEA toplu dosya" ✓ · BDT eklendi, açıklama listesi 9 kaynak + HUL ✓ · BDT satırındaki "%10–20'ye kadar düşük, 1929 ortasında %40–50" kaynağın dipnot 13 ifadesiyle aynı | DOĞRU |
+| Shorts 1 kesinti | S06 "By mid-November, the Dow has lost almost half its value." çıkarıldı → "Stock Leo's … now about five hundred" kaldı | Olgusal hata yok (C08: Kasım ortası ≈521 $). **Not (kapıyı etkilemez):** sesli tarih kalmadığı için 9:16'da −50 % sayacının yanında "NOV 1929" etiketi korunmalı (kurgu-editoru), yoksa "now" izleyiciye belirsiz |
+| Shorts 2 kesinti | S20 "Nothing was stolen. The bills are all there." çıkarıldı | Rakam/olgu içermiyor; anlam kaybı yok. **Not (önceden var, kapıyı etkilemez):** kesit "Twelve months later" ile başlıyor ve 1929–32 cümlesinin hemen ardından geliyor; hook "In twenty twenty-six" ve sonraki cümle "year to September twenty twenty-six" ile çözülüyor. 9:16'da G5a "12 MONTHS TO SEPT 2026" kartı bu cümle başlarken ekranda olmalı |
+
+**Test kapısı (betik, 2 koşu):** `dogrulama-kontrol.py` eşleme tablosuna eklendi: `≈299` → C06b (D-2), `61` → C27 (D-5), `42`/`48` → C32 (Ö-1); "Thousands" (S10) → C22/C25 (önceden yanlışlıkla C01'e düşüyordu). Betik artık Shorts'un "Okunacak tam metin" satırlarını da tarıyor (Shorts sayımı 3 → 36).
+```
+$ python3 -I dogrulama-kontrol.py metin.md   # 2 koşu → exit 0, cmp aynı, sha256 f8ee8b5f1ab51f6b…
+Sayım: ANLATIM 123 · Shorts 36 · GÖRSEL benzersiz 96
+Eşlenmeyen (ANLATIM+Shorts+GÖRSEL): 0
+```
+v1 çıktısıyla fark: ANLATIM'a yalnız "Thousands" (D-3) eklendi; GÖRSEL'e yalnız ≈299, 61, 42, 48 (dördü de benim verdiğim değerler) ve değişiklik etiketlerinden gelen yapısal küçük sayılar (D-2, D-4, D-5, RED-1 → Y). "90%" görselden çıktı (D-1). **Yeni ve kaynaksız rakam: 0.** Çıktı: `dogrulama-cikti/kontrol-cikti.txt`.
+
+**Tavsiye/karalama taraması:** değişen cümlelerde `should|must|buy|invest|guarantee|recommend` yok; D-4 "without the gamble" geçmişe dönük betimleme (1929–33), bugüne hüküm değil. Yasal not (§4) değişmeden geçerli.
+
+**Karar: GEÇTİ** — 6/6 zorunlu düzeltme birebir, 3/3 isteğe bağlı karar doğru, Shorts kesintileri olgusal açıdan temiz. Metin kilidine finans doğrulama engeli yok. İki 9:16 tarih etiketi notu F7'de `kurgu-editoru`'na gider.
