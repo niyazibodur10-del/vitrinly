@@ -12,6 +12,8 @@ Kullanım: ~/.finansal-arac/venv/bin/python -I hazirla.py
 import json, subprocess, sys
 from pathlib import Path
 import numpy as np
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from sessizlik_kapisi import sessizlik, uygula  # noqa: E402
 from PIL import Image
 
 KOK = Path(__file__).resolve().parents[3]
@@ -53,14 +55,19 @@ def kirp(src, dst, pad=6):
 
 def main():
     v = {"leo": {}, "yama": {}}
-    for c in ["C01", "C03", "C15"]:
+    for c in ["C01", "C03"]:
         Image.open(G / f"canva-ham/{c}.png").convert("RGB").save(P / f"{c}.jpg", quality=92)
+    Image.open(G / "plaka/C15-sepya.png").convert("RGB").save(P / "C15.jpg", quality=92)  # dalga 3: sepya eşlenmiş
 
-    # Sunucu rig: a ve b aynı kırpım kutusu (piksel hizalı)
-    im_a = Image.open(G / "leo/a-konusma-kapali.png")
-    al = np.array(im_a)[:, :, 3]; ys, xs = np.where(al > 8)
-    kutu = (int(xs.min()) - 6, int(ys.min()) - 6, int(xs.max()) + 7, min(1080, int(ys.max()) + 7))
-    for ad, f in [("a", "a-konusma-kapali"), ("b", "b-konusma-acik")]:
+    # Sunucu rig: bel üstü pozlar (a, b, c, C12) aynı kadrajda → ortak kırpım kutusu (birleşik bbox), yamalar aynı konumda
+    SUNUCU_POZ = [("a", "a-konusma-kapali"), ("b", "b-konusma-acik"), ("C12", "C12-sunum")]
+    bx = []
+    for _, f in SUNUCU_POZ:
+        al = np.array(Image.open(G / f"leo/{f}.png"))[:, :, 3]; ys, xs = np.where(al > 8)
+        bx.append((xs.min(), ys.min(), xs.max(), ys.max()))
+    bx = np.array(bx)
+    kutu = (max(0, int(bx[:, 0].min()) - 6), max(0, int(bx[:, 1].min()) - 6), min(1920, int(bx[:, 2].max()) + 7), min(1080, int(bx[:, 3].max()) + 7))
+    for ad, f in SUNUCU_POZ:
         Image.open(G / f"leo/{f}.png").crop(kutu).save(P / f"leo-{ad}.png", optimize=True)
     v["sunucu"] = {"x": kutu[0], "y": kutu[1], "w": kutu[2] - kutu[0], "h": kutu[3] - kutu[1]}
 
@@ -79,14 +86,9 @@ def main():
     v["yama"]["goz-tek-C06"] = dict(v["yama"]["goz-kapali-C06"])
     v["wink_orta_x"] = orta
 
-    # Klon pozları: C02 kesik hazır; C04/C05 M4 v2 ile kesilir (gorsel-varlik-sanatcisi aracı)
-    v["leo"]["C02"] = kirp(G / "leo/C02-tam-boy.png", P / "leo-C02.png")
-    for c in ["C04", "C05"]:
-        tmp = P / f"_ham-{c}.png"
-        out = subprocess.run([str(PY), "-I", str(G / "araclar/kes-m4.py"), str(G / f"canva-ham/{c}.png"), str(tmp)],
-                             capture_output=True, text=True, check=True).stdout
-        (A / f"kesme-{c}.json").write_text(out.strip() + "\n")
-        v["leo"][c] = kirp(tmp, P / f"leo-{c}.png"); tmp.unlink()
+    # Klon pozları: gorsel-varlik-sanatcisi kesikleri (C05 ten eşlemeli). Kadrajın SOLUNA yürür; aynalama yasak.
+    for c, f in [("C02", "C02-tam-boy"), ("C04", "C04-yurume"), ("C05", "C05-kutuyla-yurume")]:
+        v["leo"][c] = kirp(G / f"leo/{f}.png", P / f"leo-{c}.png")
 
     # Ses + Rhubarb
     kel = json.load(open(S / "kelimeler.json"))["words"]
@@ -103,7 +105,10 @@ def main():
         rj = A / f"rhubarb/{p['id']}.json"
         subprocess.run([str(RHUBARB), "-r", "pocketSphinx", "-f", "json", "--dialogFile", str(dlg), "-o", str(rj), str(w)],
                        check=True, capture_output=True)
-        cues = json.load(open(rj))["mouthCues"]
+        ham = json.load(open(rj))["mouthCues"]
+        # Sessizlik kapısı: ≥100 ms sessiz aralıklarda ağız X (Rhubarb cümle sonlarında şekli 5–8 kare tutuyordu)
+        cues = uygula(ham, sessizlik(str(w)))
+        json.dump({"mouthCues": cues}, open(A / f"rhubarb/{p['id']}-kapili.json", "w"))
         kelimeler = []
         for x in kk:
             t = x["w"]; k = t.lower().strip(".,?!")
