@@ -20,6 +20,7 @@
 | F3 metin + doğrulama | senaryo-yazari → finans-dogrulayici ‖ monetizasyon-uyum-uzmani | GEÇTİ — **METİN KİLİDİ** (RED-1 düzeltmeleri d874c1b; doğrulama onayı 75dde7d eşlenmeyen 0; politika onayı 7ecfb00 YEŞİL) | 03-metin/metin.md (1.701 kelime ≈11:54; Shorts 56,6 / 58,7 sn) | metin-kontrol.py, dogrulama-kontrol.py, politika-denetim.py 2'şer koşu aynı | 05:10–10:05 |
 | F4 ses / görsel / müzik / paket taslak | çoklu | SÜRÜYOR | 04–06, 09 | | |
 | F4 müzik + SFX adayları | muzik-ses-tasarimcisi | GEÇTİ | 06-muzik/adaylar.md, lisans-kaydi.md | lisans-kontrol.py dosya 55 · kayıtsız 0 · yasak lisans [] (exit 0, 2 koşu; negatif test exit 1); bölüm başına ön seçim, kesin seçim F6'da WER ile | (d95b3ef) |
+| F4 ses son işlem + transkript | ses-muhendisi | GEÇTİ | 04-ses/kelimeler-hizali.json, altyazi-taslak.en.srt, altyazi-remotion.json, rhubarb/ (ses-rapor.md §8) | anlatim.wav −14.2 LUFS/TP −1.5 (ek işlem gereksiz: 4 aday, de-ess adayları sibilansı 7–8 dB kesti, WER farksız); 1701/1701 kelime kilitli metin; atılan yalnız "Yes." 9:07.9 + "up." 10:00.3; akustik hiza p95 7/15 ms (±150 ✓); Rhubarb S01 testi ✓ | 10:15–(bu commit) |
 | F5 animasyon | animasyon-yonetmeni | BEKLİYOR | 07-animasyon/* | | |
 | F6 miks | muzik-ses-tasarimcisi | BEKLİYOR | 06-muzik/stems | | |
 | F7 kurgu | kurgu-editoru | BEKLİYOR | 08-kurgu/* | | |

@@ -98,3 +98,29 @@ python3 ../../../tools/ses/hata-orani.py referans-metni.txt kelimeler.json && py
 - **ses-muhendisi:** `kelimeler.json` hazır (Whisper small.en). Altyazıda Whisper'ın rakam yazımı ("1929", "$1,000") ve 9:07.9 "Yes." / 10:00.3 "up." uydurmaları **silinmeli** (sesde yok). Rhubarb için düz metin: `referans-metni.txt`.
 - **kurgu-editoru / youtube-paketleyici:** bölüm zamanları §4 (montajda ses önüne boşluk eklenirse aynı miktar kaydır). Video uzunluğu payı 31 sn.
 - **uretim-muhendisi (öneri):** `hata-orani.py` sıra sayılarını (third/3rd) ve "$1,000"→"one thousand dollars" farkını hâlâ hata sayıyor (45 hatanın 41’i); normalizasyona eklenirse WER gerçek değere iner. `cumle-whisper.py` (cümle tek başına çözüm) `tools/ses/`'e alınabilir.
+
+## 8. Son işlem + transkript kilidi (ses-muhendisi, 2026-10-27)
+Etiket: hepsi **[ölçüm]** (`son-olc.py`, `hizala-cikti.txt`); karar yorumları **[yorum]**.
+
+### 8.1 Son işlem adayları (giriş `anlatim.wav`, her aday + 2 geçişli doğrusal loudnorm I −14 / TP −1.5)
+| Aday | Zincir | I LUFS | TP dBTP | 5–9 kHz payı | 9–16 kHz payı | Whisper WER (ilk 180 sn, 533 kelime) |
+|---|---|---|---|---|---|---|
+| **A (kazanan)** | ek işlem yok | −14.2 (mevcut) | −1.5 | −13.5 dB | −20.4 dB | %3.9 (21) |
+| B | deesser i=0.4 | −14.4 | −1.5 | −21.7 dB | −28.0 dB | ölçülmedi (elendi) |
+| B2 | statik EQ 7 kHz −1.5 dB | −14.1 | −1.5 | −14.7 dB | −21.1 dB | %3.9 (21, aynı hatalar) |
+| C | deesser 0.4 + EQ 300 Hz −1.5 / 3 kHz +1 | −14.6 | −1.4 | −20.5 dB | −26.9 dB | %3.6 (19; tek fark "want to"→"wanna" = ASR oynaması) |
+- **Eleme [yorum]:** B ve C sibilans bandını ~7–8 dB, havayı ~7 dB kesiyor (peltek/boğuk ses riski) ve doğrusal loudnorm TP sınırında −14'e ulaşamıyor (−14.4/−14.6). B2 ölçülebilir fayda vermedi (WER ve hatalar birebir aynı). `tts-son.sh` zaten de-ess + kompresör uyguladı; TTS kuralı: gereksiz işlem yok → **`anlatim.wav` değiştirilmedi** (önce = sonra; ayrı örnek dosyası gerekmedi).
+- Kapılar: `anlatim.wav` −14.2 LUFS, TP −1.5 dBTP, LRA 2.0, 48 kHz/mono/24-bit ✓ · `shorts-1-ek.wav` −14.2 / −1.5 ✓ · `shorts-2-ek.wav` −14.1 / −1.5 ✓ · gürültü tabanı (cümle arası 43 sn) dijital sessizlik (−240 dBFS) — oda tonu yok; miksde müzik yatağı bunu örter [yorum].
+
+### 8.2 Kilitli metne hizalı transkript (`hizala.py`, 2 koşu md5 aynı)
+- `kelimeler-hizali.json`: **1701 kelime = kilitli metin birebir** (assert). Zaman kaynağı: 1669 Whisper birebir, 30 bölme (Whisper rakamla yazdığı aralık, ör. "1929." → "nineteen twenty-nine."), 2 ara ("and" ×2). Sayılar metindeki gibi yazıyla.
+- **Atılan Whisper kelimeleri (metinde yok): yalnız "Yes." 9:07.88 ve "up." 10:00.32.**
+- Cümle uçları TTS'in örnek doğruluğundaki sınırlarına oturtuldu. **Akustik doğrulama** (`hiza-dogrula.py`, 192 cümle, gerçek ses başlangıcı/bitişi): baş farkı p95 **7 ms** (maks 23), son farkı p95 **15 ms** (maks 23) → kapı ±150 ms **GEÇTİ**. Ham Whisper aynı ölçüde p95 257 ms / maks 499 ms idi (duraklama sonrası ilk kelimeyi sessizliğe erken koyuyor).
+- Not: `tools/altyazi-hiza.py` ham `kelimeler.json`'a karşı "KALDI" (%86 eşleşme) veriyor — beklenen: Whisper rakam yazıyor (eşleşmez) ve sapmalar tam da düzeltilen cümle başları. Son videoda bu araç render sesinden yeni Whisper ile çalıştırılır (kurgu-editoru/hakem).
+- `altyazi-remotion.json`: @remotion/captions `Caption[]` (text, startMs, endMs, timestampMs, confidence) → `createTikTokStyleCaptions`'a doğrudan.
+- `altyazi-parcalar.json`: `tools/altyazi-uret.py --json` çıktısı ([[{t,s,e,hl}]], 543 parça; `captionChunks` şekli).
+- `altyazi-taslak.en.srt`: **228 blok**, cümle sınırına saygılı, ≤2×42 karakter, ≤5.5 sn, çakışma 0, <3 kelimelik artık yok. Zaman ekseni = `anlatim.wav`; montajda anlatım önüne boşluk eklenirse aynı ofset kaydırılır (`altyazi-uret.py --ofset`).
+
+### 8.3 Rhubarb girdileri (`rhubarb-hazirla.py` → `rhubarb/`)
+- `rhubarb/anlatim.txt` (tam düz metin) + sahne başına `Sxx.wav` (16 kHz mono PCM16, uç uca, toplam 631.63 sn) + `Sxx.txt` + `sahneler.json` (sahne ofseti; Rhubarb zamanına eklenir). Wav'lar git dışı, betikle 2 sn'de yeniden üretilir.
+- Test: S01 `rhubarb -r pocketSphinx --dialogFile S01.txt` → 4.8 sn, 93 ağız ipucu (A–H + X); ilk X 0–0.03 sn (TTS 30 ms ön payı) ve son X 14.88 sn (konuşma bitişi 14.94) — ses ve metin uyumlu.
