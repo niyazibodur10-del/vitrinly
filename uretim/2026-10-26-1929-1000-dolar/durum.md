@@ -28,7 +28,7 @@
 | F8 paket | çoklu | GEÇTİ | 09-paket/* | paketleyici + thumbnail + viralite 8.40 + politika FİNAL YEŞİL | |
 | F8 paket metni | youtube-paketleyici | GEÇTİ (Z1 A2; sentetik_medya=true kesin; F7 gerçek dosyalarla dry-run 3/3 paket 0 hata 0 uyarı; YAYIN.md taslağı) | 09-paket/paket.md, yayin-paketi.json, yayin-paketi-shorts-1/2.json, yorum-yanitlari.md | paket-kontrol.py 0 hata (2 koşu sha256 aynı); yukle.py --dry-run sahte medyalı kopya 3/3 paket 0 hata, gerçek paket yalnız dosya-yok; bölümler gerçek sahne bas ±1 sn (kapi-cikti.txt) | 2026-10-27 |
 | F9 hakem | hakem | GEÇTİ — **ONAY** (yayın öncesi idari şart ŞY-1: kanal Hakkında'ya "Researched, written and produced by the Toonomy team." — koordinatör, Ö9) | hakem-raporu.md, teslim/ (mp4 sembolik bağ, git dışı) | kendi ölçümüm: sha256 3/3 OK; 631,63 sn/18.949 kare; −14,0 LUFS/TP −2,2 (Sh −14,0/−3,4, −14,0/−3,6); black/freeze 0/0; senkron miksli finalde +1 kare (13 aralık ≤2); WER %0,9 (15/1726); SRT 228 blok çakışma 0; bölümler ≤1 sn; dry-run 3/3 0 hata (teslim/ içinden de); lisans-kontrol exit 0; thumbnail 168x94 3/3 okunur; karne 12 satır | 21:12–21:25 |
-| F10 teslim | koordinatör | BEKLİYOR | teslim/ | | |
+| F10 teslim | koordinatör | GEÇTİ — Niyazi onayı bekleniyor (DUR) | teslim/ | hakem ONAY; ŞY-1 Hakkında satırı API ile uygulandı; büyük mp4'ler git dışı (konteyner giderse K1929Final/K1929Shorts1/2 yeniden render ≈35 dk) | 2026-10-27 |
 
 ## Sonraki fazlara notlar (denetçilerden)
 - F7 kurgu: Shorts 1'de "NOV 1929" etiketi korunur; Shorts 2'de "12 MONTHS TO SEPT 2026" / "2025 → 2026" kartı cümle başlarken ekranda; Shorts 2 iki parça + atlama kesmesi (S20 ortası çıktı). 9:16 skor kartında "IN A DECADE OF FALLING PRICES" şeridi.
