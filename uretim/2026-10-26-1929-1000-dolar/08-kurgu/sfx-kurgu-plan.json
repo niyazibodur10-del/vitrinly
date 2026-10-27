@@ -1,0 +1,830 @@
+[
+{
+"t": 0.0,
+"dosya": "ozgun-radyo-cizirti.flac",
+"db": -30,
+"sure": 2.3,
+"perde": null,
+"olay": "S01 sepya 1929 kartı: plak/radyo hışırtısı (2.3 sn)",
+"kaynak": "F6"
+},
+{
+"t": 2.04,
+"dosya": "whoosh-kisa.flac",
+"db": -20,
+"sure": null,
+"perde": null,
+"olay": "S01 flaş kesmesi whoosh",
+"kaynak": "F7 ek"
+},
+{
+"t": 2.08,
+"dosya": "ozgun-kapi-isik-acilis.flac",
+"db": -14,
+"sure": null,
+"perde": null,
+"olay": "S01 kesme → stüdyo, üç kapı ışıkla açılır",
+"kaynak": "F6→2.25"
+},
+{
+"t": 4.94,
+"dosya": "pop-pluck.flac",
+"db": -20,
+"sure": null,
+"perde": null,
+"olay": "S01 mavi kapı yanar (STOCKS)",
+"kaynak": "F6"
+},
+{
+"t": 5.82,
+"dosya": "pop-pluck.flac",
+"db": -20,
+"sure": null,
+"perde": null,
+"olay": "S01 yeşil kapı yanar (BANK)",
+"kaynak": "F6"
+},
+{
+"t": 6.62,
+"dosya": "pop-pluck.flac",
+"db": -20,
+"sure": null,
+"perde": null,
+"olay": "S01 kahve kapı yanar (SHOEBOX)",
+"kaynak": "F6"
+},
+{
+"t": 10.92,
+"dosya": "pop-pluck.flac",
+"db": -22,
+"sure": null,
+"perde": null,
+"olay": "S01 DISASTER?",
+"kaynak": "F7 ek"
+},
+{
+"t": 11.7,
+"dosya": "pop-pluck.flac",
+"db": -22,
+"sure": null,
+"perde": null,
+"olay": "S01 GAMBLE?",
+"kaynak": "F7 ek"
+},
+{
+"t": 13.0,
+"dosya": "pop-pluck.flac",
+"db": -22,
+"sure": null,
+"perde": null,
+"olay": "S01 SURPRISE?",
+"kaynak": "F7 ek"
+},
+{
+"t": 14.911,
+"dosya": "ozgun-ding-oyunsovu.flac",
+"db": -12,
+"sure": null,
+"perde": null,
+"olay": "S01 \"Let's play\" sunucu zili",
+"kaynak": "F6"
+},
+{
+"t": 20.36,
+"dosya": "tik-select.flac",
+"db": -20,
+"sure": null,
+"perde": null,
+"olay": "S02 takvim 1929→2026",
+"kaynak": "F7 ek"
+},
+{
+"t": 21.675,
+"dosya": "tik-select.flac",
+"db": -20,
+"sure": null,
+"perde": null,
+"olay": "S02 takvim 2026→1929",
+"kaynak": "F7 ek"
+},
+{
+"t": 25.5,
+"dosya": "whoosh-kisa.flac",
+"db": -22,
+"sure": null,
+"perde": null,
+"olay": "S02 ekrana punch-in + soru (vaat)",
+"kaynak": "F7 ek"
+},
+{
+"t": 42.29,
+"dosya": "pop-pluck.flac",
+"db": -22,
+"sure": null,
+"perde": null,
+"olay": "S03 G0 kartı",
+"kaynak": "F7 ek"
+},
+{
+"t": 57.66,
+"dosya": "pop-drop.flac",
+"db": -16,
+"sure": null,
+"perde": null,
+"olay": "S04 kural kartı 1 çakılır",
+"kaynak": "F6→57.244"
+},
+{
+"t": 59.5,
+"dosya": "pop-drop.flac",
+"db": -16,
+"sure": null,
+"perde": null,
+"olay": "S04 kural kartı 2 çakılır",
+"kaynak": "F6→58.912"
+},
+{
+"t": 61.88,
+"dosya": "whoosh-kisa.flac",
+"db": -22,
+"sure": null,
+"perde": null,
+"olay": "S04 Stock Leo mavi kapıya yürür",
+"kaynak": "F6→62.94"
+},
+{
+"t": 63.8,
+"dosya": "whoosh-kisa.flac",
+"db": -22,
+"sure": null,
+"perde": null,
+"olay": "S04 Bank Leo yeşil kapıya",
+"kaynak": "F6→64.84"
+},
+{
+"t": 65.87,
+"dosya": "whoosh-kisa.flac",
+"db": -22,
+"sure": null,
+"perde": null,
+"olay": "S04 Box Leo kahve kapıya",
+"kaynak": "F6→67.24"
+},
+{
+"t": 70.62,
+"dosya": "kahkaha-nocturnal-vanguard-group_giggling.flac",
+"db": -17,
+"sure": 2.2,
+"perde": null,
+"olay": "S04 seyirci kahkahası katman 1",
+"kaynak": "F6→71.13"
+},
+{
+"t": 70.66,
+"dosya": "kahkaha-nocturnal-vanguard-group_giggling.flac",
+"db": -19,
+"sure": 2.2,
+"perde": -2,
+"olay": "S04 kahkaha katman 2 (−2 yarım ton)",
+"kaynak": "F6→71.17"
+},
+{
+"t": 70.7,
+"dosya": "kahkaha-nocturnal-vanguard-group_giggling.flac",
+"db": -19,
+"sure": 2.2,
+"perde": 2,
+"olay": "S04 kahkaha katman 3 (+2 yarım ton)",
+"kaynak": "F6→71.21"
+},
+{
+"t": 72.2,
+"dosya": "whoosh-kisa.flac",
+"db": -22,
+"sure": null,
+"perde": null,
+"olay": "S04 kesme: yakın plan sunucu",
+"kaynak": "F7 ek"
+},
+{
+"t": 73.16,
+"dosya": "ding-pwl-bell_ding1.flac",
+"db": -24,
+"sure": null,
+"perde": null,
+"olay": "S04 göz kırpma ting",
+"kaynak": "F7 ek"
+},
+{
+"t": 80.0,
+"dosya": "whoosh-uzun.flac",
+"db": -16,
+"sure": null,
+"perde": null,
+"olay": "S04→S05 bölüm geçişi (Door One)",
+"kaynak": "F6→79.257"
+},
+{
+"t": 81.84,
+"dosya": "pop-pluck.flac",
+"db": -22,
+"sure": null,
+"perde": null,
+"olay": "S05 G1a grafik kartı",
+"kaynak": "F7 ek"
+},
+{
+"t": 92.36,
+"dosya": "pop-drop.flac",
+"db": -20,
+"sure": null,
+"perde": null,
+"olay": "S05 ×6",
+"kaynak": "F7 ek"
+},
+{
+"t": 109.96,
+"dosya": "pop-drop.flac",
+"db": -18,
+"sure": null,
+"perde": null,
+"olay": "S05 381.17 büyük sayı",
+"kaynak": "F7 ek"
+},
+{
+"t": 114.898,
+"dosya": "ozgun-gerilim-vurus.flac",
+"db": -11,
+"sure": null,
+"perde": null,
+"olay": "S05 \"Nobody knows it yet\" — müzik keser + tek nota gerilim vuruşu",
+"kaynak": "F6"
+},
+{
+"t": 120.72,
+"dosya": "tik-select.flac",
+"db": -20,
+"sure": null,
+"perde": null,
+"olay": "S06 takvim SEP→OCT",
+"kaynak": "F7 ek"
+},
+{
+"t": 125.08,
+"dosya": "muhur-impact-plate.flac",
+"db": -18,
+"sure": null,
+"perde": null,
+"olay": "S06 Kara Pazartesi çizgisi çakılır (−13%)",
+"kaynak": "F6→122.281"
+},
+{
+"t": 129.16,
+"dosya": "muhur-impact-plate.flac",
+"db": -18,
+"sure": null,
+"perde": null,
+"olay": "S06 Kara Salı (−12%)",
+"kaynak": "F6→128.051"
+},
+{
+"t": 148.6,
+"dosya": "ozgun-buzzer-yanlis.flac",
+"db": -15,
+"sure": null,
+"perde": null,
+"olay": "S06 \"$1,000 → $500\" yanlış-cevap buzzer'ı",
+"kaynak": "F6→149.01"
+},
+{
+"t": 157.3,
+"dosya": "kasa-kapisi-rubberduck-metal_open_01.flac",
+"db": -18,
+"sure": null,
+"perde": null,
+"olay": "S07 yeşil kapı açılır, banka kasası",
+"kaynak": "F6→157.74"
+},
+{
+"t": 165.4,
+"dosya": "ozgun-gerilim-vurus.flac",
+"db": -11,
+"sure": null,
+"perde": null,
+"olay": "S07 \"Right?\" tek nota gerilim vuruşu (↺ Bölüm 3)",
+"kaynak": "F6→165.822"
+},
+{
+"t": 178.4,
+"dosya": "whoosh-kisa.flac",
+"db": -22,
+"sure": null,
+"perde": null,
+"olay": "S08 kesme: ABD haritası",
+"kaynak": "F7 ek"
+},
+{
+"t": 206.72,
+"dosya": "kasa-kapisi-rubberduck-metal_slam_01.flac",
+"db": -15,
+"sure": null,
+"perde": null,
+"olay": "S09 Bank of United States kapanır",
+"kaynak": "F6"
+},
+{
+"t": 212.5,
+"dosya": "whoosh-kisa.flac",
+"db": -21,
+"sure": null,
+"perde": null,
+"olay": "S09 ↺5 'Here's the problem' mekanizma kartı",
+"kaynak": "F7 ek"
+},
+{
+"t": 214.04,
+"dosya": "para-coin-drop.flac",
+"db": -20,
+"sure": null,
+"perde": null,
+"olay": "S09 madeni paralar kasaya",
+"kaynak": "F7 ek"
+},
+{
+"t": 223.68,
+"dosya": "muhur-impact-punch.flac",
+"db": -16,
+"sure": null,
+"perde": null,
+"olay": "S09 EMPTY damgası",
+"kaynak": "F7 ek"
+},
+{
+"t": 234.17,
+"dosya": "ozgun-sayac-tikirti.flac",
+"db": -21,
+"sure": null,
+"perde": null,
+"olay": "S10 \"~9,000 BANKS\" sayacı döner",
+"kaynak": "F6→236.28"
+},
+{
+"t": 251.06,
+"dosya": "pop-drop.flac",
+"db": -19,
+"sure": null,
+"perde": null,
+"olay": "S10 ~20¢ büyük sayı",
+"kaynak": "F7 ek"
+},
+{
+"t": 263.88,
+"dosya": "muhur-impact-punch.flac",
+"db": -11,
+"sure": null,
+"perde": null,
+"olay": "S10 \"GAMBLE\" damgası",
+"kaynak": "F6→264.355"
+},
+{
+"t": 268.75,
+"dosya": "ozgun-ding-ding-dogru.flac",
+"db": -14,
+"sure": null,
+"perde": null,
+"olay": "S10 sonu ilk büyük ödül sonucu",
+"kaynak": "F6"
+},
+{
+"t": 269.28,
+"dosya": "tik-click.flac",
+"db": -16,
+"sure": null,
+"perde": null,
+"olay": "S11 \"Quick pause\" duraklatma tıkı",
+"kaynak": "F6"
+},
+{
+"t": 275.66,
+"dosya": "whoosh-kisa.flac",
+"db": -18,
+"sure": null,
+"perde": null,
+"olay": "S11 stüdyoya dönüş",
+"kaynak": "F6→275.52"
+},
+{
+"t": 277.16,
+"dosya": "whoosh-kisa.flac",
+"db": -22,
+"sure": null,
+"perde": null,
+"olay": "S11 kahve kapı punch-in",
+"kaynak": "F7 ek"
+},
+{
+"t": 285.85,
+"dosya": "ozgun-gerilim-vurus.flac",
+"db": -17,
+"sure": null,
+"perde": null,
+"olay": "S11 ↺7 'something strange' sonrası",
+"kaynak": "F7 ek"
+},
+{
+"t": 299.27,
+"dosya": "pop-pluck.flac",
+"db": -22,
+"sure": null,
+"perde": null,
+"olay": "S12 G3 TÜFE kartı",
+"kaynak": "F7 ek"
+},
+{
+"t": 306.18,
+"dosya": "ozgun-sayac-tikirti.flac",
+"db": -21,
+"sure": null,
+"perde": null,
+"olay": "S12 \"−21%\" fiyat sayacı",
+"kaynak": "F6"
+},
+{
+"t": 318.52,
+"dosya": "ozgun-ka-ching.flac",
+"db": -12,
+"sure": null,
+"perde": null,
+"olay": "S12 \"money got stronger\" ka-ching",
+"kaynak": "F6→319.211"
+},
+{
+"t": 337.8,
+"dosya": "whoosh-kisa.flac",
+"db": -22,
+"sure": null,
+"perde": null,
+"olay": "S13 ↺8 sunucuya punch-in",
+"kaynak": "F7 ek"
+},
+{
+"t": 354.25,
+"dosya": "ozgun-buzzer-yanlis.flac",
+"db": -16,
+"sure": 0.4,
+"perde": null,
+"olay": "S14 \"champion?\" → buzzer, \"Not so fast\"",
+"kaynak": "F6→354.03"
+},
+{
+"t": 357.85,
+"dosya": "pop-pluck.flac",
+"db": -19,
+"sure": null,
+"perde": null,
+"olay": "S14 tuzak kartı (earns)",
+"kaynak": "F7 ek"
+},
+{
+"t": 359.36,
+"dosya": "pop-pluck.flac",
+"db": -19,
+"sure": null,
+"perde": null,
+"olay": "S14 tuzak kartı FIRE",
+"kaynak": "F6→359.062"
+},
+{
+"t": 360.7,
+"dosya": "pop-pluck.flac",
+"db": -19,
+"sure": null,
+"perde": null,
+"olay": "S14 tuzak kartı THEFT",
+"kaynak": "F6"
+},
+{
+"t": 362.12,
+"dosya": "pop-pluck.flac",
+"db": -19,
+"sure": null,
+"perde": null,
+"olay": "S14 tuzak kartı JOB LOSS",
+"kaynak": "F6→363.8"
+},
+{
+"t": 370.95,
+"dosya": "ozgun-ruzgar-dusus.flac",
+"db": -11,
+"sure": null,
+"perde": null,
+"olay": "S14→S15 \"Let's jump to the bottom\": rüzgâr + düşüş",
+"kaynak": "F6→372.032"
+},
+{
+"t": 375.58,
+"dosya": "pop-pluck.flac",
+"db": -21,
+"sure": null,
+"perde": null,
+"olay": "S15 41.22 dip etiketi",
+"kaynak": "F7 ek"
+},
+{
+"t": 378.96,
+"dosya": "muhur-impact-plate.flac",
+"db": -15,
+"sure": null,
+"perde": null,
+"olay": "S15 \"−89%\" çakılır",
+"kaynak": "F6→380.219"
+},
+{
+"t": 397.0,
+"dosya": "pop-pluck.flac",
+"db": -20,
+"sure": null,
+"perde": null,
+"olay": "S15 ↺10 BACK TO $1,000?",
+"kaynak": "F7 ek"
+},
+{
+"t": 415.3,
+"dosya": "pop-pluck.flac",
+"db": -21,
+"sure": null,
+"perde": null,
+"olay": "S15 ~LATE 1936 çizgisi",
+"kaynak": "F7 ek"
+},
+{
+"t": 420.02,
+"dosya": "ozgun-ding-oyunsovu.flac",
+"db": -18,
+"sure": null,
+"perde": null,
+"olay": "S16 skor tablosu açılır",
+"kaynak": "F6"
+},
+{
+"t": 422.56,
+"dosya": "pop-pluck.flac",
+"db": -20,
+"sure": null,
+"perde": null,
+"olay": "S16 skor sütunu STOCK",
+"kaynak": "F7 ek"
+},
+{
+"t": 426.54,
+"dosya": "pop-pluck.flac",
+"db": -20,
+"sure": null,
+"perde": null,
+"olay": "S16 skor sütunu BANK",
+"kaynak": "F7 ek"
+},
+{
+"t": 434.31,
+"dosya": "pop-pluck.flac",
+"db": -20,
+"sure": null,
+"perde": null,
+"olay": "S16 skor sütunu BOX",
+"kaynak": "F7 ek"
+},
+{
+"t": 451.83,
+"dosya": "zincir-rubberduck-chain_01.flac",
+"db": -19,
+"sure": null,
+"perde": null,
+"olay": "S18 kapı 1 zincir",
+"kaynak": "F6→476.567"
+},
+{
+"t": 451.91,
+"dosya": "kilit-rubberduck-lock_01.flac",
+"db": -21,
+"sure": null,
+"perde": null,
+"olay": "S18 kapı 1 asma kilit",
+"kaynak": "F6→476.647"
+},
+{
+"t": 452.25,
+"dosya": "zincir-rubberduck-chain_02.flac",
+"db": -19,
+"sure": null,
+"perde": null,
+"olay": "S18 kapı 2 zincir",
+"kaynak": "F6→477.267"
+},
+{
+"t": 452.33,
+"dosya": "kilit-rubberduck-lock_02.flac",
+"db": -21,
+"sure": null,
+"perde": null,
+"olay": "S18 kapı 2 asma kilit",
+"kaynak": "F6→477.347"
+},
+{
+"t": 452.65,
+"dosya": "zincir-rubberduck-chain_03.flac",
+"db": -19,
+"sure": null,
+"perde": null,
+"olay": "S18 kapı 3 zincir",
+"kaynak": "F6→477.967"
+},
+{
+"t": 452.73,
+"dosya": "kilit-rubberduck-lock_01.flac",
+"db": -15,
+"sure": null,
+"perde": null,
+"olay": "S18 kapı 3 asma kilit (cümle sonunda, boşlukta)",
+"kaynak": "F6→478.545"
+},
+{
+"t": 470.92,
+"dosya": "pop-drop.flac",
+"db": -20,
+"sure": null,
+"perde": null,
+"olay": "S18 MARCH 6 bank holiday",
+"kaynak": "F7 ek"
+},
+{
+"t": 473.06,
+"dosya": "ozgun-radyo-cizirti.flac",
+"db": -30,
+"sure": 3.0,
+"perde": null,
+"olay": "S18 Roosevelt radyo silueti hışırtısı",
+"kaynak": "F6→471.82"
+},
+{
+"t": 478.81,
+"dosya": "ozgun-kasa-kilit.flac",
+"db": -12,
+"sure": null,
+"perde": null,
+"olay": "S17 \"every door gets locked\" kasa kilidi",
+"kaynak": "F6→453.29"
+},
+{
+"t": 489.0,
+"dosya": "ozgun-sayac-tikirti.flac",
+"db": -21,
+"sure": null,
+"perde": null,
+"olay": "S18 \"~4,000 never reopen\" sayacı",
+"kaynak": "F6→488.2"
+},
+{
+"t": 496.04,
+"dosya": "tik-click.flac",
+"db": -18,
+"sure": null,
+"perde": null,
+"olay": "S18 INSURANCE tik",
+"kaynak": "F7 ek"
+},
+{
+"t": 507.54,
+"dosya": "ding-pwl-bell_ding1.flac",
+"db": -18,
+"sure": null,
+"perde": null,
+"olay": "S19 \"9 insured\" dilimi",
+"kaynak": "F6"
+},
+{
+"t": 510.58,
+"dosya": "tik-click.flac",
+"db": -18,
+"sure": null,
+"perde": null,
+"olay": "S19 kilit modern kilide",
+"kaynak": "F7 ek"
+},
+{
+"t": 520.7,
+"dosya": "riser.flac",
+"db": -14,
+"sure": null,
+"perde": null,
+"olay": "S19→S20 kapı raylarda kayar, 1933→2026",
+"kaynak": "F6→522.2"
+},
+{
+"t": 531.12,
+"dosya": "ozgun-sayac-tikirti.flac",
+"db": -21,
+"sure": null,
+"perde": null,
+"olay": "S20 \"+3.7%\" sayacı",
+"kaynak": "F6→530.12"
+},
+{
+"t": 541.7,
+"dosya": "pop-drop.flac",
+"db": -16,
+"sure": null,
+"perde": null,
+"olay": "S20 \"$964\" kartı düşer",
+"kaynak": "F6→548.088"
+},
+{
+"t": 551.19,
+"dosya": "pop-pluck.flac",
+"db": -22,
+"sure": null,
+"perde": null,
+"olay": "S21 panel 1",
+"kaynak": "F7 ek"
+},
+{
+"t": 558.07,
+"dosya": "pop-pluck.flac",
+"db": -22,
+"sure": null,
+"perde": null,
+"olay": "S21 panel 2",
+"kaynak": "F7 ek"
+},
+{
+"t": 565.25,
+"dosya": "muhur-impact-punch.flac",
+"db": -12,
+"sure": null,
+"perde": null,
+"olay": "S21 \"Same box. Opposite result.\" vuruşu",
+"kaynak": "F6→567.341"
+},
+{
+"t": 584.67,
+"dosya": "tik-click.flac",
+"db": -18,
+"sure": null,
+"perde": null,
+"olay": "S22 1934 kilidi modern kilide",
+"kaynak": "F7 ek"
+},
+{
+"t": 588.5,
+"dosya": "ozgun-ka-ching.flac",
+"db": -16,
+"sure": null,
+"perde": null,
+"olay": "S22 \"$250,000\" sigorta tabelası",
+"kaynak": "F6→589.862"
+},
+{
+"t": 592.8,
+"dosya": "whoosh-kisa.flac",
+"db": -21,
+"sure": null,
+"perde": null,
+"olay": "S23 ↺13 kesme: final kapılar",
+"kaynak": "F7 ek"
+},
+{
+"t": 597.06,
+"dosya": "pop-pluck.flac",
+"db": -20,
+"sure": null,
+"perde": null,
+"olay": "S23 DISASTER",
+"kaynak": "F7 ek"
+},
+{
+"t": 599.44,
+"dosya": "pop-pluck.flac",
+"db": -20,
+"sure": null,
+"perde": null,
+"olay": "S23 GAMBLE",
+"kaynak": "F7 ek"
+},
+{
+"t": 600.493,
+"dosya": "ozgun-ding-ding-dogru.flac",
+"db": -14,
+"sure": null,
+"perde": null,
+"olay": "S23 kazanan kapı",
+"kaynak": "F6"
+},
+{
+"t": 630.65,
+"dosya": "pop-pluck.flac",
+"db": -20,
+"sure": null,
+"perde": null,
+"olay": "S24 THANKS FOR PLAYING",
+"kaynak": "F7 ek"
+}
+]

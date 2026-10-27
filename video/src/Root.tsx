@@ -7,6 +7,8 @@ import { AgizTest1929 } from "./k1929/AgizTest1929";
 import { kare, SahneComp, Tam, TAM_KARE } from "./k1929/Tam";
 import { SAHNELER, SHORTS_EK } from "./k1929/veri-tam";
 import { DEk, DikeySahneComp, DIKEY_SAHNE } from "./k1929/dikey";
+import { Final, KurguShorts } from "./k1929/kurgu";
+import { KURGU_SHORTS } from "./k1929/kurgu-veri";
 
 const PilotDikey: React.FC = () => (
   <DikeyKesit mod="dolgu">
@@ -49,6 +51,13 @@ export const RemotionRoot: React.FC = () => {
       })}
       <Composition id="K1929D-Sh1Ek" component={DEk} defaultProps={{ ek: "sh1" as const }} durationInFrames={Math.ceil(SHORTS_EK.sh1.sure * 30)} fps={30} width={1080} height={1920} />
       <Composition id="K1929D-Sh2Ek" component={DEk} defaultProps={{ ek: "sh2" as const }} durationInFrames={Math.ceil(SHORTS_EK.sh2.sure * 30)} fps={30} width={1080} height={1920} />
+      {/* 1929-1000-dolar F7 kurgu (kurgu-editoru): final 16:9 + açılış varyantları + 2 Shorts */}
+      <Composition id="K1929Final" component={Final} durationInFrames={TAM_KARE} fps={30} width={1920} height={1080} />
+      {(["A", "B", "C"] as const).map((v) => (
+        <Composition key={v} id={`K1929Ilk30-${v}`} component={Final} defaultProps={{ varyant: v }} durationInFrames={900} fps={30} width={1920} height={1080} />
+      ))}
+      <Composition id="K1929Shorts1" component={KurguShorts} defaultProps={{ ad: "sh1" as const }} durationInFrames={KURGU_SHORTS.sh1.toplam} fps={30} width={1080} height={1920} />
+      <Composition id="K1929Shorts2" component={KurguShorts} defaultProps={{ ad: "sh2" as const }} durationInFrames={KURGU_SHORTS.sh2.toplam} fps={30} width={1080} height={1920} />
       <Composition id="AgizTest" component={AgizTest} durationInFrames={1} fps={30} width={1920} height={1080} />
     </>
   );

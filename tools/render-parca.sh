@@ -44,10 +44,13 @@ t1=$(date +%s)
 if [ -n "$SES" ]; then ffmpeg -v error -y -i "$SES" -c:a pcm_f32le "$TMP/ses.wav"
 else npx remotion render "$TMP/bundle" "$ID" "$TMP/ses.wav" --browser-executable="$B" --codec=wav --log=error; fi
 ffmpeg -v error -y -f concat -safe 0 -i "$TMP/liste.txt" -c copy "$TMP/goruntu.mp4"
+# -shortest KULLANILMAZ: ffmpeg mux tamponu yüzünden görüntünün son 4 karesini kesiyordu (2026-10-27 F7: parçalar 18.949 kare,
+# birleşik görüntü 18.949, -shortest'li çıktı 18.945). Süre görüntüye sabitlenir; ses görüntüden uzunsa kırpılır.
+VSURE=$(ffprobe -v error -select_streams v:0 -show_entries stream=duration -of default=nw=1:nk=1 "$TMP/goruntu.mp4")
 J=$(ffmpeg -hide_banner -nostats -i "$TMP/ses.wav" -af loudnorm=I=-14:TP=-1:LRA=11:print_format=json -f null - 2>&1 | sed -n '/^{/,/^}/p')
 g(){ echo "$J" | python3 -c "import sys,json;print(json.load(sys.stdin)['$1'])"; }
 ffmpeg -v error -y -i "$TMP/goruntu.mp4" -i "$TMP/ses.wav" -map 0:v -map 1:a -c:v copy \
   -af "loudnorm=I=-14:TP=-1:LRA=11:measured_I=$(g input_i):measured_TP=$(g input_tp):measured_LRA=$(g input_lra):measured_thresh=$(g input_thresh):offset=$(g target_offset):linear=true" \
-  -ar 48000 -c:a aac -b:a 192k -shortest -movflags +faststart "$OUT"
+  -ar 48000 -c:a aac -b:a 192k -t "$VSURE" -movflags +faststart "$OUT"
 t2=$(date +%s)
 echo "[render-parca] kare=$N parca=$PARCA yeni_render=$yapilan/$(wc -l < "$TMP/liste.txt") goruntu=$((t1-t0))s ses+birlestirme=$((t2-t1))s toplam=$((t2-t0))s" >&2
