@@ -19,6 +19,7 @@
 | F2 karar | hakem | GEÇTİ | 02-senaryo/senaryo-karari.md | kazanan S03 "You Have $1,000 in 1929. Can You Keep It?" (şartlı: F3 zorunlu düzeltmeler D1–D7, P1–P6, H1–H5); yedek S01; hakem-karar.py 2 koşu aynı | (c065502) |
 | F3 metin + doğrulama | senaryo-yazari → finans-dogrulayici ‖ monetizasyon-uyum-uzmani | GEÇTİ — **METİN KİLİDİ** (RED-1 düzeltmeleri d874c1b; doğrulama onayı 75dde7d eşlenmeyen 0; politika onayı 7ecfb00 YEŞİL) | 03-metin/metin.md (1.701 kelime ≈11:54; Shorts 56,6 / 58,7 sn) | metin-kontrol.py, dogrulama-kontrol.py, politika-denetim.py 2'şer koşu aynı | 05:10–10:05 |
 | F4 ses / görsel / müzik / paket taslak | çoklu | SÜRÜYOR | 04–06, 09 | | |
+| F4 müzik + SFX adayları | muzik-ses-tasarimcisi | GEÇTİ | 06-muzik/adaylar.md, lisans-kaydi.md | lisans-kontrol.py dosya 55 · kayıtsız 0 · yasak lisans [] (exit 0, 2 koşu; negatif test exit 1); bölüm başına ön seçim, kesin seçim F6'da WER ile | (d95b3ef) |
 | F5 animasyon | animasyon-yonetmeni | BEKLİYOR | 07-animasyon/* | | |
 | F6 miks | muzik-ses-tasarimcisi | BEKLİYOR | 06-muzik/stems | | |
 | F7 kurgu | kurgu-editoru | BEKLİYOR | 08-kurgu/* | | |
@@ -30,4 +31,5 @@
 - F7 kurgu: Shorts 1'de "NOV 1929" etiketi korunur; Shorts 2'de "12 MONTHS TO SEPT 2026" / "2025 → 2026" kartı cümle başlarken ekranda; Shorts 2 iki parça + atlama kesmesi (S20 ortası çıktı). 9:16 skor kartında "IN A DECADE OF FALLING PRICES" şeridi.
 - F8 paket: başlıkta yıl sınırı (1929) korunur; başlık/thumbnail/açıklamada bugüne dönük "paranı nereye koy" hükmü yok; sentetik_medya = true, açıklama satırı "Narration voice is AI-generated. Visuals are AI-assisted illustrations animated by our team."; yasal not 03-metin/dogrulama.md §4.
 - F5: kritik yol testine 3 Leo klonlu kapı sahnesi zorunlu (H4); B planı tek Leo kapıdan kapıya yürür.
+- F6 miks: Ragtime! Jazz (B2) en riskli — müzik konuşmanın 22–24 dB altında + 2–4 kHz oyuk; kendi gerilim yatakları yalnız katman (enerji 150 Hz altında); stüdyo kahkahası CC0 yok → "group giggling" 3 katman; 3 CC BY atfı açıklamaya (lisans-kaydi.md).
 - Kaynak: CPU çakışması — TTS/Whisper/render/ESRGAN aynı anda koşmasın (uretim-hatti-testi.md).
