@@ -19,5 +19,15 @@ for p in dosyalar:
 kayit = metin.split("## Değerlendirilip alınmayan")[0]
 satirlar = [l for l in kayit.splitlines() if l.startswith("|")]
 yasak = [l[:60] for l in satirlar if re.search(r"CC[ -]BY[ -](?:NC|ND|SA)|non-?commercial|no ?deriv", l, re.I)]
-print(f"dosya: {len(dosyalar)} · kayıtsız: {len(eksik)} {eksik} · yasak lisans (kayıt bölümünde): {yasak}")
-sys.exit(1 if eksik or yasak else 0)
+# F6: cue.json'daki (kurguya giren) her dosya bu kayıtta veya kanal kaydında (assets/LISANSLAR.md) olmalı
+cue_eksik = []
+if os.path.exists(f"{d}/cue.json"):
+    import json
+    kanal = open(os.path.join(d, "..", "..", "..", "assets", "LISANSLAR.md"), encoding="utf-8").read()
+    c = json.load(open(f"{d}/cue.json"))
+    for x in c["muzik"] + c["sfx"] + c.get("shorts", []):
+        b = x["dosya"].split("/")[-1]
+        if b not in metin + kanal and b.rsplit(".", 1)[0] not in metin + kanal:
+            cue_eksik.append(b)
+print(f"dosya: {len(dosyalar)} · kayıtsız: {len(eksik)} {eksik} · yasak lisans (kayıt bölümünde): {yasak} · cue kayıtsız: {cue_eksik}")
+sys.exit(1 if eksik or yasak or cue_eksik else 0)

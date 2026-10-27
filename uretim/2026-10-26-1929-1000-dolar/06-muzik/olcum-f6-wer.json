@@ -1,0 +1,17 @@
+{
+ "arac": "tools/ses/hata-orani.py (güncel sürüm, 2026-10-27 14:5x)",
+ "model": "faster-whisper small.en int8, beam 5, condition_on_previous_text=False (anlatım-tek ve miks AYNI ayar)",
+ "kelime": 1726,
+ "anlatim_tek_hata": 34,
+ "anlatim_tek_wer": 1.97,
+ "miks_hata": 28,
+ "miks_wer": 1.62,
+ "fark_puan": -0.35,
+ "kapi": "miks WER ≤ anlatım-tek +1 puan",
+ "bilgi_ses_kolu_transkripti": {
+  "kaynak": "04-ses/kelimeler.json (farklı ayar: word_timestamps)",
+  "hata": 16,
+  "wer": 0.93
+ },
+ "sonuc": "GEÇTİ"
+}
