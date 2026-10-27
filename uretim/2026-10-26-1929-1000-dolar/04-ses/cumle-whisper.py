@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+"""Cümle tek başına Whisper testi (ses-yonetmeni): tts.py ham wav (24 kHz) + .zaman.json -> her cümle ayrı çözülür
+(tam dosya çözümündeki bağlam yanlılığı/uydurmaları ayırmak için). Kullanım: ~/.finansal-arac/venv/bin/python cumle-whisper.py <ham.wav> <zaman.json>"""
 import json,sys,soundfile as sf, numpy as np
 from faster_whisper import WhisperModel
 wav,zj=sys.argv[1],sys.argv[2]
