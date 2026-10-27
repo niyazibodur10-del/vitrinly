@@ -1,0 +1,89 @@
+## Test kapısı çıktısı (metin-kontrol.py)
+
+Hız varsayımı: 143 kpm (am_fenrir 0.9 ölçümü). Sahne sayısı: 24.
+
+| Sahne | Başlangıç–bitiş | Süre sn | Kelime |
+|---|---|---|---|
+| S01 | 0:00–0:17 | 17 | 41 |
+| S02 | 0:17–0:41 | 23 | 56 |
+| S03 | 0:41–1:06 | 26 | 61 |
+| S04 | 1:06–1:35 | 29 | 68 |
+| S05 | 1:35–2:14 | 39 | 93 |
+| S06 | 2:14–2:48 | 34 | 82 |
+| S07 | 2:48–3:10 | 21 | 51 |
+| S08 | 3:10–3:47 | 37 | 89 |
+| S09 | 3:47–4:26 | 39 | 93 |
+| S10 | 4:26–5:12 | 46 | 110 |
+| S11 | 5:12–5:32 | 20 | 47 |
+| S12 | 5:32–6:07 | 35 | 84 |
+| S13 | 6:07–6:44 | 37 | 87 |
+| S14 | 6:44–7:09 | 25 | 60 |
+| S15 | 7:09–7:59 | 50 | 120 |
+| S16 | 7:59–8:29 | 29 | 70 |
+| S17 | 8:29–8:37 | 8 | 19 |
+| S18 | 8:37–9:31 | 55 | 131 |
+| S19 | 9:31–9:47 | 16 | 38 |
+| S20 | 9:47–10:13 | 26 | 61 |
+| S21 | 10:13–10:43 | 30 | 72 |
+| S22 | 10:43–10:57 | 13 | 32 |
+| S23 | 10:57–11:29 | 32 | 76 |
+| S24 | 11:29–11:44 | 16 | 37 |
+
+**Toplam kelime:** 1678 · **tahmini süre:** 11:44 (11.7 dk) · kapı ≥1500 ve hedef 12 dk ±%10 = 1544–1888 kelime → GEÇTİ
+  (Not: tireli sayı kelimesi 52 adet; tireler ayrı sayılırsa 1730 birim ≈ 12:06 — üst sınır tahmini.)
+
+**İlk 15 sn (35 kelime):** "It's September nineteen twenty-nine. You have one thousand dollars. Three doors: the stock market, a bank, or a shoebox under your bed. By nineteen thirty-three, one door is a disaster, one is a gamble, and"
+  somut özne (thousand dollars + door) ve vaat (disaster/gamble) ilk 15 sn içinde: GEÇTİ · 'surprise' kelime sırası: 39
+  İlk 30 sn kanal tanıtımı/abone kalıbı: 0 GEÇTİ
+
+**Yeniden kancalar (↺):**
+
+| # | Sahne | İfade | Zaman | Önceki kancadan aralık sn | Sonuç |
+|---|---|---|---|---|---|
+| hook | S01 | It's September nineteen twenty-nine | 0:00 | 0 | GEÇTİ |
+| ↺1 | S02 | By the end, you'll know which door won | 0:32 | 32 | GEÇTİ |
+| ↺2 | S04 | it looks like the smartest choice in the room | 1:31 | 59 | GEÇTİ |
+| ↺3 | S05 | Nobody knows it yet | 2:12 | 41 | GEÇTİ |
+| ↺4 | S07 | That's the safe door. Right? | 3:08 | 55 | GEÇTİ |
+| ↺5 | S09 | Here's the problem | 4:03 | 55 | GEÇTİ |
+| ↺6 | S10 | It isn't one number. It's two. | 4:29 | 26 | GEÇTİ |
+| ↺7 | S11 | something strange is happening to it | 5:29 | 61 | GEÇTİ |
+| ↺8 | S13 | Here's the strange part | 6:27 | 57 | GEÇTİ |
+| ↺9 | S14 | survive the hardest moment | 7:03 | 37 | GEÇTİ |
+| ↺10 | S15 | So how long until he's back to one thousand? | 7:36 | 32 | GEÇTİ |
+| ↺11 | S17 | every door gets locked | 8:35 | 59 | GEÇTİ |
+| ↺12 | S19 | move it to today | 9:46 | 71 | GEÇTİ |
+| ↺13 | S23 | So, which door was safe? | 10:57 | 71 | GEÇTİ |
+| köprü | S24 | Falling prices made a shoebox the winner (uç ekran) | 11:29 | 32 | GEÇTİ |
+
+  Kanca sayısı: 13 ↺ + hook + köprü · en uzun aralık 71 sn (kapı ≤90)
+
+**Abone çağrısı:** 1 adet · S11 @ 5:16
+  ilk 60 sn'de yok ve ilk büyük ödülden (S10, bitiş 5:12) sonra: GEÇTİ
+
+**Telaffuz yasak listesi** (charts, complicated, scenarios, truth, crash*, bold) anlatım+Shorts: 0 → GEÇTİ
+**Tavsiye kalıbı taraması** (25 desen): 0 eşleşme → GEÇTİ
+  ek: should/must/need to: 0
+**Mit taraması** (suicide|jump from|window|leap): 0 → GEÇTİ
+**Tez (Ö1)** "a safe place for money isn't really a place": S03 @ 0:44–0:47, S23 @ 11:19–11:23 · başta (cümle ≤60 sn'de biter) ✓ · sonda (son 90 sn) ✓
+
+**YouTube bölümleri (betik zamanı):**
+```
+0:00 The Game
+1:35 Door One: The Stock Market
+3:10 Door Two: The Bank
+5:32 Door Three: The Shoebox
+7:09 The Bottom: July 1932
+8:37 March 1933: Every Door Locked
+9:47 The Twist: Same Door, 2026
+10:57 What the Game Really Tests
+```
+  ilk 0:00, ≥3 bölüm, aralar ≥10 sn: GEÇTİ
+
+**Shorts hook'ları:** "In nineteen twenty-nine, most people would have picked the wrong door." = 11 kelime · "A shoebox of cash gained power in nineteen thirty-two. In twenty twenty-six, the same math runs the other way." = 19 kelime · "Why the brown door won, and why it flips today, is in the full video." = 15 kelime
+**Ö7 5-gram örtüşmesi** vs `ses-testi/okuma-metni.md`: 0.0% (0/1745) → GEÇTİ
+**Ö7 5-gram örtüşmesi** vs `ses-testi/tts/anlatici-v1-metin.txt`: 0.0% (0/1745) → GEÇTİ
+
+**Sahne başlığı zamanları betikle uyumlu:** GEÇTİ
+
+**KAPI: GEÇTİ**
