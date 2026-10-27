@@ -313,7 +313,7 @@ export const S15: React.FC = () => {
           />
         </div>
         {t >= a("late") ? <Dikey x={yil(1936, 11)} an={a("late")} metin="~LATE 1936" /> : null}
-        <Yazi an={a("eighty-nine")} x={980} y={120} boyut={110} renk={RENK.kirmizi}>−89%</Yazi>
+        <Yazi an={a("eighty-nine")} son={a("so") - 0.2} x={980} y={120} boyut={110} renk={RENK.kirmizi}>−89%</Yazi>
       </Kart>
       {/* alt satır: istatistik kutuları (çift eksen yok) */}
       {t < a("so") - 0.2 ? (
