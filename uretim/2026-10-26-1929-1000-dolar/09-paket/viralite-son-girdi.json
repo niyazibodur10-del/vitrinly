@@ -1,0 +1,215 @@
+{
+ "not": "F8 son viralite girdisi, model v0.1, puanlar TAHMİN [T]; kombinasyonlar yalnız merak (başlık+thumbnail) ölçütünde ayrışır",
+ "senaryolar": [
+  {
+   "id": "K1-T1+A2",
+   "baslik": "T1 You Have $1,000 in 1929. Can You Keep It? + A2 ONE IS A DISASTER",
+   "merak": 8,
+   "talep": 9,
+   "hook": 9,
+   "kisisel": 9,
+   "zamanlama": 7,
+   "hikaye": 8,
+   "gorsel": 9,
+   "raf": 8,
+   "seri": false,
+   "somut_ozne": true,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "talep": [
+     8,
+     9
+    ],
+    "hook": [
+     8,
+     9
+    ],
+    "kisisel": [
+     8,
+     9
+    ],
+    "zamanlama": [
+     6,
+     8
+    ],
+    "hikaye": [
+     7,
+     8
+    ],
+    "merak": [
+     7,
+     9
+    ]
+   }
+  },
+  {
+   "id": "K2-T1+D1",
+   "baslik": "T1 + D1 EVERY DOOR LOCKED",
+   "merak": 7,
+   "talep": 9,
+   "hook": 9,
+   "kisisel": 9,
+   "zamanlama": 7,
+   "hikaye": 8,
+   "gorsel": 9,
+   "raf": 8,
+   "seri": false,
+   "somut_ozne": true,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "talep": [
+     8,
+     9
+    ],
+    "hook": [
+     8,
+     9
+    ],
+    "kisisel": [
+     8,
+     9
+    ],
+    "zamanlama": [
+     6,
+     8
+    ],
+    "hikaye": [
+     7,
+     8
+    ],
+    "merak": [
+     7,
+     8
+    ]
+   }
+  },
+  {
+   "id": "K3-T1+B1",
+   "baslik": "T1 + B1 THE SURPRISE DOOR",
+   "merak": 7,
+   "talep": 9,
+   "hook": 9,
+   "kisisel": 9,
+   "zamanlama": 7,
+   "hikaye": 8,
+   "gorsel": 9,
+   "raf": 8,
+   "seri": false,
+   "somut_ozne": true,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "talep": [
+     8,
+     9
+    ],
+    "hook": [
+     8,
+     9
+    ],
+    "kisisel": [
+     8,
+     9
+    ],
+    "zamanlama": [
+     6,
+     8
+    ],
+    "hikaye": [
+     7,
+     8
+    ],
+    "merak": [
+     6,
+     8
+    ]
+   }
+  },
+  {
+   "id": "K4-T2+B1",
+   "baslik": "T2 Stocks, a Bank or a Shoebox: Who Survived 1929? + B1",
+   "merak": 7,
+   "talep": 9,
+   "hook": 9,
+   "kisisel": 9,
+   "zamanlama": 7,
+   "hikaye": 8,
+   "gorsel": 9,
+   "raf": 8,
+   "seri": false,
+   "somut_ozne": true,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "talep": [
+     8,
+     9
+    ],
+    "hook": [
+     8,
+     9
+    ],
+    "kisisel": [
+     8,
+     9
+    ],
+    "zamanlama": [
+     6,
+     8
+    ],
+    "hikaye": [
+     7,
+     8
+    ],
+    "merak": [
+     6,
+     8
+    ]
+   }
+  },
+  {
+   "id": "K5-T4+B1",
+   "baslik": "T4 Surviving the 1929 Crash With $1,000: Three Doors + B1",
+   "merak": 6,
+   "talep": 9,
+   "hook": 9,
+   "kisisel": 9,
+   "zamanlama": 7,
+   "hikaye": 8,
+   "gorsel": 9,
+   "raf": 8,
+   "seri": false,
+   "somut_ozne": true,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "talep": [
+     8,
+     9
+    ],
+    "hook": [
+     8,
+     9
+    ],
+    "kisisel": [
+     8,
+     9
+    ],
+    "zamanlama": [
+     6,
+     8
+    ],
+    "hikaye": [
+     7,
+     8
+    ],
+    "merak": [
+     6,
+     7
+    ]
+   }
+  }
+ ]
+}
