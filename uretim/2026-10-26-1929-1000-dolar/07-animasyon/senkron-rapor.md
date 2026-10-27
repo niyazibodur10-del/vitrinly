@@ -40,3 +40,43 @@ Altyazı: kelime kelime, 1–3 kelime, kapı renkleriyle anahtar kelime (stock/b
 2. Senkron kapısının ölçüm penceresi: tam video yerine **ekranda konuşan ağız aralıkları** (ve tam sahne) ölçülmeli; `tools/senkron-testi.py`'ye aralık listesi + formant bandı (700–3000 Hz) seçeneği önerisi → uretim-muhendisi.
 3. Klon yaka kartı yazısı 1080p'de küçük (16 px); okunurluk isim balonuyla sağlanıyor.
 4. Sahne sesleri (seyirci kahkahası, whoosh, pop) F6 miksine bırakıldı; zaman damgaları: flaş 2,1 sn, kapı ışıkları 4,94 / 5,92 / 6,62 sn (S01 zamanı), kahkaha "laughs" 70,76 sn.
+
+---
+
+# F5 tam video + 9:16 (2026-10-27)
+
+**Kompozisyonlar (kurgu-editoru için):** `K1929Tam` (16:9, 631,6 sn, 18.949 kare, anlatım + altyazı) · sahne başına `K1929-S01` … `K1929-S24` (her biri kendi anlatım parçası + altyazı; `altyazi: false` prop'u ile yalın) · 9:16 `K1929D-S01/S06/S10/S12/S16/S20/S21` (sahnenin tamamı, kesit kurgu-editoru'nda) · Shorts ek kayıtları `K1929D-Sh1Ek` (hook + kapanış), `K1929D-Sh2Ek` (hook) konuşan Leo ile.
+**Kod:** `video/src/k1929/` — `kit.tsx` (Kamera + kenar koruması, Leo rig yerleşimi, Yazi/Kart/Sayaç/Damga, Çubuk/Çizgi grafik, ABD haritası, kilit, şerit yağmuru, banknot, takvim), `b1–b4.tsx` (S01–S24), `dikey.tsx`, `Tam.tsx`. Veri: `veri-tam.ts` (`hazirla-tam.py`), `veri-grafik.ts` (`grafik-veri.py`, kaynak `03-metin/veri/*.csv` — elle rakam yok).
+**Render:** `tools/render-parca.sh K1929Tam … --parca 1800 --ses video/public/k1929t/anlatim.wav` → `tam-16x9.mp4` (git dışı, 234 MB; 11 parça 28,6 dk; düzeltme turu yalnız parça 6, 3,5 dk). Önizleme `tam-16x9-onizleme.mp4` (480p, git içinde). Dikey: `dikey/*.mp4` (git dışı), kareler `kareler/dikey-*.jpg`.
+**Hazırlık:** yeni konteynerde `rhubarb-tum.py` → `hazirla-tam.py` → `grafik-veri.py` (public/k1929t git dışı, yeniden üretilir; C01 kapı bölgesi `buyutme/C01-kapilar-x4.png` Real-ESRGAN x4, punch-in netliği için x2'ye indirilip plakanın üstüne bindirilir).
+
+## Kapılar (`kapi-olcumleri-tam.txt`, `kapi-olcumleri-dikey.txt`)
+| Kapı | Sonuç |
+|---|---|
+| Dudak senkronu — ağzın göründüğü 13 aralık, 200,8 sn (`agiz-gorunur.json`), geniş bant | **+1 kare** (kor. 0,40) GEÇTİ |
+| Aynı, formant bandı 700–3000 Hz | **+1 kare** (kor. 0,54); 13 aralığın hepsi 1–2 kare GEÇTİ |
+| Shorts ek kayıtları (formant) | Sh1 +1, Sh2 +2 kare GEÇTİ |
+| AgizTest | `kareler/agiz-test.jpg` (aynı rig) |
+| blackdetect | ilk render 1 (S14 sonu aşağı düşüşte boş kare 371,7–372,7 sn) → "THE BOTTOM / JULY 1932" sayfası eklendi → **0**; dikey 9/9 → 0 |
+| freezedetect (2 sn) | donma yok |
+| Ses | −14,0 LUFS |
+| Titreme / plansız sıçrama | 160x90 kare farkı: 63 sıçrama grubu, hepsi sahne sınırı veya planlı kesme/punch-in (liste ölçüm dosyasında) |
+| Kare denetimi | 2 tur × 210 kare (`video/scripts/kare-ornek.mjs`) + son video kontakt sayfaları `kareler/tam/` |
+Not: render-parca birleşik videoda 18.945 görüntü karesi (4 kare kısa, ses 631,63 sn tam) — uretim-muhendisi'ne bilgi.
+
+## Eleme / kararlar
+- **9:16 kapı sahnesi:** A) C01 kapı kırpımlarını dikey yığmak (metin önerisi) · B) C22 dikey stüdyo → **B seçildi**: kapılar yan yana 340 px genişlikte okunuyor, x4 büyütme gerekmiyor; levhalara KOD yazı.
+- **Grafiklerde çift eksen yok** (dataviz): G1 Dow çizgisi + ayrı $ sayaç kartları; G3 TÜFE çizgisi + ayrı "BUYS LIKE $1,272" kartı. Dow ara verisi yok → çapalar kesikli çizgi + "anchors only" notu; S06 dalgalı yol "shape illustrative" etiketli (etiketli noktalar yalnız kaynaklı değerler).
+- **Harita:** gerçek konum verisi yok → stilize ABD silueti, 1 nokta = 10 banka (2.400), "dot positions illustrative" notu; S18'de eyalet sınırı yerine batı→doğu gri dalga + "BY MARCH 4: EVERY STATE".
+- **Konuşan sunucu yalnız rig uyumlu pozlarda** (a, C12, C13, C21, b-alt); c/d/e/f/C20 klonlarda (dış ses). Roosevelt yüzsüz (radyo silueti).
+- **Abone düğmesi** S11'de 3 sn, sessiz (cue dosyasında "SES YOK").
+- Elenen: image-to-video (ücretsiz yerel araç yok; ücretliler onay ister) — hareket rig + kamera + KOD animasyonla.
+
+## Müzik/efekt cue
+`06-muzik/animasyon-efekt-cue.json` (= `07-animasyon/efekt-cue.json`, `efekt-cue.py`): 109 görsel olay, global sn + kare + öneri (kesme whoosh, pop, damga, kilit ×3, sayaçlar, kahkaha, düşüş). Kelime çapalarından üretildiği için sahne kodu değişirse yeniden üretilir.
+
+## Riskler
+1. S04 yakın plan (1,46 sn) tek başına ölçüldüğünde geniş bantta −8 (pencere çok kısa); formantta +1. Kritik testte aynı an +1.
+2. Dönem plakaları (C15–C19) resimsi; "Illustration" etiketi görünür olduğu her karede (S01, S05, S07, S09, S10 kasa, S12, S18).
+3. Klon yaka kartı yazısı küçük; okunurluk isim balonu/renkle.
+4. Altyazı videoya gömülü sürümde ses-muhendisi parçaları kullanıldı; kurgu-editoru SRT'yi ayrıca verir (`altyazi: false` ile yalın render alınabilir).
