@@ -1,0 +1,331 @@
+{
+ "_not": "viralite-analisti F2 girdisi, 2026-10-27. Puanlar TAHMİNDİR [T]; gerekçeler viralite.md'de. ana_iddia_dogrulandi=true geçicidir: finans-dogrulayici paralel çalışıyor, sert eleme onun raporuyla güncellenir. aralik alanı viralite.py tarafından okunmaz, duyarlılık betiği kullanır.",
+ "senaryolar": [
+  {
+   "id": "S01",
+   "baslik": "The 10% Loan That Built the 1929 Crash",
+   "merak": 7,
+   "talep": 9,
+   "hook": 8,
+   "kisisel": 6,
+   "zamanlama": 7,
+   "hikaye": 7,
+   "gorsel": 8,
+   "raf": 9,
+   "seri": true,
+   "somut_ozne": true,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "merak": [
+     6,
+     8
+    ],
+    "kisisel": [
+     5,
+     7
+    ],
+    "zamanlama": [
+     6,
+     8
+    ]
+   }
+  },
+  {
+   "id": "S02",
+   "baslik": "The 1929 Crash Was Only the First Domino",
+   "merak": 7,
+   "talep": 9,
+   "hook": 7,
+   "kisisel": 7,
+   "zamanlama": 7,
+   "hikaye": 7,
+   "gorsel": 7,
+   "raf": 9,
+   "seri": true,
+   "somut_ozne": true,
+   "rakip_benzerlik": "benzer_aci",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "merak": [
+     6,
+     8
+    ],
+    "gorsel": [
+     6,
+     8
+    ]
+   }
+  },
+  {
+   "id": "S03",
+   "baslik": "You Have $1,000 in 1929. Can You Keep It?",
+   "merak": 8,
+   "talep": 9,
+   "hook": 9,
+   "kisisel": 9,
+   "zamanlama": 7,
+   "hikaye": 8,
+   "gorsel": 9,
+   "raf": 8,
+   "seri": false,
+   "somut_ozne": true,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "merak": [
+     7,
+     9
+    ],
+    "hook": [
+     8,
+     9
+    ],
+    "kisisel": [
+     8,
+     9
+    ],
+    "zamanlama": [
+     6,
+     8
+    ],
+    "hikaye": [
+     7,
+     8
+    ]
+   }
+  },
+  {
+   "id": "S04",
+   "baslik": "Weimar 1923: Who Got Rich While Money Died?",
+   "merak": 7,
+   "talep": 4,
+   "hook": 8,
+   "kisisel": 7,
+   "zamanlama": 7,
+   "hikaye": 8,
+   "gorsel": 9,
+   "raf": 9,
+   "seri": false,
+   "somut_ozne": true,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "merak": [
+     6,
+     8
+    ],
+    "talep": [
+     3,
+     5
+    ],
+    "zamanlama": [
+     6,
+     8
+    ]
+   }
+  },
+  {
+   "id": "S05",
+   "baslik": "When Oil Quadrupled: What 1973 Tells Us About Now",
+   "merak": 6,
+   "talep": 6,
+   "hook": 6,
+   "kisisel": 8,
+   "zamanlama": 9,
+   "hikaye": 5,
+   "gorsel": 7,
+   "raf": 6,
+   "seri": false,
+   "somut_ozne": true,
+   "rakip_benzerlik": "benzer_aci",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "talep": [
+     5,
+     7
+    ],
+    "zamanlama": [
+     8,
+     9
+    ],
+    "hikaye": [
+     4,
+     6
+    ]
+   }
+  },
+  {
+   "id": "S06",
+   "baslik": "The Best Company of the Dot-Com Era Still Fell 90%",
+   "merak": 8,
+   "talep": 7,
+   "hook": 8,
+   "kisisel": 6,
+   "zamanlama": 9,
+   "hikaye": 6,
+   "gorsel": 7,
+   "raf": 7,
+   "seri": false,
+   "somut_ozne": true,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "merak": [
+     7,
+     8
+    ],
+    "talep": [
+     6,
+     8
+    ],
+    "kisisel": [
+     5,
+     7
+    ],
+    "hikaye": [
+     5,
+     7
+    ]
+   }
+  },
+  {
+   "id": "S07",
+   "baslik": "The Day Stocks Fell 22.6%, and Why Nothing Broke",
+   "merak": 8,
+   "talep": 4,
+   "hook": 8,
+   "kisisel": 5,
+   "zamanlama": 7,
+   "hikaye": 9,
+   "gorsel": 8,
+   "raf": 8,
+   "seri": false,
+   "somut_ozne": true,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "merak": [
+     7,
+     8
+    ],
+    "talep": [
+     3,
+     5
+    ],
+    "hikaye": [
+     7,
+     9
+    ]
+   }
+  },
+  {
+   "id": "S08",
+   "baslik": "The Brothers Who Tried to Buy All the World's Silver",
+   "merak": 8,
+   "talep": 8,
+   "hook": 8,
+   "kisisel": 4,
+   "zamanlama": 5,
+   "hikaye": 9,
+   "gorsel": 9,
+   "raf": 9,
+   "seri": false,
+   "somut_ozne": true,
+   "rakip_benzerlik": "benzer_aci",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "merak": [
+     7,
+     9
+    ],
+    "talep": [
+     7,
+     8
+    ],
+    "kisisel": [
+     3,
+     4
+    ]
+   }
+  },
+  {
+   "id": "S09",
+   "baslik": "What If Lehman Brothers Had Been Saved in 2008?",
+   "merak": 7,
+   "talep": 7,
+   "hook": 7,
+   "kisisel": 5,
+   "zamanlama": 6,
+   "hikaye": 7,
+   "gorsel": 7,
+   "raf": 8,
+   "seri": false,
+   "somut_ozne": true,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "talep": [
+     6,
+     8
+    ],
+    "hikaye": [
+     6,
+     8
+    ]
+   }
+  },
+  {
+   "id": "S10",
+   "baslik": "Japan's 1989 Bubble Took 34 Years to Heal",
+   "merak": 7,
+   "talep": 4,
+   "hook": 8,
+   "kisisel": 6,
+   "zamanlama": 5,
+   "hikaye": 5,
+   "gorsel": 8,
+   "raf": 8,
+   "seri": false,
+   "somut_ozne": true,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "talep": [
+     4,
+     5
+    ],
+    "hikaye": [
+     4,
+     6
+    ]
+   }
+  },
+  {
+   "id": "S11",
+   "baslik": "The Nobel-Winning Fund That Lost 44% in a Month",
+   "merak": 7,
+   "talep": 4,
+   "hook": 7,
+   "kisisel": 3,
+   "zamanlama": 4,
+   "hikaye": 8,
+   "gorsel": 8,
+   "raf": 8,
+   "seri": false,
+   "somut_ozne": true,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "talep": [
+     4,
+     5
+    ],
+    "hook": [
+     6,
+     7
+    ]
+   }
+  }
+ ]
+}
