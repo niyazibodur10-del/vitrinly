@@ -1,6 +1,6 @@
 # F8 — Yayın paketi · S03 "You Have $1,000 in 1929. Can You Keep It?"
 
-**Hazırlayan:** youtube-paketleyici · **Tarih:** 2026-10-27 · **Durum:** KESİN METİN (F8 erken). Bekleyen 3 şey dosya/karar: final video + Shorts (F7), thumbnail seçimi (thumbnail-tasarimcisi F8), `politika-raporu.md` (monetizasyon-uyum-uzmani F8).
+**Hazırlayan:** youtube-paketleyici · **Tarih:** 2026-10-27 · **Durum:** KESİN METİN (F8 erken). Politika raporu YEŞİL (Z1 uygulandı: ana thumbnail A2), `sentetik_medya = true` kesin. Bekleyen tek şey: final video + Shorts dosyaları (F7) ile gerçek dry-run.
 **Girdiler:** `paket-taslak.md` (F4, eleme gerekçeleri orada), `03-metin/metin.md` (KİLİTLİ), `03-metin/dogrulama.md` §4 (yasal not), `04-ses/sahne-zamanlari.json` (gerçek anlatım zamanları), `06-muzik/atif-satirlari.md`, `docs/yayin-takvimi.md`, `uretim/kanal-kimligi/kanal-paketi.json`.
 **Tek kaynak:** JSON paketleri bu dosyadaki `<!-- veri:… -->` bloklarından `paket-uret.py` ile üretilir (elle kopyalama yok); `paket-kontrol.py` ikisini karşılaştırır (§10).
 Etiketler: **[Ö]** betik ölçümü · **[T]** benim yargım · **[RÖ]** rakip-özet verisi.
@@ -40,7 +40,20 @@ $1,000 in 1929: The Door Everyone Laughed At Won
 The Shoebox That Beat the Stock Market in 1929
 ```
 
-**Başlık–thumbnail birlikte okunuş:** T1 hiçbir thumbnail metnini tekrar etmiyor: A "ONE IS A DISASTER" (kapılar), B "THE SURPRISE DOOR" + 1929 damgası, C "STOCKS −89%" (`thumb-konsept.md`). T2/T3 ancak B ve C ile; A ile kapıları iki kez sayar.
+**Başlık–thumbnail birlikte okunuş (finalistler, `thumbnail/thumb-rapor.md`; Test & Compare sırası A2, B1, D1; ana dosya A2):**
+| Thumbnail | Metin | T1 ile birlikte okunuş | Videodaki karşılığı |
+|---|---|---|---|
+| **A2** `thumbnail/A2-kapilar.jpg` (ana) | ONE IS A DISASTER | Başlık soruyu sorar ("can you keep it?"), görsel bahsi koyar (üç kapı, biri felaket) → merak "hangisi?"; metin başlığı tekrar etmiyor | 0:09 "one door is a disaster" (ilk 15 sn = tek vaat) |
+| **B1** `thumbnail/B1-kutu.jpg` | THE SURPRISE DOOR + "1929" damgası | Başlık para + yıl, görsel duygu (şaşkın Leo + kutu) → "sürpriz kapı hangisi?"; 1929 damgası başlığın çapasını tekrarlar (ikincil, 9,4 px) | anlatım "one is a surprise", 10:00 "SURPRISE" etiketi |
+| **D1** `thumbnail/D1-kilitler.jpg` | EVERY DOOR LOCKED | Başlık "keep it?" sorusuna görsel cevap değil, gerilim: tüm kapılar kilitli → "o zaman para nerede?" | 7:33 bölüm adı "March 1933: every door locked", S17 zincir/kilit |
+Elenen konsept C "STOCKS −89%" (F4) finale girmedi. T2/T3 (kapıları sayan) A2 ile kapıları iki kez anlatır → yedek başlık devreye girerse B1/D1 ile eşleştirilir. Üç metin ≤4 kelime, OCR ve 168x94 okunurluk thumbnail-tasarimcisi'nin ölçümünde (thumb-rapor.md); betik §10 [7] aynı metinleri okunurluk modeliyle tekrar ölçer.
+
+<!-- veri:thumb-metin-secilen -->
+```text
+A2|ONE IS A DISASTER
+B1|THE SURPRISE DOOR|1929
+D1|EVERY DOOR LOCKED
+```
 
 ---
 
@@ -231,15 +244,16 @@ Bonus: which money crisis from history do you want Leo to turn into the next gam
 
 - **Slot (takvim v2, Pazar 12:00 ET, A sütunu):** en yakın uygun Pazar **2026-11-01 12:00 ET**. ABD 1 Kasım 02:00'de kış saatine geçer → 12:00 **EST (UTC−5)** = 17:00 UTC = **20:00 TRT**. Şart: hakem ONAY + Niyazi onayı slottan ≥3 sa önce (01.11 17:00 TRT). Yetişmezse yedek **2026-11-08 12:00 ET** (aynı ofset) — koordinatör `yayin_zamani`'yı değiştirir.
 - **Shorts:** Shorts-1 **Pzt 2026-11-02 09:00 ET** (14:00 UTC, 17:00 TRT), Shorts-2 **Sal 2026-11-03 09:00 ET**. Uzun video kayarsa Shorts da aynı farkla kayar (uzun videodan önce asla).
-- **`durum.sentetik_medya` = true:** monetizasyon-uyum-uzmani'nin F3 ön kararı (`03-metin/metin.md` §11 P5; durum.md F8 notu). `09-paket/politika-raporu.md` henüz yok → rapor gelince karar buraya işlenir; değişirse JSON yeniden üretilir. Karar benim değil. Açıklamadaki AI satırı her durumda kalır.
+- **`durum.sentetik_medya` = true (KESİN):** monetizasyon-uyum-uzmani'nin kararı, `09-paket/politika-raporu.md` §4 (3 paket). Karar benim değil; pakete işlendi. Açıklamadaki AI satırı her durumda kalır.
 - **`gizlilik` = private + `yayin_zamani`** (planlı yayın), `onay.niyazi_onayi` = false (F10'a kadar).
-- **Dosya yolları** `../08-kurgu/…` ve `../09-paket/thumbnail-A.png` biçiminde: `09-paket/` ve `teslim/` kardeş klasör olduğu için paket iki yerden de aynı dosyaları bulur. Thumbnail A varsayılan; thumbnail-tasarimcisi başka varyantı ana seçerse yalnız bu alan değişir (B/C → Test & Compare, Studio).
+- **Dosya yolları** `../08-kurgu/…` ve `../09-paket/thumbnail-A.png` biçiminde: `09-paket/` ve `teslim/` kardeş klasör olduğu için paket iki yerden de aynı dosyaları bulur. Ana thumbnail **`../09-paket/thumbnail/A2-kapilar.jpg`** (politika raporu Z1); B1 ve D1 Studio'da Test & Compare'e eklenir (API'de karşılığı yok → `YAYIN.md` Studio adımı).
 
 ## 10. Test kapısı
 
 Betikler: `paket-uret.py` (bloklar → 3 JSON), `paket-kontrol.py` (metin kuralları + JSON tutarlılığı + bölüm↔sahne eşleşmesi), `tools/yayin/yukle.py --dry-run` (3 paket). Gerçek final dosyalar F7'de geleceği için dry-run iki kipte koşuldu: (1) gerçek paketler → yalnız "video/thumbnail yok" hataları beklenir; (2) aynı paketlerin geçici kopyası, ffmpeg ile üretilmiş sahte 16:9 631,6 sn / 9:16 57 sn video + 1280x720 thumbnail ile → metadata, bölüm, süre, Shorts ve zamanlama kuralları 0 hata olmalı. Çıktılar `kapi-cikti.txt`'de.
 
 ### 10.1 Çıktı özeti (tam çıktı `kapi-cikti.txt`, 2026-10-27)
+- **Z1 sonrası yeniden koşu (politika raporu YEŞİL):** ana thumbnail `thumbnail/A2-kapilar.jpg` (1280x720 jpeg, 131 KB, araç ölçümü). `paket-kontrol.py` 0 hata, 2 koşu sha256 aynı (`320251ea…`); [7] finalist metinleri A2 18,5 px · B1 14,0 px · D1 16,8 px (eşik 9); [8] JSON thumbnail = A2 ve dosya var. Dry-run kip 1: thumbnail artık OK, yalnız video/SRT yok (F7); kip 2: 3 paket 0 hata 0 uyarı (10/7/7). Aşağıdaki maddeler ilk koşudur.
 - `paket-kontrol.py`: **0 hata, exit 0**; 2 koşu sha256 aynı (`130d7ce7…`). Başlıklar 41–49 krk; ilk paragraf 149 krk, 3 anahtar ilk 150'de; yasal not + AI satırı birebir; LEGAL NOTE kaynakların üstünde; müzik atfı aynen; yer tutucu 0; 8 bölümün her biri açan sahnenin gerçek `bas` zamanının ≤1 sn önünde (fark −0,47…−0,96 sn, aşağı yuvarlama); etiketler 373/500; Shorts başlık 42/47 krk; pinli yorum yasaklı 0; JSON ↔ paket.md birebir (başlık, açıklama, bölüm, etiket, zaman, `sentetik_medya` true, onay false).
 - İlk koşu 1 hata verdi: müzik atfındaki eser adları ("Unsolved **Invest**igation", "Ragtime**!** Jazz") tavsiye/clickbait desenine takıldı → atıf satırları yasal not gibi aynen-muaf yapıldı (üçüncü taraf eser adı değiştirilemez).
 - `yukle.py --dry-run`, kip 1 (gerçek paketler): yalnız beklenen dosya-yok hataları (uzun: video/thumbnail/SRT; Shorts: video), metadata kontrolleri geçti, exit 2.
@@ -250,7 +264,6 @@ Betikler: `paket-uret.py` (bloklar → 3 JSON), `paket-kontrol.py` (metin kurall
 | İş | Sahibi | Not |
 |---|---|---|
 | Final video, SRT, 2 Shorts | kurgu-editoru (F7) | gelince gerçek dry-run 0 hata koşulur; ofset varsa §4 kayar |
-| Ana thumbnail seçimi | thumbnail-tasarimcisi (F8) | `dosyalar.thumbnail` |
-| `sentetik_medya` kesin kararı, Shorts 2 başlığı | monetizasyon-uyum-uzmani (`politika-raporu.md`) | true ön karar işlendi |
+| Test & Compare (A2, B1, D1) | koordinatör → `YAYIN.md` Studio adımı | ana dosya A2 JSON'da |
 | Shorts Related video, uç ekran, SRT, oynatma listesi | koordinatör → `YAYIN.md` Studio adımları | API karşılığı doğrulanmadı |
 | Yorum yanıtları | Niyazi onayı ile | `yorum-yanitlari.md` |

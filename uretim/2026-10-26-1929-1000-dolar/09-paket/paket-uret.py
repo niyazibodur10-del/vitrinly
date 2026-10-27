@@ -12,7 +12,7 @@ V = {k: v.rstrip("\n") for k, v in re.findall(r"<!-- veri:([\w-]+) -->\s*```[^\n
 ONERILEN = V["basliklar"].splitlines()[0]
 ETIKETLER = [t.strip() for t in V["etiketler"].split(",") if t.strip()]
 BOLUMLER = [{"zaman": z, "baslik": b} for z, b in re.findall(r"^(\d{2}:\d{2}) (.+)$", V["bolumler"], re.M)]
-SENTETIK = True  # monetizasyon-uyum-uzmani F3 ön kararı; politika-raporu.md gelince buraya işlenir
+SENTETIK = True  # monetizasyon-uyum-uzmani kesin kararı: politika-raporu.md §4
 DURUM = {"gizlilik": "private", "cocuklara_ozel": False, "sentetik_medya": SENTETIK, "lisans": "youtube", "gomulebilir": True}
 ONAY = {"niyazi_onayi": False, "tarih": None}
 META = {"kategori_id": "27", "varsayilan_dil": "en", "ses_dili": "en"}
@@ -26,7 +26,7 @@ paketler = {
         "sema": "yayin-paketi/1",
         "_not": "1929-1000-dolar uzun video. paket.md'den paket-uret.py ile üretildi; elle düzenleme yok. Slot: Paz 2026-11-01 12:00 ET (EST, UTC-5); yedek 2026-11-08.",
         "tur": "uzun",
-        "dosyalar": {"video": "../08-kurgu/final-16x9.mp4", "thumbnail": "../09-paket/thumbnail-A.png",
+        "dosyalar": {"video": "../08-kurgu/final-16x9.mp4", "thumbnail": "../09-paket/thumbnail/A2-kapilar.jpg",
                      "altyazilar": [{"dosya": "../08-kurgu/altyazi.srt", "dil": "en", "ad": "English"}]},
         "metadata": {"baslik": ONERILEN, "aciklama": V["aciklama"], "etiketler": ETIKETLER, "bolumler": BOLUMLER, **META},
         "durum": {**DURUM, "yayin_zamani": "2026-11-01T12:00:00-05:00"},

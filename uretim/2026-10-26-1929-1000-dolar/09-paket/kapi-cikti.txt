@@ -1,4 +1,4 @@
-# F8 paket kapısı çıktısı — 2026-10-27T14:59:50Z
+# F8 paket kapısı çıktısı — 2026-10-27T20:05:30Z (Z1 sonrası: ana thumbnail A2)
 
 $ python3 -I paket-uret.py
 yazıldı yayin-paketi.json
@@ -80,9 +80,9 @@ $ python3 -I paket-kontrol.py   (2 koşu)
   OK   soru soruyor
   OK   tavsiye/clickbait/bugüne dönük: 0
 [7] Thumbnail metni (≤4 kelime) + 168x94 okunurluk modeli (eşik ≥9 px büyük harf)
-  OK   A: "ONE IS A DISASTER" · 4 kelime · 2 satır · büyük harf 141 px → 168x94'te 18.5 px
-  OK   B: "THE SURPRISE DOOR" + damga ['1929'] · 4 kelime · 2 satır · büyük harf 107 px → 168x94'te 14.0 px
-  OK   C: "STOCKS −89%" · 2 kelime · 2 satır · büyük harf 141 px → 168x94'te 18.5 px
+  OK   A2: "ONE IS A DISASTER" · 4 kelime · 2 satır · büyük harf 141 px → 168x94'te 18.5 px
+  OK   B1: "THE SURPRISE DOOR" + damga ['1929'] · 4 kelime · 2 satır · büyük harf 107 px → 168x94'te 14.0 px
+  OK   D1: "EVERY DOOR LOCKED" · 3 kelime · 2 satır · büyük harf 128 px → 168x94'te 16.8 px
        alternatifler ve rakip karşılaştırması (kapı değil, bilgi):
        A1: "PICK A DOOR" · 3 kelime · 2 satır · büyük harf 141 px → 168x94'te 18.5 px
        B2: "1929'S SURPRISE WINNER" · 3 kelime · 3 satır · büyük harf 94 px → 168x94'te 12.3 px
@@ -95,19 +95,19 @@ $ python3 -I paket-kontrol.py   (2 koşu)
   OK   yayin-paketi-shorts-2.json: shorts · başlık 47 krk · tam açıklama 771/5000 bayt · 2026-11-03T09:00:00-05:00
 SONUÇ: 0 hata
 exit 0
-130d7ce73e037bdc5354a229bdc7e5a234271cf8ccbb0a11fd102c2be0605ac3  -
-130d7ce73e037bdc5354a229bdc7e5a234271cf8ccbb0a11fd102c2be0605ac3  -
+320251eaff92e0b6009694835ee6466ae1d36152a6c4082dd6c9ec6b851b4b94  -
+320251eaff92e0b6009694835ee6466ae1d36152a6c4082dd6c9ec6b851b4b94  -
 
-## Kip 1: gerçek paketler (F7 dosyaları henüz yok → yalnız dosya-yok hataları beklenir)
+## Kip 1: gerçek paketler (F7 dosyaları henüz yok → yalnız video/SRT dosya-yok hataları beklenir)
 $ yukle.py 09-paket/yayin-paketi.json --dry-run
   [OK]    şema geçerli
   [OK]    başlık 41/100 karakter
   [OK]    açıklama (bölümler dahil) 3370/5000 bayt
   [OK]    etiketler 19 adet, 373/500 karakter (YouTube sayımı)
+  [OK]    thumbnail 1280x720 jpeg, 131 KB
   [OK]    bölümler 8 adet, kurallara uygun
-  [OK]    yayin_zamani gelecekte: 2026-11-01T17:00:00Z (+122.0 sa)
+  [OK]    yayin_zamani gelecekte: 2026-11-01T17:00:00Z (+116.9 sa)
   [HATA]  video yok: /home/user/vitrinly/uretim/2026-10-26-1929-1000-dolar/08-kurgu/final-16x9.mp4
-  [HATA]  thumbnail yok: /home/user/vitrinly/uretim/2026-10-26-1929-1000-dolar/09-paket/thumbnail-A.png
   [HATA]  altyazı yok: /home/user/vitrinly/uretim/2026-10-26-1929-1000-dolar/08-kurgu/altyazi.srt
 DOĞRULAMA BAŞARISIZ — yükleme/paket üretimi yapılmadı.
 exit 2
@@ -116,7 +116,7 @@ $ yukle.py 09-paket/yayin-paketi-shorts-1.json --dry-run
   [OK]    başlık 42/100 karakter
   [OK]    açıklama (bölümler dahil) 782/5000 bayt
   [OK]    etiketler 7 adet, 104/500 karakter (YouTube sayımı)
-  [OK]    yayin_zamani gelecekte: 2026-11-02T14:00:00Z (+143.0 sa)
+  [OK]    yayin_zamani gelecekte: 2026-11-02T14:00:00Z (+137.9 sa)
   [HATA]  video yok: /home/user/vitrinly/uretim/2026-10-26-1929-1000-dolar/08-kurgu/shorts-1.mp4
 DOĞRULAMA BAŞARISIZ — yükleme/paket üretimi yapılmadı.
 exit 2
@@ -125,12 +125,12 @@ $ yukle.py 09-paket/yayin-paketi-shorts-2.json --dry-run
   [OK]    başlık 47/100 karakter
   [OK]    açıklama (bölümler dahil) 771/5000 bayt
   [OK]    etiketler 7 adet, 116/500 karakter (YouTube sayımı)
-  [OK]    yayin_zamani gelecekte: 2026-11-03T14:00:00Z (+167.0 sa)
+  [OK]    yayin_zamani gelecekte: 2026-11-03T14:00:00Z (+161.9 sa)
   [HATA]  video yok: /home/user/vitrinly/uretim/2026-10-26-1929-1000-dolar/08-kurgu/shorts-2.mp4
 DOĞRULAMA BAŞARISIZ — yükleme/paket üretimi yapılmadı.
 exit 2
 
-## Kip 2: aynı paketler + sahte medya (ffmpeg: 16:9 631.63 sn, 9:16 57/59 sn, 1280x720 png, SRT = 04-ses/altyazi-taslak.en.srt)
+## Kip 2: aynı paketler + sahte medya (ffmpeg: 16:9 631.63 sn, 9:16 57/59 sn; gerçek A2-kapilar.jpg; SRT = 04-ses/altyazi-taslak.en.srt)
 (yayin-paketi.json gerçek paketle bayt bayt aynı)
 $ yukle.py <kopya>/yayin-paketi.json --dry-run
   [OK]    şema geçerli
@@ -139,12 +139,11 @@ $ yukle.py <kopya>/yayin-paketi.json --dry-run
   [OK]    etiketler 19 adet, 373/500 karakter (YouTube sayımı)
   [OK]    video var: ../../..<kopya>/08-kurgu/final-16x9.mp4 (0.5 MB)
   [OK]    video 320x180, 631.6 sn, h264
-  [OK]    thumbnail 1280x720 png, 5 KB
+  [OK]    thumbnail 1280x720 jpeg, 131 KB
   [OK]    SRT altyazi.srt: 228 blok, son 631.6 sn, dil en
   [OK]    bölümler 8 adet, kurallara uygun
-  [OK]    yayin_zamani gelecekte: 2026-11-01T17:00:00Z (+122.0 sa)
+  [OK]    yayin_zamani gelecekte: 2026-11-01T17:00:00Z (+116.9 sa)
   Sonuç: 0 hata, 0 uyarı, 10 geçen kontrol
-    "selfDeclaredMadeForKids": false,
     "containsSyntheticMedia": true,
     "publishAt": "2026-11-01T17:00:00Z"
 Plan: videos.insert (resumable) → thumbnails.set → captions.insert ATLANIR (cihaz akışı kapsamı yok → Studio/--akis yerel)
@@ -156,9 +155,8 @@ $ yukle.py <kopya>/yayin-paketi-shorts-1.json --dry-run
   [OK]    etiketler 7 adet, 104/500 karakter (YouTube sayımı)
   [OK]    video var: ../../..<kopya>/08-kurgu/shorts-1.mp4 (0.0 MB)
   [OK]    video 180x320, 57.0 sn, h264
-  [OK]    yayin_zamani gelecekte: 2026-11-02T14:00:00Z (+143.0 sa)
+  [OK]    yayin_zamani gelecekte: 2026-11-02T14:00:00Z (+137.9 sa)
   Sonuç: 0 hata, 0 uyarı, 7 geçen kontrol
-    "selfDeclaredMadeForKids": false,
     "containsSyntheticMedia": true,
     "publishAt": "2026-11-02T14:00:00Z"
 Plan: videos.insert (resumable)
@@ -170,9 +168,8 @@ $ yukle.py <kopya>/yayin-paketi-shorts-2.json --dry-run
   [OK]    etiketler 7 adet, 116/500 karakter (YouTube sayımı)
   [OK]    video var: ../../..<kopya>/08-kurgu/shorts-2.mp4 (0.0 MB)
   [OK]    video 180x320, 59.0 sn, h264
-  [OK]    yayin_zamani gelecekte: 2026-11-03T14:00:00Z (+167.0 sa)
+  [OK]    yayin_zamani gelecekte: 2026-11-03T14:00:00Z (+161.9 sa)
   Sonuç: 0 hata, 0 uyarı, 7 geçen kontrol
-    "selfDeclaredMadeForKids": false,
     "containsSyntheticMedia": true,
     "publishAt": "2026-11-03T14:00:00Z"
 Plan: videos.insert (resumable)

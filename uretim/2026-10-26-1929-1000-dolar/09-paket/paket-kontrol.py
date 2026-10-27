@@ -28,7 +28,7 @@ def bloklar(yol):
 KAYNAK = "paket.md" if (BURA / "paket.md").exists() else "paket-taslak.md"
 V = bloklar(BURA / KAYNAK)
 s_tum = "\n".join(bloklar(BURA / KAYNAK).values())
-V.update(bloklar(BURA / "thumb-konsept.md"))
+V = {**bloklar(BURA / "thumb-konsept.md"), **V}  # paket.md (finalist metinleri) önceliklidir
 
 # --- yasaklı / clickbait / tavsiye desenleri ---
 TAVSIYE = [r"\bshould\b", r"\bmust\b", r"\bneed to\b", r"\bbuy\b", r"\bsell\b", r"\binvest\w*", r"\bguarantee\w*",
@@ -237,6 +237,8 @@ if KAYNAK == "paket.md":
         if pk["onay"]["niyazi_onayi"] is not False: sorun.append("onay false olmalı")
         if tur == "uzun" and [f"{b['zaman']} {b['baslik']}" for b in m_["bolumler"]] != V["bolumler"].splitlines(): sorun.append("bölümler")
         if tur == "uzun" and m_["etiketler"] != et: sorun.append("etiketler")
+        if tur == "uzun" and pk["dosyalar"].get("thumbnail") != "../09-paket/thumbnail/A2-kapilar.jpg": sorun.append("thumbnail A2 değil (Z1)")
+        if tur == "uzun" and not (BURA / "thumbnail/A2-kapilar.jpg").is_file(): sorun.append("A2 dosyası yok")
         bilinmeyen = [k for k in pk if k not in {x.split(".")[0] for x in SEMA} | {"_kok", "_yol", "_not"}]
         if bilinmeyen: sorun.append(f"bilinmeyen alan {bilinmeyen}")
         ta = tam_aciklama(pk); nb_ = len(ta.encode("utf-8"))
