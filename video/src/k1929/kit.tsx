@@ -124,8 +124,8 @@ export const Leo: React.FC<{
   }
   const veri = id ? sahne(id) : null;
   return (
-    <div style={{ position: "absolute", left: x - YUZ_T.x * s + dx, top: y - YUZ_T.y * s + dy, scale: String(s * otur), transformOrigin: `${YUZ_T.x}px ${RIG_T.kutu.h}px`, opacity: op }}>
-      <div style={{ position: "relative", transformOrigin: "0 0" }}>
+    <div style={{ position: "absolute", left: x - YUZ_T.x * s + dx, top: y - YUZ_T.y * s + dy, scale: String(s), transformOrigin: "0 0", opacity: op }}>
+      <div style={{ position: "relative", scale: String(otur), transformOrigin: `${YUZ_T.x}px ${RIG_T.kutu.h}px` }}>
         <Sunucu cues={veri ? veri.agiz : []} ofs={0} poz={poz} tohum={tohum} wink={wink} rig={RIG_T} konusmaz={konusmaz || !veri} />
         {rozet ? <Rozet {...rozet} x={YUZ_T.x + 125} y={YUZ_T.y + 330} boyut={1.7} /> : null}
       </div>
