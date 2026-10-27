@@ -235,6 +235,28 @@ def main():
         qson = [d for d in QUALIFIER[:3] if re.search(d, " ".join(t for kk, t in parcalar if kk not in ('hook',)), flags=re.I)]
         print(f"    'o on yıl / fiyatlar düşüyordu' niteleyicisi (hook dışı): {qson or 'YOK'}")
 
+    # [8b] Yetkili metin: §5'teki "Okunacak tam metin" <<...>> (RED-1 sonrası eklendi).
+    # Kesit ayrıştırması biçime duyarlı; tam metin TTS'e gidecek metindir. Her cümlenin
+    # kökeni (ana anlatım / yeni kayıt) ve tek başına okumada niteleyici + tavsiye ölçülür.
+    print("\n[8b] Shorts yetkili tam metin (<<...>>) — köken + tek başına okuma")
+    sb = shorts_bolumu(md)
+    an = re.sub(r"\s+", " ", anlatim)
+    for blok in re.split(r"^### ", sb, flags=re.M)[1:]:
+        ad = blok.splitlines()[0].strip()
+        m = re.search(r"<<(.+?)>>", blok, flags=re.S)
+        if not m:
+            print(f"  {ad}: tam metin YOK")
+            continue
+        tm = re.sub(r"\s+", " ", m.group(1)).strip()
+        cumleler = [c.strip() for c in re.split(r"(?<=[.?!])\s+", tm) if c.strip()]
+        yeni = [c for c in cumleler if c.rstrip(".?!") not in an]
+        q = [d for d in QUALIFIER if re.search(d, tm, flags=re.I)]
+        adv = bul(ADVICE, tm)
+        kh = len(re.findall(r"[A-Za-z0-9'’.]+", tm.replace("-", " ")))
+        print(f"  {ad}: {len(cumleler)} cümle · tireler ayrı {kh} birim ≈{kh / 143 * 60:.1f} sn · niteleyici: {q or 'YOK'} · tavsiye: {len(adv)}")
+        for c in yeni:
+            print(f"    ana anlatımda YOK (yeni kayıt): {c}")
+
 
 if __name__ == "__main__":
     main()

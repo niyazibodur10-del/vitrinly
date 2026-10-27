@@ -1,7 +1,7 @@
 # F3 — Metin politika denetimi · S03 "You Have $1,000 in 1929. Can You Keep It?"
 
 **Denetçi:** monetizasyon-uyum-uzmani · **Tarih:** 2026-10-27 · **Denetlenen:** `03-metin/metin.md` v1 (commit 3662eab) · paralel: `finans-dogrulayici` (`dogrulama.md`).
-**Sonuç: SARI (düşük) → 2 düzeltmeyle YEŞİL · KIRMIZI 0.** Ana anlatımın sesine dokunan düzeltme yok. Düzeltmeler Shorts 1'in kapanış satırı ve kesitine, bir de GÖRSEL sütunundaki iki etikete dokunuyor. Metni ben değiştirmedim; öneriler `senaryo-yazari`'ye gider.
+**RED-1 sonrası (v2, commit d874c1b): YEŞİL · KIRMIZI 0 · SARI 0 (§9).** İlk tur: SARI (düşük) → 2 düzeltmeyle YEŞİL. Ana anlatımın sesine dokunan düzeltme yok. Düzeltmeler Shorts 1'in kapanış satırı ve kesitine, bir de GÖRSEL sütunundaki iki etikete dokunuyor. Metni ben değiştirmedim; öneriler `senaryo-yazari`'ye gider.
 
 Etiketler: **[B-Kn]** birincil kaynak (YouTube Yardım Merkezi, **2026-10-27'de WebFetch ile yeniden açıldı**, aşağıda alıntılı) · **[Ö]** ölçüm (betik) · **[T]** yargı/tahmin.
 
@@ -127,3 +127,49 @@ Betik: `03-metin/politika-denetim.py`. Kaynak metinler (FRH ×3 HTML, FDIC PDF +
 | SARI bulgular kesin metin önerisiyle (eski → yeni) | ✓ (B1: 4 satır, B2: 3 satır) |
 | Benzerlik betikle ölçüldü (Ö7 ≤ %10) | ✓ (%0.0) |
 | **YPP politika (metin) kapısı** | **GEÇTİ (koşullu):** KIRMIZI yok. B1 ve B2 metin kilidinden önce senaryo-yazari tarafından uygulanmalı. Uygulanınca yeniden ölçüm: betik [4] etiketsiz = 0, [8] Shorts 1 niteleyici = VAR |
+
+## 9. RED-1 sonrası yeniden denetim (2026-10-27, metin v2, commit d874c1b)
+**Sonuç: YEŞİL · KIRMIZI 0 · SARI 0.** B1 ve B2 birebir uygulanmış. Yeni hook (D-6), D-4 eklemesi ve Shorts 2 kesintisi yeni bir politika riski açmıyor. Metne dokunmadım. Kaynaklar §0'dakilerle aynı (K4, K5, K6; erişim 2026-10-27, bu turda politika metni değişmedi).
+
+### 9.1 Test (betik, 2 koşu)
+```
+$ python3 -I politika-denetim.py metin.md --kaynak <FRH×3 + FDIC×2> --onceki <§1'deki 6 dosya>
+iki koşu: exit 0 / 0 · diff → fark yok · sha256 11508cb9938d0d27…
+[1] tavsiye: 2 (ikisi de "arithmetic, not a plan", anlatım + ekran) · persona-dışı beyan 4
+[2] küfür 0 (ilk 30 sn 0) · şok/hassas 3 (disaster ×2, panic ×1; v1 ile aynı)
+[4] Illustration: S01, S05, S07, S09, S12, S18 → 6/6 VAR · etiketsiz gerçekçi-aday 0
+[6] Ö7 5-gram: 6 önceki metne %0.0 (0/1769)
+[7] Ö8 8-gram: en yüksek %0.06 (frhbp, 1/1738; v1 ile aynı ifade)
+[8b] Shorts 1: 16 cümle · 135 birim ≈56.6 sn · niteleyici "prices were falling" VAR · tavsiye 0
+     Shorts 2: 14 cümle · 140 birim ≈58.7 sn · niteleyici VAR · tavsiye 1 ("not a plan", mekanizma cümlesi)
+     ana anlatımda olmayan cümle: yalnız hook + kapanış (S1: 3, S2: 2) → kesitlerde gizli yeni metin yok
+```
+**Betik değişikliği:** kesit ayrıştırıcısı ([8]) v2'deki tek satırlık kesit biçimini okuyamadı. S06/S10 "BULUNAMADI" verdi ve Shorts 1'i 126 kelime gösterdi. Bunun için [8b] eklendi: yetkili metin olarak §5'teki "Okunacak tam metin" (<<…>>, TTS'e giden metin) okunuyor. Cümleler köken kontrolünden geçiyor (ana anlatımda var mı, yoksa yeni kayıt mı), ayrıca süre, niteleyici ve tavsiye ölçülüyor. [8b]'nin sayıları senaryo-yazari'nın `metin-kontrol.py` sonucuyla aynı çıktı (135 / 140 birim). [8] çapraz kontrol olarak duruyor; bu turdaki "BULUNAMADI" biçim kaynaklı, metin hatası değil.
+
+### 9.2 Uygulama kontrolü (eski → yeni, `politika-denetimi.md` §3)
+| Madde | Beklenen | v2'de | Sonuç |
+|---|---|---|---|
+| B1 kapanış | "The brown door won because prices were falling. Why that flips today is in the full video." | §5 Shorts 1, birebir | ✓ |
+| B1 S10 kesiti | "…suspended operations" ile biter | birebir. "more than one bank in three" kesitte yok (tam metin) | ✓ |
+| B1 9:16 şerit | "IN A DECADE OF FALLING PRICES" skor kartında korunur | §5 9:16 notu birebir. S16 G4'te ana videoda da var | ✓ |
+| B1 kelime/süre | ≈57 sn | 135 birim ≈56.6 sn. Yazar, D-4'ün +6 kelimesini S06 kesitinden düşerek dengelemiş | ✓ |
+| B2 S07 | "**Etiket:** banka içi gerçekçi üretilirse "Illustration" (Ö11)." | birebir | ✓ |
+| B2 S12 | "**Etiket:** vitrin gerçekçi üretilirse "Illustration" (Ö11)." | birebir | ✓ |
+| B2 §2 genel kural | "kural: Canva ile gerçekçi/resimsi üretilen her 1929–33 mekân karesi etiketlenir, stüdyo ve düz grafik muaf" | §2 biçim notu birebir · §11 P5 6/6 | ✓ |
+
+### 9.3 Yeni metnin politika okuması
+| # | Değişiklik | Katı okuma | Esnek okuma | Karar |
+|---|---|---|---|---|
+| R1 | **Shorts 1 hook (D-6):** "In nineteen twenty-nine, the smartest-looking door was the worst one." | Short tek başına izlenince AI maskot "borsa en kötü kapı" diyor. Bu bir yatırım genellemesi gibi okunabilir (K4 "investment tips") | Cümle geçmiş zamanda ve bir yılla ("in nineteen twenty-nine") sınırlı; emir yok, bugüne dönük hüküm yok. "Worst" ölçülmüş bir tarih sonucu: 1.000 $ → ≈108 $ (aynı Short'ta S16 skoru). "Smartest-looking" de 1929 algısını betimliyor, izleyiciye bir şey söylemiyor | **YEŞİL.** K4'teki örneklerin hepsi yönlendirme ("guidance, tips, advice"). Katı okumayı geçersiz kılan ölçülebilir olgu: Short'ta emir kipi 0, yıl niteleyicisi 2 (hook + "nineteen thirty"), kapanışta sebep cümlesi ve "flips today" ile tersine dönme vaadi var. v1 hook'u ("most people would have picked") geçmiş kipiyle zaten YEŞİL'di; yeni hook kişiye yönelik "you/most people" çerçevesini de kaldırıyor, yani risk düştü |
+| R2 | **D-4, S19:** "So Box Leo wins nineteen twenty-nine: the same gain in buying power, without the gamble." | "Nakit, riski olmadan aynı kazancı verir" diye genellenirse nakit tutma yönlendirmesi olur | Cümle 1929–33 oyununun skorunu veriyor (özne Box Leo, yıl sınırı var). Hemen ardından "Now let's do something unfair. Let's take his winning door and move it to today." geliyor ve S20–S21 sonucu 2026 için ters çeviriyor ("…the same math runs the other way. That's arithmetic, not a plan."). Yani cümle bir hüküm değil, tersine dönüşün kurulumu. Ayrıca bu cümle Shorts'a girmiyor ([8b] köken listesi) | **YEŞİL.** Doğruluk (bankanın hayatta kaldığı senaryoda "same gain" denkliği) finans-dogrulayici'nin alanı ve onun D-4 önerisi. Politika açısından bu cümle Box Leo'nun kazancını ölçülü hale getiriyor ("aynı kazanç, kumarsız" = banka kapısı da kazanabilirdi), yani tek kazanan anlatısını yumuşatıyor |
+| R3 | **Shorts 2 kesintisi:** S20'den "Nothing was stolen. The bills are all there." çıkarıldı | Bağlam kaybı nakit hakkında olumsuz bir hükmü sertleştirir mi? | Çıkan cümleler dramatik vurgu, niteleyici değil. Niteleyiciler yerinde: hook (1932 ↔ 2026), "prices were falling", "prices are rising", "not a plan". "They just buy less" "the thousand dollars"a bağlanıyor, mekanizma aynı kalıyor. Tavsiye taraması değişmedi (1 = "not a plan") | **YEŞİL.** Not (politika değil, anlaşılırlık): Short'ta S12'nin 1932 cümlesinden hemen sonra "Twelve months later" geliyor. Bu kesit v1'de de aynıydı. Sesli olarak bir sonraki cümle ("year to September twenty twenty-six") ve G5a kartı ("12 MONTHS TO SEPT 2026") bunu düzeltiyor. **kurgu-editoru:** atlama kesmesinde "2025 → 2026" takvim kartı kesimle aynı karede görünsün. Engel değil |
+
+### 9.4 Kapı (RED-1 sonrası)
+| Kapı maddesi | Sonuç |
+|---|---|
+| B1/B2 birebir uygulandı | ✓ (7/7 satır, §9.2) |
+| Betik [4] etiketsiz gerçekçi sahne = 0 · [8] Shorts 1 niteleyici = VAR | ✓ / ✓ |
+| Yeni metinde tavsiye/emir dili yok (yeni: 5 cümle) | ✓ (0) |
+| Ö7 ≤ %10 · Ö8 ≈0 | ✓ (%0.0 · %0.06) |
+| KIRMIZI 0 · SARI 0 | ✓ |
+| **YPP politika (metin) kapısı** | **GEÇTİ (koşulsuz).** Metin kilidine politika engeli yok. F8 devirleri §7 ve G4 kırmızı çizgisi geçerli. Ek F8 notu: Shorts 1 başlığı ve açıklaması hook'taki yıl sınırını korusun ("stocks are the worst door" gibi yılsız bir başlık olmasın, K6 "all portions") |
