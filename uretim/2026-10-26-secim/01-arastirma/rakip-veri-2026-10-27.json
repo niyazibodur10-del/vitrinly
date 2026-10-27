@@ -1,0 +1,1574 @@
+{
+ "olcum_tarihi": "2026-10-27",
+ "kaynak": "YouTube Data API v3 (channels, playlistItems, videos, search); izlenme = ölçüm anındaki toplam",
+ "tanim": "outlier = video izlenmesi / kanalın 2026-10-20 öncesi son 20 uzun (>=4 dk) videosunun medyanı",
+ "kanallar": {
+  "UCZ4AMrDcNrfy3X6nsU8-rPg": {
+   "ad": "Economics Explained",
+   "acilis": "2012-09-09",
+   "abone": 2890000,
+   "toplam_izlenme": 384299438,
+   "video": 454
+  },
+  "UCIhl32vDZKofpYq4ffc7q5g": {
+   "ad": "Locked Systems",
+   "acilis": "2019-02-27",
+   "abone": 4,
+   "toplam_izlenme": 584,
+   "video": 22
+  },
+  "UCCZUPFZSsnBLzj-tkNsh3SQ": {
+   "ad": "Dial-Up Days",
+   "acilis": "2025-08-19",
+   "abone": 86600,
+   "toplam_izlenme": 13468278,
+   "video": 179
+  },
+  "UCtU6_AkFxhC3DWVU7Utm7Zw": {
+   "ad": "Econ Animated",
+   "acilis": "2024-04-21",
+   "abone": 74,
+   "toplam_izlenme": 23120,
+   "video": 36
+  },
+  "UC4XGvVrjqctI5againjzVag": {
+   "ad": "Capital Curriculum",
+   "acilis": "2025-10-26",
+   "abone": 780,
+   "toplam_izlenme": 28958,
+   "video": 51
+  },
+  "UCmFeOdJI3IXgTBDzqBLD8qg": {
+   "ad": "Moon",
+   "acilis": "2020-01-10",
+   "abone": 1790000,
+   "toplam_izlenme": 369467513,
+   "video": 477
+  },
+  "UCxaLZZILsiB7UiNIvztg8WQ": {
+   "ad": "Drowsy Historian",
+   "acilis": "2025-05-14",
+   "abone": 55800,
+   "toplam_izlenme": 4807022,
+   "video": 335
+  },
+  "UCfdNM3NAhaBOXCafH7krzrA": {
+   "ad": "The Infographics Show",
+   "acilis": "2011-02-26",
+   "abone": 15500000,
+   "toplam_izlenme": 6993620408,
+   "video": 6356
+  },
+  "UCHOVehhlEyT33prow3FNrhA": {
+   "ad": "Fred - Money Historian",
+   "acilis": "2014-10-10",
+   "abone": 5050,
+   "toplam_izlenme": 441674,
+   "video": 6
+  },
+  "UCyyCEKViXdE6MhHsva0Nh2w": {
+   "ad": "Capital Villains",
+   "acilis": "2026-02-17",
+   "abone": 3,
+   "toplam_izlenme": 177,
+   "video": 9
+  },
+  "UC6RcE6Vif-2ZDo0XvufHVSQ": {
+   "ad": "Who Gets Paid",
+   "acilis": "2025-07-22",
+   "abone": 1890,
+   "toplam_izlenme": 207698,
+   "video": 40
+  },
+  "UCHAjD0jFz_PEiHyAusdU1jw": {
+   "ad": "Economic History",
+   "acilis": "2025-09-18",
+   "abone": 275,
+   "toplam_izlenme": 25913,
+   "video": 62
+  },
+  "UCi7gpALvvNKXhkzNOTDFnKw": {
+   "ad": "Money and Marker",
+   "acilis": "2026-03-01",
+   "abone": 1660,
+   "toplam_izlenme": 311338,
+   "video": 29
+  },
+  "UCkCGANrihzExmu9QiqZpPlQ": {
+   "ad": "How Money Works",
+   "acilis": "2018-12-20",
+   "abone": 1760000,
+   "toplam_izlenme": 304833415,
+   "video": 329
+  },
+  "UCW5wN7kxLTGYkVA0rfNQclg": {
+   "ad": "Dimeline",
+   "acilis": "2026-07-25",
+   "abone": 98,
+   "toplam_izlenme": 12149,
+   "video": 11
+  },
+  "UCF28LxzodLv4dGy4cgFjG7w": {
+   "ad": "Financial Dynasty",
+   "acilis": "2026-01-03",
+   "abone": 3420,
+   "toplam_izlenme": 369178,
+   "video": 29
+  },
+  "UCuq1aVVpN2pOlkY6XSarEpQ": {
+   "ad": "Wealth Chronicles",
+   "acilis": "2026-06-21",
+   "abone": 1080,
+   "toplam_izlenme": 232940,
+   "video": 116
+  },
+  "UCWqx7tD9ue3AGK3Le_gNMaQ": {
+   "ad": "SLICE History",
+   "acilis": "2023-03-13",
+   "abone": 301000,
+   "toplam_izlenme": 47123314,
+   "video": 519
+  },
+  "UCV9gRQzzmE2GkXE11oBdPeQ": {
+   "ad": "Histonom",
+   "acilis": "2025-12-24",
+   "abone": 2700,
+   "toplam_izlenme": 246330,
+   "video": 50
+  },
+  "UCAeAB8ABXGoGMbXuYPmiu2A": {
+   "ad": "The Swedish Investor",
+   "acilis": "2017-04-03",
+   "abone": 1020000,
+   "toplam_izlenme": 63762088,
+   "video": 156
+  },
+  "UCdJVeWuYgzBh_w5vNquPocA": {
+   "ad": "Economics Made Easy",
+   "acilis": "2026-01-10",
+   "abone": 5,
+   "toplam_izlenme": 259,
+   "video": 15
+  },
+  "UCPDCiU00ugujWP8H2HMbiFA": {
+   "ad": "Markets of the Past",
+   "acilis": "2026-04-10",
+   "abone": 99900,
+   "toplam_izlenme": 11879600,
+   "video": 105
+  },
+  "UCdbEUlr1NCyT_myr0agktLw": {
+   "ad": " Fred - Money Historian",
+   "acilis": "2014-09-27",
+   "abone": 12800,
+   "toplam_izlenme": 1200778,
+   "video": 179
+  },
+  "UCNIuvl7V8zACPpTmmNIqP2A": {
+   "ad": "OverSimplified",
+   "acilis": "2006-10-28",
+   "abone": 9670000,
+   "toplam_izlenme": 1433603952,
+   "video": 33
+  },
+  "UCjJV44fNBGdKAzWf6cHRaeQ": {
+   "ad": "Half Hour Economics",
+   "acilis": "2006-07-11",
+   "abone": 8,
+   "toplam_izlenme": 853,
+   "video": 10
+  },
+  "UCiC0_uaeKIBQiu5qczdAc_Q": {
+   "ad": "Chad Capital",
+   "acilis": "2026-09-11",
+   "abone": 6,
+   "toplam_izlenme": 1021,
+   "video": 13
+  },
+  "UCdKg7c7M8mpavVhr0jIrsGg": {
+   "ad": "Paul McAllister",
+   "acilis": "2024-11-19",
+   "abone": 117000,
+   "toplam_izlenme": 39338615,
+   "video": 384
+  },
+  "UCg9mr5aOD8rLO1mE_H_DVyA": {
+   "ad": "Global Decline Explained",
+   "acilis": "2025-09-19",
+   "abone": 10300,
+   "toplam_izlenme": 3089356,
+   "video": 129
+  },
+  "UCeKG-s-lryS88v5oBYZaM5Q": {
+   "ad": "Collapsed Empires ",
+   "acilis": "2025-12-29",
+   "abone": 4,
+   "toplam_izlenme": 236,
+   "video": 6
+  },
+  "UCLjDEItDH0x02jpYi9VLq0w": {
+   "ad": "THD Files",
+   "acilis": "2026-05-17",
+   "abone": 2,
+   "toplam_izlenme": 132,
+   "video": 5
+  },
+  "UCOi4rGh6kHwv5-1gbvl6_7w": {
+   "ad": "Collapse Court",
+   "acilis": "2026-10-09",
+   "abone": 14,
+   "toplam_izlenme": 1534,
+   "video": 5
+  },
+  "UCdHqdfzdvT7tbAfeQM1gLnQ": {
+   "ad": "Grant Rudow",
+   "acilis": "2023-07-01",
+   "abone": 156000,
+   "toplam_izlenme": 28074150,
+   "video": 47
+  },
+  "UCb0MyY46T9ZYOzDHkYnIoXg": {
+   "ad": "Plainly Difficult",
+   "acilis": "2016-09-01",
+   "abone": 1100000,
+   "toplam_izlenme": 214126562,
+   "video": 399
+  },
+  "UCOzBNY8XWoLPiIcKnSOSq5Q": {
+   "ad": "PsychMoney",
+   "acilis": "2017-01-15",
+   "abone": 206,
+   "toplam_izlenme": 14677,
+   "video": 72
+  },
+  "UCnThE8FLrlN-tYvZhZL0uaA": {
+   "ad": "Finance Bureau",
+   "acilis": "2025-10-14",
+   "abone": 129000,
+   "toplam_izlenme": 19273492,
+   "video": 556
+  },
+  "UCytiKJcsuKFARvAeUABvRBA": {
+   "ad": "HinExp",
+   "acilis": "2026-04-20",
+   "abone": 93900,
+   "toplam_izlenme": 14345769,
+   "video": 65
+  },
+  "UCCODtTcd5M1JavPCOr_Uydg": {
+   "ad": "Extra History",
+   "acilis": "2011-08-05",
+   "abone": 4620000,
+   "toplam_izlenme": 1775723952,
+   "video": 1352
+  },
+  "UCthWRmE8rmVfT7ZV6mCa4lA": {
+   "ad": "Uncover Things",
+   "acilis": "2026-03-30",
+   "abone": 4990,
+   "toplam_izlenme": 518812,
+   "video": 3
+  },
+  "UC3PwuepPoJA-OlFbEFD2hHw": {
+   "ad": "Marcus Explains",
+   "acilis": "2026-07-06",
+   "abone": 30000,
+   "toplam_izlenme": 4248226,
+   "video": 46
+  },
+  "UCxdWHEhEPiYhCADMrn4PdhQ": {
+   "ad": "Fin Tek",
+   "acilis": "2020-06-02",
+   "abone": 270000,
+   "toplam_izlenme": 23702752,
+   "video": 953
+  },
+  "UCE4Gn00XZbpWvGUfIslT-tA": {
+   "ad": "MagnatesMedia",
+   "acilis": "2018-12-18",
+   "abone": 1860000,
+   "toplam_izlenme": 194479740,
+   "video": 255
+  },
+  "UCwp805lcMivTqbeOqe8NbuA": {
+   "ad": "History Unburied",
+   "acilis": "2026-09-26",
+   "abone": 2520,
+   "toplam_izlenme": 231897,
+   "video": 12
+  },
+  "UC_E4px0RST-qFwXLJWBav8Q": {
+   "ad": "Business Casual",
+   "acilis": "2016-05-15",
+   "abone": 1150000,
+   "toplam_izlenme": 103083474,
+   "video": 91
+  },
+  "UCBhSuS52B-6tVdiPSSRQ0qg": {
+   "ad": "Truth Vault",
+   "acilis": "2025-10-04",
+   "abone": 2490,
+   "toplam_izlenme": 1357403,
+   "video": 24
+  },
+  "UCPBEqHIU1d4OFj7rHDooD4g": {
+   "ad": "The Money Files",
+   "acilis": "2025-11-24",
+   "abone": 4800,
+   "toplam_izlenme": 306453,
+   "video": 36
+  },
+  "UCbzVRTkX3bzNZuBd9In4XyA": {
+   "ad": "Modern MBA",
+   "acilis": "2021-04-26",
+   "abone": 841000,
+   "toplam_izlenme": 64631158,
+   "video": 83
+  },
+  "UC4QZ_LsYcvcq7qOsOhpAX4A": {
+   "ad": "ColdFusion",
+   "acilis": "2007-12-03",
+   "abone": 5250000,
+   "toplam_izlenme": 580569290,
+   "video": 588
+  },
+  "UCUyH4QfXX-5NOT0bULqG6lQ": {
+   "ad": "Wall Street Millennial",
+   "acilis": "2020-07-21",
+   "abone": 371000,
+   "toplam_izlenme": 96221817,
+   "video": 978
+  },
+  "UCCKpicnIwBP3VPxBAZWDeNA": {
+   "ad": "Money & Macro",
+   "acilis": "2020-01-22",
+   "abone": 679000,
+   "toplam_izlenme": 53253423,
+   "video": 150
+  },
+  "UCvSXMi2LebwJEM1s4bz5IBA": {
+   "ad": "New Money",
+   "acilis": "2017-02-06",
+   "abone": 1110000,
+   "toplam_izlenme": 118139396,
+   "video": 448
+  },
+  "UCQQJnyU8fALcOqqpyyIN4sg": {
+   "ad": "The Finance Storyteller",
+   "acilis": "2016-03-30",
+   "abone": 266000,
+   "toplam_izlenme": 23444653,
+   "video": 302
+  }
+ },
+ "medyanlar": {
+  "Capital Curriculum": {
+   "medyan": 173.0,
+   "n": 20,
+   "pencere": [
+    "2026-03-24",
+    "2026-08-07"
+   ],
+   "medyan_sure_dk": 30.9
+  },
+  "Wealth Chronicles": {
+   "medyan": 174.5,
+   "n": 20,
+   "pencere": [
+    "2026-09-26",
+    "2026-10-20"
+   ],
+   "medyan_sure_dk": 25.2
+  },
+  "THD Files": {
+   "medyan": 29,
+   "n": 5,
+   "pencere": [
+    "2026-06-07",
+    "2026-08-16"
+   ],
+   "medyan_sure_dk": 17.3
+  },
+  "Finance Bureau": {
+   "medyan": 97095.5,
+   "n": 16,
+   "pencere": [
+    "2026-09-30",
+    "2026-10-20"
+   ],
+   "medyan_sure_dk": 17.8
+  },
+  "Uncover Things": {
+   "medyan": 198705,
+   "n": 3,
+   "pencere": [
+    "2026-08-12",
+    "2026-08-15"
+   ],
+   "medyan_sure_dk": 26.2
+  },
+  "The Swedish Investor": {
+   "medyan": 95209.5,
+   "n": 20,
+   "pencere": [
+    "2023-01-30",
+    "2025-06-27"
+   ],
+   "medyan_sure_dk": 17.4
+  },
+  "Fin Tek": {
+   "medyan": 238700.5,
+   "n": 8,
+   "pencere": [
+    "2026-06-15",
+    "2026-10-01"
+   ],
+   "medyan_sure_dk": 23.6
+  },
+  "Money and Marker": {
+   "medyan": 469.5,
+   "n": 20,
+   "pencere": [
+    "2026-06-18",
+    "2026-09-15"
+   ],
+   "medyan_sure_dk": 18.9
+  },
+  "Global Decline Explained": {
+   "medyan": 5515.5,
+   "n": 20,
+   "pencere": [
+    "2026-05-21",
+    "2026-06-01"
+   ],
+   "medyan_sure_dk": 21.4
+  },
+  "Plainly Difficult": {
+   "medyan": 218542.5,
+   "n": 20,
+   "pencere": [
+    "2026-06-20",
+    "2026-10-17"
+   ],
+   "medyan_sure_dk": 10.5
+  },
+  "PsychMoney": {
+   "medyan": 86.5,
+   "n": 20,
+   "pencere": [
+    "2026-03-26",
+    "2026-06-20"
+   ],
+   "medyan_sure_dk": 92.2
+  },
+  "Extra History": {
+   "medyan": 284591.0,
+   "n": 20,
+   "pencere": [
+    "2026-06-27",
+    "2026-10-17"
+   ],
+   "medyan_sure_dk": 18.2
+  },
+  "Truth Vault": {
+   "medyan": 11280.5,
+   "n": 20,
+   "pencere": [
+    "2026-06-11",
+    "2026-10-11"
+   ],
+   "medyan_sure_dk": 17.3
+  },
+  "Drowsy Historian": {
+   "medyan": 5143.0,
+   "n": 20,
+   "pencere": [
+    "2025-12-26",
+    "2026-03-03"
+   ],
+   "medyan_sure_dk": 133.7
+  },
+  "Dial-Up Days": {
+   "medyan": 126981.5,
+   "n": 20,
+   "pencere": [
+    "2026-09-13",
+    "2026-10-20"
+   ],
+   "medyan_sure_dk": 25.8
+  },
+  "The Infographics Show": {
+   "medyan": 420083.5,
+   "n": 20,
+   "pencere": [
+    "2026-10-07",
+    "2026-10-20"
+   ],
+   "medyan_sure_dk": 22.0
+  },
+  "History Unburied": {
+   "medyan": 200,
+   "n": 9,
+   "pencere": [
+    "2026-09-29",
+    "2026-10-18"
+   ],
+   "medyan_sure_dk": 53.2
+  },
+  "Dimeline": {
+   "medyan": 712.5,
+   "n": 10,
+   "pencere": [
+    "2026-07-25",
+    "2026-10-13"
+   ],
+   "medyan_sure_dk": 21.5
+  },
+  "Paul McAllister": {
+   "medyan": 42584.5,
+   "n": 20,
+   "pencere": [
+    "2026-10-11",
+    "2026-10-20"
+   ],
+   "medyan_sure_dk": 56.5
+  },
+  "Locked Systems": {
+   "medyan": 13.0,
+   "n": 20,
+   "pencere": [
+    "2026-01-08",
+    "2026-01-29"
+   ],
+   "medyan_sure_dk": 20.8
+  },
+  "Economics Explained": {
+   "medyan": 638286.0,
+   "n": 20,
+   "pencere": [
+    "2026-06-02",
+    "2026-10-18"
+   ],
+   "medyan_sure_dk": 17.7
+  },
+  "Economics Made Easy": {
+   "medyan": 15,
+   "n": 15,
+   "pencere": [
+    "2026-01-11",
+    "2026-03-13"
+   ],
+   "medyan_sure_dk": 20.2
+  },
+  "Econ Animated": {
+   "medyan": 41.0,
+   "n": 20,
+   "pencere": [
+    "2026-09-29",
+    "2026-10-20"
+   ],
+   "medyan_sure_dk": 10.8
+  },
+  "The Money Files": {
+   "medyan": 1200.0,
+   "n": 20,
+   "pencere": [
+    "2025-12-20",
+    "2026-02-02"
+   ],
+   "medyan_sure_dk": 18.6
+  },
+  " Fred - Money Historian": {
+   "medyan": 2295.5,
+   "n": 20,
+   "pencere": [
+    "2026-08-18",
+    "2026-10-20"
+   ],
+   "medyan_sure_dk": 49.2
+  },
+  "Half Hour Economics": {
+   "medyan": 109.5,
+   "n": 8,
+   "pencere": [
+    "2026-10-12",
+    "2026-10-19"
+   ],
+   "medyan_sure_dk": 27.7
+  },
+  "Who Gets Paid": {
+   "medyan": 3468.0,
+   "n": 20,
+   "pencere": [
+    "2026-08-16",
+    "2026-10-19"
+   ],
+   "medyan_sure_dk": 21.1
+  },
+  "Economic History": {
+   "medyan": 99.5,
+   "n": 20,
+   "pencere": [
+    "2025-12-14",
+    "2026-09-29"
+   ],
+   "medyan_sure_dk": 19.5
+  },
+  "Marcus Explains": {
+   "medyan": 37816.5,
+   "n": 20,
+   "pencere": [
+    "2026-09-11",
+    "2026-10-19"
+   ],
+   "medyan_sure_dk": 26.2
+  },
+  "Fred - Money Historian": {
+   "medyan": 50559.5,
+   "n": 6,
+   "pencere": [
+    "2026-03-02",
+    "2026-03-07"
+   ],
+   "medyan_sure_dk": 33.1
+  },
+  "How Money Works": {
+   "medyan": 768019.0,
+   "n": 20,
+   "pencere": [
+    "2026-05-31",
+    "2026-10-18"
+   ],
+   "medyan_sure_dk": 19.5
+  },
+  "Histonom": {
+   "medyan": 154.5,
+   "n": 20,
+   "pencere": [
+    "2026-04-26",
+    "2026-10-19"
+   ],
+   "medyan_sure_dk": 11.2
+  },
+  "Financial Dynasty": {
+   "medyan": 432.5,
+   "n": 20,
+   "pencere": [
+    "2026-05-22",
+    "2026-10-04"
+   ],
+   "medyan_sure_dk": 17.4
+  },
+  "SLICE History": {
+   "medyan": 15775.0,
+   "n": 20,
+   "pencere": [
+    "2026-09-17",
+    "2026-10-20"
+   ],
+   "medyan_sure_dk": 49.4
+  },
+  "Grant Rudow": {
+   "medyan": 562255.0,
+   "n": 20,
+   "pencere": [
+    "2025-11-22",
+    "2026-10-16"
+   ],
+   "medyan_sure_dk": 16.4
+  },
+  "Capital Villains": {
+   "medyan": 9,
+   "n": 9,
+   "pencere": [
+    "2026-02-18",
+    "2026-03-09"
+   ],
+   "medyan_sure_dk": 30.5
+  },
+  "Chad Capital": {
+   "medyan": 50,
+   "n": 13,
+   "pencere": [
+    "2026-09-12",
+    "2026-10-15"
+   ],
+   "medyan_sure_dk": 14.8
+  },
+  "OverSimplified": {
+   "medyan": 40718302.0,
+   "n": 20,
+   "pencere": [
+    "2019-01-24",
+    "2025-01-18"
+   ],
+   "medyan_sure_dk": 25.6
+  },
+  "Moon": {
+   "medyan": 611630.5,
+   "n": 20,
+   "pencere": [
+    "2026-07-10",
+    "2026-10-13"
+   ],
+   "medyan_sure_dk": 24.4
+  },
+  "Markets of the Past": {
+   "medyan": 96274.5,
+   "n": 20,
+   "pencere": [
+    "2026-10-01",
+    "2026-10-20"
+   ],
+   "medyan_sure_dk": 30.9
+  },
+  "Collapsed Empires ": {
+   "medyan": 11.0,
+   "n": 6,
+   "pencere": [
+    "2026-03-17",
+    "2026-07-28"
+   ],
+   "medyan_sure_dk": 48.6
+  },
+  "Collapse Court": {
+   "medyan": 174,
+   "n": 5,
+   "pencere": [
+    "2026-10-09",
+    "2026-10-17"
+   ],
+   "medyan_sure_dk": 32.0
+  },
+  "HinExp": {
+   "medyan": 130999.0,
+   "n": 20,
+   "pencere": [
+    "2026-09-10",
+    "2026-10-20"
+   ],
+   "medyan_sure_dk": 17.5
+  },
+  "Business Casual": {
+   "medyan": 395812.5,
+   "n": 20,
+   "pencere": [
+    "2019-05-10",
+    "2022-08-16"
+   ],
+   "medyan_sure_dk": 8.9
+  },
+  "MagnatesMedia": {
+   "medyan": 653105.0,
+   "n": 20,
+   "pencere": [
+    "2024-03-31",
+    "2025-09-12"
+   ],
+   "medyan_sure_dk": 31.1
+  }
+ },
+ "outlier_12ay": [
+  {
+   "skor": 1199.3,
+   "izlenme": 185295,
+   "kanal": "Histonom",
+   "yayin": "2026-01-06",
+   "sure_dk": 13.2,
+   "baslik": "How America Replaced Britain as the World’s Economic Superpower",
+   "id": "DIg9yuCZLqE"
+  },
+  {
+   "skor": 1152.8,
+   "izlenme": 230551,
+   "kanal": "History Unburied",
+   "yayin": "2026-10-10",
+   "sure_dk": 58.9,
+   "baslik": "The Real Reason a Million Irish People Starved Was Never the Potato What They Never Taught You",
+   "id": "YWOqTHIlOos"
+  },
+  {
+   "skor": 806.8,
+   "izlenme": 348957,
+   "kanal": "Financial Dynasty",
+   "yayin": "2026-04-02",
+   "sure_dk": 18.8,
+   "baslik": "The Family That Owns Most of London (Grosvenor Family)",
+   "id": "YAyJWVRqMKE"
+  },
+  {
+   "skor": 276.2,
+   "izlenme": 129697,
+   "kanal": "Money and Marker",
+   "yayin": "2026-06-25",
+   "sure_dk": 17.7,
+   "baslik": "Who Actually Pays For The World Cup? (Follow The Money)",
+   "id": "aq1fOuoF9bA"
+  },
+  {
+   "skor": 202.7,
+   "izlenme": 95178,
+   "kanal": "Money and Marker",
+   "yayin": "2026-07-08",
+   "sure_dk": 17.0,
+   "baslik": "How Much Does A World Cup Referee Make? The Man In The Middle Earns A Fraction Of The Players",
+   "id": "Cx6Gtl5QPcE"
+  },
+  {
+   "skor": 131.8,
+   "izlenme": 61877,
+   "kanal": "Money and Marker",
+   "yayin": "2026-07-01",
+   "sure_dk": 16.9,
+   "baslik": "How Much Messi Really Earns (The Number Isn't What You Think)",
+   "id": "uM6z4kbSW78"
+  },
+  {
+   "skor": 89.0,
+   "izlenme": 106805,
+   "kanal": "The Money Files",
+   "yayin": "2026-01-16",
+   "sure_dk": 21.5,
+   "baslik": "The Balkan Economic Trap No One Ever Escapes",
+   "id": "2VbNiYupqc8"
+  },
+  {
+   "skor": 83.5,
+   "izlenme": 942410,
+   "kanal": "Truth Vault",
+   "yayin": "2026-09-23",
+   "sure_dk": 31.3,
+   "baslik": "The Rise and Fall of BIG BAZAAR | Kishore Biyani | 2D Animation",
+   "id": "jt3UHBUNPpc"
+  },
+  {
+   "skor": 46.1,
+   "izlenme": 254264,
+   "kanal": "Global Decline Explained",
+   "yayin": "2026-05-31",
+   "sure_dk": 24.3,
+   "baslik": "Nobody Shops in Singapore Anymore — 10 Mega Malls Are Turning Into Ghost Malls",
+   "id": "e1prhGEl4Og"
+  },
+  {
+   "skor": 42.9,
+   "izlenme": 51525,
+   "kanal": "The Money Files",
+   "yayin": "2025-12-10",
+   "sure_dk": 18.8,
+   "baslik": "How Cutting Russia From SWIFT Destroyed the Dollar Forever",
+   "id": "Bz7hgEAdsmM"
+  },
+  {
+   "skor": 40.2,
+   "izlenme": 48287,
+   "kanal": "The Money Files",
+   "yayin": "2026-01-01",
+   "sure_dk": 20.1,
+   "baslik": "The Rich Are Going Bankrupt — And It’s Accelerating",
+   "id": "zzNjEYRdvIM"
+  },
+  {
+   "skor": 34.3,
+   "izlenme": 540465,
+   "kanal": "SLICE History",
+   "yayin": "2025-11-02",
+   "sure_dk": 51.4,
+   "baslik": "The Great Depression of 1929: When the Dream Collapsed I SLICE HISTORY | FULL DOCUMENTARY",
+   "id": "KRQDfe8Mh2A"
+  },
+  {
+   "skor": 33.5,
+   "izlenme": 3252388,
+   "kanal": "Finance Bureau",
+   "yayin": "2026-10-16",
+   "sure_dk": 19.1,
+   "baslik": "What Happens If Trump Loses The Midterms?",
+   "id": "AyMHJBLc_tA"
+  },
+  {
+   "skor": 32.8,
+   "izlenme": 181074,
+   "kanal": "Global Decline Explained",
+   "yayin": "2026-05-09",
+   "sure_dk": 25.5,
+   "baslik": "Empty Malls in Singapore — Why Millions Are Refusing to Shop Here",
+   "id": "WpRCVTCG-Y0"
+  },
+  {
+   "skor": 25.9,
+   "izlenme": 142692,
+   "kanal": "Global Decline Explained",
+   "yayin": "2026-05-16",
+   "sure_dk": 21.8,
+   "baslik": "Broken DUBAI: 10 Areas Turning Into Ghost Zones as Tourism Collapses in 2026",
+   "id": "_EXkNsYc2EY"
+  },
+  {
+   "skor": 25.3,
+   "izlenme": 58164,
+   "kanal": " Fred - Money Historian",
+   "yayin": "2026-10-15",
+   "sure_dk": 41.4,
+   "baslik": "Why The U.S. Diesel Crisis Is Only Getting Started",
+   "id": "RwZrPUh924M"
+  },
+  {
+   "skor": 23.3,
+   "izlenme": 128322,
+   "kanal": "Global Decline Explained",
+   "yayin": "2026-05-16",
+   "sure_dk": 20.1,
+   "baslik": "5 Singapore Iconic Landmarks Closing Down – Is Singapore COLLAPSING?",
+   "id": "URXmq1ybZPA"
+  },
+  {
+   "skor": 20.6,
+   "izlenme": 47184,
+   "kanal": " Fred - Money Historian",
+   "yayin": "2026-10-20",
+   "sure_dk": 40.9,
+   "baslik": "October Diesel Supply Crisis Deepens",
+   "id": "3i9pmZuLvPo"
+  },
+  {
+   "skor": 18.7,
+   "izlenme": 22419,
+   "kanal": "The Money Files",
+   "yayin": "2025-12-20",
+   "sure_dk": 17.4,
+   "baslik": "How Much Gold & Silver Is Actually Enough for 2026?",
+   "id": "1tZV9WFfewk"
+  },
+  {
+   "skor": 18.6,
+   "izlenme": 22351,
+   "kanal": "The Money Files",
+   "yayin": "2025-12-18",
+   "sure_dk": 18.1,
+   "baslik": "The Crash Pattern They Ignored in 1929 Is Back — And 2026 Is Next",
+   "id": "VsH2FXOi1PQ"
+  },
+  {
+   "skor": 18.3,
+   "izlenme": 41977,
+   "kanal": " Fred - Money Historian",
+   "yayin": "2026-10-17",
+   "sure_dk": 40.2,
+   "baslik": "$100 Oil, Record Debt: What's Really Happening to Saudi Arabia's Money",
+   "id": "c_nSo7Rl74A"
+  },
+  {
+   "skor": 15.0,
+   "izlenme": 1959731,
+   "kanal": "HinExp",
+   "yayin": "2026-10-01",
+   "sure_dk": 17.8,
+   "baslik": "The Economics of Owning a Bus Business | Business Case Study",
+   "id": "z4cw6TJ4zmM"
+  },
+  {
+   "skor": 13.7,
+   "izlenme": 1318152,
+   "kanal": "Markets of the Past",
+   "yayin": "2026-10-18",
+   "sure_dk": 30.9,
+   "baslik": "The Real Reason Hitler Never Invaded Switzerland",
+   "id": "36J1tL9ulGA"
+  },
+  {
+   "skor": 13.4,
+   "izlenme": 507814,
+   "kanal": "Marcus Explains",
+   "yayin": "2026-08-11",
+   "sure_dk": 25.1,
+   "baslik": "The Economics of Money Laundering",
+   "id": "5lpKA72DQmo"
+  },
+  {
+   "skor": 12.7,
+   "izlenme": 479479,
+   "kanal": "Marcus Explains",
+   "yayin": "2026-09-27",
+   "sure_dk": 24.1,
+   "baslik": "How All-You-Can-Eat Buffets Make Money? (It's Not Food)",
+   "id": "cdEGg2-C6bI"
+  },
+  {
+   "skor": 11.8,
+   "izlenme": 446054,
+   "kanal": "Marcus Explains",
+   "yayin": "2026-09-17",
+   "sure_dk": 25.8,
+   "baslik": "How Pawn Shops Actually Make Money",
+   "id": "wfj8Poa5ZMo"
+  },
+  {
+   "skor": 11.7,
+   "izlenme": 64323,
+   "kanal": "Global Decline Explained",
+   "yayin": "2026-05-20",
+   "sure_dk": 24.2,
+   "baslik": "Tourism Collapse Is Turning These 10 Dubai Districts Into Urban Nightmares",
+   "id": "9S3Et-CUasU"
+  },
+  {
+   "skor": 10.5,
+   "izlenme": 446235,
+   "kanal": "Paul McAllister",
+   "yayin": "2026-10-11",
+   "sure_dk": 54.2,
+   "baslik": "Why Nobody Wants to Visit Laughlin",
+   "id": "5O8Z5H-xN9A"
+  },
+  {
+   "skor": 10.5,
+   "izlenme": 397871,
+   "kanal": "Marcus Explains",
+   "yayin": "2026-08-27",
+   "sure_dk": 26.8,
+   "baslik": "The Economics of Music Labels",
+   "id": "RmhbDOMmQdU"
+  },
+  {
+   "skor": 10.4,
+   "izlenme": 394221,
+   "kanal": "Marcus Explains",
+   "yayin": "2026-08-17",
+   "sure_dk": 25.9,
+   "baslik": "The Economics of Nightclubs",
+   "id": "OizVergac0k"
+  },
+  {
+   "skor": 10.4,
+   "izlenme": 393950,
+   "kanal": "Marcus Explains",
+   "yayin": "2026-10-05",
+   "sure_dk": 25.8,
+   "baslik": "How All-Inclusive Resorts Make Money",
+   "id": "el7Pero46oo"
+  },
+  {
+   "skor": 10.4,
+   "izlenme": 57363,
+   "kanal": "Global Decline Explained",
+   "yayin": "2026-05-21",
+   "sure_dk": 20.0,
+   "baslik": "5 Dubai Malls Are Turning Into Ghost Malls Due to a Tourist Boycott",
+   "id": "X_SbiQUa_S8"
+  },
+  {
+   "skor": 10.3,
+   "izlenme": 35652,
+   "kanal": "Who Gets Paid",
+   "yayin": "2026-07-27",
+   "sure_dk": 19.8,
+   "baslik": "The Economics Of Owning A Medieval Village",
+   "id": "KNxur-g2w9M"
+  },
+  {
+   "skor": 9.1,
+   "izlenme": 873206,
+   "kanal": "Markets of the Past",
+   "yayin": "2026-09-04",
+   "sure_dk": 31.9,
+   "baslik": "The Real Reason Japan Attacked Pearl Harbor",
+   "id": "B-KUG2U1k60"
+  },
+  {
+   "skor": 8.5,
+   "izlenme": 96201,
+   "kanal": "Truth Vault",
+   "yayin": "2026-06-18",
+   "sure_dk": 15.3,
+   "baslik": "RAW Ka Sabse Secret Undercover Operation| Abdul Karim Tunda| 2d Animation ",
+   "id": "66R5pcKUe-I"
+  },
+  {
+   "skor": 8.5,
+   "izlenme": 29561,
+   "kanal": "Who Gets Paid",
+   "yayin": "2026-08-20",
+   "sure_dk": 23.1,
+   "baslik": "The Economy of the United States Explained",
+   "id": "Ely7ktQPnsc"
+  },
+  {
+   "skor": 7.9,
+   "izlenme": 89082,
+   "kanal": "Truth Vault",
+   "yayin": "2026-09-19",
+   "sure_dk": 30.0,
+   "baslik": "BRICS Summit Under Threat: How Doval Uncovered the Secret Plot | BRICS Summit 2026 | 2D Animation",
+   "id": "5qBshWxFGis"
+  },
+  {
+   "skor": 7.6,
+   "izlenme": 1001926,
+   "kanal": "HinExp",
+   "yayin": "2026-08-30",
+   "sure_dk": 19.6,
+   "baslik": "Renting vs Buying a Home — The Math Will Shock You",
+   "id": "VSnf3GaGgMU"
+  },
+  {
+   "skor": 7.6,
+   "izlenme": 322775,
+   "kanal": "Paul McAllister",
+   "yayin": "2026-10-18",
+   "sure_dk": 57.7,
+   "baslik": "Why Nobody Lives in America's Most Beautiful Town",
+   "id": "TAAsZAkr8Ks"
+  },
+  {
+   "skor": 6.9,
+   "izlenme": 292552,
+   "kanal": "Paul McAllister",
+   "yayin": "2026-10-15",
+   "sure_dk": 54.1,
+   "baslik": "Why America Stopped Shopping at Kmart",
+   "id": "zqFOMrzSr9g"
+  },
+  {
+   "skor": 6.6,
+   "izlenme": 104675,
+   "kanal": "SLICE History",
+   "yayin": "2026-09-25",
+   "sure_dk": 57.7,
+   "baslik": "World War II Through Women’s Eyes I SLICE HISTORY | FULL DOCUMENTARY",
+   "id": "0t1yz-BM9HA"
+  },
+  {
+   "skor": 6.5,
+   "izlenme": 3969566,
+   "kanal": "Moon",
+   "yayin": "2026-04-29",
+   "sure_dk": 20.1,
+   "baslik": "How Porn Became the American Dream",
+   "id": "Rfwa9J2NZKc"
+  },
+  {
+   "skor": 6.1,
+   "izlenme": 587768,
+   "kanal": "Markets of the Past",
+   "yayin": "2026-10-08",
+   "sure_dk": 32.7,
+   "baslik": "The Real Reason Hitler Invaded the Soviet Union",
+   "id": "ahUtiSKEVDc"
+  },
+  {
+   "skor": 6.1,
+   "izlenme": 95940,
+   "kanal": "SLICE History",
+   "yayin": "2026-10-11",
+   "sure_dk": 52.0,
+   "baslik": "Middle East Wars: Fighting for Power in the Name of God I SLICE HISTORY | FULL DOCUMENTARY",
+   "id": "jos77fovLh0"
+  },
+  {
+   "skor": 5.9,
+   "izlenme": 768491,
+   "kanal": "HinExp",
+   "yayin": "2026-09-28",
+   "sure_dk": 14.2,
+   "baslik": "The Economics of Owning a Petrol Pump | Business Case Study",
+   "id": "GFTx2SM8iCQ"
+  },
+  {
+   "skor": 5.7,
+   "izlenme": 89276,
+   "kanal": "SLICE History",
+   "yayin": "2026-10-16",
+   "sure_dk": 51.8,
+   "baslik": "1914: How the Sarajevo Crisis Became a World War I SLICE HISTORY | FULL DOCUMENTARY",
+   "id": "C1Y-8COxtXI"
+  },
+  {
+   "skor": 5.6,
+   "izlenme": 88023,
+   "kanal": "SLICE History",
+   "yayin": "2026-09-22",
+   "sure_dk": 50.0,
+   "baslik": "Germany 1933-1934: Hitler’s Rise to Power I SLICE HISTORY",
+   "id": "mLtM044yUYY"
+  },
+  {
+   "skor": 5.5,
+   "izlenme": 697887,
+   "kanal": "Dial-Up Days",
+   "yayin": "2026-08-28",
+   "sure_dk": 23.8,
+   "baslik": "Legends of the Hidden Temple Was Rigged!?",
+   "id": "OJkIvz2Yzu8"
+  },
+  {
+   "skor": 5.2,
+   "izlenme": 219371,
+   "kanal": "Paul McAllister",
+   "yayin": "2026-10-11",
+   "sure_dk": 58.0,
+   "baslik": "The Most Impossible Rise of a Company Ever: Barbie",
+   "id": "xeFLoB1f8Ko"
+  },
+  {
+   "skor": 5.0,
+   "izlenme": 654682,
+   "kanal": "HinExp",
+   "yayin": "2026-08-14",
+   "sure_dk": 19.6,
+   "baslik": "How Two Salaries Are Making Indian Families POORER ",
+   "id": "vpIB-uJ0fUs"
+  },
+  {
+   "skor": 4.9,
+   "izlenme": 245402,
+   "kanal": "Fred - Money Historian",
+   "yayin": "2026-03-04",
+   "sure_dk": 36.1,
+   "baslik": "The 2008 Financial Crisis Explained Like You’re 5",
+   "id": "w5kdK-dQ414"
+  },
+  {
+   "skor": 4.9,
+   "izlenme": 77146,
+   "kanal": "SLICE History",
+   "yayin": "2026-09-24",
+   "sure_dk": 48.4,
+   "baslik": "Europe’s Lost Prehistory: The Civilizations Beneath the Sea I SLICE HISTORY | FULL DOCUMENTARY",
+   "id": "8h8xZNRKZEE"
+  },
+  {
+   "skor": 4.8,
+   "izlenme": 2719794,
+   "kanal": "Grant Rudow",
+   "yayin": "2026-03-21",
+   "sure_dk": 15.6,
+   "baslik": "The 'Buy Now Pay Later' Trap Is Getting Worse",
+   "id": "1XYtTmCLmNE"
+  },
+  {
+   "skor": 4.7,
+   "izlenme": 618852,
+   "kanal": "HinExp",
+   "yayin": "2026-07-10",
+   "sure_dk": 18.1,
+   "baslik": "Entire INDIAN Banking System in 18 Mins",
+   "id": "eBZKJ9Uxjp4"
+  },
+  {
+   "skor": 4.7,
+   "izlenme": 53142,
+   "kanal": "Truth Vault",
+   "yayin": "2026-08-07",
+   "sure_dk": 17.1,
+   "baslik": "RAW का सीक्रेट मिशन जिसने दुश्मन की नींद उड़ा दी | Ajit Doval | 2D Animation ",
+   "id": "qEUyDIg-xLU"
+  },
+  {
+   "skor": 4.6,
+   "izlenme": 1923972,
+   "kanal": "The Infographics Show",
+   "yayin": "2026-09-24",
+   "sure_dk": 33.2,
+   "baslik": "Voyager 2 Discovered Something Strange at the Edge of Our Solar System",
+   "id": "UOUM1QT5GgU"
+  },
+  {
+   "skor": 4.6,
+   "izlenme": 1923159,
+   "kanal": "The Infographics Show",
+   "yayin": "2026-09-23",
+   "sure_dk": 19.2,
+   "baslik": "The Collapse of AI Software Engineering",
+   "id": "F91uY7QiZUs"
+  },
+  {
+   "skor": 4.5,
+   "izlenme": 1898955,
+   "kanal": "The Infographics Show",
+   "yayin": "2026-09-29",
+   "sure_dk": 43.5,
+   "baslik": "Why Did Hitler Hate Jews",
+   "id": "OQSHHdcp9MM"
+  },
+  {
+   "skor": 4.5,
+   "izlenme": 591571,
+   "kanal": "HinExp",
+   "yayin": "2026-08-24",
+   "sure_dk": 15.0,
+   "baslik": "How DMart Is Dying ? The Problem Nobody Saw Coming | | Business Case Study",
+   "id": "vzQuy_P5QX4"
+  },
+  {
+   "skor": 4.5,
+   "izlenme": 24585,
+   "kanal": "Global Decline Explained",
+   "yayin": "2026-05-26",
+   "sure_dk": 23.2,
+   "baslik": "Dubai Is BANKRUPT — Million of Workers Are Trapped in a Poverty-Ridden Nightmare",
+   "id": "DU9zZGPjygw"
+  },
+  {
+   "skor": 4.4,
+   "izlenme": 2698790,
+   "kanal": "Moon",
+   "yayin": "2026-04-13",
+   "sure_dk": 23.2,
+   "baslik": "Your Favorite Movies Are CIA Propaganda",
+   "id": "Yootr6Vf7E0"
+  },
+  {
+   "skor": 4.4,
+   "izlenme": 422497,
+   "kanal": "Markets of the Past",
+   "yayin": "2026-07-09",
+   "sure_dk": 25.8,
+   "baslik": "The True Origin of The Great Depression: What Historians Get Wrong",
+   "id": "jwmdk6-X6LM"
+  },
+  {
+   "skor": 4.4,
+   "izlenme": 165160,
+   "kanal": "Marcus Explains",
+   "yayin": "2026-09-09",
+   "sure_dk": 27.2,
+   "baslik": "How Rap Labels Actually Make Money (It's Not Music)",
+   "id": "4KKNhlm5OkI"
+  },
+  {
+   "skor": 4.3,
+   "izlenme": 162922,
+   "kanal": "Marcus Explains",
+   "yayin": "2026-09-11",
+   "sure_dk": 25.1,
+   "baslik": "How Used Car Dealerships Actually Make Money?",
+   "id": "LDX9CAohnls"
+  },
+  {
+   "skor": 4.2,
+   "izlenme": 409414,
+   "kanal": "Finance Bureau",
+   "yayin": "2026-09-30",
+   "sure_dk": 18.9,
+   "baslik": "Oracle JUST Started the AI COLLAPSE (It's Over)",
+   "id": "YhiJGLCmOxs"
+  },
+  {
+   "skor": 4.1,
+   "izlenme": 175808,
+   "kanal": "Paul McAllister",
+   "yayin": "2026-10-19",
+   "sure_dk": 54.7,
+   "baslik": "The Most Impossible Rise of a Company Ever: Pyrex",
+   "id": "24qz2nZ4MDo"
+  },
+  {
+   "skor": 4.0,
+   "izlenme": 3083675,
+   "kanal": "How Money Works",
+   "yayin": "2026-09-07",
+   "sure_dk": 18.6,
+   "baslik": "Why A National Debt Default Now Looks Genuinely Possible... (sort of)",
+   "id": "QmWyQ-BCD8E"
+  },
+  {
+   "skor": 4.0,
+   "izlenme": 3052775,
+   "kanal": "How Money Works",
+   "yayin": "2026-01-14",
+   "sure_dk": 23.0,
+   "baslik": "We (Still) Don't Know How Epstein Got So Rich...",
+   "id": "5XyslxsPLQ4"
+  },
+  {
+   "skor": 4.0,
+   "izlenme": 2439023,
+   "kanal": "Moon",
+   "yayin": "2026-05-18",
+   "sure_dk": 17.4,
+   "baslik": "Bali Is Everything Wrong With Society",
+   "id": "V1Mt3YJYb2A"
+  },
+  {
+   "skor": 3.8,
+   "izlenme": 1606363,
+   "kanal": "The Infographics Show",
+   "yayin": "2026-10-04",
+   "sure_dk": 18.1,
+   "baslik": "What Lethal Radiation Does to Your Body (Hour by Hour)",
+   "id": "O4yWBv2Nj68"
+  },
+  {
+   "skor": 3.8,
+   "izlenme": 908950,
+   "kanal": "Fin Tek",
+   "yayin": "2026-09-07",
+   "sure_dk": 17.2,
+   "baslik": "Michael Burry Just Bet on a $3 Trillion Financial Time Bomb",
+   "id": "5yMj92G9wbA"
+  },
+  {
+   "skor": 3.8,
+   "izlenme": 362783,
+   "kanal": "Markets of the Past",
+   "yayin": "2026-10-03",
+   "sure_dk": 30.4,
+   "baslik": "The True Origin of Christianity’s Break With Judaism: What Historians Get Wrong",
+   "id": "eU23Br73NkM"
+  },
+  {
+   "skor": 3.7,
+   "izlenme": 2058972,
+   "kanal": "Grant Rudow",
+   "yayin": "2026-01-10",
+   "sure_dk": 16.3,
+   "baslik": "What's Really Happening With Price Tags",
+   "id": "g0wdRchWIEw"
+  },
+  {
+   "skor": 3.7,
+   "izlenme": 489281,
+   "kanal": "HinExp",
+   "yayin": "2026-10-14",
+   "sure_dk": 57.0,
+   "baslik": "How BIG BAZAAR Died ?  किशोर बियानी और Big Bazaar की पूरी कहानी | Business Case Study",
+   "id": "LX4eaVmBNeI"
+  },
+  {
+   "skor": 3.7,
+   "izlenme": 479680,
+   "kanal": "HinExp",
+   "yayin": "2026-09-03",
+   "sure_dk": 15.4,
+   "baslik": "The Business Behind Five Star Hotels | Business Case Study",
+   "id": "xbx9gb7LIBU"
+  },
+  {
+   "skor": 3.7,
+   "izlenme": 141350,
+   "kanal": "Marcus Explains",
+   "yayin": "2026-09-22",
+   "sure_dk": 25.9,
+   "baslik": "How Dollar Stores Actually Make Money",
+   "id": "EMVm5kjAJx0"
+  },
+  {
+   "skor": 3.6,
+   "izlenme": 459778,
+   "kanal": "Dial-Up Days",
+   "yayin": "2026-08-15",
+   "sure_dk": 26.0,
+   "baslik": "The Double Dare Episode That Went Horribly Wrong",
+   "id": "3Jp_eonC6C0"
+  },
+  {
+   "skor": 3.6,
+   "izlenme": 151188,
+   "kanal": "Paul McAllister",
+   "yayin": "2026-10-06",
+   "sure_dk": 55.5,
+   "baslik": "Why Nobody Wants to Visit Santa Barbara",
+   "id": "xD1HVM2N2Hg"
+  },
+  {
+   "skor": 3.5,
+   "izlenme": 2124099,
+   "kanal": "Moon",
+   "yayin": "2026-05-23",
+   "sure_dk": 25.1,
+   "baslik": "When ‘Crazy’ Conspiracy Theorists Turned Out to Be Right",
+   "id": "5mB8rhLL-8w"
+  },
+  {
+   "skor": 3.4,
+   "izlenme": 334694,
+   "kanal": "Finance Bureau",
+   "yayin": "2026-10-06",
+   "sure_dk": 17.8,
+   "baslik": "How LIV Golf Went BANKRUPT With Unlimited Money",
+   "id": "cg0sRRWQ7Sc"
+  },
+  {
+   "skor": 3.4,
+   "izlenme": 128289,
+   "kanal": "Marcus Explains",
+   "yayin": "2026-09-01",
+   "sure_dk": 26.5,
+   "baslik": "How Sports Teams Actually Make Money (It’s Not the Sports)",
+   "id": "lvDHlKidO_Q"
+  },
+  {
+   "skor": 3.4,
+   "izlenme": 38221,
+   "kanal": "Truth Vault",
+   "yayin": "2026-08-25",
+   "sure_dk": 17.5,
+   "baslik": "Kaise Ajit dobhal ne bharat per bade hamle ko roka? | 2d Animation",
+   "id": "myOw4yQi4Mk"
+  },
+  {
+   "skor": 3.2,
+   "izlenme": 1963863,
+   "kanal": "Moon",
+   "yayin": "2026-06-29",
+   "sure_dk": 26.2,
+   "baslik": "Miami Is Everything Wrong With Society",
+   "id": "KFjJC8DuJ3Y"
+  },
+  {
+   "skor": 3.2,
+   "izlenme": 1929468,
+   "kanal": "Moon",
+   "yayin": "2026-06-30",
+   "sure_dk": 18.9,
+   "baslik": "Adobe Is Completely F*cked.",
+   "id": "Bp2ai2MD4Mk"
+  },
+  {
+   "skor": 3.1,
+   "izlenme": 116232,
+   "kanal": "Marcus Explains",
+   "yayin": "2026-08-13",
+   "sure_dk": 27.2,
+   "baslik": "The Economics of Fake Sneaker Business",
+   "id": "i4DkYJzMIQg"
+  },
+  {
+   "skor": 3.1,
+   "izlenme": 49680,
+   "kanal": "SLICE History",
+   "yayin": "2026-09-20",
+   "sure_dk": 26.0,
+   "baslik": "The Lost Cities of the Swahili: The Forgotten Kingdom of Kilwa I SLICE HISTORY | FULL DOCUMENTARY",
+   "id": "-hWyyMkV6Sw"
+  },
+  {
+   "skor": 3.1,
+   "izlenme": 35464,
+   "kanal": "Truth Vault",
+   "yayin": "2026-06-30",
+   "sure_dk": 13.3,
+   "baslik": "How RAW brought Sheikh Khwaja back to India | Operation Colombo| 2d Animation ",
+   "id": "0Fwb4BwZlCA"
+  },
+  {
+   "skor": 3.0,
+   "izlenme": 292367,
+   "kanal": "Markets of the Past",
+   "yayin": "2026-10-20",
+   "sure_dk": 29.5,
+   "baslik": "The Real Reason Hitler Never Invaded Sweden",
+   "id": "gDg4Pz55kl4"
+  },
+  {
+   "skor": 3.0,
+   "izlenme": 129059,
+   "kanal": "Paul McAllister",
+   "yayin": "2026-04-25",
+   "sure_dk": 30.3,
+   "baslik": "How One Company Built and Destroyed an Entire American City: Rochester, NY",
+   "id": "tsarYq5niVQ"
+  }
+ ]
+}

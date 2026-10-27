@@ -21,3 +21,5 @@
 - 2026-10-26 (hat testi): Konteyner 4 vCPU; ajanlar paralel CPU işi yapınca TTS ~2,2x, Whisper ~1,8x yavaşlıyor. Render, Whisper, TTS ve Real-ESRGAN'ı aynı anda başlatma; süre ölçerken `uptime`/`ps` ile yükü not et.
 - 2026-10-26: Kokoro (espeak-ng) uzun kurulum yolunda kırılıyor (veri yolu ~160 karakterde kesiliyor → "phontab: No such file"). Araçlar `~/.finansal-arac` altında kalmalı; `tools/kurulum.sh` uzun `ARAC_DIZINI`'ni reddeder.
 - 2026-10-26: Yeni ortak araçlar: `tools/altyazi-uret.py` (senaryo + Whisper → SRT + altyazı JSON), `tools/altyazi-hiza.py` (gömülü altyazı hizası kapısı), `tools/render-parca.sh` (düzeltme turunda parça render), `tools/disk-durum.sh`. Real-ESRGAN büyütme artık parçalı (tam karede OOM yok). `hata-orani.py` sayıları normalize ediyor ("150" = "one hundred and fifty").
+
+- 2026-10-27 (kanal-analisti): YouTube Data API `search` uç noktasının ayrı bir **günlük sorgu tavanı** var (15 sorguda 429 "Search Queries per day"); proje tüm ajanlarca paylaşılıyor. `search`ü az ve hedefli kullan, kanal listesi + `playlistItems`/`videos` (1 birim) tercih et. yt-dlp otomatik altyazı ~8 videoda çalışıyor, sonra bot kontrolü.
