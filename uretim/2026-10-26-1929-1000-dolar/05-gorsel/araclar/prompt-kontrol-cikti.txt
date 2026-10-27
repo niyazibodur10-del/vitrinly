@@ -1,0 +1,25 @@
+C01  PLK  7/7  GEÇTİ
+C02  LEO  7/7  GEÇTİ
+C03  PLK  8/8  GEÇTİ
+C04  LEO  9/9  GEÇTİ
+C05  LEO  9/9  GEÇTİ
+C06  LEO  8/8  GEÇTİ
+C07  LEO  8/8  GEÇTİ
+C08  LEO  8/8  GEÇTİ
+C09  LEO  8/8  GEÇTİ
+C10  LEO  8/8  GEÇTİ
+C11  LEO  8/8  GEÇTİ
+C12  LEO  8/8  GEÇTİ
+C13  LEO  8/8  GEÇTİ
+C14  LEO  8/8  GEÇTİ
+C15  PLK  7/7  GEÇTİ
+C16  PLK  7/7  GEÇTİ
+C17  PLK  7/7  GEÇTİ
+C18  PLK  7/7  GEÇTİ
+C19  PLK  7/7  GEÇTİ
+C20  LEO  8/8  GEÇTİ
+C21  LEO  8/8  GEÇTİ
+C22  PLK  8/8  GEÇTİ
+
+Toplam 22 prompt (Leo'lu 14, plaka 8) · id sırası GEÇTİ
+KAPI: GEÇTİ

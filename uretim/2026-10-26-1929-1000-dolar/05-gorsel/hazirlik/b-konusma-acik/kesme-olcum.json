@@ -1,0 +1,32 @@
+{
+ "girdi": "/home/user/vitrinly/assets/karakter/paket-v1/b-konusma-acik.png",
+ "zemin_bgr": [
+  124,
+  89,
+  60
+ ],
+ "boyut": [
+  1920,
+  1080
+ ],
+ "M1-renk-anahtari": {
+  "kenar_artigi_orani": 0.0743,
+  "sacak_px": 0,
+  "on_plan_px": 499502
+ },
+ "M2-grabcut": {
+  "kenar_artigi_orani": 0.1022,
+  "sacak_px": 25,
+  "on_plan_px": 499683
+ },
+ "M3-grabcut-arindirma": {
+  "kenar_artigi_orani": 0.0281,
+  "sacak_px": 0,
+  "on_plan_px": 499683
+ },
+ "M4-renk-arindirma": {
+  "kenar_artigi_orani": 0.0001,
+  "sacak_px": 0,
+  "on_plan_px": 499502
+ }
+}

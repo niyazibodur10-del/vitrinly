@@ -1,0 +1,32 @@
+{
+ "girdi": "/home/user/vitrinly/assets/karakter/paket-v1/d-saskin.png",
+ "zemin_bgr": [
+  123,
+  87,
+  56
+ ],
+ "boyut": [
+  1920,
+  1080
+ ],
+ "M1-renk-anahtari": {
+  "kenar_artigi_orani": 0.0741,
+  "sacak_px": 0,
+  "on_plan_px": 502751
+ },
+ "M2-grabcut": {
+  "kenar_artigi_orani": 0.1215,
+  "sacak_px": 91,
+  "on_plan_px": 503279
+ },
+ "M3-grabcut-arindirma": {
+  "kenar_artigi_orani": 0.0406,
+  "sacak_px": 6,
+  "on_plan_px": 503279
+ },
+ "M4-renk-arindirma": {
+  "kenar_artigi_orani": 0.0003,
+  "sacak_px": 0,
+  "on_plan_px": 502751
+ }
+}
