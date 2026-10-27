@@ -11,7 +11,7 @@
 | Adım | Sahip | Durum | Teslim | Test kanıtı | Başlangıç–bitiş (UTC) |
 |---|---|---|---|---|---|
 | F0 açılış | koordinatör | GEÇTİ | durum.md | slot+sütun+stok yazıldı | 19:50–19:52 |
-| F0 ortam | uretim-muhendisi | SÜRÜYOR | 00-ortam/ortam-raporu.md | | 19:52– |
+| F0 ortam | uretim-muhendisi | GEÇTİ | 00-ortam/ortam-raporu.md | kurulum 19,2 sn/1,3 sn idempotent; 3 kompozisyon; 2 karelik Pilot render ✅; Whisper ✅ (ilk yükleme yavaş: small 44 sn, medium 136 sn); render-son.sh kısa ses arızası düzeltildi | 04:22–(ca90b0a) |
 | F1 konu havuzu | trend-avcisi | SÜRÜYOR | 01-arastirma/konu-havuzu.md | | 19:52– |
 | F1 rakip özeti | kanal-analisti | SÜRÜYOR | 01-arastirma/rakip-ozet.md | | 19:52– |
 | F2 senaryolar | senaryo-yazari | BEKLİYOR | 02-senaryo/senaryolar.md | | |
