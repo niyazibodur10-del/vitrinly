@@ -25,7 +25,9 @@ def bloklar(yol):
     s = yol.read_text(encoding="utf-8")
     return {k: v.rstrip("\n") for k, v in re.findall(r"<!-- veri:([\w-]+) -->\s*```[^\n]*\n(.*?)```", s, re.S)}
 
-V = bloklar(BURA / "paket-taslak.md")
+KAYNAK = "paket.md" if (BURA / "paket.md").exists() else "paket-taslak.md"
+V = bloklar(BURA / KAYNAK)
+s_tum = "\n".join(bloklar(BURA / KAYNAK).values())
 V.update(bloklar(BURA / "thumb-konsept.md"))
 
 # --- yasaklı / clickbait / tavsiye desenleri ---
@@ -43,8 +45,12 @@ dog = (KOK / "uretim/2026-10-26-1929-1000-dolar/03-metin/dogrulama.md").read_tex
 m = re.search(r"Açıklama için yasal not.*?\n> (.+)", dog)
 LEGAL_SATIR = m.group(1).strip() if m else None
 
+_at = (BURA.parent / "06-muzik/atif-satirlari.md").read_text(encoding="utf-8")
+ATIF_MUAF = re.search(r"```\n(.*?)```", _at, re.S).group(1).strip().splitlines() + re.findall(r"açıklaması: `(.+?)`", _at)
+
 def tara(ad, metin, bugun=False):
     t = metin
+    for l in ATIF_MUAF: t = t.replace(l, "")  # üçüncü taraf eser adları ("Unsolved Investigation", "Ragtime!") aynen: muaf
     if LEGAL_SATIR: t = t.replace(LEGAL_SATIR, "")  # yasal not "buy, sell" içerir: muaf
     bul = []
     for d in TAVSIYE: bul += [("tavsiye", x.group(0)) for x in re.finditer(d, t, re.I)]
@@ -55,7 +61,7 @@ def tara(ad, metin, bugun=False):
 
 def kelime(s): return len([w for w in s.split() if re.search(r"\w", w)])
 
-print("== paket-kontrol.py ==")
+print(f"== paket-kontrol.py ({KAYNAK}) ==")
 # 1) başlıklar
 satirlar.append("[1] Başlıklar (≤60 krk, 1929, yasaklı 0, bugüne dönük 0)")
 for grup in ("basliklar", "basliklar-elenen"):
@@ -109,14 +115,33 @@ nb = len(a.encode("utf-8"))
 AI = "Narration voice is AI-generated. Visuals are AI-assisted illustrations animated by our team."
 (ok if AI in a else hata)("AI satırı birebir var")
 (ok if LEGAL_SATIR and LEGAL_SATIR in a else hata)("yasal not (dogrulama.md §4) birebir var")
-# bölümler
-bol = re.findall(r"^(\d{1,2}):(\d{2}) (.+)$", a, re.M)
+# bölümler (F8: ayrı blok + gerçek sahne zamanları)
+import json as _json, math as _math
+bol = re.findall(r"^(\d{1,2}):(\d{2}) (.+)$", V.get("bolumler", a), re.M)
 sn = [int(x)*60+int(y) for x, y, _ in bol]
 kural = sn and sn[0] == 0 and len(sn) >= 3 and all(b2-b1 >= 10 for b1, b2 in zip(sn, sn[1:]))
-(ok if kural else hata)(f"bölümler {len(sn)} adet, 0:00 ile başlıyor, artan, her biri ≥10 sn")
+(ok if kural else hata)(f"bölümler {len(sn)} adet, 00:00 ile başlıyor, artan, her biri ≥10 sn")
 metin = (KOK / "uretim/2026-10-26-1929-1000-dolar/03-metin/metin.md").read_text(encoding="utf-8")
 m4 = re.search(r"## 4\. YouTube bölümleri.*?```\n(.*?)```", metin, re.S)
-(ok if m4 and [l for l in m4.group(1).splitlines() if l.strip()] == [f"{x}:{y} {t}" for x, y, t in bol] else hata)("bölümler metin.md §4 ile birebir (zamanlar F8'de gerçek sesle güncellenir)")
+bas_m = [l.split(" ", 1)[1] for l in m4.group(1).splitlines() if l.strip()] if m4 else []
+(ok if bas_m == [t for _, _, t in bol] else hata)("bölüm başlıkları metin.md §4 ile birebir")
+if KAYNAK == "paket.md":
+    (ok if "{BOLUMLER}" in a else hata)("açıklamada {BOLUMLER} yer tutucusu var (araç Chapters: basar)")
+    sz = _json.loads((KOK / "uretim/2026-10-26-1929-1000-dolar/04-ses/sahne-zamanlari.json").read_text())
+    bas = {x["sahne"]: x["bas"] for x in sz["sahneler"]}
+    ACAN = ["S01", "S05", "S08", "S12", "S15", "S18", "S20", "S23"]
+    satirlar.append("[3b] Bölüm ↔ gerçek sahne başlangıcı (04-ses/sahne-zamanlari.json, toplam %.2f sn)" % sz["toplam_sn"])
+    for (x, y, t), s_ad, s_sn in zip(bol, ACAN, sn):
+        g = bas[s_ad]; fark = s_sn - g
+        (ok if -1 < fark <= 0 else hata)(f"{x}:{y} {t:<36} ↔ {s_ad} bas {g:7.2f} sn (fark {fark:+.2f})")
+    (ok if len(bol) == len(ACAN) else hata)(f"bölüm sayısı {len(bol)} = açan sahne sayısı {len(ACAN)}")
+    bilgi("kurguda başa boşluk eklenirse tüm bölümler aynı ofsetle kayar; ilk bölüm 00:00 kalır")
+    li, si = a.find("LEGAL NOTE"), a.find("SOURCES")
+    (ok if 0 <= li < si else hata)("LEGAL NOTE, SOURCES'ın üstünde ('Sources are listed below.' doğru)")
+    atif = (BURA.parent / "06-muzik/atif-satirlari.md").read_text(encoding="utf-8")
+    ma = re.search(r"```\n(.*?)```", atif, re.S).group(1).strip().splitlines()
+    (ok if all(l in a for l in ma) else hata)(f"müzik/SFX atıf satırları atif-satirlari.md'den aynen ({len(ma)} satır)")
+    (ok if "YER TUTUCU" not in s_tum else hata)("paket.md veri bloklarında yer tutucu yok")
 kay = [l for l in a.split("SOURCES")[1].split("\n\n")[0].splitlines() if l.startswith("•")]
 (ok if len(kay) >= 10 else hata)(f"kaynak satırı {len(kay)} (9 + Hulbert = 10 beklenir)")
 (ok if "Hulbert" in a else hata)("Hulbert kaynağı var")
@@ -143,7 +168,12 @@ for s in ("shorts1", "shorts2"):
     bul = tara(s, b + "\n" + d)
     (ok if not bul else hata)(f"{s} yasaklı/clickbait/tavsiye: {bul or 0}")
     (ok if AI in d and "Not financial advice" in d else hata)(f"{s} AI satırı + Not financial advice")
-    (ok if "uzun video bağlantısı" in d else hata)(f"{s} uzun videoya bağlantı yeri var (+ Studio related video adımı)")
+    if KAYNAK == "paket.md":
+        (ok if V["basliklar"].splitlines()[0] in d and "youtube.com/@toonomy" in d else hata)(f"{s} uzun video başlığı + kanal bağlantısı var (+ Studio Related video adımı)")
+        mus = re.search(r'Shorts %s açıklaması: `(.+?)`' % s[-1], atif)
+        (ok if mus and mus.group(1) in d else hata)(f"{s} müzik atfı aynen")
+    else:
+        (ok if "uzun video bağlantısı" in d else hata)(f"{s} uzun videoya bağlantı yeri var (+ Studio related video adımı)")
     h = d.strip().splitlines()[-1].split()
     (ok if len(h) == 3 and h[0] == "#Shorts" else hata)(f"{s} hashtag: {h}")
 (ok if "2026" not in V["shorts1-baslik"] else hata)("shorts1 başlığında bugün yok")
@@ -188,6 +218,31 @@ thumb("thumb-metin-secilen", True)
 bilgi("alternatifler ve rakip karşılaştırması (kapı değil, bilgi):")
 thumb("thumb-metin-alternatif", False)
 
+if KAYNAK == "paket.md":
+    satirlar.append("[8] JSON paketleri ↔ paket.md (tools/yayin/yayin_paket.py ile)")
+    from yayin_paket import yukle_paket, tam_aciklama, SEMA
+    beklenen = {
+        "yayin-paketi.json": ("uzun", V["basliklar"].splitlines()[0], V["aciklama"], "2026-11-01T12:00:00-05:00"),
+        "yayin-paketi-shorts-1.json": ("shorts", V["shorts1-baslik"], V["shorts1-aciklama"], "2026-11-02T09:00:00-05:00"),
+        "yayin-paketi-shorts-2.json": ("shorts", V["shorts2-baslik"], V["shorts2-aciklama"], "2026-11-03T09:00:00-05:00"),
+    }
+    for ad, (tur, bas_, ac, zaman) in beklenen.items():
+        pk = yukle_paket(BURA / ad); m_ = pk["metadata"]; d_ = pk["durum"]
+        sorun = []
+        if pk["tur"] != tur: sorun.append("tur")
+        if m_["baslik"] != bas_: sorun.append("başlık")
+        if m_["aciklama"] != ac: sorun.append("açıklama")
+        if d_["yayin_zamani"] != zaman: sorun.append("yayın zamanı")
+        if d_["sentetik_medya"] is not True: sorun.append("sentetik_medya")
+        if pk["onay"]["niyazi_onayi"] is not False: sorun.append("onay false olmalı")
+        if tur == "uzun" and [f"{b['zaman']} {b['baslik']}" for b in m_["bolumler"]] != V["bolumler"].splitlines(): sorun.append("bölümler")
+        if tur == "uzun" and m_["etiketler"] != et: sorun.append("etiketler")
+        bilinmeyen = [k for k in pk if k not in {x.split(".")[0] for x in SEMA} | {"_kok", "_yol", "_not"}]
+        if bilinmeyen: sorun.append(f"bilinmeyen alan {bilinmeyen}")
+        ta = tam_aciklama(pk); nb_ = len(ta.encode("utf-8"))
+        (ok if not sorun and nb_ <= 5000 else hata)(f"{ad}: {tur} · başlık {len(m_['baslik'])} krk · tam açıklama {nb_}/5000 bayt · {zaman}" + (f" · SORUN {sorun}" if sorun else ""))
+        if tur == "uzun":
+            (ok if "Chapters:\n00:00 " in ta else hata)("tam açıklamada 'Chapters:' + 00:00 basılıyor")
 print("\n".join(satirlar))
 print(f"SONUÇ: {len(hatalar)} hata")
 sys.exit(1 if hatalar else 0)

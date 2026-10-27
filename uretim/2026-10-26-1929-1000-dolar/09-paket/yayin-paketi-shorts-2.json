@@ -1,0 +1,39 @@
+{
+  "sema": "yayin-paketi/1",
+  "_not": "1929-1000-dolar Shorts 2. Related video = uzun video (Studio adımı, YAYIN.md). paket-uret.py ile üretildi.",
+  "tur": "shorts",
+  "dosyalar": {
+    "video": "../08-kurgu/shorts-2.mp4",
+    "altyazilar": []
+  },
+  "metadata": {
+    "baslik": "Same Box of Cash, Opposite Result: 1932 vs 2026",
+    "aciklama": "From September 1929 to July 1932, U.S. consumer prices fell about 21%, so a shoebox of cash bought more. In the 12 months to September 2026, prices rose 3.7%. Same box, opposite result. That's arithmetic, not a plan.\n\nThe full 1929 game, with all three doors: \"You Have $1,000 in 1929. Can You Keep It?\" on our channel, https://www.youtube.com/@toonomy\n\nSources: U.S. BLS CPI-U (CPIAUCNS) via FRED; BLS CPI news release, October 14, 2026 (not seasonally adjusted).\nMusic: \"Electro Swing type\" by G_P (CC0, OpenGameArt.org).\n\nNot financial advice. For educational purposes only. Leo is a fictional cartoon character, not a financial adviser.\nNarration voice is AI-generated. Visuals are AI-assisted illustrations animated by our team.\n\n#Shorts #Inflation #FinancialHistory",
+    "etiketler": [
+      "inflation explained",
+      "deflation explained",
+      "purchasing power",
+      "great depression",
+      "financial history",
+      "shorts",
+      "toonomy"
+    ],
+    "bolumler": [],
+    "kategori_id": "27",
+    "varsayilan_dil": "en",
+    "ses_dili": "en"
+  },
+  "durum": {
+    "gizlilik": "private",
+    "cocuklara_ozel": false,
+    "sentetik_medya": true,
+    "lisans": "youtube",
+    "gomulebilir": true,
+    "yayin_zamani": "2026-11-03T09:00:00-05:00"
+  },
+  "oynatma_listesi_id": null,
+  "onay": {
+    "niyazi_onayi": false,
+    "tarih": null
+  }
+}

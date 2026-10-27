@@ -1,0 +1,178 @@
+# F8 paket kapısı çıktısı — 2026-10-27T14:59:50Z
+
+$ python3 -I paket-uret.py
+yazıldı yayin-paketi.json
+yazıldı yayin-paketi-shorts-1.json
+yazıldı yayin-paketi-shorts-2.json
+
+$ python3 -I paket-kontrol.py   (2 koşu)
+== paket-kontrol.py (paket.md) ==
+[1] Başlıklar (≤60 krk, 1929, yasaklı 0, bugüne dönük 0)
+  OK   41 krk · You Have $1,000 in 1929. Can You Keep It?
+  OK   47 krk · Stocks, a Bank or a Shoebox: Who Survived 1929?
+  OK   48 krk · Stocks, a Bank or a Shoebox: $1,000 Through 1929
+  OK   49 krk · Surviving the 1929 Crash With $1,000: Three Doors
+  OK   48 krk · $1,000 in 1929: The Door Everyone Laughed At Won
+  OK   41 krk · 1929: The Smartest Door Was the Worst One
+  OK   46 krk · The Shoebox That Beat the Stock Market in 1929
+[2] Başlık puanı = .30 merak + .20 arama + .20 thumb + .20 politika + .10 mobil (mobil: ≤45 krk 10, ≤50 9, ≤60 7)
+       T1 8.50 · You Have $1,000 in 1929. Can You Keep It?
+       T2 7.90 · Stocks, a Bank or a Shoebox: Who Survived 1929?
+       T4 7.70 · Surviving the 1929 Crash With $1,000: Three Doors
+       T3 7.60 · Stocks, a Bank or a Shoebox: $1,000 Through 1929
+       T7 7.10 · $1,000 in 1929: The Door Everyone Laughed At Won
+       T5 6.80 · 1929: The Smartest Door Was the Worst One
+       T6 6.40 · The Shoebox That Beat the Stock Market in 1929
+  OK   en yüksek puan T1 (önerilen başlıkla tutarlı)
+  OK   en düşük 2 = T5, T6 (elenenlerle tutarlı)
+[3] Açıklama
+       ilk paragraf 149 krk
+  OK   ilk 150 krk içinde: 1929 stock market crash
+  OK   ilk 150 krk içinde: Great Depression
+  OK   ilk 150 krk içinde: $1,000
+  OK   ilk paragraf ≤150 krk (kesilmeden okunur)
+  OK   açıklama 3116/5000 bayt
+  OK   açıklamada < > yok
+  OK   "Not financial advice" var
+  OK   AI satırı birebir var
+  OK   yasal not (dogrulama.md §4) birebir var
+  OK   bölümler 8 adet, 00:00 ile başlıyor, artan, her biri ≥10 sn
+  OK   bölüm başlıkları metin.md §4 ile birebir
+  OK   açıklamada {BOLUMLER} yer tutucusu var (araç Chapters: basar)
+[3b] Bölüm ↔ gerçek sahne başlangıcı (04-ses/sahne-zamanlari.json, toplam 631.63 sn)
+  OK   00:00 The game: $1,000 and three doors     ↔ S01 bas    0.00 sn (fark +0.00)
+  OK   01:19 Door 1: The stock market             ↔ S05 bas   79.71 sn (fark -0.71)
+  OK   02:46 Door 2: The bank                     ↔ S08 bas  166.50 sn (fark -0.50)
+  OK   04:46 Door 3: The shoebox                  ↔ S12 bas  286.47 sn (fark -0.47)
+  OK   06:12 The bottom: July 1932                ↔ S15 bas  372.71 sn (fark -0.71)
+  OK   07:33 March 1933: every door locked        ↔ S18 bas  453.96 sn (fark -0.96)
+  OK   08:42 The twist: the same door in 2026     ↔ S20 bas  522.88 sn (fark -0.88)
+  OK   09:52 What the game really tests           ↔ S23 bas  592.86 sn (fark -0.86)
+  OK   bölüm sayısı 8 = açan sahne sayısı 8
+       kurguda başa boşluk eklenirse tüm bölümler aynı ofsetle kayar; ilk bölüm 00:00 kalır
+  OK   LEGAL NOTE, SOURCES'ın üstünde ('Sources are listed below.' doğru)
+  OK   müzik/SFX atıf satırları atif-satirlari.md'den aynen (2 satır)
+  OK   paket.md veri bloklarında yer tutucu yok
+  OK   kaynak satırı 10 (9 + Hulbert = 10 beklenir)
+  OK   Hulbert kaynağı var
+       yer tutucu: 
+  OK   açıklama yasaklı/clickbait/tavsiye: 0
+[4] Etiketler ve hashtag'ler
+  OK   etiketler 19 adet, 373/500 (YouTube sayımı)
+  OK   etiket yasaklı: 0
+  OK   hashtagler: ['#GreatDepression', '#StockMarketCrash', '#FinancialHistory']
+  OK   açıklama aynı 3 hashtag ile bitiyor
+[5] Shorts
+  OK   shorts1 başlık 42 krk · $1,000 in 1929: Which Door Would You Pick?
+  OK   shorts1 yasaklı/clickbait/tavsiye: 0
+  OK   shorts1 AI satırı + Not financial advice
+  OK   shorts1 uzun video başlığı + kanal bağlantısı var (+ Studio Related video adımı)
+  OK   shorts1 müzik atfı aynen
+  OK   shorts1 hashtag: ['#Shorts', '#GreatDepression', '#FinancialHistory']
+  OK   shorts2 başlık 47 krk · Same Box of Cash, Opposite Result: 1932 vs 2026
+  OK   shorts2 yasaklı/clickbait/tavsiye: 0
+  OK   shorts2 AI satırı + Not financial advice
+  OK   shorts2 uzun video başlığı + kanal bağlantısı var (+ Studio Related video adımı)
+  OK   shorts2 müzik atfı aynen
+  OK   shorts2 hashtag: ['#Shorts', '#Inflation', '#FinancialHistory']
+  OK   shorts1 başlığında bugün yok
+[6] Pinli yorum
+  OK   soru soruyor
+  OK   tavsiye/clickbait/bugüne dönük: 0
+[7] Thumbnail metni (≤4 kelime) + 168x94 okunurluk modeli (eşik ≥9 px büyük harf)
+  OK   A: "ONE IS A DISASTER" · 4 kelime · 2 satır · büyük harf 141 px → 168x94'te 18.5 px
+  OK   B: "THE SURPRISE DOOR" + damga ['1929'] · 4 kelime · 2 satır · büyük harf 107 px → 168x94'te 14.0 px
+  OK   C: "STOCKS −89%" · 2 kelime · 2 satır · büyük harf 141 px → 168x94'te 18.5 px
+       alternatifler ve rakip karşılaştırması (kapı değil, bilgi):
+       A1: "PICK A DOOR" · 3 kelime · 2 satır · büyük harf 141 px → 168x94'te 18.5 px
+       B2: "1929'S SURPRISE WINNER" · 3 kelime · 3 satır · büyük harf 94 px → 168x94'te 12.3 px
+       C2: "$1,000 → $108" · 2 kelime · 2 satır · büyük harf 141 px → 168x94'te 18.5 px
+       RAKIP-AILE1: "THE TRUE ORIGIN OF THE GREAT DEPRESSION: WHAT HISTORIANS GET WRONG" · 11 kelime · 3 satır · büyük harf 58 px → 168x94'te 7.6 px · bulgu [('clickbait', 'TRUE ORIGIN'), ('clickbait', 'GET WRONG'), ('clickbait', 'WHAT HISTORIANS')]
+[8] JSON paketleri ↔ paket.md (tools/yayin/yayin_paket.py ile)
+  OK   yayin-paketi.json: uzun · başlık 41 krk · tam açıklama 3370/5000 bayt · 2026-11-01T12:00:00-05:00
+  OK   tam açıklamada 'Chapters:' + 00:00 basılıyor
+  OK   yayin-paketi-shorts-1.json: shorts · başlık 42 krk · tam açıklama 782/5000 bayt · 2026-11-02T09:00:00-05:00
+  OK   yayin-paketi-shorts-2.json: shorts · başlık 47 krk · tam açıklama 771/5000 bayt · 2026-11-03T09:00:00-05:00
+SONUÇ: 0 hata
+exit 0
+130d7ce73e037bdc5354a229bdc7e5a234271cf8ccbb0a11fd102c2be0605ac3  -
+130d7ce73e037bdc5354a229bdc7e5a234271cf8ccbb0a11fd102c2be0605ac3  -
+
+## Kip 1: gerçek paketler (F7 dosyaları henüz yok → yalnız dosya-yok hataları beklenir)
+$ yukle.py 09-paket/yayin-paketi.json --dry-run
+  [OK]    şema geçerli
+  [OK]    başlık 41/100 karakter
+  [OK]    açıklama (bölümler dahil) 3370/5000 bayt
+  [OK]    etiketler 19 adet, 373/500 karakter (YouTube sayımı)
+  [OK]    bölümler 8 adet, kurallara uygun
+  [OK]    yayin_zamani gelecekte: 2026-11-01T17:00:00Z (+122.0 sa)
+  [HATA]  video yok: /home/user/vitrinly/uretim/2026-10-26-1929-1000-dolar/08-kurgu/final-16x9.mp4
+  [HATA]  thumbnail yok: /home/user/vitrinly/uretim/2026-10-26-1929-1000-dolar/09-paket/thumbnail-A.png
+  [HATA]  altyazı yok: /home/user/vitrinly/uretim/2026-10-26-1929-1000-dolar/08-kurgu/altyazi.srt
+DOĞRULAMA BAŞARISIZ — yükleme/paket üretimi yapılmadı.
+exit 2
+$ yukle.py 09-paket/yayin-paketi-shorts-1.json --dry-run
+  [OK]    şema geçerli
+  [OK]    başlık 42/100 karakter
+  [OK]    açıklama (bölümler dahil) 782/5000 bayt
+  [OK]    etiketler 7 adet, 104/500 karakter (YouTube sayımı)
+  [OK]    yayin_zamani gelecekte: 2026-11-02T14:00:00Z (+143.0 sa)
+  [HATA]  video yok: /home/user/vitrinly/uretim/2026-10-26-1929-1000-dolar/08-kurgu/shorts-1.mp4
+DOĞRULAMA BAŞARISIZ — yükleme/paket üretimi yapılmadı.
+exit 2
+$ yukle.py 09-paket/yayin-paketi-shorts-2.json --dry-run
+  [OK]    şema geçerli
+  [OK]    başlık 47/100 karakter
+  [OK]    açıklama (bölümler dahil) 771/5000 bayt
+  [OK]    etiketler 7 adet, 116/500 karakter (YouTube sayımı)
+  [OK]    yayin_zamani gelecekte: 2026-11-03T14:00:00Z (+167.0 sa)
+  [HATA]  video yok: /home/user/vitrinly/uretim/2026-10-26-1929-1000-dolar/08-kurgu/shorts-2.mp4
+DOĞRULAMA BAŞARISIZ — yükleme/paket üretimi yapılmadı.
+exit 2
+
+## Kip 2: aynı paketler + sahte medya (ffmpeg: 16:9 631.63 sn, 9:16 57/59 sn, 1280x720 png, SRT = 04-ses/altyazi-taslak.en.srt)
+(yayin-paketi.json gerçek paketle bayt bayt aynı)
+$ yukle.py <kopya>/yayin-paketi.json --dry-run
+  [OK]    şema geçerli
+  [OK]    başlık 41/100 karakter
+  [OK]    açıklama (bölümler dahil) 3370/5000 bayt
+  [OK]    etiketler 19 adet, 373/500 karakter (YouTube sayımı)
+  [OK]    video var: ../../..<kopya>/08-kurgu/final-16x9.mp4 (0.5 MB)
+  [OK]    video 320x180, 631.6 sn, h264
+  [OK]    thumbnail 1280x720 png, 5 KB
+  [OK]    SRT altyazi.srt: 228 blok, son 631.6 sn, dil en
+  [OK]    bölümler 8 adet, kurallara uygun
+  [OK]    yayin_zamani gelecekte: 2026-11-01T17:00:00Z (+122.0 sa)
+  Sonuç: 0 hata, 0 uyarı, 10 geçen kontrol
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": true,
+    "publishAt": "2026-11-01T17:00:00Z"
+Plan: videos.insert (resumable) → thumbnails.set → captions.insert ATLANIR (cihaz akışı kapsamı yok → Studio/--akis yerel)
+(yayin-paketi-shorts-1.json gerçek paketle bayt bayt aynı)
+$ yukle.py <kopya>/yayin-paketi-shorts-1.json --dry-run
+  [OK]    şema geçerli
+  [OK]    başlık 42/100 karakter
+  [OK]    açıklama (bölümler dahil) 782/5000 bayt
+  [OK]    etiketler 7 adet, 104/500 karakter (YouTube sayımı)
+  [OK]    video var: ../../..<kopya>/08-kurgu/shorts-1.mp4 (0.0 MB)
+  [OK]    video 180x320, 57.0 sn, h264
+  [OK]    yayin_zamani gelecekte: 2026-11-02T14:00:00Z (+143.0 sa)
+  Sonuç: 0 hata, 0 uyarı, 7 geçen kontrol
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": true,
+    "publishAt": "2026-11-02T14:00:00Z"
+Plan: videos.insert (resumable)
+(yayin-paketi-shorts-2.json gerçek paketle bayt bayt aynı)
+$ yukle.py <kopya>/yayin-paketi-shorts-2.json --dry-run
+  [OK]    şema geçerli
+  [OK]    başlık 47/100 karakter
+  [OK]    açıklama (bölümler dahil) 771/5000 bayt
+  [OK]    etiketler 7 adet, 116/500 karakter (YouTube sayımı)
+  [OK]    video var: ../../..<kopya>/08-kurgu/shorts-2.mp4 (0.0 MB)
+  [OK]    video 180x320, 59.0 sn, h264
+  [OK]    yayin_zamani gelecekte: 2026-11-03T14:00:00Z (+167.0 sa)
+  Sonuç: 0 hata, 0 uyarı, 7 geçen kontrol
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": true,
+    "publishAt": "2026-11-03T14:00:00Z"
+Plan: videos.insert (resumable)

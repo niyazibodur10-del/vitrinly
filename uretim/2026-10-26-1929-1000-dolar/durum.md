@@ -26,6 +26,7 @@
 | F6 miks | muzik-ses-tasarimcisi | GEÇTİ | 06-muzik/cue-listesi.md, cue.json, stems/muzik-stem.wav + sfx-stem.wav (631.63 sn, 48 kHz stereo 24-bit, git dışı), stems/shorts-1/2-muzik-stem.wav (git dışı), stems/miks-onizleme.m4a, atif-satirlari.md | Parça seçimi bölüm başına 2 aday × 25 sn gerçek anlatım dilimi Whisper (olcum-f6-test.json: tüm adaylar anlatım-tek ±1 kelime). Tam önizleme miksi WER %1.62 vs anlatım-tek %1.97 (aynı model/ayar, fark −0.35 puan; ses kolu transkriptine göre +0.69) ≤+1 ✅ (olcum-f6-wer.json); konuşma altı müzik farkı bölüm başına 20.8–23.8 dB, tümü 21.7 dB ✅; önizleme −14.0 LUFS / TP −2.7 dBTP ✅; lisans-kontrol.py exit 0 (55 dosya + 38 cue dosyası kayıtlı, NC/ND/SA yok); 10 müzik dosyası (8 CC0 + 2 kendi üretim) → zorunlu CC BY atfı yok | (F6) |
 | F7 kurgu | kurgu-editoru | BEKLİYOR | 08-kurgu/* | | |
 | F8 paket | çoklu | BEKLİYOR | 09-paket/* | | |
+| F8 paket metni (erken) | youtube-paketleyici | GEÇTİ (F7 dosyalarıyla dry-run tekrarı + politika-raporu bekliyor) | 09-paket/paket.md, yayin-paketi.json, yayin-paketi-shorts-1/2.json, yorum-yanitlari.md | paket-kontrol.py 0 hata (2 koşu sha256 aynı); yukle.py --dry-run sahte medyalı kopya 3/3 paket 0 hata, gerçek paket yalnız dosya-yok; bölümler gerçek sahne bas ±1 sn (kapi-cikti.txt) | 2026-10-27 |
 | F9 hakem | hakem | BEKLİYOR | hakem-raporu.md | | |
 | F10 teslim | koordinatör | BEKLİYOR | teslim/ | | |
 
@@ -35,3 +36,4 @@
 - F5: kritik yol testine 3 Leo klonlu kapı sahnesi zorunlu (H4); B planı tek Leo kapıdan kapıya yürür.
 - F6 miks: Ragtime! Jazz (B2) en riskli — müzik konuşmanın 22–24 dB altında + 2–4 kHz oyuk; kendi gerilim yatakları yalnız katman (enerji 150 Hz altında); stüdyo kahkahası CC0 yok → "group giggling" 3 katman; 3 CC BY atfı açıklamaya (lisans-kaydi.md).
 - Kaynak: CPU çakışması — TTS/Whisper/render/ESRGAN aynı anda koşmasın (uretim-hatti-testi.md).
+- F7 kurgu → F8 paket: bölümler anlatım 0 noktasına göre (00:00/01:19/02:46/04:46/06:12/07:33/08:42/09:52); finalde başa boşluk/ara süre eklenirse kurgu-rapor.md'de ofset yazılsın → youtube-paketleyici paket.md §4'ü kaydırır ve paket-uret.py + paket-kontrol.py + yukle.py --dry-run yeniden koşar. Uç ekran gerçek sesle ~13 sn (S24 10:18.4→10:31.6).
