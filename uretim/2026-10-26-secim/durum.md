@@ -5,6 +5,7 @@
 - **Slot ve sütun:** Stok boş → takvim v2 §3/§6 geçiş kuralı: bu video **stok videosu**, sütun **A (tarih çöküşleri)** (raf ömrü uzun).
   Hedef slot: ilk Pazar A slotu **2026-11-01 12:00 ET (TRT 20:00)** — hakem ONAY + Niyazi onayı slottan ≥3 sa önce gelirse; yetişmezse stokta kalır, Pazar 2026-11-08.
 - **Stok:** uzun 0 / Shorts 0.
+- **Kesinti:** 2026-10-26 ~20:00 UTC F0/F1 ajanları kullanım limitine takıldı (dosya bırakmadılar); 2026-10-27 04:22 UTC yeniden başlatıldı.
 - **Not:** F0 ortam kontrolü ve F1 araştırma birbirine bağımlı değil → koordinatör paralel başlattı.
 
 | Adım | Sahip | Durum | Teslim | Test kanıtı | Başlangıç–bitiş (UTC) |
