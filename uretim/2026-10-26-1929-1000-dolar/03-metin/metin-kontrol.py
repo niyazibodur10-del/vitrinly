@@ -141,6 +141,18 @@ def main():
     if not okb: hata.append("bölümler")
     # Shorts hook'ları
     print("\n**Shorts hook'ları:** " + " · ".join(f"\"{h}\" = {len(h.split())} kelime" for h in shorts))
+    # Shorts tam metin süresi (RED-1): tireli sayılar ayrı birim sayılır (politika-denetim.py [8] ile aynı ölçü), ≤60 sn
+    tam = re.findall(r"\*\*Okunacak tam metin[^:]*:\*\* <<(.+?)>>", md)
+    if len(tam) < 2: hata.append("Shorts tam metni eksik")
+    for i, tx in enumerate(tam, 1):
+        k = len(tx.split()); b = k + len(re.findall(r"\w-\w", tx)); sn = b / KPM * 60
+        oks = sn <= 60
+        if not oks: hata.append(f"Shorts {i} süre")
+        tvx = [d for d in TAVSIYE if re.search(d, tx, re.I)] + YASAK.findall(tx)
+        if tvx: hata.append(f"Shorts {i} tavsiye/yasak")
+        nit = "prices were falling" in tx.lower()
+        print(f"**Shorts {i} tam metin:** {k} kelime · tireler ayrı {b} birim → ≈{sn:.1f} sn (kapı ≤60) {'GEÇTİ' if oks else 'KALDI'} · tavsiye/yasak {len(tvx)} · niteleyici \"prices were falling\": {'VAR' if nit else 'YOK'}")
+        if not nit: hata.append(f"Shorts {i} niteleyici")
     # 5-gram örtüşme
     def ng(t, n=5):
         w = re.findall(r"[a-z0-9']+", t.lower()); return {tuple(w[i:i+n]) for i in range(len(w)-n+1)}
