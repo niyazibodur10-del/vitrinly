@@ -13,3 +13,19 @@
 | C17 | MAHZMQUEnkg | 1 | 2026-10-27 10:00 | canva-ham/C17.png (sayfa 19) — aynı stil notu | **KABUL** (stil notu; kasa sağ kenarı merkez %80 dışı → sağa pan yok) |
 | C18 | MAHZMcBq1IA | 1 | 2026-10-27 10:00 | canva-ham/C18.png (sayfa 20) — aynı stil notu; kuyrukta insanlar ön plana yakın mı kontrol | **KABUL** (stil notu; ön plan boş, yüzler stilize) |
 | C19 | MAHZMW-dF0U | 1 | 2026-10-27 10:00 | canva-ham/C19.png (sayfa 21) | **KABUL** (stil notu; Sh2 kırpımı x 1200–1807) |
+
+## Dalga 3 (koordinatör, 2026-10-27) — değerlendirme bekliyor
+| Görsel | Media ID | Not |
+|---|---|---|
+| C03 | MAHZMp2sz2k | ref C01 |
+| C04 | MAHZMqkRJiU | ref C02 + sheet |
+| C11b | MAHZMoaZcZQ | C11 tekrarı, değerlendiricinin diş prompt'u |
+| C05 | MAHZMgBwQoo | ref C04 + sheet |
+| C12 | MAHZMoyEe7E | |
+| C13 | MAHZMrenVrY | |
+| C14 | MAHZMtnkERI | |
+| C15 | MAHZMq8FB-s | stil ref C01 (çizgi film stil kilidi, painterly önlemi) |
+| C20 | MAHZMjxzZXc | seçmeli |
+| C21 | MAHZMh_COeU | seçmeli |
+| C22 | MAHZMuFI2-4 | 9:16, 1080x1920 |
+Canva üretim toplamı: 23 (tavan 27). Tuval sayfaları 22–32.
