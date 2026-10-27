@@ -21,7 +21,8 @@
 | F4 ses / görsel / müzik / paket taslak | çoklu | SÜRÜYOR | 04–06, 09 | | |
 | F4 müzik + SFX adayları | muzik-ses-tasarimcisi | GEÇTİ | 06-muzik/adaylar.md, lisans-kaydi.md | lisans-kontrol.py dosya 55 · kayıtsız 0 · yasak lisans [] (exit 0, 2 koşu; negatif test exit 1); bölüm başına ön seçim, kesin seçim F6'da WER ile | (d95b3ef) |
 | F4 ses son işlem + transkript | ses-muhendisi | GEÇTİ | 04-ses/kelimeler-hizali.json, altyazi-taslak.en.srt, altyazi-remotion.json, rhubarb/ (ses-rapor.md §8) | anlatim.wav −14.2 LUFS/TP −1.5 (ek işlem gereksiz: 4 aday, de-ess adayları sibilansı 7–8 dB kesti, WER farksız); 1701/1701 kelime kilitli metin; atılan yalnız "Yes." 9:07.9 + "up." 10:00.3; akustik hiza p95 7/15 ms (±150 ✓); Rhubarb S01 testi ✓ | 10:15–(bu commit) |
-| F5 animasyon | animasyon-yonetmeni | BEKLİYOR | 07-animasyon/* | | |
+| F5 kritik yol testi | animasyon-yonetmeni | GEÇTİ (tüm sahneler + 9:16 sonraki tur) | 07-animasyon/senkron-rapor.md, kritik-test-onizleme.mp4 (tam render git dışı), kareler/ | K1929Kritik 19,7 sn/591 kare; 3 klon kapı sahnesi (H4) B planı gerekmedi; ekrandaki ağız senkronu −1 kare, tam sahne S01 0 / S04 0 (S02–S13 +1..+2); AgizTest temiz; blackdetect 0; donma yok; −13,9 LUFS; tüm-video ölçümü −4 (ağzın görünmediği S04 62–70 sn bölgesi, rapor) | (bu commit) |
+| F5 tüm sahneler + 9:16 | animasyon-yonetmeni | BEKLİYOR | 07-animasyon/* | | |
 | F6 miks | muzik-ses-tasarimcisi | BEKLİYOR | 06-muzik/stems | | |
 | F7 kurgu | kurgu-editoru | BEKLİYOR | 08-kurgu/* | | |
 | F8 paket | çoklu | BEKLİYOR | 09-paket/* | | |

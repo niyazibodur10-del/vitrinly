@@ -72,12 +72,18 @@ def main():
     v["sunucu"] = {"x": kutu[0], "y": kutu[1], "w": kutu[2] - kutu[0], "h": kutu[3] - kutu[1]}
 
     rig = json.load(open(G / "rig/rig-yamalar.json"))["yamalar"]
+    # Yamaların alfası taban a'nın siluetiyle çarpılır: yama kutusu çene/kulak kenarında Canva zemininin (slate-blue)
+    # piksellerini taşıyordu → AgizTest'te yüz kenarında mavi hale (2026-10-27 ölçüm/kare). Silüet dışı = 0.
+    a_al = np.array(im_a_tam := Image.open(G / "leo/a-konusma-kapali.png"))[:, :, 3].astype(np.float32) / 255
     for ad, r in rig.items():
-        Image.open(G / f"rig/{ad}.png").save(P / f"{ad}.png")
+        x, y = r["konum_xy"]; w, h = r["boyut_wh"]
+        ya = np.array(Image.open(G / f"rig/{ad}.png").convert("RGBA")).astype(np.float32)
+        ya[:, :, 3] *= a_al[y:y + h, x:x + w]
+        Image.fromarray(ya.astype(np.uint8)).save(P / f"{ad}.png")
         v["yama"][ad] = {"x": r["konum_xy"][0] - kutu[0], "y": r["konum_xy"][1] - kutu[1],
                          "w": r["boyut_wh"][0], "h": r["boyut_wh"][1]}
     # Tek göz kırpma (wink): C06 yamasının izleyiciye göre sol yarısı; kesim yüz ortasında yumuşak rampa
-    g = Image.open(G / "rig/goz-kapali-C06.png").convert("RGBA"); ga = np.array(g).astype(np.float32)
+    g = Image.open(P / "goz-kapali-C06.png").convert("RGBA"); ga = np.array(g).astype(np.float32)
     al6 = ga[:, :, 3]; cols = np.where(al6.max(0) > 40)[0]
     orta = int(cols.min() + (cols.max() - cols.min()) * 0.5)
     ramp = np.clip((orta + 6 - np.arange(g.width)) / 12.0, 0, 1)

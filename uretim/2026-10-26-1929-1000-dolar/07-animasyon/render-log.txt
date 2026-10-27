@@ -1,0 +1,5 @@
+[render-son] render=73.6s loudnorm_olcum=2.6s son_kodlama=1.6s toplam=77.8s
+
+real	1m17.780s
+user	1m16.175s
+sys	0m4.279s

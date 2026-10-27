@@ -6,3 +6,7 @@ uretim/**/final/*.mp4
 uretim/**/teslim/*.mp4
 uretim/**/08-kurgu/*.mp4
 !uretim/**/*onizleme*.mp4
+# F5 animasyon render'ları git dışı (önizleme hariç); public/k1929 07-animasyon/hazirla.py ile yeniden üretilir
+uretim/**/07-animasyon/*.mp4
+video/public/k1929/
+!uretim/**/07-animasyon/*onizleme*.mp4
