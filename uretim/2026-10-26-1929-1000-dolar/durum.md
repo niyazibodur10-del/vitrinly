@@ -1,4 +1,4 @@
-# Durum — 2026-10-26 (slug F2'de belli olacak)
+# Durum — 2026-10-26-1929-1000-dolar
 
 - **Tetik:** Niyazi "Bugünün videosu gelsin" (2026-10-26 19:50 UTC).
 - **Kanal:** Toonomy (@toonomy), anlatıcı Leo. Tempo v2: 2 uzun + 4 Shorts/hafta.
@@ -16,8 +16,8 @@
 | F1 rakip özeti | kanal-analisti | GEÇTİ | 01-arastirma/rakip-ozet.md | etiket_test 81/81 etiketli; 39 kanal, 1.123 uzun video [API]; not: search uç noktası günlük tavana takıldı (429), docs/rakip-analizi.md'nin erken yenilenmesi önerildi | 04:22–(19f26bd) |
 | F2 senaryolar | senaryo-yazari | GEÇTİ | 02-senaryo/senaryolar.md | senaryo-kontrol.py exit 0, 2 koşu aynı; 11 senaryo, 11 açı, 33 başlık ≤60 | (5c30245) |
 | F2 viralite / ön doğrulama / politika | viralite-analisti ‖ finans-dogrulayici ‖ monetizasyon-uyum-uzmani | GEÇTİ | 02-senaryo/viralite.md, on-dogrulama.md, politika-on-tarama.md | viralite 2 koşu sha256 aynı, ilk 3 S03/S01/S06; doğrulama 7 YEŞİL 4 SARI 0 KIRMIZI; politika 5 YEŞİL 6 SARI 0 KIRMIZI | (b962b14, 5d91233, 9322f41) |
-| F2 karar | hakem | SÜRÜYOR | 02-senaryo/senaryo-karari.md | | |
-| F3 metin + doğrulama | senaryo-yazari → finans-dogrulayici ‖ monetizasyon-uyum-uzmani | BEKLİYOR | 03-metin/* | | |
+| F2 karar | hakem | GEÇTİ | 02-senaryo/senaryo-karari.md | kazanan S03 "You Have $1,000 in 1929. Can You Keep It?" (şartlı: F3 zorunlu düzeltmeler D1–D7, P1–P6, H1–H5); yedek S01; hakem-karar.py 2 koşu aynı | (c065502) |
+| F3 metin + doğrulama | senaryo-yazari → finans-dogrulayici ‖ monetizasyon-uyum-uzmani | SÜRÜYOR (metin) | 03-metin/* | | |
 | F4 ses / görsel / müzik / paket taslak | çoklu | BEKLİYOR | 04–06, 09 | | |
 | F5 animasyon | animasyon-yonetmeni | BEKLİYOR | 07-animasyon/* | | |
 | F6 miks | muzik-ses-tasarimcisi | BEKLİYOR | 06-muzik/stems | | |

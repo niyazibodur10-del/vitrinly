@@ -23,7 +23,7 @@
 ## 1. Betik çıktısı (test kapısı: aynı girdi iki kez → aynı sonuç)
 
 ```
-$ python3 tools/viralite.py uretim/2026-10-26-secim/02-senaryo/viralite-girdi.json   # 1. ve 2. çalıştırma
+$ python3 tools/viralite.py uretim/2026-10-26-1929-1000-dolar/02-senaryo/viralite-girdi.json   # 1. ve 2. çalıştırma
 Viralite modeli v0.1 | ağırlık toplamı = 1.00 | puanlar TAHMİNDİR [T]
 
 | Sıra | ID | Başlık | Ağırlıklı | Bonus | Ceza | Nihai | Not |

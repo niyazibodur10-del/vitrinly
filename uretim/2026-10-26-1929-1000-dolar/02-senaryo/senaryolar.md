@@ -490,7 +490,7 @@ Hiçbir senaryoda Leo uzman/danışman gibi konuşmuyor, "you should buy/sell" y
 
 ## Test (kapı: ≥10 senaryo, ≥5 açı türü, ≥7 A, başlık ≤60 karakter, hook ≤40 kelime ve telaffuz listesi temiz)
 
-Komut: `python3 uretim/2026-10-26-secim/02-senaryo/senaryo-kontrol.py uretim/2026-10-26-secim/02-senaryo/senaryolar.md`
+Komut: `python3 uretim/2026-10-26-1929-1000-dolar/02-senaryo/senaryo-kontrol.py uretim/2026-10-26-1929-1000-dolar/02-senaryo/senaryolar.md`
 
 **1. koşu:** S06 hook 42 kelime → KALDI (kapı ≤40). Düzeltme: "still" çıkarıldı, "to come back" → "to recover" (40 kelime). 
 **Son koşu (2026-10-27, çıkış kodu 0; iki koşu `diff` ile aynı):**

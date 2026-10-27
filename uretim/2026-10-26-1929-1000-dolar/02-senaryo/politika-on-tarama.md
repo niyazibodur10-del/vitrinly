@@ -139,7 +139,7 @@ Ayrıca konu doymuş (rakip özeti D2). Bu bir politika riski değil, `viralite-
 | Ö9 | İnsan editör / maskot / AI ses beyanı | kanal düzeyi (Hakkında + açıklama satırı); senaryodan bağımsız | | | | | | | | | | |
 | Ö10 | Tavsiye/uzman dili yok | ✓ | ✓ | ◐ (S03-B) | ✓ | ✓ | ◐ (S06-B) | ✓ | ✓ | ✓ | ✓ | ◐ not dili |
 | Ö11 | Gerçekçi sahte olay yok | ◐ Illustration | ◐ Illustration | ✓ stüdyo | ✓ | ✓ | ✓ | ◐ Illustration | ◐ siluet | ◐ (S09-A) | ◐ Yuki fictional | ✓ |
-| Ö12 | Süreç arşivi | ✓ git'te (`uretim/2026-10-26-secim/`) | | | | | | | | | | |
+| Ö12 | Süreç arşivi | ✓ git'te (`uretim/2026-10-26-1929-1000-dolar/`) | | | | | | | | | | |
 
 Ö2 notu: FRED'deki bazı seriler üçüncü taraf telifli (ör. Nikkei, hisse fiyatları). Grafiği kendimiz çizsek de veri kullanım koşulu `finans-dogrulayici` + F4'te `gorsel-varlik-sanatcisi` ile kontrol edilmeli. Ekranda kaynak etiketi her durumda olmalı.
 
@@ -151,7 +151,7 @@ Ayrıca konu doymuş (rakip özeti D2). Bu bir politika riski değil, `viralite-
 
 ## 6. Test
 
-**Komut:** `python3 uretim/2026-10-26-secim/02-senaryo/politika-tarama.py uretim/2026-10-26-secim/02-senaryo/senaryolar.md uretim/ses-testi/okuma-metni.md`
+**Komut:** `python3 uretim/2026-10-26-1929-1000-dolar/02-senaryo/politika-tarama.py uretim/2026-10-26-1929-1000-dolar/02-senaryo/senaryolar.md uretim/ses-testi/okuma-metni.md`
 Betik her senaryonun yayınlanacak İngilizce metnini (başlık + 2 alternatif, hook, köprü, tez, Shorts, thumbnail metni) çıkarıyor. Tavsiye/uzman dili, hassas kelime ve gerçek kişi/kurum adlarını sayıyor. Pilot okuma metniyle ve senaryolar arasında 5-gram örtüşmesini ölçüyor. **İki koşu `diff` ile aynı** (çıkış AYNI).
 
 ```

@@ -409,7 +409,7 @@ Diğer A'lar (A5, A10–A17) aşağıda. Ham ölçüm verisi ve betikler: `01-ar
 
 ## Kontrol listesi (betikle)
 
-Komut: `python3 uretim/2026-10-26-secim/01-arastirma/kaynak-kontrol.py uretim/2026-10-26-secim/01-arastirma/konu-havuzu.md --bugun 2026-10-27`
+Komut: `python3 uretim/2026-10-26-1929-1000-dolar/01-arastirma/kaynak-kontrol.py uretim/2026-10-26-1929-1000-dolar/01-arastirma/konu-havuzu.md --bugun 2026-10-27`
 Kural: konu başına ≥2 farklı alan adı. Link testi = HTTP 200 + sayfa metninde anahtar kelime (soft-404 ve bot sayfası elenir; örnek: `federalreservehistory.org/essays/lehman-brothers` 200 döndürüp "Content Not Found" gösterdiği için çıkarıldı). B konularında ≥1 kaynak son 30 günden (2026-09-27 ve sonrası).
 
 **Betik çıktısı (canlı, 2026-10-27, çıkış kodu 0):**

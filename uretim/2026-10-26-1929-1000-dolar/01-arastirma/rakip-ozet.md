@@ -1,7 +1,7 @@
 # F1 rakip özeti: animasyonlu / anlatımlı finans tarihi (sütun A, kanalın ilk herkese açık videosu)
 
 Hazırlayan: kanal-analisti · **Ölçüm tarihi: 2026-10-27** (aksi yazılmadıkça her sayı bu tarihte ölçüldü) [API].
-Ham veri: `uretim/2026-10-26-secim/01-arastirma/rakip-veri-2026-10-27.json` (51 kanal, 89 outlier satırı).
+Ham veri: `uretim/2026-10-26-1929-1000-dolar/01-arastirma/rakip-veri-2026-10-27.json` (51 kanal, 89 outlier satırı).
 
 ## 0. Durum, kaynak ve etiketler
 
@@ -138,10 +138,10 @@ Medyanı ≥1.000 olan kanallarla tekrarlanınca sıralama korunuyor: "Economics
 - **v1 rakip analizi [API]:** 5 "seçilmiş" kanaldan 3'ü (Business Casual, OverSimplified, Swedish Investor) son 12 ayda uzun video yayınlamamış. Yeni aday kanallar: Markets of the Past, Marcus Explains, How Money Works, Moon, Economics Explained. Erken yenileme (API'li v2) önerilir; karar koordinatörde.
 
 ## 8. Test (kapı: her sayının kaynağı ve ölçüm tarihi var)
-Betik: `uretim/2026-10-26-secim/01-arastirma/etiket_test.py` (üst bilgide ölçüm tarihi 2026-10-27 olmalı; rakam içeren her satırda ya da bağlı olduğu başlıkta [API|H|ALT|GÖZ|T|ÖB] etiketi aranır; tablo başlık satırları atlanır).
+Betik: `uretim/2026-10-26-1929-1000-dolar/01-arastirma/etiket_test.py` (üst bilgide ölçüm tarihi 2026-10-27 olmalı; rakam içeren her satırda ya da bağlı olduğu başlıkta [API|H|ALT|GÖZ|T|ÖB] etiketi aranır; tablo başlık satırları atlanır).
 
 ```
-$ python3 uretim/2026-10-26-secim/01-arastirma/etiket_test.py uretim/2026-10-26-secim/01-arastirma/rakip-ozet.md
+$ python3 uretim/2026-10-26-1929-1000-dolar/01-arastirma/etiket_test.py uretim/2026-10-26-1929-1000-dolar/01-arastirma/rakip-ozet.md
 1. koşu: rakamlı satır 81, etiketsiz 13 → etiketler eklendi
 son koşu: rakamlı satır 81, etiketsiz 0   → GEÇTİ
 ```
