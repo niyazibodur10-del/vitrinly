@@ -260,6 +260,13 @@ export const S14: React.FC = () => {
           : null}
         <Yazi an={a("hardest")} x={960} y={110} boyut={64}>THE HARDEST MOMENT</Yazi>
       </div>
+      {/* aşağı düşüş: alttan "THE BOTTOM" sayfası gelir (siyah kare yok) */}
+      {dus > 0 ? (
+        <div style={{ position: "absolute", left: 0, top: 1080 - dus * 1100, width: 1920, height: 1100, background: "linear-gradient(180deg, #2a3a5e 0%, #1d2a45 100%)" }}>
+          <div style={{ position: "absolute", width: "100%", top: 380, textAlign: "center", fontFamily: "Anton", fontSize: 150, color: RENK.murekkep, letterSpacing: 6 }}>THE BOTTOM</div>
+          <div style={{ position: "absolute", width: "100%", top: 560, textAlign: "center", fontFamily: "Anton", fontSize: 90, color: RENK.sari }}>JULY 1932</div>
+        </div>
+      ) : null}
     </SahneKok>
   );
 };

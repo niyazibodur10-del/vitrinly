@@ -1,0 +1,31 @@
+# F5 tam video kapı ölçümleri (2026-10-27 19:26 UTC) — uretim/2026-10-26-1929-1000-dolar/07-animasyon/tam-16x9.mp4
+## ffprobe
+stream|codec_name=h264|width=1920|height=1080|r_frame_rate=30/1|nb_frames=18945|
+stream|codec_name=aac|r_frame_rate=0/0|nb_frames=29609
+format|duration=631.629000
+## blackdetect (d=0.1, pix_th=0.10)
+1
+## freezedetect (n=0.001, d=2)
+## loudness
+    I:         -14.0 LUFS
+## senkron: ağız görünür aralıklar, geniş bant
+  aralık 618.39-631.63 sn: gecikme 1 kare, korelasyon 0.32
+en iyi gecikme: 1 kare (33 ms), korelasyon 0.40, gecikme 0'da 0.37 [13 aralık, 200.8 sn]
+GEÇTİ
+## senkron: ağız görünür aralıklar, formant bandı 700-3000
+bant: 700-3000 Hz
+  aralık 2.1-15.59 sn: gecikme 1 kare, korelasyon 0.55
+  aralık 15.59-34.83 sn: gecikme 1 kare, korelasyon 0.51
+  aralık 34.83-55.96 sn: gecikme 1 kare, korelasyon 0.57
+  aralık 72.27-73.73 sn: gecikme 1 kare, korelasyon 0.63
+  aralık 166.5-178.49 sn: gecikme 2 kare, korelasyon 0.49
+  aralık 269.35-277.16 sn: gecikme 2 kare, korelasyon 0.49
+  aralık 319.88-339.36 sn: gecikme 1 kare, korelasyon 0.53
+  aralık 419.77-447.19 sn: gecikme 1 kare, korelasyon 0.53
+  aralık 447.19-453.96 sn: gecikme 1 kare, korelasyon 0.62
+  aralık 517.7-519.6 sn: gecikme 2 kare, korelasyon 0.78
+  aralık 548.77-580.08 sn: gecikme 1 kare, korelasyon 0.57
+  aralık 592.86-618.39 sn: gecikme 1 kare, korelasyon 0.53
+  aralık 618.39-631.63 sn: gecikme 1 kare, korelasyon 0.56
+en iyi gecikme: 1 kare (33 ms), korelasyon 0.54, gecikme 0'da 0.47 [13 aralık, 200.8 sn]
+GEÇTİ
