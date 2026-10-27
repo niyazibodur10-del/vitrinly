@@ -7,7 +7,7 @@ Kullanım: python3 -I okuma-hazirla.py   (04-ses klasöründe)
   referans-metni.txt   WER referansı: kilitli metnin AYNISI (telaffuz yazımı yok).
   sahne-esleme.json    sahne → cümle aralığı (tts.py'nin cümle bölmesiyle aynı kural) + kelime sayısı.
   shorts-1-ek.txt, shorts-2-ek.txt   Shorts'ta ana anlatımda olmayan cümleler (hook / kapanış).
-Anlam DEĞİŞMEZ. Tek telaffuz yazımı: "U.S." → [U.S.](/jˌuˈɛs/) — nedeni: tts.py "U.S. " sonrasında cümleyi
+Anlam DEĞİŞMEZ. Telaffuz yazımları TELAFFUZ listesinde. "U.S." → [U.S.](/jˌuˈɛs/) nedeni: tts.py "U.S. " sonrasında cümleyi
 bölüyordu (cümle ortasında 0,3 sn sessizlik); fonetik işaretleme hem bölünmeyi engeller hem "you-ess" okutur.
 Telaffuz testi (FDIC / F D I C / F-D-I-C, Roosevelt, Dow, Toonomy, yıllar): ses-rapor.md §2.
 """
@@ -17,7 +17,14 @@ from pathlib import Path
 KOK = Path(__file__).resolve().parent
 MD = (KOK.parent / "03-metin" / "metin.md").read_text(encoding="utf-8")
 SAHNE = re.compile(r"^### (S\d\d) · ([^\n]*)\n\| ANLATIM \| GÖRSEL \|\n\|---\|---\|\n\| (.+?) \| (.+?) \|$", re.M)
-TELAFFUZ = [("U.S.", "[U.S.](/jˌuˈɛs/)")]
+TELAFFUZ = [  # (kilitli metin, Kokoro'ya verilen) — yalnız telaffuz işareti; görünen kelime aynı kalır
+    ("U.S.", "[U.S.](/jˌuˈɛs/)"),
+    # v1 tam üretimde Whisper (cümle tek başına) hatası → 2 varyant testi, kazanan (ses-rapor.md §3):
+    ("nobody in this studio", "nobody in [this](/ðˈɪs/) studio"),            # "this" → "the" (0,79)
+    ("And Box Leo takes the brown", "[And](/ˈænd/) Box Leo takes the brown"),  # "And Box" → "Inbox"
+    ("Bank Leo is fine", "Bank Leo [is](/ˈɪz/) fine"),                       # "Leo is" → "Banklia was"
+    ("the door that looked smart", "the door that [looked](/lˈʊktʰ/) smart"),  # "looked" → "looks"
+]
 
 
 def cumleler(p):  # tools/ses/tts.py cumlelere_bol ile aynı desen
