@@ -27,7 +27,7 @@ paketler = {
         "_not": "1929-1000-dolar uzun video. paket.md'den paket-uret.py ile üretildi; elle düzenleme yok. Slot: Paz 2026-11-01 12:00 ET (EST, UTC-5); yedek 2026-11-08.",
         "tur": "uzun",
         "dosyalar": {"video": "../08-kurgu/final-16x9.mp4", "thumbnail": "../09-paket/thumbnail/A2-kapilar.jpg",
-                     "altyazilar": [{"dosya": "../08-kurgu/altyazi.srt", "dil": "en", "ad": "English"}]},
+                     "altyazilar": [{"dosya": "../08-kurgu/final.en.srt", "dil": "en", "ad": "English"}]},
         "metadata": {"baslik": ONERILEN, "aciklama": V["aciklama"], "etiketler": ETIKETLER, "bolumler": BOLUMLER, **META},
         "durum": {**DURUM, "yayin_zamani": "2026-11-01T12:00:00-05:00"},
         "oynatma_listesi_id": None, "onay": dict(ONAY)},

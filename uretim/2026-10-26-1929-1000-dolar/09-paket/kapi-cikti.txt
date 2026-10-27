@@ -1,4 +1,4 @@
-# F8 paket kapısı çıktısı — 2026-10-27T20:05:30Z (Z1 sonrası: ana thumbnail A2)
+# F8 paket kapısı çıktısı — 2026-10-27T21:05:47Z (F7 final dosyalarıyla GERÇEK dry-run; ofset 0)
 
 $ python3 -I paket-uret.py
 yazıldı yayin-paketi.json
@@ -98,78 +98,49 @@ exit 0
 320251eaff92e0b6009694835ee6466ae1d36152a6c4082dd6c9ec6b851b4b94  -
 320251eaff92e0b6009694835ee6466ae1d36152a6c4082dd6c9ec6b851b4b94  -
 
-## Kip 1: gerçek paketler (F7 dosyaları henüz yok → yalnız video/SRT dosya-yok hataları beklenir)
-$ yukle.py 09-paket/yayin-paketi.json --dry-run
+## Gerçek paketler + F7 final dosyaları (yükleme yok)
+$ python3 tools/yayin/yukle.py uretim/2026-10-26-1929-1000-dolar/09-paket/yayin-paketi.json --dry-run
   [OK]    şema geçerli
   [OK]    başlık 41/100 karakter
   [OK]    açıklama (bölümler dahil) 3370/5000 bayt
   [OK]    etiketler 19 adet, 373/500 karakter (YouTube sayımı)
+  [OK]    video var: uretim/2026-10-26-1929-1000-dolar/08-kurgu/final-16x9.mp4 (234.5 MB)
+  [OK]    video 1920x1080, 631.6 sn, h264
   [OK]    thumbnail 1280x720 jpeg, 131 KB
+  [OK]    SRT final.en.srt: 228 blok, son 631.6 sn, dil en
   [OK]    bölümler 8 adet, kurallara uygun
-  [OK]    yayin_zamani gelecekte: 2026-11-01T17:00:00Z (+116.9 sa)
-  [HATA]  video yok: /home/user/vitrinly/uretim/2026-10-26-1929-1000-dolar/08-kurgu/final-16x9.mp4
-  [HATA]  altyazı yok: /home/user/vitrinly/uretim/2026-10-26-1929-1000-dolar/08-kurgu/altyazi.srt
-DOĞRULAMA BAŞARISIZ — yükleme/paket üretimi yapılmadı.
-exit 2
-$ yukle.py 09-paket/yayin-paketi-shorts-1.json --dry-run
-  [OK]    şema geçerli
-  [OK]    başlık 42/100 karakter
-  [OK]    açıklama (bölümler dahil) 782/5000 bayt
-  [OK]    etiketler 7 adet, 104/500 karakter (YouTube sayımı)
-  [OK]    yayin_zamani gelecekte: 2026-11-02T14:00:00Z (+137.9 sa)
-  [HATA]  video yok: /home/user/vitrinly/uretim/2026-10-26-1929-1000-dolar/08-kurgu/shorts-1.mp4
-DOĞRULAMA BAŞARISIZ — yükleme/paket üretimi yapılmadı.
-exit 2
-$ yukle.py 09-paket/yayin-paketi-shorts-2.json --dry-run
-  [OK]    şema geçerli
-  [OK]    başlık 47/100 karakter
-  [OK]    açıklama (bölümler dahil) 771/5000 bayt
-  [OK]    etiketler 7 adet, 116/500 karakter (YouTube sayımı)
-  [OK]    yayin_zamani gelecekte: 2026-11-03T14:00:00Z (+161.9 sa)
-  [HATA]  video yok: /home/user/vitrinly/uretim/2026-10-26-1929-1000-dolar/08-kurgu/shorts-2.mp4
-DOĞRULAMA BAŞARISIZ — yükleme/paket üretimi yapılmadı.
-exit 2
-
-## Kip 2: aynı paketler + sahte medya (ffmpeg: 16:9 631.63 sn, 9:16 57/59 sn; gerçek A2-kapilar.jpg; SRT = 04-ses/altyazi-taslak.en.srt)
-(yayin-paketi.json gerçek paketle bayt bayt aynı)
-$ yukle.py <kopya>/yayin-paketi.json --dry-run
-  [OK]    şema geçerli
-  [OK]    başlık 41/100 karakter
-  [OK]    açıklama (bölümler dahil) 3370/5000 bayt
-  [OK]    etiketler 19 adet, 373/500 karakter (YouTube sayımı)
-  [OK]    video var: ../../..<kopya>/08-kurgu/final-16x9.mp4 (0.5 MB)
-  [OK]    video 320x180, 631.6 sn, h264
-  [OK]    thumbnail 1280x720 jpeg, 131 KB
-  [OK]    SRT altyazi.srt: 228 blok, son 631.6 sn, dil en
-  [OK]    bölümler 8 adet, kurallara uygun
-  [OK]    yayin_zamani gelecekte: 2026-11-01T17:00:00Z (+116.9 sa)
-  Sonuç: 0 hata, 0 uyarı, 10 geçen kontrol
+  [OK]    yayin_zamani gelecekte: 2026-11-01T17:00:00Z (+115.9 sa)
+    "selfDeclaredMadeForKids": false,
     "containsSyntheticMedia": true,
     "publishAt": "2026-11-01T17:00:00Z"
 Plan: videos.insert (resumable) → thumbnails.set → captions.insert ATLANIR (cihaz akışı kapsamı yok → Studio/--akis yerel)
-(yayin-paketi-shorts-1.json gerçek paketle bayt bayt aynı)
-$ yukle.py <kopya>/yayin-paketi-shorts-1.json --dry-run
+Not: onay.niyazi_onayi=false → gerçek yükleme reddedilir.
+exit 0
+$ python3 tools/yayin/yukle.py uretim/2026-10-26-1929-1000-dolar/09-paket/yayin-paketi-shorts-1.json --dry-run
   [OK]    şema geçerli
   [OK]    başlık 42/100 karakter
   [OK]    açıklama (bölümler dahil) 782/5000 bayt
   [OK]    etiketler 7 adet, 104/500 karakter (YouTube sayımı)
-  [OK]    video var: ../../..<kopya>/08-kurgu/shorts-1.mp4 (0.0 MB)
-  [OK]    video 180x320, 57.0 sn, h264
-  [OK]    yayin_zamani gelecekte: 2026-11-02T14:00:00Z (+137.9 sa)
-  Sonuç: 0 hata, 0 uyarı, 7 geçen kontrol
+  [OK]    video var: uretim/2026-10-26-1929-1000-dolar/08-kurgu/shorts-1.mp4 (12.4 MB)
+  [OK]    video 1080x1920, 49.6 sn, h264
+  [OK]    yayin_zamani gelecekte: 2026-11-02T14:00:00Z (+136.9 sa)
+    "selfDeclaredMadeForKids": false,
     "containsSyntheticMedia": true,
     "publishAt": "2026-11-02T14:00:00Z"
 Plan: videos.insert (resumable)
-(yayin-paketi-shorts-2.json gerçek paketle bayt bayt aynı)
-$ yukle.py <kopya>/yayin-paketi-shorts-2.json --dry-run
+Not: onay.niyazi_onayi=false → gerçek yükleme reddedilir.
+exit 0
+$ python3 tools/yayin/yukle.py uretim/2026-10-26-1929-1000-dolar/09-paket/yayin-paketi-shorts-2.json --dry-run
   [OK]    şema geçerli
   [OK]    başlık 47/100 karakter
   [OK]    açıklama (bölümler dahil) 771/5000 bayt
   [OK]    etiketler 7 adet, 116/500 karakter (YouTube sayımı)
-  [OK]    video var: ../../..<kopya>/08-kurgu/shorts-2.mp4 (0.0 MB)
-  [OK]    video 180x320, 59.0 sn, h264
-  [OK]    yayin_zamani gelecekte: 2026-11-03T14:00:00Z (+161.9 sa)
-  Sonuç: 0 hata, 0 uyarı, 7 geçen kontrol
+  [OK]    video var: uretim/2026-10-26-1929-1000-dolar/08-kurgu/shorts-2.mp4 (14.9 MB)
+  [OK]    video 1080x1920, 56.0 sn, h264
+  [OK]    yayin_zamani gelecekte: 2026-11-03T14:00:00Z (+160.9 sa)
+    "selfDeclaredMadeForKids": false,
     "containsSyntheticMedia": true,
     "publishAt": "2026-11-03T14:00:00Z"
 Plan: videos.insert (resumable)
+Not: onay.niyazi_onayi=false → gerçek yükleme reddedilir.
+exit 0
