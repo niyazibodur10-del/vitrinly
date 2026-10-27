@@ -23,6 +23,7 @@ Hedef kitle: finansa ilgili gençler + genel izleyici. Video dili: **İngilizce*
 - Oturum içinde yeni yazılan ajanlar alt ajan türü olarak görünmez: koordinatör onları genel amaçlı ajana ajan dosyasını okutarak çalıştırır.
 
 ## Akış (her video) — `/bugunun-videosu` başlatır
+**Sessiz üretim kuralı (Niyazi kararı 2026-10-27):** "Bugünün videosu gelsin" dendikten sonra koordinatör Niyazi'ye ara mesaj, durum raporu veya soru GÖNDERMEZ; iş arka planda sonuna kadar yürür. Tek istisna: Niyazi'nin bizzat vermesi gereken erişim izni (yetki/onay istemi). Niyazi'ye yalnız F10'da bitmiş teslim tek sayfa olarak verilir. Ara adımlar `durum.md`'de ve commit'lerde kalır; tur sonları en kısa tutulur.
 **Tetik cümlesi kuralı:** Niyazi "Bugünün videosu gelsin" (veya "bugünün videosunu yap", "yeni video gelsin" gibi aynı anlamda bir şey) dediğinde koordinatör başka soru sormadan `.claude/commands/bugunun-videosu.md` akışını başlatır. Tam akış, teslim dosyaları, kalite kapıları ve RED döngüsü o dosyadadır.
 Hedef tempo: **haftada 2 uzun video + 4 Shorts** (Niyazi kararı 2026-10-26; önceki plan 3+6; kalite kapısı ve "inauthentic/seri üretim" riski nedeniyle tempo kalitenin arkasında; `docs/yayin-takvimi.md`). Kapasite ve dış bağımlılıklar: `docs/uretim-kapasitesi.md`.
 Alt ajanları yalnız koordinatör çağırır (alt ajan alt ajan çağıramaz). Paralel adımlar tek mesajda birlikte çağrılır. Durum `uretim/<tarih>-<slug>/durum.md`'de tutulur; oturum koparsa ilk geçmemiş adımdan devam edilir.

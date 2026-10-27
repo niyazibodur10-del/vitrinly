@@ -168,3 +168,6 @@ F9  hakem → F10 Niyazi'ye teslim → DUR → F11 yalnız onayla: tools/yayin/y
 F12 yayın sonrası 48 sa / 7 g / 28 g: kanal-analisti → viralite-analisti (+ youtube-paketleyici öneri) → dersler sonraki videoya
 Her aşamada araç sorunu → uretim-muhendisi. 2 RED sonrası → koordinatör eskalasyonu; tekrarlayan sorun → ik-direktoru.
 ```
+
+## Sessiz üretim (Niyazi kararı 2026-10-27)
+Tetikten sonra Niyazi'ye ara mesaj, rapor veya soru yok; yalnız zorunlu erişim izni istenir. İş arka planda F10'a kadar sürer, Niyazi'ye yalnız bitmiş teslim verilir.
