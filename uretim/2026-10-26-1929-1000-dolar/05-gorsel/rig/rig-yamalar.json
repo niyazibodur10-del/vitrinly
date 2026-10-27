@@ -120,5 +120,20 @@
    "geri_kurma_degisen_px_ort_abs": 2.73,
    "kabul_hiza": true
   }
+ },
+ "rhubarb_eslesme": {
+  "A": "taban a (paket-v1, kesik leo/a-konusma-kapali.png)",
+  "X": "taban a",
+  "B": "agiz-B-C07",
+  "C": "agiz-C-C08",
+  "H": "agiz-C-C08",
+  "D": "paket-v1 b (b-konusma-acik)",
+  "E": "agiz-E-C09",
+  "F": "agiz-F-C10",
+  "G": "agiz-B-C07 (C11 ve C11b RED: diş/dudak şekli okunmuyor)",
+  "goz_kirpma": "goz-kapali-C06"
+ },
+ "yedek": {
+  "agiz-notr-C11": "gülümsemesiz kapalı ağız (X/A alternatifi)"
  }
 }

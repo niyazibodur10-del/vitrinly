@@ -14,18 +14,18 @@
 | C18 | MAHZMcBq1IA | 1 | 2026-10-27 10:00 | canva-ham/C18.png (sayfa 20) — aynı stil notu; kuyrukta insanlar ön plana yakın mı kontrol | **KABUL** (stil notu; ön plan boş, yüzler stilize) |
 | C19 | MAHZMW-dF0U | 1 | 2026-10-27 10:00 | canva-ham/C19.png (sayfa 21) | **KABUL** (stil notu; Sh2 kırpımı x 1200–1807) |
 
-## Dalga 3 (koordinatör, 2026-10-27) — değerlendirme bekliyor
-| Görsel | Media ID | Not |
-|---|---|---|
-| C03 | MAHZMp2sz2k | ref C01 |
-| C04 | MAHZMqkRJiU | ref C02 + sheet |
-| C11b | MAHZMoaZcZQ | C11 tekrarı, değerlendiricinin diş prompt'u |
-| C05 | MAHZMgBwQoo | ref C04 + sheet |
-| C12 | MAHZMoyEe7E | |
-| C13 | MAHZMrenVrY | |
-| C14 | MAHZMtnkERI | |
-| C15 | MAHZMq8FB-s | stil ref C01 (çizgi film stil kilidi, painterly önlemi) |
-| C20 | MAHZMjxzZXc | seçmeli |
-| C21 | MAHZMh_COeU | seçmeli |
-| C22 | MAHZMuFI2-4 | 9:16, 1080x1920 |
+## Dalga 3 (koordinatör, 2026-10-27) — değerlendirildi (rapor.md dalga 3)
+| Görsel | Media ID | Not | karar (gorsel-varlik-sanatcisi) |
+|---|---|---|---|
+| C03 | MAHZMp2sz2k | ref C01 | **KABUL** — C01 ile aynı stüdyo; ekran/kürsü boş; kapilar/C03-ekran-kursu.json |
+| C04 | MAHZMqkRJiU | ref C02 + sheet | **KABUL** — C02 tabanına kor. 0.84, ΔE 2.9/1.6/1.3; kadraj soluna yürür (aynalama yasak); leo/C04-yurume.png |
+| C11b | MAHZMoaZcZQ | C11 tekrarı, değerlendiricinin diş prompt'u | **RED** — hiza geçti (%0.33, kor. 0.86) ama dişler/alt dudak okunmuyor; G = B (C07), yeni üretim önerilmez |
+| C05 | MAHZMgBwQoo | ref C04 + sheet | **KABUL (ten eşlemeli)** — ham kor. 0.67/ten ΔE 6.5 → ten-esle.py sonrası 0.85/2.9; leo/C05-kutuyla-yurume.png |
+| C12 | MAHZMoyEe7E | | **KABUL** — kor. 0.84, ΔE 2.4/0.0/1.1; leo/C12-sunum.png |
+| C13 | MAHZMrenVrY | | **KABUL** — kor. 0.91; saat sol bilekte üstte; leo/C13-kollar-kavusmus.png |
+| C14 | MAHZMtnkERI | | **KABUL** — kor. 0.94; kutu yazısız; leo/C14-kutu-gogus.png |
+| C15 | MAHZMq8FB-s | stil ref C01 (çizgi film stil kilidi, painterly önlemi) | **KABUL** — dönem ailesiyle aynı boyamsı stil (C01 stil ref'i çizgi film yapmadı); renk eşlemeli plaka/C15-sepya.png; yazı yok |
+| C20 | MAHZMjxzZXc | seçmeli | **KABUL** — kor. 0.86; sol bilek saati okunur; leo/C20-saate-bakar.png |
+| C21 | MAHZMh_COeU | seçmeli | **KABUL** — kor. 0.91; sağ el sallar, saat sol bilekte; leo/C21-el-sallar.png |
+| C22 | MAHZMuFI2-4 | 9:16, 1080x1920 | **KABUL** — 1080x1920; levhalar boş; üst %15 / alt %35 sade |
 Canva üretim toplamı: 23 (tavan 27). Tuval sayfaları 22–32.

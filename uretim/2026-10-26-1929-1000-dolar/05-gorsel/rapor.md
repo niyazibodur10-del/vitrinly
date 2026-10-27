@@ -114,3 +114,28 @@ C01, C16–C19 bu videoya özgü yeni üretim; önceki videodan yeniden kullanı
 - `leo/C02-tam-boy.png` (C04/C05 gelene kadar S04 klonları duruş pozu)
 - `rig/goz-kapali-C06.png`, `rig/agiz-{B-C07,C-C08,E-C09,F-C10}.png`, `rig/agiz-notr-C11.png` + `rig/rig-yamalar.json` (konumlar). Rhubarb: A,X = a (taban) · B = C07 · C,H = C08 · D = paket-v1 b · E = C09 · F = C10 · G = geçici C07 (C11 tekrarına kadar).
 - `kapilar/C01-kapi-koordinatlari.json` (levha iç alanları KOD yazı için).
+
+## Dalga 3 (2026-10-27) — C03, C04, C05, C11b, C12–C15, C20–C22
+Kontakt: `kontakt-dalga3.jpg`. Ölçüm: `tutarlilik-dalga3-taban-a.json` (bel üstü pozlar), `tutarlilik-dalga3-taban-C02.json` (tam boy, aynı ölçek), `rig-C11b-olcum.txt`, `cozunurluk.txt` (hepsi 1920x1080, C22 1080x1920). Kesikler `araclar/kes-m4.py` (M4 v2), her biri `leo/<ad>-kesme.json`.
+
+| Id | Karar | Ölçüm / not |
+|---|---|---|
+| C03 stüdyo orta | **KABUL** | C01 ile aynı stüdyo (palet, kapılar, zemin); ekran ve kürsü önü boş, yazı yok. KOD kutuları `kapilar/C03-ekran-kursu.json`: ekran içi 829,189–1760,633 · kürsü ön paneli 340,621–606,838 · kürsü üst kenarı y≈530. Ekranın sağ kenarı merkez %80'i 32 px aşıyor → sağa pan yok |
+| C04 tam boy yürüme | **KABUL** | C02'ye göre kafa kor. 0,84, ΔE ten/saç/gömlek 2,9/1,6/1,3; 9/9; kesme artığı 0,0019, saçak 0. **Kadrajın soluna yürüyor** (prompt sağ dedi): S04 klonları sağdan kapılara yürür; **aynalama yasak** (saat sağ bileğe geçer) |
+| C05 kutuyla yürüme | **KABUL (ten eşlemeli)** | Ham: kor. 0,67, ten ΔE 6,5 (kutu yansıması ile ten sıcak/koyu). Adaylar: (1) yeniden üretim (1 hak, sonuç belirsiz) (2) **ten Lab eşleme** `araclar/ten-esle.py` (yüz tenini C04'e eşler, kutu dikdörtgeni hariç) → kor. **0,85**, ten ΔE **2,9**. Seçilen 2; kesme artığı 0,0031, saçak 0. Kutu yazısız ✓, saat görünür ✓ |
+| C11b ağız G (tekrar) | **RED** | Hiza geçti (bölge dışı %0,33, kor. 0,86) ama 4× yakın planda dudaklar arasında yalnız ince beyaz şerit var; alt dudak üst dişin altına girmemiş → 'f/v' okunmuyor, zayıf bir B gibi. **Karar: G = B (`agiz-B-C07`), kalıcı.** İki deneme başarısız oldu, kalan hak 4; yeni üretim önermiyorum (F/V kareleri 2–4 kare sürer, B görsel olarak en yakın şekil) |
+| C12 sunum | **KABUL** | kor. 0,84 (sınırda), ΔE 2,4/0,0/1,1; saat sol bilekte; kesme artığı 0 |
+| C13 kollar kavuşturmuş | **KABUL** | kor. 0,91; saat sol bilekte, üstteki kolda görünür; artık 0,0001 |
+| C14 kutu göğüste | **KABUL** | kor. 0,94; kutu düz karton, yazısız; artık 0,0003 |
+| C15 sepya sokak | **KABUL** | C01 stil referansı çizgi film görünümü getirmedi: C16–C19 ile aynı boyamsı aile (doku 3,1, kontur 1,6) → **dönem plakaları kendi aralarında tek stil**. Renk birliği için `araclar/sepya-esle.py` ile C16–C19 ortalamasına Lab eşleme → `plaka/C15-sepya.png` (doygunluk 57→34; aile 36–63) — kullanılacak dosya bu. Yazı/tabela yok, tenteler boş, tanınır gerçek bina yok; sağ kaldırım boş. "Illustration" etiketi S01 ve S18'de |
+| C20 saate bakar | **KABUL** | kor. 0,86; sol bilekteki saat okunur, bakış aşağıda |
+| C21 el sallar | **KABUL** | kor. 0,91 (kafa ölçeği %11,9 "kadraj kaydı" = kalkan el kafa kutusuna giriyor; yüz yerinde); kol–kafa arası zemin cebi (4,2k px, d_med 1,8) doğru olarak zemin kaldı |
+| C22 dikey stüdyo | **KABUL** | 1080x1920; üç kapı ve levhalar boş; üst %15 (tavan ışıkları) ve alt %35 (boş zemin) sade; C01 ile aynı stil (düzlük %73) |
+
+**Canva kullanımı (bu video):** 23 üretim (dalga 1: 5, dalga 2: 7, dalga 3: 11) · kabul 21 · red 2 (C11, C11b) · kalan tavan 4. Ek üretim gerekmiyor.
+
+**Rhubarb eşlemesi (son):** A, X = taban a · B = C07 · C, H = C08 · D = paket-v1 b · E = C09 · F = C10 · **G = C07** · göz kırpma = C06 (`rig/rig-yamalar.json` → `rhubarb_eslesme`).
+
+**animasyon-yonetmeni'ne teslim (dalga 3):** `leo/C04-yurume.png`, `leo/C05-kutuyla-yurume.png`, `leo/C12-sunum.png`, `leo/C13-kollar-kavusmus.png`, `leo/C14-kutu-gogus.png`, `leo/C20-saate-bakar.png`, `leo/C21-el-sallar.png` (RGBA 1920x1080, bel üstü pozlar paket-v1 a ile aynı kadrajda → rig ağız/göz yamaları bu pozlara da aynı konumda bindirilebilir, kafa merkez kayması ≤%0,6) · plakalar `canva-ham/C03.png`, `plaka/C15-sepya.png`, `canva-ham/C22.png` · `kapilar/C03-ekran-kursu.json`.
+
+**Yeniden üretilecek prompt:** yok. (İstenirse G için tek deneme, aday B: referans [MAHZMeBO7dI, MAHZHpeQGdM], kart düzenleme kalıbı + `ONLY CHANGE: the lower lip is pulled up and tucked under the upper front teeth, the upper teeth bite gently onto the lower lip and are clearly visible, the lower teeth are hidden; NOT smiling.` — önerilmez.)

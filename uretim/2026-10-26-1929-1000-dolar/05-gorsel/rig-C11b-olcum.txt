@@ -1,0 +1,1 @@
+agiz-G-C11b {"kaynak": "canva-ham/C11b.png", "bolge": "agiz", "konum_xy": [818, 266], "boyut_wh": [234, 187], "ham_fark_tum_%": 0.601, "bolge_disi_ham_%": 0.326, "bolge_disi_acilmis_%": 0.244, "dikis_halka_fark_%": 2.21, "geri_kurma_kutu_ort_abs": 2.24, "geri_kurma_degisen_px_ort_abs": 0.86, "kabul_hiza": true}
