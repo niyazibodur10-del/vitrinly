@@ -1,0 +1,3 @@
+# Aday müzik dosyaları büyük (≈45 MB) → git dışı. Kaynak URL + sha256 lisans-kaydi.md ve kaynak/muzik-sha256.txt içinde;
+# yeniden indirilebilir. F6 kazananları assets/muzik/ altına (≤5 MB/parça) kopyalanıp commit edilir.
+kaynak/muzik/
