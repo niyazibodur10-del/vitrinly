@@ -250,7 +250,7 @@ def kontrast(zemin, kut):
     L = 0.2126 * zl[..., 0] + 0.7152 * zl[..., 1] + 0.0722 * zl[..., 2]
     out = []
     for k in kut:
-        x0, y0, x1, y1 = k["bbox"]; x0 = max(0, x0 - 24); y0 = max(0, y0 - 24); x1 = min(W, x1 + 24); y1 = min(H, y1 + 24)
+        x0, y0, x1, y1 = [int(v) for v in k["bbox"]]; x0 = max(0, x0 - 24); y0 = max(0, y0 - 24); x1 = min(W, x1 + 24); y1 = min(H, y1 + 24)
         bl = L[y0:y1, x0:x1].ravel(); lt = lum(k["renk"])
         r = (np.maximum(bl, lt) + 0.05) / (np.minimum(bl, lt) + 0.05)
         out.append({"metin": k["metin"], "zemin_p5": round(float(np.percentile(r, 5)), 2), "zemin_medyan": round(float(np.median(r)), 2),

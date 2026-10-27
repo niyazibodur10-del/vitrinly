@@ -1,0 +1,270 @@
+{
+ "A1": {
+  "id": "A1",
+  "metin": "PICK A DOOR",
+  "kelime": 3,
+  "dosya": "adaylar/A1.jpg",
+  "boyut": [
+   1280,
+   720
+  ],
+  "bayt": 131456,
+  "jpeg_q": 92,
+  "kontrast": [
+   {
+    "metin": "PICK A ",
+    "zemin_p5": 5.7,
+    "zemin_medyan": 15.7,
+    "dolgu_kontur": 18.81,
+    "mobil_buyuk_harf_px": 16.9
+   },
+   {
+    "metin": "DOOR",
+    "zemin_p5": 3.62,
+    "zemin_medyan": 10.31,
+    "dolgu_kontur": 13.03,
+    "mobil_buyuk_harf_px": 16.9
+   }
+  ],
+  "sure_damgasi_ihlal_px": 0,
+  "sha256": "c54cafcc26101d49"
+ },
+ "A2": {
+  "id": "A2",
+  "metin": "ONE IS A DISASTER",
+  "kelime": 4,
+  "dosya": "adaylar/A2.jpg",
+  "boyut": [
+   1280,
+   720
+  ],
+  "bayt": 137226,
+  "jpeg_q": 92,
+  "kontrast": [
+   {
+    "metin": "ONE IS A ",
+    "zemin_p5": 5.81,
+    "zemin_medyan": 15.85,
+    "dolgu_kontur": 18.81,
+    "mobil_buyuk_harf_px": 16.8
+   },
+   {
+    "metin": "DISASTER",
+    "zemin_p5": 5.25,
+    "zemin_medyan": 12.37,
+    "dolgu_kontur": 13.03,
+    "mobil_buyuk_harf_px": 16.8
+   }
+  ],
+  "sure_damgasi_ihlal_px": 0,
+  "sha256": "981a393a49da0d77"
+ },
+ "B1": {
+  "id": "B1",
+  "metin": "THE SURPRISE DOOR + 1929",
+  "kelime": 4,
+  "dosya": "adaylar/B1.jpg",
+  "boyut": [
+   1280,
+   720
+  ],
+  "bayt": 111565,
+  "jpeg_q": 92,
+  "kontrast": [
+   {
+    "metin": "1929",
+    "zemin_p5": 1.7,
+    "zemin_medyan": 3.78,
+    "dolgu_kontur": null,
+    "mobil_buyuk_harf_px": 9.4
+   },
+   {
+    "metin": "THE",
+    "zemin_p5": 15.55,
+    "zemin_medyan": 20.21,
+    "dolgu_kontur": 18.81,
+    "mobil_buyuk_harf_px": 16.3
+   },
+   {
+    "metin": "SURPRISE",
+    "zemin_p5": 12.11,
+    "zemin_medyan": 13.34,
+    "dolgu_kontur": 13.03,
+    "mobil_buyuk_harf_px": 16.3
+   },
+   {
+    "metin": "DOOR",
+    "zemin_p5": 18.28,
+    "zemin_medyan": 19.67,
+    "dolgu_kontur": 18.81,
+    "mobil_buyuk_harf_px": 16.3
+   }
+  ],
+  "sure_damgasi_ihlal_px": 0,
+  "sha256": "f66472f6d7920994"
+ },
+ "B2": {
+  "id": "B2",
+  "metin": "EVERYONE LAUGHED + 1929",
+  "kelime": 3,
+  "dosya": "adaylar/B2.jpg",
+  "boyut": [
+   1280,
+   720
+  ],
+  "bayt": 109653,
+  "jpeg_q": 92,
+  "kontrast": [
+   {
+    "metin": "1929",
+    "zemin_p5": 1.7,
+    "zemin_medyan": 3.78,
+    "dolgu_kontur": null,
+    "mobil_buyuk_harf_px": 9.4
+   },
+   {
+    "metin": "EVERYONE",
+    "zemin_p5": 16.56,
+    "zemin_medyan": 19.73,
+    "dolgu_kontur": 18.81,
+    "mobil_buyuk_harf_px": 15.5
+   },
+   {
+    "metin": "LAUGHED",
+    "zemin_p5": 12.41,
+    "zemin_medyan": 13.21,
+    "dolgu_kontur": 13.03,
+    "mobil_buyuk_harf_px": 15.5
+   }
+  ],
+  "sure_damgasi_ihlal_px": 0,
+  "sha256": "12df6cdd6d29dc41"
+ },
+ "C1": {
+  "id": "C1",
+  "metin": "STOCKS −89%",
+  "kelime": 2,
+  "dosya": "adaylar/C1.jpg",
+  "boyut": [
+   1280,
+   720
+  ],
+  "bayt": 114200,
+  "jpeg_q": 92,
+  "kontrast": [
+   {
+    "metin": "STOCKS ",
+    "zemin_p5": 17.08,
+    "zemin_medyan": 18.92,
+    "dolgu_kontur": 18.81,
+    "mobil_buyuk_harf_px": 15.1
+   },
+   {
+    "metin": "−89%",
+    "zemin_p5": 12.87,
+    "zemin_medyan": 13.99,
+    "dolgu_kontur": 13.03,
+    "mobil_buyuk_harf_px": 15.1
+   }
+  ],
+  "sure_damgasi_ihlal_px": 0.0,
+  "sha256": "8072032ac2a09733"
+ },
+ "C2": {
+  "id": "C2",
+  "metin": "THE −89% DOOR",
+  "kelime": 3,
+  "dosya": "adaylar/C2.jpg",
+  "boyut": [
+   1280,
+   720
+  ],
+  "bayt": 111004,
+  "jpeg_q": 92,
+  "kontrast": [
+   {
+    "metin": "THE ",
+    "zemin_p5": 16.81,
+    "zemin_medyan": 19.0,
+    "dolgu_kontur": 18.81,
+    "mobil_buyuk_harf_px": 13.3
+   },
+   {
+    "metin": "−89%",
+    "zemin_p5": 12.17,
+    "zemin_medyan": 13.57,
+    "dolgu_kontur": 13.03,
+    "mobil_buyuk_harf_px": 13.3
+   },
+   {
+    "metin": " DOOR",
+    "zemin_p5": 18.48,
+    "zemin_medyan": 20.32,
+    "dolgu_kontur": 18.81,
+    "mobil_buyuk_harf_px": 13.3
+   }
+  ],
+  "sure_damgasi_ihlal_px": 0.0,
+  "sha256": "09336fec13d3518c"
+ },
+ "D1": {
+  "id": "D1",
+  "metin": "EVERY BANK CLOSED",
+  "kelime": 3,
+  "dosya": "adaylar/D1.jpg",
+  "boyut": [
+   1280,
+   720
+  ],
+  "bayt": 121911,
+  "jpeg_q": 92,
+  "kontrast": [
+   {
+    "metin": "EVERY BANK",
+    "zemin_p5": 6.29,
+    "zemin_medyan": 16.86,
+    "dolgu_kontur": 18.81,
+    "mobil_buyuk_harf_px": 14.2
+   },
+   {
+    "metin": "CLOSED",
+    "zemin_p5": 5.29,
+    "zemin_medyan": 7.91,
+    "dolgu_kontur": 13.03,
+    "mobil_buyuk_harf_px": 14.2
+   }
+  ],
+  "sure_damgasi_ihlal_px": 0,
+  "sha256": "ab5252ded3597bfb"
+ },
+ "D2": {
+  "id": "D2",
+  "metin": "MARCH 1933",
+  "kelime": 2,
+  "dosya": "adaylar/D2.jpg",
+  "boyut": [
+   1280,
+   720
+  ],
+  "bayt": 117369,
+  "jpeg_q": 92,
+  "kontrast": [
+   {
+    "metin": "MARCH",
+    "zemin_p5": 6.39,
+    "zemin_medyan": 15.11,
+    "dolgu_kontur": 18.81,
+    "mobil_buyuk_harf_px": 19.2
+   },
+   {
+    "metin": "1933",
+    "zemin_p5": 1.1,
+    "zemin_medyan": 7.76,
+    "dolgu_kontur": 13.03,
+    "mobil_buyuk_harf_px": 19.2
+   }
+  ],
+  "sure_damgasi_ihlal_px": 0,
+  "sha256": "6f171a73fd10aa34"
+ }
+}
