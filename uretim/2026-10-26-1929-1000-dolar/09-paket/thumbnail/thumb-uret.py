@@ -95,7 +95,9 @@ def plaka(yol, olcek, ox, oy, blur=0, parlak=1.0):
 def metin(lay, kutular, x, y, parcalar, px, kontur=None, golge=True, hiza="sol"):
     """parcalar: [(yazı, renk), ...] tek satır. Döner: satır bbox. kutular'a her parça eklenir."""
     f = font(px); kon = kontur if kontur is not None else max(6, px // 11)
-    gen = sum(f.getlength(t) for t, _ in parcalar) + f.getlength(" ") * 0
+    BOS = 0.32 * px
+    def L(t): return f.getlength(t.replace(" ", "")) + t.count(" ") * BOS
+    gen = sum(L(t) for t, _ in parcalar)
     if hiza == "orta": x = int(x - gen / 2)
     if hiza == "sag": x = int(x - gen)
     d = ImageDraw.Draw(lay)
@@ -103,18 +105,26 @@ def metin(lay, kutular, x, y, parcalar, px, kontur=None, golge=True, hiza="sol")
     for t, renk in parcalar:
         if golge:
             sh = Image.new("RGBA", lay.size, (0, 0, 0, 0))
-            ImageDraw.Draw(sh).text((cx + 6, y + 8), t, font=f, fill=(0, 0, 0, 170), stroke_width=kon, stroke_fill=(0, 0, 0, 170))
+            wx = cx
+            for w in t.split(" "):
+                if w: ImageDraw.Draw(sh).text((wx + 6, y + 8), w, font=f, fill=(0, 0, 0, 170), stroke_width=kon, stroke_fill=(0, 0, 0, 170)); wx += f.getlength(w)
+                wx += BOS
             lay.alpha_composite(sh.filter(ImageFilter.GaussianBlur(6)))
         d = ImageDraw.Draw(lay)
-        d.text((cx, y), t, font=f, fill=renk + (255,), stroke_width=kon, stroke_fill=LAC + (255,))
-        b = d.textbbox((cx, y), t, font=f)
-        kutular.append({"metin": t, "renk": renk, "bbox": [b[0], b[1], b[2], b[3]], "px": px, "kontur": kon})
-        cx += f.getlength(t)
+        wx = cx
+        for i, w in enumerate(t.split(" ")):
+            if w:
+                d.text((wx, y), w, font=f, fill=renk + (255,), stroke_width=kon, stroke_fill=LAC + (255,))
+                b = d.textbbox((wx, y), w, font=f)
+                kutular.append({"metin": w, "renk": renk, "bbox": [b[0], b[1], b[2], b[3]], "px": px, "kontur": kon})
+                wx += f.getlength(w)
+            if i < len(t.split(" ")) - 1: wx += BOS
+        cx += L(t)
     return (x, y, cx, y + px)
 
 def sigdir(satir, gen, maks):
     px = maks
-    while px > 20 and font(px).getlength(satir) > gen: px -= 2
+    while px > 20 and font(px).getlength(satir.replace(" ", "")) + satir.count(" ") * 0.32 * px > gen: px -= 2
     return px
 
 # ---------- grafik (C): Dow çapaları 03-metin/veri/dow-capalari-FRH.csv ----------
@@ -124,6 +134,9 @@ def dow_cizgi(lay, x0, x1, y0, y1, kalin=16):
     t0, t1 = DOW[0][0], DOW[-1][0]
     pts = [(x0 + (t - t0) / (t1 - t0) * (x1 - x0), y1 - v / 400 * (y1 - y0)) for t, v in DOW]
     gl = Image.new("RGBA", lay.size, (0, 0, 0, 0)); dg = ImageDraw.Draw(gl)
+    dolgu = Image.new("RGBA", lay.size, (0, 0, 0, 0))
+    ImageDraw.Draw(dolgu).polygon(pts + [(pts[-1][0], y1), (pts[0][0], y1)], fill=(40, 120, 255, 70))
+    lay.alpha_composite(dolgu)
     dg.line(pts, fill=(80, 170, 255, 200), width=kalin * 3, joint="curve")
     lay.alpha_composite(gl.filter(ImageFilter.GaussianBlur(14)))
     d = ImageDraw.Draw(lay)
@@ -133,6 +146,16 @@ def dow_cizgi(lay, x0, x1, y0, y1, kalin=16):
         x, y = pts[i]; r = kalin * 0.9
         d.ellipse((x - r, y - r, x + r, y + r), fill=BEYAZ + (255,), outline=LAC + (255,), width=5)
     return pts
+
+def zincir(lay, a, b, r=22):
+    d = ImageDraw.Draw(lay); n = int(math.dist(a, b) / (r * 1.25)); ang = math.atan2(b[1] - a[1], b[0] - a[0])
+    for i in range(n + 1):
+        x = a[0] + (b[0] - a[0]) * i / n; y = a[1] + (b[1] - a[1]) * i / n
+        e = Image.new("RGBA", (r * 4, r * 4), (0, 0, 0, 0)); de = ImageDraw.Draw(e)
+        if i % 2: de.ellipse((r, int(r * 1.6), r * 3, int(r * 2.4)), outline=LAC + (255,), width=12); de.ellipse((r, int(r * 1.6), r * 3, int(r * 2.4)), outline=(185, 190, 200, 255), width=6)
+        else: de.ellipse((r, r, r * 3, r * 3), outline=LAC + (255,), width=13); de.ellipse((r, r, r * 3, r * 3), outline=(205, 210, 220, 255), width=7)
+        e = e.rotate(-math.degrees(ang), resample=Image.BICUBIC)
+        lay.alpha_composite(e, (int(x - r * 2), int(y - r * 2)))
 
 def kilit(lay, cx, cy, s):
     d = ImageDraw.Draw(lay)
@@ -149,24 +172,27 @@ def leo_saskin_kutulu():
     return kafa_degis(yukle("leo/C14-kutu-gogus.png"), yukle("leo/d-saskin.png"))
 
 def varyant_A(metin_id):
-    bg = plaka("canva-ham/C01.png", 0.80, 330, 95, parlak=0.95)
+    S, OX, OY = 0.72, 197, 60          # C01 ölçek/kırpım: kapılar sol 2/3'te
+    bg = plaka("canva-ham/C01.png", S, OX, OY, parlak=0.95)
+    gr = np.zeros((H, W), np.uint8); gr[:170] = (np.linspace(150, 0, 170)[:, None]).astype(np.uint8)   # üst bant karartma (metin zemini)
+    ust = Image.new("RGBA", (W, H), LAC + (0,)); ust.putalpha(Image.fromarray(gr)); bg.alpha_composite(ust)
     lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); kut = []
-    # kapı üstü dev "?" (konsept A: ikon yerine büyük soru işareti); kapılar C01 json → 0.80 ölçek, -330/-95
+    # kapı üstü dev "?" (konsept A: ikon yerine büyük soru işareti); kapılar C01 json
     kj = json.load(open(os.path.join(G, "kapilar/C01-kapi-koordinatlari.json")))["kapilar"]
     for ad in ("mavi", "yesil", "kahve"):
         x, y, w, h = kj[ad]["panel_bbox_xywh"]
-        cx = (x + w / 2) * 0.80 - 330; cy = (y + h / 2) * 0.80 - 95
-        if ad == "kahve":   # kahve kapıdan sızan sıcak ışık (sürpriz ipucu)
-            bg.alpha_composite(radyal(W, H, int(cx), int(cy), 260, (255, 190, 90), 0.55))
-        f = font(190); b = f.getbbox("?"); gw = b[2] - b[0]
-        ImageDraw.Draw(lay).text((cx - gw / 2 - b[0], cy - 120), "?", font=f, fill=BEYAZ + (255,), stroke_width=12, stroke_fill=LAC + (255,))
-    leo = yukle("leo/c-isaret.png")
-    yerlestir(bg, leo, 0.86, 1035 - int(990 * 0.86), 150, isik=(255, 200, 120))
+        cx = (x + w / 2) * S - OX; cy = (y + h / 2) * S - OY
+        if ad == "kahve":   # kahve kapıdan sızan sıcak ışık (sürpriz ipucu, cevabı vermez)
+            bg.alpha_composite(radyal(W, H, int(cx), int(cy), 230, (255, 190, 90), 0.5))
+        f = font(170); b = f.getbbox("?"); gw = b[2] - b[0]
+        ImageDraw.Draw(lay).text((cx - gw / 2 - b[0], cy - 105), "?", font=f, fill=BEYAZ + (255,), stroke_width=11, stroke_fill=LAC + (255,))
     bg.alpha_composite(lay); lay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    # Leo işaret pozu: parmak ucu (324,576) kesikte → kapılara (y≈435)
+    yerlestir(bg, yukle("leo/c-isaret.png"), 0.72, 367, 20, isik=(255, 200, 120))
     if metin_id == "A1":
-        px = sigdir("PICK A DOOR", 900, 150); metin(lay, kut, 40, 18, [("PICK A ", BEYAZ), ("DOOR", SARI)], px)
+        px = sigdir("PICK A DOOR", 880, 150); metin(lay, kut, 34, 14, [("PICK A ", BEYAZ), ("DOOR", SARI)], px)
     else:
-        px = sigdir("ONE IS A DISASTER", 1000, 150); metin(lay, kut, 40, 18, [("ONE IS A ", BEYAZ), ("DISASTER", SARI)], px)
+        px = sigdir("ONE IS A DISASTER", 880, 150); metin(lay, kut, 34, 14, [("ONE IS A ", BEYAZ), ("DISASTER", SARI)], px)
     return bg, lay, kut
 
 def varyant_B(metin_id):
@@ -192,16 +218,16 @@ def varyant_B(metin_id):
     gen = 500; px = min(sigdir(t, gen, 190) for t, _ in satirlar)
     y = 40 if len(satirlar) == 3 else 110
     for t, r in satirlar:
-        metin(lay, kut, 1235, y, [(t, r)], px, hiza="sag"); y += int(px * 1.02)
+        metin(lay, kut, 1235, y, [(t, r)], px, hiza="sag"); y += int(px * 1.08)
     return bg, lay, kut
 
 def varyant_C(metin_id):
     bg = plaka("canva-ham/C01.png", 0.9, 290, 120, blur=9, parlak=0.38)
     lay0 = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(lay0)
-    for gx in range(540, 1240, 70): d.line((gx, 215, gx, 600), fill=(90, 120, 200, 45), width=2)
-    for gy in range(215, 601, 64): d.line((540, gy, 1220, gy), fill=(90, 120, 200, 45), width=2)
-    dow_cizgi(lay0, 560, 1060, 215, 600, kalin=18)
+    for gx in range(520, 1100, 70): d.line((gx, 190, gx, 620), fill=(90, 120, 200, 45), width=2)
+    for gy in range(190, 621, 61): d.line((520, gy, 1080, gy), fill=(90, 120, 200, 45), width=2)
+    dow_cizgi(lay0, 540, 1060, 190, 620, kalin=20)
     bg.alpha_composite(lay0)
     leo = yukle("leo/d-saskin.png")
     yerlestir(bg, leo, 0.86, 260 - int(947 * 0.86), 120, isik=(255, 200, 120))
@@ -217,21 +243,31 @@ def varyant_D(metin_id):
     bg = plaka("canva-ham/C01.png", 1.35, 980, 280, parlak=0.85)
     kj = json.load(open(os.path.join(G, "kapilar/C01-kapi-koordinatlari.json")))["kapilar"]["yesil"]
     x, y, w, h = kj["panel_bbox_xywh"]; cx = (x + w / 2) * 1.35 - 980; cy = (y + h / 2) * 1.35 - 280
-    lay0 = Image.new("RGBA", (W, H), (0, 0, 0, 0)); kilit(lay0, int(cx), int(cy) + 10, 95); bg.alpha_composite(lay0)
+    lay0 = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    kjs = json.load(open(os.path.join(G, "kapilar/C01-kapi-koordinatlari.json")))["kapilar"]
+    for ad, ks, kcy in (("kahve", 85, 470), ("yesil", 110, 560)):      # S17: her kapıya zincir + asma kilit (metnin altında)
+        x, y, w, h = kjs[ad]["panel_bbox_xywh"]
+        x0d, y0d, x1d, y1d = x * 1.35 - 980, y * 1.35 - 280, (x + w) * 1.35 - 980, (y + h) * 1.35 - 280
+        yz = max(y0d + 40, 420)   # zincir metnin altından başlar (hafıza: grafik metnin arkasından geçmez)
+        zincir(lay0, (x0d - 10, yz), (x1d + 10, y1d - 60)); zincir(lay0, (x1d + 10, yz), (x0d - 10, y1d - 60))
+        kilit(lay0, int((x0d + x1d) / 2), kcy, ks)
+    bg.alpha_composite(lay0)
     leo = yukle("leo/d-saskin.png")
     yerlestir(bg, leo, 0.86, 1020 - int(947 * 0.86), 120, isik=(255, 200, 120))
     lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); kut = []
-    satirlar = [("EVERY BANK", BEYAZ), ("CLOSED", SARI)] if metin_id == "D1" else [("MARCH", BEYAZ), ("1933", SARI)]
-    px = min(sigdir(t, 560, 170) for t, _ in satirlar); yy = 30
-    for t, r in satirlar:
-        metin(lay, kut, 40, yy, [(t, r)], px); yy += int(px * 1.02)
+    satirlar = {"D1": [("EVERY DOOR", BEYAZ), ("LOCKED", SARI)], "D2": [("MARCH", BEYAZ), ("1933", SARI)],
+                "D3": [("EVERY BANK", BEYAZ), ("CLOSED", SARI)]}[metin_id]
+    yy = 26
+    for t, r in satirlar:      # satır başına sığdırma: vurgu satırı (sarı) daha büyük
+        px = sigdir(t, 560, 200 if r == SARI else 150)
+        metin(lay, kut, 40, yy, [(t, r)], px); yy += int(px * 1.05)
     return bg, lay, kut
 
 VARYANT = {"A1": varyant_A, "A2": varyant_A, "B1": varyant_B, "B2": varyant_B,
-           "C1": varyant_C, "C2": varyant_C, "D1": varyant_D, "D2": varyant_D}
+           "C1": varyant_C, "C2": varyant_C, "D1": varyant_D, "D2": varyant_D, "D3": varyant_D}
 METIN = {"A1": "PICK A DOOR", "A2": "ONE IS A DISASTER", "B1": "THE SURPRISE DOOR + 1929",
          "B2": "EVERYONE LAUGHED + 1929", "C1": "STOCKS −89%", "C2": "THE −89% DOOR",
-         "D1": "EVERY BANK CLOSED", "D2": "MARCH 1933"}
+         "D1": "EVERY DOOR LOCKED", "D2": "MARCH 1933", "D3": "EVERY BANK CLOSED"}
 
 # ---------- ölçüm ----------
 def lum(c):
@@ -253,6 +289,8 @@ def kontrast(zemin, kut):
         x0, y0, x1, y1 = [int(v) for v in k["bbox"]]; x0 = max(0, x0 - 24); y0 = max(0, y0 - 24); x1 = min(W, x1 + 24); y1 = min(H, y1 + 24)
         bl = L[y0:y1, x0:x1].ravel(); lt = lum(k["renk"])
         r = (np.maximum(bl, lt) + 0.05) / (np.minimum(bl, lt) + 0.05)
+        if k.get("damga"):
+            r = (np.maximum(bl, lt) + 0.05) / (np.minimum(bl, lt) + 0.05)
         out.append({"metin": k["metin"], "zemin_p5": round(float(np.percentile(r, 5)), 2), "zemin_medyan": round(float(np.median(r)), 2),
                     "dolgu_kontur": round(wcag(k["renk"], LAC), 2) if k.get("kontur") else None,
                     "mobil_buyuk_harf_px": round(cap_yuk(k["px"]) * 168 / W, 1) if not k.get("damga") else round(cap_yuk(k["px"]) * 168 / W, 1)})
