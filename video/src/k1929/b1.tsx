@@ -41,9 +41,9 @@ export const S01: React.FC = () => {
           </Kamera>
           <Leo id="S01" x={interpolate(t, [7.9, 8.4], [1640, 1700], { ...CL, easing: EOUT })} y={interpolate(t, [7.9, 8.4], [352, 420], { ...CL, easing: EOUT })} s={interpolate(t, [7.9, 8.4], [1.0, 0.86], { ...CL, easing: EOUT })} pozlar={[[0, "a"], [uc, "C12"], [8.2, "a"], [lets, "C12"]]} tohum={3} />
           <BinDolarHud an={a("one")} kose={uc - 0.2} />
-          <Yazi an={a("disaster")} son={lets - 0.3} x={560} y={110} boyut={92} renk={RENK.kirmizi} donme={-4}>DISASTER?</Yazi>
-          <Yazi an={a("gamble")} son={lets - 0.3} x={960} y={170} boyut={92} renk={RENK.sari} donme={3}>GAMBLE?</Yazi>
-          <Yazi an={a("surprise")} son={lets - 0.3} x={1300} y={100} boyut={92} renk={KAPI_RENK.yesil} donme={-2}>SURPRISE?</Yazi>
+          <Yazi an={a("disaster")} son={lets - 0.3} x={760} y={40} boyut={84} renk={RENK.kirmizi} donme={-4}>DISASTER?</Yazi>
+          <Yazi an={a("gamble")} son={lets - 0.3} x={1120} y={40} boyut={84} renk={RENK.sari} donme={3}>GAMBLE?</Yazi>
+          <Yazi an={a("surprise")} son={lets - 0.3} x={1500} y={40} boyut={84} renk={KAPI_RENK.yesil} donme={-2}>SURPRISE?</Yazi>
           <Flas an={ST} />
         </>
       )}
@@ -62,7 +62,7 @@ const BinDolarHud: React.FC<{ an: number; kose: number }> = ({ an, kose }) => {
       style={{
         position: "absolute",
         left: interpolate(k, [0, 1], [700, 60]),
-        top: interpolate(k, [0, 1], [330, 34]),
+        top: interpolate(k, [0, 1], [300, 18]),
         translate: `${interpolate(k, [0, 1], [-50, 0])}% 0%`,
         fontFamily: "Anton",
         fontSize: interpolate(k, [0, 1], [250, 92]),
@@ -71,7 +71,7 @@ const BinDolarHud: React.FC<{ an: number; kose: number }> = ({ an, kose }) => {
         paintOrder: "stroke fill",
         opacity: p,
         scale: String(0.6 + 0.4 * p),
-        lineHeight: 1,
+        lineHeight: 1.5,
         whiteSpace: "nowrap",
         display: "flex",
         alignItems: "baseline",
@@ -222,7 +222,7 @@ export const S04: React.FC = () => {
       </Kart>
       <HaHa an={kahkaha + 0.05} son={yakin - 0.2} />
       {t >= kapi1 ? (
-        <Yazi an={a("smartest")} x={960} y={110} boyut={84} renk={RENK.sari}>
+        <Yazi an={a("smartest")} x={960} y={30} boyut={84} renk={RENK.sari}>
           THE SMARTEST CHOICE?
         </Yazi>
       ) : null}

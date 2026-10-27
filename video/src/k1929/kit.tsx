@@ -64,7 +64,11 @@ export const Kamera: React.FC<{ kareler: KameraKare[]; children: React.ReactNode
   style,
 }) => {
   const t = useT();
-  const [, fx, fy, s] = kameraDurum(t, kareler);
+  const [, fx0, fy0, s] = kameraDurum(t, kareler);
+  // Kenar koruması: plaka ekranı tamamen kaplamıyorsa odak kaydırılır (siyah kenar görünmez)
+  const kis = (v: number, yarim: number, boy: number) => (boy * s >= yarim * 2 ? Math.min(Math.max(v, yarim / s), boy - yarim / s) : boy / 2);
+  const fx = kis(fx0, ekranW / 2, w);
+  const fy = kis(fy0, ekranH / 2, h);
   return (
     <div style={{ position: "absolute", width: w, height: h, transformOrigin: "0 0", translate: `${ekranW / 2 - fx * s}px ${ekranH / 2 - fy * s}px`, scale: String(s), ...style }}>
       {children}
@@ -402,7 +406,7 @@ export const CizgiGrafik: React.FC<{
       {yatayCizgi.map((c, i) => (
         <g key={i}>
           <line x1={pad.l} x2={w - pad.r} y1={Y(c.y)} y2={Y(c.y)} stroke={c.renk ?? "rgba(255,255,255,0.4)"} strokeWidth={2} strokeDasharray="8 8" />
-          <text x={w - pad.r} y={Y(c.y) - 10} textAnchor="end" fill={RENK.ikincil} style={{ fontFamily: fredoka, fontWeight: 700, fontSize: 22 }}>
+          <text x={pad.l + 8} y={Y(c.y) - 10} textAnchor="start" fill={RENK.ikincil} style={{ fontFamily: fredoka, fontWeight: 700, fontSize: 22 }}>
             {c.etiket}
           </text>
         </g>

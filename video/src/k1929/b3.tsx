@@ -57,7 +57,7 @@ export const S11: React.FC = () => {
   const salla = t > a("something") ? Math.sin((t - a("something")) * 14) * 5 * interpolate(t, [a("something"), a("something") + 0.3], [0, 1], CL) : 0;
   return (
     <SahneKok>
-      <Kamera kareler={[[kapi, KAHVE_X, 560, 1.75], [17.2, KAHVE_X, 540, 1.85]]}>
+      <Kamera kareler={[[kapi, KAHVE_X, 500, 1.7], [17.2, KAHVE_X, 490, 1.8]]}>
         <Plaka ad="C01" />
         <KapiIsik ad="kahve" an={kapi} yaziHazir />
       </Kamera>
@@ -65,8 +65,8 @@ export const S11: React.FC = () => {
       <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, rotate: `${salla}deg`, transformOrigin: "960px 1080px" }}>
         <Leo x={960} y={400} s={0.85} pozlar={[[0, "C14"]]} rozet={{ etiket: "BOX", renk: KAPI_RENK.kahve }} giris={{ an: a("box") - 0.2, dy: 600, sure: 0.4 }} />
       </div>
-      <Yazi an={kapi + 0.1} x={960} y={70} boyut={90} renk={KAPI_RENK.kahve}>DOOR 3</Yazi>
-      <Yazi an={a("laughed")} son={a("he") - 0.1} x={1480} y={300} boyut={48} font="fredoka">THE ONE EVERYBODY LAUGHED AT</Yazi>
+      <Yazi an={kapi + 0.1} x={1560} y={330} boyut={100} renk={KAPI_RENK.kahve}>DOOR 3</Yazi>
+      <Yazi an={a("laughed")} son={a("he") - 0.1} x={1520} y={470} boyut={44} font="fredoka">THE ONE EVERYBODY LAUGHED AT</Yazi>
       <Yazi an={a("something")} x={960} y={600} boyut={150} renk={RENK.sari} salla>?</Yazi>
     </SahneKok>
   );
@@ -100,7 +100,7 @@ export const S12: React.FC = () => {
   if (t < g3 || t >= son) {
     // vitrin C19: genel fiyat etiketleri (ürün fiyatı iddiası yok) tek tek küçülür
     const kucul = a("falling.");
-    const etiket: [number, number][] = [[1290, 330], [1500, 320], [1700, 330], [1300, 470], [1520, 480], [1720, 470], [1310, 610], [1560, 620], [1730, 610]];
+    const etiket: [number, number][] = [[620, 330], [900, 320], [1180, 330], [1460, 320], [700, 470], [1000, 480], [1300, 470], [1600, 480], [820, 610], [1120, 620], [1420, 610]];
     return (
       <SahneKok>
         <Kamera kareler={t < g3 ? [[vitrin, 1300, 520, 1.02], [g3, 1450, 470, 1.1]] : [[son, 1200, 520, 1.04], [33.5, 1150, 520, 1.08]]}>
@@ -109,7 +109,7 @@ export const S12: React.FC = () => {
             ? etiket.map(([x, y], i) => {
                 const k = interpolate(t, [kucul + i * 0.18, kucul + i * 0.18 + 0.5], [1, 0.55], { ...CL, easing: EOUT });
                 return (
-                  <div key={i} style={{ position: "absolute", left: x, top: y, width: 70, height: 46, scale: String(k), background: "#f6f0e2", border: "3px solid #3a2a12", borderRadius: 6, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Anton", fontSize: 30, color: "#3a2a12", rotate: `${(i % 3) * 4 - 4}deg` }}>
+                  <div key={i} style={{ position: "absolute", left: x, top: y, width: 84, height: 54, scale: String(k), background: "#f6f0e2", border: "3px solid #3a2a12", borderRadius: 6, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Anton", fontSize: 30, color: "#3a2a12", rotate: `${(i % 3) * 4 - 4}deg` }}>
                     $
                   </div>
                 );
@@ -151,7 +151,8 @@ export const S12: React.FC = () => {
               eksenX={[1930, 1931, 1932].map((v) => ({ x: v, etiket: String(v) }))}
             />
           </div>
-          <Yazi an={a("twenty-one")} x={760} y={150} boyut={120} renk={RENK.sari}>{`PRICES ${yuzde}%`}</Yazi>
+          <Yazi an={a("twenty-one")} x={760} y={150} boyut={120} renk={RENK.sari}>{`PRICES ${Math.round(yuzde)}%`}</Yazi>
+          <Yazi an={a("twenty-one") + 0.2} x={760} y={290} boyut={40} font="fredoka">SEPT 1929 → JULY 1932</Yazi>
         </Kart>
       ) : (
         <Kart an={tile} x={460} y={200} w={1000} h={520}>
@@ -205,10 +206,10 @@ export const S13: React.FC = () => {
   const kutu = interpolate(t, [a("pulled"), a("home.") + 0.4], [0, 1], CL);
   return (
     <SahneKok arka={ARKA_GRAFIK}>
-      <div style={{ position: "absolute", left: 120, top: 150, scale: "1.18", transformOrigin: "0 0" }}>
+      <div style={{ position: "absolute", left: 70, top: 170, scale: "1.06", transformOrigin: "0 0" }}>
         <Harita kutular={kutu} noktaRengi={(n) => (n.r < kutu * 0.5 ? "rgba(255,255,255,0.06)" : "#9fb3d1")} />
       </div>
-      <div style={{ position: "absolute", left: 1450, top: 200, width: 420 }}>
+      <div style={{ position: "absolute", left: 1320, top: 200, width: 560 }}>
         <Yazi an={a("people")} x={0} y={0} boyut={40} hiza="sol" font="fredoka" kontur={6}>CASH PULLED OUT,</Yazi>
         <Yazi an={a("kept")} x={0} y={56} boyut={40} hiza="sol" font="fredoka" kontur={6}>KEPT AT HOME</Yazi>
         <Yazi an={a("one")} x={0} y={200} boyut={58} hiza="sol" renk={RENK.yesil}>ONE BOX ✓</Yazi>
@@ -241,10 +242,10 @@ export const S14: React.FC = () => {
           const p = interpolate(t, [an - 0.05, an + 0.3], [0, 1], { ...CL, easing: EOUT });
           if (p <= 0) return null;
           return (
-            <div key={i} style={{ position: "absolute", left: 960 + (i % 2) * 450, top: 420 + Math.floor(i / 2) * 230, width: 410, height: 200, perspective: 800 }}>
+            <div key={i} style={{ position: "absolute", left: 900 + (i % 2) * 480, top: 420 + Math.floor(i / 2) * 230, width: 450, height: 200, perspective: 800 }}>
               <div style={{ width: "100%", height: "100%", rotate: `y ${(1 - p) * 90}deg`, background: "#f6f0e2", border: "6px solid #1b1b1b", borderRadius: 18, display: "flex", alignItems: "center", gap: 18, padding: "0 26px", boxShadow: "0 10px 30px rgba(0,0,0,0.5)" }}>
                 <TuzakIkon tur={ik} />
-                <div style={{ fontFamily: "Anton", fontSize: 52, color: "#1b1b1b" }}>{m}</div>
+                <div style={{ fontFamily: "Anton", fontSize: 46, color: "#1b1b1b", whiteSpace: "nowrap" }}>{m}</div>
               </div>
             </div>
           );
@@ -266,7 +267,7 @@ const Easing2 = (x: number) => x * x * x;
 
 const TuzakIkon: React.FC<{ tur: string }> = ({ tur }) => (
   <svg width={110} height={110} viewBox="0 0 110 110">
-    {tur === "%" ? <text x={55} y={80} textAnchor="middle" style={{ fontFamily: "Anton", fontSize: 80 }} fill="#1b1b1b">0%</text> : null}
+    {tur === "%" ? <g><circle cx={55} cy={55} r={42} fill="#e9c35a" stroke="#6b4d0e" strokeWidth={6} /><text x={55} y={74} textAnchor="middle" style={{ fontFamily: "Anton", fontSize: 50 }} fill="#6b4d0e">%</text></g> : null}
     {tur === "🔥" ? <path d="M55,10 C70,35 90,45 82,75 C76,98 34,100 28,75 C24,58 36,48 40,36 C46,50 52,52 54,46 C58,34 50,24 55,10 Z" fill="#e8742a" stroke="#1b1b1b" strokeWidth={5} /> : null}
     {tur === "✋" ? <path d="M30,100 L30,50 C30,44 38,44 38,50 L38,30 C38,24 46,24 46,30 L46,22 C46,16 54,16 54,22 L54,28 C54,22 62,22 62,28 L62,40 C62,34 70,34 70,40 L70,78 C70,92 60,100 48,100 Z" fill="#333" stroke="#1b1b1b" strokeWidth={4} /> : null}
     {tur === "$" ? <g><rect x={15} y={35} width={80} height={44} rx={6} fill="#9cc58f" stroke="#2c4a26" strokeWidth={5} /><text x={55} y={68} textAnchor="middle" style={{ fontFamily: "Anton", fontSize: 30 }} fill="#2c4a26">$</text></g> : null}
@@ -281,7 +282,7 @@ export const S15: React.FC = () => {
     { x: yil(1921, 8), y: 63, etiket: "1921: 63", etiketYon: "ust" as const },
     { x: yil(1929, 9, 3), y: 381.17, etiket: "SEPT 3, 1929: 381.17", etiketYon: "sag" as const },
     { x: yil(1929, 11, 15), y: 190.6 },
-    { x: yil(1932, 7, 8), y: 41.22, etiket: "JULY 8, 1932: 41.22", etiketYon: "alt" as const, an: a("forty-one") },
+    { x: yil(1932, 7, 8), y: 41.22, etiket: "JULY 8, 1932: 41.22", etiketYon: "sag" as const, an: a("forty-one") },
   ];
   const cevap1 = a("november");
   const tam = [...nokta, { x: yil(1954, 11, 23), y: 381.17, etiket: "NOV 1954", etiketYon: "sol" as const, an: cevap1 }];
@@ -305,7 +306,7 @@ export const S15: React.FC = () => {
           />
         </div>
         {t >= a("late") ? <Dikey x={yil(1936, 11)} an={a("late")} metin="~LATE 1936" /> : null}
-        <Yazi an={a("eighty-nine")} x={640} y={330} boyut={110} renk={RENK.kirmizi}>−89%</Yazi>
+        <Yazi an={a("eighty-nine")} x={980} y={120} boyut={110} renk={RENK.kirmizi}>−89%</Yazi>
       </Kart>
       {/* alt satır: istatistik kutuları (çift eksen yok) */}
       {t < a("so") - 0.2 ? (
@@ -331,7 +332,7 @@ export const S15: React.FC = () => {
             <div style={{ padding: "14px 24px", fontFamily: "Anton", fontSize: 44, color: RENK.murekkep }}>ANSWER 2: <span style={{ color: RENK.sari }}>~LATE 1936</span></div>
             <div style={{ position: "absolute", left: 24, top: 86, fontFamily: fredoka, fontWeight: 700, fontSize: 26, color: RENK.ikincil }}>dividends + falling prices (Hulbert, NYT 2009)</div>
           </Kart>
-          <Yazi an={a("seven")} x={1370} y={600} boyut={60} renk={RENK.sari}>STILL 7 YEARS</Yazi>
+          <Yazi an={a("seven")} x={980} y={250} boyut={64} renk={RENK.sari}>STILL 7 YEARS</Yazi>
           <div style={{ position: "absolute", left: 160, top: 640, fontFamily: fredoka, fontWeight: 700, fontSize: 26, color: RENK.murekkep }}>Price only, before dividends.</div>
         </>
       )}

@@ -77,7 +77,7 @@ export const S05: React.FC = () => {
                 eksenX={[1922, 1924, 1926, 1928, 1930].map((v) => ({ x: v, etiket: String(v) }))}
               />
             </div>
-            <Yazi an={a("six")} x={760} y={250} boyut={140} renk={RENK.sari}>×6</Yazi>
+            <Yazi an={a("six")} x={420} y={200} boyut={140} renk={RENK.sari}>×6</Yazi>
           </Kart>
           <Kaynak metin="Source: Federal Reserve History · anchors only, dashed = not daily data" an={g1 + 0.3} />
         </>
@@ -98,7 +98,7 @@ export const S06: React.FC = () => {
   const yol = [
     { x: 0, y: 381.17, etiket: "381", etiketYon: "ust" as const },
     { x: 8, y: 360 }, { x: 14, y: 372 }, { x: 22, y: 345 }, { x: 28, y: 358 }, { x: 36, y: 330 }, { x: 42, y: 340 }, { x: 50, y: 305 }, { x: 54, y: 299 },
-    { x: 55, y: 260 }, { x: 56, y: 230 }, { x: 62, y: 245 }, { x: 68, y: 205 }, { x: 73, y: 191, etiket: "MID-NOV: ALMOST HALF", etiketYon: "sol" as const, an: a("half") },
+    { x: 55, y: 260 }, { x: 56, y: 230 }, { x: 62, y: 245 }, { x: 68, y: 205 }, { x: 73, y: 191, etiket: "ALMOST HALF", etiketYon: "alt" as const, an: a("half") },
   ];
   return (
     <SahneKok arka={ARKA_GRAFIK}>
@@ -130,7 +130,7 @@ export const S06: React.FC = () => {
           <Kart an={kasim} x={620} y={150} w={1140} h={620}>
             <div style={{ position: "absolute", left: 30, top: 18, fontFamily: fredoka, fontWeight: 700, fontSize: 30, color: RENK.ikincil }}>DOW, FALL 1929 (shape illustrative)</div>
             <div style={{ position: "absolute", left: 10, top: 60 }}>
-              <CizgiGrafik an={kasim} sure={a("half") - kasim + 0.3} w={1110} h={540} xAralik={[0, 75]} yAralik={[150, 400]} renk="#8fa6c9" noktalar={yol} eksenX={[{ x: 0, etiket: "SEPT 3" }, { x: 28, etiket: "OCT 1" }, { x: 55, etiket: "OCT 28" }, { x: 73, etiket: "MID-NOV" }]} yatayCizgi={[{ y: 190.6, etiket: "½ OF 381" }]} />
+              <CizgiGrafik an={kasim} sure={a("half") - kasim + 0.3} w={1110} h={540} xAralik={[0, 75]} yAralik={[150, 400]} renk="#8fa6c9" noktalar={yol} eksenX={[{ x: 0, etiket: "SEPT 3" }, { x: 28, etiket: "OCT 1" }, { x: 55, etiket: "OCT 28" }, { x: 73, etiket: "MID-NOV" }]} yatayCizgi={[{ y: 190.6, etiket: "½ OF THE PEAK" }]} />
             </div>
           </Kart>
           <Leo x={330} y={420} s={0.75} pozlar={[[0, "d"]]} rozet={{ etiket: "STOCK", renk: KAPI_RENK.mavi }} giris={{ an: leo, dx: -500, sure: 0.35 }} />
@@ -148,10 +148,10 @@ export const S06: React.FC = () => {
 const Sarmal: React.FC<{ a: (w: string, n?: number) => number }> = ({ a }) => {
   const t = useT();
   const adim: [string, number][] = [["PRICES DROP", a("drop,")], ["LENDERS CALL LOANS", a("lenders")], ["PEOPLE SELL", a("sell,")], ["PRICES DROP AGAIN", a("again.")]];
-  const merkez = [960, 470], r = 270;
+  const merkez = [960, 560], r = 250;
   return (
     <>
-      <Yazi an={a("borrowed")} x={960} y={90} boyut={70} renk={RENK.sari}>BORROWED MONEY MAKES IT WORSE</Yazi>
+      <Yazi an={a("borrowed")} x={960} y={50} boyut={70} renk={RENK.sari}>BORROWED MONEY MAKES IT WORSE</Yazi>
       <svg width={1920} height={1080} style={{ position: "absolute" }}>
         {adim.map((_, i) => {
           const a0 = (-90 + i * 90 + 18) * (Math.PI / 180), a1 = (-90 + (i + 1) * 90 - 18) * (Math.PI / 180);
@@ -233,7 +233,7 @@ export const S08: React.FC = () => {
   const dalga = a("fail");
   return (
     <SahneKok arka={ARKA_GRAFIK}>
-      <div style={{ position: "absolute", left: 120, top: 150, scale: "1.18", transformOrigin: "0 0" }}>
+      <div style={{ position: "absolute", left: 70, top: 170, scale: "1.06", transformOrigin: "0 0" }}>
         <Harita
           noktaRengi={(n, i) => {
             const gir = yan + (i / 2400) * 1.2;
@@ -246,10 +246,10 @@ export const S08: React.FC = () => {
           }}
         />
       </div>
-      <div style={{ position: "absolute", left: 1460, top: 180, width: 400 }}>
+      <div style={{ position: "absolute", left: 1280, top: 170, width: 600 }}>
         <Yazi an={yan} x={0} y={0} boyut={42} hiza="sol" font="fredoka" kontur={6}>~24,000 BANKS</Yazi>
         <Yazi an={yan + 0.2} x={0} y={56} boyut={28} hiza="sol" font="fredoka" kontur={5} renk={RENK.ikincil}>1 DOT = 10 BANKS</Yazi>
-        <Yazi an={fed} x={0} y={150} boyut={46} hiza="sol" renk={KAPI_RENK.mavi}>8,000+ IN THE FED SYSTEM</Yazi>
+        <Yazi an={fed} x={0} y={150} boyut={44} hiza="sol" renk={KAPI_RENK.mavi}>8,000+ IN THE FED SYSTEM</Yazi>
         <Yazi an={disi} x={0} y={230} boyut={46} hiza="sol" renk="#e8e2d0">~16,000 OUTSIDE</Yazi>
         <Yazi an={a("small")} x={0} y={310} boyut={36} hiza="sol" font="fredoka" kontur={5}>MANY SMALL & LOCAL</Yazi>
         <Yazi an={a("late")} x={0} y={430} boyut={64} hiza="sol" renk={RENK.kirmizi}>LATE 1930</Yazi>
@@ -388,9 +388,9 @@ export const S10: React.FC = () => {
             <div style={{ position: "absolute", left: 20, top: 60 }}>
               <CubukGrafik an={g2 + 0.2} veri={veri} w={1440} h={530} maks={4200} renk={RENK.yesil} vurguAn={a("about")} />
             </div>
-            <Yazi an={a("nine")} x={1030} y={110} boyut={62} renk={RENK.sari}>1930–33: ~9,000</Yazi>
-            <Yazi an={a("more")} x={1030} y={190} boyut={44} font="fredoka">MORE THAN 1 BANK IN 3</Yazi>
-            <Yazi an={a("some")} x={1030} y={250} boyut={30} font="fredoka" renk={RENK.ikincil}>SOME REOPENED · THOUSANDS NEVER DID</Yazi>
+            <Yazi an={a("nine")} x={560} y={110} boyut={62} renk={RENK.sari}>1930–33: ~9,000</Yazi>
+            <Yazi an={a("more")} x={560} y={190} boyut={44} font="fredoka">MORE THAN 1 BANK IN 3</Yazi>
+            <Yazi an={a("some")} x={560} y={250} boyut={30} font="fredoka" renk={RENK.ikincil}>SOME REOPENED · THOUSANDS NEVER DID</Yazi>
           </Kart>
           <Kart an={kayip} x={360} y={260} w={1200} h={500}>
             <div style={{ position: "absolute", left: 40, top: 30, fontFamily: fredoka, fontWeight: 700, fontSize: 34, color: RENK.ikincil, width: 1120 }}>LOST BY DEPOSITORS IN SUSPENDED BANKS, 1930–33</div>

@@ -90,7 +90,7 @@ export const S18: React.FC = () => {
   const hepsi = a("good");
   return (
     <SahneKok arka={ARKA_GRAFIK}>
-      <div style={{ position: "absolute", left: 120, top: 170, scale: "1.18", transformOrigin: "0 0" }}>
+      <div style={{ position: "absolute", left: 60, top: 200, scale: "1.06", transformOrigin: "0 0" }}>
         <Harita
           noktaRengi={(n) => {
             const gri = bas + (n.x / HARITA_W) * (bitis - bas) + n.r * 0.5;
@@ -102,18 +102,18 @@ export const S18: React.FC = () => {
       <Yazi an={0} x={960} y={50} boyut={80}>WINTER 1933</Yazi>
       <Yazi an={bas} x={960} y={140} boyut={44} font="fredoka">PANIC JUMPS FROM STATE TO STATE</Yazi>
       {/* otel notu kartı */}
-      <Kart an={a("notes")} son={a("by") - 0.2} x={1180} y={330} w={620} h={300} arka="#f6f0e2" cerceve="#1b1b1b" donme={-3}>
+      <Kart an={a("notes")} son={a("by") - 0.2} x={1260} y={330} w={620} h={300} arka="#f6f0e2" cerceve="#1b1b1b" donme={-3}>
         <div style={{ padding: "26px 32px", fontFamily: fredoka, fontWeight: 700, color: "#1b1b1b" }}>
           <div style={{ fontSize: 32, letterSpacing: 2, color: "#7a5a2a" }}>NOTICE TO GUESTS</div>
           <div style={{ fontSize: 52, lineHeight: 1.1, marginTop: 14 }}>OUT-OF-TOWN CHECKS NOT ACCEPTED</div>
         </div>
       </Kart>
-      <Yazi an={a("march")} son={a("two") - 0.2} x={1460} y={420} boyut={56} renk={RENK.sari}>BY MARCH 4:</Yazi>
-      <Yazi an={a("every")} son={a("two") - 0.2} x={1460} y={490} boyut={56} renk={RENK.sari}>EVERY STATE</Yazi>
-      <Yazi an={a("two")} x={1460} y={400} boyut={60} renk={RENK.kirmizi}>MARCH 6:</Yazi>
-      <Yazi an={a("two") + 0.15} x={1460} y={475} boyut={52} renk={RENK.kirmizi}>NATIONWIDE BANK HOLIDAY</Yazi>
+      <Yazi an={a("march")} son={a("two") - 0.2} x={1600} y={380} boyut={56} renk={RENK.sari}>BY MARCH 4:</Yazi>
+      <Yazi an={a("every")} son={a("two") - 0.2} x={1600} y={450} boyut={56} renk={RENK.sari}>EVERY STATE</Yazi>
+      <Yazi an={a("two")} x={1600} y={380} boyut={60} renk={RENK.kirmizi}>MARCH 6:</Yazi>
+      <Yazi an={a("two") + 0.15} x={1600} y={455} boyut={48} renk={RENK.kirmizi}>NATIONWIDE BANK HOLIDAY</Yazi>
       <Radyo an={a("franklin")} />
-      <Yazi an={hepsi} x={1460} y={720} boyut={44} font="fredoka">GOOD BANKS AND BAD BANKS: ALL SHUT</Yazi>
+      <Yazi an={hepsi} x={1600} y={720} boyut={38} font="fredoka">GOOD BANKS AND BAD BANKS: ALL SHUT</Yazi>
       <Kaynak metin="Source: FDIC · map shows the spread, not exact states" an={bas} />
     </SahneKok>
   );
@@ -125,7 +125,7 @@ const Radyo: React.FC<{ an: number }> = ({ an }) => {
   const p = interpolate(t, [an, an + 0.3], [0, 1], { ...CL, easing: EOUT });
   if (p <= 0) return null;
   return (
-    <div style={{ position: "absolute", left: 1290, top: 560, opacity: p, display: "flex", alignItems: "center", gap: 20 }}>
+    <div style={{ position: "absolute", left: 1330, top: 560, opacity: p, display: "flex", alignItems: "center", gap: 20 }}>
       <svg width={120} height={110}>
         <path d="M20,30 Q60,0 100,30" stroke="#c9ccd2" strokeWidth={6} fill="none" />
         <rect x={10} y={30} width={100} height={72} rx={14} fill="#5a3d20" stroke="#1b1b1b" strokeWidth={5} />
@@ -154,8 +154,8 @@ export const S19: React.FC = () => {
           <div style={{ position: "absolute", left: 60, top: 70 }}>
             <CubukGrafik an={0} arasi={0.02} w={1280} h={560} maks={4200} renk={RENK.yesil} veri={[...v, { etiket: "1934", deger: 61, ustYazi: "61", vurgu: true, renk: RENK.sari }]} />
           </div>
-          <Yazi an={a("nine")} x={1010} y={200} boyut={58} renk={RENK.sari}>1934: 9 INSURED BANKS</Yazi>
-          <Yazi an={a("suspended.")} x={1010} y={280} boyut={40} font="fredoka">SUSPENDED (OF 61 IN ALL)</Yazi>
+          <Yazi an={a("nine")} x={560} y={160} boyut={58} renk={RENK.sari}>1934: 9 INSURED BANKS</Yazi>
+          <Yazi an={a("suspended.")} x={560} y={240} boyut={40} font="fredoka">SUSPENDED (OF 61 IN ALL)</Yazi>
         </Kart>
         <Kaynak metin="Source: FDIC, A Brief History of Deposit Insurance (Table 5; p. 31)" />
       </SahneKok>
@@ -167,7 +167,7 @@ export const S19: React.FC = () => {
         <Studyo kareler={[[kilit, kapiMerkezX("yesil"), 540, 1.7], [kazan, kapiMerkezX("yesil"), 540, 1.78]]}>
           <Kilit an={kilit + 0.1} x={kapiMerkezX("yesil")} y={kapiY("yesil")} modern={interpolate(t, [a("lock"), a("lock") + 0.5], [0, 1], CL)} />
         </Studyo>
-        <Yazi an={a("works.")} x={960} y={90} boyut={80} renk={KAPI_RENK.yesil}>A LOCK THAT WORKS</Yazi>
+        <Yazi an={a("works.")} x={430} y={460} boyut={80} renk={KAPI_RENK.yesil}>A LOCK THAT WORKS</Yazi>
       </SahneKok>
     );
   }
@@ -207,7 +207,7 @@ export const S19: React.FC = () => {
         </div>
         <div style={{ position: "absolute", left: 700, top: 760, width: 1200, height: 10, background: "#9aa3b3", opacity: interpolate(t, [kapi, kapi + 0.3], [0, 1], CL) }} />
       </Studyo>
-      <Takvim x={140} y={140} w={300} adimlar={[[0, "1933"], [a("today."), "2026"]]} />
+      <Takvim x={90} y={560} w={260} adimlar={[[0, "1933"], [a("today."), "2026"]]} />
     </SahneKok>
   );
 };
@@ -224,23 +224,23 @@ export const S20: React.FC = () => {
         <Plaka ad="C03" filtre={SOGUK} />
       </Kamera>
       <AbsoluteFill style={{ background: "rgba(40,90,170,0.18)", mixBlendMode: "multiply" }} />
-      <Leo x={1530} y={400} s={0.85} pozlar={[[0, "e"]]} rozet={{ etiket: "BOX", renk: KAPI_RENK.kahve }} />
-      <Banknot x={720} y={640} adet={8} s={kucul} />
-      <Yazi an={a("thousand")} x={720} y={360} boyut={96} renk={RENK.sari}>$1,000</Yazi>
+      <Leo x={1660} y={410} s={0.8} pozlar={[[0, "e"]]} rozet={{ etiket: "BOX", renk: KAPI_RENK.kahve }} />
+      <Banknot x={520} y={660} adet={8} s={kucul} />
+      <Yazi an={a("thousand")} x={520} y={410} boyut={96} renk={RENK.sari}>$1,000</Yazi>
       <Takvim x={110} y={110} w={220} adimlar={[[0, "2025"], [a("twelve"), "2026"]]} altYazi="SEPT" />
       <Kart an={a("twelve")} x={380} y={110} w={740} h={110}>
         <div style={{ height: "100%", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Anton", fontSize: 52, color: RENK.murekkep }}>12 MONTHS TO SEPT 2026</div>
       </Kart>
-      <Yazi an={a("three")} son={a("so") - 0.2} x={1100} y={260} boyut={170} renk={RENK.kirmizi}>+3.7%</Yazi>
-      <Yazi an={a("percent")} son={a("so") - 0.2} x={1100} y={460} boyut={34} font="fredoka">CPI, 12 MONTHS TO SEPT 2026 (not seasonally adjusted)</Yazi>
-      <Kart an={a("nine")} x={1000} y={250} w={560} h={250}>
+      <Yazi an={a("three")} son={a("so") - 0.2} x={1050} y={250} boyut={170} renk={RENK.kirmizi}>+3.7%</Yazi>
+      <Yazi an={a("percent")} son={a("so") - 0.2} x={1050} y={450} boyut={34} font="fredoka" genislik={560}>CPI, 12 MONTHS TO SEPT 2026 (not seasonally adjusted)</Yazi>
+      <Kart an={a("nine")} x={780} y={250} w={560} h={250}>
         <div style={{ position: "absolute", width: "100%", top: 24, textAlign: "center", fontFamily: fredoka, fontWeight: 700, fontSize: 34, color: RENK.ikincil }}>$1,000 NOW BUYS LIKE</div>
         <div style={{ position: "absolute", width: "100%", top: 80, textAlign: "center", fontFamily: "Anton", fontSize: 130, color: RENK.sari, lineHeight: 1 }}>
           <Sayac an={a("nine")} sure={0.9} bas={1000} bit={964} onEk="$" />
         </div>
       </Kart>
-      <Yazi an={a("nothing")} x={720} y={840 - 60} boyut={44} font="fredoka">NOTHING STOLEN · SAME BILLS</Yazi>
-      <Yazi an={a("they")} x={1280} y={600} boyut={64} renk={RENK.sari}>THEY JUST BUY LESS</Yazi>
+      <Yazi an={a("nothing")} x={520} y={800} boyut={40} font="fredoka">NOTHING STOLEN · SAME BILLS</Yazi>
+      <Yazi an={a("they")} x={1060} y={600} boyut={64} renk={RENK.sari}>THEY JUST BUY LESS</Yazi>
       <Kaynak metin="Source: BLS CPI (Sept 2026 release); FRED CPIAUCNS" an={a("three")} />
     </SahneKok>
   );
@@ -251,7 +251,7 @@ export const S21: React.FC = () => {
   const a = anlar("S21");
   const t = useT();
   const panel = (x: number, an: number, sure: number, veri: { x: number; y: number }[], renk: string, baslik: string, ay: string, sonEtiket: string, alim: string, alimAn: number, xa: [number, number], eksen: { x: number; etiket: string }[]) => (
-    <Kart an={an - 0.3} x={x} y={100} w={760} h={560}>
+    <Kart an={an - 0.3} x={x} y={130} w={760} h={540}>
       <div style={{ position: "absolute", left: 28, top: 16, fontFamily: "Anton", fontSize: 44, color: renk }}>{baslik}</div>
       <div style={{ position: "absolute", right: 28, top: 26, fontFamily: fredoka, fontWeight: 700, fontSize: 28, color: RENK.ikincil }}>{ay}</div>
       <div style={{ position: "absolute", left: 6, top: 64 }}>
@@ -263,7 +263,7 @@ export const S21: React.FC = () => {
           xAralik={xa}
           yAralik={[65, 120]}
           renk={renk}
-          noktalar={veri.map((p, i) => (i === veri.length - 1 ? { ...p, etiket: sonEtiket, etiketYon: p.y > 100 ? ("ust" as const) : ("alt" as const) } : p))}
+          noktalar={veri.map((p, i) => (i === veri.length - 1 ? { ...p, etiket: sonEtiket, etiketYon: "sol" as const } : p))}
           yatayCizgi={[{ y: 100, etiket: "START = 100" }]}
           eksenX={eksen}
         />
@@ -278,9 +278,10 @@ export const S21: React.FC = () => {
     <SahneKok arka={ARKA_GRAFIK}>
       {panel(120, a("from"), a("percent.") - a("from"), sol, RENK.kahve, "SEPT 1929 → MAR 1933", "42 MONTHS", `${solSon.toFixed(1)} (${(solSon - 100).toFixed(1)}%)`, `$1,000 buys like $${Math.round(100000 / solSon).toLocaleString("en-US")}`, a("cash"), [1929.6, 1933.25], [{ x: 1930, etiket: "1930" }, { x: 1932, etiket: "1932" }])}
       {panel(1040, a("from", 2), a("percent.", 2) - a("from", 2), sag, RENK.mavi, "SEPT 2022 → SEPT 2026", "48 MONTHS", `${sagSon.toFixed(1)} (+${(sagSon - 100).toFixed(1)}%)`, `$1,000 buys like $${Math.round(100000 / sagSon).toLocaleString("en-US")}`, a("rising,"), [2022.6, 2026.75], [{ x: 2023, etiket: "2023" }, { x: 2025, etiket: "2025" }])}
-      <Yazi an={a("same")} x={960} y={700} boyut={84} renk={RENK.sari}>SAME BOX. OPPOSITE RESULT.</Yazi>
-      <Yazi an={a("that's")} x={960} y={30} boyut={56}>ARITHMETIC, NOT A PLAN</Yazi>
-      <Leo id="S21" x={960} y={interpolate(t, [0, 0.4], [1200, 860], { ...CL, easing: EOUT })} s={0.5} pozlar={[[0, "C12"]]} tohum={21} />
+      <Yazi an={0} son={a("same") - 0.2} x={960} y={20} boyut={80}>SIDE BY SIDE</Yazi>
+      <Yazi an={a("same")} son={a("that's") - 0.2} x={960} y={20} boyut={80} renk={RENK.sari}>SAME BOX. OPPOSITE RESULT.</Yazi>
+      <Yazi an={a("that's")} x={960} y={20} boyut={80}>ARITHMETIC, NOT A PLAN</Yazi>
+      <Leo id="S21" x={960} y={interpolate(t, [0, 0.4], [1300, 690], { ...CL, easing: EOUT })} s={0.72} pozlar={[[0, "C12"]]} tohum={21} />
       <Kaynak metin="Source: BLS CPI via FRED (CPIAUCNS), index start = 100" an={a("from")} />
     </SahneKok>
   );
@@ -295,11 +296,11 @@ export const S22: React.FC = () => {
       <Studyo kareler={[[0, kapiMerkezX("yesil"), 560, 1.55], [12.8, kapiMerkezX("yesil"), 540, 1.75]]}>
         <Kilit an={0} x={kapiMerkezX("yesil")} y={kapiY("yesil")} modern={interpolate(t, [a("today,"), a("today,") + 0.6], [0, 1], CL)} />
       </Studyo>
-      <Kart an={a("nineteen")} x={140} y={150} w={520} h={170} cerceve="#b8a27a">
+      <Kart an={a("nineteen")} x={120} y={330} w={520} h={170} cerceve="#b8a27a">
         <div style={{ padding: "18px 26px", fontFamily: "Anton", fontSize: 76, color: RENK.murekkep }}>$2,500</div>
         <div style={{ position: "absolute", left: 26, top: 112, fontFamily: fredoka, fontWeight: 700, fontSize: 28, color: RENK.ikincil }}>per depositor (1934)</div>
       </Kart>
-      <Kart an={a("two")} x={1180} y={150} w={620} h={200} cerceve={KAPI_RENK.yesil}>
+      <Kart an={a("two")} x={1220} y={330} w={620} h={200} cerceve={KAPI_RENK.yesil}>
         <div style={{ padding: "12px 26px", fontFamily: fredoka, fontWeight: 700, fontSize: 30, color: RENK.ikincil }}>today: at least</div>
         <div style={{ position: "absolute", left: 26, top: 50, fontFamily: "Anton", fontSize: 84, color: KAPI_RENK.yesil }}>$250,000</div>
         <div style={{ position: "absolute", left: 26, top: 150, fontFamily: fredoka, fontWeight: 700, fontSize: 28, color: RENK.ikincil }}>per depositor, per insured bank</div>
@@ -325,7 +326,7 @@ export const S23: React.FC = () => {
         {etiket("kahve", "SURPRISE", KAPI_RENK.yesil, a("top."))}
       </Studyo>
       {t < tez ? (
-        <Kart an={a("what")} x={360} y={30} w={1000} h={100}>
+        <Kart an={a("what")} x={300} y={790} w={1000} h={96}>
           <div style={{ height: "100%", display: "flex", alignItems: "center", justifyContent: "center", gap: 40, fontFamily: "Anton", fontSize: 50, color: RENK.murekkep }}>
             <span style={{ color: RENK.mavi }}>PRICES ↓ (1930s)</span>
             <span>↔</span>
