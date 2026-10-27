@@ -1,0 +1,534 @@
+{
+ "fps": 30,
+ "muzik": [
+  {
+   "ad": "B1 oyun şovu",
+   "bas": 2.4,
+   "son": 80.307,
+   "dosya": "$M/catchy-swing-doge.ogg",
+   "duck": 22,
+   "giris": 0.4,
+   "cikis": 1.2,
+   "ruh": "oyunbaz swing, parlak",
+   "tempo": "swing (BPM tahmini güvenilmez)",
+   "kaynak": "Catchy Swing — Doge (CC0)"
+  },
+  {
+   "ad": "B2a borsa coşkusu",
+   "bas": 79.107,
+   "son": 115.098,
+   "dosya": "$M/ragtime-jazz-tarush-singhal.mp3",
+   "duck": 23,
+   "oyuk": true,
+   "ofset": 0.0,
+   "giris": 1.2,
+   "cikis": 0.25,
+   "ruh": "1920'ler ragtime coşkusu",
+   "tempo": "≈103 BPM [tahmin]",
+   "kaynak": "Ragtime! Jazz — Tarush Singhal (CC0)"
+  },
+  {
+   "ad": "B2b çöküş nabzı",
+   "bas": 120.504,
+   "son": 167.102,
+   "dosya": "$O/ozgun-yatak-nabiz-90bpm.flac",
+   "duck": 21,
+   "giris": 1.5,
+   "cikis": 1.2,
+   "ruh": "kalp atışı + saat, gerilim",
+   "tempo": "90 BPM",
+   "kaynak": "kendi üretimimiz"
+  },
+  {
+   "ad": "B3 banka paniği",
+   "bas": 165.902,
+   "son": 287.073,
+   "dosya": "$M/tension-komiku.mp3",
+   "duck": 20,
+   "giris": 1.2,
+   "cikis": 1.2,
+   "ruh": "yükselen panik",
+   "tempo": "serbest",
+   "kaynak": "Tension — Komiku (CC0)"
+  },
+  {
+   "ad": "B4 kutu",
+   "bas": 285.873,
+   "son": 372.412,
+   "dosya": "$M/fridge-is-hungry-congusbongus.ogg",
+   "duck": 22,
+   "giris": 1.2,
+   "cikis": 0.6,
+   "ruh": "muzip, sıcak",
+   "tempo": "orta",
+   "kaynak": "The Fridge is Hungry — congusbongus (CC0)"
+  },
+  {
+   "ad": "B5 dip 1932",
+   "bas": 372.512,
+   "son": 454.56,
+   "dosya": "$M/at-the-end-of-hope-emma-ma.mp3",
+   "duck": 22,
+   "giris": 1.5,
+   "cikis": 1.2,
+   "ruh": "ağır, buruk",
+   "tempo": "≈107 BPM [tahmin]",
+   "kaynak": "At the end of hope — Emma_MA (CC0)"
+  },
+  {
+   "ad": "B6 Mart 1933 kilit",
+   "bas": 453.36,
+   "son": 523.48,
+   "dosya": "$A/merak-unsolved-investigation-isaiah658.ogg",
+   "duck": 22,
+   "giris": 1.2,
+   "cikis": 1.2,
+   "ruh": "mekanik gerilim, gizem",
+   "tempo": "≈120 BPM [tahmin]",
+   "kaynak": "Unsolved Investigation — isaiah658 (CC0)"
+  },
+  {
+   "ad": "B6 katman saat",
+   "bas": 453.36,
+   "son": 523.48,
+   "dosya": "$O/ozgun-yatak-kilit-saat-100bpm.flac",
+   "duck": 27,
+   "giris": 2.0,
+   "cikis": 1.2,
+   "ruh": "saat tik-tak + bas ostinato (katman)",
+   "tempo": "100 BPM",
+   "kaynak": "kendi üretimimiz"
+  },
+  {
+   "ad": "B7 2026 ters köşe",
+   "bas": 522.28,
+   "son": 593.457,
+   "dosya": "$M/electro-swing-type-gp.mp3",
+   "duck": 22,
+   "giris": 0.8,
+   "cikis": 1.2,
+   "ruh": "modern electro swing (açılış swing'inin bugünkü hali)",
+   "tempo": "swing",
+   "kaynak": "Electro Swing type — G_P (CC0)"
+  },
+  {
+   "ad": "B8 kapanış",
+   "bas": 592.257,
+   "son": 631.63,
+   "dosya": "$M/positive-melancholy-dizzy-crow.ogg",
+   "duck": 22,
+   "giris": 1.5,
+   "cikis": 2.0,
+   "ruh": "sıcak, umutlu, düşündürücü",
+   "tempo": "orta",
+   "kaynak": "Piano & Drums, positive melancholy — Dizzy Crow (CC0)"
+  }
+ ],
+ "sfx": [
+  {
+   "t": 0.0,
+   "kare": 0,
+   "dosya": "$O/ozgun-radyo-cizirti.flac",
+   "db": -30,
+   "olay": "S01 sepya 1929 kartı: plak/radyo hışırtısı (2.3 sn)",
+   "sure": 2.3
+  },
+  {
+   "t": 2.25,
+   "kare": 68,
+   "dosya": "$O/ozgun-kapi-isik-acilis.flac",
+   "db": -14,
+   "olay": "S01 kesme → stüdyo, üç kapı ışıkla açılır"
+  },
+  {
+   "t": 4.94,
+   "kare": 148,
+   "dosya": "$AE/pop-pluck.flac",
+   "db": -20,
+   "olay": "S01 mavi kapı yanar (STOCKS)",
+   "pan": -0.4
+  },
+  {
+   "t": 5.82,
+   "kare": 175,
+   "dosya": "$AE/pop-pluck.flac",
+   "db": -20,
+   "olay": "S01 yeşil kapı yanar (BANK)"
+  },
+  {
+   "t": 6.62,
+   "kare": 199,
+   "dosya": "$AE/pop-pluck.flac",
+   "db": -20,
+   "olay": "S01 kahve kapı yanar (SHOEBOX)",
+   "pan": 0.4
+  },
+  {
+   "t": 14.911,
+   "kare": 447,
+   "dosya": "$O/ozgun-ding-oyunsovu.flac",
+   "db": -12,
+   "olay": "S01 \"Let's play\" sunucu zili"
+  },
+  {
+   "t": 57.244,
+   "kare": 1717,
+   "dosya": "$AE/pop-drop.flac",
+   "db": -16,
+   "olay": "S04 kural kartı 1 çakılır"
+  },
+  {
+   "t": 58.912,
+   "kare": 1767,
+   "dosya": "$AE/pop-drop.flac",
+   "db": -16,
+   "olay": "S04 kural kartı 2 çakılır"
+  },
+  {
+   "t": 62.94,
+   "kare": 1888,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -22,
+   "olay": "S04 Stock Leo mavi kapıya yürür",
+   "pan": -0.3
+  },
+  {
+   "t": 64.84,
+   "kare": 1945,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -22,
+   "olay": "S04 Bank Leo yeşil kapıya"
+  },
+  {
+   "t": 67.24,
+   "kare": 2017,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -22,
+   "olay": "S04 Box Leo kahve kapıya",
+   "pan": 0.3
+  },
+  {
+   "t": 71.13,
+   "kare": 2134,
+   "dosya": "$E/kahkaha-nocturnal-vanguard-group_giggling.flac",
+   "db": -17,
+   "olay": "S04 seyirci kahkahası katman 1",
+   "sure": 2.2
+  },
+  {
+   "t": 71.17,
+   "kare": 2135,
+   "dosya": "$E/kahkaha-nocturnal-vanguard-group_giggling.flac",
+   "db": -19,
+   "olay": "S04 kahkaha katman 2 (−2 yarım ton)",
+   "sure": 2.2,
+   "perde": -2,
+   "pan": -0.5
+  },
+  {
+   "t": 71.21,
+   "kare": 2136,
+   "dosya": "$E/kahkaha-nocturnal-vanguard-group_giggling.flac",
+   "db": -19,
+   "olay": "S04 kahkaha katman 3 (+2 yarım ton)",
+   "sure": 2.2,
+   "perde": 2,
+   "pan": 0.5
+  },
+  {
+   "t": 79.257,
+   "kare": 2378,
+   "dosya": "$AE/whoosh-uzun.flac",
+   "db": -16,
+   "olay": "S04→S05 bölüm geçişi (Door One)"
+  },
+  {
+   "t": 106.32,
+   "kare": 3190,
+   "dosya": "$E/kapi-rubberduck-door_open_01.flac",
+   "db": -18,
+   "olay": "S05 Stock Leo mavi kapıdan geçer"
+  },
+  {
+   "t": 114.898,
+   "kare": 3447,
+   "dosya": "$O/ozgun-gerilim-vurus.flac",
+   "db": -11,
+   "olay": "S05 \"Nobody knows it yet\" — müzik keser + tek nota gerilim vuruşu"
+  },
+  {
+   "t": 122.281,
+   "kare": 3668,
+   "dosya": "$AE/muhur-impact-plate.flac",
+   "db": -18,
+   "olay": "S06 Kara Pazartesi çizgisi çakılır (−13%)"
+  },
+  {
+   "t": 128.051,
+   "kare": 3842,
+   "dosya": "$AE/muhur-impact-plate.flac",
+   "db": -18,
+   "olay": "S06 Kara Salı (−12%)"
+  },
+  {
+   "t": 149.01,
+   "kare": 4470,
+   "dosya": "$O/ozgun-buzzer-yanlis.flac",
+   "db": -15,
+   "olay": "S06 \"$1,000 → $500\" yanlış-cevap buzzer'ı"
+  },
+  {
+   "t": 157.74,
+   "kare": 4732,
+   "dosya": "$E/kasa-kapisi-rubberduck-metal_open_01.flac",
+   "db": -18,
+   "olay": "S07 yeşil kapı açılır, banka kasası"
+  },
+  {
+   "t": 165.822,
+   "kare": 4975,
+   "dosya": "$O/ozgun-gerilim-vurus.flac",
+   "db": -11,
+   "olay": "S07 \"Right?\" tek nota gerilim vuruşu (↺ Bölüm 3)"
+  },
+  {
+   "t": 206.72,
+   "kare": 6202,
+   "dosya": "$E/kasa-kapisi-rubberduck-metal_slam_01.flac",
+   "db": -15,
+   "olay": "S09 Bank of United States kapanır"
+  },
+  {
+   "t": 236.28,
+   "kare": 7088,
+   "dosya": "$O/ozgun-sayac-tikirti.flac",
+   "db": -21,
+   "olay": "S10 \"~9,000 BANKS\" sayacı döner"
+  },
+  {
+   "t": 264.355,
+   "kare": 7931,
+   "dosya": "$AE/muhur-impact-punch.flac",
+   "db": -11,
+   "olay": "S10 \"GAMBLE\" damgası"
+  },
+  {
+   "t": 268.75,
+   "kare": 8062,
+   "dosya": "$O/ozgun-ding-ding-dogru.flac",
+   "db": -14,
+   "olay": "S10 sonu ilk büyük ödül sonucu"
+  },
+  {
+   "t": 269.28,
+   "kare": 8078,
+   "dosya": "$AE/tik-click.flac",
+   "db": -16,
+   "olay": "S11 \"Quick pause\" duraklatma tıkı"
+  },
+  {
+   "t": 275.52,
+   "kare": 8266,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -18,
+   "olay": "S11 stüdyoya dönüş"
+  },
+  {
+   "t": 306.18,
+   "kare": 9185,
+   "dosya": "$O/ozgun-sayac-tikirti.flac",
+   "db": -21,
+   "olay": "S12 \"−21%\" fiyat sayacı"
+  },
+  {
+   "t": 319.211,
+   "kare": 9576,
+   "dosya": "$O/ozgun-ka-ching.flac",
+   "db": -12,
+   "olay": "S12 \"money got stronger\" ka-ching"
+  },
+  {
+   "t": 354.03,
+   "kare": 10621,
+   "dosya": "$O/ozgun-buzzer-yanlis.flac",
+   "db": -16,
+   "olay": "S14 \"champion?\" → buzzer, \"Not so fast\"",
+   "sure": 0.4
+  },
+  {
+   "t": 359.062,
+   "kare": 10772,
+   "dosya": "$AE/pop-pluck.flac",
+   "db": -19,
+   "olay": "S14 tuzak kartı FIRE"
+  },
+  {
+   "t": 360.7,
+   "kare": 10821,
+   "dosya": "$AE/pop-pluck.flac",
+   "db": -19,
+   "olay": "S14 tuzak kartı THEFT"
+  },
+  {
+   "t": 363.8,
+   "kare": 10914,
+   "dosya": "$AE/pop-pluck.flac",
+   "db": -19,
+   "olay": "S14 tuzak kartı JOB LOSS"
+  },
+  {
+   "t": 372.032,
+   "kare": 11161,
+   "dosya": "$O/ozgun-ruzgar-dusus.flac",
+   "db": -11,
+   "olay": "S14→S15 \"Let's jump to the bottom\": rüzgâr + düşüş"
+  },
+  {
+   "t": 380.219,
+   "kare": 11407,
+   "dosya": "$AE/muhur-impact-plate.flac",
+   "db": -15,
+   "olay": "S15 \"−89%\" çakılır"
+  },
+  {
+   "t": 420.02,
+   "kare": 12601,
+   "dosya": "$O/ozgun-ding-oyunsovu.flac",
+   "db": -18,
+   "olay": "S16 skor tablosu açılır"
+  },
+  {
+   "t": 453.29,
+   "kare": 13599,
+   "dosya": "$O/ozgun-kasa-kilit.flac",
+   "db": -12,
+   "olay": "S17 \"every door gets locked\" kasa kilidi"
+  },
+  {
+   "t": 471.82,
+   "kare": 14155,
+   "dosya": "$O/ozgun-radyo-cizirti.flac",
+   "db": -30,
+   "olay": "S18 Roosevelt radyo silueti hışırtısı",
+   "sure": 3.0
+  },
+  {
+   "t": 476.567,
+   "kare": 14297,
+   "dosya": "$E/zincir-rubberduck-chain_01.flac",
+   "db": -19,
+   "olay": "S18 kapı 1 zincir",
+   "pan": -0.5
+  },
+  {
+   "t": 476.647,
+   "kare": 14299,
+   "dosya": "$E/kilit-rubberduck-lock_01.flac",
+   "db": -21,
+   "olay": "S18 kapı 1 asma kilit",
+   "pan": -0.5
+  },
+  {
+   "t": 477.267,
+   "kare": 14318,
+   "dosya": "$E/zincir-rubberduck-chain_02.flac",
+   "db": -19,
+   "olay": "S18 kapı 2 zincir"
+  },
+  {
+   "t": 477.347,
+   "kare": 14320,
+   "dosya": "$E/kilit-rubberduck-lock_02.flac",
+   "db": -21,
+   "olay": "S18 kapı 2 asma kilit"
+  },
+  {
+   "t": 477.967,
+   "kare": 14339,
+   "dosya": "$E/zincir-rubberduck-chain_03.flac",
+   "db": -19,
+   "olay": "S18 kapı 3 zincir",
+   "pan": 0.5
+  },
+  {
+   "t": 478.545,
+   "kare": 14356,
+   "dosya": "$E/kilit-rubberduck-lock_01.flac",
+   "db": -15,
+   "olay": "S18 kapı 3 asma kilit (cümle sonunda, boşlukta)",
+   "pan": 0.5
+  },
+  {
+   "t": 488.2,
+   "kare": 14646,
+   "dosya": "$O/ozgun-sayac-tikirti.flac",
+   "db": -21,
+   "olay": "S18 \"~4,000 never reopen\" sayacı"
+  },
+  {
+   "t": 507.54,
+   "kare": 15226,
+   "dosya": "$E/ding-pwl-bell_ding1.flac",
+   "db": -18,
+   "olay": "S19 \"9 insured\" dilimi"
+  },
+  {
+   "t": 522.2,
+   "kare": 15666,
+   "dosya": "$AE/riser.flac",
+   "db": -14,
+   "olay": "S19→S20 kapı raylarda kayar, 1933→2026"
+  },
+  {
+   "t": 530.12,
+   "kare": 15904,
+   "dosya": "$O/ozgun-sayac-tikirti.flac",
+   "db": -21,
+   "olay": "S20 \"+3.7%\" sayacı"
+  },
+  {
+   "t": 548.088,
+   "kare": 16443,
+   "dosya": "$AE/pop-drop.flac",
+   "db": -16,
+   "olay": "S20 \"$964\" kartı düşer"
+  },
+  {
+   "t": 567.341,
+   "kare": 17020,
+   "dosya": "$AE/muhur-impact-punch.flac",
+   "db": -12,
+   "olay": "S21 \"Same box. Opposite result.\" vuruşu"
+  },
+  {
+   "t": 589.862,
+   "kare": 17696,
+   "dosya": "$O/ozgun-ka-ching.flac",
+   "db": -16,
+   "olay": "S22 \"$250,000\" sigorta tabelası"
+  },
+  {
+   "t": 600.493,
+   "kare": 18015,
+   "dosya": "$O/ozgun-ding-ding-dogru.flac",
+   "db": -14,
+   "olay": "S23 kazanan kapı"
+  }
+ ],
+ "shorts": [
+  {
+   "ad": "shorts-1",
+   "dosya": "$M/catchy-swing-doge.ogg",
+   "duck": 20,
+   "sure": 60.0,
+   "ofset": 0.0
+  },
+  {
+   "ad": "shorts-2",
+   "dosya": "$M/electro-swing-type-gp.mp3",
+   "duck": 20,
+   "sure": 60.0,
+   "ofset": 0.0
+  }
+ ]
+}
