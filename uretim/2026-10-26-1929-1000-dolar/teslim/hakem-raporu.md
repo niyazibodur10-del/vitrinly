@@ -3,7 +3,11 @@
 **Hakem:** hakem (bağımsız) · **Tarih:** 2026-10-27 · **Girdi:** `08-kurgu/final-16x9.mp4`, `shorts-1.mp4`, `shorts-2.mp4`, `final.en.srt`, `09-paket/*`, `07-animasyon/senkron-rapor.md`, `04-ses/ses-rapor.md`, `06-muzik/lisans-kaydi.md`, `05-gorsel/canva-promptlari.md` §5.
 Her satır **benim yeniden ölçümüm**. Ajan raporuna yalnız kendi ölçümümle karşılaştırmak için baktım.
 
-## KARAR: ONAY (GEÇTİ), yayın öncesi 1 idari şart
+## KARAR: ONAY (GEÇTİ) — F9b (2026-10-28) fark kontrolüyle teyit; ŞY-1 KAPANDI (Hakkında satırı 2026-10-27 API ile eklendi, `kanal-paketi.json` + `mevcut-durum.md`)
+
+> Not: aşağıdaki F9 tablosundaki sha256 değerleri eski render içindir; **geçerli sha256 ve ölçümler §F9b**.
+
+### (F9 ilk karar) yayın öncesi 1 idari şart
 
 **Şart (ŞY-1, koordinatör, render gerekmez):** Ö9'un kanal düzeyi yarısı açık. Kanal Hakkında metninde videoların insan ekip tarafından hazırlandığı yazmıyor (`uretim/kanal-kimligi/kanal-paketi.json`). F11 yüklemesinden önce Hakkında'ya şu satır eklenmeli: *"Researched, written and produced by the Toonomy team."* Kanal ayarlarını Niyazi koordinatöre bıraktı. Bu yüzden video RED almaz, Niyazi'den ek bir şey istenmez.
 
@@ -54,3 +58,22 @@ Her satır **benim yeniden ölçümüm**. Ajan raporuna yalnız kendi ölçümü
 
 ## Teslim (`teslim/`)
 `final-16x9.mp4`, `shorts-1.mp4`, `shorts-2.mp4` → `../08-kurgu/` dosyalarına sembolik bağ (git dışı, sha256 yukarıda). Thumbnail'lar A2/B1/D1 ve `final.en.srt` kopya. `yayin-paketi*.json` değiştirilmeden kopyalandı: yollar `../08-kurgu/` ve `../09-paket/` olduğu için `teslim/`den de çözülüyor, `teslim/` içinden dry-run 3/3 0 hata. Ayrıca `YAYIN.md`, `politika-raporu.md`, bu rapor.
+
+## F9b — fark kontrolü (2026-10-28): abone ol animasyonu + paket değişikliği → **ONAY (teyit)**
+**Geçerli dosyalar (sha256, `sha256sum -c` 08-kurgu ve teslim/ bağları 3/3 OK):** final `a2a96d495acc…` · shorts-1 `839cefc758be…` · shorts-2 `0a53ebb3d4b7…`. Dosyalar değiştiği için ucuz ölçümleri tam yaptım. Ağır ölçümleri örneklem kuralıyla yaptım: değişen bölgelerin hepsi + 2 rastgele 60 sn pencere (tohum 20261028) + ağzın göründüğü en uzun aralık.
+
+| Kapı | Kendi ölçümüm | Ajan (kurgu-rapor §7) | Sonuç |
+|---|---|---|---|
+| ffprobe | final 1920x1080 30 fps 18.949 kare · Sh1 1080x1920 1.487 · Sh2 1.681 (eskiyle aynı) | aynı | ✓ |
+| Ses | final −14,0 LUFS / TP −2,2 · Sh1 −14,0 / −3,4 · Sh2 −14,0 / −3,5 | aynı | ✓ |
+| Siyah/donma | 3 dosyada 0 / 0 | aynı | ✓ |
+| **Abone animasyonu sayısı** | kendi dedektörüm: tüm kare, 4 fps, saf kırmızı piksel. Final **4** (93,75 / 271,75 / 459,25 / 580,5 sn), Sh1 **1** (43,0 / 49,6, sonda), Sh2 **1** (50,0 / 56,0, sonda). Başka yerde yanlış pozitif yok. İlk 60 sn'de yok | 4 / 1 / 1 | ✓ CLAUDE.md kuralı (uzun 3–4, Shorts ≤1 sonda) |
+| Kare kontrolü | 12 kare (her animasyonda giriş / klik / sonrası) + Shorts 6 kare: profil resmi + Toonomy/@toonomy + SUBSCRIBE → imleç → "✓ SUBSCRIBED" + zil. Altyazıya ve Leo yüzüne binmiyor. #2 anlatımdaki "subscribing" kelimesiyle eşleşiyor | aynı | ✓ (R7) |
+| Klik maskeleme / WER | Klik pencereleri (87,6–101,4 · 269,2–280,0 · 453,8–467,0 · 577,7–588,7): **4/4 WER %0,0** (133 kelime). Rastgele 545,4–602,9: %0,0 (151). Rastgele 330,1–384,9: %4,5 (7/155; hepsi bilinen normalizasyon/ASR artefaktı "box leo→boxleo", "looks→looked", klik yok). 390,6–408,3 ("So how long until he's back…", tam dosyada atlandığı iddia edilen cümle): **%0,0** → %2,1'in kaynağı uzun dosya segmentasyonu, iddia doğrulandı. Sh1 transkripti: kapanış ve klik bölgesi tam; 3 fark "smartest looking", "shoe box", sessizlikte "to." (ASR). Sh2 eskiyle birebir aynı | tam dosya %2,1 · pencereler 5/5 aynı | ✓ (kapı ≤%10) |
+| Dudak senkronu (örneklem) | en uzun ağız aralığı 548,77–580,08, formant: **+1 kare** (kor. 0,56) | — | ✓ |
+| Lisans | `ozgun-fare-klik.flac` kendi sentezimiz, lisans-kaydi.md:89 + assets/LISANSLAR.md:37. lisans-kontrol exit 0 | aynı | ✓ |
+| Paket | dry-run 3/3 **0 hata 0 uyarı**. teslim/ JSON = 09-paket JSON (cmp). Uzun video yayın zamanı 2026-10-28T12:00-04:00 = **16:00 UTC** (ABD yaz saati 1 Kasım'a kadar, −04:00 doğru). Etiketler: black tuesday / black tuesday 1929 / black monday 1929 / black thursday 1929 (olay adı, yanıltıcı değil). Hashtag #BlackTuesday (≤3 hashtag). AI satırı + Not financial advice var. `sentetik_medya=true` | 0 hata | ✓ |
+| SRT | değişmedi (ses zamanı aynı, ofset 0) | aynı | ✓ |
+
+**Yeni riskler:** R7: Shorts 2'de abone kartı 49,9–53,4 sn arasında 2022–26 panelinin alt çizgi bandını örtüyor. "$1,000 buys like $881" ve 113,5 değeri açık kalıyor, kart 3,5 sn ekranda. Kabul. R8: `onay.niyazi_onayi` 3 pakette hâlâ `false`, yükleme aracı bu durumda yüklemeyi reddeder. Niyazi uzun video yayınını onayladığı için koordinatör yalnız uzun video paketinde F11'den önce bunu `true` yapmalı. Shorts onayı ayrı.
+**Karar:** ONAY. Değişiklik kapıların hiçbirini düşürmedi. Ajan raporuyla çelişkim yok (WER artışı ölçüm artefaktı, doğrulandı).
