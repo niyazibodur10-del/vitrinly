@@ -134,6 +134,20 @@ EK = [
 ]
 
 
+# Abone ol animasyonu (video/src/ortak/AboneOl.tsx; Niyazi kararı 2026-10-28). Tek kaynak: bu tablo → kurgu-veri.ts (ABONE).
+# Klik sesi bas + ABONE_KLIK_SN'de (bileşendeki varsayılanla aynı). Yerleşim gerekçesi kurgu-rapor.md §7.
+ABONE_KLIK_SN = 1.3
+ABONE_KLIK = ("ozgun-fare-klik.flac", -17)
+ABONE_ANA = [  # (bas sn, sure sn, taraf)
+    (93.55, 3.5, "sag"),    # S05 "Ordinary people… savings in" (doruk "six times higher" 92.8 sonrası, açıklama "Many didn't…" 97.8 öncesi); Leo solda
+    (271.55, 3.5, "sol"),   # S11 abone cümlesi: klik "subscribing" (272.85) ile; eski sessiz düğmenin yerine; spot "Now," 275.65'te
+    (459.0, 3.5, "sag"),    # S18 "Visitors who come to Washington…" anlatısı; harita solda
+    (580.3, 3.5, "sol"),    # S22 "The bank door changed too…" ($2,500 kartı 583'te üstte, ↺13 592.9 öncesi; uç ekran 618.4'ten önce)
+]
+ABONE_SHORTS = {"sh1": (1285, 86, 1150), "sh2": (1498, 105, 1100)}  # (çıkış karesi, süre kare, kart üst y) — köprü kartından (kopruBas) önce biter
+# sh2 y 1100: S21 ikinci grafiğin çizgisi (≈1035) ile "$1,000 buys like" satırı (≈1300) arasındaki boşluk; 1150 o satırı örtüyordu
+
+
 def ana_plan():
     cue = json.load(open(f"{UR}/06-muzik/cue.json"))
     plan = []
@@ -147,6 +161,9 @@ def ana_plan():
                      "olay": s["olay"], "kaynak": "F6" if yt is None else f"F6→{s['t']}"})
     for t, ad, db, olay in EK:
         plan.append({"t": t, "dosya": ad, "db": db, "sure": None, "perde": None, "olay": olay, "kaynak": "F7 ek"})
+    for b, _, _ in ABONE_ANA:
+        plan.append({"t": round(b + ABONE_KLIK_SN, 3), "dosya": ABONE_KLIK[0], "db": ABONE_KLIK[1], "sure": None, "perde": None,
+                     "olay": "abone ol klik", "kaynak": "F7 abone"})
     return sorted(plan, key=lambda p: p["t"])
 
 
@@ -227,13 +244,18 @@ def shorts():
                 if p["tur"] == "sahne" and p["bas"] <= t < p["son"]:
                     i = int(round((p["yer"] / FPS + t - p["bas"]) * SR))
                     x = vurus(f_, db); j = min(n, i + len(x)); m[i:j] += x[:j - i]
+        ab, ad_sure, _ = ABONE_SHORTS[ad]
+        assert ab + ad_sure <= veri[ad]["kopruBas"], "abone animasyonu köprü kartına biniyor"
+        i = int(round((ab / FPS + ABONE_KLIK_SN) * SR)); x = vurus(*ABONE_KLIK); j = min(n, i + len(x)); m[i:j] += x[:j - i]
         kb = int(round(veri[ad]["kopruBas"] / FPS * SR))
         x = vurus("whoosh-kisa.flac", -20); j = min(n, kb + len(x)); m[kb:j] += x[:j - kb]
         yaz(f"{REPO}/video/public/k1929t/{ad}-yatak.wav", m)
         print(ad, "toplam", toplam, "kare =", round(toplam / FPS, 2), "sn")
     ts = ("// Otomatik üretildi: uretim/2026-10-26-1929-1000-dolar/08-kurgu/kurgu_ses.py shorts — elle düzenleme.\n"
           "export type KParca = {tur: string; kaynak: string; bas: number; son: number; kareBas: number; sure: number; yer: number};\n"
-          f"export const KURGU_SHORTS: Record<string, {{toplam: number; kopruBas: number; parcalar: KParca[]}}> = {json.dumps(veri)};\n")
+          f"export const KURGU_SHORTS: Record<string, {{toplam: number; kopruBas: number; parcalar: KParca[]}}> = {json.dumps(veri)};\n"
+          f"export const ABONE_ANA: {{bas: number; sure: number; taraf: \"sol\" | \"sag\"}}[] = {json.dumps([{'bas': b, 'sure': d, 'taraf': k} for b, d, k in ABONE_ANA])};\n"
+          f"export const ABONE_SHORTS: Record<string, {{kare: number; sure: number; ust: number}}> = {json.dumps({k: {'kare': a, 'sure': d, 'ust': u} for k, (a, d, u) in ABONE_SHORTS.items()})};\n")
     open(f"{REPO}/video/src/k1929/kurgu-veri.ts", "w").write(ts)
 
 

@@ -16,8 +16,8 @@ const Spot: React.FC<{ x: number; y: number; r: number; koyu?: number }> = ({ x,
   <AbsoluteFill style={{ background: `radial-gradient(circle at ${x}px ${y}px, rgba(0,0,0,0) ${r * 0.55}px, rgba(0,0,0,${koyu}) ${r}px)`, pointerEvents: "none" }} />
 );
 
-// Abone düğmesi (3 sn, sessiz, logo animasyonu yok)
-const Abone: React.FC<{ an: number }> = ({ an }) => {
+// Eski sessiz abone düğmesi — 2026-10-28 kullanılmıyor (yerine ortak AboneOl, kurgu katmanında)
+export const AboneEski: React.FC<{ an: number }> = ({ an }) => {
   const t = useT();
   const p = interpolate(t, [an, an + 0.3, an + 2.7, an + 3.0], [0, 1, 1, 0], CL);
   const tik = interpolate(t, [an + 1.0, an + 1.15, an + 1.3], [1, 0.9, 1], CL);
@@ -50,7 +50,7 @@ export const S11: React.FC = () => {
         </Kamera>
         <Leo id="S11" x={1640} y={352} s={1.0} pozlar={[[0, "a"]]} tohum={11} />
         {spotP > 0 ? <Spot x={interpolate(spotP, [0, 1], [1640, 960 + (KAHVE_X - 1047) * 1.1])} y={480} r={interpolate(spotP, [0, 1], [900, 380])} koyu={0.65 * spotP} /> : null}
-        <Abone an={a("if") - 0.2} />
+        {/* Abone düğmesi kurgu katmanına taşındı (video/src/ortak/AboneOl.tsx, kurgu.tsx ABONE_ANA; 2026-10-28) */}
       </SahneKok>
     );
   }

@@ -243,6 +243,15 @@
 "kaynak": "F7 ek"
 },
 {
+"t": 94.85,
+"dosya": "ozgun-fare-klik.flac",
+"db": -17,
+"sure": null,
+"perde": null,
+"olay": "abone ol klik",
+"kaynak": "F7 abone"
+},
+{
 "t": 109.96,
 "dosya": "pop-drop.flac",
 "db": -18,
@@ -403,6 +412,15 @@
 "perde": null,
 "olay": "S11 \"Quick pause\" duraklatma tıkı",
 "kaynak": "F6"
+},
+{
+"t": 272.85,
+"dosya": "ozgun-fare-klik.flac",
+"db": -17,
+"sure": null,
+"perde": null,
+"olay": "abone ol klik",
+"kaynak": "F7 abone"
 },
 {
 "t": 275.66,
@@ -648,6 +666,15 @@
 "kaynak": "F6→478.545"
 },
 {
+"t": 460.3,
+"dosya": "ozgun-fare-klik.flac",
+"db": -17,
+"sure": null,
+"perde": null,
+"olay": "abone ol klik",
+"kaynak": "F7 abone"
+},
+{
 "t": 470.92,
 "dosya": "pop-drop.flac",
 "db": -20,
@@ -763,6 +790,15 @@
 "perde": null,
 "olay": "S21 \"Same box. Opposite result.\" vuruşu",
 "kaynak": "F6→567.341"
+},
+{
+"t": 581.6,
+"dosya": "ozgun-fare-klik.flac",
+"db": -17,
+"sure": null,
+"perde": null,
+"olay": "abone ol klik",
+"kaynak": "F7 abone"
 },
 {
 "t": 584.67,

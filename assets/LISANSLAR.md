@@ -34,6 +34,7 @@ CC0 atıf istemez; yine de açıklamaya gönüllü teşekkür önerilir (Content
 | `yazi-klavye.flac` (← `Human Typing/human_vel-004.wav`) | https://opengameart.org/content/keyboard-soundpack-1-typing-and-single-keystrokes | CC0 1.0 | unicaegames | 2026-10-26 |
 | `yazi-daktilo.flac` (← `typewriter2.wav`) | https://opengameart.org/content/typewriter-sounds | CC0 1.0 | Cassie-OrbitGames | 2026-10-26 |
 | `para-coin-drop.flac` (← `coin_drop.ogg`) | https://opengameart.org/content/coin-drop | CC0 1.0 | Vinrax | 2026-10-26 |
+| `ozgun-fare-klik.flac` (abone ol animasyonu fare tıklaması) | Kendi üretimimiz: `tools/ses/fare-klik-uret.py` (sentez, sabit tohum 1929) | Bizim | Toonomy | 2026-10-28 |
 
 | `ozgun-radyo-cizirti.flac`, `ozgun-kapi-isik-acilis.flac`, `ozgun-ding-oyunsovu.flac`, `ozgun-ding-ding-dogru.flac`, `ozgun-gerilim-vurus.flac`, `ozgun-buzzer-yanlis.flac`, `ozgun-sayac-tikirti.flac`, `ozgun-ka-ching.flac`, `ozgun-ruzgar-dusus.flac`, `ozgun-kasa-kilit.flac` | Kendi üretimimiz: `uretim/2026-10-26-1929-1000-dolar/06-muzik/ozgun-uret.py` | Bizim | Toonomy | 2026-10-27 |
 | `kapi-rubberduck-door_open_01.flac`, `kasa-kapisi-rubberduck-metal_open_01.flac`, `kasa-kapisi-rubberduck-metal_slam_01.flac` | https://opengameart.org/content/100-cc0-metal-and-wood-sfx | CC0 1.0 | rubberduck | 2026-10-27 |

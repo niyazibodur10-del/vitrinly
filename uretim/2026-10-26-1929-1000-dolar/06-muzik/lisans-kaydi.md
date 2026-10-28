@@ -86,6 +86,7 @@ Zaman ekseni `04-ses/anlatim.wav`. Bu bölümdeki her dosya yukarıdaki tablolar
 | `pop-pluck.flac` (SFX) | CC0 1.0 | 0:04.94, 0:05.82, 0:06.62, 5:59.06, 6:00.70, 6:03.80 |
 | `riser.flac` (SFX) | Bizim | 8:42.20 |
 | `tik-click.flac` (SFX) | CC0 1.0 | 4:29.28 |
+| `ozgun-fare-klik.flac` (SFX, F7 abone ol animasyonu; kendi sentezimiz `tools/ses/fare-klik-uret.py`, kanal kaydı assets/LISANSLAR.md) | Bizim | 1:34.85, 4:32.85, 7:40.30, 9:41.60; Shorts 1 0:44.13; Shorts 2 0:51.23 |
 | `whoosh-kisa.flac` (SFX) | Bizim | 1:02.94, 1:04.84, 1:07.24, 4:35.52 |
 | `whoosh-uzun.flac` (SFX) | Bizim | 1:19.26 |
 | `zincir-rubberduck-chain_01.flac` (SFX) | CC0 1.0 | 7:56.57 |

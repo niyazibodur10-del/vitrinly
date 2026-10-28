@@ -5,7 +5,8 @@ import { AltyaziParca, Tam } from "./Tam";
 import { DEk, DikeySahneComp, DIKEY_SAHNE } from "./dikey";
 import { f, Kart, RENK } from "./kit";
 import { Doku, fredoka } from "./ortak";
-import { KURGU_SHORTS } from "./kurgu-veri";
+import { ABONE_ANA, ABONE_SHORTS, KURGU_SHORTS } from "./kurgu-veri";
+import { AboneOl } from "../ortak/AboneOl";
 import { SAHNELER } from "./veri-tam";
 
 // F7 kurgu katmanı (kurgu-editoru). Animasyonun kendisine dokunmaz: K1929Tam'ı altyazısız sarar, kurgu vurgularını
@@ -64,6 +65,13 @@ export const Final: React.FC<{ varyant?: string }> = ({ varyant = KURGU_VARYANT 
         <Tam altyazi={false} />
       </SnapOlcek>
       {v.vaat ? <VaatSeridi /> : null}
+      {varyant === KURGU_VARYANT
+        ? ABONE_ANA.map((a) => (
+            <Sequence key={a.bas} from={Math.round(a.bas * 30)} durationInFrames={Math.round(a.sure * 30)} name={`AboneOl-${a.bas}`} layout="none">
+              <AboneOl duzen="yatay" taraf={a.taraf} sure={a.sure} />
+            </Sequence>
+          ))
+        : null}
       <AltyaziParca ofs={0} />
     </AbsoluteFill>
   );
@@ -136,6 +144,9 @@ export const KurguShorts: React.FC<{ ad: "sh1" | "sh2" }> = ({ ad }) => {
           ) : null}
         </Sequence>
       ))}
+      <Sequence from={ABONE_SHORTS[ad].kare} durationInFrames={ABONE_SHORTS[ad].sure} name="AboneOl" layout="none">
+        <AboneOl duzen="dikey" sure={ABONE_SHORTS[ad].sure / 30} ust={ABONE_SHORTS[ad].ust} />
+      </Sequence>
       <Sequence from={v.kopruBas}>
         <KopruKarti {...KOPRU[ad]} />
       </Sequence>
