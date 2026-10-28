@@ -89,7 +89,8 @@
   },
   "oynatma_listesi_id": null,
   "onay": {
-    "niyazi_onayi": false,
-    "tarih": null
+    "niyazi_onayi": true,
+    "tarih": "2026-10-28",
+    "not": "Niyazi: 'İlk uzun videoyu bugün yayına alabiliriz saatini sen seç' (2026-10-28)"
   }
 }

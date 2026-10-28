@@ -39,3 +39,9 @@
 - F6 miks: Ragtime! Jazz (B2) en riskli — müzik konuşmanın 22–24 dB altında + 2–4 kHz oyuk; kendi gerilim yatakları yalnız katman (enerji 150 Hz altında); stüdyo kahkahası CC0 yok → "group giggling" 3 katman; 3 CC BY atfı açıklamaya (lisans-kaydi.md).
 - Kaynak: CPU çakışması — TTS/Whisper/render/ESRGAN aynı anda koşmasın (uretim-hatti-testi.md).
 - F7 kurgu → F8 paket: bölümler anlatım 0 noktasına göre (00:00/01:19/02:46/04:46/06:12/07:33/08:42/09:52); finalde başa boşluk/ara süre eklenirse kurgu-rapor.md'de ofset yazılsın → youtube-paketleyici paket.md §4'ü kaydırır ve paket-uret.py + paket-kontrol.py + yukle.py --dry-run yeniden koşar. Uç ekran gerçek sesle ~13 sn (S24 10:18.4→10:31.6).
+
+## F11 yayın (2026-10-28)
+- Uzun video yüklendi: BVJwZ1C9R1U (https://youtu.be/BVJwZ1C9R1U), planlı yayın 2026-10-28 16:00 UTC (19:00 TRT), thumbnail A2, AI beyanı açık. Niyazi onayı: "İlk uzun videoyu bugün yayına alabiliriz saatini sen seç".
+- Oynatma listesi "The Collapse: Financial History Explained" açıldı, video eklendi.
+- Niyazi'ye kalan Studio adımları (YAYIN.md): SRT yükleme, Test & Compare (yayından sonra A2/B1/D1), uç ekran, pinli yorum.
+- Shorts 1/2: planlı 2 ve 3 Kasım; ayrı onay bekliyor.

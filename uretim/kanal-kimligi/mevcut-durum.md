@@ -24,3 +24,4 @@ API ile değiştirilemez: profil fotoğrafı, kanal adı, @tanıtıcı (Studio).
 - Eski 4 video **gizliye alındı** (Niyazi onayı 2026-10-26, videos.update status.privacyStatus=private; kontrol okumasında 4/4 private). Geri almak: Studio'da görünürlük → Herkese açık.
 - **Ad değişti:** Toonomy · @toonomy (Niyazi, Studio). Maskot: Leo. Açıklama + anahtar kelimeler Toonomy/Leo ile güncellendi; **banner yüklendi** (TOONOMY, "NEW VIDEOS EVERY WEEK"; bannerExternalUrl yenilendi). Profil fotoğrafı (`profil-800.png`) Niyazi Studio'dan yükleyecek.
 - 2026-10-27: Hakkında'ya "Researched, written and produced by the Toonomy team." eklendi (hakem ŞY-1, Ö9), API ile uygulandı.
+- 2026-10-28: oynatma listesi 'The Collapse: Financial History Explained' açıldı (ilk video BVJwZ1C9R1U).
