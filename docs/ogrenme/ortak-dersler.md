@@ -9,7 +9,7 @@ Video klasöründe kalan kapı betikleri (1929 videosu, `uretim/2026-10-26-1929-
 | Faz / sahip | Betik |
 |---|---|
 | F1 trend-avcisi | `01-arastirma/kaynak-kontrol.py`, `olcum/youtube_arama.py`, `olcum/wiki_pageviews.py`, (2026-10-28 klasöründe) `olcum/haber_rss.py`, `olcum/kaynak_bul.py` · kanal-analisti `01-arastirma/etiket_test.py` |
-| F2 senaryo-yazari / viralite / politika / hakem | `02-senaryo/senaryo-kontrol.py`, `viralite-duyarlilik.py`, `viralite-outlier.py`, `politika-tarama.py`, `hakem-karar.py` |
+| F2 senaryo-yazari / viralite / politika / hakem | `02-senaryo/senaryo-kontrol.py` (v2: `uretim/2026-10-28-yeni-video/02-senaryo/`, `--sutun B`), `viralite-duyarlilik.py`, `viralite-outlier.py`, `politika-tarama.py`, `hakem-karar.py` |
 | F3 senaryo-yazari / finans / politika | `03-metin/metin-kontrol.py` (kpm parametresini **160** yap), `dogrulama-kontrol.py`, `dogrulama-hesap.py`, `veri/hesap.py`, `politika-denetim.py` |
 | F4 ses-muhendisi | `04-ses/son-islem.sh`, `olc.py`, `son-olc.py`, `okuma-hazirla.py` |
 | F4 gorsel-varlik-sanatcisi | `05-gorsel/araclar/prompt-uret.py`, `prompt-kontrol.py`, `stil-olcum.py`, `rig-yama.py` |
