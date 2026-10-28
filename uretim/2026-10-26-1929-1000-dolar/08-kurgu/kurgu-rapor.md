@@ -59,3 +59,31 @@ Sahne başları altyazı öbeği başına oturtuldu (ilk render'da S20 başında
 2. Shorts 1 S10 kesitinin ilk ~4 sn'si yalnız "DOOR 2: THE SCORE" başlığı (grafik 18 sn'de gelir) — en zayıf an; bir sonraki dikey sahnede grafik daha erken girmeli.
 3. Altyazı 16 blokta >21 karakter/sn (TTS temposu); bölmek zamanı değiştirmez, YouTube CC için kabul.
 4. Shorts'ta anlatım kesitleri ana videonun aynası olduğundan "reused" değil ama 2 Shorts'un ikisinde de Leo hook'u aynı stüdyo kadrajında; 3. Shorts'ta farklı açılış kadrajı önerilir.
+
+## 7. Abone ol animasyonu (2026-10-28, Niyazi kararı — CLAUDE.md)
+**Bileşen:** `video/src/ortak/AboneOl.tsx` (yeniden kullanılabilir, sessiz): profil resmi (`video/public/ortak/toonomy-profil.png` ← `uretim/kanal-kimligi/profil-800.png`, 256 px) + "Toonomy" / @toonomy + kırmızı SUBSCRIBE kayarak girer → imleç gelir, **1,3 sn'de tıklar** (düğme o karede gri "✓ SUBSCRIBED", 0,9 basılma + sekme, dalga, zil sallanır) → 3,5 sn'de çıkar. Düzen `yatay` (alt üçte bir y 682–810, sol/sağ 56 px; iki satır altyazı üstü ≈830) / `dikey` (×1,2, x 70–876, y 1150; `ust` ile kaydırılır). **Klik sesi:** `assets/efekt/ozgun-fare-klik.flac` — kendi sentezimiz (`tools/ses/fare-klik-uret.py`, sabit tohum), `assets/LISANSLAR.md` + `06-muzik/lisans-kaydi.md` (lisans-kontrol.py exit 0). Ses miks betiğinde (`kurgu_ses.py`, −17 dB) bas + 1,3 sn'ye konur; yerleşim tablosu tek kaynak (`ABONE_ANA/ABONE_SHORTS` → `kurgu-veri.ts`).
+**Yerleşim (uzun 4, Shorts 1'er):**
+| # | Bas–bitiş (sn) | Klik | An | Neden burası |
+|---|---|---|---|---|
+| 1 | 93,55–97,05 (sağ) | 94,85 | S05 "Ordinary people… savings in" | ilk ~90 sn sonrası; doruk "six times higher" (92,8) bitti, açıklama "Many didn't…" (97,8) başlamadan biter; Leo solda |
+| 2 | 271,55–275,05 (sol) | 272,85 = "subscribing" | S11 abone cümlesi | eski sessiz düğme (b3.tsx) kaldırıldı, yerine bu; spot/kapı vurgusu "Now," 275,65'te |
+| 3 | 459,0–462,5 (sağ) | 460,3 | S18 "Visitors who come to Washington…" | anlatı anı; harita solda, not/kilit vurguları sonra |
+| 4 | 580,3–583,8 (sol) | 581,6 | S22 "The bank door changed too…" | ↺13 (592,9) ve uç ekran (618,4) öncesi; $2,500 kartı üstte (y≈400), çakışma yok |
+| Sh1 | kare 1285–1371 (42,83–45,70) | 44,13 | kapanış eki "The brown door won…" | köprü kartı 1371'de girer (assert ile ≤ kopruBas) |
+| Sh2 | kare 1498–1603 (49,93–53,43), y 1100 | 51,23 (cümle arası) | S21 son cümle | köprü 1603; y 1150 "$1,000 buys like $881" satırını örtüyordu → grafiğin boş bandına (1100) |
+Vaat şeridi (7,9–15,6), kapı açılışları ve yeniden kancalarla zaman çakışması yok.
+**Render:** önbellek; yalnız 4/11 parça (1, 4, 7, 9) yeniden — 23 dk (CPU paylaşımlı). Not: `tools/render-parca.sh`/`render-son.sh` çalışma ağacında uretim-muhendisi'nin yarım değişikliği vardı (sözdizimi hatası, satır 61) → HEAD sürümü kopyasıyla render edildi; araca dokunulmadı. Shorts `render-son` (HEAD).
+**Kapılar (yeni dosyalar):**
+| Kapı | Sonuç |
+|---|---|
+| ffprobe | final 1920x1080 30 fps **631,63 sn / 18.949 kare** (değişmedi) · Sh1 1080x1920 49,57 sn / 1.487 · Sh2 56,03 sn / 1.681 ✓ |
+| ebur128 | final **−14,0 LUFS / TP −2,2** / LRA 2,0 · Sh1 −14,0 / −3,4 · Sh2 −14,0 / −3,5 ✓ |
+| blackdetect / freezedetect | final 0 / 0 · Sh1 0 / 0 · Sh2 0 / 0 ✓ |
+| Abone sayısı (kırmızı düğme dedektörü, kart bandı, 4 fps) | final **4** aralık (93,75 / 271,75 / 459,25 / 580,5), eski dosyada 0; eski S11 düğmesi bandında (y 820–900) 0 → kaldırıldı ✓ · Sh1 **1** (43,0) · Sh2 **1** (50,0) ✓ |
+| Değişmeyen görüntü | yeniden render edilmeyen 7 parça kopya; örnek 12 karede PSNR ∞ (470 sn: 51,8 dB, S18 harita noktaları) ✓ |
+| Miks farkı | eski/yeni final-miks.wav yalnız 4 aralıkta farklı: 94,85 / 272,85 / 460,30 / 581,60 (+0,1 sn) ✓ |
+| Klik maskeleme (`klik_maske.py`) | 400 ms pencere RMS artışı +0,00…+0,05 dB, klik tepesi −20 dBFS (anlatım −4,5) → 4/4 GEÇTİ · Sh1 +0,02 dB GEÇTİ · Sh2 cümle arasında (konuşma yok) GEÇTİ |
+| WER | **klik pencereleri (±8 sn, eski vs yeni) transkript birebir aynı 5/5.** Tam dosya uzun-form small.en: final %2,1 (37/1726; önce %0,9), Sh1 %2,4 (3/127; önce %0,8), Sh2 %0,0. Artış Whisper uzun-form segmentasyon artefaktı: ör. 396–401 sn cümlesi ("So how long until he's back…") atlanıyor ama bu bölgede eski/yeni ses farkı **0,0** ve 20 sn pencerede cümle tam çıkıyor; aynı sonuç HEAD yaziya-dok.py ile. Ses gerilemesi değil |
+| SRT | `final.en.srt` değişmedi (ses zamanı aynı, ofset 0) |
+| Kare kontrolü | `kareler/abone-16x9.jpg` (4×3 kare: giriş / klik / sonrası), `kareler/abone-shorts-1/2-son16sn.jpg` — altyazı, Leo yüzü, veri satırları açık ✓ |
+**sha256.txt** yenilendi; `teslim/` bağları `sha256sum -c` 3/3 OK. Önizlemeler yenilendi. Hakem raporundaki eski sha256'lar artık geçersiz (koordinatör/hakem güncellemeli).
