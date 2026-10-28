@@ -171,3 +171,6 @@ Her aşamada araç sorunu → uretim-muhendisi. 2 RED sonrası → koordinatör 
 
 ## Sessiz üretim (Niyazi kararı 2026-10-27)
 Tetikten sonra Niyazi'ye ara mesaj, rapor veya soru yok; yalnız zorunlu erişim izni istenir. İş arka planda F10'a kadar sürer, Niyazi'ye yalnız bitmiş teslim verilir.
+
+## Abone ol animasyonu (Niyazi kararı 2026-10-28)
+Her videoda: kanal profil resmi + Subscribe düğmesi + imleç tıklaması + klik sesi. Uzun videoda 3–4 kez, her Shorts'ta sonda en fazla 1 kez. F7 kurgu kapısında sayılır, hakem F9'da doğrular.
