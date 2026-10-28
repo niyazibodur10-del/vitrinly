@@ -5,15 +5,20 @@
 #   RENDER_ESZAMANLI (varsayılan nproc; Remotion çekirdek sayısından fazlasını reddeder) = Remotion --concurrency. Ölçüm 2026-10-26, 4 vCPU, Pilot 14,1 sn:
 #   varsayılan (2) vs 4 vs 6 → docs/uretim-hatti-testi.md. Ara dosyalar $TMPDIR'da, çıkışta silinir (trap).
 #   Süre dökümü stderr'e: render / loudnorm ölçüm / son kodlama.
+#   --onizleme: hızlı taslak (--scale=0.5 → 960x540, crf 30, x264 veryfast). Ölçüm 2026-10-28: docs/uretim-kapasitesi.md §1.
+#   Yayın/kapı ölçümü için KULLANMA (çözünürlük ve kalite düşük). Uzun video için tools/render-parca.sh (değişen parça önbelleği).
 # Elenen: Remotion'ın kendi ses normalizasyonu (yok); render içinde loudnorm (mono kaynak, +3 LU sapma).
 set -euo pipefail
-ID="$1"; OUT="$2"; shift 2; ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+ID="$1"; OUT="$2"; shift 2
+KALITE=(--codec=h264 --crf=18); EKLER=()
+for a in "$@"; do if [ "$a" = --onizleme ]; then KALITE=(--codec=h264 --crf=30 --x264-preset=veryfast --scale=0.5); else EKLER+=("$a"); fi; done
+set -- "${EKLER[@]+"${EKLER[@]}"}"; ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 B=$(ls -d /opt/pw-browsers/chromium_headless_shell-*/chrome-headless-shell-linux64/chrome-headless-shell 2>/dev/null | head -1)
 [ -n "$B" ] || { echo "HATA: render tarayıcısı yok (/opt/pw-browsers/chromium_headless_shell-*)" >&2; exit 1; }
 case "$OUT" in /*) ;; *) OUT="$PWD/$OUT";; esac
 TMP="$(mktemp -d)"; trap 'rm -rf "$TMP"' EXIT
 t0=$(date +%s.%N)
-(cd "$ROOT/video" && npx remotion render "$ID" "$TMP/ham.mp4" --browser-executable="$B" --codec=h264 --crf=18 \
+(cd "$ROOT/video" && npx remotion render "$ID" "$TMP/ham.mp4" --browser-executable="$B" "${KALITE[@]}" \
   --concurrency="${RENDER_ESZAMANLI:-$(nproc)}" --log=error "$@")
 t1=$(date +%s.%N)
 J=$(ffmpeg -hide_banner -nostats -i "$TMP/ham.mp4" -af loudnorm=I=-14:TP=-1:LRA=11:print_format=json -f null - 2>&1 | sed -n '/^{/,/^}/p')

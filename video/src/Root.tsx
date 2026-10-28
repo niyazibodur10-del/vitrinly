@@ -9,6 +9,7 @@ import { SAHNELER, SHORTS_EK } from "./k1929/veri-tam";
 import { DEk, DikeySahneComp, DIKEY_SAHNE } from "./k1929/dikey";
 import { Final, KurguShorts } from "./k1929/kurgu";
 import { KURGU_SHORTS } from "./k1929/kurgu-veri";
+// yeni-video.sh: import
 
 const PilotDikey: React.FC = () => (
   <DikeyKesit mod="dolgu">
@@ -59,6 +60,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="K1929Shorts1" component={KurguShorts} defaultProps={{ ad: "sh1" as const }} durationInFrames={KURGU_SHORTS.sh1.toplam} fps={30} width={1080} height={1920} />
       <Composition id="K1929Shorts2" component={KurguShorts} defaultProps={{ ad: "sh2" as const }} durationInFrames={KURGU_SHORTS.sh2.toplam} fps={30} width={1080} height={1920} />
       <Composition id="AgizTest" component={AgizTest} durationInFrames={1} fps={30} width={1920} height={1080} />
+      {/* yeni-video.sh: kompozisyon */}
     </>
   );
 };

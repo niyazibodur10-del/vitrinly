@@ -38,7 +38,8 @@ def main():
     if y.ndim > 1:
         y = y.mean(axis=1)
     C = json.load(open(a.zaman_json))["cumleler"]
-    m = WhisperModel(a.model, device="cpu", compute_type="int8", local_files_only=True)
+    import os  # cpu_threads=nproc/2: bu VM'de 4'ten hızlı (yaziya-dok.py ölçümü 2026-10-28), çıktı aynı
+    m = WhisperModel(a.model, device="cpu", compute_type="int8", local_files_only=True, cpu_threads=max(1, (os.cpu_count() or 4) // 2))
     sonuc = []
     for i in secim(a.cumleler, len(C)):
         c = C[i]
