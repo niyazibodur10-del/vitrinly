@@ -11,6 +11,7 @@
 # Neden (2026-10-28, uretim-muhendisi): 1929 finali için "konteyner giderse K1929Final/Shorts yeniden render ≈35 dk" notu
 # vardı ama zincir (anlatım wav → müzik/SFX stem'leri → kurgu miksi → Shorts yatakları → render) 6 betik ve el bilgisi
 # istiyordu. Tarif dosyası bu bilgiyi videonun klasöründe tutar; tools/yeni-video.sh her yeni videoya boş tarif koyar.
+# Not: komutlar stdin=/dev/null ile çalışır (ffmpeg stdin okuyup tarifin sonraki satırlarını yutuyordu — 2026-10-28 testi).
 # Elenen: Makefile (bağımlılık zaman damgası git checkout'ta anlamsız; tüm dosyalar "yeni" görünür), tek dev betik
 # (her video farklı zincir).
 set -euo pipefail
@@ -31,8 +32,8 @@ while IFS= read -r satir || [ -n "$satir" ]; do
   if [ "$LISTE" = 1 ]; then printf '%2d %-4s %s\n' "$n" "$durum" "$hedef"; continue; fi
   [ "$durum" = VAR ] && { echo "[yeniden-uret] $n atla (var): $hedef"; continue; }
   echo "[yeniden-uret] $n üret: $hedef"; s=$(date +%s)
-  mkdir -p "$(dirname "$hedef")"
-  bash -euo pipefail -c "$komut" || { echo "HATA: adım $n başarısız: $komut" >&2; exit 1; }
+  mkdir -p -- "$(dirname -- "$hedef")"
+  bash -euo pipefail -c "$komut" </dev/null || { echo "HATA: adım $n başarısız: $komut" >&2; exit 1; }
   [ -s "$hedef" ] || { echo "HATA: adım $n çalıştı ama hedef oluşmadı: $hedef" >&2; exit 1; }
   echo "[yeniden-uret] $n bitti ($(( $(date +%s) - s )) sn)"; yapilan=$((yapilan+1))
 done < "$T"
