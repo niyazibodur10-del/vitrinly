@@ -62,7 +62,7 @@ Her ajan işini **test ederek** teslim eder (bkz. `docs/kalite-kapilari.md`): te
 - Her teslimden sonra ajan hafızasına (`.claude/agents/hafiza/<ad>.md`) ders yazar; birden çok ajanı ilgilendiren ders `docs/ogrenme/ortak-dersler.md`'ye.
 - **F12 yayın sonrası** (48 sa/7 g/28 g) `kanal-analisti` raporundaki "sonraki video için 3 ders" ilgili ajanların hafızasına işlenir; `viralite-analisti` modeli kalibre eder.
 - `hakem` her teslimi `docs/ajan-karnesi.md`'ye puanlar; **her 5 videoda** `ik-direktoru` kadro + skill denetimi yapar (eğit / değiştir / işe al, `docs/kadro-degisiklikleri.md`), `monetizasyon-uyum-uzmani` kanal düzeyi özgünlük denetimi yapar, `uretim-muhendisi` hattı (`tools/kurulum.sh`, testler) yeniden doğrular.
-- Yeni oturumda koordinatör önce bu dosyayı, `docs/kalite-kapilari.md`'yi ve ilgili ajan hafızasını okur; yeni konteynerde `tools/kurulum.sh` (≈4–6 dk ilk, sonra ≈2 sn).
+- Yeni oturumda koordinatör önce bu dosyayı, `docs/kalite-kapilari.md`'yi ve ilgili ajan hafızasını okur; yeni konteynerde `tools/kurulum.sh` (≈2 dk ilk, sonra ≈2 sn; SessionStart kancası otomatik çalıştırır).
 
 ## Teknik kararlar
 - Video motoru: **Remotion** (React ile programatik video). Resmi skill: `.claude/skills/remotion-best-practices`.
