@@ -24,12 +24,12 @@ SHORTS_ETIKET = {
 paketler = {
     "yayin-paketi.json": {
         "sema": "yayin-paketi/1",
-        "_not": "1929-1000-dolar uzun video. paket.md'den paket-uret.py ile üretildi; elle düzenleme yok. Slot: Paz 2026-11-01 12:00 ET (EST, UTC-5); yedek 2026-11-08.",
+        "_not": "1929-1000-dolar uzun video. paket.md'den paket-uret.py ile üretildi; elle düzenleme yok. Slot: Çar 2026-10-28 12:00 ET (EDT, UTC-4; Niyazi onayı 2026-10-28, saat koordinatör).",
         "tur": "uzun",
         "dosyalar": {"video": "../08-kurgu/final-16x9.mp4", "thumbnail": "../09-paket/thumbnail/A2-kapilar.jpg",
                      "altyazilar": [{"dosya": "../08-kurgu/final.en.srt", "dil": "en", "ad": "English"}]},
         "metadata": {"baslik": ONERILEN, "aciklama": V["aciklama"], "etiketler": ETIKETLER, "bolumler": BOLUMLER, **META},
-        "durum": {**DURUM, "yayin_zamani": "2026-11-01T12:00:00-05:00"},
+        "durum": {**DURUM, "yayin_zamani": "2026-10-28T12:00:00-04:00"},
         "oynatma_listesi_id": None, "onay": dict(ONAY)},
 }
 for n, gun in ((1, "2026-11-02T09:00:00-05:00"), (2, "2026-11-03T09:00:00-05:00")):

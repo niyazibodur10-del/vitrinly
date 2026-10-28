@@ -7,12 +7,12 @@
 
 | Video | Dosya | Yayın (ET) | UTC | TRT | Gizlilik → planlı |
 |---|---|---|---|---|---|
-| Uzun (10:31,6) | `08-kurgu/final-16x9.mp4` | **Paz 01.11.2026 12:00 EST** | 17:00 | **20:00** | private + publishAt |
+| Uzun (10:31,6) | `08-kurgu/final-16x9.mp4` | **Çar 28.10.2026 12:00 EDT** | 16:00 | **19:00** | private + publishAt |
 | Shorts 1 (49,6 sn) | `08-kurgu/shorts-1.mp4` | Pzt 02.11.2026 09:00 EST | 14:00 | 17:00 | private + publishAt |
 | Shorts 2 (56,0 sn) | `08-kurgu/shorts-2.mp4` | Sal 03.11.2026 09:00 EST | 14:00 | 17:00 | private + publishAt |
 
-- ABD 1 Kasım'da kış saatine geçer → ofset **UTC−5** (paketlerde `-05:00`).
-- **Onay son anı:** 01.11 **17:00 TRT** (slottan 3 sa önce: yükleme + işleme payı). Yetişmezse **yedek slot Paz 08.11.2026 12:00 EST**: koordinatör üç paketin `yayin_zamani` alanını 7 gün ileri alır (Shorts 09.11 / 10.11). Shorts hiçbir zaman uzun videodan önce yayınlanmaz.
+- Uzun video 28.10 yaz saatinde → **UTC−4** (`-04:00`); ABD 1 Kasım'da kış saatine geçer → Shorts **UTC−5** (`-05:00`). Takvim Niyazi onayıyla (2026-10-28) Pazar slotundan bugüne alındı.
+- **Onay:** Niyazi 28.10.2026'da bugünkü yayını onayladı. Yükleme slottan önce yapılmalı (işleme payı); slot kaçarsa koordinatör `yayin_zamani`'yı yeni saate alır. Shorts hiçbir zaman uzun videodan önce yayınlanmaz.
 
 ## 1. Yükleme (API — koordinatör, Niyazi "yayınla" dedikten sonra)
 

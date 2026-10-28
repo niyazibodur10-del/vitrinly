@@ -250,7 +250,8 @@ Bonus: which money crisis from history do you want Leo to turn into the next gam
 
 ## 9. Takvim ve durum alanları
 
-- **Slot (takvim v2, Pazar 12:00 ET, A sütunu):** en yakın uygun Pazar **2026-11-01 12:00 ET**. ABD 1 Kasım 02:00'de kış saatine geçer → 12:00 **EST (UTC−5)** = 17:00 UTC = **20:00 TRT**. Şart: hakem ONAY + Niyazi onayı slottan ≥3 sa önce (01.11 17:00 TRT). Yetişmezse yedek **2026-11-08 12:00 ET** (aynı ofset) — koordinatör `yayin_zamani`'yı değiştirir.
+- **Slot GÜNCEL (2026-10-28):** Niyazi bugün yayını onayladı, saati koordinatör seçti → **Çar 2026-10-28 12:00 ET = `2026-10-28T12:00:00-04:00`** (yaz saati EDT, UTC−4) = 16:00 UTC = 19:00 TRT; 29 Ekim Black Tuesday yıl dönümünün arifesi. Shorts değişmedi (2 ve 3 Kasım, EST). Aşağıdaki satır eski plandır.
+- **Eski slot (takvim v2, Pazar 12:00 ET, A sütunu):** en yakın uygun Pazar **2026-11-01 12:00 ET**. ABD 1 Kasım 02:00'de kış saatine geçer → 12:00 **EST (UTC−5)** = 17:00 UTC = **20:00 TRT**. Şart: hakem ONAY + Niyazi onayı slottan ≥3 sa önce (01.11 17:00 TRT). Yetişmezse yedek **2026-11-08 12:00 ET** (aynı ofset) — koordinatör `yayin_zamani`'yı değiştirir.
 - **Shorts:** Shorts-1 **Pzt 2026-11-02 09:00 ET** (14:00 UTC, 17:00 TRT), Shorts-2 **Sal 2026-11-03 09:00 ET**. Uzun video kayarsa Shorts da aynı farkla kayar (uzun videodan önce asla).
 - **`durum.sentetik_medya` = true (KESİN):** monetizasyon-uyum-uzmani'nin kararı, `09-paket/politika-raporu.md` §4 (3 paket). Karar benim değil; pakete işlendi. Açıklamadaki AI satırı her durumda kalır.
 - **`gizlilik` = private + `yayin_zamani`** (planlı yayın), `onay.niyazi_onayi` = false (F10'a kadar).

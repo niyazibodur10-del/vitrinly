@@ -222,7 +222,7 @@ if KAYNAK == "paket.md":
     satirlar.append("[8] JSON paketleri ↔ paket.md (tools/yayin/yayin_paket.py ile)")
     from yayin_paket import yukle_paket, tam_aciklama, SEMA
     beklenen = {
-        "yayin-paketi.json": ("uzun", V["basliklar"].splitlines()[0], V["aciklama"], "2026-11-01T12:00:00-05:00"),
+        "yayin-paketi.json": ("uzun", V["basliklar"].splitlines()[0], V["aciklama"], "2026-10-28T12:00:00-04:00"),
         "yayin-paketi-shorts-1.json": ("shorts", V["shorts1-baslik"], V["shorts1-aciklama"], "2026-11-02T09:00:00-05:00"),
         "yayin-paketi-shorts-2.json": ("shorts", V["shorts2-baslik"], V["shorts2-aciklama"], "2026-11-03T09:00:00-05:00"),
     }
