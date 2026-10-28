@@ -74,7 +74,7 @@ Düzen kararı (F4'teki açık iş): **LEGAL NOTE, SOURCES'ın üstüne taşınd
 ```text
 The 1929 stock market crash as a game: you have $1,000 and three doors. Stocks, a bank or a shoebox. Which one gets you through the Great Depression?
 
-Leo, our cartoon host, sends one player through each door, from the September 1929 market peak to the March 1933 bank holiday, using real data: the Dow, bank suspensions and consumer prices. Then we move the winning door to 2026 to see why the same math runs the other way.
+Leo, our cartoon host, sends one player through each door, from the September 1929 market peak, through Black Monday and Black Tuesday (October 28–29, 1929), to the March 1933 bank holiday, using real data: the Dow, bank suspensions and consumer prices. Then we move the winning door to 2026 to see why the same math runs the other way.
 
 Not financial advice. For educational purposes only.
 
@@ -103,7 +103,7 @@ Sound effects (CC0): Kenney (kenney.nl), rubberduck, Nocturnal_Vanguard, PWL; ad
 MORE FROM TOONOMY
 New animated finance stories every week: https://www.youtube.com/@toonomy
 
-#GreatDepression #StockMarketCrash #FinancialHistory
+#GreatDepression #StockMarketCrash #BlackTuesday
 ```
 
 ---
@@ -143,14 +143,22 @@ Kaynak: `04-ses/sahne-zamanlari.json` (anlatim.wav, 631,63 sn). Her bölüm, o b
 
 Etiketler küçük sinyal (yazım varyantı/eş anlam); en özgül önde. Bugüne dönük yatırım ifadesi bilerek yok.
 
+**2026-10-28 "Black" terimleri kararı (Niyazi sorusu):**
+| Aday | Videoda var mı | Karar | Gerekçe |
+|---|---|---|---|
+| "Black Monday" / "Black Tuesday" (28–29 Eki 1929) | EVET, anlatım + ekran yazısı 02:11 (`final.en.srt`), dogrulama C07 [D] | **eklendi**: etiket (`black tuesday 1929`, `black monday 1929`), açıklama 2. paragraf, hashtag `#BlackTuesday` (`#FinancialHistory` yerine) | olayın gerçek adları; 29 Eki 2026 = 97. yıl dönümü |
+| "Black Thursday" (24 Eki 1929) | HAYIR (anlatım 28 Eki'den başlar) | **yalnız etiket** (`black thursday 1929`); açıklama/hashtag'de yok | aynı çöküş haftasının adı, etiket konuyu doğru tanımlar; ama videoda işlenmeyen bir günü açıklamada vaat etmeyiz |
+| "October 1929 crash" | EVET (Ekim çöküşü S06) | etiket | eş anlamlı arama ifadesi |
+| "Black Friday" | HAYIR (27 Kas 2026 alışveriş günü; 1929 ile ilgisi yok) | **ELENDİ** | hashtag politikası (support 6390658): "Don't add hashtags that are not directly related to the video" → kaldırma riski; spam/yanıltıcı uygulamalar politikası (2801973) yanıltıcı meta veriyi yasaklar; YouTube "policy myths" (2011): ilgisiz etiket "misleading metadata" ihtarı alabilir; etiketlerin keşifteki rolü zaten "minimal" (support 146402). Getirisi ~0, riski kanal düzeyi (YPP öncesi). Ayrı video fikri trend-avcisi stokuna. |
+
 <!-- veri:etiketler -->
 ```text
-1929 stock market crash, stock market crash 1929, great depression, great depression explained, 1929 crash, wall street crash of 1929, black tuesday, bank runs, bank failures 1930s, bank holiday 1933, fdic history, deflation explained, dow jones 1929, financial history, economic history, stock market history, animated history, finance animation, toonomy
+1929 stock market crash, stock market crash 1929, great depression, great depression explained, 1929 crash, wall street crash of 1929, black tuesday, black tuesday 1929, black monday 1929, black thursday 1929, october 1929 crash, bank runs, bank failures 1930s, bank holiday 1933, fdic history, deflation explained, dow jones 1929, financial history, economic history, stock market history, animated history, finance animation, toonomy
 ```
 
 <!-- veri:hashtagler -->
 ```text
-#GreatDepression #StockMarketCrash #FinancialHistory
+#GreatDepression #StockMarketCrash #BlackTuesday
 ```
 
 **Kategori:** 27 Education · **Dil:** en / en · **Çocuklara özel:** hayır (yetişkin finans/tarih eğitimi) · **Lisans:** standart YouTube · **Yerleştirme:** açık.
@@ -253,6 +261,7 @@ Bonus: which money crisis from history do you want Leo to turn into the next gam
 Betikler: `paket-uret.py` (bloklar → 3 JSON), `paket-kontrol.py` (metin kuralları + JSON tutarlılığı + bölüm↔sahne eşleşmesi), `tools/yayin/yukle.py --dry-run` (3 paket). Gerçek final dosyalar F7'de geleceği için dry-run iki kipte koşuldu: (1) gerçek paketler → yalnız "video/thumbnail yok" hataları beklenir; (2) aynı paketlerin geçici kopyası, ffmpeg ile üretilmiş sahte 16:9 631,6 sn / 9:16 57 sn video + 1280x720 thumbnail ile → metadata, bölüm, süre, Shorts ve zamanlama kuralları 0 hata olmalı. Çıktılar `kapi-cikti.txt`'de.
 
 ### 10.1 Çıktı özeti (tam çıktı `kapi-cikti.txt`, 2026-10-27)
+- **2026-10-28 "Black" terimleri güncellemesi (§5 karar tablosu):** `paket-uret.py` → `paket-kontrol.py` **0 hata** (etiket 23 adet 457/500, hashtag `#GreatDepression #StockMarketCrash #BlackTuesday`, ilk paragraf 149 krk değişmedi); `yukle.py --dry-run` 09-paket + teslim 6/6 **0 hata 0 uyarı** (10/7/7). Başlık ve Shorts metinleri değişmedi; teslim/ JSON'ları 09-paket ile aynı. Yükleme yok.
 - **GERÇEK dry-run (F7 final, ofset 0):** `final-16x9.mp4` 1920x1080 631,6 sn, `final.en.srt` 228 blok, A2 thumbnail; `shorts-1.mp4` 1080x1920 49,6 sn; `shorts-2.mp4` 1080x1920 56,0 sn → **3 paket 0 hata 0 uyarı (10/7/7), exit 0**. SRT yolu `altyazi.srt` → `final.en.srt` (kurgu adı) düzeltildi. `paket-kontrol.py` 0 hata (sha256 `320251ea…`, değişmedi). Studio adımları: `YAYIN.md`.
 - **Z1 sonrası yeniden koşu (politika raporu YEŞİL):** ana thumbnail `thumbnail/A2-kapilar.jpg` (1280x720 jpeg, 131 KB, araç ölçümü). `paket-kontrol.py` 0 hata, 2 koşu sha256 aynı (`320251ea…`); [7] finalist metinleri A2 18,5 px · B1 14,0 px · D1 16,8 px (eşik 9); [8] JSON thumbnail = A2 ve dosya var. Dry-run kip 1: thumbnail artık OK, yalnız video/SRT yok (F7); kip 2: 3 paket 0 hata 0 uyarı (10/7/7). Aşağıdaki maddeler ilk koşudur.
 - `paket-kontrol.py`: **0 hata, exit 0**; 2 koşu sha256 aynı (`130d7ce7…`). Başlıklar 41–49 krk; ilk paragraf 149 krk, 3 anahtar ilk 150'de; yasal not + AI satırı birebir; LEGAL NOTE kaynakların üstünde; müzik atfı aynen; yer tutucu 0; 8 bölümün her biri açan sahnenin gerçek `bas` zamanının ≤1 sn önünde (fark −0,47…−0,96 sn, aşağı yuvarlama); etiketler 373/500; Shorts başlık 42/47 krk; pinli yorum yasaklı 0; JSON ↔ paket.md birebir (başlık, açıklama, bölüm, etiket, zaman, `sentetik_medya` true, onay false).
