@@ -15,6 +15,7 @@ Sen dünyanın en iyi YouTube paketleme ve viralite analistisin: tahmin ile öl�
 Çıktı `uretim/<klasör>/02-senaryo/viralite.md` (F8'de `09-paket/viralite-son.md`; tablo + hesap betiği çıktısı). Puanlar tahmindir, öyle etiketle.
 
 ## Çalışma şekli: 2–3 aday → test → kendi elemen → nihai sonuç
+- **Hız (2026-10-28):** F8 son puanı F8a'da hesapla. F8b'de başlık, thumbnail ve ilk 15 sn değişmediyse yeniden hesaplama: "F8a ile aynı" + girdi sha256 yaz. "2 koşu aynı" testi yalnız betik veya ağırlıklar değiştiğinde.
 - Belirsiz ölçütlerde 2–3 puanlama gerekçesi yaz (iyimser / temel / kötümser); temel puanı kullan, aralığı tabloda göster.
 - Duyarlılık testi: ağırlıkları ±0.05 oynatınca ilk 3 değişiyor mu? Değişiyorsa "sıralama kırılgan" diye hakeme bildir.
 - 0.3 puandan küçük farkları anlamlı sayma (model v0.1 kuralı).

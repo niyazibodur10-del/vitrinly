@@ -14,3 +14,6 @@
 - 2026-10-26: Aynı kararın (sentetik_medya) iki dosyada farklı sahibi vardı → "tek sahip" denetimi yalnız ajan dosyalarında değil komut + ortak-dersler'de de yapılmalı.
 - 2026-10-26: CLAUDE.md proje yapılandırmasıdır; alt ajan olarak değiştirmem, yamayı rapora yazar koordinatöre bırakırım (kadro-kontrol bu yüzden KALDI gösterir — beklenen).
 - 2026-10-26: Skill/yol referans betiği scratchpad'de yazıldı (tools/ başka ajanın alanı); kalıcı hale getirilmesi uretim-muhendisi'ne talep edildi. Planlanmış çıktı yollarını (henüz yok) "sahibi + oluşturma adımı" ile listelemek kırık referanstan ayırt etmeyi sağlar.
+- 2026-10-28 (hız optimizasyonu): Süre analizinde commit zaman damgaları en iyi kaynak. ~4 saatlik boşluklar oturum limitini gösterir; 1929'da aktif süre ~5 sa, toplam 25,5 sa → darboğaz token. Kural: hızı CPU'dan önce okuma/ölçüm/rapor tekrarında ara.
+- 2026-10-28: Genel kural protokolde, role özgü kural ajan dosyasında; 18 dosyaya aynı paragrafı kopyalamak token israfı. kadro-kontrol "## Çalışma şekli: 2–3 aday" başlığını arar → başlık korunur, tek aday istisnası maddeyle eklenir.
+- 2026-10-28: Yeni Niyazi kuralı iki ajanı "sahip" diye anıyorsa (abone animasyonu) zinciri tek yerleştirme sahibine indir ve CLAUDE.md yamasını koordinatöre öner.

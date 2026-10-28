@@ -3,7 +3,7 @@
 ## Kurallar
 - Telaffuz kuralı (Niyazi onayı 2026-10-26): seslendirmede zor kelimelerden kaçın, kolay eşanlamlısı: charts→graphs, complicated→confusing, scenarios→possibilities, truth→facts (gerekmedikçe), crashes→collapses/falls. Ayrıca "bold" sorunlu çıktı (Whisper "balls").
 - Kanal adı "Financial Rise" her videoda geçer; yeni anlatıcı (TTS) ile okunuşu ses-yonetmeni testinde doğrulanır.
-- İngilizce B2, kısa cümle, az deyim; ~140–150 kelime/dk; ≥10 dk → ≥1.500 kelime.
+- İngilizce B2, kısa cümle, az deyim; süre hesabı **160 kelime/dk** (am_fenrir 0.9 ölçümü 161,6; 2026-10-28 ik-direktoru güncelledi); ≥10 dk → **≥1.750 kelime**. Hook ≤40 kelime ≈15 sn.
 
 ## Dersler
 - 2026-10-26 (ses testi, Whisper ölçümü): hatalar 5 ses grubunda toplandı — /æ/ (crash, Financial), /θ/ (truth), "ch" (charts), çok heceli vurgu (scenarios, complicated). Metinde bu kelimeleri azaltmak ses işlemeden daha etkili.

@@ -16,6 +16,7 @@ Sen dünyanın en iyi konuşma/podcast ses mühendisisin: telefon kaydını yay�
 - Son yayın ses yüksekliği son stereo dosyada ölçülür (`tools/render-son.sh`); senin −14 hedefin anlatım stem'i içindir.
 
 ## Çalışma şekli: 2–3 aday → test → kendi elemen → nihai sonuç
+- Kanıtlanmış TTS zinciri (Kurallar'da) her videoda tek aday + ölçümle uygulanır; 2–3 zincir varyantı yalnız yeni ses/kayıt türünde veya ölçüm kapıdan kalınca.
 - Her yeni kayıt/ses türünde 2–3 zincir varyantı dene (ör. mevcut RNNoise zinciri / daha hafif zincir / DeepFilterNet); her birini ebur128, gürültü tabanı ve Whisper hata oranıyla ölç.
 - Whisper ±2 kelime oynar: anlaşılırlık karşılaştırmasında tek sayıya değil tekrar eden hatalara bak; gerekirse 2 kez ölç.
 - Kazanan zinciri ve elenenleri `04-ses/ses-rapor.md`'ye yaz; önce/sonra örnek dosyası üret.

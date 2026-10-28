@@ -17,8 +17,34 @@ Konu/sütun ipucu: $ARGUMENTS (boşsa sütun `docs/yayin-takvimi.md` rotasyonund
 - **`durum.md`** (sahibi showrunner/koordinatör) her adımdan sonra güncellenir. Sütunlar: adım | sahip ajan | durum (BEKLİYOR / SÜRÜYOR / GEÇTİ / RED-1 / RED-2 / ESKALASYON) | teslim dosyası | test kanıtı (komut + sonuç) | başlangıç–bitiş saati. Oturum koparsa akış `durum.md`'deki ilk GEÇMEMİŞ adımdan devam eder. Baştan başlanmaz.
 - **Teslim kuralı:** Her ajan, protokol (`docs/ajan-protokolu.md`) gereği 2–3 aday, test, eleme ve hafıza dersiyle teslim eder. **Test çıktısı yoksa teslim alınmaz** ve iş geri gönderilir. Bu bir RED turu sayılmaz, ama `durum.md`'ye not edilir.
 - **Kalite kapıları:** `docs/kalite-kapilari.md` ve bu dosyadaki "Ek kapılar".
-- **Commit:** Her faz sonunda `git add` + commit + push yapılır (konteyner silinir). Mesaj: `<slug>: F<n> <özet>`. 100 MB'ı aşan medya git'e girmez. Final video ve Shorts dosyaları git'e girmez (`.gitignore`); depolama bölüm 3'teki öneriye göre (Niyazi onayı bekliyor).
+- **Commit:** Her faz sonunda `git add` + commit + push yapılır (konteyner silinir). Ayrıca her ajan en geç 20 dakikada bir kendi dosyalarını ara kayıt olarak commit + push eder (`docs/ajan-protokolu.md` §5); limit kesintisinde iş kaybolmaz. Mesaj: `<slug>: F<n> <özet>`. 100 MB'ı aşan medya git'e girmez. Final video ve Shorts dosyaları git'e girmez (`.gitignore`); depolama bölüm 3'teki öneriye göre (Niyazi onayı bekliyor).
 - **Kod yeri:** Remotion sahneleri `video/src/videolar/<slug>/` altında olur (sahibi animasyon-yonetmeni). Ortak bileşenler `video/src/ortak/` altında olur (sahibi uretim-muhendisi; klasör ilk ortak bileşenle oluşturulur).
+
+## 0b. Hız kuralları: kritik yol, erken başlatma, hedef süre (ik-direktoru 2026-10-28)
+1929 videosu commit zamanlarına göre ~5 sa aktif çalıştı ama 25,5 sa sürdü: üç ~4 saatlik boşluk oturum limitiydi. **Darboğaz token.** Bu yüzden:
+- **Kritik yol:** F2 karar → F3 metin → metin kilidi → ses kolu (TTS + son işlem) → F5 kritik test → F5 tam sahneler → F7 final render → F8b ‖ F9a → F9b. Kritik yolda olmayan her iş bir kilit noktası açılır açılmaz **paralel** başlatılır, kritik yolu beklemez.
+- **Erken başlatma tablosu** (kilit noktası → aynı mesajda başlatılan işler):
+
+| Kilit noktası | Başlatılan |
+|---|---|
+| Tetik | F0 açılış ‖ F0 ortam (`uretim-muhendisi`) ‖ F1 (`trend-avcisi` ‖ `kanal-analisti`) |
+| F2 hakem kararı | `senaryo-yazari` F3 metin ‖ `finans-dogrulayici` **rakam tablosu** (kazananın rakamları, birincil kaynaklı; metnin tek rakam kaynağı → F3 RED'i azaltır) ‖ `muzik-ses-tasarimcisi` adaylar (sütun + ton yeter) ‖ `thumbnail-tasarimcisi` + `youtube-paketleyici` taslak |
+| F3 metin teslim (denetimler sürerken) | `gorsel-varlik-sanatcisi` sahne listesi + Canva dalga 1 (önce F5 kritik test sahneleri; ekranda rakam yok, rakamlar kodla) ‖ `animasyon-yonetmeni` iskelet (kompozisyon yapısı, kodla çizilen grafikler; zamanlar 160 kpm tahmini) |
+| Metin kilidi | ses kolu (kritik yol) ‖ görsel dalga 2–3 |
+| Ses kolu GEÇTİ + kritik test sahneleri hazır | F5 kritik test (görsel kolun tamamını beklemez) ‖ F6a müzik yatağı |
+| Görsel kol GEÇTİ | F8a erken paket (thumbnail finalistleri, paket metni, politika paket denetimi) |
+| F5 tam (`animasyon-efekt-cue.json` hazır) | F6b SFX stem (görsel olaylardan) |
+| F7 GEÇTİ | F8b fark kontrolü ‖ F9a hakem video ölçümleri |
+| F8b GEÇTİ | F9b hakem paket ölçümleri + karar |
+
+  Erken başlayan iş, kilitten sonra değişen girdiyi yalnız **fark olarak** günceller (RED'de yalnız etkilenen sahne/cümle).
+- **Faz hedef süreleri** (aktif çalışma; 1929 gerçek → hedef): F0+F1 27 → 20 dk · F2 26 → 20 dk · F3 (1 RED dahil) ~36 → 30 dk · F4 ~45 → 40 dk · F5 kritik 15 → 15 dk · F5 tam + F6 ~55 → 45 dk · F7 64 → 50 dk (render ~35 dk) · F8b 7 → 10 dk · F9 ~13 → 15 dk (F8b ile paralel başlar). **Toplam hedef ≤4 sa aktif.** Hedefi 2 katından fazla aşan faz `durum.md`'ye "GECİKME: neden" diye yazılır; tekrarlarsa ik-direktoru'na gider.
+- **Token kuralları (koordinatör):**
+  - Ajan istemi kısa şablondur: klasör · faz · girdi dosyaları (yol listesi) · teslim yolu · kapı · önceki fazdan notlar (≤5 satır). CLAUDE.md ve bu dosya isteme kopyalanmaz (ajan bağlamında zaten var).
+  - Ajan dönüşü ≤15 satırdır (`docs/ajan-protokolu.md` §4). Koordinatör onu `durum.md`'ye tek satır işler, ajan raporunu baştan sona okumaz.
+  - Limit kesintisinden sonra `durum.md` + ajan raporlarındaki **İLERLEME** bloğundan devam edilir. Biten ajan yeniden çağrılmaz.
+  - Değişmeyen girdiye ikinci tam ölçüm yapılmaz (sha256 kuralı, protokol §3).
+  - Rutin işlerde tek aday yeterlidir (protokol §2); yaratıcı kararlarda 2–3 aday kalır.
 
 ## 1. RED → düzeltme döngüsü ve eskalasyon
 1. Kapıdan kalan iş, **düzeltme listesiyle** (hangi ölçüm, beklenen ve ölçülen değer) aynı ajana geri döner. Durum `RED-1` olur.
@@ -55,11 +81,13 @@ Konu/sütun ipucu: $ARGUMENTS (boşsa sütun `docs/yayin-takvimi.md` rotasyonund
 4. Klasör slug'la yeniden adlandırılır, commit atılır.
 
 ### F3 — Tam metin ve doğrulama (sıralı)
-1. `senaryo-yazari` → tam İngilizce metin: anlatım + GÖRSEL sütunu (sahne başına) + 2 Shorts için kanca/kesit önerisi. Teslim `03-metin/metin.md`. Kapı: Metin (≥1.500 kelime, ±%10, ilk 15 sn'de net vaat, en geç 90 sn'de bir yeniden kanca) + Retention (metin): ilk 30 sn planı ve retention haritası var, ilk 60 sn'de abone çağrısı yok.
+0. **Paralel (F2 kararıyla aynı mesajda):** `finans-dogrulayici` → kazanan senaryonun rakam tablosu (`03-metin/rakam-tablosu.md`: değer | birim | tarih | birincil kaynak | güvenli yazım). senaryo-yazari metne yalnız bu tablodaki rakamları yazar; tabloda olmayan rakam gerekiyorsa işaretler (`[RAKAM?]`), doğrulayıcı F3.2'de kapatır.
+1. `senaryo-yazari` → tam İngilizce metin: anlatım + GÖRSEL sütunu (sahne başına) + 2 Shorts için kanca/kesit önerisi + retention haritasında 3–4 `ABONE-n` anı (abone ol animasyonu yerleri). Teslim `03-metin/metin.md`. Kapı: Metin (**160 kelime/dk ile ≥1.750 kelime**, ilk 15 sn'de net vaat, en geç 90 sn'de bir yeniden kanca) + Retention (metin): ilk 30 sn planı ve retention haritası var, ilk 60 sn'de abone çağrısı yok.
 2. **Paralel:** `finans-dogrulayici` → metindeki tüm rakam, tarih ve olayları doğrular; yasal notu ve "scenario" dilini denetler. Teslim `03-metin/dogrulama.md`. Kapı: Doğrulama (doğrulanamayan rakam kalmadı). ‖ `monetizasyon-uyum-uzmani` → metni para kazanma politikalarına göre denetler (anlamlı anlatı/yorum, maskot tavsiye vermiyor, ilk 30 sn ve başlıkta reklam dostu dil, önceki metinlerle kalıp tekrarı). Teslim `03-metin/politika-denetimi.md`. Kapı: YPP politika (metin) — KIRMIZI bulgu yok. RED gelirse metin senaryo-yazari'ye döner, düzeltilmiş metin ikisinden de yeniden geçer.
 3. **Metin kilidi.** Bundan sonra metin değişirse ses, animasyon ve kurgu yeniden üretilir. Bu yüzden değişiklik yalnız RED düzeltmesi için yapılır.
 
-### F4 — Üretim kolları (dört kol paralel; metin kilidinden hemen sonra)
+### F4 — Üretim kolları (dört kol paralel)
+Başlangıçlar bölüm 0b'deki tabloya göre: müzik adayları ve paket taslağı F2 kararıyla, görsel dalga 1 F3 metin teslimiyle, ses kolu metin kilidiyle başlar. Ses kolu kritik yoldadır; diğer kollar onu bekletmez.
 | Kol | Ajan | İş | Teslim | Kapı |
 |---|---|---|---|---|
 | Ses | `ses-yonetmeni` → sonra `ses-muhendisi` | TTS okuma metni (telaffuz düzeltmeleri) → Kokoro ile anlatım (`tools/ses/tts.py`) → son işlem (`tools/ses/tts-son.sh`), Whisper kelime zamanları | `04-ses/anlatim.wav`, `04-ses/kelimeler.json`, `04-ses/ses-rapor.md` | Anlatıcı sesi (TTS): WER ≤ %10, kanal adı doğru. Ses: −14 LUFS ±1, TP ≤ −1 dBTP |
@@ -69,25 +97,33 @@ Konu/sütun ipucu: $ARGUMENTS (boşsa sütun `docs/yayin-takvimi.md` rotasyonund
 
 Görsel kol **ek para harcamaz**: Canva bağlayıcısı Niyazi'nin mevcut aboneliğindeki aylık yapay zekâ hakkını kullanır. Stil gerçekçi/resimsi olabilir; şart karakterin her sahnede tutarlı olmasıdır. Aylık Canva hakkı biterse, tam çözünürlüklü dosya alınamazsa veya tutarlılık kapısı geçmezse sahneler B planına geçer: kodla çizilen grafik/harita/sayaç sahneleri + mevcut karakter varlıkları. Kullanılan Canva üretim sayısı ve B planına geçen sahneler Niyazi'ye F10'da raporlanır. Ücretli görsel API veya image-to-video onaysız açılmaz.
 
-### F5 — Animasyon (ses kolu ve görsel kol GEÇTİ olunca)
+### F5 — Animasyon
 `animasyon-yonetmeni`:
-1. Rhubarb ağız zamanları üretilir.
-2. **Önce 10–20 sn'lik kritik yol testi** yapılır: konuşan karakter + en zor sahne. Kapı: `tools/senkron-testi.py` ≤2 kare, `AgizTest` karesi.
-3. Test geçerse tüm sahneler kodlanır (16:9) ve iki Shorts kesiti için 9:16 kompozisyonlar hazırlanır.
+0. **İskelet (F3 metin teslimiyle, kilitten önce):** kompozisyon yapısı, kodla çizilen grafik/harita/sayaç sahneleri (rakamlar finans-dogrulayici tablosundan), 160 kpm tahmini zamanlar. Kilitten sonra yalnız değişen sahne güncellenir.
+1. Rhubarb ağız zamanları üretilir (ses kolu GEÇTİ).
+2. **10–20 sn'lik kritik yol testi:** konuşan karakter + en zor sahne. Görsel kolun tamamını beklemez; gereken 1–2 sahne görseli dalga 1'de önceliklidir (yoksa B planı görseliyle test edilir, sonra gerçek görsel takılır). Kapı: `tools/senkron-testi.py` ≤2 kare, `AgizTest` karesi.
+3. Test geçerse tüm sahneler kodlanır (16:9) ve iki Shorts kesiti için 9:16 kompozisyonlar hazırlanır. Görsel olay zamanları (SFX vuruşları ve `tur: "abone"` anları dahil) `06-muzik/animasyon-efekt-cue.json`'a kare doğrulukta yazılır; abone anlarında ekranın abone bileşeni alanı boş bırakılır.
 
-Teslim `07-animasyon/test-10sn.mp4`, `07-animasyon/senkron-rapor.md`, `video/src/videolar/<slug>/`. Test geçmeden tam sahne kodlamasına başlanmaz.
+Teslim `07-animasyon/test-10sn.mp4`, `07-animasyon/senkron-rapor.md`, `video/src/videolar/<slug>/`, `06-muzik/animasyon-efekt-cue.json`. Test geçmeden tam sahne kodlamasına başlanmaz (iskelet hariç).
 
-### F6 — Müzik miksi (F5 ile paralel; ses kolu GEÇTİ olunca)
-`muzik-ses-tasarimcisi` → kesin kelime zamanlarına göre cue listesi + ducking'li müzik/SFX stem'leri hazırlar. Teslim `06-muzik/cue-listesi.md`, `06-muzik/stems/`. Kapı: Müzik/SFX (miksli dilimde WER bozulmadı, seviye ölçümü yapıldı).
+### F6 — Müzik miksi (iki parça)
+`muzik-ses-tasarimcisi`:
+- **F6a müzik yatağı** (ses kolu GEÇTİ olunca, F5 ile paralel): kesin kelime zamanlarına göre müzik cue listesi + ducking'li müzik stem'i.
+- **F6b SFX stem** (F5 tam sahneler `animasyon-efekt-cue.json`'u verince): SFX vuruşları ve abone klik sesi **görsel olay zamanlarından** yerleştirilir, kelime zamanından değil (1929'da 20+ vuruş kaymıştı). Kurgu-editoru yeniden zamanlamaz, yalnız doğrular.
+Teslim `06-muzik/cue-listesi.md`, `06-muzik/stems/`. Kapı: Müzik/SFX (miksli dilimde WER bozulmadı, seviye ölçümü yapıldı, her SFX vuruşu görsel olaya ±2 kare).
 
 ### F7 — Kurgu ve render
 `kurgu-editoru` (F5 + F6 GEÇTİ):
 1. Ana video (16:9) birleştirilir, tempo ve geçişler kurulur, kelime kelime gömülü altyazı eklenir, SRT çıkarılır. Render `tools/render-son.sh` ile yapılır.
-2. **2 Shorts** hazırlanır (9:16, ≤60 sn). Her biri **kendi hook'uyla** açılır (ilk 2 sn), aynı sahnelerden yeniden kadrajlanır. Kancayı taşıyacak sahne eksikse koordinatöre "ek sahne" talebi iletilir; koordinatör bunu animasyon-yonetmeni'ne (gerekirse gorsel-varlik-sanatcisi'ne) verir. Shorts için 3–5 aday bölüm seçilir, ilk 2 sn testinden geçen 2 tanesi kalır.
+2. **Abone ol animasyonu** ortak bileşenle (`video/src/ortak/`, uretim-muhendisi) final katmana yerleştirilir: uzun videoda `animasyon-efekt-cue.json`'daki 3–4 `abone` anında, her Shorts'ta sonda en fazla 1 kez. Sayı ve zamanlar `kurgu-rapor.md`'de.
+3. **2 Shorts** hazırlanır (9:16, ≤60 sn). Her biri **kendi hook'uyla** açılır (ilk 2 sn), aynı sahnelerden yeniden kadrajlanır. Kancayı taşıyacak sahne eksikse koordinatöre "ek sahne" talebi iletilir; koordinatör bunu animasyon-yonetmeni'ne (gerekirse gorsel-varlik-sanatcisi'ne) verir. Shorts için 3–5 aday bölüm seçilir, ilk 2 sn testinden geçen 2 tanesi kalır.
 
-Teslim `08-kurgu/final-16x9.mp4`, `08-kurgu/altyazi.srt`, `08-kurgu/shorts-1.mp4`, `08-kurgu/shorts-2.mp4`, `08-kurgu/kurgu-rapor.md`. Kapı: Kurgu, Altyazı, Ses (son dosyada), Retention (kurgu: ilk görsel değişim ≤3 sn, kanal intro'su yok) ve aşağıdaki Shorts kapısı.
+Teslim `08-kurgu/final-16x9.mp4`, `08-kurgu/altyazi.srt`, `08-kurgu/shorts-1.mp4`, `08-kurgu/shorts-2.mp4`, `08-kurgu/kurgu-rapor.md`. Kapı: Kurgu, Altyazı, Ses (son dosyada), Retention (kurgu: ilk görsel değişim ≤3 sn, kanal intro'su yok), Abone animasyonu (uzun 3–4, Shorts ≤1 sonda, klik sesi duyuluyor, doruk anına binmiyor) ve aşağıdaki Shorts kapısı. Final ve Shorts render'ları sırayla koşar (CPU), ölçümler render biter bitmez yapılır.
 
-### F8 — Son paket (paralel)
+### F8 — Son paket (iki parça)
+- **F8a erken paket** (görsel kol GEÇTİ + metin kilidi; F5/F6/F7 ile paralel): thumbnail finalistleri (Canva sahne görsellerinden), paket metni (başlık, açıklama, etiketler, Shorts paketleri), politika paket denetimi, viralite ön puanı. 1929'da böyle yapıldı ve F7'den sonra yalnız 7 dk iş kaldı.
+- **F8b fark kontrolü** (F7 GEÇTİ, hedef ≤10 dk): bölümler gerçek sahne zamanlarına, `yukle.py --dry-run` gerçek dosyalarla, politika yalnız F8a'dan bu yana değişen alanlar (video dosyası, sahne tekrarı oranı), viralite son puanı yalnız başlık/thumbnail/ilk 15 sn değiştiyse yeniden hesaplanır (değişmediyse "F8a ile aynı" + sha256). Thumbnail render karesi gerekiyorsa burada.
+Aşağıdaki tablo iki parçanın toplam teslimidir.
 | Ajan | İş | Teslim | Kapı |
 |---|---|---|---|
 | `thumbnail-tasarimcisi` | Render karelerinden **3 thumbnail varyantı** (A/B/C, 1280x720) | `09-paket/thumbnail-A.png`, `09-paket/thumbnail-B.png`, `09-paket/thumbnail-C.png`, `09-paket/thumb-rapor.md` | Thumbnail: 168x94'te okunuyor, metin ≤4 kelime |
@@ -96,7 +132,7 @@ Teslim `08-kurgu/final-16x9.mp4`, `08-kurgu/altyazi.srt`, `08-kurgu/shorts-1.mp4
 | `monetizasyon-uyum-uzmani` | Paket + final video politika denetimi: başlık/thumbnail içerikle tutarlı, AI beyanı kararı (`durum.sentetik_medya`) ve açıklama satırı, reklam uygunluğu öz beyan yanıtları, lisans kaydı + Content ID itiraz kanıtı, reused/dış görüntü yok, özgünlük ve insan katkısı kanıtı, yeniden kullanılan sahne oranı. Taslak paketler F8 içinde ona gider, kararı youtube-paketleyici pakete işler | `09-paket/politika-raporu.md` | YPP politika kapısı (`docs/kalite-kapilari.md`) |
 
 ### F9 — Hakem son kontrol
-`hakem` → bütün kapıları **kendisi yeniden ölçer** (ffprobe, ebur128, `tools/senkron-testi.py`, altyazı hizası, thumbnail küçültme, lisans kaydı, yasal not, Shorts kapısı, YPP politika kapısı, retention kapısı). Karneyi doldurur. Teslim `hakem-raporu.md`: ONAY veya RED + düzeltme listesi. RED alan iş ilgili ajana döner (bölüm 1'deki döngü), sonra yeniden F9 yapılır.
+`hakem` → bütün kapıları **kendisi yeniden ölçer** (ffprobe, ebur128, `tools/senkron-testi.py`, altyazı hizası, thumbnail küçültme, lisans kaydı, yasal not, Shorts kapısı, YPP politika kapısı, retention kapısı, abone animasyonu sayımı). Ucuz ölçümler tam yapılır; ağır ölçümler (Whisper WER, senkron) girdinin sha256'sı ajanınkiyle aynıysa örneklemle yapılır (`.claude/agents/hakem.md`). **F9a** (video kapıları) F7 GEÇTİ olunca F8b ile paralel başlar, **F9b** (paket kapıları + karar) F8b'den sonra. Karneyi doldurur. Teslim `hakem-raporu.md`: ONAY veya RED + düzeltme listesi. RED alan iş ilgili ajana döner (bölüm 1'deki döngü), sonra yeniden F9 yapılır.
 
 ### F10 — Teslim paketi ve Niyazi'ye sunum → DUR
 Koordinatör `teslim/` klasörünü kurar (bkz. bölüm 3), `YAYIN.md`'yi yazar, commit/push eder ve Niyazi'ye **tek sayfa** sunar:
@@ -156,15 +192,14 @@ Dersler sonraki videonun F1'ine girer (trend-avcisi, senaryo-yazari, kurgu-edito
 
 ## 5. Ajan çağrı sırası (özet)
 ```
-F0  koordinatör ‖ uretim-muhendisi
-F1  trend-avcisi ‖ kanal-analisti
+Tetik  F0 koordinatör ‖ uretim-muhendisi ‖ F1 trend-avcisi ‖ kanal-analisti
 F2  senaryo-yazari → (viralite-analisti ‖ finans-dogrulayici ‖ monetizasyon-uyum-uzmani) → hakem   [Niyazi onayı yok]
-F3  senaryo-yazari → (finans-dogrulayici ‖ monetizasyon-uyum-uzmani)                  [metin kilidi]
-F4  (ses-yonetmeni → ses-muhendisi) ‖ gorsel-varlik-sanatcisi ‖ muzik-ses-tasarimcisi ‖ (thumbnail-tasarimcisi ‖ youtube-paketleyici: taslak)
-F5  animasyon-yonetmeni (10–20 sn test → tam)  ‖  F6 muzik-ses-tasarimcisi (miks)
-F7  kurgu-editoru (16:9 + 2 Shorts)
-F8  thumbnail-tasarimcisi ‖ youtube-paketleyici ‖ viralite-analisti → monetizasyon-uyum-uzmani (politika raporu)
-F9  hakem → F10 Niyazi'ye teslim → DUR → F11 yalnız onayla: tools/yayin/yukle.py (uretim-muhendisi aracı)
+F2 kararı → senaryo-yazari F3 metin ‖ finans-dogrulayici rakam tablosu ‖ muzik-ses-tasarimcisi adaylar ‖ thumbnail + paketleyici taslak
+F3 metin → (finans-dogrulayici ‖ monetizasyon-uyum-uzmani) ‖ gorsel dalga 1 ‖ animasyon iskeleti   → [metin kilidi]
+Kilit → (ses-yonetmeni → ses-muhendisi) [KRİTİK YOL] ‖ görsel dalga 2–3
+Ses GEÇTİ → F5 kritik test → F5 tam (+ animasyon-efekt-cue.json) ‖ F6a müzik yatağı ;  görsel GEÇTİ → F8a erken paket
+F5 tam → F6b SFX stem → F7 kurgu-editoru (16:9 + abone animasyonu + 2 Shorts)
+F7 → F8b fark kontrolü ‖ F9a hakem video ölçümleri → F9b hakem karar → F10 Niyazi'ye teslim → DUR → F11 yalnız onayla
 F12 yayın sonrası 48 sa / 7 g / 28 g: kanal-analisti → viralite-analisti (+ youtube-paketleyici öneri) → dersler sonraki videoya
 Her aşamada araç sorunu → uretim-muhendisi. 2 RED sonrası → koordinatör eskalasyonu; tekrarlayan sorun → ik-direktoru.
 ```
@@ -174,3 +209,4 @@ Tetikten sonra Niyazi'ye ara mesaj, rapor veya soru yok; yalnız zorunlu erişim
 
 ## Abone ol animasyonu (Niyazi kararı 2026-10-28)
 Her videoda: kanal profil resmi + Subscribe düğmesi + imleç tıklaması + klik sesi. Uzun videoda 3–4 kez, her Shorts'ta sonda en fazla 1 kez. F7 kurgu kapısında sayılır, hakem F9'da doğrular.
+Sahiplik zinciri (tek iş, tek sahip): senaryo-yazari anları işaretler (`ABONE-n`, F3) → animasyon-yonetmeni kare zamanlarını `animasyon-efekt-cue.json`'a yazar ve ekranda yer bırakır (F5) → muzik-ses-tasarimcisi klik sesini lisans kaydıyla SFX stem'ine koyar (F6b) → kurgu-editoru ortak bileşeni yerleştirir ve sayar (F7) → hakem doğrular (F9). Ortak bileşen (`video/src/ortak/`) uretim-muhendisi'nin; yoksa koordinatör F0'da ondan ister.

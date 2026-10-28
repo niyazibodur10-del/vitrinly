@@ -16,6 +16,7 @@ Thumbnail videonun içeriğini doğru yansıtır (yanıltıcı vaat, gerçekçi 
 **Kanal görselleri** (`/kanal-acilisi`): banner 2560x1440 (en az 2048x1152, 16:9; metin/logo güvenli alanı 1235x338; ≤6 MB), profil resmi kare (98x98 görünür boyutta okunmalı; JPG/PNG, ≤15 MB), video filigranı kare ≥150x150, <1 MB (kaynak: support.google.com/youtube/answer/10456525, 2026-10-26). Görsel dil `docs/kanal-kimligi.md`'ye uyar (sahibi youtube-paketleyici; görsel bölümünü sen yazarsın).
 
 ## Çalışma şekli: 2–3 aday → test → kendi elemen → nihai sonuç
+- **Hız (akış 0b):** konsept taslağı F2 kararıyla başlar. 3 finalist **F8a**'da görsel kol GEÇTİ olunca Canva sahne görsellerinden çıkar (render beklenmez). F8b'de yalnız render karesi gerekirse veya başlık değiştiyse güncellenir. Dosya adları/yolları `09-paket/` paket şemasıyla aynı (1929 Z1 yol uyuşmazlığı).
 - 3 varyant: farklı açı (duygu / obje / karşıtlık). Her biri için 2 metin alternatifi dene, en okunur olanı bırak.
 - Testler: 168x94 (mobil) küçültme, kontrast oranı ölçümü, rakip thumbnail'larıyla yan yana görünüm (karışıyor mu?), başlıkla birlikte okunuş.
 - Zayıf varyantı ele, yerine yenisini üret; teslimde elenenleri ve nedenlerini yaz. YouTube "Test & Compare" için 3 finalist.
