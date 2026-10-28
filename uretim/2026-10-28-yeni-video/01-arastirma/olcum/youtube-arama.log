@@ -1,0 +1,30 @@
+B1 16731 1 | 12m: [(1203369, "China's AI Bubble Has Burst. Who Will Pay The Price? | The Palki Sharma Show | I", 'India Global Review', '2026-10-27', 'LhkuNV1RGfI')]
+B2 21660 0 | 12m: [(223033, 'Anthropic REVEALS MASSIVE LOSSES In IPO Filing', 'Breaking Points', '2026-10-27', 'cO9NY1PeBZg')]
+B3 85118 1 | 12m: [(1682300, "Supreme Court rules Trump's tariffs illegal", 'CNN', '2026-02-20', 'B4PmR-bPMFk')]
+B4 6900 0 | 12m: [(53740, 'Fed Votes Unanimously on Interest Rate Hike, First Time Since July 2023', 'Schwab Network', '2026-09-16', 'OfLv1WoipOM')]
+B5 4558 0 | 12m: [(201385, 'Why Bonds Are Back On Investors’ Radar', 'CNBC', '2026-10-21', 'BMdLiG8J7-g')]
+B6 36687 0 | 12m: [(295509, "Saudi Arabia strikes oil facilities in Yemen's Sanaa and Hodeidah as Houthis vow", 'Al Jazeera English', '2026-10-13', 'fiE2ADvtW54')]
+B7 15769 1 | 12m: [(35108, 'What happens if dollar hits ₹100?  | Let Me Explain 143 | Pooja Prasanna', 'The News Minute', '2026-06-13', '0SbRUdxrZQI')]
+B8 31188 0 | 12m: [(320846, 'Gold Silver Crash Reasons | What will Happen Next?', 'Pushkar Raj Thakur: Stock Mark', '2026-10-22', 'KRcjTGiXL-o')]
+B9 117344 2 | 12m: [(418324, 'Financial Crash Expert: The Crisis Is About to Get Much Worse', 'ProfSteveKeen', '2026-09-09', 'j2kUtbfE3eo')]
+B10 18896 0 | 12m: [(803983, 'Could A Bitcoin Crash Wipe Out Your Savings? These Elites Are Betting On It. (ft', 'More Perfect Union', '2026-09-02', 'XD0QT_g6fuk')]
+B11 7098 0 | 12m: [(980753, 'Stocks Have Done THIS After Every Midterm Election Since 1950', 'ClearValue Tax', '2026-10-19', 'LaBiYw1ZKF4')]
+B12 96 0 | 12m: [(20320, "Big Tech's AI spending surge", 'CNBC Television', '2026-02-05', 'xyx-t9-STp8')]
+B21 27035 0 | 12m: [(523152, 'CoreWeave Is Imploding — And Taking AI Stocks Down With It', 'Prof G Markets', '2026-10-15', 'tdXFaVaJfTo')]
+B13 106981 0 | 12m: [(574862, 'It Started: The AI Bank Run', 'Mark Tilbury Economics', '2026-10-21', 'o8ZGRemy4tM')]
+B14 152988 4 | 12m: [(2979255, 'America’s Housing Market Just Took a Very Strange Turn', 'MHFIN', '2026-10-10', 'SJwCJXzgRME')]
+B20 249 3 | 12m: [(3085229, 'Why A National Debt Default Now Looks Genuinely Possible... (sort of)', 'How Money Works', '2026-09-07', 'QmWyQ-BCD8E')]
+Traceback (most recent call last):
+  File "/home/user/vitrinly/uretim/2026-10-28-yeni-video/01-arastirma/olcum/youtube_arama.py", line 18, in <module>
+    m={x["id"]:(int(x["statistics"].get("viewCount",0)),x["snippet"]["title"][:80],x["snippet"]["channelTitle"][:30],x["snippet"]["publishedAt"][:10],x["contentDetails"]["duration"]) for x in items}
+                                                                                                                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'duration'
+A1 35 0 | 12m: [(130, 'Black Friday 1869: The Gold Market Crash That Made Jay Gould a Villain', 'Gilded Age Scandals', '2026-03-03', 'pC4jqsqFMgQ')]
+A2 163 0 | 12m: [(59063, "1907: The Day Americans Couldn't Get Their Money Back", 'Investigate Money', '2025-12-25', 'uYKq1xrZmt0')]
+A3 98 0 | 12m: [(3078, 'What the 1994 Bond Massacre Can Tell Us About 2026', 'Mr. Vann', '2026-09-23', 'Hc8PYwbsLR8')]
+A4 901 0 | 12m: [(2150, 'The VOLCKER Shock | How the Fed Killed Inflation by Destroying the Economy (1979', 'The Sleeping Economist', '2025-11-23', '9T3vPFgD5j8')]
+A5 4307 2 | 12m: [(6829, 'The Night India Pledged Its Gold | The 1991 Crisis', 'College Dropout', '2026-10-13', '_oVJtMrnxHg')]
+A6 10315 1 | 12m: [(8902, 'History Repeats: Lessons from the 1930 Tariff Act', 'Cult of the Almighty Dollar', '2026-09-13', 'YikQ_4aP1EI')]
+A7 51378 2 | 12m: [(1575754, 'How Thailand Went From Asian Leader to Laggard', 'Bloomberg Originals', '2026-02-06', 'KBfnZCfeA00')]
+C1 318864 2 | 12m: [(4823799, 'What if the AI Bubble Bursts (Day by Day)', 'The Infographics Show', '2026-09-03', 'T9d6lrvzM9o')]
+C2 322906 5 | 12m: [(3085229, 'Why A National Debt Default Now Looks Genuinely Possible... (sort of)', 'How Money Works', '2026-09-07', 'QmWyQ-BCD8E')]

@@ -1,0 +1,96 @@
+{
+  "sema": "yayin-paketi/1",
+  "_not": "1929-1000-dolar uzun video. paket.md'den paket-uret.py ile üretildi; elle düzenleme yok. Slot: Çar 2026-10-28 12:00 ET (EDT, UTC-4; Niyazi onayı 2026-10-28, saat koordinatör).",
+  "tur": "uzun",
+  "dosyalar": {
+    "video": "../08-kurgu/final-16x9.mp4",
+    "thumbnail": "../09-paket/thumbnail/A2-kapilar.jpg",
+    "altyazilar": [
+      {
+        "dosya": "../08-kurgu/final.en.srt",
+        "dil": "en",
+        "ad": "English"
+      }
+    ]
+  },
+  "metadata": {
+    "baslik": "You Have $1,000 in 1929. Can You Keep It?",
+    "aciklama": "The 1929 stock market crash as a game: you have $1,000 and three doors. Stocks, a bank or a shoebox. Which one gets you through the Great Depression?\n\nLeo, our cartoon host, sends one player through each door, from the September 1929 market peak, through Black Monday and Black Tuesday (October 28–29, 1929), to the March 1933 bank holiday, using real data: the Dow, bank suspensions and consumer prices. Then we move the winning door to 2026 to see why the same math runs the other way.\n\nNot financial advice. For educational purposes only.\n\n{BOLUMLER}\n\nLEGAL NOTE\nThis video is for education and entertainment only. It is not financial, investment, tax or legal advice. Leo is a fictional cartoon character, not a financial adviser. The \"three doors\" game is a simplified illustration of history: past results do not predict future results, and nothing here is a recommendation to buy, sell or hold any asset. Stock figures are price-only unless stated; inflation figures are U.S. CPI (BLS). Some scenes are illustrations, not historical footage. Sources are listed below. Narration voice is AI-generated. Visuals are AI-assisted illustrations animated by our team.\n\nSOURCES\n• Federal Reserve History, \"Stock Market Crash of 1929\": https://www.federalreservehistory.org/essays/stock-market-crash-of-1929\n• Federal Reserve History, \"Banking Panics of 1930–31\": https://www.federalreservehistory.org/essays/banking-panics-1930-31\n• Federal Reserve History, \"The Great Depression\": https://www.federalreservehistory.org/essays/great-depression\n• FDIC, A Brief History of Deposit Insurance in the United States, ch. 3, Table 5: https://www.fdic.gov/resources/publications/brief-history-of-deposit-insurance/book/brief-history-deposit-insurance-3.pdf\n• FDIC, Deposit Insurance: https://www.fdic.gov/resources/deposit-insurance\n• U.S. Bureau of Labor Statistics, CPI-U (CPIAUCNS), via FRED: https://fred.stlouisfed.org/series/CPIAUCNS\n• U.S. Bureau of Labor Statistics, CPI news release, October 14, 2026: https://www.bls.gov/news.release/archives/cpi_10142026.htm\n• U.S. Bureau of Economic Analysis, NIPA Table 6.6A, wages and salaries per full-time equivalent employee, 1929 (via DBnomics): https://db.nomics.world/BEA/NIPA-T60600A\n• Borowiecki, Dzieliński & Tepper, \"The Great Margin Call\", Economic History Review (2022)\n• Mark Hulbert, \"25 Years to Bounce Back? Try 4½\", The New York Times, April 26, 2009 (reprinted by History News Network): https://www.historynewsnetwork.org/article/79770\nCharts in this video are our own, built from the data above.\n\nMUSIC & SOUND\nMusic (CC0, OpenGameArt.org): \"Catchy Swing\" by Doge · \"Ragtime! Jazz\" by Tarush Singhal · \"Tension\" by Komiku · \"The Fridge is Hungry\" by congusbongus · \"At the end of hope\" by Emma_MA · \"Unsolved Investigation\" by isaiah658 · \"Electro Swing type\" by G_P · \"Piano & Drums, positive melancholy\" by Dizzy Crow\nSound effects (CC0): Kenney (kenney.nl), rubberduck, Nocturnal_Vanguard, PWL; additional music and sound design by Toonomy.\n\nMORE FROM TOONOMY\nNew animated finance stories every week: https://www.youtube.com/@toonomy\n\n#GreatDepression #StockMarketCrash #BlackTuesday",
+    "etiketler": [
+      "1929 stock market crash",
+      "stock market crash 1929",
+      "great depression",
+      "great depression explained",
+      "1929 crash",
+      "wall street crash of 1929",
+      "black tuesday",
+      "black tuesday 1929",
+      "black monday 1929",
+      "black thursday 1929",
+      "october 1929 crash",
+      "bank runs",
+      "bank failures 1930s",
+      "bank holiday 1933",
+      "fdic history",
+      "deflation explained",
+      "dow jones 1929",
+      "financial history",
+      "economic history",
+      "stock market history",
+      "animated history",
+      "finance animation",
+      "toonomy"
+    ],
+    "bolumler": [
+      {
+        "zaman": "00:00",
+        "baslik": "The game: $1,000 and three doors"
+      },
+      {
+        "zaman": "01:19",
+        "baslik": "Door 1: The stock market"
+      },
+      {
+        "zaman": "02:46",
+        "baslik": "Door 2: The bank"
+      },
+      {
+        "zaman": "04:46",
+        "baslik": "Door 3: The shoebox"
+      },
+      {
+        "zaman": "06:12",
+        "baslik": "The bottom: July 1932"
+      },
+      {
+        "zaman": "07:33",
+        "baslik": "March 1933: every door locked"
+      },
+      {
+        "zaman": "08:42",
+        "baslik": "The twist: the same door in 2026"
+      },
+      {
+        "zaman": "09:52",
+        "baslik": "What the game really tests"
+      }
+    ],
+    "kategori_id": "27",
+    "varsayilan_dil": "en",
+    "ses_dili": "en"
+  },
+  "durum": {
+    "gizlilik": "private",
+    "cocuklara_ozel": false,
+    "sentetik_medya": true,
+    "lisans": "youtube",
+    "gomulebilir": true,
+    "yayin_zamani": "2026-10-28T12:00:00-04:00"
+  },
+  "oynatma_listesi_id": null,
+  "onay": {
+    "niyazi_onayi": true,
+    "tarih": "2026-10-28",
+    "not": "Niyazi: 'İlk uzun videoyu bugün yayına alabiliriz saatini sen seç' (2026-10-28)"
+  }
+}

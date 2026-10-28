@@ -1,0 +1,182 @@
+[
+ {
+  "dosya": "C04.png",
+  "cozunurluk": [
+   1920,
+   1080
+  ],
+  "ten_dE": 2.8008351382321255,
+  "sac_dE": 1.8395878454077867,
+  "gomlek_dE": 2.4175760032843345,
+  "kafa_hist_kor": 0.7691512943791013,
+  "kafa_merkez_kayma_yuzde": 0.20833333333333334,
+  "kafa_olcek_fark_yuzde": 50.0,
+  "gecti": false,
+  "kafa_kutusu": [
+   882,
+   46,
+   1005,
+   252
+  ]
+ },
+ {
+  "dosya": "C05.png",
+  "cozunurluk": [
+   1920,
+   1080
+  ],
+  "ten_dE": 6.213553904713609,
+  "sac_dE": 2.1120120214061218,
+  "gomlek_dE": 2.973999618637544,
+  "kafa_hist_kor": 0.6421837992104605,
+  "kafa_merkez_kayma_yuzde": 0.15625,
+  "kafa_olcek_fark_yuzde": 50.0,
+  "gecti": false,
+  "kafa_kutusu": [
+   880,
+   46,
+   1005,
+   252
+  ]
+ },
+ {
+  "dosya": "C11b.png",
+  "cozunurluk": [
+   1920,
+   1080
+  ],
+  "ten_dE": 2.935158118829508,
+  "sac_dE": 1.0,
+  "gomlek_dE": 1.0,
+  "kafa_hist_kor": 0.8627177120648413,
+  "kafa_merkez_kayma_yuzde": 0.026041666666666668,
+  "kafa_olcek_fark_yuzde": 0.24271844660194164,
+  "gecti": true,
+  "kafa_kutusu": [
+   800,
+   37,
+   1080,
+   448
+  ]
+ },
+ {
+  "dosya": "C12.png",
+  "cozunurluk": [
+   1920,
+   1080
+  ],
+  "ten_dE": 2.3696314444509667,
+  "sac_dE": 0.0,
+  "gomlek_dE": 1.0741446828385564,
+  "kafa_hist_kor": 0.8405361930758363,
+  "kafa_merkez_kayma_yuzde": 0.078125,
+  "kafa_olcek_fark_yuzde": 0.0,
+  "gecti": true,
+  "kafa_kutusu": [
+   799,
+   37,
+   1083,
+   449
+  ]
+ },
+ {
+  "dosya": "C13.png",
+  "cozunurluk": [
+   1920,
+   1080
+  ],
+  "ten_dE": 3.2342870512870534,
+  "sac_dE": 1.0,
+  "gomlek_dE": 1.2708850044913558,
+  "kafa_hist_kor": 0.9053889318873635,
+  "kafa_merkez_kayma_yuzde": 0.026041666666666668,
+  "kafa_olcek_fark_yuzde": 0.24271844660194164,
+  "gecti": true,
+  "kafa_kutusu": [
+   798,
+   39,
+   1080,
+   450
+  ]
+ },
+ {
+  "dosya": "C14.png",
+  "cozunurluk": [
+   1920,
+   1080
+  ],
+  "ten_dE": 1.6171435256435267,
+  "sac_dE": 1.0741446828385564,
+  "gomlek_dE": 1.8602665902079243,
+  "kafa_hist_kor": 0.9367602658650624,
+  "kafa_merkez_kayma_yuzde": 0.10416666666666667,
+  "kafa_olcek_fark_yuzde": 0.4854368932038833,
+  "gecti": true,
+  "kafa_kutusu": [
+   801,
+   37,
+   1082,
+   447
+  ]
+ },
+ {
+  "dosya": "C20.png",
+  "cozunurluk": [
+   1920,
+   1080
+  ],
+  "ten_dE": 3.679176910621647,
+  "sac_dE": 1.2708844159408716,
+  "gomlek_dE": 0.39215660095214844,
+  "kafa_hist_kor": 0.8618794080375087,
+  "kafa_merkez_kayma_yuzde": 0.5729166666666666,
+  "kafa_olcek_fark_yuzde": 1.9417475728155331,
+  "gecti": true,
+  "kafa_kutusu": [
+   807,
+   41,
+   1094,
+   445
+  ]
+ },
+ {
+  "dosya": "C21.png",
+  "cozunurluk": [
+   1920,
+   1080
+  ],
+  "ten_dE": 1.467577020747785,
+  "sac_dE": 0.0,
+  "gomlek_dE": 0.0,
+  "kafa_hist_kor": 0.9132071551065934,
+  "kafa_merkez_kayma_yuzde": 0.078125,
+  "kafa_olcek_fark_yuzde": 11.89320388349514,
+  "gecti": true,
+  "kafa_kutusu": [
+   797,
+   37,
+   1079,
+   400
+  ]
+ },
+ {
+  "dosya": "a-konusma-kapali.png",
+  "cozunurluk": [
+   1920,
+   1080
+  ],
+  "ten_dE": 0.0,
+  "sac_dE": 0.0,
+  "gomlek_dE": 0.0,
+  "kafa_hist_kor": 1.0,
+  "kafa_merkez_kayma_yuzde": 0.0,
+  "kafa_olcek_fark_yuzde": 0.0,
+  "gecti": true,
+  "kafa_kutusu": [
+   799,
+   37,
+   1080,
+   449
+  ]
+ }
+]

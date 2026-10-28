@@ -1,0 +1,33 @@
+Kontrol tarihi: 2026-10-28 · konu: 26 · mod: canlı (curl + anahtar kelime)
+
+| ID | Konu | Kaynak | Bağımsız alan | Açılan (200+anahtar) | Açılan bağımsız | Son 30 gün (B) | Sonuç |
+|---|---|---|---|---|---|---|---|
+| B1 | China's AI bubble already burst. Is America next | 2 | 2 | 2 | 2 | 2 | GEÇTİ |
+| B2 | Anthropic's IPO filing: $16B revenue, $80B loss  | 3 | 3 | 3 | 3 | 3 | GEÇTİ |
+| B3 | $130 billion in tariff refunds: where is the mon | 3 | 3 | 3 | 3 | 3 | GEÇTİ |
+| B4 | The Fed is raising rates again in 2026: why, and | 4 | 4 | 4 | 4 | 4 | GEÇTİ |
+| B5 | The 10-year Treasury just crossed 5%: the number | 2 | 2 | 2 | 2 | 2 | GEÇTİ |
+| B6 | $115 oil: what attacks on Saudi refineries do to | 3 | 3 | 3 | 3 | 3 | GEÇTİ |
+| B7 | The rupee near 100 per dollar: India's $70 billi | 3 | 3 | 3 | 3 | 3 | GEÇTİ |
+| B8 | Gold crashed 25%, yet everyone is still buying.  | 2 | 2 | 2 | 2 | 2 | GEÇTİ |
+| B9 | US bank stocks: the longest losing streak since  | 2 | 2 | 2 | 2 | 2 | GEÇTİ |
+| B10 | Bitcoin below $80,000 and Moody's calls a crypto | 2 | 2 | 2 | 2 | 2 | GEÇTİ |
+| B11 | Midterms and your money: what stocks did after e | 3 | 3 | 3 | 3 | 3 | GEÇTİ |
+| B12 | Big Tech's $700 billion AI bet faces its earning | 2 | 2 | 2 | 2 | 2 | GEÇTİ |
+| B13 | Private credit: the $2 trillion corner of financ | 2 | 2 | 2 | 2 | 2 | GEÇTİ |
+| B14 | The housing market's deep freeze: 7% mortgages a | 3 | 3 | 3 | 3 | 3 | GEÇTİ |
+| B15 | America's $2 trillion deficit: who pays when the | 3 | 3 | 3 | 3 | 3 | GEÇTİ |
+| B16 | CoreWeave's 15% bonds: the AI debt nobody talks  | 3 | 3 | 3 | 3 | 3 | GEÇTİ |
+| B17 | The first $1 trillion holiday season, and why it | 3 | 3 | 3 | 3 | 3 | GEÇTİ |
+| A1 | Black Friday wasn't about shopping: the 1869 gol | 4 | 3 | 4 | 3 | — | GEÇTİ |
+| A2 | The Panic of 1907: the night J.P. Morgan locked  | 2 | 2 | 2 | 2 | — | GEÇTİ |
+| A3 | The Volcker Shock: when the Fed pushed rates to  | 2 | 2 | 2 | 2 | — | GEÇTİ |
+| A4 | The night India pledged its gold: the 1991 crisi | 2 | 2 | 2 | 2 | — | GEÇTİ |
+| A5 | Smoot-Hawley 1930: the tariff that made the Depr | 2 | 2 | 2 | 2 | — | GEÇTİ |
+| A6 | The 1997 Asian Financial Crisis: how Thailand's  | 2 | 2 | 2 | 2 | — | GEÇTİ |
+| C1 | What if America's AI bubble pops like China's? A | 3 | 3 | 3 | 3 | — | GEÇTİ |
+| C2 | What if one rupee became worth one cent? India a | 2 | 2 | 2 | 2 | — | GEÇTİ |
+| C3 | What if the US couldn't pay its bills? A debt-sp | 2 | 2 | 2 | 2 | — | GEÇTİ |
+
+Sütun sayımı: A=6 · B=17 · C=3 · toplam=26
+Kapı: GEÇTİ (her konuda >=2 bağımsız açılan kaynak; B'de >=1 kaynak son 30 gün; toplam >=15)

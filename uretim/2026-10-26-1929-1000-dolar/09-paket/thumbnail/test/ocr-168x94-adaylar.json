@@ -1,0 +1,221 @@
+{
+ "A1": {
+  "beklenen": [
+   "PICK",
+   "A",
+   "DOOR"
+  ],
+  "tam_1280": {
+   "bulunan": [
+    "PICK",
+    "A",
+    "DOOR"
+   ],
+   "oran": 1.0,
+   "ham": "PICK A DOOR 2 9 2 S VV PICK A DOOR CO 99 9 VV"
+  },
+  "mobil_168": {
+   "bulunan": [
+    "PICK",
+    "A",
+    "DOOR"
+   ],
+   "oran": 1.0,
+   "ham": "PICK ADOOR 229 T A PICK A DOOR 99 9"
+  },
+  "mobil_korunan": 1.0
+ },
+ "A2": {
+  "beklenen": [
+   "ONE",
+   "IS",
+   "A",
+   "DISASTER"
+  ],
+  "tam_1280": {
+   "bulunan": [
+    "ONE",
+    "IS",
+    "A",
+    "DISASTER"
+   ],
+   "oran": 1.0,
+   "ham": "ONE 8 A DISASTER 9 9 9 Z VV 2S R ONE IS A DISASTER R 99 9 VV"
+  },
+  "mobil_168": {
+   "bulunan": [
+    "ONE",
+    "IS",
+    "A",
+    "DISASTER"
+   ],
+   "oran": 1.0,
+   "ham": "ONE IS A DISASTER 229 V A ONE IS A DISASTER 2 I A VV"
+  },
+  "mobil_korunan": 1.0
+ },
+ "B1": {
+  "beklenen": [
+   "THE",
+   "SURPRISE",
+   "DOOR"
+  ],
+  "tam_1280": {
+   "bulunan": [
+    "SURPRISE"
+   ],
+   "oran": 0.33,
+   "ham": "Y SURPRISE 1929 8 Y SURPRISE PI 1929"
+  },
+  "mobil_168": {
+   "bulunan": [
+    "SURPRISE"
+   ],
+   "oran": 0.33,
+   "ham": "Y SURPRISE"
+  },
+  "mobil_korunan": 1.0
+ },
+ "B2": {
+  "beklenen": [
+   "EVERYONE",
+   "LAUGHED"
+  ],
+  "tam_1280": {
+   "bulunan": [
+    "EVERYONE",
+    "LAUGHED"
+   ],
+   "oran": 1.0,
+   "ham": "EVERYONE LAUGHED PO EVERYONE HED PI 1929"
+  },
+  "mobil_168": {
+   "bulunan": [
+    "EVERYONE",
+    "LAUGHED"
+   ],
+   "oran": 1.0,
+   "ham": "EVERYONE LAUGHED P EVERYONE UGHE TLY"
+  },
+  "mobil_korunan": 1.0
+ },
+ "C1": {
+  "beklenen": [
+   "STOCKS",
+   "89"
+  ],
+  "tam_1280": {
+   "bulunan": [
+    "STOCKS",
+    "89"
+   ],
+   "oran": 1.0,
+   "ham": "STOCKS 89 O EA ATE VV"
+  },
+  "mobil_168": {
+   "bulunan": [
+    "STOCKS",
+    "89"
+   ],
+   "oran": 1.0,
+   "ham": "BYE 89 Y STOCKS 89 V"
+  },
+  "mobil_korunan": 1.0
+ },
+ "C2": {
+  "beklenen": [
+   "THE",
+   "89",
+   "DOOR"
+  ],
+  "tam_1280": {
+   "bulunan": [
+    "THE",
+    "DOOR"
+   ],
+   "oran": 0.67,
+   "ham": "VAN THE DOOR"
+  },
+  "mobil_168": {
+   "bulunan": [],
+   "oran": 0.0,
+   "ham": "VV"
+  },
+  "mobil_korunan": 0.0
+ },
+ "D1": {
+  "beklenen": [
+   "EVERY",
+   "DOOR",
+   "LOCKED"
+  ],
+  "tam_1280": {
+   "bulunan": [
+    "EVERY",
+    "DOOR",
+    "LOCKED"
+   ],
+   "oran": 1.0,
+   "ham": "EVERY DOOR S LOCKED S I EVERY DOOR LOCKED CE SY ON TE A SE"
+  },
+  "mobil_168": {
+   "bulunan": [
+    "EVERY",
+    "DOOR",
+    "LOCKED"
+   ],
+   "oran": 1.0,
+   "ham": "EVERY DOOR LOCKED S IA EVERY DOOR LOCKED A8 IA"
+  },
+  "mobil_korunan": 1.0
+ },
+ "D2": {
+  "beklenen": [
+   "MARCH",
+   "1933"
+  ],
+  "tam_1280": {
+   "bulunan": [
+    "MARCH",
+    "1933"
+   ],
+   "oran": 1.0,
+   "ham": "MARCH 1933 IC OI EI SO I VV SS MARCH 1933 VA A SE V"
+  },
+  "mobil_168": {
+   "bulunan": [
+    "MARCH",
+    "1933"
+   ],
+   "oran": 1.0,
+   "ham": "MARCH 1933 S A OE TE VV MARCH 1933 AF 9 A"
+  },
+  "mobil_korunan": 1.0
+ },
+ "D3": {
+  "beklenen": [
+   "EVERY",
+   "BANK",
+   "CLOSED"
+  ],
+  "tam_1280": {
+   "bulunan": [
+    "EVERY",
+    "BANK",
+    "CLOSED"
+   ],
+   "oran": 1.0,
+   "ham": "EVERY BANK CLOSED S A EVERY BANK CLOSED CE AYE AN TE IA SE"
+  },
+  "mobil_168": {
+   "bulunan": [
+    "EVERY",
+    "BANK",
+    "CLOSED"
+   ],
+   "oran": 1.0,
+   "ham": "EVERY BANK CLOSED S A EVERY BANK CLOSED OP A8 A PO"
+  },
+  "mobil_korunan": 1.0
+ }
+}

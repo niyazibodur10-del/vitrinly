@@ -1,0 +1,23 @@
+1
+00:00:01,000 --> 00:00:02,800
+Imagine waking up one morning,
+
+2
+00:00:02,800 --> 00:00:04,740
+and your savings are worth less
+
+3
+00:00:04,740 --> 00:00:05,920
+than a cup of coffee.
+
+4
+00:00:06,760 --> 00:00:07,580
+Sounds impossible?
+
+5
+00:00:08,240 --> 00:00:10,140
+In 1923, in Germany,
+
+6
+00:00:10,480 --> 00:00:11,880
+that's exactly what happened.

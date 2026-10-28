@@ -1,0 +1,32 @@
+{
+ "girdi": "/home/user/vitrinly/assets/karakter/paket-v1/c-isaret.png",
+ "zemin_bgr": [
+  122,
+  87,
+  57
+ ],
+ "boyut": [
+  1920,
+  1080
+ ],
+ "M1-renk-anahtari": {
+  "kenar_artigi_orani": 0.0775,
+  "sacak_px": 0,
+  "on_plan_px": 505811
+ },
+ "M2-grabcut": {
+  "kenar_artigi_orani": 0.1814,
+  "sacak_px": 147,
+  "on_plan_px": 507496
+ },
+ "M3-grabcut-arindirma": {
+  "kenar_artigi_orani": 0.0764,
+  "sacak_px": 1,
+  "on_plan_px": 507496
+ },
+ "M4-renk-arindirma": {
+  "kenar_artigi_orani": 0.0005,
+  "sacak_px": 0,
+  "on_plan_px": 505811
+ }
+}

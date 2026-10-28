@@ -1,0 +1,1775 @@
+{
+ "weimar": {
+  "query": "Weimar Germany hyperinflation 1923",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 48452,
+  "rel_ge1M": 1,
+  "rel_top3": [
+   [
+    1871128,
+    "How the Nazis created an economic miracle",
+    "Money & Macro",
+    "2025-09-25",
+    "yRlbUeji01U"
+   ],
+   [
+    506926,
+    "Lessons From Weimar Germany On Surviving Hyperinflation",
+    "Financially Aware",
+    "2023-08-22",
+    "890g_phT5tg"
+   ],
+   [
+    419857,
+    "Hyperinflation - Germany 1923",
+    "Plymhistnet",
+    "2008-06-09",
+    "WI1i5yhwOz8"
+   ]
+  ],
+  "recent12m_n": 3,
+  "recent12m_top3": [
+   [
+    48452,
+    "Karl and Anna: A Year Inside the Weimar Hyperinflation",
+    "Independent Financial Historia",
+    "2026-02-28",
+    "ICjjCMsaKBA"
+   ],
+   [
+    621,
+    "Hyperinflation in Germany 1923 | GCSE History | Weimar Republic Explained",
+    "GCSEHistoryChannel",
+    "2026-06-16",
+    "V-IIkomQlkM"
+   ],
+   [
+    142,
+    "What Hyperinflation Actually Did to Weimar Germany",
+    "Maja Friberg Invests",
+    "2026-09-22",
+    "n5wQ3RBXG5U"
+   ]
+  ]
+ },
+ "crash1929": {
+  "query": "1929 stock market crash explained",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 901264,
+  "rel_ge1M": 6,
+  "rel_top3": [
+   [
+    7870422,
+    "The Great Depression: Crash Course US History #33",
+    "CrashCourse",
+    "2013-10-10",
+    "GCQfMWAikyU"
+   ],
+   [
+    3940857,
+    "The Great Depression - 5 Minute History Lesson",
+    "The Plain Bagel",
+    "2018-06-08",
+    "62DxELjuRec"
+   ],
+   [
+    3135393,
+    "The Great Depression in 12 Minutes (Casual Economics)",
+    "Casual Economics",
+    "2025-03-19",
+    "qF3ekm9Gx_E"
+   ]
+  ],
+  "recent12m_n": 2,
+  "recent12m_top3": [
+   [
+    2002,
+    "The 1929 Stock Market Crash and the Great Depression: How It Unfolded",
+    "Ryan O'Connell, CFA, FRM",
+    "2026-08-10",
+    "EumYreFPaQA"
+   ],
+   [
+    332,
+    "1929 Stock Market Crash Explained | The Great Depression Documentary",
+    "Finance In Sticks",
+    "2025-11-03",
+    "r7ZTP3WPPU4"
+   ]
+  ]
+ },
+ "tulip": {
+  "query": "tulip mania bubble",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 35,
+  "rel_ge1M": 0,
+  "rel_top3": [
+   [
+    296828,
+    "The World's First Financial Bubble? Tulip Mania! | European History | Extra Hist",
+    "Extra History",
+    "2026-05-09",
+    "xk_BsNZ2H8Q"
+   ],
+   [
+    264635,
+    "Tulip Mania | 3 Minute History",
+    "Jabzy",
+    "2015-11-24",
+    "Zr3FcXeDZFc"
+   ],
+   [
+    263457,
+    "Tulip Bulbs, Bored Apes and Bubbles",
+    "Patrick Boyle",
+    "2023-03-14",
+    "O1dbtWZFsIk"
+   ]
+  ],
+  "recent12m_n": 11,
+  "recent12m_top3": [
+   [
+    296828,
+    "The World's First Financial Bubble? Tulip Mania! | European History | Extra Hist",
+    "Extra History",
+    "2026-05-09",
+    "xk_BsNZ2H8Q"
+   ],
+   [
+    9689,
+    "Fall Asleep to the ENTIRE Story of Tulip Mania — The World’s First Economic Bubb",
+    "Bedtime & Historian ",
+    "2026-03-31",
+    "xO4-BusN26M"
+   ],
+   [
+    2708,
+    "The BIZARRE History of Tulip Mania: The First Financial Bubble",
+    "Drowsy Historian",
+    "2025-10-29",
+    "CHEXrhUykBw"
+   ]
+  ]
+ },
+ "southsea": {
+  "query": "South Sea Bubble",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 36013,
+  "rel_ge1M": 4,
+  "rel_top3": [
+   [
+    3470262,
+    "England: South Sea Bubble - The Sharp Mind of John Blunt - Extra History - Part ",
+    "Extra History",
+    "2015-02-28",
+    "k1kndKWJKB8"
+   ],
+   [
+    2374290,
+    "England: South Sea Bubble - Too Big to Fail - Extra History - Part 2",
+    "Extra History",
+    "2015-03-14",
+    "Fsk6oZm1EEA"
+   ],
+   [
+    2143365,
+    "England: South Sea Bubble - Buying Out Britain - Extra History - Part 3",
+    "Extra History",
+    "2015-03-28",
+    "1vcF5rebN20"
+   ]
+  ],
+  "recent12m_n": 4,
+  "recent12m_top3": [
+   [
+    926,
+    "The South Sea Bubble of 1720: How It Unfolded",
+    "Ryan O'Connell, CFA, FRM",
+    "2026-08-17",
+    "wVci65a15gs"
+   ],
+   [
+    74,
+    "How Newton Lost Everything to a Fake Company | South Sea Bubble (95 Mins)",
+    "The Sleepy Economist",
+    "2026-06-01",
+    "fYqzgXYBM5I"
+   ],
+   [
+    35,
+    "Isaac Newton Lost a Fortune to This Con — The South Sea Bubble of 1720",
+    "The Dead Authors Club",
+    "2026-07-27",
+    "hoHTBsZoUzA"
+   ]
+  ]
+ },
+ "johnlaw": {
+  "query": "John Law Mississippi bubble",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 118,
+  "rel_ge1M": 1,
+  "rel_top3": [
+   [
+    1773683,
+    "How The World’s First Finance Bro Ruined A Nation",
+    "hoser",
+    "2025-06-23",
+    "9FXYUMNH8CQ"
+   ],
+   [
+    573831,
+    "John Law - The First Financial Engineer - A History of Paper Money and The Missi",
+    "Patrick Boyle",
+    "2020-12-16",
+    "H5uKPUPQSyQ"
+   ],
+   [
+    172881,
+    "John Law and the Mississippi Bubble",
+    "NFB",
+    "2010-10-15",
+    "diEVmQZ1QfM"
+   ]
+  ],
+  "recent12m_n": 8,
+  "recent12m_top3": [
+   [
+    486,
+    "The Mississippi BUBBLE of 1719 — The SCAM That Bankrupted France",
+    "Coin Empire Files",
+    "2025-11-16",
+    "fbD-OU7t0A8"
+   ],
+   [
+    118,
+    "Mississippi-Blase 1720: Wie John Law Frankreich fast ruinierte | Die Geburt des ",
+    "Geschichte der Wirtschaft",
+    "2025-12-17",
+    "iLViTUgpPzA"
+   ],
+   [
+    109,
+    "France’s Economic Collapse: John Law’s Mississippi Bubble Explained",
+    "The Wealth Chronicles",
+    "2026-10-09",
+    "Cvj2_NfA5jw"
+   ]
+  ]
+ },
+ "gfc2008": {
+  "query": "2008 financial crisis explained",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 212528,
+  "rel_ge1M": 4,
+  "rel_top3": [
+   [
+    6223413,
+    "How the 2008 Financial Crisis Still Affects You",
+    "ColdFusion",
+    "2022-10-28",
+    "U1dpWiZoiJU"
+   ],
+   [
+    4989394,
+    "How it Happened - The 2008 Financial Crisis: Crash Course Economics #12",
+    "CrashCourse",
+    "2015-10-21",
+    "GPOv72Awo68"
+   ],
+   [
+    2671673,
+    "Warren Buffett Explains the 2008 Financial Crisis",
+    "The Wall Street Journal",
+    "2018-09-06",
+    "k2VSSNECLTQ"
+   ]
+  ],
+  "recent12m_n": 4,
+  "recent12m_top3": [
+   [
+    245403,
+    "The 2008 Financial Crisis Explained Like You’re 5",
+    "Fred - Money Historian",
+    "2026-03-04",
+    "w5kdK-dQ414"
+   ],
+   [
+    212528,
+    "The 2008 Financial Crisis Explained Using Bananas",
+    "MonkeyExplains",
+    "2025-11-07",
+    "v1s5qXyxmVo"
+   ],
+   [
+    30287,
+    "How the 2008 Financial Crisis Really Happened",
+    "Alux.com",
+    "2025-11-12",
+    "cfUoCa7bGXY"
+   ]
+  ]
+ },
+ "dotcom": {
+  "query": "dot com bubble explained",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 289916,
+  "rel_ge1M": 1,
+  "rel_top3": [
+   [
+    1102937,
+    "The Dot-Com Bubble - 5 Minute History Lesson",
+    "The Plain Bagel",
+    "2020-02-07",
+    "25_WjiZnvQk"
+   ],
+   [
+    610622,
+    "AI Bubble vs Dot Com Crash. History is REPEATING",
+    "The Infographics Show",
+    "2026-07-18",
+    "zWJ-g5u9Rqs"
+   ],
+   [
+    500661,
+    "The AI Bubble Explained Like You're 5",
+    "Crayon Capital",
+    "2025-12-12",
+    "kx_okFl98Vw"
+   ]
+  ],
+  "recent12m_n": 5,
+  "recent12m_top3": [
+   [
+    610622,
+    "AI Bubble vs Dot Com Crash. History is REPEATING",
+    "The Infographics Show",
+    "2026-07-18",
+    "zWJ-g5u9Rqs"
+   ],
+   [
+    500661,
+    "The AI Bubble Explained Like You're 5",
+    "Crayon Capital",
+    "2025-12-12",
+    "kx_okFl98Vw"
+   ],
+   [
+    448519,
+    "The Dot-Com Bubble Explained Like You're 5",
+    "Crayon Capital",
+    "2025-10-27",
+    "CCXYfrAfW6g"
+   ]
+  ]
+ },
+ "blackmonday": {
+  "query": "Black Monday 1987 crash",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 68014,
+  "rel_ge1M": 2,
+  "rel_top3": [
+   [
+    1989816,
+    "The Worst Day In Market History Explained",
+    "tastylive",
+    "2015-08-19",
+    "jLfjEMDJubg"
+   ],
+   [
+    1716497,
+    "This is What “Always” Happens Before a Market Crash",
+    "Fin Tek",
+    "2025-07-23",
+    "iMUaIUqpd7Q"
+   ],
+   [
+    956262,
+    "The 1987 stock market crash: Original news report",
+    "PIX11 News",
+    "2018-10-19",
+    "0_8YEglCFdU"
+   ]
+  ],
+  "recent12m_n": 3,
+  "recent12m_top3": [
+   [
+    46546,
+    "Black Monday: The Biggest Crash EVER!",
+    "Finance Bureau",
+    "2026-10-22",
+    "n4vssvd2d8k"
+   ],
+   [
+    1421,
+    "BLACK MONDAY 1987 | How Ivan Boesky's Greed Crashed Wall Street 22% in One Day",
+    "The Sleeping Economist",
+    "2025-11-28",
+    "aUb0V_yT9xg"
+   ],
+   [
+    806,
+    "The Complete History of BLACK MONDAY 📉 1987 Stock Market Crash Explained | Sleep",
+    "Money Sleep Chronicles  💰",
+    "2026-02-02",
+    "4D7oFxKaRec"
+   ]
+  ]
+ },
+ "ltcm": {
+  "query": "Long-Term Capital Management collapse",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 6543,
+  "rel_ge1M": 1,
+  "rel_top3": [
+   [
+    1037681,
+    "The Most Dangerous Hedge Fund in History",
+    "Hamish Hodder",
+    "2025-11-15",
+    "vXQdYFcT_uE"
+   ],
+   [
+    241285,
+    "WHEN GENIUS FAILED (BY ROGER LOWENSTEIN)",
+    "The Swedish Investor",
+    "2021-10-24",
+    "qVSNzW2964g"
+   ],
+   [
+    67065,
+    "The INSANE Story of How a Hedge Fund Collapsed the Wall Street | Long Term Capit",
+    "The VIX Guy",
+    "2020-09-25",
+    "boCy670pSRM"
+   ]
+  ],
+  "recent12m_n": 5,
+  "recent12m_top3": [
+   [
+    1037681,
+    "The Most Dangerous Hedge Fund in History",
+    "Hamish Hodder",
+    "2025-11-15",
+    "vXQdYFcT_uE"
+   ],
+   [
+    2127,
+    "The 1998 Collapse of Long-Term Capital Management",
+    "J.P. Morgan Asset Management",
+    "2026-08-13",
+    "zPIexh2vOQo"
+   ],
+   [
+    1216,
+    "🔵LONG-TERM CAPITAL MANAGEMENT:👉Las CLAVES detrás de la QUIEBRA del HEDGE FUND de",
+    "Systematic Value Investing ~ S",
+    "2026-03-12",
+    "AZz6o8rpahU"
+   ]
+  ]
+ },
+ "enron": {
+  "query": "Enron scandal explained",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 296913,
+  "rel_ge1M": 3,
+  "rel_top3": [
+   [
+    8748139,
+    "Enron - The Biggest Fraud in History",
+    "ColdFusion",
+    "2019-08-30",
+    "e5qC1YGRMKI"
+   ],
+   [
+    1896046,
+    "The Enron Scandal - A Simple Overview",
+    "Company Man",
+    "2017-08-23",
+    "hwollZoVmUc"
+   ],
+   [
+    1037646,
+    "The $63 BILLION Company That Sold Nothing",
+    "Crayon Capital",
+    "2025-07-19",
+    "VSbO8vmZNm0"
+   ]
+  ],
+  "recent12m_n": 3,
+  "recent12m_top3": [
+   [
+    58438,
+    "The Enron Scandal That Fooled America: How America's Most Admired Company Became",
+    "Industrial America",
+    "2026-05-02",
+    "j5B1GfFiVkw"
+   ],
+   [
+    54356,
+    "The Catastrophic Collapse of Enron.",
+    "Scandal",
+    "2025-11-27",
+    "_knUVESLQMc"
+   ],
+   [
+    149,
+    "How Enron Fooled America | The $74 Billion Collapse | Capital Unknown",
+    "Capital Unknown",
+    "2026-09-12",
+    "YJ1IFy1xu0I"
+   ]
+  ]
+ },
+ "madoff": {
+  "query": "Bernie Madoff Ponzi scheme",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 748996,
+  "rel_ge1M": 7,
+  "rel_top3": [
+   [
+    11619683,
+    "The Madoff Affair (full documentary) | FRONTLINE",
+    "FRONTLINE PBS | Official",
+    "2021-04-16",
+    "rH1Y66IwKvc"
+   ],
+   [
+    5136170,
+    "60 Minutes Archive: The man who figured out Madoff's Ponzi scheme",
+    "60 Minutes",
+    "2021-04-14",
+    "3wUJesUik5A"
+   ],
+   [
+    3986186,
+    "The Man Who Stole $65 Billion - Largest Ponzi Scheme In History (Bernie Madoff)",
+    "The Infographics Show",
+    "2018-05-16",
+    "5bxmfEuHk8c"
+   ]
+  ],
+  "recent12m_n": 1,
+  "recent12m_top3": [
+   [
+    279854,
+    "Would Bernie Madoff's Fraud Even Be That Bad By Today's Standards?",
+    "How Business Worked",
+    "2026-01-21",
+    "u1x5QmYHKPI"
+   ]
+  ]
+ },
+ "ftx": {
+  "query": "FTX collapse explained",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 1827704,
+  "rel_ge1M": 9,
+  "rel_top3": [
+   [
+    10988291,
+    "The Fake Genius: a $30 BILLION Fraud.",
+    "James Jani",
+    "2023-09-01",
+    "w3EYKuFGJ5c"
+   ],
+   [
+    8806232,
+    "The FTX Disaster is Deeper Than you Think",
+    "ColdFusion",
+    "2022-11-16",
+    "20BEJouWBgY"
+   ],
+   [
+    4803696,
+    "The Collapse Of FTX: Insiders Tell All | CNBC Documentary",
+    "CNBC",
+    "2023-10-02",
+    "XqwGt69pDXQ"
+   ]
+  ],
+  "recent12m_n": 1,
+  "recent12m_top3": [
+   [
+    12990,
+    "FTX: How a $32B Empire Collapsed in Four Days",
+    "JunkBondInvestor",
+    "2026-06-07",
+    "hTT5wle2uU0"
+   ]
+  ]
+ },
+ "zimbabwe": {
+  "query": "Zimbabwe hyperinflation",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 76698,
+  "rel_ge1M": 4,
+  "rel_top3": [
+   [
+    9822708,
+    "100 Trillion Dollars - A Worthless Banknote?!",
+    "Half-Asleep Chris",
+    "2019-05-13",
+    "N2iSUlLD374"
+   ],
+   [
+    7640089,
+    "Zimbabwe’s Currency Crisis: the worthless $100 trillion bill",
+    "PolyMatter",
+    "2019-10-11",
+    "5Wq0yv73NpY"
+   ],
+   [
+    4154755,
+    "Zimbabwe: How NOT To Run an Economy",
+    "hoser",
+    "2023-01-06",
+    "MtYE-KINteg"
+   ]
+  ],
+  "recent12m_n": 3,
+  "recent12m_top3": [
+   [
+    1298,
+    "Hyperinflation in Zimbabwe: How Money Turned into Trash?",
+    "Untold Economics",
+    "2026-08-21",
+    "YCdRXYN9j54"
+   ],
+   [
+    756,
+    "Why Printing More Money Makes Nations Poorer: The Zimbabwe Hyperinflation Story",
+    "FINANCIAL PATTERNS",
+    "2025-11-14",
+    "10ZAV2NIK1A"
+   ],
+   [
+    146,
+    "Zimbabwe’s Hyperinflation: When Billionaires Couldn’t Buy Bread",
+    "Ancient to Digital",
+    "2026-02-19",
+    "M3tfwNeqIoQ"
+   ]
+  ]
+ },
+ "svb": {
+  "query": "Silicon Valley Bank collapse",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 203518,
+  "rel_ge1M": 3,
+  "rel_top3": [
+   [
+    3387973,
+    "Banks Are Collapsing... Here's Why",
+    "Coffeezilla",
+    "2023-03-13",
+    "oHjDCC6Vigc"
+   ],
+   [
+    1143928,
+    "How Silicon Valley Bank Collapsed in 36 Hours | WSJ What Went Wrong",
+    "The Wall Street Journal",
+    "2023-03-15",
+    "QACGoKb48_0"
+   ],
+   [
+    1034594,
+    "How did Silicon Valley Bank fail? : Business case study",
+    "Think School",
+    "2023-03-15",
+    "wO7copUXogI"
+   ]
+  ],
+  "recent12m_n": 1,
+  "recent12m_top3": [
+   [
+    16815,
+    "Fed staff should have known Silicon Valley Bank was vulnerable, new report finds",
+    "CNBC Television",
+    "2026-09-18",
+    "gTlD7Axymn0"
+   ]
+  ]
+ },
+ "gamestop": {
+  "query": "GameStop short squeeze explained",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 465742,
+  "rel_ge1M": 3,
+  "rel_top3": [
+   [
+    2877805,
+    "Reddit vs Wallstreet - Der Gamestop Short Squeeze",
+    "Jules",
+    "2022-12-15",
+    "oBP-8f2VJfQ"
+   ],
+   [
+    2701605,
+    "How Reddit almost CRASHED the Economy with a meme.",
+    "wilfur",
+    "2021-02-24",
+    "5HFehFpU_8M"
+   ],
+   [
+    2072573,
+    "The Absolute Chaos of GME",
+    "big boss",
+    "2021-06-08",
+    "DlKBSvQfM1c"
+   ]
+  ],
+  "recent12m_n": 2,
+  "recent12m_top3": [
+   [
+    1255,
+    "The GameStop Short Squeeze Explained Like You’re 5",
+    "Dinero Papi",
+    "2026-02-17",
+    "RnfEFtuWfn4"
+   ],
+   [
+    0,
+    "ow Reddit Broke Wall Street: The GameStop Short Squeeze Explained",
+    "Boom, Bust & Beyond",
+    "2026-10-27",
+    "frXvERNOFXM"
+   ]
+  ]
+ },
+ "japan": {
+  "query": "Japan asset bubble 1990 lost decade",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 104305,
+  "rel_ge1M": 2,
+  "rel_top3": [
+   [
+    2820925,
+    "Japan's Lost Decade - An Economic Disaster [Documentary]",
+    "ColdFusion",
+    "2024-05-13",
+    "lmnVP35uZFY"
+   ],
+   [
+    1814211,
+    "The Economy of Japan: how a Superpower Fell from Grace in Four Decades",
+    "Money & Macro",
+    "2021-03-22",
+    "pU_yyadYgG8"
+   ],
+   [
+    539497,
+    "Japan's Bubble-Burst: The Party That Wasn't Supposed to End",
+    "KonichiValue",
+    "2023-01-12",
+    "Tp9MRVGgIZ0"
+   ]
+  ],
+  "recent12m_n": 5,
+  "recent12m_top3": [
+   [
+    414245,
+    "The Economic Crisis We Learned Nothing From",
+    "How Business Worked",
+    "2025-12-17",
+    "vTPpF3G3wJ0"
+   ],
+   [
+    176,
+    "The True Origin of Japan's Lost Decade: It Didn't Start in 1990",
+    "Okeanos History",
+    "2026-10-23",
+    "CK4JAN1JfuY"
+   ],
+   [
+    34,
+    "Japan's 1990 Bubble Burst and the Lost Decades Explained",
+    " Paisa Pathshala",
+    "2026-09-25",
+    "9llb4P8c2X4"
+   ]
+  ]
+ },
+ "asian97": {
+  "query": "1997 Asian financial crisis",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 51355,
+  "rel_ge1M": 2,
+  "rel_top3": [
+   [
+    2160247,
+    "The first modern financial crisis in the globalized world | DW Documentary",
+    "DW Documentary",
+    "2022-11-16",
+    "O2pD_y61jx4"
+   ],
+   [
+    1571726,
+    "How Thailand Went From Asian Leader to Laggard",
+    "Bloomberg Originals",
+    "2026-02-06",
+    "KBfnZCfeA00"
+   ],
+   [
+    291193,
+    "The 1997 Crisis: The Greatest Asian Crisis in History? - VisualPolitik EN",
+    "VisualPolitik EN",
+    "2020-12-27",
+    "EB79lWl10I0"
+   ]
+  ],
+  "recent12m_n": 3,
+  "recent12m_top3": [
+   [
+    1571726,
+    "How Thailand Went From Asian Leader to Laggard",
+    "Bloomberg Originals",
+    "2026-02-06",
+    "KBfnZCfeA00"
+   ],
+   [
+    4328,
+    "The Asian Financial CRISIS 1997 | How Thailand's Currency Triggered Global Econo",
+    "The Sleeping Economist",
+    "2025-11-16",
+    "wDcXWalvjkk"
+   ],
+   [
+    1232,
+    "The 1997 Asian Financial Crisis in 14 Minutes",
+    "Untold Economics",
+    "2026-08-13",
+    "_teLRHMkzwE"
+   ]
+  ]
+ },
+ "nixon": {
+  "query": "Nixon shock 1971 gold standard end",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 105,
+  "rel_ge1M": 0,
+  "rel_top3": [
+   [
+    456234,
+    "Nixon Ends Bretton Woods International Monetary System",
+    "danieljbmitchell",
+    "2007-08-09",
+    "iRzr1QU6K1o"
+   ],
+   [
+    116744,
+    "August 15, 1971 - Richard Nixon Closes the Gold Window",
+    "Carl Menger Center for the Stu",
+    "2014-08-15",
+    "7_Xw5tWsOQo"
+   ],
+   [
+    95919,
+    "The Day America’s Gold Was Stolen by Its Own President",
+    "Investigate Money",
+    "2025-08-20",
+    "r1vCYBsSPeo"
+   ]
+  ],
+  "recent12m_n": 10,
+  "recent12m_top3": [
+   [
+    7107,
+    "The Nixon Shock: How One Weekend Ended the Gold Standard",
+    "Moconomy",
+    "2026-05-02",
+    "5I6jhNiKZT8"
+   ],
+   [
+    743,
+    "Why America Ended the Gold Standard",
+    "Sunny Explains ",
+    "2026-01-12",
+    "YXm3SvvgT9k"
+   ],
+   [
+    110,
+    "The Day Money Changed Forever: How Nixon Ended the Gold Standard in 1971",
+    "How Does It Really Work?",
+    "2026-04-04",
+    "ufLrYXlbxO0"
+   ]
+  ]
+ },
+ "hunt": {
+  "query": "Hunt brothers silver 1980",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 3287,
+  "rel_ge1M": 0,
+  "rel_top3": [
+   [
+    312451,
+    "They Bought Nearly All the World's Silver. It Ended in Disaster",
+    "Investigate Money",
+    "2026-07-18",
+    "sAABDnmn29Y"
+   ],
+   [
+    50522,
+    "How Two Oil Tycoon Bought Too Much Silver & Broke America (Almost)",
+    "History Meets Finance",
+    "2025-07-05",
+    "mQL1TQCpzhQ"
+   ],
+   [
+    43847,
+    "Silver Cornered By Hunt Brothers? That's NOT What Happened | Mike Maloney",
+    "GoldSilver ",
+    "2025-12-20",
+    "-fxwiX2laDg"
+   ]
+  ],
+  "recent12m_n": 10,
+  "recent12m_top3": [
+   [
+    312451,
+    "They Bought Nearly All the World's Silver. It Ended in Disaster",
+    "Investigate Money",
+    "2026-07-18",
+    "sAABDnmn29Y"
+   ],
+   [
+    43847,
+    "Silver Cornered By Hunt Brothers? That's NOT What Happened | Mike Maloney",
+    "GoldSilver ",
+    "2025-12-20",
+    "-fxwiX2laDg"
+   ],
+   [
+    39148,
+    "The rise and fall of the Billionaire Hunt Brothers",
+    "Michael Girdley",
+    "2025-11-19",
+    "SKHHJJUF-sk"
+   ]
+  ]
+ },
+ "soros": {
+  "query": "George Soros Black Wednesday pound",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 1863,
+  "rel_ge1M": 3,
+  "rel_top3": [
+   [
+    2913546,
+    "How Soros Made A Billion Dollars And Almost Broke Britain",
+    "Business Casual",
+    "2018-12-07",
+    "WBZnau8Px5E"
+   ],
+   [
+    1334118,
+    "How George Soros Broke the Bank of England",
+    "Patrick Boyle",
+    "2023-07-02",
+    "q4k8SGmJqIA"
+   ],
+   [
+    1081549,
+    "Black Wednesday (BBC 1997)",
+    "batrachious",
+    "2012-12-21",
+    "K_oET45GzMI"
+   ]
+  ],
+  "recent12m_n": 7,
+  "recent12m_top3": [
+   [
+    2345,
+    "Bank of England-ஐ எப்படி வீழ்த்தினார்? ₹8,000 கோடி சம்பாதித்த George Soros | Bla",
+    "Money & Banking",
+    "2026-09-22",
+    "DrS3ikVyF8w"
+   ],
+   [
+    178,
+    "The Billion-Dollar Bet: Black Wednesday and the Soros Trade #georgesoros #blackw",
+    "Market Pulse Report",
+    "2026-06-20",
+    "RFKeBMcY4lI"
+   ],
+   [
+    165,
+    "Black Wednesday: How George Soros Crushed the British Pound",
+    "History Anatomy",
+    "2026-07-21",
+    "hUQMBU7cbb4"
+   ]
+  ]
+ },
+ "barings": {
+  "query": "Nick Leeson Barings Bank collapse",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 61215,
+  "rel_ge1M": 3,
+  "rel_top3": [
+   [
+    4264691,
+    "How a 28 Year Old Man Destroyed England’s Oldest Bank",
+    "ColdFusion",
+    "2021-08-04",
+    "avMbu6cc4Eo"
+   ],
+   [
+    1614210,
+    "Ewan McGregor, Anna Friel Drama Full Movie | Rogue Trader (1999) | Retrospective",
+    "Retrospective - Classic Movies",
+    "2018-11-26",
+    "SclDzvDWrds"
+   ],
+   [
+    1499733,
+    "How One Guy Bankrupted One Of England's Oldest Banks",
+    "Half as Interesting",
+    "2021-12-07",
+    "ThWzLe0WMsE"
+   ]
+  ],
+  "recent12m_n": 4,
+  "recent12m_top3": [
+   [
+    523535,
+    "I Broke Britain’s Oldest Bank And Survived 8 Years In Singaporean Prison | LADbi",
+    "LADbible Stories",
+    "2026-01-18",
+    "DDEmjhAJYys"
+   ],
+   [
+    158206,
+    "Barings Bank: the fraud that changed finance | FULL DOC | SLICE EXPERTS",
+    "Pure Declassified",
+    "2026-04-06",
+    "vKiqdIABYlk"
+   ],
+   [
+    389,
+    "NICK LEESON: El TRADER Que Destruyó BARINGS BANK Con 1.100 MILLONES De DÓLARES.",
+    "Red Prohibida",
+    "2025-11-17",
+    "DDVha_fKQ1g"
+   ]
+  ]
+ },
+ "panic1907": {
+  "query": "Panic of 1907 JP Morgan",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 13668,
+  "rel_ge1M": 0,
+  "rel_top3": [
+   [
+    806348,
+    "The Man Who Saved the US Economy.",
+    "Patrick Boyle",
+    "2023-08-24",
+    "EV9viJmx4xo"
+   ],
+   [
+    471375,
+    "Two Idiots Almost Destroyed Wall Street in 1907. Here’s Why",
+    "History Meets Finance",
+    "2025-03-29",
+    "z_GtfskNDNA"
+   ],
+   [
+    69711,
+    "The Panic of 1907 - Titans: The Rise of Wall Street - Documentary",
+    "Banijay Documentaries",
+    "2024-11-18",
+    "dP5Aa0mfyjM"
+   ]
+  ],
+  "recent12m_n": 7,
+  "recent12m_top3": [
+   [
+    58996,
+    "1907: The Day Americans Couldn't Get Their Money Back",
+    "Investigate Money",
+    "2025-12-25",
+    "uYKq1xrZmt0"
+   ],
+   [
+    17897,
+    "The True Origin of the Panic of 1907: What Historians Get Wrong",
+    "Markets of the Past",
+    "2026-07-30",
+    "DhO-VNIFmck"
+   ],
+   [
+    364,
+    "J. P. Morgan: The Banker America Had to Call",
+    "The Martin Archives",
+    "2026-10-22",
+    "m-gHk08iIqM"
+   ]
+  ]
+ },
+ "iceland": {
+  "query": "Iceland banking collapse 2008",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 9450,
+  "rel_ge1M": 1,
+  "rel_top3": [
+   [
+    2682112,
+    "Inside Job (2010 Full Documentary Movie)",
+    "Aditya Shukla",
+    "2020-12-20",
+    "T2IaJwkqgPk"
+   ],
+   [
+    230592,
+    "How Iceland Lost 50% of Its GDP... And Recovered",
+    "Economics Explained",
+    "2024-12-15",
+    "M2LrHMKFcdU"
+   ],
+   [
+    83330,
+    "Iceland Had a Revolution and No One Noticed | The Rubin Report",
+    "The Rubin Report",
+    "2013-11-08",
+    "_-BJgwWx57U"
+   ]
+  ],
+  "recent12m_n": 6,
+  "recent12m_top3": [
+   [
+    513,
+    "The Iceland Banking Collapse Explained Like You're 5",
+    "Lost Billions",
+    "2026-09-19",
+    "k8s04tquavk"
+   ],
+   [
+    74,
+    "How Iceland’s Banks Collapsed in Just 3 Days | The 2008 Financial Crisis",
+    "Finstory",
+    "2026-04-06",
+    "4vtPAU1Gu5E"
+   ],
+   [
+    38,
+    "The $85 Billion Collapse of Iceland",
+    "Country Business Documentary",
+    "2026-09-12",
+    "o9EkA1CKA9k"
+   ]
+  ]
+ },
+ "venezuela": {
+  "query": "Venezuela hyperinflation explained",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 2201,
+  "rel_ge1M": 2,
+  "rel_top3": [
+   [
+    9010806,
+    "The collapse of Venezuela, explained",
+    "Vox",
+    "2017-08-25",
+    "S1gUR8wM5vA"
+   ],
+   [
+    2578211,
+    "Why Are People In Venezuela Starving (Hyperinflation Explained)?",
+    "The Infographics Show",
+    "2018-12-19",
+    "ah9i3R9pRpg"
+   ],
+   [
+    899947,
+    "What Actually Went Wrong With Venezuela",
+    "The Infographics Show",
+    "2021-08-13",
+    "Olw5Gaugpl8"
+   ]
+  ],
+  "recent12m_n": 2,
+  "recent12m_top3": [
+   [
+    66,
+    "Venezuela's Fall: The Oil Trap That Destroyed An Economy",
+    "Economy in Motion",
+    "2026-01-07",
+    "17V0E9rrRa8"
+   ],
+   [
+    12,
+    "Venezuela: How a Rich Country Destroyed Its Own Money | Hyperinflation Explained",
+    "Venture Mindset",
+    "2026-01-14",
+    "j982kKgOKKk"
+   ]
+  ]
+ },
+ "oil1973": {
+  "query": "1973 oil crisis explained",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 8273,
+  "rel_ge1M": 1,
+  "rel_top3": [
+   [
+    1573820,
+    "Why The Oil Crisis is Way Worse Than You Think | AB Explained",
+    "Asian Boss",
+    "2026-04-03",
+    "F9hSsmd49p8"
+   ],
+   [
+    437276,
+    "Energy crisis: what can 1973 teach us?",
+    "The Economist",
+    "2023-01-12",
+    "AR2Y8NU3k-k"
+   ],
+   [
+    361141,
+    "Oil Crisis | Stock market Crash | OPEC | This Week| 1973",
+    "ThamesTv",
+    "2017-03-21",
+    "ClaNhx71XB8"
+   ]
+  ],
+  "recent12m_n": 5,
+  "recent12m_top3": [
+   [
+    1573820,
+    "Why The Oil Crisis is Way Worse Than You Think | AB Explained",
+    "Asian Boss",
+    "2026-04-03",
+    "F9hSsmd49p8"
+   ],
+   [
+    217610,
+    "The Year Global Oil Supplies Fell... By 4%",
+    "How Business Worked",
+    "2026-04-15",
+    "q1Ol9G-2WTc"
+   ],
+   [
+    18489,
+    "Embargo: When the Arab world choked the West",
+    "Middle East Eye",
+    "2026-10-26",
+    "32BJ0aZ9htE"
+   ]
+  ]
+ },
+ "volcker": {
+  "query": "Paul Volcker inflation 1980 interest rates",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 3046,
+  "rel_ge1M": 0,
+  "rel_top3": [
+   [
+    322203,
+    "Paul Volcker: The Man Who Saved America.  |  A Documentary",
+    "FINAiUS",
+    "2022-08-11",
+    "8PPXIQRB_4g"
+   ],
+   [
+    119313,
+    "Ray Dalio & Paul Volcker on How Volcker Broke the Back of Inflation in the 1980'",
+    "Principles by Ray Dalio",
+    "2022-08-17",
+    "k50nRM6qUxQ"
+   ],
+   [
+    41634,
+    "How the Fed beat inflation last time",
+    "Phil Edwards",
+    "2022-08-28",
+    "vcF9nBsFSmc"
+   ]
+  ],
+  "recent12m_n": 4,
+  "recent12m_top3": [
+   [
+    2145,
+    "The VOLCKER Shock | How the Fed Killed Inflation by Destroying the Economy (1979",
+    "The Sleeping Economist",
+    "2025-11-23",
+    "9T3vPFgD5j8"
+   ],
+   [
+    893,
+    "Volcker Shock: America’s Bitter Cure for 1980s Inflation",
+    "Shadows of History",
+    "2026-10-18",
+    "0OZ7Y4AmXNc"
+   ],
+   [
+    826,
+    "How Paul Volcker Bankrupted 50 Countries — The 20% Interest Rate That Destroyed ",
+    "Decoded Economics ",
+    "2025-12-27",
+    "knt2NHeuB8g"
+   ]
+  ]
+ },
+ "aibubble": {
+  "query": "AI bubble burst",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 35877,
+  "rel_ge1M": 1,
+  "rel_top3": [
+   [
+    1086804,
+    "Real Signs the AI Bubble is about to burst??",
+    "JayzTwoCents",
+    "2026-10-22",
+    "s8qkejdyffk"
+   ],
+   [
+    521608,
+    "AI Bubble: ‘This is the worst possible scenario’ | Ed Zitron",
+    "The Tech Report",
+    "2026-10-22",
+    "tccyK66eE3s"
+   ],
+   [
+    424445,
+    "Anthropic Just Filed Its IPO. The Numbers Are a Horror Show",
+    "House of El: AI",
+    "2026-10-23",
+    "R4dUq9yG2L8"
+   ]
+  ],
+  "recent12m_n": 15,
+  "recent12m_top3": [
+   [
+    1086804,
+    "Real Signs the AI Bubble is about to burst??",
+    "JayzTwoCents",
+    "2026-10-22",
+    "s8qkejdyffk"
+   ],
+   [
+    521608,
+    "AI Bubble: ‘This is the worst possible scenario’ | Ed Zitron",
+    "The Tech Report",
+    "2026-10-22",
+    "tccyK66eE3s"
+   ],
+   [
+    424445,
+    "Anthropic Just Filed Its IPO. The Numbers Are a Horror Show",
+    "House of El: AI",
+    "2026-10-23",
+    "R4dUq9yG2L8"
+   ]
+  ]
+ },
+ "coreweave": {
+  "query": "CoreWeave stock crash",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 27011,
+  "rel_ge1M": 0,
+  "rel_top3": [
+   [
+    920307,
+    "CoreWeave Crash, AI Trade Cracks, Anthropic IPO Red Flags, Bill Gates Doomer",
+    "All-In Podcast",
+    "2026-10-17",
+    "_b3LfMflIGs"
+   ],
+   [
+    116967,
+    "CoreWeave Plunges & AI Panic Spreads as Credit Fears Grow",
+    "Joe Blogs",
+    "2026-10-18",
+    "v5xLQC0ruEY"
+   ],
+   [
+    114024,
+    "CoreWeave Shares Plunge, Bond Yields Explode to 15% -Elon Musk Reacts Amid Priva",
+    "Ox Talks",
+    "2026-10-14",
+    "9hcTM6s260g"
+   ]
+  ],
+  "recent12m_n": 15,
+  "recent12m_top3": [
+   [
+    920307,
+    "CoreWeave Crash, AI Trade Cracks, Anthropic IPO Red Flags, Bill Gates Doomer",
+    "All-In Podcast",
+    "2026-10-17",
+    "_b3LfMflIGs"
+   ],
+   [
+    116967,
+    "CoreWeave Plunges & AI Panic Spreads as Credit Fears Grow",
+    "Joe Blogs",
+    "2026-10-18",
+    "v5xLQC0ruEY"
+   ],
+   [
+    114024,
+    "CoreWeave Shares Plunge, Bond Yields Explode to 15% -Elon Musk Reacts Amid Priva",
+    "Ox Talks",
+    "2026-10-14",
+    "9hcTM6s260g"
+   ]
+  ]
+ },
+ "privatecredit": {
+  "query": "private credit crisis",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 88114,
+  "rel_ge1M": 0,
+  "rel_top3": [
+   [
+    559667,
+    "It Started: The AI Bank Run",
+    "Mark Tilbury Economics",
+    "2026-10-21",
+    "o8ZGRemy4tM"
+   ],
+   [
+    306634,
+    "Private Credit Panic - Why Investors Are Rushing For the Exits",
+    "The Plain Bagel",
+    "2026-03-20",
+    "UB9k89XwqWU"
+   ],
+   [
+    259225,
+    "How AI Is Disrupting a $1.8 Trillion Market",
+    "Bloomberg Originals",
+    "2026-05-08",
+    "iBBOLjt8haY"
+   ]
+  ],
+  "recent12m_n": 15,
+  "recent12m_top3": [
+   [
+    559667,
+    "It Started: The AI Bank Run",
+    "Mark Tilbury Economics",
+    "2026-10-21",
+    "o8ZGRemy4tM"
+   ],
+   [
+    306634,
+    "Private Credit Panic - Why Investors Are Rushing For the Exits",
+    "The Plain Bagel",
+    "2026-03-20",
+    "UB9k89XwqWU"
+   ],
+   [
+    259225,
+    "How AI Is Disrupting a $1.8 Trillion Market",
+    "Bloomberg Originals",
+    "2026-05-08",
+    "iBBOLjt8haY"
+   ]
+  ]
+ },
+ "goldcrash": {
+  "query": "gold price crash 2026",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 49232,
+  "rel_ge1M": 0,
+  "rel_top3": [
+   [
+    759376,
+    "Gold Price BIG Crash in 2026? Modi Govt Shock to Gold",
+    "DAY TRADER తెలుగు",
+    "2026-09-14",
+    "hLLTFEZePZg"
+   ],
+   [
+    337417,
+    "Gold Crash Alert 🚨 | Will Gold Prices Fall Big in 2026?",
+    "Pushkar Raj Thakur: Stock Mark",
+    "2026-08-29",
+    "7TS7sx6wRQI"
+   ],
+   [
+    333769,
+    "Why Gold prices can correct by 20% in 2026?",
+    "Akshat Shrivastava",
+    "2025-10-11",
+    "bAMBrS6Rx2k"
+   ]
+  ],
+  "recent12m_n": 14,
+  "recent12m_top3": [
+   [
+    759376,
+    "Gold Price BIG Crash in 2026? Modi Govt Shock to Gold",
+    "DAY TRADER తెలుగు",
+    "2026-09-14",
+    "hLLTFEZePZg"
+   ],
+   [
+    337417,
+    "Gold Crash Alert 🚨 | Will Gold Prices Fall Big in 2026?",
+    "Pushkar Raj Thakur: Stock Mark",
+    "2026-08-29",
+    "7TS7sx6wRQI"
+   ],
+   [
+    214611,
+    "ದೀಪಾವಳಿಗೆ ಚಿನ್ನದ ಬೆಲೆ ₹1 ಲಕ್ಷಕ್ಕೆ ಇಳಿಯುತ್ತಾ? Gold Price Prediction 2026 | Sharat",
+    "Boss Wallah (Kannada)",
+    "2026-10-24",
+    "viYzQVDPg3o"
+   ]
+  ]
+ },
+ "dollarcollapse": {
+  "query": "what if the US dollar collapses",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 88307,
+  "rel_ge1M": 0,
+  "rel_top3": [
+   [
+    945269,
+    "A Once In a Lifetime Dollar Reset Is Coming: Financial Crash Expert",
+    "ProfSteveKeen",
+    "2026-09-16",
+    "3I7g5PZTN20"
+   ],
+   [
+    589793,
+    "What Happens To Real Estate When The Dollar Collapses",
+    "Nolan Matthias",
+    "2025-09-05",
+    "XV87AmB3Sns"
+   ],
+   [
+    563300,
+    "What Happens To Your Debt When The Dollar Collapses",
+    "Nolan Matthias",
+    "2024-05-30",
+    "P97cp5dUUXo"
+   ]
+  ],
+  "recent12m_n": 8,
+  "recent12m_top3": [
+   [
+    945269,
+    "A Once In a Lifetime Dollar Reset Is Coming: Financial Crash Expert",
+    "ProfSteveKeen",
+    "2026-09-16",
+    "3I7g5PZTN20"
+   ],
+   [
+    349112,
+    "What Happens to Your Debt if the Dollar Collapses: Top Economist",
+    "ProfSteveKeen",
+    "2026-07-08",
+    "28Gf4f-hIUc"
+   ],
+   [
+    88307,
+    "What Happens To Stocks When The Dollar Collapses",
+    "Nolan Matthias",
+    "2025-12-07",
+    "qK6f9Ksddrc"
+   ]
+  ]
+ },
+ "usdebt": {
+  "query": "US national debt crisis what happens",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 744559,
+  "rel_ge1M": 7,
+  "rel_top3": [
+   [
+    2572470,
+    "How America's Debt Spiral Could Spark The Next Crisis",
+    "CNBC",
+    "2025-07-07",
+    "rmVWId1Wg3k"
+   ],
+   [
+    1973519,
+    "Who does the US Owe its $35 Trillion debt? (National Debt Explained)",
+    "Concerning Reality",
+    "2021-10-04",
+    "qjPaYQdqO9A"
+   ],
+   [
+    1755067,
+    "When Does US Debt Become Genuinely Bad? | WSJ",
+    "The Wall Street Journal",
+    "2025-06-06",
+    "Xi7RvweuIUk"
+   ]
+  ],
+  "recent12m_n": 7,
+  "recent12m_top3": [
+   [
+    1170129,
+    "How Did America Pay Off The National Debt Last Time?",
+    "How Business Worked",
+    "2026-09-07",
+    "52cVI0iERf8"
+   ],
+   [
+    1121429,
+    "What If The World Dumps US Debt?",
+    "The Infographics Show",
+    "2026-02-03",
+    "_LFyZurFt18"
+   ],
+   [
+    392523,
+    "The US Debt Crisis Has Reached a Breaking Point",
+    "MonkeyExplains",
+    "2026-09-13",
+    "pNCikeQLUIU"
+   ]
+  ]
+ },
+ "iranoil": {
+  "query": "Iran war oil price economy",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 42859,
+  "rel_ge1M": 1,
+  "rel_top3": [
+   [
+    1468247,
+    "How the Iran War Spiked Oil Prices",
+    "Wendover Productions",
+    "2026-04-17",
+    "5qjvluMnyAw"
+   ],
+   [
+    729735,
+    "How the Iran War Is Rewiring the Oil Market",
+    "Bloomberg Originals",
+    "2026-07-17",
+    "GDVeMkTLWGs"
+   ],
+   [
+    397794,
+    "The secret reason oil prices didn't spiral after the Iran war | DW News",
+    "DW News",
+    "2026-08-14",
+    "lwexLt9k0ac"
+   ]
+  ],
+  "recent12m_n": 15,
+  "recent12m_top3": [
+   [
+    1468247,
+    "How the Iran War Spiked Oil Prices",
+    "Wendover Productions",
+    "2026-04-17",
+    "5qjvluMnyAw"
+   ],
+   [
+    729735,
+    "How the Iran War Is Rewiring the Oil Market",
+    "Bloomberg Originals",
+    "2026-07-17",
+    "GDVeMkTLWGs"
+   ],
+   [
+    397794,
+    "The secret reason oil prices didn't spiral after the Iran war | DW News",
+    "DW News",
+    "2026-08-14",
+    "lwexLt9k0ac"
+   ]
+  ]
+ },
+ "bitcoincrash": {
+  "query": "bitcoin crash October 2026",
+  "measured": "2026-10-27",
+  "rel_n": 15,
+  "rel_median": 9505,
+  "rel_ge1M": 0,
+  "rel_top3": [
+   [
+    81467,
+    "A Massive Black Swan DISASTER To Hit Bitcoin | 2026 Crash.",
+    "Altcoin Daily",
+    "2025-12-24",
+    "iNc4_RaYi-E"
+   ],
+   [
+    41370,
+    "Numerology Expert Gives Wild Predictions For 2026, Says Bitcoin Will Crash",
+    "Timcast IRL",
+    "2025-12-14",
+    "AsHidc1TTf0"
+   ],
+   [
+    24272,
+    "Vedic Astrology Reveals the Rare Combination: October 2026 Stock Market Crash — ",
+    "Chariot Palmistry",
+    "2026-07-14",
+    "VdL5X5M-_tE"
+   ]
+  ],
+  "recent12m_n": 15,
+  "recent12m_top3": [
+   [
+    81467,
+    "A Massive Black Swan DISASTER To Hit Bitcoin | 2026 Crash.",
+    "Altcoin Daily",
+    "2025-12-24",
+    "iNc4_RaYi-E"
+   ],
+   [
+    41370,
+    "Numerology Expert Gives Wild Predictions For 2026, Says Bitcoin Will Crash",
+    "Timcast IRL",
+    "2025-12-14",
+    "AsHidc1TTf0"
+   ],
+   [
+    24272,
+    "Vedic Astrology Reveals the Rare Combination: October 2026 Stock Market Crash — ",
+    "Chariot Palmistry",
+    "2026-07-14",
+    "VdL5X5M-_tE"
+   ]
+  ]
+ }
+}

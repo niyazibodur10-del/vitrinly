@@ -1,0 +1,1023 @@
+1
+00:00:00,030 --> 00:00:01,791
+It's September nineteen twenty-nine.
+
+2
+00:00:02,171 --> 00:00:03,677
+You have one thousand dollars.
+
+3
+00:00:04,057 --> 00:00:07,825
+Three doors: the stock market,
+a bank, or a shoebox under your bed.
+
+4
+00:00:08,205 --> 00:00:11,000
+By nineteen thirty-three,
+one door is a disaster,
+
+5
+00:00:11,280 --> 00:00:13,766
+one is a gamble, and one is a surprise.
+
+6
+00:00:14,146 --> 00:00:14,946
+Let's play.
+
+7
+00:00:15,621 --> 00:00:17,271
+I'm Leo, and tonight I'm your host.
+
+8
+00:00:17,651 --> 00:00:21,175
+I'm a cartoon, so nobody in
+this studio loses real money.
+
+9
+00:00:21,555 --> 00:00:23,436
+The people of nineteen twenty-nine did.
+
+10
+00:00:23,816 --> 00:00:27,772
+Their question was simple: where was
+money safe in nineteen twenty-nine?
+
+11
+00:00:28,252 --> 00:00:31,100
+By the end, you'll know
+which door won, why it won,
+
+12
+00:00:31,340 --> 00:00:34,132
+and why the same math
+runs the other way today.
+
+13
+00:00:34,862 --> 00:00:36,840
+Here's the idea this game will test:
+
+14
+00:00:37,220 --> 00:00:39,732
+a safe place for money
+isn't really a place.
+
+15
+00:00:40,112 --> 00:00:41,909
+It depends on what prices are doing.
+
+16
+00:00:42,289 --> 00:00:44,189
+Now, how big is this thousand dollars?
+
+17
+00:00:44,669 --> 00:00:48,180
+In nineteen twenty-nine,
+an average full-time worker earned
+
+18
+00:00:48,180 --> 00:00:51,601
+about one thousand four
+hundred thirty dollars a year.
+
+19
+00:00:51,981 --> 00:00:53,798
+So this is roughly eight months of pay.
+
+20
+00:00:54,178 --> 00:00:55,258
+You don't want to lose it.
+
+21
+00:00:55,988 --> 00:00:56,914
+Here are the rules.
+
+22
+00:00:57,294 --> 00:00:58,462
+You can't switch doors.
+
+23
+00:00:58,842 --> 00:01:00,096
+You can't see the future.
+
+24
+00:01:00,476 --> 00:01:01,649
+Each door gets a player.
+
+25
+00:01:02,029 --> 00:01:03,572
+Stock Leo takes the blue door.
+
+26
+00:01:03,952 --> 00:01:05,508
+Bank Leo takes the green door.
+
+27
+00:01:05,888 --> 00:01:09,488
+And Box Leo takes the brown one,
+holding an actual shoebox.
+
+28
+00:01:09,868 --> 00:01:11,987
+The studio audience laughs at Box Leo.
+
+29
+00:01:12,367 --> 00:01:13,450
+Remember that laugh.
+
+30
+00:01:13,830 --> 00:01:16,340
+Door one goes first, and
+in nineteen twenty-nine,
+
+31
+00:01:16,340 --> 00:01:19,007
+it looks like the smartest
+choice in the room.
+
+32
+00:01:19,737 --> 00:01:21,663
+To see why, look at the last eight years.
+
+33
+00:01:22,043 --> 00:01:23,440
+In August nineteen twenty-one,
+
+34
+00:01:23,960 --> 00:01:27,363
+the Dow Jones Industrial
+Average stood at sixty-three.
+
+35
+00:01:27,743 --> 00:01:31,691
+By September nineteen twenty-nine,
+it was at three hundred eighty-one.
+
+36
+00:01:32,071 --> 00:01:33,327
+That's six times higher.
+
+37
+00:01:33,707 --> 00:01:37,403
+Ordinary people, not just bankers,
+were putting their savings in.
+
+38
+00:01:37,783 --> 00:01:39,587
+Many didn't even pay the full price.
+
+39
+00:01:39,967 --> 00:01:41,220
+They put down part of it,
+
+40
+00:01:41,400 --> 00:01:44,674
+sometimes as little as ten
+percent, and borrowed the rest.
+
+41
+00:01:45,054 --> 00:01:47,897
+Stock Leo walks through the
+blue door on September third.
+
+42
+00:01:48,277 --> 00:01:52,110
+That day, the Dow closes at three
+hundred eighty-one point one seven.
+
+43
+00:01:52,490 --> 00:01:53,307
+It's the top.
+
+44
+00:01:53,687 --> 00:01:54,848
+Nobody knows it yet.
+
+45
+00:01:55,578 --> 00:02:00,324
+For a few weeks, prices swing up and down,
+with sudden drops and quick recoveries.
+
+46
+00:02:00,704 --> 00:02:01,831
+Then October arrives.
+
+47
+00:02:02,211 --> 00:02:03,940
+On Monday, October twenty-eighth,
+
+48
+00:02:04,260 --> 00:02:07,601
+the Dow falls nearly thirteen
+percent in a single day.
+
+49
+00:02:07,981 --> 00:02:10,638
+On Tuesday, it falls
+almost twelve percent more.
+
+50
+00:02:11,018 --> 00:02:13,720
+People will call them Black
+Monday and Black Tuesday.
+
+51
+00:02:14,100 --> 00:02:15,545
+The borrowed money makes it worse.
+
+52
+00:02:15,925 --> 00:02:18,800
+When prices drop, lenders
+want their loans covered,
+
+53
+00:02:18,800 --> 00:02:21,438
+so people sell, and prices drop again.
+
+54
+00:02:21,818 --> 00:02:25,145
+By mid-November, the Dow has
+lost almost half its value.
+
+55
+00:02:25,525 --> 00:02:28,960
+Stock Leo's one thousand dollars
+is now about five hundred.
+
+56
+00:02:29,690 --> 00:02:31,158
+Half gone in about ten weeks.
+
+57
+00:02:31,538 --> 00:02:32,338
+That hurts.
+
+58
+00:02:32,654 --> 00:02:34,063
+But Stock Leo stays calm.
+
+59
+00:02:34,443 --> 00:02:36,874
+He thinks this is a dip,
+and dips come back.
+
+60
+00:02:37,254 --> 00:02:39,888
+Over at the green door,
+Bank Leo is even calmer.
+
+61
+00:02:40,268 --> 00:02:43,434
+His money sits in a bank,
+with a vault and a marble floor.
+
+62
+00:02:43,814 --> 00:02:44,900
+That's the safe door.
+
+63
+00:02:45,280 --> 00:02:46,080
+Right?
+
+64
+00:02:46,532 --> 00:02:48,772
+Here's the part that
+surprises people today.
+
+65
+00:02:49,152 --> 00:02:54,608
+In nineteen twenty-nine, a bank account in
+America had no federal deposit insurance.
+
+66
+00:02:54,988 --> 00:02:58,313
+If your bank closed, nobody
+promised you'd get your money back.
+
+67
+00:02:58,693 --> 00:02:59,946
+And there were a lot of banks.
+
+68
+00:03:00,326 --> 00:03:01,340
+When the trouble began,
+
+69
+00:03:01,680 --> 00:03:05,420
+over eight thousand banks belonged
+to the Federal Reserve System,
+
+70
+00:03:05,420 --> 00:03:08,100
+and nearly sixteen thousand did not.
+
+71
+00:03:08,480 --> 00:03:09,755
+Many were small and local.
+
+72
+00:03:10,135 --> 00:03:11,747
+For a year, Bank Leo is fine.
+
+73
+00:03:12,127 --> 00:03:15,458
+Then, in late nineteen thirty,
+banks start to fail in waves.
+
+74
+00:03:15,838 --> 00:03:18,367
+Within a few weeks,
+hundreds close their doors.
+
+75
+00:03:19,097 --> 00:03:23,720
+On December eleventh, nineteen thirty,
+the fourth-largest bank in New York City,
+
+76
+00:03:23,940 --> 00:03:26,670
+the Bank of United States,
+stops operating.
+
+77
+00:03:27,050 --> 00:03:28,350
+Picture the street outside.
+
+78
+00:03:28,730 --> 00:03:32,424
+A long line of people, all asking
+for their money at the same time.
+
+79
+00:03:32,804 --> 00:03:33,758
+Here's the problem.
+
+80
+00:03:34,138 --> 00:03:37,847
+A bank doesn't keep your thousand
+dollars in a box with your name on it.
+
+81
+00:03:38,227 --> 00:03:39,455
+It lends most of it out.
+
+82
+00:03:39,835 --> 00:03:44,215
+So when everyone comes at once, even
+a healthy bank can run out of cash.
+
+83
+00:03:44,595 --> 00:03:47,760
+And when one bank falls, people
+at the next bank get nervous,
+
+84
+00:03:47,760 --> 00:03:49,418
+and the line moves there.
+
+85
+00:03:50,148 --> 00:03:51,456
+Now the score for door two.
+
+86
+00:03:51,836 --> 00:03:52,938
+It isn't one number.
+
+87
+00:03:53,318 --> 00:03:54,118
+It's two.
+
+88
+00:03:54,371 --> 00:03:56,680
+From nineteen thirty to
+nineteen thirty-three,
+
+89
+00:03:57,120 --> 00:04:00,147
+about nine thousand banks
+suspended operations.
+
+90
+00:04:00,527 --> 00:04:02,248
+That's more than one bank in three.
+
+91
+00:04:02,628 --> 00:04:03,740
+Some reopened later.
+
+92
+00:04:04,120 --> 00:04:05,293
+Thousands never did.
+
+93
+00:04:05,673 --> 00:04:09,540
+If your bank was one of them,
+the FDIC's own numbers show
+
+94
+00:04:09,540 --> 00:04:13,870
+depositors lost about twenty
+cents of every dollar, on average.
+
+95
+00:04:14,250 --> 00:04:17,120
+For Bank Leo, that's around
+two hundred dollars gone,
+
+96
+00:04:17,460 --> 00:04:19,762
+and he might wait a
+long time for the rest.
+
+97
+00:04:20,142 --> 00:04:22,289
+If your bank survived,
+you kept everything.
+
+98
+00:04:22,669 --> 00:04:24,325
+That's why door two is the gamble.
+
+99
+00:04:24,705 --> 00:04:28,650
+It all depends on which bank you
+picked, and nobody could see inside.
+
+100
+00:04:29,380 --> 00:04:30,180
+Quick pause.
+
+101
+00:04:30,526 --> 00:04:35,276
+If you like history played as a game,
+subscribing helps Leo build the next one.
+
+102
+00:04:35,656 --> 00:04:36,981
+Now, back to the studio.
+
+103
+00:04:37,361 --> 00:04:38,662
+One door is still closed.
+
+104
+00:04:39,042 --> 00:04:39,842
+Box Leo.
+
+105
+00:04:40,159 --> 00:04:41,533
+The one everybody laughed at.
+
+106
+00:04:41,913 --> 00:04:43,509
+He hasn't touched his money once.
+
+107
+00:04:43,889 --> 00:04:45,773
+And something strange is happening to it.
+
+108
+00:04:46,503 --> 00:04:48,866
+Box Leo's thousand dollars never changes.
+
+109
+00:04:49,246 --> 00:04:51,057
+Same stack of bills, every morning.
+
+110
+00:04:51,437 --> 00:04:53,477
+But the world around the box does change.
+
+111
+00:04:53,857 --> 00:04:54,923
+Prices are falling.
+
+112
+00:04:55,303 --> 00:04:56,695
+Not just a few prices.
+
+113
+00:04:57,075 --> 00:04:59,088
+The average price of what families buy.
+
+114
+00:04:59,468 --> 00:05:01,140
+The official price index shows it.
+
+115
+00:05:01,520 --> 00:05:05,040
+From September nineteen twenty-nine
+to July nineteen thirty-two,
+
+116
+00:05:05,540 --> 00:05:08,675
+consumer prices fell by
+about twenty-one percent.
+
+117
+00:05:09,055 --> 00:05:12,707
+So the same thousand dollars
+now buys what about one thousand
+
+118
+00:05:12,707 --> 00:05:16,102
+two hundred seventy dollars
+bought in nineteen twenty-nine.
+
+119
+00:05:16,482 --> 00:05:19,181
+Box Leo did nothing,
+and his money got stronger.
+
+120
+00:05:19,911 --> 00:05:21,119
+Why were prices falling?
+
+121
+00:05:21,599 --> 00:05:23,167
+Fewer jobs meant less spending.
+
+122
+00:05:23,547 --> 00:05:25,100
+And money itself was shrinking.
+
+123
+00:05:25,480 --> 00:05:30,240
+Federal Reserve History says the money
+supply fell by nearly thirty percent
+
+124
+00:05:30,240 --> 00:05:34,551
+from the fall of nineteen thirty to
+the winter of nineteen thirty-three.
+
+125
+00:05:34,931 --> 00:05:37,622
+Less money for the same
+goods means lower prices.
+
+126
+00:05:38,002 --> 00:05:39,180
+Here's the strange part.
+
+127
+00:05:39,560 --> 00:05:44,578
+While banks were failing, people across
+the country did exactly what Box Leo did.
+
+128
+00:05:44,958 --> 00:05:46,914
+They pulled cash out and kept it at home.
+
+129
+00:05:47,294 --> 00:05:48,672
+One shoebox looks safe.
+
+130
+00:05:49,052 --> 00:05:51,662
+A whole country of shoeboxes
+made the banks weaker.
+
+131
+00:05:52,392 --> 00:05:53,950
+So Box Leo is the champion?
+
+132
+00:05:54,430 --> 00:05:55,428
+Not so fast.
+
+133
+00:05:55,808 --> 00:05:57,350
+A shoebox has its own traps.
+
+134
+00:05:57,730 --> 00:05:58,682
+It earns nothing.
+
+135
+00:05:59,062 --> 00:05:59,882
+It can burn.
+
+136
+00:06:00,262 --> 00:06:01,281
+It can be stolen.
+
+137
+00:06:01,661 --> 00:06:06,321
+And if you lose your job, you spend it,
+bill by bill, until the box is empty.
+
+138
+00:06:06,701 --> 00:06:10,423
+Box Leo still has to survive the
+hardest moment of the whole game.
+
+139
+00:06:10,803 --> 00:06:12,012
+Let's jump to the bottom.
+
+140
+00:06:12,742 --> 00:06:14,343
+July eighth, nineteen thirty-two.
+
+141
+00:06:14,723 --> 00:06:16,942
+The Dow closes at forty-one point two two.
+
+142
+00:06:17,322 --> 00:06:20,189
+From the top, that's a fall
+of about eighty-nine percent.
+
+143
+00:06:20,569 --> 00:06:24,752
+Stock Leo's thousand dollars is now
+about one hundred and eight dollars.
+
+144
+00:06:25,131 --> 00:06:27,088
+That's price only, before dividends.
+
+145
+00:06:27,468 --> 00:06:30,784
+Even with falling prices,
+it buys only what about one
+
+146
+00:06:30,784 --> 00:06:34,025
+hundred thirty-eight dollars
+bought in nineteen twenty-nine.
+
+147
+00:06:34,405 --> 00:06:36,477
+Dividends did help, but look at the gap.
+
+148
+00:06:36,857 --> 00:06:39,219
+So how long until he's
+back to one thousand?
+
+149
+00:06:39,699 --> 00:06:41,815
+There are two answers,
+and they're far apart.
+
+150
+00:06:42,195 --> 00:06:44,467
+The Dow's price didn't
+get back to its nineteen
+
+151
+00:06:44,467 --> 00:06:48,125
+twenty-nine peak until
+November nineteen fifty-four.
+
+152
+00:06:48,505 --> 00:06:52,820
+Counting dividends and falling prices,
+one well-known analysis puts
+
+153
+00:06:52,820 --> 00:06:57,022
+the break-even point much earlier,
+in late nineteen thirty-six.
+
+154
+00:06:57,402 --> 00:06:59,067
+Still, that's seven years of waiting.
+
+155
+00:06:59,797 --> 00:07:02,283
+Here's the scoreboard in
+July nineteen thirty-two.
+
+156
+00:07:02,663 --> 00:07:06,261
+Stock Leo: about one hundred and
+eight dollars, on price alone.
+
+157
+00:07:06,641 --> 00:07:08,234
+Bank Leo: a question mark.
+
+158
+00:07:08,614 --> 00:07:11,329
+Maybe all of it, buying
+just as much as Box Leo's.
+
+159
+00:07:11,709 --> 00:07:14,034
+Maybe around eight hundred,
+maybe still waiting.
+
+160
+00:07:14,414 --> 00:07:18,439
+Box Leo: one thousand dollars that
+buy like twelve hundred seventy.
+
+161
+00:07:18,819 --> 00:07:21,677
+Every result on this board
+belongs to that decade.
+
+162
+00:07:22,057 --> 00:07:23,757
+A decade when prices were falling.
+
+163
+00:07:24,137 --> 00:07:26,489
+That's what made a pile
+of cash look so clever.
+
+164
+00:07:27,219 --> 00:07:28,410
+But the game isn't over.
+
+165
+00:07:28,790 --> 00:07:30,743
+It ends in March nineteen thirty-three.
+
+166
+00:07:31,123 --> 00:07:33,260
+And March is when every door gets locked.
+
+167
+00:07:33,990 --> 00:07:35,391
+Winter, nineteen thirty-three.
+
+168
+00:07:35,771 --> 00:07:37,445
+Panic jumps from state to state.
+
+169
+00:07:37,825 --> 00:07:40,220
+Visitors who come to
+Washington for the new
+
+170
+00:07:40,220 --> 00:07:43,780
+president's first day find
+notes in their hotel rooms:
+
+171
+00:07:44,320 --> 00:07:46,838
+checks from out-of-town
+banks won't be accepted.
+
+172
+00:07:47,218 --> 00:07:50,542
+By March fourth, every state
+has declared a bank holiday.
+
+173
+00:07:50,922 --> 00:07:52,700
+Two days later, the new president,
+
+174
+00:07:53,060 --> 00:07:56,217
+Franklin Roosevelt, closes
+every bank in the nation.
+
+175
+00:07:56,597 --> 00:07:58,475
+Good banks and bad banks, all shut.
+
+176
+00:07:58,855 --> 00:08:00,512
+Bank Leo stands at a locked door.
+
+177
+00:08:00,892 --> 00:08:04,180
+For a few days, cash at home
+is suddenly very useful,
+
+178
+00:08:04,500 --> 00:08:07,315
+and Box Leo is the only
+player holding any.
+
+179
+00:08:07,695 --> 00:08:11,300
+When the holiday ends, about
+four thousand banks never reopen.
+
+180
+00:08:11,680 --> 00:08:13,280
+Then, in June nineteen thirty-three,
+
+181
+00:08:13,820 --> 00:08:16,844
+a new law creates federal
+deposit insurance.
+
+182
+00:08:17,224 --> 00:08:20,200
+It starts on January first,
+nineteen thirty-four,
+
+183
+00:08:20,800 --> 00:08:24,508
+and covers up to two thousand five
+hundred dollars per depositor.
+
+184
+00:08:25,238 --> 00:08:28,612
+In nineteen thirty-four, only
+nine insured banks suspended.
+
+185
+00:08:28,992 --> 00:08:31,437
+The gamble door finally
+gets a lock that works.
+
+186
+00:08:31,817 --> 00:08:34,060
+So Box Leo wins nineteen twenty-nine:
+
+187
+00:08:34,740 --> 00:08:37,516
+the same gain in buying
+power, without the gamble.
+
+188
+00:08:37,896 --> 00:08:39,423
+Now let's do something unfair.
+
+189
+00:08:39,803 --> 00:08:42,180
+Let's take his winning
+door and move it to today.
+
+190
+00:08:42,910 --> 00:08:43,806
+Same shoebox.
+
+191
+00:08:44,186 --> 00:08:45,370
+Same thousand dollars.
+
+192
+00:08:45,750 --> 00:08:47,819
+Start in September twenty twenty-five.
+
+193
+00:08:48,199 --> 00:08:53,129
+Twelve months later, U.S. consumer prices
+are three point seven percent higher.
+
+194
+00:08:53,509 --> 00:08:57,453
+That's the official number for the
+year to September twenty twenty-six.
+
+195
+00:08:57,833 --> 00:09:00,836
+So the thousand dollars
+now buys what about nine
+
+196
+00:09:00,836 --> 00:09:03,769
+hundred sixty-four dollars
+bought a year earlier.
+
+197
+00:09:04,149 --> 00:09:05,156
+Nothing was stolen.
+
+198
+00:09:05,536 --> 00:09:06,635
+The bills are all there.
+
+199
+00:09:07,015 --> 00:09:08,068
+They just buy less.
+
+200
+00:09:08,798 --> 00:09:10,813
+Now put the two periods side by side.
+
+201
+00:09:11,193 --> 00:09:14,740
+From September nineteen twenty-nine
+to March nineteen thirty-three,
+
+202
+00:09:15,450 --> 00:09:17,685
+prices fell about twenty-seven percent.
+
+203
+00:09:18,065 --> 00:09:21,480
+From September twenty twenty-two
+to September twenty twenty-six,
+
+204
+00:09:22,110 --> 00:09:24,870
+prices rose about thirteen
+and a half percent.
+
+205
+00:09:25,250 --> 00:09:26,050
+Same box.
+
+206
+00:09:26,395 --> 00:09:27,321
+Opposite result.
+
+207
+00:09:27,701 --> 00:09:32,121
+In the early nineteen thirties, cash
+gained power because prices were falling.
+
+208
+00:09:32,501 --> 00:09:37,470
+In twenty twenty-six, prices are rising,
+so the same math runs the other way.
+
+209
+00:09:37,850 --> 00:09:39,380
+That's arithmetic, not a plan.
+
+210
+00:09:40,110 --> 00:09:41,476
+The bank door changed too.
+
+211
+00:09:41,856 --> 00:09:44,292
+That lock from nineteen
+thirty-four is still there.
+
+212
+00:09:44,672 --> 00:09:48,520
+Today, the FDIC says deposits
+are insured to at least
+
+213
+00:09:48,520 --> 00:09:52,157
+two hundred fifty thousand
+dollars at each insured bank.
+
+214
+00:09:52,887 --> 00:09:54,086
+So, which door was safe?
+
+215
+00:09:54,566 --> 00:09:57,942
+In nineteen twenty-nine, the door
+that looked smart hurt the most.
+
+216
+00:09:58,322 --> 00:10:00,473
+The door everyone laughed
+at came out on top.
+
+217
+00:10:00,853 --> 00:10:02,720
+Not because a shoebox is clever,
+
+218
+00:10:02,960 --> 00:10:05,860
+but because of one thing
+outside all three doors:
+
+219
+00:10:06,240 --> 00:10:08,542
+what prices were doing in that decade.
+
+220
+00:10:08,922 --> 00:10:10,633
+That's the idea we started with.
+
+221
+00:10:11,013 --> 00:10:13,264
+A safe place for money
+isn't really a place.
+
+222
+00:10:13,644 --> 00:10:17,695
+It depends on what prices are doing,
+and on the rules around each door.
+
+223
+00:10:18,425 --> 00:10:20,451
+Falling prices made a shoebox the winner.
+
+224
+00:10:20,831 --> 00:10:24,020
+But history also has a
+time when prices rose so
+
+225
+00:10:24,020 --> 00:10:27,362
+fast that people's savings
+melted in a single year.
+
+226
+00:10:27,742 --> 00:10:29,226
+That's a game for another night.
+
+227
+00:10:29,606 --> 00:10:30,406
+I'm Leo.
+
+228
+00:10:30,654 --> 00:10:31,580
+Thanks for playing.

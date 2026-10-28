@@ -1,0 +1,174 @@
+{
+ "kaynak": "03-metin/metin.md (kilitli)",
+ "cumle_sayisi": 192,
+ "sahneler": [
+  {
+   "sahne": "S01",
+   "metin_basligi": "0:00–0:17 · 17 sn · HOOK",
+   "cumle_ilk": 0,
+   "cumle_son": 4,
+   "kelime": 41
+  },
+  {
+   "sahne": "S02",
+   "metin_basligi": "0:17–0:41 · 23 sn",
+   "cumle_ilk": 5,
+   "cumle_son": 9,
+   "kelime": 56
+  },
+  {
+   "sahne": "S03",
+   "metin_basligi": "0:41–1:06 · 26 sn",
+   "cumle_ilk": 10,
+   "cumle_son": 15,
+   "kelime": 61
+  },
+  {
+   "sahne": "S04",
+   "metin_basligi": "1:06–1:35 · 29 sn",
+   "cumle_ilk": 16,
+   "cumle_son": 25,
+   "kelime": 68
+  },
+  {
+   "sahne": "S05",
+   "metin_basligi": "1:35–2:16 · 41 sn",
+   "cumle_ilk": 26,
+   "cumle_son": 36,
+   "kelime": 97
+  },
+  {
+   "sahne": "S06",
+   "metin_basligi": "2:16–2:53 · 38 sn",
+   "cumle_ilk": 37,
+   "cumle_son": 45,
+   "kelime": 90
+  },
+  {
+   "sahne": "S07",
+   "metin_basligi": "2:53–3:15 · 21 sn",
+   "cumle_ilk": 46,
+   "cumle_son": 53,
+   "kelime": 51
+  },
+  {
+   "sahne": "S08",
+   "metin_basligi": "3:15–3:52 · 37 sn",
+   "cumle_ilk": 54,
+   "cumle_son": 62,
+   "kelime": 89
+  },
+  {
+   "sahne": "S09",
+   "metin_basligi": "3:52–4:31 · 39 sn",
+   "cumle_ilk": 63,
+   "cumle_son": 70,
+   "kelime": 93
+  },
+  {
+   "sahne": "S10",
+   "metin_basligi": "4:31–5:15 · 44 sn · İLK BÜYÜK ÖDÜL",
+   "cumle_ilk": 71,
+   "cumle_son": 82,
+   "kelime": 105
+  },
+  {
+   "sahne": "S11",
+   "metin_basligi": "5:15–5:35 · 20 sn · ABONE (kısa) + yeniden kanca",
+   "cumle_ilk": 83,
+   "cumle_son": 90,
+   "kelime": 47
+  },
+  {
+   "sahne": "S12",
+   "metin_basligi": "5:35–6:10 · 35 sn",
+   "cumle_ilk": 91,
+   "cumle_son": 100,
+   "kelime": 84
+  },
+  {
+   "sahne": "S13",
+   "metin_basligi": "6:10–6:47 · 37 sn",
+   "cumle_ilk": 101,
+   "cumle_son": 110,
+   "kelime": 87
+  },
+  {
+   "sahne": "S14",
+   "metin_basligi": "6:47–7:12 · 25 sn",
+   "cumle_ilk": 111,
+   "cumle_son": 119,
+   "kelime": 60
+  },
+  {
+   "sahne": "S15",
+   "metin_basligi": "7:12–8:02 · 50 sn",
+   "cumle_ilk": 120,
+   "cumle_son": 131,
+   "kelime": 120
+  },
+  {
+   "sahne": "S16",
+   "metin_basligi": "8:02–8:34 · 32 sn",
+   "cumle_ilk": 132,
+   "cumle_son": 140,
+   "kelime": 77
+  },
+  {
+   "sahne": "S17",
+   "metin_basligi": "8:34–8:42 · 8 sn · yeniden kanca",
+   "cumle_ilk": 141,
+   "cumle_son": 143,
+   "kelime": 19
+  },
+  {
+   "sahne": "S18",
+   "metin_basligi": "8:42–9:37 · 55 sn",
+   "cumle_ilk": 144,
+   "cumle_son": 154,
+   "kelime": 131
+  },
+  {
+   "sahne": "S19",
+   "metin_basligi": "9:37–9:57 · 20 sn",
+   "cumle_ilk": 155,
+   "cumle_son": 159,
+   "kelime": 47
+  },
+  {
+   "sahne": "S20",
+   "metin_basligi": "9:57–10:23 · 26 sn",
+   "cumle_ilk": 160,
+   "cumle_son": 168,
+   "kelime": 61
+  },
+  {
+   "sahne": "S21",
+   "metin_basligi": "10:23–10:53 · 30 sn",
+   "cumle_ilk": 169,
+   "cumle_son": 176,
+   "kelime": 72
+  },
+  {
+   "sahne": "S22",
+   "metin_basligi": "10:53–11:06 · 13 sn",
+   "cumle_ilk": 177,
+   "cumle_son": 179,
+   "kelime": 32
+  },
+  {
+   "sahne": "S23",
+   "metin_basligi": "11:06–11:38 · 32 sn",
+   "cumle_ilk": 180,
+   "cumle_son": 186,
+   "kelime": 76
+  },
+  {
+   "sahne": "S24",
+   "metin_basligi": "11:38–11:54 · 16 sn · uç ekran köprüsü",
+   "cumle_ilk": 187,
+   "cumle_son": 191,
+   "kelime": 37
+  }
+ ]
+}

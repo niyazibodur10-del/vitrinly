@@ -1,0 +1,36 @@
+{
+ "rakip": {
+  "A2": {
+   "en_yakin": "How Money Works:QmWyQ-BCD8E",
+   "renk_farki": 93.3,
+   "dhash": 24,
+   "rakip_ortalama_renk_farki": 159.9
+  },
+  "B1": {
+   "en_yakin": "Markets of the Past:jwmdk6-X6LM",
+   "renk_farki": 108.4,
+   "dhash": 19,
+   "rakip_ortalama_renk_farki": 162.2
+  },
+  "D1": {
+   "en_yakin": "How Money Works:QmWyQ-BCD8E",
+   "renk_farki": 108.3,
+   "dhash": 27,
+   "rakip_ortalama_renk_farki": 150.0
+  }
+ },
+ "finalist_arasi": {
+  "A2-B1": {
+   "renk_farki": 107.0,
+   "dhash": 36
+  },
+  "A2-D1": {
+   "renk_farki": 75.8,
+   "dhash": 29
+  },
+  "B1-D1": {
+   "renk_farki": 95.1,
+   "dhash": 29
+  }
+ }
+}

@@ -1,0 +1,6 @@
+# tools/yeniden-uret.sh tarifi — konteyner gidince git dışı büyük dosyaları (wav, mp4) yeniden üretir.
+# Biçim: her satır "<üretilen dosya (repo köküne göre)> | <komut>" — dosya varsa ve boş değilse adım atlanır.
+# Komutlar repo kökünde çalışır; $PY = Whisper/görsel venv, $TTS_PY = Kokoro venv. Sıra önemlidir (bağımlılık sırası).
+# Örnek (1929 tarifi: uretim/2026-10-26-1929-1000-dolar/yeniden-uret.adimlar):
+# uretim/<klasör>/04-ses/anlatim.wav | ffmpeg -v error -y -i uretim/<klasör>/04-ses/anlatim.m4a -c:a pcm_f32le uretim/<klasör>/04-ses/anlatim.wav
+# uretim/<klasör>/08-kurgu/final-16x9.mp4 | tools/render-parca.sh <Kisa>Final uretim/<klasör>/08-kurgu/final-16x9.mp4 --ses <miks.wav>

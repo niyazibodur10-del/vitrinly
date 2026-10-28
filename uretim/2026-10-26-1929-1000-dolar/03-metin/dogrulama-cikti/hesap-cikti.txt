@@ -1,0 +1,27 @@
+1) Borsa: 41.22/381.17-1 = -89.19% | $1000 -> $108.14
+   13 Kas 1929 ara dip 198.60 (Wikipedia tablosu) -> $521 ; 3 Eyl->13 Kas = 10.1 hafta
+   28 Eki öncesi kapanış 260.64+38.33 = 298.97 -> zirveden -21.6% (Kara Pazartesi'den ÖNCE)
+   381/63 = x6.05 ; Ağu 1921 -> Eyl 1929 = 8.1 yıl
+2) TÜFE Eyl29->Tem32 -21.39% | alım gücü $1272 | 108$ reel: $137.6
+   TÜFE Eyl29->Mar33 -27.17% | alım gücü $1373 | endeks 100 -> 72.8
+   TÜFE Eyl22->Eyl26 13.52% (48 ay) | alım gücü $881
+   eşit 42 ay: Mar23->Eyl26 11.63%
+   TÜFE Eyl25->Eyl26 3.74% | alım gücü $964
+3) BEA 1929: 50,460 M$ ücret (BEA NipaDataA A034RC) / 35,286 bin FTE (T6.5A) = $1430 ; 1000/1430*12 = 8.4 ay
+4) FDIC Tablo 5 CSV vs PDF metni: 13/13 satır aynı, farklı: yok
+   1930-33: 9096 banka | kayıp/mevduat 19.57% (dolar ağırlıklı) | $1000 -> kayıp $196, kalan $804
+   yıllık oranlar: 1930 28.4%, 1931 23.1%, 1932 23.8%, 1933 15.0%
+   9096 / FRH-BP ~24.000 = 37.9%
+   9096 / B&MS Haz 1929 24.026 = 37.9%
+   9096 / B&MS Oca 1929 24.504 = 37.1%
+   B&MS net düşüş Haz1929 24.026 -> Haz1933 14.440 = 9586 (39.9%)
+   '1/3 eşiği' için gereken payda < 27288
+   'most closed for good' alt sınır (1930-31 x 2/3 + 1933 4.000, 1932=0): 6429 / 9096 = 71%
+5) Eyl 1929 -> Kas 1936 = 7.2 yıl ; Tem 1932 -> Kas 1936 = 4.3 yıl
+6) 4 Mart -> 6 Mart 1933 = 2 gün
+7) 1930: tüm ticari mevduat ≈ 41.6 milyar $ | askıya alınan bankalarda pay 2.0%
+7) 1931: tüm ticari mevduat ≈ 38.7 milyar $ | askıya alınan bankalarda pay 4.4%
+7) 1932: tüm ticari mevduat ≈ 29.5 milyar $ | askıya alınan bankalarda pay 2.4%
+7) 1933: tüm ticari mevduat ≈ 25.1 milyar $ | askıya alınan bankalarda pay 14.3%
+   1930-33 bileşik: mevduat dolarının ≈22%'i askıya alınan bir bankadaydı, ≈78%'i değildi
+   ortalama bir banka dolarının beklenen kaybı (sütun 4 toplamı) ≈ 4.3%

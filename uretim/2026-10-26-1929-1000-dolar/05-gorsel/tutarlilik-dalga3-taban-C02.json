@@ -1,0 +1,82 @@
+[
+ {
+  "dosya": "C02.png",
+  "cozunurluk": [
+   1920,
+   1080
+  ],
+  "ten_dE": 0.0,
+  "sac_dE": 0.0,
+  "gomlek_dE": 0.0,
+  "kafa_hist_kor": 1.0,
+  "kafa_merkez_kayma_yuzde": 0.0,
+  "kafa_olcek_fark_yuzde": 0.0,
+  "gecti": true,
+  "kafa_kutusu": [
+   897,
+   47,
+   1022,
+   250
+  ]
+ },
+ {
+  "dosya": "C04.png",
+  "cozunurluk": [
+   1920,
+   1080
+  ],
+  "ten_dE": 2.935156080153331,
+  "sac_dE": 1.6171416755131167,
+  "gomlek_dE": 1.2708844159408716,
+  "kafa_hist_kor": 0.8364966311276547,
+  "kafa_merkez_kayma_yuzde": 0.8333333333333334,
+  "kafa_olcek_fark_yuzde": 1.4778325123152802,
+  "gecti": true,
+  "kafa_kutusu": [
+   882,
+   46,
+   1005,
+   252
+  ]
+ },
+ {
+  "dosya": "C05.png",
+  "cozunurluk": [
+   1920,
+   1080
+  ],
+  "ten_dE": 6.468566702052467,
+  "sac_dE": 1.8395878454077867,
+  "gomlek_dE": 1.6171416755131167,
+  "kafa_hist_kor": 0.6664611250096693,
+  "kafa_merkez_kayma_yuzde": 0.8854166666666666,
+  "kafa_olcek_fark_yuzde": 1.4778325123152802,
+  "gecti": false,
+  "kafa_kutusu": [
+   880,
+   46,
+   1005,
+   252
+  ]
+ },
+ {
+  "dosya": "C05t.png",
+  "cozunurluk": [
+   1920,
+   1080
+  ],
+  "ten_dE": 2.935156080153331,
+  "sac_dE": 2.2701953219206366,
+  "gomlek_dE": 1.6171416755131167,
+  "kafa_hist_kor": 0.851174840524744,
+  "kafa_merkez_kayma_yuzde": 0.8593750000000001,
+  "kafa_olcek_fark_yuzde": 0.9852216748768461,
+  "gecti": true,
+  "kafa_kutusu": [
+   882,
+   47,
+   1004,
+   252
+  ]
+ }
+]

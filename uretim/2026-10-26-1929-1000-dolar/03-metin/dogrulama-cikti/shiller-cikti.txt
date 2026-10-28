@@ -1,0 +1,5 @@
+Shiller S&P Composite, start 1929.09 P0 31.3
+price back >= start: 1954.09
+nominal total return back: 1945.01
+real total return back: 1936.11
+real TR low: 1932.06 0.232

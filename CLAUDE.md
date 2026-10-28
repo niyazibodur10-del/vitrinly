@@ -1,32 +1,90 @@
-# Vitrinly — project instructions
+# Finans Animasyon Kanalı — proje talimatları
 
-The user (Niyazi) is the owner and makes the product decisions together with you. Speak Turkish.
-Nutrigold is archived in `~/.claude/nutrigold/` (its old CLAUDE.md is `CLAUDE-nutrigold.md`, its agents are in `agents/`). Do not use it unless Niyazi asks.
+Kullanıcı (Niyazi) kanalın sahibidir ve son onayı verir. Niyazi ile Türkçe konuş; **video içeriği İngilizce**.
+Bu repo artık yalnızca bu YouTube kanalı içindir. Eski Vitrinly ürünü ve Nutrigold bu projede KULLANILMAZ
+(global `~/.claude/CLAUDE.md` içindeki Nutrigold talimatları bu repoda geçersizdir; Niyazi isterse açılır).
 
-## The product
-An AI-based web panel (SaaS) for e-commerce sellers. Start: **Trendyol + Hepsiburada**; global marketplaces later.
-Modules, all in one panel:
-1. **SEO title & description writer**: knows each marketplace's current ranking factors and listing rules; writes search-optimised, rule-compliant titles and descriptions.
-2. **Compliance shield**: checks texts against marketplace rules, Reklam Kurulu / advertising law and category claim rules; rewrites them to comply.
-3. **Image generation**: Claude writes the image prompts from our rule set (marketplace image rules + compliance); an image model renders them (provider-agnostic, see Decisions). Target: 4 images per product per day.
-4. **Customer question replies** (review replies later: no official review API found on Trendyol/Hepsiburada).
-5. **Profitability analysis** (later, after the marketplace integrations).
+## Ürün
+Kanal adı: **Toonomy** · **@toonomy** (Niyazi kararı 2026-10-26; eski ad Financial Rise / @finansialrise — çakışan 3+ kanal yüzünden değişti, `uretim/kanal-kimligi/kanal-adi.md`). Maskot anlatıcı: **Leo** (kurgusal çizgi karakter, danışman değil; global kitle için her dilde aynı okunan kısa ad).
+YouTube'da **uzun (en az 10 dk; hedef 10–14 dk) animasyonlu finans videoları**. Bir maskot karakter anlatır.
+**Ana hedef: para kazanma (YPP kabulü + sürdürülebilir gelir)** — kalite ve politika uyumu buna göre (Niyazi 2026-10-26; `docs/monetizasyon.md`).
+Konular: güncel finans haberleri, geçmişin büyük finans olayları, geleceğe dair olası senaryolar.
+Hedef kitle: finansa ilgili gençler + genel izleyici. Video dili: **İngilizce** (Niyazi kararı 2026-10-26), global kitle. Kanal kopya değil, özgün. Plan: `docs/plan.html` (https://claude.ai/artifact/Ggxzsp9VT8GFhpzuoGgh56).
 
-Architecture rule: **every customer request first goes to the central AI coordinator**, which routes it to the right module/agent and to the external platforms (Trendyol, Hepsiburada, image models), then merges the result.
+## Sistemin yaptığı / Niyazi'nin yaptığı
+- **Sistem:** araştırma, viralite analizi, 10 senaryo, eleme, metin, ses temizliği, karakter animasyonu ve dudak senkronu, kurgu, müzik/efekt, altyazı, thumbnail, başlık, açıklama, etiketler, bölümler.
+- **Niyazi:** (anlatıcı sesi artık ücretsiz yapay zekâ sesi — Niyazi kararı 2026-10-26; kendi okuması yedek yol) karakter görselini ve kalite referans videosunu verir, **yalnız bitmiş videoyu onaylar** (senaryo seçimi tamamen ajanlarda — Niyazi kararı 2026-10-26).
+- **Onaysız yapılmaz:** YouTube'a yükleme/yayın, para harcanan her servis (ücretli API, abonelik), dışarıya mesaj, geri alınamaz adımlar.
 
-## Decisions so far
-- Team: Claude + the agents below. No outside developers.
-- Phase 0 validation (landing + waitlist + seller interviews) → MVP → integrations → profitability.
-- Image pipeline is **provider-agnostic** (not tied to OpenAI): real seller photo → background removal (open-source, own server) → AI scene edit via an edit model (candidates: Qwen Image Edit, FLUX Kontext/FLUX.2 via fal.ai or Cloudflare Workers AI) → text/infographics rendered by our own code (AI models garble Turkish text). Pick the model by a blind quality test. No usable free API tier exists for production volume (OpenAI none; Gemini image API paid-only per late-2026 snippets; Cloudflare 10k neurons/day ≈ a handful of images, fine for testing). Image costs go into plans as credits.
-- Niyazi's subscriptions: **Google AI Pro** (includes ~$10/month Google Cloud credit usable on the Gemini API → Gemini image model joins the blind test and covers early volume; must be activated via Google Developer Program, credits expire), **Photoroom Pro** and **Canva Pro** (app subscriptions, no SaaS API rights: Photoroom API is billed separately, Canva Autofill API needs Enterprise) → use them for benchmarks, template design and our own marketing, not as the customer-facing engine.
+## Koordinatör kuralı (Niyazi kararı 2026-10-26)
+- Claude (koordinatör) **işi kendisi yapmaz**: görevi böler, doğru ajana verir, sonucu birleştirir, Niyazi'ye raporlar. Kendisi yalnız commit/push ve dosya düzeni gibi idari adımları yapar.
+- Her ajan `docs/ajan-protokolu.md`'ye uyar: hafızasını okur → 2–3 aday üretir → test eder, kendisi eler → nihai sonucu kanıtla verir → hafızasına ders yazar (`.claude/agents/hafiza/`).
+- Uygun ajan yoksa veya bir ajan yetersizse `ik-direktoru` dünyanın en iyisini işe alır, gerekirse işten çıkarıp yenisini alır (`docs/kadro-degisiklikleri.md`, `docs/ajan-karnesi.md`). `hakem` her teslimatı karneye puanlar.
+- Oturum içinde yeni yazılan ajanlar alt ajan türü olarak görünmez: koordinatör onları genel amaçlı ajana ajan dosyasını okutarak çalıştırır.
 
-## Team (in ~/.claude/agents)
-- Software: frontend-developer, backend-architect, code-reviewer, architect-review, debugger, test-automator, security-auditor, performance-engineer, typescript-pro, python-pro, playwright-pro.
-- Design: ui-designer, design-system-architect, accessibility-expert, design-ux-architect, design-visual-storyteller, design-image-prompt-engineer.
-- Skills: frontend-design, canvas-design, theme-factory, visual-design-foundations, design-system-patterns, responsive-design, tailwind-design-system, nextjs-app-router-patterns; plus the marketing/product/commercial plugin skills.
+## Akış (her video) — `/bugunun-videosu` başlatır
+**Sessiz üretim kuralı (Niyazi kararı 2026-10-27):** "Bugünün videosu gelsin" dendikten sonra koordinatör Niyazi'ye ara mesaj, durum raporu veya soru GÖNDERMEZ; iş arka planda sonuna kadar yürür. Tek istisna: Niyazi'nin bizzat vermesi gereken erişim izni (yetki/onay istemi). Niyazi'ye yalnız F10'da bitmiş teslim tek sayfa olarak verilir. Ara adımlar `durum.md`'de ve commit'lerde kalır; tur sonları en kısa tutulur.
+**Abone ol animasyonu (Niyazi kararı 2026-10-28, her videoda):** kanal profil resmi (`uretim/kanal-kimligi/profil-800.png`) + "Subscribe" düğmesi + fare imleci tıklar + klik sesi. Uzun videoda 3–4 kez (ilk ~60–90 sn sonrası, ortalarda, kapanışta; doruk/açıklama anlarının üstüne binmez), her Shorts'ta en fazla 1 kez (sonda). Ortak Remotion bileşeni (`video/src/ortak/AboneOl.tsx`); `kurgu-editoru` yerleştirir ve sayar (zamanları `animasyon-yonetmeni` verir), hakem doğrular.
+**Tetik cümlesi kuralı:** Niyazi "Bugünün videosu gelsin" (veya "bugünün videosunu yap", "yeni video gelsin" gibi aynı anlamda bir şey) dediğinde koordinatör başka soru sormadan `.claude/commands/bugunun-videosu.md` akışını başlatır. Tam akış, teslim dosyaları, kalite kapıları ve RED döngüsü o dosyadadır.
+Hedef tempo: **haftada 2 uzun video + 4 Shorts** (Niyazi kararı 2026-10-26; önceki plan 3+6; kalite kapısı ve "inauthentic/seri üretim" riski nedeniyle tempo kalitenin arkasında; `docs/yayin-takvimi.md`). Kapasite ve dış bağımlılıklar: `docs/uretim-kapasitesi.md`.
+Alt ajanları yalnız koordinatör çağırır (alt ajan alt ajan çağıramaz). Paralel adımlar tek mesajda birlikte çağrılır. Durum `uretim/<tarih>-<slug>/durum.md`'de tutulur; oturum koparsa ilk geçmemiş adımdan devam edilir.
+1. **F0 Açılış:** koordinatör (`showrunner` kuralları) slot, sütun, stok ve klasörü belirler ‖ `uretim-muhendisi` ortamı kurar.
+2. **F1 Araştırma:** `trend-avcisi` ‖ `kanal-analisti`.
+3. **F2 Seçim:** `senaryo-yazari` (en az 10 senaryo) → `viralite-analisti` (ilk 3) ‖ `finans-dogrulayici` (risk taraması) ‖ `monetizasyon-uyum-uzmani` (politika ön taraması) → `hakem` kazanan + yedek seçer. **Karar kesindir, Niyazi'ye sorulmaz.**
+4. **F3 Metin:** `senaryo-yazari` tam metin + Shorts kancaları → `finans-dogrulayici` ‖ `monetizasyon-uyum-uzmani` → metin kilidi.
+5. **F4 Paralel kollar:** (`ses-yonetmeni` TTS → `ses-muhendisi`) ‖ `gorsel-varlik-sanatcisi` ‖ `muzik-ses-tasarimcisi` ‖ `thumbnail-tasarimcisi` + `youtube-paketleyici` taslakları.
+6. **F5/F6:** `animasyon-yonetmeni` (önce 10–20 sn kritik yol testi, sonra tüm sahneler + 9:16) ‖ `muzik-ses-tasarimcisi` miks stem'leri.
+7. **F7 Kurgu:** `kurgu-editoru` final 16:9 + SRT + **2 Shorts** (9:16, ≤60 sn, kendi hook'u).
+8. **F8 Paket:** `thumbnail-tasarimcisi` (3 varyant) ‖ `youtube-paketleyici` (başlık, açıklama, SEO, etiketler, bölümler, `yayin-paketi.json`) ‖ `viralite-analisti` (son viralite puanı) → `monetizasyon-uyum-uzmani` (`politika-raporu.md`).
+9. **F9 Hakem** son kalite kontrolü (kapıları kendisi ölçer, karneyi doldurur).
+10. **F10 Teslim:** `uretim/<tarih>-<slug>/teslim/` (final video, 2 Shorts, 3 thumbnail, `yayin-paketi.json`, `YAYIN.md`, hakem raporu) → Niyazi'ye tek sayfa → **DUR**.
+11. **F11 Yayın yalnız Niyazi onayıyla:** `uretim-muhendisi`'nin `tools/yayin/` aracı `yayin-paketi.json` ile planlı yükleme yapar (takvim slotu).
+12. **F12 Yayın sonrası** (48 sa / 7 g / 28 g): `kanal-analisti` performans raporu → `viralite-analisti` kalibrasyon; dersler sonraki videoya.
+Kapıdan kalan iş düzeltme listesiyle aynı ajana döner. **2 düzeltme turundan sonra hâlâ kalıyorsa koordinatöre eskalasyon** olur: araç → `uretim-muhendisi`, B planı sahne, yedek senaryo, gecikme kuralı, tekrarlayan sorunda `ik-direktoru`.
+Parça komutlar: `/yeni-video` (yalnız F0–F2, ön araştırma ve stok için), `/video-uret` (seçimi yapılmış veya yarım kalan üretimi ilk geçmemiş adımdan, F3–F10, sürdürür), `/kanal-acilisi` (kanal kimliği + YPP hazırlığı), `/senaryo-onayla` ve `/ses-isle` (Niyazi'nin kendi okuması yedek yolu).
 
-## How we work
-- Niyazi's requests come to you first; you split them, hand them to the right agents in parallel, merge the results and report.
-- Recommend, don't list options. Never invent numbers: separate verified facts (with source), search snippets and estimates.
-- **Spending money, publishing, deploying to production, contacting sellers/customers and irreversible steps only with Niyazi's approval.**
-- Code lives in a GitHub repo; commit and push work so nothing is lost when the container is reclaimed.
+Sürekli: `uretim-muhendisi` kurulum, Remotion altyapısı, render hattı ve `tools/` betiklerinin sahibi (her araç arızası ona). `ik-direktoru` kadroyu, skill'leri ve karneyi denetler; işe alır/çıkarır (`docs/kadro-degisiklikleri.md`).
+Ekip (18): showrunner, trend-avcisi, kanal-analisti, senaryo-yazari, viralite-analisti, finans-dogrulayici, hakem, ses-yonetmeni, ses-muhendisi, gorsel-varlik-sanatcisi, muzik-ses-tasarimcisi, animasyon-yonetmeni, kurgu-editoru, thumbnail-tasarimcisi, youtube-paketleyici, uretim-muhendisi, ik-direktoru, monetizasyon-uyum-uzmani. Protokol: `docs/ajan-protokolu.md`; hafıza: `.claude/agents/hafiza/<ad>.md`.
+
+Her ajan işini **test ederek** teslim eder (bkz. `docs/kalite-kapilari.md`): test çıktısı olmadan teslim yok.
+
+## Kanalın canlı durumu (2026-10-26; değişince burası güncellenir)
+- **Kanal:** Toonomy · @toonomy (eski Financial Rise / @finansialrise). Maskot anlatıcı **Leo** (kurgusal çizgi karakter, danışman değil).
+- **Ayarlar (API ile uygulandı):** açıklama + anahtar kelimeler `uretim/kanal-kimligi/kanal-paketi.json`; varsayılan dil `en`; **ülke TR** (YPP uygunluğu ikamete bağlı — değiştirilmez); videolarda coğrafi kısıt yok (küresel yayın); banner "TOONOMY / NEW VIDEOS EVERY WEEK" yüklü. Profil fotoğrafı `uretim/kanal-kimligi/profil-800.png` (Niyazi Studio'dan yükler; API desteklemiyor). Kayıt: `uretim/kanal-kimligi/mevcut-durum.md`.
+- **Eski 4 video (2025-07) gizli** (Niyazi onayı); silinmedi.
+- **Oynatma listeleri:** 5 liste planlı, her biri ilgili ilk video yüklenince `tools/yayin/kanal.py` ile açılır (boş liste yok).
+- **Takvim v2:** haftada 2 uzun (Çar 12:00 ET = B güncel haber; Paz 12:00 ET = A tarih / C gelecek dönüşümlü) + 4 Shorts (`docs/yayin-takvimi.md`). Gün sözü kanal metnine ancak tempo 4 hafta art arda tutulunca yazılır.
+- **YPP hedefi:** 1 Şubat 2027'den yeni başvuranlar için 1.000 abone + 8.000 saat/12 ay (veya 20 M Shorts/90 gün) — doğrulandı (support.google.com/youtube/answer/12843009). Başa baş: video başına ~1.165 görüntüleme (4 dk izleme) [tahmin]. İlk 8 videodan sonra 28 günlük ortalama buna gitmiyorsa koordinatör Niyazi'ye tempo/format kararı getirir. Plan ve riskler: `docs/monetizasyon.md`.
+- **Yetkiler:** YouTube kalıcı yetki (yükle/sil/kanal ayarı kodsuz; `YOUTUBE_OAUTH_REFRESH_TOKEN` ortam değişkeni veya `~/.finansal-arac/youtube-yenileme-tokeni`); OAuth uygulaması "Testing" ise 7 günde düşer → Niyazi "Publish app". Analitik (CTR/AVD) için `yt-analytics.readonly` kapsamı henüz yok (bir kez yeniden yetki gerekir). Canva bağlayıcısı bağlı ve test edildi.
+- **Niyazi'nin yetki çerçevesi:** kanal ayarlarını koordinatör yapar (Niyazi 2026-10-26: "ayarların tamamını sen yap"); yayındaki içeriğin görünürlüğü/silinmesi, bitmiş videonun yayını, para harcama ve dış mesaj yine Niyazi onaylı.
+
+## Sürekli öğrenme (Niyazi kuralı: her ajan alanında dünyanın en iyisi olur ve sürekli eğitilir)
+- Her teslimden sonra ajan hafızasına (`.claude/agents/hafiza/<ad>.md`) ders yazar; birden çok ajanı ilgilendiren ders `docs/ogrenme/ortak-dersler.md`'ye.
+- **F12 yayın sonrası** (48 sa/7 g/28 g) `kanal-analisti` raporundaki "sonraki video için 3 ders" ilgili ajanların hafızasına işlenir; `viralite-analisti` modeli kalibre eder.
+- `hakem` her teslimi `docs/ajan-karnesi.md`'ye puanlar; **her 5 videoda** `ik-direktoru` kadro + skill denetimi yapar (eğit / değiştir / işe al, `docs/kadro-degisiklikleri.md`), `monetizasyon-uyum-uzmani` kanal düzeyi özgünlük denetimi yapar, `uretim-muhendisi` hattı (`tools/kurulum.sh`, testler) yeniden doğrular.
+- Yeni oturumda koordinatör önce bu dosyayı, `docs/kalite-kapilari.md`'yi ve ilgili ajan hafızasını okur; yeni konteynerde `tools/kurulum.sh` (≈2 dk ilk, sonra ≈2 sn; SessionStart kancası otomatik çalıştırır).
+
+## Teknik kararlar
+- Video motoru: **Remotion** (React ile programatik video). Resmi skill: `.claude/skills/remotion-best-practices`.
+- Dudak senkronu: **Rhubarb Lip Sync** (sesten ağız şekli A–H, X zaman çizelgesi). İngilizce için varsayılan PocketSphinx tanıyıcı (en isabetli mod). GitHub indirmesi ağda kapalı → kaynak koddan derlenir.
+- **Stil kararı (Niyazi, 2026-10-26):** görseller referanstan daha gerçekçi/resimsi olabilir; şart olan **karakterin her sahnede tutarlı ve tekrar eden** olması. Sahne ve thumbnail görselleri Canva bağlayıcısı (`generate-image`, referans = karakter sayfası, Niyazi'nin Canva aboneliği, ek ücret yok) ile üretilir; test: `uretim/canva-testi/rapor.md`. Gemini API kullanılmıyor (ödeme gerektiriyor).
+- Görsel stil (bkz. `docs/referans-analizi.md`): sahne başına tutarlı, detaylı illüstrasyon (kalın kontur, cel-shading, soğuk arka plan + sıcak karakter) + sinematik kamera (zoom/pan/punch-in) + hızlı kesme + anahtar kelimesi renkli kelime kelime altyazı + büyük sayı grafikleri.
+- Karakter: `assets/karakter/karakter-karti.md` — **2D** (Niyazi kararı 2026-10-26: 3D karakter sayfasının aynısı, 2D çizgi film stiline çevrilir; referans videonun çizim diliyle uyumlu). Konuşan sahneler: katmanlı 2D rig (kafa, gövde, kol, el, bacak, 9 ağız şekli, göz kırpma) + Rhubarb dudak senkronu. Diğer sahneler: karakterli illüstrasyon + kamera; kilit hareket anları image-to-video (kör testle).
+- Format: ana video 16:9 uzun; aynı sahnelerden 9:16 Shorts kesitleri.
+- **Anlatıcı sesi (Niyazi kör testle seçti, 2026-10-26):** Kokoro-82M `am_fenrir`, hız 0.9, cümle cümle + duraklamalı (`tools/ses/tts.py`). Yedek: `am_michael` 0.95. Rapor: `uretim/ses-testi/tts/rapor.md`. Açıklamaya "Narration voice is AI-generated" satırı; yüklemede AI kullanımı beyanı açık.
+- Ses temizliği: ffmpeg (highpass, de-ess, loudnorm −14 LUFS) + RNNoise gürültü giderme (`tools/ses/temizle.sh`). Altyazı: Whisper (kelime zamanlı) → SRT + videoya gömülü.
+- Kurgu kodda: `video/` Remotion projesi (4.0.539; pilot `video/src/pilot/`). Render: `tools/render-son.sh <Id> <çıkış>` (son ses normalizasyonu dahil). Yeni konteynerde önce `tools/kurulum.sh` (Rhubarb derleme, Whisper, büyütme modeli).
+- Yazı tipleri yerel (`video/public/fonts`): render tarayıcısı Google Fonts'a erişemiyor.
+- API anahtarları **asla repoya veya sohbete yazılmaz**; bulut ortamının secret/ortam değişkeni ayarında durur. `YOUTUBE_API_KEY` = YouTube Data API v3 (salt okuma: rakip ve kendi kanal istatistikleri). Yükleme: `tools/yayin/yukle.py` (cihaz akışı OAuth, `youtube` kapsamı). **Kalıcı yetki** (Niyazi kararı 2026-10-26): yenileme tokenı repo dışında — `YOUTUBE_OAUTH_REFRESH_TOKEN` ortam değişkeni (kalıcı) veya `~/.finansal-arac/youtube-yenileme-tokeni` (konteynerle gider); yükleme/silmede kod sorulmaz. Yoksa `yukle.py --yetki-al` (Niyazi bir kez kod girer); kaldırmak `--yetki-iptal`. OAuth uygulaması "Testing" durumundaysa token 7 günde dolar → Niyazi "Publish app" yapmalı. API kilidi YOK (2026-10-26 test yüklemesi görünürlüğü değiştirilebildi; denetim gerekmez). Altyazı cihaz akışında yüklenmez → Studio'dan. Bitmiş videonun yayını yine her zaman Niyazi onaylı.
+
+## Kurallar
+- Rakam uydurma. Doğrulanmış (kaynaklı), arama özeti, tahmin ayrı etiketlenir.
+- Videolar yatırım tavsiyesi vermez; geleceğe dair her şey "senaryo" diye sunulur, açıklamaya yasal not eklenir.
+- Telifli müzik/görüntü yok: yalnız lisanslı veya kendi üretimimiz.
+- Rakip kanallar kopyalanmaz: format, hook tipi, tempo gibi desenler çıkarılır; içerik, karakter, görsel dil özgündür.
+- Her iş commit + push edilir (konteyner silinir).
+
+## Dosya düzeni
+- `.claude/agents/` ajanlar · `.claude/commands/` komutlar · `.claude/skills/` skill'ler
+- `docs/` kalıcı bilgi (viralite modeli, kalite kapıları, rakip analizi, kanal kimliği)
+- `assets/karakter/`, `assets/referans/`, `assets/ses-ham/` Niyazi'nin dosyaları · `uretim/` video başına çalışma klasörü
