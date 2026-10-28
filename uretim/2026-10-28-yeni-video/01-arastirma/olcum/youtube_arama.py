@@ -15,7 +15,7 @@ for key,q in qs.items():
     allids=list(dict.fromkeys(rel+rec))
     items=[]
     for i in range(0,len(allids),50): items+=stats(allids[i:i+50])
-    m={x["id"]:(int(x["statistics"].get("viewCount",0)),x["snippet"]["title"][:80],x["snippet"]["channelTitle"][:30],x["snippet"]["publishedAt"][:10],x["contentDetails"]["duration"]) for x in items}
+    m={x["id"]:(int(x["statistics"].get("viewCount",0)),x["snippet"]["title"][:80],x["snippet"]["channelTitle"][:30],x["snippet"]["publishedAt"][:10],x.get("contentDetails",{}).get("duration","")) for x in items}
     relv=[m[i][0] for i in rel if i in m]
     recent=sorted([(v[0],v[1],v[2],v[3],k) for k,v in m.items() if v[3]>="2025-10-28"],reverse=True)
     out[key]={"query":q,"measured":"2026-10-28","rel_n":len(relv),"rel_median":int(statistics.median(relv)) if relv else 0,"rel_ge1M":sum(1 for v in relv if v>=1e6),

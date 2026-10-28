@@ -430,5 +430,229 @@
    }
   ],
   "tried": 3
+ },
+ "B15": {
+  "q": "Social Security COLA 2027 3.6%",
+  "k": "COLA",
+  "n_rss": 100,
+  "ok": [
+   {
+    "t": "A 3.6% Social Security COLA in 2027 will push some retired couples past $100,000 a year in benefits - Yahoo Finance",
+    "url": "https://finance.yahoo.com/economy/policy/articles/3-6-social-security-cola-123000840.html",
+    "src": "Yahoo Finance",
+    "kod": "200",
+    "meta_d": "2026-10-17",
+    "rss_d": "2026-10-17"
+   },
+   {
+    "t": "The 2027 Social Security COLA is 3.6%: See how your benefits will be impacted - Chase Bank",
+    "url": "https://www.chase.com/personal/investments/learning-and-insights/article/social-security-cost-of-living-adjustment-cola-2027",
+    "src": "Chase Bank",
+    "kod": "200",
+    "meta_d": "2026-10-14",
+    "rss_d": "2026-10-16"
+   },
+   {
+    "t": "Will Social Security’s 3.6% 2027 COLA Hold Up? Here’s What History Says - The Motley Fool",
+    "url": "https://www.fool.com/retirement/2026/10/23/will-social-security-s-3-6-2027-cola-hold-up-here-s-what-history-says/",
+    "src": "The Motley Fool",
+    "kod": "200",
+    "meta_d": "2026-10-23",
+    "rss_d": "2026-10-23"
+   }
+  ],
+  "tried": 5
+ },
+ "B16": {
+  "q": "Bank of England rate hike November 4%",
+  "k": "Bank of England",
+  "n_rss": 53,
+  "ok": [
+   {
+    "t": "Interest rates unlikely to reach 4.75% by next summer, say City economists - The Guardian",
+    "url": "https://www.theguardian.com/business/2026/oct/25/interest-rates-bank-of-england-rises-summer-2027",
+    "src": "The Guardian",
+    "kod": "200",
+    "meta_d": "2026-10-25",
+    "rss_d": "2026-10-25"
+   },
+   {
+    "t": "Why Bank of England Hawks Are Gaining Ground as Inflation Heads Above 4% - Yahoo Finance",
+    "url": "https://finance.yahoo.com/economy/policy/articles/why-bank-england-hawks-gaining-062108382.html",
+    "src": "Yahoo Finance",
+    "kod": "200",
+    "meta_d": "2026-10-26",
+    "rss_d": "2026-10-26"
+   },
+   {
+    "t": "Why we now expect two Bank of England rate hikes - ing think",
+    "url": "https://think.ing.com/articles/monthly-why-we-now-expect-two-bank-of-england-rate-hikes/",
+    "src": "ing think",
+    "kod": "200",
+    "meta_d": "2026-10-15",
+    "rss_d": "2026-10-15"
+   }
+  ],
+  "tried": 4
+ },
+ "B17": {
+  "q": "yen intervention Katayama",
+  "k": "yen",
+  "n_rss": 9,
+  "ok": [
+   {
+    "t": "Japan finance minister Katayama warns of decisive action as yen intervention risks linger - investingLive",
+    "url": "https://investinglive.com/forex/japan-finance-minister-katayama-warns-of-decisive-action-as-yen-intervention-risks-linger/",
+    "src": "investingLive",
+    "kod": "200",
+    "meta_d": "2026-10-27",
+    "rss_d": "2026-10-27"
+   },
+   {
+    "t": "Risk of Yen Intervention Returns to Focus: Katayama Strikes Tough Stance, 200-Day Moving Average Becomes Key Resistance - Moomoo",
+    "url": "https://www.moomoo.com/news/post/1002452242/risk-of-yen-intervention-returns-to-focus-katayama-strikes-tough",
+    "src": "Moomoo",
+    "kod": "200",
+    "meta_d": "2026-10-27",
+    "rss_d": "2026-10-27"
+   },
+   {
+    "t": "Dollar-yen struggles near 158 as Finance Minister Katayama's warning yields limited yen buying - BigGo Finance",
+    "url": "https://finance.biggo.com/news/c4442c58-5831-4940-82e3-4c92d6d5a335",
+    "src": "BigGo Finance",
+    "kod": "200",
+    "meta_d": "2026-10-28",
+    "rss_d": "2026-10-28"
+   }
+  ],
+  "tried": 4
+ },
+ "B18": {
+  "q": "gas prices higher under Trump than Biden",
+  "k": "gas",
+  "n_rss": 48,
+  "ok": [
+   {
+    "t": "Gas under Trump 2.0 is now more expensive than it was under Biden - CNN",
+    "url": "https://www.cnn.com/2026/10/26/economy/gas-oil-trump-iran-election",
+    "src": "CNN",
+    "kod": "200",
+    "meta_d": "2026-10-26",
+    "rss_d": "2026-10-26"
+   },
+   {
+    "t": "Gas prices under Trump 2.0 are now higher on average than during Biden’s 4 years in office - Yahoo Finance",
+    "url": "https://finance.yahoo.com/energy/article/gas-prices-under-trump-20-are-now-higher-on-average-than-during-bidens-4-years-in-office-141656779.html",
+    "src": "Yahoo Finance",
+    "kod": "200",
+    "meta_d": "2026-10-27",
+    "rss_d": "2026-10-27"
+   },
+   {
+    "t": "Trump said gasoline is cheaper now than during Biden, Obama presidencies. Is it? - WLRN",
+    "url": "https://www.wlrn.org/government-politics/2026-10-27/trump-said-gasoline-is-cheaper-now-than-during-biden-obama-presidencies-is-it",
+    "src": "WLRN",
+    "kod": "200",
+    "meta_d": "2026-10-27",
+    "rss_d": "2026-10-27"
+   }
+  ],
+  "tried": 4
+ },
+ "B19": {
+  "q": "holiday sales forecast 2026 trillion NRF",
+  "k": "holiday",
+  "n_rss": 19,
+  "ok": [
+   {
+    "t": "2026 Holiday Sales Forecast to Rise 4.2% to More Than $1 Trillion - CPA Practice Advisor",
+    "url": "https://www.cpapracticeadvisor.com/2026/10/26/2026-holiday-sales-forecast-to-rise-4-2-to-more-than-1-trillion/192428/",
+    "src": "CPA Practice Advisor",
+    "kod": "200",
+    "meta_d": "2026-10-26",
+    "rss_d": "2026-10-26"
+   },
+   {
+    "t": "Inflation expected to push holiday sales above $1 trillion - Talk Business & Politics",
+    "url": "https://talkbusiness.net/2026/10/inflation-expected-to-push-holiday-sales-above-1-trillion/",
+    "src": "Talk Business & Politics",
+    "kod": "200",
+    "meta_d": "2026-10-16",
+    "rss_d": "2026-10-16"
+   },
+   {
+    "t": "NRF forecasts 4.2% holiday sales growth, muted seasonal hiring - Retail Dive",
+    "url": "https://www.retaildive.com/news/nrf-forecasts-2026-holiday-sales-growth-seasonal-hiring/833239/",
+    "src": "Retail Dive",
+    "kod": "200",
+    "meta_d": "2026-10-19",
+    "rss_d": "2026-10-19"
+   }
+  ],
+  "tried": 6
+ },
+ "B20": {
+  "q": "US budget deficit nearly 2 trillion fiscal 2026",
+  "k": "deficit",
+  "n_rss": 39,
+  "ok": [
+   {
+    "t": "Red ink: Federal deficit hits nearly $2 trillion - NPR",
+    "url": "https://www.npr.org/2026/10/16/nx-s1-6005243/red-ink-federal-deficit-hits-nearly-2-trillion",
+    "src": "NPR",
+    "kod": "200",
+    "meta_d": "2026-10-16",
+    "rss_d": "2026-10-16"
+   },
+   {
+    "t": "The US federal budget deficit for 2026 just came in. It’s $1.992 trillion. - Yahoo Finance",
+    "url": "https://finance.yahoo.com/economy/policy/article/the-us-federal-budget-deficit-for-2026-just-came-in-its-1992-trillion-191917669.html",
+    "src": "Yahoo Finance",
+    "kod": "200",
+    "meta_d": "2026-10-16",
+    "rss_d": "2026-10-16"
+   },
+   {
+    "t": "The Federal Government Collected $5.4 Trillion. It Still Can't Pay Its Bills. - Reason Magazine",
+    "url": "https://reason.com/2026/10/15/the-federal-government-collected-5-4-trillion-it-still-cant-pay-its-bills/",
+    "src": "Reason Magazine",
+    "kod": "200",
+    "meta_d": "2026-10-15",
+    "rss_d": "2026-10-15"
+   }
+  ],
+  "tried": 5
+ },
+ "B21": {
+  "q": "CoreWeave debt stock bond yields",
+  "k": "CoreWeave",
+  "n_rss": 37,
+  "ok": [
+   {
+    "t": "CoreWeave Bond Yields Reach 15% as Investors Reassess AI Infrastructure Financing Risks - Yahoo Finance",
+    "url": "https://finance.yahoo.com/technology/ai/articles/coreweave-bond-yields-reach-15-101338344.html",
+    "src": "Yahoo Finance",
+    "kod": "200",
+    "meta_d": "2026-10-19",
+    "rss_d": "2026-10-19"
+   },
+   {
+    "t": "CoreWeave and Data Center Bonds Slide on Capex and Debt Overhang Concerns - Morningstar",
+    "url": "https://www.morningstar.com/bonds/coreweave-data-center-bonds-slide-capex-debt-overhang-concerns",
+    "src": "Morningstar",
+    "kod": "200",
+    "meta_d": "2026-10-16",
+    "rss_d": "2026-10-16"
+   },
+   {
+    "t": "AI Debt Fears Are Suddenly Rippling Across Wall Street As Yields Surge - Business Insider",
+    "url": "https://www.businessinsider.com/ai-debt-hyperscalers-wall-street-bond-yields-rates-coreweave-2026-10",
+    "src": "Business Insider",
+    "kod": "200",
+    "meta_d": "2026-10-16",
+    "rss_d": "2026-10-16"
+   }
+  ],
+  "tried": 4
  }
 }
