@@ -12,3 +12,8 @@
 - **Strateji karşılaştırması:** S2 (kalıcı olay listesi + pageviews + YouTube) 17 kaynaklı A konusu verdi. S1 (haber akışı) zamanlamayı ve 6 B/C konusu verdi. S3 (HN; Reddit kapalı) bu nişte 0 yeni konu verdi. Bir dahaki sefere S3'e zaman ayırma, S1'i A konularına "güncel bağ" bulmak için kullan.
 - **Okuma kuralı:** "alaka medyanı yüksek + son 12 ayın en iyisi düşük" = talep var, taze rakip yok. 2026-10'da 1929, South Sea ve Black Wednesday bu durumdaydı. Talep sinyali için Wikipedia'nın son 30 gün / önceki 60 gün oranı yararlı (Enron +%47, CoreWeave 3×).
 - Sonraki tur için hazır aday: Barings/Nick Leeson (talep güçlü, ikinci bağımsız açılan kaynak bulunmalı), özel kredi (B; son 30 günden tarihli 2 kaynak gerek).
+
+### 2026-10-28 — F1 konu havuzu (B sütunu, 26 konu, kapı ilk koşuda GEÇTİ)
+- **B için en iyi araç:** Google News RSS (`when:14d`) + `pip install googlenewsdecoder` → yayıncı URL → curl 200+anahtar+`datePublished`. Betik: `uretim/2026-10-28-yeni-video/01-arastirma/olcum/kaynak_bul.py` (konular.tsv). 21 konuya ~15 dk'da 3'er açılan kaynak buldu. WebSearch 2026 haberinde zayıf (eski yılları döndürüyor).
+- **Kaynak tuzakları:** RSS tarihi ≠ makale tarihi (ABC Şubat sayfasını Ekim'de yeniden yayımlıyor), Global Times anahtar kelimeyi menüde geçiriyor. Daima meta tarihi + makale metnine bak. `pkill -f <betik>` aynı komut satırındaki kabuğu da öldürür, PID ile durdur.
+- **Talep okuması:** YouTube'da çok spesifik tarih sorgusu (ör. "Black Friday 1869 Jay Gould") yanıltıcı derecede düşük çıkıyor. İzleyicinin gerçekten yazdığı soruyu ölç ("why is it called black friday" medyanı 29 K, taze rakip yok).

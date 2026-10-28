@@ -8,7 +8,7 @@ Kalıcı araçlar `tools/` altında (sahibi uretim-muhendisi): `render-son.sh`, 
 Video klasöründe kalan kapı betikleri (1929 videosu, `uretim/2026-10-26-1929-1000-dolar/`). Sonraki videoda kopyalanır; `tools/`'a taşınması uretim-muhendisi'nden istendi (2026-10-28):
 | Faz / sahip | Betik |
 |---|---|
-| F1 trend-avcisi | `01-arastirma/kaynak-kontrol.py`, `olcum/youtube_arama.py`, `olcum/wiki_pageviews.py` · kanal-analisti `01-arastirma/etiket_test.py` |
+| F1 trend-avcisi | `01-arastirma/kaynak-kontrol.py`, `olcum/youtube_arama.py`, `olcum/wiki_pageviews.py`, (2026-10-28 klasöründe) `olcum/haber_rss.py`, `olcum/kaynak_bul.py` · kanal-analisti `01-arastirma/etiket_test.py` |
 | F2 senaryo-yazari / viralite / politika / hakem | `02-senaryo/senaryo-kontrol.py`, `viralite-duyarlilik.py`, `viralite-outlier.py`, `politika-tarama.py`, `hakem-karar.py` |
 | F3 senaryo-yazari / finans / politika | `03-metin/metin-kontrol.py` (kpm parametresini **160** yap), `dogrulama-kontrol.py`, `dogrulama-hesap.py`, `veri/hesap.py`, `politika-denetim.py` |
 | F4 ses-muhendisi | `04-ses/son-islem.sh`, `olc.py`, `son-olc.py`, `okuma-hazirla.py` |
@@ -69,6 +69,7 @@ Video klasöründe kalan kapı betikleri (1929 videosu, `uretim/2026-10-26-1929-
 - YouTube Data API `search` ayrı günlük tavanlı (15 sorguda 429), proje paylaşımlı → `playlistItems`/`videos` (1 birim) tercih. Kota dolunca `python3 -m yt_dlp --flat-playlist --print "%(id)s" "ytsearch15:<sorgu>"` + `videos.list`. yt-dlp otomatik altyazı ~8 videoda sonra bot kontrolü.
 - `marketing-skills:youtube-full` bir veri aracıdır (transkript/RSS/arama); SEO veya retention kuralı vermez.
 - Wikimedia pageviews: UA başlığı şart, istekler arası ≥4–8 sn. Link kanıtı = HTTP 200 + sayfada anahtar kelime (soft-404 var).
+- 2026-10-28 (trend-avcisi): güncel haber kaynağı için Google News RSS + `googlenewsdecoder` (PyPI) açık ve hızlı; Reuters/WSJ/Bloomberg/NYT curl'de kapalı. Hazır betik: `uretim/2026-10-28-yeni-video/01-arastirma/olcum/kaynak_bul.py`. finans-dogrulayici F3'te aynı yolla birincil kaynak bulabilir.
 
 ## Görsel ve thumbnail
 - Pillow: `Fredoka-700.woff2` değişken yazı tipi → `font.set_variation_by_axes([700])`; woff2 doğrudan açılır; Fredoka'da "ş" yok (Türkçe etikette DejaVuSans-Bold). RGBA'ya yarı saydam çizim ayrı katmana + `alpha_composite`. Kontur `cv2.dilate` + elips çekirdek.
