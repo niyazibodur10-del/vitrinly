@@ -14,10 +14,11 @@ Video klasöründe kalan kapı betikleri (1929 videosu, `uretim/2026-10-26-1929-
 | F4 ses-muhendisi | `04-ses/son-islem.sh`, `olc.py`, `son-olc.py`, `okuma-hazirla.py` |
 | F4 gorsel-varlik-sanatcisi | `05-gorsel/araclar/prompt-uret.py`, `prompt-kontrol.py`, `stil-olcum.py`, `rig-yama.py` |
 | F4/F6 muzik-ses-tasarimcisi | `06-muzik/lisans-kontrol.py`, `aday-olc.py`, `cue-uret.py`, `f6.py`, `ozgun-uret.py` |
-| F5 animasyon-yonetmeni | `07-animasyon/hazirla.py`, `hazirla-tam.py`, `rhubarb-tum.py`, `agiz-gorunur.py`, `efekt-cue.py`, `grafik-veri.py`, `sessizlik_kapisi.py` |
+| F5 animasyon-yonetmeni | **genel (2026-10-28):** `tools/animasyon/rhubarb-toplu.py` (← rhubarb-tum.py, paralel), `sahne-veri.py` (← hazirla-tam.py veri kısmı, birebir), `csv-ts.py` (← grafik-veri.py), `sessizlik_kapisi.py`; videoya özel kalan: varlık hazırlığı (`hazirla*.py` görsel kısmı), `agiz-gorunur.py`, `efekt-cue.py` |
 | F7 kurgu-editoru | `08-kurgu/kurgu_ses.py`, `ses_kayma.py`, `srt_kontrol.py`, `kadans.py` |
 
 ## Akış ve hız (koordinatör + herkes)
+- 2026-10-28 (uretim-muhendisi, hız araçları): yeni video `tools/yeni-video.sh <tarih-slug> --kisa <Önek>` ile açılır (klasör + durum.md + yeniden üretim tarifi + kit kopyası). Taslak render `--onizleme` (3,6x hızlı, yayın için değil). Uzun video `render-parca.sh` ile: değişen parçayı KENDİ bulur (`--yeniden` gerekmez), `--kaynak <BaşkaId>` ile başka kompozisyonun parçaları tohumlanır. Whisper'ı dosya başına değil toplu çağır (`yaziya-dok.py --model small.en a.wav a.json b.wav b.json`, −%39). Her video `uretim/<klasör>/yeniden-uret.adimlar`'ı doldurur (git dışı her büyük dosya için "dosya | komut"); git dışı kaynak (müzik, wav) tarifte yeniden üretilemiyorsa git'e girer — 1929'da 3 müzik kaynağı eksik çıktı.
 - 2026-10-28: 1929 videosu commit zamanlarına göre ~5 sa aktif çalıştı ama 25,5 sa sürdü. Aradaki üç ~4 saatlik boşluk oturum limitiydi. Darboğaz CPU değil token: kısa okuma, tek ölçüm, kısa rapor ve ara commit kuralları (`docs/ajan-protokolu.md` §1–5) bu yüzden zorunlu.
 - 2026-10-28: F8'i erken başlatmak işe yaradı (paket ve thumbnail F5 sürerken bitti, F7'den sonra yalnız 7 dk fark kontrolü kaldı). Akışta artık F8a (erken) ve F8b (fark) var.
 - 2026-10-27: Kanca/sahne zamanları önce metin tahmininden gelir; kesin zamanlar ses kolundan (`04-ses/kelimeler-hizali.json`) sonra alınır. Görsel olay zamanları `06-muzik/animasyon-efekt-cue.json`'da tutulur.

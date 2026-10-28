@@ -1,9 +1,31 @@
-# Üretim kapasitesi ve darboğaz analizi (v1.2, 2026-10-26 — tempo 2 + 4'e göre güncellendi)
+# Üretim kapasitesi ve darboğaz analizi (v1.3, 2026-10-28 — ortam optimizasyonu ölçümleri §0; v1.2 2026-10-26 tempo 2 + 4)
 
 Soru: Haftada **2 uzun video** (10–14 dk, İngilizce) + **4 Shorts**, `/bugunun-videosu` akışıyla yapılabilir mi? (Niyazi kararı 2026-10-26; takvim `docs/yayin-takvimi.md` v2: Çarşamba + Pazar.)
 **v1 notu:** Bu dosyanın v1–v1.1 sürümü haftada 3 uzun + 6 Shorts'u soruyordu. Sonucu: "şartlar sağlanırsa sınırda mümkün; iyi durumda ~27, kötü durumda ~54 saat/hafta otomatik üretim; her hafta en az bir gecikme beklenir" [H/T]. Bu sonuç ve kalite/politika riski tempo kararının gerekçesine girdi. Ayrıntılar git geçmişinde.
 Etiketler: **[Ö]** bu ortamda ölçüldü, **[H]** ölçüm veya bilinen değerden hesap, **[AÖ]** arama özeti, **[T]** tahmin.
 Henüz hiçbir tam video üretilmedi. Süreler pilot klip (18,8 sn) ve ajanların iş tanımlarından çıkarılmış tahminlerdir. İlk 3 videoda her adımın gerçek başlangıç ve bitiş saati `durum.md`'ye yazılır, bu dosya o verilerle v2'ye güncellenir.
+
+## 0. Ortam optimizasyonu v1.3 (2026-10-28, uretim-muhendisi) [Ö]
+İlk video (1929) ~1,5 gün sürdü (oturum limitleri dahil). Makine tarafındaki darboğazlar ölçüldü ve araçlar değişti. Ortam: 4 vCPU, 15 GB, boşta ölçüm (paralel render yokken).
+
+| Adım | Önce | Sonra | Araç / not |
+|---|---|---|---|
+| Kurulum, temiz konteyner + boş önbellek | **407 sn** (sıralı pip) | **111 sn** (uv + 5 paralel iş; kritik yol Rhubarb derlemesi) | `tools/kurulum.sh` v2, sabit sürümler `tools/gereksinim/*.txt`; tekrar 2,3 → 1,5–1,9 sn |
+| Kurulumu oturumda beklemek | her oturum elle | SessionStart kancası | `.claude/hooks/oturum-baslat.sh` (bulut konteyner durumu kancadan sonra önbelleğe alınır; model ısıtma arka planda) |
+| Render, 600 kare (1929 en ağır bölüm); tam final 18.949 kare ≈ 31 dk (değişmedi, CPU sınırı) | 1×c4 152,0 sn | 2 parça×c2 **141,5 sn (−%7)**; Pilot 3 parça 60 → 47 sn (−%22) | `render-parca.sh --is 2` (varsayılan; tek parça kalınca c4) |
+| Düzeltme turu: hangi parça değişti? | elle `--yeniden`/`--sifirla` (unutulursa eski görüntü yayına) | **otomatik iz**: her 6. kare 1/4 ölçek, toleranslı karşılaştırma | `render-parca.sh` + `tools/render-iz.py`; Pilot'ta tek rakam değişikliği → yalnız 1/3 parça; değişiklik yoksa 0 parça. İz maliyeti ~10 sn/600 kare |
+| Önizleme (taslak) render | yok | 960x540 crf30 veryfast: 600 kare **42,3 sn (3,6x hızlı)** | `render-son.sh … --onizleme`, `render-parca.sh … --onizleme` (ayrı önbellek) |
+| Kare kaybı (-shortest) | 1929 F7'de 4 kare | çıktı kare sayısı = kompozisyon, değilse HATA | `render-parca.sh` kapısı |
+| Whisper, 3 dosya (76 sn ses) | 3 ayrı çağrı 43,7 sn | toplu tek model **26,7 sn (−%39)**, çıktı bayt bayt aynı | `yaziya-dok.py --model small.en a.wav a.json b.wav b.json …` (soğuk diskte her ayrı çağrı +40–130 sn) |
+| Whisper, tek 60 sn dosya | 29,1 sn (4 iş parçacığı) | **22,3 sn** (2 iş parçacığı) | varsayılan `--is 2`; `cumle-whisper.py` da 2 iş parçacığı |
+| TTS 16 cümle (55,6 sn ses) | 43,4 sn | **38,2 sn (−%12)** | `tts.py --is 2` (varsayılan). Kokoro deterministik değil |
+| Rhubarb 6 sahne (150 sn ses) | 1×4 iş parçacığı 67,1 sn | **44,0 sn (−%34)** | `tools/animasyon/rhubarb-toplu.py --is 2` (12 dk ≈ 4,7 → 3,1 dk [H]) |
+| Video başına iskelet | 1929'a özel betikler | genel araçlar | `tools/yeni-video.sh` (klasör + durum.md + tarif + kit kopyası + test kompozisyonu), `tools/animasyon/sahne-veri.py` (1929 veri-tam.ts ile birebir aynı çıktı), `csv-ts.py`, `rhubarb-toplu.py` |
+| Konteyner gidince final mp4 | 6 betik + el bilgisi | tek komut | `tools/yeniden-uret.sh <klasör>` + `uretim/<klasör>/yeniden-uret.adimlar` (1929 tarifi hazır; ölçüm aşağıda) |
+
+**Bu VM'de 2 iş parçacığı doyuyor:** Whisper, Rhubarb, TTS ve render'da "nproc kadar eşzamanlılık" yerine 2×(nproc/2) daha hızlı çıktı. Yeni araçta varsayılanı ölçmeden nproc yapma.
+**Yeniden üretim testi** (temiz çalışma ağacı, boş parça önbelleği): `tools/yeniden-uret.sh 2026-10-26-1929-1000-dolar --kontrol` 15 adım hatasız (ilk denemede iki hata buldu ve düzeltildi: ffmpeg tarifin stdin'ini yutuyordu; final cue'sunun 3 CC0 müzik kaynağı git dışıydı → repoya alındı). Süre ≈ **41 dk**: ses zinciri (m4a → wav, f6 stem'leri 178 sn, kurgu miksi 16 sn, Shorts yatakları 1 sn) ~3,3 dk + final render ~33 dk (iz 122 sn + 11 parça ≈ 10 kare/sn + mux 74 sn) + 2 Shorts 130 + 154 sn. Sonuç yayınlanan dosyalarla: kare sayıları aynı (18.949 / 1.487 / 1.681), Shorts görüntüsü **bit-aynı** (PSNR inf), final PSNR ort. 68,8 dB (min 45,9; Chromium blur gürültüsü), ses −14,0 LUFS / TP −2,3 (yayınlanan −2,2). sha256 farklı (ses git'teki AAC'den).
+**Kalan darboğaz:** tam render (1929: 18.949 kare ≈ 26–29 dk) CPU'ya bağlı; GPU yok. Düzeltme turları artık yalnız değişen parça (~3 dk/parça). Ajan tarafında en uzun faz hâlâ F5 sahne kodlaması → kit kopyası (`yeni-video.sh`) ilk adım; ortak bileşenlerin `video/src/ortak/`'a taşınması animasyon-yonetmeni ile birlikte yapılacak.
 
 ## 1. Ölçülen tek veri: render hızı [Ö]
 - Ortam: 4 vCPU, 15 GB RAM, Remotion 4.0.539, `tools/render-son.sh` (h264 crf18 + 2 geçişli loudnorm).
