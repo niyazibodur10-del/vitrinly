@@ -109,7 +109,7 @@ Teslim `07-animasyon/test-10sn.mp4`, `07-animasyon/senkron-rapor.md`, `video/src
 ### F6 — Müzik miksi (iki parça)
 `muzik-ses-tasarimcisi`:
 - **F6a müzik yatağı** (ses kolu GEÇTİ olunca, F5 ile paralel): kesin kelime zamanlarına göre müzik cue listesi + ducking'li müzik stem'i.
-- **F6b SFX stem** (F5 tam sahneler `animasyon-efekt-cue.json`'u verince): SFX vuruşları ve abone klik sesi **görsel olay zamanlarından** yerleştirilir, kelime zamanından değil (1929'da 20+ vuruş kaymıştı). Kurgu-editoru yeniden zamanlamaz, yalnız doğrular.
+- **F6b SFX stem** (F5 tam sahneler `animasyon-efekt-cue.json`'u verince): SFX vuruşları ve abone klik sesi **görsel olay zamanlarından** yerleştirilir, kelime zamanından değil (1929'da 20+ vuruş kaymıştı). Kurgu-editoru yeniden zamanlamaz, yalnız doğrular. SFX üretimi ve hiza ölçümü `earshot` skill'iyle (`earshot timeline --cues`, `sfx render --apex`).
 Teslim `06-muzik/cue-listesi.md`, `06-muzik/stems/`. Kapı: Müzik/SFX (miksli dilimde WER bozulmadı, seviye ölçümü yapıldı, her SFX vuruşu görsel olaya ±2 kare).
 
 ### F7 — Kurgu ve render
@@ -118,7 +118,7 @@ Teslim `06-muzik/cue-listesi.md`, `06-muzik/stems/`. Kapı: Müzik/SFX (miksli d
 2. **Abone ol animasyonu** ortak bileşenle (`video/src/ortak/`, uretim-muhendisi) final katmana yerleştirilir: uzun videoda `animasyon-efekt-cue.json`'daki 3–4 `abone` anında, her Shorts'ta sonda en fazla 1 kez. Sayı ve zamanlar `kurgu-rapor.md`'de.
 3. **2 Shorts** hazırlanır (9:16, ≤60 sn). Her biri **kendi hook'uyla** açılır (ilk 2 sn), aynı sahnelerden yeniden kadrajlanır. Kancayı taşıyacak sahne eksikse koordinatöre "ek sahne" talebi iletilir; koordinatör bunu animasyon-yonetmeni'ne (gerekirse gorsel-varlik-sanatcisi'ne) verir. Shorts için 3–5 aday bölüm seçilir, ilk 2 sn testinden geçen 2 tanesi kalır.
 
-Teslim `08-kurgu/final-16x9.mp4`, `08-kurgu/altyazi.srt`, `08-kurgu/shorts-1.mp4`, `08-kurgu/shorts-2.mp4`, `08-kurgu/kurgu-rapor.md`. Kapı: Kurgu, Altyazı, Ses (son dosyada), Retention (kurgu: ilk görsel değişim ≤3 sn, kanal intro'su yok), Abone animasyonu (uzun 3–4, Shorts ≤1 sonda, klik sesi duyuluyor, doruk anına binmiyor) ve aşağıdaki Shorts kapısı. Final ve Shorts render'ları sırayla koşar (CPU), ölçümler render biter bitmez yapılır.
+Teslim `08-kurgu/final-16x9.mp4`, `08-kurgu/altyazi.srt`, `08-kurgu/shorts-1.mp4`, `08-kurgu/shorts-2.mp4`, `08-kurgu/kurgu-rapor.md`. Kapı: Kurgu, Altyazı, Ses (son dosyada), Retention (kurgu: ilk görsel değişim ≤3 sn, kanal intro'su yok), Abone animasyonu (uzun 3–4, Shorts ≤1 sonda, klik sesi duyuluyor, doruk anına binmiyor), SFX hizası ±2 kare (`earshot timeline --cues`) ve aşağıdaki Shorts kapısı. Final ve Shorts render'ları sırayla koşar (CPU), ölçümler render biter bitmez yapılır.
 
 ### F8 — Son paket (iki parça)
 - **F8a erken paket** (görsel kol GEÇTİ + metin kilidi; F5/F6/F7 ile paralel): thumbnail finalistleri (Canva sahne görsellerinden), paket metni (başlık, açıklama, etiketler, Shorts paketleri), politika paket denetimi, viralite ön puanı. 1929'da böyle yapıldı ve F7'den sonra yalnız 7 dk iş kaldı.
@@ -132,7 +132,7 @@ Aşağıdaki tablo iki parçanın toplam teslimidir.
 | `monetizasyon-uyum-uzmani` | Paket + final video politika denetimi: başlık/thumbnail içerikle tutarlı, AI beyanı kararı (`durum.sentetik_medya`) ve açıklama satırı, reklam uygunluğu öz beyan yanıtları, lisans kaydı + Content ID itiraz kanıtı, reused/dış görüntü yok, özgünlük ve insan katkısı kanıtı, yeniden kullanılan sahne oranı. Taslak paketler F8 içinde ona gider, kararı youtube-paketleyici pakete işler | `09-paket/politika-raporu.md` | YPP politika kapısı (`docs/kalite-kapilari.md`) |
 
 ### F9 — Hakem son kontrol
-`hakem` → bütün kapıları **kendisi yeniden ölçer** (ffprobe, ebur128, `tools/senkron-testi.py`, altyazı hizası, thumbnail küçültme, lisans kaydı, yasal not, Shorts kapısı, YPP politika kapısı, retention kapısı, abone animasyonu sayımı). Ucuz ölçümler tam yapılır; ağır ölçümler (Whisper WER, senkron) girdinin sha256'sı ajanınkiyle aynıysa örneklemle yapılır (`.claude/agents/hakem.md`). **F9a** (video kapıları) F7 GEÇTİ olunca F8b ile paralel başlar, **F9b** (paket kapıları + karar) F8b'den sonra. Karneyi doldurur. Teslim `hakem-raporu.md`: ONAY veya RED + düzeltme listesi. RED alan iş ilgili ajana döner (bölüm 1'deki döngü), sonra yeniden F9 yapılır.
+`hakem` → bütün kapıları **kendisi yeniden ölçer** (ffprobe, ebur128, `tools/senkron-testi.py`, altyazı hizası, thumbnail küçültme, lisans kaydı, yasal not, Shorts kapısı, YPP politika kapısı, retention kapısı, abone animasyonu sayımı, `earshot timeline --cues` SFX örneklemi). Ucuz ölçümler tam yapılır; ağır ölçümler (Whisper WER, senkron) girdinin sha256'sı ajanınkiyle aynıysa örneklemle yapılır (`.claude/agents/hakem.md`). **F9a** (video kapıları) F7 GEÇTİ olunca F8b ile paralel başlar, **F9b** (paket kapıları + karar) F8b'den sonra. Karneyi doldurur. Teslim `hakem-raporu.md`: ONAY veya RED + düzeltme listesi. RED alan iş ilgili ajana döner (bölüm 1'deki döngü), sonra yeniden F9 yapılır.
 
 ### F10 — Teslim paketi ve Niyazi'ye sunum → DUR
 Koordinatör `teslim/` klasörünü kurar (bkz. bölüm 3), `YAYIN.md`'yi yazar, commit/push eder ve Niyazi'ye **tek sayfa** sunar:
