@@ -1,0 +1,40 @@
+FY2026 gelir 5403.3 gider 7395.8 açık 1992.5 milyar$ | FY2025 gelir 5234.6 gider 7010.0 açık 1775.4
+hane/ay: gelir $5,403 gider $7,396 açık $1,992 | gider/gelir 1.369 -> 5$ başına 6.84$ | açık/gider 26.9%
+  Social Security                      FY26   1667.1  FY25   1580.7  hane $1,667/ay  gelirin 30.9%  gideri 22.5%
+  Medicare                             FY26   1072.6  FY25    996.7  hane $1,073/ay  gelirin 19.9%  gideri 14.5%
+  Health                               FY26   1025.6  FY25    978.9  hane $1,026/ay  gelirin 19.0%  gideri 13.9%
+  Net Interest                         FY26   1051.8  FY25    970.4  hane $1,052/ay  gelirin 19.5%  gideri 14.2%
+  National Defense                     FY26    965.2  FY25    916.6  hane $965/ay  gelirin 17.9%  gideri 13.1%
+  Income Security                      FY26    694.2  FY25    701.6  hane $694/ay  gelirin 12.8%  gideri 9.4%
+  Veterans Benefits and Services       FY26    416.2  FY25    377.2  hane $416/ay  gelirin 7.7%  gideri 5.6%
+  Individual Income Taxes              FY26   2845.5  FY25   2656.0  hane $2,846/ay  gelirin 52.7%  gideri 38.5%
+  Employment and General Retirement    FY26   1754.3  FY25   1685.6  hane $1,754/ay  gelirin 32.5%  gideri 23.7%
+  Corporation Income Taxes             FY26    381.4  FY25    452.1  hane $381/ay  gelirin 7.1%  gideri 5.2%
+  Customs Duties                       FY26    173.2  FY25    194.9  hane $173/ay  gelirin 3.2%  gideri 2.3%
+net faiz/gelir 19.5% (1/5.14); net faiz-savunma 86.6; net faiz YoY 8.4%
+  FY2016 net faiz   240.7 savunma  595.3 gelir  3266.7 faiz/gelir 7.4%
+  FY2017 net faiz   262.8 savunma  600.3 gelir  3314.9 faiz/gelir 7.9%
+  FY2018 net faiz   324.7 savunma  664.7 gelir  3328.7 faiz/gelir 9.8%
+  FY2019 net faiz   375.6 savunma  687.6 gelir  3462.2 faiz/gelir 10.8%
+  FY2020 net faiz   344.7 savunma  726.2 gelir  3420.0 faiz/gelir 10.1%
+  FY2021 net faiz   352.3 savunma  754.8 gelir  4046.0 faiz/gelir 8.7%
+  FY2022 net faiz   475.1 savunma  766.7 gelir  4896.1 faiz/gelir 9.7%
+  FY2023 net faiz   659.2 savunma  820.7 gelir  4439.3 faiz/gelir 14.8%
+  FY2024 net faiz   881.7 savunma  874.0 gelir  4918.7 faiz/gelir 17.9%
+  FY2025 net faiz   970.4 savunma  916.6 gelir  5234.6 faiz/gelir 18.5%
+  FY2026 net faiz  1051.8 savunma  965.2 gelir  5403.3 faiz/gelir 19.5%
+net faiz FY2021->FY2026 x2.99
+borç 30 Eyl 2026: toplam 40.17 T$ halk 32.43 T$ | hane: toplam $482,062 halk $389,100 | borç/yıllık gelir toplam 7.43 halk 6.00 yıl
+son kayıt 2026-10-29: toplam 40.59 halk 32.71
+hane yıllık gelir $64,840
+ort. faiz (Total Marketable): dip ('2022-01-31', 1.424) son ('2026-09-30', 3.518) | 2019-12 ('2019-12-31', 2.36)
+  DGS10 ['2026-10-29', '4.98']
+  DTB3 ['2026-10-29', '4.00']
+  DFEDTARU ['2026-11-01', '4.00']
+  GFDEGDQ188S ['2026-04-01', '121.18773']
+  FYGFGDQ188S ['2026-04-01', '97.36667']
+  A091RC1Q027SBEA ['2026-07-01', '1328.827']
+  GDP ['2026-07-01', '33010.036']
+FY2026 GSYH ~ (Q4'25–Q3'26 SAAR ort.) 32.24 T$ (n=4) | açık/GSYH 6.2%
+OMB 7.1 halk/GSYH zirve 1946 %106.1 ; dip 1974 %23.2 ; 1946 %106.1 ($241.9 mlr) -> 1974 %23.2 ($343.7 mlr); brüt 1946 %118.9 1974 %32.6; 2023 halk %97.2 brüt %122.3
+CPI (Shiller) Ara45->Ara46 18.1% ; Ara46->Ara47 8.8% ; Haz46->Haz74 yıllık 3.50%
