@@ -75,7 +75,7 @@ interest bill works the same way.
 Remember that sentence.
 
 17
-00:00:54,855 --> 00:00:56,793
+00:00:54,855 --> 00:00:56,807
 We'll test it before we leave this table.
 
 18
@@ -130,7 +130,7 @@ These are the monthly checks for retired
 people and people with disabilities.
 
 29
-00:01:31,709 --> 00:01:33,460
+00:01:31,709 --> 00:01:33,947
 About one thousand six
 hundred seventy dollars.
 
@@ -158,7 +158,7 @@ Three envelopes, and
 we've already spent more
 
 35
-00:01:48,940 --> 00:01:50,440
+00:01:48,940 --> 00:01:50,940
 than three thousand seven hundred dollars.
 
 36
@@ -229,7 +229,7 @@ And it buys nothing.
 No road, no check, no ship.
 
 52
-00:02:27,398 --> 00:02:29,776
+00:02:27,398 --> 00:02:29,779
 It's just the price of
 money borrowed in the past.
 
@@ -248,7 +248,7 @@ the courts, and hundreds
 of smaller things.
 
 56
-00:02:39,310 --> 00:02:40,500
+00:02:39,310 --> 00:02:41,167
 About one thousand six hundred dollars.
 
 57
@@ -275,7 +275,7 @@ And that two thousand
 dollars goes on the loan.
 
 62
-00:02:56,127 --> 00:02:57,541
+00:02:56,127 --> 00:02:57,556
 Let's open the loan statement.
 
 63
@@ -336,7 +336,7 @@ Three hundred ninety thousand
 dollars sounds like just a number.
 
 75
-00:03:36,669 --> 00:03:38,415
+00:03:36,669 --> 00:03:38,431
 So let's put it next to the paycheck.
 
 76
@@ -437,7 +437,7 @@ Interest.
 About one thousand fifty dollars.
 
 98
-00:04:36,075 --> 00:04:37,680
+00:04:36,075 --> 00:04:37,694
 Watch what happens when I open it.
 
 99
@@ -505,7 +505,7 @@ A few years ago, this household
 borrowed very cheaply.
 
 113
-00:05:16,050 --> 00:05:17,300
+00:05:16,050 --> 00:05:17,336
 In early twenty twenty-two,
 
 114
@@ -558,7 +558,7 @@ Some last weeks.
 Some last decades.
 
 125
-00:05:47,350 --> 00:05:48,769
+00:05:47,350 --> 00:05:48,874
 They don't come due all at once.
 
 126
@@ -725,7 +725,7 @@ Which one is better is an argument for
 voters, not for a cartoon roommate.
 
 162
-00:07:34,903 --> 00:07:37,242
+00:07:34,903 --> 00:07:37,284
 And here's the difference
 you can see in the data.
 
@@ -750,11 +750,11 @@ By nineteen seventy-four,
 it was under a quarter of it.
 
 167
-00:07:51,599 --> 00:07:52,905
+00:07:51,599 --> 00:07:52,932
 And here's the strange part.
 
 168
-00:07:53,285 --> 00:07:54,664
+00:07:53,285 --> 00:07:54,714
 The debt itself didn't shrink.
 
 169
@@ -771,7 +771,7 @@ faster, and prices rose too.
 The loan stayed.
 
 172
-00:08:01,332 --> 00:08:02,687
+00:08:01,332 --> 00:08:02,713
 The paycheck got much bigger.
 
 173
@@ -812,11 +812,11 @@ It's a possibility, and some
 economists worry about it.
 
 181
-00:08:25,590 --> 00:08:26,791
+00:08:25,590 --> 00:08:26,828
 But there are real brakes.
 
 182
-00:08:27,171 --> 00:08:29,156
+00:08:27,171 --> 00:08:29,171
 The debt is in the country's own currency.
 
 183
@@ -893,15 +893,15 @@ That's a big part of what
 happened after nineteen forty-six.
 
 199
-00:09:15,537 --> 00:09:16,560
+00:09:15,537 --> 00:09:16,585
 The catch is the rate.
 
 200
-00:09:16,940 --> 00:09:18,664
+00:09:16,940 --> 00:09:18,702
 Growth has to beat the interest rate.
 
 201
-00:09:19,044 --> 00:09:22,160
+00:09:19,044 --> 00:09:22,187
 If the rate on the loan is higher
 than the growth of the paycheck,
 
@@ -920,7 +920,7 @@ Raise taxes, cut spending,
 or do some of both.
 
 205
-00:09:32,448 --> 00:09:33,771
+00:09:32,448 --> 00:09:33,877
 Countries have done it before.
 
 206
@@ -1000,7 +1000,7 @@ Which mix comes next isn't
 decided at this table.
 
 223
-00:10:28,272 --> 00:10:29,593
+00:10:28,272 --> 00:10:29,701
 But you can now read the bill.
 
 224
@@ -1017,7 +1017,7 @@ think will do the most work?
 Just one letter in the comments.
 
 227
-00:10:37,979 --> 00:10:40,108
+00:10:37,979 --> 00:10:40,122
 Let's go back to the
 sentence from the start.
 
