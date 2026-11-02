@@ -53,7 +53,8 @@ const DZemin: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
   return (
     <AbsoluteFill>
       <Img src={f("G09.jpg")} style={{ position: "absolute", width: W, height: H, filter: "blur(18px) brightness(0.36) saturate(0.8)", scale: String(1.08 + t * 0.004) }} />
-      {children}
+      {/* sürekli hafif itme: dikeyde de kare donmaz (freezedetect kapısı) */}
+      <AbsoluteFill style={{ scale: String(1 + 0.0035 * t), translate: `0px ${Math.sin(t * 0.9) * 2}px` }}>{children}</AbsoluteFill>
     </AbsoluteFill>
   );
 };

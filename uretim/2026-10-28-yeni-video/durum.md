@@ -23,7 +23,7 @@
 | F4 müzik + SFX adayları | muzik-ses-tasarimcisi | BEKLİYOR | 06-muzik/ | | |
 | F4 paket taslağı | thumbnail-tasarimcisi ‖ youtube-paketleyici | BEKLİYOR | 09-paket/ | | |
 | F5 kritik yol testi | animasyon-yonetmeni | GEÇTİ | 07-animasyon/test-10sn.mp4, senkron-rapor.md | senkron 1 kare (formant, ağız aralıkları), blackdetect/freeze 0, AgizTest a+G05k | 11-02 10:27–11:10 |
-| F5 tüm sahneler + 9:16 | animasyon-yonetmeni | SÜRÜYOR | 07-animasyon/, 06-muzik/animasyon-efekt-cue.json (253 olay, abone k5266/k9152/k19878) | tam render sürüyor | 11-02 10:27– |
+| F5 tüm sahneler + 9:16 | animasyon-yonetmeni | GEÇTİ | 07-animasyon/tam-16x9.mp4 (sha 380b3ba073b0), dikey/, 06-muzik/animasyon-efekt-cue.json (261 olay; abone k5266/k9152/k19878) | senkron 1 kare (40 aralık), siyah/donma 0, kadans 3,23 sn ort. (2 boşluk >10 sn hareketli sahne), dikey siyah/donma 0 | 11-02 10:27–14:40 |
 | F6 miks | muzik-ses-tasarimcisi | BEKLİYOR | 06-muzik/stems/ | | |
 | F7 kurgu | kurgu-editoru | BEKLİYOR | 08-kurgu/ | | |
 | F8 paket | thumbnail ‖ paketleyici ‖ viralite → monetizasyon | BEKLİYOR | 09-paket/ | | |
