@@ -1,32 +1,28 @@
 # uretim-muhendisi — hafıza
 
 ## Kurallar
-- Her araç değişikliğinden sonra örnek girdiyle çalıştır, ayrıca BOZUK girdiyle de çalıştır (kayık zaman, eksik kelime, uzun yol): kapı araçları kalması gerekeni kaldırmalı.
-- Kurulum testi kısa bir yolda (`ARAC_DIZINI=/root/ktN`) yapılır, sonra silinir; ikinci çalıştırma ≤ 2 sn olmalı (idempotent).
-- Süre ölçerken `uptime`/`ps` ile paralel yükü kaydet; sonuçları aralık olarak ver (boşta / yük altında).
+- Her araç değişikliğinden sonra örnek girdiyle VE bozuk/kenar girdiyle çalıştır (kayık zaman, eksik kelime, uzun yol, 2 karelik render): "çalışıyor" ≠ "doğru ölçüyor".
+- Kurulum testi kısa yolda (`ARAC_DIZINI=/root/ktN`) yapılır, sonra silinir; ikinci çalıştırma ≤ 2 sn (idempotent). Kurulu kontrolü python import değil damga + dosya testi.
+- Süre ölçerken `uptime` ile paralel yükü kaydet; aralık ver (boşta / yük altında). Ağır ölçümden önce paralel ajanın ≥2 dk boşta kalmasını bekle.
+- Eşzamanlılık = nproc varsayma; bu VM'de 2 iş parçacığı doyuyor (Whisper 2, render 2×c2, Rhubarb 2×2, TTS 2 süreç).
+- Paylaşılan fonksiyonu değiştirirken eski davranışı adlı sürüm olarak tut (`norm_eski`), kilitli betiği ona bağla, `cmp` ile kanıtla.
+- Kapı araçlarında çıkış kodu 2 = kullanım hatası (KALDI=1 ile karışmasın). `while read` içindeki komutlara `</dev/null`; pkill -f yerine PID.
+- Scratch'te geliştir; commit öncesi `git status`/`git show --stat HEAD` (paralel ajan ara kaydı yarım dosyayı süpürebilir).
+- Yeniden üretim tarifini temiz worktree + boş önbellekte uçtan uca koşmadan "hazır" deme. Uzun arka plan işinde timeout 7200000.
+
+## Ortam gerçekleri
+- Rhubarb kaynak koddan; CMake 3.28'de CMP0167 `if(POLICY)` ile koşullu. Render tarayıcısı `/opt/pw-browsers/chromium_headless_shell-*`; fontlar yerel.
+- Real-ESRGAN x4: HF `ai-forever/Real-ESRGAN` + spandrel; parçalı çıkarım (256+16) tepe 1,4 GB. espeak-ng yolu ~160 karakterde kırılır → kısa ARAC.
+- YouTube cihaz akışı yalnız `youtube` kapsamı → captions.insert çalışmaz (Studio veya `--akis yerel`). developers.google.com için curl `?hl=en`.
+- urllib HTTPS_PROXY'ye uyar; yerel sahte sunucu testinde `no_proxy=127.0.0.1` opener'dan ÖNCE.
+- Soğuk sayfa önbelleği ilk çağrıları 4–40x yavaşlatır (Whisper medium 136 sn) → "araç başarısız" raporunda önce zaman aşımını ele; ilk çağrıda ≥3 dk.
+- Chromium blur'lu render, Kokoro, Rhubarb deterministik değil → parça önbelleğinde toleranslı iz; yeniden üretim kaynağı git'teki m4a.
+- Render ~8–10 kare/sn; `--gl=swangle` 4,7x yavaş. Ses-only render da kareleri dolaşır → hazır miks varsa `--ses`.
 
 ## Dersler
-- 2026-10-26 (devralınan): Rhubarb kaynak koddan derleniyor; CMake 3.28'de `cmake_policy(SET CMP0167 OLD)` hata verir → `if(POLICY CMP0167)` ile koşullu (`tools/kurulum.sh`).
-- 2026-10-26: Render tarayıcısı `/opt/pw-browsers/chromium_headless_shell-*` (Playwright); Google Fonts sertifikası güvenilmiyor → fontlar yerel.
-- 2026-10-26: Real-ESRGAN x4 ağırlığı HF `ai-forever/Real-ESRGAN`'dan, spandrel ile yükleniyor (trust_remote_code yok).
-- 2026-10-26 (yayın aracı): Google cihaz akışı YouTube için yalnız `youtube`/`youtube.readonly` kapsamı verir → videos.insert/thumbnails.set/playlistItems.insert çalışır, captions.insert (force-ssl) ÇALIŞMAZ. Altyazı: Studio veya `--akis yerel` (masaüstü istemci + PKCE loopback).
-- 2026-10-26: videos.insert sayfası (2026-10-15) "unverified projects are not restricted to private" diyor; 2020 kilit duyurusu revision_history'de duruyor, geri alma notu yok → resmi kaynaklar çelişirse tek test yüklemesiyle ölç, iki yolu da (API + manuel paket) hazır tut.
-- 2026-10-26: developers.google.com WebFetch'te DNS hatası veriyor; `curl -sL ...?hl=en` + stdlib HTML→metin ile okunuyor. Konsol URL'leri giriş yönlendirmesi verdiği için doğrulanamaz → support.google.com/cloud yardım sayfalarındaki linklerden doğrula.
-- 2026-10-26: Ağ protokol kodunu (resumable 308/503 devam) yerel sahte HTTP sunucusuyla test et; urllib için `no_proxy=127.0.0.1` opener kurulmadan ÖNCE ayarlanmalı. Stdlib urllib HTTPS_PROXY'ye uyuyor (erişim testi 6/6).
-- 2026-10-26 (hat testi): Kokoro kurulum.sh'a eklendi (py3.12 venv, kokoro/misaki 0.9.4, en_core_web_sm önceden). Sıfırdan kurulum 231–237 sn, ikinci çalıştırma 1,7 sn (`npm ci` damgası + `find_spec`; import kontrolü 12 sn yiyordu).
-- 2026-10-26: espeak-ng veri yolu ~160 karakterde kesiliyor → uzun ARAC_DIZINI'nde Kokoro "phontab" hatası. Sembolik bağ çözmez (Python gerçek yolu kullanıyor). Kurulum uzun yolu reddediyor.
-- 2026-10-26: Real-ESRGAN tek parça bellek ~9,4 KB/piksel → tam kare OOM; parçalı çıkarım (256 + 16 pay) tepe 1,4 GB, dikiş farkı ort. 0,18/255.
-- 2026-10-26: Render ~8–10 kare/sn; concurrency 2→4 yalnız %8; `--gl=swangle` 4,7x yavaş; 6 > nproc reddedilir. Parça render (sıralı + önbellek) PSNR 51,9 dB, ses kayması 0 ms; Remotion ses-only render'ı da kareleri dolaşıyor (~50 kare/sn) → hazır miks varsa `--ses`.
-- 2026-10-26: Gizli kapı hataları bulundu: senkron-testi kare sayısı (sr//fps yuvarlaması → NaN), hata-orani sayı normalizasyonu yok (sahte WER), miks.py varsayılanları karardan farklı (35,7 dB) ve /tmp sızıntısı. Ders: "çalışıyor" ≠ "doğru ölçüyor"; kapı araçlarını bilinen-kötü girdiyle sına.
-- 2026-10-27 (F0 secim): Yeni açılan konteynerde sayfa önbelleği soğuk → ilk çağrılar 4–40 kat yavaş (Whisper small 44 sn→3,4; medium 136 sn; Kokoro 88→11 sn; compositions 25 sn). "Araç başarısız" raporu gelince önce soğuk yükleme/zaman aşımını ele; çağıranlara ilk çağrıda ≥3 dk zaman aşımı söyle.
-- 2026-10-27: `yaziya-dok.py` sessiz hata veriyordu → önce `local_files_only=True` (ağ beklemesi yok), açık hata mesajları, düşük güven (<0,3) halüsinasyon uyarısı (sessizlikte "You", p 0,11).
-- 2026-10-27: `render-son.sh` 0,4 sn'den kısa/sessiz render'da loudnorm `-inf` ile düşüyordu (F0'ın 2 karelik test render'ı tam bu durum). Ölçülemezse normalizasyon atlanıp uyarı veriliyor. Ders: kapı testinin kendisini (2 kare) dün tam hat testinde de koşmalıydım — kenar girdisi = gerçek kullanım.
-- 2026-10-27 (küçük araç işleri, 1929 F5): Ortak normalizasyonu değiştirmek onu içe aktaran kilitli video betiğinin çıktısını sessizce değiştirir (eski `04-ses/hizala.py` ho.norm ile 4 kelimenin zamanı oynadı). Kural: paylaşılan fonksiyonu değiştirirken eski davranışı adlı sürüm olarak tut (`norm_eski`), eski betiği ona bağla, bayt karşılaştırmasıyla kanıtla (`cmp`). WER için bağlam kuralları (`kanonik`) ayrı katman; hizalayıcılar kelime kelime çağırdığı için `norm_alt` kullanır.
-- 2026-10-27: senkron-testi aralık modu: kesmek yerine tek seste maske + aralık başına z-normalize (kayma aralık dışına taşabilir); seçenek yokken eski corrcoef ile 1e-6'ya kadar aynı (rms float32). Animasyon-yonetmeninin ayrı JSON ile ölçtüğü −1 kare/0,46 birebir çıktı → yeni ölçümü eski elle ölçümle çapraz doğrula. Kapı araçlarında çıkış kodu 2 = kullanım hatası (KALDI=1 ile karışmasın).
-- 2026-10-27: Paralel ajan "ara kayıt" commit'i benim yarım dosyalarımı süpürebilir → işi bitirmeden önce `git status`/`git show --stat HEAD` ile kontrol et; testler bitmeden dosyayı kalıcı yere yazma (scratch'te geliştir).
-- 2026-10-28 (ortam optimizasyonu): Chromium blur'lu sahnelerde render deterministik değil (aynı kare 2 render'da ≤40/255, >48 farklı piksel 0) → parça önbelleğinde MD5 değil toleranslı iz (1/4 ölçek, her 6. kare, >48 farklı piksel ≥8 = değişti). Ince 1,07x punch-in 32k piksel, tek rakam değişikliği de yakalandı. Kokoro TTS ve Rhubarb da deterministik değil (Rhubarb ≤%2 kare) → yeniden üretim kaynağı git'teki m4a, TTS değil.
-- 2026-10-28: Bu VM'de 2 iş parçacığı doyuyor: Whisper cpu_threads 2 > 4 (22 vs 29 sn), render 2×c2 > 1×c4 (−%7; Pilot 3 parça −%22), Rhubarb 2 sahne×2 iş parçacığı −%34, TTS 2 süreç −%12. Varsayılanlar buna göre. "Eşzamanlılık = nproc" varsayımını her araçta ölç.
-- 2026-10-28: Kurulum v2 (uv + paralel iş + sabit sürüm tools/gereksinim) temiz önbellekte 407 → 111 sn; kritik yol Rhubarb derlemesi. SessionStart kancası (.claude/hooks/oturum-baslat.sh) bulut konteyner önbelleğine kurulu araçları sokar.
-- 2026-10-28: `while read` döngüsünde çalışan komut (ffmpeg) stdin'i yutup sonraki satırları yiyor → döngü içi komutlara `</dev/null`. pkill -f deseni kendi kabuğunu öldürebilir (exit 144) → PID ile öldür.
-- 2026-10-28: Paralel ajanın render'ı "boşta" görünse de adımlar arası boşluk olabilir → ağır ölçümden önce onun commit'ini (F7b) ve ≥2 dk boşta kalmayı bekle; benim bench'im onların Shorts render'ıyla çakıştı, durdurup yeniden koştum.
-- 2026-10-28: Yeniden üretim tarifini TEMİZ çalışma ağacında (git worktree + boş PARCA_DIZINI) uçtan uca koşmadan "hazır" deme: ilk koşu 2 gizli hata buldu (stdin yutma, git dışı müzik kaynağı). Sonuç Shorts bit-aynı, final PSNR 68,8 dB. Arka plan komutu varsayılan 30 dk'da öldürülür → uzun render'da timeout 7200000 ver; yarıda kalan parça önbelleği sayesinde kayıp yok.
+- 2026-10-27: render-son.sh kısa/sessiz render'da loudnorm `-inf` → ölçülemezse atla + uyarı. yaziya-dok `local_files_only=True` + düşük güven uyarısı.
+- 2026-10-27: senkron-testi aralık modu (tek ses maske + aralık başına z-normalize); yeni ölçümü eski elle ölçümle çapraz doğrula.
+- 2026-10-28: Kurulum v2 (uv + paralel + tools/gereksinim sabit sürüm) temiz önbellekte 407 → 111 sn; SessionStart kancası kurar, bulut önbelleğe alır.
+- 2026-10-28: Yeniden üretim tarifi temiz worktree'de 2 gizli hata buldu (stdin yutma, git dışı müzik); Shorts bit-aynı, final PSNR 68,8 dB.
+- 2026-11-02 (earshot): Seyrek kullanılan ağır araç (2,5 GB) → senkron değil ayrık arka plan işi (`setsid nohup`, flock, damga en son) + sarmalayıcı (`tools/earshot`) ilk kullanımda bekler/kurar. Ölçüm: kurulum.sh dönüşü 0,9 sn; temiz kurulum 19 sn (sıcak uv), soğuk uv venv 34 sn + model ~16 sn; kurulu 0,2 sn.
+- 2026-11-02: Disk %85 (6 GB boş) → büyük kurulumlara boş alan eşiği (earshot 4 GB, `ES_MIN_GB`), aşılırsa atla + uyarı, ana kurulumu düşürme. Temiz testte taşınan kopyaları diff'le doğrulayıp sil.

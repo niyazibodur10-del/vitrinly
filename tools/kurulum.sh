@@ -19,6 +19,14 @@
 #   (.claude/hooks/oturum-baslat.sh) kurulumu oturum başında yapar, bulut konteyner durumu kancadan sonra önbelleğe alınır.
 #   Sürüm güncelleme: venv'de yükselt + test et → `pip freeze` ile tools/gereksinim/*.txt yenile (torch satırları hariç).
 # Ölçüm (2026-10-26, 4 vCPU): ikinci çalıştırma ~2 sn; sıfırdan kurulum için docs/uretim-hatti-testi.md.
+# earshot (2026-11-02; ses kanıtı: SFX senkron/ölçüm/üretim, .claude/skills/earshot): ayrı earshot-venv (py3.13) + CLAP/AST modelleri
+#   (~1,5 GB venv [çoğu torch, uv önbelleğiyle hardlink] + ~1,1 GB model, EARSHOT_HOME=~/.cache/earshot). Sürüm commit'e sabit
+#   (ES_COMMIT + tools/gereksinim/earshot.txt), modeller earshot'un kendi sabit HF revizyonları (safetensors). [llm]/[mcp] extra yok.
+#   Kip: ARKA PLAN + TEMBEL (SEÇİLDİ) — kurulum.sh eksikse `--earshot`ı ayrık arka plan işi olarak başlatır (nice, flock), oturumu
+#   bekletmez; ilk kullanımda tools/earshot sarmalayıcısı kurulum bitmemişse kilitte bekler/kendisi kurar. Kurulu kontrol = damga +
+#   2 dosya testi (python yok, ~0 sn). Elenen: A) senkron paralel iş (temiz kurulumda oturum açılışını ölçülen süre kadar uzatır,
+#   earshot yalnız F6b/F7/F9'da gerekir); C) yalnız tembel (ilk F6b çağrısı tam kurulumu bekler). Ölçüm: hafıza 2026-11-02.
+#   Disk payı: boş alan < 4 GB ise earshot atlanır (UYARI), ana araçlar etkilenmez. Sonra EARSHOT_OFFLINE=1 (sarmalayıcı + kanca).
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"; ARAC="${ARAC_DIZINI:-$HOME/.finansal-arac}"; mkdir -p "$ARAC"; ARAC="$(cd "$ARAC" && pwd -P)"
 adim(){ echo "[kurulum $(date +%T)] $*"; }
@@ -33,6 +41,30 @@ pk(){ local py="$1"; shift; if [ -n "$UV" ]; then "$UV" pip install -q --python 
 mkvenv(){ local pyv="$1" hedef="$2"; if [ -n "$UV" ]; then "$UV" venv -q --seed --allow-existing --python "$pyv" "$hedef"; else "$pyv" -m venv "$hedef"; fi; }
 TORCH_SURUM="2.14.1+cpu"; TORCHVISION_SURUM="0.29.1+cpu"; TORCH_IDX="https://download.pytorch.org/whl/cpu"
 GER="$ROOT/tools/gereksinim"
+# --- earshot (bkz. başlık) ---
+ES_COMMIT="591fa3e028032e6dce56620a20e932e35667e8d8"; ES_VENV="$ARAC/earshot-venv"; ES_HOME="${EARSHOT_HOME:-$HOME/.cache/earshot}"
+ES_DAMGA="$ES_VENV/.kurulum-damga"; ES_IMZA="$ES_COMMIT $(sha256sum "$GER/earshot.txt" | cut -c1-12) $TORCH_SURUM"
+ES_M1="$ES_HOME/hf/models--laion--larger_clap_general/snapshots/16c8cc3159a3c8a31e8ff5ef1f66b0d9ab3667db/model.safetensors"
+ES_M2="$ES_HOME/hf/models--MIT--ast-finetuned-audioset-10-10-0.4593/snapshots/f826b80d28226b62986cc218e5cec390b1096902/model.safetensors"
+ES_MIN_KB=$(( ${ES_MIN_GB:-4}*1024*1024 ))   # test için ES_MIN_GB ile değiştirilebilir
+earshot_tamam(){ [ "$(cat "$ES_DAMGA" 2>/dev/null)" = "$ES_IMZA" ] && [ -s "$ES_M1" ] && [ -s "$ES_M2" ]; }
+earshot_kur(){
+  local bos; bos=$(df --output=avail -k "$ARAC" | tail -1)
+  [ "$bos" -ge "$ES_MIN_KB" ] || { echo "UYARI: earshot atlandı — boş disk $((bos/1024)) MB < $((ES_MIN_KB/1024)) MB (tools/disk-durum.sh)" >&2; return 3; }
+  if [ "$(cat "$ES_DAMGA" 2>/dev/null)" != "$ES_IMZA" ]; then
+    rm -f "$ES_DAMGA"; mkvenv python3 "$ES_VENV"
+    pk "$ES_VENV/bin/python" --index-url "$TORCH_IDX" "torch==$TORCH_SURUM"
+    pk "$ES_VENV/bin/python" -r "$GER/earshot.txt"
+    echo "$ES_IMZA" > "$ES_DAMGA"   # en son: yarım kurulum damgasız kalır → sonraki çalıştırma onarır
+  fi
+  { [ -s "$ES_M1" ] && [ -s "$ES_M2" ]; } || EARSHOT_HOME="$ES_HOME" nice -n 10 "$ES_VENV/bin/earshot" doctor --fetch >/dev/null
+  earshot_tamam
+}
+if [ "${1:-}" = "--earshot" ]; then   # yalnız earshot, senkron (arka plan işi ve tools/earshot bunu çağırır)
+  exec 9>"$ARAC/earshot.kilit"; flock 9
+  earshot_tamam && exit 0
+  s=$(date +%s); earshot_kur; adim "earshot kuruldu ($(( $(date +%s) - s )) sn)"; exit 0
+fi
 # apt (yalnız eksikse; temel imajda cmake/g++/boost/python3.12 var). Paralel işlerden ÖNCE: apt kilidi çakışmasın.
 EKSIK=(); command -v cmake >/dev/null || EKSIK+=(cmake); command -v g++ >/dev/null || EKSIK+=(g++); dpkg -s libboost-dev >/dev/null 2>&1 || EKSIK+=(libboost-dev)
 { command -v python3.12 >/dev/null && python3.12 -c "import ensurepip" 2>/dev/null; } || EKSIK+=(python3.12 python3.12-venv)
@@ -89,7 +121,15 @@ for i in "${!PIDLER[@]}"; do
   else HATA=1; echo "HATA: ${ISLER[$i]} başarısız — son satırlar ($LOG/${ISLER[$i]}.log):" >&2; tail -25 "$LOG/${ISLER[$i]}.log" >&2; fi
 done
 [ "$HATA" = 0 ] || exit 1
+# earshot: kuruluysa ~0 sn; değilse ayrık arka plan işi (oturumu bekletmez). EARSHOT_KUR=hayir ile kapatılır.
+if earshot_tamam; then ES_DURUM="hazır"
+elif [ "${EARSHOT_KUR:-arka}" = hayir ]; then ES_DURUM="kurulu değil (EARSHOT_KUR=hayir)"
+else
+  setsid nohup nice -n 10 "$0" --earshot >"$LOG/earshot.log" 2>&1 </dev/null & disown || true
+  ES_DURUM="arka planda kuruluyor (log $LOG/earshot.log; tools/earshot bitmesini bekler)"
+fi
 [ ${#ISLER[@]} -eq 0 ] || adim "kurulan: ${ISLER[*]} — toplam $(( $(date +%s) - T0 )) sn"
 ls -d /opt/pw-browsers/chromium_headless_shell-*/chrome-headless-shell-linux64/chrome-headless-shell >/dev/null 2>&1 \
   || echo "UYARI: render tarayıcısı (/opt/pw-browsers/chromium_headless_shell-*) yok → tools/render-son.sh çalışmaz" >&2
 echo "Hazır: RHUBARB=$ARAC/rhubarb/build/rhubarb/rhubarb  PY=$ARAC/venv/bin/python  TTS_PY=$ARAC/kokoro-venv/bin/python  ESRGAN=$ARAC/RealESRGAN_x4.pth"
+echo "earshot: $ES_DURUM — çağrı: tools/earshot <komut> (EARSHOT_OFFLINE=1)"

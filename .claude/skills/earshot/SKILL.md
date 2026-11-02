@@ -9,15 +9,12 @@ Kaynak: https://github.com/Leonxlnx/earshot — Leon Lin, **MIT lisansı**, sabi
 Banka sesleri kodla sentez; `fit/*` sesleri CC0 Freesound kayıtlarının ölçülmüş yapısı (örnek içermez, `docs/CREDITS_FIT.md`).
 Lisans kaydına satır: `earshot sfx <id> — kendi üretim (MIT kod, Leon Lin; CC0 türev) — atıf gerekmez`.
 
-## Kurulum (repo dışı, ~1,4 GB; sahibi uretim-muhendisi)
-```bash
-E=~/.finansal-arac/earshot-venv
-uv venv -q --seed --python python3 $E
-uv pip install -q --python $E/bin/python --index-url https://download.pytorch.org/whl/cpu "torch==2.14.1+cpu"
-uv pip install -q --python $E/bin/python "git+https://github.com/Leonxlnx/earshot.git@591fa3e"
-$E/bin/earshot doctor --fetch      # CLAP + AST modelleri bir kez (HF, sabit revizyon, safetensors); sonra:
-export EARSHOT_OFFLINE=1           # çalışırken asla indirme yapmaz
-```
+## Kurulum (repo dışı, ~1,4 GB venv + ~1,1 GB model; sahibi uretim-muhendisi)
+`tools/kurulum.sh` kurar (sürüm `tools/gereksinim/earshot.txt`, commit `591fa3e0…`; [llm]/[mcp] extra yok). Oturum açılışında
+eksikse ayrık arka plan işi olarak kurulur (temiz: ~20 sn, soğuk uv önbelleği ~50 sn); kuruluysa ~0 sn.
+**Her zaman sarmalayıcıyla çağır:** `tools/earshot <komut>` (kurulum bitmediyse bekler/kurar, `EARSHOT_OFFLINE=1` verir).
+Python API: `EARSHOT_OFFLINE=1 ~/.finansal-arac/earshot-venv/bin/python betik.py` (önce bir kez `tools/earshot doctor`).
+Aşağıdaki tabloda `earshot` = `tools/earshot`.
 
 ## Güvenlik (ik-direktoru denetimi 2026-11-02)
 - Ağ: yalnız `doctor --fetch` (Hugging Face, sabit commit, safetensors). Pickle yüklemez.

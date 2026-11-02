@@ -34,6 +34,7 @@ Video klasöründe kalan kapı betikleri (1929 videosu, `uretim/2026-10-26-1929-
 - Kokoro (espeak-ng) uzun kurulum yolunda kırılır (~160 karakter) → araçlar `~/.finansal-arac` altında.
 - `render-parca.sh`: son muxta `-t <görüntü süresi>` kullanılır (eski `-shortest` son 4 kareyi kesiyordu, düzeltildi). Kurgu katmanı vurgusuz karelerde sahne kompozisyonuyla piksel-aynı → parça önbelleği hardlink'le yeniden kullanılır, yalnız değişen parça render edilir (final 4 dk).
 - Whisper ilk model yüklemesi yavaş (small 44 sn, medium 136 sn); aynı sese ±2 kelime oynar → tek sayıya değil tekrar eden hatalara bak. Aynı model/ayarla Whisper deterministik (hakem JSON'u kurgu-editoru'nunkiyle bayt bayt aynı çıktı) → aynı sha256'lı dosyada tam yeniden koşu gereksiz.
+- earshot: daima `tools/earshot <komut>` (venv/bin/earshot değil): oturum açılışında arka planda kurulur, bitmediyse sarmalayıcı bekler, `EARSHOT_OFFLINE=1` verir. Python API: `EARSHOT_OFFLINE=1 ~/.finansal-arac/earshot-venv/bin/python`.
 
 ## Ses ve altyazı
 - Anlatıcı her zaman karar verilen ses: Kokoro `am_fenrir` 0.9 (~153 Hz). Render öncesi `video/public/*-ses.wav` kaynağı kontrol edilir (pilot v1 yanlış sesle render edilmişti).
