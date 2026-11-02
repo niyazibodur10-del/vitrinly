@@ -15,3 +15,5 @@
 ## Dersler
 - 2026-10-27: Yürüyüş tek poz + zıplama (2 adım/sn, |sin| 9 px, ±1,4°, %1,2 squash, varışta 0,2 sn oturma) okunur; poz değiştirerek adım kayma yapar. Aynalama yok (saat bileği).
 - 2026-10-26: Tek görselden kol/el hareketi olmaz → jest pozları ayrı parça; düşük çözünürlüklü büyütülmüş kaynakla yakın plan yapma (≥2048 px).
+- 2026-11-02 (S08 KButce): **Tek kaynak `zaman.ts`** (saf TS; sahne kodu + `olay-cikar.mjs` esbuild ile cue/ağız aralığı üretir) — 3 ayrı formül (sahne/agiz-gorunur/efekt-cue) yerine; `yap()` kesme sırası denetimi + `"five|$5"` alternatif çapa. Ses gelmeden ham TTS cümle zamanıyla tüm çapalar doğrulandı.
+- 2026-11-02: Tek Leo düzenleme görseli (G05) kraft piksel tonuyla (H 24–46°, ten hariç) iki renge boyanınca matruşka konuşan yakın planda çözüldü; yeni Canva hakkı gerekmedi. Plaka yazıları yakın planda kadraj dışına taşar → yazılar ekran uzayında.
