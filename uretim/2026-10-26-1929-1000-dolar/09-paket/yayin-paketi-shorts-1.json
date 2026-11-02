@@ -33,7 +33,8 @@
   },
   "oynatma_listesi_id": null,
   "onay": {
-    "niyazi_onayi": false,
-    "tarih": null
+    "niyazi_onayi": true,
+    "tarih": "2026-11-02",
+    "not": "Niyazi: 'Yayınlansın' (2026-11-02, Shorts 2 ve 3 Kasım 17:00 TRT)"
   }
 }

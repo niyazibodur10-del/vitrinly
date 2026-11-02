@@ -45,3 +45,4 @@
 - Oynatma listesi "The Collapse: Financial History Explained" açıldı, video eklendi.
 - Niyazi'ye kalan Studio adımları (YAYIN.md): SRT yükleme, Test & Compare (yayından sonra A2/B1/D1), uç ekran, pinli yorum.
 - Shorts 1/2: planlı 2 ve 3 Kasım; ayrı onay bekliyor.
+- 2026-11-02: Shorts yüklendi (Niyazi "Yayınlansın"): Shorts 1 QFC8GdDTW2c → 2026-11-02 14:00 UTC; Shorts 2 6LQGcQg4hpk → 2026-11-03 14:00 UTC; "Money Stories in 60 Seconds | Shorts" listesi açıldı, ikisi eklendi. Uzun video 2026-11-02 itibarıyla public, 203 izlenme.
