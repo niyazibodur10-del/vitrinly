@@ -28,3 +28,11 @@ Tuval DAHZHv3mU9w sayfa 33–37. Canva üretimi: 5/12.
 | G09 | MAHZvMymAec (9:16) |
 | G10 | MAHZvA-105k |
 Tuval sayfa 38–42. Canva üretimi: 10/12.
+
+### Dalga 2 kararları (gorsel-varlik-sanatcisi, 2026-11-02)
+| G06 | 1 | MAHZvLOQlb0 | 2026-11-02 | canva-ham/G06.png | **KABUL** — orta alan boş (Canny 0,0), düzlük 63,7 |
+| G07 | 1 | MAHZvCwqpdM | 2026-11-02 | canva-ham/G07.png | **KABUL** — 5 nesne M4 artık ≤0,002, saçak 0 → nesne/G07-*.png |
+| G08 | 1 | MAHZvBUz8-A | 2026-11-02 | canva-ham/G08.png | **RED** — kafa kor. 0,76; kafa öne eğik, yüz uzamış (gözler aşağı) → tekrar G08b |
+| G09 | 1 | MAHZvMymAec | 2026-11-02 | canva-ham/G09.png | **KABUL** — 1080x1920, masa üstü %59,9, G01 ile aynı mutfak |
+| G10 | 1 | MAHZvA-105k | 2026-11-02 | canva-ham/G10.png | **KABUL** — 5 boş not (≈195x197 px), magnet işaretsiz |
+Canva üretim toplamı: 10 / tavan 12 (kabul 7, aday elendi 1, red 2).
