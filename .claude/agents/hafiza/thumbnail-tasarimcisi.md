@@ -17,3 +17,8 @@
 - Ölçülebilir okunurluk: 168x94 → x4 büyüt → tesseract (normal + ters çevrilmiş gri, psm 11); tam boyuttaki OCR'ı taban al (araç sınırı: sağa yaslı yığın metinde tam boyutta da kaçırıyor). `09-paket/thumbnail/thumb-test.py` yeniden kullanılabilir.
 - Metin ↔ zemin kontrastını p5 (en kötü %5) ile ölç: zincir/kilit gibi kod grafikleri metne değince p5 1,1'e düştü; grafiği metnin altına al (yine aynı ders, ikinci kez — üretimden önce metin kutusunu yasak bölge yap).
 - Anlam tutarlılığı: "EVERY DOOR LOCKED" derken görünen her kapı kilitli olmalı (ilk sürümde kahve kapı açıktı). Gerçek ama alarm dili ("EVERY BANK CLOSED") yerine videonun kendi bölüm/oyun dili seçildi. Çapa verisiyle çizilen grafik küçükte üçgen okunuyor → veri grafiği thumbnail'ın kahramanı olmaz. Rakip thumbnail'ları ve onları içeren ızgaralar repo dışında tutulur.
+
+### 2026-11-02 — S08 bütçe thumbnail (F8, A1 −$2,000 / C1 faiz>ordu / B1 hesap makinesi)
+- Siyah gömlekli Leo açık/doygun zeminde (sıcak masa, camgöbeği, mercan) kendiliğinden siluet verir; koyu zeminde kaybolur. Zemin rengini önce seç, koyu lacivert yalnız gerekçeyle. Açık zeminde yazı: koyu dolgu + beyaz kontur veya levha (p5 5–17).
+- Sahne plakasını thumbnail'a alırken metin bölgesindeki nesneleri (kupa, lamba) kadraj dışına at (ölçek+kırpım), sonra metin arkasına sıcak ışık; p5 1,08 → 5,3.
+- OCR psm 11 levhalı/karakterli karede metni kaçırıyor → `thumb-test.py` v2 (bölge OCR + "$→S"); bir sonraki sürüme satır kırpımı psm 7 ekle. Boyut kıyası gerçek oranı abartıyorsa (faiz/ordu %9) kullanma; tek nesne + metin.

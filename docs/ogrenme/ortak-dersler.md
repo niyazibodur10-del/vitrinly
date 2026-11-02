@@ -75,3 +75,4 @@ Video klasöründe kalan kapı betikleri (1929 videosu, `uretim/2026-10-26-1929-
 ## Görsel ve thumbnail
 - Pillow: `Fredoka-700.woff2` değişken yazı tipi → `font.set_variation_by_axes([700])`; woff2 doğrudan açılır; Fredoka'da "ş" yok (Türkçe etikette DejaVuSans-Bold). RGBA'ya yarı saydam çizim ayrı katmana + `alpha_composite`. Kontur `cv2.dilate` + elips çekirdek.
 - Banner güvenli alanı 2048x1152'de 1235x338 (answer/10456525); profil 98x98 görünür. Kanal görselleri `tools/gorsel/kanal-gorselleri.py --ad`.
+- Thumbnail hazır betikleri (v2, 2026-11-02): `uretim/2026-10-28-yeni-video/09-paket/thumbnail/thumb-uret.py` (levha, LCD, kafa değişimi, p5 ölçümü) + `thumb-test.py` (168x94 bölge OCR, rakip benzerliği). Leo bel üstü kesikleri (1929 `leo/` a, d, C13, C14 + G05) kafa satırları ±5 px → kafa değişimi serbest; c-isaret +50 px kayık.

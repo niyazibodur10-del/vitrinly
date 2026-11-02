@@ -1,0 +1,107 @@
+{
+ "A2": {
+  "beklenen": [
+   "ALWAYS",
+   "2",
+   "000",
+   "SHORT"
+  ],
+  "tam_1280": {
+   "bulunan": [
+    "ALWAYS",
+    "2",
+    "000",
+    "SHORT"
+   ],
+   "oran": 1.0,
+   "ham": "2 000 ALWAYS SHORT"
+  },
+  "mobil_168": {
+   "bulunan": [
+    "ALWAYS",
+    "2",
+    "000",
+    "SHORT"
+   ],
+   "oran": 1.0,
+   "ham": "2 000 ALWAYS ARY SHORT"
+  },
+  "mobil_168_bolge": {
+   "bulunan": [
+    "ALWAYS",
+    "SHORT"
+   ],
+   "oran": 0.5,
+   "ham": "ALWAYS SHORT ALWAYS SHORT"
+  },
+  "mobil_korunan": 1.0
+ },
+ "B2": {
+  "beklenen": [
+   "SHORT",
+   "AGAIN",
+   "2",
+   "000"
+  ],
+  "tam_1280": {
+   "bulunan": [
+    "SHORT",
+    "AGAIN",
+    "2",
+    "000"
+   ],
+   "oran": 1.0,
+   "ham": "SHORT AGAIN SAAS IE GF 2 000 SEAAS EE EEE"
+  },
+  "mobil_168": {
+   "bulunan": [
+    "SHORT",
+    "AGAIN"
+   ],
+   "oran": 0.5,
+   "ham": "SHORT AGAIN SEAS MII WI SHORT AGAIN AN BSEB8"
+  },
+  "mobil_168_bolge": {
+   "bulunan": [
+    "SHORT",
+    "AGAIN",
+    "2",
+    "000"
+   ],
+   "oran": 1.0,
+   "ham": "SHORT AGAIN 2 000 1 SHORT AGAIN 2 000"
+  },
+  "mobil_korunan": 0.5
+ },
+ "C2": {
+  "beklenen": [
+   "INTEREST",
+   "MILITARY"
+  ],
+  "tam_1280": {
+   "bulunan": [
+    "INTEREST",
+    "MILITARY"
+   ],
+   "oran": 1.0,
+   "ham": "INTEREST MILITARY A IO BIGD V FE INTEREST MILITARY EE"
+  },
+  "mobil_168": {
+   "bulunan": [
+    "INTEREST",
+    "MILITARY"
+   ],
+   "oran": 1.0,
+   "ham": "INTEREST MILITARY VU NOY INTEREST MILITARY AN"
+  },
+  "mobil_168_bolge": {
+   "bulunan": [
+    "INTEREST",
+    "MILITARY"
+   ],
+   "oran": 1.0,
+   "ham": "INTEREST MILITARY"
+  },
+  "mobil_korunan": 1.0
+ }
+}

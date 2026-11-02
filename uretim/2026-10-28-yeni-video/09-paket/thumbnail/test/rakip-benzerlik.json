@@ -1,0 +1,36 @@
+{
+ "rakip": {
+  "A1": {
+   "en_yakin": "CrashCourse:3sUCSGVYzI0",
+   "renk_farki": 117.2,
+   "dhash": 39,
+   "rakip_ortalama_renk_farki": 137.2
+  },
+  "B1": {
+   "en_yakin": "Finance Economist:xRrVFXNE-Tk",
+   "renk_farki": 105.1,
+   "dhash": 32,
+   "rakip_ortalama_renk_farki": 132.3
+  },
+  "C1": {
+   "en_yakin": "Fred - Money Historian:c_nSo7Rl74A",
+   "renk_farki": 113.6,
+   "dhash": 34,
+   "rakip_ortalama_renk_farki": 140.7
+  }
+ },
+ "finalist_arasi": {
+  "A1-B1": {
+   "renk_farki": 107.1,
+   "dhash": 29
+  },
+  "A1-C1": {
+   "renk_farki": 120.6,
+   "dhash": 24
+  },
+  "B1-C1": {
+   "renk_farki": 141.2,
+   "dhash": 31
+  }
+ }
+}
