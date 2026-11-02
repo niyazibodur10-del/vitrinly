@@ -184,7 +184,7 @@ export const S15: React.FC = () => {
                 [K[2], 1180, 470, 1.1],
               ]}
             >
-              <BuyukNot an={k.rate} renk="#ffd43b" yazi="#1b1b1b" boyut={86}>
+              <BuyukNot an={K[1] + 0.15} renk="#ffd43b" yazi="#1b1b1b" boyut={86}>
                 RATE × BALANCE
                 <br />= INTEREST BILL
               </BuyukNot>
@@ -251,12 +251,12 @@ export const S16: React.FC = () => {
                 1 · IT BORROWS IN ITS OWN MONEY
               </Baslik>
               <Kart an={0.6} x={250} y={300} w={660} h={330}>
-                <div style={{ padding: 34, fontFamily: anton, fontSize: 54, color: RENK.ikincil }}>A FAMILY</div>
-                <div style={{ paddingLeft: 34, fontFamily: fredoka, fontWeight: 700, fontSize: 40, color: RENK.murekkep }}>borrows dollars it can&apos;t make</div>
+                <div style={{ padding: 34, fontFamily: anton, fontSize: 64, color: RENK.ikincil }}>A FAMILY</div>
+                <div style={{ paddingLeft: 34, fontFamily: fredoka, fontWeight: 700, fontSize: 52, color: RENK.murekkep }}>borrows dollars it can&apos;t make</div>
               </Kart>
               <Kart an={1.6} x={1010} y={300} w={660} h={330} cerceve={RENK.yesil}>
-                <div style={{ padding: 34, fontFamily: anton, fontSize: 54, color: RENK.yesil }}>THIS HOUSEHOLD</div>
-                <div style={{ paddingLeft: 34, fontFamily: fredoka, fontWeight: 700, fontSize: 40, color: RENK.murekkep }}>borrows in its own currency</div>
+                <div style={{ padding: 34, fontFamily: anton, fontSize: 64, color: RENK.yesil }}>THIS HOUSEHOLD</div>
+                <div style={{ paddingLeft: 34, fontFamily: fredoka, fontWeight: 700, fontSize: 52, color: RENK.murekkep }}>borrows in its own currency</div>
               </Kart>
             </GrafikZemin>,
           ],
@@ -279,10 +279,10 @@ export const S16: React.FC = () => {
           [
             K[3],
             <GrafikZemin key="d">
-              <Ikon ad="fotokopi" x={420} y={360} s={1.6} an={-1} />
+              <Ikon ad="fotokopi" x={480} y={330} s={1.5} an={-1} />
               {Array.from({ length: adet }).map((_, i) => (
-                <div key={i} style={{ position: "absolute", left: 300 + (i % 3) * 110, top: 520 + Math.floor(i / 3) * 40 }}>
-                  <Banknot x={60} y={40} adet={1} s={0.55} donme={(i % 3) * 6 - 6} />
+                <div key={i} style={{ position: "absolute", left: 230 + (i % 3) * 170, top: 560 + Math.floor(i / 3) * 50 }}>
+                  <Banknot x={90} y={60} adet={1} s={0.85} donme={(i % 3) * 6 - 6} />
                 </div>
               ))}
               <div style={{ position: "absolute", left: 1150, top: 300, width: 460, height: 360, display: "flex", alignItems: "flex-end", justifyContent: "center" }}>
@@ -327,7 +327,7 @@ export const S17: React.FC = () => {
               <Baslik an={0.15} y={90} boyut={88} renk={RENK.sari}>
                 2 · IT NEVER RETIRES
               </Baslik>
-              <Takvim x={810} y={290} w={300} adimlar={[[0, "∞"], ...yillar, [k.payday + 12 * 0.22, "∞"]]} altYazi="NO LAST PAYDAY" />
+              <Takvim x={750} y={250} w={420} adimlar={[[0, "∞"], ...yillar, [k.payday + 12 * 0.22, "∞"]]} altYazi="NO LAST PAYDAY" />
             </GrafikZemin>,
           ],
           [
@@ -511,9 +511,9 @@ export const S20: React.FC = () => {
               <Baslik an={K[3]} y={80} boyut={80}>
                 THREE REAL BRAKES
               </Baslik>
-              <Ikon ad="fren" x={430} y={440} s={1.4} an={k.currency} etiket="OWN CURRENCY" />
-              <Ikon ad="fren" x={960} y={440} s={1.4} an={k.years} etiket="LONG LOANS" />
-              <Ikon ad="fren" x={1490} y={440} s={1.4} an={k.safest} etiket="LENDERS' TRUST" />
+              <Ikon ad="fren" x={430} y={430} s={1.25} an={k.currency} etiket="OWN CURRENCY" />
+              <Ikon ad="fren" x={960} y={430} s={1.25} an={k.years} etiket="LONG LOANS" />
+              <Ikon ad="fren" x={1490} y={430} s={1.25} an={k.safest} etiket="LENDERS' TRUST" />
             </GrafikZemin>,
           ],
           [K[4], <LeoCekim key="e" id="S20" tip="yakin" t0={K[4]} t1={K[4] + 8} tohum={22} />],

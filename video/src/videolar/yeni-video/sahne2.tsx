@@ -324,7 +324,7 @@ export const S06: React.FC = () => {
                 [K[1], 960, 640, 1.2],
               ]}
             >
-              <Zarf x={960} y={660} w={480} renk="savunma" etiket="DEFENSE" alt={t >= k.nine ? "$965 / MO" : undefined} an={k.defense} giris="dus" donme={-3} yaziBoy={64} />
+              <Zarf x={960} y={660} w={480} renk="savunma" etiket="DEFENSE" alt={t >= k.nine ? "$965 / MO" : undefined} an={Math.min(k.defense, 0.25)} giris="dus" donme={-3} yaziBoy={64} />
               <Hap an={k.ships} x={700} y={430} boyut={38} donme={-6}>SHIPS</Hap>
               <Hap an={k.planes} x={1230} y={440} boyut={38} donme={5}>PLANES</Hap>
               <Hap an={k.salaries} x={690} y={900} boyut={38} donme={4}>SALARIES</Hap>
@@ -380,12 +380,12 @@ export const S06: React.FC = () => {
                 1 IN 5 DOLLARS OF INCOME
               </div>
               {Array.from({ length: 5 }).map((_, i) => (
-                <div key={i} style={{ position: "absolute", left: 300 + i * 270, top: 330, filter: i === 4 && t >= k.one ? "hue-rotate(-110deg) saturate(2.2)" : undefined, scale: String(i === 4 && t >= k.one ? interpolate(t, [k.one, k.one + 0.2], [1.25, 1.1], CL) : 1) }}>
-                  <Banknot x={120} y={120} adet={1} s={1.0} />
+                <div key={i} style={{ position: "absolute", left: 150 + i * 330, top: 300, width: 330, height: 260, filter: i === 4 && t >= k.one ? "hue-rotate(-110deg) saturate(2.2)" : undefined, scale: String(i === 4 && t >= k.one ? interpolate(t, [k.one, k.one + 0.2], [1.25, 1.1], CL) : 1) }}>
+                  <Banknot x={150} y={130} adet={1} s={1.35} />
                 </div>
               ))}
               {t >= k.one ? (
-                <div style={{ position: "absolute", left: 1380, top: 560, width: 300, textAlign: "center", fontFamily: anton, fontSize: 56, color: ZARF_RENK.faiz, WebkitTextStroke: "6px #0b0b0b", paintOrder: "stroke fill" }}>INTEREST</div>
+                <div style={{ position: "absolute", left: 1470, top: 560, width: 330, textAlign: "center", fontFamily: anton, fontSize: 60, color: ZARF_RENK.faiz, WebkitTextStroke: "6px #0b0b0b", paintOrder: "stroke fill" }}>INTEREST</div>
               ) : null}
               <OlcekSatiri y={730} />
             </GrafikZemin>,
@@ -506,7 +506,7 @@ export const S08: React.FC = () => {
           [
             K[1],
             <GrafikZemin key="b">
-              <SayiKarti an={K[1] + 0.05} x={260} y={140} w={1400} ust="THE LOAN BALANCE (household scale)" deger={<Sayac an={k.balance + 0.4} sure={1.0} bas={0} bit={389000} onEk="~$" />} />
+              <SayiKarti an={K[1] + 0.05} x={260} y={170} w={1400} ust="THE LOAN BALANCE (household scale)" deger={<Sayac an={k.balance + 0.4} sure={1.0} bas={0} bit={389000} onEk="~$" />} />
               {t >= k.real ? (
                 <div style={{ position: "absolute", left: 260, top: 470, width: 1400, padding: "22px 34px", boxSizing: "border-box", background: "rgba(15,22,38,0.94)", border: "3px solid rgba(255,255,255,0.2)", borderRadius: 22, fontFamily: fredoka, fontWeight: 700, color: RENK.murekkep, fontSize: 40, opacity: interpolate(t, [k.real, k.real + 0.3], [0, 1], CL) }}>
                   Real scale: debt held by the public <span style={{ fontFamily: anton, fontSize: 64, color: RENK.sari }}>$32.43 TRILLION</span>
@@ -541,9 +541,9 @@ export const S08: React.FC = () => {
                 [K[3] + 8, 960, 620, 1.15],
               ]}
             >
-              <Nesne ad="G07-kumbara" x={720} y={640} w={330} an={k.trust - 0.6} giris="pop" />
+              <Nesne ad="G07-kumbara" x={720} y={640} w={330} an={K[3] + 0.1} giris="pop" />
               <Nesne ad="G07-kasa" x={1230} y={630} w={280} an={k.trust} giris="pop" />
-              <Hap an={k.trust - 0.6} x={720} y={860} boyut={34}>GOVERNMENT</Hap>
+              <Hap an={K[3] + 0.2} x={720} y={860} boyut={34}>GOVERNMENT</Hap>
               <Hap an={k.trust} x={1230} y={860} boyut={34}>TRUST FUNDS</Hap>
               {t >= k.pocket ? (
                 <svg style={{ position: "absolute", left: 860, top: 470 }} width={240} height={120}>
@@ -627,7 +627,7 @@ export const S10: React.FC = () => {
                 NOT ONE BANK
               </Baslik>
               {ikonlar.map(([w, ad, e], i) => (
-                <Ikon key={ad} ad={ad} x={260 + i * 350} y={430} s={1.1} an={k[w]} etiket={e} />
+                <Ikon key={ad} ad={ad} x={260 + i * 350} y={440} s={1.05} an={k[w]} etiket={e} />
               ))}
             </GrafikZemin>,
           ],

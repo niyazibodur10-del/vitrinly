@@ -20,7 +20,7 @@ const ABC: [string, string][] = [
 const AbcNotlar: React.FC<{ anlar: number[]; luck?: number }> = ({ anlar, luck }) => (
   <>
     {ABC.map(([h, m], i) => (
-      <NotYazi key={h} kutu={G10_NOT[[0, 1, 2][i]]} an={anlar[i]} boyut={30}>
+      <NotYazi key={h} kutu={G10_NOT[[0, 2, 1][i]]} an={anlar[i]} boyut={30}>
         <div>
           <div style={{ fontFamily: anton, fontSize: 80, lineHeight: 0.9 }}>{h}</div>
           {m}
@@ -168,7 +168,7 @@ export const S24: React.FC = () => {
   const { k } = plan("S24");
   const K = kesT("S24");
   const t = useT();
-  const kucul = interpolate(t, [k.smaller, k.smaller + 1.6], [1.2, 0.6], { ...CL, easing: EIO });
+  const kucul = interpolate(t, [k.smaller, k.smaller + 1.6], [1.25, 0.6], { ...CL, easing: EIO });
   const fis = interpolate(t, [k.grocery, k.grocery + 1.4], [120, 520], { ...CL, easing: EOUT });
   const sis = interpolate(t, [k.fatter - 0.5, k.fatter + 0.5], [1, 1.45], { ...CL, easing: EOUT });
   return (
@@ -182,7 +182,7 @@ export const S24: React.FC = () => {
                 C · LET PRICES RISE
               </Baslik>
               <div style={{ position: "absolute", left: 960 - 160 * kucul, top: 470 - 110 * kucul, scale: String(kucul), transformOrigin: "0 0" }}>
-                <Banknot x={130} y={90} adet={5} s={1.2} />
+                <Banknot x={130} y={90} adet={5} s={1.9} />
               </div>
               <Yazi an={k.smaller} x={960} y={720} boyut={52} font="fredoka">
                 old dollars paid back buy less
@@ -323,10 +323,10 @@ export const S26: React.FC = () => {
               leo={{ id: "S26", pozlar: [[0, "a"]], tohum: 28 }}
               on={
                 <>
-                  <div style={{ position: "absolute", left: 300, top: 760 }}>
+                  <div style={{ position: "absolute", left: 200, top: 700 }}>
                     <Zarf x={150} y={60} w={240} renk="borc" an={-1} giris="yok" donme={-12} />
                   </div>
-                  <Zarf x={470} y={860} w={330} renk="faiz" etiket="INTEREST" alt="$1,050 / MO" an={-1} giris="yok" donme={-4} yaziBoy={50} />
+                  <Zarf x={400} y={800} w={330} renk="faiz" etiket="INTEREST" alt="$1,050 / MO" an={-1} giris="yok" donme={-4} yaziBoy={50} />
                 </>
               }
               arka={<Yazi an={k.military} x={600} y={250} boyut={50}>$1,050 / MO &gt; DEFENSE $965</Yazi>}

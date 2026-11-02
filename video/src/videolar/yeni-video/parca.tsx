@@ -21,17 +21,20 @@ export const LeoCekim: React.FC<{
   odakX?: number;
 }> = ({ id, tip, t0, t1, pozlar = [[0, "a"]], on, arka, tohum = 1, isik, odakX = 960 }) => {
   const K = { genis: [540, 1.0, 1.07], orta: [560, 1.2, 1.28], yakin: [515, 1.48, 1.58] }[tip];
+  // arka: ekran uzayında üst katman (yakın planda kadraj dışına taşmaz)
   return (
-    <MasaSahne
-      kamera={[
-        [t0, odakX, K[0], K[1]],
-        [t1, odakX, K[0] - 10, K[2]],
-      ]}
-      leo={{ id, pozlar, tohum }}
-      on={on}
-      arka={arka}
-      isik={isik}
-    />
+    <AbsoluteFill>
+      <MasaSahne
+        kamera={[
+          [t0, odakX, K[0], K[1]],
+          [t1, odakX, K[0] - 10, K[2]],
+        ]}
+        leo={{ id, pozlar, tohum }}
+        on={on}
+        isik={isik}
+      />
+      {arka}
+    </AbsoluteFill>
   );
 };
 
@@ -68,7 +71,7 @@ export const SayiKarti: React.FC<{ an: number; x: number; y: number; w: number; 
   return (
     <div style={{ position: "absolute", left: x, top: y, width: w, padding: "26px 34px", boxSizing: "border-box", background: "rgba(15,22,38,0.94)", border: "3px solid rgba(255,255,255,0.2)", borderRadius: 22, opacity: Math.min(1, p * 2), scale: String(0.85 + 0.15 * p), boxShadow: "0 18px 50px rgba(0,0,0,0.45)" }}>
       <div style={{ fontFamily: fredoka, fontWeight: 700, fontSize: 34, color: RENK.ikincil }}>{ust}</div>
-      <div style={{ fontFamily: anton, fontSize: 120, lineHeight: 1.1, color: renk }}>{deger}</div>
+      <div style={{ fontFamily: anton, fontSize: 150, lineHeight: 1.1, color: renk }}>{deger}</div>
       {alt ? <div style={{ fontFamily: fredoka, fontWeight: 700, fontSize: 24, color: RENK.ikincil }}>{alt}</div> : null}
     </div>
   );
@@ -186,44 +189,45 @@ export const Ikon: React.FC<{ ad: string; x: number; y: number; s?: number; an?:
   if (t < an - 0.03 || (son !== undefined && t > son + 0.2)) return null;
   const p = interpolate(t, [an, an + 0.25], [0, 1], { ...CL, easing: EPOP });
   return (
-    <div style={{ position: "absolute", left: x - 100 * s, top: y - 100 * s, width: 200 * s, scale: String(0.4 + 0.6 * p), opacity: Math.min(1, p * 2) }}>
-      <svg width={200 * s} height={190 * s} viewBox="0 0 200 190">
+    <div style={{ position: "absolute", left: x - 140 * s, top: y - 140 * s, width: 280 * s, scale: String(0.4 + 0.6 * p), opacity: Math.min(1, p * 2) }}>
+      <svg width={280 * s} height={266 * s} viewBox="0 0 200 190">
         {IKON[ad]}
       </svg>
-      {etiket ? <div style={{ textAlign: "center", fontFamily: fredoka, fontWeight: 700, fontSize: 30 * Math.max(1, s * 0.8), color: RENK.murekkep, WebkitTextStroke: "6px #0b0b0b", paintOrder: "stroke fill", marginTop: 4 }}>{etiket}</div> : null}
+      {etiket ? <div style={{ textAlign: "center", fontFamily: fredoka, fontWeight: 700, fontSize: 38 * Math.max(1, s * 0.7), color: RENK.murekkep, WebkitTextStroke: "7px #0b0b0b", paintOrder: "stroke fill", marginTop: 4 }}>{etiket}</div> : null}
     </div>
   );
 };
 
-// Terazi: sol kefe (giderler) / sağ kefe (gelir); egim an'da gider tarafına yatar
+// Terazi: sol kefe (giderler) / sağ kefe (gelir); an'da sol (gider) tarafına yatar (sönümlü salınım)
 export const Terazi: React.FC<{ an: number; x: number; y: number; sol: string; sag: string }> = ({ an, x, y, sol, sag }) => {
   const t = useT();
-  const e = interpolate(t, [an, an + 0.7], [0, -14], { ...CL, easing: (v) => 1 - Math.cos(v * Math.PI * 2.5) * Math.exp(-v * 4) * 1 });
-  const rad = (e * Math.PI) / 180;
-  const L = 420;
-  const kefe = (dx: number, etiket: string, renkler: string[]) => {
-    const kx = x + dx * Math.cos(rad), ky = y + 120 + dx * Math.sin(rad) * -1;
+  const d = Math.max(0, t - an);
+  const aci = t < an ? 0 : 13 * (1 - Math.cos(Math.min(d, 2) * 7) * Math.exp(-d * 3.2));
+  const rad = (aci * Math.PI) / 180;
+  const L = 430, by = y + 150;
+  const kefe = (taraf: -1 | 1, etiket: string, renkler: string[]) => {
+    const ux = x + taraf * L * Math.cos(rad), uy = by - taraf * L * Math.sin(rad);
     return (
-      <div style={{ position: "absolute", left: kx - 170, top: ky + 120 }}>
-        <svg width={340} height={60} style={{ position: "absolute", top: 40 }}>
-          <path d="M10,10 Q170,70 330,10 Z" fill="#c9a24a" stroke="#111" strokeWidth={6} />
+      <div style={{ position: "absolute", left: ux - 190, top: uy }}>
+        <svg width={380} height={200} style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }}>
+          <path d="M190,0 L40,150 M190,0 L340,150" stroke="#111" strokeWidth={5} />
+          <path d="M20,150 Q190,230 360,150 Z" fill="#c9a24a" stroke="#111" strokeWidth={6} />
         </svg>
-        <div style={{ position: "absolute", left: 40, top: -30, width: 260, height: 80 }}>
-          {renkler.map((r, i) => (
-            <div key={i} style={{ position: "absolute", left: (i % 3) * 82, top: 48 - Math.floor(i / 3) * 34, width: 78, height: 32, background: r || "#c8955a", border: "4px solid #111", borderRadius: 4 }} />
-          ))}
-        </div>
-        <div style={{ position: "absolute", left: 0, width: 340, top: 104, textAlign: "center", fontFamily: anton, fontSize: 58, color: RENK.murekkep, WebkitTextStroke: "7px #0b0b0b", paintOrder: "stroke fill" }}>{etiket}</div>
+        {renkler.map((r, i) => (
+          <div key={i} style={{ position: "absolute", left: 60 + (i % 3) * 88, top: 104 - Math.floor(i / 3) * 42, width: 84, height: 44, background: r || "#c8955a", border: "4px solid #111", borderRadius: 5 }} />
+        ))}
+        <div style={{ position: "absolute", left: -60, width: 500, top: 210, textAlign: "center", fontFamily: anton, fontSize: 70, color: RENK.murekkep, WebkitTextStroke: "8px #0b0b0b", paintOrder: "stroke fill" }}>{etiket}</div>
       </div>
     );
   };
   return (
     <>
-      <div style={{ position: "absolute", left: x - 14, top: y + 110, width: 28, height: 330, background: "#8a6a2a", border: "5px solid #111" }} />
-      <div style={{ position: "absolute", left: x - 120, top: y + 420, width: 240, height: 34, background: "#8a6a2a", border: "5px solid #111", borderRadius: 8 }} />
-      <div style={{ position: "absolute", left: x - L, top: y + 110, width: L * 2, height: 22, background: "#c9a24a", border: "5px solid #111", borderRadius: 8, rotate: `${-e}deg` }} />
-      {kefe(-L, sol, [ZARF_RENK.ss, ZARF_RENK.medicare, ZARF_RENK.saglik, ZARF_RENK.savunma, ZARF_RENK.faiz, ""])}
-      {kefe(L, sag, [""])}
+      <div style={{ position: "absolute", left: x - 16, top: by, width: 32, height: 430, background: "#8a6a2a", border: "5px solid #111" }} />
+      <div style={{ position: "absolute", left: x - 140, top: by + 420, width: 280, height: 38, background: "#8a6a2a", border: "5px solid #111", borderRadius: 8 }} />
+      <div style={{ position: "absolute", left: x - L - 10, top: by - 13, width: 2 * L + 20, height: 26, background: "#c9a24a", border: "5px solid #111", borderRadius: 8, rotate: `${-aci}deg` }} />
+      <div style={{ position: "absolute", left: x - 26, top: by - 26, width: 52, height: 52, borderRadius: 26, background: "#c9a24a", border: "5px solid #111" }} />
+      {kefe(-1, sol, [ZARF_RENK.ss, ZARF_RENK.medicare, ZARF_RENK.saglik, ZARF_RENK.savunma, ZARF_RENK.faiz, ""])}
+      {kefe(1, sag, [""])}
     </>
   );
 };
@@ -244,7 +248,7 @@ export const Konveyor: React.FC<{ an: number; x: number; y: number; w: number; d
         const px = ((i * (w / 8) + (t - an) * hiz) % (w + 300)) - 300;
         const yeni = t >= degisim && px > w * 0.62;
         return (
-          <div key={i} style={{ position: "absolute", left: px, top: 150, width: uz, height: 46, background: "#f3ecdc", border: "4px solid #111", borderRadius: 6, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: anton, fontSize: 28, color: yeni ? ZARF_RENK.faiz : "#2f7a4f" }}>
+          <div key={i} style={{ position: "absolute", left: px, top: 116, width: uz + 60, height: 80, background: "#f3ecdc", border: "5px solid #111", borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: anton, fontSize: 44, color: yeni ? ZARF_RENK.faiz : "#2f7a4f" }}>
             {yeni ? "NEW 5%" : "CHEAP 1%"}
           </div>
         );
@@ -308,8 +312,8 @@ export const Yaris: React.FC<{ an: number; maas: [number, number]; borc: [number
   return (
     <AbsoluteFill>
       <div style={{ position: "absolute", left: 1720, top: 250, width: 16, height: 420, background: "repeating-linear-gradient(#fff 0 20px, #111 20px 40px)" }} />
-      {koşu(300, maas, <div style={{ width: 200, height: 120, background: "#c8955a", border: "6px solid #111", borderRadius: 8, fontFamily: anton, fontSize: 40, display: "flex", alignItems: "center", justifyContent: "center" }}>PAYCHECK</div>, "THE ECONOMY")}
-      {koşu(560, borc, <div style={{ width: 200, height: 120, background: "#5b3b9a", border: "6px solid #111", borderRadius: 10, fontFamily: anton, fontSize: 36, color: "#f4ecff", display: "flex", alignItems: "center", justifyContent: "center" }}>LOAN BOOK</div>, "THE DEBT")}
+      {koşu(300, maas, <div style={{ width: 300, height: 170, background: "#c8955a", border: "6px solid #111", borderRadius: 8, fontFamily: anton, fontSize: 58, display: "flex", alignItems: "center", justifyContent: "center" }}>PAYCHECK</div>, "THE ECONOMY")}
+      {koşu(560, borc, <div style={{ width: 300, height: 170, background: "#5b3b9a", border: "6px solid #111", borderRadius: 10, fontFamily: anton, fontSize: 54, color: "#f4ecff", display: "flex", alignItems: "center", justifyContent: "center" }}>LOAN BOOK</div>, "THE DEBT")}
     </AbsoluteFill>
   );
 };
