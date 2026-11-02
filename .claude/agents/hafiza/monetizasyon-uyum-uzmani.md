@@ -6,7 +6,7 @@
   - Inauthentic (eski repetitious): şablonla seri üretim izlenimi; "aynı durum, aynı sonuç". Aynı giriş/çıkış serbest (answer/1311392).
   - AI personası: "human expert providing advice" — sağlık, hukuk, finans, **siyaset** → para kazanamaz. Maskot tavsiye vermez (1311392).
   - Reklam dostu (6162278): hassas olay = istismar etmeyen haber/eğitim uygun; tartışmalı konular listesinde seçim yok; seçim yalnız "harmful misinformation" (ayrıca 10835034).
-- Betikler (kopyala, parametre değiştir): F2 `uretim/2026-10-28-yeni-video/02-senaryo/politika-tarama.py` (v2: EN yayın metni + TR blok siyaset/şiddet/AI/1929-format sayımı + önceki metinle 5-gram); F3 `uretim/2026-10-26-1929-1000-dolar/03-metin/politika-denetim.py` (Shorts'u §5 "Okunacak tam metin" satırından okur); F8 `.../09-paket/politika-f8.py` (`--video` final).
+- Betikler (kopyala, parametre değiştir): F2 `uretim/2026-10-28-yeni-video/02-senaryo/politika-tarama.py` (v2: EN yayın metni + TR blok siyaset/şiddet/AI/1929-format sayımı + önceki metinle 5-gram); F3 `uretim/2026-10-28-yeni-video/03-metin/politika-denetim.py` (v2: hakem P-kapıları + GÖRSEL + Shorts <<…>> + korku cümlesi niteli/niteliksiz; eski v1 1929 klasöründe); F8 `.../09-paket/politika-f8.py` (`--video` final).
 - Her betik koşusundan sonra elle ikinci geçiş: Türkçe yapı satırları, karakter anları, ekrana yazılan not/levha, thumbnail metni.
 - AI persona sızıntısı: Leo'nun bugüne dönük kuralı ("I believe now", "you should", "your money"). Düzeltme: emir → betimleyici cümle; "uyarı ekle" önerme.
 - Meta veri riski metinden ayrı puanlanır: gerçek kişiye suç/kötü çağrışımı (heist, villain), doğrulanmamış pay, nefret kalıbı → metin temizken bile SARI.
@@ -21,3 +21,4 @@
 - 2026-11-02 (F2, 12 senaryo): 8 YEŞİL / 4 SARI / 0 KIRMIZI. Çıkar çatışması (metni yazan modelin şirketi konu) için YouTube'da kural yok → KIRMIZI'yı kaynakla destekleyemezsin; SARI-yüksek + "bu slotta önerilmez" + beyan metni + hakem tarafsızlık kontrolü yaz, kendi modelini açıkça belirt.
 - 2026-11-02: Seçim sonrası günü yayın → "who won" yalnız resmi/AP çağrısına dayansın, "too close to call" yedeği zorunlu; "your money" başlığı siyaset + finans persona riskini birleştirir → "markets".
 - 2026-11-02: Hassas olay (ölümlü saldırı) hook'un ilk cümlesindeyse olayı ikinci plana al, fiyatla aç; görsel/kayıp sayısı yok.
+- 2026-11-02 (F3 S08): YEŞİL, zorunlu 0. Hakem P-kapılarını betikte ayrı bölüm yap; korku kelimesini cümle düzeyinde "niteli/niteliksiz" say (yalnız kelime sayımı yanlış alarm). Köprü kalıbı "By the end, you'll know" 2 videoda tekrar → 5 videoluk denetimde say.
