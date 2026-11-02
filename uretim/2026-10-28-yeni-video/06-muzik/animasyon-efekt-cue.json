@@ -312,7 +312,7 @@
    "sahne": "S05",
    "t": 95.86,
    "kare": 2876,
-   "olay": "yeşil dilim MEDICARE $1,073",
+   "olay": "yeşil dilim MEDICARE $1,073 + büyük +$1,073",
    "tur": "pop",
    "oneri": "pop"
   },
@@ -339,6 +339,14 @@
    "olay": "kesme: grafik G1: toplam sayaç",
    "tur": "kesme",
    "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S05",
+   "t": 101.34,
+   "kare": 3040,
+   "olay": "kesme sonrası grafik + büyük +$1,026",
+   "tur": "pop",
+   "oneri": "pop"
   },
   {
    "sahne": "S05",
@@ -1054,6 +1062,22 @@
   },
   {
    "sahne": "S13",
+   "t": 308.923,
+   "kare": 9268,
+   "olay": "etiket SIZE OF THE LOAN + punch-in",
+   "tur": "pop",
+   "oneri": "pop"
+  },
+  {
+   "sahne": "S13",
+   "t": 311.18,
+   "kare": 9335,
+   "olay": "etiket THE RATE (vurgu)",
+   "tur": "vurgu",
+   "oneri": "vuruş"
+  },
+  {
+   "sahne": "S13",
    "t": 316.02,
    "kare": 9481,
    "olay": "kesme: grafik G3a: ortalama faiz",
@@ -1147,6 +1171,22 @@
    "olay": "uzun şerit DECADES",
    "tur": "pop",
    "oneri": ""
+  },
+  {
+   "sahne": "S14",
+   "t": 349.28,
+   "kare": 10478,
+   "olay": "ROLL OVER yazısı",
+   "tur": "pop",
+   "oneri": "pop"
+  },
+  {
+   "sahne": "S14",
+   "t": 351.082,
+   "kare": 10532,
+   "olay": "OLD LOAN DUE etiketi",
+   "tur": "pop",
+   "oneri": "tik"
   },
   {
    "sahne": "S14",
@@ -1257,6 +1297,22 @@
    "t": 391.169,
    "kare": 11735,
    "olay": "1 · IT BORROWS IN ITS OWN MONEY",
+   "tur": "pop",
+   "oneri": "pop"
+  },
+  {
+   "sahne": "S16",
+   "t": 399.32,
+   "kare": 11980,
+   "olay": "OWN CURRENCY ✓ damgası",
+   "tur": "vurgu",
+   "oneri": "damga"
+  },
+  {
+   "sahne": "S16",
+   "t": 400.98,
+   "kare": 12029,
+   "olay": "CAN'T RUN OUT OF DOLLARS",
    "tur": "pop",
    "oneri": "pop"
   },
@@ -1459,6 +1515,14 @@
    "olay": "çizgi çizilmeye başlar, >100% (1946)",
    "tur": "sayac",
    "oneri": "çizim sesi"
+  },
+  {
+   "sahne": "S19",
+   "t": 462.86,
+   "kare": 13886,
+   "olay": "BIGGER THAN THE WHOLE ECONOMY etiketi",
+   "tur": "vurgu",
+   "oneri": "vuruş"
   },
   {
    "sahne": "S19",

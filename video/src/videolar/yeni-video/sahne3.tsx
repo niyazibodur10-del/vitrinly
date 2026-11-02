@@ -75,7 +75,7 @@ export const S13: React.FC = () => {
     <AbsoluteFill style={{ background: "#05070f" }}>
       <Kurgu
         kesmeler={[
-          [K[0], <LeoCekim key="a" id="S13" tip="orta" t0={K[0]} t1={K[1]} tohum={15} on={<Zarf x={1560} y={830} w={320} renk="faiz" etiket="INTEREST" alt="$1,050 / MO" an={-1} giris="yok" donme={4} yaziBoy={56} />} />],
+          [K[0], <LeoCekim key="a" id="S13" tip="orta" t0={K[0]} t1={K[1]} tohum={15} arka={<><Hap an={k.part} x={420} y={260} boyut={42}>SIZE OF THE LOAN</Hap><Hap an={k.rate0} x={1500} y={260} boyut={56} renk="#ffd43b">THE RATE ▲</Hap></>} on={<Zarf x={1560} y={830} w={320} renk="faiz" etiket="INTEREST" alt="$1,050 / MO" an={-1} giris="yok" donme={4} yaziBoy={56} />} />],
           [
             K[1],
             <GrafikZemin key="b">
@@ -137,6 +137,10 @@ export const S14: React.FC = () => {
               <Konveyor an={K[1]} x={110} y={330} w={1700} degisim={k.replaced} />
               <Hap an={k.weeks} x={520} y={300} boyut={36}>SOME LAST WEEKS</Hap>
               <Hap an={k.decades} x={1400} y={300} boyut={36}>SOME LAST DECADES</Hap>
+              <Yazi an={k.roll} x={420} y={640} boyut={54} renk={RENK.sari}>
+                ROLL OVER, A FEW AT A TIME
+              </Yazi>
+              <Hap an={k.every} x={1500} y={560} boyut={34} renk="#f0d0cc">OLD CHEAP LOAN DUE</Hap>
               <Yazi an={k.replaced} x={1500} y={640} boyut={54} renk={ZARF_RENK.faiz}>
                 CHEAP OUT → EXPENSIVE IN
               </Yazi>
@@ -254,6 +258,8 @@ export const S16: React.FC = () => {
                 <div style={{ padding: 34, fontFamily: anton, fontSize: 64, color: RENK.ikincil }}>A FAMILY</div>
                 <div style={{ paddingLeft: 34, fontFamily: fredoka, fontWeight: 700, fontSize: 52, color: RENK.murekkep }}>borrows dollars it can&apos;t make</div>
               </Kart>
+              <Damga an={k.currency} x={1340} y={720} metin="OWN CURRENCY ✓" renk={RENK.yesil} boyut={64} donme={-6} />
+              <Yazi an={k.run} x={580} y={700} boyut={48} font="fredoka" renk={RENK.sari}>can&apos;t run out of dollars</Yazi>
               <Kart an={1.6} x={1010} y={300} w={660} h={330} cerceve={RENK.yesil}>
                 <div style={{ padding: 34, fontFamily: anton, fontSize: 64, color: RENK.yesil }}>THIS HOUSEHOLD</div>
                 <div style={{ paddingLeft: 34, fontFamily: fredoka, fontWeight: 700, fontSize: 52, color: RENK.murekkep }}>borrows in its own currency</div>
@@ -426,10 +432,11 @@ export const S19: React.FC = () => {
     <AbsoluteFill style={{ background: "#05070f" }}>
       <Kurgu
         kesmeler={[
-          [K[0], <LeoCekim key="a" id="S19" tip="orta" t0={K[0]} t1={K[1]} pozlar={[[0, "C12"]]} tohum={21} />],
+          [K[0], <LeoCekim key="a" id="S19" tip="orta" t0={K[0]} t1={K[1]} pozlar={[[0, "C12"]]} tohum={21} arka={<Yazi an={0.3} x={960} y={110} boyut={64}>THE DIFFERENCE IN THE DATA</Yazi>} />],
           [
             K[1],
             <GrafikZemin key="b">
+              <Hap an={k.bigger} x={1300} y={90} boyut={40} renk="#ffd43b">BIGGER THAN THE WHOLE ECONOMY</Hap>
               <BorcGrafik
                 an={k.n46 - 0.1}
                 sure={k.quarter - k.n46 + 0.2}

@@ -202,7 +202,7 @@ export const GrafikZemin: React.FC<{ plaka?: string; children?: React.ReactNode;
   return (
     <AbsoluteFill>
       <Img src={f(`${plaka}.jpg`)} style={{ position: "absolute", width: 1920, height: 1080, filter: "blur(16px) brightness(0.38) saturate(0.8)", scale: String(s) }} />
-      {kamera ? <Kamera kareler={kamera}>{children}</Kamera> : children}
+      {kamera ? <Kamera kareler={kamera}>{children}</Kamera> : <AbsoluteFill style={{ scale: String(1 + 0.0035 * t), translate: `0px ${Math.sin(t * 0.9) * 2}px` }}>{children}</AbsoluteFill>}
     </AbsoluteFill>
   );
 };

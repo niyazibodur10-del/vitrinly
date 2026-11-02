@@ -65,7 +65,9 @@ export const Kamera: React.FC<{ kareler: KameraKare[]; children: React.ReactNode
   style,
 }) => {
   const t = useT();
-  const [, fx0, fy0, s] = kameraDurum(t, kareler);
+  const [, fx0, fy0, s0] = kameraDurum(t, kareler);
+  // Sürekli çok hafif itme (%0,35/sn): son anahtar kareden sonra da kare donmaz (freezedetect −60 dB kapısı)
+  const s = s0 * (1 + 0.0035 * Math.max(0, t - kareler[kareler.length - 1][0]));
   // Kenar koruması: plaka ekranı tamamen kaplamıyorsa odak kaydırılır (siyah kenar görünmez)
   const kis = (v: number, yarim: number, boy: number) => (boy * s >= yarim * 2 ? Math.min(Math.max(v, yarim / s), boy - yarim / s) : boy / 2);
   const fx = kis(fx0, ekranW / 2, w);

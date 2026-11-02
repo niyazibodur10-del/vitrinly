@@ -247,6 +247,8 @@ export const S05: React.FC = () => {
           {t >= k.medicare ? <span style={{ color: ZARF_RENK.medicare }}>MEDICARE {para(B.medicare)}</span> : null}
           {t >= k.health ? <span style={{ color: ZARF_RENK.saglik }}>OTHER HEALTH {para(B.saglik)}</span> : null}
         </div>
+        {t >= k.medicare && t < k.medicare + 1.6 ? <Yazi an={k.medicare} x={1100} y={380} boyut={90} renk={ZARF_RENK.medicare}>+$1,073</Yazi> : null}
+        {t >= k.health && t < k.health + 1.6 ? <Yazi an={k.health} x={1100} y={380} boyut={90} renk={ZARF_RENK.saglik}>+$1,026</Yazi> : null}
         {t >= k.three ? (
           <div style={{ position: "absolute", left: 60, top: 400, fontFamily: anton, fontSize: 110, color: RENK.murekkep }}>
             <Sayac an={k.three + 0.3} sure={0.9} bas={0} bit={toplam} onEk="$" /> SPENT

@@ -167,8 +167,9 @@ const P: Record<string, () => Plan> = {
     return yap("S05", k, [[0, "masa orta, Leo + hesap makinesi", true], [k.env2 - 0.1, "grafik G1: gelir çubuğu dolar"], [k.env3 - 0.1, "kuşbakışı: üç zarf yığılır"], [k.three - 0.1, "grafik G1: toplam sayaç"]], [
       { t: k.social, olay: "mavi zarf SOCIAL SECURITY düşer", tur: "dus", oneri: "kalın zarf thud" },
       { t: k.about1, olay: "hesap makinesi $1,667", tur: "sayac", oneri: "tuş tıkırtısı" },
-      { t: k.medicare, olay: "yeşil dilim MEDICARE $1,073", tur: "pop", oneri: "pop" },
+      { t: k.medicare, olay: "yeşil dilim MEDICARE $1,073 + büyük +$1,073", tur: "pop", oneri: "pop" },
       { t: k.health, olay: "açık yeşil zarf HEALTH", tur: "dus", oneri: "zarf thud" },
+      { t: k.three - 0.1, olay: "kesme sonrası grafik + büyük +$1,026", tur: "pop", oneri: "pop" },
       { t: k.three + 0.3, olay: "sayaç SPENT $3,765", tur: "sayac", oneri: "tıkırtı + ding" },
     ]);
   },
@@ -253,8 +254,10 @@ const P: Record<string, () => Plan> = {
   },
   S13: () => {
     const a = an("S13");
-    const k = { part: a("part"), early: a("early"), sep: a("september"), just: a("just") - 0.3, tripled: a("tripled"), kitchen: a("kitchen"), growing: a("growing") };
+    const k = { part: a("part"), rate0: a("rate"), early: a("early"), sep: a("september"), just: a("just") - 0.3, tripled: a("tripled"), kitchen: a("kitchen"), growing: a("growing") };
     return yap("S13", k, [[0, "masa orta: şişman kırmızı zarf", true], [k.early - 0.2, "grafik G3a: ortalama faiz"], [k.just - 0.1, "grafik G3b: net faiz çubukları FY16–26"]], [
+      { t: k.part, olay: "etiket SIZE OF THE LOAN + punch-in", tur: "pop", oneri: "pop" },
+      { t: k.rate0, olay: "etiket THE RATE (vurgu)", tur: "vurgu", oneri: "vuruş" },
       { t: k.early + 0.3, olay: "EARLY 2022 ~1.4%", tur: "pop", oneri: "" },
       { t: k.sep + 0.3, olay: "SEP 2026 ~3.5% (termometre yükselir)", tur: "sayac", oneri: "yükselen ton" },
       { t: k.just + 0.2, olay: "11 çubuk sırayla", tur: "sayac", oneri: "tık ×11" },
@@ -269,6 +272,8 @@ const P: Record<string, () => Plan> = {
     return yap("S14", k, [[0, "Leo yakın", true], [k.many - 0.2, "konveyör: krediler"], [k.late - 0.2, "grafik G4: yeni faizler"]], [
       { t: k.weeks, olay: "kısa şerit WEEKS", tur: "pop", oneri: "" },
       { t: k.decades, olay: "uzun şerit DECADES", tur: "pop", oneri: "" },
+      { t: k.roll, olay: "ROLL OVER yazısı", tur: "pop", oneri: "pop" },
+      { t: k.every, olay: "OLD LOAN DUE etiketi", tur: "pop", oneri: "tik" },
       { t: k.replaced, olay: "CHEAP 1% düşer → NEW 5%", tur: "vurgu", oneri: "etiket kopma + tık" },
       { t: k.late + 0.2, olay: "NEW 10-YEAR ~5%", tur: "pop", oneri: "" },
       { t: k.short, olay: "SHORT-TERM ~4%", tur: "pop", oneri: "" },
@@ -286,9 +291,11 @@ const P: Record<string, () => Plan> = {
   },
   S16: () => {
     const a = an("S16");
-    const k = { own: a("own"), thats: a("that's"), answered: a("answered"), but: a("but"), if: a("if"), less: a("less"), inflation: a("inflation"), remember: a("remember") };
+    const k = { own: a("own"), currency: a("currency"), run: a("run"), thats: a("that's"), answered: a("answered"), but: a("but"), if: a("if"), less: a("less"), inflation: a("inflation"), remember: a("remember") };
     return yap("S16", k, [[0, "kart: 1 · OWN MONEY"], [k.thats - 0.1, "buzdolabı: soru notuna tik"], [k.but - 0.1, "masa orta: But there's a catch", true], [k.if - 0.1, "fotokopi banknot + küçülen sepet"], [k.remember - 0.1, "Leo yakın", true]], [
       { t: 0.15, olay: "1 · IT BORROWS IN ITS OWN MONEY", tur: "pop", oneri: "pop" },
+      { t: k.currency, olay: "OWN CURRENCY ✓ damgası", tur: "vurgu", oneri: "damga" },
+      { t: k.run, olay: "CAN'T RUN OUT OF DOLLARS", tur: "pop", oneri: "pop" },
       { t: k.answered, olay: "yeşil tik (A5 kapanır)", tur: "vurgu", oneri: "doğru ding" },
       { t: k.answered + 0.8, olay: "alt köşe: LIKE IF THE ENVELOPE TOWER SURPRISED YOU (3 sn, sessiz)", tur: "etkilesim", oneri: "(sessiz)" },
       { t: k.if + 0.4, olay: "banknotlar çoğalır, sepet küçülür", tur: "parcacik", oneri: "fotokopi vınlaması" },
@@ -321,6 +328,7 @@ const P: Record<string, () => Plan> = {
     const k = { n46: a("nineteen|1946", 1), bigger: a("bigger", 1), n74: a("by"), quarter: a("quarter"), heres2: a("here's", 2), grew: a("grew", 1), loan: a("loan", 1), paycheck: a("paycheck"), family: a("family") };
     return yap("S19", k, [[0, "masa orta, Leo", true], [k.n46 - 0.2, "grafik G5: borç/GSYH 1946→1974"], [k.heres2 - 0.1, "grafik: borç $ çubuğu"], [k.loan - 0.1, "kuşbakışı: maaş büyür, defter aynı"], [k.family - 0.1, "Leo yakın", true]], [
       { t: k.n46, olay: "çizgi çizilmeye başlar, >100% (1946)", tur: "sayac", oneri: "çizim sesi" },
+      { t: k.bigger, olay: "BIGGER THAN THE WHOLE ECONOMY etiketi", tur: "vurgu", oneri: "vuruş" },
       { t: k.quarter, olay: "~23% (1974) etiketi", tur: "pop", oneri: "ding" },
       { t: k.grew, olay: "$242B → $344B çubuğu yükselir", tur: "sayac", oneri: "yükselen ton" },
       { t: k.paycheck, olay: "maaş zarfı büyür", tur: "vurgu", oneri: "şişme" },
