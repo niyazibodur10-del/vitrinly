@@ -37,20 +37,20 @@ Hazırlayan: kanal-analisti · **Ölçüm: 2026-11-02 04:22 UTC** [API] · ham v
 
 | Kanal (açılış) | İlk uzun video | Süre | İzlenme (bugün) |
 |---|---|---|---|
-| Wealth Chronicles (2026-06) | 2026-06-21 | 14 dk | 30 |
-| History Unburied (2026-09) | 2026-09-29 | 4 dk | 59 |
-| The Money Files (2025-11) | 2025-11-26 | 30 dk | 134 |
-| Money and Marker (2026-03) | 2026-06-09 | 9 dk | 538 |
-| Histonom (2025-12) | 2026-01-01 | 8 dk | 1.044 |
-| Financial Dynasty (2026-01) | 2026-03-29 | 18 dk | 1.496 |
-| Dial-Up Days (2025-08) | 2025-09-04 | 12 dk | 2.694 |
-| Marcus Explains (2026-07) | 2026-07-13 | 29 dk | 3.012 |
-| Markets of the Past (2026-04) | 2026-04-18 | 28 dk | 5.054 |
-| Truth Vault (2025-10) | 2026-05-27 | 20 dk | 5.182 |
-| Drowsy Historian (2025-05) | 2025-05-16 | 127 dk | 19.726 |
-| Who Gets Paid (2025-07) | 2026-07-27 | 19 dk | 35.709 |
-| Global Decline Explained (2025-09) | 2026-03-23 | 14 dk | 275.225 |
-| Uncover Things (2026-03) | 2026-08-12 | 26 dk | 323.790 |
+| Wealth Chronicles (2026-06) | 2026-06-21 | 14 dk | 30 [API] |
+| History Unburied (2026-09) | 2026-09-29 | 4 dk | 59 [API] |
+| The Money Files (2025-11) | 2025-11-26 | 30 dk | 134 [API] |
+| Money and Marker (2026-03) | 2026-06-09 | 9 dk | 538 [API] |
+| Histonom (2025-12) | 2026-01-01 | 8 dk | 1.044 [API] |
+| Financial Dynasty (2026-01) | 2026-03-29 | 18 dk | 1.496 [API] |
+| Dial-Up Days (2025-08) | 2025-09-04 | 12 dk | 2.694 [API] |
+| Marcus Explains (2026-07) | 2026-07-13 | 29 dk | 3.012 [API] |
+| Markets of the Past (2026-04) | 2026-04-18 | 28 dk | 5.054 [API] |
+| Truth Vault (2025-10) | 2026-05-27 | 20 dk | 5.182 [API] |
+| Drowsy Historian (2025-05) | 2025-05-16 | 127 dk | 19.726 [API] |
+| Who Gets Paid (2025-07) | 2026-07-27 | 19 dk | 35.709 [API] |
+| Global Decline Explained (2025-09) | 2026-03-23 | 14 dk | 275.225 [API] |
+| Uncover Things (2026-03) | 2026-08-12 | 26 dk | 323.790 [API] |
 
 - Medyan: ilk video 2.853, ilk 3 video 2.946 [H].
 - **Yanlılık 1:** onların sayısı aylarca birikmiş ömür boyu izlenme, bizimki 4,5 günlük.
@@ -80,4 +80,4 @@ Hazırlayan: kanal-analisti · **Ölçüm: 2026-11-02 04:22 UTC** [API] · ham v
 - **Koordinatöre (uretim-muhendisi + Niyazi):** 7 g raporu 2026-11-04 16:00 UTC'den sonra yazılacak. O rapordan önce iki yoldan biri lazım: (a) `yt-analytics.readonly` kapsamıyla tek seferlik yeniden yetki, (b) Niyazi'nin Studio → Analytics → "Advanced mode" → dışa aktarımı (CSV), içinde Reach (gösterim, CTR), Engagement (AVD, tutma) ve trafik kaynakları.
 
 ## Test
-`python3 -c` etiket sayımı: §2–§5 tablo satırlarının hepsinde [API]/[H]/[T]/[ÖB] ya da repo yolu var. `grep -c AIza olcum/olcum-2026-11-02.json` → 0.
+Etiket testi (satır içi python, §2–§5 sayılı tablo satırları): ilk koşu 14 etiketsiz (rakip tablosu) → [API] eklendi → 0. `grep -c AIza olcum/olcum-2026-11-02.json` → 0.
