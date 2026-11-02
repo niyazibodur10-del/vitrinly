@@ -13,9 +13,9 @@ export const yuzRig = (r: Rig) => ({ x: 940 - r.kutu.x, y: 330 - r.kutu.y });
 export const YUZ = yuzRig(RIG_KRITIK);
 
 // Rig uyumlu pozlar (kafa a ile hizalı → ağız yamaları çalışır); diğerleri ifade pozu (ağız/göz sabit)
-export type SunucuPoz = "a" | "G05" | "C12" | "C13" | "C14" | "C21" | "balt" | "c" | "d" | "e" | "f" | "C20";
-const AGIZ_UYUMLU = new Set(["a", "G05", "C12", "C13", "C14", "C21", "balt"]);
-const GOZ_UYUMLU = new Set(["a", "G05", "C12", "C13", "C14", "C21"]);
+export type SunucuPoz = "a" | "G05" | "G05k" | "G05m" | "C12" | "C13" | "C14" | "C21" | "balt" | "c" | "d" | "e" | "f" | "C20";
+const AGIZ_UYUMLU = new Set(["a", "G05", "G05k", "G05m", "C12", "C13", "C14", "C21", "balt"]);
+const GOZ_UYUMLU = new Set(["a", "G05", "G05k", "G05m", "C12", "C13", "C14", "C21"]);
 
 const sekilBul = (cues: Cue[], t: number): string => {
   for (const c of cues) if (t >= c.start && t < c.end) return c.value;

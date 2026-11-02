@@ -21,8 +21,10 @@ IFADE_POZ = {"c": "c-isaret", "d": "d-saskin", "e": "e-dusunen", "f": "f-sevincl
 def main():
     for c in ["G01", "G06", "G10", "G09"]:
         Image.open(G / f"canva-ham/{c}.png").convert("RGB").save(P / f"{c}.jpg", quality=92)
-    for f in (G / "nesne").glob("G0*.png"):
-        shutil.copy(f, P / f.name)
+    nesne = {}
+    for f in sorted((G / "nesne").glob("G0*.png")):  # alfa kutusuna kırp (yerleşim kodda en-boy oranıyla)
+        im = Image.open(f).convert("RGBA"); im = im.crop(im.getbbox()); im.save(P / f.name, optimize=True)
+        nesne[f.stem] = [im.width, im.height]
     kaynak = {ad: G29 / f"leo/{f}.png" for ad, f in {**RIG_POZ, **IFADE_POZ}.items()}
     bx = []
     for f in kaynak.values():
@@ -53,6 +55,7 @@ def main():
         "// Otomatik üretildi: uretim/2026-10-28-yeni-video/07-animasyon/varlik-hazirla.py — elle düzenleme.\n"
         "export type Kutu = {x: number; y: number; w: number; h: number};\n"
         "export const KLASOR = \"kbutce\";\n"
+        f"export const NESNE: Record<string, [number, number]> = {json.dumps(nesne)};\n"
         f"export const SUNUCU_T: Kutu = {json.dumps({'x': kutu[0], 'y': kutu[1], 'w': kutu[2] - kutu[0], 'h': kutu[3] - kutu[1]})};\n"
         f"export const YAMA_T: Record<string, Kutu> = {json.dumps(yama)};\n"
         "export const AGIZ_YAMA: Record<string, string> = {\"B\": \"agiz-B-C07\", \"C\": \"agiz-C-C08\", \"H\": \"agiz-C-C08\", \"E\": \"agiz-E-C09\", \"F\": \"agiz-F-C10\", \"G\": \"agiz-B-C07\"};\n")
