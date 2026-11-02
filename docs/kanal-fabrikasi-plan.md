@@ -18,6 +18,7 @@
 
 ## Taşınır / sıfırlanır
 - Taşınır: ajanlar, komutlar, kalite kapıları, tools/, Remotion bileşenleri (AboneOl dahil), ortak-dersler.
+- Taşınır (skill): `.claude/skills/earshot/` — SFX üretimi + vuruş senkron ölçümü (MIT, 0.4.0 @591fa3e, ücretsiz, anahtarsız). Şablonda `tools/kurulum.sh` isteğe bağlı paralel adım olarak kurar (~1,4 GB venv + `doctor --fetch` modeller); nişten bağımsız, çekirdek üretim aracı.
 - Sıfırlanır: uretim/, kanal-kimligi, assets/karakter, rakip analizi, viralite kalibrasyonu, ajan hafızalarının kanala özel kısmı.
 
 ## Yapacaklar

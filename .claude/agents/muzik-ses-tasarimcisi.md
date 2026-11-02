@@ -27,3 +27,4 @@ Lisans kaydında her dosya var ve lisans linki açılıyor; her SFX vuruşu ve a
 - `remotion-best-practices` (remotion-multimedia) — sesin Remotion'da yerleştirilmesi, ses seviyesi eğrileri.
 - `deep-research:deep-research` — kaynak sitenin lisans koşullarını doğrulamak.
 - `c-level-skills:general-counsel-advisor` — lisans belirsizliğinde ikinci görüş.
+- `earshot` (proje skill'i, `.claude/skills/earshot/SKILL.md`) — F6b SFX'i koddan üretip tepe anını görsel olay karesine hedeflemek (`sfx render --apex`), stem'de vuruş senkronunu ölçmek (`timeline --cues`), seviye ölçümü (`measure`). Gemini (`llm`) yasak.

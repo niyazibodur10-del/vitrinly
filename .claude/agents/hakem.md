@@ -30,3 +30,4 @@ Senaryo kararında: ilk 3 aynı tabloda, kazanan KIRMIZI değil, her birine "ned
 - `engineering-advanced-skills:self-eval` — ajan teslimatlarını dürüst puanlamak.
 - `c-level-skills:decision-logger` — kararın kaydı.
 - `remotion-best-practices` (remotion-render) — render çıktısını doğru ölçmek için.
+- `earshot` (proje skill'i) — F9 örneklem: 2 rastgele 30 sn pencerede `timeline --cues` ile vuruş senkronunu bağımsız ölçmek.

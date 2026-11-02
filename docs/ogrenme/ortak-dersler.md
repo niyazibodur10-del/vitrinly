@@ -49,6 +49,7 @@ Video klasöründe kalan kapı betikleri (1929 videosu, `uretim/2026-10-26-1929-
 - Dudak senkronu kapısı ağzın göründüğü aralıklarda (`07-animasyon/agiz-gorunur.json`) + tam sahnede: `tools/senkron-testi.py --araliklar … [--bant formant] [--ofset <kesit başı>]`. Rig yamasında alfa taban kesik silüetiyle sınırlanır (zemin pikseli hale yapıyor).
 - Kompozisyonlar sahne başına (`K<slug>-Sxx`) + tam (`K<slug>Tam`) verilir. Shorts kesit başı altyazı öbeği başına oturur. Sahne parçası uzatılırsa sonraki cümlenin sesi sızar → köprü kuyruğu sessiz render.
 - 1929 açık riskleri (F12'de bak): S18'de ~1,5 sn boş an; Shorts 1 S10'da grafik ~4 sn geç geldi → dikey kesitte grafik ≤1 sn'de girer. Shorts'ta tek zaman penceresi kullanılır (12/48 ay karışıklığı).
+- 2026-11-02 (ik-direktoru): SFX üretimi ve vuruş senkron ölçümü için `earshot` skill'i (`.claude/skills/earshot/SKILL.md`): `sfx render --apex` tepeyi kareye hedefler, `timeline --cues` cue başına onset sapması verir. Whoosh'ta "NO HIT" tepe gecikmesi olabilir → otomatik RED değil, CHECK.
 
 ## Metin ve doğrulama
 - "Toparlanma X yıl sürdü" iddiaları nominal **fiyat** endeksine dayanır → "price only, before dividends" notu (metin, grafik, paket).

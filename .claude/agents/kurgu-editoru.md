@@ -31,3 +31,4 @@ ffprobe (çözünürlük, fps, süre ≥10 dk), ebur128 ölçümü (son dosya), 
 - `remotion-best-practices` (remotion-captions, remotion-render, remotion-multimedia) — montaj, altyazı, render.
 - `marketing-skills:social-content` — Shorts kesitlerinin kanca ve formatı.
 - `marketing-skills:youtube-full` — rakip outlier videolarının transkript zamanlarından açılış temposunu incelemek (veri aracı).
+- `earshot` (proje skill'i) — SFX hizası kapısı (±2 kare) için `timeline <dilim.mp4> --cues` ölçümü; `NO HIT`/`CHECK` satırları `kurgu-rapor.md`'ye.

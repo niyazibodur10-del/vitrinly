@@ -17,3 +17,5 @@
 - 2026-10-28 (hız optimizasyonu): Süre analizinde commit zaman damgaları en iyi kaynak. ~4 saatlik boşluklar oturum limitini gösterir; 1929'da aktif süre ~5 sa, toplam 25,5 sa → darboğaz token. Kural: hızı CPU'dan önce okuma/ölçüm/rapor tekrarında ara.
 - 2026-10-28: Genel kural protokolde, role özgü kural ajan dosyasında; 18 dosyaya aynı paragrafı kopyalamak token israfı. kadro-kontrol "## Çalışma şekli: 2–3 aday" başlığını arar → başlık korunur, tek aday istisnası maddeyle eklenir.
 - 2026-10-28: Yeni Niyazi kuralı iki ajanı "sahip" diye anıyorsa (abone animasyonu) zinciri tek yerleştirme sahibine indir ve CLAUDE.md yamasını koordinatöre öner.
+- 2026-11-02 (earshot): `gh api` repo'ya erişemedi (oturum izni yok) ama `git clone --depth` public repo için çalıştı. Aynı adlı 15+ repo → tarifle (işlev) eşleştir, yıldız/commit/lisansla kanıtla.
+- 2026-11-02: Dış araç ajan değil araçsa yeni ajan alma; proje skill'i yaz, mevcut tek sahiplere bağla. skill-security-auditor FAIL'ini satır satır oku (torch `.eval()`, iç importlib yanlış pozitif); dış Python'u repo dizininden değil `-I` ile/ayrı venv'den çalıştır.

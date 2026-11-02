@@ -27,3 +27,4 @@ Sen dünyanın en iyi konuşma/podcast ses mühendisisin: telefon kaydını yay�
 ## Kullandığın skill'ler
 - `remotion-best-practices` (remotion-captions) — kelime zamanlı transkriptin altyazı/dudak senkronu formatına uyması için.
 - `engineering-skills:senior-ml-engineer` — Whisper/DeepFilterNet gibi modelleri kurup CPU'da çalıştırmak.
+- `earshot` (proje skill'i) — `earshot measure` ile LUFS/true peak/gürültü tabanına ikinci görüş (model yüklemez).
