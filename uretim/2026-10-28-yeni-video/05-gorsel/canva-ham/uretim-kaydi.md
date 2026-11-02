@@ -2,12 +2,12 @@
 Kaynak/lisans: Canva AI `generate-image`, Niyazi'nin hesabı, Canva Kullanım Koşulları. Prompt = `../canva-promptlari.md` §5 ilgili blok (sha256 ilk 12: 47c654a91b14).
 | Gxx | deneme | media id | tarih (UTC) | dosya | karar |
 |---|---|---|---|---|---|
-| G01 | 1 | | | canva-ham/G01.png | |
-| G02 | 1 | | | canva-ham/G02.png | |
-| G03 | 1 | | | canva-ham/G03.png | |
-| G04 | 1 | | | canva-ham/G04.png | |
-| G05 | 1 | | | canva-ham/G05.png | |
-Canva üretim toplamı: 0 / tavan 12.
+| G01 | 1 | MAHZvHhbFqQ | 2026-11-02 | canva-ham/G01.png | **KABUL — mutfak kazananı** (düzlük 64,1 / doku 0,92; masa üstü y 810 = %75,0; Leo arkası L 77) |
+| G02 | 1 | MAHZvIc6Jdg | 2026-11-02 | canva-ham/G02.png | ELENDİ (geçerli ama Leo arkası L 67 → siyah gömlek ayrışması zayıf); kullanılmaz |
+| G03 | 1 | MAHZvDi18rI | 2026-11-02 | canva-ham/G03.png | **KABUL** — 4 nesne M4 artık 0 / saçak 0, yazı yok → nesne/G03-*.png |
+| G04 | 1 | MAHZvCxTPNc | 2026-11-02 | canva-ham/G04.png | **RED** — kafa kor. 0,70 (<0,84); kafa büyüyüp aşağı kaymış, gözler yana-aşağı → rig ağızları oturmaz |
+| G05 | 1 | MAHZvO1VSXk | 2026-11-02 | canva-ham/G05.png | **KABUL** — kor. 0,97, ΔE 1,5/1,1/2,0, kafa kayması <1 px; saat sol; M4 artık 0,0004 → leo/G05-zarftan-zarf.png |
+Canva üretim toplamı: 5 / tavan 12 (kabul 3, aday elendi 1, red 1).
 
 ## Dalga 1 (koordinatör, 2026-11-02) — değerlendirme bekliyor
 | Görsel | Media ID |
