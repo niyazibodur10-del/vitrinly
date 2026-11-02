@@ -32,3 +32,5 @@
 
 ## Sonraki fazlara notlar
 - F3 (senaryo-yazari): S08 zorunlu düzeltmeler D1–D7, P1–P4, H1–H8 → `02-senaryo/senaryo-karari.md` §4. Metinde yayın gününe bağlı zaman sözcüğü yok (kayma güvencesi H7).
+
+- 2026-11-02 17:35 UTC — F10 teslim edildi. Niyazi: "Yarın yükleyelim" → yükleme 2026-11-03 09:00 UTC (hatırlatıcı kuruldu); yayın zamanları değişmedi (uzun 11-04 17:00Z, Shorts 11-05/11-07 14:00Z).
