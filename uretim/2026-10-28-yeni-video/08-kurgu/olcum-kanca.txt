@@ -1,0 +1,14 @@
+↺1   21.86 "by the end you'll know" · görsel 3 [(21.76, 'kesme: buzdolabı: sorular + A·B·C'), (24.18, 'not: FASTEST BILL?')] · SFX 2 · önceki kancadan  21.9 sn
+↺2   78.52 "every bill in its own" · görsel 1 [(79.94, '6 zarf yelpaze gibi dizilir')] · SFX 7 · önceki kancadan  56.7 sn
+↺3  119.76 "now look at envelope five" · görsel 2 [(119.66, 'kesme: masa orta: kırmızı zarf kendiliği'), (120.46, 'kırmızı zarf masaya kayar (müzik kesilir')] · SFX 1 · önceki kancadan  41.2 sn
+↺4  174.16 "goes on the loan" · görsel 3 [(175, 'LOAN BOOK masaya kayar, +$2,000 satırı'), (176.1, 'kesme: masa orta: defter açılır')] · SFX 2 · önceki kancadan  54.4 sn
+↺5  229.36 "still adding two thousand" · görsel 2 [(229.02, 'kesme: masa orta: defter uzar'), (229.52, '+$2,000 satırı')] · SFX 2 · önceki kancadan  55.2 sn
+↺6  260.10 "why do lenders around" · görsel 1 [(262.54, 'APPROVED damgası (hane)')] · SFX 1 · önceki kancadan  30.7 sn
+↺7  268.26 "something strange inside" · görsel 1 [(268.56, 'spot ışık kırmızı zarfa')] · SFX 1 · önceki kancadan   8.2 sn
+↺8  276.08 "watch what happens when" · görsel 2 [(276.02, 'punch-in Leo + zarf'), (277.12, 'zarf açılır: içinden mor zarf (Leo G05)')] · SFX 2 · önceki kancadan   7.8 sn
+↺9  305.82 "why did envelope five" · görsel 1 [(305.63, 'kesme: masa orta: şişman kırmızı zarf')] · SFX 1 · önceki kancadan  29.7 sn
+↺10  335.73 "and it's still growing" · görsel 2 [(336.24, 'FY2026 çubuğu yanıp söner'), (337.53, 'kesme: Leo yakın')] · SFX 3 · önceki kancadan  29.9 sn
+↺11  387.80 "can't do three things" · görsel 0 [] · SFX 0 · önceki kancadan  52.1 sn
+↺12  430.40 "the real question isn't" · görsel 2 [(430.12, 'kesme: soru değişir'), (432.46, 'PAY IT ALL BACK? üstü çizilir')] · SFX 1 · önceki kancadan  42.6 sn
+↺13  471.72 "here's the strange part" · görsel 1 [(471.62, 'kesme: grafik: borç $ çubuğu')] · SFX 1 · önceki kancadan  41.3 sn
+↺14  524.70 "time is what the" · görsel 0 [] · SFX 0 · önceki kancadan  53.0 sn

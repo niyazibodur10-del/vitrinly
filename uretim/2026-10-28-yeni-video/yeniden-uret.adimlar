@@ -14,3 +14,9 @@ video/public/kbutce/leo-G05k.png | $PY -I uretim/2026-10-28-yeni-video/07-animas
 uretim/2026-10-28-yeni-video/07-animasyon/rhubarb/tum-kapili.json | python3 -I tools/animasyon/rhubarb-toplu.py --girdi uretim/2026-10-28-yeni-video/04-ses/rhubarb/sahneler.json --cikis uretim/2026-10-28-yeni-video/07-animasyon/rhubarb --ek shorts-1-ek:uretim/2026-10-28-yeni-video/04-ses/shorts-1-ek.wav:uretim/2026-10-28-yeni-video/07-animasyon/rhubarb/ek/shorts-1-ek.txt --ek shorts-2-ek:uretim/2026-10-28-yeni-video/04-ses/shorts-2-ek.wav:uretim/2026-10-28-yeni-video/07-animasyon/rhubarb/ek/shorts-2-ek.txt
 uretim/2026-10-28-yeni-video/07-animasyon/test-10sn.mp4 | tools/render-son.sh KButceKritik uretim/2026-10-28-yeni-video/07-animasyon/test-10sn.mp4
 uretim/2026-10-28-yeni-video/07-animasyon/tam-16x9.mp4 | tools/render-parca.sh KButceTam uretim/2026-10-28-yeni-video/07-animasyon/tam-16x9.mp4
+# F7 kurgu (kurgu-editoru): kurgu-veri.ts git içinde; miks + yataklar + render git dışı
+${KURGU_CIKIS:-$HOME/.finansal-arac/kurgu-kbutce}/final-miks.wav | $PY uretim/2026-10-28-yeni-video/08-kurgu/kurgu_ses.py ana
+video/public/kbutce/sh1-yatak.wav | $PY uretim/2026-10-28-yeni-video/08-kurgu/kurgu_ses.py shorts
+uretim/2026-10-28-yeni-video/08-kurgu/final-16x9.mp4 | tools/render-parca.sh KButceFinal uretim/2026-10-28-yeni-video/08-kurgu/final-16x9.mp4 --kaynak KButceTam --ses ${KURGU_CIKIS:-$HOME/.finansal-arac/kurgu-kbutce}/final-miks.wav
+uretim/2026-10-28-yeni-video/08-kurgu/shorts-1.mp4 | tools/render-son.sh KButceShorts1 uretim/2026-10-28-yeni-video/08-kurgu/shorts-1.mp4
+uretim/2026-10-28-yeni-video/08-kurgu/shorts-2.mp4 | tools/render-son.sh KButceShorts2 uretim/2026-10-28-yeni-video/08-kurgu/shorts-2.mp4

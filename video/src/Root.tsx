@@ -10,6 +10,7 @@ import { DEk, DikeySahneComp, DIKEY_SAHNE } from "./k1929/dikey";
 import { Final, KurguShorts } from "./k1929/kurgu";
 import { KURGU_SHORTS } from "./k1929/kurgu-veri";
 import { KButceKompozisyonlar } from "./videolar/yeni-video/Kompozisyonlar";
+import { KButceKurgu } from "./videolar/yeni-video/kurgu";
 // yeni-video.sh: import
 
 const PilotDikey: React.FC = () => (
@@ -62,6 +63,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="K1929Shorts2" component={KurguShorts} defaultProps={{ ad: "sh2" as const }} durationInFrames={KURGU_SHORTS.sh2.toplam} fps={30} width={1080} height={1920} />
       <Composition id="AgizTest" component={AgizTest} durationInFrames={1} fps={30} width={1920} height={1080} />
       <KButceKompozisyonlar />
+      {/* 2026-10-28-yeni-video F7 kurgu (kurgu-editoru): KButceFinal, KButceIlk30-A/B/C, KButceShorts1/2 */}
+      <KButceKurgu />
       {/* yeni-video.sh: kompozisyon */}
     </>
   );
