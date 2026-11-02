@@ -1,0 +1,8 @@
+pencere 350.11+60: SRT blokları 18 (351.08–408.92), ref 163 kelime · hata (ham, normalizasyonsuz) benim 12 / kurgu 12 · benim↔kurgu fark 2 kelime
+pencere 608.70+60: SRT blokları 19 (610.54–667.46), ref 168 kelime · hata (ham, normalizasyonsuz) benim 6 / kurgu 8 · benim↔kurgu fark 2 kelime
+pencere 83.02+11.58: SRT blokları 2 (86.69–93.95), ref 19 kelime · hata (ham, normalizasyonsuz) benim 6 / kurgu 6 · benim↔kurgu fark 0 kelime
+TOPLAM ref 350: ham hata benim 24 (6.9%) / kurgu 26 (7.4%)
+# hata ayrıntısı (SRT → benim Whisper)
+350.11: twenty twentysix → 2026 | tenyear → 10 year | five percent → 5% | shortterm → short term | cost → costs | four percent → 4% | of → 
+608.7: five → 5 | one thousand fifty dollars → $1 050 | five → 5
+83.02: one thousand six hundred seventy dollars → $1 670

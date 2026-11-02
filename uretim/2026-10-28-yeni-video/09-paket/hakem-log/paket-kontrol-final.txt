@@ -1,0 +1,86 @@
+== paket-kontrol.py (F8b --final) ==
+[1] Başlıklar (≤60, < > yok, somut özne America/US, yasaklı/kalıp 0)
+  OK   51 krk · If America Earned $5,400 a Month, Here's Its Budget
+  OK   45 krk · America's Budget, Shrunk to One Kitchen Table
+  OK   51 krk · America Pays More in Interest Than for Its Military
+  OK   57 krk · The US Spends Nearly $7 for Every $5 It Earns. Then What?
+  OK   51 krk · America's Interest Bill Tripled in Five Years. Why?
+  OK   47 krk · A Country Isn't a Family. Its Interest Bill Is.
+  OK   45 krk · US Interest Payments Just Passed the Military  (elenen; bulgu [('kalıp', 'Just Passed')])
+[2] Puan = .30 merak + .20 arama + .20 thumb + .20 politika + .10 mobil (≤45:10 ≤50:9 ≤60:7) − kalıp
+       T1 8.20 · If America Earned $5,400 a Month, Here's Its Budget
+       T4 8.10 · America's Budget, Shrunk to One Kitchen Table
+       T3 7.50 · America Pays More in Interest Than for Its Military
+       T2 7.30 · The US Spends Nearly $7 for Every $5 It Earns. Then What?
+       T7 7.00 · America's Interest Bill Tripled in Five Years. Why?
+       T5 6.50 · A Country Isn't a Family. Its Interest Bill Is.
+       T6 5.30 · US Interest Payments Just Passed the Military
+  OK   en yüksek T1 = önerilen başlık
+  OK   en düşük 2 ['T5', 'T6'] = elenenler
+  OK   varyant sırası = puan sırası
+[3] Açıklama
+       ilk paragraf 130 krk: The US federal budget and deficit, shrunk to one kitchen table: $5,400 a month in, about $7,400 out. Where does the $2,000 gap go?
+  OK   ilk paragraf ≤150 krk (kesilmeden okunur)
+  OK   ilk 150 krk: US federal budget
+  OK   ilk 150 krk: deficit
+  OK   ilk 150 krk: $5,400
+  OK   arama ifadesi ilk 10 krk içinde (konum 4)
+  OK   "Not financial advice" var
+  OK   yasal not rakam-tablosu §6 birebir
+  OK   AI satırı (yasal notun sonu) + görsel satırı aynı paragrafta birebir
+  OK   ölçek notu var
+  OK   {BOLUMLER} yer tutucusu (araç Chapters: basar)
+  OK   LEGAL NOTE, SOURCES'ın üstünde
+  OK   kaynak satırı 8, hepsi bağlantılı (MTS, DttP, ort. faiz, OMB, FRED×3, Shiller)
+  OK   açıklama 2869/5000 bayt, < > yok
+  OK   açıklama yasaklı/tavsiye/siyasi: 0
+  OK   müzik atfı 06-muzik/atif-satirlari.md'den (yoksa yer tutucu)
+[3b] Bölümler
+  OK   7 bölüm, 00:00, artan, ≥10 sn
+  OK   bölüm adları metin.md §4 birebir
+  OK   00:00 One household, $5,400 a month      ↔ S01 bas    0.00 (fark +0.00)
+  OK   01:23 Five envelopes                     ↔ S05 bas   83.02 (fark -0.02)
+  OK   02:56 The loan                           ↔ S08 bas  176.10 (fark -0.10)
+  OK   04:31 The envelope inside the envelope   ↔ S12 bas  271.50 (fark -0.50)
+  OK   06:31 Three things a family can't do     ↔ S16 bas  391.02 (fark -0.02)
+  OK   08:47 Three ways to close the gap        ↔ S21 bas  527.85 (fark -0.85)
+  OK   10:37 Back to the sentence               ↔ S26 bas  637.95 (fark -0.95)
+[4] Etiket + hashtag
+  OK   etiket 22 adet, 436/500
+  OK   etiket yasaklı: 0
+  OK   3 hashtag, açıklama sonu: ['#USBudget', '#NationalDebt', '#EconomyExplained']
+[5] Shorts
+  OK   shorts1 başlık 51 krk · Interest vs. the Military: Which US Bill Is Bigger?
+  OK   shorts1 yasaklı: 0
+  OK   shorts1 AI + görsel satırı + Not financial advice
+  OK   shorts1 uzun video başlığı + kanal bağlantısı, URL yer tutucusu yok
+  OK   shorts1 hashtag ['#Shorts', '#NationalDebt', '#USBudget']
+  OK   shorts1 müzik atfı
+  OK   shorts2 başlık 59 krk · US Debt Was Bigger Than the Economy in 1946. What Happened?
+  OK   shorts2 yasaklı: 0
+  OK   shorts2 AI + görsel satırı + Not financial advice
+  OK   shorts2 uzun video başlığı + kanal bağlantısı, URL yer tutucusu yok
+  OK   shorts2 hashtag ['#Shorts', '#NationalDebt', '#EconomicHistory']
+  OK   shorts2 müzik atfı
+  OK   shorts2: oran küçüldü, borç büyüdü (R33/R34) ifadesi
+[6] Pinli yorum
+  OK   tek soru (1 '?')
+  OK   A/B/C seçenekleri
+  OK   nötr (tavsiye/siyasi/vergi-kesinti/bugün 0): 0
+[7] Yayın zamanı (EST −05:00, Çar 12:00 / Per + Cmt 09:00 ET)
+  OK   uzun: 2026-11-04T12:00:00-05:00 = Wed 2026-11-04 17:00Z
+  OK   shorts-1: 2026-11-05T09:00:00-05:00 = Thu 2026-11-05 14:00Z
+  OK   shorts-2: 2026-11-07T09:00:00-05:00 = Sat 2026-11-07 14:00Z
+  OK   yedek-uzun: 2026-11-08T12:00:00-05:00 = Sun 2026-11-08 17:00Z
+  OK   yedek-shorts-1: 2026-11-09T09:00:00-05:00 = Mon 2026-11-09 14:00Z
+  OK   yedek-shorts-2: 2026-11-10T09:00:00-05:00 = Tue 2026-11-10 14:00Z
+  OK   Shorts uzun videodan sonra
+[8] JSON ↔ paket.md (yayin_paket.py)
+  OK   yayin-paketi.json: başlık 51 krk · tam açıklama 3077/5000 bayt · 2026-11-04T12:00:00-05:00
+  OK   tam açıklamada 'Chapters:' + 00:00
+  OK   yayin-paketi-shorts-1.json: başlık 51 krk · tam açıklama 758/5000 bayt · 2026-11-05T09:00:00-05:00
+  OK   yayin-paketi-shorts-2.json: başlık 59 krk · tam açıklama 767/5000 bayt · 2026-11-07T09:00:00-05:00
+  OK   thumbnail dosyası var: ../09-paket/thumbnail/A1-eksi-2000.jpg
+  OK   sentetik_medya = politika-raporu.md kararı (true)
+SONUÇ: 0 hata · 0 bekleyen (F8b)
+exit 0

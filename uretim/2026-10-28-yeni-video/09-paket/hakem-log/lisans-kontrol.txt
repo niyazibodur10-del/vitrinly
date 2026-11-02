@@ -1,0 +1,2 @@
+dosya: 31 · kayıtsız: 0 [] · yasak lisans (kayıt bölümünde): [] · cue kayıtsız: []
+exit 0

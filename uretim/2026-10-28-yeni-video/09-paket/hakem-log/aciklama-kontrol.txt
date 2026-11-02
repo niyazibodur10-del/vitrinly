@@ -1,0 +1,3 @@
+yayin-paketi.json başlık 51 kr · not financial advice:✗ · AI ses:✓ · Leo kurgusal:✓ · CC0/atıf:✓ · yatırım tavsiyesi değil (yasal):✓ · etiket 22 · sentetik True · çocuk False · gizlilik private · niyazi_onayi False
+yayin-paketi-shorts-1.json başlık 51 kr · not financial advice:✗ · AI ses:✓ · Leo kurgusal:✓ · CC0/atıf:✓ · yatırım tavsiyesi değil (yasal):✓ · etiket 7 · sentetik True · çocuk False · gizlilik private · niyazi_onayi False
+yayin-paketi-shorts-2.json başlık 59 kr · not financial advice:✗ · AI ses:✓ · Leo kurgusal:✓ · CC0/atıf:✓ · yatırım tavsiyesi değil (yasal):✓ · etiket 7 · sentetik True · çocuk False · gizlilik private · niyazi_onayi False

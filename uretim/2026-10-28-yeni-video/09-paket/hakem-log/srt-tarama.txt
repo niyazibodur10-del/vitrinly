@@ -1,0 +1,19 @@
+08-kurgu/final.en.srt: 240 blok, son 678.14 sn, maks satır 42 kr, maks 21.8 kr/sn, sorun 0: []
+08-kurgu/altyazi.srt: 240 blok, son 678.14 sn, maks satır 42 kr, maks 21.8 kr/sn, sorun 0: []
+yazım: SRT 1895 kelime, kilitli metinde (03-metin/*.md) olmayan 0: []
+hiza (SRT blok başı − Whisper kelime başı, 2 pencere): 36 blok eşleşti, medyan 45 ms, p95 359 ms, maks 510 ms, >150 ms: 7
+# hizali anahtarlar ['w', 's', 'e', 'p', 'sahne', 'cumle', 'kaynak']
+hiza (SRT blok başı − akustik hiza kelime başı, tüm SRT): 240/240 blok, medyan 0 ms, maks 0 ms, >150 ms: 0
+  362.12: hiza kelimeleri [('even', 362.121)]
+  365.6: hiza kelimeleri [('so', 365.6), ('the', 365.78)]
+  371.56: hiza kelimeleri [('even', 371.56)]
+  406.53: hiza kelimeleri [('question', 406.531)]
+  663.19: hiza kelimeleri [('theres', 663.194)]
+anlatım: ['04-ses/shorts-1-ek-ham.wav', '04-ses/shorts-1-ek.wav', '04-ses/anlatim.wav']
+365.6: −600…+400 ms, 50 ms adım: 
+371.56: −600…+400 ms, 50 ms adım: 
+406.53: −600…+400 ms, 50 ms adım: 
+anlatım 365.6: −600…+350 ms (50 ms): -180 -180 -180 -180 -180 -180 -180 -180 -180 -180 -180 -55 -24 -18 -12 -11 -14 -12 -17
+anlatım 371.56: −600…+350 ms (50 ms): -15 -13 -14 -12 -19 -57 -26 -24 -11 -13 -15 -20 -17 -16 -18 -28 -68 -71 -71
+anlatım 406.53: −600…+350 ms (50 ms): -24 -21 -20 -22 -36 -71 -180 -180 -180 -180 -180 -77 -27 -10 -12 -15 -18 -19 -10
+anlatım 362.12: −600…+350 ms (50 ms): -18 -21 -29 -31 -39 -67 -146 -180 -180 -180 -180 -65 -13 -11 -13 -9 -9 -13 -13

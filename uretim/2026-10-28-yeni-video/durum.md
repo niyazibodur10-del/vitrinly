@@ -27,7 +27,7 @@
 | F6 miks | muzik-ses-tasarimcisi | BEKLİYOR | 06-muzik/stems/ | | |
 | F7 kurgu | kurgu-editoru | BEKLİYOR | 08-kurgu/ | | |
 | F8 paket | thumbnail ‖ paketleyici ‖ viralite → monetizasyon | BEKLİYOR | 09-paket/ | | |
-| F9 hakem | hakem | BEKLİYOR | hakem-raporu.md | | |
+| F9 hakem | hakem | **ONAY** + ŞY-1 (uç ekran 11:07'den, Studio) | hakem-raporu.md (+ teslim/) | 19/19 kapı kendi ölçümü: final sha 403ee6df0af2, −14,0/−3,3, senkron 1 kare, abone 4/1/1 klik 0 kare, SFX 5/5, politika-f8 final hata 0 (%3,1), paket-kontrol 0, dry-run 3/3 · log 09-paket/hakem-log/ | 11-02 16:50–~18:00 |
 | F10 teslim | koordinatör | BEKLİYOR | teslim/ | | |
 
 ## Sonraki fazlara notlar

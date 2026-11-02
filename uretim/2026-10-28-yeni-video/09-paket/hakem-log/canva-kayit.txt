@@ -1,0 +1,2 @@
+canva-promptlari.md: tablo satırı 10 · benzersiz media ID 3
+video/public/kbutce görsel 35 · kayıtta adı geçmeyen 31 ['G03-kagit.png', 'G03-zarf-acik.png', 'G03-zarf-kapali.png', 'G03-zarf-yigini.png', 'G07-hesap-makinesi.png', 'G07-kart.png', 'G07-kasa.png', 'G07-kumbara.png', 'G07-para.png', 'agiz-B-C07.png', 'agiz-C-C08.png', 'agiz-E-C09.png', 'agiz-F-C10.png', 'agiz-notr-C11.png', 'goz-kapali-C06.png']
