@@ -19,3 +19,4 @@
 - 2026-11-02 (F3 S08): Kilitli `rakam-tablosu.md` gelmeden yazma; gelince "güvenli yazım" sütununu aynen kullan (about 1,050; "credit card" yok; tek kaynak rakamsız). Metin önce yazılıp sonra 40 eski→yeni betikle eşlendi → sıradaki F3'te tabloyu bekle/oku, sonra yaz.
 - 2026-11-02: F3 betiği v3 `uretim/2026-10-28-yeni-video/03-metin/metin-kontrol.py`: sayı-kelime ayrıştırıcı + tabloyla tam değer eşleşmesi (1000 kuvveti ölçek, yıllar ayrı), ABONE-n çapa/konum, H7, tablo yasakları. Mantis karşılaştırması yanlış GEÇTİ veriyordu (1025≈1) → tam değer.
 - 2026-11-02: "Biggest first" gibi sıralama iddiası rakamlarla çelişti (faiz 3. sırada) → sıra/üstünlük cümlesini tablodaki sıralama satırıyla kontrol et.
+- 2026-11-02 (RED-1): "By the end, you'll know…" vaat köprüsü 1929 ve S08'de kullanıldı → sonraki videoda farklı kalıp (soru, sahne ya da karşıtlık). Ortalama/öncelik iddiaları koşullu yaz ("as long as…", "can't skip", "many", "every" değil).

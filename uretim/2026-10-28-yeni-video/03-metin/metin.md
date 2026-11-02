@@ -193,25 +193,25 @@ Zamanlar §12 betik ölçümünden (160 kpm). A = açılan, K = kapanan merak d�
 | 1:58–2:28 | **İlk büyük ödül:** faiz > savunma, 3. büyük fatura, 1/5 | — | G1b sıralı çubuk |
 | 2:50 | A1 kapanır (−$2,000/ay); **A6** borcun bakiyesi? | ↺4 "goes on the loan" | terazi, borç defteri |
 | 2:53 | **ABONE-1** | — | profil + Subscribe + tık (S07 sonu nefes) |
-| 2:53–3:46 | A6 kapanır (~389 bin $, 6 yıllık gelir, ≈%3) | ↺5 "still adding two thousand" (3:46) | G2 defter, G2b takvim |
-| 4:18 | **A5** borç verenler neden "evet" diyor? | ↺6 | DENIED/APPROVED gag'i |
-| 4:27–4:32 | **A7** zarf 5'te garip ne var? | ↺7, ↺8 "Watch what happens…" | spot, matruşka başlar |
-| 4:29–5:01 | **DORUK:** faiz açığın %53'ü, faiz için borç | — | punch-in ×4, zarf kulesi |
-| 5:01 | **ABONE-2** (doruğun ardından nefes) | — | profil + Subscribe + tık |
-| 5:01 | A8 zarf neden bu kadar hızlı şişti? | ↺9 | G3 çubuklar |
-| 5:35 | A8 kısmi (ort. faiz ~1,4 → ~3,5; fatura ~3 kat) | ↺10 "And it's still growing" | G3 sağ panel |
-| 5:36–6:06 | A8 kapanır (eski ucuz borç pahalıyla yenilenir; ~%5 / ~%4) | — | konveyör, G4 |
-| 6:25 | **A9** ailenin yapamadığı üç şey | ↺11 | "FAMILY" çatlağı |
-| 6:28–6:57 | A5 kapanır (kendi parası); **A10** enflasyon (sona kadar) | — | fotokopi gag'i, LIKE yazısı |
-| 7:12 | A11 asıl soru: faizi ödemeye devam edebilir mi? | ↺12 | IOU fişleri takla |
-| 7:40–8:15 | **İkinci ödül:** 1946 >%100 → 1974 ~%23, borç $ olarak arttı | ↺13 "here's the strange part" (7:58) | G5 çizgi + çubuk |
-| 8:54 | A9 kapanır (frenler); **A12** üç olasılık | ↺14 | fren gag'i, G5 ~%97 |
-| 9:28 | A dalının bedeli | ↺15 "The catch is the rate" | pist |
-| 10:26 | A10 kapanır (C dalı, 1946 +%18) | ↺16 "envelope five can come right back" | küçülen banknot, şişen zarf |
-| 10:30–10:51 | A2 kapanır; tek harfli yorum sorusu | — | A·B·C notları |
-| 11:03 | A3 kapanır: tez sonda | — | tez notu büyür |
-| 11:18 | **ABONE-3** (köprüden önce nefes) | — | profil + Subscribe + tık |
-| 11:18 | **A13 (uç ekran):** ~%5'i kim belirliyor? | köprü cümlesi | not pencereden uçar |
+| 2:53–3:49 | A6 kapanır (~389 bin $, 6 yıllık gelir, ≈%3) | ↺5 "still adding two thousand" (3:49) | G2 defter, G2b takvim |
+| 4:20 | **A5** borç verenler neden "evet" diyor? | ↺6 | DENIED/APPROVED gag'i |
+| 4:30–4:34 | **A7** zarf 5'te garip ne var? | ↺7, ↺8 "Watch what happens…" | spot, matruşka başlar |
+| 4:32–5:03 | **DORUK:** faiz açığın %53'ü, faiz için borç | — | punch-in ×4, zarf kulesi |
+| 5:03 | **ABONE-2** (doruğun ardından nefes) | — | profil + Subscribe + tık |
+| 5:03 | A8 zarf neden bu kadar hızlı şişti? | ↺9 | G3 çubuklar |
+| 5:37 | A8 kısmi (ort. faiz ~1,4 → ~3,5; fatura ~3 kat) | ↺10 "And it's still growing" | G3 sağ panel |
+| 5:39–6:08 | A8 kapanır (eski ucuz borç pahalıyla yenilenir; ~%5 / ~%4) | — | konveyör, G4 |
+| 6:32 | **A9** ailenin yapamadığı üç şey | ↺11 | "FAMILY" çatlağı |
+| 6:36–7:04 | A5 kapanır (kendi parası); **A10** enflasyon (sona kadar) | — | fotokopi gag'i, LIKE yazısı |
+| 7:19 | A11 asıl soru: faizi ödemeye devam edebilir mi? | ↺12 | IOU fişleri takla |
+| 7:47–8:22 | **İkinci ödül:** 1946 >%100 → 1974 ~%23, borç $ olarak arttı | ↺13 "here's the strange part" (8:05) | G5 çizgi + çubuk |
+| 9:02 | A9 kapanır (frenler); **A12** üç olasılık | ↺14 | fren gag'i, G5 ~%97 |
+| 9:36 | A dalının bedeli | ↺15 "The catch is the rate" | pist |
+| 10:35 | A10 kapanır (C dalı, 1946 +%18) | ↺16 "envelope five can come right back" | küçülen banknot, şişen zarf |
+| 10:39–11:00 | A2 kapanır; tek harfli yorum sorusu | — | A·B·C notları |
+| 11:11 | A3 kapanır: tez sonda | — | tez notu büyür |
+| 11:26 | **ABONE-3** (köprüden önce nefes) | — | profil + Subscribe + tık |
+| 11:26 | **A13 (uç ekran):** ~%5'i kim belirliyor? | köprü cümlesi | not pencereden uçar |
 
 **En uzun ↺ aralığı 59 sn** (betik §12; hedef ≤75).
 
@@ -220,8 +220,8 @@ Zamanlar §12 betik ölçümünden (160 kpm). A = açılan, K = kapanan merak d�
 | # | Zaman (betik) | Çapa cümlesi | Neden bu an |
 |---|---|---|---|
 | ABONE-1 | 2:53 (S07 sonu / S08 başı) | "Let's open the loan statement." | İlk büyük ödül (faiz > savunma) + A1 kapanışından sonra nefes; ≥60 sn |
-| ABONE-2 | 5:01 (S12 sonu / S13 başı) | "So why did envelope five get so fat, so fast?" | Matruşka doruğunun **ardından**, üstüne değil (H6) |
-| ABONE-3 | 11:18 (S26 sonu / S27 başı) | "There's one number that helps set the price of many new loans in this kitchen" | Tez kapanışından sonra, köprüden önce (H6) |
+| ABONE-2 | 5:03 (S12 sonu / S13 başı) | "So why did envelope five get so fat, so fast?" | Matruşka doruğunun **ardından**, üstüne değil (H6) |
+| ABONE-3 | 11:26 (S26 sonu / S27 başı) | "There's one number that helps set the price of many new loans in this kitchen" | Tez kapanışından sonra, köprüden önce (H6) |
 
 Sesli abone/beğeni çağrısı yok. Tek sesli etkileşim: S25 tek harfli yorum sorusu (A/B/C). Sessiz "LIKE" yazısı S16'da (ABONE ile çakışmaz).
 **Not:** TTS duraklamaları gerçek süreyi uzatabilir; F7'de `kurgu-editoru` gerçek ses zamanlarıyla yeniden ölçer.
@@ -236,10 +236,10 @@ Betik zamanları (§12). Montaj sonrası `kurgu-editoru` gerçek ses zamanlarıy
 0:00 One household, $5,400 a month
 1:28 Five envelopes
 2:53 The loan
-4:29 The envelope inside the envelope
-6:28 Three things a family can't do
-8:57 Three ways to close the gap
-10:51 Back to the sentence
+4:32 The envelope inside the envelope
+6:36 Three things a family can't do
+9:06 Three ways to close the gap
+11:00 Back to the sentence
 ```
 
 ---
@@ -328,12 +328,12 @@ Kullanılmayanlar (bilinçli): toplam borç 40,17 T$ / 482 bin $ / %121 (D5), BE
 | P1 | Parti/başkan/aday/renk/yüz yok; suçlama yok; seçim yok; "argument for voters, not for a cartoon roommate" | S18, S23, tüm GÖRSEL |
 | P3 | Üç olasılık tarih + mekanizma + "catch"; "this is not a forecast"; varlık önerisi yok | S21–S24 |
 | P4 | Açıklama yasal not + AI ses satırı → youtube-paketleyici / monetizasyon-uyum-uzmani | §11 not |
-| H1 | Tez 0:53–0:58 ve S26 11:03 (son 90 sn) | S03, S26 |
-| H2 | "Aile değil" bölümü: 3 fark + G5 birincil veri (OMB T7.1) + frenler (S15–S20, 6:06–8:57 ≈2:50) | Bölüm 5 |
+| H1 | Tez 0:53–0:58 ve S26 11:11 (son 90 sn) | S03, S26 |
+| H2 | "Aile değil" bölümü: 3 fark + G5 birincil veri (OMB T7.1) + frenler (S15–S20, 6:08–9:06 ≈3:00) | Bölüm 5 |
 | H3 | Kanal tanıtımı yok, vaat ≤15 sn, ilk görsel değişim ≤3 sn, ↺ aralıkları §12 | §1, §12 |
 | H4 | Matruşka + Leo masada konuşma → F5 kritik yol; B planı yazılı | S01, S12 |
 | H5 | %5 anlatımı S14'te tek cümle (<60 sn); boru/vana metaforu yok (konveyör) | S14 |
-| H6 | ABONE-1 2:53, ABONE-2 5:01 (doruktan sonra), ABONE-3 11:18 (köprüden önce); ilk 60 sn'de yok | §3 |
+| H6 | ABONE-1 2:53, ABONE-2 5:03 (doruktan sonra), ABONE-3 11:26 (köprüden önce); ilk 60 sn'de yok | §3 |
 | H7 | Yayın gününe bağlı sözcük yok (betik taraması §12) | tümü |
 | H8 | Başlık paketleyicide; thumbnail "-$2,000/MO" ölçek kaynağı açıklamada → paketleyiciye not | §11 not |
 
@@ -351,14 +351,15 @@ Kullanılmayanlar (bilinçli): toplam borç 40,17 T$ / 482 bin $ / %121 (D5), BE
 **Özet (`python3 -I metin-kontrol.py metin.md`, 2 koşu aynı çıktı; tam çıktı `kapi-cikti.txt`):**
 | Kapı | Sonuç |
 |---|---|
-| Kelime / süre (160 kpm) | 1.856 kelime ≈ 11:36 (tireler ayrı 1.872 ≈ 11:42) · kapı 1.750–2.100 GEÇTİ |
+| Kelime / süre (160 kpm) | 1.878 kelime ≈ 11:44 (tireler ayrı 1.894 ≈ 11:50) · kapı 1.750–2.100 GEÇTİ |
 | İlk 15 sn somut özne + vaat · ilk 30 sn intro | GEÇTİ · 0 |
 | ↺ aralığı | 16 ↺ + hook + köprü, en uzun 59 sn (≤75) GEÇTİ |
-| ABONE-n | 3 satır (2:53, 5:01, 11:18), çapalar metinde, ≥60 sn, doruk üstünde değil, ilki ilk ödülden sonra · sesli abone 0 · GEÇTİ |
-| Tez (H1) | 0:53–0:58 ve 11:03 GEÇTİ |
+| ABONE-n | 3 satır (2:53, 5:03, 11:26), çapalar metinde, ≥60 sn, doruk üstünde değil, ilki ilk ödülden sonra · sesli abone 0 · GEÇTİ |
+| Tez (H1) | 0:53–0:58 ve 11:11 GEÇTİ |
 | Telaffuz yasak · H7 zaman sözcüğü · tablo yasakları (credit card, first time, 7-for-5, toplam borç) · P1 isim · tavsiye (21 desen) | 0 · 0 · 0 · 0 · 0 |
 | Rakam eşleşmesi | 47 sayı (ANLATIM + Shorts) → hepsi rakam-tablosu.md / olcek-cikti.txt'de; açık [RAKAM?] 0 |
 | Shorts | 1: 131 birim ≈49 sn · 2: 106 birim ≈40 sn (≤60) GEÇTİ |
 | Bölümler | 7 bölüm, 0:00 başlar, aralar ≥10 sn GEÇTİ |
 | Özgünlük | 1929 metniyle 5-gram %0,3 GEÇTİ |
-Girdi sha256: metin.md (bu satırdan önce) 43efc592f6a0 · metin-kontrol.py 0080b6906234 · kapi-cikti.txt 6d6233e230ff · rakam-tablosu.md 6d5c2a92f428
+
+**RED-1 (v1.2, eski→yeni betikle, her eski metin tam eşleşme):** Z1 S08 "about three to three and a half percent" + G2 ≈3–3.5% · Z2 S15 koşul "as long as new loans cost more…" · Z3 S15 "the one bill this household can't skip", S26 "every single month", ekran CAN'T SKIP · Z4 S27 "helps set the price of many new loans" (ABONE-3 çapası ve §6 eşlendi) · Z5 Shorts 2 ">100% → ~23%" · Z6 G5 OMB FY2023'te biter, 2026 FRED ayrı işaret · politika (b) S20 "safest places to lend money". Yeni rakam yok.
