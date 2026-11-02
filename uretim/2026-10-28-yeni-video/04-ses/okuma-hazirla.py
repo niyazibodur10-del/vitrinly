@@ -19,6 +19,10 @@ MD = (KOK.parent / "03-metin" / "metin.md").read_text(encoding="utf-8")
 SAHNE = re.compile(r"^### (S\d\d) · ([^\n]*)\n\| ANLATIM \| GÖRSEL \|\n\|---\|---\|\n\| (.+?) \| (.+?) \|$", re.M)
 TELAFFUZ = [  # (kilitli metin, Kokoro'ya verilen) — yalnız telaffuz işareti; görünen kelime aynı kalır
     ("U.S.", "[U.S.](/jˌuˈɛs/)"),  # 1929 dersi: düz "U.S. " cümleyi bölüyor
+    # v1 tam üretim + cümle tek başına Whisper'da tekrarlanan hata → varyant testi (telaffuz-testi/), kazanan:
+    ("Thing one: it borrows", "Thing one: it [borrows](/bˈɔɹˌOz/)"),  # "barfs" 0,97; /bˈɑɹOz/ ve +2 elendi
+    ("rate change an old debt", "rate change [an](/ˈæn/) old debt"),  # "in old" 0,74; +2 elendi (v2'de cümle 105 eklendi)
+    ("on the fridge as A", "on the [fridge](/fɹˈɪʤ/) [as](/ˈæz/) A"),   # "fridges A"
 ]
 
 

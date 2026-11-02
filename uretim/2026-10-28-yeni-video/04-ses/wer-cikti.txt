@@ -1,0 +1,14 @@
+kelime=1867 hata=13 WER=%0.7
+replace planes -> playing
+replace securitys -> securities
+replace an -> in
+insert  -> day
+replace two -> ii
+replace brakes -> breaks
+replace brake -> break
+insert  -> possibilities
+replace cost -> costs
+insert  -> if
+replace debt -> debts
+replace buy -> by
+replace two -> ii
