@@ -18,7 +18,7 @@
 | F2 viralite / ön doğrulama / politika | viralite-analisti ‖ finans-dogrulayici ‖ monetizasyon-uyum-uzmani | GEÇTİ | 02-senaryo/ | viralite 2 koşu sha256 dab7ffb8050d · doğrulama Y3/S7/K2 · politika 8Y/4S/0K, 2 koşu aynı | 11-02 –04:27 |
 | F2 karar | hakem | GEÇTİ | 02-senaryo/senaryo-karari.md | KAZANAN S08 / YEDEK S06; hakem-karar.py 2 koşu sha256 6d3b6a9622fc; S08–S06 eşit (0.01), hook 9>8 | 11-02 04:30–04:5x |
 | F3 metin + doğrulama | senaryo-yazari → finans-dogrulayici ‖ monetizasyon-uyum-uzmani | BEKLİYOR | 03-metin/metin.md | | |
-| F4 ses | ses-yonetmeni → ses-muhendisi | BEKLİYOR | 04-ses/ | | |
+| F4 ses | ses-yonetmeni (+ ses-muhendisi işi) | GEÇTİ | 04-ses/ (anlatim.m4a, kelimeler-hizali.json, altyazi-taslak.en.srt, sahne-zamanlari.json, rhubarb/, shorts-1/2-ek) | 11:18.2; WER %1.4 (gerçek hata 0); −14.2 LUFS TP −1.5; hiza p95 5/15 ms; m4a sha256 d76d46f47c7b; tts-rapor.md | 11-02 05:02–11:3x |
 | F4 görsel | gorsel-varlik-sanatcisi | BEKLİYOR | 05-gorsel/ | | |
 | F4 müzik + SFX adayları | muzik-ses-tasarimcisi | BEKLİYOR | 06-muzik/ | | |
 | F4 paket taslağı | thumbnail-tasarimcisi ‖ youtube-paketleyici | BEKLİYOR | 09-paket/ | | |

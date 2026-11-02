@@ -1,14 +1,16 @@
-kelime=1867 hata=13 WER=%0.7
-replace planes -> playing
+kelime=1867 hata=26 WER=%1.4
+replace u s -> us
+replace four -> for
+replace planes -> plane
 replace securitys -> securities
-replace an -> in
-insert  -> day
+insert  -> five
+delete inside the borrowed envelope theres another interest envelope and inside that -> 
+insert  -> hip
 replace two -> ii
 replace brakes -> breaks
 replace brake -> break
-insert  -> possibilities
+insert  -> however
 replace cost -> costs
-insert  -> if
 replace debt -> debts
 replace buy -> by
 replace two -> ii

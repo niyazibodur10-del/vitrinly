@@ -4,3 +4,7 @@
 # Örnek (1929 tarifi: uretim/2026-10-26-1929-1000-dolar/yeniden-uret.adimlar):
 # uretim/<klasör>/04-ses/anlatim.wav | ffmpeg -v error -y -i uretim/<klasör>/04-ses/anlatim.m4a -c:a pcm_f32le uretim/<klasör>/04-ses/anlatim.wav
 # uretim/<klasör>/08-kurgu/final-16x9.mp4 | tools/render-parca.sh <Kisa>Final uretim/<klasör>/08-kurgu/final-16x9.mp4 --ses <miks.wav>
+uretim/2026-10-28-yeni-video/04-ses/anlatim.wav | ffmpeg -v error -y -i uretim/2026-10-28-yeni-video/04-ses/anlatim.m4a -c:a pcm_s24le uretim/2026-10-28-yeni-video/04-ses/anlatim.wav
+uretim/2026-10-28-yeni-video/04-ses/shorts-1-ek.wav | ffmpeg -v error -y -i uretim/2026-10-28-yeni-video/04-ses/shorts-1-ek.m4a -c:a pcm_s24le uretim/2026-10-28-yeni-video/04-ses/shorts-1-ek.wav
+uretim/2026-10-28-yeni-video/04-ses/shorts-2-ek.wav | ffmpeg -v error -y -i uretim/2026-10-28-yeni-video/04-ses/shorts-2-ek.m4a -c:a pcm_s24le uretim/2026-10-28-yeni-video/04-ses/shorts-2-ek.wav
+uretim/2026-10-28-yeni-video/04-ses/rhubarb/S01.wav | python3 -I tools/ses/rhubarb-hazirla.py --dizin uretim/2026-10-28-yeni-video/04-ses

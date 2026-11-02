@@ -22,6 +22,7 @@ TELAFFUZ = [  # (kilitli metin, Kokoro'ya verilen) — yalnız telaffuz işareti
     # v1 tam üretim + cümle tek başına Whisper'da tekrarlanan hata → varyant testi (telaffuz-testi/), kazanan:
     ("Thing one: it borrows", "Thing one: it [borrows](/bˈɔɹˌOz/)"),  # "barfs" 0,97; /bˈɑɹOz/ ve +2 elendi
     ("rate change an old debt", "rate change [an](/ˈæn/) old debt"),  # "in old" 0,74; +2 elendi (v2'de cümle 105 eklendi)
+    ("A, B, or C: which", "[A](/ˈA/), B, or C: which"),  # cümle başı "A" artikel /ə/ okunuyor ("Of" 0,15); +2 elendi (cümle 198 eklendi)
     ("on the fridge as A", "on the [fridge](/fɹˈɪʤ/) [as](/ˈæz/) A"),   # "fridges A"
 ]
 

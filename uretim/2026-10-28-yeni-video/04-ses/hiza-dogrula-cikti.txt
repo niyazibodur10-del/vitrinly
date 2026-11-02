@@ -1,0 +1,3 @@
+cümle=211 | hizalı baş fark p50=4 p95=5 maks=444 ms | hizalı son fark p50=7 p95=15 maks=922 ms
+karşılaştırma ham Whisper en yakın kelime başı: p50=59 p95=284 maks=903 ms
+KAPI GEÇTİ

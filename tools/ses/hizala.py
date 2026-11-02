@@ -109,7 +109,9 @@ def main():
         for k in range(len(R) - 1):
             if R[k][2] > R[k + 1][1]: R[k][2] = max(R[k][1] + 0.02, R[k + 1][1])
         # cümle uçlarını TTS sınırına oturt (tts.py kırpma payı: ön 30 ms, son 50 ms; örnek doğruluğunda)
-        if abs(R[0][1] - (bas + 0.03)) < 0.4:
+        # 2026-11-02 (ses-yonetmeni, yeni-video S10 "Americans"): Whisper ilk kelimeyi 0 sn süreli ve 0,43 sn geç verdi -> kapı
+        # assert'i düştü; ilk kelime <60 ms ise ofset ne olursa olsun TTS sınırına oturt.
+        if abs(R[0][1] - (bas + 0.03)) < 0.4 or R[0][2] - R[0][1] < 0.06:
             R[0][1] = bas + 0.03; R[0][2] = max(R[0][2], R[0][1] + 0.12)
             for k in range(1, len(R)):  # ilk kelime uzadıysa ardındakileri it (kelime sırası korunur)
                 if R[k][1] >= R[k - 1][2]: break
