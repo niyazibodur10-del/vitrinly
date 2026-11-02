@@ -104,9 +104,13 @@ def main():
     kanit = set(os.listdir(os.path.join(REPO, "assets/lisans-kanit")))
     dos = sorted({os.path.basename(c["dosya"]) for c in cue["muzik"] + cue["sfx"] + cue["shorts"]})
     kayitsiz, kanitsiz, nc = [], [], []
+    def acilmis(l):  # "paper_01/02/03" grup yazımını aç (lisans-kontrol.py ile aynı kural)
+        for g in re.findall(r"([\w-]*?)(\d+)((?:/\d+)+)", l):
+            l += " " + " ".join(g[0] + n for n in g[2].strip("/").split("/"))
+        return l
     for d in dos:
         kok = d.rsplit(".", 1)[0]
-        satir = next((l for l in kayit.splitlines() if kok in l), None) or next((l for l in lis_lib.splitlines() if kok in l), None)
+        satir = next((l for l in map(acilmis, kayit.splitlines()) if kok in l), None) or next((l for l in lis_lib.splitlines() if kok in l), None)
         if satir is None:
             kayitsiz.append(d); continue
         if re.search(r"\b(NC|ND|SA)\b|BY-NC|BY-ND|BY-SA", satir): nc.append(d)
