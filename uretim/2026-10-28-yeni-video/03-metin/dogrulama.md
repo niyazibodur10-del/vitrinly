@@ -1,6 +1,7 @@
 # F3 doğrulama — S08 metin v1.1 (finans-dogrulayici) · 2026-11-02
 
-İLERLEME: tamam.
+İLERLEME: tamam (v1.2 ONAY).
+**METİN KİLİDİ ONAY (v1.2, 4d3183b, metin.md sha256 c833cb696030):** Z1–Z6 grep ile teyit edildi ("paid first", "every new loan", "106%", "22%", "→ 2025" 0 kez; yeni ifadeler 112/75/178/261/134. satırlarda). v1.1 ile karşılaştırınca ANLATIM sayı farkı yalnız Z1 ("three to three and a half") ve Z2 ("one more dollar") kaynaklı, yeni rakam 0. S20 "safest places to lend money" görüş olarak uygun.
 **KARAR: DÜZELT (küçük, 6 zorunlu madde, hepsi tek cümlelik).** Rakamların hepsi doğru. Sorunlar yalnız ifade ve bağlamda: 2 sahne kendi içinde çelişiyor, 2 olgu fazla kesin söylenmiş, 2 ekran/grafik etiketi yanlış. Rakam eklenmez, ses dışı yeniden ölçüm gerekmez. Düzeltme sonrası yalnız bu 6 satır grep ile yeniden kontrol edilir.
 **Tavsiye dili:** 0 (al/sat/"you should"/"protect your money"/varlık önerisi yok; S21 ve Shorts 2'de "not a forecast" var). **Karalama/suçlama:** 0 (parti, kişi, şirket yok; S18 kararı "voters"a bırakıyor). **Yanıltıcı içerik (spiral/default):** S20 "possibility" + 3 karşı kanıt. Uygun.
 **Girdi:** metin.md sha256 89bebe18d3d4 (eb9770a sonrası) · rakam-tablosu.md (9a1437e) · veri/olcek-cikti.txt.
