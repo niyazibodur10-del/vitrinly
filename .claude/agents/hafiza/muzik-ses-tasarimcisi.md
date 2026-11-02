@@ -1,6 +1,8 @@
 # muzik-ses-tasarimcisi — hafıza
 
 ## Kurallar
+- Lisans kapısı: `06-muzik/lisans-kontrol.py` (kopyala) + negatif test (sahte kayıtsız dosya → exit 1). OGA lisansını sayfanın `license-name` alanından oku; çoklu lisanslı (OGA-BY+CC0, SA/GPL) ele.
+- Aday ölçümü: `aday-olc.py muzik` + `tel-bant.py` (300 Hz–4 kHz ≥0.08); aynı sha'lı kanal parçalarını yeniden ölçme, önceki jsonl'den al.
 
 ## Dersler
 - 2026-10-26 (devralınan, erişim testi): pixabay, incompetech, freesound ağda engelli; archive.org, opengameart.org, kenney.nl, freemusicarchive.org erişilebilir (HTTP 200). Kevin MacLeod (incompetech) parçaları CC BY → atıf gerekir [genel bilgi, kaynak sitede doğrulanmadı].
@@ -14,3 +16,5 @@
 - 2026-10-27: Bu metinde cümle araları 0.3–0.65 sn; ≥0.9 sn boşlukta açılma kuralı hiç tetiklenmedi (müzik pratikte sabit yatak). Pompalama olmadı, WER bozulmadı. Daha geniş nefes istenirse ses kolundan sahne sonu duraklaması uzatılmalı, müzikle zorlanmamalı.
 - 2026-10-27: WER kıyası yalnız AYNI model ve ayarla yapılır (anlatım-tek ve miks benim `f6.py whisper()` ile). Ses kolunun transkripti farklı ayarlı, ayrıca `tools/ses/hata-orani.py` oturum içinde değişti (kelime 1789 → 1726). Sonucu her zaman aynı anda, aynı araç sürümüyle hesapla. Sonuç: miks %1.62, anlatım-tek %1.97.
 - 2026-10-27: SFX olaylarının %85'i konuşmayla örtüşüyor (anlatım neredeyse kesintisiz). −11…−21 dB kazançla WER bozulmadı. Yüksek vuruşları (zil, mühür, gerilim) cümle sonu boşluğuna (`son(ifade)+0.02`) koymak işe yarıyor. Çapa betiği: `06-muzik/cue-uret.py` (ifade → kelime zamanı → kare).
+- 2026-11-02 (S08 erken F4): kenney.nl artık 403 → CC0 Foley için OGA "100 CC0 SFX" (rubberduck: paper, dishes, microwave door, switch) + "10 Book Page Flips" + map open/close (zarf) iyi çalıştı. OGA ogg'leri float >0 dBFS olabilir: volumedetect kırpık okur → tepe normalizasyonunu numpy f32 ile yap.
+- 2026-11-02: Video başına yeni ses kimliği = önceki videonun final parçalarını ilk sıraya koymamak (cue.json'dan listele). Kulaksız seçimde ruh hali [tahmin] etiketli; karar F6a kör dinlemede.
