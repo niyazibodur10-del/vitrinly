@@ -18,3 +18,13 @@ Canva üretim toplamı: 5 / tavan 12 (kabul 3, aday elendi 1, red 1).
 | G04 | MAHZvCxTPNc |
 | G05 | MAHZvO1VSXk |
 Tuval DAHZHv3mU9w sayfa 33–37. Canva üretimi: 5/12.
+
+## Dalga 2 (koordinatör, 2026-11-02) — değerlendirme bekliyor
+| Görsel | Media ID |
+|---|---|
+| G06 | MAHZvLOQlb0 |
+| G07 | MAHZvCwqpdM |
+| G08 | MAHZvBUz8-A |
+| G09 | MAHZvMymAec (9:16) |
+| G10 | MAHZvA-105k |
+Tuval sayfa 38–42. Canva üretimi: 10/12.

@@ -11,28 +11,28 @@ Hız: 160 kpm. Sahne: 27.
 | S05 | 1:28–1:52 | 25 | 66 |
 | S06 | 1:52–2:28 | 36 | 96 |
 | S07 | 2:28–2:53 | 24 | 65 |
-| S08 | 2:53–3:29 | 36 | 96 |
-| S09 | 3:29–3:50 | 21 | 56 |
-| S10 | 3:50–4:10 | 20 | 54 |
-| S11 | 4:10–4:29 | 19 | 51 |
-| S12 | 4:29–5:01 | 32 | 84 |
-| S13 | 5:01–5:36 | 36 | 95 |
-| S14 | 5:36–6:06 | 30 | 79 |
-| S15 | 6:06–6:28 | 22 | 60 |
-| S16 | 6:28–6:57 | 29 | 77 |
-| S17 | 6:57–7:21 | 23 | 62 |
-| S18 | 7:21–7:40 | 19 | 51 |
-| S19 | 7:40–8:15 | 36 | 95 |
-| S20 | 8:15–8:57 | 42 | 112 |
-| S21 | 8:57–9:14 | 17 | 45 |
-| S22 | 9:14–9:41 | 27 | 72 |
-| S23 | 9:41–10:00 | 19 | 50 |
-| S24 | 10:00–10:30 | 30 | 81 |
-| S25 | 10:30–10:51 | 21 | 56 |
-| S26 | 10:51–11:18 | 27 | 72 |
-| S27 | 11:18–11:36 | 18 | 47 |
+| S08 | 2:53–3:31 | 38 | 102 |
+| S09 | 3:31–3:52 | 21 | 56 |
+| S10 | 3:52–4:12 | 20 | 54 |
+| S11 | 4:12–4:32 | 19 | 51 |
+| S12 | 4:32–5:03 | 32 | 84 |
+| S13 | 5:03–5:39 | 36 | 95 |
+| S14 | 5:39–6:08 | 30 | 79 |
+| S15 | 6:08–6:36 | 27 | 73 |
+| S16 | 6:36–7:04 | 29 | 77 |
+| S17 | 7:04–7:28 | 23 | 62 |
+| S18 | 7:28–7:47 | 19 | 51 |
+| S19 | 7:47–8:22 | 36 | 95 |
+| S20 | 8:22–9:06 | 43 | 115 |
+| S21 | 9:06–9:22 | 17 | 45 |
+| S22 | 9:22–9:50 | 27 | 72 |
+| S23 | 9:50–10:08 | 19 | 50 |
+| S24 | 10:08–10:39 | 30 | 81 |
+| S25 | 10:39–11:00 | 21 | 56 |
+| S26 | 11:00–11:26 | 27 | 71 |
+| S27 | 11:26–11:44 | 18 | 48 |
 
-**Toplam kelime:** 1856 · **süre:** 11:36 (11.6 dk) · kapı 1750–2100 → GEÇTİ  (tireler ayrı: 1872 birim ≈ 11:42)
+**Toplam kelime:** 1878 · **süre:** 11:44 (11.7 dk) · kapı 1750–2100 → GEÇTİ  (tireler ayrı: 1894 birim ≈ 11:50)
 
 **İlk 15 sn (40 kelime):** "shrink the u.s. government down to one household. it brings home five thousand four hundred dollars a month. it spends about seven thousand four hundred. let's sit at its kitchen table and see where the gap goes. why does this" → somut özne + vaat: GEÇTİ
   İlk 30 sn kanal tanıtımı/abone kalıbı: 0 → GEÇTİ
@@ -46,26 +46,26 @@ Hız: 160 kpm. Sahne: 27.
 | ↺2 | S04 | so I put every bill in its own envelope | 1:22 | 59 | GEÇTİ |
 | ↺3 | S06 | Now look at envelope five | 1:58 | 36 | GEÇTİ |
 | ↺4 | S07 | And that two thousand dollars goes on the loan | 2:50 | 52 | GEÇTİ |
-| ↺5 | S09 | And it's still adding two thousand dollars a m | 3:46 | 57 | GEÇTİ |
-| ↺6 | S11 | So why do lenders around the world keep saying | 4:18 | 31 | GEÇTİ |
-| ↺7 | S11 | something strange inside envelope five | 4:27 | 10 | GEÇTİ |
-| ↺8 | S12 | Watch what happens when I open it | 4:32 | 5 | GEÇTİ |
-| ↺9 | S13 | So why did envelope five get so fat, so fast? | 5:01 | 28 | GEÇTİ |
-| ↺10 | S13 | And it's still growing | 5:35 | 34 | GEÇTİ |
-| ↺11 | S15 | a family can't do three things this household  | 6:25 | 50 | GEÇTİ |
-| ↺12 | S17 | So the real question isn't | 7:12 | 46 | GEÇTİ |
-| ↺13 | S19 | And here's the strange part | 7:58 | 46 | GEÇTİ |
-| ↺14 | S20 | And time is what the three possibilities are a | 8:54 | 56 | GEÇTİ |
-| ↺15 | S22 | The catch is the rate | 9:28 | 34 | GEÇTİ |
-| ↺16 | S24 | So envelope five can come right back | 10:27 | 58 | GEÇTİ |
-| köprü | S27 | There's one number that sets the price o | 11:18 | 52 | GEÇTİ |
+| ↺5 | S09 | And it's still adding two thousand dollars a m | 3:49 | 59 | GEÇTİ |
+| ↺6 | S11 | So why do lenders around the world keep saying | 4:20 | 31 | GEÇTİ |
+| ↺7 | S11 | something strange inside envelope five | 4:30 | 10 | GEÇTİ |
+| ↺8 | S12 | Watch what happens when I open it | 4:34 | 5 | GEÇTİ |
+| ↺9 | S13 | So why did envelope five get so fat, so fast? | 5:03 | 28 | GEÇTİ |
+| ↺10 | S13 | And it's still growing | 5:37 | 34 | GEÇTİ |
+| ↺11 | S15 | a family can't do three things this household  | 6:32 | 55 | GEÇTİ |
+| ↺12 | S17 | So the real question isn't | 7:19 | 46 | GEÇTİ |
+| ↺13 | S19 | And here's the strange part | 8:05 | 46 | GEÇTİ |
+| ↺14 | S20 | And time is what the three possibilities are a | 9:02 | 57 | GEÇTİ |
+| ↺15 | S22 | The catch is the rate | 9:36 | 34 | GEÇTİ |
+| ↺16 | S24 | So envelope five can come right back | 10:35 | 58 | GEÇTİ |
+| köprü | S27 | There's one number that helps set the pr | 11:26 | 51 | GEÇTİ |
 
   ↺ sayısı 16 + hook + köprü · en uzun aralık 59 sn (kapı ≤90, hedef ≤75) · köprüden sona 18 sn
 
 **ABONE satırları:** 3 (kapı 3–4)
   ABONE-1 @ 2:53 · S08 başı (önceki sahnenin nefesi) · "Let's open the loan statement." · ≥60 sn, doruk üstünde değil, sahne başında: GEÇTİ
-  ABONE-2 @ 5:01 · S13 başı (önceki sahnenin nefesi) · "So why did envelope five get so fat, so fast?" · ≥60 sn, doruk üstünde değil, sahne başında: GEÇTİ
-  ABONE-3 @ 11:18 · S27 başı (önceki sahnenin nefesi) · "There's one number that sets the price of every ne" · ≥60 sn, doruk üstünde değil, sahne başında: GEÇTİ
+  ABONE-2 @ 5:03 · S13 başı (önceki sahnenin nefesi) · "So why did envelope five get so fat, so fast?" · ≥60 sn, doruk üstünde değil, sahne başında: GEÇTİ
+  ABONE-3 @ 11:26 · S27 başı (önceki sahnenin nefesi) · "There's one number that helps set the price of man" · ≥60 sn, doruk üstünde değil, sahne başında: GEÇTİ
   Sesli abone kalıbı: 0 (ilk 60 sn'de: 0) → GEÇTİ
   İlk ABONE ilk büyük ödülden (S06 bitiş 2:28) sonra: GEÇTİ
 **Telaffuz yasak listesi** (anlatım+Shorts): 0 → GEÇTİ
@@ -74,17 +74,17 @@ Hız: 160 kpm. Sahne: 27.
 **P1 parti/kişi adı** (anlatım+Shorts): 0 → GEÇTİ
 **Tavsiye kalıbı** (21 desen): 0 → GEÇTİ
   ek: should/must/need to: 0 · 'spiral' geçişleri: 1 (yalnız 'possibility' cümlesiyle)
-**Tez (H1):** S03 @ 0:53–0:58, S26 @ 11:03–11:06 · ≤60 sn ✓ · son 90 sn ✓
+**Tez (H1):** S03 @ 0:53–0:58, S26 @ 11:11–11:14 · ≤60 sn ✓ · son 90 sn ✓
 
 **YouTube bölümleri (betik zamanı):**
 ```
 0:00 The Kitchen Table
 1:28 Five Envelopes
 2:53 The Loan
-4:29 The Envelope Inside the Envelope
-6:28 Three Things a Family Can't Do
-8:57 Three Ways to Close the Gap
-10:51 Back to the Sentence
+4:32 The Envelope Inside the Envelope
+6:36 Three Things a Family Can't Do
+9:06 Three Ways to Close the Gap
+11:00 Back to the Sentence
 ```
   ilk 0:00, ≥3, aralar ≥10 sn: GEÇTİ
 **Shorts 1:** 130 kelime · tireler ayrı 131 birim → ≈49.1 sn (kapı ≤60) GEÇTİ
@@ -112,7 +112,7 @@ Hız: 160 kpm. Sahne: 27.
 | S07 | 2000 | and that | 1992.5 (rakam-tablosu, ±2%) | GEÇTİ |
 | S08 | 390000 | is about | 416.2 (rakam-tablosu, ±7%) | GEÇTİ |
 | S08 | 3.2e+13 | : about | 30 (rakam-tablosu, ±7%) | GEÇTİ |
-| S08 | 3 % | costs about | 3 (rakam-tablosu, ±7%) | GEÇTİ |
+| S08 | 3.5 % | three to | 3.518 (rakam-tablosu, ±2%) | GEÇTİ |
 | S09 | 390000 |  | 389000 (rakam-tablosu, ±2%) | GEÇTİ |
 | S09 | 2000 | still adding | 1992.5 (rakam-tablosu, ±2%) | GEÇTİ |
 | S12 | 1050 | . about | 1051.8 (rakam-tablosu, ±7%) | GEÇTİ |
@@ -143,7 +143,7 @@ Hız: 160 kpm. Sahne: 27.
 | Shorts2 | yıl 1974 | . by | tabloda | GEÇTİ |
 
   47 sayı kontrol edildi, tabloda olmayan: 0 · metinde açık [RAKAM?]: 0
-**Özgünlük 5-gram** vs 1929 metni: 0.3% (6/1956) → GEÇTİ
+**Özgünlük 5-gram** vs 1929 metni: 0.3% (6/1977) → GEÇTİ
 
 **Sahne başlığı zamanları betikle uyumlu:** GEÇTİ
 

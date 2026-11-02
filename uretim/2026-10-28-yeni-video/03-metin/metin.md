@@ -1,6 +1,6 @@
 # F3 — Tam metin · S08 "If America Earned $5,400 a Month, Here's Its Budget"
 
-İLERLEME: tamam (v1.1, kapı GEÇTİ §12) → finans-dogrulayici ‖ monetizasyon-uyum-uzmani bekleniyor.
+İLERLEME: tamam (v1.2 RED-1: dogrulama.md Z1–Z6 + politika (b) uygulandı, kapı GEÇTİ §12) → finans-dogrulayici ‖ monetizasyon-uyum-uzmani bekleniyor.
 **Kanal:** Toonomy (@toonomy) · **Anlatıcı:** Leo (kurgusal çizgi maskot; bu videoda bütçeyi buzdolabında tutan ev arkadaşı; danışman değil) · **Ses:** Kokoro `am_fenrir` 0.9 (**160 kpm**)
 **Sütun:** B · **Yazar:** senaryo-yazari · **Tarih:** 2026-11-02 · **Sürüm:** v1.1 (rakam-tablosu R01–R36 ile eşlendi; S08 kararı §4 D1–D7, P1–P4, H1–H8 uygulandı; tablo §10)
 **Rakam kuralı:** ANLATIM'daki her rakam kilitli `03-metin/rakam-tablosu.md` (R01–R36) veya `veri/olcek-hesap.py` [H] çıktısından. Tabloda olmayan rakam GÖRSEL'de **`[RAKAM?`** ile işaretlenir; v1.1'de kilitli `rakam-tablosu.md` (R01–R36) ile eşlendi, açık [RAKAM?] kalmadı (§7).
@@ -69,113 +69,113 @@ Biçim: `### Sxx · başlangıç–bitiş · süre` + iki sütunlu tablo. GÖRSE
 
 ## Bölüm 3 — The Loan
 
-### S08 · 2:53–3:29 · 36 sn
+### S08 · 2:53–3:31 · 38 sn
 | ANLATIM | GÖRSEL |
 |---|---|
-| Let's open the loan statement. This household didn't start borrowing last month. It has been adding to this loan for decades. The balance it owes to outside lenders is about three hundred ninety thousand dollars. In the real world, that's the debt held by the public: about thirty-two trillion dollars. One fair note: this is not an expensive loan. On average, it costs about three percent a year. There's also money the government owes to its own trust funds, like Social Security's. We'll leave that part out, because that interest goes from one pocket to another. | **Sahne:** mor borç defteri açılır, sayfalar masadan yere kadar akar (gag). **Grafik G2:** "BALANCE: ~$389,000 = 6 YEARS OF INCOME" · küçük not "average cost ≈ 3% a year, not card rates" (R31) → altında gerçek ölçek "Debt held by the public: $32.43 trillion (Sep 30, 2026) · Source: Treasury, Debt to the Penny" (D5: yalnız halkın elindeki borç; toplam borç bu videoda kullanılmaz). **Leo:** iki cebini dışarı çıkarır ("one pocket to another"). |
+| Let's open the loan statement. This household didn't start borrowing last month. It has been adding to this loan for decades. The balance it owes to outside lenders is about three hundred ninety thousand dollars. In the real world, that's the debt held by the public: about thirty-two trillion dollars. One fair note: this is not an expensive loan. On average, it costs only about three to three and a half percent a year. There's also money the government owes to its own trust funds, like Social Security's. We'll leave that part out, because that interest goes from one pocket to another. | **Sahne:** mor borç defteri açılır, sayfalar masadan yere kadar akar (gag). **Grafik G2:** "BALANCE: ~$389,000 = 6 YEARS OF INCOME" · küçük not "≈ 3–3.5% a year, not card rates" (R31) → altında gerçek ölçek "Debt held by the public: $32.43 trillion (Sep 30, 2026) · Source: Treasury, Debt to the Penny" (D5: yalnız halkın elindeki borç; toplam borç bu videoda kullanılmaz). **Leo:** iki cebini dışarı çıkarır ("one pocket to another"). |
 
-### S09 · 3:29–3:50 · 21 sn
+### S09 · 3:31–3:52 · 21 sn
 | ANLATIM | GÖRSEL |
 |---|---|
-| Three hundred ninety thousand dollars sounds like just a number. So let's put it next to the paycheck. It's about six years of income. Every dollar this household earns, for six full years, with nothing for food or rent or anything else, just to clear the loan. And it's still adding two thousand dollars a month. | **Grafik G2b:** altı takvim yılı yan yana dolar, her biri "$64,800" maaş bloklarıyla → "≈ 6 YEARS OF INCOME" [H]. **Leo:** düşünen poz, takvim yapraklarını sayar; son cümlede defter sayfası bir satır daha uzar. **↺ 3:46 "And it's still adding two thousand dollars a month"**. |
+| Three hundred ninety thousand dollars sounds like just a number. So let's put it next to the paycheck. It's about six years of income. Every dollar this household earns, for six full years, with nothing for food or rent or anything else, just to clear the loan. And it's still adding two thousand dollars a month. | **Grafik G2b:** altı takvim yılı yan yana dolar, her biri "$64,800" maaş bloklarıyla → "≈ 6 YEARS OF INCOME" [H]. **Leo:** düşünen poz, takvim yapraklarını sayar; son cümlede defter sayfası bir satır daha uzar. **↺ 3:49 "And it's still adding two thousand dollars a month"**. |
 
-### S10 · 3:50–4:10 · 20 sn
+### S10 · 3:52–4:12 · 20 sn
 | ANLATIM | GÖRSEL |
 |---|---|
 | Who is holding this loan? Not one bank. Americans with savings bonds. Pension funds. Banks and insurance companies. Foreign governments. Even America's own central bank, the Federal Reserve. When this household borrows, it sells them a promise called a Treasury bond. Lend me money now, and I'll pay you interest, then pay you back. | **Sahne:** defterin arka kapağı açılır; kapı zili SFX ile mutfak kapısında sırayla yüzsüz siluetler (ikon): tasarruf bonosu, emeklilik fonu, banka, dünya küresi, Fed binası (oran yok). Leo her birine bir "IOU" fişi uzatır. **Ekran:** "TREASURY BOND = A PROMISE". |
 
-### S11 · 4:10–4:29 · 19 sn
+### S11 · 4:12–4:32 · 19 sn
 | ANLATIM | GÖRSEL |
 |---|---|
-| Now, if a real family had a loan this big and kept adding to it, the bank would stop lending. So why do lenders around the world keep saying yes to this household? Hold that question. We'll answer it soon. First, I want to show you something strange inside envelope five. | **Sahne:** komşu ailenin kredi başvurusuna "DENIED" damgası (gag, yüzsüz); Leo'nunkine "APPROVED". **Ekran:** "WHY DO LENDERS KEEP SAYING YES?" buzdolabına soru notu olarak yapışır (açık döngü A5). Kırmızı zarfa spot. **↺ 4:18 "So why do lenders around the world keep saying yes"** · **↺ 4:27 "something strange inside envelope five"**. |
+| Now, if a real family had a loan this big and kept adding to it, the bank would stop lending. So why do lenders around the world keep saying yes to this household? Hold that question. We'll answer it soon. First, I want to show you something strange inside envelope five. | **Sahne:** komşu ailenin kredi başvurusuna "DENIED" damgası (gag, yüzsüz); Leo'nunkine "APPROVED". **Ekran:** "WHY DO LENDERS KEEP SAYING YES?" buzdolabına soru notu olarak yapışır (açık döngü A5). Kırmızı zarfa spot. **↺ 4:20 "So why do lenders around the world keep saying yes"** · **↺ 4:30 "something strange inside envelope five"**. |
 
 ## Bölüm 4 — The Envelope Inside the Envelope
 
-### S12 · 4:29–5:01 · 32 sn · DORUK (matruşka)
+### S12 · 4:32–5:03 · 32 sn · DORUK (matruşka)
 | ANLATIM | GÖRSEL |
 |---|---|
-| Envelope five. Interest. About one thousand fifty dollars. Watch what happens when I open it. Inside, there's another envelope. It says: borrowed. Here's why. The monthly gap is about two thousand dollars. More than half of that gap is the interest bill itself. So this household borrows money to pay interest on money it borrowed before. And that new money needs interest too. So inside the borrowed envelope, there's another interest envelope. And inside that one, another borrowed envelope. Interest, inside borrowed, inside interest. | **Kritik yol (H4) — matruşka zarf anı:** Leo kırmızı zarfı açar → içinden mor "BORROWED" zarf → içinden daha küçük kırmızı "INTEREST" → mor "BORROWED"… her açılışta kamera punch-in, masada zarf kulesi büyür. **Ekran:** "INTEREST = 53% OF THE GAP" ($1,050 / $1,992 ≈ 53%) [H]. **B planı:** zarflar Remotion katmanı olarak tek tek açılır (düz kesme, SFX). **Leo:** önce meraklı, sonunda kulenin arkasında kaybolur, yalnız eli görünür. **↺ 4:32 "Watch what happens when I open it"**. Abone animasyonu bu sahnenin **üstüne binmez** (H6); sahne sonunda 1,5 sn sessiz nefes → **ABONE-2**. |
+| Envelope five. Interest. About one thousand fifty dollars. Watch what happens when I open it. Inside, there's another envelope. It says: borrowed. Here's why. The monthly gap is about two thousand dollars. More than half of that gap is the interest bill itself. So this household borrows money to pay interest on money it borrowed before. And that new money needs interest too. So inside the borrowed envelope, there's another interest envelope. And inside that one, another borrowed envelope. Interest, inside borrowed, inside interest. | **Kritik yol (H4) — matruşka zarf anı:** Leo kırmızı zarfı açar → içinden mor "BORROWED" zarf → içinden daha küçük kırmızı "INTEREST" → mor "BORROWED"… her açılışta kamera punch-in, masada zarf kulesi büyür. **Ekran:** "INTEREST = 53% OF THE GAP" ($1,050 / $1,992 ≈ 53%) [H]. **B planı:** zarflar Remotion katmanı olarak tek tek açılır (düz kesme, SFX). **Leo:** önce meraklı, sonunda kulenin arkasında kaybolur, yalnız eli görünür. **↺ 4:34 "Watch what happens when I open it"**. Abone animasyonu bu sahnenin **üstüne binmez** (H6); sahne sonunda 1,5 sn sessiz nefes → **ABONE-2**. |
 
-### S13 · 5:01–5:36 · 36 sn
+### S13 · 5:03–5:39 · 36 sn
 | ANLATIM | GÖRSEL |
 |---|---|
-| So why did envelope five get so fat, so fast? Part of it is the size of the loan. But the rate matters a lot. A few years ago, this household borrowed very cheaply. In early twenty twenty-two, the average rate on its debt was about one and a half percent. By September twenty twenty-six, it was about three and a half percent. And in just five years, the interest bill roughly tripled. In our kitchen, it went from about three hundred fifty dollars a month to about one thousand fifty. And it's still growing. | **Grafik G3 (kendi grafiğimiz):** sol: ortalama faiz "EARLY 2022: ~1.4%" → "SEP 2026: ~3.5%" ("Average interest rate, total marketable Treasury debt · Source: U.S. Treasury", R22); sağ: net faiz çubukları FY2016–FY2026, hane ölçeğinde "$352 → $1,050/mo · ~3× in 5 years" ("US net interest, fiscal years 2016–2026 (Monthly Treasury Statement)", R18, R19). **Leo:** kulenin arkasından çıkar, kalemi termometre gibi tutar. **↺ 5:01 "So why did envelope five get so fat, so fast?"** · **↺ 5:35 "And it's still growing"** (çubuk grafiğin ucu yanıp söner). |
+| So why did envelope five get so fat, so fast? Part of it is the size of the loan. But the rate matters a lot. A few years ago, this household borrowed very cheaply. In early twenty twenty-two, the average rate on its debt was about one and a half percent. By September twenty twenty-six, it was about three and a half percent. And in just five years, the interest bill roughly tripled. In our kitchen, it went from about three hundred fifty dollars a month to about one thousand fifty. And it's still growing. | **Grafik G3 (kendi grafiğimiz):** sol: ortalama faiz "EARLY 2022: ~1.4%" → "SEP 2026: ~3.5%" ("Average interest rate, total marketable Treasury debt · Source: U.S. Treasury", R22); sağ: net faiz çubukları FY2016–FY2026, hane ölçeğinde "$352 → $1,050/mo · ~3× in 5 years" ("US net interest, fiscal years 2016–2026 (Monthly Treasury Statement)", R18, R19). **Leo:** kulenin arkasından çıkar, kalemi termometre gibi tutar. **↺ 5:03 "So why did envelope five get so fat, so fast?"** · **↺ 5:37 "And it's still growing"** (çubuk grafiğin ucu yanıp söner). |
 
-### S14 · 5:36–6:06 · 30 sn
+### S14 · 5:39–6:08 · 30 sn
 | ANLATIM | GÖRSEL |
 |---|---|
 | How can a new rate change an old debt? Because the balance isn't one loan. It's many loans, and they keep coming due. Some last weeks. Some last decades. They don't come due all at once. They roll over a few at a time. Every time an old, cheap loan comes due, it's replaced with a more expensive one. In late October twenty twenty-six, new ten-year loans cost close to five percent. Even short-term borrowing cost about four percent. | **Sahne:** borç defterinin sayfaları ince şeritlere ayrılır, her şerit bir kredi; şeritler bir konveyörde ilerler, uçtaki "CHEAP 1%" etiketi düşer, yerine "NEW 5%" etiketli şerit gelir (S06'nın boru/vana metaforu kullanılmaz, H5). **Grafik G4:** iki etiket: "NEW 10-YEAR LOANS: ~5% (late Oct 2026)" · "SHORT-TERM: ~4%" · "Source: FRED DGS10, DTB3" (R23, R24; bu bölüm ≤60 sn, H5). **Leo:** konveyörün yanında etiket değiştirir. |
 
-### S15 · 6:06–6:28 · 22 sn
+### S15 · 6:08–6:36 · 27 sn
 | ANLATIM | GÖRSEL |
 |---|---|
-| So the average rate keeps climbing, even if the household never borrows one more dollar. That's the part of the story that works exactly like a family's loan. Rate times balance. The lender gets paid first, before any other bill. But this is where the family story starts to break. Because a family can't do three things this household can. | **Ekran:** "RATE × BALANCE = INTEREST BILL" buzdolabına; kırmızı zarf sıranın en başına geçer ("PAID FIRST"). Sonda buzdolabındaki "FAMILY" kelimesinde bir çatlak belirir. **↺ 6:25 "a family can't do three things this household can"** (üç fark ne?). |
+| So the average rate keeps climbing as long as new loans cost more than the old ones they replace, even if the household never borrows one more dollar. That's the part of the story that works exactly like a family's loan. Rate times balance. And it's the one bill this household can't skip. But this is where the family story starts to break. Because a family can't do three things this household can. | **Ekran:** "RATE × BALANCE = INTEREST BILL" buzdolabına; kırmızı zarf sıranın en başına geçer ("CAN'T SKIP"). Sonda buzdolabındaki "FAMILY" kelimesinde bir çatlak belirir. **↺ 6:32 "a family can't do three things this household can"** (üç fark ne?). |
 
 ## Bölüm 5 — Three Things a Family Can't Do
 
-### S16 · 6:28–6:57 · 29 sn
+### S16 · 6:36–7:04 · 29 sn
 | ANLATIM | GÖRSEL |
 |---|---|
 | Thing one: it borrows in its own money. A family borrows dollars it can't make. This household borrows in dollars, and the dollar is its own currency. So it can't run out of dollars the way a family can. That's a big part of why lenders keep saying yes. Question answered. But there's a catch. If a country makes too many new dollars, each dollar buys less. That's inflation. Remember it. It comes back near the end. | **Ekran:** "1 · IT BORROWS IN ITS OWN MONEY" kartı; buzdolabındaki "WHY DO LENDERS KEEP SAYING YES?" notuna tik atılır (A5 kapanır). Banknot fotokopi makinesinden çıkar, her yeni banknotla market sepetindeki ürünler küçülür (inflation gag). **Leo:** sevinçli poz ("Question answered"), sonra parmak kaldırır ("But there's a catch"). **Etkileşim anı (yayın sonrası ders 3):** "Question answered" sonrası 3 sn alt köşe yazı: "LIKE IF THE ENVELOPE TOWER SURPRISED YOU" (sessiz; ABONE ile çakışmaz). |
 
-### S17 · 6:57–7:21 · 23 sn
+### S17 · 7:04–7:28 · 23 sn
 | ANLATIM | GÖRSEL |
 |---|---|
-| Thing two: it never retires. A family has to pay off its debts within one lifetime. A country has no last payday. It can keep rolling old loans into new ones for as long as lenders trust it. So the real question isn't, can it pay it all back? It's, can it keep paying the interest without that envelope eating everything else? | **Ekran:** "2 · IT NEVER RETIRES". Leo eski IOU fişini yenisiyle değiştirir (fişler takla atar). Soru ekranda yer değiştirir: "PAY IT ALL BACK?" üstü çizilir → "KEEP PAYING THE INTEREST?" **↺ 7:12 "So the real question isn't"**. |
+| Thing two: it never retires. A family has to pay off its debts within one lifetime. A country has no last payday. It can keep rolling old loans into new ones for as long as lenders trust it. So the real question isn't, can it pay it all back? It's, can it keep paying the interest without that envelope eating everything else? | **Ekran:** "2 · IT NEVER RETIRES". Leo eski IOU fişini yenisiyle değiştirir (fişler takla atar). Soru ekranda yer değiştirir: "PAY IT ALL BACK?" üstü çizilir → "KEEP PAYING THE INTEREST?" **↺ 7:19 "So the real question isn't"**. |
 
-### S18 · 7:21–7:40 · 19 sn
+### S18 · 7:28–7:47 · 19 sn
 | ANLATIM | GÖRSEL |
 |---|---|
 | Thing three: it can give itself a raise. A family can't vote for a bigger salary. A country can change its tax rates. It can also cut its own bills. Both are hard, and both are choices. Which one is better is an argument for voters, not for a cartoon roommate. | **Ekran:** "3 · IT CAN GIVE ITSELF A RAISE". Maaş zarfına bir kadran takılır (yukarı / aşağı); öbür elde makas (zarflar). Renk, parti, kişi yok (P1). **Leo:** iki elini kaldırır, "not for a cartoon roommate"da kendini işaret edip omuz silker. |
 
-### S19 · 7:40–8:15 · 36 sn
+### S19 · 7:47–8:22 · 36 sn
 | ANLATIM | GÖRSEL |
 |---|---|
-| And here's the difference you can see in the data. In nineteen forty-six, right after World War Two, the debt held by the public was bigger than the whole economy. Bigger than everything the country produced in a year. By nineteen seventy-four, it was under a quarter of it. And here's the strange part. The debt itself didn't shrink. It actually grew. The economy just grew much faster, and prices rose too. The loan stayed. The paycheck got much bigger. A family can't grow its way out of a loan like that. A country did. | **Grafik G5 (kendi grafiğimiz):** borç/GSYH çizgisi 1946 → 1974 → 2025: ">100% (1946)" → "~23% (1974)"; altında küçük çubuk: borç $ olarak "$242B (1946) → $344B (1974)" (R33, R34).  "Federal debt held by the public, % of GDP · Source: OMB Historical Table 7.1". GFDEGDQ188S (1966+) bu grafikte kullanılmaz (D4). **↺ 7:58 "And here's the strange part"** (borç $ çubuğu yükselir). **Leo:** cetvelle maaş zarfını ölçer, zarf büyür, borç defteri aynı kalır. |
+| And here's the difference you can see in the data. In nineteen forty-six, right after World War Two, the debt held by the public was bigger than the whole economy. Bigger than everything the country produced in a year. By nineteen seventy-four, it was under a quarter of it. And here's the strange part. The debt itself didn't shrink. It actually grew. The economy just grew much faster, and prices rose too. The loan stayed. The paycheck got much bigger. A family can't grow its way out of a loan like that. A country did. | **Grafik G5 (kendi grafiğimiz):** borç/GSYH çizgisi 1946 → 1974 → FY2023 (OMB gerçekleşen değerler FY2023'te biter; tahmin yılları çizilmez, Z6): ">100% (1946)" → "~23% (1974)" → "97% (FY2023)"; altında küçük çubuk: borç $ olarak "$242B (1946) → $344B (1974)" (R33, R34).  "Federal debt held by the public, % of GDP · Source: OMB Historical Table 7.1". GFDEGDQ188S (1966+) bu grafikte kullanılmaz (D4). **↺ 8:05 "And here's the strange part"** (borç $ çubuğu yükselir). **Leo:** cetvelle maaş zarfını ölçer, zarf büyür, borç defteri aynı kalır. |
 
-### S20 · 8:15–8:57 · 42 sn
+### S20 · 8:22–9:06 · 43 sn
 | ANLATIM | GÖRSEL |
 |---|---|
-| By the middle of twenty twenty-six, that same measure was about ninety-seven percent. Close to the size of the whole economy again. So could this turn into a spiral, where interest feeds borrowing, and borrowing feeds more interest? It's a possibility, and some economists worry about it. But there are real brakes. The debt is in the country's own currency. The debt comes due over years, not all at once, so higher rates arrive slowly. And lenders around the world still treat these bonds as one of the safest assets in the world. A brake doesn't stop a car forever. It buys time. And time is what the three possibilities are about. | **Grafik G5 devam:** çizgi 2026'ya uzar "~97% (Q2 2026) · Source: FRED FYGFGDQ188S" (R32). **Ekran:** "SPIRAL? A POSSIBILITY, NOT A VERDICT" (D7/P2) → üç fren ikonu: "OWN CURRENCY · LONG LOANS · LENDERS' TRUST". **Leo:** zarf kulesini oyuncak bir arabanın freniyle durdurur. **↺ 8:54 "And time is what the three possibilities are about"**. |
+| By the middle of twenty twenty-six, that same measure was about ninety-seven percent. Close to the size of the whole economy again. So could this turn into a spiral, where interest feeds borrowing, and borrowing feeds more interest? It's a possibility, and some economists worry about it. But there are real brakes. The debt is in the country's own currency. The debt comes due over years, not all at once, so higher rates arrive slowly. And lenders around the world still treat these bonds as one of the safest places to lend money in the world. A brake doesn't stop a car forever. It buys time. And time is what the three possibilities are about. | **Grafik G5 devam:** OMB çizgisine bağlanmayan ayrı işaret (farklı renk nokta): "~97% (Q2 2026) · FRED FYGFGDQ188S" (R32); lejantta iki kaynak ayrı (Z6). **Ekran:** "SPIRAL? A POSSIBILITY, NOT A VERDICT" (D7/P2) → üç fren ikonu: "OWN CURRENCY · LONG LOANS · LENDERS' TRUST". **Leo:** zarf kulesini oyuncak bir arabanın freniyle durdurur. **↺ 9:02 "And time is what the three possibilities are about"**. |
 
 ## Bölüm 6 — Three Ways to Close the Gap
 
-### S21 · 8:57–9:14 · 17 sn
+### S21 · 9:06–9:22 · 17 sn
 | ANLATIM | GÖRSEL |
 |---|---|
 | So how does a country close a gap like this? Not with one trick. Here are three possibilities. This is not a forecast. It's what countries have done before, and what it cost them. I'll put them on the fridge as A, B, and C. | **Sahne:** buzdolabındaki üç boş not (S02'den) doldurulur: "A · GROW", "B · CHANGE THE ENVELOPES", "C · LET PRICES RISE". **Ekran:** alt şerit "POSSIBILITIES, NOT A FORECAST" (P3). |
 
-### S22 · 9:14–9:41 · 27 sn
+### S22 · 9:22–9:50 · 27 sn
 | ANLATIM | GÖRSEL |
 |---|---|
-| Possibility A: grow the paycheck. If the economy grows faster than the debt, the loan gets smaller next to the income, even if nobody pays it down. That's a big part of what happened after nineteen forty-six. The catch is the rate. Growth has to beat the interest rate. If the rate on the loan is higher than the growth of the paycheck, the loan wins, and envelope five keeps getting fatter. | **Sahne:** maaş zarfı ve borç defteri yarış pistinde (iki koşucu, yüzsüz). **Ekran:** "GROWTH vs RATE" (rakam yok, mekanizma). G5'ten 1946–1974 kısa geri dönüş. **Leo:** hakem düdüğü çalar. **↺ 9:28 "The catch is the rate"**. |
+| Possibility A: grow the paycheck. If the economy grows faster than the debt, the loan gets smaller next to the income, even if nobody pays it down. That's a big part of what happened after nineteen forty-six. The catch is the rate. Growth has to beat the interest rate. If the rate on the loan is higher than the growth of the paycheck, the loan wins, and envelope five keeps getting fatter. | **Sahne:** maaş zarfı ve borç defteri yarış pistinde (iki koşucu, yüzsüz). **Ekran:** "GROWTH vs RATE" (rakam yok, mekanizma). G5'ten 1946–1974 kısa geri dönüş. **Leo:** hakem düdüğü çalar. **↺ 9:36 "The catch is the rate"**. |
 
-### S23 · 9:41–10:00 · 19 sn
+### S23 · 9:50–10:08 · 19 sn
 | ANLATIM | GÖRSEL |
 |---|---|
 | Possibility B: change the envelopes. Raise taxes, cut spending, or do some of both. Countries have done it before. The catch: every envelope on this table belongs to somebody. Retirees, patients, soldiers, students. Every cut and every tax lands on someone's kitchen table, so these choices are slow and loud. | **Ekran:** Zarflardan yüzsüz siluetler çıkar (emekli, hasta, asker, öğrenci). Parti/kişi/renk yok (P1). **Leo:** makası masaya bırakır, kararsız. |
 
-### S24 · 10:00–10:30 · 30 sn
+### S24 · 10:08–10:39 · 30 sn
 | ANLATIM | GÖRSEL |
 |---|---|
-| Possibility C: let prices rise. Inflation makes old debt smaller, because the dollars paid back buy less than the dollars borrowed. That also helped after World War Two. In nineteen forty-six alone, prices jumped about eighteen percent, quietly shrinking what the debt was worth. The catch: it isn't free. Rising prices hit everyone's grocery bill. And lenders aren't fools. If they expect inflation, they ask for higher rates on new loans. So envelope five can come right back, fatter than before. | **Sahne:** banknotlar masada yavaşça küçülür; market fişi uzar. Kırmızı zarf yeniden şişer. Varlık/altın/yatırım görseli yok (P3). **Ekran:** "OLD DEBT SHRINKS · NEW RATES RISE". **↺ 10:27 "So envelope five can come right back"**. |
+| Possibility C: let prices rise. Inflation makes old debt smaller, because the dollars paid back buy less than the dollars borrowed. That also helped after World War Two. In nineteen forty-six alone, prices jumped about eighteen percent, quietly shrinking what the debt was worth. The catch: it isn't free. Rising prices hit everyone's grocery bill. And lenders aren't fools. If they expect inflation, they ask for higher rates on new loans. So envelope five can come right back, fatter than before. | **Sahne:** banknotlar masada yavaşça küçülür; market fişi uzar. Kırmızı zarf yeniden şişer. Varlık/altın/yatırım görseli yok (P3). **Ekran:** "OLD DEBT SHRINKS · NEW RATES RISE". **↺ 10:35 "So envelope five can come right back"**. |
 
-### S25 · 10:30–10:51 · 21 sn
+### S25 · 10:39–11:00 · 21 sn
 | ANLATIM | GÖRSEL |
 |---|---|
 | In real life, countries usually get a mix of all three, plus some luck. Which mix comes next isn't decided at this table. But you can now read the bill. So here's one question for you. A, B, or C: which one do you think will do the most work? Just one letter in the comments. | **Sahne:** üç not yan yana, Leo kalemi izleyiciye uzatır. **Ekran:** "A · B · C → ONE LETTER IN THE COMMENTS" (yayın sonrası ders 1: tek dokunuşla yanıtlanan tek soru; sabit yorumla aynı). |
 
 ## Bölüm 7 — Back to the Sentence
 
-### S26 · 10:51–11:18 · 27 sn
+### S26 · 11:00–11:26 · 27 sn
 | ANLATIM | GÖRSEL |
 |---|---|
-| Let's go back to the sentence from the start. A country isn't a family. It borrows in its own money, it never retires, and it can give itself a raise. But the interest bill works the same way. Rate times balance, paid first, every month. In our kitchen, that's about one thousand fifty dollars a month, more than the whole military. Envelope five is small paper. It just keeps finding envelopes inside. | **Ekran:** S03'teki kırmızı tez notu buzdolabında yeniden büyür; üç fark tik ile sayılır. Masada tek kırmızı zarf, içinden kenarı görünen bir zarf daha. **Leo:** lambayı kısar. Sahne sonu 1,5 sn nefes → **ABONE-3**. |
+| Let's go back to the sentence from the start. A country isn't a family. It borrows in its own money, it never retires, and it can give itself a raise. But the interest bill works the same way. Rate times balance, every single month. In our kitchen, that's about one thousand fifty dollars a month, more than the whole military. Envelope five is small paper. It just keeps finding envelopes inside. | **Ekran:** S03'teki kırmızı tez notu buzdolabında yeniden büyür; üç fark tik ile sayılır. Masada tek kırmızı zarf, içinden kenarı görünen bir zarf daha. **Leo:** lambayı kısar. Sahne sonu 1,5 sn nefes → **ABONE-3**. |
 
-### S27 · 11:18–11:36 · 18 sn · UÇ EKRAN KÖPRÜSÜ
+### S27 · 11:26–11:44 · 18 sn · UÇ EKRAN KÖPRÜSÜ
 | ANLATIM | GÖRSEL |
 |---|---|
-| There's one number that sets the price of every new loan in this kitchen, and of a lot of mortgages outside it. We saw it sitting close to five percent. Where that number comes from, and who really moves it, is a story for another kitchen table. | **Sahne:** kamera buzdolabındaki "5%" notuna yaklaşır, not pencereden dışarı, evlerin üstüne uçar. **Uç ekran:** abone öğesi + "en uygun video" öğesi (S06 yayındaysa o; var olmayan videoya söz yok). |
+| There's one number that helps set the price of many new loans in this kitchen, and of a lot of mortgages outside it. We saw it sitting close to five percent. Where that number comes from, and who really moves it, is a story for another kitchen table. | **Sahne:** kamera buzdolabındaki "5%" notuna yaklaşır, not pencereden dışarı, evlerin üstüne uçar. **Uç ekran:** abone öğesi + "en uygun video" öğesi (S06 yayındaysa o; var olmayan videoya söz yok). |
 
 ---
 
@@ -221,7 +221,7 @@ Zamanlar §12 betik ölçümünden (160 kpm). A = açılan, K = kapanan merak d�
 |---|---|---|---|
 | ABONE-1 | 2:53 (S07 sonu / S08 başı) | "Let's open the loan statement." | İlk büyük ödül (faiz > savunma) + A1 kapanışından sonra nefes; ≥60 sn |
 | ABONE-2 | 5:01 (S12 sonu / S13 başı) | "So why did envelope five get so fat, so fast?" | Matruşka doruğunun **ardından**, üstüne değil (H6) |
-| ABONE-3 | 11:18 (S26 sonu / S27 başı) | "There's one number that sets the price of every new loan in this kitchen" | Tez kapanışından sonra, köprüden önce (H6) |
+| ABONE-3 | 11:18 (S26 sonu / S27 başı) | "There's one number that helps set the price of many new loans in this kitchen" | Tez kapanışından sonra, köprüden önce (H6) |
 
 Sesli abone/beğeni çağrısı yok. Tek sesli etkileşim: S25 tek harfli yorum sorusu (A/B/C). Sessiz "LIKE" yazısı S16'da (ABONE ile çakışmaz).
 **Not:** TTS duraklamaları gerçek süreyi uzatabilir; F7'de `kurgu-editoru` gerçek ses zamanlarıyla yeniden ölçer.
@@ -258,14 +258,14 @@ Betik zamanları (§12). Montaj sonrası `kurgu-editoru` gerçek ses zamanlarıy
 - **Kendi hook'u (yeni kayıt, 0–3 sn):** "In nineteen forty-six, U.S. debt was bigger than the whole economy. By nineteen seventy-four, it was under a quarter of it."
 - **Kesit:** S19 (1946 → 1974 cümleleri) → S16 ilk iki cümle → S17 ilk üç cümle → kapanış.
 - **Kapanış satırı (yeni kayıt):** "A family can't grow its way out of a loan like that. A country did. This is history, not a forecast."
-- **9:16 notu:** G5 çizgisi dikey; "1946: 106% → 1974: 22%".
+- **9:16 notu:** G5 çizgisi dikey; "1946: >100% → 1974: ~23%".
 - **Politika:** R33/R34 (OMB T7.1) ile; bugüne hüküm yok, "history, not a forecast".
 - **Okunacak tam metin (betik bunu sayar):** <<In nineteen forty-six, U.S. debt was bigger than the whole economy. By nineteen seventy-four, it was under a quarter of it. And here's the strange part. The debt itself didn't shrink. It actually grew. The economy grew around it, and prices rose too. How? A country isn't a family. It borrows in its own money. A family borrows dollars it can't make. And it never retires. A family has to pay off its debts within one lifetime. A country has no last payday. A family can't grow its way out of a loan like that. A country did. This is history, not a forecast.>>
 
 ---
 
 ## 6. Uç ekran köprüsü (2 sürüm, seçilen: A)
-- **A (seçilen, S27):** "There's one number that sets the price of every new loan in this kitchen… is a story for another kitchen table." → Genel merak köprüsü; var olmayan videoya söz vermez (hafıza 2026-10-27). S06 yayınlanınca uç ekran öğesi o olur, ses değişmez.
+- **A (seçilen, S27):** "There's one number that helps set the price of many new loans in this kitchen… is a story for another kitchen table." → Genel merak köprüsü; var olmayan videoya söz vermez (hafıza 2026-10-27). S06 yayınlanınca uç ekran öğesi o olur, ses değişmez.
 - **B (yedek):** "Next time, we follow envelope five out the door, to the five percent number behind your mortgage. It's waiting on the screen." → Yalnız S06 yayındaysa; aksi halde yanıltıcı (elendi).
 
 ---
@@ -283,7 +283,7 @@ Etiket: R-kodu = kilitli `03-metin/rakam-tablosu.md` (finans-dogrulayici, 9a1437
 | S05 | about 1,670 / 1,070 / 1,025; more than 3,700 | $1,667 / $1,073 / $1,026; $3,765 | R09, R10, R11; toplam [H] |
 | S06, S12, S26, Shorts 1 | about one thousand fifty; one in five; third-biggest; more than the military; defense 965 | $1,050 · 1 in 5 · sıralı çubuk | R06, R07, R12, R08 |
 | S07 | about one thousand six hundred (everything else) | ~$1,600 | [H] R02 − R06…R11 |
-| S08, S09 | about thirty-two trillion; about three hundred ninety thousand; six years; about three percent | $32.4T · ~$389,000 · 6 years · ≈3% | R28, R30, R29, R31 |
+| S08, S09 | about thirty-two trillion; about three hundred ninety thousand; six years; about three to three and a half percent | $32.4T · ~$389,000 · 6 years · ≈3–3.5% | R28, R30, R29, R31 |
 | S12 | more than half of the gap | ≈53% | [H] R06/R03 |
 | S13 | about 1.5% (early 2022) → about 3.5% (Sep 2026); roughly tripled in five years; 350 → 1,050 a month; still growing | ~1.4% → ~3.5% · $352 → $1,050 · ~3× | R22, R19, R18, R16 (yüzdesiz) |
 | S14, S27 | close to five percent (late Oct 2026); about four percent short-term | ~5% · ~4% | R23, R24 |
