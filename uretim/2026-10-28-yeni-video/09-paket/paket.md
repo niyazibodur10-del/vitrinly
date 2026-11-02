@@ -1,6 +1,6 @@
 # F8a — Yayın paketi · S08 "If America Earned $5,400 a Month, Here's Its Budget"
 
-İLERLEME: F8a tamam (metin kesin; thumbnail A1 işlendi). F8b bekliyor: gerçek ses/kurgu zamanları (§4), müzik atfı (`06-muzik/atif-satirlari.md`), gerçek dosyalarla `--dry-run` 3/3, `YAYIN.md`.
+İLERLEME: F8b metin tarafı tamam (2026-11-02): bölümler gerçek sahne zamanında (§4), müzik atfı `06-muzik/atif-satirlari.md`'den dolu, uç ekran 15,0 sn. Bekleyen: `08-kurgu/` final dosyaları (F7) → gerçek `--dry-run` 3/3; `politika-raporu.md` (`sentetik_medya` kesin karar).
 **Hazırlayan:** youtube-paketleyici · **Tarih:** 2026-11-02 · **Durum:** KESİN METİN (F8a). Değişmeyen metin F8b'de yeniden yazılmaz.
 **Girdiler:** `03-metin/metin.md` v1.2 (kilit, sha256 c833cb696030), `rakam-tablosu.md` §6 (yasal not), `dogrulama.md` §3 (Alt-2 "Nearly"), `politika-denetimi.md` §3.3 (sabit yorum nötr), `02-senaryo/senaryo-karari.md` H8, `docs/yayin-takvimi.md`.
 **Tek kaynak:** JSON'lar bu dosyadaki `<!-- veri:… -->` bloklarından `paket-uret.py` ile üretilir; `paket-kontrol.py` birebir karşılaştırır (§10). `{MUZIK_*}` belirteçleri `06-muzik/atif-satirlari.md`'den, yoksa görünür yer tutucuyla doldurulur (F8b'de `--final` kipinde hata).
@@ -106,19 +106,19 @@ New animated finance stories every week: https://www.youtube.com/@toonomy
 
 ---
 
-## 4. Bölümler — metin §4 (betik zamanı; F8b'de gerçek sahne zamanına kayar)
+## 4. Bölümler — F8b gerçek sahne zamanları (`04-ses/sahne-zamanlari.json`, toplam 678,195 sn = 11:18,2; kurgu ofseti 0: kurgu anlatımla aynı zaman çizelgesinde, `zaman.ts` sahne-yerel)
 
-Açan sahneler: S01, S05, S08, S12, S16, S21, S26. Gerçek ses gelince (`04-ses/sahne-zamanlari.json`) her bölüm açan sahnenin `bas` zamanına aşağı yuvarlanır; kurguda ofset varsa (`08-kurgu/kurgu-rapor.md`) hepsi aynı farkla kayar, ilk bölüm 00:00 kalır. Betik §10 [3b] dosya varsa eşleşmeyi ölçer.
+Açan sahneler: S01, S05, S08, S12, S16, S21, S26. F8b: her bölüm açan sahnenin `bas` zamanına aşağı yuvarlanır; kurguda ofset varsa (`08-kurgu/kurgu-rapor.md`) hepsi aynı farkla kayar, ilk bölüm 00:00 kalır. Betik §10 [3b] dosya varsa eşleşmeyi ölçer.
 
 <!-- veri:bolumler -->
 ```text
 00:00 One household, $5,400 a month
-01:28 Five envelopes
-02:53 The loan
-04:32 The envelope inside the envelope
-06:36 Three things a family can't do
-09:06 Three ways to close the gap
-11:00 Back to the sentence
+01:23 Five envelopes
+02:56 The loan
+04:31 The envelope inside the envelope
+06:31 Three things a family can't do
+08:47 Three ways to close the gap
+10:37 Back to the sentence
 ```
 
 ---
@@ -223,8 +223,8 @@ C: let prices rise
 
 ## 8. Uç ekran, kart, oynatma listesi
 
-- **Uç ekran:** S27 köprüsü (metin planı 11:26–11:44, ~18 sn) — **süre F8b'de gerçek sesten ölçülür** (1929'da plan 17 → gerçek 13,2 sn). Öğeler: abone + video "Best for viewer" (kanalda tek diğer video 1929 `BVJwZ1C9R1U`; S06 yayınlanırsa doğrudan o, köprü "5%" notuna bağlanır). Var olmayan videoya söz yok (metin §6 A).
-- **Kart:** yok (konuyla bağlantılı yayında video yok). S06 (%5 tahvil) yayınlanınca S14'e (~5:39, "close to five percent") kart.
+- **Uç ekran:** S27 köprüsü, gerçek ses **11:03,2–11:18,2 = 15,0 sn** [Ö] (`sahne-zamanlari.json` S27 bas 663,164 → 678,195; plan 18 sn idi). YouTube uç ekranı 5–20 sn → Studio'da son 15 sn. Öğeler: abone + video "Best for viewer" (kanalda tek diğer video 1929 `BVJwZ1C9R1U`; S06 yayınlanırsa doğrudan o, köprü "5%" notuna bağlanır). Var olmayan videoya söz yok (metin §6 A).
+- **Kart:** yok (konuyla bağlantılı yayında video yok). S06 (%5 tahvil) yayınlanınca S14'e (gerçek 5:37–6:05, "close to five percent") kart.
 - **Oynatma listesi:** **B · Bugün → "Money News, Explained"** (kanal-paketi.json'da planlı; bu video listeyi açar → F11'de koordinatör `tools/yayin/kanal.py`, sonra `oynatma_listesi_id`). Shorts → "Money Stories in 60 Seconds | Shorts".
 
 ---
@@ -254,8 +254,9 @@ yedek-shorts-2|2026-11-10T09:00:00-05:00
 ## 11. Açık işler (F8b)
 | İş | Sahibi | Not |
 |---|---|---|
-| Gerçek sahne zamanları + kurgu ofseti → §4 | ses kolu / kurgu-editoru → paketleyici | betik [3b] |
-| Müzik atfı `06-muzik/atif-satirlari.md` (1929 biçimi: kod bloğu + "Shorts N açıklaması: `…`") | muzik-ses-tasarimcisi | `{MUZIK_*}` |
+| ~~Gerçek sahne zamanları → §4~~ TAMAM (ofset 0) | paketleyici | betik [3b] 7/7 |
+| ~~Müzik atfı~~ TAMAM (hepsi CC0, gönüllü teşekkür satırı) | muzik-ses-tasarimcisi → paketleyici | `{MUZIK_*}` dolu |
+| Final dosyalar `08-kurgu/` (ad teyidi `ls`, Shorts süresi) → gerçek dry-run 3/3 | kurgu-editoru → paketleyici | F7 sonrası tek komut |
 | `sentetik_medya` kesin karar | monetizasyon-uyum-uzmani | `politika-raporu.md` |
 | Test & Compare, Related video, uç ekran, SRT, oynatma listesi | koordinatör → `YAYIN.md` Studio | API karşılığı yok |
 | Yorum yanıtları | Niyazi onayıyla | `yorum-yanitlari.md` |

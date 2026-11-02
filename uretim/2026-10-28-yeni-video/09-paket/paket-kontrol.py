@@ -170,6 +170,13 @@ for ad_, (tur, bas_, ac, zk) in {"yayin-paketi.json": ("uzun", V["basliklar"].sp
     if tur == "uzun": (ok if "Chapters:\n00:00 " in ta else hata)("tam açıklamada 'Chapters:' + 00:00")
 if th: (ok if (BURA / th.replace("../09-paket/", "")).is_file() else hata)(f"thumbnail dosyası var: {th}")
 else: bekle("thumbnail finalisti yok (veri:thumbnail-ana boş) → thumbnail-tasarimcisi raporundan")
+pr = BURA / "politika-raporu.md"
+if pr.is_file():
+    m_ = re.search(r"sentetik_medya\W{0,6}(true|false)", pr.read_text(encoding="utf-8"), re.I)
+    (ok if m_ and (m_.group(1).lower() == "true") == ns.get("SENTETIK", True) else hata)(f"sentetik_medya = politika-raporu.md kararı ({m_.group(1) if m_ else 'karar satırı yok'})")
+else: bekle("politika-raporu.md yok (monetizasyon-uyum-uzmani) → sentetik_medya geçici true")
+for f in ("final-16x9.mp4", "final.en.srt", "shorts-1.mp4", "shorts-2.mp4"):
+    if not (KLAS / "08-kurgu" / f).is_file(): bekle(f"08-kurgu/{f} yok (F7)")
 print("\n".join(satir))
 print(f"SONUÇ: {len(hatalar)} hata · {len(bekleyen)} bekleyen (F8b)")
 sys.exit(1 if hatalar else 0)

@@ -112,3 +112,10 @@ exit=0 (2 koşu çıktı sha256 aynı: 001cdc1320f2; --final exit 1 beklenen; ne
     "publishAt": "2026-11-07T14:00:00Z"
 
 ## 2026-11-02T10:52:19Z thumbnail A1 işlendi: paket-kontrol 0 hata · 4 bekleyen; dry-run uzun: thumbnail 1280x720 jpeg 111 KB OK, kalan 2 hata = video/SRT yok (F7)
+
+## 2026-11-02 F8b (youtube-paketleyici)
+paket-uret.py → 3 JSON, müzik: atif-satirlari.md (CC0)
+paket-kontrol.py → 0 hata · 5 bekleyen (politika-raporu.md yok; 08-kurgu 4 dosya yok) · 2 koşu sha256 398faa223fa0 · --final exit 1 (beklenen)
+[3b] 7/7 bölüm ↔ sahne bas fark −0,85…0 (sahne-zamanlari.json, toplam 678,195 sn)
+dry-run gerçek: yalnız dosya-yok (2/1/1 hata) · sahte medya bayt-aynı JSON (678,2 sn 16:9 + 55 sn 9:16, taslak SRT): 0/0/0 hata, 10/7/7 geçen
+uç ekran S27 = 15,0 sn
