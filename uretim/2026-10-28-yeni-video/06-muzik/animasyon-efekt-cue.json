@@ -1,0 +1,2032 @@
+{
+ "kaynak": "video/src/videolar/yeni-video/zaman.ts (tek kaynak; 07-animasyon/olay-cikar.mjs)",
+ "eksen": "04-ses/anlatim.wav (0 = anlatım başı)",
+ "fps": 30,
+ "tahmini": true,
+ "olaylar": [
+  {
+   "sahne": "S01",
+   "t": 0,
+   "kare": 0,
+   "olay": "Capitol silüeti tam ekran, küçülmeye başlar",
+   "tur": "kart",
+   "oneri": "alçalan whoosh"
+  },
+  {
+   "sahne": "S01",
+   "t": 1.9,
+   "kare": 57,
+   "olay": "Capitol → masadaki ev maketi (pop) + Leo masaya oturur",
+   "tur": "pop",
+   "oneri": "tahta tık / sandalye"
+  },
+  {
+   "sahne": "S01",
+   "t": 3.353,
+   "kare": 101,
+   "olay": "maaş zarfı masaya düşer ($5,400 IN)",
+   "tur": "dus",
+   "oneri": "kâğıt düşme"
+  },
+  {
+   "sahne": "S01",
+   "t": 3.925,
+   "kare": 118,
+   "olay": "sayaç 0→5,400 (0,8 sn)",
+   "tur": "sayac",
+   "oneri": "tıkırtı + ding"
+  },
+  {
+   "sahne": "S01",
+   "t": 6.758,
+   "kare": 203,
+   "olay": "kesme: buzdolabı yakın plan",
+   "tur": "kesme",
+   "oneri": "whoosh"
+  },
+  {
+   "sahne": "S01",
+   "t": 7.554,
+   "kare": 227,
+   "olay": "not yapışır: $7,400 OUT",
+   "tur": "pop",
+   "oneri": "yapışkan not tap"
+  },
+  {
+   "sahne": "S01",
+   "t": 8.484,
+   "kare": 255,
+   "olay": "kırmızı −$2,000/MO notu yanıp söner",
+   "tur": "vurgu",
+   "oneri": "alarm tik ×3"
+  },
+  {
+   "sahne": "S01",
+   "t": 9.284,
+   "kare": 279,
+   "olay": "kesme: masa, Leo'ya yavaş punch-in",
+   "tur": "kesme",
+   "oneri": ""
+  },
+  {
+   "sahne": "S02",
+   "t": 12.73,
+   "kare": 382,
+   "olay": "kesme: masa orta, Leo",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S02",
+   "t": 15.991,
+   "kare": 480,
+   "olay": "kesme: kamera pencereye kayar (Leo çıkar)",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S02",
+   "t": 20.103,
+   "kare": 603,
+   "olay": "araba ikonu + CAR LOANS",
+   "tur": "pop",
+   "oneri": "pop"
+  },
+  {
+   "sahne": "S02",
+   "t": 20.937,
+   "kare": 628,
+   "olay": "ev ikonu + MORTGAGES",
+   "tur": "pop",
+   "oneri": "pop"
+  },
+  {
+   "sahne": "S02",
+   "t": 21.726,
+   "kare": 652,
+   "olay": "kesme: buzdolabı: sorular + A·B·C",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S02",
+   "t": 24.508,
+   "kare": 735,
+   "olay": "not: FASTEST BILL?",
+   "tur": "pop",
+   "oneri": "yapışkan not tap"
+  },
+  {
+   "sahne": "S02",
+   "t": 24.995,
+   "kare": 750,
+   "olay": "not: WHY?",
+   "tur": "pop",
+   "oneri": "yapışkan not tap"
+  },
+  {
+   "sahne": "S02",
+   "t": 26.751,
+   "kare": 803,
+   "olay": "üç not A · B · C",
+   "tur": "pop",
+   "oneri": "tap ×3"
+  },
+  {
+   "sahne": "S03",
+   "t": 29.904,
+   "kare": 897,
+   "olay": "kesme: Leo yakın: I'm Leo",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S03",
+   "t": 30.204,
+   "kare": 906,
+   "olay": "isim etiketi LEO",
+   "tur": "pop",
+   "oneri": "hafif pop"
+  },
+  {
+   "sahne": "S03",
+   "t": 33.819,
+   "kare": 1015,
+   "olay": "kesme: ölçek kartı",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S03",
+   "t": 37.124,
+   "kare": 1114,
+   "olay": "= işareti + $1 billion a year",
+   "tur": "vurgu",
+   "oneri": "ding"
+  },
+  {
+   "sahne": "S03",
+   "t": 40.843,
+   "kare": 1225,
+   "olay": "kaynak satırı FY2026",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S03",
+   "t": 45.622,
+   "kare": 1369,
+   "olay": "kesme: masa geniş, Leo",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S03",
+   "t": 48.981,
+   "kare": 1469,
+   "olay": "kesme: buzdolabı: kırmızı tez notu",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S03",
+   "t": 49.181,
+   "kare": 1475,
+   "olay": "kırmızı tez notu buzdolabına çarpar",
+   "tur": "dus",
+   "oneri": "tok tap / slap"
+  },
+  {
+   "sahne": "S03",
+   "t": 53.089,
+   "kare": 1593,
+   "olay": "kesme: Leo yakın, ciddi",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S04",
+   "t": 57.161,
+   "kare": 1715,
+   "olay": "kesme: kuşbakışı masa: PAYDAY",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S04",
+   "t": 57.261,
+   "kare": 1718,
+   "olay": "PAYDAY yazısı",
+   "tur": "pop",
+   "oneri": "kasa ding"
+  },
+  {
+   "sahne": "S04",
+   "t": 58.438,
+   "kare": 1753,
+   "olay": "maaş zarfı masaya düşer $5,400",
+   "tur": "dus",
+   "oneri": "kâğıt düşme"
+  },
+  {
+   "sahne": "S04",
+   "t": 65.573,
+   "kare": 1967,
+   "olay": "şerit: PAYCHECK TAXES",
+   "tur": "kay",
+   "oneri": "kâğıt çekme"
+  },
+  {
+   "sahne": "S04",
+   "t": 67.045,
+   "kare": 2011,
+   "olay": "şerit: COMPANY TAXES",
+   "tur": "kay",
+   "oneri": "kâğıt çekme"
+  },
+  {
+   "sahne": "S04",
+   "t": 68.599,
+   "kare": 2058,
+   "olay": "şerit: PAYROLL TAXES",
+   "tur": "kay",
+   "oneri": "kâğıt çekme"
+  },
+  {
+   "sahne": "S04",
+   "t": 72.962,
+   "kare": 2189,
+   "olay": "kesme: masa orta, Leo zarfları dizer",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S04",
+   "t": 80.216,
+   "kare": 2406,
+   "olay": "6 zarf yelpaze gibi dizilir",
+   "tur": "pop",
+   "oneri": "kart dağıtma ×6"
+  },
+  {
+   "sahne": "S04",
+   "t": 82.018,
+   "kare": 2461,
+   "olay": "kırmızı zarf kenara çekilir (?)",
+   "tur": "vurgu",
+   "oneri": "gizem tını"
+  },
+  {
+   "sahne": "S05",
+   "t": 82.694,
+   "kare": 2481,
+   "olay": "kesme: masa orta, Leo + hesap makinesi",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S05",
+   "t": 85.34,
+   "kare": 2560,
+   "olay": "mavi zarf SOCIAL SECURITY düşer",
+   "tur": "dus",
+   "oneri": "kalın zarf thud"
+  },
+  {
+   "sahne": "S05",
+   "t": 91.686,
+   "kare": 2751,
+   "olay": "hesap makinesi $1,667",
+   "tur": "sayac",
+   "oneri": "tuş tıkırtısı"
+  },
+  {
+   "sahne": "S05",
+   "t": 94.573,
+   "kare": 2837,
+   "olay": "kesme: grafik G1: gelir çubuğu dolar",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S05",
+   "t": 95.514,
+   "kare": 2865,
+   "olay": "yeşil dilim MEDICARE $1,073",
+   "tur": "pop",
+   "oneri": "pop"
+  },
+  {
+   "sahne": "S05",
+   "t": 96.092,
+   "kare": 2883,
+   "olay": "açık yeşil zarf HEALTH",
+   "tur": "dus",
+   "oneri": "zarf thud"
+  },
+  {
+   "sahne": "S05",
+   "t": 100.784,
+   "kare": 3024,
+   "olay": "kesme: kuşbakışı: üç zarf yığılır",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S05",
+   "t": 101.287,
+   "kare": 3039,
+   "olay": "kesme: grafik G1: toplam sayaç",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S05",
+   "t": 101.687,
+   "kare": 3051,
+   "olay": "sayaç SPENT $3,765",
+   "tur": "sayac",
+   "oneri": "tıkırtı + ding"
+  },
+  {
+   "sahne": "S06",
+   "t": 111.736,
+   "kare": 3352,
+   "olay": "kesme: kuşbakışı: gri DEFENSE zarfı",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S06",
+   "t": 112.967,
+   "kare": 3389,
+   "olay": "gri DEFENSE zarfı düşer",
+   "tur": "dus",
+   "oneri": "thud"
+  },
+  {
+   "sahne": "S06",
+   "t": 115.447,
+   "kare": 3463,
+   "olay": "etiket SHIPS",
+   "tur": "pop",
+   "oneri": "tik"
+  },
+  {
+   "sahne": "S06",
+   "t": 115.871,
+   "kare": 3476,
+   "olay": "etiket PLANES",
+   "tur": "pop",
+   "oneri": "tik"
+  },
+  {
+   "sahne": "S06",
+   "t": 116.348,
+   "kare": 3490,
+   "olay": "etiket SALARIES",
+   "tur": "pop",
+   "oneri": "tik"
+  },
+  {
+   "sahne": "S06",
+   "t": 116.932,
+   "kare": 3508,
+   "olay": "etiket BASES",
+   "tur": "pop",
+   "oneri": "tik"
+  },
+  {
+   "sahne": "S06",
+   "t": 117.656,
+   "kare": 3530,
+   "olay": "$965",
+   "tur": "pop",
+   "oneri": "pop"
+  },
+  {
+   "sahne": "S06",
+   "t": 119.64,
+   "kare": 3589,
+   "olay": "kesme: masa orta: kırmızı zarf kendiliğinden kayar",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S06",
+   "t": 120.777,
+   "kare": 3623,
+   "olay": "kırmızı zarf masaya kayar (müzik kesilir)",
+   "tur": "kay",
+   "oneri": "MÜZİK KES + tek tık"
+  },
+  {
+   "sahne": "S06",
+   "t": 124.11,
+   "kare": 3723,
+   "olay": "5 dolardan biri kırmızıya döner",
+   "tur": "vurgu",
+   "oneri": "ding"
+  },
+  {
+   "sahne": "S06",
+   "t": 124.776,
+   "kare": 3743,
+   "olay": "INTEREST yazısı",
+   "tur": "vurgu",
+   "oneri": "tek tık"
+  },
+  {
+   "sahne": "S06",
+   "t": 125.686,
+   "kare": 3771,
+   "olay": "$1,050 / MO",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S06",
+   "t": 127.764,
+   "kare": 3833,
+   "olay": "kesme: grafik G1b: sıralı çubuk",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S06",
+   "t": 128.064,
+   "kare": 3842,
+   "olay": "çubuklar sırayla dolar, INTEREST 3. sırada parlar",
+   "tur": "sayac",
+   "oneri": "tıkırtı ×5"
+  },
+  {
+   "sahne": "S06",
+   "t": 133.464,
+   "kare": 4004,
+   "olay": "kesme: kuşbakışı: INTEREST > DEFENSE",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S06",
+   "t": 133.964,
+   "kare": 4019,
+   "olay": "INTEREST > DEFENSE",
+   "tur": "vurgu",
+   "oneri": "vuruş"
+  },
+  {
+   "sahne": "S06",
+   "t": 139.298,
+   "kare": 4179,
+   "olay": "kesme: grafik: 5 dolardan 1'i",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S06",
+   "t": 144.191,
+   "kare": 4326,
+   "olay": "kesme: Leo yakın: BUYS NOTHING",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S06",
+   "t": 144.82,
+   "kare": 4345,
+   "olay": "BUYS NOTHING damgası",
+   "tur": "vurgu",
+   "oneri": "damga thud"
+  },
+  {
+   "sahne": "S06",
+   "t": 145.762,
+   "kare": 4373,
+   "olay": "NO ROAD",
+   "tur": "pop",
+   "oneri": "tik"
+  },
+  {
+   "sahne": "S06",
+   "t": 146.246,
+   "kare": 4387,
+   "olay": "NO CHECK",
+   "tur": "pop",
+   "oneri": "tik"
+  },
+  {
+   "sahne": "S06",
+   "t": 146.773,
+   "kare": 4403,
+   "olay": "NO SHIP",
+   "tur": "pop",
+   "oneri": "tik"
+  },
+  {
+   "sahne": "S07",
+   "t": 150.164,
+   "kare": 4505,
+   "olay": "kesme: kuşbakışı: EVERYTHING ELSE zarfı",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S07",
+   "t": 150.314,
+   "kare": 4509,
+   "olay": "kahve zarf EVERYTHING ELSE düşer",
+   "tur": "dus",
+   "oneri": "thud"
+  },
+  {
+   "sahne": "S07",
+   "t": 153.042,
+   "kare": 4591,
+   "olay": "etiket VETERANS",
+   "tur": "pop",
+   "oneri": "tik"
+  },
+  {
+   "sahne": "S07",
+   "t": 153.637,
+   "kare": 4609,
+   "olay": "etiket ROADS",
+   "tur": "pop",
+   "oneri": "tik"
+  },
+  {
+   "sahne": "S07",
+   "t": 154.07,
+   "kare": 4622,
+   "olay": "etiket FOOD",
+   "tur": "pop",
+   "oneri": "tik"
+  },
+  {
+   "sahne": "S07",
+   "t": 154.719,
+   "kare": 4642,
+   "olay": "etiket SCIENCE",
+   "tur": "pop",
+   "oneri": "tik"
+  },
+  {
+   "sahne": "S07",
+   "t": 155.801,
+   "kare": 4674,
+   "olay": "etiket PARKS",
+   "tur": "pop",
+   "oneri": "tik"
+  },
+  {
+   "sahne": "S07",
+   "t": 156.504,
+   "kare": 4695,
+   "olay": "etiket COURTS",
+   "tur": "pop",
+   "oneri": "tik"
+  },
+  {
+   "sahne": "S07",
+   "t": 159.292,
+   "kare": 4779,
+   "olay": "~$1,600",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S07",
+   "t": 161.619,
+   "kare": 4849,
+   "olay": "kesme: terazi: gider ↔ gelir",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S07",
+   "t": 165.795,
+   "kare": 4974,
+   "olay": "terazi gider tarafına yatar (~$7,400 OUT)",
+   "tur": "vurgu",
+   "oneri": "ahşap gıcırtı + thud"
+  },
+  {
+   "sahne": "S07",
+   "t": 167.779,
+   "kare": 5033,
+   "olay": "$5,400 IN etiketi",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S07",
+   "t": 172.368,
+   "kare": 5171,
+   "olay": "−$2,000 / MO kırmızı",
+   "tur": "vurgu",
+   "oneri": "alarm tik"
+  },
+  {
+   "sahne": "S07",
+   "t": 172.979,
+   "kare": 5189,
+   "olay": "kesme: masa orta: LOAN BOOK",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S07",
+   "t": 175.168,
+   "kare": 5255,
+   "olay": "LOAN BOOK masaya kayar, +$2,000 satırı",
+   "tur": "kay",
+   "oneri": "kitap kayma + kalem"
+  },
+  {
+   "sahne": "S07",
+   "t": 175.581,
+   "kare": 5267,
+   "olay": "ABONE-1 (sağ alt boş; defter solda)",
+   "tur": "abone",
+   "oneri": "klik (kurgu-editoru bileşeni)"
+  },
+  {
+   "sahne": "S08",
+   "t": 175.785,
+   "kare": 5274,
+   "olay": "kesme: masa orta: defter açılır",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S08",
+   "t": 176.401,
+   "kare": 5292,
+   "olay": "LOAN BOOK açılır",
+   "tur": "vurgu",
+   "oneri": "kitap açılma"
+  },
+  {
+   "sahne": "S08",
+   "t": 182.692,
+   "kare": 5481,
+   "olay": "sayfalar masadan yere akar",
+   "tur": "parcacik",
+   "oneri": "kâğıt yağmuru"
+  },
+  {
+   "sahne": "S08",
+   "t": 183.564,
+   "kare": 5507,
+   "olay": "kesme: grafik G2: bakiye",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S08",
+   "t": 184.064,
+   "kare": 5522,
+   "olay": "sayaç ~$389,000",
+   "tur": "sayac",
+   "oneri": "tıkırtı + ding"
+  },
+  {
+   "sahne": "S08",
+   "t": 189.334,
+   "kare": 5680,
+   "olay": "gerçek ölçek satırı $32.43 TRILLION",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S08",
+   "t": 194.326,
+   "kare": 5830,
+   "olay": "kesme: Leo yakın: pahalı değil",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S08",
+   "t": 197.576,
+   "kare": 5927,
+   "olay": "not: ≈3–3.5% a year, not card rates",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S08",
+   "t": 201.849,
+   "kare": 6055,
+   "olay": "kesme: kuşbakışı: cepten cebe",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S08",
+   "t": 205.037,
+   "kare": 6151,
+   "olay": "kumbara + kasa",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S08",
+   "t": 210.977,
+   "kare": 6329,
+   "olay": "ok: cepten cebe",
+   "tur": "kay",
+   "oneri": "whoosh kısa"
+  },
+  {
+   "sahne": "S09",
+   "t": 212.325,
+   "kare": 6370,
+   "olay": "kesme: Leo yakın: $389,000",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S09",
+   "t": 212.425,
+   "kare": 6373,
+   "olay": "$389,000 yazısı",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S09",
+   "t": 219.065,
+   "kare": 6572,
+   "olay": "kesme: grafik G2b: 6 yıl",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S09",
+   "t": 219.365,
+   "kare": 6581,
+   "olay": "6 yıl kutusu sırayla dolar ($64,800 ×6)",
+   "tur": "sayac",
+   "oneri": "tık ×6"
+  },
+  {
+   "sahne": "S09",
+   "t": 224.528,
+   "kare": 6736,
+   "olay": "NO FOOD · NO RENT",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S09",
+   "t": 228.996,
+   "kare": 6870,
+   "olay": "kesme: masa orta: defter uzar",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S09",
+   "t": 229.848,
+   "kare": 6895,
+   "olay": "+$2,000 satırı",
+   "tur": "pop",
+   "oneri": "kalem"
+  },
+  {
+   "sahne": "S10",
+   "t": 231.97,
+   "kare": 6959,
+   "olay": "kesme: masa orta: WHO HOLDS THE LOAN?",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S10",
+   "t": 232.17,
+   "kare": 6965,
+   "olay": "WHO HOLDS THE LOAN?",
+   "tur": "pop",
+   "oneri": "kapı zili"
+  },
+  {
+   "sahne": "S10",
+   "t": 235.171,
+   "kare": 7055,
+   "olay": "kesme: ikon kartları: alacaklılar",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S10",
+   "t": 235.271,
+   "kare": 7058,
+   "olay": "alacaklı ikonu (americans)",
+   "tur": "pop",
+   "oneri": "kapı zili / pop"
+  },
+  {
+   "sahne": "S10",
+   "t": 237.241,
+   "kare": 7117,
+   "olay": "alacaklı ikonu (pension)",
+   "tur": "pop",
+   "oneri": "kapı zili / pop"
+  },
+  {
+   "sahne": "S10",
+   "t": 238.49,
+   "kare": 7155,
+   "olay": "alacaklı ikonu (banks)",
+   "tur": "pop",
+   "oneri": "kapı zili / pop"
+  },
+  {
+   "sahne": "S10",
+   "t": 240.472,
+   "kare": 7214,
+   "olay": "alacaklı ikonu (foreign)",
+   "tur": "pop",
+   "oneri": "kapı zili / pop"
+  },
+  {
+   "sahne": "S10",
+   "t": 244.108,
+   "kare": 7323,
+   "olay": "alacaklı ikonu (federal)",
+   "tur": "pop",
+   "oneri": "kapı zili / pop"
+  },
+  {
+   "sahne": "S10",
+   "t": 245.284,
+   "kare": 7359,
+   "olay": "kesme: Leo yakın: IOU",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S10",
+   "t": 247.882,
+   "kare": 7436,
+   "olay": "IOU fişi",
+   "tur": "pop",
+   "oneri": "kâğıt"
+  },
+  {
+   "sahne": "S10",
+   "t": 248.825,
+   "kare": 7465,
+   "olay": "TREASURY BOND = A PROMISE",
+   "tur": "vurgu",
+   "oneri": ""
+  },
+  {
+   "sahne": "S11",
+   "t": 253.624,
+   "kare": 7609,
+   "olay": "kesme: iki kredi başvurusu",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S11",
+   "t": 258.806,
+   "kare": 7764,
+   "olay": "DENIED damgası (aile)",
+   "tur": "vurgu",
+   "oneri": "damga thud"
+  },
+  {
+   "sahne": "S11",
+   "t": 262.58,
+   "kare": 7877,
+   "olay": "APPROVED damgası (hane)",
+   "tur": "vurgu",
+   "oneri": "damga thud"
+  },
+  {
+   "sahne": "S11",
+   "t": 264.172,
+   "kare": 7925,
+   "olay": "kesme: buzdolabı: soru notu",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S11",
+   "t": 264.372,
+   "kare": 7931,
+   "olay": "soru notu yapışır",
+   "tur": "dus",
+   "oneri": "slap"
+  },
+  {
+   "sahne": "S11",
+   "t": 267.078,
+   "kare": 8012,
+   "olay": "kesme: masa orta: kırmızı zarfa spot",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S11",
+   "t": 269.229,
+   "kare": 8077,
+   "olay": "spot ışık kırmızı zarfa",
+   "tur": "vurgu",
+   "oneri": "gizem tını"
+  },
+  {
+   "sahne": "S12",
+   "t": 271.425,
+   "kare": 8143,
+   "olay": "kırmızı INTEREST zarfı masaya kayar",
+   "tur": "kay",
+   "oneri": "kâğıt kayma"
+  },
+  {
+   "sahne": "S12",
+   "t": 275.995,
+   "kare": 8280,
+   "olay": "punch-in Leo + zarf",
+   "tur": "kamera",
+   "oneri": "whoosh kısa"
+  },
+  {
+   "sahne": "S12",
+   "t": 277.288,
+   "kare": 8319,
+   "olay": "zarf açılır: içinden mor zarf (Leo G05)",
+   "tur": "vurgu",
+   "oneri": "zarf yırtma / kâğıt"
+  },
+  {
+   "sahne": "S12",
+   "t": 280.607,
+   "kare": 8418,
+   "olay": "BORROWED etiketi pop",
+   "tur": "pop",
+   "oneri": "pop"
+  },
+  {
+   "sahne": "S12",
+   "t": 281.417,
+   "kare": 8443,
+   "olay": "kesme: AÇIK çubuğu kartı ($2,000)",
+   "tur": "kesme",
+   "oneri": ""
+  },
+  {
+   "sahne": "S12",
+   "t": 285.798,
+   "kare": 8574,
+   "olay": "çubuğun kırmızı faiz kısmı dolar: 53% OF THE GAP",
+   "tur": "sayac",
+   "oneri": "yükselen ton"
+  },
+  {
+   "sahne": "S12",
+   "t": 288.512,
+   "kare": 8655,
+   "olay": "kesme: Leo zarflar ters renk (mor dış, kırmızı iç)",
+   "tur": "kesme",
+   "oneri": ""
+  },
+  {
+   "sahne": "S12",
+   "t": 295.445,
+   "kare": 8863,
+   "olay": "kesme: kuşbakışı masa, matruşka başlar",
+   "tur": "kesme",
+   "oneri": "whoosh"
+  },
+  {
+   "sahne": "S12",
+   "t": 295.695,
+   "kare": 8871,
+   "olay": "matruşka 1: mor zarftan kırmızı zarf çıkar + punch-in",
+   "tur": "vurgu",
+   "oneri": "kâğıt + tık"
+  },
+  {
+   "sahne": "S12",
+   "t": 299.895,
+   "kare": 8997,
+   "olay": "matruşka 2: kırmızıdan mor zarf + punch-in",
+   "tur": "vurgu",
+   "oneri": "kâğıt + tık"
+  },
+  {
+   "sahne": "S12",
+   "t": 303.151,
+   "kare": 9095,
+   "olay": "matruşka 3 + punch-in",
+   "tur": "vurgu",
+   "oneri": "kâğıt + tık (hızlanan)"
+  },
+  {
+   "sahne": "S12",
+   "t": 304.067,
+   "kare": 9122,
+   "olay": "matruşka 4 + punch-in",
+   "tur": "vurgu",
+   "oneri": "kâğıt + tık (hızlanan)"
+  },
+  {
+   "sahne": "S12",
+   "t": 305.081,
+   "kare": 9152,
+   "olay": "ABONE-2 (sağ alt boş; kule sol-orta)",
+   "tur": "abone",
+   "oneri": "klik (kurgu-editoru bileşeni)"
+  },
+  {
+   "sahne": "S13",
+   "t": 305.309,
+   "kare": 9159,
+   "olay": "kesme: masa orta: şişman kırmızı zarf",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S13",
+   "t": 316.021,
+   "kare": 9481,
+   "olay": "kesme: grafik G3a: ortalama faiz",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S13",
+   "t": 316.521,
+   "kare": 9496,
+   "olay": "EARLY 2022 ~1.4%",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S13",
+   "t": 322.297,
+   "kare": 9669,
+   "olay": "SEP 2026 ~3.5% (termometre yükselir)",
+   "tur": "sayac",
+   "oneri": "yükselen ton"
+  },
+  {
+   "sahne": "S13",
+   "t": 326.247,
+   "kare": 9787,
+   "olay": "kesme: grafik G3b: net faiz çubukları FY16–26",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S13",
+   "t": 326.547,
+   "kare": 9796,
+   "olay": "11 çubuk sırayla",
+   "tur": "sayac",
+   "oneri": "tık ×11"
+  },
+  {
+   "sahne": "S13",
+   "t": 328.888,
+   "kare": 9867,
+   "olay": "~3× IN 5 YEARS",
+   "tur": "vurgu",
+   "oneri": "vuruş"
+  },
+  {
+   "sahne": "S13",
+   "t": 330.075,
+   "kare": 9902,
+   "olay": "$352 → $1,052 / mo",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S13",
+   "t": 336.457,
+   "kare": 10094,
+   "olay": "FY2026 çubuğu yanıp söner",
+   "tur": "vurgu",
+   "oneri": "tik ×2"
+  },
+  {
+   "sahne": "S14",
+   "t": 337.205,
+   "kare": 10116,
+   "olay": "kesme: Leo yakın",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S14",
+   "t": 341.993,
+   "kare": 10260,
+   "olay": "kesme: konveyör: krediler",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S14",
+   "t": 345.008,
+   "kare": 10350,
+   "olay": "kısa şerit WEEKS",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S14",
+   "t": 346.399,
+   "kare": 10392,
+   "olay": "uzun şerit DECADES",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S14",
+   "t": 353.848,
+   "kare": 10615,
+   "olay": "CHEAP 1% düşer → NEW 5%",
+   "tur": "vurgu",
+   "oneri": "etiket kopma + tık"
+  },
+  {
+   "sahne": "S14",
+   "t": 356.357,
+   "kare": 10691,
+   "olay": "kesme: grafik G4: yeni faizler",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S14",
+   "t": 356.757,
+   "kare": 10703,
+   "olay": "NEW 10-YEAR ~5%",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S14",
+   "t": 362.326,
+   "kare": 10870,
+   "olay": "SHORT-TERM ~4%",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S15",
+   "t": 365.187,
+   "kare": 10956,
+   "olay": "kesme: gösterge: ortalama faiz tırmanır",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S15",
+   "t": 367.199,
+   "kare": 11016,
+   "olay": "ibre yükselir",
+   "tur": "sayac",
+   "oneri": "yükselen ton"
+  },
+  {
+   "sahne": "S15",
+   "t": 375.455,
+   "kare": 11264,
+   "olay": "kesme: buzdolabı: RATE × BALANCE",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S15",
+   "t": 379.796,
+   "kare": 11394,
+   "olay": "RATE × BALANCE notu",
+   "tur": "dus",
+   "oneri": "slap"
+  },
+  {
+   "sahne": "S15",
+   "t": 381.178,
+   "kare": 11435,
+   "olay": "kesme: kuşbakışı: CAN'T SKIP",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S15",
+   "t": 383.481,
+   "kare": 11504,
+   "olay": "CAN'T SKIP damgası",
+   "tur": "vurgu",
+   "oneri": "damga"
+  },
+  {
+   "sahne": "S15",
+   "t": 383.983,
+   "kare": 11519,
+   "olay": "kesme: masa orta: FAMILY çatlar",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S15",
+   "t": 386.378,
+   "kare": 11591,
+   "olay": "FAMILY yazısı çatlar",
+   "tur": "vurgu",
+   "oneri": "cam çatlama"
+  },
+  {
+   "sahne": "S16",
+   "t": 390.636,
+   "kare": 11719,
+   "olay": "kesme: kart: 1 · OWN MONEY",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S16",
+   "t": 390.786,
+   "kare": 11724,
+   "olay": "1 · IT BORROWS IN ITS OWN MONEY",
+   "tur": "pop",
+   "oneri": "pop"
+  },
+  {
+   "sahne": "S16",
+   "t": 403.321,
+   "kare": 12100,
+   "olay": "kesme: buzdolabı: soru notuna tik",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S16",
+   "t": 406.866,
+   "kare": 12206,
+   "olay": "yeşil tik (A5 kapanır)",
+   "tur": "vurgu",
+   "oneri": "doğru ding"
+  },
+  {
+   "sahne": "S16",
+   "t": 407.641,
+   "kare": 12229,
+   "olay": "kesme: masa orta: But there's a catch",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S16",
+   "t": 407.666,
+   "kare": 12230,
+   "olay": "alt köşe: LIKE IF THE ENVELOPE TOWER SURPRISED YOU (3 sn, sessiz)",
+   "tur": "etkilesim",
+   "oneri": "(sessiz)"
+  },
+  {
+   "sahne": "S16",
+   "t": 409.023,
+   "kare": 12271,
+   "olay": "kesme: fotokopi banknot + küçülen sepet",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S16",
+   "t": 409.523,
+   "kare": 12286,
+   "olay": "banknotlar çoğalır, sepet küçülür",
+   "tur": "parcacik",
+   "oneri": "fotokopi vınlaması"
+  },
+  {
+   "sahne": "S16",
+   "t": 413.662,
+   "kare": 12410,
+   "olay": "INFLATION",
+   "tur": "vurgu",
+   "oneri": "vuruş"
+  },
+  {
+   "sahne": "S16",
+   "t": 414.527,
+   "kare": 12436,
+   "olay": "kesme: Leo yakın",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S17",
+   "t": 417.586,
+   "kare": 12528,
+   "olay": "kesme: kart: 2 · NEVER RETIRES",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S17",
+   "t": 417.736,
+   "kare": 12532,
+   "olay": "2 · IT NEVER RETIRES",
+   "tur": "pop",
+   "oneri": "pop"
+  },
+  {
+   "sahne": "S17",
+   "t": 424.494,
+   "kare": 12735,
+   "olay": "takvim sonsuz çevrilir",
+   "tur": "flip",
+   "oneri": "kâğıt çevirme"
+  },
+  {
+   "sahne": "S17",
+   "t": 425.245,
+   "kare": 12757,
+   "olay": "kesme: masa orta: IOU takla",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S17",
+   "t": 425.945,
+   "kare": 12778,
+   "olay": "IOU fişleri takla atar",
+   "tur": "flip",
+   "oneri": "kâğıt hışırtı"
+  },
+  {
+   "sahne": "S17",
+   "t": 429.944,
+   "kare": 12898,
+   "olay": "kesme: soru değişir",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S17",
+   "t": 432.522,
+   "kare": 12976,
+   "olay": "PAY IT ALL BACK? üstü çizilir",
+   "tur": "vurgu",
+   "oneri": "kalem çizme"
+  },
+  {
+   "sahne": "S17",
+   "t": 433.969,
+   "kare": 13019,
+   "olay": "KEEP PAYING THE INTEREST?",
+   "tur": "pop",
+   "oneri": "pop"
+  },
+  {
+   "sahne": "S18",
+   "t": 438.025,
+   "kare": 13141,
+   "olay": "kesme: kart: 3 · GIVE ITSELF A RAISE",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S18",
+   "t": 438.175,
+   "kare": 13145,
+   "olay": "3 · IT CAN GIVE ITSELF A RAISE",
+   "tur": "pop",
+   "oneri": "pop"
+  },
+  {
+   "sahne": "S18",
+   "t": 444.413,
+   "kare": 13332,
+   "olay": "maaş zarfına kadran (yukarı/aşağı)",
+   "tur": "vurgu",
+   "oneri": "kadran tık-tık"
+  },
+  {
+   "sahne": "S18",
+   "t": 445.93,
+   "kare": 13378,
+   "olay": "makas zarfı keser",
+   "tur": "vurgu",
+   "oneri": "makas"
+  },
+  {
+   "sahne": "S18",
+   "t": 447.128,
+   "kare": 13414,
+   "olay": "kesme: Leo yakın: voters decide",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S18",
+   "t": 453.497,
+   "kare": 13605,
+   "olay": "Leo gülümser (omuz silker)",
+   "tur": "vurgu",
+   "oneri": "hafif tını"
+  },
+  {
+   "sahne": "S19",
+   "t": 454.396,
+   "kare": 13632,
+   "olay": "kesme: masa orta, Leo",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S19",
+   "t": 457.456,
+   "kare": 13724,
+   "olay": "kesme: grafik G5: borç/GSYH 1946→1974",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S19",
+   "t": 457.656,
+   "kare": 13730,
+   "olay": "çizgi çizilmeye başlar, >100% (1946)",
+   "tur": "sayac",
+   "oneri": "çizim sesi"
+  },
+  {
+   "sahne": "S19",
+   "t": 470.277,
+   "kare": 14108,
+   "olay": "~23% (1974) etiketi",
+   "tur": "pop",
+   "oneri": "ding"
+  },
+  {
+   "sahne": "S19",
+   "t": 471.519,
+   "kare": 14146,
+   "olay": "kesme: grafik: borç $ çubuğu",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S19",
+   "t": 475.557,
+   "kare": 14267,
+   "olay": "$242B → $344B çubuğu yükselir",
+   "tur": "sayac",
+   "oneri": "yükselen ton"
+  },
+  {
+   "sahne": "S19",
+   "t": 480.013,
+   "kare": 14400,
+   "olay": "kesme: kuşbakışı: maaş büyür, defter aynı",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S19",
+   "t": 481.331,
+   "kare": 14440,
+   "olay": "maaş zarfı büyür",
+   "tur": "vurgu",
+   "oneri": "şişme"
+  },
+  {
+   "sahne": "S19",
+   "t": 482.892,
+   "kare": 14487,
+   "olay": "kesme: Leo yakın",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S20",
+   "t": 487.296,
+   "kare": 14619,
+   "olay": "kesme: grafik G5 devam: ~97% (Q2 2026)",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S20",
+   "t": 491.563,
+   "kare": 14747,
+   "olay": "ayrı nokta ~97% (FRED)",
+   "tur": "pop",
+   "oneri": "ding"
+  },
+  {
+   "sahne": "S20",
+   "t": 495.632,
+   "kare": 14869,
+   "olay": "kesme: sarmal okları",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S20",
+   "t": 496.032,
+   "kare": 14881,
+   "olay": "sarmal dönmeye başlar",
+   "tur": "parcacik",
+   "oneri": "dönen whoosh"
+  },
+  {
+   "sahne": "S20",
+   "t": 502.379,
+   "kare": 15071,
+   "olay": "SPIRAL? A POSSIBILITY, NOT A VERDICT",
+   "tur": "vurgu",
+   "oneri": ""
+  },
+  {
+   "sahne": "S20",
+   "t": 505.283,
+   "kare": 15158,
+   "olay": "kesme: masa orta: frenler var",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S20",
+   "t": 507.284,
+   "kare": 15219,
+   "olay": "kesme: üç fren ikonu",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S20",
+   "t": 508.584,
+   "kare": 15258,
+   "olay": "fren 1 OWN CURRENCY",
+   "tur": "pop",
+   "oneri": "fren tık"
+  },
+  {
+   "sahne": "S20",
+   "t": 510.718,
+   "kare": 15322,
+   "olay": "fren 2 LONG LOANS",
+   "tur": "pop",
+   "oneri": "fren tık"
+  },
+  {
+   "sahne": "S20",
+   "t": 518.091,
+   "kare": 15543,
+   "olay": "fren 3 LENDERS' TRUST",
+   "tur": "pop",
+   "oneri": "fren tık"
+  },
+  {
+   "sahne": "S20",
+   "t": 520.898,
+   "kare": 15627,
+   "olay": "kesme: Leo yakın",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S21",
+   "t": 527.342,
+   "kare": 15820,
+   "olay": "kesme: masa orta: üç olasılık",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S21",
+   "t": 529.067,
+   "kare": 15872,
+   "olay": "not A · GROW",
+   "tur": "pop",
+   "oneri": "tap"
+  },
+  {
+   "sahne": "S21",
+   "t": 533.968,
+   "kare": 16019,
+   "olay": "POSSIBILITIES, NOT A FORECAST şeridi",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S21",
+   "t": 538.614,
+   "kare": 16158,
+   "olay": "kesme: buzdolabı: A · B · C dolar",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S21",
+   "t": 540.514,
+   "kare": 16215,
+   "olay": "not B · CHANGE THE ENVELOPES",
+   "tur": "pop",
+   "oneri": "tap"
+  },
+  {
+   "sahne": "S21",
+   "t": 540.9,
+   "kare": 16227,
+   "olay": "not C · LET PRICES RISE",
+   "tur": "pop",
+   "oneri": "tap"
+  },
+  {
+   "sahne": "S22",
+   "t": 541.396,
+   "kare": 16242,
+   "olay": "kesme: yarış: maaş önde",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S22",
+   "t": 541.546,
+   "kare": 16246,
+   "olay": "A · GROW THE PAYCHECK",
+   "tur": "pop",
+   "oneri": "düdük"
+  },
+  {
+   "sahne": "S22",
+   "t": 545.276,
+   "kare": 16358,
+   "olay": "maaş öne geçer",
+   "tur": "vurgu",
+   "oneri": "koşu whoosh"
+  },
+  {
+   "sahne": "S22",
+   "t": 551.449,
+   "kare": 16543,
+   "olay": "kesme: G5 kısa geri dönüş 1946–74",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S22",
+   "t": 555.274,
+   "kare": 16658,
+   "olay": "kesme: Leo yakın: GROWTH vs RATE",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S22",
+   "t": 555.574,
+   "kare": 16667,
+   "olay": "GROWTH vs RATE",
+   "tur": "pop",
+   "oneri": "hakem düdüğü"
+  },
+  {
+   "sahne": "S22",
+   "t": 558.784,
+   "kare": 16764,
+   "olay": "kesme: yarış: borç öne geçer",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S22",
+   "t": 563.306,
+   "kare": 16899,
+   "olay": "borç defteri öne geçer",
+   "tur": "vurgu",
+   "oneri": "olumsuz vuruş"
+  },
+  {
+   "sahne": "S22",
+   "t": 565.421,
+   "kare": 16963,
+   "olay": "kırmızı zarf şişer",
+   "tur": "vurgu",
+   "oneri": "şişme"
+  },
+  {
+   "sahne": "S23",
+   "t": 566.179,
+   "kare": 16985,
+   "olay": "kesme: kuşbakışı: B · CHANGE THE ENVELOPES",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S23",
+   "t": 569.193,
+   "kare": 17076,
+   "olay": "RAISE TAXES",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S23",
+   "t": 569.942,
+   "kare": 17098,
+   "olay": "CUT SPENDING + makas",
+   "tur": "pop",
+   "oneri": "makas"
+  },
+  {
+   "sahne": "S23",
+   "t": 574.543,
+   "kare": 17236,
+   "olay": "kesme: zarflardan siluetler",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S23",
+   "t": 577.85,
+   "kare": 17336,
+   "olay": "silüet (retirees)",
+   "tur": "pop",
+   "oneri": "pop"
+  },
+  {
+   "sahne": "S23",
+   "t": 578.415,
+   "kare": 17352,
+   "olay": "silüet (patients)",
+   "tur": "pop",
+   "oneri": "pop"
+  },
+  {
+   "sahne": "S23",
+   "t": 578.98,
+   "kare": 17369,
+   "olay": "silüet (soldiers)",
+   "tur": "pop",
+   "oneri": "pop"
+  },
+  {
+   "sahne": "S23",
+   "t": 579.544,
+   "kare": 17386,
+   "olay": "silüet (students)",
+   "tur": "pop",
+   "oneri": "pop"
+  },
+  {
+   "sahne": "S23",
+   "t": 580.309,
+   "kare": 17409,
+   "olay": "kesme: masa orta: slow and loud",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S23",
+   "t": 585.573,
+   "kare": 17567,
+   "olay": "SLOW AND LOUD",
+   "tur": "vurgu",
+   "oneri": ""
+  },
+  {
+   "sahne": "S24",
+   "t": 586.898,
+   "kare": 17607,
+   "olay": "kesme: kart: C · LET PRICES RISE",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S24",
+   "t": 587.048,
+   "kare": 17611,
+   "olay": "C · LET PRICES RISE",
+   "tur": "pop",
+   "oneri": "pop"
+  },
+  {
+   "sahne": "S24",
+   "t": 591.23,
+   "kare": 17737,
+   "olay": "banknotlar küçülür",
+   "tur": "vurgu",
+   "oneri": "büzülme"
+  },
+  {
+   "sahne": "S24",
+   "t": 598.499,
+   "kare": 17955,
+   "olay": "kesme: 1946: PRICES +18%",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S24",
+   "t": 601.59,
+   "kare": 18048,
+   "olay": "+18% (1946)",
+   "tur": "pop",
+   "oneri": "ding"
+  },
+  {
+   "sahne": "S24",
+   "t": 605.696,
+   "kare": 18171,
+   "olay": "kesme: masa orta: market fişi uzar",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S24",
+   "t": 609.191,
+   "kare": 18276,
+   "olay": "market fişi uzar",
+   "tur": "vurgu",
+   "oneri": "yazarkasa fişi"
+  },
+  {
+   "sahne": "S24",
+   "t": 610,
+   "kare": 18300,
+   "olay": "kesme: Leo yakın: zarf geri şişer",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S24",
+   "t": 618.525,
+   "kare": 18556,
+   "olay": "kırmızı zarf şişer + OLD DEBT SHRINKS · NEW RATES RISE",
+   "tur": "vurgu",
+   "oneri": "şişme"
+  },
+  {
+   "sahne": "S25",
+   "t": 620.046,
+   "kare": 18601,
+   "olay": "kesme: buzdolabı: A B C + LUCK",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S25",
+   "t": 624.256,
+   "kare": 18728,
+   "olay": "+ LUCK notu",
+   "tur": "pop",
+   "oneri": "tap"
+  },
+  {
+   "sahne": "S25",
+   "t": 627.994,
+   "kare": 18840,
+   "olay": "kesme: Leo yakın: you can read the bill",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S25",
+   "t": 631.558,
+   "kare": 18947,
+   "olay": "kesme: kart: ONE LETTER IN THE COMMENTS",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S25",
+   "t": 631.758,
+   "kare": 18953,
+   "olay": "A · B · C → ONE LETTER IN THE COMMENTS",
+   "tur": "vurgu",
+   "oneri": "pop ×3"
+  },
+  {
+   "sahne": "S26",
+   "t": 637.426,
+   "kare": 19123,
+   "olay": "kesme: buzdolabı: tez notu + 3 tik",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S26",
+   "t": 637.626,
+   "kare": 19129,
+   "olay": "tez notu büyür",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S26",
+   "t": 643.415,
+   "kare": 19302,
+   "olay": "tik 1",
+   "tur": "pop",
+   "oneri": "tik"
+  },
+  {
+   "sahne": "S26",
+   "t": 644.395,
+   "kare": 19332,
+   "olay": "tik 2",
+   "tur": "pop",
+   "oneri": "tik"
+  },
+  {
+   "sahne": "S26",
+   "t": 646.508,
+   "kare": 19395,
+   "olay": "tik 3",
+   "tur": "pop",
+   "oneri": "tik"
+  },
+  {
+   "sahne": "S26",
+   "t": 647.12,
+   "kare": 19414,
+   "olay": "kesme: Leo yakın: RATE × BALANCE",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S26",
+   "t": 652.235,
+   "kare": 19567,
+   "olay": "kesme: masa geniş: lamba kısılır",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S26",
+   "t": 657.193,
+   "kare": 19716,
+   "olay": "$1,050 > DEFENSE $965",
+   "tur": "vurgu",
+   "oneri": ""
+  },
+  {
+   "sahne": "S26",
+   "t": 661.885,
+   "kare": 19857,
+   "olay": "kırmızı zarftan iç zarf kenarı görünür",
+   "tur": "vurgu",
+   "oneri": "kâğıt"
+  },
+  {
+   "sahne": "S26",
+   "t": 662.426,
+   "kare": 19873,
+   "olay": "ABONE-3 (sağ alt boş; zarf solda)",
+   "tur": "abone",
+   "oneri": "klik (kurgu-editoru bileşeni)"
+  },
+  {
+   "sahne": "S27",
+   "t": 662.644,
+   "kare": 19879,
+   "olay": "kesme: masa orta: bir sayı",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S27",
+   "t": 670.124,
+   "kare": 20104,
+   "olay": "kesme: buzdolabı: ~5% notu",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S27",
+   "t": 671.594,
+   "kare": 20148,
+   "olay": "~5% notuna punch-in",
+   "tur": "kamera",
+   "oneri": ""
+  },
+  {
+   "sahne": "S27",
+   "t": 672.458,
+   "kare": 20174,
+   "olay": "kesme: pencere: not evlerin üstüne uçar",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S27",
+   "t": 672.858,
+   "kare": 20186,
+   "olay": "not pencereden uçar",
+   "tur": "kay",
+   "oneri": "kâğıt uçuşu"
+  }
+ ]
+}
