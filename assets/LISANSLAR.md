@@ -18,6 +18,8 @@ Her satır: dosya · kaynak URL · lisans · yazar · erişim tarihi · atıf me
 | `huzun-at-the-end-of-hope-emma-ma.ogg` (MP3'ten Vorbis q3) | https://opengameart.org/content/at-the-end-of-hope | CC0 1.0 | Emma_MA | 2026-10-27 | Ağır/buruk (B5) |
 | `modern-electro-swing-type-gp.mp3` (orijinal) | https://opengameart.org/content/electro-swing-type | CC0 1.0 | G_P | 2026-10-27 | Modern swing (B7, Shorts 2) |
 | `kapanis-positive-melancholy-dizzy-crow.ogg` (orijinal) | https://opengameart.org/content/piano-drums-positive-melancholy-212 | CC0 1.0 | Dizzy Crow | 2026-10-27 | Kapanış (B8) |
+| `the-way-it-is-zane-little.mp3` (orijinal) | https://opengameart.org/content/the-way-it-is | CC0 1.0 | Zane Little Music | 2026-10-27 | Dengeli/ileri bakan (S08 B6, Shorts 2) |
+| S08 videosunda kullanılan, `uretim/2026-10-28-yeni-video/06-muzik/kaynak/muzik/` altında duran: `happy-lofi-day-tarush-singhal.mp3`, `jazz-spring-spring.ogg`, `deliberate-concealment-northivanastan.ogg`, `lofi-again-omfgdude.ogg`, `a-small-fire-will-do-trex0n.ogg` (+ aday havuzu: chill-lofi, funky-lofi-jam-lowpass, apple-cider, slowly-running, Holizna ×2) | Satır satır link ve kanıt: `uretim/2026-10-28-yeni-video/06-muzik/lisans-kaydi.md` | CC0 1.0 | çeşitli (OGA) | 2026-11-02 | "Mutfak masası lo-fi" kimliği |
 | `ozgun-yatak-nabiz-90bpm.flac`, `ozgun-yatak-kilit-saat-100bpm.flac` | Kendi üretimimiz: `uretim/2026-10-26-1929-1000-dolar/06-muzik/ozgun-uret.py` (sabit tohum) | Bizim | Toonomy | 2026-10-27 | Gerilim yatakları (katman olarak; telefon bandı zayıf) |
 
 CC0 atıf istemez; yine de açıklamaya gönüllü teşekkür önerilir (Content ID itirazında kaynağı göstermek kolaylaşır):
@@ -42,6 +44,7 @@ CC0 atıf istemez; yine de açıklamaya gönüllü teşekkür önerilir (Content
 | `kahkaha-nocturnal-vanguard-group_giggling.flac` | https://opengameart.org/content/group-giggling | CC0 1.0 | Nocturnal_Vanguard (AuraVoice) | 2026-10-27 |
 | `ding-pwl-bell_ding1.flac` | https://opengameart.org/content/bell-dingschimes | CC0 1.0 | PWL | 2026-10-27 |
 
+| S08 Foley (`uretim/2026-10-28-yeni-video/06-muzik/kaynak/efekt/`): `kagit-rubberduck-paper_01–04`, `mutfak-rubberduck-*`, `sayfa-starninjas-book_flip_1/2/3`, `zarf-spring-spring-snd_use_map/close_map`, `ortam-kresiek-amb_fridge_loop_1`; kendi üretim `kaynak/ozgun/ozgun-hesap-tus(-dizi)`, `ozgun-yapiskan-not`, `ozgun-zarf-kule`, `ozgun-duduk` (`06-muzik/ozgun-uret.py`, tohum 5400) | OGA: 100-cc0-sfx, 10-book-page-flips, opening-and-closing-a-map-sounds, fridge-loop-1 (ayrıntı: o videonun `lisans-kaydi.md`) | CC0 1.0 / Bizim | rubberduck, starninjas, spring spring, kresiek-the-furry, Toonomy | 2026-11-02 |
 Gönüllü atıf: "Sound effects: Kenney (kenney.nl), unicaegames, Cassie-OrbitGames, Vinrax, rubberduck, Nocturnal_Vanguard, PWL — CC0."
 
 ## Anlatıcı sesi (TTS)

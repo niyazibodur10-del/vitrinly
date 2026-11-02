@@ -7,9 +7,11 @@ SFX kuralları (Kurzgesagt yoğunluğu, anlatımı örtmez):
   - öneri boş, "(sessiz)", abone (kurgu-editoru ozgun-fare-klik'i AboneOl bileşeniyle yerleştirir) → ses yok
   - kesme whoosh'ları: "kısa whoosh" yalnız önceki whoosh'tan ≥10 sn sonra; "sahne geçişi" ≥4 sn sonra
   - iki SFX arası ≥0.12 sn (aynı karede ikinci olay düşer); tekrarlı vuruşlar (×N) olay anından başlar
-  - her vuruşun zamanı = olayın t'si (kare doğruluğu; kapı ±2 kare)
+  - vuruş noktası hizası (kare doğruluğu; kapı ±2 kare, sfx-kare-kontrol.py): geçiş whoosh'larında (kesme/kamera/kay) zarfın
+    TEPESİ, diğerlerinde sesin BAŞLANGICI (ilk örnek > tepe·0.1; OGA dosyalarındaki baştaki sessizlik) olay karesine oturur
 """
-import json, os, re
+import json, os, re, subprocess
+import numpy as np
 
 B = os.path.dirname(os.path.abspath(__file__))
 UR = os.path.dirname(B)
@@ -80,6 +82,26 @@ ESLEME = [
     (r"^tap|tok tap|tek tık|fren tık|tahta tık|^tik", [(AE + "tik-click.flac", -19, 0)], 1, 0),
 ]
 
+REPO = os.path.abspath(os.path.join(UR, "..", ".."))
+YOL = {"$E/": f"{B}/kaynak/efekt/", "$O/": f"{B}/kaynak/ozgun/", "$AE/": f"{REPO}/assets/efekt/"}
+_OF = {}
+
+
+def vurus_ofset(dosya, tepe):
+    """Dosya içinde vuruş noktası (sn): tepe=True → 20 ms RMS zarfının tepesi, aksi halde ilk örnek > tepe·0.1."""
+    k = (dosya, tepe)
+    if k not in _OF:
+        yol = next(dosya.replace(a, b) for a, b in YOL.items() if dosya.startswith(a))
+        x = np.abs(np.frombuffer(subprocess.run(["ffmpeg", "-v", "error", "-i", yol, "-ac", "1", "-ar", "48000", "-f", "f32le", "-"],
+                                                capture_output=True, check=True).stdout, np.float32))
+        if tepe:
+            e = np.convolve(x ** 2, np.ones(960) / 960, mode="same")
+            _OF[k] = float(np.argmax(e)) / 48000
+        else:
+            _OF[k] = float(np.argmax(x > x.max() * 0.1)) / 48000
+    return _OF[k]
+
+
 sfx, atlanan, son_whoosh, son_t = [], [], -99.0, -99.0
 for o in sorted(anim["olaylar"], key=lambda x: x["t"]):
     on = o["oneri"].strip()
@@ -101,7 +123,11 @@ for o in sorted(anim["olaylar"], key=lambda x: x["t"]):
         continue
     for k in range(es[2]):
         for dosya, db, gec in es[1]:
-            sfx.append(dict(t=round(o["t"] + gec + k * es[3], 3), kare_olay=o["kare"], t_olay=o["t"], dosya=dosya, db=db,
+            tepe = "whoosh" in dosya and o["tur"] in ("kesme", "kamera", "kay")
+            of = vurus_ofset(dosya, tepe)
+            ts = o["t"] + gec + k * es[3] - of
+            sfx.append(dict(t=round(max(0.0, ts), 4), kirp=round(max(0.0, -ts), 4), kare_olay=o["kare"], t_olay=o["t"], dosya=dosya, db=db,
+                            hiza="tepe" if tepe else "baslangic", vurus_ofset=round(of, 4),
                             olay=f"{o['sahne']} {o['olay'][:70]}", oneri=on))
     son_t = o["t"]
     if whoosh:

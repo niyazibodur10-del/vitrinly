@@ -271,6 +271,8 @@ def render():
     for s in cue["sfx"]:
         yol = s["dosya"].replace("$E/", E).replace("$O/", O).replace("$AE/", AE)
         x = coz(yol)
+        if s.get("kirp"):                      # olay 0. sn'de ve vuruş noktası dosyanın içindeyse baştaki sessizliği at
+            x = x[int(round(s["kirp"] * SR)):]
         if s.get("sure"):
             x = x[:int(s["sure"] * SR)]
             f = min(len(x), int(0.15 * SR))
@@ -357,11 +359,12 @@ def wer_tam():
     h = whisper(yol)
     ref = open(f"{UR}/04-ses/referans-metni.txt", encoding="utf-8").read()
     e, k = wer_hesapla(ref, h)
-    h0 = json.load(open(f"{UR}/04-ses/kelimeler.json"))["text"]
+    h0 = whisper(ANL)                     # hafıza 2026-10-27: anlatım-tek de AYNI model/ayar/oturumda transkribe edilir
     e0, _ = wer_hesapla(ref, h0)
+    open(f"{BURA}/stems/anlatim-tek-whisper.txt", "w").write(h0)
     sonuc = {"kelime": k, "anlatim_tek_hata": e0, "anlatim_tek_wer": round(e0 / k * 100, 2),
              "miks_hata": e, "miks_wer": round(e / k * 100, 2), "fark_puan": round((e - e0) / k * 100, 2),
-             "not": "anlatım-tek transkripti 04-ses/kelimeler.json (ses kolu, small.en); miks aynı model small.en"}
+             "not": "anlatım-tek ve miks aynı oturumda, aynı model (small.en int8, beam 5)"}
     open(f"{BURA}/stems/miks-onizleme-whisper.txt", "w").write(h)
     json.dump(sonuc, open(f"{BURA}/olcum-f6-wer.json", "w"), ensure_ascii=False, indent=1)
     print(sonuc)

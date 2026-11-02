@@ -27,7 +27,7 @@ if os.path.exists(f"{d}/cue.json"):
     c = json.load(open(f"{d}/cue.json"))
     for x in c["muzik"] + c["sfx"] + c.get("shorts", []):
         b = x["dosya"].split("/")[-1]
-        if b not in metin + kanal and b.rsplit(".", 1)[0] not in metin + kanal:
+        if b not in metin + kanal and b.rsplit(".", 1)[0] not in metin + kanal and b.rsplit(".", 1)[0] not in adlar:  # grup yazımı ("paper_01/02") açılmış adlar
             cue_eksik.append(b)
 print(f"dosya: {len(dosyalar)} · kayıtsız: {len(eksik)} {eksik} · yasak lisans (kayıt bölümünde): {yasak} · cue kayıtsız: {cue_eksik}")
 sys.exit(1 if eksik or yasak or cue_eksik else 0)
