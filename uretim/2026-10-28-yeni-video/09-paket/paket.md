@@ -1,6 +1,6 @@
 # F8a — Yayın paketi · S08 "If America Earned $5,400 a Month, Here's Its Budget"
 
-İLERLEME: F8a tamam (metin kesin). F8b bekliyor: gerçek ses/kurgu zamanları (§4), thumbnail finalisti (§1, `veri:thumbnail-ana`), müzik atfı (`06-muzik/atif-satirlari.md`), gerçek dosyalarla `--dry-run` 3/3, `YAYIN.md`.
+İLERLEME: F8a tamam (metin kesin; thumbnail A1 işlendi). F8b bekliyor: gerçek ses/kurgu zamanları (§4), müzik atfı (`06-muzik/atif-satirlari.md`), gerçek dosyalarla `--dry-run` 3/3, `YAYIN.md`.
 **Hazırlayan:** youtube-paketleyici · **Tarih:** 2026-11-02 · **Durum:** KESİN METİN (F8a). Değişmeyen metin F8b'de yeniden yazılmaz.
 **Girdiler:** `03-metin/metin.md` v1.2 (kilit, sha256 c833cb696030), `rakam-tablosu.md` §6 (yasal not), `dogrulama.md` §3 (Alt-2 "Nearly"), `politika-denetimi.md` §3.3 (sabit yorum nötr), `02-senaryo/senaryo-karari.md` H8, `docs/yayin-takvimi.md`.
 **Tek kaynak:** JSON'lar bu dosyadaki `<!-- veri:… -->` bloklarından `paket-uret.py` ile üretilir; `paket-kontrol.py` birebir karşılaştırır (§10). `{MUZIK_*}` belirteçleri `06-muzik/atif-satirlari.md`'den, yoksa görünür yer tutucuyla doldurulur (F8b'de `--final` kipinde hata).
@@ -41,10 +41,17 @@ A Country Isn't a Family. Its Interest Bill Is.
 US Interest Payments Just Passed the Military
 ```
 
-**Başlık–thumbnail birlikte okunuş (KONSEPT düzeyi; finalistler gelince bu tablo yeniden yazılır, eski harfler kalmaz):** T1 geliri söyler ($5,400 a month), thumbnail açığı gösterir (−$2,000/MO) → iki rakam birbirini tekrar etmez, birlikte "gelir 5.400, her ay 2.000 eksik, nereye gidiyor?" sorusunu kurar; videodaki karşılığı 0:03–0:14 ("$5,400 IN" / "$7,400 OUT" / "−$2,000/MO"). T2 thumbnail ile üç rakam yarıştırır (kalabalık) → thumbnail yalnız "−$2,000/MO" ise yedek. Thumbnail metni ≤4 kelime, ölçek kaynağı açıklamada (H8).
+**Başlık–thumbnail birlikte okunuş (finalistler, `thumbnail/thumb-rapor.md`; Test & Compare sırası A1, C1, B1; ana dosya A1):**
+| Thumbnail | Metin | T1 ile birlikte okunuş | Videodaki karşılığı |
+|---|---|---|---|
+| **A1** `thumbnail/A1-eksi-2000.jpg` (ana) | −$2,000 EVERY MONTH | Başlık geliri verir ($5,400), görsel açığı (−$2,000 her ay) + şaşkın Leo → "nereye gidiyor?"; rakam tekrarı yok | 0:03–0:14 "$5,400 IN / $7,400 OUT / −$2,000/MO" (ilk 15 sn = tek vaat; R03) |
+| **C1** `thumbnail/C1-faiz-ordu.jpg` | INTEREST > MILITARY | Başlık bütçeyi vaat eder, görsel içinden tek şaşırtıcı kalemi → "faiz orduyu mu geçti?"; T3 yedek başlıkla aynı vaat → T3 devreye girerse C1 ile eşleşmez (çift tekrar), A1/B1 ile eşleşir | 1:52–2:28 S06 "pays its lenders more than… its whole military" (R08/R12) |
+| **B1** `thumbnail/B1-hesap-makinesi.jpg` | EVERY MONTH + LCD −2,000 | A1'in nesne sürümü: aynı açık, hesap makinesiyle → "her ay ne kadar eksik?" | 0:03–0:14 + S05 hesap makinesi pozu |
+Üç metin ≤4 kelime; okunurluk/OCR ölçümü thumbnail-tasarimcisi'nde (thumb-rapor.md). T2 ("Nearly $7 for Every $5") thumbnail'da yok; T2 kullanılırsa A1 ile üç rakam yarışır → C1 ile eşleştirilir.
 
 <!-- veri:thumbnail-ana -->
 ```text
+../09-paket/thumbnail/A1-eksi-2000.jpg
 ```
 
 ---
@@ -238,7 +245,7 @@ yedek-shorts-2|2026-11-10T09:00:00-05:00
 
 - **`durum.sentetik_medya`:** monetizasyon-uyum-uzmani'nin F8 `politika-raporu.md` kararı henüz yok. F3 önerisi `true` (politika-denetimi P4) → paket geçici olarak **true** (1929 emsali); karar gelince `paket-uret.py` sabiti güncellenir. Karar benim değil. AI satırı her durumda açıklamada.
 - **`gizlilik` = private + `yayin_zamani`**, `onay.niyazi_onayi` = false.
-- **Dosyalar:** `../08-kurgu/final-16x9.mp4`, `../08-kurgu/final.en.srt`, `../08-kurgu/shorts-{1,2}.mp4` — 1929 adlandırması; **F8b'de `ls 08-kurgu` ile doğrulanır** (tahmin değil, varsayım olarak işaretli). Thumbnail: `veri:thumbnail-ana` boş → JSON'da yok; yol thumbnail-tasarimcisi raporundan yazılır.
+- **Dosyalar:** `../08-kurgu/final-16x9.mp4`, `../08-kurgu/final.en.srt`, `../08-kurgu/shorts-{1,2}.mp4` — 1929 adlandırması; **F8b'de `ls 08-kurgu` ile doğrulanır** (tahmin değil, varsayım olarak işaretli). Thumbnail: `../09-paket/thumbnail/A1-eksi-2000.jpg` (thumb-rapor.md); C1, B1 Studio Test & Compare.
 
 ## 10. Test kapısı (özet; tam çıktı `kapi-cikti.txt`)
 
@@ -248,7 +255,6 @@ yedek-shorts-2|2026-11-10T09:00:00-05:00
 | İş | Sahibi | Not |
 |---|---|---|
 | Gerçek sahne zamanları + kurgu ofseti → §4 | ses kolu / kurgu-editoru → paketleyici | betik [3b] |
-| Thumbnail finalisti → `veri:thumbnail-ana` + §1 okunuş tablosu | thumbnail-tasarimcisi → paketleyici | yol rapordan |
 | Müzik atfı `06-muzik/atif-satirlari.md` (1929 biçimi: kod bloğu + "Shorts N açıklaması: `…`") | muzik-ses-tasarimcisi | `{MUZIK_*}` |
 | `sentetik_medya` kesin karar | monetizasyon-uyum-uzmani | `politika-raporu.md` |
 | Test & Compare, Related video, uç ekran, SRT, oynatma listesi | koordinatör → `YAYIN.md` Studio | API karşılığı yok |

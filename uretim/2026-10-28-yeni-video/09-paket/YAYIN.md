@@ -9,7 +9,7 @@
 3. Oynatma listesi "Money News, Explained" bu videoyla açılır: `tools/yayin/kanal.py` (boş liste açılmaz) → video eklenir.
 
 ## Studio adımları (API karşılığı yok / doğrulanmadı)
-- **Test & Compare:** thumbnail finalistleri (thumbnail-tasarimcisi raporu, F8b'de yazılır); ilk sıraya ana dosya. Başlık testi yalnız thumbnail testinden sonra (yedek: T4, sonra T3).
+- **Test & Compare:** ana A1 (`09-paket/thumbnail/A1-eksi-2000.jpg`, JSON ile yüklenir) + `C1-faiz-ordu.jpg` + `B1-hesap-makinesi.jpg`, sıra A1, C1, B1. Başlık testi yalnız thumbnail testinden sonra (yedek: T4, sonra T3).
 - **Altyazı:** `08-kurgu/final.en.srt` (adı F8b'de `ls 08-kurgu` ile teyit) → Studio → Altyazılar.
 - **Uç ekran:** son ~18 sn (F8b'de gerçek sesten ölçülür): Abone + Video "Best for viewer".
 - **Shorts Related video:** her Short'un yayın saatinden önce Studio → Short → Ayrıntılar → Related video → "If America Earned $5,400 a Month, Here's Its Budget".

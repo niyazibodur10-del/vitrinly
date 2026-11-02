@@ -110,3 +110,5 @@ exit=0 (2 koşu çıktı sha256 aynı: 001cdc1320f2; --final exit 1 beklenen; ne
   Sonuç: 0 hata, 0 uyarı, 7 geçen kontrol
     "containsSyntheticMedia": true,
     "publishAt": "2026-11-07T14:00:00Z"
+
+## 2026-11-02T10:52:19Z thumbnail A1 işlendi: paket-kontrol 0 hata · 4 bekleyen; dry-run uzun: thumbnail 1280x720 jpeg 111 KB OK, kalan 2 hata = video/SRT yok (F7)
