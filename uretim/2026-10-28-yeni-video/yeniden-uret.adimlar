@@ -8,3 +8,9 @@ uretim/2026-10-28-yeni-video/04-ses/anlatim.wav | ffmpeg -v error -y -i uretim/2
 uretim/2026-10-28-yeni-video/04-ses/shorts-1-ek.wav | ffmpeg -v error -y -i uretim/2026-10-28-yeni-video/04-ses/shorts-1-ek.m4a -c:a pcm_s24le uretim/2026-10-28-yeni-video/04-ses/shorts-1-ek.wav
 uretim/2026-10-28-yeni-video/04-ses/shorts-2-ek.wav | ffmpeg -v error -y -i uretim/2026-10-28-yeni-video/04-ses/shorts-2-ek.m4a -c:a pcm_s24le uretim/2026-10-28-yeni-video/04-ses/shorts-2-ek.wav
 uretim/2026-10-28-yeni-video/04-ses/rhubarb/S01.wav | python3 -I tools/ses/rhubarb-hazirla.py --dizin uretim/2026-10-28-yeni-video/04-ses
+# F5 animasyon (animasyon-yonetmeni): varlıklar + Rhubarb + veri + render
+video/public/kbutce/G01.jpg | $PY -I uretim/2026-10-28-yeni-video/07-animasyon/varlik-hazirla.py
+video/public/kbutce/leo-G05k.png | $PY -I uretim/2026-10-28-yeni-video/07-animasyon/g05-boya.py
+uretim/2026-10-28-yeni-video/07-animasyon/rhubarb/tum-kapili.json | python3 -I tools/animasyon/rhubarb-toplu.py --girdi uretim/2026-10-28-yeni-video/04-ses/rhubarb/sahneler.json --cikis uretim/2026-10-28-yeni-video/07-animasyon/rhubarb --ek shorts-1-ek:uretim/2026-10-28-yeni-video/04-ses/shorts-1-ek.wav:uretim/2026-10-28-yeni-video/07-animasyon/rhubarb/ek/shorts-1-ek.txt --ek shorts-2-ek:uretim/2026-10-28-yeni-video/04-ses/shorts-2-ek.wav:uretim/2026-10-28-yeni-video/07-animasyon/rhubarb/ek/shorts-2-ek.txt
+uretim/2026-10-28-yeni-video/07-animasyon/test-10sn.mp4 | tools/render-son.sh KButceKritik uretim/2026-10-28-yeni-video/07-animasyon/test-10sn.mp4
+uretim/2026-10-28-yeni-video/07-animasyon/tam-16x9.mp4 | tools/render-parca.sh KButceTam uretim/2026-10-28-yeni-video/07-animasyon/tam-16x9.mp4
