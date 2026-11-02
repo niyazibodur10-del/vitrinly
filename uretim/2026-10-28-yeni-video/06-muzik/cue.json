@@ -1,0 +1,2579 @@
+{
+ "kaynak": "cue-uret.py ← animasyon-efekt-cue.json (tahmini=False) + sahne-zamanlari.json",
+ "fps": 30,
+ "toplam_sn": 678.195,
+ "muzik": [
+  {
+   "ad": "B1 mutfak masası",
+   "bas": 0.0,
+   "son": 83.622,
+   "dosya": "$M/happy-lofi-day-tarush-singhal.mp3",
+   "duck": 23,
+   "giris": 0.4,
+   "cikis": 1.2,
+   "ruh": "merak + sıcak lo-fi, Rhodes",
+   "tempo": "≈98 BPM [tahmin]",
+   "kaynak": "happy lofi day — Tarush Singhal (CC0)"
+  },
+  {
+   "ad": "B2a beş zarf",
+   "bas": 82.42200000000001,
+   "son": 120.46,
+   "dosya": "$M/jazz-spring-spring.ogg",
+   "duck": 22,
+   "giris": 1.2,
+   "cikis": 0.25,
+   "ruh": "hafif, sayan caz",
+   "tempo": "≈90 BPM [tahmin]",
+   "kaynak": "Jazz — spring spring (CC0)"
+  },
+  {
+   "ad": "B2b faiz zarfı sonrası",
+   "bas": 134.83,
+   "son": 176.697,
+   "dosya": "$M/jazz-spring-spring.ogg",
+   "duck": 22,
+   "ofset": 20.0,
+   "giris": 2.0,
+   "cikis": 1.2,
+   "ruh": "aynı caz, yeniden giriş",
+   "tempo": "≈90 BPM [tahmin]",
+   "kaynak": "Jazz — spring spring (CC0)"
+  },
+  {
+   "ad": "B3 borç defteri",
+   "bas": 175.497,
+   "son": 272.09900000000005,
+   "dosya": "$M/deliberate-concealment-northivanastan.ogg",
+   "duck": 22,
+   "oyuk": true,
+   "giris": 1.2,
+   "cikis": 1.2,
+   "ruh": "meraklı gerilim, pizzicato + celesta",
+   "tempo": "≈103 BPM [tahmin]",
+   "kaynak": "Deliberate Concealment — northivanastan (CC0)"
+  },
+  {
+   "ad": "B4 zarfın içindeki zarf",
+   "bas": 270.899,
+   "son": 391.619,
+   "dosya": "$A/gerilim-80s-mysterywave-desertdev.ogg",
+   "duck": 21,
+   "giris": 1.2,
+   "cikis": 1.2,
+   "ruh": "yükselen synth gerilimi",
+   "tempo": "≈80 BPM [tahmin]",
+   "kaynak": "80s Mysterywave — DesertDev (CC0)"
+  },
+  {
+   "ad": "B5 bir ailenin yapamadığı üç şey",
+   "bas": 390.419,
+   "son": 528.451,
+   "dosya": "$M/lofi-again-omfgdude.ogg",
+   "duck": 22.5,
+   "giris": 1.2,
+   "cikis": 1.2,
+   "ruh": "düşünceli lo-fi, nefes",
+   "tempo": "yavaş [tahmin]",
+   "kaynak": "Lofi again — omfgdude (CC0)"
+  },
+  {
+   "ad": "B6 açığı kapatmanın üç yolu",
+   "bas": 527.251,
+   "son": 638.549,
+   "dosya": "$A/the-way-it-is-zane-little.mp3",
+   "duck": 22,
+   "giris": 1.2,
+   "cikis": 1.2,
+   "ruh": "ileriye bakan, dengeli",
+   "tempo": "orta [tahmin]",
+   "kaynak": "The Way It Is — Zane Little Music (CC0)"
+  },
+  {
+   "ad": "B7 kapanış",
+   "bas": 637.3489999999999,
+   "son": 678.195,
+   "dosya": "$M/a-small-fire-will-do-trex0n.ogg",
+   "duck": 22,
+   "giris": 1.2,
+   "cikis": 2.5,
+   "ruh": "sakin, sıcak kapanış",
+   "tempo": "yavaş [tahmin]",
+   "kaynak": "A Small Fire Will Do — trex0n (CC0)"
+  }
+ ],
+ "sfx": [
+  {
+   "t": 0,
+   "kare_olay": 0,
+   "t_olay": 0,
+   "dosya": "$AE/whoosh-uzun.flac",
+   "db": -18,
+   "olay": "S01 Capitol silüeti tam ekran, küçülmeye başlar",
+   "oneri": "alçalan whoosh"
+  },
+  {
+   "t": 1.9,
+   "kare_olay": 57,
+   "t_olay": 1.9,
+   "dosya": "$AE/tik-click.flac",
+   "db": -19,
+   "olay": "S01 Capitol → masadaki ev maketi (pop) + Leo masaya oturur",
+   "oneri": "tahta tık / sandalye"
+  },
+  {
+   "t": 3.314,
+   "kare_olay": 99,
+   "t_olay": 3.314,
+   "dosya": "$E/sayfa-starninjas-book_flip_2.flac",
+   "db": -18,
+   "olay": "S01 maaş zarfı masaya düşer ($5,400 IN)",
+   "oneri": "kâğıt düşme"
+  },
+  {
+   "t": 3.8,
+   "kare_olay": 114,
+   "t_olay": 3.8,
+   "dosya": "$AE/ozgun-sayac-tikirti.flac",
+   "db": -19,
+   "olay": "S01 sayaç 0→5,400 (0,8 sn)",
+   "oneri": "tıkırtı + ding"
+  },
+  {
+   "t": 4.6,
+   "kare_olay": 114,
+   "t_olay": 3.8,
+   "dosya": "$AE/ding-pwl-bell_ding1.flac",
+   "db": -21,
+   "olay": "S01 sayaç 0→5,400 (0,8 sn)",
+   "oneri": "tıkırtı + ding"
+  },
+  {
+   "t": 7.36,
+   "kare_olay": 221,
+   "t_olay": 7.36,
+   "dosya": "$O/ozgun-yapiskan-not.flac",
+   "db": -15,
+   "olay": "S01 not yapışır: $7,400 OUT",
+   "oneri": "yapışkan not tap"
+  },
+  {
+   "t": 8.52,
+   "kare_olay": 256,
+   "t_olay": 8.52,
+   "dosya": "$AE/tik-click.flac",
+   "db": -17,
+   "olay": "S01 kırmızı −$2,000/MO notu yanıp söner",
+   "oneri": "alarm tik ×3"
+  },
+  {
+   "t": 8.77,
+   "kare_olay": 256,
+   "t_olay": 8.52,
+   "dosya": "$AE/tik-click.flac",
+   "db": -17,
+   "olay": "S01 kırmızı −$2,000/MO notu yanıp söner",
+   "oneri": "alarm tik ×3"
+  },
+  {
+   "t": 9.02,
+   "kare_olay": 256,
+   "t_olay": 8.52,
+   "dosya": "$AE/tik-click.flac",
+   "db": -17,
+   "olay": "S01 kırmızı −$2,000/MO notu yanıp söner",
+   "oneri": "alarm tik ×3"
+  },
+  {
+   "t": 13.06,
+   "kare_olay": 392,
+   "t_olay": 13.06,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -25,
+   "olay": "S02 kesme: masa orta, Leo",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "t": 19.94,
+   "kare_olay": 598,
+   "t_olay": 19.94,
+   "dosya": "$AE/pop-pluck.flac",
+   "db": -20,
+   "olay": "S02 araba ikonu + CAR LOANS",
+   "oneri": "pop"
+  },
+  {
+   "t": 20.78,
+   "kare_olay": 623,
+   "t_olay": 20.78,
+   "dosya": "$AE/pop-pluck.flac",
+   "db": -20,
+   "olay": "S02 ev ikonu + MORTGAGES",
+   "oneri": "pop"
+  },
+  {
+   "t": 24.18,
+   "kare_olay": 725,
+   "t_olay": 24.18,
+   "dosya": "$O/ozgun-yapiskan-not.flac",
+   "db": -15,
+   "olay": "S02 not: FASTEST BILL?",
+   "oneri": "yapışkan not tap"
+  },
+  {
+   "t": 24.84,
+   "kare_olay": 745,
+   "t_olay": 24.84,
+   "dosya": "$O/ozgun-yapiskan-not.flac",
+   "db": -15,
+   "olay": "S02 not: WHY?",
+   "oneri": "yapışkan not tap"
+  },
+  {
+   "t": 26.64,
+   "kare_olay": 799,
+   "t_olay": 26.64,
+   "dosya": "$AE/tik-select.flac",
+   "db": -18,
+   "olay": "S02 üç not A · B · C",
+   "oneri": "tap ×3"
+  },
+  {
+   "t": 26.76,
+   "kare_olay": 799,
+   "t_olay": 26.64,
+   "dosya": "$AE/tik-select.flac",
+   "db": -18,
+   "olay": "S02 üç not A · B · C",
+   "oneri": "tap ×3"
+  },
+  {
+   "t": 26.88,
+   "kare_olay": 799,
+   "t_olay": 26.64,
+   "dosya": "$AE/tik-select.flac",
+   "db": -18,
+   "olay": "S02 üç not A · B · C",
+   "oneri": "tap ×3"
+  },
+  {
+   "t": 30.239,
+   "kare_olay": 907,
+   "t_olay": 30.239,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -25,
+   "olay": "S03 kesme: Leo yakın: I'm Leo",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "t": 30.539,
+   "kare_olay": 916,
+   "t_olay": 30.539,
+   "dosya": "$AE/pop-pluck.flac",
+   "db": -20,
+   "olay": "S03 isim etiketi LEO",
+   "oneri": "hafif pop"
+  },
+  {
+   "t": 37.22,
+   "kare_olay": 1117,
+   "t_olay": 37.22,
+   "dosya": "$AE/ding-pwl-bell_ding1.flac",
+   "db": -21,
+   "olay": "S03 = işareti + $1 billion a year",
+   "oneri": "ding"
+  },
+  {
+   "t": 45.662,
+   "kare_olay": 1370,
+   "t_olay": 45.662,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -27,
+   "olay": "S03 kesme: masa geniş, Leo",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "t": 49.192,
+   "kare_olay": 1476,
+   "t_olay": 49.192,
+   "dosya": "$O/ozgun-yapiskan-not.flac",
+   "db": -15,
+   "olay": "S03 kırmızı tez notu buzdolabına çarpar",
+   "oneri": "tok tap / slap"
+  },
+  {
+   "t": 57.493,
+   "kare_olay": 1725,
+   "t_olay": 57.493,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -25,
+   "olay": "S04 kesme: kuşbakışı masa: PAYDAY",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "t": 58.475,
+   "kare_olay": 1754,
+   "t_olay": 58.475,
+   "dosya": "$E/sayfa-starninjas-book_flip_2.flac",
+   "db": -18,
+   "olay": "S04 maaş zarfı masaya düşer $5,400",
+   "oneri": "kâğıt düşme"
+  },
+  {
+   "t": 65.5,
+   "kare_olay": 1965,
+   "t_olay": 65.5,
+   "dosya": "$E/kagit-rubberduck-paper_03.flac",
+   "db": -21,
+   "olay": "S04 şerit: PAYCHECK TAXES",
+   "oneri": "kâğıt çekme"
+  },
+  {
+   "t": 67,
+   "kare_olay": 2010,
+   "t_olay": 67,
+   "dosya": "$E/kagit-rubberduck-paper_03.flac",
+   "db": -21,
+   "olay": "S04 şerit: COMPANY TAXES",
+   "oneri": "kâğıt çekme"
+  },
+  {
+   "t": 68.54,
+   "kare_olay": 2056,
+   "t_olay": 68.54,
+   "dosya": "$E/kagit-rubberduck-paper_03.flac",
+   "db": -21,
+   "olay": "S04 şerit: PAYROLL TAXES",
+   "oneri": "kâğıt çekme"
+  },
+  {
+   "t": 72.999,
+   "kare_olay": 2190,
+   "t_olay": 72.999,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -27,
+   "olay": "S04 kesme: masa orta, Leo zarfları dizer",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "t": 79.94,
+   "kare_olay": 2398,
+   "t_olay": 79.94,
+   "dosya": "$E/sayfa-starninjas-book_flip_1.flac",
+   "db": -24,
+   "olay": "S04 6 zarf yelpaze gibi dizilir",
+   "oneri": "kart dağıtma ×6"
+  },
+  {
+   "t": 80.06,
+   "kare_olay": 2398,
+   "t_olay": 79.94,
+   "dosya": "$E/sayfa-starninjas-book_flip_1.flac",
+   "db": -24,
+   "olay": "S04 6 zarf yelpaze gibi dizilir",
+   "oneri": "kart dağıtma ×6"
+  },
+  {
+   "t": 80.18,
+   "kare_olay": 2398,
+   "t_olay": 79.94,
+   "dosya": "$E/sayfa-starninjas-book_flip_1.flac",
+   "db": -24,
+   "olay": "S04 6 zarf yelpaze gibi dizilir",
+   "oneri": "kart dağıtma ×6"
+  },
+  {
+   "t": 80.3,
+   "kare_olay": 2398,
+   "t_olay": 79.94,
+   "dosya": "$E/sayfa-starninjas-book_flip_1.flac",
+   "db": -24,
+   "olay": "S04 6 zarf yelpaze gibi dizilir",
+   "oneri": "kart dağıtma ×6"
+  },
+  {
+   "t": 80.42,
+   "kare_olay": 2398,
+   "t_olay": 79.94,
+   "dosya": "$E/sayfa-starninjas-book_flip_1.flac",
+   "db": -24,
+   "olay": "S04 6 zarf yelpaze gibi dizilir",
+   "oneri": "kart dağıtma ×6"
+  },
+  {
+   "t": 80.54,
+   "kare_olay": 2398,
+   "t_olay": 79.94,
+   "dosya": "$E/sayfa-starninjas-book_flip_1.flac",
+   "db": -24,
+   "olay": "S04 6 zarf yelpaze gibi dizilir",
+   "oneri": "kart dağıtma ×6"
+  },
+  {
+   "t": 81.76,
+   "kare_olay": 2453,
+   "t_olay": 81.76,
+   "dosya": "$AE/ding-pwl-bell_ding1.flac",
+   "db": -25,
+   "olay": "S04 kırmızı zarf kenara çekilir (?)",
+   "oneri": "gizem tını"
+  },
+  {
+   "t": 83.022,
+   "kare_olay": 2491,
+   "t_olay": 83.022,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -25,
+   "olay": "S05 kesme: masa orta, Leo + hesap makinesi",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "t": 85.28,
+   "kare_olay": 2558,
+   "t_olay": 85.28,
+   "dosya": "$E/zarf-spring-spring-snd_close_map.flac",
+   "db": -16,
+   "olay": "S05 mavi zarf SOCIAL SECURITY düşer",
+   "oneri": "kalın zarf thud"
+  },
+  {
+   "t": 91.709,
+   "kare_olay": 2751,
+   "t_olay": 91.709,
+   "dosya": "$O/ozgun-hesap-tus-dizi.flac",
+   "db": -16,
+   "olay": "S05 hesap makinesi $1,667",
+   "oneri": "tuş tıkırtısı"
+  },
+  {
+   "t": 94.596,
+   "kare_olay": 2838,
+   "t_olay": 94.596,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -27,
+   "olay": "S05 kesme: grafik G1: gelir çubuğu dolar",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "t": 95.86,
+   "kare_olay": 2876,
+   "t_olay": 95.86,
+   "dosya": "$AE/pop-pluck.flac",
+   "db": -20,
+   "olay": "S05 yeşil dilim MEDICARE $1,073",
+   "oneri": "pop"
+  },
+  {
+   "t": 96.08,
+   "kare_olay": 2882,
+   "t_olay": 96.08,
+   "dosya": "$E/zarf-spring-spring-snd_close_map.flac",
+   "db": -16,
+   "olay": "S05 açık yeşil zarf HEALTH",
+   "oneri": "zarf thud"
+  },
+  {
+   "t": 101.74,
+   "kare_olay": 3052,
+   "t_olay": 101.74,
+   "dosya": "$AE/ozgun-sayac-tikirti.flac",
+   "db": -19,
+   "olay": "S05 sayaç SPENT $3,765",
+   "oneri": "tıkırtı + ding"
+  },
+  {
+   "t": 102.54,
+   "kare_olay": 3052,
+   "t_olay": 101.74,
+   "dosya": "$AE/ding-pwl-bell_ding1.flac",
+   "db": -21,
+   "olay": "S05 sayaç SPENT $3,765",
+   "oneri": "tıkırtı + ding"
+  },
+  {
+   "t": 112.056,
+   "kare_olay": 3362,
+   "t_olay": 112.056,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -25,
+   "olay": "S06 kesme: kuşbakışı: gri DEFENSE zarfı",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "t": 112.78,
+   "kare_olay": 3383,
+   "t_olay": 112.78,
+   "dosya": "$AE/muhur-impact-punch.flac",
+   "db": -18,
+   "olay": "S06 gri DEFENSE zarfı düşer",
+   "oneri": "thud"
+  },
+  {
+   "t": 115.471,
+   "kare_olay": 3464,
+   "t_olay": 115.471,
+   "dosya": "$AE/tik-click.flac",
+   "db": -19,
+   "olay": "S06 etiket SHIPS",
+   "oneri": "tik"
+  },
+  {
+   "t": 115.7,
+   "kare_olay": 3471,
+   "t_olay": 115.7,
+   "dosya": "$AE/tik-click.flac",
+   "db": -19,
+   "olay": "S06 etiket PLANES",
+   "oneri": "tik"
+  },
+  {
+   "t": 116.02,
+   "kare_olay": 3481,
+   "t_olay": 116.02,
+   "dosya": "$AE/tik-click.flac",
+   "db": -19,
+   "olay": "S06 etiket SALARIES",
+   "oneri": "tik"
+  },
+  {
+   "t": 116.6,
+   "kare_olay": 3498,
+   "t_olay": 116.6,
+   "dosya": "$AE/tik-click.flac",
+   "db": -19,
+   "olay": "S06 etiket BASES",
+   "oneri": "tik"
+  },
+  {
+   "t": 117.674,
+   "kare_olay": 3530,
+   "t_olay": 117.674,
+   "dosya": "$AE/pop-pluck.flac",
+   "db": -20,
+   "olay": "S06 $965",
+   "oneri": "pop"
+  },
+  {
+   "t": 120.46,
+   "kare_olay": 3614,
+   "t_olay": 120.46,
+   "dosya": "$AE/tik-select.flac",
+   "db": -14,
+   "olay": "S06 kırmızı zarf masaya kayar (müzik kesilir)",
+   "oneri": "MÜZİK KES + tek tık"
+  },
+  {
+   "t": 123.96,
+   "kare_olay": 3719,
+   "t_olay": 123.96,
+   "dosya": "$AE/ding-pwl-bell_ding1.flac",
+   "db": -21,
+   "olay": "S06 5 dolardan biri kırmızıya döner",
+   "oneri": "ding"
+  },
+  {
+   "t": 124.58,
+   "kare_olay": 3737,
+   "t_olay": 124.58,
+   "dosya": "$AE/tik-click.flac",
+   "db": -19,
+   "olay": "S06 INTEREST yazısı",
+   "oneri": "tek tık"
+  },
+  {
+   "t": 127.66,
+   "kare_olay": 3830,
+   "t_olay": 127.66,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -27,
+   "olay": "S06 kesme: grafik G1b: sıralı çubuk",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "t": 127.96,
+   "kare_olay": 3839,
+   "t_olay": 127.96,
+   "dosya": "$O/ozgun-hesap-tus.flac",
+   "db": -18,
+   "olay": "S06 çubuklar sırayla dolar, INTEREST 3. sırada parlar",
+   "oneri": "tıkırtı ×5"
+  },
+  {
+   "t": 128.08,
+   "kare_olay": 3839,
+   "t_olay": 127.96,
+   "dosya": "$O/ozgun-hesap-tus.flac",
+   "db": -18,
+   "olay": "S06 çubuklar sırayla dolar, INTEREST 3. sırada parlar",
+   "oneri": "tıkırtı ×5"
+  },
+  {
+   "t": 128.2,
+   "kare_olay": 3839,
+   "t_olay": 127.96,
+   "dosya": "$O/ozgun-hesap-tus.flac",
+   "db": -18,
+   "olay": "S06 çubuklar sırayla dolar, INTEREST 3. sırada parlar",
+   "oneri": "tıkırtı ×5"
+  },
+  {
+   "t": 128.32,
+   "kare_olay": 3839,
+   "t_olay": 127.96,
+   "dosya": "$O/ozgun-hesap-tus.flac",
+   "db": -18,
+   "olay": "S06 çubuklar sırayla dolar, INTEREST 3. sırada parlar",
+   "oneri": "tıkırtı ×5"
+  },
+  {
+   "t": 128.44,
+   "kare_olay": 3839,
+   "t_olay": 127.96,
+   "dosya": "$O/ozgun-hesap-tus.flac",
+   "db": -18,
+   "olay": "S06 çubuklar sırayla dolar, INTEREST 3. sırada parlar",
+   "oneri": "tıkırtı ×5"
+  },
+  {
+   "t": 133.982,
+   "kare_olay": 4019,
+   "t_olay": 133.982,
+   "dosya": "$AE/muhur-impact-plate.flac",
+   "db": -19,
+   "olay": "S06 INTEREST > DEFENSE",
+   "oneri": "vuruş"
+  },
+  {
+   "t": 139.2,
+   "kare_olay": 4176,
+   "t_olay": 139.2,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -27,
+   "olay": "S06 kesme: grafik: 5 dolardan 1'i",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "t": 144.6,
+   "kare_olay": 4338,
+   "t_olay": 144.6,
+   "dosya": "$AE/muhur-impact-punch.flac",
+   "db": -18,
+   "olay": "S06 BUYS NOTHING damgası",
+   "oneri": "damga thud"
+  },
+  {
+   "t": 145.78,
+   "kare_olay": 4373,
+   "t_olay": 145.78,
+   "dosya": "$AE/tik-click.flac",
+   "db": -19,
+   "olay": "S06 NO ROAD",
+   "oneri": "tik"
+  },
+  {
+   "t": 146.22,
+   "kare_olay": 4387,
+   "t_olay": 146.22,
+   "dosya": "$AE/tik-click.flac",
+   "db": -19,
+   "olay": "S06 NO CHECK",
+   "oneri": "tik"
+  },
+  {
+   "t": 146.64,
+   "kare_olay": 4399,
+   "t_olay": 146.64,
+   "dosya": "$AE/tik-click.flac",
+   "db": -19,
+   "olay": "S06 NO SHIP",
+   "oneri": "tik"
+  },
+  {
+   "t": 150.476,
+   "kare_olay": 4514,
+   "t_olay": 150.476,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -25,
+   "olay": "S07 kesme: kuşbakışı: EVERYTHING ELSE zarfı",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "t": 150.626,
+   "kare_olay": 4519,
+   "t_olay": 150.626,
+   "dosya": "$AE/muhur-impact-punch.flac",
+   "db": -18,
+   "olay": "S07 kahve zarf EVERYTHING ELSE düşer",
+   "oneri": "thud"
+  },
+  {
+   "t": 153.06,
+   "kare_olay": 4592,
+   "t_olay": 153.06,
+   "dosya": "$AE/tik-click.flac",
+   "db": -19,
+   "olay": "S07 etiket VETERANS",
+   "oneri": "tik"
+  },
+  {
+   "t": 153.74,
+   "kare_olay": 4612,
+   "t_olay": 153.74,
+   "dosya": "$AE/tik-click.flac",
+   "db": -19,
+   "olay": "S07 etiket ROADS",
+   "oneri": "tik"
+  },
+  {
+   "t": 154.42,
+   "kare_olay": 4633,
+   "t_olay": 154.42,
+   "dosya": "$AE/tik-click.flac",
+   "db": -19,
+   "olay": "S07 etiket FOOD",
+   "oneri": "tik"
+  },
+  {
+   "t": 155.38,
+   "kare_olay": 4661,
+   "t_olay": 155.38,
+   "dosya": "$AE/tik-click.flac",
+   "db": -19,
+   "olay": "S07 etiket SCIENCE",
+   "oneri": "tik"
+  },
+  {
+   "t": 156.14,
+   "kare_olay": 4684,
+   "t_olay": 156.14,
+   "dosya": "$AE/tik-click.flac",
+   "db": -19,
+   "olay": "S07 etiket PARKS",
+   "oneri": "tik"
+  },
+  {
+   "t": 156.78,
+   "kare_olay": 4703,
+   "t_olay": 156.78,
+   "dosya": "$AE/tik-click.flac",
+   "db": -19,
+   "olay": "S07 etiket COURTS",
+   "oneri": "tik"
+  },
+  {
+   "t": 161.636,
+   "kare_olay": 4849,
+   "t_olay": 161.636,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -27,
+   "olay": "S07 kesme: terazi: gider ↔ gelir",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "t": 165.1,
+   "kare_olay": 4953,
+   "t_olay": 165.1,
+   "dosya": "$AE/muhur-impact-punch.flac",
+   "db": -18,
+   "olay": "S07 terazi gider tarafına yatar (~$7,400 OUT)",
+   "oneri": "ahşap gıcırtı + thud"
+  },
+  {
+   "t": 172.1,
+   "kare_olay": 5163,
+   "t_olay": 172.1,
+   "dosya": "$AE/tik-click.flac",
+   "db": -17,
+   "olay": "S07 −$2,000 / MO kırmızı",
+   "oneri": "alarm tik"
+  },
+  {
+   "t": 172.3,
+   "kare_olay": 5163,
+   "t_olay": 172.1,
+   "dosya": "$AE/tik-click.flac",
+   "db": -17,
+   "olay": "S07 −$2,000 / MO kırmızı",
+   "oneri": "alarm tik"
+  },
+  {
+   "t": 172.995,
+   "kare_olay": 5190,
+   "t_olay": 172.995,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -27,
+   "olay": "S07 kesme: masa orta: LOAN BOOK",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "t": 175,
+   "kare_olay": 5250,
+   "t_olay": 175,
+   "dosya": "$E/sayfa-starninjas-book_flip_3.flac",
+   "db": -18,
+   "olay": "S07 LOAN BOOK masaya kayar, +$2,000 satırı",
+   "oneri": "kitap kayma + kalem"
+  },
+  {
+   "t": 176.34,
+   "kare_olay": 5290,
+   "t_olay": 176.34,
+   "dosya": "$E/sayfa-starninjas-book_flip_3.flac",
+   "db": -18,
+   "olay": "S08 LOAN BOOK açılır",
+   "oneri": "kitap açılma"
+  },
+  {
+   "t": 182.4,
+   "kare_olay": 5472,
+   "t_olay": 182.4,
+   "dosya": "$E/sayfa-starninjas-book_flip_2.flac",
+   "db": -20,
+   "olay": "S08 sayfalar masadan yere akar",
+   "oneri": "kâğıt yağmuru"
+  },
+  {
+   "t": 182.65,
+   "kare_olay": 5472,
+   "t_olay": 182.4,
+   "dosya": "$E/sayfa-starninjas-book_flip_3.flac",
+   "db": -22,
+   "olay": "S08 sayfalar masadan yere akar",
+   "oneri": "kâğıt yağmuru"
+  },
+  {
+   "t": 183.444,
+   "kare_olay": 5503,
+   "t_olay": 183.444,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -27,
+   "olay": "S08 kesme: grafik G2: bakiye",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "t": 183.944,
+   "kare_olay": 5518,
+   "t_olay": 183.944,
+   "dosya": "$AE/ozgun-sayac-tikirti.flac",
+   "db": -19,
+   "olay": "S08 sayaç ~$389,000",
+   "oneri": "tıkırtı + ding"
+  },
+  {
+   "t": 184.744,
+   "kare_olay": 5518,
+   "t_olay": 183.944,
+   "dosya": "$AE/ding-pwl-bell_ding1.flac",
+   "db": -21,
+   "olay": "S08 sayaç ~$389,000",
+   "oneri": "tıkırtı + ding"
+  },
+  {
+   "t": 194.343,
+   "kare_olay": 5830,
+   "t_olay": 194.343,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -27,
+   "olay": "S08 kesme: Leo yakın: pahalı değil",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "t": 210.86,
+   "kare_olay": 6326,
+   "t_olay": 210.86,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -23,
+   "olay": "S08 ok: cepten cebe",
+   "oneri": "whoosh kısa"
+  },
+  {
+   "t": 219.18,
+   "kare_olay": 6575,
+   "t_olay": 219.18,
+   "dosya": "$O/ozgun-hesap-tus.flac",
+   "db": -18,
+   "olay": "S09 6 yıl kutusu sırayla dolar ($64,800 ×6)",
+   "oneri": "tık ×6"
+  },
+  {
+   "t": 219.3,
+   "kare_olay": 6575,
+   "t_olay": 219.18,
+   "dosya": "$O/ozgun-hesap-tus.flac",
+   "db": -18,
+   "olay": "S09 6 yıl kutusu sırayla dolar ($64,800 ×6)",
+   "oneri": "tık ×6"
+  },
+  {
+   "t": 219.42,
+   "kare_olay": 6575,
+   "t_olay": 219.18,
+   "dosya": "$O/ozgun-hesap-tus.flac",
+   "db": -18,
+   "olay": "S09 6 yıl kutusu sırayla dolar ($64,800 ×6)",
+   "oneri": "tık ×6"
+  },
+  {
+   "t": 219.54,
+   "kare_olay": 6575,
+   "t_olay": 219.18,
+   "dosya": "$O/ozgun-hesap-tus.flac",
+   "db": -18,
+   "olay": "S09 6 yıl kutusu sırayla dolar ($64,800 ×6)",
+   "oneri": "tık ×6"
+  },
+  {
+   "t": 219.66,
+   "kare_olay": 6575,
+   "t_olay": 219.18,
+   "dosya": "$O/ozgun-hesap-tus.flac",
+   "db": -18,
+   "olay": "S09 6 yıl kutusu sırayla dolar ($64,800 ×6)",
+   "oneri": "tık ×6"
+  },
+  {
+   "t": 219.78,
+   "kare_olay": 6575,
+   "t_olay": 219.18,
+   "dosya": "$O/ozgun-hesap-tus.flac",
+   "db": -18,
+   "olay": "S09 6 yıl kutusu sırayla dolar ($64,800 ×6)",
+   "oneri": "tık ×6"
+  },
+  {
+   "t": 229.017,
+   "kare_olay": 6871,
+   "t_olay": 229.017,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -27,
+   "olay": "S09 kesme: masa orta: defter uzar",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "t": 229.52,
+   "kare_olay": 6886,
+   "t_olay": 229.52,
+   "dosya": "$E/kagit-rubberduck-paper_03.flac",
+   "db": -21,
+   "olay": "S09 +$2,000 satırı",
+   "oneri": "kalem"
+  },
+  {
+   "t": 232.486,
+   "kare_olay": 6975,
+   "t_olay": 232.486,
+   "dosya": "$AE/pop-drop.flac",
+   "db": -20,
+   "olay": "S10 WHO HOLDS THE LOAN?",
+   "oneri": "kapı zili"
+  },
+  {
+   "t": 235.294,
+   "kare_olay": 7059,
+   "t_olay": 235.294,
+   "dosya": "$AE/pop-drop.flac",
+   "db": -20,
+   "olay": "S10 alacaklı ikonu (americans)",
+   "oneri": "kapı zili / pop"
+  },
+  {
+   "t": 237.264,
+   "kare_olay": 7118,
+   "t_olay": 237.264,
+   "dosya": "$AE/pop-drop.flac",
+   "db": -20,
+   "olay": "S10 alacaklı ikonu (pension)",
+   "oneri": "kapı zili / pop"
+  },
+  {
+   "t": 238.513,
+   "kare_olay": 7155,
+   "t_olay": 238.513,
+   "dosya": "$AE/pop-drop.flac",
+   "db": -20,
+   "olay": "S10 alacaklı ikonu (banks)",
+   "oneri": "kapı zili / pop"
+  },
+  {
+   "t": 240.496,
+   "kare_olay": 7215,
+   "t_olay": 240.496,
+   "dosya": "$AE/pop-drop.flac",
+   "db": -20,
+   "olay": "S10 alacaklı ikonu (foreign)",
+   "oneri": "kapı zili / pop"
+  },
+  {
+   "t": 244.02,
+   "kare_olay": 7321,
+   "t_olay": 244.02,
+   "dosya": "$AE/pop-drop.flac",
+   "db": -20,
+   "olay": "S10 alacaklı ikonu (federal)",
+   "oneri": "kapı zili / pop"
+  },
+  {
+   "t": 245.307,
+   "kare_olay": 7359,
+   "t_olay": 245.307,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -27,
+   "olay": "S10 kesme: Leo yakın: IOU",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "t": 247.88,
+   "kare_olay": 7436,
+   "t_olay": 247.88,
+   "dosya": "$E/kagit-rubberduck-paper_03.flac",
+   "db": -21,
+   "olay": "S10 IOU fişi",
+   "oneri": "kâğıt"
+  },
+  {
+   "t": 253.942,
+   "kare_olay": 7618,
+   "t_olay": 253.942,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -25,
+   "olay": "S11 kesme: iki kredi başvurusu",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "t": 258.64,
+   "kare_olay": 7759,
+   "t_olay": 258.64,
+   "dosya": "$AE/muhur-impact-punch.flac",
+   "db": -18,
+   "olay": "S11 DENIED damgası (aile)",
+   "oneri": "damga thud"
+  },
+  {
+   "t": 262.54,
+   "kare_olay": 7876,
+   "t_olay": 262.54,
+   "dosya": "$AE/muhur-impact-punch.flac",
+   "db": -18,
+   "olay": "S11 APPROVED damgası (hane)",
+   "oneri": "damga thud"
+  },
+  {
+   "t": 264.197,
+   "kare_olay": 7926,
+   "t_olay": 264.197,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -27,
+   "olay": "S11 kesme: buzdolabı: soru notu",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "t": 264.397,
+   "kare_olay": 7932,
+   "t_olay": 264.397,
+   "dosya": "$O/ozgun-yapiskan-not.flac",
+   "db": -15,
+   "olay": "S11 soru notu yapışır",
+   "oneri": "slap"
+  },
+  {
+   "t": 268.56,
+   "kare_olay": 8057,
+   "t_olay": 268.56,
+   "dosya": "$AE/ding-pwl-bell_ding1.flac",
+   "db": -25,
+   "olay": "S11 spot ışık kırmızı zarfa",
+   "oneri": "gizem tını"
+  },
+  {
+   "t": 271.749,
+   "kare_olay": 8152,
+   "t_olay": 271.749,
+   "dosya": "$E/kagit-rubberduck-paper_03.flac",
+   "db": -21,
+   "olay": "S12 kırmızı INTEREST zarfı masaya kayar",
+   "oneri": "kâğıt kayma"
+  },
+  {
+   "t": 276.025,
+   "kare_olay": 8281,
+   "t_olay": 276.025,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -23,
+   "olay": "S12 punch-in Leo + zarf",
+   "oneri": "whoosh kısa"
+  },
+  {
+   "t": 277.12,
+   "kare_olay": 8314,
+   "t_olay": 277.12,
+   "dosya": "$E/zarf-spring-spring-snd_use_map.flac",
+   "db": -16,
+   "olay": "S12 zarf açılır: içinden mor zarf (Leo G05)",
+   "oneri": "zarf yırtma / kâğıt"
+  },
+  {
+   "t": 280.44,
+   "kare_olay": 8413,
+   "t_olay": 280.44,
+   "dosya": "$AE/pop-pluck.flac",
+   "db": -20,
+   "olay": "S12 BORROWED etiketi pop",
+   "oneri": "pop"
+  },
+  {
+   "t": 285.64,
+   "kare_olay": 8569,
+   "t_olay": 285.64,
+   "dosya": "$AE/riser.flac",
+   "db": -24,
+   "olay": "S12 çubuğun kırmızı faiz kısmı dolar: 53% OF THE GAP",
+   "oneri": "yükselen ton"
+  },
+  {
+   "t": 295.476,
+   "kare_olay": 8864,
+   "t_olay": 295.476,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -23,
+   "olay": "S12 kesme: kuşbakışı masa, matruşka başlar",
+   "oneri": "whoosh"
+  },
+  {
+   "t": 295.846,
+   "kare_olay": 8875,
+   "t_olay": 295.846,
+   "dosya": "$E/kagit-rubberduck-paper_04.flac",
+   "db": -22,
+   "olay": "S12 matruşka 1: mor zarftan kırmızı zarf çıkar + punch-in",
+   "oneri": "kâğıt + tık"
+  },
+  {
+   "t": 295.926,
+   "kare_olay": 8875,
+   "t_olay": 295.846,
+   "dosya": "$AE/tik-click.flac",
+   "db": -20,
+   "olay": "S12 matruşka 1: mor zarftan kırmızı zarf çıkar + punch-in",
+   "oneri": "kâğıt + tık"
+  },
+  {
+   "t": 300.158,
+   "kare_olay": 9005,
+   "t_olay": 300.158,
+   "dosya": "$E/kagit-rubberduck-paper_04.flac",
+   "db": -22,
+   "olay": "S12 matruşka 2: kırmızıdan mor zarf + punch-in",
+   "oneri": "kâğıt + tık"
+  },
+  {
+   "t": 300.238,
+   "kare_olay": 9005,
+   "t_olay": 300.158,
+   "dosya": "$AE/tik-click.flac",
+   "db": -20,
+   "olay": "S12 matruşka 2: kırmızıdan mor zarf + punch-in",
+   "oneri": "kâğıt + tık"
+  },
+  {
+   "t": 302.9,
+   "kare_olay": 9087,
+   "t_olay": 302.9,
+   "dosya": "$E/kagit-rubberduck-paper_04.flac",
+   "db": -22,
+   "olay": "S12 matruşka 3 + punch-in",
+   "oneri": "kâğıt + tık (hızlanan)"
+  },
+  {
+   "t": 302.98,
+   "kare_olay": 9087,
+   "t_olay": 302.9,
+   "dosya": "$AE/tik-click.flac",
+   "db": -20,
+   "olay": "S12 matruşka 3 + punch-in",
+   "oneri": "kâğıt + tık (hızlanan)"
+  },
+  {
+   "t": 303.8,
+   "kare_olay": 9114,
+   "t_olay": 303.8,
+   "dosya": "$E/kagit-rubberduck-paper_04.flac",
+   "db": -22,
+   "olay": "S12 matruşka 4 + punch-in",
+   "oneri": "kâğıt + tık (hızlanan)"
+  },
+  {
+   "t": 303.88,
+   "kare_olay": 9114,
+   "t_olay": 303.8,
+   "dosya": "$AE/tik-click.flac",
+   "db": -20,
+   "olay": "S12 matruşka 4 + punch-in",
+   "oneri": "kâğıt + tık (hızlanan)"
+  },
+  {
+   "t": 305.632,
+   "kare_olay": 9169,
+   "t_olay": 305.632,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -25,
+   "olay": "S13 kesme: masa orta: şişman kırmızı zarf",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "t": 316.02,
+   "kare_olay": 9481,
+   "t_olay": 316.02,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -27,
+   "olay": "S13 kesme: grafik G3a: ortalama faiz",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "t": 322.3,
+   "kare_olay": 9669,
+   "t_olay": 322.3,
+   "dosya": "$AE/riser.flac",
+   "db": -24,
+   "olay": "S13 SEP 2026 ~3.5% (termometre yükselir)",
+   "oneri": "yükselen ton"
+  },
+  {
+   "t": 326.08,
+   "kare_olay": 9782,
+   "t_olay": 326.08,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -27,
+   "olay": "S13 kesme: grafik G3b: net faiz çubukları FY16–26",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "t": 326.38,
+   "kare_olay": 9791,
+   "t_olay": 326.38,
+   "dosya": "$O/ozgun-hesap-tus.flac",
+   "db": -18,
+   "olay": "S13 11 çubuk sırayla",
+   "oneri": "tık ×11"
+  },
+  {
+   "t": 326.48,
+   "kare_olay": 9791,
+   "t_olay": 326.38,
+   "dosya": "$O/ozgun-hesap-tus.flac",
+   "db": -18,
+   "olay": "S13 11 çubuk sırayla",
+   "oneri": "tık ×11"
+  },
+  {
+   "t": 326.58,
+   "kare_olay": 9791,
+   "t_olay": 326.38,
+   "dosya": "$O/ozgun-hesap-tus.flac",
+   "db": -18,
+   "olay": "S13 11 çubuk sırayla",
+   "oneri": "tık ×11"
+  },
+  {
+   "t": 326.68,
+   "kare_olay": 9791,
+   "t_olay": 326.38,
+   "dosya": "$O/ozgun-hesap-tus.flac",
+   "db": -18,
+   "olay": "S13 11 çubuk sırayla",
+   "oneri": "tık ×11"
+  },
+  {
+   "t": 326.78,
+   "kare_olay": 9791,
+   "t_olay": 326.38,
+   "dosya": "$O/ozgun-hesap-tus.flac",
+   "db": -18,
+   "olay": "S13 11 çubuk sırayla",
+   "oneri": "tık ×11"
+  },
+  {
+   "t": 326.88,
+   "kare_olay": 9791,
+   "t_olay": 326.38,
+   "dosya": "$O/ozgun-hesap-tus.flac",
+   "db": -18,
+   "olay": "S13 11 çubuk sırayla",
+   "oneri": "tık ×11"
+  },
+  {
+   "t": 326.98,
+   "kare_olay": 9791,
+   "t_olay": 326.38,
+   "dosya": "$O/ozgun-hesap-tus.flac",
+   "db": -18,
+   "olay": "S13 11 çubuk sırayla",
+   "oneri": "tık ×11"
+  },
+  {
+   "t": 327.08,
+   "kare_olay": 9791,
+   "t_olay": 326.38,
+   "dosya": "$O/ozgun-hesap-tus.flac",
+   "db": -18,
+   "olay": "S13 11 çubuk sırayla",
+   "oneri": "tık ×11"
+  },
+  {
+   "t": 327.18,
+   "kare_olay": 9791,
+   "t_olay": 326.38,
+   "dosya": "$O/ozgun-hesap-tus.flac",
+   "db": -18,
+   "olay": "S13 11 çubuk sırayla",
+   "oneri": "tık ×11"
+  },
+  {
+   "t": 327.28,
+   "kare_olay": 9791,
+   "t_olay": 326.38,
+   "dosya": "$O/ozgun-hesap-tus.flac",
+   "db": -18,
+   "olay": "S13 11 çubuk sırayla",
+   "oneri": "tık ×11"
+  },
+  {
+   "t": 327.38,
+   "kare_olay": 9791,
+   "t_olay": 326.38,
+   "dosya": "$O/ozgun-hesap-tus.flac",
+   "db": -18,
+   "olay": "S13 11 çubuk sırayla",
+   "oneri": "tık ×11"
+  },
+  {
+   "t": 328.68,
+   "kare_olay": 9860,
+   "t_olay": 328.68,
+   "dosya": "$AE/muhur-impact-plate.flac",
+   "db": -19,
+   "olay": "S13 ~3× IN 5 YEARS",
+   "oneri": "vuruş"
+  },
+  {
+   "t": 336.24,
+   "kare_olay": 10087,
+   "t_olay": 336.24,
+   "dosya": "$AE/tik-click.flac",
+   "db": -17,
+   "olay": "S13 FY2026 çubuğu yanıp söner",
+   "oneri": "tik ×2"
+  },
+  {
+   "t": 336.44,
+   "kare_olay": 10087,
+   "t_olay": 336.24,
+   "dosya": "$AE/tik-click.flac",
+   "db": -17,
+   "olay": "S13 FY2026 çubuğu yanıp söner",
+   "oneri": "tik ×2"
+  },
+  {
+   "t": 337.532,
+   "kare_olay": 10126,
+   "t_olay": 337.532,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -25,
+   "olay": "S14 kesme: Leo yakın",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "t": 354.08,
+   "kare_olay": 10622,
+   "t_olay": 354.08,
+   "dosya": "$E/kagit-rubberduck-paper_04.flac",
+   "db": -20,
+   "olay": "S14 CHEAP 1% düşer → NEW 5%",
+   "oneri": "etiket kopma + tık"
+  },
+  {
+   "t": 354.18,
+   "kare_olay": 10622,
+   "t_olay": 354.08,
+   "dosya": "$AE/tik-click.flac",
+   "db": -20,
+   "olay": "S14 CHEAP 1% düşer → NEW 5%",
+   "oneri": "etiket kopma + tık"
+  },
+  {
+   "t": 356.34,
+   "kare_olay": 10690,
+   "t_olay": 356.34,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -27,
+   "olay": "S14 kesme: grafik G4: yeni faizler",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "t": 365.57,
+   "kare_olay": 10967,
+   "t_olay": 365.57,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -25,
+   "olay": "S15 kesme: gösterge: ortalama faiz tırmanır",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "t": 367.08,
+   "kare_olay": 11012,
+   "t_olay": 367.08,
+   "dosya": "$AE/riser.flac",
+   "db": -24,
+   "olay": "S15 ibre yükselir",
+   "oneri": "yükselen ton"
+  },
+  {
+   "t": 379.884,
+   "kare_olay": 11397,
+   "t_olay": 379.884,
+   "dosya": "$O/ozgun-yapiskan-not.flac",
+   "db": -15,
+   "olay": "S15 RATE × BALANCE notu",
+   "oneri": "slap"
+  },
+  {
+   "t": 381.266,
+   "kare_olay": 11438,
+   "t_olay": 381.266,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -27,
+   "olay": "S15 kesme: kuşbakışı: CAN'T SKIP",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "t": 383.38,
+   "kare_olay": 11501,
+   "t_olay": 383.38,
+   "dosya": "$AE/muhur-impact-punch.flac",
+   "db": -18,
+   "olay": "S15 CAN'T SKIP damgası",
+   "oneri": "damga"
+  },
+  {
+   "t": 386.32,
+   "kare_olay": 11590,
+   "t_olay": 386.32,
+   "dosya": "$AE/muhur-impact-plate.flac",
+   "db": -19,
+   "olay": "S15 FAMILY yazısı çatlar",
+   "oneri": "cam çatlama"
+  },
+  {
+   "t": 391.019,
+   "kare_olay": 11731,
+   "t_olay": 391.019,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -25,
+   "olay": "S16 kesme: kart: 1 · OWN MONEY",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "t": 391.169,
+   "kare_olay": 11735,
+   "t_olay": 391.169,
+   "dosya": "$AE/pop-pluck.flac",
+   "db": -20,
+   "olay": "S16 1 · IT BORROWS IN ITS OWN MONEY",
+   "oneri": "pop"
+  },
+  {
+   "t": 403.509,
+   "kare_olay": 12105,
+   "t_olay": 403.509,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -27,
+   "olay": "S16 kesme: buzdolabı: soru notuna tik",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "t": 406.9,
+   "kare_olay": 12207,
+   "t_olay": 406.9,
+   "dosya": "$AE/ding-pwl-bell_ding1.flac",
+   "db": -21,
+   "olay": "S16 yeşil tik (A5 kapanır)",
+   "oneri": "doğru ding"
+  },
+  {
+   "t": 409.697,
+   "kare_olay": 12291,
+   "t_olay": 409.697,
+   "dosya": "$AE/riser.flac",
+   "db": -24,
+   "olay": "S16 banknotlar çoğalır, sepet küçülür",
+   "oneri": "fotokopi vınlaması"
+  },
+  {
+   "t": 413.68,
+   "kare_olay": 12410,
+   "t_olay": 413.68,
+   "dosya": "$AE/muhur-impact-plate.flac",
+   "db": -19,
+   "olay": "S16 INFLATION",
+   "oneri": "vuruş"
+  },
+  {
+   "t": 414.701,
+   "kare_olay": 12441,
+   "t_olay": 414.701,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -27,
+   "olay": "S16 kesme: Leo yakın",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "t": 418.206,
+   "kare_olay": 12546,
+   "t_olay": 418.206,
+   "dosya": "$AE/pop-pluck.flac",
+   "db": -20,
+   "olay": "S17 2 · IT NEVER RETIRES",
+   "oneri": "pop"
+  },
+  {
+   "t": 424.46,
+   "kare_olay": 12734,
+   "t_olay": 424.46,
+   "dosya": "$E/kagit-rubberduck-paper_03.flac",
+   "db": -21,
+   "olay": "S17 takvim sonsuz çevrilir",
+   "oneri": "kâğıt çevirme"
+  },
+  {
+   "t": 425.22,
+   "kare_olay": 12757,
+   "t_olay": 425.22,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -27,
+   "olay": "S17 kesme: masa orta: IOU takla",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "t": 425.92,
+   "kare_olay": 12778,
+   "t_olay": 425.92,
+   "dosya": "$E/kagit-rubberduck-paper_03.flac",
+   "db": -21,
+   "olay": "S17 IOU fişleri takla atar",
+   "oneri": "kâğıt hışırtı"
+  },
+  {
+   "t": 432.46,
+   "kare_olay": 12974,
+   "t_olay": 432.46,
+   "dosya": "$E/kagit-rubberduck-paper_03.flac",
+   "db": -21,
+   "olay": "S17 PAY IT ALL BACK? üstü çizilir",
+   "oneri": "kalem çizme"
+  },
+  {
+   "t": 433.98,
+   "kare_olay": 13019,
+   "t_olay": 433.98,
+   "dosya": "$AE/pop-pluck.flac",
+   "db": -20,
+   "olay": "S17 KEEP PAYING THE INTEREST?",
+   "oneri": "pop"
+  },
+  {
+   "t": 438.493,
+   "kare_olay": 13155,
+   "t_olay": 438.493,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -25,
+   "olay": "S18 kesme: kart: 3 · GIVE ITSELF A RAISE",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "t": 438.643,
+   "kare_olay": 13159,
+   "t_olay": 438.643,
+   "dosya": "$AE/pop-pluck.flac",
+   "db": -20,
+   "olay": "S18 3 · IT CAN GIVE ITSELF A RAISE",
+   "oneri": "pop"
+  },
+  {
+   "t": 444.28,
+   "kare_olay": 13328,
+   "t_olay": 444.28,
+   "dosya": "$AE/tik-click.flac",
+   "db": -17,
+   "olay": "S18 maaş zarfına kadran (yukarı/aşağı)",
+   "oneri": "kadran tık-tık"
+  },
+  {
+   "t": 444.48,
+   "kare_olay": 13328,
+   "t_olay": 444.28,
+   "dosya": "$AE/tik-click.flac",
+   "db": -17,
+   "olay": "S18 maaş zarfına kadran (yukarı/aşağı)",
+   "oneri": "kadran tık-tık"
+  },
+  {
+   "t": 445.94,
+   "kare_olay": 13378,
+   "t_olay": 445.94,
+   "dosya": "$E/kagit-rubberduck-paper_03.flac",
+   "db": -21,
+   "olay": "S18 makas zarfı keser",
+   "oneri": "makas"
+  },
+  {
+   "t": 453.5,
+   "kare_olay": 13605,
+   "t_olay": 453.5,
+   "dosya": "$AE/ding-pwl-bell_ding1.flac",
+   "db": -25,
+   "olay": "S18 Leo gülümser (omuz silker)",
+   "oneri": "hafif tını"
+  },
+  {
+   "t": 454.873,
+   "kare_olay": 13646,
+   "t_olay": 454.873,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -25,
+   "olay": "S19 kesme: masa orta, Leo",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "t": 457.742,
+   "kare_olay": 13732,
+   "t_olay": 457.742,
+   "dosya": "$E/kagit-rubberduck-paper_03.flac",
+   "db": -21,
+   "olay": "S19 çizgi çizilmeye başlar, >100% (1946)",
+   "oneri": "çizim sesi"
+  },
+  {
+   "t": 470.42,
+   "kare_olay": 14113,
+   "t_olay": 470.42,
+   "dosya": "$AE/ding-pwl-bell_ding1.flac",
+   "db": -21,
+   "olay": "S19 ~23% (1974) etiketi",
+   "oneri": "ding"
+  },
+  {
+   "t": 471.619,
+   "kare_olay": 14149,
+   "t_olay": 471.619,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -27,
+   "olay": "S19 kesme: grafik: borç $ çubuğu",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "t": 475.48,
+   "kare_olay": 14264,
+   "t_olay": 475.48,
+   "dosya": "$AE/riser.flac",
+   "db": -24,
+   "olay": "S19 $242B → $344B çubuğu yükselir",
+   "oneri": "yükselen ton"
+  },
+  {
+   "t": 481.452,
+   "kare_olay": 14444,
+   "t_olay": 481.452,
+   "dosya": "$AE/riser.flac",
+   "db": -24,
+   "olay": "S19 maaş zarfı büyür",
+   "oneri": "şişme"
+  },
+  {
+   "t": 483.087,
+   "kare_olay": 14493,
+   "t_olay": 483.087,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -27,
+   "olay": "S19 kesme: Leo yakın",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "t": 487.796,
+   "kare_olay": 14634,
+   "t_olay": 487.796,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -25,
+   "olay": "S20 kesme: grafik G5 devam: ~97% (Q2 2026)",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "t": 491.46,
+   "kare_olay": 14744,
+   "t_olay": 491.46,
+   "dosya": "$AE/ding-pwl-bell_ding1.flac",
+   "db": -21,
+   "olay": "S20 ayrı nokta ~97% (FRED)",
+   "oneri": "ding"
+  },
+  {
+   "t": 496.238,
+   "kare_olay": 14887,
+   "t_olay": 496.238,
+   "dosya": "$AE/whoosh-uzun.flac",
+   "db": -22,
+   "olay": "S20 sarmal dönmeye başlar",
+   "oneri": "dönen whoosh"
+  },
+  {
+   "t": 507.16,
+   "kare_olay": 15215,
+   "t_olay": 507.16,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -27,
+   "olay": "S20 kesme: üç fren ikonu",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "t": 508.46,
+   "kare_olay": 15254,
+   "t_olay": 508.46,
+   "dosya": "$AE/tik-click.flac",
+   "db": -19,
+   "olay": "S20 fren 1 OWN CURRENCY",
+   "oneri": "fren tık"
+  },
+  {
+   "t": 510.64,
+   "kare_olay": 15319,
+   "t_olay": 510.64,
+   "dosya": "$AE/tik-click.flac",
+   "db": -19,
+   "olay": "S20 fren 2 LONG LOANS",
+   "oneri": "fren tık"
+  },
+  {
+   "t": 518.1,
+   "kare_olay": 15543,
+   "t_olay": 518.1,
+   "dosya": "$AE/tik-click.flac",
+   "db": -19,
+   "olay": "S20 fren 3 LENDERS' TRUST",
+   "oneri": "fren tık"
+  },
+  {
+   "t": 521.094,
+   "kare_olay": 15633,
+   "t_olay": 521.094,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -27,
+   "olay": "S20 kesme: Leo yakın",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "t": 527.851,
+   "kare_olay": 15836,
+   "t_olay": 527.851,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -25,
+   "olay": "S21 kesme: masa orta: üç olasılık",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "t": 529.08,
+   "kare_olay": 15872,
+   "t_olay": 529.08,
+   "dosya": "$AE/tik-click.flac",
+   "db": -19,
+   "olay": "S21 not A · GROW",
+   "oneri": "tap"
+  },
+  {
+   "t": 538.828,
+   "kare_olay": 16165,
+   "t_olay": 538.828,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -27,
+   "olay": "S21 kesme: buzdolabı: A · B · C dolar",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "t": 540.34,
+   "kare_olay": 16210,
+   "t_olay": 540.34,
+   "dosya": "$AE/tik-click.flac",
+   "db": -19,
+   "olay": "S21 not B · CHANGE THE ENVELOPES",
+   "oneri": "tap"
+  },
+  {
+   "t": 540.76,
+   "kare_olay": 16223,
+   "t_olay": 540.76,
+   "dosya": "$AE/tik-click.flac",
+   "db": -19,
+   "olay": "S21 not C · LET PRICES RISE",
+   "oneri": "tap"
+  },
+  {
+   "t": 542.003,
+   "kare_olay": 16260,
+   "t_olay": 542.003,
+   "dosya": "$O/ozgun-duduk.flac",
+   "db": -20,
+   "olay": "S22 A · GROW THE PAYCHECK",
+   "oneri": "düdük"
+  },
+  {
+   "t": 545.34,
+   "kare_olay": 16360,
+   "t_olay": 545.34,
+   "dosya": "$AE/whoosh-uzun.flac",
+   "db": -22,
+   "olay": "S22 maaş öne geçer",
+   "oneri": "koşu whoosh"
+  },
+  {
+   "t": 555.357,
+   "kare_olay": 16661,
+   "t_olay": 555.357,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -27,
+   "olay": "S22 kesme: Leo yakın: GROWTH vs RATE",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "t": 555.657,
+   "kare_olay": 16670,
+   "t_olay": 555.657,
+   "dosya": "$O/ozgun-duduk.flac",
+   "db": -20,
+   "olay": "S22 GROWTH vs RATE",
+   "oneri": "hakem düdüğü"
+  },
+  {
+   "t": 562.9,
+   "kare_olay": 16887,
+   "t_olay": 562.9,
+   "dosya": "$AE/ozgun-gerilim-vurus.flac",
+   "db": -18,
+   "olay": "S22 borç defteri öne geçer",
+   "oneri": "olumsuz vuruş"
+  },
+  {
+   "t": 565.4,
+   "kare_olay": 16962,
+   "t_olay": 565.4,
+   "dosya": "$AE/riser.flac",
+   "db": -24,
+   "olay": "S22 kırmızı zarf şişer",
+   "oneri": "şişme"
+  },
+  {
+   "t": 566.634,
+   "kare_olay": 16999,
+   "t_olay": 566.634,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -25,
+   "olay": "S23 kesme: kuşbakışı: B · CHANGE THE ENVELOPES",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "t": 570.36,
+   "kare_olay": 17111,
+   "t_olay": 570.36,
+   "dosya": "$E/kagit-rubberduck-paper_03.flac",
+   "db": -21,
+   "olay": "S23 CUT SPENDING + makas",
+   "oneri": "makas"
+  },
+  {
+   "t": 578.021,
+   "kare_olay": 17341,
+   "t_olay": 578.021,
+   "dosya": "$AE/pop-pluck.flac",
+   "db": -20,
+   "olay": "S23 silüet (retirees)",
+   "oneri": "pop"
+  },
+  {
+   "t": 578.78,
+   "kare_olay": 17363,
+   "t_olay": 578.78,
+   "dosya": "$AE/pop-pluck.flac",
+   "db": -20,
+   "olay": "S23 silüet (patients)",
+   "oneri": "pop"
+  },
+  {
+   "t": 579.5,
+   "kare_olay": 17385,
+   "t_olay": 579.5,
+   "dosya": "$AE/pop-pluck.flac",
+   "db": -20,
+   "olay": "S23 silüet (soldiers)",
+   "oneri": "pop"
+  },
+  {
+   "t": 579.7,
+   "kare_olay": 17391,
+   "t_olay": 579.7,
+   "dosya": "$AE/pop-pluck.flac",
+   "db": -20,
+   "olay": "S23 silüet (students)",
+   "oneri": "pop"
+  },
+  {
+   "t": 580.481,
+   "kare_olay": 17414,
+   "t_olay": 580.481,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -27,
+   "olay": "S23 kesme: masa orta: slow and loud",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "t": 587.365,
+   "kare_olay": 17621,
+   "t_olay": 587.365,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -25,
+   "olay": "S24 kesme: kart: C · LET PRICES RISE",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "t": 587.515,
+   "kare_olay": 17625,
+   "t_olay": 587.515,
+   "dosya": "$AE/pop-pluck.flac",
+   "db": -20,
+   "olay": "S24 C · LET PRICES RISE",
+   "oneri": "pop"
+  },
+  {
+   "t": 591.58,
+   "kare_olay": 17747,
+   "t_olay": 591.58,
+   "dosya": "$AE/pop-drop.flac",
+   "db": -20,
+   "olay": "S24 banknotlar küçülür",
+   "oneri": "büzülme"
+  },
+  {
+   "t": 598.58,
+   "kare_olay": 17957,
+   "t_olay": 598.58,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -27,
+   "olay": "S24 kesme: 1946: PRICES +18%",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "t": 601.78,
+   "kare_olay": 18053,
+   "t_olay": 601.78,
+   "dosya": "$AE/ding-pwl-bell_ding1.flac",
+   "db": -21,
+   "olay": "S24 +18% (1946)",
+   "oneri": "ding"
+  },
+  {
+   "t": 609.36,
+   "kare_olay": 18281,
+   "t_olay": 609.36,
+   "dosya": "$AE/ozgun-ka-ching.flac",
+   "db": -17,
+   "olay": "S24 market fişi uzar",
+   "oneri": "yazarkasa fişi"
+  },
+  {
+   "t": 610.06,
+   "kare_olay": 18302,
+   "t_olay": 610.06,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -27,
+   "olay": "S24 kesme: Leo yakın: zarf geri şişer",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "t": 618.48,
+   "kare_olay": 18554,
+   "t_olay": 618.48,
+   "dosya": "$AE/riser.flac",
+   "db": -24,
+   "olay": "S24 kırmızı zarf şişer + OLD DEBT SHRINKS · NEW RATES RISE",
+   "oneri": "şişme"
+  },
+  {
+   "t": 620.524,
+   "kare_olay": 18616,
+   "t_olay": 620.524,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -25,
+   "olay": "S25 kesme: buzdolabı: A B C + LUCK",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "t": 624.3,
+   "kare_olay": 18729,
+   "t_olay": 624.3,
+   "dosya": "$AE/tik-click.flac",
+   "db": -19,
+   "olay": "S25 + LUCK notu",
+   "oneri": "tap"
+  },
+  {
+   "t": 631.738,
+   "kare_olay": 18952,
+   "t_olay": 631.738,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -27,
+   "olay": "S25 kesme: kart: ONE LETTER IN THE COMMENTS",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "t": 631.938,
+   "kare_olay": 18958,
+   "t_olay": 631.938,
+   "dosya": "$AE/pop-pluck.flac",
+   "db": -20,
+   "olay": "S25 A · B · C → ONE LETTER IN THE COMMENTS",
+   "oneri": "pop ×3"
+  },
+  {
+   "t": 632.088,
+   "kare_olay": 18958,
+   "t_olay": 631.938,
+   "dosya": "$AE/pop-pluck.flac",
+   "db": -20,
+   "olay": "S25 A · B · C → ONE LETTER IN THE COMMENTS",
+   "oneri": "pop ×3"
+  },
+  {
+   "t": 632.238,
+   "kare_olay": 18958,
+   "t_olay": 631.938,
+   "dosya": "$AE/pop-pluck.flac",
+   "db": -20,
+   "olay": "S25 A · B · C → ONE LETTER IN THE COMMENTS",
+   "oneri": "pop ×3"
+  },
+  {
+   "t": 637.949,
+   "kare_olay": 19138,
+   "t_olay": 637.949,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -25,
+   "olay": "S26 kesme: buzdolabı: tez notu + 3 tik",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "t": 643.52,
+   "kare_olay": 19306,
+   "t_olay": 643.52,
+   "dosya": "$AE/tik-click.flac",
+   "db": -19,
+   "olay": "S26 tik 1",
+   "oneri": "tik"
+  },
+  {
+   "t": 644.56,
+   "kare_olay": 19337,
+   "t_olay": 644.56,
+   "dosya": "$AE/tik-click.flac",
+   "db": -19,
+   "olay": "S26 tik 2",
+   "oneri": "tik"
+  },
+  {
+   "t": 646.52,
+   "kare_olay": 19396,
+   "t_olay": 646.52,
+   "dosya": "$AE/tik-click.flac",
+   "db": -19,
+   "olay": "S26 tik 3",
+   "oneri": "tik"
+  },
+  {
+   "t": 652.34,
+   "kare_olay": 19570,
+   "t_olay": 652.34,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -27,
+   "olay": "S26 kesme: masa geniş: lamba kısılır",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "t": 661.82,
+   "kare_olay": 19855,
+   "t_olay": 661.82,
+   "dosya": "$E/kagit-rubberduck-paper_03.flac",
+   "db": -21,
+   "olay": "S26 kırmızı zarftan iç zarf kenarı görünür",
+   "oneri": "kâğıt"
+  },
+  {
+   "t": 663.164,
+   "kare_olay": 19895,
+   "t_olay": 663.164,
+   "dosya": "$AE/whoosh-kisa.flac",
+   "db": -25,
+   "olay": "S27 kesme: masa orta: bir sayı",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "t": 673.083,
+   "kare_olay": 20192,
+   "t_olay": 673.083,
+   "dosya": "$E/sayfa-starninjas-book_flip_2.flac",
+   "db": -20,
+   "olay": "S27 not pencereden uçar",
+   "oneri": "kâğıt uçuşu"
+  },
+  {
+   "t": 673.333,
+   "kare_olay": 20192,
+   "t_olay": 673.083,
+   "dosya": "$E/sayfa-starninjas-book_flip_3.flac",
+   "db": -22,
+   "olay": "S27 not pencereden uçar",
+   "oneri": "kâğıt uçuşu"
+  }
+ ],
+ "shorts": [
+  {
+   "ad": "shorts-1",
+   "dosya": "$M/deliberate-concealment-northivanastan.ogg",
+   "duck": 20,
+   "sure": 60.0,
+   "ofset": 0.0
+  },
+  {
+   "ad": "shorts-2",
+   "dosya": "$A/the-way-it-is-zane-little.mp3",
+   "duck": 20,
+   "sure": 60.0,
+   "ofset": 0.0
+  }
+ ],
+ "atlanan": [
+  {
+   "t": 6.725,
+   "tur": "kesme",
+   "oneri": "whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 9.32,
+   "tur": "kesme",
+   "oneri": "boş",
+   "neden": "kural: ses yok"
+  },
+  {
+   "t": 16.028,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 21.761,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 33.859,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 40.883,
+   "tur": "pop",
+   "oneri": "boş",
+   "neden": "kural: ses yok"
+  },
+  {
+   "t": 48.992,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 53.125,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 57.593,
+   "tur": "pop",
+   "oneri": "kasa ding",
+   "neden": "önceki SFX'e <0.12 sn"
+  },
+  {
+   "t": 100.808,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 101.34,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 119.658,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 125.704,
+   "tur": "pop",
+   "oneri": "boş",
+   "neden": "kural: ses yok"
+  },
+  {
+   "t": 133.482,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 144.01,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 159.31,
+   "tur": "pop",
+   "oneri": "boş",
+   "neden": "kural: ses yok"
+  },
+  {
+   "t": 167.46,
+   "tur": "pop",
+   "oneri": "boş",
+   "neden": "kural: ses yok"
+  },
+  {
+   "t": 175.547,
+   "tur": "abone",
+   "oneri": "klik (kurgu-editoru bileşeni)",
+   "neden": "kural: ses yok"
+  },
+  {
+   "t": 176.097,
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)",
+   "neden": "whoosh aralığı <4.0 sn"
+  },
+  {
+   "t": 189.14,
+   "tur": "pop",
+   "oneri": "boş",
+   "neden": "kural: ses yok"
+  },
+  {
+   "t": 197.54,
+   "tur": "pop",
+   "oneri": "boş",
+   "neden": "kural: ses yok"
+  },
+  {
+   "t": 201.866,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 204.68,
+   "tur": "pop",
+   "oneri": "boş",
+   "neden": "kural: ses yok"
+  },
+  {
+   "t": 212.636,
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)",
+   "neden": "whoosh aralığı <4.0 sn"
+  },
+  {
+   "t": 212.736,
+   "tur": "pop",
+   "oneri": "boş",
+   "neden": "kural: ses yok"
+  },
+  {
+   "t": 218.88,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 224.42,
+   "tur": "pop",
+   "oneri": "boş",
+   "neden": "kural: ses yok"
+  },
+  {
+   "t": 232.286,
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)",
+   "neden": "whoosh aralığı <4.0 sn"
+  },
+  {
+   "t": 235.194,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 248.78,
+   "tur": "vurgu",
+   "oneri": "boş",
+   "neden": "kural: ses yok"
+  },
+  {
+   "t": 267.105,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 281.449,
+   "tur": "kesme",
+   "oneri": "boş",
+   "neden": "kural: ses yok"
+  },
+  {
+   "t": 288.544,
+   "tur": "kesme",
+   "oneri": "boş",
+   "neden": "kural: ses yok"
+  },
+  {
+   "t": 305.082,
+   "tur": "abone",
+   "oneri": "klik (kurgu-editoru bileşeni)",
+   "neden": "kural: ses yok"
+  },
+  {
+   "t": 316.52,
+   "tur": "pop",
+   "oneri": "boş",
+   "neden": "kural: ses yok"
+  },
+  {
+   "t": 329.96,
+   "tur": "pop",
+   "oneri": "boş",
+   "neden": "kural: ses yok"
+  },
+  {
+   "t": 342,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 344.9,
+   "tur": "pop",
+   "oneri": "boş",
+   "neden": "kural: ses yok"
+  },
+  {
+   "t": 346.28,
+   "tur": "pop",
+   "oneri": "boş",
+   "neden": "kural: ses yok"
+  },
+  {
+   "t": 356.74,
+   "tur": "pop",
+   "oneri": "boş",
+   "neden": "kural: ses yok"
+  },
+  {
+   "t": 362.34,
+   "tur": "pop",
+   "oneri": "boş",
+   "neden": "kural: ses yok"
+  },
+  {
+   "t": 375.543,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 384.071,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 407.7,
+   "tur": "etkilesim",
+   "oneri": "(sessiz)",
+   "neden": "kural: ses yok"
+  },
+  {
+   "t": 407.815,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 409.197,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 418.056,
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)",
+   "neden": "whoosh aralığı <4.0 sn"
+  },
+  {
+   "t": 430.118,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 447.31,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 457.542,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 480.098,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 495.838,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 502.42,
+   "tur": "vurgu",
+   "oneri": "boş",
+   "neden": "kural: ses yok"
+  },
+  {
+   "t": 505.49,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 533.96,
+   "tur": "pop",
+   "oneri": "boş",
+   "neden": "kural: ses yok"
+  },
+  {
+   "t": 541.853,
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)",
+   "neden": "whoosh aralığı <4.0 sn"
+  },
+  {
+   "t": 551.61,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 558.944,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 569.354,
+   "tur": "pop",
+   "oneri": "boş",
+   "neden": "kural: ses yok"
+  },
+  {
+   "t": 574.78,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 585.44,
+   "tur": "vurgu",
+   "oneri": "boş",
+   "neden": "kural: ses yok"
+  },
+  {
+   "t": 605.773,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 628.172,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 638.149,
+   "tur": "pop",
+   "oneri": "boş",
+   "neden": "kural: ses yok"
+  },
+  {
+   "t": 647.342,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 657.08,
+   "tur": "vurgu",
+   "oneri": "boş",
+   "neden": "kural: ses yok"
+  },
+  {
+   "t": 662.614,
+   "tur": "abone",
+   "oneri": "klik (kurgu-editoru bileşeni)",
+   "neden": "kural: ses yok"
+  },
+  {
+   "t": 670.349,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  },
+  {
+   "t": 671.56,
+   "tur": "kamera",
+   "oneri": "boş",
+   "neden": "kural: ses yok"
+  },
+  {
+   "t": 672.683,
+   "tur": "kesme",
+   "oneri": "kısa whoosh",
+   "neden": "whoosh aralığı <10.0 sn"
+  }
+ ]
+}

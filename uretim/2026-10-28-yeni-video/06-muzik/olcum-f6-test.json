@@ -1,0 +1,229 @@
+[
+ {
+  "bolum": "B1",
+  "dilim": [
+   21.63,
+   40.85
+  ],
+  "kelime": 56,
+  "anlatim_tek_hata": 0,
+  "adaylar": [
+   {
+    "aday": "happy-lofi-day",
+    "duck": 23,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 22.9,
+    "muzik_konusmada_lufs_M": -37.3,
+    "muzik_boslukta_lufs_M": -38.3
+   },
+   {
+    "aday": "chill-lofi",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 22.3,
+    "muzik_konusmada_lufs_M": -36.7,
+    "muzik_boslukta_lufs_M": -39.1
+   },
+   {
+    "aday": "apple-cider",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 24.6,
+    "muzik_konusmada_lufs_M": -38.1,
+    "muzik_boslukta_lufs_M": -35.6
+   }
+  ]
+ },
+ {
+  "bolum": "B2",
+  "dilim": [
+   111.86,
+   127.83
+  ],
+  "kelime": 30,
+  "anlatim_tek_hata": 0,
+  "adaylar": [
+   {
+    "aday": "jazz",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 1,
+    "fark_hata": 1,
+    "konusma_alti_fark_db": 22.2,
+    "muzik_konusmada_lufs_M": -36.8,
+    "muzik_boslukta_lufs_M": -37.4
+   },
+   {
+    "aday": "funky-lofi-lp",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 1,
+    "fark_hata": 1,
+    "konusma_alti_fark_db": 21.5,
+    "muzik_konusmada_lufs_M": -35.9,
+    "muzik_boslukta_lufs_M": -36.5
+   }
+  ]
+ },
+ {
+  "bolum": "B3",
+  "dilim": [
+   201.74,
+   220.79
+  ],
+  "kelime": 52,
+  "anlatim_tek_hata": 1,
+  "adaylar": [
+   {
+    "aday": "deliberate-concealment",
+    "duck": 23,
+    "oyuk": true,
+    "hata": 1,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 23.8,
+    "muzik_konusmada_lufs_M": -38.2,
+    "muzik_boslukta_lufs_M": -36.2
+   },
+   {
+    "aday": "unsolved",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 1,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 22.5,
+    "muzik_konusmada_lufs_M": -36.6,
+    "muzik_boslukta_lufs_M": -35.7
+   }
+  ]
+ },
+ {
+  "bolum": "B4",
+  "dilim": [
+   305.43,
+   329.64
+  ],
+  "kelime": 75,
+  "anlatim_tek_hata": 0,
+  "adaylar": [
+   {
+    "aday": "mysterywave",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 23.7,
+    "muzik_konusmada_lufs_M": -38.4,
+    "muzik_boslukta_lufs_M": -38.5
+   },
+   {
+    "aday": "backup-plan",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 21.3,
+    "muzik_konusmada_lufs_M": -35.7,
+    "muzik_boslukta_lufs_M": -35.8
+   }
+  ]
+ },
+ {
+  "bolum": "B5",
+  "dilim": [
+   429.99,
+   454.52
+  ],
+  "kelime": 75,
+  "anlatim_tek_hata": 0,
+  "adaylar": [
+   {
+    "aday": "lofi-again",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 21.3,
+    "muzik_konusmada_lufs_M": -36.0,
+    "muzik_boslukta_lufs_M": -35.8
+   },
+   {
+    "aday": "laundry",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 22.2,
+    "muzik_konusmada_lufs_M": -36.5,
+    "muzik_boslukta_lufs_M": -34.0
+   }
+  ]
+ },
+ {
+  "bolum": "B6",
+  "dilim": [
+   558.81,
+   580.55
+  ],
+  "kelime": 56,
+  "anlatim_tek_hata": 0,
+  "adaylar": [
+   {
+    "aday": "the-way-it-is",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 21.7,
+    "muzik_konusmada_lufs_M": -36.2,
+    "muzik_boslukta_lufs_M": -35.6
+   },
+   {
+    "aday": "slowly-running",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 33.7,
+    "muzik_konusmada_lufs_M": -48.3,
+    "muzik_boslukta_lufs_M": -48.0
+   }
+  ]
+ },
+ {
+  "bolum": "B7",
+  "dilim": [
+   647.21,
+   662.81
+  ],
+  "kelime": 39,
+  "anlatim_tek_hata": 0,
+  "adaylar": [
+   {
+    "aday": "apple-cider",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 25.3,
+    "muzik_konusmada_lufs_M": -41.0,
+    "muzik_boslukta_lufs_M": -37.1
+   },
+   {
+    "aday": "small-fire",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 22.3,
+    "muzik_konusmada_lufs_M": -36.9,
+    "muzik_boslukta_lufs_M": -37.4
+   }
+  ]
+ }
+]

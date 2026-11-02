@@ -3,7 +3,8 @@
   ozgun-hesap-tus      : hesap makinesi plastik tuş (kısa tık + gövde rezonansı 1.1 kHz)
   ozgun-hesap-tus-dizi : 5 tuşluk dizi (rakam girişi, 0.11 sn arayla, hafif rastgele)
   ozgun-yapiskan-not   : yapışkan notun buzdolabına yapışması (bant geçiren gürültü + 180 Hz gövde)
-  ozgun-zarf-kule      : zarf kulesinin büyümesi için kısa yükselen "tık-tık-tık" (3 kâğıt tıkı, artan perde)"""
+  ozgun-zarf-kule      : zarf kulesinin büyümesi için kısa yükselen "tık-tık-tık" (3 kâğıt tıkı, artan perde)
+  ozgun-duduk          : hakem düdüğü (F6b, animasyon cue "düdük")"""
 import subprocess, os, numpy as np
 SR = 48000; rng = np.random.default_rng(5400); d = os.path.dirname(os.path.abspath(__file__))
 def t(s): return np.arange(int(SR * s)) / SR
@@ -27,3 +28,7 @@ for i, p in enumerate([1.0, 1.19, 1.41]):
     b = t(0.12); k = bp(rng.standard_normal(len(b)), 1200 * p, 4000 * p) * np.exp(-b * 80) + np.sin(2 * np.pi * 420 * p * b) * np.exp(-b * 50) * 0.5
     s = int(SR * i * 0.16); kule[s:s + len(k)] += k
 yaz("ozgun-zarf-kule", kule)
+# ozgun-duduk: hakem düdüğü (2.9 kHz + titreşim 28 Hz, hava gürültüsü), 0.45 sn — sona eklendi, önceki dosyaların tohum dizisi değişmez
+a = t(0.45); f = 2900 + 120 * np.sin(2 * np.pi * 28 * a)
+ton = np.sin(2 * np.pi * np.cumsum(f) / SR) * (1 - np.exp(-a * 60)) * np.exp(-np.maximum(a - 0.35, 0) * 40)
+yaz("ozgun-duduk", ton + bp(rng.standard_normal(len(a)), 2000, 6000) * 0.08 * np.exp(-np.maximum(a - 0.35, 0) * 40))
