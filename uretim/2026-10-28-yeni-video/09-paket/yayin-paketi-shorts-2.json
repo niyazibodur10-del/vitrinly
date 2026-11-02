@@ -1,0 +1,39 @@
+{
+  "sema": "yayin-paketi/1",
+  "_not": "S08 Shorts 2. Related video = uzun video (Studio adımı, YAYIN.md). paket-uret.py ile üretildi.",
+  "tur": "shorts",
+  "dosyalar": {
+    "video": "../08-kurgu/shorts-2.mp4",
+    "altyazilar": []
+  },
+  "metadata": {
+    "baslik": "US Debt Was Bigger Than the Economy in 1946. What Happened?",
+    "aciklama": "In 1946, US debt held by the public was bigger than the whole economy. By 1974 it was under a quarter of it, even though the debt itself grew. The economy grew around it, and prices rose too. A family can't do that. History, not a forecast.\n\nSource: OMB Historical Tables, Table 7.1 (debt held by the public, % of GDP).\n\nThe whole kitchen table: \"If America Earned $5,400 a Month, Here's Its Budget\" on our channel, https://www.youtube.com/@toonomy\n\n[YER TUTUCU: müzik atfı F6 — 06-muzik/atif-satirlari.md]\n\nNot financial advice. For educational purposes only. Leo is a fictional cartoon character, not a financial adviser.\nNarration voice is AI-generated. Visuals are AI-assisted illustrations animated by our team.\n\n#Shorts #NationalDebt #EconomicHistory",
+    "etiketler": [
+      "national debt",
+      "debt to gdp",
+      "us debt history",
+      "economic history",
+      "post war economy",
+      "shorts",
+      "toonomy"
+    ],
+    "bolumler": [],
+    "kategori_id": "27",
+    "varsayilan_dil": "en",
+    "ses_dili": "en"
+  },
+  "durum": {
+    "gizlilik": "private",
+    "cocuklara_ozel": false,
+    "sentetik_medya": true,
+    "lisans": "youtube",
+    "gomulebilir": true,
+    "yayin_zamani": "2026-11-07T09:00:00-05:00"
+  },
+  "oynatma_listesi_id": null,
+  "onay": {
+    "niyazi_onayi": false,
+    "tarih": null
+  }
+}
