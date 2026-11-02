@@ -19,3 +19,4 @@
 - 2026-10-27: Hook için konuşma hızını ölç (kelimeler-hizali.json, 'words' anahtarı, s/e): S03 ilk 30 sn 168 kelime/dk < rakip bandı 175–225 → hook kötümser 8. ses-yonetmeni ile paylaşılacak ders.
 - 2026-11-02 (F2, 12 senaryo): Arama medyanı ≠ talep: S06 (10 yıllık %5) arama medyanı 4,6 K "zayıf" görünürken aynı konuda yerel medyan 9,8x çıktı. Her adayın en yakın 2–3 videosunu `viralite-outlier.py` ile ölç (30 video ≈ 3 dk); haber kanalı outlier'ı (196x) niş dışı → bir kademe düşük.
 - 2026-11-02: Duyarlılığı **slot uygun havuzda** koş; slot dışı aday (A, B slotunda) tam havuzda 21/56 sahte kırılganlık üretti, B havuzunda 1/56. Başlık alternatifleri de varyantla puanla (S06 Alt-1 rakip kalıbı → −1.5).
+- 2026-11-02 (F8, S08 son puan): ikinci kez F8 = F2 (7.25); hook kanıtı için 6 karelik tek kontakt (ffmpeg select+tile) + kelimeler-hizali kpm yeterli, tam video izlemeye gerek yok. F8a raporuna video/thumbnail sha256 yaz → F8b'de "aynı" tek satır.
