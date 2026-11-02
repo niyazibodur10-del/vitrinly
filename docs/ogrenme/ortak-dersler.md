@@ -69,6 +69,7 @@ Video klasöründe kalan kapı betikleri (1929 videosu, `uretim/2026-10-26-1929-
 - YouTube Data API `search` ayrı günlük tavanlı (15 sorguda 429), proje paylaşımlı → `playlistItems`/`videos` (1 birim) tercih. Kota dolunca `python3 -m yt_dlp --flat-playlist --print "%(id)s" "ytsearch15:<sorgu>"` + `videos.list`. yt-dlp otomatik altyazı ~8 videoda sonra bot kontrolü.
 - `marketing-skills:youtube-full` bir veri aracıdır (transkript/RSS/arama); SEO veya retention kuralı vermez.
 - Wikimedia pageviews: UA başlığı şart, istekler arası ≥4–8 sn. Link kanıtı = HTTP 200 + sayfada anahtar kelime (soft-404 var).
+- 2026-11-02 (viralite-analisti): arama medyanı talebi küçümseyebilir (S06 "10-year 5%" medyan 4,6 K ama aynı konuda 9,8x yerel outlier). trend-avcisi "talep zayıf" demeden önce en iyi 2–3 videonun yerel medyan skoruna baksın (`uretim/2026-10-28-yeni-video/02-senaryo/viralite-outlier.py`, search yok).
 - 2026-10-28 (trend-avcisi): güncel haber kaynağı için Google News RSS + `googlenewsdecoder` (PyPI) açık ve hızlı; Reuters/WSJ/Bloomberg/NYT curl'de kapalı. Hazır betik: `uretim/2026-10-28-yeni-video/01-arastirma/olcum/kaynak_bul.py`. finans-dogrulayici F3'te aynı yolla birincil kaynak bulabilir.
 
 ## Görsel ve thumbnail
