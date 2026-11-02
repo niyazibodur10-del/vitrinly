@@ -5,10 +5,13 @@ import { ALTYAZI, SAHNELER } from "./veri-sahne";
 import { Doku, fredoka } from "./ortak";
 import { f } from "./kit";
 import { S01, S12 } from "./sahne1";
+import { S02, S03, S04, S05, S06, S07, S08, S09, S10, S11 } from "./sahne2";
+import { S13, S14, S15, S16, S17, S18, S19, S20 } from "./sahne3";
+import { S21, S22, S23, S24, S25, S26, S27 } from "./sahne4";
 import { plan } from "./zaman";
 
 // Tam video (16:9) + sahne başına kompozisyonlar + kritik yol testi (animasyon-yonetmeni). Kaynak desen: video/src/k1929/Tam.tsx
-export const SAHNE_BILESEN: Record<string, React.FC> = { S01, S12 };
+export const SAHNE_BILESEN: Record<string, React.FC> = { S01, S02, S03, S04, S05, S06, S07, S08, S09, S10, S11, S12, S13, S14, S15, S16, S17, S18, S19, S20, S21, S22, S23, S24, S25, S26, S27 };
 export const FPS = 30;
 export const kare = (s: number) => Math.round(s * FPS);
 export const TAM_KARE = kare(SAHNELER[SAHNELER.length - 1].bitis);
