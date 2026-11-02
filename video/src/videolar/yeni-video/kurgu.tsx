@@ -61,6 +61,25 @@ const Kanca14: React.FC = () => (
   </Serit>
 );
 
+// S05 G1 grafiği 101,7–112,06 arası durağan (kadans: 11,25 sn boşluk) → kurgu vurgusu, yeni rakam yok:
+// 106,62 "Three envelopes" → üç dolu çubuğun üstünde köşeli parantez + "3 ENVELOPES"; 109,10 "three thousand seven hundred" → $3,765 çerçevesi
+const S05Vurgu: React.FC = () => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const t = frame / fps;
+  if (t < 106.62 || t >= 112.06) return null;
+  const p = interpolate(t, [106.62, 106.9], [0, 1], { ...CL, easing: Easing.out(Easing.cubic) });
+  const q = interpolate(t, [109.1, 109.35], [0, 1], { ...CL, easing: Easing.out(Easing.back(1.8)) });
+  const sari = "#ffd43b";
+  return (
+    <AbsoluteFill>
+      <div style={{ position: "absolute", left: 232, top: 262, width: 984 * p, height: 14, borderTop: `6px solid ${sari}`, borderLeft: `6px solid ${sari}`, borderRight: p > 0.98 ? `6px solid ${sari}` : undefined, filter: "drop-shadow(0 2px 0 #000)" }} />
+      <div style={{ position: "absolute", right: 1920 - 1216, top: 200, opacity: p, fontFamily: anton, fontSize: 48, color: sari, textShadow: "0 3px 0 #000" }}>3 ENVELOPES</div>
+      {t >= 109.1 ? <div style={{ position: "absolute", left: 212, top: 570, width: 660, height: 140, border: `7px solid ${sari}`, borderRadius: 18, opacity: Math.min(1, q * 1.4), scale: String(0.85 + 0.15 * q), boxShadow: "0 0 24px rgba(255,212,59,0.45)" }} /> : null}
+    </AbsoluteFill>
+  );
+};
+
 export const Final: React.FC<{ varyant?: string }> = ({ varyant = KURGU_VARYANT }) => {
   const v = VARYANT[varyant];
   return (
@@ -69,6 +88,7 @@ export const Final: React.FC<{ varyant?: string }> = ({ varyant = KURGU_VARYANT 
       {v.baslik ? <BaslikYankisi /> : null}
       {v.vaat ? <VaatSeridi /> : null}
       <Kanca14 />
+      <S05Vurgu />
       {ABONE_ANA.map((a) => (
         <Sequence key={a.kare} from={a.kare} durationInFrames={a.sure} name={`AboneOl-${a.kare}`} layout="none">
           <AboneOl duzen="yatay" taraf={a.taraf} sure={a.sure / 30} ust={a.ust ?? undefined} />
@@ -80,7 +100,7 @@ export const Final: React.FC<{ varyant?: string }> = ({ varyant = KURGU_VARYANT 
 };
 
 // ---------------- Shorts (9:16) ----------------
-// Uzun videoya köprü kartı (son ~1–2,5 sn): güvenli alanda (x 70–810, y 1130–1300), alttaki "ilgili video" bağlantısını işaret eder
+// Uzun videoya köprü kartı (son ~1–2,5 sn): güvenli alanda (x 70–810, y 960–1130; ok ≤1300 → altyazı ≈1340 üstü; ilk render'da ok altyazıya biniyordu), alttaki "ilgili video" bağlantısını işaret eder
 const KopruKarti: React.FC<{ ust: string; alt: string }> = ({ ust, alt }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -89,11 +109,11 @@ const KopruKarti: React.FC<{ ust: string; alt: string }> = ({ ust, alt }) => {
   const ok = Math.sin(t * Math.PI * 3) * 10;
   return (
     <AbsoluteFill>
-      <div style={{ position: "absolute", left: 70, top: 1130, width: 740, padding: "24px 30px", borderRadius: 22, background: "#ffd43b", border: "6px solid #0b0b0b", boxShadow: "0 10px 0 #0b0b0b", textAlign: "center", opacity: p, scale: String(0.8 + 0.2 * p) }}>
+      <div style={{ position: "absolute", left: 70, top: 960, width: 740, padding: "24px 30px", borderRadius: 22, background: "#ffd43b", border: "6px solid #0b0b0b", boxShadow: "0 10px 0 #0b0b0b", textAlign: "center", opacity: p, scale: String(0.8 + 0.2 * p) }}>
         <div style={{ fontFamily: anton, fontSize: 56, color: "#0b0b0b", lineHeight: 1.05 }}>{ust}</div>
         <div style={{ fontFamily: fredoka, fontWeight: 700, fontSize: 36, color: "#0b0b0b", marginTop: 8 }}>{alt}</div>
       </div>
-      <div style={{ position: "absolute", left: 418, top: 1380 + ok, fontFamily: anton, fontSize: 90, color: "#ffd43b", textShadow: "0 4px 0 #000", opacity: p }}>↓</div>
+      <div style={{ position: "absolute", left: 418, top: 1190 + ok, fontFamily: anton, fontSize: 90, color: "#ffd43b", textShadow: "0 4px 0 #000", opacity: p }}>↓</div>
     </AbsoluteFill>
   );
 };
