@@ -75,7 +75,7 @@ export const S13: React.FC = () => {
     <AbsoluteFill style={{ background: "#05070f" }}>
       <Kurgu
         kesmeler={[
-          [K[0], <LeoCekim key="a" id="S13" tip="orta" t0={K[0]} t1={K[1]} tohum={15} on={<Zarf x={1490} y={850} w={380} renk="faiz" etiket="INTEREST" alt="$1,050 / MO" an={-1} giris="yok" donme={4} yaziBoy={56} />} />],
+          [K[0], <LeoCekim key="a" id="S13" tip="orta" t0={K[0]} t1={K[1]} tohum={15} on={<Zarf x={1560} y={830} w={320} renk="faiz" etiket="INTEREST" alt="$1,050 / MO" an={-1} giris="yok" donme={4} yaziBoy={56} />} />],
           [
             K[1],
             <GrafikZemin key="b">

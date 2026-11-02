@@ -271,7 +271,7 @@ export const S05: React.FC = () => {
               tohum={8}
               on={
                 <>
-                  <Zarf x={420} y={860} w={360} renk="ss" etiket="SOCIAL SECURITY" alt={t >= k.about1 ? "$1,667 / MO" : undefined} an={k.social} giris="dus" donme={-5} yaziBoy={40} />
+                  <Zarf x={350} y={830} w={320} renk="ss" etiket="SOCIAL SECURITY" alt={t >= k.about1 ? "$1,667 / MO" : undefined} an={k.social} giris="dus" donme={-5} yaziBoy={40} />
                   <HesapMakinesi x={1530} y={850} w={200} deger={t >= k.about1 ? <Sayac an={k.about1} sure={0.6} bas={0} bit={B.ss} /> : "0"} />
                 </>
               }
@@ -340,7 +340,7 @@ export const S06: React.FC = () => {
               t0={K[1]}
               t1={K[2]}
               tohum={9}
-              on={<Zarf x={1500} y={860} w={330} renk="faiz" etiket={t >= k.interest ? "INTEREST" : ""} alt={t >= k.about ? "$1,050 / MO" : undefined} an={k.five - 0.1} giris="kay" donme={4} yaziBoy={52} />}
+              on={<Zarf x={1560} y={830} w={300} renk="faiz" etiket={t >= k.interest ? "INTEREST" : ""} alt={t >= k.about ? "$1,050 / MO" : undefined} an={k.five - 0.1} giris="kay" donme={4} yaziBoy={52} />}
             />,
           ],
           [
@@ -706,8 +706,8 @@ export const S11: React.FC = () => {
               tohum={14}
               on={
                 <>
-                  <AbsoluteFill style={{ background: `radial-gradient(circle at 1500px 850px, rgba(0,0,0,0) 170px, rgba(0,0,0,${0.55 * interpolate(t, [k.strange, k.strange + 0.4], [0, 1], CL)}) 300px)` }} />
-                  <Zarf x={1500} y={860} w={320} renk="faiz" etiket="5" an={-1} giris="yok" donme={4} yaziBoy={90} />
+                  <AbsoluteFill style={{ background: `radial-gradient(circle at 1560px 830px, rgba(0,0,0,0) 170px, rgba(0,0,0,${0.55 * interpolate(t, [k.strange, k.strange + 0.4], [0, 1], CL)}) 300px)` }} />
+                  <Zarf x={1560} y={830} w={300} renk="faiz" etiket="5" an={-1} giris="yok" donme={4} yaziBoy={90} />
                 </>
               }
             />,

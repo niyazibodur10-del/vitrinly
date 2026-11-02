@@ -13,7 +13,7 @@ export const S01: React.FC = () => {
   const p = interpolate(t, [0.15, k.ev], [0, 1], { ...CL, easing: EIO });
   const masaUstu = (
     <>
-      <Zarf x={360} y={880} w={340} renk="diger" etiket={<Sayac an={k.five} bas={0} bit={5400} onEk="$" />} alt="IN" an={k.brings + 0.1} giris="dus" donme={-6} yaziBoy={62} />
+      <Zarf x={330} y={830} w={300} renk="diger" etiket={<Sayac an={k.five} bas={0} bit={5400} onEk="$" />} alt="IN" an={k.brings + 0.1} giris="dus" donme={-6} yaziBoy={56} />
       {t >= k.ev ? <EvMaketi x={1160} y={880} s={0.72} /> : null}
     </>
   );
@@ -48,8 +48,10 @@ export const S01: React.FC = () => {
               <NotYazi kutu={G10_NOT[1]} an={k.seven} renk="#b3261e" boyut={46}>
                 ~$7,400 OUT
               </NotYazi>
-              <NotYazi kutu={G10_NOT[2]} an={k.eksi} renk="#fff" zemin={Math.floor((t - k.eksi) * 4) % 2 === 0 ? "#d9443a" : "#a8261e"} boyut={50}>
-                −$2,000 /MO
+              <NotYazi kutu={G10_NOT[2]} an={k.eksi} renk="#fff" zemin={Math.floor((t - k.eksi) * 4) % 2 === 0 ? "#d9443a" : "#a8261e"} boyut={40}>
+                <span style={{ whiteSpace: "nowrap" }}>−$2,000</span>
+                <br />
+                /MO
               </NotYazi>
             </Dolap>,
           ],
@@ -94,7 +96,7 @@ const MATRUSKA = (k: Record<string, number>) => {
 export const S12: React.FC = () => {
   const { k } = plan("S12");
   const t = useT();
-  const zarfMasa = <Zarf x={400} y={870} w={330} renk="faiz" etiket="INTEREST" alt="$1,050 / MO" an={0.25} giris="kay" donme={-5} yaziBoy={52} />;
+  const zarfMasa = <Zarf x={330} y={830} w={300} renk="faiz" etiket="INTEREST" alt="$1,050 / MO" an={0.25} giris="kay" donme={-5} yaziBoy={48} />;
   const L = { s: 0.58, dy: -70 };
   const ic = leoPx(724, 590, L);
   const dis = leoPx(760, 850, L);

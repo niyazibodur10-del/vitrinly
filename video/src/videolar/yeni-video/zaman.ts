@@ -118,6 +118,13 @@ const P: Record<string, () => Plan> = {
         [0, k.heres - 0.05],
         [k.so1 - 0.05, k.so2 - 0.05],
       ],
+      kes: [
+        [0, "masa orta: kırmızı zarf", true],
+        [k.watch - 0.05, "punch-in Leo G05", true],
+        [k.heres - 0.05, "açık çubuğu"],
+        [k.so1 - 0.05, "Leo G05 ters renk", true],
+        [k.so2 - 0.05, "matruşka"],
+      ],
     };
   },
   S02: () => {

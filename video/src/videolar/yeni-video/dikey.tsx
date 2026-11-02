@@ -91,7 +91,7 @@ const DS06: React.FC = () => {
         ],
         [
           K[1],
-          <DMasa key="b" id="S06" tohum={9} kamera={kam("orta", K[1], K[2])} on={<Zarf x={300} y={1235} w={380} renk="faiz" etiket={t >= k.interest ? "INTEREST" : ""} alt={t >= k.about ? "$1,050 / MO" : undefined} an={k.five - 0.1} giris="kay" donme={-4} yaziBoy={60} />} />,
+          <DMasa key="b" id="S06" tohum={9} kamera={kam("orta", K[1], K[2])} on={<Zarf x={290} y={1180} w={340} renk="faiz" etiket={t >= k.interest ? "INTEREST" : ""} alt={t >= k.about ? "$1,050 / MO" : undefined} an={k.five - 0.1} giris="kay" donme={-4} yaziBoy={60} />} />,
         ],
         [
           K[2],
@@ -159,7 +159,7 @@ const DS12: React.FC = () => {
   const L = { dy: -40 };
   const ic = leoD(724, 590, LS, L.dy), dis = leoD(760, 850, LS, L.dy);
   const anlar = [K[4], k.i2, k.i3, k.i4, k.i5, k.i5 + 0.75];
-  let y = 1180, w = 640;
+  let y = 1010, w = 600;
   const kule = anlar.map((an, n) => {
     const o = { an, y, w, renk: (n % 2 === 0 ? "borc" : "faiz") as "borc" | "faiz" };
     y -= w * 0.5; w *= 0.8;
@@ -169,7 +169,7 @@ const DS12: React.FC = () => {
   return (
     <Kurgu
       kesmeler={[
-        [K[0], <DMasa key="a" id="S12" tohum={5} kamera={kam("orta", K[0], K[1])} on={<Zarf x={300} y={1235} w={380} renk="faiz" etiket="INTEREST" alt="$1,050 / MO" an={0.25} giris="kay" donme={-5} yaziBoy={60} />} />],
+        [K[0], <DMasa key="a" id="S12" tohum={5} kamera={kam("orta", K[0], K[1])} on={<Zarf x={290} y={1180} w={340} renk="faiz" etiket="INTEREST" alt="$1,050 / MO" an={0.25} giris="kay" donme={-5} yaziBoy={60} />} />],
         [
           K[1],
           <DMasa
@@ -465,7 +465,7 @@ export const DEk: React.FC<{ ek: "sh1" | "sh2"; altyazi?: boolean }> = ({ ek, al
     </AbsoluteFill>
   );
   const sh1: [number, React.ReactNode][] = [
-    [bas(0), <LeoEk key="a" kamera={kam("orta", 0, 6)} on={<Zarf x={300} y={1235} w={380} renk="faiz" etiket="INTEREST" alt="$1,050 / MO" an={1.2} giris="kay" donme={-5} yaziBoy={60} />} ust={<><Yazi an={0.1} x={490} y={260} boyut={66} genislik={820}>IF THE U.S. WERE A FAMILY…</Yazi><Yazi an={1.0} x={490} y={360} boyut={92} renk={RENK.sari}>$5,400 / MO IN</Yazi></>} />],
+    [bas(0), <LeoEk key="a" kamera={kam("orta", 0, 6)} on={<Zarf x={290} y={1180} w={340} renk="faiz" etiket="INTEREST" alt="$1,050 / MO" an={1.2} giris="kay" donme={-5} yaziBoy={60} />} ust={<><Yazi an={0.1} x={490} y={260} boyut={66} genislik={820}>IF THE U.S. WERE A FAMILY…</Yazi><Yazi an={1.0} x={490} y={360} boyut={92} renk={RENK.sari}>$5,400 / MO IN</Yazi></>} />],
     [bas(1), <LeoEk key="b" kamera={kam("yakin", bas(1), bas(1) + 3)} ust={<Damga an={bas(1) + 0.9} x={490} y={330} metin="BUYS NOTHING" boyut={96} />} />],
     [bas(2), <LeoEk key="c" kamera={kam("orta", bas(2), bas(2) + 3)} ust={<Yazi an={bas(2) + 0.2} x={490} y={300} boyut={70} genislik={820} renk={RENK.sari}>FULL KITCHEN TABLE → LONG VIDEO</Yazi>} />],
   ];
@@ -487,12 +487,27 @@ export const DEk: React.FC<{ ek: "sh1" | "sh2"; altyazi?: boolean }> = ({ ek, al
       <Audio src={f(ek === "sh1" ? "shorts-1-ek.wav" : "shorts-2-ek.wav")} />
       <Kurgu kesmeler={(ek === "sh1" ? sh1 : sh2).slice(0, Math.max(1, c.length))} />
       <Doku />
-      {altyazi && c[ci] ? (
-        <div style={{ position: "absolute", left: 160, width: 760, bottom: 430, textAlign: "center", fontFamily: fredoka, fontWeight: 700, fontSize: 58, color: "#fff", WebkitTextStroke: "10px #0b0b0b", paintOrder: "stroke fill", textTransform: "uppercase" }}>
-          {c[ci].metin.replace(/\[(.+?)\]\(.+?\)/g, "$1")}
-        </div>
-      ) : null}
+      {altyazi && c[ci] ? <EkAltyazi metin={c[ci].metin} bas={c[ci].bas} son={c[ci].son} t={t} /> : null}
     </AbsoluteFill>
+  );
+};
+
+// Ek kayıt altyazısı: cümle ≤6 kelimelik öbeklere, süre kelime harf sayısıyla orantılı
+const EkAltyazi: React.FC<{ metin: string; bas: number; son: number; t: number }> = ({ metin, bas, son, t }) => {
+  const ws = metin.replace(/\[(.+?)\]\(.+?\)/g, "$1").split(" ");
+  const obek: string[][] = [];
+  for (let i = 0; i < ws.length; i += 6) obek.push(ws.slice(i, i + 6));
+  const top = ws.reduce((a, w) => a + w.length + 1, 0);
+  let acc = bas, secili = obek[0];
+  for (const o of obek) {
+    const d = ((son - bas) * o.reduce((a, w) => a + w.length + 1, 0)) / top;
+    if (t >= acc - 0.05) secili = o;
+    acc += d;
+  }
+  return (
+    <div style={{ position: "absolute", left: 160, width: 760, bottom: 430, textAlign: "center", fontFamily: fredoka, fontWeight: 700, fontSize: 62, color: "#fff", WebkitTextStroke: "10px #0b0b0b", paintOrder: "stroke fill", textTransform: "uppercase" }}>
+      {secili.join(" ")}
+    </div>
   );
 };
 
