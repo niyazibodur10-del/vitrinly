@@ -84,7 +84,7 @@
   },
   "oynatma_listesi_id": null,
   "onay": {
-    "niyazi_onayi": false,
-    "tarih": null
+    "niyazi_onayi": true,
+    "tarih": "2026-11-03"
   }
 }
