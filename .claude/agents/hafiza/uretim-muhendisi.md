@@ -26,3 +26,5 @@
 - 2026-10-28: Yeniden üretim tarifi temiz worktree'de 2 gizli hata buldu (stdin yutma, git dışı müzik); Shorts bit-aynı, final PSNR 68,8 dB.
 - 2026-11-02 (earshot): Seyrek kullanılan ağır araç (2,5 GB) → senkron değil ayrık arka plan işi (`setsid nohup`, flock, damga en son) + sarmalayıcı (`tools/earshot`) ilk kullanımda bekler/kurar. Ölçüm: kurulum.sh dönüşü 0,9 sn; temiz kurulum 19 sn (sıcak uv), soğuk uv venv 34 sn + model ~16 sn; kurulu 0,2 sn.
 - 2026-11-02: Disk %85 (6 GB boş) → büyük kurulumlara boş alan eşiği (earshot 4 GB, `ES_MIN_GB`), aşılırsa atla + uyarı, ana kurulumu düşürme. Temiz testte taşınan kopyaları diff'le doğrulayıp sil.
+- 2026-11-03 (kanal fabrikası): kanala özel sabitler tek dosyada (`kanal.json` + stdlib `tools/kanal_ayar.py`; Remotion JSON import ile okur). Başka ajanın yama listesi olan dosyalara (ajan .md) dokunma, önce `eski` dizgilerini doğrula. Global sed'i heredoc içinde EOF'lu metinle yazma → betiği dosyaya yaz.
+- 2026-11-03: token önceliği "ilk kaynak" değil "geçerli ilk kaynak" olmalı (ortam düşükse dosya). Oturum ortamındaki PY/TTS_PY başka ARAC gösterebilir → test betiği ARAC_DIZINI'nden türetir.

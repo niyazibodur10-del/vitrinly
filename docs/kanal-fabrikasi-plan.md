@@ -23,3 +23,8 @@
 
 ## Yapacaklar
 `uretim-muhendisi` (şablon, kancalar, kanal.json parametreleri) ‖ `ik-direktoru` (otomatik kadro mantığı, sihirbaz komutu) → boş oturumda uçtan uca test → hakem.
+
+## Durum (2026-11-03)
+- Şablon yayında: github.com/niyazibodur10-del/uretim-fabrikasi- (main 01bbd3f). İçerik: 18 ajan + `/kurulum` sihirbazı (niş → alt niş → kanal adı → otomatik kadro → karakter → ses → kimlik → bağlantılar → deneme videosu), `kanal.json` + `tools/kanal_ayar.py`, `tools/kadro-kur.py` (plan/uygula/dogrula/geri-al), başlangıç CLAUDE.md (bloklu birleştirme), token geri dönüşü.
+- Kanıt: temiz klonda kurulum.sh 57 sn hatasız; ornek-video.sh tam zincir GEÇTİ (−13,9 LUFS); test_yayin 29 OK, test_kadro_kur 10/10; "tarih" kuru denemesi GEÇTİ; eski kanal izi grep 0; gizli bilgi taraması temiz.
+- Açık: gerçek yeni hesapta uçtan uca deneme (Niyazi).
