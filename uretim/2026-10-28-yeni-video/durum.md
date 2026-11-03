@@ -34,3 +34,9 @@
 - F3 (senaryo-yazari): S08 zorunlu düzeltmeler D1–D7, P1–P4, H1–H8 → `02-senaryo/senaryo-karari.md` §4. Metinde yayın gününe bağlı zaman sözcüğü yok (kayma güvencesi H7).
 
 - 2026-11-02 17:35 UTC — F10 teslim edildi. Niyazi: "Yarın yükleyelim" → yükleme 2026-11-03 09:00 UTC (hatırlatıcı kuruldu); yayın zamanları değişmedi (uzun 11-04 17:00Z, Shorts 11-05/11-07 14:00Z).
+
+## F11 — Yayın (2026-11-03, Niyazi onayı 11-02 "Yarın yükleyelim")
+- Uzun: ghLjMbrweCw · private → publishAt 2026-11-04T17:00Z · thumbnail A1 · liste "Money News, Explained" PLD0_rVnRy-yo (yeni açıldı).
+- Shorts-1: YLZQj6ecYE4 → 2026-11-05T14:00Z · Shorts-2: 2kaz6kXdZlw → 2026-11-07T14:00Z · ikisi "Money Stories in 60 Seconds | Shorts" PLZTj26FYW6IY.
+- Yetki: ortam değişkenindeki eski refresh token süresi dolmuş (invalid_grant); Niyazi cihaz koduyla yeniden yetki verdi (dosyada). Ortam değişkeni Niyazi tarafından güncellenmeli.
+- Studio'da kalan (Niyazi): SRT (08-kurgu/final.en.srt), uç ekran 11:07–11:18, Shorts Related video → ghLjMbrweCw, sabit yorum (paket.md §7), Test & Compare A1/C1/B1, plan/görünürlük kontrolü.
