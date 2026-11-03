@@ -19,3 +19,6 @@
 - 2026-10-28: Yeni Niyazi kuralı iki ajanı "sahip" diye anıyorsa (abone animasyonu) zinciri tek yerleştirme sahibine indir ve CLAUDE.md yamasını koordinatöre öner.
 - 2026-11-02 (earshot): `gh api` repo'ya erişemedi (oturum izni yok) ama `git clone --depth` public repo için çalıştı. Aynı adlı 15+ repo → tarifle (işlev) eşleştir, yıldız/commit/lisansla kanıtla.
 - 2026-11-02: Dış araç ajan değil araçsa yeni ajan alma; proje skill'i yaz, mevcut tek sahiplere bağla. skill-security-auditor FAIL'ini satır satır oku (torch `.eval()`, iç importlib yanlış pozitif); dış Python'u repo dizininden değil `-I` ile/ayrı venv'den çalıştır.
+
+- (2026-11-03, fabrika) Kadro kurulumunda kural işi betikte, yargı işi denetlenebilir yama dosyasında; her uygulama yedekli ve geri alınabilir.
+- (2026-11-03, fabrika) Niş ölçümünde YouTube aramasına `videoDuration=medium` ekle; yoksa sonuçlar Shorts ile kirlenir.
