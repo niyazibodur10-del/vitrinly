@@ -1,0 +1,1119 @@
+{
+ "model": "small.en",
+ "cumleler": [
+  {
+   "i": 0,
+   "metin": "One hundred twenty-four trillion dollars is expected to pass down in America by twenty forty-eight, Cerulli estimates.",
+   "whisper": "$124 trillion is expected to pass down in America by 2048, Sarily estimates.",
+   "kelimeler": [
+    {
+     "w": "$124",
+     "p": 0.749
+    },
+    {
+     "w": "trillion",
+     "p": 0.863
+    },
+    {
+     "w": "is",
+     "p": 0.989
+    },
+    {
+     "w": "expected",
+     "p": 1.0
+    },
+    {
+     "w": "to",
+     "p": 0.999
+    },
+    {
+     "w": "pass",
+     "p": 0.998
+    },
+    {
+     "w": "down",
+     "p": 0.999
+    },
+    {
+     "w": "in",
+     "p": 0.998
+    },
+    {
+     "w": "America",
+     "p": 0.996
+    },
+    {
+     "w": "by",
+     "p": 0.999
+    },
+    {
+     "w": "2048,",
+     "p": 0.678
+    },
+    {
+     "w": "Sarily",
+     "p": 0.402
+    },
+    {
+     "w": "estimates.",
+     "p": 0.997
+    }
+   ]
+  },
+  {
+   "i": 1,
+   "metin": "One hundred twenty-four trillion dollars is expected to pass down in America by twenty forty-eight, [Cerulli](/səɹˈuli/) estimates.",
+   "whisper": "$124 trillion is expected to pass down in America by 2048, Cerule estimates.",
+   "kelimeler": [
+    {
+     "w": "$124",
+     "p": 0.742
+    },
+    {
+     "w": "trillion",
+     "p": 0.865
+    },
+    {
+     "w": "is",
+     "p": 0.981
+    },
+    {
+     "w": "expected",
+     "p": 0.999
+    },
+    {
+     "w": "to",
+     "p": 0.999
+    },
+    {
+     "w": "pass",
+     "p": 0.998
+    },
+    {
+     "w": "down",
+     "p": 0.998
+    },
+    {
+     "w": "in",
+     "p": 0.997
+    },
+    {
+     "w": "America",
+     "p": 0.996
+    },
+    {
+     "w": "by",
+     "p": 0.999
+    },
+    {
+     "w": "2048,",
+     "p": 0.609
+    },
+    {
+     "w": "Cerule",
+     "p": 0.472
+    },
+    {
+     "w": "estimates.",
+     "p": 0.914
+    }
+   ]
+  },
+  {
+   "i": 2,
+   "metin": "One hundred twenty-four trillion dollars is expected to pass down in America by twenty forty-eight, [Cerulli](/ʧəɹˈuli/) estimates.",
+   "whisper": "$124 trillion is expected to pass down in America by 2048, Cherouli estimates.",
+   "kelimeler": [
+    {
+     "w": "$124",
+     "p": 0.679
+    },
+    {
+     "w": "trillion",
+     "p": 0.912
+    },
+    {
+     "w": "is",
+     "p": 0.986
+    },
+    {
+     "w": "expected",
+     "p": 1.0
+    },
+    {
+     "w": "to",
+     "p": 0.999
+    },
+    {
+     "w": "pass",
+     "p": 0.998
+    },
+    {
+     "w": "down",
+     "p": 0.998
+    },
+    {
+     "w": "in",
+     "p": 0.998
+    },
+    {
+     "w": "America",
+     "p": 0.996
+    },
+    {
+     "w": "by",
+     "p": 0.999
+    },
+    {
+     "w": "2048,",
+     "p": 0.697
+    },
+    {
+     "w": "Cherouli",
+     "p": 0.541
+    },
+    {
+     "w": "estimates.",
+     "p": 0.998
+    }
+   ]
+  },
+  {
+   "i": 3,
+   "metin": "It's a forecast from a research firm called [Cerulli](/səɹˈuli/) Associates, made in late twenty twenty-four.",
+   "whisper": "It's a forecast from a research firm called Cerule Associates, made in late 2024.",
+   "kelimeler": [
+    {
+     "w": "It's",
+     "p": 0.95
+    },
+    {
+     "w": "a",
+     "p": 0.989
+    },
+    {
+     "w": "forecast",
+     "p": 0.992
+    },
+    {
+     "w": "from",
+     "p": 0.998
+    },
+    {
+     "w": "a",
+     "p": 0.997
+    },
+    {
+     "w": "research",
+     "p": 0.999
+    },
+    {
+     "w": "firm",
+     "p": 0.997
+    },
+    {
+     "w": "called",
+     "p": 0.995
+    },
+    {
+     "w": "Cerule",
+     "p": 0.572
+    },
+    {
+     "w": "Associates,",
+     "p": 0.93
+    },
+    {
+     "w": "made",
+     "p": 0.984
+    },
+    {
+     "w": "in",
+     "p": 0.998
+    },
+    {
+     "w": "late",
+     "p": 0.999
+    },
+    {
+     "w": "2024.",
+     "p": 0.94
+    }
+   ]
+  },
+  {
+   "i": 4,
+   "metin": "You can see it in [Cerulli's](/səɹˈuliz/) numbers.",
+   "whisper": "You can see it in Cerule's numbers.",
+   "kelimeler": [
+    {
+     "w": "You",
+     "p": 0.764
+    },
+    {
+     "w": "can",
+     "p": 0.998
+    },
+    {
+     "w": "see",
+     "p": 0.998
+    },
+    {
+     "w": "it",
+     "p": 0.999
+    },
+    {
+     "w": "in",
+     "p": 0.998
+    },
+    {
+     "w": "Cerule's",
+     "p": 0.552
+    },
+    {
+     "w": "numbers.",
+     "p": 0.596
+    }
+   ]
+  },
+  {
+   "i": 5,
+   "metin": "Meet the Okafors.",
+   "whisper": "Meet the Aka Force.",
+   "kelimeler": [
+    {
+     "w": "Meet",
+     "p": 0.873
+    },
+    {
+     "w": "the",
+     "p": 0.974
+    },
+    {
+     "w": "Aka",
+     "p": 0.42
+    },
+    {
+     "w": "Force.",
+     "p": 0.814
+    }
+   ]
+  },
+  {
+   "i": 6,
+   "metin": "Meet the [Okafors](/Okˈɑfɔɹz/).",
+   "whisper": "Meet the Okafors.",
+   "kelimeler": [
+    {
+     "w": "Meet",
+     "p": 0.694
+    },
+    {
+     "w": "the",
+     "p": 0.981
+    },
+    {
+     "w": "Okafors.",
+     "p": 0.711
+    }
+   ]
+  },
+  {
+   "i": 7,
+   "metin": "The [Okafors](/Okˈɑfɔɹz/) drive right past this stop.",
+   "whisper": "The O'Coffers drive right past this stop.",
+   "kelimeler": [
+    {
+     "w": "The",
+     "p": 0.913
+    },
+    {
+     "w": "O",
+     "p": 0.364
+    },
+    {
+     "w": "'Coffers",
+     "p": 0.85
+    },
+    {
+     "w": "drive",
+     "p": 0.864
+    },
+    {
+     "w": "right",
+     "p": 0.996
+    },
+    {
+     "w": "past",
+     "p": 0.906
+    },
+    {
+     "w": "this",
+     "p": 0.99
+    },
+    {
+     "w": "stop.",
+     "p": 0.996
+    }
+   ]
+  },
+  {
+   "i": 8,
+   "metin": "A private room in a nursing home has a median cost of about one hundred thirty thousand dollars a year, says a twenty twenty-five survey by CareScout.",
+   "whisper": "A private room in a nursing home has a median cost of about $130,000 a year, says a 2025 survey by CareScout.",
+   "kelimeler": [
+    {
+     "w": "A",
+     "p": 0.936
+    },
+    {
+     "w": "private",
+     "p": 0.999
+    },
+    {
+     "w": "room",
+     "p": 0.994
+    },
+    {
+     "w": "in",
+     "p": 0.971
+    },
+    {
+     "w": "a",
+     "p": 0.999
+    },
+    {
+     "w": "nursing",
+     "p": 0.999
+    },
+    {
+     "w": "home",
+     "p": 0.998
+    },
+    {
+     "w": "has",
+     "p": 0.995
+    },
+    {
+     "w": "a",
+     "p": 0.992
+    },
+    {
+     "w": "median",
+     "p": 1.0
+    },
+    {
+     "w": "cost",
+     "p": 0.997
+    },
+    {
+     "w": "of",
+     "p": 0.996
+    },
+    {
+     "w": "about",
+     "p": 0.98
+    },
+    {
+     "w": "$130",
+     "p": 0.971
+    },
+    {
+     "w": ",000",
+     "p": 0.995
+    },
+    {
+     "w": "a",
+     "p": 0.936
+    },
+    {
+     "w": "year,",
+     "p": 0.999
+    },
+    {
+     "w": "says",
+     "p": 0.997
+    },
+    {
+     "w": "a",
+     "p": 0.997
+    },
+    {
+     "w": "2025",
+     "p": 0.982
+    },
+    {
+     "w": "survey",
+     "p": 0.995
+    },
+    {
+     "w": "by",
+     "p": 0.998
+    },
+    {
+     "w": "CareScout.",
+     "p": 0.855
+    }
+   ]
+  },
+  {
+   "i": 9,
+   "metin": "A private room in a nursing home has a median cost of about one hundred thirty thousand dollars a year, says a twenty twenty-five survey by [CareScout](/kˈɛɹskˌWt/).",
+   "whisper": "A private room in a nursing home has a median cost of about $130,000 a year, says a 2025 survey by CareScout.",
+   "kelimeler": [
+    {
+     "w": "A",
+     "p": 0.91
+    },
+    {
+     "w": "private",
+     "p": 0.999
+    },
+    {
+     "w": "room",
+     "p": 0.995
+    },
+    {
+     "w": "in",
+     "p": 0.98
+    },
+    {
+     "w": "a",
+     "p": 0.999
+    },
+    {
+     "w": "nursing",
+     "p": 0.999
+    },
+    {
+     "w": "home",
+     "p": 0.998
+    },
+    {
+     "w": "has",
+     "p": 0.995
+    },
+    {
+     "w": "a",
+     "p": 0.994
+    },
+    {
+     "w": "median",
+     "p": 1.0
+    },
+    {
+     "w": "cost",
+     "p": 0.997
+    },
+    {
+     "w": "of",
+     "p": 0.997
+    },
+    {
+     "w": "about",
+     "p": 0.983
+    },
+    {
+     "w": "$130",
+     "p": 0.961
+    },
+    {
+     "w": ",000",
+     "p": 0.996
+    },
+    {
+     "w": "a",
+     "p": 0.938
+    },
+    {
+     "w": "year,",
+     "p": 0.999
+    },
+    {
+     "w": "says",
+     "p": 0.997
+    },
+    {
+     "w": "a",
+     "p": 0.998
+    },
+    {
+     "w": "2025",
+     "p": 0.979
+    },
+    {
+     "w": "survey",
+     "p": 0.993
+    },
+    {
+     "w": "by",
+     "p": 0.998
+    },
+    {
+     "w": "CareScout.",
+     "p": 0.849
+    }
+   ]
+  },
+  {
+   "i": 10,
+   "metin": "Why does this one leak so much?",
+   "whisper": "Why does this one leak so much?",
+   "kelimeler": [
+    {
+     "w": "Why",
+     "p": 0.794
+    },
+    {
+     "w": "does",
+     "p": 0.979
+    },
+    {
+     "w": "this",
+     "p": 0.993
+    },
+    {
+     "w": "one",
+     "p": 0.991
+    },
+    {
+     "w": "leak",
+     "p": 0.987
+    },
+    {
+     "w": "so",
+     "p": 0.993
+    },
+    {
+     "w": "much?",
+     "p": 0.999
+    }
+   ]
+  },
+  {
+   "i": 11,
+   "metin": "Because Medicare, the health insurance for older Americans, generally doesn't pay for long-term custodial care.",
+   "whisper": "Because Medicare, the health insurance for older Americans, generally doesn't pay for long-term custodial care.",
+   "kelimeler": [
+    {
+     "w": "Because",
+     "p": 0.898
+    },
+    {
+     "w": "Medicare,",
+     "p": 0.973
+    },
+    {
+     "w": "the",
+     "p": 0.993
+    },
+    {
+     "w": "health",
+     "p": 0.995
+    },
+    {
+     "w": "insurance",
+     "p": 0.999
+    },
+    {
+     "w": "for",
+     "p": 0.992
+    },
+    {
+     "w": "older",
+     "p": 0.997
+    },
+    {
+     "w": "Americans,",
+     "p": 0.998
+    },
+    {
+     "w": "generally",
+     "p": 0.997
+    },
+    {
+     "w": "doesn't",
+     "p": 0.989
+    },
+    {
+     "w": "pay",
+     "p": 0.998
+    },
+    {
+     "w": "for",
+     "p": 0.999
+    },
+    {
+     "w": "long",
+     "p": 0.994
+    },
+    {
+     "w": "-term",
+     "p": 0.942
+    },
+    {
+     "w": "custodial",
+     "p": 0.973
+    },
+    {
+     "w": "care.",
+     "p": 0.998
+    }
+   ]
+  },
+  {
+   "i": 12,
+   "metin": "And if Medicaid, the program for people with low income, ends up paying, states are required to try to recover those costs from the estate later.",
+   "whisper": "And if Medicaid, the program for people with low income, ends up paying, states are required to try to recover those costs from the estate later.",
+   "kelimeler": [
+    {
+     "w": "And",
+     "p": 0.78
+    },
+    {
+     "w": "if",
+     "p": 0.976
+    },
+    {
+     "w": "Medicaid,",
+     "p": 0.977
+    },
+    {
+     "w": "the",
+     "p": 0.998
+    },
+    {
+     "w": "program",
+     "p": 0.944
+    },
+    {
+     "w": "for",
+     "p": 0.993
+    },
+    {
+     "w": "people",
+     "p": 0.998
+    },
+    {
+     "w": "with",
+     "p": 0.998
+    },
+    {
+     "w": "low",
+     "p": 0.997
+    },
+    {
+     "w": "income,",
+     "p": 0.932
+    },
+    {
+     "w": "ends",
+     "p": 0.999
+    },
+    {
+     "w": "up",
+     "p": 0.999
+    },
+    {
+     "w": "paying,",
+     "p": 0.998
+    },
+    {
+     "w": "states",
+     "p": 0.965
+    },
+    {
+     "w": "are",
+     "p": 0.999
+    },
+    {
+     "w": "required",
+     "p": 0.998
+    },
+    {
+     "w": "to",
+     "p": 0.998
+    },
+    {
+     "w": "try",
+     "p": 0.994
+    },
+    {
+     "w": "to",
+     "p": 0.988
+    },
+    {
+     "w": "recover",
+     "p": 0.999
+    },
+    {
+     "w": "those",
+     "p": 0.996
+    },
+    {
+     "w": "costs",
+     "p": 0.998
+    },
+    {
+     "w": "from",
+     "p": 0.998
+    },
+    {
+     "w": "the",
+     "p": 0.996
+    },
+    {
+     "w": "estate",
+     "p": 0.989
+    },
+    {
+     "w": "later.",
+     "p": 0.996
+    }
+   ]
+  },
+  {
+   "i": 13,
+   "metin": "In the first ten years, Gen X is expected to inherit the most, about fourteen trillion dollars.",
+   "whisper": "In the first 10 years, Gen X is expected to inherit the most, about $14 trillion.",
+   "kelimeler": [
+    {
+     "w": "In",
+     "p": 0.94
+    },
+    {
+     "w": "the",
+     "p": 0.997
+    },
+    {
+     "w": "first",
+     "p": 0.996
+    },
+    {
+     "w": "10",
+     "p": 0.807
+    },
+    {
+     "w": "years,",
+     "p": 0.994
+    },
+    {
+     "w": "Gen",
+     "p": 0.957
+    },
+    {
+     "w": "X",
+     "p": 0.779
+    },
+    {
+     "w": "is",
+     "p": 0.996
+    },
+    {
+     "w": "expected",
+     "p": 0.999
+    },
+    {
+     "w": "to",
+     "p": 0.999
+    },
+    {
+     "w": "inherit",
+     "p": 0.996
+    },
+    {
+     "w": "the",
+     "p": 0.993
+    },
+    {
+     "w": "most,",
+     "p": 0.999
+    },
+    {
+     "w": "about",
+     "p": 0.995
+    },
+    {
+     "w": "$14",
+     "p": 0.977
+    },
+    {
+     "w": "trillion.",
+     "p": 0.938
+    }
+   ]
+  },
+  {
+   "i": 14,
+   "metin": "In the U.K., as of twenty twenty-six, inheritance tax generally starts above three hundred twenty-five thousand pounds.",
+   "whisper": "In the UK, as of 2026, inheritance tax generally starts above £325,000.",
+   "kelimeler": [
+    {
+     "w": "In",
+     "p": 0.93
+    },
+    {
+     "w": "the",
+     "p": 0.998
+    },
+    {
+     "w": "UK,",
+     "p": 0.809
+    },
+    {
+     "w": "as",
+     "p": 0.995
+    },
+    {
+     "w": "of",
+     "p": 1.0
+    },
+    {
+     "w": "2026,",
+     "p": 0.979
+    },
+    {
+     "w": "inheritance",
+     "p": 0.968
+    },
+    {
+     "w": "tax",
+     "p": 0.996
+    },
+    {
+     "w": "generally",
+     "p": 0.996
+    },
+    {
+     "w": "starts",
+     "p": 0.998
+    },
+    {
+     "w": "above",
+     "p": 0.998
+    },
+    {
+     "w": "£325",
+     "p": 0.955
+    },
+    {
+     "w": ",000.",
+     "p": 0.992
+    }
+   ]
+  },
+  {
+   "i": 15,
+   "metin": "In the [U.K.](/jˌukˈA/), as of twenty twenty-six, inheritance tax generally starts above three hundred twenty-five thousand pounds.",
+   "whisper": "In the UK, as of 2026, inheritance tax generally starts above £325,000.",
+   "kelimeler": [
+    {
+     "w": "In",
+     "p": 0.939
+    },
+    {
+     "w": "the",
+     "p": 0.999
+    },
+    {
+     "w": "UK,",
+     "p": 0.801
+    },
+    {
+     "w": "as",
+     "p": 0.995
+    },
+    {
+     "w": "of",
+     "p": 1.0
+    },
+    {
+     "w": "2026,",
+     "p": 0.976
+    },
+    {
+     "w": "inheritance",
+     "p": 0.969
+    },
+    {
+     "w": "tax",
+     "p": 0.996
+    },
+    {
+     "w": "generally",
+     "p": 0.996
+    },
+    {
+     "w": "starts",
+     "p": 0.997
+    },
+    {
+     "w": "above",
+     "p": 0.997
+    },
+    {
+     "w": "£325",
+     "p": 0.946
+    },
+    {
+     "w": ",000.",
+     "p": 0.989
+    }
+   ]
+  },
+  {
+   "i": 16,
+   "metin": "But over the whole stretch to twenty forty-eight, millennials are expected to end up with the biggest share, about forty-six trillion.",
+   "whisper": "But over the whole stretch to 2048, millennials are expected to end up with the biggest share,",
+   "kelimeler": [
+    {
+     "w": "But",
+     "p": 0.163
+    },
+    {
+     "w": "over",
+     "p": 0.975
+    },
+    {
+     "w": "the",
+     "p": 0.998
+    },
+    {
+     "w": "whole",
+     "p": 0.986
+    },
+    {
+     "w": "stretch",
+     "p": 0.997
+    },
+    {
+     "w": "to",
+     "p": 0.998
+    },
+    {
+     "w": "2048,",
+     "p": 0.815
+    },
+    {
+     "w": "millennials",
+     "p": 0.789
+    },
+    {
+     "w": "are",
+     "p": 0.994
+    },
+    {
+     "w": "expected",
+     "p": 0.995
+    },
+    {
+     "w": "to",
+     "p": 0.995
+    },
+    {
+     "w": "end",
+     "p": 0.995
+    },
+    {
+     "w": "up",
+     "p": 0.989
+    },
+    {
+     "w": "with",
+     "p": 0.99
+    },
+    {
+     "w": "the",
+     "p": 0.996
+    },
+    {
+     "w": "biggest",
+     "p": 0.996
+    },
+    {
+     "w": "share,",
+     "p": 0.99
+    }
+   ]
+  },
+  {
+   "i": 17,
+   "metin": "Fed data shows baby boomers own about two-fifths of all the real estate held by American households.",
+   "whisper": "Fed data shows baby boomers own about two-fifths of all the real estate held by American households.",
+   "kelimeler": [
+    {
+     "w": "Fed",
+     "p": 0.95
+    },
+    {
+     "w": "data",
+     "p": 0.928
+    },
+    {
+     "w": "shows",
+     "p": 0.998
+    },
+    {
+     "w": "baby",
+     "p": 0.554
+    },
+    {
+     "w": "boomers",
+     "p": 0.978
+    },
+    {
+     "w": "own",
+     "p": 0.995
+    },
+    {
+     "w": "about",
+     "p": 0.996
+    },
+    {
+     "w": "two",
+     "p": 0.909
+    },
+    {
+     "w": "-fifths",
+     "p": 0.964
+    },
+    {
+     "w": "of",
+     "p": 0.998
+    },
+    {
+     "w": "all",
+     "p": 0.996
+    },
+    {
+     "w": "the",
+     "p": 0.992
+    },
+    {
+     "w": "real",
+     "p": 0.998
+    },
+    {
+     "w": "estate",
+     "p": 0.998
+    },
+    {
+     "w": "held",
+     "p": 0.997
+    },
+    {
+     "w": "by",
+     "p": 1.0
+    },
+    {
+     "w": "American",
+     "p": 0.998
+    },
+    {
+     "w": "households.",
+     "p": 0.999
+    }
+   ]
+  }
+ ]
+}

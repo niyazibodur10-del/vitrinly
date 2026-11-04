@@ -1,0 +1,361 @@
+{
+ "model": "small.en",
+ "cumleler": [
+  {
+   "i": 0,
+   "metin": "It's a forecast from a research firm called [Cerulli](/səɹˈulˌi/) Associates, made in late twenty twenty-four.",
+   "whisper": "It's a forecast from a research firm called Cerule Associates, made in late 2024.",
+   "kelimeler": [
+    {
+     "w": "It's",
+     "p": 0.95
+    },
+    {
+     "w": "a",
+     "p": 0.99
+    },
+    {
+     "w": "forecast",
+     "p": 0.993
+    },
+    {
+     "w": "from",
+     "p": 0.998
+    },
+    {
+     "w": "a",
+     "p": 0.996
+    },
+    {
+     "w": "research",
+     "p": 0.999
+    },
+    {
+     "w": "firm",
+     "p": 0.997
+    },
+    {
+     "w": "called",
+     "p": 0.995
+    },
+    {
+     "w": "Cerule",
+     "p": 0.604
+    },
+    {
+     "w": "Associates,",
+     "p": 0.859
+    },
+    {
+     "w": "made",
+     "p": 0.985
+    },
+    {
+     "w": "in",
+     "p": 0.999
+    },
+    {
+     "w": "late",
+     "p": 0.999
+    },
+    {
+     "w": "2024.",
+     "p": 0.947
+    }
+   ]
+  },
+  {
+   "i": 1,
+   "metin": "It's a forecast from a research firm called [Cerulli](/sɛɹˈuli/) Associates, made in late twenty twenty-four.",
+   "whisper": "It's a forecast from a research firm called Cerule Associates, made in late 2024.",
+   "kelimeler": [
+    {
+     "w": "It's",
+     "p": 0.951
+    },
+    {
+     "w": "a",
+     "p": 0.99
+    },
+    {
+     "w": "forecast",
+     "p": 0.993
+    },
+    {
+     "w": "from",
+     "p": 0.998
+    },
+    {
+     "w": "a",
+     "p": 0.997
+    },
+    {
+     "w": "research",
+     "p": 0.999
+    },
+    {
+     "w": "firm",
+     "p": 0.998
+    },
+    {
+     "w": "called",
+     "p": 0.996
+    },
+    {
+     "w": "Cerule",
+     "p": 0.573
+    },
+    {
+     "w": "Associates,",
+     "p": 0.946
+    },
+    {
+     "w": "made",
+     "p": 0.986
+    },
+    {
+     "w": "in",
+     "p": 0.999
+    },
+    {
+     "w": "late",
+     "p": 0.999
+    },
+    {
+     "w": "2024.",
+     "p": 0.939
+    }
+   ]
+  },
+  {
+   "i": 2,
+   "metin": "It's a forecast from a research firm called [Cerulli](/səɹˈuːli/) Associates, made in late twenty twenty-four.",
+   "whisper": "It's a forecast from a research firm called Cerule Associates, made in late 2024.",
+   "kelimeler": [
+    {
+     "w": "It's",
+     "p": 0.952
+    },
+    {
+     "w": "a",
+     "p": 0.989
+    },
+    {
+     "w": "forecast",
+     "p": 0.993
+    },
+    {
+     "w": "from",
+     "p": 0.998
+    },
+    {
+     "w": "a",
+     "p": 0.997
+    },
+    {
+     "w": "research",
+     "p": 0.999
+    },
+    {
+     "w": "firm",
+     "p": 0.997
+    },
+    {
+     "w": "called",
+     "p": 0.995
+    },
+    {
+     "w": "Cerule",
+     "p": 0.595
+    },
+    {
+     "w": "Associates,",
+     "p": 0.918
+    },
+    {
+     "w": "made",
+     "p": 0.986
+    },
+    {
+     "w": "in",
+     "p": 0.999
+    },
+    {
+     "w": "late",
+     "p": 0.999
+    },
+    {
+     "w": "2024.",
+     "p": 0.945
+    }
+   ]
+  },
+  {
+   "i": 3,
+   "metin": "You can see it in [Cerulli's](/səɹˈulˌiz/) numbers.",
+   "whisper": "You can see it in Cerule's numbers.",
+   "kelimeler": [
+    {
+     "w": "You",
+     "p": 0.784
+    },
+    {
+     "w": "can",
+     "p": 0.998
+    },
+    {
+     "w": "see",
+     "p": 0.998
+    },
+    {
+     "w": "it",
+     "p": 0.998
+    },
+    {
+     "w": "in",
+     "p": 0.997
+    },
+    {
+     "w": "Cerule's",
+     "p": 0.545
+    },
+    {
+     "w": "numbers.",
+     "p": 0.616
+    }
+   ]
+  },
+  {
+   "i": 4,
+   "metin": "The [Okafors](/Okˈɑfˌɔɹz/) drive right past this stop.",
+   "whisper": "The Okafors drive right past this stop.",
+   "kelimeler": [
+    {
+     "w": "The",
+     "p": 0.883
+    },
+    {
+     "w": "Okafors",
+     "p": 0.686
+    },
+    {
+     "w": "drive",
+     "p": 0.941
+    },
+    {
+     "w": "right",
+     "p": 0.997
+    },
+    {
+     "w": "past",
+     "p": 0.929
+    },
+    {
+     "w": "this",
+     "p": 0.992
+    },
+    {
+     "w": "stop.",
+     "p": 0.995
+    }
+   ]
+  },
+  {
+   "i": 5,
+   "metin": "Meet the [Okafors](/Okˈɑfˌɔɹz/).",
+   "whisper": "Meet the Okafors.",
+   "kelimeler": [
+    {
+     "w": "Meet",
+     "p": 0.83
+    },
+    {
+     "w": "the",
+     "p": 0.973
+    },
+    {
+     "w": "Okafors.",
+     "p": 0.737
+    }
+   ]
+  },
+  {
+   "i": 6,
+   "metin": "For the [Okafors](/Okˈɑfˌɔɹz/), I cross out one box.",
+   "whisper": "For the Okafors, I cross out one box.",
+   "kelimeler": [
+    {
+     "w": "For",
+     "p": 0.83
+    },
+    {
+     "w": "the",
+     "p": 0.985
+    },
+    {
+     "w": "Okafors,",
+     "p": 0.597
+    },
+    {
+     "w": "I",
+     "p": 0.995
+    },
+    {
+     "w": "cross",
+     "p": 0.976
+    },
+    {
+     "w": "out",
+     "p": 0.982
+    },
+    {
+     "w": "one",
+     "p": 0.811
+    },
+    {
+     "w": "box.",
+     "p": 0.997
+    }
+   ]
+  },
+  {
+   "i": 7,
+   "metin": "For the [Okafors](/Okˈɑfɔɹz/), I cross out one box.",
+   "whisper": "For the Okafwars, I cross out one box.",
+   "kelimeler": [
+    {
+     "w": "For",
+     "p": 0.85
+    },
+    {
+     "w": "the",
+     "p": 0.995
+    },
+    {
+     "w": "Okafwars,",
+     "p": 0.533
+    },
+    {
+     "w": "I",
+     "p": 0.992
+    },
+    {
+     "w": "cross",
+     "p": 0.984
+    },
+    {
+     "w": "out",
+     "p": 0.989
+    },
+    {
+     "w": "one",
+     "p": 0.785
+    },
+    {
+     "w": "box.",
+     "p": 0.998
+    }
+   ]
+  }
+ ]
+}

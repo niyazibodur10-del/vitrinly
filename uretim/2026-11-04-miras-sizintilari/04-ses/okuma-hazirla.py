@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""F4 ses — kilitli metinden (03-metin/metin.md) TTS okuma metni çıkarır (ses-yonetmeni, 2026-10-27; 2026-11-02 S08 kitchen-table için uyarlandı: 27 sahne).
+"""F4 ses — kilitli metinden (03-metin/metin.md) TTS okuma metni çıkarır (ses-yonetmeni, 2026-10-27; 2026-11-02 S08: 27 sahne; 2026-11-04 miras-sizintilari: 31 sahne, regex TELAFFUZ).
 
 Kullanım: python3 -I okuma-hazirla.py   (04-ses klasöründe)
 Çıkış:
@@ -17,13 +17,12 @@ from pathlib import Path
 KOK = Path(__file__).resolve().parent
 MD = (KOK.parent / "03-metin" / "metin.md").read_text(encoding="utf-8")
 SAHNE = re.compile(r"^### (S\d\d) · ([^\n]*)\n\| ANLATIM \| GÖRSEL \|\n\|---\|---\|\n\| (.+?) \| (.+?) \|$", re.M)
-TELAFFUZ = [  # (kilitli metin, Kokoro'ya verilen) — yalnız telaffuz işareti; görünen kelime aynı kalır
-    ("U.S.", "[U.S.](/jˌuˈɛs/)"),  # 1929 dersi: düz "U.S. " cümleyi bölüyor
-    # v1 tam üretim + cümle tek başına Whisper'da tekrarlanan hata → varyant testi (telaffuz-testi/), kazanan:
-    ("Thing one: it borrows", "Thing one: it [borrows](/bˈɔɹˌOz/)"),  # "barfs" 0,97; /bˈɑɹOz/ ve +2 elendi
-    ("rate change an old debt", "rate change [an](/ˈæn/) old debt"),  # "in old" 0,74; +2 elendi (v2'de cümle 105 eklendi)
-    ("A, B, or C: which", "[A](/ˈA/), B, or C: which"),  # cümle başı "A" artikel /ə/ okunuyor ("Of" 0,15); +2 elendi (cümle 198 eklendi)
-    ("on the fridge as A", "on the [fridge](/fɹˈɪʤ/) [as](/ˈæz/) A"),   # "fridges A"
+TELAFFUZ = [  # (regex kilitli metin, Kokoro'ya verilen) — yalnız telaffuz işareti; görünen kelime aynı kalır
+    (r"U\.S\.", "[U.S.](/jˌuˈɛs/)"),  # 1929 dersi: düz "U.S. " cümleyi bölüyor
+    # 2026-11-04 telaffuz testi (telaffuz-testi/test*.txt, cümle tek başına Whisper):
+    (r"\bCerulli's", "[Cerulli's](/səɹˈulˌiz/)"),          # varsayılan /sˈɛɹʌli/ "SER-uh-lee" (Whisper "Sarily") vurgu yanlış
+    (r"\bCerulli\b(?!')", "[Cerulli](/səɹˈulˌi/)"),        # suh-ROO-lee; /ʧəɹˈuli/ (İtalyanca che-) ve /sɛɹˈuli/ elendi
+    (r"\bOkafors\b", "[Okafors](/Okˈɑfˌɔɹz/)"),           # varsayılan /ˈɑkəfˌɔɹs/ "Aka Force"; /Okˈɑfɔɹz/ "Okafwars/O 'Coffers"; kazanan 3/3
 ]
 
 
@@ -33,7 +32,7 @@ def cumleler(p):  # tools/ses/tts.py cumlelere_bol ile aynı desen
 
 def okunus(t):
     for a, b in TELAFFUZ:
-        t = t.replace(a, b)
+        t = re.sub(a, lambda _m: b, t)
     return t
 
 
