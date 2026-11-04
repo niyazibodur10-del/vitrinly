@@ -16,7 +16,8 @@ md = (U / "03-metin/metin.md").read_text()
 
 bloklar = re.findall(r"^### (S\d\d) [^\n]*\n\| ANLATIM \| GÖRSEL \|\n\|---\|---\|\n\| (.+?) \| ", md, re.M)
 assert len(bloklar) == 31 and [b[0] for b in bloklar] == [f"S{i:02d}" for i in range(1, 32)], [b[0] for b in bloklar]
-cumleler = lambda m: [c.strip() for c in re.findall(r"[^.?!]+[.?!]+", m) if c.strip()]
+# "U.S." / "U.K." cümle bölmez (korunur, sonra geri yazılır)
+cumleler = lambda m: [c.strip().replace("§", ".") for c in re.findall(r"[^.?!]+[.?!]+", re.sub(r"\bU\.([SK])\.", r"U§\1§", m)) if c.strip()]
 
 
 def zamanla(cs, t0):
