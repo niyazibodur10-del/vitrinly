@@ -1,4 +1,32 @@
-kanal-ozet.md rakamlı satır 17 etiketsiz 0
-rakip-ozet.md rakamlı satır 62 etiketsiz 0
-../../../docs/rakip-analizi.md rakamlı satır 11 etiketsiz 0
-anahtar sızıntısı: yok
+Kontrol tarihi: 2026-11-04 · konu: 25 · mod: canlı (curl + anahtar kelime)
+
+| ID | Konu | Kaynak | Bağımsız alan | Açılan (200+anahtar) | Açılan bağımsız | Son 30 gün (B) | Sonuç |
+|---|---|---|---|---|---|---|---|
+| C1 | What happens when the boomers are gone? The $124 | 3 | 3 | 3 | 3 | — | GEÇTİ |
+| C2 | Which country goes bankrupt first? A stress test | 3 | 3 | 3 | 3 | — | GEÇTİ |
+| C3 | Who does America owe $40 trillion, and what if t | 3 | 3 | 3 | 3 | — | GEÇTİ |
+| C4 | The AI bubble pops: what happens next, month by  | 3 | 3 | 3 | 3 | — | GEÇTİ |
+| C5 | Blue sweep: what happens to your money in 2027? | 3 | 3 | 3 | 3 | — | GEÇTİ |
+| C6 | What if everyone pulled their money out at once? | 3 | 3 | 3 | 3 | — | GEÇTİ |
+| C7 | What happens if the dollar collapses? A day-by-d | 2 | 2 | 2 | 2 | — | GEÇTİ |
+| C8 | If AI takes the jobs, who buys anything? | 3 | 3 | 3 | 3 | — | GEÇTİ |
+| C9 | Social Security's 2032 cliff: what a 26% cut wou | 3 | 3 | 3 | 3 | — | GEÇTİ |
+| C10 | What if China dumped all its US Treasuries overn | 2 | 2 | 2 | 2 | — | GEÇTİ |
+| A1 | The biggest heists in money history, and Binance | 4 | 4 | 4 | 4 | — | GEÇTİ |
+| A2 | Bernie Madoff: the $65 billion lie everyone beli | 3 | 3 | 3 | 3 | — | GEÇTİ |
+| A3 | Mansa Musa wasn't the richest man ever. Here's w | 3 | 3 | 3 | 3 | — | GEÇTİ |
+| A4 | The most expensive mistakes in money history ($8 | 3 | 2 | 3 | 2 | — | GEÇTİ |
+| A5 | The idiot who got rich: Timothy Dexter's acciden | 2 | 2 | 2 | 2 | — | GEÇTİ |
+| A6 | The dot-com crash: the AI bubble's dress rehears | 3 | 3 | 3 | 3 | — | GEÇTİ |
+| A7 | How Hitler paid for a war with money that didn't | 2 | 2 | 2 | 2 | — | GEÇTİ |
+| A8 | The brothers who tried to buy all the world's si | 2 | 2 | 2 | 2 | — | GEÇTİ |
+| A9 | Weimar hyperinflation: when a loaf of bread cost | 3 | 3 | 3 | 3 | — | GEÇTİ |
+| A10 | Scam 1992: how Harshad Mehta moved India's stock | 2 | 2 | 2 | 2 | — | GEÇTİ |
+| A11 | The richest man on Earth used a diamond as a pap | 2 | 2 | 2 | 2 | — | GEÇTİ |
+| A12 | Japan 1989: the bubble that took 34 years to rec | 2 | 2 | 2 | 2 | — | GEÇTİ |
+| A13 | Black Friday wasn't about shopping: the 1869 gol | 3 | 3 | 3 | 3 | — | GEÇTİ |
+| B1 | Gold crashed 30% from its record. What just happ | 2 | 2 | 2 | 2 | 2 | GEÇTİ |
+| B2 | Anthropic's IPO: the questions before day one | 3 | 3 | 3 | 3 | 3 | GEÇTİ |
+
+Sütun sayımı: A=13 · B=2 · C=10 · toplam=25
+Kapı: GEÇTİ (her konuda >=2 bağımsız açılan kaynak; B'de >=1 kaynak son 30 gün; toplam >=15)

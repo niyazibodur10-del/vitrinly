@@ -17,3 +17,8 @@
 - **B için en iyi araç:** Google News RSS (`when:14d`) + `pip install googlenewsdecoder` → yayıncı URL → curl 200+anahtar+`datePublished`. Betik: `uretim/2026-10-28-yeni-video/01-arastirma/olcum/kaynak_bul.py` (konular.tsv). 21 konuya ~15 dk'da 3'er açılan kaynak buldu. WebSearch 2026 haberinde zayıf (eski yılları döndürüyor).
 - **Kaynak tuzakları:** RSS tarihi ≠ makale tarihi (ABC Şubat sayfasını Ekim'de yeniden yayımlıyor), Global Times anahtar kelimeyi menüde geçiriyor. Daima meta tarihi + makale metnine bak. `pkill -f <betik>` aynı komut satırındaki kabuğu da öldürür, PID ile durdur.
 - **Talep okuması:** YouTube'da çok spesifik tarih sorgusu (ör. "Black Friday 1869 Jay Gould") yanıltıcı derecede düşük çıkıyor. İzleyicinin gerçekten yazdığı soruyu ölç ("why is it called black friday" medyanı 29 K, taze rakip yok).
+
+### 2026-11-04 — F1 konu havuzu (A/C, milyon hedefi, 25 konu, kapı ilk koşuda GEÇTİ)
+- **Outlier taraması:** yt-dlp arama URL'si `results?search_query=…&sp=CAMSAggF` ("bu yıl + izlenme sırası") + `videos.list`/`channels.list` → izlenme/abone oranı. 68 sorgu ~15 dk, search kotası sıfır. Betik: `uretim/2026-11-04-secim/01-arastirma/olcum/outlier_tarama.py` + `outlier_analiz.py`. Geniş sorgular desen verir, aday sorgular konu başına kanıt verir; ikisini de koş.
+- **Okuma:** en güçlü aday = yüksek kalıcı medyan (≥1 M video sayısı) + 5 gün içinde 100x+ küçük kanal (A1 soygun/Binance). Tam ifade sorgusunun medyanı yeni konularda yanıltıcı düşük (C2 1,6 K ama 8,6 M outlier). Medyanı değil ≥10x sayısını da yaz.
+- A konusunda kaynak_bul RSS anahtar kelimesi alakasız sayfa döndürüyor (gümüş, lale, Nizam kulübü): A'da Wikipedia + kurum sayfası + tek güncel kanca yazısı kullan, RSS sonucunu başlıkla elle doğrula.

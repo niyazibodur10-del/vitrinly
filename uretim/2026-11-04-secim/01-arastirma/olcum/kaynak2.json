@@ -1,0 +1,130 @@
+{
+ "G2": {
+  "q": "Anthropic IPO",
+  "k": "Anthropic",
+  "n_rss": 100,
+  "ok": [
+   {
+    "t": "Anthropic's IPO expected to reshape San Francisco's housing market: 'Most of us can't afford houses' - ABC7 Bay Area",
+    "url": "https://abc7news.com/post/anthropics-ipo-expected-reshape-san-franciscos-housing-market-most-us-cant-afford-houses/19982939/",
+    "src": "ABC7 Bay Area",
+    "kod": "200",
+    "meta_d": "2026-10-27",
+    "rss_d": "2026-10-27"
+   },
+   {
+    "t": "The SEC Should Block Anthropic’s IPO to Protect the Public - Tech Policy Press",
+    "url": "https://techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public",
+    "src": "Tech Policy Press",
+    "kod": "200",
+    "meta_d": "2026-11-02",
+    "rss_d": "2026-11-02"
+   },
+   {
+    "t": "Anthropic set to make stock market debut as questions swirl about safety of AI - CNN",
+    "url": "https://www.cnn.com/2026/10/26/tech/anthropic-files-ipo",
+    "src": "CNN",
+    "kod": "200",
+    "meta_d": "2026-10-26",
+    "rss_d": "2026-10-26"
+   }
+  ],
+  "tried": 4
+ },
+ "C9": {
+  "q": "Social Security insolvency 2032 midterms",
+  "k": "Social Security",
+  "n_rss": 14,
+  "ok": [
+   {
+    "t": "Social Security surfaces as key issue in midterm races as insolvency looms - CBS News",
+    "url": "https://www.cbsnews.com/news/social-security-trust-fund-midterm-elections/",
+    "src": "CBS News",
+    "kod": "200",
+    "meta_d": "2026-10-29",
+    "rss_d": "2026-10-29"
+   },
+   {
+    "t": "Opinion | The future of Social Security is on the line in the midterms - MS NOW",
+    "url": "https://www.ms.now/opinion/social-security-midterm-elections-senate-retirement",
+    "src": "MS NOW",
+    "kod": "200",
+    "meta_d": "2026-10-30",
+    "rss_d": "2026-11-03"
+   },
+   {
+    "t": "Policy Backgrounder: Top Issues in the Midterms - The Conference Board",
+    "url": "https://www.conference-board.org/research/policy-backgrounders/top-issues-in-the-midterms",
+    "src": "The Conference Board",
+    "kod": "200",
+    "meta_d": null,
+    "rss_d": "2026-11-02"
+   }
+  ],
+  "tried": 5
+ },
+ "A11": {
+  "q": "Nizam of Hyderabad",
+  "k": "Nizam",
+  "n_rss": 67,
+  "ok": [
+   {
+    "t": "Inside Prince Azam Jah’s royal life: Son of Hyderabad’s 8th Nizam shares rare stories of palaces, culture and legacy | Hindustan Times - Hindustan Times",
+    "url": "https://www.hindustantimes.com/lifestyle/art-culture/inside-prince-azam-jah-royal-life-son-of-hyderabad-8th-nizam-shares-rare-stories-of-palaces-culture-and-legacy-101784107017968.html",
+    "src": "Hindustan Times",
+    "kod": "200",
+    "meta_d": "2026-07-15",
+    "rss_d": "2026-07-15"
+   },
+   {
+    "t": "Hyderabad's Nizam Club sees change of guard after 18 years; poll outcome reflects desire for change - The Times of India",
+    "url": "https://timesofindia.indiatimes.com/city/hyderabad/hyderabads-nizam-club-sees-change-of-guard-after-18-years-poll-outcome-reflects-desire-for-change/articleshow/132236158.cms",
+    "src": "The Times of India",
+    "kod": "200",
+    "meta_d": "2026-07-07",
+    "rss_d": "2026-07-07"
+   },
+   {
+    "t": "Telangana HC won’t interfere in division of properties linked to Hyderabad’s last Nizam - ThePrint",
+    "url": "https://theprint.in/feature/telangana-hc-wont-interfere-in-division-of-properties-linked-to-hyderabads-last-nizam/3051940/",
+    "src": "ThePrint",
+    "kod": "200",
+    "meta_d": "2026-09-24",
+    "rss_d": "2026-09-24"
+   }
+  ],
+  "tried": 3
+ },
+ "A5": {
+  "q": "Ronald Wayne Apple stake sold",
+  "k": "Wayne",
+  "n_rss": 57,
+  "ok": [
+   {
+    "t": "Apple cofounder Ronald Wayne—whose stake would be worth up to $400 billion had he not sold it in 1976—says that at 91, he has no regrets - Fortune",
+    "url": "https://fortune.com/2026/04/27/apple-cofounder-ronald-wayne-missed-billionaire-opportunity-no-regrets-gen-z-advice-steve-jobs-steve-wozniak/",
+    "src": "Fortune",
+    "kod": "200",
+    "meta_d": "2026-04-27",
+    "rss_d": "2026-04-27"
+   },
+   {
+    "t": "Apple cofounder Ronald Wayne sold his 10% stake for $800 in 1976—today it’d be worth up to $400 billion - Yahoo Finance",
+    "url": "https://finance.yahoo.com/news/apple-cofounder-ronald-wayne-sold-145828967.html",
+    "src": "Yahoo Finance",
+    "kod": "200",
+    "meta_d": "2025-12-12",
+    "rss_d": "2025-12-12"
+   },
+   {
+    "t": "You Can’t Stop the Growth of Knowledge: Interview with Ronald Wayne, Co-Founder of Apple - Adam Mendler",
+    "url": "https://www.adammendler.com/ronald-wayne/",
+    "src": "Adam Mendler",
+    "kod": "200",
+    "meta_d": "2026-03-04",
+    "rss_d": "2026-03-04"
+   }
+  ],
+  "tried": 3
+ }
+}

@@ -1,0 +1,29 @@
+| ID | outlier | ilgi | hassas | neden_izlenir | Sonuç |
+|---|---|---|---|---|---|
+| C1 | var | var | var | var | GEÇTİ |
+| C2 | var | var | var | var | GEÇTİ |
+| C3 | var | var | var | var | GEÇTİ |
+| C4 | var | var | var | var | GEÇTİ |
+| C5 | var | var | var | var | GEÇTİ |
+| C6 | var | var | var | var | GEÇTİ |
+| C7 | var | var | var | var | GEÇTİ |
+| C8 | var | var | var | var | GEÇTİ |
+| C9 | var | var | var | var | GEÇTİ |
+| C10 | var | var | var | var | GEÇTİ |
+| A1 | var | var | var | var | GEÇTİ |
+| A2 | var | var | var | var | GEÇTİ |
+| A3 | var | var | var | var | GEÇTİ |
+| A4 | var | var | var | var | GEÇTİ |
+| A5 | var | var | var | var | GEÇTİ |
+| A6 | var | var | var | var | GEÇTİ |
+| A7 | var | var | var | var | GEÇTİ |
+| A8 | var | var | var | var | GEÇTİ |
+| A9 | var | var | var | var | GEÇTİ |
+| A10 | var | var | var | var | GEÇTİ |
+| A11 | var | var | var | var | GEÇTİ |
+| A12 | var | var | var | var | GEÇTİ |
+| A13 | var | var | var | var | GEÇTİ |
+| B1 | var | var | var | var | GEÇTİ |
+| B2 | var | var | var | var | GEÇTİ |
+
+Alan kapısı: GEÇTİ (25 konu)
