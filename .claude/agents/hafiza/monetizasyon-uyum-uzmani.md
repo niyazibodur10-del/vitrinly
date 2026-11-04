@@ -25,3 +25,4 @@
 - 2026-11-02 (F8a S08): ONAY, hata 0. dHash koyu/bulanık arka planlarda yanlış alarm veriyor (%2,9 → elle 4/4 özgün) → eşleşen kareleri her zaman çıkarıp bak, "üst sınır" ve "doğrulanmış" ayrı yaz. Lisans eşlemesinde grup yazımını aç (paper_01/02/03).
 - 2026-11-04 (F2, 12 senaryo): 9 YEŞİL / 3 SARI / 0 KIRMIZI. 5-gram %0 iken fikir tekrarı olabilir → yayımlanmış metinde tezi grep'le (S06 ↔ S08 satır 85/124). Suç belgeseli 6162278'de "can earn"; sınır "how to gain unauthorized access" + intihar (Controversial listesi) → bunları zorunlu madde yaz.
 - 2026-11-04: Kapanış kalıbı "üç olasılık" 9/12 senaryoda + S08'de → 5 videoluk denetimde kapanış tipini say; F2'de kanal düzeyi not olarak ver.
+- 2026-11-04 (F3 S03): YEŞİL, zorunlu 2. Uç ekran köprüsü 3 videoda aynı kalıp ("a story/game for another X") → F3'te önceki metinlerin son sahnesini ayrıca karşılaştır. ABD'ye özgü eşik içeren Shorts'a "American/US federal" niteleyicisi zorunlu.
