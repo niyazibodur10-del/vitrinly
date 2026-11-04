@@ -1,0 +1,4 @@
+kanal-ozet.md rakamlı satır 17 etiketsiz 0
+rakip-ozet.md rakamlı satır 62 etiketsiz 0
+../../../docs/rakip-analizi.md rakamlı satır 11 etiketsiz 0
+anahtar sızıntısı: yok

@@ -1,0 +1,80 @@
+{
+ "olcum_utc": "2026-11-04T04:29:34+00:00",
+ "kaynak": "YouTube Data API v3",
+ "kanal": {
+  "id": "UC1XHlwovdELe_cs6048KD6w",
+  "ad": "Toonomy",
+  "viewCount": "548",
+  "subscriberCount": "3",
+  "hiddenSubscriberCount": false,
+  "videoCount": "4"
+ },
+ "videolar": [
+  {
+   "id": "BVJwZ1C9R1U",
+   "baslik": "You Have $1,000 in 1929. Can You Keep It?",
+   "publishedAt": "2026-10-28T09:37:48Z",
+   "sure": "PT10M32S",
+   "gizlilik": "public",
+   "publishAt": null,
+   "viewCount": "208",
+   "likeCount": "1",
+   "favoriteCount": "0",
+   "commentCount": "1"
+  },
+  {
+   "id": "QFC8GdDTW2c",
+   "baslik": "$1,000 in 1929: Which Door Would You Pick?",
+   "publishedAt": "2026-11-02T14:00:28Z",
+   "sure": "PT50S",
+   "gizlilik": "public",
+   "publishAt": null,
+   "viewCount": "341",
+   "likeCount": "5",
+   "favoriteCount": "0",
+   "commentCount": "0"
+  },
+  {
+   "id": "6LQGcQg4hpk",
+   "baslik": "Same Box of Cash, Opposite Result: 1932 vs 2026",
+   "publishedAt": "2026-11-03T14:00:09Z",
+   "sure": "PT57S",
+   "gizlilik": "public",
+   "publishAt": null,
+   "viewCount": "22",
+   "likeCount": "0",
+   "favoriteCount": "0",
+   "commentCount": "0"
+  },
+  {
+   "id": "ghLjMbrweCw",
+   "baslik": "If America Earned $5,400 a Month, Here's Its Budget",
+   "publishedAt": "2026-11-03T12:00:11Z",
+   "sure": "PT11M19S",
+   "gizlilik": "public",
+   "publishAt": null,
+   "viewCount": "2",
+   "likeCount": "1",
+   "favoriteCount": "0",
+   "commentCount": "0"
+  }
+ ],
+ "yorum": {
+  "BVJwZ1C9R1U": {
+   "toplam": 1,
+   "kendi": 1
+  },
+  "QFC8GdDTW2c": {
+   "toplam": 0,
+   "kendi": 0
+  },
+  "6LQGcQg4hpk": {
+   "toplam": 0,
+   "kendi": 0
+  },
+  "ghLjMbrweCw": {
+   "toplam": 0,
+   "kendi": 0
+  }
+ }
+}

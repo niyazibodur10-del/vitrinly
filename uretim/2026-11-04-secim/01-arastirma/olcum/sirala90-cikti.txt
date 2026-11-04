@@ -1,0 +1,16 @@
+False Profit             ab=    7840 açılış=2025-07-10 n90=  3 A=3.90(#1) B=67%(#2) medyan=2134 shorts90=0
+theunfilteredguy         ab=    6630 açılış=2025-04-03 n90= 51 A=1.97(#3) B=20%(#10) medyan=15161 shorts90=0
+Marcus Explains          ab=   30700 açılış=2026-07-06 n90= 40 A=1.08(#10) B=32%(#4) medyan=33225 shorts90=2
+GEN                      ab=  819000 açılış=2020-08-29 n90= 10 A=0.72(#13) B=30%(#5) medyan=379234 shorts90=12
+How Business Worked      ab=  299000 açılış=2022-05-24 n90=  6 A=1.56(#5) B=17%(#13) medyan=253926 shorts90=0
+Nolan Matthias           ab=  130000 açılış=2016-03-14 n90= 11 A=0.46(#18) B=73%(#1) medyan=18444 shorts90=3
+TechButMakeItReal        ab=   89400 açılış=2024-11-21 n90=  6 A=0.49(#16) B=33%(#3) medyan=27562 shorts90=0
+Finance Bureau           ab=  134000 açılış=2025-10-14 n90= 34 A=0.71(#14) B=21%(#8) medyan=82944 shorts90=59
+Who Gets Paid            ab=    1930 açılış=2025-07-22 n90= 22 A=2.94(#2) B=9%(#20) medyan=5668 shorts90=0
+History Beneath          ab=    3150 açılış=2015-10-15 n90= 53 A=1.19(#9) B=15%(#16) medyan=3445 shorts90=0
+Markets of the Past      ab=  108000 açılış=2026-04-10 n90= 79 A=0.44(#19) B=23%(#7) medyan=50834 shorts90=0
+Dial-Up Days             ab=   87400 açılış=2025-08-19 n90= 37 A=1.37(#6) B=5%(#22) medyan=104646 shorts90=1
+Fin Tek                  ab=  271000 açılış=2020-06-02 n90=  7 A=0.81(#12) B=14%(#17) medyan=219246 shorts90=36
+Meerkat Explains Finance ab=    5740 açılış=2008-01-20 n90= 57 A=1.27(#8) B=4%(#24) medyan=8432 shorts90=0
+Paul McAllister          ab=  119000 açılış=2024-11-19 n90= 85 A=0.37(#23) B=20%(#9) medyan=40569 shorts90=0
+toplam kanal 35

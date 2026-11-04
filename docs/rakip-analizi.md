@@ -1,4 +1,22 @@
-# Rakip analizi v1: animasyonlu / karakter anlatımlı finans-ekonomi nişi
+# Rakip analizi: animasyonlu / karakter anlatımlı finans-ekonomi nişi
+
+## v2 güncel (2026-11-04, YouTube Data API v3 ölçümü, 90 gün) — kanal-analisti
+Ölçüm 2026-11-04 04:31 UTC [API]; 158 kanal tarandı, niş alt küme 959 video / 38 kanal. Ayrıntı, tablolar, betikler: `uretim/2026-11-04-secim/01-arastirma/rakip-ozet.md` (ham veri `olcum/delta90-2026-11-04.json`). Etiketler: [API] ölçüm, [H] hesap, [GÖZ] thumbnail incelemesi, [AÇK] açıklamadan hook çıkarımı, [AÖ] arama özeti, [T] tahmin.
+**En iyi 5 kanal** (A = 90 g medyan izlenme/abone, B = ≥3x oranı; ikisinde de ilk 5 dışı elendi) [API][H]:
+| Kanal | Abone | A | B | En iyi video (90 g) |
+|---|---|---|---|---|
+| False Profit | 7,8 B | 3,90 | %67 | What Happens When Economists Run a Country: 776.925 (364x) [API] |
+| theunfilteredguy | 6,6 B | 1,97 | %20 | 2030 Prediction: The Male Exodus Will BANKRUPT…: 273.111 (18x) [API] |
+| How Business Worked | 299 B | 1,56 | %17 | How Did America Pay Off The National Debt Last Time?: 1.186.935 (4,7x) [API] |
+| Marcus Explains (maskotlu, 2026-07 açılış) | 30,7 B | 1,08 | %32 | How All-You-Can-Eat Buffets Make Money? (It's Not Food): 537.283 (16x) [API] |
+| Nolan Matthias | 130 B | 0,46 | %73 | The Crash That Will Change A Generation: 558.152 (30x) [API] |
+**Kanıtlı desenler (her biri ≥2 örnek):** P1 "What Happens If/When <sistem>" (≥2x %37, niş %24) · P2 tarih emsali → yakın gelecek (medyan skor 1,57, 9 kanal) · P3 gizli iş modeli (2,20, ama 3 kanal; orta kanıt) · P4 paradoks sorusu (1,29, 6 kanal) · P5 seri + uzun video odaklı büyüme, Shorts motor değil [API][H].
+**Zayıf kalıplar:** başlıkta Rakam/$ (0,95), yıl (0,95), düz "Why…" (0,97); 60+ dk (0,66). En iyi süre bandı 15–20 dk (1,23) [API][H].
+**Kopyalamama:** her desenin özgün karşılığı ve maskot ayrışma uyarısı (Fred, Marcus) → `rakip-ozet.md` §6. [T: öneri]
+**Erişim engelleri (2026-11-04):** Data API açık; yt-dlp altyazı 4/4 bot kontrolü (hook transkripti yapılamadı); Analytics API kapsamı yok. [ALT][API]
+
+---
+# (arşiv) v1, 2026-10-26: WebSearch tabanlı ilk analiz — sayılar eski, v2 geçerli
 
 Hazırlayan: kanal-analisti · Erişim/ölçüm tarihi: **2026-10-26** (aksi yazılmadıkça her kaynak bu tarihte okundu).
 Amaç: nişin en iyi 5 kanalını ve outlier videolarını bulmak, **yalnızca desen** çıkarmak. Kopya yok (bkz. bölüm 6).

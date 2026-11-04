@@ -8,7 +8,7 @@ Kalıcı araçlar `tools/` altında (sahibi uretim-muhendisi): `render-son.sh`, 
 Video klasöründe kalan kapı betikleri (1929 videosu, `uretim/2026-10-26-1929-1000-dolar/`). Sonraki videoda kopyalanır; `tools/`'a taşınması uretim-muhendisi'nden istendi (2026-10-28):
 | Faz / sahip | Betik |
 |---|---|
-| F1 trend-avcisi | `01-arastirma/kaynak-kontrol.py`, `olcum/youtube_arama.py`, `olcum/wiki_pageviews.py`, (2026-10-28 klasöründe) `olcum/haber_rss.py`, `olcum/kaynak_bul.py` · kanal-analisti `01-arastirma/etiket_test.py` |
+| F1 trend-avcisi | `01-arastirma/kaynak-kontrol.py`, `olcum/youtube_arama.py`, `olcum/wiki_pageviews.py`, (2026-10-28 klasöründe) `olcum/haber_rss.py`, `olcum/kaynak_bul.py` · kanal-analisti `01-arastirma/etiket_test.py` (v2 + 90 g delta betikleri: `uretim/2026-11-04-secim/01-arastirma/`) |
 | F2 senaryo-yazari / viralite / politika / hakem | `02-senaryo/senaryo-kontrol.py` (v2: `uretim/2026-10-28-yeni-video/02-senaryo/`, `--sutun B`), `viralite-duyarlilik.py`, `viralite-outlier.py`, `politika-tarama.py` (v2: `uretim/2026-10-28-yeni-video/02-senaryo/`, argüman = önceki metin.md listesi), `hakem-karar.py` (v2: aynı klasör, hook rakamı ±%1 + uç durum) |
 | F3 senaryo-yazari / finans / politika | `03-metin/metin-kontrol.py` (**v3: 2026-10-28 klasörü** — 160 kpm, rakam-tablosu eşleşmesi, ABONE-n, H7; sabitler: TEZ, HOOK, ilk 15 sn kelimeleri), `dogrulama-kontrol.py`, `dogrulama-hesap.py`, `veri/hesap.py`, `politika-denetim.py` (v2: `uretim/2026-10-28-yeni-video/03-metin/`) · (2026-10-28 klasörü, S08 bütçe) `03-metin/veri/indir.sh` (MTS T1/T9 + FY tarihçe, Debt to the Penny, ort. faiz, FRED, OMB T7.1, Shiller) + `veri/hesap.py` |
 | F4 ses-muhendisi | `04-ses/son-islem.sh`, `olc.py`, `son-olc.py`, `okuma-hazirla.py` |
@@ -68,6 +68,7 @@ Video klasöründe kalan kapı betikleri (1929 videosu, `uretim/2026-10-26-1929-
 - Yükleme `tools/yayin/yukle.py`. Cihaz akışı altyazı yükleyemez → Studio. Test & Compare'de belirsiz sonuçta ilk yüklenen varyant kalır → ilk sıraya en iyi ön tahmin. Planlı/gizli videoda test kurulamaz, API yok (Studio masaüstü). Başlık testi thumbnail testinden sonra.
 
 ## Araştırma ve veri
+- 2026-11-04 (kanal-analisti, 90 g niş n=959): başlıkta Rakam/$ ve yıl kanal içi medyan skoru 0,95 (niş 1,06); tarih→gelecek 1,57, paradoks 1,29, "What Happens If" ≥2x %37. Patlayan genç kanallar Shorts'suz büyüyor; bizim Shorts 341 izlenme → uzun +5. senaryo-yazari/youtube-paketleyici: tarihi yakın geleceğe bağla, Shorts'u uzun videonun açık sorusu yap (`uretim/2026-11-04-secim/01-arastirma/rakip-ozet.md`).
 - YouTube Data API `search` ayrı günlük tavanlı (15 sorguda 429), proje paylaşımlı → `playlistItems`/`videos` (1 birim) tercih. Kota dolunca `python3 -m yt_dlp --flat-playlist --print "%(id)s" "ytsearch15:<sorgu>"` + `videos.list`. yt-dlp otomatik altyazı ~8 videoda sonra bot kontrolü.
 - `marketing-skills:youtube-full` bir veri aracıdır (transkript/RSS/arama); SEO veya retention kuralı vermez.
 - Wikimedia pageviews: UA başlığı şart, istekler arası ≥4–8 sn. Link kanıtı = HTTP 200 + sayfada anahtar kelime (soft-404 var).
