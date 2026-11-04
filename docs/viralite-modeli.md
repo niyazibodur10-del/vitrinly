@@ -82,7 +82,7 @@ Ek öneriler:
 | Zamanlama yalnızca bonus olsun | Ret | Zamanlama ölçüt olarak kaldı (yukarıya bakın). |
 
 ## v0.1 → v0.2 kalibrasyonu (2026-11-04, viralite-analisti)
-Veri: `uretim/2026-11-04-secim/01-arastirma/olcum/delta90-2026-11-04.json` (90 g, niş n=959, 38 kanal, kanal içi medyan skoru [API][H]). Betik ve çıktı: `uretim/2026-11-04-secim/02-senaryo/viralite-olcum/kalibrasyon90.py` → `kalibrasyon90-cikti.txt`.
+Veri: `uretim/2026-11-04-miras-sizintilari/01-arastirma/olcum/delta90-2026-11-04.json` (90 g, niş n=959, 38 kanal, kanal içi medyan skoru [API][H]). Betik ve çıktı: `uretim/2026-11-04-miras-sizintilari/02-senaryo/viralite-olcum/kalibrasyon90.py` → `kalibrasyon90-cikti.txt`.
 | Değişiklik | v0.1 | v0.2 | Kanıt |
 |---|---|---|---|
 | Zamanlama | 0.10 | **0.05** | Gündem kelimeli başlık (AI/Trump/tarife/2026/Fed, n=158) 1,00x ↔ diğer 1,09x; ≥3x %12 ↔ %15. v0.1'de reddin gerekçesi "ömür boyu liste yanlılığı"ydı; 90 g pencere bu yanlılığı kaldırdı ve veri yine avantaj göstermedi → model değişti. |

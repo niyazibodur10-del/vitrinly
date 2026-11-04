@@ -1,7 +1,7 @@
 # Rakip analizi: animasyonlu / karakter anlatımlı finans-ekonomi nişi
 
 ## v2 güncel (2026-11-04, YouTube Data API v3 ölçümü, 90 gün) — kanal-analisti
-Ölçüm 2026-11-04 04:31 UTC [API]; 158 kanal tarandı, niş alt küme 959 video / 38 kanal. Ayrıntı, tablolar, betikler: `uretim/2026-11-04-secim/01-arastirma/rakip-ozet.md` (ham veri `olcum/delta90-2026-11-04.json`). Etiketler: [API] ölçüm, [H] hesap, [GÖZ] thumbnail incelemesi, [AÇK] açıklamadan hook çıkarımı, [AÖ] arama özeti, [T] tahmin.
+Ölçüm 2026-11-04 04:31 UTC [API]; 158 kanal tarandı, niş alt küme 959 video / 38 kanal. Ayrıntı, tablolar, betikler: `uretim/2026-11-04-miras-sizintilari/01-arastirma/rakip-ozet.md` (ham veri `olcum/delta90-2026-11-04.json`). Etiketler: [API] ölçüm, [H] hesap, [GÖZ] thumbnail incelemesi, [AÇK] açıklamadan hook çıkarımı, [AÖ] arama özeti, [T] tahmin.
 **En iyi 5 kanal** (A = 90 g medyan izlenme/abone, B = ≥3x oranı; ikisinde de ilk 5 dışı elendi) [API][H]:
 | Kanal | Abone | A | B | En iyi video (90 g) |
 |---|---|---|---|---|

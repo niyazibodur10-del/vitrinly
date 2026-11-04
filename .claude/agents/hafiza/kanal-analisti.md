@@ -6,8 +6,8 @@
 - support.google.com/youtube ve blog.youtube WebFetch ile açılır → politika [B-Kn]; tek yardım sayfasına güvenme, "Changes to YPP" + resmi blogu da aç.
 - Kalıp/süre istatistiği her zaman kanal içi medyana göre ve "kanal medyanı ≥1.000" filtresiyle; kalıbın kaç kanalda görüldüğünü yaz (n büyük ama 3 kanal = kanal etkisi). Hayatta kalan yanlılığını ve pivot etkisini (Fred) her zaman not et.
 - Kanal seçmeden önce son yükleme tarihini ve dilini (`defaultAudioLanguage`, Devanagari başlık) API'yle ölç; Hintçe kanallar İngilizce başlıkla sızıyor (THE LOST CHAPTER, Truth Vault).
-- Etiket kapısı: `uretim/2026-11-04-secim/01-arastirma/etiket_test.py <md> <tarih> [--bolum A B]` (etiketler API|H|ALT|GÖZ|T|ÖB|AÇK|AÖ); her rakamlı satıra açık etiket, öneri satırları [T: öneri].
-- Hazır betikler (kopyala, parametrele): `uretim/2026-11-04-secim/01-arastirma/olcum/` → `delta90.py` (90 g, iki skor: medyan ve izlenme/abone, Shorts sayısı), `desen90.py`/`desen90b.py`, `sirala90.py` (A/B kanal sırası), `kendi.py` (kendi kanal + sabit yorum ayrımı), `haric.txt`. İlk-video kıyası: `uretim/2026-10-26-1929-1000-dolar/10-yayin-sonrasi/olcum/olc.py`.
+- Etiket kapısı: `uretim/2026-11-04-miras-sizintilari/01-arastirma/etiket_test.py <md> <tarih> [--bolum A B]` (etiketler API|H|ALT|GÖZ|T|ÖB|AÇK|AÖ); her rakamlı satıra açık etiket, öneri satırları [T: öneri].
+- Hazır betikler (kopyala, parametrele): `uretim/2026-11-04-miras-sizintilari/01-arastirma/olcum/` → `delta90.py` (90 g, iki skor: medyan ve izlenme/abone, Shorts sayısı), `desen90.py`/`desen90b.py`, `sirala90.py` (A/B kanal sırası), `kendi.py` (kendi kanal + sabit yorum ayrımı), `haric.txt`. İlk-video kıyası: `uretim/2026-10-26-1929-1000-dolar/10-yayin-sonrasi/olcum/olc.py`.
 - Kendi sabit yorumumuz commentCount'u şişirir → `authorChannelId == kanal` ile ayır. Studio CSV'yi 7 g raporundan ÖNCE koordinatörden iste; yoksa CTR/AVD dersleri yazılamaz.
 
 ## Dersler
