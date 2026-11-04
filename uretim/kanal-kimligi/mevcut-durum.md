@@ -25,3 +25,4 @@ API ile değiştirilemez: profil fotoğrafı, kanal adı, @tanıtıcı (Studio).
 - **Ad değişti:** Toonomy · @toonomy (Niyazi, Studio). Maskot: Leo. Açıklama + anahtar kelimeler Toonomy/Leo ile güncellendi; **banner yüklendi** (TOONOMY, "NEW VIDEOS EVERY WEEK"; bannerExternalUrl yenilendi). Profil fotoğrafı (`profil-800.png`) Niyazi Studio'dan yükleyecek.
 - 2026-10-27: Hakkında'ya "Researched, written and produced by the Toonomy team." eklendi (hakem ŞY-1, Ö9), API ile uygulandı.
 - 2026-10-28: oynatma listesi 'The Collapse: Financial History Explained' açıldı (ilk video BVJwZ1C9R1U).
+- 2026-11-04: oynatma listesi açıklamalarından gün sözü ("New episodes every …") çıkarıldı (gün sözü kuralı); canlıda The Collapse + Money News güncellendi (API).
