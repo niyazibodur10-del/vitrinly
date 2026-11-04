@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""F3 Metin + Retention kapısı — S08 (2026-10-28-yeni-video). 1929 betiğinden (uretim/2026-10-26-1929-1000-dolar/03-metin/) uyarlandı.
+"""F3 Metin + Retention kapısı — v4, S03 miras sızıntıları (2026-11-04). v3 (uretim/2026-10-28-yeni-video/03-metin/) uyarlaması:
+2080–2400 kelime (13–15 dk), K1 üç-olasılık kalıp yasağı, olgu-kaynak etiketi kontrolü, D2 çift sayım kalıpları, rakam-tablosu yoksa [R?] sayımı.
 Kullanım: python3 -I metin-kontrol.py metin.md [--yaz]   (--yaz: sahne başlık zamanlarını betik ölçümüyle günceller)
 Ölçüm: ANLATIM sütunu, kelime = boşlukla ayrılmış birim, 160 kpm (am_fenrir 0.9 uzun metin ölçümü).
 Kapılar: 1750–2100 kelime (≥10 dk); ilk 15 sn somut özne + vaat; ilk 30 sn intro yok; ↺ aralığı ≤90 sn (hedef ≤75, uyarı);
@@ -10,21 +11,22 @@ bölümler; Shorts ≤60 sn; ANLATIM+Shorts sayıları rakam-tablosu.md / veri/o
 import re, sys, os
 
 KPM = 160.0
-ALT, UST = 1750, 2100
+ALT, UST = 2080, 2400
 YASAK = re.compile(r"\b(charts?|complicated|scenarios?|truth|crash(es|ed|ing)?|bold)\b", re.I)
 TAVSIYE = [r"\byou should\b", r"\bi recommend\b", r"\bbuy now\b", r"\bsell now\b", r"\bguaranteed?\b", r"\binvest in\b",
            r"\bfinancial advi[cs]", r"\badvis[oe]r\b", r"\bexpert\b", r"\bdon'?t invest\b", r"\bbest investment\b", r"\btip\b",
            r"\byou need to\b", r"\bput your money\b", r"\bprotect (your|yourself)\b", r"\byour money\b", r"\bbuy gold\b",
-           r"\bgold\b", r"\bmy advice\b", r"\bwe recommend\b", r"\bdefault (will|is coming)\b"]
+           r"\bgold\b", r"\bmy advice\b", r"\bwe recommend\b", r"\bset up a trust\b", r"\bgift (it|them) now\b", r"\bestate plan", r"\bshould you\b"]
 H7 = re.compile(r"\b(today|tonight|this week|this month|this year|yesterday|tomorrow|right now|just (ended|announced|released))\b", re.I)
-TABLO_YASAK = re.compile(r"\b(credit cards?|first time( ever)?|seven (dollars )?for every five|forty trillion|four hundred eighty|one hundred twenty-one percent)\b", re.I)
+TABLO_YASAK = re.compile(r"\b(bank of america (says|estimates)|fifty-two trillion|biggest handover|death tax|minus fifty-four|minus eighteen trillion|lost fifty-four)\b", re.I)
+K1 = re.compile(r"\b(possibility (a|b|c|one|two|three)|three (ways|possibilities|paths|roads) |scenario (one|two|three|a|b|c)|option (a|b|c)|three ways this could go)\b", re.I)
 PARTI = re.compile(r"\b(democrat\w*|republican\w*|gop|trump|biden|harris|vance|congress(wo)?man|senator|president)\b", re.I)
 INTRO = re.compile(r"\b(hi guys|hey guys|welcome (back )?to|toonomy|channel|subscribe|like button)\b", re.I)
 ABONE_SOZ = re.compile(r"\bsubscri\w*|\blike button\b|\bbell\b", re.I)
-TEZ = "a country isn't a family, but the interest bill works the same way"
-TEZ2 = "but the interest bill works the same way"
-HOOK = "Shrink the U.S. government"
-ONCEKI = ["../../2026-10-26-1929-1000-dolar/03-metin/metin.md"]
+TEZ = "an inheritance isn't a number. it's whatever is left at the end of a long road"
+TEZ2 = "it's whatever is left at the end of a long road"
+HOOK = "One hundred twenty-four trillion dollars will change hands"
+ONCEKI = ["../../2026-10-26-1929-1000-dolar/03-metin/metin.md", "../../2026-10-28-yeni-video/03-metin/metin.md"]
 
 def mmss(s):
     s = int(round(s)); return f"{s//60}:{s%60:02d}"
@@ -81,7 +83,8 @@ def mantis(x):
 
 def izinli(taban):
     vals = []
-    t = open(os.path.join(taban, "rakam-tablosu.md"), encoding="utf-8").read()
+    rt = os.path.join(taban, "rakam-tablosu.md")
+    t = open(rt, encoding="utf-8").read() if os.path.exists(rt) else ""
     for m in re.finditer(r"(?<![\w.])(\d{1,3}(?:\.\d{3})+(?:,\d+)?|\d+,\d+|\d+)(?![\w])", t):
         s = m.group(1).replace(".", "").replace(",", "."); vals.append((float(s), "rakam-tablosu"))
     p = os.path.join(taban, "veri", "olcek-cikti.txt")
@@ -89,7 +92,6 @@ def izinli(taban):
         for m in re.finditer(r"\d[\d,]*\.?\d*", open(p, encoding="utf-8").read()):
             try: vals.append((float(m.group(0).replace(",", "")), "olcek-hesap [H]"))
             except ValueError: pass
-    vals.append((1e9, "D1 ölçek satırı (rakam-tablosu başlığı: $1 a month = $1 billion a year)"))
     return vals
 
 def eslestir(v, once, vals, yuzde):
@@ -130,7 +132,7 @@ def main():
     if not ok: hata.append("kelime/süre")
     tum = " ".join(s["anl"] for s in sahneler).split()
     ilk15 = " ".join(tum[:int(15 * KPM / 60)]).lower()
-    vaat = all(x in ilk15 for x in ["household", "five thousand four hundred", "seven thousand four hundred", "gap"])
+    vaat = all(x in ilk15 for x in ["trillion", "charity", "spouse", "family", "kids"])
     print(f"\n**İlk 15 sn ({int(15*KPM/60)} kelime):** \"{ilk15}\" → somut özne + vaat: {'GEÇTİ' if vaat else 'KALDI'}")
     if not vaat: hata.append("ilk 15 sn")
     intro = INTRO.findall(" ".join(tum[:int(30 * KPM / 60)]))
@@ -177,7 +179,7 @@ def main():
     tam = re.findall(r"\*\*Okunacak tam metin[^:]*:\*\* <<(.+?)>>", md)
     anlatim = " ".join(s["anl"] for s in sahneler)
     hepsi = anlatim + " " + " ".join(tam)
-    for ad, rx in (("Telaffuz yasak listesi", YASAK), ("H7 yayın gününe bağlı zaman sözcüğü", H7), ("Rakam tablosu yasakları (credit card / first time / 7-for-5 / toplam borç)", TABLO_YASAK), ("P1 parti/kişi adı", PARTI)):
+    for ad, rx in (("Telaffuz yasak listesi", YASAK), ("H7 yayın gününe bağlı zaman sözcüğü", H7), ("Rakam tablosu yasakları (credit card / first time / 7-for-5 / toplam borç)", TABLO_YASAK), ("P1 parti/kişi adı", PARTI), ("K1 üç-olasılık kalıbı", K1)):
         y = [m.group(0) for m in rx.finditer(hepsi)]
         print(f"**{ad}** (anlatım+Shorts): {len(y)} → {'GEÇTİ' if not y else 'KALDI ' + str(y)}")
         if y: hata.append(ad)
@@ -185,9 +187,11 @@ def main():
     print(f"**Tavsiye kalıbı** ({len(TAVSIYE)} desen): {sum(n for _, n in tvs)} → {'GEÇTİ' if not tvs else 'KALDI ' + str(tvs)}")
     if tvs: hata.append("tavsiye")
     nsh = len(re.findall(r"\bshould\b|\bmust\b|\bneed to\b", hepsi, re.I)); nsp = len(re.findall(r"spiral", hepsi, re.I))
-    print(f"  ek: should/must/need to: {nsh} · 'spiral' geçişleri: {nsp} (yalnız 'possibility' cümlesiyle)")
-    sp = re.findall(r"[^.?]*spiral[^.?]*[.?][^.?]*[.?]", anlatim, re.I)
-    if sp and not all("possibility" in x.lower() for x in sp): hata.append("spiral possibility değil")
+    print(f"  ek: should/must/need to: {nsh}")
+    # olgu-kaynak: sayı taşıyan her sahnenin GÖRSEL'inde "Kaynak:" etiketi
+    eks = [x["id"] for x in sahneler if [y for y in sayilar(x["anl"]) if y[0] == "yil" or y[1] > 12] and "Kaynak:" not in x["gor"]]
+    print(f"**Olgu-kaynak etiketi** (sayılı sahnede GÖRSEL 'Kaynak:'): eksik {len(eks)} → {'GEÇTİ' if not eks else 'KALDI ' + str(eks)}")
+    if eks: hata.append("kaynak etiketi")
     # tez
     tz = []
     for s in sahneler:
@@ -227,7 +231,7 @@ def main():
             n += 1; src, a, tol = eslestir(v, once, vals, sonra == "percent")
             if not src: bulunmayan += 1; hata.append(f"rakam {v:g} {etiket}")
             print(f"| {etiket} | {v:g}{' %' if sonra == 'percent' else ''} | {once} | {f'{a:g} ({src}, ±{tol*100:.0f}%)' if src else '-'} | {'GEÇTİ' if src else 'KALDI'} |")
-    acik = govde.count("[RAKAM?")
+    acik = govde.count("[R?")
     print(f"\n  {n} sayı kontrol edildi, tabloda olmayan: {bulunmayan} · metinde açık [RAKAM?]: {acik}")
     # 5-gram
     def ng(t, k=5):
@@ -237,7 +241,7 @@ def main():
         p = os.path.normpath(os.path.join(taban, o))
         if os.path.exists(p):
             b = ng(open(p, encoding="utf-8").read()); oran = len(a & b) / max(1, len(a)) * 100
-            print(f"**Özgünlük 5-gram** vs 1929 metni: {oran:.1f}% ({len(a & b)}/{len(a)}) → {'GEÇTİ' if oran <= 10 else 'KALDI'}")
+            print(f"**Özgünlük 5-gram** vs {os.path.basename(os.path.dirname(os.path.dirname(p)))}: {oran:.1f}% ({len(a & b)}/{len(a)}) → {'GEÇTİ' if oran <= 10 else 'KALDI'}")
             if oran > 10: hata.append("5-gram")
     # başlık zamanları
     fark = [s["id"] for s in sahneler if not re.match(rf"{mmss(s['t0'])}–{mmss(s['t1'])} · ", s["baslik"])]
