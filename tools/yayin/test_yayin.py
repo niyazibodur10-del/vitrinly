@@ -269,6 +269,25 @@ class KaliciYetki(unittest.TestCase):
         self.assertEqual(api.yetki_al(cikti=lambda *a: None)[0], "A3")
         self.assertEqual(open(api.YENILEME_DOSYASI).read(), "R3")
 
+    def test_ortam_dusukse_dosyadaki_gecerli_token(self):
+        # 2026-11-04: ortam değişkenindeki token invalid_grant; dosyadaki geçerli → cihaz akışı (kod) istenmemeli
+        api.yenileme_kaydet("IYI"); os.environ["YOUTUBE_OAUTH_REFRESH_TOKEN"] = "DUSUK"
+        try:
+            denenen = []
+            def sahte(url, veri=None, *a, **k):
+                denenen.append(veri)
+                if b"refresh_token=DUSUK" in veri: return 400, {}, b'{"error":"invalid_grant"}'
+                if b"refresh_token=IYI" in veri: return 200, {}, b'{"access_token":"A4","scope":"s"}'
+                raise AssertionError("cihaz akışına düşmemeli")
+            api.istek = sahte
+            self.assertEqual(api.yetki_al(cikti=lambda *a: None), ("A4", "s", True))
+            self.assertEqual(len(denenen), 2)
+            self.assertEqual([k for _, k in api.yenileme_kaynaklari()], ["ortam değişkeni", api.YENILEME_DOSYASI])
+            os.environ["YOUTUBE_OAUTH_REFRESH_TOKEN"] = "IYI"   # aynı token iki kez denenmez
+            self.assertEqual(len(api.yenileme_kaynaklari()), 1)
+        finally:
+            os.environ.pop("YOUTUBE_OAUTH_REFRESH_TOKEN", None)
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)

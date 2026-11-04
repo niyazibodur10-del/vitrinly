@@ -143,6 +143,8 @@ def norm(s):
 
 
 def main():
+    if len(sys.argv) != 3:
+        print("Kullanım: hata-orani.py <ref.txt> <whisper.json>", file=sys.stderr); sys.exit(2)
     ref = open(sys.argv[1], encoding="utf-8").read(); hyp = json.load(open(sys.argv[2], encoding="utf-8"))["text"]
     r, h = norm(ref), norm(hyp)
     d = list(range(len(h) + 1))

@@ -62,12 +62,13 @@ def main():
             print(f"YETKİ HATASI: {e}"); return 4
         print(f"Tamam (kapsam: {kapsam}, kalıcı: {kalici})."); return 0 if kalici else 4
     if a.yetki_iptal:
-        yt, kaynak = api.yenileme_tokeni()
-        if not yt:
+        kaynaklar = api.yenileme_kaynaklari()   # tüm kaynaklar (ortam + dosya) iptal edilir
+        if not kaynaklar:
             print("Kayıtlı kalıcı yetki yok."); return 0
-        print(f"Google iptal: HTTP {api.iptal(yt)} ({kaynak})")
+        for yt, kaynak in kaynaklar:
+            print(f"Google iptal: HTTP {api.iptal(yt)} ({kaynak})")
         if os.path.isfile(api.YENILEME_DOSYASI): os.remove(api.YENILEME_DOSYASI)
-        if kaynak == "ortam değişkeni":
+        if any(k == "ortam değişkeni" for _, k in kaynaklar):
             print("Not: YOUTUBE_OAUTH_REFRESH_TOKEN ortam ayarından da silinmeli.")
         return 0
 

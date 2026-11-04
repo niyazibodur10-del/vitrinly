@@ -73,14 +73,23 @@ YENILEME_DOSYASI = os.path.join(os.environ.get("ARAC_DIZINI", os.path.expanduser
                                 "youtube-yenileme-tokeni")
 
 
-def yenileme_tokeni():
-    """(token, kaynak) veya (None, None). Değer asla yazdırılmaz."""
+def yenileme_kaynaklari():
+    """[(token, kaynak), ...] öncelik sırasıyla (ortam değişkeni, dosya); boşlar ve tekrarlar atlanır. Değer yazdırılmaz.
+    2026-11-04 (uretim-muhendisi): ortam değişkenindeki token düşmüş (invalid_grant) ama dosyadaki geçerliyken eski kod
+    yalnız ilk kaynağı deneyip cihaz akışına (Niyazi'den kod) düşüyordu → yetki_al artık GEÇERLİ ilk kaynağı kullanır."""
+    out = []
     t = os.environ.get("YOUTUBE_OAUTH_REFRESH_TOKEN", "").strip()
-    if t: return t, "ortam değişkeni"
+    if t: out.append((t, "ortam değişkeni"))
     if os.path.isfile(YENILEME_DOSYASI):
-        t = open(YENILEME_DOSYASI, encoding="utf-8").read().strip()
-        if t: return t, YENILEME_DOSYASI
-    return None, None
+        with open(YENILEME_DOSYASI, encoding="utf-8") as f: t = f.read().strip()
+        if t and all(t != x for x, _ in out): out.append((t, YENILEME_DOSYASI))
+    return out
+
+
+def yenileme_tokeni():
+    """(token, kaynak) — öncelikli ilk kaynak (geçerliliği denetlemez) veya (None, None)."""
+    k = yenileme_kaynaklari()
+    return k[0] if k else (None, None)
 
 
 def yenileme_kaydet(t):
@@ -104,14 +113,15 @@ def yenile(cid, sec, yt):
 def yetki_al(akis="cihaz", cikti=print):
     """(erisim_tokeni, kapsam, kalici). kalici=True ise erişim tokenı iptal edilmemeli."""
     cid, sec = kimlik_bilgisi()
-    yt, kaynak = yenileme_tokeni()
-    if yt:
+    kaynaklar = yenileme_kaynaklari()
+    for i, (yt, kaynak) in enumerate(kaynaklar):
         try:
             tok, kapsam = yenile(cid, sec, yt)
             cikti(f"Kalıcı yetki kullanıldı ({kaynak}); kod gerekmedi.")
             return tok, kapsam, True
         except ApiHatasi as e:
-            cikti(f"Kalıcı yetki geçersiz: {e} → cihaz akışına geçiliyor.")
+            sonraki = "sonraki kaynak deneniyor" if i + 1 < len(kaynaklar) else "cihaz akışına geçiliyor"
+            cikti(f"Kalıcı yetki geçersiz ({kaynak}): {e} → {sonraki}.")
     yeni = {}
     if akis == "cihaz":
         tok, kapsam = cihaz_akisi(cid, sec, yenileme=lambda t: yeni.update(t=t), cikti=cikti)

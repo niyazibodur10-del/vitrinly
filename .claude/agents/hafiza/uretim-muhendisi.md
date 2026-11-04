@@ -28,3 +28,5 @@
 - 2026-11-02: Disk %85 (6 GB boş) → büyük kurulumlara boş alan eşiği (earshot 4 GB, `ES_MIN_GB`), aşılırsa atla + uyarı, ana kurulumu düşürme. Temiz testte taşınan kopyaları diff'le doğrulayıp sil.
 - 2026-11-03 (kanal fabrikası): kanala özel sabitler tek dosyada (`kanal.json` + stdlib `tools/kanal_ayar.py`; Remotion JSON import ile okur). Başka ajanın yama listesi olan dosyalara (ajan .md) dokunma, önce `eski` dizgilerini doğrula. Global sed'i heredoc içinde EOF'lu metinle yazma → betiği dosyaya yaz.
 - 2026-11-03: token önceliği "ilk kaynak" değil "geçerli ilk kaynak" olmalı (ortam düşükse dosya). Oturum ortamındaki PY/TTS_PY başka ARAC gösterebilir → test betiği ARAC_DIZINI'nden türetir.
+- 2026-11-04 (F0): hafızadaki "geçerli ilk kaynak" kuralı koda girmemişti; ortam tokenı düşünce cihaz akışına düşüyordu → hafızaya yazılan düzeltmeyi grep ile kodda doğrula, birim testiyle kilitle.
+- 2026-11-04: disk 3,8 GB → 15 GB: en büyük sızıntı yarıda kalan render'ların /tmp/remotion-webpack-bundle-* (290 MB/adet); geniş /tmp süpürmesi izinsiz → `find -mmin +1440` ile yalnız bayatlar (`disk-durum.sh --temizle`).
