@@ -7,7 +7,7 @@
 **Tek kaynak:** JSON'lar `<!-- veri:… -->` bloklarından `paket-uret.py` ile üretilir; `paket-kontrol.py` birebir karşılaştırır. `{MUZIK_*}` ve `{KAYNAK_F3}` görünür yer tutucu → `--final` kipinde hata.
 Etiketler: **[Ö]** betik ölçümü · **[T]** yargı · **[D]** doğrulanmış kaynak.
 
-**Kırmızı çizgiler:** başlıkta çıplak $ rakam ve yıl yok (kanal dersi 1: Rakam/$ 0,95x, Yıl 0,95x); "Bank of America says" yok (D1); "biggest … ever" yalnız elenen çalışma başlığında (D3); "124 − 54 − 18" çıkarması yok (D2); "you should / set up a trust / gift it now" yok (P1); kuşak suçlaması yok (P2); "three possibilities / Possibility A/B/C / scenario one" yok (K1, pinli yorum dahil); "this week / today / just" yok (H6; "Just Not" yalnız elenen değil, betikte kalıp dışı); rakip çekirdeği "What Happens When … Boomers Are Gone" yok (AJ Osborne 953x outlier → benzer_aci −1.5).
+**Kırmızı çizgiler:** başlıkta çıplak $ rakam ve yıl yok (kanal dersi 1: Rakam/$ 0,95x, Yıl 0,95x); "Bank of America says" yok (D1); "biggest … ever" yalnız elenen çalışma başlığında (D3); "124 − 54 − 18" çıkarması yok (D2); "you should / set up a trust / gift it now" yok (P1); kuşak suçlaması yok (P2); "three possibilities / Possibility A/B/C / scenario one" yok (K1, pinli yorum dahil); "this week / today / tonight" yok (H6; T7'deki "Just Not" zaman anlamı taşımaz); rakip çekirdeği "What Happens When … Boomers Are Gone" yok (AJ Osborne 953x outlier → benzer_aci −1.5).
 
 ---
 

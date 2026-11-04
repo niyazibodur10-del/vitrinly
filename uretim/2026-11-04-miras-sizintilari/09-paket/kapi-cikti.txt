@@ -1,0 +1,120 @@
+# kapi-cikti — S03 paket taslağı (youtube-paketleyici, 2026-11-04)
+
+## python3 -I paket-uret.py
+yazıldı yayin-paketi.json · müzik: YER TUTUCU · kaynak: YER TUTUCU · yasal: taslak · thumbnail: None
+yazıldı yayin-paketi-shorts-1.json · müzik: YER TUTUCU · kaynak: — · yasal: taslak · thumbnail: None
+yazıldı yayin-paketi-shorts-2.json · müzik: YER TUTUCU · kaynak: — · yasal: taslak · thumbnail: None
+
+## python3 -I paket-kontrol.py (taslak kipi; 2 koşu çıktı sha256 1815e626b249 ×2, JSON üçlüsü d7ad81b641d9 ×2; girdiler paket.md 9cf948e63a4c · paket-uret.py 2da8efc9ef55 · paket-kontrol.py a57a32399858)
+== paket-kontrol.py S03 (taslak/F8a) ==
+[1] Başlıklar (≤60, < > yok, çıplak $ rakam / yıl yok, yasaklı/kalıp/K1 0)
+  OK   36 krk · The Great Wealth Transfer Has a Leak
+  OK   42 krk · Where Will the Boomers' Money Actually Go?
+  OK   51 krk · The Great Wealth Transfer Is Smaller Than It Sounds
+  OK   54 krk · The Boomers' Money Is Coming. Just Not When You Think.
+  OK   57 krk · The Biggest Inheritance Ever, and Why Heirs Might Miss It
+  OK   49 krk · Your Parents' Money Is Taking the Long Way to You
+  OK   56 krk · What Happens to Boomer Money Before It Reaches the Kids?  (elenen; bulgu [('kalıp', 'What Happens to Boomer')])
+[2] Puan = .30 merak + .20 arama + .20 thumb + .20 politika + .10 mobil (≤45:10 ≤50:9 ≤60:7) − kalıp
+       T1 8.40 · The Great Wealth Transfer Has a Leak
+       T3 7.70 · Where Will the Boomers' Money Actually Go?
+       T4 7.40 · The Great Wealth Transfer Is Smaller Than It Sounds
+       T7 7.30 · The Boomers' Money Is Coming. Just Not When You Think.
+       T5 6.90 · The Biggest Inheritance Ever, and Why Heirs Might Miss It
+       T2 6.60 · Your Parents' Money Is Taking the Long Way to You
+       T6 6.00 · What Happens to Boomer Money Before It Reaches the Kids?
+  OK   en yüksek T1 = önerilen başlık
+  OK   en düşük 2 ['T2', 'T6'] = elenenler
+  OK   varyant sırası = puan sırası
+  OK   7 aday ≥6
+[3] Açıklama
+       ilk paragraf 143 krk: The great wealth transfer, explained: about $124 trillion is set to pass down in the US through 2048, Cerulli estimates. What reaches the kids?
+  OK   ilk paragraf ≤150 krk (kesilmeden okunur)
+  OK   ilk 150 krk: great wealth transfer
+  OK   ilk 150 krk: $124 trillion
+  OK   ilk 150 krk: 2048
+  OK   ilk 150 krk: Cerulli
+  OK   arama ifadesi ilk 10 krk içinde (konum 4)
+  OK   ilk paragraf başlığı tekrar etmiyor
+  OK   "Not financial advice" var
+  OK   yasal not sonu = AI satırı, görsel satırı aynı paragrafta
+  OK   yasal not 'tax or legal advice' vurgusu (P3)
+  OK   yasal not: kurgusal aile 'illustration' (P2)
+  BEKL yasal not kaynağı: taslak (F3 rakam-tablosu.md §'Yasal not (açıklama)' birebir)
+  OK   {BOLUMLER} yer tutucusu (araç Chapters: basar)
+  OK   LEGAL NOTE, SOURCES'ın üstünde
+  OK   Cerulli birincil kaynak bağlantısı (D1)
+  BEKL F3 ek kaynakları ({KAYNAK_F3}; D4–D6)
+  OK   açıklama 1791/5000 bayt, < > yok
+  OK   açıklama yasaklı/tavsiye/K1/D1/D2: 0
+  BEKL müzik atfı 06-muzik/atif-satirlari.md'den
+[3b] Bölümler
+  OK   7 bölüm, 00:00, artan, ≥10 sn
+  OK   bölüm adları yasaklı/K1: 0
+  BEKL 03-metin/metin.md §4 yok (F3) → bölüm adları taslak
+  BEKL gerçek sahne zamanları yok (04-ses/sahne-zamanlari.json, F4) → F8b'de kayar
+[4] Etiket + hashtag + SRT terimleri
+  OK   etiket 21 adet, 436/500
+  OK   etiket tekrarı yok
+  OK   etiket yasaklı: 0
+  OK   3 hashtag, açıklama sonu: ['#GreatWealthTransfer', '#Inheritance', '#FinanceExplained']
+  BEKL SRT yok → etiket/açıklama terimleri videoda geçiyor mu F8b'de
+[5] Shorts
+  OK   shorts1 başlık 58 krk, soru · The Great Wealth Transfer: What Actually Reaches the Kids?
+  OK   shorts1 yasaklı: 0
+  OK   shorts1 AI + görsel satırı + Not financial advice
+  OK   shorts1 uzun video başlığı + kanal bağlantısı, URL yer tutucusu yok
+  OK   shorts1 kaynak satırı + ilk paragraf soruyla biter (cevap uzun videoda)
+  OK   shorts1 hashtag ['#Shorts', '#GreatWealthTransfer', '#Inheritance']
+  OK   shorts1 açıklama bayt
+  OK   shorts2 başlık 47 krk, soru · Are the Heirs Ready to Run the Family's Giving?
+  OK   shorts2 yasaklı: 0
+  OK   shorts2 AI + görsel satırı + Not financial advice
+  OK   shorts2 uzun video başlığı + kanal bağlantısı, URL yer tutucusu yok
+  OK   shorts2 kaynak satırı + ilk paragraf soruyla biter (cevap uzun videoda)
+  OK   shorts2 hashtag ['#Shorts', '#Inheritance', '#GreatWealthTransfer']
+  OK   shorts2 açıklama bayt
+  OK   shorts2-yedek başlık 52 krk, soru · Why Does So Much Inheritance Stop at a Spouse First?
+  OK   shorts2-yedek yasaklı: 0
+  OK   shorts2-yedek AI + görsel satırı + Not financial advice
+  OK   shorts2-yedek uzun video başlığı + kanal bağlantısı, URL yer tutucusu yok
+  OK   shorts2-yedek kaynak satırı + ilk paragraf soruyla biter (cevap uzun videoda)
+  OK   shorts2-yedek hashtag ['#Shorts', '#Inheritance', '#GreatWealthTransfer']
+  OK   shorts2-yedek açıklama bayt
+  OK   shorts2-yedek: eş payı gecikme, kayıp değil (D2)
+  OK   SHORTS2 = asil
+  BEKL shorts-1 transkripti yok → açıklama iddiaları kesitte var mı F8b'de
+  BEKL shorts-2 transkripti yok → açıklama iddiaları kesitte var mı F8b'de
+[6] Pinli yorum
+  OK   tek soru (1 '?')
+  OK   1–6 numaralı sızıntı listesi
+  OK   A/B/C üçlü yapı yok (K1)
+  OK   nötr (tavsiye/K1/kişisel servet/bugün 0): 0
+  HATA sızıntı adları metinde: eksik ['the cost of care', 'taxes and time']
+[7] Yayın zamanı (EST −05:00, Paz 12:00 / Pzt + Sal 09:00 ET; yedek Çar 12:00 / Per + Cmt)
+  OK   uzun: 2026-11-08T12:00:00-05:00 = Sun 2026-11-08 17:00Z
+  OK   shorts-1: 2026-11-09T09:00:00-05:00 = Mon 2026-11-09 14:00Z
+  OK   shorts-2: 2026-11-10T09:00:00-05:00 = Tue 2026-11-10 14:00Z
+  OK   yedek-uzun: 2026-11-11T12:00:00-05:00 = Wed 2026-11-11 17:00Z
+  OK   yedek-shorts-1: 2026-11-12T09:00:00-05:00 = Thu 2026-11-12 14:00Z
+  OK   yedek-shorts-2: 2026-11-14T09:00:00-05:00 = Sat 2026-11-14 14:00Z
+  OK   Shorts uzun videodan sonra
+  OK   slot = senaryo-karari Paz 2026-11-08 12:00 ET (17:00Z)
+[8] JSON ↔ paket.md (yayin_paket.py)
+  OK   yayin-paketi.json: başlık 36 krk · tam açıklama 1989/5000 bayt · 2026-11-08T12:00:00-05:00
+  OK   tam açıklamada 'Chapters:' + 00:00
+  OK   yayin-paketi-shorts-1.json: başlık 58 krk · tam açıklama 675/5000 bayt · 2026-11-09T09:00:00-05:00
+  OK   yayin-paketi-shorts-2.json: başlık 47 krk · tam açıklama 799/5000 bayt · 2026-11-10T09:00:00-05:00
+  BEKL SEMA'da ilgili_video alanı (uretim-muhendisi talebi; o zamana dek dry-run UYARI)
+  BEKL thumbnail finalisti yok (veri:thumbnail-ana boş) → thumbnail-tasarimcisi
+  BEKL politika-raporu.md yok (monetizasyon-uyum-uzmani) → sentetik_medya geçici true
+  BEKL 08-kurgu/final-16x9.mp4 yok (F7)
+  BEKL 08-kurgu/final.en.srt yok (F7)
+  BEKL 08-kurgu/shorts-1.mp4 yok (F7)
+  BEKL 08-kurgu/shorts-2.mp4 yok (F7)
+SONUÇ: 1 hata · 15 bekleyen (F8b)
+
+## Negatif test (geçici bozuk paket.md: çıplak $/yıl başlık, "Bank of America says", "$52 trillion", "should/set up a trust", pinli yorumda "Possibility A/three ways") → 6 HATA, exit 1; paket.md geri yüklendi
+
+## dry-run kip 1 (gerçek paket): yalnız dosya-yok — uzun 2 hata (video, SRT) + thumbnail UYARI; shorts 1/1 hata (video) + ilgili_video UYARI
+## dry-run kip 2 (bayt-aynı JSON + sahte medya 840 sn 16:9, 55 sn 9:16, 160 blok SRT): 0/0/0 hata; uyarılar: thumbnail yok (uzun), ilgili_video bilinmeyen alan (shorts); publishAt 2026-11-08T17:00Z / 11-09T14:00Z / 11-10T14:00Z; containsSyntheticMedia true
