@@ -22,3 +22,7 @@
 - Siyah gömlekli Leo açık/doygun zeminde (sıcak masa, camgöbeği, mercan) kendiliğinden siluet verir; koyu zeminde kaybolur. Zemin rengini önce seç, koyu lacivert yalnız gerekçeyle. Açık zeminde yazı: koyu dolgu + beyaz kontur veya levha (p5 5–17).
 - Sahne plakasını thumbnail'a alırken metin bölgesindeki nesneleri (kupa, lamba) kadraj dışına at (ölçek+kırpım), sonra metin arkasına sıcak ışık; p5 1,08 → 5,3.
 - OCR psm 11 levhalı/karakterli karede metni kaçırıyor → `thumb-test.py` v2 (bölge OCR + "$→S"); bir sonraki sürüme satır kırpımı psm 7 ekle. Boyut kıyası gerçek oranı abartıyorsa (faiz/ordu %9) kullanma; tek nesne + metin.
+
+### 2026-11-04 — S03 miras F4 erken konsept (K1 WHO GETS IT? / K2 IT LEAKS / K3 SMALLER. LATER. / K4 IT KEEPS LEAKING)
+- Görsel yokken metni düz zemin + yer tutucu maketle ölç (`konsept-maket.py`, satır kırpımı psm 7): kesme işaretli kelime ("WHAT'S") 168'de OCR'ı bozuyor; Anton'da "≠" yok; beyaz yazı açık mercanda p5 2,85 → koyu tuğla (#C4402C) şart.
+- Konuya özgü rakip ızgarası (8 mqdefault) klişeyi gösterdi (ev + FOR SALE, "BOOMERS", elden ele dolar) → senaryodaki "iki el" fikri rakibe yakın çıktı, elendi. Konsepte başlamadan sorgu kümesinin ızgarasına bak.
