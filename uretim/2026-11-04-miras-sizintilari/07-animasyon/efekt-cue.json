@@ -1,0 +1,1952 @@
+{
+ "kaynak": "video/src/videolar/miras-sizintilari/zaman.ts (tek kaynak; 07-animasyon/olay-cikar.mjs)",
+ "eksen": "04-ses/anlatim.wav (0 = anlatım başı)",
+ "fps": 30,
+ "tahmini": true,
+ "olaylar": [
+  {
+   "sahne": "S01",
+   "t": 0,
+   "kare": 0,
+   "olay": "kesme: kamyon arka kapısı: dev kutu $124T",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S01",
+   "t": 0.1,
+   "kare": 3,
+   "olay": "kamyon arka kapısı açılır, dev kutu $124T",
+   "tur": "kart",
+   "oneri": "metal kapı + sürgü"
+  },
+  {
+   "sahne": "S01",
+   "t": 1.6,
+   "kare": 48,
+   "olay": "kutunun köşesinden banknot damlar (≤3 sn görsel değişim)",
+   "tur": "damla",
+   "oneri": "damla / kâğıt"
+  },
+  {
+   "sahne": "S01",
+   "t": 8.575,
+   "kare": 257,
+   "olay": "dilim kayar: $18T → CHARITY",
+   "tur": "kay",
+   "oneri": "kâğıt kayma"
+  },
+  {
+   "sahne": "S01",
+   "t": 9.325,
+   "kare": 280,
+   "olay": "kesme: kamyon yan şeride sinyal: sarı tabela",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S01",
+   "t": 11.242,
+   "kare": 337,
+   "olay": "sinyal + SPOUSE FIRST tabelası",
+   "tur": "vurgu",
+   "oneri": "sinyal tık-tık"
+  },
+  {
+   "sahne": "S01",
+   "t": 12.3,
+   "kare": 369,
+   "olay": "kesme: Leo kamyon yanında pano kaldırır",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S01",
+   "t": 15.203,
+   "kare": 456,
+   "olay": "kesme: dev kutu 10 küçük kutuya bölünür",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S01",
+   "t": 15.453,
+   "kare": 464,
+   "olay": "dev kutu 10 kutuya bölünür",
+   "tur": "pop",
+   "oneri": "karton pop ×10"
+  },
+  {
+   "sahne": "S02",
+   "t": 16.45,
+   "kare": 494,
+   "olay": "kesme: ABD haritası, küçük kamyonlar",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S02",
+   "t": 16.75,
+   "kare": 503,
+   "olay": "ekran yazısı: OFTEN CALLED THE BIGGEST INHERITANCE IN HISTORY",
+   "tur": "yazi",
+   "oneri": "hafif pop"
+  },
+  {
+   "sahne": "S02",
+   "t": 24.65,
+   "kare": 740,
+   "olay": "kesme: kamera tek sokağa, tek eve iner: kapıda kutu",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S02",
+   "t": 27.25,
+   "kare": 818,
+   "olay": "kesme: kapıdan çıkan kutular, içeri giren genç siluet",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S02",
+   "t": 31.075,
+   "kare": 932,
+   "olay": "ekran yazısı: HEIR? HOME BUYER? BOTH?",
+   "tur": "yazi",
+   "oneri": "hafif pop"
+  },
+  {
+   "sahne": "S02",
+   "t": 33.2,
+   "kare": 996,
+   "olay": "kesme: Leo kamyon kapısında",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S02",
+   "t": 37.205,
+   "kare": 1116,
+   "olay": "ekran yazısı: LESS? LATER?",
+   "tur": "yazi",
+   "oneri": "hafif pop"
+  },
+  {
+   "sahne": "S02",
+   "t": 41.354,
+   "kare": 1241,
+   "olay": "kesme: soru işaretli kutu BIGGEST LEAK = ?",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S02",
+   "t": 41.654,
+   "kare": 1250,
+   "olay": "soru işaretli kutu sallanır",
+   "tur": "vurgu",
+   "oneri": "gizem tını"
+  },
+  {
+   "sahne": "S03",
+   "t": 43.7,
+   "kare": 1311,
+   "olay": "kesme: Leo kamyon kapısında (yelek, pano, bant)",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S03",
+   "t": 44,
+   "kare": 1320,
+   "olay": "isim etiketi LEO · MOVING CREW BOSS",
+   "tur": "pop",
+   "oneri": "hafif pop"
+  },
+  {
+   "sahne": "S03",
+   "t": 44.533,
+   "kare": 1336,
+   "olay": "Leo göz kırpar",
+   "tur": "vurgu",
+   "oneri": "tık"
+  },
+  {
+   "sahne": "S03",
+   "t": 50.775,
+   "kare": 1523,
+   "olay": "kesme: Leo yakın, ciddi",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S03",
+   "t": 55.625,
+   "kare": 1669,
+   "olay": "kesme: tez kamyonun yan yüzüne boyanır",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S03",
+   "t": 55.725,
+   "kare": 1672,
+   "olay": "tez yazısı boyanır",
+   "tur": "vurgu",
+   "oneri": "fırça / sprey"
+  },
+  {
+   "sahne": "S03",
+   "t": 61.775,
+   "kare": 1853,
+   "olay": "kontak: motor çalışır",
+   "tur": "vurgu",
+   "oneri": "motor SFX"
+  },
+  {
+   "sahne": "S04",
+   "t": 62.375,
+   "kare": 1871,
+   "olay": "kesme: Leo büyüteçle dev kutunun etiketini okur",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S04",
+   "t": 69.527,
+   "kare": 2086,
+   "olay": "kesme: etiket yakın: FORECAST · CERULLI · DEC 2024",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S04",
+   "t": 75.05,
+   "kare": 2252,
+   "olay": "kesme: grafik G1: tek çubuk $124T",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S04",
+   "t": 75.35,
+   "kare": 2261,
+   "olay": "not: ~$100T from Boomers and older (81%)",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S04",
+   "t": 80.375,
+   "kare": 2411,
+   "olay": "çubuk dolar: ~$105T HEIRS (lacivert)",
+   "tur": "sayac",
+   "oneri": "yükselen tık"
+  },
+  {
+   "sahne": "S04",
+   "t": 84.475,
+   "kare": 2534,
+   "olay": "~$18T CHARITY (yeşil) dilimi",
+   "tur": "pop",
+   "oneri": "pop"
+  },
+  {
+   "sahne": "S04",
+   "t": 88.1,
+   "kare": 2643,
+   "olay": "kesme: Leo: here's the twist",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S04",
+   "t": 90.231,
+   "kare": 2707,
+   "olay": "kesme: G1 üstünden geçen yol + sarı durak tabelası",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S04",
+   "t": 90.631,
+   "kare": 2719,
+   "olay": "sarı tabela SPOUSE FIRST · ~$54T STOP",
+   "tur": "pop",
+   "oneri": "tabela tok"
+  },
+  {
+   "sahne": "S04",
+   "t": 99.132,
+   "kare": 2974,
+   "olay": "ok çubuğa geri döner",
+   "tur": "kay",
+   "oneri": "whoosh kısa"
+  },
+  {
+   "sahne": "S04",
+   "t": 106.375,
+   "kare": 3191,
+   "olay": "kesme: Leo kamyonu yan şeride çevirir: DETOUR ≠ LEAK",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S04",
+   "t": 109.262,
+   "kare": 3278,
+   "olay": "ekran yazısı: DETOUR ≠ LEAK",
+   "tur": "yazi",
+   "oneri": "hafif pop"
+  },
+  {
+   "sahne": "S04",
+   "t": 109.262,
+   "kare": 3278,
+   "olay": "pano: DETOUR ≠ LEAK",
+   "tur": "vurgu",
+   "oneri": "keçeli kalem"
+  },
+  {
+   "sahne": "S05",
+   "t": 111.6,
+   "kare": 3348,
+   "olay": "kesme: harita → kamera tek eve iner",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S05",
+   "t": 116.825,
+   "kare": 3505,
+   "olay": "kesme: kapıda 4 siluet + kamyon (sağ alt boş)",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S05",
+   "t": 118.725,
+   "kare": 3562,
+   "olay": "ekran yazısı: ONE FAMILY. ONE TRUCK.",
+   "tur": "yazi",
+   "oneri": "hafif pop"
+  },
+  {
+   "sahne": "S05",
+   "t": 121.524,
+   "kare": 3646,
+   "olay": "ABONE-1 (sağ alt boş; aile + kamyon sol-orta)",
+   "tur": "abone",
+   "oneri": "klik (kurgu-editoru ortak bileşeni)"
+  },
+  {
+   "sahne": "S06",
+   "t": 123.225,
+   "kare": 3697,
+   "olay": "kesme: kapı eşiğinde 4 düz siluet + EXAMPLE FAMILY etiketi",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S06",
+   "t": 132.596,
+   "kare": 3978,
+   "olay": "kesme: 10 kutu yüklenir (4 HOUSE · 4 RETIREMENT · 2 BANK)",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S06",
+   "t": 133.75,
+   "kare": 4013,
+   "olay": "4 kiremit HOUSE kutusu yerine oturur",
+   "tur": "pop",
+   "oneri": "karton tok ×4"
+  },
+  {
+   "sahne": "S06",
+   "t": 135.975,
+   "kare": 4079,
+   "olay": "4 lacivert RETIREMENT kutusu",
+   "tur": "pop",
+   "oneri": "karton tok ×4"
+  },
+  {
+   "sahne": "S06",
+   "t": 137.825,
+   "kare": 4135,
+   "olay": "2 yeşil BANK kutusu",
+   "tur": "pop",
+   "oneri": "karton tok ×2"
+  },
+  {
+   "sahne": "S06",
+   "t": 140.425,
+   "kare": 4213,
+   "olay": "ekran yazısı: 10 BOXES = ALL THEIR WEALTH",
+   "tur": "yazi",
+   "oneri": "hafif pop"
+  },
+  {
+   "sahne": "S06",
+   "t": 144.55,
+   "kare": 4337,
+   "olay": "ekran yazısı: ILLUSTRATION, NOT AN AVERAGE",
+   "tur": "yazi",
+   "oneri": "hafif pop"
+  },
+  {
+   "sahne": "S06",
+   "t": 150,
+   "kare": 4500,
+   "olay": "kesme: Leo her kutuya TO: THE KIDS yazar",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S06",
+   "t": 154.675,
+   "kare": 4640,
+   "olay": "keçeli: TO: THE KIDS",
+   "tur": "vurgu",
+   "oneri": "keçeli kalem"
+  },
+  {
+   "sahne": "S06",
+   "t": 155.95,
+   "kare": 4679,
+   "olay": "kesme: kutular yakın: etiketler",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S06",
+   "t": 156.05,
+   "kare": 4682,
+   "olay": "ekran yazısı: RULE 1: LABEL EVERYTHING",
+   "tur": "yazi",
+   "oneri": "hafif pop"
+  },
+  {
+   "sahne": "S06",
+   "t": 158.65,
+   "kare": 4760,
+   "olay": "ekran yazısı: RULE 2: CHECK THE BOTTOM",
+   "tur": "yazi",
+   "oneri": "hafif pop"
+  },
+  {
+   "sahne": "S06",
+   "t": 162.65,
+   "kare": 4880,
+   "olay": "kesme: Leo kameraya: we'll see",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S07",
+   "t": 164.925,
+   "kare": 4948,
+   "olay": "kesme: Leo panoyu gösterir",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S07",
+   "t": 166.05,
+   "kare": 4982,
+   "olay": "kesme: pano: 6 durak (sızıntı çizelgesi)",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S07",
+   "t": 166.35,
+   "kare": 4991,
+   "olay": "pano satırları sırayla yazılır ×6",
+   "tur": "pop",
+   "oneri": "kalem tık ×6"
+  },
+  {
+   "sahne": "S07",
+   "t": 167.569,
+   "kare": 5027,
+   "olay": "kesme: 6 durak tabelası yol boyunca",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S07",
+   "t": 180.575,
+   "kare": 5417,
+   "olay": "kesme: kamyon yola çıkar",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S07",
+   "t": 180.975,
+   "kare": 5429,
+   "olay": "kamyon kalkar",
+   "tur": "vurgu",
+   "oneri": "motor + korna"
+  },
+  {
+   "sahne": "S08",
+   "t": 181.725,
+   "kare": 5452,
+   "olay": "kesme: durak tabelası LIVING",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S08",
+   "t": 185.8,
+   "kare": 5574,
+   "olay": "kesme: zaman şeridi AGE 65 → ~20 MORE YEARS",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S08",
+   "t": 189.3,
+   "kare": 5679,
+   "olay": "zaman şeridi uzar: ~20 MORE YEARS",
+   "tur": "sayac",
+   "oneri": "yükselen tık"
+  },
+  {
+   "sahne": "S08",
+   "t": 191.4,
+   "kare": 5742,
+   "olay": "kesme: iki lacivert kutu açılır: market, fatura, tren bileti",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S08",
+   "t": 203.325,
+   "kare": 6100,
+   "olay": "kesme: kutular: 2 kutuya SPENT ON LIVING damgası",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S08",
+   "t": 206.025,
+   "kare": 6181,
+   "olay": "SPENT ON LIVING damgası ×2",
+   "tur": "damga",
+   "oneri": "damga thud ×2"
+  },
+  {
+   "sahne": "S08",
+   "t": 207.775,
+   "kare": 6233,
+   "olay": "kesme: Leo: is that a leak?",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S08",
+   "t": 217.217,
+   "kare": 6517,
+   "olay": "kesme: ekran: A FORECAST COUNTS MONEY BEFORE IT'S LIVED ON",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S08",
+   "t": 222.854,
+   "kare": 6686,
+   "olay": "kesme: Leo gülümser",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S09",
+   "t": 227.9,
+   "kare": 6837,
+   "olay": "kesme: sisli yoldan CARE tabelası belirir",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S09",
+   "t": 228.4,
+   "kare": 6852,
+   "olay": "CARE tabelası sisten çıkar",
+   "tur": "vurgu",
+   "oneri": "rüzgâr / sis"
+  },
+  {
+   "sahne": "S09",
+   "t": 232,
+   "kare": 6960,
+   "olay": "kesme: Leo bant rulosunu sallar",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S10",
+   "t": 235.4,
+   "kare": 7062,
+   "olay": "kesme: Leo: stop two is care",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S10",
+   "t": 241.35,
+   "kare": 7241,
+   "olay": "kesme: ev içi siluet kareleri: düğme, ocak, ilaç",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S10",
+   "t": 245.025,
+   "kare": 7351,
+   "olay": "kesme: grafik G2: 100 insan ikonu",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S10",
+   "t": 247.342,
+   "kare": 7420,
+   "olay": "56 ikon renklenir: 56%",
+   "tur": "sayac",
+   "oneri": "tıkırtı"
+  },
+  {
+   "sahne": "S10",
+   "t": 252.975,
+   "kare": 7589,
+   "olay": "22 ikon koyulaşır: >5 YEARS 22%",
+   "tur": "vurgu",
+   "oneri": "tık"
+  },
+  {
+   "sahne": "S10",
+   "t": 257.725,
+   "kare": 7732,
+   "olay": "kesme: evde aile / huzurevi siluetleri",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S10",
+   "t": 264.139,
+   "kare": 7924,
+   "olay": "kesme: fatura kartı $129,575 / YEAR",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S10",
+   "t": 269.711,
+   "kare": 8091,
+   "olay": "fatura kartı sayacı $129,575",
+   "tur": "sayac",
+   "oneri": "yazar kasa"
+  },
+  {
+   "sahne": "S11",
+   "t": 277.55,
+   "kare": 8327,
+   "olay": "kesme: Leo: why does this one leak so much?",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S11",
+   "t": 280.525,
+   "kare": 8416,
+   "olay": "kesme: iki kapı: MEDICARE / MEDICAID",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S11",
+   "t": 280.925,
+   "kare": 8428,
+   "olay": "levha: LONG-TERM CUSTODIAL CARE: GENERALLY NOT COVERED",
+   "tur": "pop",
+   "oneri": "levha tok"
+  },
+  {
+   "sahne": "S11",
+   "t": 295.2,
+   "kare": 8856,
+   "olay": "el ESTATE RECOVERY etiketi yapıştırır",
+   "tur": "vurgu",
+   "oneri": "etiket yapışma"
+  },
+  {
+   "sahne": "S11",
+   "t": 300.444,
+   "kare": 9013,
+   "olay": "kesme: grafik: 7 ikondan 1'i kırmızı",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S11",
+   "t": 303.424,
+   "kare": 9103,
+   "olay": "7'de 1 ikon kırmızı: $100K+",
+   "tur": "vurgu",
+   "oneri": "ding"
+  },
+  {
+   "sahne": "S11",
+   "t": 312.752,
+   "kare": 9383,
+   "olay": "kesme: pano CARE −1",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S11",
+   "t": 315.75,
+   "kare": 9473,
+   "olay": "CARE −1 kalem çizgisi",
+   "tur": "vurgu",
+   "oneri": "keçeli çizgi"
+  },
+  {
+   "sahne": "S11",
+   "t": 317.072,
+   "kare": 9512,
+   "olay": "kesme: iki hayalet kamyon: 0 kutu / 4 kutu",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S12",
+   "t": 322.75,
+   "kare": 9683,
+   "olay": "kesme: Leo kutunun dibini kontrol eder",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S12",
+   "t": 329.416,
+   "kare": 9882,
+   "olay": "bant 1 çekilir",
+   "tur": "vurgu",
+   "oneri": "koli bandı çekme"
+  },
+  {
+   "sahne": "S12",
+   "t": 330.55,
+   "kare": 9917,
+   "olay": "kesme: kutu yakın: başka köşeden damla",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S12",
+   "t": 331.05,
+   "kare": 9932,
+   "olay": "başka köşeden damla",
+   "tur": "damla",
+   "oneri": "damla"
+  },
+  {
+   "sahne": "S12",
+   "t": 333.925,
+   "kare": 10018,
+   "olay": "bant 2 çekilir",
+   "tur": "vurgu",
+   "oneri": "koli bandı çekme"
+  },
+  {
+   "sahne": "S12",
+   "t": 336.125,
+   "kare": 10084,
+   "olay": "kesme: Leo kameraya: two-tape stop",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S12",
+   "t": 336.225,
+   "kare": 10087,
+   "olay": "ekran yazısı: TAPE USED: 2",
+   "tur": "yazi",
+   "oneri": "hafif pop"
+  },
+  {
+   "sahne": "S12",
+   "t": 341.3,
+   "kare": 10239,
+   "olay": "kesme: pano −3",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S12",
+   "t": 342.775,
+   "kare": 10283,
+   "olay": "kesme: Leo yakın, sakin",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S13",
+   "t": 344.675,
+   "kare": 10340,
+   "olay": "kesme: kavşak, sinyal: SPOUSE FIRST tabelası",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S13",
+   "t": 344.975,
+   "kare": 10349,
+   "olay": "sinyal",
+   "tur": "vurgu",
+   "oneri": "sinyal tık-tık"
+  },
+  {
+   "sahne": "S13",
+   "t": 351.75,
+   "kare": 10553,
+   "olay": "kesme: eşikte iki siluet; biri yumuşakça solar (ışık kalır)",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S13",
+   "t": 353.05,
+   "kare": 10592,
+   "olay": "siluet solar, sıcak ışık kalır",
+   "tur": "vurgu",
+   "oneri": "yumuşak pad (vuruş yok)"
+  },
+  {
+   "sahne": "S13",
+   "t": 357.101,
+   "kare": 10713,
+   "olay": "kesme: kamyon karşı kaldırıma yanaşır",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S13",
+   "t": 362.575,
+   "kare": 10877,
+   "olay": "kesme: sarı durak tabelası ~$54T · ~$40T",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S13",
+   "t": 366.4,
+   "kare": 10992,
+   "olay": "~$40T OF IT TO WIDOWED WOMEN satırı",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S13",
+   "t": 373.4,
+   "kare": 11202,
+   "olay": "kesme: Leo kutulardaki isimleri gösterir",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S14",
+   "t": 387.25,
+   "kare": 11618,
+   "olay": "kesme: pano: SPOUSE −0 + kum saati +YEARS",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S14",
+   "t": 393.3,
+   "kare": 11799,
+   "olay": "ekran yazısı: BOXES LOST: 0",
+   "tur": "yazi",
+   "oneri": "hafif pop"
+  },
+  {
+   "sahne": "S14",
+   "t": 393.3,
+   "kare": 11799,
+   "olay": "SPOUSE −0 yazılır",
+   "tur": "vurgu",
+   "oneri": "kalem tık"
+  },
+  {
+   "sahne": "S14",
+   "t": 393.9,
+   "kare": 11817,
+   "olay": "kum saati +YEARS döner",
+   "tur": "vurgu",
+   "oneri": "kum saati"
+  },
+  {
+   "sahne": "S14",
+   "t": 396.875,
+   "kare": 11906,
+   "olay": "kesme: Leo yakın: the part the headline hides",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S14",
+   "t": 399.85,
+   "kare": 11996,
+   "olay": "kesme: park hâlinde kamyon, takvim yaprakları; LIVING/CARE ikinci kez",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S14",
+   "t": 405.75,
+   "kare": 12173,
+   "olay": "LIVING / CARE tabelaları ikinci kez geçer",
+   "tur": "kay",
+   "oneri": "whoosh ×2"
+  },
+  {
+   "sahne": "S14",
+   "t": 409.525,
+   "kare": 12286,
+   "olay": "kesme: kutu büyür, sonra açılıp küçülür",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S14",
+   "t": 419.874,
+   "kare": 12596,
+   "olay": "kesme: Leo: more time",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S14",
+   "t": 425.175,
+   "kare": 12755,
+   "olay": "kesme: bayrak yarışı pisti",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S14",
+   "t": 428.548,
+   "kare": 12856,
+   "olay": "bayrak eşe geçer",
+   "tur": "vurgu",
+   "oneri": "bayrak devri"
+  },
+  {
+   "sahne": "S14",
+   "t": 431.545,
+   "kare": 12946,
+   "olay": "pist ucunda bekleyen iki siluet",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S15",
+   "t": 436.775,
+   "kare": 13103,
+   "olay": "kesme: GIVING tabelası, küçük kalp",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S15",
+   "t": 437.275,
+   "kare": 13118,
+   "olay": "kalp parlar",
+   "tur": "vurgu",
+   "oneri": "sıcak tını"
+  },
+  {
+   "sahne": "S15",
+   "t": 442.375,
+   "kare": 13271,
+   "olay": "kesme: Leo: on purpose",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S16",
+   "t": 444.65,
+   "kare": 13340,
+   "olay": "kesme: Leo: stop four is giving",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S16",
+   "t": 446.5,
+   "kare": 13395,
+   "olay": "kesme: S04 çubuğunda ~$18T CHARITY parlar",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S16",
+   "t": 450.6,
+   "kare": 13518,
+   "olay": "kesme: okul / hastane / ibadethane ikonları (eşit boy)",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S16",
+   "t": 450.7,
+   "kare": 13521,
+   "olay": "ikon SCHOOLS",
+   "tur": "pop",
+   "oneri": "tik"
+  },
+  {
+   "sahne": "S16",
+   "t": 451.425,
+   "kare": 13543,
+   "olay": "ikon HOSPITALS",
+   "tur": "pop",
+   "oneri": "tik"
+  },
+  {
+   "sahne": "S16",
+   "t": 452.15,
+   "kare": 13565,
+   "olay": "ikon CHURCHES",
+   "tur": "pop",
+   "oneri": "tik"
+  },
+  {
+   "sahne": "S16",
+   "t": 454,
+   "kare": 13620,
+   "olay": "ikon RESEARCH",
+   "tur": "pop",
+   "oneri": "tik"
+  },
+  {
+   "sahne": "S16",
+   "t": 463.575,
+   "kare": 13907,
+   "olay": "kesme: kamyon okulun önünde, yeşil kutu kapıya",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S16",
+   "t": 469.175,
+   "kare": 14075,
+   "olay": "kesme: pano GIVING −1",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S16",
+   "t": 472.25,
+   "kare": 14168,
+   "olay": "GIVEN etiketi",
+   "tur": "vurgu",
+   "oneri": "keçeli kalem"
+  },
+  {
+   "sahne": "S16",
+   "t": 473.25,
+   "kare": 14198,
+   "olay": "kesme: Leo gülümser",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S17",
+   "t": 481.5,
+   "kare": 14445,
+   "olay": "kesme: grafik G3: iki çubuk (sol-orta)",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S17",
+   "t": 489.343,
+   "kare": 14680,
+   "olay": "çubuk 2026: 47%",
+   "tur": "sayac",
+   "oneri": "tık"
+  },
+  {
+   "sahne": "S17",
+   "t": 496.662,
+   "kare": 14900,
+   "olay": "çubuk 2024: 55% (geri bakış)",
+   "tur": "sayac",
+   "oneri": "tık"
+  },
+  {
+   "sahne": "S17",
+   "t": 497.925,
+   "kare": 14938,
+   "olay": "kesme: Leo kutuyu iki siluet arasında tutar (sol)",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S17",
+   "t": 501.883,
+   "kare": 15056,
+   "olay": "ABONE-2 (sağ alt boş; grafik/Leo sol-orta)",
+   "tur": "abone",
+   "oneri": "klik (kurgu-editoru ortak bileşeni)"
+  },
+  {
+   "sahne": "S18",
+   "t": 503.575,
+   "kare": 15107,
+   "olay": "kesme: pano ara özet (envanter)",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S18",
+   "t": 505.525,
+   "kare": 15166,
+   "olay": "pano satırı LIVING tik",
+   "tur": "tik",
+   "oneri": "tik"
+  },
+  {
+   "sahne": "S18",
+   "t": 507,
+   "kare": 15210,
+   "olay": "pano satırı CARE tik",
+   "tur": "tik",
+   "oneri": "tik"
+  },
+  {
+   "sahne": "S18",
+   "t": 508.763,
+   "kare": 15263,
+   "olay": "pano satırı DETOUR tik",
+   "tur": "tik",
+   "oneri": "tik"
+  },
+  {
+   "sahne": "S18",
+   "t": 511.075,
+   "kare": 15332,
+   "olay": "pano satırı GIVING tik",
+   "tur": "tik",
+   "oneri": "tik"
+  },
+  {
+   "sahne": "S18",
+   "t": 512.45,
+   "kare": 15374,
+   "olay": "kesme: kamyonun içi: 6 kutu, 4 kiremit dipte",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S19",
+   "t": 516.975,
+   "kare": 15509,
+   "olay": "kesme: 4 kiremit kutu yapışık: tek parça ev maketi",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S19",
+   "t": 526.65,
+   "kare": 15800,
+   "olay": "kesme: tek çubuk BOOMERS ~41% OF US HOUSEHOLD REAL ESTATE",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S19",
+   "t": 527.05,
+   "kare": 15811,
+   "olay": "çubuk dolar ~41%",
+   "tur": "sayac",
+   "oneri": "yükselen tık"
+  },
+  {
+   "sahne": "S19",
+   "t": 533.375,
+   "kare": 16001,
+   "olay": "kesme: Leo: you can't cut it in half",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S19",
+   "t": 540.45,
+   "kare": 16214,
+   "olay": "kesme: iki genç siluet maketi çeker (bölünmez)",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S19",
+   "t": 546.75,
+   "kare": 16403,
+   "olay": "kesme: tek SOLD kartı",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S19",
+   "t": 547.45,
+   "kare": 16424,
+   "olay": "SOLD kartı çakılır",
+   "tur": "damga",
+   "oneri": "tabela tok"
+  },
+  {
+   "sahne": "S19",
+   "t": 552.229,
+   "kare": 16567,
+   "olay": "kesme: fatura kartları uçar",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S19",
+   "t": 554.675,
+   "kare": 16640,
+   "olay": "fatura kartı AGENT",
+   "tur": "pop",
+   "oneri": "kâğıt"
+  },
+  {
+   "sahne": "S19",
+   "t": 555.775,
+   "kare": 16673,
+   "olay": "fatura kartı REPAIRS",
+   "tur": "pop",
+   "oneri": "kâğıt"
+  },
+  {
+   "sahne": "S19",
+   "t": 558.75,
+   "kare": 16763,
+   "olay": "fatura kartı PROPERTY",
+   "tur": "pop",
+   "oneri": "kâğıt"
+  },
+  {
+   "sahne": "S19",
+   "t": 562,
+   "kare": 16860,
+   "olay": "kesme: sepya geri dönüş: ev CARE durağında satılır",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S20",
+   "t": 566.9,
+   "kare": 17007,
+   "olay": "kesme: kiremit kutudan ince dilim: −A SLICE",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S20",
+   "t": 570.075,
+   "kare": 17102,
+   "olay": "dilim kesilir",
+   "tur": "vurgu",
+   "oneri": "maket bıçağı"
+  },
+  {
+   "sahne": "S20",
+   "t": 571.725,
+   "kare": 17152,
+   "olay": "kesme: kapıdan genç siluet anahtarla girer",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S20",
+   "t": 577.8,
+   "kare": 17334,
+   "olay": "anahtar şıngırtısı",
+   "tur": "vurgu",
+   "oneri": "anahtar"
+  },
+  {
+   "sahne": "S20",
+   "t": 578.8,
+   "kare": 17364,
+   "olay": "kesme: Leo üçüncü köşeyi bantlar",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S20",
+   "t": 581.875,
+   "kare": 17456,
+   "olay": "ekran yazısı: TAPE USED: 3",
+   "tur": "yazi",
+   "oneri": "hafif pop"
+  },
+  {
+   "sahne": "S20",
+   "t": 581.875,
+   "kare": 17456,
+   "olay": "bant 3",
+   "tur": "vurgu",
+   "oneri": "koli bandı (incelmiş rulo)"
+  },
+  {
+   "sahne": "S21",
+   "t": 582.925,
+   "kare": 17488,
+   "olay": "kesme: ürkütücü gişe TAX (gölgeli)",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S21",
+   "t": 583.125,
+   "kare": 17494,
+   "olay": "gök gürültüsü",
+   "tur": "vurgu",
+   "oneri": "gök gürültüsü"
+  },
+  {
+   "sahne": "S21",
+   "t": 586.625,
+   "kare": 17599,
+   "olay": "kesme: Leo tabelayı okur",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S21",
+   "t": 586.925,
+   "kare": 17608,
+   "olay": "gürültü kesilir",
+   "tur": "vurgu",
+   "oneri": "MÜZİK KES"
+  },
+  {
+   "sahne": "S21",
+   "t": 589.975,
+   "kare": 17699,
+   "olay": "kesme: grafik G4: eşik çizgisi $15M",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S21",
+   "t": 594.342,
+   "kare": 17830,
+   "olay": "eşik çizgisi iner: $15M PER PERSON",
+   "tur": "pop",
+   "oneri": "tok vuruş"
+  },
+  {
+   "sahne": "S21",
+   "t": 603.404,
+   "kare": 18102,
+   "olay": "küçük çubuk ~$410K belirir",
+   "tur": "pop",
+   "oneri": "küçük tık"
+  },
+  {
+   "sahne": "S21",
+   "t": 609.825,
+   "kare": 18295,
+   "olay": "aradaki boşluk oku: DOZENS OF TIMES HIGHER",
+   "tur": "vurgu",
+   "oneri": "yükselen whoosh"
+  },
+  {
+   "sahne": "S21",
+   "t": 613.5,
+   "kare": 18405,
+   "olay": "kesme: bariyer kalkar, kamyon geçer",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S21",
+   "t": 618.932,
+   "kare": 18568,
+   "olay": "bariyer kalkar",
+   "tur": "vurgu",
+   "oneri": "bariyer + motor"
+  },
+  {
+   "sahne": "S21",
+   "t": 621.325,
+   "kare": 18640,
+   "olay": "kesme: not: some states have their own taxes",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S21",
+   "t": 630.444,
+   "kare": 18913,
+   "olay": "kesme: UK kartı £325,000",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S21",
+   "t": 634.516,
+   "kare": 19035,
+   "olay": "UK kartı: £325,000",
+   "tur": "pop",
+   "oneri": "pop"
+  },
+  {
+   "sahne": "S22",
+   "t": 637.05,
+   "kare": 19112,
+   "olay": "kesme: Leo: the surprise of this whole road",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S22",
+   "t": 640.125,
+   "kare": 19204,
+   "olay": "ekran yazısı: THE LOUD LEAK IS SMALL.",
+   "tur": "yazi",
+   "oneri": "hafif pop"
+  },
+  {
+   "sahne": "S22",
+   "t": 644.875,
+   "kare": 19346,
+   "olay": "kesme: pano: TAX −0; LIVING ve CARE altı çizilir",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S22",
+   "t": 644.975,
+   "kare": 19349,
+   "olay": "ekran yazısı: THE QUIET LEAKS ARE BIG.",
+   "tur": "yazi",
+   "oneri": "hafif pop"
+  },
+  {
+   "sahne": "S22",
+   "t": 649.45,
+   "kare": 19484,
+   "olay": "LIVING altı çizilir",
+   "tur": "vurgu",
+   "oneri": "keçeli çizgi"
+  },
+  {
+   "sahne": "S22",
+   "t": 650.175,
+   "kare": 19505,
+   "olay": "CARE altı çizilir",
+   "tur": "vurgu",
+   "oneri": "keçeli çizgi"
+  },
+  {
+   "sahne": "S22",
+   "t": 651.213,
+   "kare": 19536,
+   "olay": "TIME altı çizilir",
+   "tur": "vurgu",
+   "oneri": "keçeli çizgi"
+  },
+  {
+   "sahne": "S22",
+   "t": 651.9,
+   "kare": 19557,
+   "olay": "kesme: Leo yakın: yorum sorusu",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S22",
+   "t": 659.075,
+   "kare": 19772,
+   "olay": "ekran yazısı: WHICH LEAK DID YOU PICK? ↓ COMMENTS",
+   "tur": "yazi",
+   "oneri": "hafif pop"
+  },
+  {
+   "sahne": "S23",
+   "t": 664.225,
+   "kare": 19927,
+   "olay": "kesme: gişenin arkasında dev yol saati",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S23",
+   "t": 668.325,
+   "kare": 20050,
+   "olay": "kesme: saat yakın",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S23",
+   "t": 670.871,
+   "kare": 20126,
+   "olay": "saat tik-tak başlar",
+   "tur": "vurgu",
+   "oneri": "saat tik"
+  },
+  {
+   "sahne": "S24",
+   "t": 671.7,
+   "kare": 20151,
+   "olay": "kesme: Leo: boxes arrive late",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S24",
+   "t": 674.989,
+   "kare": 20250,
+   "olay": "kesme: TO: THE KIDS etiketindeki siluetlerin saçı griye döner",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S24",
+   "t": 675.689,
+   "kare": 20271,
+   "olay": "saçlar griye döner",
+   "tur": "vurgu",
+   "oneri": "zaman atlaması"
+  },
+  {
+   "sahne": "S24",
+   "t": 682.525,
+   "kare": 20476,
+   "olay": "kesme: grafik G5: kuşak payları",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S24",
+   "t": 683.759,
+   "kare": 20513,
+   "olay": "GEN X ~$14T (first 10 years) çubuğu",
+   "tur": "sayac",
+   "oneri": "tık"
+  },
+  {
+   "sahne": "S24",
+   "t": 692.325,
+   "kare": 20770,
+   "olay": "MILLENNIALS ~$46T (through 2048) çubuğu",
+   "tur": "sayac",
+   "oneri": "yükselen tık"
+  },
+  {
+   "sahne": "S24",
+   "t": 699.316,
+   "kare": 20979,
+   "olay": "kesme: Leo: middle of their lives",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S24",
+   "t": 709.775,
+   "kare": 21293,
+   "olay": "kesme: 1 $ banknot solar: $1 → ~$0.67",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S24",
+   "t": 710.275,
+   "kare": 21308,
+   "olay": "banknot solar, sayaç $1.00 → $0.67",
+   "tur": "sayac",
+   "oneri": "inen ton"
+  },
+  {
+   "sahne": "S24",
+   "t": 718,
+   "kare": 21540,
+   "olay": "kesme: iki yol işareti: STARTING OUT / LATER",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S24",
+   "t": 724.825,
+   "kare": 21745,
+   "olay": "ikinci yol işareti LATER",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S24",
+   "t": 731.025,
+   "kare": 21931,
+   "olay": "kesme: Leo yakın: same boxes, different job",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S25",
+   "t": 733.275,
+   "kare": 21998,
+   "olay": "kesme: son viraj; ufukta TO: THE KIDS evi",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S25",
+   "t": 733.575,
+   "kare": 22007,
+   "olay": "kamyon viraja girer",
+   "tur": "kay",
+   "oneri": "lastik + motor"
+  },
+  {
+   "sahne": "S26",
+   "t": 737.8,
+   "kare": 22134,
+   "olay": "kesme: kapılar açılır, Leo panoyu okur",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S26",
+   "t": 738,
+   "kare": 22140,
+   "olay": "kamyon kapıları açılır",
+   "tur": "vurgu",
+   "oneri": "metal kapı"
+  },
+  {
+   "sahne": "S26",
+   "t": 743.75,
+   "kare": 22313,
+   "olay": "kesme: grafik G6: Okafor şelalesi (envanter)",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S26",
+   "t": 743.85,
+   "kare": 22316,
+   "olay": "LOADED: 10 sütunu",
+   "tur": "pop",
+   "oneri": "tok"
+  },
+  {
+   "sahne": "S26",
+   "t": 745.325,
+   "kare": 22360,
+   "olay": "şelale adımı 1",
+   "tur": "sayac",
+   "oneri": "inen tık"
+  },
+  {
+   "sahne": "S26",
+   "t": 747.55,
+   "kare": 22427,
+   "olay": "şelale adımı 2",
+   "tur": "sayac",
+   "oneri": "inen tık"
+  },
+  {
+   "sahne": "S26",
+   "t": 749.775,
+   "kare": 22493,
+   "olay": "şelale adımı 3",
+   "tur": "sayac",
+   "oneri": "tık (kayıp yok)"
+  },
+  {
+   "sahne": "S26",
+   "t": 753.875,
+   "kare": 22616,
+   "olay": "şelale adımı 4",
+   "tur": "sayac",
+   "oneri": "inen tık"
+  },
+  {
+   "sahne": "S26",
+   "t": 756.1,
+   "kare": 22683,
+   "olay": "şelale adımı 5",
+   "tur": "sayac",
+   "oneri": "inen tık"
+  },
+  {
+   "sahne": "S26",
+   "t": 759.075,
+   "kare": 22772,
+   "olay": "şelale adımı 6",
+   "tur": "sayac",
+   "oneri": "tık (kayıp yok)"
+  },
+  {
+   "sahne": "S26",
+   "t": 762.425,
+   "kare": 22873,
+   "olay": "DELIVERED: 6 − SLICE, LATER",
+   "tur": "vurgu",
+   "oneri": "vuruş"
+  },
+  {
+   "sahne": "S26",
+   "t": 766.525,
+   "kare": 22996,
+   "olay": "ikiye bölünür: ≈3 EACH",
+   "tur": "pop",
+   "oneri": "pop ×2"
+  },
+  {
+   "sahne": "S27",
+   "t": 771.325,
+   "kare": 23140,
+   "olay": "kesme: iki genç siluet kutuları içeri taşır",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S27",
+   "t": 773.55,
+   "kare": 23207,
+   "olay": "kesme: Leo panoya bakar",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S27",
+   "t": 781.425,
+   "kare": 23443,
+   "olay": "ekran yazısı: USED, NOT LOST",
+   "tur": "yazi",
+   "oneri": "hafif pop"
+  },
+  {
+   "sahne": "S27",
+   "t": 787.275,
+   "kare": 23618,
+   "olay": "kesme: üç hayalet kamyon yan yana",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S27",
+   "t": 790.569,
+   "kare": 23717,
+   "olay": "boş kasa → Okafor (6) → konvoy",
+   "tur": "pop",
+   "oneri": "pop ×3"
+  },
+  {
+   "sahne": "S27",
+   "t": 802.363,
+   "kare": 24071,
+   "olay": "kesme: Leo yakın: where the boxes went",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S28",
+   "t": 809.325,
+   "kare": 24280,
+   "olay": "kesme: kamera Okafor evinden yükselir, haritaya",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S28",
+   "t": 812.675,
+   "kare": 24380,
+   "olay": "kesme: grafik G7: bölünmüş tablo kartı",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S28",
+   "t": 813.275,
+   "kare": 24398,
+   "olay": "100 haneden 2'si turuncu",
+   "tur": "vurgu",
+   "oneri": "tık ×2"
+  },
+  {
+   "sahne": "S28",
+   "t": 821.65,
+   "kare": 24650,
+   "olay": "ayrı panel DFA: TOP 10% ≈ 69%",
+   "tur": "sayac",
+   "oneri": "yükselen tık"
+  },
+  {
+   "sahne": "S28",
+   "t": 830.198,
+   "kare": 24906,
+   "olay": "BOTTOM 50% ≈ 2%",
+   "tur": "pop",
+   "oneri": "küçük tık"
+  },
+  {
+   "sahne": "S28",
+   "t": 832.8,
+   "kare": 24984,
+   "olay": "kesme: Leo: real, just lumpy",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S28",
+   "t": 832.9,
+   "kare": 24987,
+   "olay": "ekran yazısı: THE HEADLINE IS REAL. IT'S JUST LUMPY.",
+   "tur": "yazi",
+   "oneri": "hafif pop"
+  },
+  {
+   "sahne": "S28",
+   "t": 836.5,
+   "kare": 25095,
+   "olay": "kesme: haritada birkaç konvoy, çok sayıda küçük kamyon",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S28",
+   "t": 844.7,
+   "kare": 25341,
+   "olay": "kesme: Leo: both be right",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S29",
+   "t": 854.425,
+   "kare": 25633,
+   "olay": "kesme: yol haritası (tek yol)",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S29",
+   "t": 857.875,
+   "kare": 25736,
+   "olay": "CARE tabelası kesik çizgiyle büyür",
+   "tur": "vurgu",
+   "oneri": ""
+  },
+  {
+   "sahne": "S29",
+   "t": 861.975,
+   "kare": 25859,
+   "olay": "TAX tabelası kesik çizgiyle kayar",
+   "tur": "vurgu",
+   "oneri": ""
+  },
+  {
+   "sahne": "S29",
+   "t": 864.825,
+   "kare": 25945,
+   "olay": "kesme: Leo yakın: not a forecast",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S29",
+   "t": 865.125,
+   "kare": 25954,
+   "olay": "ekran yazısı: NOT A FORECAST. NOT A PLAN. A MAP.",
+   "tur": "yazi",
+   "oneri": "hafif pop"
+  },
+  {
+   "sahne": "S30",
+   "t": 873.825,
+   "kare": 26215,
+   "olay": "kesme: Leo kamyon yanında: $124T",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S30",
+   "t": 878.075,
+   "kare": 26342,
+   "olay": "kamyon görünür",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S30",
+   "t": 879.425,
+   "kare": 26383,
+   "olay": "kesme: tez yazısı yakın plan",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S30",
+   "t": 886.125,
+   "kare": 26584,
+   "olay": "kesme: Leo boş kutuyu bırakır, ince ruloyu omzuna atar (sol-orta)",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S30",
+   "t": 889.514,
+   "kare": 26685,
+   "olay": "rulo omza (karakter anı)",
+   "tur": "vurgu",
+   "oneri": "kısa müzik vurgusu"
+  },
+  {
+   "sahne": "S30",
+   "t": 890.079,
+   "kare": 26702,
+   "olay": "ABONE-3 (sağ alt boş; Leo sol-orta)",
+   "tur": "abone",
+   "oneri": "klik (kurgu-editoru ortak bileşeni)"
+  },
+  {
+   "sahne": "S31",
+   "t": 891.775,
+   "kare": 26753,
+   "olay": "kesme: kiremit kutu kamyonda tek başına parlar",
+   "tur": "kesme",
+   "oneri": "sahne geçişi (yumuşak whoosh)"
+  },
+  {
+   "sahne": "S31",
+   "t": 895.6,
+   "kare": 26868,
+   "olay": "kiremit kutu parlar",
+   "tur": "vurgu",
+   "oneri": "sıcak tını"
+  },
+  {
+   "sahne": "S31",
+   "t": 896.6,
+   "kare": 26898,
+   "olay": "kesme: kamera yola döner, ufukta ışıklı mahalle",
+   "tur": "kesme",
+   "oneri": "kısa whoosh"
+  }
+ ]
+}

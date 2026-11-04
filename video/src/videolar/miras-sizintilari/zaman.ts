@@ -123,7 +123,7 @@ const P: Record<string, () => Plan> = {
   },
   S04: () => {
     const a = an("S04");
-    const k = { first: a("first"), forecast: a("forecast"), nearly: a("nearly"), about1: a("about", 1), about2: a("about", 2), and: a("and", 2), fifty: a("fifty-four"), stop: a("stop", 2), money: a("money", 2), so: a("so"), detour: a("detour"), remember: a("remember") };
+    const k = { first: a("first"), forecast: a("forecast"), nearly: a("nearly"), about1: a("about", 1), about2: a("about", 2), and: a("and", 2), fifty: a("fifty-four"), stop: a("stop", 1), money: a("money", 2), so: a("so"), detour: a("detour"), remember: a("remember") };
     return yap(
       "S04",
       k,
@@ -234,7 +234,7 @@ const P: Record<string, () => Plan> = {
   },
   S10: () => {
     const a = an("S10");
-    const k = { stop: a("stop"), getting: a("getting"), cooking: a("cooking"), taking: a("taking"), us: a("u.s.|us", 1), more: a("more", 1), about: a("about", 1), sometimes1: a("sometimes", 1), and: a("and", 3), median: a("median") };
+    const k = { stop: a("stop"), getting: a("getting"), cooking: a("cooking"), taking: a("taking"), us: a("u.s.|us", 1), more: a("more", 1), about: a("about", 1), sometimes1: a("sometimes", 1), and: a("bill") - 0.4, median: a("median") };
     return yap(
       "S10",
       k,
@@ -243,7 +243,7 @@ const P: Record<string, () => Plan> = {
         [k.getting - 0.1, "ev içi siluet kareleri: düğme, ocak, ilaç", false, "yer:evIci"],
         [k.us - 0.1, "grafik G2: 100 insan ikonu", false, "g2"],
         [k.sometimes1 - 0.1, "evde aile / huzurevi siluetleri", false, "yer:huzurevi"],
-        [k.and - 0.1, "fatura kartı $129,575 / YEAR", false, "fatura"],
+        [k.and, "fatura kartı $129,575 / YEAR", false, "fatura"],
       ],
       [
         { t: k.more, olay: "56 ikon renklenir: 56%", tur: "sayac", oneri: "tıkırtı" },
@@ -256,7 +256,7 @@ const P: Record<string, () => Plan> = {
   },
   S11: () => {
     const a = an("S11");
-    const k = { why: a("why"), because: a("because"), that: a("that"), and: a("and", 1), states: a("states"), the: a("same") - 0.15, about: a("about"), for: a("for", 3), label: a("label"), in: a("different") - 0.2 };
+    const k = { why: a("why"), because: a("because"), that: a("that"), and: a("and", 1), states: a("states"), the: a("same") - 0.15, about: a("about"), for: a("okafors") - 0.3, label: a("label"), in: a("different") - 0.2 };
     return yap(
       "S11",
       k,
@@ -264,7 +264,7 @@ const P: Record<string, () => Plan> = {
         [0, "Leo: why does this one leak so much?", true, "leo:yakin"],
         [k.because - 0.1, "iki kapı: MEDICARE / MEDICAID", false, "kapilar"],
         [k.the - 0.1, "grafik: 7 ikondan 1'i kırmızı", false, "yedide1"],
-        [k.for - 0.1, "pano CARE −1", false, "pano:S11"],
+        [k.for, "pano CARE −1", false, "pano:S11"],
         [k.in, "iki hayalet kamyon: 0 kutu / 4 kutu", false, "hayalet"],
       ],
       [
@@ -302,14 +302,14 @@ const P: Record<string, () => Plan> = {
   // ---------- Bölüm 4 — The Detour and the Gift ----------
   S13: () => {
     const a = an("S13");
-    const k = { when: a("when"), it: a("it", 3), cerulli: a("cerulli"), nearly: a("nearly"), for: a("for", 1), but: a("but") };
+    const k = { when: a("when"), it: a("turns") - 0.2, cerulli: a("cerulli"), nearly: a("nearly"), for: a("for", 1), but: a("but") };
     return yap(
       "S13",
       k,
       [
         [0, "kavşak, sinyal: SPOUSE FIRST tabelası", false, "tabela:SPOUSE FIRST"],
         [k.when - 0.1, "eşikte iki siluet; biri yumuşakça solar (ışık kalır)", false, "solma"],
-        [k.it - 0.1, "kamyon karşı kaldırıma yanaşır", false, "yer:karsiKaldirim"],
+        [k.it, "kamyon karşı kaldırıma yanaşır", false, "yer:karsiKaldirim"],
         [k.cerulli - 0.1, "sarı durak tabelası ~$54T · ~$40T", false, "esTabela:s13"],
         [k.for - 0.1, "Leo kutulardaki isimleri gösterir", true, "leo:kapi"],
       ],
@@ -533,7 +533,7 @@ const P: Record<string, () => Plan> = {
   // ---------- Bölüm 7 — Arrival ----------
   S26: () => {
     const a = an("S26");
-    const k = { i: a("i", 1), loaded: a("loaded"), s1: a("stop", 2), s2: a("stop", 3), s3: a("stop", 4), s4: a("stop", 5), s5: a("stop", 6), s6: a("stop", 7), delivered: a("delivered"), split: a("split") };
+    const k = { i: a("i", 1), loaded: a("loaded"), s1: a("stop", 1), s2: a("stop", 2), s3: a("stop", 3), s4: a("stop", 4), s5: a("stop", 5), s6: a("stop", 6), delivered: a("delivered"), split: a("split") };
     return yap(
       "S26",
       k,
@@ -592,7 +592,7 @@ const P: Record<string, () => Plan> = {
   },
   S29: () => {
     const a = an("S29");
-    const k = { if1: a("if", 1), if2: a("if", 2), this: a("this") };
+    const k = { if1: a("if", 1), if2: a("if", 2), this: a("this", 2) };
     return yap(
       "S29",
       k,
