@@ -1,0 +1,21 @@
+M01  PROP 11/11  GEÇTİ
+M02  PROP 11/11  GEÇTİ
+M03  PROP 11/11  GEÇTİ
+M04  LEO  15/15  GEÇTİ
+M05  LEO  15/15  GEÇTİ
+M06  LEO  15/15  GEÇTİ
+M07  LEO  15/15  GEÇTİ
+M08  PLK  11/11  GEÇTİ
+M09  PLK  11/11  GEÇTİ
+M10  PLK  12/12  GEÇTİ
+M11  PLK  11/11  GEÇTİ
+M12  PLK  11/11  GEÇTİ
+M13  PROP 11/11  GEÇTİ
+M14  PLK  11/11  GEÇTİ
+M15  PLK  11/11  GEÇTİ
+M16  PROP 11/11  GEÇTİ
+M17  LEO  15/15  GEÇTİ
+M18  PLK  12/12  GEÇTİ
+
+Toplam 18 prompt (Leo'lu 5, nesne 5, plaka 8) · tavan 20 · id sırası GEÇTİ
+KAPI: GEÇTİ

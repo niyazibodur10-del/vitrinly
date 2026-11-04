@@ -75,7 +75,7 @@ ekle("M02", "Taşıma kutuları sayfası (3 sabit renk + yarık dipli + açık)"
           f"(1) a closed {KUTU_RENK['red']} painted cardboard box; (2) a closed {KUTU_RENK['navy']} painted cardboard box; "
           f"(3) a closed {KUTU_RENK['green']} painted cardboard box; (4) a closed {KUTU_RENK['red']} box whose bottom front corner is split open with a small dark gap "
           f"and a sagging soft bottom; (5) an open {KUTU_RENK['navy']} box with its top flaps folded outward, empty inside. "
-          "Every box has a flat plain front face, completely blank: no writing, no labels, no arrows, no symbols, no logos, no tape markings.")),
+          "Every box has a flat plain front face, completely blank: no writing, no labels, no arrows, no symbols, no logos, no tape markings."))
 ekle("M03", "Küçük nesneler sayfası (bant rulosu dolu/ince, pano, keçeli, büyüteç)", "P0", "PROP nesne sayfası", "yok",
      "S09 bant rulosu, S12/S20 bant sayacı yanındaki rulo (KOD incelir), S30 ince rulo; Leo panosu boş yüz (6 durak satırı KOD); S06 keçeli; S04 büyüteç "
      "(M17 seçmeli Leo pozu yoksa KOD ile Leo'nun eline bindirilir)",
@@ -134,7 +134,7 @@ ekle("M10", "Gece yolu: kamyon arka kapıları açık (hook entegre plaka)", "P0
      "S01 HOOK ilk 3 sn (aday B; aday A = M08 + M01 kesiği), S03 Leo kamyon kapısında, S26 varış (kapılar açılır KOD maske)",
      K_PLAKA + "; kamyon M01 ile aynı (turuncu Lab ΔE ≤8, kapı/teker biçimi kontaktta yan yana); kasa içi boş ve sıcak (dev kutu KOD); sağ üçte bir ön plan boş "
               "(Leo M04 alt kenardan kesik); 9:16 orta şerit (x 656–1264) kasa açıklığını içerir",
-     plaka(f"night, a quiet two-lane road at blue dusk; low camera at bumper height, straight-on behind a parked truck: the same orange moving truck as in the "
+     plaka(f"a quiet two-lane road at night; low camera at bumper height, straight-on behind a parked truck: the same orange moving truck as in the "
            f"reference image ({TRUCK}) stands on the road shoulder in the centre-left of the frame, seen from the rear, both rear swing doors opened wide, "
            "the empty cargo bay glowing with warm interior light. The right third of the frame is open road shoulder in the foreground (a character will be "
            "composited there later). Far hills and a few warm house lights on the horizon.",
