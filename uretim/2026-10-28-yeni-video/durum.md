@@ -40,3 +40,5 @@
 - Shorts-1: YLZQj6ecYE4 → 2026-11-05T14:00Z · Shorts-2: 2kaz6kXdZlw → 2026-11-07T14:00Z · ikisi "Money Stories in 60 Seconds | Shorts" PLZTj26FYW6IY.
 - Yetki: ortam değişkenindeki eski refresh token süresi dolmuş (invalid_grant); Niyazi cihaz koduyla yeniden yetki verdi (dosyada). Ortam değişkeni Niyazi tarafından güncellenmeli.
 - Studio'da kalan (Niyazi): SRT (08-kurgu/final.en.srt), uç ekran 11:07–11:18, Shorts Related video → ghLjMbrweCw, sabit yorum (paket.md §7), Test & Compare A1/C1/B1, plan/görünürlük kontrolü.
+
+- 2026-11-04 04:41Z: ghLjMbrweCw planlanandan önce public görüldü (publishAt silinmiş). Niyazi: "Açık kalsın". Shorts planlı (11-05, 11-07 14:00Z).
