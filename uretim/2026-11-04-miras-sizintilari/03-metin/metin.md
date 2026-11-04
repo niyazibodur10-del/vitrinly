@@ -373,3 +373,22 @@ Kullanılmayan: R10, R11, R12, R15, R22 (bilinçli; R12 reklam algısı, R22 DFA
 ---
 
 ## 12. Test kapısı sonuçları
+
+Tam çıktı: `03-metin/kapi-cikti.txt` (sha256 3e83881df9a1). Komut: `python3 -I metin-kontrol.py metin.md` (v4, sha256 d03e80fe583c; rakam-tablosu aff77efb999a) → **exit 0, KAPI: GEÇTİ**; 2 koşu `diff` aynı (betik değiştiği için determinizm testi yapıldı).
+
+| Kapı | Sonuç |
+|---|---|
+| Kelime / süre (160 kpm) | **2.155 kelime · 13:28** (tireler ayrı 2.186 birim ≈ 13:40) · kapı 2.080–2.400 GEÇTİ |
+| İlk 15 sn somut özne + vaat | 5/5 anahtar (trillion, charity, spouse, family, kids) GEÇTİ · ilk 30 sn intro/abone 0 |
+| ↺ aralıkları | 15 ↺ + hook + köprü · en uzun **74 sn** (kapı ≤90, hedef ≤75) GEÇTİ |
+| ABONE-n | 3 satır: 1:51 / 7:30 / 13:17 · hepsi sahne başı, ≥60 sn, doruk üstünde değil, ilk ABONE ilk büyük ödülden (1:41) sonra · sesli abone 0 |
+| Telaffuz yasak listesi (anlatım+Shorts) | 0 (dosyadaki tek eşleşmeler §8'deki listenin kendisi) |
+| H6/H7 yayın günü sözcüğü · P1 parti/kişi · tavsiye (24 desen) · should/must/need to | 0 · 0 · 0 · 0 |
+| K1 üç-olasılık kalıbı (anlatım+Shorts) | 0 GEÇTİ |
+| D2/R27 yasak kalıpları (52 T$, 124−54, "inside the total", "more than half of it", %70, 1/1.000, 30 M$) | `python3 -I veri/kutu-hesap.py metin.md` → 0, exit 0 (çıktı 2ee10e22c03f; betik a9b4017177dd; 2 koşu aynı) · kutu assert 10 → 6 − dilim |
+| Rakam eşleşmesi (tablo, ±%2 / "about" ±%7) | **50 sayı, tabloda olmayan 0**, açık [R?] 0 |
+| Olgu-kaynak etiketi (sayılı sahne GÖRSEL "Kaynak:") | eksik 0 |
+| Tez | 0:51–0:57 (≤60 sn) ve 13:07–13:13 (son 90 sn) |
+| Bölümler | 7, ilk 0:00, aralar ≥10 sn |
+| Shorts | 1: 103 kelime ≈39,8 sn · 2: 100 kelime ≈39,0 sn (≤60) · ikisi "?" ile biter, cevap uzun videoda |
+| Özgünlük 5-gram | 1929 %0,0 · S08 %0,1 |
