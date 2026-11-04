@@ -1,0 +1,4 @@
+srt blok=296 maks satır=42 kar, maks süre=5.5 sn, çakışma=0
+ara (tahmini zamanlı): [('dollars', 1.71), ('dollars', 383.57), ('dollars', 505.41), ('pounds.', 554.54), ('dollars.', 600.96), ('dollars,', 713.3), ('dollars,', 763.52)]
+kelime=2203 (kilitli metin 2203) whisper=2176 bolme=20 ara=7
+atilan Whisper kelimeleri (metinde karşılığı yok): [(200.72, 'care.', 0.006), (417.48, 'Last,', 0.026)]

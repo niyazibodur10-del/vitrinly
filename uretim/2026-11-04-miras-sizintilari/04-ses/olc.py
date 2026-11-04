@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""F4 ses ölçümü (ses-yonetmeni, 2026-10-27; 2026-11-02 uyarlandı: tahmin ### başlıklarından, bölüm/↺ tabloları çıkarıldı). Yalnız standart kütüphane.
+"""F4 ses ölçümü (ses-yonetmeni, 2026-10-27; 2026-11-02 uyarlandı: tahmin ### başlıklarından; 2026-11-04 tahmin 13:46). Yalnız standart kütüphane.
 
 Kullanım: python3 -I olc.py   (04-ses klasöründe; önce tts.py + tts-son.sh + yaziya-dok.py koşmuş olmalı)
 Girdi: anlatim-ham.zaman.json (tts.py cümle zamanları; tts-son.sh zamanı kaydırmaz: yalnız yeniden örnekleme +
@@ -55,7 +55,7 @@ json.dump({"kaynak": "anlatim.wav (48 kHz) — zamanlar sn; bas/bitis = kesme no
            "öndeki sahnede), konusma_bitis = son kelimenin bitişi", "toplam_sn": round(toplam, 3),
            "sahneler": sahneler}, open(KOK / "sahne-zamanlari.json", "w"), indent=1, ensure_ascii=False)
 
-print(f"Toplam süre: {mmss(toplam)} ({toplam:.1f} sn) · tahmin 11:44 (704 sn, metin 160 kpm) · fark {toplam - 704:+.1f} sn")
+print(f"Toplam süre: {mmss(toplam)} ({toplam:.1f} sn) · tahmin 13:46 (826 sn, metin 160 kpm) · fark {toplam - 826:+.1f} sn")
 print(f"Ortalama hız: {sum(e['kelime'] for e in esl) / toplam * 60:.1f} kelime/dk (duraklamalar dahil)\n")
 print("| Sahne | Başlangıç | Bitiş | Süre sn | Tahmini başlangıç | Tahmini süre | Fark sn | Konuşma kpm | WER (hata/kelime) |")
 print("|---|---|---|---|---|---|---|---|---|")

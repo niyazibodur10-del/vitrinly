@@ -1,0 +1,223 @@
+{
+ "model": "small.en",
+ "cumleler": [
+  {
+   "i": 0,
+   "metin": "Stop [two](/tˈu/) [is](/ˈɪz/) care.",
+   "whisper": "Stop 2 is care.",
+   "kelimeler": [
+    {
+     "w": "Stop",
+     "p": 0.701
+    },
+    {
+     "w": "2",
+     "p": 0.44
+    },
+    {
+     "w": "is",
+     "p": 0.738
+    },
+    {
+     "w": "care.",
+     "p": 0.547
+    }
+   ]
+  },
+  {
+   "i": 1,
+   "metin": "Stop two [is](+2) care.",
+   "whisper": "Stop 2 is care.",
+   "kelimeler": [
+    {
+     "w": "Stop",
+     "p": 0.72
+    },
+    {
+     "w": "2",
+     "p": 0.409
+    },
+    {
+     "w": "is",
+     "p": 0.717
+    },
+    {
+     "w": "care.",
+     "p": 0.56
+    }
+   ]
+  },
+  {
+   "i": 2,
+   "metin": "I'm curious how many people [picked](/pˈɪkt/) taxes.",
+   "whisper": "I'm curious how many people pick taxes.",
+   "kelimeler": [
+    {
+     "w": "I'm",
+     "p": 0.963
+    },
+    {
+     "w": "curious",
+     "p": 0.997
+    },
+    {
+     "w": "how",
+     "p": 0.997
+    },
+    {
+     "w": "many",
+     "p": 0.997
+    },
+    {
+     "w": "people",
+     "p": 0.999
+    },
+    {
+     "w": "pick",
+     "p": 0.794
+    },
+    {
+     "w": "taxes.",
+     "p": 0.982
+    }
+   ]
+  },
+  {
+   "i": 3,
+   "metin": "I'm curious how many people [picked](/pˈɪkʰt/) taxes.",
+   "whisper": "I'm curious how many people pick taxes.",
+   "kelimeler": [
+    {
+     "w": "I'm",
+     "p": 0.959
+    },
+    {
+     "w": "curious",
+     "p": 0.999
+    },
+    {
+     "w": "how",
+     "p": 0.997
+    },
+    {
+     "w": "many",
+     "p": 0.998
+    },
+    {
+     "w": "people",
+     "p": 0.999
+    },
+    {
+     "w": "pick",
+     "p": 0.985
+    },
+    {
+     "w": "taxes.",
+     "p": 0.979
+    }
+   ]
+  },
+  {
+   "i": 4,
+   "metin": "I [open](/ˈOpən/) the doors, and I read my clipboard out loud.",
+   "whisper": "I opened the doors and I read my clipboard out loud.",
+   "kelimeler": [
+    {
+     "w": "I",
+     "p": 0.988
+    },
+    {
+     "w": "opened",
+     "p": 0.799
+    },
+    {
+     "w": "the",
+     "p": 0.993
+    },
+    {
+     "w": "doors",
+     "p": 0.981
+    },
+    {
+     "w": "and",
+     "p": 0.876
+    },
+    {
+     "w": "I",
+     "p": 0.84
+    },
+    {
+     "w": "read",
+     "p": 0.999
+    },
+    {
+     "w": "my",
+     "p": 0.989
+    },
+    {
+     "w": "clipboard",
+     "p": 0.983
+    },
+    {
+     "w": "out",
+     "p": 0.993
+    },
+    {
+     "w": "loud.",
+     "p": 0.999
+    }
+   ]
+  },
+  {
+   "i": 5,
+   "metin": "I [open](/ˈOpᵊn/) the doors, and I read my clipboard out loud.",
+   "whisper": "I opened the doors and I read my clipboard out loud.",
+   "kelimeler": [
+    {
+     "w": "I",
+     "p": 0.988
+    },
+    {
+     "w": "opened",
+     "p": 0.808
+    },
+    {
+     "w": "the",
+     "p": 0.994
+    },
+    {
+     "w": "doors",
+     "p": 0.98
+    },
+    {
+     "w": "and",
+     "p": 0.79
+    },
+    {
+     "w": "I",
+     "p": 0.792
+    },
+    {
+     "w": "read",
+     "p": 0.999
+    },
+    {
+     "w": "my",
+     "p": 0.99
+    },
+    {
+     "w": "clipboard",
+     "p": 0.976
+    },
+    {
+     "w": "out",
+     "p": 0.993
+    },
+    {
+     "w": "loud.",
+     "p": 0.999
+    }
+   ]
+  }
+ ]
+}

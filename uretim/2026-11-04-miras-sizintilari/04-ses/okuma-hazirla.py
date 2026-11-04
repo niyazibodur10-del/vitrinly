@@ -22,6 +22,7 @@ TELAFFUZ = [  # (regex kilitli metin, Kokoro'ya verilen) — yalnız telaffuz i�
     # 2026-11-04 telaffuz testi (telaffuz-testi/test*.txt, cümle tek başına Whisper):
     (r"\bCerulli's", "[Cerulli's](/səɹˈulˌiz/)"),          # varsayılan /sˈɛɹʌli/ "SER-uh-lee" (Whisper "Sarily") vurgu yanlış
     (r"\bCerulli\b(?!')", "[Cerulli](/səɹˈulˌi/)"),        # suh-ROO-lee; /ʧəɹˈuli/ (İtalyanca che-) ve /sɛɹˈuli/ elendi
+    (r"Stop two is care\.", "Stop [two](/tˈu/) [is](/ˈɪz/) care."),  # v1 tam + tek başına "Stop to his care"; +2 eşit, IPA seçildi (test3)
     (r"\bOkafors\b", "[Okafors](/Okˈɑfˌɔɹz/)"),           # varsayılan /ˈɑkəfˌɔɹs/ "Aka Force"; /Okˈɑfɔɹz/ "Okafwars/O 'Coffers"; kazanan 3/3
 ]
 

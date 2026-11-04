@@ -1,0 +1,158 @@
+{
+ "model": "small.en",
+ "cumleler": [
+  {
+   "i": 0,
+   "metin": "I open [the](/ðˈə/) doors, and I read my clipboard out loud.",
+   "whisper": "I opened the doors and I read my clipboard out loud.",
+   "kelimeler": [
+    {
+     "w": "I",
+     "p": 0.99
+    },
+    {
+     "w": "opened",
+     "p": 0.861
+    },
+    {
+     "w": "the",
+     "p": 0.996
+    },
+    {
+     "w": "doors",
+     "p": 0.984
+    },
+    {
+     "w": "and",
+     "p": 0.884
+    },
+    {
+     "w": "I",
+     "p": 0.896
+    },
+    {
+     "w": "read",
+     "p": 0.999
+    },
+    {
+     "w": "my",
+     "p": 0.992
+    },
+    {
+     "w": "clipboard",
+     "p": 0.982
+    },
+    {
+     "w": "out",
+     "p": 0.995
+    },
+    {
+     "w": "loud.",
+     "p": 0.998
+    }
+   ]
+  },
+  {
+   "i": 1,
+   "metin": "I [open](/ˈOpən/) [the](/ði/) doors, and I read my clipboard out loud.",
+   "whisper": "I opened the doors and I read my clipboard out loud.",
+   "kelimeler": [
+    {
+     "w": "I",
+     "p": 0.986
+    },
+    {
+     "w": "opened",
+     "p": 0.763
+    },
+    {
+     "w": "the",
+     "p": 0.994
+    },
+    {
+     "w": "doors",
+     "p": 0.985
+    },
+    {
+     "w": "and",
+     "p": 0.832
+    },
+    {
+     "w": "I",
+     "p": 0.735
+    },
+    {
+     "w": "read",
+     "p": 0.999
+    },
+    {
+     "w": "my",
+     "p": 0.989
+    },
+    {
+     "w": "clipboard",
+     "p": 0.981
+    },
+    {
+     "w": "out",
+     "p": 0.993
+    },
+    {
+     "w": "loud.",
+     "p": 0.999
+    }
+   ]
+  },
+  {
+   "i": 2,
+   "metin": "I [open](+2) the doors, and I read my clipboard out loud.",
+   "whisper": "I opened the doors and I read my clipboard out loud.",
+   "kelimeler": [
+    {
+     "w": "I",
+     "p": 0.989
+    },
+    {
+     "w": "opened",
+     "p": 0.81
+    },
+    {
+     "w": "the",
+     "p": 0.995
+    },
+    {
+     "w": "doors",
+     "p": 0.979
+    },
+    {
+     "w": "and",
+     "p": 0.804
+    },
+    {
+     "w": "I",
+     "p": 0.824
+    },
+    {
+     "w": "read",
+     "p": 0.999
+    },
+    {
+     "w": "my",
+     "p": 0.988
+    },
+    {
+     "w": "clipboard",
+     "p": 0.977
+    },
+    {
+     "w": "out",
+     "p": 0.992
+    },
+    {
+     "w": "loud.",
+     "p": 0.999
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "ses": "am_fenrir",
+ "hiz": 0.9,
+ "cumleler": [
+  {
+   "metin": "I open [the](/ðˈə/) doors, and I read my clipboard out loud.",
+   "bas": 0.0,
+   "son": 3.008
+  },
+  {
+   "metin": "I [open](/ˈOpən/) [the](/ði/) doors, and I read my clipboard out loud.",
+   "bas": 3.658,
+   "son": 6.59
+  },
+  {
+   "metin": "I [open](+2) the doors, and I read my clipboard out loud.",
+   "bas": 7.24,
+   "son": 10.146
+  }
+ ]
+}
