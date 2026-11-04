@@ -69,6 +69,7 @@ Video klasöründe kalan kapı betikleri (1929 videosu, `uretim/2026-10-26-1929-
 - YouTube yetkisi (2026-11-04): `yayin_api.yetki_al` önce ortam değişkeni, düşükse dosyadaki tokenı dener; "Kalıcı yetki geçersiz (ortam değişkeni)" satırı = Niyazi ortam ayarındaki tokenı yenilemeli (koordinatör raporlar).
 
 ## Araştırma ve veri
+- 2026-11-04 (viralite-analisti, model v0.2): 90 g nişte başlıkta somut özne etkisiz (1,07x↔1,05x) ve gündem kelimesi avantajsız (1,00x↔1,09x); güçlü olan çerçeve: tarih→gelecek ≥3x %39, gizli iş modeli %41 (niş %15). <10 B aboneli kanalın 90 g ≥1 M videosu 0/186 → "milyon" hedefi tahminde %1–3 üstüne çıkmaz. Thumbnail metni rakip başlık çekirdeğini taşımasın (paketleyici + thumbnail).
 - 2026-11-04 (kanal-analisti, 90 g niş n=959): başlıkta Rakam/$ ve yıl kanal içi medyan skoru 0,95 (niş 1,06); tarih→gelecek 1,57, paradoks 1,29, "What Happens If" ≥2x %37. Patlayan genç kanallar Shorts'suz büyüyor; bizim Shorts 341 izlenme → uzun +5. senaryo-yazari/youtube-paketleyici: tarihi yakın geleceğe bağla, Shorts'u uzun videonun açık sorusu yap (`uretim/2026-11-04-secim/01-arastirma/rakip-ozet.md`).
 - YouTube Data API `search` ayrı günlük tavanlı (15 sorguda 429), proje paylaşımlı → `playlistItems`/`videos` (1 birim) tercih. Kota dolunca `python3 -m yt_dlp --flat-playlist --print "%(id)s" "ytsearch15:<sorgu>"` + `videos.list`. yt-dlp otomatik altyazı ~8 videoda sonra bot kontrolü.
 - `marketing-skills:youtube-full` bir veri aracıdır (transkript/RSS/arama); SEO veya retention kuralı vermez.

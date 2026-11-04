@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Viralite puanlama betiği (model v0.1). Yalnızca standart kütüphane.
+"""Viralite puanlama betiği (model v0.2; v0.1 → v0.2 kalibrasyonu 2026-11-04, docs/viralite-modeli.md). Yalnızca standart kütüphane.
 
 Ağırlıklar ve bonus/ceza kuralları YALNIZCA bu dosyada tanımlıdır.
 `docs/viralite-modeli.md` tablosu bunlarla tutarlı olmalı; `--dokuman` ile denetlenir.
@@ -24,15 +24,15 @@ import re
 import sys
 from decimal import Decimal, ROUND_HALF_UP
 
-MODEL_SURUMU = "v0.1"
+MODEL_SURUMU = "v0.2"
 
 # ---- Tek kaynak: ağırlıklar (anahtar, doküman adı, ağırlık) ----
 OLCUTLER = [
-    ("merak", "Merak boşluğu", Decimal("0.20")),
+    ("merak", "Merak boşluğu", Decimal("0.25")),
     ("talep", "Kanıtlı talep", Decimal("0.15")),
     ("hook", "Hook gücü", Decimal("0.10")),
     ("kisisel", "Kişisel bağ", Decimal("0.15")),
-    ("zamanlama", "Zamanlama", Decimal("0.10")),
+    ("zamanlama", "Zamanlama", Decimal("0.05")),
     ("hikaye", "Hikâye gerilimi", Decimal("0.15")),
     ("gorsel", "Görselleştirilebilirlik", Decimal("0.10")),
     ("raf", "Raf ömrü", Decimal("0.05")),
@@ -40,7 +40,9 @@ OLCUTLER = [
 AGIRLIK = {k: w for k, _, w in OLCUTLER}
 
 # ---- Tek kaynak: bonus / ceza kuralları ----
-MERAK_TAVANI_SOMUT_OZNE_YOK = Decimal("6")   # merak puanı tavanı (ağırlıktan önce)
+# v0.2: kapalı (None). 90 g niş verisinde somut özneli başlık 1,07x ↔ öznesiz 1,05x, ≥3x oranı %15 ↔ %15.
+# Açmak için Decimal("6") yaz (v0.1 davranışı).
+MERAK_TAVANI_SOMUT_OZNE_YOK = None
 SERI_BONUSU = Decimal("0.3")                  # toplama eklenir
 RAKIP_CEZASI = {                              # toplamdan düşülür, yalnız en ağır seviye
     "yok": Decimal("0"),
@@ -96,7 +98,7 @@ def puanla(s):
         raise ValueError(f"{sid}: rakip_benzerlik {sorted(RAKIP_CEZASI)} olmalı, gelen: {benz!r}")
 
     notlar = []
-    if not somut and p["merak"] > MERAK_TAVANI_SOMUT_OZNE_YOK:
+    if MERAK_TAVANI_SOMUT_OZNE_YOK is not None and not somut and p["merak"] > MERAK_TAVANI_SOMUT_OZNE_YOK:
         notlar.append(f"merak {p['merak']}→{MERAK_TAVANI_SOMUT_OZNE_YOK} (somut özne yok)")
         p["merak"] = MERAK_TAVANI_SOMUT_OZNE_YOK
 

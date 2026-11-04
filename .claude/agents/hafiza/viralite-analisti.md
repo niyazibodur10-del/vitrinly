@@ -3,7 +3,7 @@
 ## Kurallar
 - Hesap yalnız `tools/viralite.py` ile; ağırlıklar betikte tek yerde (`OLCUTLER`), doküman tablosu onunla aynı olmalı; ağırlık toplamı 1.00 assert.
 - Model v0.1'in tüm ağırlıkları TAHMİN [T]; güven DÜŞÜK, ±0.05 belirsizlik; 0.3 puandan küçük sıralama farkı anlamsız.
-- "Somut özne yoksa merak ≤6" tavanı ağırlıklandırmadan önce uygulanır.
+- v0.2 (2026-11-04): merak 0.25, zamanlama 0.05, somut özne tavanı KAPALI (90 g n=959 yalanladı); karşılaştırma için v0.1 kopyası `uretim/2026-11-04-secim/02-senaryo/viralite-olcum/viralite_v01.py`.
 
 ## Dersler
 - 2026-10-26 (v0 → v0.1): kalibrasyon verisi rakip-analizi v1 (5 global kanal, ≈6 outlier, üçüncü taraf/arama özeti). Kanıtlı talep ağırlığı 0.15 korundu, ölçüm yerel medyan tabanına alındı.
@@ -20,3 +20,6 @@
 - 2026-11-02 (F2, 12 senaryo): Arama medyanı ≠ talep: S06 (10 yıllık %5) arama medyanı 4,6 K "zayıf" görünürken aynı konuda yerel medyan 9,8x çıktı. Her adayın en yakın 2–3 videosunu `viralite-outlier.py` ile ölç (30 video ≈ 3 dk); haber kanalı outlier'ı (196x) niş dışı → bir kademe düşük.
 - 2026-11-02: Duyarlılığı **slot uygun havuzda** koş; slot dışı aday (A, B slotunda) tam havuzda 21/56 sahte kırılganlık üretti, B havuzunda 1/56. Başlık alternatifleri de varyantla puanla (S06 Alt-1 rakip kalıbı → −1.5).
 - 2026-11-02 (F8, S08 son puan): ikinci kez F8 = F2 (7.25); hook kanıtı için 6 karelik tek kontakt (ffmpeg select+tile) + kelimeler-hizali kpm yeterli, tam video izlemeye gerek yok. F8a raporuna video/thumbnail sha256 yaz → F8b'de "aynı" tek satır.
+- 2026-11-04 (F2, v0.2 kalibrasyonu): Başlık kuralını rakip havuzunda regex'le sına (`viralite-olcum/kalibrasyon90.py`, delta90 json, 1 sn): tavan ve zamanlama veriyle yalanlandı → model değişti. Eski reddin gerekçesi (liste yanlılığı) kalkınca kararı yeniden aç.
+- 2026-11-04: Trend-avcısının "Nx" skoru izl/abone'dir, yerel medyan değil; her zaman yeniden ölç. viralite-outlier.py `playlistItems` 6 sayfa sınırı günlük yükleyen dev kanalda (Infographics) eski videonun komşularını bulamıyor → aynı medyan tekrarlıyorsa "şüpheli" yaz. <30 B izlenmeli outlier çapaya sayılmaz.
+- 2026-11-04: Thumbnail metni de rakip başlık çekirdeğini taşıyabilir (S04 "WHO BUYS THEM?", S12 "ALL THE SILVER") → ceza + cezasız varyant. Milyon olasılığı: taban 0/186 (<10 B abone, 90 g) + k kuralı (`docs/viralite-modeli.md`).

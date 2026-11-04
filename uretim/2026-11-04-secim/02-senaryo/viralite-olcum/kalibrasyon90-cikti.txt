@@ -10,7 +10,7 @@ tarih->gelecek                         n= 46 med=1.52 >=3x= 39% >=10x= 8 | degil
 gizli is modeli                        n= 29 med=2.25 >=3x= 41% >=10x= 5 | degil n=930 med=1.05 >=3x= 14%
 gundem (ai|trump|tariff|midterm|2026|2027|fed|crash now) n=158 med=1.00 >=3x= 12% >=10x= 5 | degil n=801 med=1.09 >=3x= 15%
 tarihsel (history|19xx|ancient|empire|ww) n=172 med=0.96 >=3x= 13% >=10x= 6 | degil n=787 med=1.09 >=3x= 15%
-seri isareti (part|ep\.|episode|#\d)   n=  4 med=0.74 >=3x= 25% >=10x= 0 | degil n=955 med=1.06 >=3x= 15%
+seri isareti (part|ep|episode|#n)      n=  4 med=0.74 >=3x= 25% >=10x= 0 | degil n=955 med=1.06 >=3x= 15%
 
 Milyon taban orani (nis, 90 g, >=7 gunluk):
   abone        0-10000      n=186 >=1M= 0 (0.0%) >=100K=  7 (3.8%) maks=   776925

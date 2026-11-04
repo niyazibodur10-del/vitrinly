@@ -31,7 +31,7 @@ rap("gizli is modeli", T(r"actually make money|economics of|business model|make 
 rap("gundem (ai|trump|tariff|midterm|2026|2027|fed|crash now)", T(r"\bai\b|trump|tariff|midterm|2026|2027|\bfed\b|right now|just\b"))
 rap("tarihsel (history|19xx|ancient|empire|ww)", T(r"history|\b1[5-9]\d\d\b|ancient|empire|world war|medieval|roman|century"))
 # 4) seri
-rap("seri isareti (part|ep\.|episode|#\d)", T(r"\bpart\b|\bep\.?\s*\d|episode|#\d"))
+rap("seri isareti (part|ep|episode|#n)", T(r"\bpart\b|\bep\.?\s*\d|episode|#\d"))
 # 5) milyon taban orani (kanal buyuklugune gore, nis, 90 g)
 print("\nMilyon taban orani (nis, 90 g, >=7 gunluk):")
 for lo, hi in [(0, 1e4), (1e4, 5e4), (5e4, 2e5), (2e5, 1e6), (1e6, 1e10)]:
