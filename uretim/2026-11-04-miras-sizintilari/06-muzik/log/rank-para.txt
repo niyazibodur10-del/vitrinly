@@ -1,0 +1,10 @@
+Ranked 38 files for 'rustling paper banknotes, cash money'. Best: Money_33.wav (z +3.9, strong), Money_34.wav (z +3.5, strong), Money_23.wav (z +2.1, weak). 2 strong, 0 plausible, 1 weak match(es). In a held-out test 'strong' was right 98% of the time, 61% when a close variant (a mouth pop for a cork pop) counts as wrong.
+
+  1. z  +3.9  strong    cos 0.394  Money_33.wav  (sounds most like an apple falling on grass (z +2.7))
+  2. z  +3.5  strong    cos 0.360  Money_34.wav  (sounds most like a single mechanical keyboard key press (z +3.1))
+  3. z  +2.1  weak      cos 0.206  Money_23.wav  (sounds most like an old typewriter (z +3.4))
+  4. z  +1.8  no match  cos 0.107  Money_14.wav  (sounds most like coins dropping (z +6.1))
+  5. z  +1.7  no match  cos 0.133  Money_18.wav  (sounds most like a single mechanical keyboard key press (z +3.7))
+  6. z  +1.6  no match  cos 0.104  Money_11.wav  (sounds most like coins dropping (z +4.0))
+  7. z  +1.5  no match  cos 0.154  Money_06.wav  (sounds most like keys jingling (z +3.2))
+  8. z  +1.5  no match  cos 0.141  Money_21.wav  (sounds most like a camera shutter click (z +3.2))

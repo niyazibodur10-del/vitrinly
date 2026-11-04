@@ -1,0 +1,10 @@
+Ranked 8 files for 'quiet suspense, curious and slightly tense background music'. Best: deliberate-concealment-northivanastan.ogg (z +2.8, plausible), insistent-yd.ogg (z +1.6, no match), desert-settlement-vitalezzz.mp3 (z +1.5, no match). 0 strong, 1 plausible, 0 weak match(es).
+
+  1. z  +2.8  plausible cos 0.230  deliberate-concealment-northivanastan.ogg  (sounds most like celebratory and joyful music (z +3.1))
+  2. z  +1.6  no match  cos 0.250  insistent-yd.ogg  (sounds most like dreamy and ethereal music (z +2.8))
+  3. z  +1.5  no match  cos 0.242  desert-settlement-vitalezzz.mp3  (sounds most like dreamy and ethereal music (z +3.7))
+  4. z  +1.5  no match  cos 0.189  investigation-umplix.ogg  (sounds most like funk music (z +4.2))
+  5. z  +1.5  no match  cos 0.240  wasteland-caravan-vitalezzz.mp3  (sounds most like dreamy and ethereal music (z +3.7))
+  6. z  +1.3  no match  cos 0.192  lone-scavenger-vitalezzz.mp3  (sounds most like dreamy and ethereal music (z +3.3))
+  7. z  +1.2  no match  cos 0.142  mysterious-clock-owlishmedia.ogg  (sounds most like a music box (z +3.3))
+  8. z  +1.1  no match  cos 0.133  remember-this-shadow-komiku.mp3  (sounds most like jazz music (z +3.8))
