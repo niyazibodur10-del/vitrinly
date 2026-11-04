@@ -1,0 +1,682 @@
+{
+ "C1": {
+  "q": "national debt 40 trillion who owns",
+  "k": "debt",
+  "n_rss": 64,
+  "ok": [
+   {
+    "t": "With U.S. debt above $40 trillion, the IMF chief warns that economic growth alone won’t solve the problem - Fortune",
+    "url": "https://fortune.com/2026/10/16/imf-chief-kristalina-georgieva-warns-us-national-debt-economic-growth-not-enough-scott-bessent-treasury-deficit/",
+    "src": "Fortune",
+    "kod": "200",
+    "meta_d": "2026-10-16",
+    "rss_d": "2026-10-16"
+   },
+   {
+    "t": "Sizing Up the $40 Trillion National Debt: News Article - Independent Institute",
+    "url": "https://www.independent.org/article/2026/10/20/size-national-debt/",
+    "src": "Independent Institute",
+    "kod": "200",
+    "meta_d": "2026-10-20",
+    "rss_d": "2026-10-20"
+   },
+   {
+    "t": "Interest payments on America’s $40 trillion debt eats up a huge piece of the budget — as deficit hits $2 trillion - New York Post",
+    "url": "https://nypost.com/2026/10/21/business/interest-payments-on-americas-40-trillion-debt-eats-up-a-huge-piece-of-the-budget/",
+    "src": "New York Post",
+    "kod": "200",
+    "meta_d": "2026-10-21",
+    "rss_d": "2026-10-21"
+   }
+  ],
+  "tried": 4
+ },
+ "C2": {
+  "q": "great wealth transfer baby boomers trillion",
+  "k": "boomer",
+  "n_rss": 28,
+  "ok": [
+   {
+    "t": "Wealthy boomers doubt their heirs will keep giving as $124 trillion changes hands, BofA finds. The data shows a different reality - Fortune",
+    "url": "https://fortune.com/2026/10/06/wealthy-baby-boomers-losing-faith-in-heirs-philanthropic-giving-gen-z-millennials-bank-of-america-research/",
+    "src": "Fortune",
+    "kod": "200",
+    "meta_d": "2026-10-06",
+    "rss_d": "2026-10-06"
+   },
+   {
+    "t": "Great Wealth Transfer might give way to a 'mirage,' Dunham research warns - InvestmentNews",
+    "url": "https://www.investmentnews.com/retirement-planning/great-wealth-transfer-might-give-way-to-a-mirage-dunham-research-warns/268471",
+    "src": "InvestmentNews",
+    "kod": "200",
+    "meta_d": "2026-10-05",
+    "rss_d": "2026-10-05"
+   },
+   {
+    "t": "Senior Class: Old money | On Point with Meghna Chakrabarti - WBUR",
+    "url": "https://www.wbur.org/onpoint/2026/10/07/senior-class-wealth-money-baby-boomers",
+    "src": "WBUR",
+    "kod": "200",
+    "meta_d": "2026-10-07",
+    "rss_d": "2026-10-07"
+   }
+  ],
+  "tried": 4
+ },
+ "C3": {
+  "q": "countries debt crisis bankrupt sovereign default risk",
+  "k": "debt",
+  "n_rss": 8,
+  "ok": [
+   {
+    "t": "France’s growing debt woes: How bond markets set countries’ borrowing costs - Al Jazeera",
+    "url": "https://www.aljazeera.com/economy/2026/10/20/frances-growing-debt-woes-how-bond-markets-set-countries-borrowing-costs",
+    "src": "Al Jazeera",
+    "kod": "200",
+    "meta_d": "2026-10-20",
+    "rss_d": "2026-10-20"
+   },
+   {
+    "t": "How close are 21 countries to economic collapse? - Yahoo Finance UK",
+    "url": "https://uk.finance.yahoo.com/news/close-21-countries-economic-collapse-150000929.html",
+    "src": "Yahoo Finance UK",
+    "kod": "200",
+    "meta_d": "2026-10-21",
+    "rss_d": "2026-10-21"
+   },
+   {
+    "t": "Why Did the Marshall Islands Issue Its Sovereign Debt as USDM1? - Disruption Banking",
+    "url": "https://www.disruptionbanking.com/2026/10/21/why-did-the-marshall-islands-issue-its-sovereign-debt-as-usdm1/",
+    "src": "Disruption Banking",
+    "kod": "200",
+    "meta_d": "2026-10-21",
+    "rss_d": "2026-10-21"
+   }
+  ],
+  "tried": 4
+ },
+ "C4": {
+  "q": "midterm results Democrats House markets economy",
+  "k": "Democrat",
+  "n_rss": 24,
+  "ok": [
+   {
+    "t": "Analysts react to US midterm election results - Yahoo Finance",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/analysts-react-us-midterm-election-025738421.html",
+    "src": "Yahoo Finance",
+    "kod": "200",
+    "meta_d": "2026-11-04",
+    "rss_d": "2026-11-04"
+   },
+   {
+    "t": "What the midterm elections could mean for markets, debt - Fox Business",
+    "url": "https://www.foxbusiness.com/politics/what-midterm-elections-could-mean-markets-debt",
+    "src": "Fox Business",
+    "kod": "200",
+    "meta_d": "2026-11-03",
+    "rss_d": "2026-11-03"
+   },
+   {
+    "t": "US midterm elections promise political uncertainty but economic stability - Natixis Corporate & Investment Banking (Natixis CIB)",
+    "url": "https://home.cib.natixis.com/articles/us-midterm-elections-promise-political-uncertainty-but-economic-stability",
+    "src": "Natixis Corporate & Investment Banking (Natixis CIB)",
+    "kod": "200",
+    "meta_d": "2026-11-03",
+    "rss_d": "2026-11-03"
+   }
+  ],
+  "tried": 3
+ },
+ "C5": {
+  "q": "Social Security trust fund 2032 benefit cut CBO",
+  "k": "Social Security",
+  "n_rss": 10,
+  "ok": [
+   {
+    "t": "Warren Buffett once called cutting Social Security a ‘mistake.’ Now the CBO says the hit may be 26% by 2032 — $543 less - Yahoo Finance",
+    "url": "https://finance.yahoo.com/economy/policy/articles/warren-buffett-once-called-cutting-173000014.html",
+    "src": "Yahoo Finance",
+    "kod": "200",
+    "meta_d": "2026-11-02",
+    "rss_d": "2026-11-02"
+   },
+   {
+    "t": "Can You Fix the US Federal Deficit and Debt? - The Honest Broker | Roger Pielke Jr.",
+    "url": "https://rogerpielkejr.substack.com/p/can-you-fix-the-us-federal-deficit",
+    "src": "The Honest Broker | Roger Pielke Jr.",
+    "kod": "200",
+    "meta_d": "2026-10-22",
+    "rss_d": "2026-10-22"
+   },
+   {
+    "t": "Warren Buffett once called cutting Social Security a ‘mistake.’ Now the CBO says the hit could be 26% by 2032 — about $543/month off the average check - AOL.com",
+    "url": "https://www.aol.com/articles/warren-buffett-once-called-cutting-173000000.html",
+    "src": "AOL.com",
+    "kod": "200",
+    "meta_d": "2026-11-02",
+    "rss_d": "2026-11-02"
+   }
+  ],
+  "tried": 4
+ },
+ "C6": {
+  "q": "AI jobs layoffs white collar unemployment",
+  "k": "AI",
+  "n_rss": 16,
+  "ok": [
+   {
+    "t": "AI could displace one in 11 workers, Goldman says, but the layoffs are likely waiting for a recession - Fortune",
+    "url": "https://fortune.com/2026/10/22/goldman-sachs-forecast-how-many-jobs-lost-to-ai-9-percent/",
+    "src": "Fortune",
+    "kod": "200",
+    "meta_d": "2026-10-22",
+    "rss_d": "2026-10-22"
+   },
+   {
+    "t": "As AI layoff fears mount, lawmakers weigh a bigger safety net for workers - CBS News",
+    "url": "https://www.cbsnews.com/news/ai-layoffs-congress-bills-unemployment-benefits-tax/",
+    "src": "CBS News",
+    "kod": "200",
+    "meta_d": "2026-10-23",
+    "rss_d": "2026-10-23"
+   },
+   {
+    "t": "Goldman Sachs sees AI-fueled layoffs displacing nearly 10% of workers in the coming years - Business Insider",
+    "url": "https://www.businessinsider.com/ai-layoffs-job-market-prediction-goldman-sachs-2026-10",
+    "src": "Business Insider",
+    "kod": "200",
+    "meta_d": "2026-10-23",
+    "rss_d": "2026-10-23"
+   }
+  ],
+  "tried": 4
+ },
+ "C7": {
+  "q": "dollar reserve currency dedollarization",
+  "k": "dollar",
+  "n_rss": 10,
+  "ok": [
+   {
+    "t": "China sees yuan vs. dollar like Pepsi vs. Coke—'never the market leader, but serviceable in a pinch' - Fortune",
+    "url": "https://fortune.com/2026/10/31/china-us-currency-wars-yuan-vs-dollar-pepsi-coke-pretodollar-dedollarization/",
+    "src": "Fortune",
+    "kod": "200",
+    "meta_d": "2026-10-31",
+    "rss_d": "2026-10-31"
+   },
+   {
+    "t": "‘I got out of my bank stocks’: Why former Fed insider Chris Whalen is betting on gold - Kitco",
+    "url": "https://www.kitco.com/news/article/2026-10-19/i-got-out-my-bank-stocks-why-former-fed-insider-chris-whalen-betting-gold",
+    "src": "Kitco",
+    "kod": "200",
+    "meta_d": "2026-10-19",
+    "rss_d": "2026-10-19"
+   },
+   {
+    "t": "We’re Gonna Get Single-Payer Health Care, Good and Hard - The Bulwark",
+    "url": "https://www.thebulwark.com/p/were-gonna-get-single-payer-health",
+    "src": "The Bulwark",
+    "kod": "200",
+    "meta_d": "2026-10-15",
+    "rss_d": "2026-10-15"
+   }
+  ],
+  "tried": 4
+ },
+ "C8": {
+  "q": "China Treasury holdings selling US debt",
+  "k": "Treasur",
+  "n_rss": 29,
+  "ok": [
+   {
+    "t": "China looks like it's dumping Treasury debt but may actually be stashing it in Canada and Belgium - Fortune",
+    "url": "https://fortune.com/2026/10/18/china-dedollarization-us-treasury-debt-holdings-stealth-canada-belgium-custodians/",
+    "src": "Fortune",
+    "kod": "200",
+    "meta_d": "2026-10-18",
+    "rss_d": "2026-10-18"
+   },
+   {
+    "t": "China and Japan Sell as Hedge Funds Buy: Has the “Risk-Free, Low-Return” Formula for U.S. Treasuries Broken Down? - https://economy.ac/",
+    "url": "https://economy.ac/news/2026/10/202610295902",
+    "src": "https://economy.ac/",
+    "kod": "200",
+    "meta_d": "2026-10-20",
+    "rss_d": "2026-10-28"
+   },
+   {
+    "t": "China's Treasury Pile Is Shrinking on Paper. The Custody Data Tell a Different Story - Yahoo Finance",
+    "url": "https://finance.yahoo.com/markets/currencies/articles/chinas-treasury-pile-shrinking-paper-121500428.html",
+    "src": "Yahoo Finance",
+    "kod": "200",
+    "meta_d": "2026-10-19",
+    "rss_d": "2026-10-19"
+   }
+  ],
+  "tried": 6
+ },
+ "C9": {
+  "q": "AI bubble burst fears tech stocks rout",
+  "k": "bubble",
+  "n_rss": 15,
+  "ok": [
+   {
+    "t": "Stock Market Bloodbath Spikes Fears of AI Bubble Bursting - Futurism",
+    "url": "https://futurism.com/future-society/stock-market-bloodbath-ai-bubble-earnings",
+    "src": "Futurism",
+    "kod": "200",
+    "meta_d": "2026-10-30",
+    "rss_d": "2026-10-30"
+   },
+   {
+    "t": "China's AI Bubble Bursts: Tech Stock Crash Wipes $480 Billion - Global Banking & Finance Review",
+    "url": "https://www.globalbankingandfinance.com/analysis-in-china-ai-bubble-already-burst/",
+    "src": "Global Banking & Finance Review",
+    "kod": "200",
+    "meta_d": "2026-10-26",
+    "rss_d": "2026-10-26"
+   },
+   {
+    "t": "How to invest if you think the AI bubble is about to burst - Business Insider Africa",
+    "url": "https://africa.businessinsider.com/markets/how-to-invest-if-you-think-the-ai-bubble-is-about-to-burst/qnln2t5",
+    "src": "Business Insider Africa",
+    "kod": "200",
+    "meta_d": "2026-11-02",
+    "rss_d": "2026-11-02"
+   }
+  ],
+  "tried": 4
+ },
+ "C10": {
+  "q": "gold price crash from record high",
+  "k": "gold",
+  "n_rss": 29,
+  "ok": [
+   {
+    "t": "What gold's nearly 30% crash from all-time highs tells us about markets and the economy - Business Insider",
+    "url": "https://www.businessinsider.com/gold-price-crash-why-metal-is-down-inlation-interest-rates-2026-11",
+    "src": "Business Insider",
+    "kod": "200",
+    "meta_d": "2026-11-03",
+    "rss_d": "2026-11-03"
+   },
+   {
+    "t": "Why Is Gold Going Down? Gold Falls 27% From Its Record - CryptoTicker.io",
+    "url": "https://cryptoticker.io/en/is-gold-a-safe-haven-gold-price-crisis/",
+    "src": "CryptoTicker.io",
+    "kod": "200",
+    "meta_d": "2026-10-31",
+    "rss_d": "2026-10-31"
+   },
+   {
+    "t": "Silver Price Hits 2026 Low. Will It Crash Further? - Yahoo Finance",
+    "url": "https://finance.yahoo.com/markets/commodities/articles/silver-price-hits-2026-low-103125664.html",
+    "src": "Yahoo Finance",
+    "kod": "200",
+    "meta_d": "2026-10-25",
+    "rss_d": "2026-10-25"
+   }
+  ],
+  "tried": 4
+ },
+ "C11": {
+  "q": "bank run deposits fear",
+  "k": "bank",
+  "n_rss": 11,
+  "ok": [
+   {
+    "t": "Understanding the banking industry's reaction to AI agents - American Banker",
+    "url": "https://www.americanbanker.com/opinion/understanding-the-banking-industrys-reaction-to-ai-agents",
+    "src": "American Banker",
+    "kod": "200",
+    "meta_d": "2026-10-28",
+    "rss_d": "2026-10-28"
+   },
+   {
+    "t": "Banks fear customers' AI agents could drain the cheap deposits they need to make loans - Yahoo Finance",
+    "url": "https://finance.yahoo.com/technology/ai/articles/banks-fear-customers-ai-agents-090700564.html",
+    "src": "Yahoo Finance",
+    "kod": "200",
+    "meta_d": "2026-10-29",
+    "rss_d": "2026-10-29"
+   },
+   {
+    "t": "Fears of a regional AI bank run aren’t totally overblown - EnterpriseAM",
+    "url": "https://enterpriseam.com/ai/2026/10/05/fears-of-a-regional-ai-bank-run-arent-totally-overblown/",
+    "src": "EnterpriseAM",
+    "kod": "200",
+    "meta_d": "2026-10-04",
+    "rss_d": "2026-10-05"
+   }
+  ],
+  "tried": 4
+ },
+ "A1": {
+  "q": "AI bubble dot-com comparison 2000",
+  "k": "dot-com",
+  "n_rss": 57,
+  "ok": [
+   {
+    "t": "Is There an AI Bubble and What Does That Even Mean? - Loss Prevention Magazine",
+    "url": "https://losspreventionmedia.com/is-there-an-ai-bubble-what-does-that-even-mean/",
+    "src": "Loss Prevention Magazine",
+    "kod": "200",
+    "meta_d": "2026-10-27",
+    "rss_d": "2026-10-27"
+   },
+   {
+    "t": "Ray Dalio says his bubble indicator puts AI level with 1929 and 2000 - PPC Land",
+    "url": "https://ppc.land/ray-dalio-says-his-bubble-indicator-puts-ai-level-with-1929-and-2000/",
+    "src": "PPC Land",
+    "kod": "200",
+    "meta_d": "2026-10-17",
+    "rss_d": "2026-10-17"
+   },
+   {
+    "t": "The impact of bubbles on lifetime earnings - Klement on Investing",
+    "url": "https://klementoninvesting.substack.com/p/the-impact-of-bubbles-on-lifetime",
+    "src": "Klement on Investing",
+    "kod": "200",
+    "meta_d": "2026-10-15",
+    "rss_d": "2026-10-15"
+   }
+  ],
+  "tried": 4
+ },
+ "A2": {
+  "q": "South Sea Bubble Newton AI",
+  "k": "Newton",
+  "n_rss": 2,
+  "ok": [
+   {
+    "t": "FO Talks: Making Sense of the AI Boom - Fair Observer",
+    "url": "https://www.fairobserver.com/video/fo-talks-making-sense-of-the-ai-boom/",
+    "src": "Fair Observer",
+    "kod": "200",
+    "meta_d": "2026-09-08",
+    "rss_d": "2026-09-08"
+   }
+  ],
+  "tried": 2
+ },
+ "A3": {
+  "q": "Binance hack 5.8 billion",
+  "k": "Binance",
+  "n_rss": 55,
+  "ok": [
+   {
+    "t": "Binance probes possible $5.7 billion crypto hack, possibly the biggest in history - Yahoo Finance",
+    "url": "https://finance.yahoo.com/markets/crypto/articles/binance-probes-possible-5-7-234755783.html",
+    "src": "Yahoo Finance",
+    "kod": "200",
+    "meta_d": "2026-10-30",
+    "rss_d": "2026-10-29"
+   },
+   {
+    "t": "Bitcoin Price Slides Below $79,000 as Binance Loses $5.8 Billion in Massive Hack - Bitcoin Magazine",
+    "url": "https://bitcoinmagazine.com/news/bitcoin-price-slides-binance",
+    "src": "Bitcoin Magazine",
+    "kod": "200",
+    "meta_d": "2026-10-29",
+    "rss_d": "2026-10-29"
+   },
+   {
+    "t": "Binance probes potential $5.8 billion crypto-theft hack - BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/binance-probes-potential-58-billion-crypto-theft-hack/",
+    "src": "BleepingComputer",
+    "kod": "200",
+    "meta_d": "2026-10-29",
+    "rss_d": "2026-10-29"
+   }
+  ],
+  "tried": 4
+ },
+ "A4": {
+  "q": "Mansa Musa",
+  "k": "Mansa",
+  "n_rss": 10,
+  "ok": [
+   {
+    "t": "The devastating reality of having loved ones in prison - The Real News Network",
+    "url": "https://therealnews.com/the-devastating-reality-of-having-loved-ones-in-prison",
+    "src": "The Real News Network",
+    "kod": "200",
+    "meta_d": "2026-11-03",
+    "rss_d": "2026-11-03"
+   },
+   {
+    "t": "Eat The Frog – Mansa Musa: Song Review - The Beat.ie",
+    "url": "https://www.thebeat.ie/eat-the-frog-mansa-musa-song-review.php",
+    "src": "The Beat.ie",
+    "kod": "200",
+    "meta_d": "2026-09-08",
+    "rss_d": "2026-09-08"
+   },
+   {
+    "t": "$400 Billion Mansa Musa Fortune Traces to a 2012 Website List - Ancient Origins",
+    "url": "https://www.ancient-origins.net/news-history-archaeology/mansa-musa-400-billion-richest-man-fact-check-00103294",
+    "src": "Ancient Origins",
+    "kod": "200",
+    "meta_d": "2026-10-23",
+    "rss_d": "2026-10-23"
+   }
+  ],
+  "tried": 4
+ },
+ "A5": {
+  "q": "hyperinflation Weimar",
+  "k": "Weimar",
+  "n_rss": 9,
+  "ok": [
+   {
+    "t": "Germany After WWI: Economic, Social, and Political Aftermath - Holocaust Encyclopedia",
+    "url": "https://encyclopedia.ushmm.org/content/en/article/world-war-i-aftermath",
+    "src": "Holocaust Encyclopedia",
+    "kod": "200",
+    "meta_d": null,
+    "rss_d": "2026-09-22"
+   },
+   {
+    "t": "Theater Review: “Weimar” fascinating look at tragic time in Germany - Lehigh Valley Press",
+    "url": "https://www.lvpnews.com/20261009/theater-review-weimar-fascinating-look-at-tragic-time-in-germany/",
+    "src": "Lehigh Valley Press",
+    "kod": "200",
+    "meta_d": null,
+    "rss_d": "2026-10-09"
+   },
+   {
+    "t": "New book about doomed Weimar Germany reveals fascinating contradictions within the Republic - The Globe and Mail",
+    "url": "https://www.theglobeandmail.com/culture/books/article-sebestyens-history-of-doomed-weimar-germany-reveals-fascinating/",
+    "src": "The Globe and Mail",
+    "kod": "200",
+    "meta_d": "2026-10-23",
+    "rss_d": "2026-10-23"
+   }
+  ],
+  "tried": 4
+ },
+ "A6": {
+  "q": "tulip mania bubble",
+  "k": "tulip",
+  "n_rss": 5,
+  "ok": [
+   {
+    "t": "CZ Says Peter Schiff Will Be Right on Bitcoin, But Only After Changing His Mind - BigGo Finance",
+    "url": "https://finance.biggo.com/news/a94a6203-58f9-48c8-b985-c5fd80152bdd",
+    "src": "BigGo Finance",
+    "kod": "200",
+    "meta_d": "2026-10-19",
+    "rss_d": "2026-10-19"
+   },
+   {
+    "t": "Will the AI bubble burst? - The Vibes",
+    "url": "https://www.thevibes.com/articles/opinion/129064/will-the-ai-bubble-burst",
+    "src": "The Vibes",
+    "kod": "200",
+    "meta_d": "2026-11-02",
+    "rss_d": "2026-11-02"
+   },
+   {
+    "t": "When the Bubble Bursts: Understanding China's AI and Semiconductor Selloff - Education Times",
+    "url": "https://www.educationtimes.com/learning/when-the-bubble-bursts-understanding-chinas-ai-and-semiconductor-selloff/articleshow/135351820.cms",
+    "src": "Education Times",
+    "kod": "200",
+    "meta_d": "2026-10-30",
+    "rss_d": "2026-10-30"
+   }
+  ],
+  "tried": 4
+ },
+ "A7": {
+  "q": "Madoff",
+  "k": "Madoff",
+  "n_rss": 44,
+  "ok": [
+   {
+    "t": "Spielberg Among the Big Names Allegedly Burned by Madoff in $50 Billion Fraud Case - ABC News - Breaking News, Latest News and Videos",
+    "url": "https://abcnews.com/GMA/story?id=6463587&page=1",
+    "src": "ABC News - Breaking News, Latest News and Videos",
+    "kod": "200",
+    "meta_d": "2008-12-15",
+    "rss_d": "2026-11-03"
+   },
+   {
+    "t": "Wichita woman finds original painting linked to Bernie Madoff’s seized assets - KAKE",
+    "url": "https://www.kake.com/home/wichita-woman-finds-original-painting-linked-to-bernie-madoff-s-seized-assets/article_ca8a6a5a-250a-4a92-ade0-c37c98d72318.html",
+    "src": "KAKE",
+    "kod": "200",
+    "meta_d": null,
+    "rss_d": "2026-10-09"
+   },
+   {
+    "t": "High Court Won't Hear Madoff Feeder Funds' Clawback Appeal - Law360",
+    "url": "https://www.law360.com/articles/2533543/high-court-won-t-hear-madoff-feeder-funds-clawback-appeal",
+    "src": "Law360",
+    "kod": "200",
+    "meta_d": "2026-10-05",
+    "rss_d": "2026-10-05"
+   }
+  ],
+  "tried": 3
+ },
+ "A8": {
+  "q": "Harshad Mehta",
+  "k": "Harshad",
+  "n_rss": 22,
+  "ok": [
+   {
+    "t": "From Scam 1992 The Harshad Mehta Story to Rocket Boys: 5 gripping OTT web series on SonyLIV based on India’s most fascinating and true events | Web Series - Hindustan Times",
+    "url": "https://www.hindustantimes.com/entertainment/web-series/from-scam-1992-the-harshad-mehta-story-to-rocket-boys-5-gripping-ott-web-series-on-sonyliv-based-on-india-most-fascinating-and-true-events-101790846832860.html",
+    "src": "Hindustan Times",
+    "kod": "200",
+    "meta_d": "2026-10-02",
+    "rss_d": "2026-10-02"
+   },
+   {
+    "t": "Scam 2010 OTT release details: When and where to watch the show on Subrata Roy's controversies by director - The Economic Times",
+    "url": "https://economictimes.indiatimes.com/magazines/panache/scam-2010-ott-release-details-when-and-where-to-watch-the-show-on-subrata-roys-controversies-by-director-hansal-mehta/articleshow/135468338.cms?UTM_Source=Google_Newsstand&UTM_Campaign=RSS_Feed&UTM_Medium=Referral",
+    "src": "The Economic Times",
+    "kod": "200",
+    "meta_d": "2026-11-02",
+    "rss_d": "2026-11-02"
+   },
+   {
+    "t": "Bipasha Basu returns after 6 years: What we know about her new series - Gulf News",
+    "url": "https://gulfnews.com/entertainment/bollywood/bipasha-basu-returns-after-6-years-what-we-know-about-her-new-series-1.500707315",
+    "src": "Gulf News",
+    "kod": "200",
+    "meta_d": "2026-10-12",
+    "rss_d": "2026-10-12"
+   }
+  ],
+  "tried": 6
+ },
+ "A9": {
+  "q": "Japan bubble 1989 Nikkei",
+  "k": "Nikkei",
+  "n_rss": 4,
+  "ok": [
+   {
+    "t": "Why Japan’s Nikkei Took 34 Years To Reclaim Its 1989 Peak - HDFC Sky",
+    "url": "https://hdfcsky.com/sky-learn/market-wtf-by-sky/why-japans-nikkei-took-34-years-to-reclaim-its-1989-peak",
+    "src": "HDFC Sky",
+    "kod": "200",
+    "meta_d": "2026-10-13",
+    "rss_d": "2026-10-13"
+   },
+   {
+    "t": "Japan weighs corporate tax hike to fund defense buildup - Nikkei Asia",
+    "url": "https://asia.nikkei.com/politics/defense/japan-weighs-corporate-tax-hike-to-fund-defense-buildup",
+    "src": "Nikkei Asia",
+    "kod": "200",
+    "meta_d": "2026-10-28",
+    "rss_d": "2026-10-28"
+   }
+  ],
+  "tried": 4
+ },
+ "A10": {
+  "q": "Hunt brothers silver",
+  "k": "silver",
+  "n_rss": 12,
+  "ok": [
+   {
+    "t": "CEO determined that historic Mackenzie Mountains mine will produce silver for first time since 1980s - Yellowknifer",
+    "url": "https://yellowknifer.com/2026/10/12/ceo-determined-that-historic-mackenzie-mountains-mine-will-produce-silver-for-first-time-since-1980s/",
+    "src": "Yellowknifer",
+    "kod": "200",
+    "meta_d": "2026-10-12",
+    "rss_d": "2026-10-12"
+   },
+   {
+    "t": "Deutsche Bank: Historic copper shortage – gold outperforms silver! - Shanghai Metals Market",
+    "url": "https://news.metal.com/newscontent/104148660-deutsche-bank-historic-copper-shortage-%E2%80%93-gold-outperforms-silver",
+    "src": "Shanghai Metals Market",
+    "kod": "200",
+    "meta_d": "2026-10-09",
+    "rss_d": "2026-10-09"
+   },
+   {
+    "t": "Equity Metals Files Technical Report on Silver Queen Project with Significant Increase in Ag-Au-Zn Mineral Resources - Investing News Network",
+    "url": "https://investingnews.com/equity-metals-files-technical-report-on-silver-queen-project-with-significant-increase-in-ag-au-zn-mineral-resources/",
+    "src": "Investing News Network",
+    "kod": "200",
+    "meta_d": "2026-11-03",
+    "rss_d": "2026-11-03"
+   }
+  ],
+  "tried": 4
+ },
+ "A11": {
+  "q": "Black Friday history 1869",
+  "k": "Black Friday",
+  "n_rss": 6,
+  "ok": [
+   {
+    "t": "Black Friday's Origins Are Far More Interesting Than I Initially Thought - HuffPost UK",
+    "url": "https://www.huffingtonpost.co.uk/entry/black-friday-2026-meaning_uk_6ac5fdbbe4b05f9f91f2a934",
+    "src": "HuffPost UK",
+    "kod": "200",
+    "meta_d": "2026-10-07",
+    "rss_d": "2026-10-07"
+   },
+   {
+    "t": "Parkite’s musical takes a zombie stomp to Western Washington University - Park Record",
+    "url": "https://www.parkrecord.com/2026/10/30/parkites-musical-takes-a-zombie-stomp-to-western-washington-university/",
+    "src": "Park Record",
+    "kod": "200",
+    "meta_d": "2026-10-30",
+    "rss_d": "2026-10-30"
+   },
+   {
+    "t": "Why Is It Called Black Friday? Origin & 2026 UK Dates Explained - Anker",
+    "url": "https://www.anker.com/uk/blogs/eufy-guides/why-is-it-called-black-friday",
+    "src": "Anker",
+    "kod": "200",
+    "meta_d": "2026-10-26",
+    "rss_d": "2026-10-25"
+   }
+  ],
+  "tried": 5
+ }
+}
