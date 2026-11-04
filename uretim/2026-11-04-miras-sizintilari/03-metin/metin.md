@@ -1,10 +1,10 @@
 # F3 — Tam metin · S03 "The Biggest Inheritance Ever, and Why Heirs Might Miss It"
 
-İLERLEME: v0.1 taslak (rakamlar [R?] yer tutucu; rakam-tablosu.md bekleniyor) → sıradaki: tabloyla eşleme + kapı (§12).
+İLERLEME: tamam (v1.0: rakam-tablosu R01–R27 ile eşlendi, açık [R?] 0, kapı GEÇTİ §12) → finans-dogrulayici ‖ monetizasyon-uyum-uzmani.
 **Kanal:** Toonomy (@toonomy) · **Anlatıcı:** Leo (kurgusal çizgi maskot; bu videoda nakliye ekibi şefi; danışman değil) · **Ses:** Kokoro `am_fenrir` 0.9 (**160 kpm**)
-**Sütun:** C · **Yazar:** senaryo-yazari · **Tarih:** 2026-11-04 · **Sürüm:** v0.1
-**Rakam kuralı:** ANLATIM'daki her rakam kilitli `03-metin/rakam-tablosu.md` satırından. Tabloda olmayan rakam GÖRSEL'de **`[R?`** ile işaretli. Örnek aile (Okafor) yalnız **kutu** sayar (10 kutu = ailenin örnek serveti); dolar tutarı yok ("illustration, not an average").
-**Olgu kuralı (karne 6):** olgu taşıyan her cümlenin kaynak etiketi GÖRSEL'deki **Kaynak:** satırında. Etiketler §7.
+**Sütun:** C · **Yazar:** senaryo-yazari · **Tarih:** 2026-11-04 · **Sürüm:** v1.0
+**Rakam kuralı:** ANLATIM'daki her rakam kilitli `03-metin/rakam-tablosu.md` satırından. Tabloda olmayan rakam GÖRSEL'de **`[R?`** ile işaretlenir (v1.0'da 0). Örnek aile (Okafor) yalnız **kutu** sayar (10 kutu = ailenin örnek serveti); dolar tutarı yok ("illustration, not an average").
+**Olgu kuralı (karne 6):** olgu taşıyan her cümlenin kaynak etiketi (R-kodu, [ÖRNEK] veya [T]) GÖRSEL'deki **Kaynak:** satırında; eşleme §7.
 **Yazım kuralı (TTS):** ANLATIM'da sayılar yazıyla, rakam GÖRSEL'de. Yayın gününe bağlı zaman sözcüğü yok (H6).
 **Kapı betiği:** `03-metin/metin-kontrol.py` (v4, bu klasör; çıktı §12). Zamanlar betikten: kelime ÷ 160 kpm.
 
@@ -15,8 +15,8 @@
 | Zaman | Ne söylenir | Ne görünür | Amaç |
 |---|---|---|---|
 | 0:00–0:15 | Hook (S01): 124 T$ → 18 T$ bağış, 54 T$ önce eşte → "Let's follow one family's boxes and see what reaches the kids." | **≤3 sn:** kamyonun arka kapısında "$124 TRILLION" yazan dev kutu; kutunun köşesinden banknot damlar. Sonra kutu ikiye ayrılır (18 bağış / 54 "SPOUSE FIRST" etiketi). | Somut özne (bir ailenin kutuları) + ters köşe + net vaat; logo/intro/"hi guys" YOK |
-| 0:15–0:38 | Başlık vaadi: "often called the biggest inheritance in history" + izleyici bağı (mirasçı / ev alıcısı) + videonun sonunda ne öğrenileceği (mirasçı neden daha az ve daha geç alabilir, en büyük sızıntı hangisi) | Ülke haritası → tek ev; "HEIR? HOME BUYER? BOTH?" | Başlık + thumbnail ("WHO GETS IT?") vaadi ilk 30 sn'de karşılanır |
-| 0:38–0:55 | Leo kendini nakliye şefi olarak tanıtır, **tez** | Leo kamyon kapısında, elinde pano; tez kamyonun yan yüzüne yazılır | Tez ilk 60 sn'de |
+| 0:15–0:40 | Başlık vaadi: "often called the biggest inheritance in history" + izleyici bağı (mirasçı / ev alıcısı) + videonun sonunda ne öğrenileceği (mirasçı neden daha az ve daha geç alabilir, en büyük sızıntı hangisi) | Ülke haritası → tek ev; "HEIR? HOME BUYER? BOTH?" | Başlık + thumbnail ("WHO GETS IT?") vaadi ilk 30 sn'de karşılanır |
+| 0:40–0:57 | Leo kendini nakliye şefi olarak tanıtır, **tez** | Leo kamyon kapısında, elinde pano; tez kamyonun yan yüzüne yazılır | Tez ilk 60 sn'de |
 
 Abone/beğeni çağrısı ilk 60 sn'de **yok**. Abone ol animasyonu 3 kez (ABONE-1…3, §3), sesli abone çağrısı yok.
 
@@ -202,13 +202,69 @@ Biçim: `### Sxx · başlangıç–bitiş · süre` + iki sütunlu tablo. GÖRSE
 
 ## 3. Retention haritası
 
-(v0.1: zamanlar betik ölçümünden sonra güncellenir.)
+Zamanlar §12 betik ölçümünden (160 kpm). A = açılan, K = kapanan merak döngüsü.
+
+| Zaman | Açılan / kapanan merak döngüsü | Yeniden kanca (↺) | Görsel değişim notu |
+|---|---|---|---|
+| 0:00 | **A1** kızlara/çocuklara ne varır? (ters köşe: 18 bağış, 54 önce eş) | hook | ≤3 sn: dev kutu → damlama → yan şerit → 10 kutu |
+| 0:38 | **A2** en büyük sızıntı hangisi? (sona kadar açık); başlık/thumbnail vaadi ("biggest inheritance", "less, later") | ↺1 | harita → tek ev, "LESS? LATER?" |
+| 0:51 | A3 tez test edilecek | — | tez kamyon yüzünde |
+| 0:57–1:41 | **İlk büyük ödül:** 124'ün etiketi (105/18, boomer ~100); 54 = durak, kayıp değil | — | G1 tek çubuk + sarı durak tabelası |
+| 1:46 | A4 tek ailede sızıntılar | ↺2 | "ONE FAMILY. ONE TRUCK." |
+| 1:51 | **ABONE-1** (ödülden sonra nefes) | — | profil + Subscribe + tık |
+| 2:35 | **A5** korkulan durak (Bölüm 6'ya kadar) | ↺3 | 6 durak tabelası |
+| 2:42–3:23 | Sızıntı 1: ~20 yıl, −2 kutu | — | kutudan market poşeti |
+| 3:23 | A6 bakım + bant | ↺4 | sisli CARE tabelası |
+| 3:30–4:50 | Sızıntı 2: %56 / %22 / ~130 bin $; Medicare/Medicaid geri tahsil; 1/7 | ↺5 "Why does this one leak so much?" (4:08) | G2 ikon ızgarası, iki kapı |
+| 4:50 | Karakter anı: iki bant | — | bant gag'i (kritik yol) |
+| 5:09 | A7 "en büyük görünen" durak | ↺6 | kavşak, sinyal |
+| 5:48–6:32 | **DORUK-1:** 0 kutu kaybı, ama süre → diğer sızıntılar yeniden çalışır | ↺7 "the part the headline hides" (5:56) | kum saati, bayrak yarışı |
+| 6:32 | A8 bilerek atlanan pay | ↺8 | GIVING kalbi |
+| 6:39–7:30 | Sızıntı 4: 18 T$, −1; BofA %55 → %47 | — | okul kapısı, G3 |
+| 7:30 | **ABONE-2** (bağış + anket ödülünden sonra nefes, ara özet başında) | — | profil + Subscribe + tık |
+| 7:39 | A9 en ağır kutu | ↺9 | pano ara özeti |
+| 7:42–8:40 | Sızıntı 5: ~%41 gayrimenkul, bölünmeyen ev, dilim; S02 ev alıcısı vaadi kapanır | — | maket çekişmesi, SOLD kartı |
+| 8:40 | A5 doruğa | ↺10 | gişe, gök gürültüsü |
+| 8:40–9:54 | **A5 kapanır:** 15 M$ eşik vs ~410 bin $ medyan; UK; "loud leak small"; yorum sorusu | — | G4 dikey çizgi, bariyer kalkar |
+| 9:54 | A10 saat | ↺11 | dev yol saati |
+| 10:00–10:57 | Zaman: Gen X ilk 10 yıl, Millennial 46; %2 → 0,67 | ↺12 "Same boxes. Different job." | gri saç gag'i, solan banknot |
+| 10:57 | A11 kaç kutu kaldı? | ↺13 | son viraj |
+| 11:01–11:30 | **DORUK (varış):** 6 − dilim, geç, ≈3'er; **A1 kapanır** | — | G6 Okafor şelalesi |
+| 11:30 | A12 bu kötü mü? | ↺14 | üç hayalet kamyon |
+| 12:04–12:45 | **A2 kapanır:** bölünmüş tablo (~yarısı %2'den; DFA %69/%2) | — | G7 ızgara kartı |
+| 12:45 | A13 yol değişir mi? (koşullu, dallanmasız) | ↺15 | kesik çizgili tabelalar |
+| 13:02 | A3 kapanır: tez + "more tape" | — | tez yakın plan, rulo omza |
+| 13:17 | **ABONE-3** (tezden sonra, köprüden önce nefes) | — | profil + Subscribe + tık |
+| 13:17 | **A14 (uç ekran):** mahalle | köprü | ışıklı mahalle silueti |
+
+**En uzun ↺ aralığı 74 sn** (betik §12; hedef ≤75).
+
+**ABONE satırları (animasyon-yonetmeni zamanı, kurgu-editoru yerleştirir; çapa = animasyonun başladığı nefesten hemen sonraki cümle). Zamanlar §12'den:**
+
+| # | Zaman (betik) | Çapa cümlesi | Neden bu an |
+|---|---|---|---|
+| ABONE-1 | 1:51 (S05 sonu / S06 başı) | "Meet the Okafors." | İlk büyük ödül (124'ün etiketi, 54 = durak) + ↺2'den sonra nefes; ≥60 sn |
+| ABONE-2 | 7:30 (S17 sonu / S18 başı) | "Let's check the clipboard." | Bağış + anket ödülünden sonra; DORUK-1'in (sızıntı 3 ters köşesi) üstünde değil (H5) |
+| ABONE-3 | 13:17 (S30 sonu / S31 başı) | "There's one box we only opened for a minute." | Tez + "more tape" anından sonra, köprü cümlesinden önce; varış/şelale üstünde değil (H5) |
+
+Sesli abone/beğeni çağrısı yok. Tek sesli etkileşim: S22 yorum sorusu ("Which leak did you think was the biggest…?"), ABONE ile çakışmaz.
+**Not:** TTS duraklamaları gerçek süreyi uzatabilir; F7'de `kurgu-editoru` gerçek ses zamanlarıyla yeniden ölçer.
 
 ---
 
 ## 4. YouTube bölümleri (chapters)
 
-(betik çıktısından)
+Betik zamanları (§12). Montaj sonrası `kurgu-editoru` gerçek ses zamanlarıyla günceller.
+
+```
+0:00 The number on the truck
+1:51 Loading the Okafors
+2:42 Living and care
+5:09 The detour and the gift
+7:30 The heaviest box
+8:40 The leak everyone fears
+11:01 Arrival
+```
 
 ---
 
@@ -234,20 +290,32 @@ Biçim: `### Sxx · başlangıç–bitiş · süre` + iki sütunlu tablo. GÖRSE
 
 ---
 
-## 7. Rakam ve olgu tablosu (metindeki her rakam/olgu → kaynak etiketi → `rakam-tablosu.md` satırı)
+## 7. Rakam ve olgu tablosu (metindeki her rakam/olgu → `rakam-tablosu.md` satırı)
 
-| Etiket | Kaynak | Metindeki kullanım | Tablo satırı |
-|---|---|---|---|
-| [K-CER] | Cerulli Associates basın bülteni, 5 Ara 2024 ("Cerulli Anticipates $124 Trillion in Wealth Will Transfer Through 2048") | 124 / 2048 / ≈105 heirs / ≈18 charity / 54 spouse / ≈40 widowed women / ≈100 (%81) boomers+older / ≈62 (%2 hane, ">50%") / Gen X 14 + Millennials 8 (10 yıl) / Millennials 46 (2048'e kadar) | [R?] |
-| [K-SSA] | SSA dönem/kohort yaşam tablosu | 65 yaşında ≈20 yıl; kadın > erkek | [R?] |
-| [K-ACL] | ACL / HHS LongTermCare "How much care will you need" | ≈%70; kadın 3,7 yıl / erkek 2,2 yıl; bakımın çoğu evde | [R?] |
-| [K-GCS] | Genworth & CareScout Cost of Care Survey 2024 (Mart 2025) | özel oda medyan 127.750 $/yıl (2024) | [R?] |
-| [K-MCR] | Medicare.gov "Long-term care" | uzun süreli gündelik (custodial) bakımı genellikle karşılamaz | [R?] |
-| [K-MCD] | Medicaid.gov uygunluk | gelir/varlık şartı ("after most savings are used up") | [R?] |
-| [K-IRS] | IRS Rev. Proc. 2025-32 / IRS "Estate tax" | 15 M $ kişi başı (2026); çift ≈30 M $ (taşınabilirlik) | [R?] |
-| [K-TPC] | JCT / Tax Policy Center | ≈1/1.000 terekenin federal emlak vergisi ödemesi; eyalet vergileri | [R?] |
-| [ÖRNEK] | Kurgusal Okafor ailesi | 10 kutu: 4 ev, 4 emeklilik, 2 banka; −2, −1, 0, −1, −dilim, 0 → 6 − dilim, ≈3 her biri | `veri/hesap.py` |
-| [T] | Yorum | tez, mekanizma çıkarımları | — |
+| Satır | Metindeki kullanım (güvenli yazım) | Sahne |
+|---|---|---|
+| R01 | 124 T$ "is expected to pass down in America by twenty forty-eight, Cerulli estimates" | S01, S30, Shorts 1 |
+| R02 / R03 | ≈105 heirs / ≈18 charity ("the one part that skips heirs") | S01, S04, S16 |
+| R04 / R05 | 54 "stops at a spouse first… a stop on the way" / ≈40 widowed women | S01, S04, S13, Shorts 1 |
+| R06 | "nearly one hundred trillion… boomers and older" | S04 |
+| R07 | "about half… around sixty-two trillion… two percent of households" | S28 |
+| R08 | Gen X ≈14 (ilk 10 yıl, en çok) · Millennials ≈46 (2048'e kadar, en çok) | S24 |
+| R09 | %47 ← %55 (2024); ekranda 1.431 kişi, ≥3 M$ | S17 |
+| R13 | özel oda medyan ≈130 bin $/yıl (US, CareScout 2025) | S10 |
+| R14 | "about twenty more years" (65 yaşında) | S08 |
+| R16 | "more than half" (%56) ciddi LTC · "about one in five" (%22) >5 yıl | S10 |
+| R17 | "about one in seven… one hundred thousand dollars or more out of pocket" (2020 $ ekranda) | S11 |
+| R18 | 15 M$ kişi başı, "As of twenty twenty-six, the U.S. federal…" | S21, Shorts 2 |
+| R19 | 65–74 medyan ≈410 bin $ (2022), "dozens of times" | S21, Shorts 2 |
+| R20 | eyalet vergileri rakamsız | S21 |
+| R21 | Fed %2 hedefi → 20 yılda ≈1/3 alım gücü | S24 |
+| R23 | boomer ≈2/5 hane gayrimenkulü (Fed DFA) | S19 |
+| R24 | üst %10 ≈2/3, alt %50 ≈%2 (Fed DFA, ayrı panel) | S28 |
+| R25 | Medicare custodial karşılamaz; Medicaid mirastan geri tahsil | S11 |
+| R26 | UK 325.000 £ (2026) | S21 |
+| [ÖRNEK] | Okafor 10 kutu: −2, −1, 0, −1, −dilim, 0 → 6 − dilim, ≈3'er | S06–S26 (`veri/kutu-hesap.py`) |
+| [T] | tez, mekanizma çıkarımları, ev satış maliyet kalemleri (rakamsız) | etiketli sahneler |
+Kullanılmayan: R10, R11, R12, R15, R22 (bilinçli; R12 reklam algısı, R22 DFA/Cerulli kıyas yasağına yakın).
 
 ---
 
@@ -258,19 +326,50 @@ Biçim: `### Sxx · başlangıç–bitiş · süre` + iki sütunlu tablo. GÖRSE
 ---
 
 ## 9. Zor bölümlerin 2 versiyonu ve eleme
-(§12 ölçümünden sonra doldurulur.)
+
+| Bölüm | Versiyon A (seçilen) | Versiyon B / C (elenen) | Ölçüm / gerekçe |
+|---|---|---|---|
+| Hook (H1) | **H1d** (39 kelime): rakam + ters köşe (18 bağış, 54 önce eş) + "So let's count what reaches the kids in one family." | **H1b** (38): aynı ters köşe, "So what really reaches the kids?" — somut özne yok (aile yok), vaat soru biçiminde. **H1c** (34): "…it's a forecast… and it leaks. Let's follow one family's share" — ters köşe yok (hakem: hook 7'nin nedeni). | Test "ilk 15 sn net vaat + somut özne": H1d 5/5 anahtar (trillion, charity, spouse, family, kids) ilk 40 kelimede; H1b 4/5 (family yok); H1c 3/5. R01 yazımı ("is expected to pass down… by") üçünde de uygulandı. H1d seçildi (H1b'nin ters köşesini korur + vaat ekler). |
+| Açılış S02–S04 | Vaat (S02) → Leo + tez (S03, 0:51–0:57) → etiket ödülü (S04) | Önce etiket ödülü, sonra Leo + tez | B'de tez 1:40'a kayıyor (H2 ≤60 sn kalır), başlık vaadi 30 sn'yi geçiyor. A seçildi. |
+| Orta nokta S13–S14 | Eş = 0 kutu, ama süre → LIVING/CARE tekrar çalışır + "boxes can also grow… if invested" adil cümlesi + bayrak yarışı | Eş durağını "en büyük sızıntı" gibi kurup sonra düzeltmek ("Fifty-four trillion gone? Not quite.") | B ilk dinleyişte çift sayım izlenimi bırakıyor (D2 riski, Shorts kesitinde bağlamsız kalır). A tek ölçülmüş olguya (R04) dayanır, ters köşe = kayıp değil gecikme. A seçildi. |
+| Kapanış S26–S31 | Varış envanteri → "used, not lost" → bölünmüş tablo → koşullu tek yol → tez + "more tape" → ABONE-3 → köprü | Tez → bölünmüş tablo → köprü (gag yok) | B'de tez son 90 sn dışına düşüyor ve karakter anı kayboluyor; A'da tez 13:07 (son 21 sn), K1 grep 0. A seçildi. |
 
 ---
 
 ## 10. D / P / K / H düzeltmeleri — nerede uygulandı
-(§12 ölçümünden sonra doldurulur.)
+
+| Kod | Uygulama | Yer |
+|---|---|---|
+| D1 | "Cerulli estimates… by twenty forty-eight"; "Bank of America says" yok (betik yasak kalıbı 0); BofA yalnız R09 anketinde | S01, S04, Shorts 1 |
+| D2 (+ tablo inceltmesi, koordinatör (1)) | 54 = "a stop on the way", "isn't extra money, and it isn't lost"; "inside the total" YOK; çıkarma/ekleme yok; şelale ailenin 10 kutusundan; `veri/kutu-hesap.py` assert + yasak kalıp taraması 0 | S01, S04, S13, S14, S26, Shorts 1 |
+| D3 | "People often call it the biggest inheritance in history" | S02 |
+| D4 | %47 ← %55 R09 ile; ekranda "1,431 people with $3M+ investable assets" (koordinatör (5)); sesli "people with millions to invest" | S17 |
+| D5 | Vergi "As of twenty twenty-six, the U.S. federal…"; eyalet rakamsız; UK tek cümle R26; Kanada/Avustralya yok; probate/estate sayısı yok | S21 |
+| D6 | Dunham/"mirage" kullanılmadı (R12 kısmen + reklam algısı) | — |
+| R14/R16/R27e | "about twenty more years"; %70 yerine ASPE "more than half" (%56) | S08, S10 |
+| R07/R27d | "about half … two percent of households" | S28 |
+| R21 | "future dollars" yok; enflasyon yalnız Fed %2 hedefi + 20 yıl hesabı | S24 |
+| P1 | "you should / set up a trust / gift it now / estate plan" 0 (betik); Medicaid yalnız mekanizma; parti/politikacı 0 | S11, S21, S29 |
+| P2 | Okafor rig'siz siluet + "EXAMPLE FAMILY · ILLUSTRATION"; ölüm soyut (solan siluet); kuşak suçlaması yok | S06, S13, S26 |
+| P3 | Açıklama yasal notu R11 §11 metniyle → youtube-paketleyici / monetizasyon-uyum-uzmani | §11 |
+| K1 | Üç olasılık yok: varış envanteri + tek şelale + bölünmüş tablo kartı; gelecek yalnız 2 koşullu cümle, dallanma yok; betik K1 grep 0 | S26–S29 |
+| H2 | Tez 0:51–0:57 ve 13:07–13:13 | S03, S30 |
+| H3 | Tanıtım yok, vaat ≤15 sn, ilk görsel değişim ≤3 sn, ↺ en uzun 74 sn | §1, §3 |
+| H4 | Tek karakter Leo; bant gag'i 3 kez (S12, S20, S30); damlama F5 kritik yol | S01, S12, S20, S30 |
+| H5 | ABONE 1:51 / 7:30 / 13:17; ilk 60 sn'de yok; DORUK-1 ve varış üstünde değil | §3 |
+| H6 | Yayın gününe bağlı sözcük 0 (betik) | tümü |
+| H7 | Ev bölümü S19+S20 = 59 sn (≤90); satılık tabelalar sokağı yok | S19–S20 |
+| H8 | Başlık/thumbnail "WHO GETS IT?" paketleyicide; thumbnail'da "Bank of America" yok | §11 |
 
 ---
 
 ## 11. Leo rol kaydı ve sonraki ajanlara notlar
-(§12 ölçümünden sonra doldurulur.)
+- **Rol:** nakliye ekibi şefi (pano + bant rulosu). 1929 (oyun sunucusu) ve S08 (ev arkadaşı) açılış/kapanış kalıpları tekrar edilmedi (5-gram §12). Kendini uzman sunmaz; "isn't a forecast… isn't a plan" (S29).
+- **finans-dogrulayici:** açık [R?] yok; 50 sayı tabloyla eşleşti (§12). Olgu cümleleri GÖRSEL "Kaynak:" satırında R-kodlu. Tablo dışı nitel olgular [T] etiketli (ev satış maliyeti kalemleri, "sometimes family").
+- **monetizasyon-uyum-uzmani:** S11 Medicaid geri tahsil cümlesi mekanizma (R25 güvenli yazım aynen); S22 yorum sorusu ("I'm curious how many people picked taxes") persona riski düşük ama kontrol edin.
+- **youtube-paketleyici:** açıklama yasal notu = rakam-tablosu §11 metni (Okafor kurgusal, AI ses satırı); sabit yorum adayı S22 sorusu.
+- **ses-yonetmeni:** §8 telaffuz listesi (Cerulli, Okafor, CareScout, Medicaid, millennials).
 
 ---
 
 ## 12. Test kapısı sonuçları
-(betik çıktısı)

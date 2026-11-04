@@ -1,0 +1,159 @@
+## Test kapısı çıktısı (metin-kontrol.py)
+
+Hız: 160 kpm. Sahne: 31.
+
+| Sahne | Başlangıç–bitiş | Süre sn | Kelime |
+|---|---|---|---|
+| S01 | 0:00–0:15 | 15 | 40 |
+| S02 | 0:15–0:40 | 25 | 66 |
+| S03 | 0:40–0:57 | 17 | 45 |
+| S04 | 0:57–1:41 | 45 | 119 |
+| S05 | 1:41–1:51 | 9 | 25 |
+| S06 | 1:51–2:27 | 37 | 98 |
+| S07 | 2:27–2:42 | 15 | 40 |
+| S08 | 2:42–3:23 | 41 | 109 |
+| S09 | 3:23–3:30 | 7 | 18 |
+| S10 | 3:30–4:08 | 38 | 102 |
+| S11 | 4:08–4:50 | 42 | 112 |
+| S12 | 4:50–5:09 | 18 | 49 |
+| S13 | 5:09–5:48 | 39 | 105 |
+| S14 | 5:48–6:32 | 44 | 117 |
+| S15 | 6:32–6:39 | 7 | 19 |
+| S16 | 6:39–7:11 | 32 | 86 |
+| S17 | 7:11–7:30 | 19 | 51 |
+| S18 | 7:30–7:42 | 11 | 30 |
+| S19 | 7:42–8:26 | 45 | 119 |
+| S20 | 8:26–8:40 | 14 | 37 |
+| S21 | 8:40–9:30 | 50 | 133 |
+| S22 | 9:30–9:54 | 24 | 63 |
+| S23 | 9:54–10:00 | 6 | 17 |
+| S24 | 10:00–10:57 | 57 | 151 |
+| S25 | 10:57–11:01 | 4 | 11 |
+| S26 | 11:01–11:30 | 30 | 79 |
+| S27 | 11:30–12:04 | 34 | 90 |
+| S28 | 12:04–12:45 | 40 | 108 |
+| S29 | 12:45–13:02 | 17 | 46 |
+| S30 | 13:02–13:17 | 15 | 40 |
+| S31 | 13:17–13:28 | 11 | 30 |
+
+**Toplam kelime:** 2155 · **süre:** 13:28 (13.5 dk) · kapı 2080–2400 → GEÇTİ  (tireler ayrı: 2186 birim ≈ 13:40)
+
+**İlk 15 sn (40 kelime):** "one hundred twenty-four trillion dollars is expected to pass down in america by twenty forty-eight, cerulli estimates. but eighteen trillion goes to charity. fifty-four trillion stops at a spouse first. so let's count what reaches the kids in one family." → somut özne + vaat: GEÇTİ
+  İlk 30 sn kanal tanıtımı/abone kalıbı: 0 → GEÇTİ
+
+**Yeniden kancalar (↺):**
+
+| # | Sahne | İfade | Zaman | Aralık sn | Sonuç |
+|---|---|---|---|---|---|
+| hook | S01 | One hundred twenty-four trillion dollars is ex | 0:00 | 0 | GEÇTİ |
+| ↺1 | S02 | And which leak is the biggest | 0:38 | 38 | GEÇTİ |
+| ↺2 | S05 | To see the real leaks, we need one family | 1:46 | 69 | GEÇTİ |
+| ↺3 | S07 | And the stop everyone fears the most | 2:35 | 49 | GEÇTİ |
+| ↺4 | S09 | Stop two is the one families talk about the le | 3:23 | 48 | GEÇTİ |
+| ↺5 | S11 | Why does this one leak so much? | 4:08 | 45 | GEÇTİ |
+| ↺6 | S13 | Stop three looks like the biggest leak on the  | 5:09 | 60 | GEÇTİ |
+| ↺7 | S14 | But here's the part the headline hides | 5:56 | 47 | GEÇTİ |
+| ↺8 | S15 | Stop four is the only part of the headline tha | 6:32 | 36 | GEÇTİ |
+| ↺9 | S18 | and the heaviest one is next | 7:39 | 68 | GEÇTİ |
+| ↺10 | S21 | Stop six is the one everybody fears | 8:40 | 61 | GEÇTİ |
+| ↺11 | S23 | Which brings us to the last sign on stop six | 9:54 | 74 | GEÇTİ |
+| ↺12 | S24 | Same boxes. Different job. | 10:55 | 62 | GEÇTİ |
+| ↺13 | S25 | how many boxes are left when the doors finally | 10:57 | 2 | GEÇTİ |
+| ↺14 | S27 | Is that a sad story? | 11:30 | 33 | GEÇTİ |
+| ↺15 | S29 | Could this road change? | 12:45 | 74 | GEÇTİ |
+| köprü | S31 | There's one box we only opened for a min | 13:17 | 32 | GEÇTİ |
+
+  ↺ sayısı 15 + hook + köprü · en uzun aralık 74 sn (kapı ≤90, hedef ≤75) · köprüden sona 11 sn
+
+**ABONE satırları:** 3 (kapı 3–4)
+  ABONE-1 @ 1:51 · S06 başı (önceki sahnenin nefesi) · "Meet the Okafors." · ≥60 sn, doruk üstünde değil, sahne başında: GEÇTİ
+  ABONE-2 @ 7:30 · S18 başı (önceki sahnenin nefesi) · "Let's check the clipboard." · ≥60 sn, doruk üstünde değil, sahne başında: GEÇTİ
+  ABONE-3 @ 13:17 · S31 başı (önceki sahnenin nefesi) · "There's one box we only opened for a minute." · ≥60 sn, doruk üstünde değil, sahne başında: GEÇTİ
+  Sesli abone kalıbı: 0 (ilk 60 sn'de: 0) → GEÇTİ
+  İlk ABONE ilk büyük ödülden (S04 bitiş 1:41) sonra: GEÇTİ
+**Telaffuz yasak listesi** (anlatım+Shorts): 0 → GEÇTİ
+**H7 yayın gününe bağlı zaman sözcüğü** (anlatım+Shorts): 0 → GEÇTİ
+**Rakam tablosu yasakları (credit card / first time / 7-for-5 / toplam borç)** (anlatım+Shorts): 0 → GEÇTİ
+**P1 parti/kişi adı** (anlatım+Shorts): 0 → GEÇTİ
+**K1 üç-olasılık kalıbı** (anlatım+Shorts): 0 → GEÇTİ
+**Tavsiye kalıbı** (24 desen): 0 → GEÇTİ
+  ek: should/must/need to: 0
+**Olgu-kaynak etiketi** (sayılı sahnede GÖRSEL 'Kaynak:'): eksik 0 → GEÇTİ
+**Tez (H1):** S03 @ 0:51–0:57, S30 @ 13:07–13:13 · ≤60 sn ✓ · son 90 sn ✓
+
+**YouTube bölümleri (betik zamanı):**
+```
+0:00 The Number on the Truck
+1:51 Loading the Okafors
+2:42 Living and Care
+5:09 The Detour and the Gift
+7:30 The Heaviest Box
+8:40 The Leak Everyone Fears
+11:01 Arrival
+```
+  ilk 0:00, ≥3, aralar ≥10 sn: GEÇTİ
+**Shorts 1:** 103 kelime · tireler ayrı 106 birim → ≈39.8 sn (kapı ≤60) GEÇTİ
+**Shorts 2:** 100 kelime · tireler ayrı 104 birim → ≈39.0 sn (kapı ≤60) GEÇTİ
+
+**Rakam eşleşmesi** (ANLATIM + Shorts → rakam-tablosu.md + veri/olcek-cikti.txt; 'about/nearly/more than…' ile ±%7, yoksa ±%2):
+
+| Kaynak | Sayı | Önce | Eşleşen | Sonuç |
+|---|---|---|---|---|
+| S01 | 1.24e+14 |  | 124 (rakam-tablosu, ±2%) | GEÇTİ |
+| S01 | yıl 2048 | america by | tabloda | GEÇTİ |
+| S01 | 1.8e+13 | . but | 18 (rakam-tablosu, ±2%) | GEÇTİ |
+| S01 | 5.4e+13 | charity . | 54 (rakam-tablosu, ±2%) | GEÇTİ |
+| S04 | yıl 2024 | in late | tabloda | GEÇTİ |
+| S04 | 1e+14 | . nearly | 105 (rakam-tablosu, ±7%) | GEÇTİ |
+| S04 | 1.05e+14 | . about | 105 (rakam-tablosu, ±7%) | GEÇTİ |
+| S04 | 1.8e+13 | . about | 18 (rakam-tablosu, ±7%) | GEÇTİ |
+| S04 | 5.4e+13 | . the | 54 (rakam-tablosu, ±2%) | GEÇTİ |
+| S08 | 65 | , a | 65 (rakam-tablosu, ±2%) | GEÇTİ |
+| S08 | 20 | , about | 20 (rakam-tablosu, ±7%) | GEÇTİ |
+| S10 | 65 | americans turning | 65 (rakam-tablosu, ±2%) | GEÇTİ |
+| S10 | 130000 | of about | 124 (rakam-tablosu, ±7%) | GEÇTİ |
+| S10 | yıl 2025 | says a | tabloda | GEÇTİ |
+| S11 | 65 | people turning | 65 (rakam-tablosu, ±2%) | GEÇTİ |
+| S11 | 100000 | could pay | 100 (rakam-tablosu, ±2%) | GEÇTİ |
+| S13 | 5.4e+13 | at about | 54 (rakam-tablosu, ±7%) | GEÇTİ |
+| S13 | 4e+13 | . nearly | 40 (rakam-tablosu, ±7%) | GEÇTİ |
+| S16 | 1.8e+13 | expects about | 18 (rakam-tablosu, ±7%) | GEÇTİ |
+| S17 | 47 % | invest , | 47 (rakam-tablosu, ±2%) | GEÇTİ |
+| S17 | yıl 2024 | . in | tabloda | GEÇTİ |
+| S17 | 55 % | it was | 54 (rakam-tablosu, ±2%) | GEÇTİ |
+| S21 | yıl 2026 | as of | tabloda | GEÇTİ |
+| S21 | 1.5e+07 | starts above | 1.5e+07 (rakam-tablosu, ±2%) | GEÇTİ |
+| S21 | 65 | by someone | 65 (rakam-tablosu, ±2%) | GEÇTİ |
+| S21 | 74 | five to | 74400 (rakam-tablosu, ±2%) | GEÇTİ |
+| S21 | 410000 | was about | 409900 (rakam-tablosu, ±7%) | GEÇTİ |
+| S21 | yıl 2022 | dollars in | tabloda | GEÇTİ |
+| S21 | yıl 2026 | as of | tabloda | GEÇTİ |
+| S21 | 325000 | starts above | 325000 (rakam-tablosu, ±2%) | GEÇTİ |
+| S24 | 1.4e+13 | , about | 14 (rakam-tablosu, ±7%) | GEÇTİ |
+| S24 | yıl 2048 | stretch to | tabloda | GEÇTİ |
+| S24 | 4.6e+13 | , about | 46 (rakam-tablosu, ±7%) | GEÇTİ |
+| S24 | 2 % | the fed's | 2 (rakam-tablosu, ±2%) | GEÇTİ |
+| S24 | 20 | power over | 20 (rakam-tablosu, ±2%) | GEÇTİ |
+| S28 | 6.2e+13 | , around | 62 (rakam-tablosu, ±7%) | GEÇTİ |
+| S28 | 2 % | from just | 2 (rakam-tablosu, ±2%) | GEÇTİ |
+| S28 | 10 % | the top | 10 (rakam-tablosu, ±2%) | GEÇTİ |
+| S28 | 2 % | holds about | 2 (rakam-tablosu, ±7%) | GEÇTİ |
+| S30 | 1.24e+14 | someone says | 124 (rakam-tablosu, ±2%) | GEÇTİ |
+| Shorts1 | 1.24e+14 |  | 124 (rakam-tablosu, ±2%) | GEÇTİ |
+| Shorts1 | yıl 2048 | america by | tabloda | GEÇTİ |
+| Shorts1 | 5.4e+13 | . about | 54 (rakam-tablosu, ±7%) | GEÇTİ |
+| Shorts1 | 4e+13 | . nearly | 40 (rakam-tablosu, ±7%) | GEÇTİ |
+| Shorts2 | yıl 2026 | as of | tabloda | GEÇTİ |
+| Shorts2 | 1.5e+07 | starts above | 1.5e+07 (rakam-tablosu, ±2%) | GEÇTİ |
+| Shorts2 | 65 | by someone | 65 (rakam-tablosu, ±2%) | GEÇTİ |
+| Shorts2 | 74 | five to | 74400 (rakam-tablosu, ±2%) | GEÇTİ |
+| Shorts2 | 410000 | was about | 409900 (rakam-tablosu, ±7%) | GEÇTİ |
+| Shorts2 | yıl 2022 | dollars in | tabloda | GEÇTİ |
+
+  50 sayı kontrol edildi, tabloda olmayan: 0 · metinde açık [RAKAM?]: 0
+**Özgünlük 5-gram** vs 2026-10-26-1929-1000-dolar: 0.0% (0/2304) → GEÇTİ
+**Özgünlük 5-gram** vs 2026-10-28-yeni-video: 0.1% (2/2304) → GEÇTİ
+
+**Sahne başlığı zamanları betikle uyumlu:** GEÇTİ
+
+**KAPI: GEÇTİ**

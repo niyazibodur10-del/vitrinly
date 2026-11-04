@@ -13,7 +13,7 @@ assert kalan / 2 == 3                          # "about three boxes each, a litt
 assert dict(duraklar)["SPOUSE (detour, +years)"] == 0   # D2: eş durağı kayıp değil
 print(f"Teslim: {kalan} kutu − dilim, 2 çocuk → ≈{kalan/2:.0f} − (dilim/2) her biri")
 if len(sys.argv) > 1:
-    t = open(sys.argv[1], encoding="utf-8").read().lower()
+    t = open(sys.argv[1], encoding="utf-8").read().lower().split("## 6. uç ekran")[0]  # metin + shorts (meta notlar hariç)
     yasak = [r"fifty-two trillion", r"\b52 ?t", r"124 ?[−-] ?54", r"minus fifty-four", r"inside the (total|124|hundred)", r"more than half of it", r"seventy percent", r"one in a thousand", r"thirty million"]
     bul = [(y, len(re.findall(y, t))) for y in yasak if re.findall(y, t)]
     print("D2/R27 yasak kalıp taraması:", "0 → GEÇTİ" if not bul else f"KALDI {bul}")
