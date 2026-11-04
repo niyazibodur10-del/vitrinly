@@ -25,7 +25,7 @@ INTRO = re.compile(r"\b(hi guys|hey guys|welcome (back )?to|toonomy|channel|subs
 ABONE_SOZ = re.compile(r"\bsubscri\w*|\blike button\b|\bbell\b", re.I)
 TEZ = "an inheritance isn't a number. it's whatever is left at the end of a long road"
 TEZ2 = "it's whatever is left at the end of a long road"
-HOOK = "One hundred twenty-four trillion dollars will change hands"
+HOOK = "One hundred twenty-four trillion dollars is expected to pass down"
 ONCEKI = ["../../2026-10-26-1929-1000-dolar/03-metin/metin.md", "../../2026-10-28-yeni-video/03-metin/metin.md"]
 
 def mmss(s):
@@ -217,7 +217,7 @@ def main():
         if sn > 60: hata.append(f"Shorts {i} süre")
         print(f"**Shorts {i}:** {k} kelime · tireler ayrı {b} birim → ≈{sn:.1f} sn (kapı ≤60) {'GEÇTİ' if sn <= 60 else 'KALDI'}")
     # rakam eşleşmesi
-    vals = izinli(taban); izin_yil = {int(a) for a, _ in vals if 1900 <= a <= 2030 and a == int(a)}
+    vals = izinli(taban); izin_yil = {int(a) for a, _ in vals if 1900 <= a <= 2100 and a == int(a)}
     print("\n**Rakam eşleşmesi** (ANLATIM + Shorts → rakam-tablosu.md + veri/olcek-cikti.txt; 'about/nearly/more than…' ile ±%7, yoksa ±%2):\n")
     print("| Kaynak | Sayı | Önce | Eşleşen | Sonuç |\n|---|---|---|---|---|")
     bulunmayan = 0; n = 0

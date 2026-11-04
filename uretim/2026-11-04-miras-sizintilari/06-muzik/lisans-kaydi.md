@@ -1,0 +1,40 @@
+# Lisans kaydı — 06-muzik · S03 "The Biggest Inheritance Ever, and Why Heirs Might Miss It"
+**Sahip:** muzik-ses-tasarimcisi · **Tarih:** 2026-11-04 · **Durum:** F4 aday kaydı. "Kullanım aralığı" F6'da (`cue.json`, anlatim.wav ekseni) doldurulur; o zamana kadar hepsi "aday".
+**Kapı:** `python3 -I lisans-kontrol.py` exit 0 (negatif test: kayıtsız sahte dosya → exit 1). Kayıtsız dosya kurguya giremez.
+**Kanıt:** kaynak sayfaların 2026-11-04 HTML kopyası `assets/lisans-kanit/oga-<slug>.html` (lisans alanı sayfanın `field-name-field-art-licenses` bloğundan okundu; tek lisans = CC0); CC0 metni `assets/lisans-kanit/cc0-1.0-legalcode.html`. Bütünlük: `muzik-sha256.txt`, `efekt-sha256.txt`, `orijinal-sha256.txt` (indirilen orijinal / zip).
+**Git:** medya git dışı (koordinatör 2026-11-04). Yeniden indirme linki tabloda; WAV orijinaller `ffmpeg -c:a libvorbis -q:a 5` ile OGG'ye, efektler `efekt-hazirla.py` ile FLAC'a çevrildi.
+**Lisans linki (hepsi):** CC0 1.0 — https://creativecommons.org/publicdomain/zero/1.0/ · Atıf: gerekmez (CC0). Content ID: CC0 parça üçüncü kişice kaydedilmiş olabilir; iddia gelirse bu satır + kanıt HTML ile itiraz.
+
+## Müzik adayları (`kaynak/muzik/`)
+| Dosya | Parça | Sanatçı | Kaynak link | Lisans | İndirme | Atıf | Kullanım aralığı | Kanıt | Content ID notu |
+|---|---|---|---|---|---|---|---|---|---|
+| `wasteland-caravan-vitalezzz.mp3` | Wasteland Caravan | vitalezzz | https://opengameart.org/content/wasteland-caravan | CC0 1.0 | 2026-11-04 | gerekmez | aday | `oga-wasteland-caravan.html` | Sayfada iddia/dağıtıcı yok; web aramasında vitalezzz'e iddia raporu yok. Risk: düşük |
+| `lone-scavenger-vitalezzz.mp3` | Lone Scavenger | vitalezzz | https://opengameart.org/content/lone-scavenger | CC0 1.0 | 2026-11-04 | gerekmez | aday | `oga-lone-scavenger.html` | aynı. Risk: düşük |
+| `remember-this-shadow-komiku.mp3` | Remember this shadow (It's time for adventure vol. 2) | Komiku / Loyalty Freak Music | https://opengameart.org/content/remember-this-shadow | CC0 1.0 | 2026-11-04 | gerekmez | aday | `oga-remember-this-shadow.html` | Aynı albümden "Tension" 1929'da kullanıldı, iddia gelmedi; web aramasında Komiku'ya iddia raporu yok. Risk: düşük |
+| `the-road-we-used-to-travel-komiku.mp3` | The road we use to travel when we were kids (Tale on the Late) | Komiku / Loyalty Freak Music | https://opengameart.org/content/the-road-we-use-to-travel-when-we-were-kids | CC0 1.0 | 2026-11-04 | gerekmez | aday | `oga-the-road-we-use-to-travel-when-we-were-kids.html` | aynı (BIGcat VST, sanatçı beyanı). Risk: düşük |
+| `insistent-yd.ogg` | Insistent (background loop) | yd | https://opengameart.org/content/insistent-background-loop | CC0 1.0 | 2026-11-04 | gerekmez | aday | `oga-insistent-background-loop.html` | 2012 yüklemesi, dağıtıcı izi yok. Risk: düşük |
+| `sunny-side-up-pro-sensory.mp3` | Sunny Side Up (updated version) | Pro Sensory | https://opengameart.org/content/sunny-side-up-updated-version | CC0 1.0 | 2026-11-04 | gerekmez | aday | `oga-sunny-side-up-updated-version.html` | Sanatçının blogu var, dağıtıcı/iddia izi görülmedi. Risk: düşük-orta |
+| `joy-ride-pro-sensory.ogg` (orijinal `Joy Ride.wav`) | Joy Ride | Pro Sensory | https://opengameart.org/content/joy-ride | CC0 1.0 | 2026-11-04 | gerekmez | aday | `oga-joy-ride.html` | aynı. Risk: düşük-orta |
+| `country-pro-sensory.mp3` (orijinal `Country1_1.mp3`) | Country | Pro Sensory | https://opengameart.org/content/country | CC0 1.0 | 2026-11-04 | gerekmez | aday | `oga-country.html` | aynı. Risk: düşük-orta |
+| `sunset-plains-yoiyami.ogg` (orijinal `sunset_plains.wav`) | Sunset Plains | Yoiyami | https://opengameart.org/content/sunset-plains | CC0 1.0 | 2026-11-04 | gerekmez | aday | `oga-sunset-plains.html` | 2025-11 yüklemesi, üretim aracı belirtilmemiş; açıklama pazarlama dili [tahmin: yapay zekâ üretimi olabilir → lisans zinciri belirsiz]. Risk: orta → yalnız 2. sıra |
+| `midnight-cruiser-zane-little.mp3` | Midnight Cruiser | Zane Little Music | https://opengameart.org/content/midnight-cruiser | CC0 1.0 | 2026-11-04 | gerekmez (gönüllü) | aday | `oga-midnight-cruiser.html` | Sanatçı Bandcamp/Ko-Fi'de de yayınlıyor (önceki kayıtlarla aynı not). Risk: orta-düşük |
+| `mysterious-clock-owlishmedia.ogg` (orijinal `intromusic.wav`) | Mysterious Clock | OwlishMedia | https://opengameart.org/content/mysterious-clock | CC0 1.0 | 2026-11-04 | gerekmez | aday | `oga-mysterious-clock.html` | Mixcraft ile yapılmış (sanatçı beyanı): hazır döngü kütüphanesi içeriyorsa başka parçalarla eşleşme riski. Risk: orta → yalnız 3. sıra |
+| `../../2026-10-28-yeni-video/06-muzik/kaynak/muzik/deliberate-concealment-northivanastan.ogg` | Deliberate Concealment | northivanastan | https://opengameart.org/content/deliberate-concealment | CC0 1.0 | 2026-11-02 | gerekmez | aday (S08 kanıtlı yedek) | `oga-deliberate-concealment.html` | S08 lisans kaydında. Risk: düşük |
+| `assets/muzik/the-way-it-is-zane-little.mp3` | The Way It Is | Zane Little Music | https://opengameart.org/content/the-way-it-is | CC0 1.0 | 2026-10-27 | gerekmez | aday (S08 kanıtlı yedek) | `oga-the-way-it-is.html` | Kanal kaydında (`assets/LISANSLAR.md`). Risk: orta-düşük |
+
+## Efekt adayları (`kaynak/efekt/`, 48 kHz FLAC, tepe −3 dBFS, `efekt-hazirla.py`)
+| Dosya(lar) | Orijinal | Sanatçı | Kaynak link | Lisans | İndirme | Atıf | Kanıt |
+|---|---|---|---|---|---|---|---|
+| `bant-owlishmedia-stationery_26/08/27.flac` (bant gag'i), `para-owlishmedia-money_33/34/14.flac` (banknot/bozuk para) | MoreSounds.zip → `Paper & Stationery/Stationery_26/08/27.wav`, `Money/Money_33/34/14.wav` | OwlishMedia | https://opengameart.org/content/202-more-sound-effects | CC0 1.0 | 2026-11-04 | gerekmez | `oga-202-more-sound-effects.html` |
+| `kamyon-ggbotnet-car_door_close.flac`, `kamyon-ggbotnet-car_door_open.flac`, `kamyon-ggbotnet-car_trunk_open.flac`, `kamyon-ggbotnet-car_horn.flac`, `kamyon-ggbotnet-car_engine_start_up.flac`, `kamyon-ggbotnet-car_engine_loop.flac`, `kamyon-ggbotnet-car_engine_turning_off.flac`, `kamyon-ggbotnet-car_parking_brake.flac` | car_sound_effects_pack.zip (Car_*.ogg, 64 kb/s telefon kaydı) | GGBotNet | https://opengameart.org/content/car-sound-effects-pack-low-quality | CC0 1.0 | 2026-11-04 | gerekmez | `oga-car-sound-effects-pack-low-quality.html` |
+| `motor-looneybits-startengine.flac` | generic_car_startengine.wav | looneybits | https://opengameart.org/content/car-engine-start-01 | CC0 1.0 | 2026-11-04 | gerekmez | `oga-car-engine-start-01.html` |
+| `para-lordtomorrow-coinsplash.flac` | coinsplash_0.ogg | LordTomorrow | https://opengameart.org/content/coin-splash | CC0 1.0 | 2026-11-04 | gerekmez | `oga-coin-splash.html` |
+| earshot `drip/drop`, `drip/plink`, `whoosh`, `swish` (F6b'de `sfx render --apex` ile üretilecek) | earshot sfx — kendi üretim (MIT kod, Leon Lin; CC0 türev) | Toonomy | https://github.com/Leonxlnx/earshot | Bizim (MIT kod) | F6b | gerekmez | `.claude/skills/earshot/SKILL.md` |
+| Kanal kütüphanesi (`assets/efekt/*`: `ozgun-fare-klik` abone klik sesi, whoosh, riser, pop, `ozgun-ka-ching`) | — | — | `assets/LISANSLAR.md` | CC0 / Bizim | — | — | kanal kaydı |
+
+## Değerlendirilip alınmayanlar (dosyalar silindi; ölçümler `olcum-muzik.jsonl`)
+- Maskeleme (konuşma bandı ≥0.17 veya maske SNR ≤16,6 dB): Drive, Freeway Fumes, Detour (Zane Little), Down the river (Komiku), Investigation (wipics).
+- Ton/uyum: Empty Stretch (Zane Little; funk, 3 CLAP sorgusunda "no match"), Road Trip (Umplix; funk, no match), Desert Travel (DJ CrisP; synthwave, 27 sn), Banjo Something (G_P; "celebratory", konuşma bandı 0.118 → ciddi finans tonuna fazla şen), Desert Settlement (vitalezzz; maske SNR 18,9 < 20).
+- Telefon bandı 0.063 < 0.08: Exploration (johnclark, 21 sn).
+- Content ID riski: Investigation (Umplix; Apple Loops ile yapılmış, sanatçı beyanı — ortak döngü kütüphanesi eşleşme riski).
+- Çoklu lisans (hafıza kuralı): Aimless Autumn (OGA-BY 4.0 + CC0), Gone Fishin' (CC-BY 4.0 + OGA-BY + CC0), Little Journey (CC-BY 3.0 + CC0; sayfa yorumunda GarageBand örnekleri Content ID'ye takılıyor notu), Western Style Song (CC-BY 3.0 + CC0), Trouble in the Garden (OGA-BY 3.0 + CC0).
