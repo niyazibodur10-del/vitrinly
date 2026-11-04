@@ -1,3 +1,8 @@
+# METİN KİLİDİ ONAY (sha 22ba68b7750c)
+**v1.1 fark denetimi (2026-11-04):** D-1…D-6, R28 ve K-a/b/c hepsi uygulanmış. Yeni olgu yok. S31 köprüsü soruya çevrildi, olgu içermiyor. "Okafors drive right past this stop" cümlesi hemen ardından "not the only tax" ile sınırlanıyor ve S22/S26'daki "sliver" ile tutarlı. Kalan rakam yok, `[RAKAM?]` 0, tavsiye dili 0.
+**Betik düzeltmesi:** `dogrulama-kontrol.py` v1, Sahne/Grafik ile başlamayan sahneyi atlıyordu (S12 "**Karakter anı"). Ayrıca `and/or` öncelik hatası vardı. Yeni sürüm sahne başlığına bağlı ve sayıyı assert ediyor: **31/31 sahne + 2 Shorts**. Çıktı `log/dogrulama-cikti-v11.txt`; 2 koşu aynı çıktıyı veriyor. v1.0'ın kaçırdığı S12'de rakam yok, yalnız [ÖRNEK] kutu sayımı ("two-tape", "three boxes") var; sonuç değişmiyor.
+**Kanıt:** v1.0 (git 2f0a428) ile v1.1 arasında sahne bazlı cümle farkı çıkarıldı (difflib). Değişen cümlelerin hepsi düzeltme listesindeki maddeler ya da yalnız ↺ zaman kaymaları.
+
 # F3 metin doğrulama — S03 metin.md v1.0 (sha 1eb7c0744120) · finans-dogrulayici · 2026-11-04
 
 İLERLEME: tamam (v1.0 denetlendi; v1.1 gelince yalnız aşağıdaki 6+3 madde yeniden ölçülür).
