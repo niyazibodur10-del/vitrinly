@@ -11,6 +11,7 @@ import { Final, KurguShorts } from "./k1929/kurgu";
 import { KURGU_SHORTS } from "./k1929/kurgu-veri";
 import { KButceKompozisyonlar } from "./videolar/yeni-video/Kompozisyonlar";
 import { KButceKurgu } from "./videolar/yeni-video/kurgu";
+import { KMirasKompozisyonlar } from "./videolar/miras-sizintilari/Kompozisyonlar";
 // yeni-video.sh: import
 
 const PilotDikey: React.FC = () => (
@@ -65,6 +66,7 @@ export const RemotionRoot: React.FC = () => {
       <KButceKompozisyonlar />
       {/* 2026-10-28-yeni-video F7 kurgu (kurgu-editoru): KButceFinal, KButceIlk30-A/B/C, KButceShorts1/2 */}
       <KButceKurgu />
+      <KMirasKompozisyonlar />
       {/* yeni-video.sh: kompozisyon */}
     </>
   );

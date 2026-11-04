@@ -3,7 +3,7 @@ import React from "react";
 import { AbsoluteFill, Easing, Img, interpolate, random, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { anton, fredoka } from "./ortak";
 import { KLASOR, SUNUCU_T, YAMA_T } from "./rig";
-import { SahneVeri, SAHNELER } from "./veri-sahne";
+import { Cue, SahneVeri, SAHNELER } from "./veri-sahne";
 import { Rig, Sunucu, SunucuPoz, yuzRig } from "./Sunucu";
 
 // Kaynak: video/src/k1929/kit.tsx (1929'a özgü harita/kapı/kilit çıkarıldı; zarf, nesne, not, masa Leo eklendi).
@@ -103,7 +103,8 @@ export const Leo: React.FC<{
   cikis?: { an: number; dx?: number; dy?: number; sure?: number };
   konusmaz?: boolean;
   opak?: number;
-}> = ({ id, x, y, s, pozlar, tohum = 1, wink, rozet, giris, cikis, konusmaz, opak = 1 }) => {
+  cues?: Cue[]; // ek kayıt (Shorts) ağız çizelgesi: sahne kimliği yerine
+}> = ({ id, x, y, s, pozlar, tohum = 1, wink, rozet, giris, cikis, konusmaz, opak = 1, cues }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = frame / fps;
@@ -127,7 +128,7 @@ export const Leo: React.FC<{
   return (
     <div style={{ position: "absolute", left: x - YUZ_T.x * s + dx, top: y - YUZ_T.y * s + dy, scale: String(s), transformOrigin: "0 0", opacity: op }}>
       <div style={{ position: "relative", scale: String(otur), transformOrigin: `${YUZ_T.x}px ${RIG_T.kutu.h}px` }}>
-        <Sunucu cues={veri ? veri.agiz : []} ofs={0} poz={poz} tohum={tohum} wink={wink} rig={RIG_T} konusmaz={konusmaz || !veri} />
+        <Sunucu cues={cues ?? (veri ? veri.agiz : [])} ofs={0} poz={poz} tohum={tohum} wink={wink} rig={RIG_T} konusmaz={konusmaz || (!veri && !cues)} />
         {rozet ? <Rozet {...rozet} x={YUZ_T.x + 125} y={YUZ_T.y + 330} boyut={1.7} /> : null}
       </div>
     </div>
