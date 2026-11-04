@@ -1,0 +1,21 @@
+nis n=959 kanal=38 | tum medyan=1.06
+somut ozne (ulke|kisi|kurum|nesne)     n=456 med=1.07 >=3x= 15% >=10x=11 | degil n=503 med=1.05 >=3x= 15%
+  yalniz ulke                          n=287 med=1.03 >=3x= 15% >=10x= 5 | degil n=672 med=1.07 >=3x= 15%
+  yalniz kisi                          n= 52 med=1.02 >=3x= 21% >=10x= 5 | degil n=907 med=1.06 >=3x= 15%
+  yalniz kurum                         n= 57 med=1.13 >=3x=  4% >=10x= 0 | degil n=902 med=1.06 >=3x= 16%
+  yalniz nesne                         n=160 med=1.12 >=3x= 17% >=10x= 3 | degil n=799 med=1.04 >=3x= 15%
+paradoks (so why|why hasn't|...but|yet) n= 19 med=0.98 >=3x= 16% >=10x= 1 | degil n=940 med=1.06 >=3x= 15%
+what happens if/when                   n= 29 med=1.15 >=3x= 28% >=10x= 4 | degil n=930 med=1.06 >=3x= 15%
+tarih->gelecek                         n= 46 med=1.52 >=3x= 39% >=10x= 8 | degil n=913 med=1.04 >=3x= 14%
+gizli is modeli                        n= 29 med=2.25 >=3x= 41% >=10x= 5 | degil n=930 med=1.05 >=3x= 14%
+gundem (ai|trump|tariff|midterm|2026|2027|fed|crash now) n=158 med=1.00 >=3x= 12% >=10x= 5 | degil n=801 med=1.09 >=3x= 15%
+tarihsel (history|19xx|ancient|empire|ww) n=172 med=0.96 >=3x= 13% >=10x= 6 | degil n=787 med=1.09 >=3x= 15%
+seri isareti (part|ep\.|episode|#\d)   n=  4 med=0.74 >=3x= 25% >=10x= 0 | degil n=955 med=1.06 >=3x= 15%
+
+Milyon taban orani (nis, 90 g, >=7 gunluk):
+  abone        0-10000      n=186 >=1M= 0 (0.0%) >=100K=  7 (3.8%) maks=   776925
+  abone    10000-50000      n=141 >=1M= 0 (0.0%) >=100K= 18 (12.8%) maks=   766023
+  abone    50000-200000     n=257 >=1M= 2 (0.8%) >=100K= 95 (37.0%) maks=  4259536
+  abone   200000-1000000    n=148 >=1M= 4 (2.7%) >=100K= 85 (57.4%) maks=  1789293
+  abone  1000000-10000000000 n=227 >=1M=54 (23.8%) >=100K=204 (89.9%) maks=  8418142
+  TUM ornek (nis disi dahil) abone<10K n=1448 >=1M=1 >=100K=16 maks=1074969
