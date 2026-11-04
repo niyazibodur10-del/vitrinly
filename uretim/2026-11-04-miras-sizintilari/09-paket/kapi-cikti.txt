@@ -118,3 +118,6 @@ SONUÇ: 1 hata · 15 bekleyen (F8b)
 
 ## dry-run kip 1 (gerçek paket): yalnız dosya-yok — uzun 2 hata (video, SRT) + thumbnail UYARI; shorts 1/1 hata (video) + ilgili_video UYARI
 ## dry-run kip 2 (bayt-aynı JSON + sahte medya 840 sn 16:9, 55 sn 9:16, 160 blok SRT): 0/0/0 hata; uyarılar: thumbnail yok (uzun), ilgili_video bilinmeyen alan (shorts); publishAt 2026-11-08T17:00Z / 11-09T14:00Z / 11-10T14:00Z; containsSyntheticMedia true
+
+## 2026-11-04 devam (limit sonrası): 03-metin/metin.md v0.1 çıktı → [6] sızıntı adları HATA ("six leaks" + 'the cost of care', 'taxes and time' metinde yok; 3. durak 'Nothing leaked' D2) → pinli yorum 'six stops' + metin adlarıyla düzeltildi
+python3 -I paket-kontrol.py → 0 hata · 15 bekleyen (paket.md, paket-kontrol.py sha256: b9b768e9b4be a57a32399858 )

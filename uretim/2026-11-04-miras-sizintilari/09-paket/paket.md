@@ -224,21 +224,21 @@ Narration voice is AI-generated. Visuals are AI-assisted illustrations animated 
 
 ## 7. Pinli yorum (A seçildi)
 
-K1: "üç olasılık" kapanışı ve A/B/C üçlü yapısı bu videoda yok → soru Leo'nun envanter listesine bağlanır (kapanış sahnesiyle aynı nesne), tek soru, numarayla yanıt (tek tuş, yorum sayısı). Kişisel miras/servet sorusu yok (mahremiyet, ölüm konusu ağır; P2). Sızıntı adları F3 metniyle birebir (betik BEKL).
-- **A (seçilen):** aşağıdaki blok — liste 1–6, "which surprised you most?".
+K1: "üç olasılık" kapanışı ve A/B/C üçlü yapısı bu videoda yok → soru Leo'nun clipboard'undaki altı durağa bağlanır (metin v0.1 dili: "six stops", tabelalar LIVING/CARE/…/GIVING/TAX), tek soru, numarayla yanıt. Altısına "leak" denmez: 3. durakta "Nothing leaked" (D2). Kişisel miras/servet sorusu yok (mahremiyet, ölüm konusu ağır; P2). Sızıntı adları F3 metniyle birebir (betik BEKL).
+- **A (seçilen):** aşağıdaki blok — durak 1–6, "which surprised you most?" (ilk sürüm "six leaks" metinle çelişti, betik yakaladı → düzeltildi).
 - B (elendi): "Will your generation inherit more or less than it expects?" — kişisel finans tahmini ister, tavsiye zincirine açılır (P1).
 - C (elendi): "What's one thing you hope stays in the truck?" — duygusal ama ölüm/kayıp çağrışımı (P2), yanıtlaması zor.
 
 <!-- veri:pinli-yorum -->
 ```text
-Leo's inventory list has six leaks. Which one surprised you most? Reply with its number.
+Leo's clipboard has six stops between the parents and the kids. Which one surprised you most? Reply with its number.
 
 1: a long life
-2: the cost of care
+2: care
 3: a spouse first
-4: charity
+4: giving
 5: the house
-6: taxes and time
+6: taxes
 
 (Sources and notes are in the description. The Okafor family is an example, not a real household.)
 ```
