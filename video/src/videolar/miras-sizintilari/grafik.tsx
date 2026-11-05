@@ -193,8 +193,8 @@ export type PanoSatir = { deger?: string; an?: number; renk?: string; cizgi?: nu
 export const Pano: React.FC<{ t0: number; satir: PanoSatir[]; alt?: { metin: string; an: number; renk?: string }; kumSaati?: number; isimAn?: number[] }> = ({ t0, satir, alt, kumSaati, isimAn }) => {
   const t = useT();
   const D = useDikey();
-  const W = D ? 860 : 820, H = D ? 1040 : 860;
-  const X = D ? 110 : 550, Y = D ? 330 : 170;
+  const W = D ? 860 : 820, H = D ? 1080 : 920;
+  const X = D ? 110 : 380, Y = D ? 330 : 170; // 16:9 sol-orta: sağ alt (ABONE alanı x>1170) boş kalır
   const p = gir(t, t0, 0.3);
   return (
     <div style={{ position: "absolute", left: X, top: Y, width: W, height: H, opacity: p, transformOrigin: "50% 0%", scale: String((D ? 1 : 0.88) * (0.9 + 0.1 * p)), rotate: `${-1.5 + Math.sin(t * 0.8) * 0.4}deg` }}>
@@ -221,7 +221,7 @@ export const Pano: React.FC<{ t0: number; satir: PanoSatir[]; alt?: { metin: str
         );
       })}
       {alt ? (
-        <div style={{ position: "absolute", left: 70, right: 70, bottom: 56, textAlign: "center", ...yaz(D ? 56 : 50, alt.renk ?? "#111"), WebkitTextStroke: alt.renk ? "5px #111" : "0px", opacity: gir(t, alt.an) }}>{alt.metin}</div>
+        <div style={{ position: "absolute", left: 70, right: 70, bottom: 40, textAlign: "center", ...yaz(D ? 52 : 44, alt.renk ?? "#111"), WebkitTextStroke: alt.renk ? "5px #111" : "0px", opacity: gir(t, alt.an) }}>{alt.metin}</div>
       ) : null}
       {kumSaati !== undefined ? <KumSaati an={kumSaati} x={W - 40} y={H - 120} /> : null}
     </div>
@@ -670,7 +670,7 @@ export const Banknot: React.FC<{ t0: number; k: Record<string, number> }> = ({ t
 export const Selale: React.FC<{ t0: number; k: Record<string, number> }> = ({ t0, k }) => {
   const t = useT();
   const D = useDikey();
-  const W = D ? 1000 : 1700, L = D ? 40 : 110, taban = D ? 1380 : 900, U = D ? 82 : 62; // U = 1 kutu yüksekliği
+  const W = D ? 1000 : 1700, L = D ? 40 : 110, taban = D ? 1380 : 900, U = D ? 82 : 54; // U = 1 kutu yüksekliği
   const kolon = ["LOADED", ...DURAK.map((d) => d[0]), "DELIVERED"];
   const cw = W / kolon.length;
   const an = [ka(k, "loaded", t0), ...[1, 2, 3, 4, 5, 6].map((n) => ka(k, `s${n}`, t0 + n)), ka(k, "delivered", t0 + 7)];

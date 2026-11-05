@@ -48,7 +48,7 @@ const panoDurum = (sid: string, t0: number, k: Record<string, number>) => {
         />
       );
     case "S22":
-      return <Pano t0={t0} satir={[{ ...L, cizgi: ka(k, "living", t0 + 0.5) }, { ...C, cizgi: ka(k, "care", t0 + 1) }, Sp, Gv, {}, { ...d("−0 · SLIVER", t0 + 0.2, "#2fae6a"), cizgi: ka(k, "time", t0 + 1.5) }]} alt={{ metin: "ESTATE TAX −0 · INCOME TAX: A SLIVER", an: t0 + 0.3 }} />;
+      return <Pano t0={t0} satir={[{ ...L, cizgi: ka(k, "living", t0 + 0.5) }, { ...C, cizgi: ka(k, "care", t0 + 1) }, Sp, Gv, {}, { ...d("−0", t0 + 0.2, "#2fae6a"), cizgi: ka(k, "time", t0 + 1.5) }]} alt={{ metin: "ESTATE TAX −0 · INCOME TAX: A SLIVER", an: t0 + 0.3 }} />;
     default:
       return <Pano t0={t0} satir={[L, C, Sp, Gv]} />;
   }
@@ -100,7 +100,7 @@ export const Cekim: React.FC<{ sid: string; leoId?: string; leoCues?: Cue[]; kes
       const yukleme = sid === "S06" && ad.startsWith("10 kutu") ? [ka(k, "four1", t0 + 0.3), ka(k, "four2", t0 + 1), ka(k, "two3", t0 + 1.6)] : undefined;
       return (
         <Zemin t0={t0}>
-          <KutuDizisi t0={t0} kayipOnce={param === "yalniz" ? 4 : Number(param) || 0} yeni={yeniS08} gizle={param === "4" || param === "yalniz"} giris={yukleme} yalniz={param === "yalniz" ? 0 : undefined} />
+          <KutuDizisi t0={t0} kayipOnce={param === "yalniz" ? 4 : Number(param) || 0} yeni={yeniS08} gizle={param === "4" || param === "yalniz"} giris={yukleme} yalniz={param === "yalniz" ? 0 : undefined} cx={param === "yalniz" ? 820 : undefined} />
           {sid === "S19" ? <div style={{ position: "absolute", left: 0, right: 0, top: 120, textAlign: "center", fontFamily: fredoka, fontWeight: 700, fontSize: 64, color: "#f4f1ea", WebkitTextStroke: "7px #0b0b0b", paintOrder: "stroke fill" }}>4 OF 10 BOXES: THE HOUSE</div> : null}
           <OrnekEtiket />
         </Zemin>
