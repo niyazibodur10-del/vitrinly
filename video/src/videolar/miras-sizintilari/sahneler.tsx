@@ -7,9 +7,9 @@ import { f, Leo } from "./kit";
 import { YER_TUTUCU_RIG } from "./rig";
 import { Kes, plan, sure } from "./zaman";
 import {
-  AileKapi, Banknot, BantKutu, Bayrak, BuyuyenKutu, DevKutu, Dilim, EkranYazilari, EsTabela, Etiket, Fatura, Faturalar, G1, G19, G2, G3, G4, G5, G7,
+  AileKapi, Banknot, BantEl, BantKutu, Bayrak, BuyuyenKutu, DevKutu, Dilim, EkranYazilari, EsTabela, Etiket, Fatura, Faturalar, G1, G19, G2, G3, G4, G5, G7,
   Gise, GriSac, Hayalet, Ikonlar, Kapilar, KaynakSatiri, KutuDizisi, Omur, OrnekEtiket, Pano, PanoSatir, Saat, Selale, Siluet, Sold, Solma, Soz, SoruKutu,
-  Tabela, Tabelalar, Tez, UkKart, useDikey, YedideBir, YerTutucu, YolHaritasi, YolIsareti, Zemin, ka,
+  Kesik, PlakaArka, Tabela, Tabelalar, Tez, UkKart, useDikey, YedideBir, YerTutucu, YolHaritasi, YolIsareti, Zemin, ka,
 } from "./grafik";
 
 // Sahne çatısı (animasyon-yonetmeni, 2026-11-04 iskelet): her sahne = zaman.ts kesme listesi; her kesme bir çekim anahtarı
@@ -54,18 +54,21 @@ const panoDurum = (sid: string, t0: number, k: Record<string, number>) => {
   }
 };
 
-// Konuşan Leo (rig) — yer tutucu plaka üstünde; ağız çizelgesi sahnenin (veya ek kaydın) Rhubarb'ı
-const LeoCekim: React.FC<{ id?: string; cues?: Cue[]; t0: number; tip: string; ad: string }> = ({ id, cues, t0, tip, ad }) => {
+// Konuşan Leo (rig) — Canva plakası üstünde; ağız çizelgesi sahnenin (veya ek kaydın) Rhubarb'ı.
+// tip: kapi (M08 yol + kamyon yan kesiği, Leo sol-orta) · yakin (M08 bulanık) · kasa (M09 kasa içi) · kasaYakin
+const LeoCekim: React.FC<{ id?: string; cues?: Cue[]; t0: number; tip: string; ad: string }> = ({ id, cues, t0, tip }) => {
   const D = useDikey();
-  const yakin = tip === "yakin";
+  const yakin = tip === "yakin" || tip === "kasaYakin";
+  const kasa = tip.startsWith("kasa");
   const p = D ? (yakin ? { x: 540, y: 760, s: 0.98 } : { x: 540, y: 860, s: 0.74 }) : yakin ? { x: 960, y: 420, s: 0.95 } : { x: 640, y: 470, s: 0.62 };
   return (
     <AbsoluteFill>
-      <YerTutucu t0={t0} ad={ad} plaka={yakin ? "Leo yakın" : "kamyon kapısı"} />
+      <PlakaArka t0={t0} ad={kasa ? "M09" : "M08"} bulanik={yakin ? 5 : kasa ? 2 : 0} odakX={0.5} />
+      {tip === "kapi" ? <Kesik ad="ham-kamyon-yan" x={D ? 760 : 1420} alt={D ? 560 : 70} w={D ? 760 : 900} /> : null}
       <Leo id={id} cues={cues} x={p.x} y={p.y} s={p.s} pozlar={[[0, "a"]]} tohum={Math.round(t0 * 7) + 3} />
       {YER_TUTUCU_RIG ? (
-        <div style={{ position: "absolute", left: D ? 70 : 34, top: D ? 300 : 100, padding: "4px 10px", background: "rgba(224,90,79,0.85)", color: "#fff", fontFamily: fredoka, fontWeight: 700, fontSize: 22, borderRadius: 6 }}>
-          RIG YER TUTUCU (S08 Leo) — nakliye yelekli Leo gelince değişir
+        <div style={{ position: "absolute", left: D ? 70 : 34, top: D ? 300 : 30, padding: "4px 10px", background: "rgba(224,90,79,0.85)", color: "#fff", fontFamily: fredoka, fontWeight: 700, fontSize: 20, borderRadius: 6 }}>
+          RIG: S08 Leo kesiği (aynı karakter; bu videonun pano/bant rig pozları gelince değişir)
         </div>
       ) : null}
     </AbsoluteFill>
@@ -133,6 +136,8 @@ export const Cekim: React.FC<{ sid: string; leoId?: string; leoCues?: Cue[]; kes
       return <Hayalet t0={t0} uc={param === "uc"} />;
     case "bantKutu":
       return <BantKutu t0={t0} k={k} />;
+    case "bantEl":
+      return <BantEl t0={t0} k={k} />;
     case "solma":
       return <Solma t0={t0} k={k} />;
     case "buyuyenKutu":

@@ -279,16 +279,16 @@ const P: Record<string, () => Plan> = {
   },
   S12: () => {
     const a = an("S12");
-    const k = { the: a("the"), i1: a("tape", 1), then: a("then"), so: a("so"), okay: a("okay"), two: a("two", 1), and: a("and", 2), nobody: a("nobody") };
+    const k = { the: a("the"), i: a("i", 1), i1: a("tape", 1), then: a("then"), so: a("so"), okay: a("okay"), two: a("two", 1), and: a("and", 2), nobody: a("nobody") };
     return yap(
       "S12",
       k,
       [
-        [0, "Leo kutunun dibini kontrol eder", true, "leo:kapi"],
-        [k.then - 0.1, "kutu yakın: başka köşeden damla", false, "bantKutu"],
-        [k.okay - 0.1, "Leo kameraya: two-tape stop", true, "leo:yakin"],
+        [0, "kasa içi: Leo (M09)", true, "leo:kasa"],
+        [k.i - 0.1, "kutu yakın: Leo bantlar (M05 el), başka köşeden damla, 2. bant", false, "bantEl"],
+        [k.okay - 0.1, "Leo kameraya: two-tape stop", true, "leo:kasaYakin"],
         [k.and - 0.1, "pano −3", false, "pano:S12"],
-        [k.nobody - 0.1, "Leo yakın, sakin", true, "leo:yakin"],
+        [k.nobody - 0.1, "Leo yakın, sakin", true, "leo:kasaYakin"],
       ],
       [
         { t: k.i1, olay: "bant 1 çekilir", tur: "vurgu", oneri: "koli bandı çekme" },

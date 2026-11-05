@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""F6 miks motoru — 2026-10-28-yeni-video S08 (muzik-ses-tasarimcisi; 1929 f6.py'den uyarlandı).
+"""F6 miks motoru — 2026-11-04-miras-sizintilari S03 (muzik-ses-tasarimcisi; S08 f6.py v2'den uyarlandı).
+v3 değişikliği: seviye parçanın BÜTÜN dosya LUFS'una değil, kullanılan (ofsetli/döngülü) kesitin LUFS'una göre (hafıza 2026-10-27,
+dinamik parçada 25 dB fark çıkmıştı); dinamik parçada en sabit kesit `en_sabit_ofset` ile seçilir; test kör dinleme dosyası yazar.
 
 Kullanım (Whisper venv'iyle; CPU'yu korumak için nice):
   nice -n 15 ~/.finansal-arac/venv/bin/python 06-muzik/f6.py test     # bölüm başına aday × 25 sn dilim, Whisper WER + seviye
@@ -25,22 +27,23 @@ KEL = json.load(open(f"{UR}/04-ses/kelimeler-hizali.json"))["words"]
 CUM = json.load(open(f"{UR}/04-ses/anlatim-ham.zaman.json"))["cumleler"]
 M, O, A, E, AE = (f"{BURA}/kaynak/muzik/", f"{BURA}/kaynak/ozgun/", f"{REPO}/assets/muzik/", f"{BURA}/kaynak/efekt/",
                   f"{REPO}/assets/efekt/")
-P29 = f"{REPO}/uretim/2026-10-26-1929-1000-dolar/06-muzik/kaynak/muzik/"
-GECICI = os.environ.get("F6_GECICI", "/tmp/claude-0/-home-user-vitrinly/98cc376a-1af5-5176-856d-bb81c65c71b0/scratchpad/f6")
+P29 = f"{REPO}/uretim/2026-10-28-yeni-video/06-muzik/kaynak/muzik/"   # $P29 = S08 kaynak (kanıtlı yedekler)
+GECICI = os.environ.get("F6_GECICI", "/tmp/claude-0/-home-user/98cc376a-1af5-5176-856d-bb81c65c71b0/scratchpad/f6")
 os.makedirs(GECICI, exist_ok=True)
 NARR_LUFS = -14.2
 NOTCH = "equalizer=f=3000:t=o:w=1.2:g=-4"   # Deliberate Concealment (celesta): 2–4 kHz oyuk (F4 notu)
-TOPLAM = 678.195
+TOPLAM = 781.388
 
 # ---------------- aday testleri (F6 adım 1) ----------------
 ADAYLAR = {
-    "B1": (0.0, 83.022, [("happy-lofi-day", M + "happy-lofi-day-tarush-singhal.mp3", 23, None), ("chill-lofi", M + "chill-lofi-inspired-omfgdude.mp3", 22, None), ("apple-cider", M + "apple-cider-zane-little.ogg", 22, None)]),
-    "B2": (83.022, 176.097, [("jazz", M + "jazz-spring-spring.ogg", 22, None), ("funky-lofi-lp", M + "funky-lofi-jam-lowpass-omfgdude.ogg", 22, None)]),
-    "B3": (176.097, 271.499, [("deliberate-concealment", M + "deliberate-concealment-northivanastan.ogg", 23, NOTCH), ("unsolved", A + "merak-unsolved-investigation-isaiah658.ogg", 22, None)]),
-    "B4": (271.499, 391.019, [("mysterywave", A + "gerilim-80s-mysterywave-desertdev.ogg", 22, None), ("backup-plan", P29 + "backup-plan-zane-little.ogg", 22, None)]),
-    "B5": (391.019, 527.851, [("lofi-again", M + "lofi-again-omfgdude.ogg", 22, None), ("laundry", M + "laundry-on-the-wire-holizna.ogg", 22, None)]),
-    "B6": (527.851, 637.949, [("the-way-it-is", P29 + "the-way-it-is-zane-little.mp3", 22, None), ("slowly-running", M + "slowly-running-gameassets66.mp3", 22, None)]),
-    "B7": (637.949, 678.195, [("apple-cider", M + "apple-cider-zane-little.ogg", 22, None), ("small-fire", M + "a-small-fire-will-do-trex0n.ogg", 22, None)]),
+    "B1": (0.0, 106.246, [("wasteland-caravan", M + "wasteland-caravan-vitalezzz.mp3", 22, None), ("lone-scavenger", M + "lone-scavenger-vitalezzz.mp3", 22, None), ("remember-shadow", M + "remember-this-shadow-komiku.mp3", 22, None)]),
+    "B2": (106.246, 155.207, [("sunny-side-up", M + "sunny-side-up-pro-sensory.mp3", 22, None), ("joy-ride", M + "joy-ride-pro-sensory.ogg", 22, None), ("country", M + "country-pro-sensory.mp3", 22, None)]),
+    "B3": (155.207, 298.974, [("insistent", M + "insistent-yd.ogg", 22, None), ("lone-scavenger", M + "lone-scavenger-vitalezzz.mp3", 22, None), ("deliberate-concealment", P29 + "deliberate-concealment-northivanastan.ogg", 23, NOTCH)]),
+    "B4": (298.974, 429.531, [("remember-shadow", M + "remember-this-shadow-komiku.mp3", 22, None), ("country", M + "country-pro-sensory.mp3", 22, None), ("midnight-cruiser", M + "midnight-cruiser-zane-little.mp3", 22, None)]),
+    "B5": (429.531, 493.932, [("the-road", M + "the-road-we-used-to-travel-komiku.mp3", 22, None), ("sunset-plains", M + "sunset-plains-yoiyami.ogg", 22, None), ("remember-shadow", M + "remember-this-shadow-komiku.mp3", 22, None)]),
+    "B6": (493.932, 642.755, [("lone-scavenger", M + "lone-scavenger-vitalezzz.mp3", 22, None), ("insistent", M + "insistent-yd.ogg", 22, None), ("mysterious-clock", M + "mysterious-clock-owlishmedia.ogg", 22, None)]),
+    "B7": (642.755, 759.947, [("the-road", M + "the-road-we-used-to-travel-komiku.mp3", 22, None), ("wasteland-caravan", M + "wasteland-caravan-vitalezzz.mp3", 22, None), ("the-way-it-is", A + "the-way-it-is-zane-little.mp3", 22, None)]),
+    "B8": (759.947, 781.388, [("joy-ride", M + "joy-ride-pro-sensory.ogg", 22, None), ("the-way-it-is", A + "the-way-it-is-zane-little.mp3", 22, None), ("sunny-side-up", M + "sunny-side-up-pro-sensory.mp3", 22, None)]),
 }
 
 
@@ -142,14 +145,45 @@ def duck_zarfi(t0, t1, acil_db=6.0, hiz=100):
     return 10 ** (np.interp(tt, np.arange(len(db)) / hiz, db) / 20).astype(np.float32)
 
 
+_OFCACHE = {}
+
+
+def en_sabit_ofset(yol, af, pencere=40.0):
+    """Kısa süreli (3 sn) ses yüksekliği std'si en düşük, seviyesi medyanın 4 dB içinde olan pencere başı (sn, 1 sn adım)."""
+    k = (yol, af, pencere)
+    if k in _OFCACHE:
+        return _OFCACHE[k]
+    x = coz(yol, af, sr=16000).mean(1)
+    w = 16000
+    e = np.array([10 * np.log10(np.mean(x[i:i + 3 * w] ** 2) + 1e-12) for i in range(0, max(1, len(x) - 3 * w), w)])
+    p = int(min(pencere, len(e)))
+    med = np.median(e)
+    en, of = 1e9, 0
+    for i in range(0, max(1, len(e) - p + 1)):
+        d = e[i:i + p]
+        if abs(np.median(d) - med) > 4:
+            continue
+        if d.std() < en:
+            en, of = d.std(), i
+    _OFCACHE[k] = float(of)
+    return float(of)
+
+
+def kesit_lufs(x):
+    """Kullanılan kesitin entegre LUFS'u (en fazla ilk 60 sn; döngü aynı malzemeyi tekrarlar)."""
+    return lufs_dizi(x[:60 * SR])["I"]
+
+
 def bolum_muzik(yol, af, duck, t0, t1, ofset=0.0, giris=1.0, cikis=1.0, acil_db=6.0):
-    """t0–t1 için seviyelenmiş + duck'lı müzik (n,2)."""
+    """t0–t1 için seviyelenmiş + duck'lı müzik (n,2). ofset="sabit" → en_sabit_ofset."""
     n = int(round((t1 - t0) * SR))
+    if ofset == "sabit":
+        ofset = en_sabit_ofset(yol, af)
     x = coz(yol, af)
     x = x[int(ofset * SR):] if ofset else x
     x = dongu(x, n)
     hedef = NARR_LUFS - duck
-    x = x * 10 ** ((hedef - parca_lufs(yol, af)) / 20)
+    x = x * 10 ** ((hedef - kesit_lufs(x)) / 20)
     x = x * duck_zarfi(t0, t1, acil_db)[:, None]
     gi, ci = int(giris * SR), int(cikis * SR)
     if gi:
@@ -228,7 +262,7 @@ def test():
         e0, k = wer_hesapla(ref, h0)
         satir = {"bolum": b, "dilim": [round(t0, 2), round(t1, 2)], "kelime": k, "anlatim_tek_hata": e0, "adaylar": []}
         for ad, yol, duck, af in liste:
-            mz = bolum_muzik(yol, af, duck, t0, t1, ofset=10.0,
+            mz = bolum_muzik(yol, af, duck, t0, t1, ofset="sabit",
                              giris=0.3, cikis=0.3)
             my = f"{GECICI}/{b}-{ad}-muzik.wav"
             karisim = f"{GECICI}/{b}-{ad}-miks.wav"
@@ -240,7 +274,10 @@ def test():
             h = whisper(karisim)
             e, _ = wer_hesapla(ref, h)
             sev = seviye_farki(ny, my, t0)
-            satir["adaylar"].append({"aday": ad, "duck": duck, "oyuk": bool(af), "hata": e, "fark_hata": e - e0, **sev})
+            harf = "ABC"[(liste.index((ad, yol, duck, af)) + sum(map(ord, b))) % len(liste)]   # sabit karıştırma
+            os.makedirs(f"{BURA}/kor-dinleme", exist_ok=True)
+            sh("ffmpeg", "-v", "error", "-y", "-i", karisim, "-c:a", "aac", "-b:a", "128k", f"{BURA}/kor-dinleme/{b}-{harf}.m4a")
+            satir["adaylar"].append({"kor": harf, "ofset_sn": en_sabit_ofset(yol, af), "aday": ad, "duck": duck, "oyuk": bool(af), "hata": e, "fark_hata": e - e0, **sev})
             print(b, ad, "hata", e, "(anlatım tek", e0, ")", sev, flush=True)
         sonuc.append(satir)
     json.dump(sonuc, open(f"{BURA}/olcum-f6-test.json", "w"), ensure_ascii=False, indent=1)
@@ -260,6 +297,7 @@ def render():
         yol = c["dosya"].replace("$M/", M).replace("$O/", O).replace("$A/", A).replace("$P29/", P29)
         af = NOTCH if c.get("oyuk") else None
         t0, t1 = c["bas"], c["son"]
+        c["ofset"] = c.get("ofset", 0.0)
         t1 = min(t1, n / SR)
         x = bolum_muzik(yol, af, c["duck"], t0, t1, ofset=c.get("ofset", 0.0), giris=c.get("giris", 1.2),
                         cikis=c.get("cikis", 1.2), acil_db=c.get("acil_db", 6.0))
@@ -337,8 +375,9 @@ def shorts(cue):
     Seviye: konuşma altında 20 dB (mobil dinleme; ana videodan 2 dB yukarı). Hook öncesi giriş yok (ilk kare = konuşma)."""
     for s in cue["shorts"]:
         yol = s["dosya"].replace("$M/", M).replace("$O/", O).replace("$A/", A).replace("$P29/", P29)
-        x = dongu(coz(yol)[int(s.get("ofset", 0) * SR):], int(s["sure"] * SR))
-        x = x * 10 ** ((NARR_LUFS - s["duck"] - parca_lufs(yol, None)) / 20)
+        of = en_sabit_ofset(yol, None) if s.get("ofset") == "sabit" else s.get("ofset", 0)
+        x = dongu(coz(yol)[int(of * SR):], int(s["sure"] * SR))
+        x = x * 10 ** ((NARR_LUFS - s["duck"] - kesit_lufs(x)) / 20)
         c = int(2.0 * SR)
         x[-c:] *= np.cos(np.linspace(0, np.pi / 2, c))[:, None]
         g = int(0.05 * SR)
