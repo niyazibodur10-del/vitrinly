@@ -60,7 +60,7 @@ const P: Record<string, () => Plan> = {
   // ---------- Bölüm 1 — The Number on the Truck ----------
   S01: () => {
     const a = an("S01");
-    const k = { kapi: 0.1, damla: 1.6, but: a("but"), charity: a("charity"), fifty: a("fifty-four"), spouse: a("spouse"), so: a("so"), one2: a("one", 2), family: a("family") };
+    const k = { son: sure("S01"), kapi: 0.1, damla: 1.6, but: a("but"), charity: a("charity"), fifty: a("fifty-four"), spouse: a("spouse"), so: a("so"), one2: a("one", 2), family: a("family") };
     return yap(
       "S01",
       k,
@@ -89,8 +89,8 @@ const P: Record<string, () => Plan> = {
       k,
       [
         [0, "ABD haritası, küçük kamyonlar", false, "yer:harita"],
-        [k.maybe1 - 0.1, "kamera tek sokağa, tek eve iner: kapıda kutu"],
-        [k.maybe2 - 0.1, "kapıdan çıkan kutular, içeri giren genç siluet"],
+        [k.maybe1 - 0.1, "kamera tek sokağa, tek eve iner: kapıda kutu", false, "yer:ev"],
+        [k.maybe2 - 0.1, "kapıdan çıkan kutular, içeri giren genç siluet", false, "yer:ev"],
         [k.so - 0.1, "Leo kamyon kapısında", true, "leo:kapi"],
         [k.which - 0.1, "soru işaretli kutu BIGGEST LEAK = ?", false, "soruKutu"],
       ],
@@ -154,7 +154,7 @@ const P: Record<string, () => Plan> = {
       "S05",
       k,
       [
-        [0, "harita → kamera tek eve iner", false, "yer:harita"],
+        [0, "harita → kamera tek eve iner", false, "yer:ev"],
         [k.to - 0.1, "kapıda 4 siluet + kamyon (sağ alt boş)", false, "aileKapi"],
       ],
       [abone("S05", 1, "sağ alt boş; aile + kamyon sol-orta")],

@@ -47,6 +47,6 @@ for s in KESIK:
         im.crop(bb).save(OUT / f"{s[2]}.png"); print(s[2], "gerçek kesik", g.name, im.crop(bb).size)
     else:
         print(*kes(*s))
-for src, ad in (("M08", "M08"), ("M09", "M09")):
+for src, ad in [(m, m) for m in ("M08", "M10", "M11", "M12", "M14", "M15", "M18", "M19")]:  # M09 RED → M19
     Image.open(HAM / f"{src}.png").convert("RGB").save(OUT / f"{ad}.jpg", quality=90)
     print(ad, "jpg")

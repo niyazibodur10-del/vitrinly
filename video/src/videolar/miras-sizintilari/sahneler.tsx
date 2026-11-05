@@ -63,7 +63,7 @@ const LeoCekim: React.FC<{ id?: string; cues?: Cue[]; t0: number; tip: string; a
   const p = D ? (yakin ? { x: 540, y: 760, s: 0.98 } : { x: 540, y: 860, s: 0.74 }) : yakin ? { x: 960, y: 420, s: 0.95 } : { x: 640, y: 470, s: 0.62 };
   return (
     <AbsoluteFill>
-      <PlakaArka t0={t0} ad={kasa ? "M09" : "M08"} bulanik={yakin ? 5 : kasa ? 2 : 0} odakX={0.5} />
+      <PlakaArka t0={t0} ad={kasa ? "M19" : D ? "M18" : "M08"} bulanik={yakin ? 5 : kasa ? 2 : 0} odakX={0.5} dikeyPlaka={D && !kasa} />
       {tip === "kapi" ? <Kesik ad="ham-kamyon-yan" x={D ? 760 : 1420} alt={D ? 560 : 70} w={D ? 760 : 900} /> : null}
       <Leo id={id} cues={cues} x={p.x} y={p.y} s={p.s} pozlar={[[0, "a"]]} tohum={Math.round(t0 * 7) + 3} />
       {YER_TUTUCU_RIG ? (

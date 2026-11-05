@@ -1,6 +1,6 @@
 import React from "react";
 import { AbsoluteFill, Img, interpolate, random, useVideoConfig } from "remotion";
-import { CL, EIO, EOUT, EPOP, f, RENK, useT } from "./kit";
+import { CL, EIO, EOUT, EPOP, f, Kamera, KameraKare, RENK, useT } from "./kit";
 import { anton, fredoka } from "./ortak";
 import { DURAK, G, KAYNAK } from "./veri-grafik";
 
@@ -49,15 +49,16 @@ export const Zemin: React.FC<{ t0: number; children: React.ReactNode; renk?: str
 };
 
 // ---------- Canva plakası: kaplama + yavaş itme/kayma (donma önleme); 9:16'da orta şerit ----------
-export const PlakaArka: React.FC<{ t0: number; ad: string; odakX?: number; bulanik?: number; s0?: number; kay?: number }> = ({ t0, ad, odakX = 0.5, bulanik = 0, s0 = 1.04, kay = 5 }) => {
+export const PlakaArka: React.FC<{ t0: number; ad: string; odakX?: number; bulanik?: number; s0?: number; kay?: number; filtre?: string; dikeyPlaka?: boolean }> = ({ t0, ad, odakX = 0.5, bulanik = 0, s0 = 1.04, kay = 5, filtre, dikeyPlaka }) => {
   const t = useT();
   const D = useDikey();
   const s = s0 + 0.0035 * Math.max(0, t - t0);
-  const W = D ? 1920 * (1920 / 1080) : 1920, H = D ? 1920 : 1080;
-  const sol = D ? 540 - W * odakX : 0;
+  const W = dikeyPlaka ? 1080 : D ? 1920 * (1920 / 1080) : 1920, H = D ? 1920 : 1080;
+  const sol = D && !dikeyPlaka ? 540 - W * odakX : 0;
+  const fl = [bulanik ? `blur(${bulanik}px) brightness(0.85)` : "", filtre ?? ""].join(" ").trim();
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#0c1424" }}>
-      <Img src={f(`${ad}.jpg`)} style={{ position: "absolute", left: sol - (t - t0) * kay, top: 0, width: W + 60, height: H, objectFit: "cover", scale: String(s), filter: bulanik ? `blur(${bulanik}px) brightness(0.85)` : undefined }} />
+      <Img src={f(`${ad}.jpg`)} style={{ position: "absolute", left: sol - (t - t0) * kay, top: 0, width: W + 60, height: H, objectFit: "cover", scale: String(s), filter: fl || undefined }} />
     </AbsoluteFill>
   );
 };
@@ -66,15 +67,27 @@ export const Kesik: React.FC<{ ad: string; x: number; alt: number; w: number; do
 );
 
 // ---------- Yer tutucu plaka (Canva sahne illüstrasyonu gelene kadar) ----------
+// Canva plaka eşlemesi (05-gorsel/sahne-listesi.md; M09 RED → M19). Anahtar = zaman.ts "yer:<ad>".
+export const PLAKA: Record<string, { ad: string; filtre?: string; odakX?: number; dikey?: string }> = {
+  harita: { ad: "M08", dikey: "M18" }, yol: { ad: "M08", dikey: "M18" }, viraj: { ad: "M08", dikey: "M18" }, konvoy: { ad: "M08", dikey: "M18" },
+  ev: { ad: "M11", odakX: 0.52 }, karsiKaldirim: { ad: "M11", odakX: 0.52 }, park: { ad: "M11", odakX: 0.52 }, cekisme: { ad: "M11", odakX: 0.52 },
+  anahtar: { ad: "M11", odakX: 0.52 }, varis: { ad: "M11", odakX: 0.52 }, evIci: { ad: "M11", odakX: 0.52 },
+  sepya: { ad: "M11", filtre: "sepia(0.85) brightness(0.9)", odakX: 0.52 }, mahalle: { ad: "M11", filtre: "brightness(0.7)", odakX: 0.52 },
+  huzurevi: { ad: "M14" }, okul: { ad: "M15", odakX: 0.5 }, kutuIci: { ad: "M19" }, kasa: { ad: "M19" },
+};
 export const YerTutucu: React.FC<{ t0: number; ad: string; plaka?: string }> = ({ t0, ad, plaka }) => {
   const D = useDikey();
-  const kasa = /kasa|kutuIci|varis/.test(plaka ?? "") || /kamyonun içi|kasa/.test(ad);
+  const p = plaka ? PLAKA[plaka] : undefined;
+  const kasa = !p && /kamyonun içi|kasa/.test(ad);
+  const plk = p ? (D && p.dikey ? p.dikey : p.ad) : kasa ? "M19" : D ? "M18" : "M08";
   return (
     <AbsoluteFill>
-      <PlakaArka t0={t0} ad={kasa ? "M09" : "M08"} bulanik={2} />
-      <div style={{ position: "absolute", left: 40, top: 36, right: 40, padding: "8px 16px", border: "3px dashed rgba(255,255,255,0.35)", borderRadius: 12, ...yaz(D ? 28 : 24, "rgba(255,255,255,0.85)", "fredoka"), WebkitTextStroke: "0px", background: "rgba(0,0,0,0.3)" }}>
-        YER TUTUCU{plaka ? ` · ${plaka}` : ""} — {ad}
-      </div>
+      <PlakaArka t0={t0} ad={plk} filtre={p?.filtre} odakX={D && plk === "M18" ? undefined : p?.odakX} dikeyPlaka={D && plk === "M18"} />
+      {!p && !kasa ? (
+        <div style={{ position: "absolute", left: 40, top: 36, padding: "6px 14px", border: "3px dashed rgba(255,255,255,0.35)", borderRadius: 12, ...yaz(D ? 26 : 22, "rgba(255,255,255,0.85)", "fredoka"), WebkitTextStroke: "0px", background: "rgba(0,0,0,0.3)" }}>
+          YER TUTUCU{plaka ? ` · ${plaka}` : ""} — {ad}
+        </div>
+      ) : null}
     </AbsoluteFill>
   );
 };
@@ -135,7 +148,7 @@ export const Kutu: React.FC<{ tur: KutuTur; x: number; y: number; w?: number; ca
 
 // Kutu dizisi: kayipOnce = önceki sahnelerde kaybolan kutu sayısı (KAYIP sırası); yeni kayıp(lar) capraz anında çizilir.
 // gizle: kayıplar gösterilmez (kamyonda kalanlar). giris: kutuların sırayla yerine oturma anları (yükleme).
-export const KutuDizisi: React.FC<{ t0: number; kayipOnce?: number; yeni?: { n: number; an: number }; gizle?: boolean; giris?: number[]; yalniz?: number; cx?: number; cy?: number; w?: number }> = ({
+export const KutuDizisi: React.FC<{ t0: number; kayipOnce?: number; yeni?: { n: number; an: number }; gizle?: boolean; giris?: number[]; yalniz?: number; cx?: number; cy?: number; w?: number; kolonZorla?: number }> = ({
   t0,
   kayipOnce = 0,
   yeni,
@@ -145,6 +158,7 @@ export const KutuDizisi: React.FC<{ t0: number; kayipOnce?: number; yeni?: { n: 
   cx,
   cy,
   w,
+  kolonZorla,
 }) => {
   const t = useT();
   const D = useDikey();
@@ -156,7 +170,7 @@ export const KutuDizisi: React.FC<{ t0: number; kayipOnce?: number; yeni?: { n: 
   KAYIP.slice(0, kayipOnce).forEach((k) => kayipSet.set(k.i, { etiket: k.etiket, an: -10 }));
   if (yeni) KAYIP.slice(kayipOnce, kayipOnce + yeni.n).forEach((k, j) => kayipSet.set(k.i, { etiket: k.etiket, an: yeni.an + j * 0.35 }));
   const liste = OKAFOR.map((tur, i) => ({ tur, i })).filter((b) => !(gizle && kayipSet.has(b.i)));
-  const kolon = liste.length <= 6 ? 3 : kolonTam;
+  const kolon = kolonZorla ?? (liste.length <= 6 ? 3 : kolonTam);
   return (
     <>
       {liste.map((b, j) => {
@@ -283,45 +297,44 @@ export const EsTabela: React.FC<{ t0: number; varyant: "s01" | "s13"; ikinci?: n
 };
 
 // ---------- S01 hook: M08 yol + M01 kamyon (arka açık) içinde dev kutu $124T → damla → $18T dilimi → 10 kutu ----------
-export const DevKutu: React.FC<{ t0: number; k: Record<string, number> }> = ({ t0, k }) => {
+export const DevKutu: React.FC<{ t0: number; k: Record<string, number> }> = ({ k }) => {
   const t = useT();
   const D = useDikey();
   const bol = ka(k, "one2", 99) + 0.15;
   const pb = interpolate(t, [bol, bol + 0.45], [0, 1], { ...CL, easing: EOUT });
   const charity = ka(k, "charity", 99);
-  // kamyon kesiği 548x478; iç boşluk ≈ x %22–78, y %6–62
-  const KW = D ? 960 : 1000, KH = (KW * 478) / 548;
-  const kx = (D ? 540 : 960) - KW / 2, ky = (D ? 1500 : 1050) - KH;
-  const ix0 = kx + KW * 0.22, ix1 = kx + KW * 0.78, iy0 = ky + KH * 0.06, iy1 = ky + KH * 0.62;
-  const W = (ix1 - ix0) * 0.9, H = (iy1 - iy0) * 0.86;
-  const cx = (ix0 + ix1) / 2;
-  const itme = 1.06 + 0.012 * t + 0.05 * interpolate(t, [bol - 0.2, bol + 0.6], [0, 1], { ...CL, easing: EIO });
+  // M10 plakasında kasa açıklığı: x 420–775, y 345–660 (taban 655)
+  const cx = 597, taban = 652, W = 300, H = 250;
+  const S = sahneSure(k);
+  const kam: KameraKare[] = D
+    ? [[0, 600, 520, 1.82], [S, 600, 520, 2.15]]
+    : [[0, 900, 560, 1.0], [Math.min(S, bol + 0.2), 700, 520, 1.32], [S, 680, 520, 1.38]];
   return (
-    <AbsoluteFill style={{ overflow: "hidden" }}>
-      <PlakaArka t0={t0} ad="M08" s0={1.02} kay={3} />
-      <AbsoluteFill style={{ scale: String(itme), transformOrigin: `${cx}px ${iy1}px` }}>
-        <Img src={f("ham-kamyon-arka.png")} style={{ position: "absolute", left: kx, top: ky, width: KW, height: KH }} />
+    <AbsoluteFill style={{ overflow: "hidden", background: "#050812" }}>
+      <Kamera kareler={kam} ekranW={D ? 1080 : 1920} ekranH={D ? 1920 : 1080}>
+        <Img src={f("M10.jpg")} style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080 }} />
         {pb < 1 ? (
-          <div style={{ position: "absolute", left: cx - W / 2, top: iy1 - H, width: W, height: H, opacity: 1 - pb, scale: String(1 - pb * 0.2), transformOrigin: "50% 100%" }}>
-            <div style={{ position: "absolute", inset: 0, background: "#b98a52", border: "7px solid #111", borderRadius: 10 }} />
+          <div style={{ position: "absolute", left: cx - W / 2, top: taban - H, width: W, height: H, opacity: 1 - pb, scale: String(1 - pb * 0.2), transformOrigin: "50% 100%" }}>
+            <div style={{ position: "absolute", inset: 0, background: "#b98a52", border: "6px solid #111", borderRadius: 8 }} />
             <div style={{ position: "absolute", left: "44%", top: 0, width: "12%", height: "100%", background: "rgba(240,220,170,0.6)" }} />
-            <div style={{ position: "absolute", left: 0, right: 0, top: "18%", textAlign: "center", ...yaz(D ? 130 : 150, RENK.sari) }}>${G.toplam}T</div>
-            <div style={{ position: "absolute", left: 0, right: 0, top: "62%", textAlign: "center", ...yaz(D ? 30 : 32, "#fff", "fredoka") }}>CERULLI EST. · THROUGH 2048</div>
-            <div style={{ position: "absolute", right: -16, top: "8%", width: "16%", height: "84%", background: RENK.yesil, border: "6px solid #111", borderRadius: 8, translate: `${interpolate(t, [charity, charity + 0.5], [0, D ? 160 : 330], { ...CL, easing: EOUT })}px 0px`, opacity: t >= charity ? 1 : 0 }} />
+            <div style={{ position: "absolute", left: 0, right: 0, top: "18%", textAlign: "center", ...yaz(86, RENK.sari) }}>${G.toplam}T</div>
+            <div style={{ position: "absolute", left: 0, right: 0, top: "64%", textAlign: "center", ...yaz(19, "#fff", "fredoka") }}>CERULLI EST. · THROUGH 2048</div>
+            <div style={{ position: "absolute", right: -10, top: "8%", width: "16%", height: "84%", background: RENK.yesil, border: "5px solid #111", borderRadius: 6, translate: `${interpolate(t, [charity, charity + 0.5], [0, 230], { ...CL, easing: EOUT })}px 0px`, opacity: t >= charity ? 1 : 0 }} />
           </div>
         ) : null}
-        {t >= charity && pb < 1 ? <div style={{ position: "absolute", left: ix1 + (D ? -60 : 80), top: D ? iy0 - 120 : iy0 + 40, ...yaz(D ? 54 : 62, RENK.yesil), opacity: gir(t, charity + 0.2), whiteSpace: "nowrap" }}>${G.bagis}T → CHARITY</div> : null}
+        {t >= charity && pb < 1 ? <div style={{ position: "absolute", left: 800, top: D ? 300 : 420, ...yaz(D ? 40 : 48, RENK.yesil), opacity: gir(t, charity + 0.2), whiteSpace: "nowrap" }}>${G.bagis}T → CHARITY</div> : null}
         {Array.from({ length: 12 }, (_, i) => {
           const bas = ka(k, "damla", 1.6) + i * 0.5;
           const q = (t - bas) / 0.9;
           if (q < 0 || q > 1 || pb >= 1) return null;
-          return <div key={i} style={{ position: "absolute", left: cx - W * 0.42 + random(`d${i}`) * 50, top: iy1 - 30 + q * 300, width: 72, height: 38, background: "#7fc48a", border: "4px solid #111", borderRadius: 5, rotate: `${q * 140 + i * 30}deg`, opacity: 1 - q }} />;
+          return <div key={i} style={{ position: "absolute", left: cx - 120 + random(`d${i}`) * 40, top: taban + 4 + q * 170, width: 44, height: 22, background: "#7fc48a", border: "3px solid #111", borderRadius: 4, rotate: `${q * 140 + i * 30}deg`, opacity: 1 - q }} />;
         })}
-        {pb > 0 ? <KutuDizisi t0={bol} giris={[bol, bol + 0.1, bol + 0.2]} cx={cx} cy={iy1 - (D ? 110 : 120)} w={D ? 92 : 96} /> : null}
-      </AbsoluteFill>
+        {pb > 0 ? <KutuDizisi t0={bol} giris={[bol, bol + 0.1, bol + 0.2]} cx={cx} cy={taban - 62} w={56} kolonZorla={5} /> : null}
+      </Kamera>
     </AbsoluteFill>
   );
 };
+const sahneSure = (k: Record<string, number>) => (k.son !== undefined ? k.son : 30);
 
 // S12 bant gag'i (kutu yakın): M05 kesiğinin el + kutu kısmı (yüz kadraj dışı → anlatım sürerken ağız görünmez) + iki köşeden damla + 2. bant
 export const BantEl: React.FC<{ t0: number; k: Record<string, number> }> = ({ t0, k }) => {
@@ -333,7 +346,7 @@ export const BantEl: React.FC<{ t0: number; k: Record<string, number> }> = ({ t0
   const bant = interpolate(t, [b, b + 0.4], [0, 1], { ...CL, easing: EOUT });
   return (
     <AbsoluteFill style={{ overflow: "hidden" }}>
-      <PlakaArka t0={t0} ad="M09" bulanik={3} />
+      <PlakaArka t0={t0} ad="M19" bulanik={3} />
       <AbsoluteFill style={{ scale: String(it) }}>
         <Kesik ad="ham-leo-bant" x={D ? 540 : 960} alt={D ? 300 : -360} w={w} kirp="inset(33% 0 0 0)" />
         {Array.from({ length: 7 }, (_, i) => {
@@ -466,20 +479,20 @@ export const Fatura: React.FC<{ t0: number; k: Record<string, number> }> = ({ t0
 export const Kapilar: React.FC<{ t0: number; k: Record<string, number> }> = ({ t0, k }) => {
   const t = useT();
   const D = useDikey();
-  const kapi = (x: number, y: number, ad: string, levha: string, an: number, renk: string) => (
-    <div style={{ position: "absolute", left: x, top: y, width: D ? 800 : 620, opacity: gir(t, an), scale: String(0.85 + 0.15 * gir(t, an)) }}>
-      <div style={{ height: D ? 360 : 440, background: renk, border: "8px solid #111", borderRadius: "16px 16px 0 0", display: "flex", alignItems: "flex-start", justifyContent: "center", paddingTop: 30 }}>
-        <div style={{ ...yaz(D ? 76 : 70) }}>{ad}</div>
-      </div>
-      <div style={{ marginTop: 20, padding: "16px 20px", background: "#f4f1ea", border: "6px solid #111", borderRadius: 12, ...yaz(D ? 38 : 36, "#111", "fredoka"), WebkitTextStroke: "0px" }}>{levha}</div>
+  const aD = ka(k, "and", t0 + 1);
+  const levha = (x: number, ad: string, alt: string, an: number) => (
+    <div style={{ position: "absolute", left: D ? 540 - 400 : x - 290, top: D ? (ad === "MEDICARE" ? 240 : 1180) : 120, width: D ? 800 : 580, opacity: gir(t, an), scale: String(0.85 + 0.15 * gir(t, an)) }}>
+      <div style={{ padding: "10px 0", textAlign: "center", background: ad === "MEDICARE" ? "#35507e" : "#5a3f7a", border: "6px solid #111", borderRadius: 12, ...yaz(D ? 70 : 64) }}>{ad}</div>
+      <div style={{ marginTop: 14, padding: "14px 18px", background: "#f4f1ea", border: "5px solid #111", borderRadius: 12, ...yaz(D ? 36 : 32, "#111", "fredoka"), WebkitTextStroke: "0px" }}>{alt}</div>
     </div>
   );
   return (
-    <Zemin t0={t0}>
-      {kapi(D ? 140 : 200, D ? 220 : 120, "MEDICARE", "LONG-TERM CUSTODIAL CARE: GENERALLY NOT COVERED", t0, "#35507e")}
-      {kapi(D ? 140 : 1100, D ? 980 : 120, "MEDICAID", "STATES MUST TRY TO RECOVER COSTS FROM THE ESTATE", ka(k, "and", t0 + 1), "#5a3f7a")}
-      <div style={{ position: "absolute", left: D ? 600 : 1500, top: D ? 1720 : 880, padding: "8px 18px", background: "#f2c230", border: "5px solid #111", rotate: "-8deg", ...yaz(40, "#111"), WebkitTextStroke: "0px", opacity: gir(t, ka(k, "states", t0 + 2)) }}>ESTATE RECOVERY (AGE 55+)</div>
-    </Zemin>
+    <AbsoluteFill>
+      <PlakaArka t0={t0} ad="M14" odakX={ka(k, "and", 99) <= t ? 0.66 : 0.33} />
+      {levha(636, "MEDICARE", "LONG-TERM CUSTODIAL CARE: GENERALLY NOT COVERED", t0)}
+      {levha(1260, "MEDICAID", "STATES MUST TRY TO RECOVER COSTS FROM THE ESTATE", aD)}
+      <div style={{ position: "absolute", left: D ? 560 : 1180, top: D ? 1700 : 860, padding: "8px 18px", background: "#f2c230", border: "5px solid #111", rotate: "-8deg", ...yaz(40, "#111"), WebkitTextStroke: "0px", opacity: gir(t, ka(k, "states", t0 + 2)) }}>ESTATE RECOVERY (AGE 55+)</div>
+    </AbsoluteFill>
   );
 };
 
@@ -607,22 +620,24 @@ export const UkKart: React.FC<{ t0: number; k: Record<string, number> }> = ({ t0
   );
 };
 
-// Gişe TAX (gölgeli) → bariyer kalkar
+// Gişe TAX: M12 plakası (boş üst tabela x 552–1258, y 240–394) → "TAX"; ürkütücü: koyu + şimşek; açık: yeşil ışık, kamera geçer
 export const Gise: React.FC<{ t0: number; k: Record<string, number>; acik?: boolean }> = ({ t0, k, acik }) => {
   const t = useT();
   const D = useDikey();
-  const a = acik ? ka(k, "the2", t0 + 0.5) + 0.3 : 99;
-  const kalk = interpolate(t, [a, a + 0.6], [0, -78], { ...CL, easing: EOUT });
   const flas = !acik && t < ka(k, "so", 2) ? Math.max(0, Math.sin(t * 9) * interpolate(t, [0, 0.4, 0.8], [0, 1, 0], CL)) : 0;
-  const cx = D ? 540 : 960, by = D ? 1300 : 800;
+  const a = acik ? ka(k, "the2", t0 + 0.5) : 99;
+  const gec = interpolate(t, [a, a + 2.5], [0, 1], { ...CL, easing: EIO });
+  const kam: KameraKare[] = D ? [[t0, 905, 480, 1.8 + 0.25 * gec], [t0 + 8, 905, 480, 1.85 + 0.25 * gec]] : [[t0, 905, 520, 1.0 + 0.35 * gec], [t0 + 8, 905, 520, 1.04 + 0.35 * gec]];
   return (
-    <Zemin t0={t0} renk={acik ? RENK.yuzey : "#090c14"}>
-      <div style={{ position: "absolute", left: cx - 260, top: by - 520, width: 520, height: 520, background: "#2b2f3d", border: "8px solid #111", borderRadius: "20px 20px 0 0" }}>
-        <div style={{ margin: "30px auto", width: 380, padding: "10px 0", textAlign: "center", background: acik ? "#c8cfdb" : "#5b616f", border: "6px solid #111", borderRadius: 12, ...yaz(120, acik ? "#111" : RENK.kirmizi), WebkitTextStroke: "0px" }}>TAX</div>
-      </div>
-      <div style={{ position: "absolute", left: cx + 260, top: by - 160, width: D ? 260 : 620, height: 34, background: "repeating-linear-gradient(90deg, #e05a4f 0 60px, #f4f1ea 60px 120px)", border: "5px solid #111", transformOrigin: "0% 50%", rotate: `${kalk}deg` }} />
+    <AbsoluteFill style={{ background: "#050812" }}>
+      <Kamera kareler={kam} ekranW={D ? 1080 : 1920} ekranH={D ? 1920 : 1080}>
+        <Img src={f("M12.jpg")} style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, filter: acik ? "brightness(1.08)" : "brightness(0.8)" }} />
+        <div style={{ position: "absolute", left: 560, top: 248, width: 690, height: 138, display: "flex", alignItems: "center", justifyContent: "center", ...yaz(110, acik ? "#f4f1ea" : RENK.kirmizi), WebkitTextStroke: "0px" }}>TAX</div>
+        <div style={{ position: "absolute", left: 1290, top: 300, width: 44, height: 44, borderRadius: 22, background: acik && t >= a ? "#5fd35f" : "#e05a4f", boxShadow: `0 0 40px ${acik && t >= a ? "#5fd35f" : "#e05a4f"}` }} />
+      </Kamera>
+      {acik ? <div style={{ position: "absolute", left: 0, right: 0, top: D ? 300 : 80, textAlign: "center", ...yaz(D ? 64 : 70, "#5fd35f"), opacity: gir(t, a + 0.2) }}>MOST FAMILIES DRIVE RIGHT PAST</div> : null}
       <AbsoluteFill style={{ background: `rgba(200,220,255,${flas * 0.5})` }} />
-    </Zemin>
+    </AbsoluteFill>
   );
 };
 
@@ -770,16 +785,16 @@ export const Siluet: React.FC<{ x: number; y: number; h: number; renk?: string; 
 export const AileKapi: React.FC<{ t0: number }> = ({ t0 }) => {
   const t = useT();
   const D = useDikey();
-  const cx = D ? 540 : 620, y = D ? 1250 : 860;
-  const isik = 0.85 + 0.15 * Math.sin(t * 1.3);
   return (
-    <Zemin t0={t0} renk="#0d1a2e">
-      <div style={{ position: "absolute", left: cx - 330, top: y - 640, width: 660, height: 640, background: `rgba(255,196,110,${0.75 * isik})`, border: "10px solid #3b2a1a", borderBottom: "none", boxShadow: `0 0 120px rgba(255,190,100,${0.5 * isik})` }} />
-      {[[-210, 520], [-70, 560], [70, 400], [190, 380]].map(([dx, h], i) => (
-        <Siluet key={i} x={cx + dx} y={y} h={h * 0.72 * interpolate(t, [t0 + i * 0.1, t0 + 0.3 + i * 0.1], [0.9, 1], { ...CL, easing: EPOP })} />
-      ))}
+    <AbsoluteFill>
+      <PlakaArka t0={t0} ad="M11" odakX={0.52} />
+      <AbsoluteFill>
+        {[[-120, 300], [-40, 320], [45, 230], [115, 220]].map(([dx, h], i) => (
+          <Siluet key={i} x={(D ? 540 : 996) + dx * (D ? 1.6 : 1)} y={D ? 1420 : 800} h={h * (D ? 1.6 : 1) * interpolate(t, [t0 + i * 0.1, t0 + 0.3 + i * 0.1], [0.9, 1], { ...CL, easing: EPOP })} renk="#0d1018" />
+        ))}
+      </AbsoluteFill>
       <OrnekEtiket />
-    </Zemin>
+    </AbsoluteFill>
   );
 };
 
@@ -787,13 +802,13 @@ export const Solma: React.FC<{ t0: number; k: Record<string, number> }> = ({ t0,
   const t = useT();
   const D = useDikey();
   const a = ka(k, "when", t0) + 1.2;
-  const cx = D ? 540 : 960, y = D ? 1250 : 880;
+  const m = D ? 1.6 : 1;
   return (
-    <Zemin t0={t0} renk="#0d1a2e">
-      <div style={{ position: "absolute", left: cx - 300, top: y - 620, width: 600, height: 620, background: "rgba(255,196,110,0.75)", border: "10px solid #3b2a1a", borderBottom: "none", boxShadow: "0 0 140px rgba(255,190,100,0.55)" }} />
-      <Siluet x={cx - 120} y={y} h={400} opak={interpolate(t, [a, a + 1.4], [1, 0], { ...CL, easing: EIO })} />
-      <Siluet x={cx + 120} y={y} h={385} />
-    </Zemin>
+    <AbsoluteFill>
+      <PlakaArka t0={t0} ad="M11" odakX={0.52} />
+      <Siluet x={(D ? 540 : 996) - 60 * m} y={D ? 1420 : 800} h={310 * m} renk="#0d1018" opak={interpolate(t, [a, a + 1.4], [1, 0], { ...CL, easing: EIO })} />
+      <Siluet x={(D ? 540 : 996) + 60 * m} y={D ? 1420 : 800} h={300 * m} renk="#0d1018" />
+    </AbsoluteFill>
   );
 };
 
