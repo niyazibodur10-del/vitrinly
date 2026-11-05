@@ -1,19 +1,19 @@
 # F4 görsel kol — Canva prompt paketi · S03 The Leaky Moving Truck (miras sızıntıları)
 
-**Ajan:** gorsel-varlik-sanatcisi · **Tarih:** 2026-11-04 · **Metin:** `03-metin/metin.md` v1.0 (kilit öncesi; kilitte değişen sahne yalnız fark olarak güncellenir) · **Üreten:** koordinatör (`mcp__Canva__generate-image`)
+**Ajan:** gorsel-varlik-sanatcisi · **Tarih:** 2026-11-04 · **Metin:** `03-metin/metin.md` v1.1 kilitli (sha256 22ba68b7750c) · **Üreten:** koordinatör (`mcp__Canva__generate-image`)
 **Kaynak kilit:** `assets/karakter/karakter-karti.md` düzenleme bloğu. Bu dosya `araclar/prompt-uret.py` ile kartın kod bloğundan **birebir** üretildi; elle düzenleme yapma, betiği değiştirip yeniden üret. Denetim §6.
-**Bütçe:** çekirdek 16 (M01–M16) + seçmeli 2 (M17, M18) + tekrar payı 2 → **tavan 20**. Thumbnail için ayrı Canva üretimi **0** (Leo pozları bu paketten, zeminler KOD; §2). Ek ücret yok (Niyazi'nin Canva AI hakkı).
+**Bütçe:** çekirdek 16 (M01–M16) + seçmeli 2 (M17, M18) + tekrar payı 2 (M19 = 1. kullanım) → **tavan 20**. Kullanılan: 9 (dalga 1a). Thumbnail için ayrı Canva üretimi **0** (Leo pozları bu paketten, zeminler KOD; §2). Ek ücret yok (Niyazi'nin Canva AI hakkı).
 
 ## 1. Koordinatör için çalışma sırası (kopyala-yapıştır)
 1. Her üretim: `generate-image` → `prompt` = ```prompt bloğu **aynen**; `reference_asset_ids` = "Referanslar" satırındaki id'ler **bu sırayla** (Leo'lu: 1. taban `MAHZHqW0_Uo`, 2. karakter sayfası `MAHZHpeQGdM`); referans "yok" ise referans verme; `aspect_ratio` = belirtilen değer.
-2. `<M01 media id>` = M01 kamyon sayfasının media id'si; `<M08 media id>` = M08 yolun media id'si (benim kabulümden sonra; karar `05-gorsel/rapor.md` erken karar satırında).
+2. Dalga 1a kararları `05-gorsel/rapor.md` ve `canva-ham/uretim-kaydi.md`'de: 8 KABUL, M09 RED → M19. Referans id'ler prompt'lara yazıldı (yer tutucu kalmadı).
 3. Tam çözünürlük: `tools/gorsel/canva-indir.md` (sayfa başlığı = Mxx) → `05-gorsel/canva-ham/Mxx.png` (M18: 1080x1920). Media id + tarih `canva-ham/uretim-kaydi.md`'ye.
 
 | Dalga | İşler (paralel ≤5) | Bağımlılık | Amaç |
 |---|---|---|---|
 | **1a** | **M04, M05, M06, M07, M09** → sonra **M01, M02, M03, M08** | yok (hazır id'ler) | F5 kritik yol (H4): S01 hook + S12 bant gag'i + S30 replik; thumbnail K1/K3/K4 Leo pozları |
-| 1b | M10, M11, M12, M13 | M10 ← M01 id | rakamsız, RED riski düşük setler (hook aday B, ev, gişe, gündelik nesneler) |
-| 2 | M14, M15, M16 (+ seçmeli M17, M18 ← M08 id) | metin kilidi | GÖRSEL sütununun kalanı; kilitte değişen sahneye göre fark |
+| 1b | M10, M11, M12, M13, **M19** | id'ler yazılı (M01 = MAHZ9uk7YSQ) | hook aday B, ev, gişe, gündelik nesneler + M09 düzeltmesi |
+| 2 | M14, M15, M16 (+ seçmeli M17, M18) | metin v1.1 kilitli (22ba68b7750c): plaka ihtiyacı değişmedi (fark yalnız KOD etiket/rakam/zaman) | GÖRSEL sütununun kalanı |
 
 **F5 kritik yol için en az:** M04 + M05 + M09 + M01 + M02 + M08 (S01 hook aday A ve S12 bant gag'i tam kurulur). Konuşma = mevcut rig (paket-v1 `a` + 1929 `rig/` ağız/göz yamaları); kafa sabit pozlarda yamalar aynen oturur. Banknot damlaması = KOD SVG parçacık (görselde para yok). B planı: M05/M06 kalırsa 1929 `leo/C14-kutu-gogus.png` + KOD yarık/bant.
 
@@ -179,7 +179,7 @@ No text, no letters, no numbers, no signage, no logos, no banknotes, no flags, n
 ### M10 · Gece yolu: kamyon arka kapıları açık (hook entegre plaka) · P0 (aday)
 - **Dalga:** 1b
 - **Tür:** CV-A karaktersiz plaka
-- **Referanslar:** [<M01 media id>] (yalnız kamyon tasarımı)
+- **Referanslar:** [MAHZ9uk7YSQ] (M01 kamyon sayfası; yalnız kamyon tasarımı)
 - **aspectRatio:** LANDSCAPE_16_9
 - **Kullanım:** S01 HOOK ilk 3 sn (aday B; aday A = M08 + M01 kesiği), S03 Leo kamyon kapısında, S26 varış (kapılar açılır KOD maske)
 - **Kabul:** 1680x944 (16:9); ön planda insan yok, siyah gömlekli adam yok; 1:1 + 2× kırpım incelemesinde harf/rakam/logo/tabela yazısı/banknot/bayrak yok; önemli öğe merkez %80'de; `araclar/stil-olcum.py` düzlük ≥%50, doku std ≤2,0 (S08 G01 64,1 / 0,92); Leo `a` kesiği bindirmesinde siyah gömlek arkası L ≥70 (S08: 77 geçti, 67 zayıf) ve ışık uyumu (soğuk zemin + sıcak karakter); kamyon M01 ile aynı (turuncu Lab ΔE ≤8, kapı/teker biçimi kontaktta yan yana); kasa içi boş ve sıcak (dev kutu KOD); sağ üçte bir ön plan boş (Leo M04 alt kenardan kesik); 9:16 orta şerit (x 656–1264) kasa açıklığını içerir
@@ -309,7 +309,7 @@ EDIT the first reference image. Keep EVERYTHING identical: same man, same face, 
 ### M18 · Dikey akşam yolu (Shorts 1, seçmeli) · P3 seçmeli
 - **Dalga:** 2
 - **Tür:** CV-A karaktersiz plaka (9:16)
-- **Referanslar:** [<M08 media id>]
+- **Referanslar:** [MAHZ9lpnUVY] (M08 kabul edilen yol)
 - **aspectRatio:** PORTRAIT_9_16
 - **Kullanım:** Shorts 1 'The detour': kamyon (M01 kesiği) dikeyde yan şeride döner, sarı tabela KOD. B planı: M08 orta şerit ×1,78 (yumuşak)
 - **Kabul:** 1080x1920'ye uygun dikey oran; ön planda insan yok; yazı yok; M08 ile aynı yol/palet (kontaktta yan yana); üst %15 ve alt %35 sade (Shorts arayüzü)
@@ -321,6 +321,24 @@ LIGHT AND PALETTE: same palette as the reference: cool deep-blue and teal dusk, 
 EMPTY SCENE: no people in the foreground, no main character, no man in a black shirt.
 Keep the top 15% and bottom 35% of the frame calm and simple (vertical video interface).
 No text, no letters, no numbers, no signage, no logos, no banknotes, no flags, no watermark. 9:16 portrait.
+```
+
+### M19 · Kamyon kasasının içi — M09 düzeltmesi (M01 çizim diliyle) · P0 (düzeltme 1/2)
+- **Dalga:** 1b
+- **Tür:** CV-A karaktersiz plaka
+- **Referanslar:** [MAHZ9uk7YSQ] (M01 kamyon sayfası; açık kasa içinin çizim dili)
+- **aspectRatio:** LANDSCAPE_16_9
+- **Kullanım:** M09 yerine: S12 bant gag'i (F5 kritik yol), S18 kalan 6 kutu, S20 üçüncü köşe
+- **Kabul:** 1680x944 (16:9); ön planda insan yok, siyah gömlekli adam yok; 1:1 + 2× kırpım incelemesinde harf/rakam/logo/tabela yazısı/banknot/bayrak yok; önemli öğe merkez %80'de; `araclar/stil-olcum.py` düzlük ≥%50, doku std ≤2,0 (S08 G01 64,1 / 0,92); Leo `a` kesiği bindirmesinde siyah gömlek arkası L ≥70 (S08: 77 geçti, 67 zayıf) ve ışık uyumu (soğuk zemin + sıcak karakter); kontur ≥%1,0 (M01 2,1; M09 0,06 → RED nedeni), düzlük ≥%50 (M09 41,0), doku ≤1,2 (M09 1,84); ahşap damarı yok; orta %40 genişlik boş, zemin alt kenardan taşar; kafa bölgesi x 620–1060, y 40–330 sade
+- **Not:** M09 (MAHZ9o5EtLA) RED: stil-olcum kontur 0,06 / düzlük 41,0 / doku 1,84 → resimsi, Leo'nun kalın konturuyla uyuşmuyor. Tekrar payı 1/2 kullanıldı; kalan 1.
+
+```prompt
+STYLE LOCK: clean 2D cartoon illustration, bold dark outlines, cel-shading with soft 2-tone shadows, flat colors, simplified shapes, minimal texture, NOT painterly, NOT photorealistic, consistent line weight, the look of a 2D animated TV-series background.
+SCENE: inside the empty cargo bay of the same orange moving truck as in the reference image, seen from the front of the cargo bay looking toward the open rear doors. Walls made of large flat plain plywood panels in one light tan tone with simple darker tan shadow shapes, each panel edge drawn with a bold dark outline, no wood grain, no texture; two thin grey metal rails along each wall; a single warm caged ceiling lamp near the front. The flat plywood floor runs past the bottom edge of the frame. The central 40% of the width is open and uncluttered from the floor up (a character will be composited there later). Through the open rear doors at the back: a simple cool blue dusk road and sky drawn with flat colors.
+LIGHT AND PALETTE: warm amber interior light as flat cel-shaded areas on the walls and the open centre; cool blue dusk light through the rear doors; cool background, warm centre.
+EMPTY SCENE: no people in the foreground, no main character, no man in a black shirt. Match the drawing style of the open cargo bay in the reference image: bold dark outlines, flat colors, 2-tone shading; do not copy its plain background or layout.
+Keep all important elements inside the central 80% of the frame; extend the scenery naturally to the edges (room for camera pan and zoom).
+No text, no letters, no numbers, no signage, no logos, no banknotes, no flags, no watermark. 16:9 landscape.
 ```
 
 ## 6. Denetim ve kayıt
