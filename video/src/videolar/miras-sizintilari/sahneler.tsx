@@ -1,11 +1,11 @@
 import React from "react";
-import { AbsoluteFill, interpolate, Sequence, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Easing, interpolate, Sequence, useCurrentFrame, useVideoConfig } from "remotion";
 import { Audio } from "@remotion/media";
 import { ALTYAZI, Cue, SAHNELER, SHORTS_EK } from "./veri-sahne";
 import { Doku, fredoka } from "./ortak";
 import { f, Leo } from "./kit";
 import { YER_TUTUCU_RIG } from "./rig";
-import { Kes, plan, sure } from "./zaman";
+import { Kes, Olay, plan, sure } from "./zaman";
 import {
   AileKapi, Banknot, BantEl, BantKutu, Bayrak, BuyuyenKutu, DevKutu, Dilim, EkranYazilari, EsTabela, Etiket, Fatura, Faturalar, G1, G19, G2, G3, G4, G5, G7,
   GelirVergisi, Gise, GriSac, Hayalet, Ikonlar, Kapilar, KaynakSatiri, KutuDizisi, Omur, OrnekEtiket, Pano, PanoSatir, Saat, Selale, Siluet, Sold, Solma, Soz, SoruKutu,
@@ -216,6 +216,12 @@ const Kararsiz: React.FC<{ t0: number }> = ({ t0 }) => {
   );
 };
 
+// Punch-in: kesme içindeki her "punch-in" olayı +%8 (0,25 sn, ease-out); kesmeyle sıfırlanır
+const punchlar = (olay: Olay[], t0: number, t: number) => olay.filter((o) => o.tur === "kamera" && o.olay.startsWith("punch-in") && o.t > t0 && o.t <= t + 0.001);
+const punch = (olay: Olay[], t0: number, t: number) =>
+  punchlar(olay, t0, t).reduce((a, o) => a * (1 + 0.08 * interpolate(t, [o.t, o.t + 0.25], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) })), 1);
+const punchOdak = (olay: Olay[], t0: number, t: number) => (punchlar(olay, t0, t).length % 2 ? "50% 42%" : "50% 55%");
+
 // ---------- Sahne: aktif kesmenin çekimi + ekran yazıları + R-kodlu kaynak satırı ----------
 export const Sahne: React.FC<{ id: string }> = ({ id }) => {
   const frame = useCurrentFrame();
@@ -225,7 +231,9 @@ export const Sahne: React.FC<{ id: string }> = ({ id }) => {
   for (let j = 0; j < p.kes.length; j++) if (t >= p.kes[j][0]) i = j;
   return (
     <AbsoluteFill style={{ background: "#05070f", overflow: "hidden" }}>
-      <Cekim key={i} sid={id} leoId={p.kes[i][2] ? id : undefined} kes={p.kes[i]} k={p.k} />
+      <AbsoluteFill style={{ scale: String(punch(p.olay, p.kes[i][0], t)), transformOrigin: punchOdak(p.olay, p.kes[i][0], t) }}>
+        <Cekim key={i} sid={id} leoId={p.kes[i][2] ? id : undefined} kes={p.kes[i]} k={p.k} />
+      </AbsoluteFill>
       <EkranYazilari liste={p.ekran} />
       <KaynakSatiri kayit={p.kaynak} son={sure(id)} />
     </AbsoluteFill>

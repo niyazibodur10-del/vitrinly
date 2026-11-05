@@ -286,6 +286,14 @@
   },
   {
    "sahne": "S04",
+   "t": 87.76,
+   "kare": 2633,
+   "olay": "punch-in: SPOUSE FIRST tabelasına",
+   "tur": "kamera",
+   "oneri": "kısa whoosh / tık"
+  },
+  {
+   "sahne": "S04",
    "t": 92.909,
    "kare": 2787,
    "olay": "kesme: Leo kamyonu yan şeride çevirir: DETOUR ≠ LEAK",
@@ -475,6 +483,14 @@
    "olay": "kesme: 6 durak tabelası yol boyunca",
    "tur": "kesme",
    "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S07",
+   "t": 149.42,
+   "kare": 4483,
+   "olay": "punch-in: TAX tabelasına",
+   "tur": "kamera",
+   "oneri": "kısa whoosh / tık"
   },
   {
    "sahne": "S07",
@@ -673,6 +689,22 @@
    "t": 241.299,
    "kare": 7239,
    "olay": "levha: LONG-TERM CUSTODIAL CARE: GENERALLY NOT COVERED",
+   "tur": "pop",
+   "oneri": "levha tok"
+  },
+  {
+   "sahne": "S11",
+   "t": 248.64,
+   "kare": 7459,
+   "olay": "punch-in: MEDICARE levhasına",
+   "tur": "kamera",
+   "oneri": "kısa whoosh / tık"
+  },
+  {
+   "sahne": "S11",
+   "t": 252.073,
+   "kare": 7562,
+   "olay": "MEDICAID levhası",
    "tur": "pop",
    "oneri": "levha tok"
   },
@@ -1358,6 +1390,14 @@
   },
   {
    "sahne": "S21",
+   "t": 506.879,
+   "kare": 15206,
+   "olay": "punch-in: eşik çizgisi",
+   "tur": "kamera",
+   "oneri": "kısa whoosh / tık"
+  },
+  {
+   "sahne": "S21",
    "t": 513.44,
    "kare": 15403,
    "olay": "küçük çubuk ~$410K belirir",
@@ -1379,6 +1419,14 @@
    "olay": "kesme: bariyer kalkar, kamyon geçer",
    "tur": "kesme",
    "oneri": "kısa whoosh"
+  },
+  {
+   "sahne": "S21",
+   "t": 522.9,
+   "kare": 15687,
+   "olay": "punch-in: taban: medyan çubuğu",
+   "tur": "kamera",
+   "oneri": "kısa whoosh / tık"
   },
   {
    "sahne": "S21",
@@ -1779,6 +1827,22 @@
    "olay": "boş kasa → Okafor (6) → konvoy",
    "tur": "pop",
    "oneri": "pop ×3"
+  },
+  {
+   "sahne": "S27",
+   "t": 695.526,
+   "kare": 20866,
+   "olay": "punch-in: konvoy",
+   "tur": "kamera",
+   "oneri": "kısa whoosh / tık"
+  },
+  {
+   "sahne": "S27",
+   "t": 700.26,
+   "kare": 21008,
+   "olay": "punch-in: dolu konvoy",
+   "tur": "kamera",
+   "oneri": "kısa whoosh / tık"
   },
   {
    "sahne": "S27",

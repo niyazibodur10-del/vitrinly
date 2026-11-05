@@ -37,6 +37,8 @@ export const aboneAn = (id: string) => {
   const s = sv(id);
   return s.kelimeler[s.kelimeler.length - 1].e + 0.15;
 };
+// Punch-in (kadans: >10 sn tek görsel olaysız aralık kalmasın; tam render kadans.py 2026-11-05): Sahne bunu kamera itmesi olarak çizer
+const pin = (t: number, ne: string): Olay => ({ t, olay: `punch-in: ${ne}`, tur: "kamera", oneri: "kısa whoosh / tık" });
 const abone = (id: string, n: number, not: string): Olay => ({ t: aboneAn(id), olay: `ABONE-${n} (${not})`, tur: "abone", oneri: "klik (kurgu-editoru ortak bileşeni)" });
 
 // Kesme listesinden plan: ağız aralıkları = Leo'nun konuştuğu kesmeler; her kesme ve ekran yazısı bir görsel olay
@@ -141,6 +143,7 @@ const P: Record<string, () => Plan> = {
         { t: k.about2, olay: "~$18T CHARITY (yeşil) dilimi", tur: "pop", oneri: "pop" },
         { t: k.fifty + 0.3, olay: "sarı tabela SPOUSE FIRST · ~$54T STOP", tur: "pop", oneri: "tabela tok" },
         { t: k.money + 0.2, olay: "ok çubuğa geri döner", tur: "kay", oneri: "whoosh kısa" },
+        pin(a("husband") - 0.1, "SPOUSE FIRST tabelasına"),
         { t: k.detour, olay: "pano: DETOUR ≠ LEAK", tur: "vurgu", oneri: "keçeli kalem" },
       ],
       [[k.detour, "DETOUR ≠ LEAK", undefined, "#ffd43b"]],
@@ -200,6 +203,7 @@ const P: Record<string, () => Plan> = {
       [
         { t: k.six + 0.2, olay: "pano satırları sırayla yazılır ×6", tur: "pop", oneri: "kalem tık ×6" },
         { t: k.lets + 0.3, olay: "kamyon kalkar", tur: "vurgu", oneri: "motor + korna" },
+        pin(a("scariest") - 0.1, "TAX tabelasına"),
       ],
     );
   },
@@ -269,6 +273,8 @@ const P: Record<string, () => Plan> = {
       ],
       [
         { t: k.because + 0.3, olay: "levha: LONG-TERM CUSTODIAL CARE: GENERALLY NOT COVERED", tur: "pop", oneri: "levha tok" },
+        { t: k.and, olay: "MEDICAID levhası", tur: "pop", oneri: "levha tok" },
+        pin(a("means") - 0.1, "MEDICARE levhasına"),
         { t: k.states, olay: "el ESTATE RECOVERY etiketi yapıştırır", tur: "vurgu", oneri: "etiket yapışma" },
         { t: k.about + 0.2, olay: "7'de 1 ikon kırmızı: $100K+", tur: "vurgu", oneri: "ding" },
         { t: k.label, olay: "CARE −1 kalem çizgisi", tur: "vurgu", oneri: "keçeli çizgi" },
@@ -471,6 +477,8 @@ const P: Record<string, () => Plan> = {
         { t: 0.2, olay: "gök gürültüsü", tur: "vurgu", oneri: "gök gürültüsü" },
         { t: k.so + 0.2, olay: "gürültü kesilir", tur: "vurgu", oneri: "MÜZİK KES" },
         { t: k.fifteen, olay: "eşik çizgisi iner: $15M PER PERSON", tur: "pop", oneri: "tok vuruş" },
+        pin(k.now - 0.1, "eşik çizgisi"),
+        pin(k.for - 0.1, "taban: medyan çubuğu"),
         { t: k.median, olay: "küçük çubuk ~$410K belirir", tur: "pop", oneri: "küçük tık" },
         { t: k.the, olay: "aradaki boşluk oku: DOZENS OF TIMES HIGHER", tur: "vurgu", oneri: "yükselen whoosh" },
         { t: k.the2 + 0.3, olay: "bariyer kalkar", tur: "vurgu", oneri: "bariyer + motor" },
@@ -567,7 +575,7 @@ const P: Record<string, () => Plan> = {
         [k.and - 0.1, "üç hayalet kamyon yan yana", false, "hayalet:uc"],
         [k.the - 0.1, "Leo yakın: where the boxes went", true, "leo:yakin"],
       ],
-      [{ t: k.a2, olay: "boş kasa → Okafor (6) → konvoy", tur: "pop", oneri: "pop ×3" }],
+      [{ t: k.a2, olay: "boş kasa → Okafor (6) → konvoy", tur: "pop", oneri: "pop ×3" }, pin(a("very") - 0.1, "konvoy"), pin(a("full") - 0.1, "dolu konvoy")],
       [[k.thats, "USED, NOT LOST", k.and - 0.2, "#ffd43b"]],
     );
   },
