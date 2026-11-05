@@ -1,0 +1,7 @@
+# animasyon-yonetmeni F5 — tools/yeniden-uret.sh biçimi ("<dosya> | <komut>", repo kökünde). Koordinatör ana tarife ekleyebilir.
+video/public/kmiras/anlatim.wav | cp uretim/2026-11-04-miras-sizintilari/04-ses/anlatim.wav uretim/2026-11-04-miras-sizintilari/04-ses/shorts-1-ek.wav uretim/2026-11-04-miras-sizintilari/04-ses/shorts-2-ek.wav video/public/kmiras/
+video/public/kmiras/M08.jpg | python3 -I uretim/2026-11-04-miras-sizintilari/07-animasyon/ham-kesik.py
+uretim/2026-11-04-miras-sizintilari/07-animasyon/test-10sn.mp4 | tools/render-son.sh KMirasKritik uretim/2026-11-04-miras-sizintilari/07-animasyon/test-10sn.mp4
+uretim/2026-11-04-miras-sizintilari/07-animasyon/tam-16x9.mp4 | tools/render-parca.sh KMirasTam uretim/2026-11-04-miras-sizintilari/07-animasyon/tam-16x9.mp4
+uretim/2026-11-04-miras-sizintilari/07-animasyon/dikey/D-Sh1.mp4 | tools/render-son.sh KMirasD-Sh1 uretim/2026-11-04-miras-sizintilari/07-animasyon/dikey/D-Sh1.mp4
+uretim/2026-11-04-miras-sizintilari/07-animasyon/dikey/D-Sh2.mp4 | tools/render-son.sh KMirasD-Sh2 uretim/2026-11-04-miras-sizintilari/07-animasyon/dikey/D-Sh2.mp4
