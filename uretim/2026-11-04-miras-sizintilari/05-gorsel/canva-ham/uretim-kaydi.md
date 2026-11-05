@@ -12,3 +12,14 @@ Kaynak/lisans: Canva AI `generate-image`, Niyazi'nin hesabı, Canva Kullanım Ko
 | M08 | 1 | MAHZ9lpnUVY | 2026-11-04 | canva-ham/M08.png | **KABUL** — düzlük 73,9 / doku 0,70; yazı/araç yok; sol omuz boş |
 | M09 | 1 | MAHZ9o5EtLA | 2026-11-04 | canva-ham/M09.png | **RED** — kontur 0,06 / düzlük 41,0 / doku 1,84 (resimsi ahşap) → düzeltme M19 (tekrar payı 1/2) |
 Canva üretim toplamı: 9 / tavan 20 (kabul 8, red 1).
+| M10 | MAHaCRSkQl4 | 2026-11-05 | gece kamyon (hook B) |
+| M11 | MAHaCVo5Hdo | 2026-11-05 | ev |
+| M12 | MAHaCfB9Yic | 2026-11-05 | gişe |
+| M13 | MAHaCakymlE | 2026-11-05 | gündelik nesneler |
+| M14 | MAHaCTOPzL0 | 2026-11-05 | ofis koridoru |
+| M15 | MAHaCUA6TyI | 2026-11-05 | okul |
+| M16 | MAHaCUdR480 | 2026-11-05 | kutu ev/saat/takvim/çerçeve |
+| M17 | MAHaCWhq3Yc | 2026-11-05 | Leo büyüteç |
+| M18 | MAHaCdXyPs0 | 2026-11-05 | dikey yol 1080x1920 |
+| M19 | MAHaCShECC0 | 2026-11-05 | kasa içi (M09 düzeltme) |
+Canva tuvali sayfa 52–61 = M10–M17, M19, M18. Kullanım 19/20.
