@@ -1,0 +1,36 @@
+{
+ "rakip": {
+  "K1": {
+   "en_yakin": "Damon Cassidy:i-NkhdYLn3Q",
+   "renk_farki": 96.5,
+   "dhash": 29,
+   "rakip_ortalama_renk_farki": 146.2
+  },
+  "K3": {
+   "en_yakin": "Professor Blackwood:DDxpT1bUfBU",
+   "renk_farki": 107.0,
+   "dhash": 28,
+   "rakip_ortalama_renk_farki": 144.1
+  },
+  "K4": {
+   "en_yakin": "Damon Cassidy:i-NkhdYLn3Q",
+   "renk_farki": 98.6,
+   "dhash": 27,
+   "rakip_ortalama_renk_farki": 135.2
+  }
+ },
+ "finalist_arasi": {
+  "K1-K3": {
+   "renk_farki": 175.9,
+   "dhash": 33
+  },
+  "K1-K4": {
+   "renk_farki": 123.6,
+   "dhash": 26
+  },
+  "K3-K4": {
+   "renk_farki": 135.0,
+   "dhash": 35
+  }
+ }
+}

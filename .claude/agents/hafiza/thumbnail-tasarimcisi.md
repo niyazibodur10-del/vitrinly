@@ -26,3 +26,7 @@
 ### 2026-11-04 — S03 miras F4 erken konsept (K1 WHO GETS IT? / K2 IT LEAKS / K3 SMALLER. LATER. / K4 IT KEEPS LEAKING)
 - Görsel yokken metni düz zemin + yer tutucu maketle ölç (`konsept-maket.py`, satır kırpımı psm 7): kesme işaretli kelime ("WHAT'S") 168'de OCR'ı bozuyor; Anton'da "≠" yok; beyaz yazı açık mercanda p5 2,85 → koyu tuğla (#C4402C) şart.
 - Konuya özgü rakip ızgarası (8 mqdefault) klişeyi gösterdi (ev + FOR SALE, "BOOMERS", elden ele dolar) → senaryodaki "iki el" fikri rakibe yakın çıktı, elendi. Konsepte başlamadan sorgu kümesinin ızgarasına bak.
+
+### 2026-11-05 — S03 miras F8a final (K1 WHO GETS IT? · K4 IT KEEPS LEAKING · K3 SMALLER. LATER.)
+- Bel kesitli Leo'yu sağa yasladığında 3 satır metin sol ~560 px'e sığmalı. px'i ölçerek küçültmek gerekiyor (`thumb-uret.py` K1 döngüsü); sabit 196 px ile "IT?" kadrajdan taştı. Nesne etiketi (kutu üstü $124T) süre damgası kutusuna taşabilir, ölçümü her etiket için yap.
+- Leo'nun yanındaki levha veya etiket metni psm 11'de kaçıyor, psm 7 kırpımı ise "$" ve "T" harflerinde zayıf ("1241"). İkisini birlikte raporla (thumb-test v3). Oran gösteren nesne kıyasında alan oranı = veri (kutu-hesap 6/10 → kenar √0,6).

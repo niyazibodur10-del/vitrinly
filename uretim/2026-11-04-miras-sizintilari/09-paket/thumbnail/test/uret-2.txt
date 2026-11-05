@@ -1,0 +1,4 @@
+K1: WHO GETS IT? + $124T   kelime 4  108 KB  büyük harf168 min 15.4 px  p5 min 7.06  dolgu/kontur [None, 13.03, 13.03, 13.03]  süre ihlal 0  sha 5256b742022b9db0
+K3: SMALLER. LATER.        kelime 2  111 KB  büyük harf168 min 13.5 px  p5 min 5.01  dolgu/kontur [18.81, None]  süre ihlal 0  sha 5509f04fce408bec  kutu 10→6 kenar 0.7746 (290→225 px)
+K4: IT KEEPS LEAKING       kelime 3  109 KB  büyük harf168 min 16.9 px  p5 min 4.66  dolgu/kontur [18.81, 18.81, None]  süre ihlal 0  sha 6bf2d245ba416031
+K4b: IT KEEPS LEAKING       kelime 3  109 KB  büyük harf168 min 16.9 px  p5 min 4.66  dolgu/kontur [18.81, 18.81, None]  süre ihlal 0  sha 2d41878cdcab4e05
