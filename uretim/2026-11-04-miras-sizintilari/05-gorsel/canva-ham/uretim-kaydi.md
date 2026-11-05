@@ -11,15 +11,16 @@ Kaynak/lisans: Canva AI `generate-image`, Niyazi'nin hesabı, Canva Kullanım Ko
 | M07 | 1 | MAHZ9vzNhio | 2026-11-04 | canva-ham/M07.png | **KABUL (ofsetli)** — kor. 0,87, kafa (0,4; **+4,9**) px aşağıda → rig yamaları bu pozda dy +5 → leo/M07.png |
 | M08 | 1 | MAHZ9lpnUVY | 2026-11-04 | canva-ham/M08.png | **KABUL** — düzlük 73,9 / doku 0,70; yazı/araç yok; sol omuz boş |
 | M09 | 1 | MAHZ9o5EtLA | 2026-11-04 | canva-ham/M09.png | **RED** — kontur 0,06 / düzlük 41,0 / doku 1,84 (resimsi ahşap) → düzeltme M19 (tekrar payı 1/2) |
-Canva üretim toplamı: 9 / tavan 20 (kabul 8, red 1).
-| M10 | MAHaCRSkQl4 | 2026-11-05 | gece kamyon (hook B) |
-| M11 | MAHaCVo5Hdo | 2026-11-05 | ev |
-| M12 | MAHaCfB9Yic | 2026-11-05 | gişe |
-| M13 | MAHaCakymlE | 2026-11-05 | gündelik nesneler |
-| M14 | MAHaCTOPzL0 | 2026-11-05 | ofis koridoru |
-| M15 | MAHaCUA6TyI | 2026-11-05 | okul |
-| M16 | MAHaCUdR480 | 2026-11-05 | kutu ev/saat/takvim/çerçeve |
-| M17 | MAHaCWhq3Yc | 2026-11-05 | Leo büyüteç |
-| M18 | MAHaCdXyPs0 | 2026-11-05 | dikey yol 1080x1920 |
-| M19 | MAHaCShECC0 | 2026-11-05 | kasa içi (M09 düzeltme) |
+
+| M10 | 1 | MAHaCRSkQl4 | 2026-11-05 | canva-ham/M10.png | **KABUL — S01 hook ANA** · düzlük 69,2 / doku 0,80; kamyon M01 turuncusuna ΔE 9,0 (yalnız gece parlaklığı L 59→52; a/b ≈ aynı); plaka boş; kamyon x≈230–690 → 9:16 penceresi x 156–764 |
+| M11 | 1 | MAHaCVo5Hdo | 2026-11-05 | canva-ham/M11.png | **KABUL (tolere)** · düzlük 43,3 / doku 2,16 (eşik 50 / 2,0; yaprak dokusu; boyamsı sınıf 26–38 / 2,6–5,2 değil), kontur 0,66; numara/tabela yok |
+| M12 | 1 | MAHaCfB9Yic | 2026-11-05 | canva-ham/M12.png | **KABUL** · düzlük 70,5 / doku 0,79; tabela paneli boş (3× kırpım), bariyer yazısız |
+| M13 | 1 | MAHaCakymlE | 2026-11-05 | canva-ham/M13.png | **KABUL** · 5 kesik; ilaç kutusunun lila bölmeleri zemine yakın → dikdörtgen dolgu + ΔE<12 temizlik; kum saati camı saydam |
+| M14 | 1 | MAHaCTOPzL0 | 2026-11-05 | canva-ham/M14.png | **KABUL** · düzlük 68,3 / kontur 1,42; iki levha boş (3× kırpım), amblem/bayrak yok |
+| M15 | 1 | MAHaCUA6TyI | 2026-11-05 | canva-ham/M15.png | **KABUL (tolere)** · düzlük 47,4 / doku 2,22 (yapraklar), kontur 1,52; okul adı/bayrak yok |
+| M16 | 1 | MAHaCUdR480 | 2026-11-05 | canva-ham/M16.png | **KABUL** · 4 kesik; saat kadranı rakamsız, takvim/çerçeve boş |
+| M17 | 1 | MAHaCWhq3Yc | 2026-11-05 | canva-ham/M17.png | **KABUL** · kor. 0,91, kafa (−1,9; +1,7) px, ΔE ten 1,6; M4 artık 0,0001 |
+| M18 | 1 | MAHaCdXyPs0 | 2026-11-05 | canva-ham/M18.png | **KABUL** · 1080x1920; düzlük 81,3 / doku 0,50; M08 paleti |
+| M19 | 1 | MAHaCShECC0 | 2026-11-05 | canva-ham/M19.png | **KABUL (M09 yerine)** · kontur 3,17 / düzlük 71,8 / doku 0,67; ray delikleri düzenli, harf yok (3× kırpım) |
 Canva tuvali sayfa 52–61 = M10–M17, M19, M18. Kullanım 19/20.
+**Canva üretim toplamı: 19 / tavan 20 (kabul 18, red 1: M09). Kalan 1 hak kullanılmadı.**

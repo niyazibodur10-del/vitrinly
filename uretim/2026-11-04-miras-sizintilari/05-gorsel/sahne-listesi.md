@@ -1,6 +1,6 @@
 # F4 görsel kol — sahne listesi · S03 The Leaky Moving Truck (metin v1.1 kilitli, sha256 22ba68b7750c)
 
-İLERLEME: dalga 1a değerlendirildi (8 KABUL, M09 RED → M19) · sıradaki: dalga 1b (M10–M13, M19) · zamanlar v1.0 tahmini; v1.1'de S08'den sonra +2…+13 sn kayar → kesin zaman `04-ses` hizası / `video/src/videolar/miras-sizintilari/zaman.ts`. v1.1 farkı yalnız KOD etiketleri (ESTATE/INCOME TAX, 'age 55+', 'sounds the scariest'); plaka ihtiyacı değişmedi.
+İLERLEME: tamam — 19/20 üretim, 18 KABUL (M09 RED → M19); varlıklar `video/public/kmiras/` (Mxx.jpg plakalar, n-*.png nesneler, poz-*.png Leo). Zamanlar v1.0 tahmini; kesin zaman `zaman.ts`.
 **Katman kuralı:** plaka (karaktersiz, Canva) + Leo kesiği (bel üstü, kafa sabit → rig ağız/göz yamaları) + nesne kesikleri (M4) + **KOD** (bütün yazı, rakam, grafik, harita, siluet, banknot damlaması, ışık/sis/gök gürültüsü). Görselde rakam yok → metin RED'inde görsel değişmez.
 **Okafor ailesi:** KOD düz siluet (yüzsüz) + etiketli kutu; her Okafor karesinde köşe etiketi "EXAMPLE FAMILY · ILLUSTRATION" (KOD). Ölüm soyut: siluet KOD ile solar.
 **Kutu sayımı (görsel tutarlılık):** başlangıç 4 kiremit HOUSE + 4 lacivert RETIREMENT + 2 yeşil BANK. LIVING −2 lacivert · CARE −1 yeşil (S11 'ESTATE RECOVERY' + S12 bant gag'i aynı yeşil kutu) · GIVING −1 yeşil · HOUSE dilim kiremit → S18'de 2 lacivert + 4 kiremit = 6 ✓.
@@ -9,10 +9,10 @@ Kısaltmalar: Leo `a` = konuşma rig'i (paket-v1 + 1929 `rig/`); 1929 jestleri `
 
 | Sahne | Zaman | Plaka (set) | Leo | Nesne / KOD | Canva | Dalga | Rakam | Not |
 |---|---|---|---|---|---|---|---|---|
-| **S01 HOOK** | 0:00–0:15 | **B (M10 entegre) ana aday**; **A (M08 + M01 kesiği) yedek — KOD gece renk ayarı şart** (`kontakt/S01-aday-A.jpg`) | M04 pano kaldırır (sağ ön plan, alt kenardan kesik) | M02 kutu ölçeklenip dev kutu → 10 kutuya bölünür; KOD banknot damlaması ≤3 sn; tabelalar/etiketler KOD | M01, M02, M04, M08, M10 | 1a/1b | KOD | **F5 kritik yol.** 9:16: kasa açıklığı orta şeritte |
+| **S01 HOOK** | 0:00–0:15 | **KARAR: B = M10** (16:9; 9:16 penceresi x 156–764 kamyonu içerir); A (M08 + M01 kesiği) elendi: gündüz ışıklı kamyon | M04 pano kaldırır (sağ ön plan, alt kenardan kesik) | M02 kutu ölçeklenip dev kutu → 10 kutuya bölünür; KOD banknot damlaması ≤3 sn; tabelalar/etiketler KOD | M01, M02, M04, M08, M10 | 1a/1b | KOD | **F5 kritik yol.** 9:16: kasa açıklığı orta şeritte |
 | S02 | 0:15–0:40 | KOD ABD haritası → M11 ev (zoom) | — | KOD küçük kamyon ikonları, siluetler, sorular | M11 | 1b | KOD | harita KOD (doğruluk) |
 | S03 | 0:40–0:57 | M10 (ya da M08+M01) | M04 + göz kırpma (rig); omuzda bant = M03 rulo KOD | tez yazısı kamyon yan yüzüne KOD (M01 yan görünüş) | — | — | yok | yelek YOK (kart kilidi) |
-| S04 | 0:57–1:41 | M10 kasa içi dev kutu yakın plan | M17 büyüteç (seçmeli) / B: M04 + M03 büyüteç KOD; "detour"da c-isaret | KOD G1 çubuk, sarı durak tabelası | M17 | 2 | KOD | |
+| S04 | 0:57–1:41 | M10 kasa içi dev kutu yakın plan | M17 büyüteç (`poz-M17`); "detour"da c-isaret | KOD G1 çubuk, sarı durak tabelası | M17 | 2 | KOD | |
 | S05 | 1:41–1:51 | KOD harita → M11 | — | KOD 4 siluet; ABONE-1 | — | — | yok | |
 | S06 | 1:51–2:27 | M11 (garaj yolunda M01 kesiği) | C05 kutuyla yürüme (tam boy) + M04 | M02 ×10 KOD, M03 keçeli, 'TO: THE KIDS' KOD | — | — | KOD | |
 | S07 | 2:27–2:42 | M08 | M04 pano | KOD 6 durak tabelası; M01 yan görünüş sürer | — | — | yok | |
