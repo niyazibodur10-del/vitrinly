@@ -37,8 +37,16 @@ def kes(src, kutu, ad):
     return ad, rgba.shape[1], rgba.shape[0], [int(v) for v in zemin]
 
 
+# gorsel-varlik-sanatcisi'nin gerçek kesikleri (05-gorsel/nesne, leo) varsa onlar kullanılır (bbox'a kırpılır), yoksa geçici renk anahtarı
+GERCEK = {"ham-kamyon-arka": "nesne/M01-arka-acik.png", "ham-kamyon-yan": "nesne/M01-yan.png", "ham-leo-pano": "leo/M04.png", "ham-leo-bant": "leo/M05.png", "ham-leo-rulo": "leo/M07.png"}
+GV = KOK / "uretim/2026-11-04-miras-sizintilari/05-gorsel"
 for s in KESIK:
-    print(*kes(*s))
+    g = GV / GERCEK[s[2]]
+    if g.exists():
+        im = Image.open(g).convert("RGBA"); bb = im.getchannel("A").point(lambda v: 255 if v > 40 else 0).getbbox()
+        im.crop(bb).save(OUT / f"{s[2]}.png"); print(s[2], "gerçek kesik", g.name, im.crop(bb).size)
+    else:
+        print(*kes(*s))
 for src, ad in (("M08", "M08"), ("M09", "M09")):
     Image.open(HAM / f"{src}.png").convert("RGB").save(OUT / f"{ad}.jpg", quality=90)
     print(ad, "jpg")

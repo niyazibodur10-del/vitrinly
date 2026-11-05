@@ -8,7 +8,7 @@ import { YER_TUTUCU_RIG } from "./rig";
 import { Kes, plan, sure } from "./zaman";
 import {
   AileKapi, Banknot, BantEl, BantKutu, Bayrak, BuyuyenKutu, DevKutu, Dilim, EkranYazilari, EsTabela, Etiket, Fatura, Faturalar, G1, G19, G2, G3, G4, G5, G7,
-  Gise, GriSac, Hayalet, Ikonlar, Kapilar, KaynakSatiri, KutuDizisi, Omur, OrnekEtiket, Pano, PanoSatir, Saat, Selale, Siluet, Sold, Solma, Soz, SoruKutu,
+  GelirVergisi, Gise, GriSac, Hayalet, Ikonlar, Kapilar, KaynakSatiri, KutuDizisi, Omur, OrnekEtiket, Pano, PanoSatir, Saat, Selale, Siluet, Sold, Solma, Soz, SoruKutu,
   Kesik, PlakaArka, Tabela, Tabelalar, Tez, UkKart, useDikey, YedideBir, YerTutucu, YolHaritasi, YolIsareti, Zemin, ka,
 } from "./grafik";
 
@@ -19,7 +19,7 @@ export const FPS = 30;
 export const kare = (s: number) => Math.round(s * FPS);
 export const TAM_KARE = kare(SAHNELER[SAHNELER.length - 1].bitis);
 // Ses kolu teslim edince true (public/kmiras/anlatim.wav + shorts-1-ek.wav / shorts-2-ek.wav)
-export const ANLATIM_HAZIR = false;
+export const ANLATIM_HAZIR = true;
 const sh = (id: string) => SAHNELER.find((x) => x.id === id)!;
 const SON = -10; // "önceki sahnede oldu" (statik durum)
 
@@ -48,7 +48,7 @@ const panoDurum = (sid: string, t0: number, k: Record<string, number>) => {
         />
       );
     case "S22":
-      return <Pano t0={t0} satir={[{ ...L, cizgi: ka(k, "living", t0 + 0.5) }, { ...C, cizgi: ka(k, "care", t0 + 1) }, Sp, Gv, {}, { ...d("−0", t0 + 0.2, "#2fae6a"), cizgi: ka(k, "time", t0 + 1.5) }]} alt={{ metin: "TAX: −0 (FOR THIS FAMILY)", an: t0 + 0.3 }} />;
+      return <Pano t0={t0} satir={[{ ...L, cizgi: ka(k, "living", t0 + 0.5) }, { ...C, cizgi: ka(k, "care", t0 + 1) }, Sp, Gv, {}, { ...d("−0 · SLIVER", t0 + 0.2, "#2fae6a"), cizgi: ka(k, "time", t0 + 1.5) }]} alt={{ metin: "ESTATE TAX −0 · INCOME TAX: A SLIVER", an: t0 + 0.3 }} />;
     default:
       return <Pano t0={t0} satir={[L, C, Sp, Gv]} />;
   }
@@ -162,6 +162,8 @@ export const Cekim: React.FC<{ sid: string; leoId?: string; leoCues?: Cue[]; kes
       return <Gise t0={t0} k={k} acik={param === "acik"} />;
     case "g4":
       return <G4 t0={t0} k={k} eyalet={param === "eyalet"} />;
+    case "gelirVergisi":
+      return <GelirVergisi t0={t0} k={k} />;
     case "uk":
       return <UkKart t0={t0} k={k} />;
     case "saat":
@@ -181,7 +183,7 @@ export const Cekim: React.FC<{ sid: string; leoId?: string; leoCues?: Cue[]; kes
     case "yolHaritasi":
       return <YolHaritasi t0={t0} k={k} />;
     case "soz":
-      return <Soz t0={t0} metin="A FORECAST COUNTS MONEY BEFORE IT'S LIVED ON." />;
+      return <Soz t0={t0} metin={param ?? ad} />;
     case "tez":
       return <Tez t0={t0} />;
     default:
@@ -317,8 +319,8 @@ export const DIKEY_SAHNE = ["S01", "S13", "S14", "S21", "S22"] as const;
 // (b) Shorts tam okuma (metin §5 "Okunacak tam metin", ayrı kayıt): cümle → çekim; aynı çekim art arda gelirse birleşir.
 // Veri grafiği cümlesinin başında (≤1 sn) girer; son 3,5 sn alt orta boş (Shorts ABONE, kurgu-editoru).
 const EK_CEKIM: Record<"sh1" | "sh2", string[]> = {
-  sh1: ["devKutu", "etiket", "leo:yakin", "esTabela:s01", "solma", "esTabela:s13", "leo:yakin", "pano:S14", "pano:S14", "yer:karsiKaldirim", "leo:yakin", "buyuyenKutu", "soruKutu"],
-  sh2: ["gise", "gise", "leo:yakin", "g4", "g4", "g4", "g4", "gise:acik", "soruKutu"],
+  sh1: ["devKutu", "etiket", "leo:yakin", "esTabela:s01", "esTabela:s13", "leo:yakin", "pano:S14", "pano:S14", "yer:karsiKaldirim", "leo:yakin", "buyuyenKutu", "soruKutu"],
+  sh2: ["gise", "leo:yakin", "g4", "g4", "gise:acik", "soruKutu"],
 };
 export const ekPlan = (ek: "sh1" | "sh2") => {
   const c = SHORTS_EK[ek].cumleler;
@@ -332,8 +334,8 @@ export const ekPlan = (ek: "sh1" | "sh2") => {
   });
   const k: Record<string, number> =
     ek === "sh1"
-      ? { damla: 1.6, nearly: c[5].bas + 0.8, zero: c[7].bas, when: c[4].bas - 0.6 }
-      : { so: c[2].bas, fifteen: c[3].bas + 4.3, median: c[5].bas + 4.5, the: c[6].bas, the2: c[7].bas + 0.4 };
+      ? { damla: 1.6, nearly: c[4].bas + 0.8, zero: c[6].bas }
+      : { so: c[1].bas, fifteen: c[2].bas, median: c[2].bas + 1.0, the: c[3].bas, the2: c[4].bas + 0.4 };
   return { kes, k };
 };
 export const DEk: React.FC<{ ek: "sh1" | "sh2"; altyazi?: boolean }> = ({ ek, altyazi = true }) => {
@@ -348,7 +350,7 @@ export const DEk: React.FC<{ ek: "sh1" | "sh2"; altyazi?: boolean }> = ({ ek, al
     <AbsoluteFill style={{ background: "#000" }}>
       {ANLATIM_HAZIR ? <Audio src={f(ek === "sh1" ? "shorts-1-ek.wav" : "shorts-2-ek.wav")} /> : null}
       <Cekim key={i} sid={ek} leoCues={SHORTS_EK[ek].agiz} kes={kes[i]} k={k} />
-      <KaynakSatiri kayit={ek === "sh1" ? [[0, "R01"], [c[3].bas, "R04"], [c[5].bas, "R05"]] : [[c[3].bas, "R18"], [c[5].bas, "R19"]]} son={SHORTS_EK[ek].sure} />
+      <KaynakSatiri kayit={ek === "sh1" ? [[0, "R01"], [c[3].bas, "R04"], [c[4].bas, "R05"]] : [[c[2].bas, "R18"], [c[2].bas + 1, "R19"]]} son={SHORTS_EK[ek].sure} />
       <Doku />
       {altyazi && ci >= 0 ? <EkAltyazi metin={c[ci].metin} bas={c[ci].bas} son={c[ci].son} t={t} /> : null}
     </AbsoluteFill>

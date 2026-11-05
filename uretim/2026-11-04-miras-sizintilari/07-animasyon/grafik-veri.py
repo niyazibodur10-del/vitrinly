@@ -42,7 +42,7 @@ KAYNAK = {
     "R16": "HHS/ASPE estimate (2022)", "R17": "HHS/ASPE estimate · 2020 dollars", "R18": "IRS · US federal, 2026",
     "R19": "Federal Reserve SCF 2022 · 2022 dollars", "R20": "Some states have their own taxes", "R21": "Fed 2% target · own calculation",
     "R23": "Federal Reserve DFA · Q2 2026", "R24": "Federal Reserve DFA · Q2 2026", "R25": "medicare.gov · medicaid.gov",
-    "R26": "gov.uk · 2026", "ORNEK": "Example family · illustration, not an average",
+    "R26": "gov.uk · 2026", "R28": "IRS · Retirement topics – Beneficiary", "ORNEK": "Example family · illustration, not an average",
 }
 for k in KAYNAK:
     assert k == "ORNEK" or k in satir, k

@@ -268,7 +268,8 @@ export const EsTabela: React.FC<{ t0: number; varyant: "s01" | "s13"; ikinci?: n
   const alt = varyant === "s01" ? "a stop, not a loss" : `~$${G.dul}T OF IT TO WIDOWED WOMEN`;
   const q = varyant === "s13" && ikinci !== undefined ? gir(t, ikinci) : 1;
   return (
-    <Zemin t0={t0}>
+    <AbsoluteFill>
+      <PlakaArka t0={t0} ad="M08" bulanik={4} />
       <div style={{ position: "absolute", left: D ? 540 : 960, top: D ? 760 : 470, translate: "-50% -50%", opacity: p, scale: String(0.8 + 0.2 * p) }}>
         <div style={{ width: D ? 920 : 1180, padding: "40px 30px", background: "#f2c230", border: "8px solid #111", borderRadius: 24, textAlign: "center", rotate: "-2deg" }}>
           <div style={{ ...yaz(D ? 92 : 110, "#111"), WebkitTextStroke: "0px" }}>{ust}</div>
@@ -277,7 +278,7 @@ export const EsTabela: React.FC<{ t0: number; varyant: "s01" | "s13"; ikinci?: n
         <div style={{ margin: "0 auto", width: 30, height: D ? 500 : 300, background: "#9aa3b2", border: "5px solid #111" }} />
       </div>
       <div style={{ position: "absolute", left: D ? 860 : 1640, top: D ? 1180 : 760, width: 70, height: 70, borderRadius: 35, background: `rgba(255,170,40,${sinyal})`, border: "6px solid #111", boxShadow: `0 0 ${50 * sinyal}px rgba(255,170,40,0.9)` }} />
-    </Zemin>
+    </AbsoluteFill>
   );
 };
 
@@ -314,7 +315,7 @@ export const DevKutu: React.FC<{ t0: number; k: Record<string, number> }> = ({ t
           const bas = ka(k, "damla", 1.6) + i * 0.5;
           const q = (t - bas) / 0.9;
           if (q < 0 || q > 1 || pb >= 1) return null;
-          return <div key={i} style={{ position: "absolute", left: cx - W * 0.42 + random(`d${i}`) * 50, top: iy1 - 10 + q * 260, width: 46, height: 24, background: "#7fc48a", border: "3px solid #111", borderRadius: 4, rotate: `${q * 140 + i * 30}deg`, opacity: 1 - q }} />;
+          return <div key={i} style={{ position: "absolute", left: cx - W * 0.42 + random(`d${i}`) * 50, top: iy1 - 30 + q * 300, width: 72, height: 38, background: "#7fc48a", border: "4px solid #111", borderRadius: 5, rotate: `${q * 140 + i * 30}deg`, opacity: 1 - q }} />;
         })}
         {pb > 0 ? <KutuDizisi t0={bol} giris={[bol, bol + 0.1, bol + 0.2]} cx={cx} cy={iy1 - (D ? 110 : 120)} w={D ? 92 : 96} /> : null}
       </AbsoluteFill>
@@ -338,7 +339,7 @@ export const BantEl: React.FC<{ t0: number; k: Record<string, number> }> = ({ t0
         {Array.from({ length: 7 }, (_, i) => {
           const q = (t - a - i * 0.45) / 0.9;
           if (q < 0 || q > 1) return null;
-          return <div key={i} style={{ position: "absolute", left: (D ? 860 : 1330) + random(`b${i}`) * 30, top: (D ? 1500 : 980) + q * 200, width: 44, height: 22, background: "#7fc48a", border: "3px solid #111", borderRadius: 4, rotate: `${q * 160}deg`, opacity: 1 - q }} />;
+          return <div key={i} style={{ position: "absolute", left: (D ? 860 : 1330) + random(`b${i}`) * 30, top: (D ? 1500 : 940) + q * 220, width: 66, height: 34, background: "#7fc48a", border: "3px solid #111", borderRadius: 4, rotate: `${q * 160}deg`, opacity: 1 - q }} />;
         })}
         <div style={{ position: "absolute", left: D ? 560 : 1050, top: D ? 1420 : 860, height: 46, width: (D ? 420 : 520) * bant, background: "rgba(232,214,160,0.95)", border: "3px solid #8a7a4a", rotate: "-8deg" }} />
       </AbsoluteFill>
@@ -436,7 +437,7 @@ export const G2: React.FC<{ t0: number; k: Record<string, number> }> = ({ t0, k 
       })}
       <div style={{ position: "absolute", left: D ? 90 : 840, top: D ? 1530 : 330, ...yaz(D ? 120 : 150, RENK.mavi), opacity: gir(t, a56 + 0.4) }}>{G.bakimYuzde}%</div>
       <div style={{ position: "absolute", left: D ? 420 : 840, top: D ? 1560 : 520, ...yaz(D ? 50 : 60, RENK.kahve), opacity: gir(t, a22 + 0.3) }}>MORE THAN 5 YEARS: {G.bakim5yil}%</div>
-      <div style={{ position: "absolute", left: D ? 90 : 840, top: D ? 1650 : 620, ...yaz(D ? 32 : 34, RENK.ikincil, "fredoka") }}>HHS/ASPE estimate</div>
+      <div style={{ position: "absolute", left: D ? 90 : 840, top: D ? 1650 : 620, ...yaz(D ? 32 : 34, RENK.ikincil, "fredoka") }}>HHS/ASPE estimate, 2022</div>
     </Zemin>
   );
 };
@@ -477,7 +478,7 @@ export const Kapilar: React.FC<{ t0: number; k: Record<string, number> }> = ({ t
     <Zemin t0={t0}>
       {kapi(D ? 140 : 200, D ? 220 : 120, "MEDICARE", "LONG-TERM CUSTODIAL CARE: GENERALLY NOT COVERED", t0, "#35507e")}
       {kapi(D ? 140 : 1100, D ? 980 : 120, "MEDICAID", "STATES MUST TRY TO RECOVER COSTS FROM THE ESTATE", ka(k, "and", t0 + 1), "#5a3f7a")}
-      <div style={{ position: "absolute", left: D ? 600 : 1500, top: D ? 1720 : 880, padding: "8px 18px", background: "#f2c230", border: "5px solid #111", rotate: "-8deg", ...yaz(40, "#111"), WebkitTextStroke: "0px", opacity: gir(t, ka(k, "states", t0 + 2)) }}>ESTATE RECOVERY</div>
+      <div style={{ position: "absolute", left: D ? 600 : 1500, top: D ? 1720 : 880, padding: "8px 18px", background: "#f2c230", border: "5px solid #111", rotate: "-8deg", ...yaz(40, "#111"), WebkitTextStroke: "0px", opacity: gir(t, ka(k, "states", t0 + 2)) }}>ESTATE RECOVERY (AGE 55+)</div>
     </Zemin>
   );
 };
@@ -575,6 +576,22 @@ export const G4: React.FC<{ t0: number; k: Record<string, number>; eyalet?: bool
   );
 };
 
+// S21 (R28, rakamsız): emlak vergisi tek vergi değil — miras kalan bazı emeklilik hesaplarından çekim gelir vergisine tabi
+export const GelirVergisi: React.FC<{ t0: number; k: Record<string, number> }> = ({ t0, k }) => {
+  const t = useT();
+  const D = useDikey();
+  const aE = ka(k, "money", t0 + 1.5);
+  return (
+    <Zemin t0={t0}>
+      <div style={{ position: "absolute", left: 0, right: 0, top: D ? 300 : 90, textAlign: "center", ...yaz(D ? 76 : 84), opacity: gir(t, t0) }}>ESTATE TAX ≠ THE ONLY TAX</div>
+      <Kutu tur="emeklilik" x={D ? 540 : 760} y={D ? 1250 : 860} w={D ? 520 : 460} />
+      <div style={{ position: "absolute", left: D ? 200 : 1080, top: D ? 1320 : 470, width: D ? 680 : 700, padding: "26px 30px", background: "#f4f1ea", border: "7px solid #111", borderRadius: 14, rotate: "-3deg", ...yaz(D ? 50 : 54, "#111"), WebkitTextStroke: "0px", opacity: gir(t, aE), scale: String(0.7 + 0.3 * gir(t, aE)) }}>
+        SOME INHERITED RETIREMENT ACCOUNTS: TAXED AS INCOME WHEN THE KIDS TAKE IT OUT
+      </div>
+    </Zemin>
+  );
+};
+
 export const UkKart: React.FC<{ t0: number; k: Record<string, number> }> = ({ t0, k }) => {
   const t = useT();
   const D = useDikey();
@@ -657,7 +674,8 @@ export const Selale: React.FC<{ t0: number; k: Record<string, number> }> = ({ t0
   const kolon = ["LOADED", ...DURAK.map((d) => d[0]), "DELIVERED"];
   const cw = W / kolon.length;
   const an = [ka(k, "loaded", t0), ...[1, 2, 3, 4, 5, 6].map((n) => ka(k, `s${n}`, t0 + n)), ka(k, "delivered", t0 + 7)];
-  const dilim = 0.35; // görsel "slice" (rakamsız; kutu-hesap.py: HOUSE +0 → dilim)
+  const dilim = 0.35, serit = 0.15; // görsel "slice" / "sliver" (rakamsız; kutu-hesap.py HOUSE +0, R28 gelir vergisi)
+  const aGelir = ka(k, "income", t0 + 7);
   let kalan = 10;
   const cubuk: React.ReactNode[] = [];
   kolon.forEach((ad, i) => {
@@ -667,9 +685,9 @@ export const Selale: React.FC<{ t0: number; k: Record<string, number> }> = ({ t0
       <div key={`e${i}`} style={{ position: "absolute", left: x - 10, width: w + 20, top: y, textAlign: "center", ...yaz(D ? 30 : 38, renk), opacity: p }}>{metin}</div>
     );
     if (i === 0 || i === kolon.length - 1) {
-      const h = (i === 0 ? 10 : kalan - dilim) * U;
+      const h = (i === 0 ? 10 : kalan - dilim - serit) * U;
       cubuk.push(<div key={i} style={{ position: "absolute", left: x, width: w, top: taban - h * p, height: h * p, background: i === 0 ? "#b98a52" : RENK.mavi, border: "4px solid #111", borderRadius: "8px 8px 0 0" }} />);
-      cubuk.push(etiket(i === 0 ? "10" : "6 − SLICE", taban - h - 54, RENK.murekkep));
+      cubuk.push(etiket(i === 0 ? "10" : "6 − SLICE − SLIVER", taban - h - 54, RENK.murekkep));
       if (i > 0) cubuk.push(etiket("LATER", taban - h - 100, RENK.sari));
     } else {
       const d = DURAK[i - 1][1];
@@ -678,7 +696,12 @@ export const Selale: React.FC<{ t0: number; k: Record<string, number> }> = ({ t0
       kalan += d;
       if (h > 0) cubuk.push(<div key={i} style={{ position: "absolute", left: x, width: w, top: taban - ust * U, height: h * U * p, background: ad === "HOUSE" ? `repeating-linear-gradient(45deg, ${KUTU_RENK.ev} 0 8px, #7a2e20 8px 16px)` : RENK.kahve, border: "4px solid #111" }} />);
       else cubuk.push(<div key={i} style={{ position: "absolute", left: x, width: w, top: taban - ust * U - 4, height: 8, background: RENK.ikincil, opacity: p }} />);
-      const metin = ad === "HOUSE" ? "− SLICE" : d === 0 ? "0" : `${d}`;
+      if (ad.startsWith("TAX")) {
+        const pg = interpolate(t, [aGelir, aGelir + 0.4], [0, 1], { ...CL, easing: EOUT });
+        cubuk.push(<div key="sl" style={{ position: "absolute", left: x, width: w, top: taban - (ust - dilim) * U, height: serit * U * pg, background: `repeating-linear-gradient(45deg, ${KUTU_RENK.emeklilik} 0 6px, #16284a 6px 12px)`, border: "3px solid #111" }} />);
+        cubuk.push(<div key="slm" style={{ position: "absolute", left: x - 30, width: w + 60, top: taban - ust * U - 110, textAlign: "center", ...yaz(D ? 24 : 28, RENK.mavi, "fredoka"), opacity: pg }}>INCOME TAX: SLIVER</div>);
+      }
+      const metin = ad === "HOUSE" ? "− SLICE" : ad.startsWith("TAX") ? "ESTATE 0" : d === 0 ? "0" : `${d}`;
       cubuk.push(etiket(metin, taban - ust * U - 54, d === 0 && ad !== "HOUSE" ? RENK.ikincil : RENK.kahve));
       if (ad === "SPOUSE") cubuk.push(<KumSaati key="ks" an={an[i] + 0.2} x={x + w / 2 - (D ? 60 : 30)} y={taban - ust * U - 250} />);
     }

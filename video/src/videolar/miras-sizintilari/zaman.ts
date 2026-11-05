@@ -206,7 +206,7 @@ const P: Record<string, () => Plan> = {
   // ---------- Bölüm 3 — Living and Care ----------
   S08: () => {
     const a = an("S08");
-    const k = { stop: a("stop"), in: a("in"), about: a("about"), thats: a("that's", 1), and2: a("and", 2), so: a("so"), label: a("label"), is: a("is", 2), but: a("but"), a2: a("forecast"), and3: a("honestly") - 0.2 };
+    const k = { stop: a("stop"), in: a("in"), about: a("about"), thats: a("that's", 1), and2: a("and", 2), so: a("so"), label: a("label"), is: a("is", 2), but: a("but"), a2: a("headline"), and3: a("honestly") - 0.2 };
     return yap(
       "S08",
       k,
@@ -216,7 +216,7 @@ const P: Record<string, () => Plan> = {
         [k.thats - 0.1, "iki lacivert kutu açılır: market, fatura, tren bileti", false, "yer:kutuIci"],
         [k.so - 0.1, "kutular: 2 kutuya SPENT ON LIVING damgası", false, "kutular:0"],
         [k.is - 0.1, "Leo: is that a leak?", true, "leo:yakin"],
-        [k.a2 - 0.1, "ekran: A FORECAST COUNTS MONEY BEFORE IT'S LIVED ON", false, "soz"],
+        [k.a2 - 0.1, "ekran: ONE COUNTRY-WIDE TOTAL ≠ ONE FAMILY'S BOXES (D-1)", false, "soz:ONE COUNTRY-WIDE TOTAL ≠ ONE FAMILY'S BOXES"],
         [k.and3, "Leo gülümser", true, "leo:kapi"],
       ],
       [
@@ -302,7 +302,7 @@ const P: Record<string, () => Plan> = {
   // ---------- Bölüm 4 — The Detour and the Gift ----------
   S13: () => {
     const a = an("S13");
-    const k = { when: a("when"), it: a("turns") - 0.2, cerulli: a("cerulli"), nearly: a("nearly"), for: a("for", 1), but: a("but") };
+    const k = { when: a("when"), it: a("turns") - 0.2, cerulli: a("cerulli"), nearly: a("nearly"), for: a("example") - 0.3, but: a("but") };
     return yap(
       "S13",
       k,
@@ -454,7 +454,7 @@ const P: Record<string, () => Plan> = {
   // ---------- Bölüm 6 — The Leak Everyone Fears ----------
   S21: () => {
     const a = an("S21");
-    const k = { taxes: a("taxes"), so: a("so", 1), as: a("as", 1), fifteen: a("fifteen|$15M"), now: a("now"), for: a("for", 2), median: a("median"), the: a("line") - 0.3, so2: a("so", 2), the2: a("drive") - 0.6, some: a("some"), and: a("other") - 0.2, in: a("u.k.|uk") - 0.25, three: a("three") };
+    const k = { taxes: a("taxes"), so: a("so", 1), as: a("as", 1), fifteen: a("fifteen|$15M"), now: a("now"), for: a("for", 2), median: a("median"), the: a("line") - 0.3, so2: a("so", 2), the2: a("drive") - 0.6, but: a("but"), money: a("money"), income: a("income"), some: a("some", 2), and: a("other") - 0.2, in: a("u.k.|uk") - 0.25, three: a("three") };
     return yap(
       "S21",
       k,
@@ -463,6 +463,7 @@ const P: Record<string, () => Plan> = {
         [k.so - 0.1, "Leo tabelayı okur", true, "leo:yakin"],
         [k.as - 0.1, "grafik G4: eşik çizgisi $15M", false, "g4"],
         [k.so2 - 0.1, "bariyer kalkar, kamyon geçer", false, "gise:acik"],
+        [k.but - 0.1, "kart: ESTATE TAX ≠ THE ONLY TAX (R28, rakamsız)", false, "gelirVergisi"],
         [k.some - 0.1, "not: some states have their own taxes", false, "g4:eyalet"],
         [k.in - 0.1, "UK kartı £325,000", false, "uk"],
       ],
@@ -473,10 +474,11 @@ const P: Record<string, () => Plan> = {
         { t: k.median, olay: "küçük çubuk ~$410K belirir", tur: "pop", oneri: "küçük tık" },
         { t: k.the, olay: "aradaki boşluk oku: DOZENS OF TIMES HIGHER", tur: "vurgu", oneri: "yükselen whoosh" },
         { t: k.the2 + 0.3, olay: "bariyer kalkar", tur: "vurgu", oneri: "bariyer + motor" },
+        { t: k.money, olay: "emeklilik kutusu: TAXED AS INCOME etiketi", tur: "pop", oneri: "etiket tap" },
         { t: k.three, olay: "UK kartı: £325,000", tur: "pop", oneri: "pop" },
       ],
       [],
-      [[k.as, "R18"], [k.median, "R19"], [k.some, "R20"], [k.in, "R26"]],
+      [[k.as, "R18"], [k.median, "R19"], [k.but, "R28"], [k.some, "R20"], [k.in, "R26"]],
     );
   },
   S22: () => {
@@ -533,7 +535,7 @@ const P: Record<string, () => Plan> = {
   // ---------- Bölüm 7 — Arrival ----------
   S26: () => {
     const a = an("S26");
-    const k = { i: a("i", 1), loaded: a("loaded"), s1: a("stop", 1), s2: a("stop", 2), s3: a("stop", 3), s4: a("stop", 4), s5: a("stop", 5), s6: a("stop", 6), delivered: a("delivered"), split: a("split") };
+    const k = { i: a("i", 1), loaded: a("loaded"), s1: a("stop", 1), s2: a("stop", 2), s3: a("stop", 3), s4: a("stop", 4), s5: a("stop", 5), s6: a("stop", 6), income: a("income"), delivered: a("delivered"), split: a("split") };
     return yap(
       "S26",
       k,
@@ -545,7 +547,8 @@ const P: Record<string, () => Plan> = {
         { t: 0.2, olay: "kamyon kapıları açılır", tur: "vurgu", oneri: "metal kapı" },
         { t: k.loaded, olay: "LOADED: 10 sütunu", tur: "pop", oneri: "tok" },
         ...([1, 2, 3, 4, 5, 6] as const).map((n) => ({ t: k[`s${n}`], olay: `şelale adımı ${n}`, tur: "sayac", oneri: n === 3 || n === 6 ? "tık (kayıp yok)" : "inen tık" })),
-        { t: k.delivered, olay: "DELIVERED: 6 − SLICE, LATER", tur: "vurgu", oneri: "vuruş" },
+        { t: k.income, olay: "INCOME TAX: −SLIVER (ince taralı dilim)", tur: "sayac", oneri: "ince tık" },
+        { t: k.delivered, olay: "DELIVERED: 6 − SLICE − SLIVER, LATER", tur: "vurgu", oneri: "vuruş" },
         { t: k.split, olay: "ikiye bölünür: ≈3 EACH", tur: "pop", oneri: "pop ×2" },
       ],
       [],
