@@ -303,12 +303,12 @@ export const DevKutu: React.FC<{ t0: number; k: Record<string, number> }> = ({ k
   const bol = ka(k, "one2", 99) + 0.15;
   const pb = interpolate(t, [bol, bol + 0.45], [0, 1], { ...CL, easing: EOUT });
   const charity = ka(k, "charity", 99);
-  // M10 plakasında kasa açıklığı: x 420–775, y 345–660 (taban 655)
+  // M10 kasa açıklığı (piksel ölçümü: sıcak bbox x 304–880, y 320–720; açıklık x 420–775, y 345–660). Punch-in ≤1,3× (gorsel-varlik-sanatcisi)
   const cx = 597, taban = 652, W = 300, H = 250;
   const S = sahneSure(k);
   const kam: KameraKare[] = D
-    ? [[0, 600, 520, 1.82], [S, 600, 520, 2.15]]
-    : [[0, 900, 560, 1.0], [Math.min(S, bol + 0.2), 700, 520, 1.32], [S, 680, 520, 1.38]];
+    ? [[0, 592, 540, 1.78], [S, 592, 520, 1.95]]
+    : [[0, 900, 560, 1.0], [Math.min(S, bol + 0.2), 700, 520, 1.26], [S, 690, 520, 1.3]];
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#050812" }}>
       <Kamera kareler={kam} ekranW={D ? 1080 : 1920} ekranH={D ? 1920 : 1080}>
@@ -348,7 +348,7 @@ export const BantEl: React.FC<{ t0: number; k: Record<string, number> }> = ({ t0
     <AbsoluteFill style={{ overflow: "hidden" }}>
       <PlakaArka t0={t0} ad="M19" bulanik={3} />
       <AbsoluteFill style={{ scale: String(it) }}>
-        <Kesik ad="ham-leo-bant" x={D ? 540 : 960} alt={D ? 300 : -360} w={w} kirp="inset(33% 0 0 0)" />
+        <Img src={f("poz-M05.png")} style={{ position: "absolute", left: D ? 540 - (w * 1920) / 911 / 2 - 60 : 960 - (w * 1920) / 911 / 2 - 60, bottom: D ? 300 : -360, width: (w * 1920) / 911, clipPath: "inset(36% 0 0 0)" }} />
         {Array.from({ length: 7 }, (_, i) => {
           const q = (t - a - i * 0.45) / 0.9;
           if (q < 0 || q > 1) return null;
@@ -976,15 +976,35 @@ export const Saat: React.FC<{ t0: number; k: Record<string, number>; yakin?: boo
   const D = useDikey();
   const tik = Math.floor((t - ka(k, "clock", t0 + 1)) * 2);
   const aci = (Math.max(0, tik) * 6) % 360;
-  const r = (yakin ? 1.5 : 1) * (D ? 300 : 280);
+  // n-M16-yol-saati 352x881; kadran merkezi ≈ (176, 165), yarıçap ≈ 120 (kesik ölçeğinde)
+  const w = (yakin ? 1.9 : 1.15) * (D ? 1.25 : 1) * 352;
+  const sc = w / 352;
+  const x = (D ? 540 : 960) - w / 2, y = (D ? 1700 : 1060) - 881 * sc + (yakin ? 881 * sc * 0.45 : 0);
   return (
-    <Zemin t0={t0} renk="#0a0f1c">
-      <div style={{ position: "absolute", left: (D ? 540 : 960) - r, top: (D ? 900 : 540) - r, width: r * 2, height: r * 2, borderRadius: r, background: "#f4f1ea", border: "14px solid #111", boxShadow: "0 0 80px rgba(255,214,120,0.35)" }}>
-        {Array.from({ length: 12 }, (_, i) => <div key={i} style={{ position: "absolute", left: r - 6, top: 14, width: 12, height: 36, background: "#111", transformOrigin: `6px ${r - 14}px`, rotate: `${i * 30}deg` }} />)}
-        <div style={{ position: "absolute", left: r - 8, top: r * 0.25, width: 16, height: r * 0.75, background: RENK.kirmizi, transformOrigin: `8px ${r * 0.75}px`, rotate: `${aci}deg`, borderRadius: 8 }} />
-        <div style={{ position: "absolute", left: r - 10, top: r * 0.45, width: 20, height: r * 0.55, background: "#111", transformOrigin: `10px ${r * 0.55}px`, rotate: `${aci / 12 + 120}deg`, borderRadius: 10 }} />
-      </div>
-    </Zemin>
+    <AbsoluteFill>
+      <PlakaArka t0={t0} ad="M12" bulanik={yakin ? 4 : 2} filtre="brightness(0.7)" />
+      <Img src={f("n-M16-yol-saati.png")} style={{ position: "absolute", left: x, top: y, width: w }} />
+      <div style={{ position: "absolute", left: x + 176 * sc - 4 * sc, top: y + 165 * sc - 95 * sc, width: 8 * sc, height: 95 * sc, background: RENK.kirmizi, transformOrigin: `${4 * sc}px ${95 * sc}px`, rotate: `${aci}deg`, borderRadius: 4 }} />
+    </AbsoluteFill>
+  );
+};
+
+export const KutuIci: React.FC<{ t0: number }> = ({ t0 }) => {
+  const t = useT();
+  const D = useDikey();
+  const n = (ad: string, x: number, y: number, w: number, an: number, d: number) => {
+    const p = interpolate(t, [an, an + 0.45], [0, 1], { ...CL, easing: EPOP });
+    return <Img key={ad} src={f(`${ad}.png`)} style={{ position: "absolute", left: x - w / 2, top: y - p * 220, width: w, opacity: p, rotate: `${d * p + Math.sin(t * 2 + x) * 1.5}deg` }} />;
+  };
+  return (
+    <AbsoluteFill>
+      <PlakaArka t0={t0} ad="M19" bulanik={2} />
+      <Kutu tur="emeklilik" x={D ? 540 : 960} y={D ? 1500 : 1000} w={D ? 600 : 520} />
+      {n("n-M13-poset", D ? 330 : 700, D ? 1150 : 640, D ? 300 : 260, t0 + 0.2, -8)}
+      {n("n-M13-fatura", D ? 560 : 960, D ? 1100 : 600, D ? 200 : 170, t0 + 0.9, 4)}
+      {n("n-M13-bilet", D ? 780 : 1200, D ? 1150 : 640, D ? 150 : 120, t0 + 1.6, 10)}
+      <OrnekEtiket />
+    </AbsoluteFill>
   );
 };
 

@@ -9,7 +9,7 @@ import { Kes, plan, sure } from "./zaman";
 import {
   AileKapi, Banknot, BantEl, BantKutu, Bayrak, BuyuyenKutu, DevKutu, Dilim, EkranYazilari, EsTabela, Etiket, Fatura, Faturalar, G1, G19, G2, G3, G4, G5, G7,
   GelirVergisi, Gise, GriSac, Hayalet, Ikonlar, Kapilar, KaynakSatiri, KutuDizisi, Omur, OrnekEtiket, Pano, PanoSatir, Saat, Selale, Siluet, Sold, Solma, Soz, SoruKutu,
-  Kesik, PlakaArka, Tabela, Tabelalar, Tez, UkKart, useDikey, YedideBir, YerTutucu, YolHaritasi, YolIsareti, Zemin, ka,
+  Kesik, KutuIci, PlakaArka, Tabela, Tabelalar, Tez, UkKart, useDikey, YedideBir, YerTutucu, YolHaritasi, YolIsareti, Zemin, ka,
 } from "./grafik";
 
 // Sahne çatısı (animasyon-yonetmeni, 2026-11-04 iskelet): her sahne = zaman.ts kesme listesi; her kesme bir çekim anahtarı
@@ -184,6 +184,8 @@ export const Cekim: React.FC<{ sid: string; leoId?: string; leoCues?: Cue[]; kes
       return <YolHaritasi t0={t0} k={k} />;
     case "soz":
       return <Soz t0={t0} metin={param ?? ad} />;
+    case "kutuIci":
+      return <KutuIci t0={t0} />;
     case "tez":
       return <Tez t0={t0} />;
     default:

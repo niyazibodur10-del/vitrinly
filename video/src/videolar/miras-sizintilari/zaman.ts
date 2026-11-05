@@ -213,7 +213,7 @@ const P: Record<string, () => Plan> = {
       [
         [0, "durak tabelası LIVING", false, "tabela:LIVING"],
         [k.in - 0.1, "zaman şeridi AGE 65 → ~20 MORE YEARS", false, "omur"],
-        [k.thats - 0.1, "iki lacivert kutu açılır: market, fatura, tren bileti", false, "yer:kutuIci"],
+        [k.thats - 0.1, "iki lacivert kutu açılır: market, fatura, tren bileti", false, "kutuIci"],
         [k.so - 0.1, "kutular: 2 kutuya SPENT ON LIVING damgası", false, "kutular:0"],
         [k.is - 0.1, "Leo: is that a leak?", true, "leo:yakin"],
         [k.a2 - 0.1, "ekran: ONE COUNTRY-WIDE TOTAL ≠ ONE FAMILY'S BOXES (D-1)", false, "soz:ONE COUNTRY-WIDE TOTAL ≠ ONE FAMILY'S BOXES"],
