@@ -1,0 +1,41 @@
+{
+ "ses": "am_fenrir",
+ "hiz": 0.9,
+ "cumleler": [
+  {
+   "metin": "Thing one: it [borrows](/bˈɑɹOz/) in its own money.",
+   "bas": 0.0,
+   "son": 1.991
+  },
+  {
+   "metin": "Thing one: it [borrows](+2) in its own money.",
+   "bas": 2.641,
+   "son": 4.632
+  },
+  {
+   "metin": "Thing one: it borrows, in its own money.",
+   "bas": 5.282,
+   "son": 7.321
+  },
+  {
+   "metin": "I'll put them on the [fridge](/fɹˈɪʤ/) [as](/ˈæz/) A, B, and C.",
+   "bas": 7.971,
+   "son": 10.277
+  },
+  {
+   "metin": "I'll put them on the fridge [as](+2) A, B, and C.",
+   "bas": 10.927,
+   "son": 13.232
+  },
+  {
+   "metin": "Inflation makes old [debt](/dˈɛt/) smaller, because the dollars paid back [buy](/bˈI/) less than the dollars borrowed.",
+   "bas": 13.883,
+   "son": 19.833
+  },
+  {
+   "metin": "Inflation makes old [debt](+2) smaller, because the dollars paid back buy less than the dollars borrowed.",
+   "bas": 20.483,
+   "son": 26.433
+  }
+ ]
+}

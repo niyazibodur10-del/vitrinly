@@ -1,0 +1,6 @@
+fed3af698f41  hesap.py
+dcac2f79e70d  kaynaklar.json
+5a00bf2e4688  hesap-cikti.txt
+8c136c7dbe99  dfa-generation-levels.csv
+ae2d7a4c2243  dfa-generation-shares.csv
+1faa2997a00f  dfa-networth-shares.csv

@@ -1,0 +1,90 @@
+{
+  "sema": "yayin-paketi/1",
+  "_not": "S08 kitchen-table uzun video (B). paket.md'den paket-uret.py ile üretildi; elle düzenleme yok. Slot 2026-11-04T12:00:00-05:00 (EST).",
+  "tur": "uzun",
+  "dosyalar": {
+    "video": "../08-kurgu/final-16x9.mp4",
+    "altyazilar": [
+      {
+        "dosya": "../08-kurgu/final.en.srt",
+        "dil": "en",
+        "ad": "English"
+      }
+    ],
+    "thumbnail": "../09-paket/thumbnail/A1-eksi-2000.jpg"
+  },
+  "metadata": {
+    "baslik": "If America Earned $5,400 a Month, Here's Its Budget",
+    "aciklama": "The US federal budget and deficit, shrunk to one kitchen table: $5,400 a month in, about $7,400 out. Where does the $2,000 gap go?\n\nLeo, our cartoon roommate, puts every federal bill in its own envelope: Social Security, Medicare, other health programs, defense, everything else, and interest. Then he opens the interest envelope and finds another one inside: borrowed. We look at why the interest bill roughly tripled in five years, three things a country can do that a family can't, and three ways countries have closed gaps like this before. Possibilities, not a forecast.\n\nScale: $1 a month here = $1 billion a year for the US government. Budget year: FY2026 (Oct 2025–Sep 2026), Monthly Treasury Statement. Debt figures are debt held by the public.\n\nNot financial advice. For educational purposes only.\n\n{BOLUMLER}\n\nLEGAL NOTE\nThis video is for education and entertainment only and is not financial, investment, tax or legal advice. Leo is a fictional character. Budget figures: U.S. Treasury Monthly Treasury Statement, fiscal year 2026 (Oct 2025–Sep 2026); debt: Treasury Debt to the Penny, Sep 30 2026; history: OMB Historical Table 7.1; rates: FRED. Scale: $1 a month = $1 billion a year. Narration voice is AI-generated. Visuals are AI-assisted illustrations animated by our team.\n\nSOURCES\n• U.S. Treasury, Monthly Treasury Statement, FY2026 (Tables 1 and 9): https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/\n• U.S. Treasury, Debt to the Penny (debt held by the public, Sep 30, 2026): https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/\n• U.S. Treasury, Average Interest Rates on U.S. Treasury Securities: https://fiscaldata.treasury.gov/datasets/average-interest-rates-treasury-securities/\n• OMB, Historical Tables, Table 7.1 (FY2025 Budget): https://www.govinfo.gov/content/pkg/BUDGET-2025-TAB/xls/BUDGET-2025-TAB-8-1.xlsx\n• FRED, 10-Year Treasury yield (DGS10): https://fred.stlouisfed.org/series/DGS10\n• FRED, 3-Month Treasury bill (DTB3): https://fred.stlouisfed.org/series/DTB3\n• FRED, Federal debt held by the public as % of GDP (FYGFGDQ188S): https://fred.stlouisfed.org/series/FYGFGDQ188S\n• Robert J. Shiller, U.S. consumer price data (from BLS CPI): http://www.econ.yale.edu/~shiller/data.htm\nCharts in this video are our own, built from the data above.\n\nMUSIC & SOUND\nMusic (CC0, OpenGameArt.org): \"happy lofi day\" by Tarush Singhal · \"Jazz\" by spring spring · \"Deliberate Concealment\" by northivanastan · \"80s Mysterywave\" by DesertDev · \"Lofi again\" by omfgdude · \"The Way It Is\" by Zane Little Music · \"A Small Fire Will Do\" by trex0n\nSound effects (CC0): Kenney (kenney.nl), rubberduck, starninjas, spring spring, PWL; additional sound design by Toonomy.\n\nMORE FROM TOONOMY\nNew animated finance stories every week: https://www.youtube.com/@toonomy\n\n#USBudget #NationalDebt #EconomyExplained",
+    "etiketler": [
+      "us budget explained",
+      "federal budget",
+      "us federal budget 2026",
+      "national debt",
+      "national debt explained",
+      "us national debt",
+      "federal deficit",
+      "budget deficit explained",
+      "interest on the national debt",
+      "net interest",
+      "debt held by the public",
+      "debt to gdp",
+      "treasury yields",
+      "social security",
+      "medicare",
+      "defense spending",
+      "government spending",
+      "us economy explained",
+      "economics explained",
+      "finance animation",
+      "animated explainer",
+      "toonomy"
+    ],
+    "bolumler": [
+      {
+        "zaman": "00:00",
+        "baslik": "One household, $5,400 a month"
+      },
+      {
+        "zaman": "01:23",
+        "baslik": "Five envelopes"
+      },
+      {
+        "zaman": "02:56",
+        "baslik": "The loan"
+      },
+      {
+        "zaman": "04:31",
+        "baslik": "The envelope inside the envelope"
+      },
+      {
+        "zaman": "06:31",
+        "baslik": "Three things a family can't do"
+      },
+      {
+        "zaman": "08:47",
+        "baslik": "Three ways to close the gap"
+      },
+      {
+        "zaman": "10:37",
+        "baslik": "Back to the sentence"
+      }
+    ],
+    "kategori_id": "27",
+    "varsayilan_dil": "en",
+    "ses_dili": "en"
+  },
+  "durum": {
+    "gizlilik": "private",
+    "cocuklara_ozel": false,
+    "sentetik_medya": true,
+    "lisans": "youtube",
+    "gomulebilir": true,
+    "yayin_zamani": "2026-11-04T12:00:00-05:00"
+  },
+  "oynatma_listesi_id": null,
+  "onay": {
+    "niyazi_onayi": true,
+    "tarih": "2026-11-03"
+  }
+}

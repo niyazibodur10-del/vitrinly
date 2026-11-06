@@ -1,0 +1,32 @@
+{
+ "girdi": "/home/user/vitrinly/assets/karakter/paket-v1/f-sevincli.png",
+ "zemin_bgr": [
+  121,
+  87,
+  56
+ ],
+ "boyut": [
+  1920,
+  1080
+ ],
+ "M1-renk-anahtari": {
+  "kenar_artigi_orani": 0.0786,
+  "sacak_px": 99,
+  "on_plan_px": 593843
+ },
+ "M2-grabcut": {
+  "kenar_artigi_orani": 0.1626,
+  "sacak_px": 562,
+  "on_plan_px": 594951
+ },
+ "M3-grabcut-arindirma": {
+  "kenar_artigi_orani": 0.1108,
+  "sacak_px": 161,
+  "on_plan_px": 594951
+ },
+ "M4-renk-arindirma": {
+  "kenar_artigi_orani": 0.0004,
+  "sacak_px": 99,
+  "on_plan_px": 593843
+ }
+}

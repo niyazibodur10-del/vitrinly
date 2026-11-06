@@ -1,0 +1,511 @@
+{
+ "olcum_utc": "2026-11-02T04:22:24.481993+00:00",
+ "kaynak": "YouTube Data API v3 (videos, channels, commentThreads, playlistItems)",
+ "video": {
+  "id": "BVJwZ1C9R1U",
+  "baslik": "You Have $1,000 in 1929. Can You Keep It?",
+  "publishedAt": "2026-10-28T09:37:48Z",
+  "sure": "PT10M32S",
+  "durum": "public",
+  "viewCount": 203,
+  "likeCount": 1,
+  "favoriteCount": 0,
+  "commentCount": 1
+ },
+ "kanal": {
+  "viewCount": "203",
+  "subscriberCount": "3",
+  "hiddenSubscriberCount": false,
+  "videoCount": "1"
+ },
+ "yorumlar": [
+  {
+   "t": "2026-10-28T09:44:17Z",
+   "kanal_sahibi": true,
+   "yanit": 0,
+   "metin": "It's September 1929 and you can't see the future. Which door do you walk through: the stock market, the bank or the shoebox? Tell us why in one sentence.\n\nBonus: which money crisis from history do you want Leo to turn into the next game?\n\n(Sources and data notes are in the description.)"
+  }
+ ],
+ "rakip_ilk_videolar": [
+  {
+   "kanal": "Dial-Up Days",
+   "acilis": "2025-08-19",
+   "abone_2026_10_27": 86600,
+   "video_sayisi": 179,
+   "tam_liste": true,
+   "ilk_uzunlar": [
+    {
+     "id": "fzWgVWhEVG8",
+     "yayin": "2025-09-04T18:15:02Z",
+     "baslik": "90s Sitcoms That Launched HUGE Hollywood Careers",
+     "sure_sn": 736,
+     "izlenme": 2694
+    },
+    {
+     "id": "NV9ITl9NunM",
+     "yayin": "2025-09-04T18:15:02Z",
+     "baslik": "Married With Children's Wildest Behind-The-Scenes Moments Exposed",
+     "sure_sn": 526,
+     "izlenme": 8728
+    },
+    {
+     "id": "zOmWb_K_eGU",
+     "yayin": "2025-09-04T18:20:50Z",
+     "baslik": "Biggest 90s Movie Mistakes You Totally MISSED",
+     "sure_sn": 725,
+     "izlenme": 1461
+    }
+   ]
+  },
+  {
+   "kanal": "Drowsy Historian",
+   "acilis": "2025-05-14",
+   "abone_2026_10_27": 55800,
+   "video_sayisi": 335,
+   "tam_liste": true,
+   "ilk_uzunlar": [
+    {
+     "id": "p5ATzlsARaM",
+     "yayin": "2025-05-16T06:25:47Z",
+     "baslik": "Why it Sucked to Be a Roman Soldier and more",
+     "sure_sn": 7658,
+     "izlenme": 19726
+    },
+    {
+     "id": "yvVqViIGSXo",
+     "yayin": "2025-05-17T04:46:30Z",
+     "baslik": "Why You Would NEVER Survive as a Pirate",
+     "sure_sn": 7651,
+     "izlenme": 26154
+    },
+    {
+     "id": "pEYMnZtl_Ts",
+     "yayin": "2025-05-17T19:36:16Z",
+     "baslik": "Why Medieval Justice Would've DESTROYED You",
+     "sure_sn": 7657,
+     "izlenme": 6963
+    }
+   ]
+  },
+  {
+   "kanal": "Who Gets Paid",
+   "acilis": "2025-07-22",
+   "abone_2026_10_27": 1890,
+   "video_sayisi": 40,
+   "tam_liste": true,
+   "ilk_uzunlar": [
+    {
+     "id": "KNxur-g2w9M",
+     "yayin": "2026-07-27T16:17:25Z",
+     "baslik": "The Economics Of Owning A Medieval Village",
+     "sure_sn": 1189,
+     "izlenme": 35709
+    },
+    {
+     "id": "piQvuKCMjgM",
+     "yayin": "2026-07-28T14:56:40Z",
+     "baslik": "The Economics of Owning a Medieval Winery",
+     "sure_sn": 1008,
+     "izlenme": 3209
+    },
+    {
+     "id": "e2XDY72ovSk",
+     "yayin": "2026-08-04T11:30:11Z",
+     "baslik": "The Economics of Owning the Knights Templar",
+     "sure_sn": 1070,
+     "izlenme": 3014
+    }
+   ]
+  },
+  {
+   "kanal": "Money and Marker",
+   "acilis": "2026-03-01",
+   "abone_2026_10_27": 1660,
+   "video_sayisi": 29,
+   "tam_liste": true,
+   "ilk_uzunlar": [
+    {
+     "id": "DqAgzoysDY4",
+     "yayin": "2026-06-09T05:09:58Z",
+     "baslik": "The 2008 Crash Explained: It Started With Your Neighbor's Mortgage",
+     "sure_sn": 576,
+     "izlenme": 538
+    },
+    {
+     "id": "KEDTtRpvpGU",
+     "yayin": "2026-06-09T20:42:14Z",
+     "baslik": "Black Monday Explained: The Crash That Changed Markets Forever",
+     "sure_sn": 1183,
+     "izlenme": 913
+    },
+    {
+     "id": "4zM6wJ1U4Tg",
+     "yayin": "2026-06-10T12:59:22Z",
+     "baslik": "Every Billionaire's First Business Exposed | Money and Marker",
+     "sure_sn": 1194,
+     "izlenme": 316
+    }
+   ]
+  },
+  {
+   "kanal": "Financial Dynasty",
+   "acilis": "2026-01-03",
+   "abone_2026_10_27": 3420,
+   "video_sayisi": 29,
+   "tam_liste": true,
+   "ilk_uzunlar": [
+    {
+     "id": "yXzr6IbtBXo",
+     "yayin": "2026-03-29T22:30:00Z",
+     "baslik": "How Switzerland Became the World’s Financial Safe House (It Wasn’t Just Neutrality)",
+     "sure_sn": 1087,
+     "izlenme": 1496
+    },
+    {
+     "id": "YAyJWVRqMKE",
+     "yayin": "2026-04-02T13:17:01Z",
+     "baslik": "The Family That Owns Most of London (Grosvenor Family)",
+     "sure_sn": 1129,
+     "izlenme": 349107
+    },
+    {
+     "id": "We65mNmuCPE",
+     "yayin": "2026-04-09T04:04:57Z",
+     "baslik": "The Family That Controls Most of Luxury (Arnault Family – LVMH)",
+     "sure_sn": 883,
+     "izlenme": 1341
+    }
+   ]
+  },
+  {
+   "kanal": "Wealth Chronicles",
+   "acilis": "2026-06-21",
+   "abone_2026_10_27": 1080,
+   "video_sayisi": 116,
+   "tam_liste": true,
+   "ilk_uzunlar": [
+    {
+     "id": "oT4k84lkThY",
+     "yayin": "2026-06-21T10:10:34Z",
+     "baslik": "Why Most People Never Become Rich (The Harsh Truth)",
+     "sure_sn": 840,
+     "izlenme": 30
+    },
+    {
+     "id": "ZG0NGqU8xa8",
+     "yayin": "2026-06-22T13:30:04Z",
+     "baslik": "How Banks Create Money Out of Thin Air (And Why Most People Don't Know)",
+     "sure_sn": 852,
+     "izlenme": 69
+    },
+    {
+     "id": "Kg10f7PoCSI",
+     "yayin": "2026-06-22T18:31:59Z",
+     "baslik": "The Fed's Secret Plan for Your Money (Most People Have No Idea)",
+     "sure_sn": 1052,
+     "izlenme": 16
+    }
+   ]
+  },
+  {
+   "kanal": "Histonom",
+   "acilis": "2025-12-24",
+   "abone_2026_10_27": 2700,
+   "video_sayisi": 50,
+   "tam_liste": true,
+   "ilk_uzunlar": [
+    {
+     "id": "JQgr66Doc70",
+     "yayin": "2026-01-01T18:12:53Z",
+     "baslik": "Why Rome’s Greatest Economic Mistake is Still Destroying Nations",
+     "sure_sn": 517,
+     "izlenme": 1044
+    },
+    {
+     "id": "cbUcE2d3-JU",
+     "yayin": "2026-01-02T17:53:42Z",
+     "baslik": "Why Napoleon’s Biggest Victory Sealed His Fate",
+     "sure_sn": 539,
+     "izlenme": 2880
+    },
+    {
+     "id": "FT5CkCK-_Hs",
+     "yayin": "2026-01-03T17:38:33Z",
+     "baslik": "Why the USSR’s Economy Couldn’t Tell the Truth",
+     "sure_sn": 485,
+     "izlenme": 262
+    }
+   ]
+  },
+  {
+   "kanal": "Markets of the Past",
+   "acilis": "2026-04-10",
+   "abone_2026_10_27": 99900,
+   "video_sayisi": 105,
+   "tam_liste": true,
+   "ilk_uzunlar": [
+    {
+     "id": "isXdXYG72Jk",
+     "yayin": "2026-04-18T00:45:13Z",
+     "baslik": "Woodrow Wilson Admitted He Destroyed America — The Confession Buried For 100 Years",
+     "sure_sn": 1731,
+     "izlenme": 5054
+    },
+    {
+     "id": "tJsjEZkMrt0",
+     "yayin": "2026-04-22T03:24:45Z",
+     "baslik": "George Soros Broke The Bank Of England In 1992 — The Day One Man Defeated An Entire Government",
+     "sure_sn": 2028,
+     "izlenme": 3640
+    },
+    {
+     "id": "iQPuh-Ou6uE",
+     "yayin": "2026-04-23T02:16:00Z",
+     "baslik": "Churchill Starved 3 Million Indians To Finance WWII — And Blamed The Weather",
+     "sure_sn": 1606,
+     "izlenme": 3167
+    }
+   ]
+  },
+  {
+   "kanal": "Global Decline Explained",
+   "acilis": "2025-09-19",
+   "abone_2026_10_27": 10300,
+   "video_sayisi": 129,
+   "tam_liste": true,
+   "ilk_uzunlar": [
+    {
+     "id": "9C58khg4otw",
+     "yayin": "2026-03-23T16:29:10Z",
+     "baslik": "Airports Shut Down, Dubai Tourism Collapsing — What’s Really Happening in This “Sin City”?",
+     "sure_sn": 896,
+     "izlenme": 275225
+    },
+    {
+     "id": "ROShaCVvIqI",
+     "yayin": "2026-03-24T13:34:17Z",
+     "baslik": "The Domino Collapse of Dubai Icons — After Burj Al Arab, Who’s Next?",
+     "sure_sn": 932,
+     "izlenme": 6788
+    },
+    {
+     "id": "BRx5y_XdQy0",
+     "yayin": "2026-03-24T17:15:00Z",
+     "baslik": "Airports in Chaos — Millions of Tourists and Workers Trapped in Dubai - The COLLAPSE Has Begun",
+     "sure_sn": 963,
+     "izlenme": 16041
+    }
+   ]
+  },
+  {
+   "kanal": "Finance Bureau",
+   "acilis": "2025-10-14",
+   "abone_2026_10_27": 129000,
+   "video_sayisi": 556,
+   "tam_liste": false,
+   "ilk_uzunlar": [
+    {
+     "id": "DZjzuKUpCTM",
+     "yayin": "2026-03-07T16:00:23Z",
+     "baslik": "Wall Street Bought Your Neighborhood",
+     "sure_sn": 1140,
+     "izlenme": 9797
+    },
+    {
+     "id": "iWzA9VYlK-A",
+     "yayin": "2026-03-08T16:00:58Z",
+     "baslik": "The First Domino of the Next Financial Crisis",
+     "sure_sn": 1063,
+     "izlenme": 30649
+    },
+    {
+     "id": "HjQUlmBgG4I",
+     "yayin": "2026-03-10T16:00:19Z",
+     "baslik": "Europe's Gas Supply Just Collapsed",
+     "sure_sn": 1010,
+     "izlenme": 56959
+    }
+   ]
+  },
+  {
+   "kanal": "HinExp",
+   "acilis": "2026-04-20",
+   "abone_2026_10_27": 93900,
+   "video_sayisi": 65,
+   "tam_liste": true,
+   "ilk_uzunlar": [
+    {
+     "id": "Bs8scTpmbnw",
+     "yayin": "2026-04-24T15:24:31Z",
+     "baslik": "RBI Cash Train Heist: ₹342 Crore Missing | India’s Biggest Train Robbery",
+     "sure_sn": 962,
+     "izlenme": 11983
+    },
+    {
+     "id": "R9KfXg-fDJo",
+     "yayin": "2026-05-02T15:00:10Z",
+     "baslik": "The Dark Truth Behind IPL | Lalit Modi Exposed | ₹2200 Crore Controversy | 2D Animation",
+     "sure_sn": 935,
+     "izlenme": 3066
+    },
+    {
+     "id": "hDwOWVRFUYY",
+     "yayin": "2026-05-09T13:48:07Z",
+     "baslik": "The Psychology Behind STING ENERGY Drink 🧠 | Chapri Branding Explained",
+     "sure_sn": 842,
+     "izlenme": 110931
+    }
+   ]
+  },
+  {
+   "kanal": "Uncover Things",
+   "acilis": "2026-03-30",
+   "abone_2026_10_27": 4990,
+   "video_sayisi": 3,
+   "tam_liste": true,
+   "ilk_uzunlar": [
+    {
+     "id": "SJDf-WLHMcA",
+     "yayin": "2026-08-12T02:00:28Z",
+     "baslik": "The Real Reason the Protestant Reformation Happened: It Started in a Bank, Not a Church",
+     "sure_sn": 1571,
+     "izlenme": 323790
+    },
+    {
+     "id": "rAWtvM1VstI",
+     "yayin": "2026-08-13T01:27:36Z",
+     "baslik": "What Really Caused the French Revolution? It Wasn’t Just Bread",
+     "sure_sn": 1440,
+     "izlenme": 4163
+    },
+    {
+     "id": "EAsHpGM69Bo",
+     "yayin": "2026-08-15T00:11:28Z",
+     "baslik": "The Real Origins of the Great Depression: What Historians Get Wrong",
+     "sure_sn": 1766,
+     "izlenme": 198778
+    }
+   ]
+  },
+  {
+   "kanal": "Marcus Explains",
+   "acilis": "2026-07-06",
+   "abone_2026_10_27": 30000,
+   "video_sayisi": 46,
+   "tam_liste": true,
+   "ilk_uzunlar": [
+    {
+     "id": "dEbltxw-VTQ",
+     "yayin": "2026-07-13T22:45:42Z",
+     "baslik": "What They Don't Tell You About Owning a Theme Park",
+     "sure_sn": 1797,
+     "izlenme": 3012
+    },
+    {
+     "id": "AqdcxnBQ1Co",
+     "yayin": "2026-07-14T22:00:11Z",
+     "baslik": "What It's Like to Own a Self-Storage Unit",
+     "sure_sn": 1748,
+     "izlenme": 14659
+    },
+    {
+     "id": "9E38JjHHrZM",
+     "yayin": "2026-07-15T22:09:22Z",
+     "baslik": "What It Actually Takes to Own a Movie Studio",
+     "sure_sn": 1923,
+     "izlenme": 9936
+    }
+   ]
+  },
+  {
+   "kanal": "History Unburied",
+   "acilis": "2026-09-26",
+   "abone_2026_10_27": 2520,
+   "video_sayisi": 12,
+   "tam_liste": true,
+   "ilk_uzunlar": [
+    {
+     "id": "4adVWeXXGpk",
+     "yayin": "2026-09-29T21:40:29Z",
+     "baslik": "05 THEY LAUGHED AT THE LOGGER WHO WINTERED IN THE H",
+     "sure_sn": 271,
+     "izlenme": 59
+    },
+    {
+     "id": "uxrQMQ7wQLk",
+     "yayin": "2026-10-04T21:06:05Z",
+     "baslik": "The Real Reason the Salem Witch Trials Happened Will Shock You (What They Never Taught Us)",
+     "sure_sn": 3193,
+     "izlenme": 1863
+    },
+    {
+     "id": "HsJj--WK2OQ",
+     "yayin": "2026-10-06T16:22:10Z",
+     "baslik": "Everything You Were Taught About the Titanic Is WRONG (The Real Reason It Sank)",
+     "sure_sn": 3087,
+     "izlenme": 259
+    }
+   ]
+  },
+  {
+   "kanal": "Truth Vault",
+   "acilis": "2025-10-04",
+   "abone_2026_10_27": 2490,
+   "video_sayisi": 24,
+   "tam_liste": true,
+   "ilk_uzunlar": [
+    {
+     "id": "rS6EfOpPx0k",
+     "yayin": "2026-05-27T13:35:38Z",
+     "baslik": "Indian Army's Deadliest Mission| Operation Rajiv| 2D Animation ",
+     "sure_sn": 1246,
+     "izlenme": 5182
+    },
+    {
+     "id": "YnomST8oOKI",
+     "yayin": "2026-05-31T11:54:24Z",
+     "baslik": "Pathankot Airbase Attack| How 6 Terrorist Breach the Airbase security?| 2D Animation ",
+     "sure_sn": 728,
+     "izlenme": 356
+    },
+    {
+     "id": "rRkFhpjt7dk",
+     "yayin": "2026-06-03T12:08:52Z",
+     "baslik": "Kaise UP Police ne Asad ko maara?| Asad encounter| Surya murder |2D Animation ",
+     "sure_sn": 681,
+     "izlenme": 383
+    }
+   ]
+  },
+  {
+   "kanal": "The Money Files",
+   "acilis": "2025-11-24",
+   "abone_2026_10_27": 4800,
+   "video_sayisi": 36,
+   "tam_liste": true,
+   "ilk_uzunlar": [
+    {
+     "id": "Ddv9qrlc9o8",
+     "yayin": "2025-11-26T13:43:32Z",
+     "baslik": "1929, 2008… Is 2025 Next? 3 Warning Signs of a New U.S. Crash",
+     "sure_sn": 1858,
+     "izlenme": 134
+    },
+    {
+     "id": "hvf_Eo4QjoA",
+     "yayin": "2025-11-27T12:01:20Z",
+     "baslik": "The Man Who Broke America – And Why It Could Happen Again",
+     "sure_sn": 1533,
+     "izlenme": 166
+    },
+    {
+     "id": "qzTdKw0aSOk",
+     "yayin": "2025-11-28T12:01:57Z",
+     "baslik": "The Day Saving Money Became a Federal Crime",
+     "sure_sn": 1522,
+     "izlenme": 58
+    }
+   ]
+  }
+ ]
+}

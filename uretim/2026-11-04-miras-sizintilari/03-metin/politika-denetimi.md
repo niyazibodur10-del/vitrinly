@@ -1,0 +1,28 @@
+# F3 politika denetimi — S03 "The Biggest Inheritance Ever, and Why Heirs Might Miss It" · monetizasyon-uyum-uzmani · 2026-11-04
+
+İLERLEME: tamam
+**SONUÇ: YEŞİL.** Zorunlu düzeltme 2 (Z1 köprü kalıbı, Z2 Shorts 2 niteleyicisi), öneri 2. KIRMIZI yok, SARI yok.
+**Sorulan iki nokta:** S22 yorum sorusu → YEŞİL, olduğu gibi kalabilir. S11 Medicaid geri tahsil cümlesi → YEŞİL. Tarafsız bir mekanizma cümlesi, tavsiye ya da siyaset içermiyor. Doğruluk notu finans-dogrulayici'ye (aşağıda).
+**K1 (üç olasılık kapanışı yasak):** GEÇTİ. Kapanış tek bir yol: varış envanteri (S26) → "lumpy" dağılım (S28) → iki koşullu cümle (S29, "If care… / If tax laws…"). Dallanan A/B/C yok.
+**Kapılar:** inauthentic → anlamlı anlatı var (6 duraklı model + kaynaklı veri + tez); liste ya da haber okuma değil [K1]. AI personası → Leo kendini "a cartoon moving-crew boss" diye tanıtıyor; "you should / your money" yok; S29 "not a forecast… not a plan" [K1]. İlk 30 sn ve başlık → küfür, şok ya da yanıltıcı vaat yok [K2]. Siyaset → parti, politikacı ve seçim yok (P1 anlatım 0, Shorts 0, başlık 0; GÖRSEL'deki 2 eşleşme "parti yok" notunun kendisi). Hassas konu → ölüm soyut (S13 silüet solar); bakım/huzurevi sahneleri yüzsüz ve yaşlı istismarı içermiyor [K2].
+**Tekrar:** 1929 metniyle 5-gram %0,0; S08 metniyle %0,1. Ortak 2 kalıbın biri "is a story for another …" → Z1.
+**Kanıt:** `python3 -I politika-denetim.py metin.md --onceki ../../2026-10-26-1929-1000-dolar/03-metin/metin.md ../../2026-10-28-yeni-video/03-metin/metin.md` → `log/politika-denetim-cikti.txt`. Betik değişmedi (v2, S08'de kapıyı geçti) → tek koşu. sha256: metin `1eb7c0744120`. Betikten sonra elle ikinci geçiş yapıldı: 31 sahnenin ANLATIM ve GÖRSEL sütunları + 2 Shorts metni.
+
+## Kaynaklar (hafızadaki alıntılar; sayfalar F2'de 2026-11-04'te kontrol edildi, değişiklik yok)
+- [K1] support.google.com/youtube/answer/1311392 (2026-11-04): "Not be mass-produced, generic, repetitive, or manipulative." · AI personası: "presents itself as a human expert providing advice to viewers on topics such as health, legal issues, finances, or politics".
+- [K2] support.google.com/youtube/answer/6162278 (2026-11-04): "Content that may upset, disgust, or shock viewers may not be suitable for advertising" · Controversial issues listesinde yaşlı bakımı, miras ya da vergi yok.
+
+## 1. Bulgular
+| # | Bulgu | Kaynak politika | Düzeltme önerisi (senaryo-yazari) |
+|---|---|---|---|
+| Z1 | **Zorunlu.** S31 köprüsü "…is a story for another road." S08 (yayında) "…is a story for another kitchen table" ile bitiyordu, 1929 da "That's a game for another night" ile. Üç videoda aynı kapanış kalıbı = kanal şablonu izlenimi. | [K1] "repetitive" | Seçenekler: (a) **Önerim:** soruyla biten köprü: "There's one box we only opened for a minute. The house. So what happens to a whole street when many houses change hands at once?" (b) Görsel köprü: cümle "…the house." ile biter, mahalle silueti konuşur. (c) "…we'll have to drive down that street." İkisi de tekrarı kırar; (a) uç ekran merakını en iyi taşır. |
+| Z2 | **Zorunlu.** Shorts 2 tek başına izlendiğinde "So for most families, the scary stop is just a sign by the road" genel bir hüküm gibi okunuyor. Oysa eşik yalnız ABD federal vergisi için; uzun videodaki eyalet ve İngiltere nitelemesi kesitte düşüyor. Global izleyici bunu kendi ülkesi için okuyabilir. | [K1] (finans yönlendirmesi algısı) + hafıza kuralı "Shorts tek başına okunur" | (a) **Önerim:** "So for most American families, the federal tax stop is just a sign by the road." (b) Ekranda sabit alt satır: "US FEDERAL ONLY · STATE & OTHER COUNTRIES DIFFER". (a) ve (b) birlikte önerilir; kelime sayısı ≈ +3. |
+| Ö1 | Öneri. S22 yorum sorusu ("Which leak did you think was the biggest… I'm curious how many people picked taxes") sorun değil: ödül vaadi yok, tavsiye yok, yanıltma yok. S08'de de sonda yorum çağrısı vardı; ikisi farklı (tek harf ↔ açık soru) ve tekrar sınırını aşmıyor. | [K1] | Değişiklik gerekmez. Topluluk notu (youtube-paketleyici / koordinatör): yorumlara kişiye özel miras/vergi yanıtı verilmez; sabitlenen yorum yalnız soruyu tekrarlar. |
+| Ö2 | Öneri. S11: "states are required to try to recover those costs from the estate later" ifadesi tarafsız ve doğru bir mekanizma cümlesi, kaçınma yöntemi verilmiyor (iyi). Doğruluk notu: hayatta kalan eş varken geri tahsil ertelenir, bu da S13'teki sapmayla doğrudan ilgili. Bu, finans-dogrulayici'nin alanı. | [K1] (tavsiye yok) | Politika açısından değişiklik yok. finans-dogrulayici "generally required" niteleyicisini ve eş istisnasını değerlendirsin. Eklenirse betimleyici kalsın ("how to protect" dili yok). |
+
+## 2. Kontrol edilen ve sorun bulunmayan noktalar
+- Betiğin P3 tavsiye eşleşmeleri (4) elle tek tek kontrol edildi: "buy the other out", "Maybe you", "if the money is invested", "millions to invest". Dördü de betimleyici; emir ya da varlık önerisi yok. S24 "Your own retirement. Your own kids." da betimleme, yönlendirme değil.
+- S28 servet eşitsizliği verisi yalnız veri olarak geçiyor; politika çağrısı ya da parti yok. S16'da din kurumları eşit sayılmış ("Churches, mosques and temples").
+- Başlıktaki "Ever" sözcüğüne karşılık metin "often called the biggest inheritance in history" diyor ve rakamı "forecast" diye etiketliyor → vaat ile anlatım tutarlı. Thumbnail "WHO GETS IT?" sorusu S26–S28'de cevaplanıyor. Son karar F8'de.
+- Görsel: savaş betiğinin 2 eşleşmesi yanlış alarm ("çıkan" içindeki "kan"). Gerçek kişi yok; bütün aile siluetleri yüzsüz → 14328491 beyan tetiği yok.
+- Leo'nun rolü (nakliye şefi) önceki rollerden farklı. Bu videoda kaybeden yok ("Nobody did anything wrong", "a family that used it").

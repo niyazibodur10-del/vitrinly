@@ -1,0 +1,136 @@
+{
+ "boyut": [
+  1920,
+  1080
+ ],
+ "kapilar": {
+  "mavi": {
+   "dis_kasa_xyxy": [
+    480,
+    307,
+    763,
+    751
+   ],
+   "panel_bbox_xywh": [
+    524,
+    344,
+    197,
+    404
+   ],
+   "alan_px": 78139,
+   "medyan_H_derece": 220.0,
+   "medyan_S": 202.0,
+   "aralik": [
+    190,
+    240
+   ],
+   "aralikta": true,
+   "merkez80_icinde": true
+  },
+  "yesil": {
+   "dis_kasa_xyxy": [
+    822,
+    318,
+    1073,
+    750
+   ],
+   "panel_bbox_xywh": [
+    851,
+    345,
+    195,
+    402
+   ],
+   "alan_px": 58279,
+   "medyan_H_derece": 94.0,
+   "medyan_S": 187.0,
+   "aralik": [
+    90,
+    160
+   ],
+   "aralikta": true,
+   "merkez80_icinde": true
+  },
+  "kahve": {
+   "dis_kasa_xyxy": [
+    1130,
+    299,
+    1415,
+    750
+   ],
+   "panel_bbox_xywh": [
+    1175,
+    344,
+    196,
+    403
+   ],
+   "alan_px": 65498,
+   "medyan_H_derece": 18.0,
+   "medyan_S": 223.0,
+   "aralik": [
+    15,
+    40
+   ],
+   "aralikta": true,
+   "merkez80_icinde": true
+  }
+ },
+ "levhalar": {
+  "mavi": {
+   "cerceve_xyxy": [
+    513,
+    231,
+    729,
+    300
+   ],
+   "ic_alan_xyxy": [
+    523,
+    241,
+    719,
+    290
+   ],
+   "ic_kenar_yogunlugu": 0.0003,
+   "ic_gri_std": 11.16,
+   "bos": true
+  },
+  "yesil": {
+   "cerceve_xyxy": [
+    840,
+    231,
+    1056,
+    300
+   ],
+   "ic_alan_xyxy": [
+    850,
+    241,
+    1046,
+    290
+   ],
+   "ic_kenar_yogunlugu": 0.0003,
+   "ic_gri_std": 10.12,
+   "bos": true
+  },
+  "kahve": {
+   "cerceve_xyxy": [
+    1165,
+    231,
+    1381,
+    301
+   ],
+   "ic_alan_xyxy": [
+    1175,
+    241,
+    1371,
+    291
+   ],
+   "ic_kenar_yogunlugu": 0.0003,
+   "ic_gri_std": 10.37,
+   "bos": true
+  }
+ },
+ "merkez80": [
+  192,
+  108,
+  1728,
+  972
+ ]
+}

@@ -1,0 +1,56 @@
+{
+ "_not": "Varyantlar (sıralamaya girmez): tek bir yargı kararının sonucu nasıl değiştirdiğini gösterir. [T]",
+ "senaryolar": [
+  {
+   "id": "S08-alt2",
+   "baslik": "Silver Thursday: The Day the Hunt Brothers Fell",
+   "merak": 7,
+   "talep": 8,
+   "hook": 8,
+   "kisisel": 4,
+   "zamanlama": 5,
+   "hikaye": 9,
+   "gorsel": 9,
+   "raf": 9,
+   "seri": false,
+   "somut_ozne": true,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {}
+  },
+  {
+   "id": "S02-cezasiz",
+   "baslik": "The 1929 Crash Was Only the First Domino",
+   "merak": 7,
+   "talep": 9,
+   "hook": 7,
+   "kisisel": 7,
+   "zamanlama": 7,
+   "hikaye": 7,
+   "gorsel": 7,
+   "raf": 9,
+   "seri": true,
+   "somut_ozne": true,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {}
+  },
+  {
+   "id": "S01-serisiz",
+   "baslik": "The 10% Loan That Built the 1929 Crash",
+   "merak": 7,
+   "talep": 9,
+   "hook": 8,
+   "kisisel": 6,
+   "zamanlama": 7,
+   "hikaye": 7,
+   "gorsel": 8,
+   "raf": 9,
+   "seri": false,
+   "somut_ozne": true,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {}
+  }
+ ]
+}

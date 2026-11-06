@@ -1,0 +1,335 @@
+{
+ "A1": {
+  "id": "A1",
+  "metin": "PICK A DOOR",
+  "kelime": 3,
+  "dosya": "adaylar/A1.jpg",
+  "boyut": [
+   1280,
+   720
+  ],
+  "bayt": 127087,
+  "jpeg_q": 92,
+  "kontrast": [
+   {
+    "metin": "PICK",
+    "zemin_p5": 8.05,
+    "zemin_medyan": 18.14,
+    "dolgu_kontur": 18.81,
+    "mobil_buyuk_harf_px": 16.9
+   },
+   {
+    "metin": "A",
+    "zemin_p5": 9.23,
+    "zemin_medyan": 18.87,
+    "dolgu_kontur": 18.81,
+    "mobil_buyuk_harf_px": 16.9
+   },
+   {
+    "metin": "DOOR",
+    "zemin_p5": 4.16,
+    "zemin_medyan": 11.48,
+    "dolgu_kontur": 13.03,
+    "mobil_buyuk_harf_px": 16.9
+   }
+  ],
+  "sure_damgasi_ihlal_px": 0,
+  "sha256": "3f1a287ed85319ac"
+ },
+ "A2": {
+  "id": "A2",
+  "metin": "ONE IS A DISASTER",
+  "kelime": 4,
+  "dosya": "adaylar/A2.jpg",
+  "boyut": [
+   1280,
+   720
+  ],
+  "bayt": 133886,
+  "jpeg_q": 92,
+  "kontrast": [
+   {
+    "metin": "ONE",
+    "zemin_p5": 9.04,
+    "zemin_medyan": 19.22,
+    "dolgu_kontur": 18.81,
+    "mobil_buyuk_harf_px": 14.2
+   },
+   {
+    "metin": "IS",
+    "zemin_p5": 6.65,
+    "zemin_medyan": 16.66,
+    "dolgu_kontur": 18.81,
+    "mobil_buyuk_harf_px": 14.2
+   },
+   {
+    "metin": "A",
+    "zemin_p5": 6.81,
+    "zemin_medyan": 19.21,
+    "dolgu_kontur": 18.81,
+    "mobil_buyuk_harf_px": 14.2
+   },
+   {
+    "metin": "DISASTER",
+    "zemin_p5": 4.71,
+    "zemin_medyan": 12.59,
+    "dolgu_kontur": 13.03,
+    "mobil_buyuk_harf_px": 14.2
+   }
+  ],
+  "sure_damgasi_ihlal_px": 0,
+  "sha256": "585152d24cb59849"
+ },
+ "B1": {
+  "id": "B1",
+  "metin": "THE SURPRISE DOOR + 1929",
+  "kelime": 4,
+  "dosya": "adaylar/B1.jpg",
+  "boyut": [
+   1280,
+   720
+  ],
+  "bayt": 112491,
+  "jpeg_q": 92,
+  "kontrast": [
+   {
+    "metin": "1929",
+    "zemin_p5": 1.7,
+    "zemin_medyan": 3.78,
+    "dolgu_kontur": null,
+    "mobil_buyuk_harf_px": 9.4
+   },
+   {
+    "metin": "THE",
+    "zemin_p5": 15.55,
+    "zemin_medyan": 20.21,
+    "dolgu_kontur": 18.81,
+    "mobil_buyuk_harf_px": 16.3
+   },
+   {
+    "metin": "SURPRISE",
+    "zemin_p5": 12.16,
+    "zemin_medyan": 13.32,
+    "dolgu_kontur": 13.03,
+    "mobil_buyuk_harf_px": 16.3
+   },
+   {
+    "metin": "DOOR",
+    "zemin_p5": 18.44,
+    "zemin_medyan": 19.75,
+    "dolgu_kontur": 18.81,
+    "mobil_buyuk_harf_px": 16.3
+   }
+  ],
+  "sure_damgasi_ihlal_px": 0,
+  "sha256": "0dac58adaf866511"
+ },
+ "B2": {
+  "id": "B2",
+  "metin": "EVERYONE LAUGHED + 1929",
+  "kelime": 3,
+  "dosya": "adaylar/B2.jpg",
+  "boyut": [
+   1280,
+   720
+  ],
+  "bayt": 109141,
+  "jpeg_q": 92,
+  "kontrast": [
+   {
+    "metin": "1929",
+    "zemin_p5": 1.7,
+    "zemin_medyan": 3.78,
+    "dolgu_kontur": null,
+    "mobil_buyuk_harf_px": 9.4
+   },
+   {
+    "metin": "EVERYONE",
+    "zemin_p5": 16.56,
+    "zemin_medyan": 19.73,
+    "dolgu_kontur": 18.81,
+    "mobil_buyuk_harf_px": 15.5
+   },
+   {
+    "metin": "LAUGHED",
+    "zemin_p5": 12.41,
+    "zemin_medyan": 13.21,
+    "dolgu_kontur": 13.03,
+    "mobil_buyuk_harf_px": 15.5
+   }
+  ],
+  "sure_damgasi_ihlal_px": 0,
+  "sha256": "9e7004745a7fc02c"
+ },
+ "C1": {
+  "id": "C1",
+  "metin": "STOCKS −89%",
+  "kelime": 2,
+  "dosya": "adaylar/C1.jpg",
+  "boyut": [
+   1280,
+   720
+  ],
+  "bayt": 111571,
+  "jpeg_q": 92,
+  "kontrast": [
+   {
+    "metin": "STOCKS",
+    "zemin_p5": 16.9,
+    "zemin_medyan": 18.77,
+    "dolgu_kontur": 18.81,
+    "mobil_buyuk_harf_px": 15.0
+   },
+   {
+    "metin": "−89%",
+    "zemin_p5": 12.66,
+    "zemin_medyan": 13.99,
+    "dolgu_kontur": 13.03,
+    "mobil_buyuk_harf_px": 15.0
+   }
+  ],
+  "sure_damgasi_ihlal_px": 0.0,
+  "sha256": "55ff7562a3bcd931"
+ },
+ "C2": {
+  "id": "C2",
+  "metin": "THE −89% DOOR",
+  "kelime": 3,
+  "dosya": "adaylar/C2.jpg",
+  "boyut": [
+   1280,
+   720
+  ],
+  "bayt": 109255,
+  "jpeg_q": 92,
+  "kontrast": [
+   {
+    "metin": "THE",
+    "zemin_p5": 16.9,
+    "zemin_medyan": 18.91,
+    "dolgu_kontur": 18.81,
+    "mobil_buyuk_harf_px": 13.0
+   },
+   {
+    "metin": "−89%",
+    "zemin_p5": 12.18,
+    "zemin_medyan": 13.56,
+    "dolgu_kontur": 13.03,
+    "mobil_buyuk_harf_px": 13.0
+   },
+   {
+    "metin": "DOOR",
+    "zemin_p5": 18.35,
+    "zemin_medyan": 20.3,
+    "dolgu_kontur": 18.81,
+    "mobil_buyuk_harf_px": 13.0
+   }
+  ],
+  "sure_damgasi_ihlal_px": 0.0,
+  "sha256": "e4876eaf061eb1c8"
+ },
+ "D1": {
+  "id": "D1",
+  "metin": "EVERY DOOR LOCKED",
+  "kelime": 3,
+  "dosya": "adaylar/D1.jpg",
+  "boyut": [
+   1280,
+   720
+  ],
+  "bayt": 147654,
+  "jpeg_q": 92,
+  "kontrast": [
+   {
+    "metin": "EVERY",
+    "zemin_p5": 5.79,
+    "zemin_medyan": 16.33,
+    "dolgu_kontur": 18.81,
+    "mobil_buyuk_harf_px": 14.0
+   },
+   {
+    "metin": "DOOR",
+    "zemin_p5": 6.94,
+    "zemin_medyan": 17.86,
+    "dolgu_kontur": 18.81,
+    "mobil_buyuk_harf_px": 14.0
+   },
+   {
+    "metin": "LOCKED",
+    "zemin_p5": 5.42,
+    "zemin_medyan": 8.89,
+    "dolgu_kontur": 13.03,
+    "mobil_buyuk_harf_px": 22.6
+   }
+  ],
+  "sure_damgasi_ihlal_px": 0,
+  "sha256": "72fab44531d682ce"
+ },
+ "D2": {
+  "id": "D2",
+  "metin": "MARCH 1933",
+  "kelime": 2,
+  "dosya": "adaylar/D2.jpg",
+  "boyut": [
+   1280,
+   720
+  ],
+  "bayt": 144809,
+  "jpeg_q": 92,
+  "kontrast": [
+   {
+    "metin": "MARCH",
+    "zemin_p5": 6.17,
+    "zemin_medyan": 14.81,
+    "dolgu_kontur": 18.81,
+    "mobil_buyuk_harf_px": 16.9
+   },
+   {
+    "metin": "1933",
+    "zemin_p5": 4.94,
+    "zemin_medyan": 7.7,
+    "dolgu_kontur": 13.03,
+    "mobil_buyuk_harf_px": 22.6
+   }
+  ],
+  "sure_damgasi_ihlal_px": 0,
+  "sha256": "35aa50bfa43d1da0"
+ },
+ "D3": {
+  "id": "D3",
+  "metin": "EVERY BANK CLOSED",
+  "kelime": 3,
+  "dosya": "adaylar/D3.jpg",
+  "boyut": [
+   1280,
+   720
+  ],
+  "bayt": 149333,
+  "jpeg_q": 92,
+  "kontrast": [
+   {
+    "metin": "EVERY",
+    "zemin_p5": 5.79,
+    "zemin_medyan": 16.33,
+    "dolgu_kontur": 18.81,
+    "mobil_buyuk_harf_px": 14.0
+   },
+   {
+    "metin": "BANK",
+    "zemin_p5": 6.94,
+    "zemin_medyan": 17.88,
+    "dolgu_kontur": 18.81,
+    "mobil_buyuk_harf_px": 14.0
+   },
+   {
+    "metin": "CLOSED",
+    "zemin_p5": 5.42,
+    "zemin_medyan": 8.87,
+    "dolgu_kontur": 13.03,
+    "mobil_buyuk_harf_px": 22.6
+   }
+  ],
+  "sure_damgasi_ihlal_px": 0,
+  "sha256": "2437e91dd2a02c73"
+ }
+}

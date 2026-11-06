@@ -1,0 +1,1 @@
+[render-son] render=115.9s loudnorm_olcum=4.0s son_kodlama=2.0s toplam=121.9s

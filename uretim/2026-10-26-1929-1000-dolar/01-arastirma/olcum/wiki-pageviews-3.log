@@ -1,0 +1,6 @@
+Dot-com_bubble {'days': 91, 'sum90': 151643, 'last30': 48961, 'daily_avg30': 1632, 'prev60_avg': 1683, 'peak': 2530, 'peakday': '20260730'}
+Black_Monday_(1987) ERR HTTP Error 429: Too Many Requests
+Bankruptcy_of_FTX {'days': 91, 'sum90': 32367, 'last30': 13843, 'daily_avg30': 461, 'prev60_avg': 304, 'peak': 2014, 'peakday': '20261009'}
+FTX {'days': 91, 'sum90': 58954, 'last30': 23384, 'daily_avg30': 779, 'prev60_avg': 583, 'peak': 3060, 'peakday': '20261008'}
+AI_bubble ERR HTTP Error 429: Too many requests (f061ab2)
+Private_credit ERR HTTP Error 429: Too Many Requests

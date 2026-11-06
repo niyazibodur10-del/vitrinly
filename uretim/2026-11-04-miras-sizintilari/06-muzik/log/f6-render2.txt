@@ -1,0 +1,72 @@
+{
+ "miks_onizleme_wav": {
+  "I": -14.0,
+  "LRA": 2.0,
+  "TP": -3.2
+ },
+ "miks_onizleme_m4a": {
+  "I": -14.0,
+  "LRA": 2.0,
+  "TP": -3.3
+ },
+ "muzik_stem": {
+  "I": -35.7,
+  "LRA": 6.0,
+  "TP": -19.8
+ },
+ "sfx_stem": {
+  "I": -70.0,
+  "LRA": 0.0,
+  "TP": -99.0
+ },
+ "seviye_tum": {
+  "konusma_alti_fark_db": 22.0,
+  "muzik_konusmada_lufs_M": -36.4,
+  "muzik_boslukta_lufs_M": -36.5
+ },
+ "bolum_seviye": {
+  "B1 yola çıkış (Bölüm 1: The Number on the Truck)": {
+   "konusma_alti_fark_db": 21.8,
+   "muzik_konusmada_lufs_M": -36.0,
+   "muzik_boslukta_lufs_M": -36.3
+  },
+  "B2 Okafor ailesi (Bölüm 2)": {
+   "konusma_alti_fark_db": 21.7,
+   "muzik_konusmada_lufs_M": -36.6,
+   "muzik_boslukta_lufs_M": -36.1
+  },
+  "B3 yaşam ve bakım (Bölüm 3)": {
+   "konusma_alti_fark_db": 22.4,
+   "muzik_konusmada_lufs_M": -37.7,
+   "muzik_boslukta_lufs_M": -37.7
+  },
+  "B4 sapma ve bağış (Bölüm 4)": {
+   "konusma_alti_fark_db": 21.8,
+   "muzik_konusmada_lufs_M": -36.2,
+   "muzik_boslukta_lufs_M": -35.8
+  },
+  "B5 en ağır kutu: ev (Bölüm 5)": {
+   "konusma_alti_fark_db": 22.8,
+   "muzik_konusmada_lufs_M": -39.5,
+   "muzik_boslukta_lufs_M": -41.4
+  },
+  "B6 vergi durağı (Bölüm 6)": {
+   "konusma_alti_fark_db": 21.8,
+   "muzik_konusmada_lufs_M": -36.3,
+   "muzik_boslukta_lufs_M": -36.4
+  },
+  "B7 varış + envanter (Bölüm 7)": {
+   "konusma_alti_fark_db": 22.1,
+   "muzik_konusmada_lufs_M": -36.7,
+   "muzik_boslukta_lufs_M": -36.9
+  },
+  "B8 tez + köprü (S30–S31)": {
+   "konusma_alti_fark_db": 22.7,
+   "muzik_konusmada_lufs_M": -36.7,
+   "muzik_boslukta_lufs_M": -35.7
+  }
+ },
+ "sfx_konusma_cakismasi": []
+}
+shorts-1 {'konusma_alti_fark_db': 19.6, 'muzik_konusmada_lufs_M': -34.5, 'muzik_boslukta_lufs_M': -34.0, 'not': 'hook ek kaydı; konuşma maskesi ana videodan, yaklaşık'}
+shorts-2 {'konusma_alti_fark_db': 19.6, 'muzik_konusmada_lufs_M': -33.9, 'muzik_boslukta_lufs_M': -33.7, 'not': 'hook ek kaydı; konuşma maskesi ana videodan, yaklaşık'}

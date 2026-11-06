@@ -1,0 +1,9 @@
+# Aday müzik dosyaları büyük → yeni eklenenler git dışı (önceden izlenen 8 küçük aday repoda kalır).
+# Kaynak URL + sha256: lisans-kaydi.md ve kaynak/muzik-sha256.txt; yeniden indirilebilir.
+# F6 kazananları assets/muzik/ altına (≤5 MB/parça) kopyalanıp commit edilir.
+kaynak/muzik/*
+# İSTİSNA (uretim-muhendisi 2026-10-28): final cue.json'un kullandığı kaynaklar yeniden üretim için git'te (CC0, ~20 MB);
+# tools/yeniden-uret.sh testinde eksik oldukları görüldü (assets/muzik kopyaları farklı kodlama → miks birebir olmaz).
+!kaynak/muzik/ragtime-jazz-tarush-singhal.mp3
+!kaynak/muzik/at-the-end-of-hope-emma-ma.mp3
+!kaynak/muzik/tension-komiku.mp3

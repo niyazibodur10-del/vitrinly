@@ -1,0 +1,218 @@
+{
+ "S02-where": {
+  "query": "where does stolen money go after a heist",
+  "measured": "2026-11-04",
+  "rel_n": 15,
+  "rel_median": 157596,
+  "rel_ge1M": 4,
+  "rel_top3": [
+   [
+    10384226,
+    "The End of The Heist (Season 5 Episode 10) | Money Heist/La Casa de Papel | Netf",
+    "Still Watching Netflix",
+    "2021-12-12",
+    "LHuDVf6FzI0"
+   ],
+   [
+    7040900,
+    "How Hackers Stole $1,000,000,000 From Banks",
+    "fern",
+    "2025-01-11",
+    "WyQ7z8BMwwk"
+   ],
+   [
+    1901215,
+    "How Binance Lost $6,300,000,000 in One Night",
+    "Gloam",
+    "2026-10-30",
+    "5eZj1OnC1C4"
+   ]
+  ],
+  "recent12m_n": 10,
+  "recent12m_top3": [
+   [
+    1901215,
+    "How Binance Lost $6,300,000,000 in One Night",
+    "Gloam",
+    "2026-10-30",
+    "5eZj1OnC1C4"
+   ],
+   [
+    1542271,
+    "$6.3B crypto heist: Experts react to the biggest theft in history",
+    "CNN",
+    "2026-10-30",
+    "8tq_gZOzz1g"
+   ],
+   [
+    456881,
+    "How Binance Was HACKED For $6 Billion",
+    "Coin Bureau",
+    "2026-10-30",
+    "5u2IlJytBT8"
+   ]
+  ]
+ },
+ "S02-recovered": {
+  "query": "stolen money recovered heist what happened to the money",
+  "measured": "2026-11-04",
+  "rel_n": 15,
+  "rel_median": 456881,
+  "rel_ge1M": 6,
+  "rel_top3": [
+   [
+    7040900,
+    "How Hackers Stole $1,000,000,000 From Banks",
+    "fern",
+    "2025-01-11",
+    "WyQ7z8BMwwk"
+   ],
+   [
+    3505846,
+    "The $18.8 Million Armored Car Heist: Phil Johnson's Bold Gamble",
+    "Wonder",
+    "2020-05-29",
+    "Fvyl6i2xQQk"
+   ],
+   [
+    3233392,
+    "Turkish man stole more than $55 million from ATMs worldwide",
+    "CBS Evening News",
+    "2017-02-11",
+    "6Vhs0qb6kJE"
+   ]
+  ],
+  "recent12m_n": 10,
+  "recent12m_top3": [
+   [
+    1901215,
+    "How Binance Lost $6,300,000,000 in One Night",
+    "Gloam",
+    "2026-10-30",
+    "5eZj1OnC1C4"
+   ],
+   [
+    1542271,
+    "$6.3B crypto heist: Experts react to the biggest theft in history",
+    "CNN",
+    "2026-10-30",
+    "8tq_gZOzz1g"
+   ],
+   [
+    1252953,
+    "The $6.3 Billion Binance Heist: How Hackers Stole the Money | The Palki Sharma S",
+    "India Global Review",
+    "2026-10-30",
+    "phaGau2Eqjg"
+   ]
+  ]
+ },
+ "S02-madoff-back": {
+  "query": "madoff victims money back recovered",
+  "measured": "2026-11-04",
+  "rel_n": 15,
+  "rel_median": 472,
+  "rel_ge1M": 0,
+  "rel_top3": [
+   [
+    91344,
+    "Bernie Madoff's victims, 10 years later",
+    "CNBC Television",
+    "2018-12-11",
+    "aFlGU4YPi-U"
+   ],
+   [
+    5538,
+    "Bernie Madoff's Final Victims Receive Their Payout After 15 Years",
+    "Facts Verse",
+    "2025-01-09",
+    "ByO51GD0D84"
+   ],
+   [
+    1758,
+    "Another $568 Million Distributed To Bernie Madoff Victims",
+    "CBS New York",
+    "2021-09-16",
+    "uoxUbZ49c3c"
+   ]
+  ],
+  "recent12m_n": 6,
+  "recent12m_top3": [
+   [
+    773,
+    "Where Did Bernie Madoff's $65 Billion Actually Go?",
+    "Sticks and Cents",
+    "2026-10-07",
+    "ZJNQrpEhAd4"
+   ],
+   [
+    6,
+    "Bernie Madoff's $64.8 Billion Lie",
+    "BACKFIRED X",
+    "2026-10-12",
+    "KvR2WzG3bvo"
+   ],
+   [
+    5,
+    "Bernie Madoff: Real Payouts, Fake Trades",
+    "Docket & Proof",
+    "2026-10-19",
+    "ec6xftC3e8E"
+   ]
+  ]
+ },
+ "S02-crypto-trace": {
+  "query": "how stolen crypto is traced and recovered",
+  "measured": "2026-11-04",
+  "rel_n": 15,
+  "rel_median": 131,
+  "rel_ge1M": 0,
+  "rel_top3": [
+   [
+    115961,
+    "Stolen Bitcoin Tracing - Computerphile",
+    "Computerphile",
+    "2018-03-23",
+    "UlLN0QERWBs"
+   ],
+   [
+    88051,
+    "How To Get Your Stolen Crypto Back",
+    "Bold TV",
+    "2022-03-01",
+    "htSpmWIQ9fU"
+   ],
+   [
+    16849,
+    "Stolen Crypto Wallet Don’t Panic — Here’s How to Recover Your Funds",
+    "The CryptoDad",
+    "2025-10-06",
+    "x7n6FPvPK5M"
+   ]
+  ],
+  "recent12m_n": 10,
+  "recent12m_top3": [
+   [
+    15720,
+    "CIA Agent Charles Finfrock on Why Stolen Crypto is Impossible to Recover (Part 5",
+    "djvlad",
+    "2026-08-01",
+    "DYnC1CO5FAM"
+   ],
+   [
+    245,
+    "How to Recover Stolen Crypto (2026) 🚨 | Crypto Scam Recovery Step-by-Step",
+    "TraceReclaim",
+    "2026-09-15",
+    "YdE4tuVXePk"
+   ],
+   [
+    131,
+    "Stolen Crypto? The Real Steps to Recover Your Stolen Assets | Crypto Scam Recove",
+    "Crypto Scam Recovery ",
+    "2026-10-10",
+    "BwupUlJnOcU"
+   ]
+  ]
+ }
+}

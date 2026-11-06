@@ -1,0 +1,316 @@
+{
+ "kaynak": "anlatim.wav (48 kHz) — zamanlar sn; bas/bitis = kesme noktaları (sahne arası sessizlik öndeki sahnede), konusma_bitis = son kelimenin bitişi",
+ "toplam_sn": 781.388,
+ "sahneler": [
+  {
+   "sahne": "S01",
+   "bas": 0.0,
+   "bitis": 16.478,
+   "konusma_bitis": 15.828,
+   "sure": 16.478,
+   "cumle_ilk": 0,
+   "cumle_son": 3,
+   "kelime": 40
+  },
+  {
+   "sahne": "S02",
+   "bas": 16.478,
+   "bitis": 39.173,
+   "konusma_bitis": 38.523,
+   "sure": 22.695,
+   "cumle_ilk": 4,
+   "cumle_son": 10,
+   "kelime": 66
+  },
+  {
+   "sahne": "S03",
+   "bas": 39.173,
+   "bitis": 54.179,
+   "konusma_bitis": 53.529,
+   "sure": 15.006,
+   "cumle_ilk": 11,
+   "cumle_son": 15,
+   "kelime": 45
+  },
+  {
+   "sahne": "S04",
+   "bas": 54.179,
+   "bitis": 97.462,
+   "konusma_bitis": 96.812,
+   "sure": 43.283,
+   "cumle_ilk": 16,
+   "cumle_son": 28,
+   "kelime": 119
+  },
+  {
+   "sahne": "S05",
+   "bas": 97.462,
+   "bitis": 106.246,
+   "konusma_bitis": 105.596,
+   "sure": 8.784,
+   "cumle_ilk": 29,
+   "cumle_son": 30,
+   "kelime": 25
+  },
+  {
+   "sahne": "S06",
+   "bas": 106.246,
+   "bitis": 140.649,
+   "konusma_bitis": 139.999,
+   "sure": 34.403,
+   "cumle_ilk": 31,
+   "cumle_son": 44,
+   "kelime": 98
+  },
+  {
+   "sahne": "S07",
+   "bas": 140.649,
+   "bitis": 155.207,
+   "konusma_bitis": 154.557,
+   "sure": 14.558,
+   "cumle_ilk": 45,
+   "cumle_son": 49,
+   "kelime": 40
+  },
+  {
+   "sahne": "S08",
+   "bas": 155.207,
+   "bitis": 194.143,
+   "konusma_bitis": 193.493,
+   "sure": 38.936,
+   "cumle_ilk": 50,
+   "cumle_son": 64,
+   "kelime": 113
+  },
+  {
+   "sahne": "S09",
+   "bas": 194.143,
+   "bitis": 199.754,
+   "konusma_bitis": 199.104,
+   "sure": 5.611,
+   "cumle_ilk": 65,
+   "cumle_son": 66,
+   "kelime": 18
+  },
+  {
+   "sahne": "S10",
+   "bas": 199.754,
+   "bitis": 239.056,
+   "konusma_bitis": 238.406,
+   "sure": 39.302,
+   "cumle_ilk": 67,
+   "cumle_son": 77,
+   "kelime": 102
+  },
+  {
+   "sahne": "S11",
+   "bas": 239.056,
+   "bitis": 281.278,
+   "konusma_bitis": 280.628,
+   "sure": 42.222,
+   "cumle_ilk": 78,
+   "cumle_son": 86,
+   "kelime": 112
+  },
+  {
+   "sahne": "S12",
+   "bas": 281.278,
+   "bitis": 298.974,
+   "konusma_bitis": 298.324,
+   "sure": 17.696,
+   "cumle_ilk": 87,
+   "cumle_son": 96,
+   "kelime": 49
+  },
+  {
+   "sahne": "S13",
+   "bas": 298.974,
+   "bitis": 334.829,
+   "konusma_bitis": 334.179,
+   "sure": 35.855,
+   "cumle_ilk": 97,
+   "cumle_son": 104,
+   "kelime": 106
+  },
+  {
+   "sahne": "S14",
+   "bas": 334.829,
+   "bitis": 373.219,
+   "konusma_bitis": 372.569,
+   "sure": 38.39,
+   "cumle_ilk": 105,
+   "cumle_son": 120,
+   "kelime": 117
+  },
+  {
+   "sahne": "S15",
+   "bas": 373.219,
+   "bitis": 379.716,
+   "konusma_bitis": 379.066,
+   "sure": 6.497,
+   "cumle_ilk": 121,
+   "cumle_son": 122,
+   "kelime": 18
+  },
+  {
+   "sahne": "S16",
+   "bas": 379.716,
+   "bitis": 410.537,
+   "konusma_bitis": 409.887,
+   "sure": 30.821,
+   "cumle_ilk": 123,
+   "cumle_son": 135,
+   "kelime": 86
+  },
+  {
+   "sahne": "S17",
+   "bas": 410.537,
+   "bitis": 429.531,
+   "konusma_bitis": 428.881,
+   "sure": 18.994,
+   "cumle_ilk": 136,
+   "cumle_son": 139,
+   "kelime": 51
+  },
+  {
+   "sahne": "S18",
+   "bas": 429.531,
+   "bitis": 441.35,
+   "konusma_bitis": 440.7,
+   "sure": 11.819,
+   "cumle_ilk": 140,
+   "cumle_son": 145,
+   "kelime": 30
+  },
+  {
+   "sahne": "S19",
+   "bas": 441.35,
+   "bitis": 481.567,
+   "konusma_bitis": 480.917,
+   "sure": 40.217,
+   "cumle_ilk": 146,
+   "cumle_son": 160,
+   "kelime": 119
+  },
+  {
+   "sahne": "S20",
+   "bas": 481.567,
+   "bitis": 493.932,
+   "konusma_bitis": 493.282,
+   "sure": 12.365,
+   "cumle_ilk": 161,
+   "cumle_son": 166,
+   "kelime": 37
+  },
+  {
+   "sahne": "S21",
+   "bas": 493.932,
+   "bitis": 555.824,
+   "konusma_bitis": 555.174,
+   "sure": 61.892,
+   "cumle_ilk": 167,
+   "cumle_son": 181,
+   "kelime": 163
+  },
+  {
+   "sahne": "S22",
+   "bas": 555.824,
+   "bitis": 579.703,
+   "konusma_bitis": 579.053,
+   "sure": 23.879,
+   "cumle_ilk": 182,
+   "cumle_son": 191,
+   "kelime": 66
+  },
+  {
+   "sahne": "S23",
+   "bas": 579.703,
+   "bitis": 585.288,
+   "konusma_bitis": 584.638,
+   "sure": 5.585,
+   "cumle_ilk": 192,
+   "cumle_son": 194,
+   "kelime": 17
+  },
+  {
+   "sahne": "S24",
+   "bas": 585.288,
+   "bitis": 638.933,
+   "konusma_bitis": 638.283,
+   "sure": 53.645,
+   "cumle_ilk": 195,
+   "cumle_son": 208,
+   "kelime": 154
+  },
+  {
+   "sahne": "S25",
+   "bas": 638.933,
+   "bitis": 642.755,
+   "konusma_bitis": 642.105,
+   "sure": 3.822,
+   "cumle_ilk": 209,
+   "cumle_son": 209,
+   "kelime": 11
+  },
+  {
+   "sahne": "S26",
+   "bas": 642.755,
+   "bitis": 677.576,
+   "konusma_bitis": 676.926,
+   "sure": 34.821,
+   "cumle_ilk": 210,
+   "cumle_son": 221,
+   "kelime": 92
+  },
+  {
+   "sahne": "S27",
+   "bas": 677.576,
+   "bitis": 706.917,
+   "konusma_bitis": 706.267,
+   "sure": 29.341,
+   "cumle_ilk": 222,
+   "cumle_son": 233,
+   "kelime": 90
+  },
+  {
+   "sahne": "S28",
+   "bas": 706.917,
+   "bitis": 744.378,
+   "konusma_bitis": 743.728,
+   "sure": 37.461,
+   "cumle_ilk": 234,
+   "cumle_son": 246,
+   "kelime": 108
+  },
+  {
+   "sahne": "S29",
+   "bas": 744.378,
+   "bitis": 759.947,
+   "konusma_bitis": 759.297,
+   "sure": 15.569,
+   "cumle_ilk": 247,
+   "cumle_son": 252,
+   "kelime": 46
+  },
+  {
+   "sahne": "S30",
+   "bas": 759.947,
+   "bitis": 773.599,
+   "konusma_bitis": 772.949,
+   "sure": 13.652,
+   "cumle_ilk": 253,
+   "cumle_son": 256,
+   "kelime": 40
+  },
+  {
+   "sahne": "S31",
+   "bas": 773.599,
+   "bitis": 781.388,
+   "konusma_bitis": 781.388,
+   "sure": 7.789,
+   "cumle_ilk": 257,
+   "cumle_son": 259,
+   "kelime": 25
+  }
+ ]
+}

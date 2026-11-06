@@ -1,0 +1,32 @@
+{
+ "girdi": "/home/user/vitrinly/assets/karakter/paket-v1/b-alt-gulumseyerek-konusma.png",
+ "zemin_bgr": [
+  124,
+  90,
+  59
+ ],
+ "boyut": [
+  1920,
+  1080
+ ],
+ "M1-renk-anahtari": {
+  "kenar_artigi_orani": 0.0723,
+  "sacak_px": 0,
+  "on_plan_px": 499522
+ },
+ "M2-grabcut": {
+  "kenar_artigi_orani": 0.0961,
+  "sacak_px": 16,
+  "on_plan_px": 499594
+ },
+ "M3-grabcut-arindirma": {
+  "kenar_artigi_orani": 0.0261,
+  "sacak_px": 0,
+  "on_plan_px": 499594
+ },
+ "M4-renk-arindirma": {
+  "kenar_artigi_orani": 0.0001,
+  "sacak_px": 0,
+  "on_plan_px": 499522
+ }
+}

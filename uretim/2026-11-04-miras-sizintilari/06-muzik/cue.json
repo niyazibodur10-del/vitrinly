@@ -1,0 +1,129 @@
+{
+ "kaynak": "F6a müzik yatağı; zaman ekseni 04-ses/anlatim.wav, bölüm sınırları 04-ses/sahne-zamanlari.json sahne kesmeleri",
+ "fps": 30,
+ "toplam_sn": 781.388,
+ "muzik": [
+  {
+   "ad": "B1 yola çıkış (Bölüm 1: The Number on the Truck)",
+   "bas": 0.0,
+   "son": 106.246,
+   "dosya": "$M/wasteland-caravan-vitalezzz.mp3",
+   "duck": 22,
+   "ofset": 203.0,
+   "giris": 0.4,
+   "cikis": 1.2,
+   "ruh": "merak + yola çıkış, akustik/elektro gitar",
+   "tempo": "≈171 BPM ölçüm, yarım tempo hissi [tahmin]",
+   "kaynak": "Wasteland Caravan — vitalezzz (CC0)"
+  },
+  {
+   "ad": "B2 Okafor ailesi (Bölüm 2)",
+   "bas": 106.246,
+   "son": 155.207,
+   "dosya": "$M/sunny-side-up-pro-sensory.mp3",
+   "duck": 22,
+   "ofset": 85.0,
+   "giris": 1.2,
+   "cikis": 1.2,
+   "ruh": "sıcak aile, hafif caz-pop",
+   "tempo": "≈84 BPM [tahmin]",
+   "kaynak": "Sunny Side Up — Pro Sensory (CC0)"
+  },
+  {
+   "ad": "B3 yaşam ve bakım (Bölüm 3)",
+   "bas": 155.207,
+   "son": 298.974,
+   "dosya": "$M/insistent-yd.ogg",
+   "duck": 19,
+   "ofset": 23.0,
+   "giris": 1.2,
+   "cikis": 1.2,
+   "ruh": "ciddi, seyrek, karanlık-sessiz",
+   "tempo": "sabit yatak [tahmin]",
+   "kaynak": "Insistent — yd (CC0)"
+  },
+  {
+   "ad": "B4 sapma ve bağış (Bölüm 4)",
+   "bas": 298.974,
+   "son": 429.531,
+   "dosya": "$M/remember-this-shadow-komiku.mp3",
+   "duck": 22,
+   "ofset": 49.0,
+   "giris": 1.2,
+   "cikis": 1.2,
+   "ruh": "yol değiştiren, meraklı",
+   "tempo": "≈86 BPM [tahmin]",
+   "kaynak": "Remember this shadow — Komiku (CC0)"
+  },
+  {
+   "ad": "B5 en ağır kutu: ev (Bölüm 5)",
+   "bas": 429.531,
+   "son": 493.932,
+   "dosya": "$M/the-road-we-used-to-travel-komiku.mp3",
+   "duck": 22,
+   "ofset": 88.0,
+   "giris": 1.2,
+   "cikis": 1.2,
+   "ruh": "nostalji, ev, sıcak",
+   "tempo": "≈87 BPM [tahmin]",
+   "kaynak": "The road we use to travel when we were kids — Komiku (CC0)"
+  },
+  {
+   "ad": "B6 vergi durağı (Bölüm 6)",
+   "bas": 493.932,
+   "son": 642.755,
+   "dosya": "$M/lone-scavenger-vitalezzz.mp3",
+   "duck": 22,
+   "ofset": 136.0,
+   "giris": 1.2,
+   "cikis": 1.2,
+   "ruh": "hafif gerilim, gitar",
+   "tempo": "≈171 BPM ölçüm [tahmin]",
+   "kaynak": "Lone Scavenger — vitalezzz (CC0)"
+  },
+  {
+   "ad": "B7 varış + envanter (Bölüm 7)",
+   "bas": 642.755,
+   "son": 759.947,
+   "dosya": "$M/wasteland-caravan-vitalezzz.mp3",
+   "duck": 22,
+   "ofset": 60.0,
+   "giris": 1.2,
+   "cikis": 1.2,
+   "ruh": "varış, açılışa dönüş (kitap ayracı)",
+   "tempo": "≈171 BPM ölçüm [tahmin]",
+   "kaynak": "Wasteland Caravan — vitalezzz (CC0)"
+  },
+  {
+   "ad": "B8 tez + köprü (S30–S31)",
+   "bas": 759.947,
+   "son": 781.388,
+   "dosya": "$M/joy-ride-pro-sensory.ogg",
+   "duck": 22,
+   "ofset": 45.0,
+   "giris": 1.2,
+   "cikis": 2.0,
+   "ruh": "sıcak kapanış",
+   "tempo": "≈90 BPM [tahmin]",
+   "kaynak": "Joy Ride — Pro Sensory (CC0)"
+  }
+ ],
+ "sfx": [],
+ "shorts": [
+  {
+   "ad": "shorts-1",
+   "dosya": "$M/remember-this-shadow-komiku.mp3",
+   "duck": 20,
+   "sure": 60.0,
+   "ofset": "sabit"
+  },
+  {
+   "ad": "shorts-2",
+   "dosya": "$M/lone-scavenger-vitalezzz.mp3",
+   "duck": 20,
+   "sure": 60.0,
+   "ofset": "sabit"
+  }
+ ],
+ "atlanan": []
+}

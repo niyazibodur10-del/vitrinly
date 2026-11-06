@@ -1,0 +1,46 @@
+{
+ "ses": "am_fenrir",
+ "hiz": 0.9,
+ "cumleler": [
+  {
+   "metin": "It's a forecast from a research firm called [Cerulli](/səɹˈulˌi/) Associates, made in late twenty twenty-four.",
+   "bas": 0.0,
+   "son": 6.017
+  },
+  {
+   "metin": "It's a forecast from a research firm called [Cerulli](/sɛɹˈuli/) Associates, made in late twenty twenty-four.",
+   "bas": 6.667,
+   "son": 12.658
+  },
+  {
+   "metin": "It's a forecast from a research firm called [Cerulli](/səɹˈuːli/) Associates, made in late twenty twenty-four.",
+   "bas": 13.308,
+   "son": 19.3
+  },
+  {
+   "metin": "You can see it in [Cerulli's](/səɹˈulˌiz/) numbers.",
+   "bas": 19.95,
+   "son": 21.928
+  },
+  {
+   "metin": "The [Okafors](/Okˈɑfˌɔɹz/) drive right past this stop.",
+   "bas": 22.578,
+   "son": 24.861
+  },
+  {
+   "metin": "Meet the [Okafors](/Okˈɑfˌɔɹz/).",
+   "bas": 25.511,
+   "son": 26.692
+  },
+  {
+   "metin": "For the [Okafors](/Okˈɑfˌɔɹz/), I cross out one box.",
+   "bas": 27.342,
+   "son": 29.673
+  },
+  {
+   "metin": "For the [Okafors](/Okˈɑfɔɹz/), I cross out one box.",
+   "bas": 30.323,
+   "son": 32.623
+  }
+ ]
+}

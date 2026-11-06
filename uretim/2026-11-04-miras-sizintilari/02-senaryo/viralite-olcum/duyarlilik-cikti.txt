@@ -1,0 +1,51 @@
+Temel ilk 3: ['S03', 'S01', 'S06']  (model v0.2, ağırlık toplamı 1.00)
+  S03 − S01 = 0.10  (anlamlı değil, <0.3)
+  S01 − S06 = 0.50  
+  S06 − S08 = 0.00  (anlamlı değil, <0.3)
+  S08 − S07 = 0.20  (anlamlı değil, <0.3)
+
+1) Ağırlık ±0.05 testi: 56 durum | ilk 3 KÜMESİ değişen: 23 | yalnız sırası değişen: 9
+  merak −0.05 → kisisel +0.05: ilk 3 = ['S03', 'S01', 'S08']
+  merak −0.05 → zamanlama +0.05: ilk 3 = ['S03', 'S01', 'S08']
+  merak −0.05 → hikaye +0.05: ilk 3 = ['S03', 'S01', 'S08']
+  talep −0.05 → merak +0.05: ilk 3 = ['S03', 'S01', 'S08']
+  talep −0.05 → kisisel +0.05: ilk 3 = ['S03', 'S01', 'S08']
+  talep −0.05 → zamanlama +0.05: ilk 3 = ['S01', 'S03', 'S08']
+  talep −0.05 → hikaye +0.05: ilk 3 = ['S01', 'S03', 'S08']
+  talep −0.05 → raf +0.05: ilk 3 = ['S03', 'S01', 'S08']
+  hook −0.05 → merak +0.05: ilk 3 = ['S03', 'S01', 'S08']
+  hook −0.05 → kisisel +0.05: ilk 3 = ['S03', 'S01', 'S08']
+  hook −0.05 → zamanlama +0.05: ilk 3 = ['S03', 'S01', 'S08']
+  hook −0.05 → hikaye +0.05: ilk 3 = ['S03', 'S01', 'S08']
+  hook −0.05 → raf +0.05: ilk 3 = ['S03', 'S01', 'S08']
+  zamanlama −0.05 → hikaye +0.05: ilk 3 = ['S03', 'S01', 'S07']
+  zamanlama −0.05 → raf +0.05: ilk 3 = ['S03', 'S01', 'S07']
+  gorsel −0.05 → merak +0.05: ilk 3 = ['S03', 'S01', 'S08']
+  gorsel −0.05 → kisisel +0.05: ilk 3 = ['S03', 'S01', 'S08']
+  gorsel −0.05 → zamanlama +0.05: ilk 3 = ['S03', 'S01', 'S08']
+  gorsel −0.05 → hikaye +0.05: ilk 3 = ['S03', 'S01', 'S08']
+  gorsel −0.05 → raf +0.05: ilk 3 = ['S03', 'S01', 'S08']
+  raf −0.05 → kisisel +0.05: ilk 3 = ['S03', 'S01', 'S08']
+  raf −0.05 → zamanlama +0.05: ilk 3 = ['S01', 'S03', 'S08']
+  raf −0.05 → hikaye +0.05: ilk 3 = ['S01', 'S03', 'S08']
+
+2) Puan aralığı (kötümser / temel / iyimser nihai):
+  S03: 7.60 / 8.10 / 8.40
+  S01: 7.40 / 8.00 / 8.35
+  S06: 7.20 / 7.50 / 7.90
+  S08: 7.20 / 7.50 / 8.05
+  S07: 6.90 / 7.30 / 7.70
+  S09: 6.60 / 7.00 / 7.15
+  S02: 6.35 / 7.00 / 7.30
+  S11: 6.35 / 6.95 / 7.15
+  S05: 5.85 / 6.45 / 6.80
+  S10: 6.20 / 6.20 / 6.35
+  S04: 5.55 / 5.85 / 6.00
+  S12: 5.70 / 5.85 / 6.00
+
+3) Çapraz test (hedef kötümser, diğer hepsi iyimser) — ilk 3'teki her senaryo için:
+  S03 kötümser → ilk 3 = ['S01', 'S08', 'S06']  (KÜME DEĞİŞTİ)
+  S01 kötümser → ilk 3 = ['S03', 'S08', 'S06']  (KÜME DEĞİŞTİ)
+  S06 kötümser → ilk 3 = ['S03', 'S01', 'S08']  (KÜME DEĞİŞTİ)
+
+SONUÇ: ağırlık testine göre sıralama KIRILGAN (kural: ±0.05 ağırlıkta ilk 3 kümesi değişirse kırılgan).

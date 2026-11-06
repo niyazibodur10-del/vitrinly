@@ -1,0 +1,10 @@
+cue vuruş 226 (183 olay; dizi devamı 43) · ilk vuruş görsel olaya bağlı (≤0,5 kare) + vuruş noktası ±2 kare · kayık: 0 []
+stem: olay 183 · cue farkı max 0.00 kare · stem başlangıç farkı medyan 0.00, max 1.07 kare · ±2 kare dışı: 0 []
+abone kare 5266: görsel tık 176.833 sn · ses başı 176.833 sn · fark +0.00 kare
+abone kare 9152: görsel tık 306.367 sn · ses başı 306.367 sn · fark +0.00 kare
+abone kare 13488: görsel tık 450.900 sn · ses başı 450.900 sn · fark +0.00 kare
+abone kare 19878: görsel tık 663.900 sn · ses başı 663.900 sn · fark +0.00 kare
+t= 176.83  RMS artışı +0.00 dB · klik tepe -20.0 dBFS · anlatım tepe -4.5 dBFS · GEÇTİ
+t= 306.37  RMS artışı +0.00 dB · klik tepe -20.0 dBFS · anlatım tepe -4.5 dBFS · GEÇTİ
+t= 450.90  RMS artışı +0.00 dB · klik tepe -20.0 dBFS · anlatım tepe -4.5 dBFS · GEÇTİ
+t= 663.90  RMS artışı +0.00 dB · klik tepe -20.0 dBFS · anlatım tepe -4.5 dBFS · GEÇTİ

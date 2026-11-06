@@ -1,0 +1,1397 @@
+{
+ "miks_onizleme_wav": {
+  "I": -14.0,
+  "LRA": 2.0,
+  "TP": -3.2
+ },
+ "miks_onizleme_m4a": {
+  "I": -14.0,
+  "LRA": 2.0,
+  "TP": -2.5
+ },
+ "muzik_stem": {
+  "I": -36.3,
+  "LRA": 3.9,
+  "TP": -16.5
+ },
+ "sfx_stem": {
+  "I": -37.2,
+  "LRA": 14.7,
+  "TP": -17.0
+ },
+ "seviye_tum": {
+  "konusma_alti_fark_db": 22.2,
+  "muzik_konusmada_lufs_M": -36.6,
+  "muzik_boslukta_lufs_M": -36.4
+ },
+ "bolum_seviye": {
+  "B1 mutfak masası": {
+   "konusma_alti_fark_db": 23.0,
+   "muzik_konusmada_lufs_M": -37.3,
+   "muzik_boslukta_lufs_M": -37.2
+  },
+  "B2a beş zarf": {
+   "konusma_alti_fark_db": 22.9,
+   "muzik_konusmada_lufs_M": -37.3,
+   "muzik_boslukta_lufs_M": -36.3
+  },
+  "B2b faiz zarfı sonrası": {
+   "konusma_alti_fark_db": 21.8,
+   "muzik_konusmada_lufs_M": -36.4,
+   "muzik_boslukta_lufs_M": -36.1
+  },
+  "B3 borç defteri": {
+   "konusma_alti_fark_db": 23.0,
+   "muzik_konusmada_lufs_M": -37.2,
+   "muzik_boslukta_lufs_M": -36.4
+  },
+  "B4 zarfın içindeki zarf": {
+   "konusma_alti_fark_db": 21.0,
+   "muzik_konusmada_lufs_M": -35.2,
+   "muzik_boslukta_lufs_M": -35.2
+  },
+  "B5 bir ailenin yapamadığı üç şey": {
+   "konusma_alti_fark_db": 22.2,
+   "muzik_konusmada_lufs_M": -36.9,
+   "muzik_boslukta_lufs_M": -37.1
+  },
+  "B6 açığı kapatmanın üç yolu": {
+   "konusma_alti_fark_db": 22.0,
+   "muzik_konusmada_lufs_M": -36.3,
+   "muzik_boslukta_lufs_M": -36.5
+  },
+  "B7 kapanış": {
+   "konusma_alti_fark_db": 21.9,
+   "muzik_konusmada_lufs_M": -36.4,
+   "muzik_boslukta_lufs_M": -36.7
+  }
+ },
+ "sfx_konusma_cakismasi": [
+  {
+   "t": 0.0,
+   "olay": "S01 Capitol silüeti tam ekran, küçülmeye başlar",
+   "konusmayla_ortusme": 0.95,
+   "db": -18
+  },
+  {
+   "t": 1.8999,
+   "olay": "S01 Capitol → masadaki ev maketi (pop) + Leo masaya oturur",
+   "konusmayla_ortusme": 1.0,
+   "db": -19
+  },
+  {
+   "t": 2.9935,
+   "olay": "S01 maaş zarfı masaya düşer ($5,400 IN)",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 3.8,
+   "olay": "S01 sayaç 0→5,400 (0,8 sn)",
+   "konusmayla_ortusme": 1.0,
+   "db": -19
+  },
+  {
+   "t": 4.5625,
+   "olay": "S01 sayaç 0→5,400 (0,8 sn)",
+   "konusmayla_ortusme": 1.0,
+   "db": -21
+  },
+  {
+   "t": 7.3549,
+   "olay": "S01 not yapışır: $7,400 OUT",
+   "konusmayla_ortusme": 1.0,
+   "db": -15
+  },
+  {
+   "t": 8.5199,
+   "olay": "S01 kırmızı −$2,000/MO notu yanıp söner",
+   "konusmayla_ortusme": 1.0,
+   "db": -17
+  },
+  {
+   "t": 8.7699,
+   "olay": "S01 kırmızı −$2,000/MO notu yanıp söner",
+   "konusmayla_ortusme": 1.0,
+   "db": -17
+  },
+  {
+   "t": 9.0199,
+   "olay": "S01 kırmızı −$2,000/MO notu yanıp söner",
+   "konusmayla_ortusme": 1.0,
+   "db": -17
+  },
+  {
+   "t": 12.8622,
+   "olay": "S02 kesme: masa orta, Leo",
+   "konusmayla_ortusme": 0.44,
+   "db": -25
+  },
+  {
+   "t": 19.94,
+   "olay": "S02 araba ikonu + CAR LOANS",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 20.78,
+   "olay": "S02 ev ikonu + MORTGAGES",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 24.1749,
+   "olay": "S02 not: FASTEST BILL?",
+   "konusmayla_ortusme": 1.0,
+   "db": -15
+  },
+  {
+   "t": 24.8349,
+   "olay": "S02 not: WHY?",
+   "konusmayla_ortusme": 0.89,
+   "db": -15
+  },
+  {
+   "t": 26.64,
+   "olay": "S02 üç not A · B · C",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 26.76,
+   "olay": "S02 üç not A · B · C",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 26.88,
+   "olay": "S02 üç not A · B · C",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 30.0412,
+   "olay": "S03 kesme: Leo yakın: I'm Leo",
+   "konusmayla_ortusme": 0.47,
+   "db": -25
+  },
+  {
+   "t": 30.539,
+   "olay": "S03 isim etiketi LEO",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 37.1825,
+   "olay": "S03 = işareti + $1 billion a year",
+   "konusmayla_ortusme": 1.0,
+   "db": -21
+  },
+  {
+   "t": 45.4642,
+   "olay": "S03 kesme: masa geniş, Leo",
+   "konusmayla_ortusme": 0.26,
+   "db": -27
+  },
+  {
+   "t": 49.1869,
+   "olay": "S03 kırmızı tez notu buzdolabına çarpar",
+   "konusmayla_ortusme": 1.0,
+   "db": -15
+  },
+  {
+   "t": 57.2952,
+   "olay": "S04 kesme: kuşbakışı masa: PAYDAY",
+   "konusmayla_ortusme": 0.46,
+   "db": -25
+  },
+  {
+   "t": 58.1545,
+   "olay": "S04 maaş zarfı masaya düşer $5,400",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 65.4534,
+   "olay": "S04 şerit: PAYCHECK TAXES",
+   "konusmayla_ortusme": 1.0,
+   "db": -21
+  },
+  {
+   "t": 66.9534,
+   "olay": "S04 şerit: COMPANY TAXES",
+   "konusmayla_ortusme": 1.0,
+   "db": -21
+  },
+  {
+   "t": 68.4934,
+   "olay": "S04 şerit: PAYROLL TAXES",
+   "konusmayla_ortusme": 1.0,
+   "db": -21
+  },
+  {
+   "t": 72.8012,
+   "olay": "S04 kesme: masa orta, Leo zarfları dizer",
+   "konusmayla_ortusme": 0.26,
+   "db": -27
+  },
+  {
+   "t": 79.635,
+   "olay": "S04 6 zarf yelpaze gibi dizilir",
+   "konusmayla_ortusme": 1.0,
+   "db": -24
+  },
+  {
+   "t": 79.755,
+   "olay": "S04 6 zarf yelpaze gibi dizilir",
+   "konusmayla_ortusme": 1.0,
+   "db": -24
+  },
+  {
+   "t": 79.875,
+   "olay": "S04 6 zarf yelpaze gibi dizilir",
+   "konusmayla_ortusme": 1.0,
+   "db": -24
+  },
+  {
+   "t": 79.995,
+   "olay": "S04 6 zarf yelpaze gibi dizilir",
+   "konusmayla_ortusme": 1.0,
+   "db": -24
+  },
+  {
+   "t": 80.115,
+   "olay": "S04 6 zarf yelpaze gibi dizilir",
+   "konusmayla_ortusme": 1.0,
+   "db": -24
+  },
+  {
+   "t": 80.235,
+   "olay": "S04 6 zarf yelpaze gibi dizilir",
+   "konusmayla_ortusme": 1.0,
+   "db": -24
+  },
+  {
+   "t": 81.7225,
+   "olay": "S04 kırmızı zarf kenara çekilir (?)",
+   "konusmayla_ortusme": 1.0,
+   "db": -25
+  },
+  {
+   "t": 82.8242,
+   "olay": "S05 kesme: masa orta, Leo + hesap makinesi",
+   "konusmayla_ortusme": 0.46,
+   "db": -25
+  },
+  {
+   "t": 84.9056,
+   "olay": "S05 mavi zarf SOCIAL SECURITY düşer",
+   "konusmayla_ortusme": 0.82,
+   "db": -16
+  },
+  {
+   "t": 91.6923,
+   "olay": "S05 hesap makinesi $1,667",
+   "konusmayla_ortusme": 1.0,
+   "db": -16
+  },
+  {
+   "t": 94.3982,
+   "olay": "S05 kesme: grafik G1: gelir çubuğu dolar",
+   "konusmayla_ortusme": 0.26,
+   "db": -27
+  },
+  {
+   "t": 95.86,
+   "olay": "S05 yeşil dilim MEDICARE $1,073",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 95.7056,
+   "olay": "S05 açık yeşil zarf HEALTH",
+   "konusmayla_ortusme": 1.0,
+   "db": -16
+  },
+  {
+   "t": 101.74,
+   "olay": "S05 sayaç SPENT $3,765",
+   "konusmayla_ortusme": 0.82,
+   "db": -19
+  },
+  {
+   "t": 102.5025,
+   "olay": "S05 sayaç SPENT $3,765",
+   "konusmayla_ortusme": 1.0,
+   "db": -21
+  },
+  {
+   "t": 111.8582,
+   "olay": "S06 kesme: kuşbakışı: gri DEFENSE zarfı",
+   "konusmayla_ortusme": 0.47,
+   "db": -25
+  },
+  {
+   "t": 112.7567,
+   "olay": "S06 gri DEFENSE zarfı düşer",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 115.4709,
+   "olay": "S06 etiket SHIPS",
+   "konusmayla_ortusme": 1.0,
+   "db": -19
+  },
+  {
+   "t": 115.6999,
+   "olay": "S06 etiket PLANES",
+   "konusmayla_ortusme": 1.0,
+   "db": -19
+  },
+  {
+   "t": 116.0199,
+   "olay": "S06 etiket SALARIES",
+   "konusmayla_ortusme": 1.0,
+   "db": -19
+  },
+  {
+   "t": 116.5999,
+   "olay": "S06 etiket BASES",
+   "konusmayla_ortusme": 1.0,
+   "db": -19
+  },
+  {
+   "t": 117.674,
+   "olay": "S06 $965",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 120.46,
+   "olay": "S06 kırmızı zarf masaya kayar (müzik kesilir)",
+   "konusmayla_ortusme": 1.0,
+   "db": -14
+  },
+  {
+   "t": 123.9225,
+   "olay": "S06 5 dolardan biri kırmızıya döner",
+   "konusmayla_ortusme": 1.0,
+   "db": -21
+  },
+  {
+   "t": 124.5799,
+   "olay": "S06 INTEREST yazısı",
+   "konusmayla_ortusme": 1.0,
+   "db": -19
+  },
+  {
+   "t": 127.955,
+   "olay": "S06 çubuklar sırayla dolar, INTEREST 3. sırada parlar",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 128.075,
+   "olay": "S06 çubuklar sırayla dolar, INTEREST 3. sırada parlar",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 128.195,
+   "olay": "S06 çubuklar sırayla dolar, INTEREST 3. sırada parlar",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 128.315,
+   "olay": "S06 çubuklar sırayla dolar, INTEREST 3. sırada parlar",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 128.435,
+   "olay": "S06 çubuklar sırayla dolar, INTEREST 3. sırada parlar",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 133.982,
+   "olay": "S06 INTEREST > DEFENSE",
+   "konusmayla_ortusme": 1.0,
+   "db": -19
+  },
+  {
+   "t": 139.0022,
+   "olay": "S06 kesme: grafik: 5 dolardan 1'i",
+   "konusmayla_ortusme": 0.03,
+   "db": -27
+  },
+  {
+   "t": 144.5767,
+   "olay": "S06 BUYS NOTHING damgası",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 145.7799,
+   "olay": "S06 NO ROAD",
+   "konusmayla_ortusme": 1.0,
+   "db": -19
+  },
+  {
+   "t": 146.2199,
+   "olay": "S06 NO CHECK",
+   "konusmayla_ortusme": 1.0,
+   "db": -19
+  },
+  {
+   "t": 146.6399,
+   "olay": "S06 NO SHIP",
+   "konusmayla_ortusme": 1.0,
+   "db": -19
+  },
+  {
+   "t": 150.2782,
+   "olay": "S07 kesme: kuşbakışı: EVERYTHING ELSE zarfı",
+   "konusmayla_ortusme": 0.47,
+   "db": -25
+  },
+  {
+   "t": 150.6027,
+   "olay": "S07 kahve zarf EVERYTHING ELSE düşer",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 153.0599,
+   "olay": "S07 etiket VETERANS",
+   "konusmayla_ortusme": 0.67,
+   "db": -19
+  },
+  {
+   "t": 153.7399,
+   "olay": "S07 etiket ROADS",
+   "konusmayla_ortusme": 0.67,
+   "db": -19
+  },
+  {
+   "t": 154.4199,
+   "olay": "S07 etiket FOOD",
+   "konusmayla_ortusme": 1.0,
+   "db": -19
+  },
+  {
+   "t": 155.3799,
+   "olay": "S07 etiket SCIENCE",
+   "konusmayla_ortusme": 0.67,
+   "db": -19
+  },
+  {
+   "t": 156.1399,
+   "olay": "S07 etiket PARKS",
+   "konusmayla_ortusme": 1.0,
+   "db": -19
+  },
+  {
+   "t": 156.7799,
+   "olay": "S07 etiket COURTS",
+   "konusmayla_ortusme": 1.0,
+   "db": -19
+  },
+  {
+   "t": 161.4382,
+   "olay": "S07 kesme: terazi: gider ↔ gelir",
+   "konusmayla_ortusme": 0.26,
+   "db": -27
+  },
+  {
+   "t": 165.0767,
+   "olay": "S07 terazi gider tarafına yatar (~$7,400 OUT)",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 172.0999,
+   "olay": "S07 −$2,000 / MO kırmızı",
+   "konusmayla_ortusme": 1.0,
+   "db": -17
+  },
+  {
+   "t": 172.2999,
+   "olay": "S07 −$2,000 / MO kırmızı",
+   "konusmayla_ortusme": 1.0,
+   "db": -17
+  },
+  {
+   "t": 172.7972,
+   "olay": "S07 kesme: masa orta: LOAN BOOK",
+   "konusmayla_ortusme": 0.26,
+   "db": -27
+  },
+  {
+   "t": 174.7279,
+   "olay": "S07 LOAN BOOK masaya kayar, +$2,000 satırı",
+   "konusmayla_ortusme": 0.79,
+   "db": -18
+  },
+  {
+   "t": 176.0679,
+   "olay": "S08 LOAN BOOK açılır",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 182.0795,
+   "olay": "S08 sayfalar masadan yere akar",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 182.3779,
+   "olay": "S08 sayfalar masadan yere akar",
+   "konusmayla_ortusme": 0.79,
+   "db": -22
+  },
+  {
+   "t": 183.2462,
+   "olay": "S08 kesme: grafik G2: bakiye",
+   "konusmayla_ortusme": 0.6,
+   "db": -27
+  },
+  {
+   "t": 183.944,
+   "olay": "S08 sayaç ~$389,000",
+   "konusmayla_ortusme": 1.0,
+   "db": -19
+  },
+  {
+   "t": 184.7065,
+   "olay": "S08 sayaç ~$389,000",
+   "konusmayla_ortusme": 1.0,
+   "db": -21
+  },
+  {
+   "t": 194.1452,
+   "olay": "S08 kesme: Leo yakın: pahalı değil",
+   "konusmayla_ortusme": 0.26,
+   "db": -27
+  },
+  {
+   "t": 210.6622,
+   "olay": "S08 ok: cepten cebe",
+   "konusmayla_ortusme": 1.0,
+   "db": -23
+  },
+  {
+   "t": 219.175,
+   "olay": "S09 6 yıl kutusu sırayla dolar ($64,800 ×6)",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 219.295,
+   "olay": "S09 6 yıl kutusu sırayla dolar ($64,800 ×6)",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 219.415,
+   "olay": "S09 6 yıl kutusu sırayla dolar ($64,800 ×6)",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 219.535,
+   "olay": "S09 6 yıl kutusu sırayla dolar ($64,800 ×6)",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 219.655,
+   "olay": "S09 6 yıl kutusu sırayla dolar ($64,800 ×6)",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 219.775,
+   "olay": "S09 6 yıl kutusu sırayla dolar ($64,800 ×6)",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 228.8192,
+   "olay": "S09 kesme: masa orta: defter uzar",
+   "konusmayla_ortusme": 0.26,
+   "db": -27
+  },
+  {
+   "t": 229.4734,
+   "olay": "S09 +$2,000 satırı",
+   "konusmayla_ortusme": 1.0,
+   "db": -21
+  },
+  {
+   "t": 232.486,
+   "olay": "S10 WHO HOLDS THE LOAN?",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 235.294,
+   "olay": "S10 alacaklı ikonu (americans)",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 237.264,
+   "olay": "S10 alacaklı ikonu (pension)",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 238.513,
+   "olay": "S10 alacaklı ikonu (banks)",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 240.496,
+   "olay": "S10 alacaklı ikonu (foreign)",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 244.02,
+   "olay": "S10 alacaklı ikonu (federal)",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 245.1092,
+   "olay": "S10 kesme: Leo yakın: IOU",
+   "konusmayla_ortusme": 0.26,
+   "db": -27
+  },
+  {
+   "t": 247.8334,
+   "olay": "S10 IOU fişi",
+   "konusmayla_ortusme": 1.0,
+   "db": -21
+  },
+  {
+   "t": 253.7442,
+   "olay": "S11 kesme: iki kredi başvurusu",
+   "konusmayla_ortusme": 0.46,
+   "db": -25
+  },
+  {
+   "t": 258.6167,
+   "olay": "S11 DENIED damgası (aile)",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 262.5167,
+   "olay": "S11 APPROVED damgası (hane)",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 263.9992,
+   "olay": "S11 kesme: buzdolabı: soru notu",
+   "konusmayla_ortusme": 0.26,
+   "db": -27
+  },
+  {
+   "t": 264.3919,
+   "olay": "S11 soru notu yapışır",
+   "konusmayla_ortusme": 1.0,
+   "db": -15
+  },
+  {
+   "t": 268.5225,
+   "olay": "S11 spot ışık kırmızı zarfa",
+   "konusmayla_ortusme": 1.0,
+   "db": -25
+  },
+  {
+   "t": 271.7024,
+   "olay": "S12 kırmızı INTEREST zarfı masaya kayar",
+   "konusmayla_ortusme": 1.0,
+   "db": -21
+  },
+  {
+   "t": 275.8272,
+   "olay": "S12 punch-in Leo + zarf",
+   "konusmayla_ortusme": 0.41,
+   "db": -23
+  },
+  {
+   "t": 276.9862,
+   "olay": "S12 zarf açılır: içinden mor zarf (Leo G05)",
+   "konusmayla_ortusme": 0.85,
+   "db": -16
+  },
+  {
+   "t": 280.44,
+   "olay": "S12 BORROWED etiketi pop",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 285.037,
+   "olay": "S12 çubuğun kırmızı faiz kısmı dolar: 53% OF THE GAP",
+   "konusmayla_ortusme": 1.0,
+   "db": -24
+  },
+  {
+   "t": 295.2782,
+   "olay": "S12 kesme: kuşbakışı masa, matruşka başlar",
+   "konusmayla_ortusme": 0.41,
+   "db": -23
+  },
+  {
+   "t": 295.7719,
+   "olay": "S12 matruşka 1: mor zarftan kırmızı zarf çıkar + punch-in",
+   "konusmayla_ortusme": 1.0,
+   "db": -22
+  },
+  {
+   "t": 295.9259,
+   "olay": "S12 matruşka 1: mor zarftan kırmızı zarf çıkar + punch-in",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 300.0839,
+   "olay": "S12 matruşka 2: kırmızıdan mor zarf + punch-in",
+   "konusmayla_ortusme": 1.0,
+   "db": -22
+  },
+  {
+   "t": 300.2379,
+   "olay": "S12 matruşka 2: kırmızıdan mor zarf + punch-in",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 302.8259,
+   "olay": "S12 matruşka 3 + punch-in",
+   "konusmayla_ortusme": 1.0,
+   "db": -22
+  },
+  {
+   "t": 302.9799,
+   "olay": "S12 matruşka 3 + punch-in",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 303.7259,
+   "olay": "S12 matruşka 4 + punch-in",
+   "konusmayla_ortusme": 1.0,
+   "db": -22
+  },
+  {
+   "t": 303.8799,
+   "olay": "S12 matruşka 4 + punch-in",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 305.4342,
+   "olay": "S13 kesme: masa orta: şişman kırmızı zarf",
+   "konusmayla_ortusme": 0.46,
+   "db": -25
+  },
+  {
+   "t": 315.8222,
+   "olay": "S13 kesme: grafik G3a: ortalama faiz",
+   "konusmayla_ortusme": 0.44,
+   "db": -27
+  },
+  {
+   "t": 321.697,
+   "olay": "S13 SEP 2026 ~3.5% (termometre yükselir)",
+   "konusmayla_ortusme": 1.0,
+   "db": -24
+  },
+  {
+   "t": 326.375,
+   "olay": "S13 11 çubuk sırayla",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 326.475,
+   "olay": "S13 11 çubuk sırayla",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 326.575,
+   "olay": "S13 11 çubuk sırayla",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 326.675,
+   "olay": "S13 11 çubuk sırayla",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 326.775,
+   "olay": "S13 11 çubuk sırayla",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 326.875,
+   "olay": "S13 11 çubuk sırayla",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 326.975,
+   "olay": "S13 11 çubuk sırayla",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 327.075,
+   "olay": "S13 11 çubuk sırayla",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 327.175,
+   "olay": "S13 11 çubuk sırayla",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 327.275,
+   "olay": "S13 11 çubuk sırayla",
+   "konusmayla_ortusme": 0.17,
+   "db": -18
+  },
+  {
+   "t": 328.68,
+   "olay": "S13 ~3× IN 5 YEARS",
+   "konusmayla_ortusme": 1.0,
+   "db": -19
+  },
+  {
+   "t": 336.2399,
+   "olay": "S13 FY2026 çubuğu yanıp söner",
+   "konusmayla_ortusme": 1.0,
+   "db": -17
+  },
+  {
+   "t": 336.4399,
+   "olay": "S13 FY2026 çubuğu yanıp söner",
+   "konusmayla_ortusme": 1.0,
+   "db": -17
+  },
+  {
+   "t": 337.3342,
+   "olay": "S14 kesme: Leo yakın",
+   "konusmayla_ortusme": 0.46,
+   "db": -25
+  },
+  {
+   "t": 354.0059,
+   "olay": "S14 CHEAP 1% düşer → NEW 5%",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 354.1799,
+   "olay": "S14 CHEAP 1% düşer → NEW 5%",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 356.1422,
+   "olay": "S14 kesme: grafik G4: yeni faizler",
+   "konusmayla_ortusme": 0.32,
+   "db": -27
+  },
+  {
+   "t": 365.3722,
+   "olay": "S15 kesme: gösterge: ortalama faiz tırmanır",
+   "konusmayla_ortusme": 0.44,
+   "db": -25
+  },
+  {
+   "t": 366.477,
+   "olay": "S15 ibre yükselir",
+   "konusmayla_ortusme": 1.0,
+   "db": -24
+  },
+  {
+   "t": 379.8789,
+   "olay": "S15 RATE × BALANCE notu",
+   "konusmayla_ortusme": 1.0,
+   "db": -15
+  },
+  {
+   "t": 381.0682,
+   "olay": "S15 kesme: kuşbakışı: CAN'T SKIP",
+   "konusmayla_ortusme": 0.26,
+   "db": -27
+  },
+  {
+   "t": 383.3567,
+   "olay": "S15 CAN'T SKIP damgası",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 386.32,
+   "olay": "S15 FAMILY yazısı çatlar",
+   "konusmayla_ortusme": 1.0,
+   "db": -19
+  },
+  {
+   "t": 390.8212,
+   "olay": "S16 kesme: kart: 1 · OWN MONEY",
+   "konusmayla_ortusme": 0.47,
+   "db": -25
+  },
+  {
+   "t": 391.169,
+   "olay": "S16 1 · IT BORROWS IN ITS OWN MONEY",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 403.3112,
+   "olay": "S16 kesme: buzdolabı: soru notuna tik",
+   "konusmayla_ortusme": 0.26,
+   "db": -27
+  },
+  {
+   "t": 406.8625,
+   "olay": "S16 yeşil tik (A5 kapanır)",
+   "konusmayla_ortusme": 1.0,
+   "db": -21
+  },
+  {
+   "t": 409.094,
+   "olay": "S16 banknotlar çoğalır, sepet küçülür",
+   "konusmayla_ortusme": 1.0,
+   "db": -24
+  },
+  {
+   "t": 413.68,
+   "olay": "S16 INFLATION",
+   "konusmayla_ortusme": 1.0,
+   "db": -19
+  },
+  {
+   "t": 414.5032,
+   "olay": "S16 kesme: Leo yakın",
+   "konusmayla_ortusme": 0.24,
+   "db": -27
+  },
+  {
+   "t": 418.206,
+   "olay": "S17 2 · IT NEVER RETIRES",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 424.4134,
+   "olay": "S17 takvim sonsuz çevrilir",
+   "konusmayla_ortusme": 1.0,
+   "db": -21
+  },
+  {
+   "t": 425.0222,
+   "olay": "S17 kesme: masa orta: IOU takla",
+   "konusmayla_ortusme": 0.06,
+   "db": -27
+  },
+  {
+   "t": 425.8734,
+   "olay": "S17 IOU fişleri takla atar",
+   "konusmayla_ortusme": 1.0,
+   "db": -21
+  },
+  {
+   "t": 432.4134,
+   "olay": "S17 PAY IT ALL BACK? üstü çizilir",
+   "konusmayla_ortusme": 1.0,
+   "db": -21
+  },
+  {
+   "t": 433.98,
+   "olay": "S17 KEEP PAYING THE INTEREST?",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 438.2952,
+   "olay": "S18 kesme: kart: 3 · GIVE ITSELF A RAISE",
+   "konusmayla_ortusme": 0.46,
+   "db": -25
+  },
+  {
+   "t": 438.643,
+   "olay": "S18 3 · IT CAN GIVE ITSELF A RAISE",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 444.2799,
+   "olay": "S18 maaş zarfına kadran (yukarı/aşağı)",
+   "konusmayla_ortusme": 1.0,
+   "db": -17
+  },
+  {
+   "t": 444.4799,
+   "olay": "S18 maaş zarfına kadran (yukarı/aşağı)",
+   "konusmayla_ortusme": 1.0,
+   "db": -17
+  },
+  {
+   "t": 445.8934,
+   "olay": "S18 makas zarfı keser",
+   "konusmayla_ortusme": 1.0,
+   "db": -21
+  },
+  {
+   "t": 453.4625,
+   "olay": "S18 Leo gülümser (omuz silker)",
+   "konusmayla_ortusme": 1.0,
+   "db": -25
+  },
+  {
+   "t": 454.6752,
+   "olay": "S19 kesme: masa orta, Leo",
+   "konusmayla_ortusme": 0.46,
+   "db": -25
+  },
+  {
+   "t": 457.6954,
+   "olay": "S19 çizgi çizilmeye başlar, >100% (1946)",
+   "konusmayla_ortusme": 1.0,
+   "db": -21
+  },
+  {
+   "t": 470.3825,
+   "olay": "S19 ~23% (1974) etiketi",
+   "konusmayla_ortusme": 1.0,
+   "db": -21
+  },
+  {
+   "t": 471.4212,
+   "olay": "S19 kesme: grafik: borç $ çubuğu",
+   "konusmayla_ortusme": 0.62,
+   "db": -27
+  },
+  {
+   "t": 474.877,
+   "olay": "S19 $242B → $344B çubuğu yükselir",
+   "konusmayla_ortusme": 0.68,
+   "db": -24
+  },
+  {
+   "t": 480.849,
+   "olay": "S19 maaş zarfı büyür",
+   "konusmayla_ortusme": 0.97,
+   "db": -24
+  },
+  {
+   "t": 482.8892,
+   "olay": "S19 kesme: Leo yakın",
+   "konusmayla_ortusme": 0.62,
+   "db": -27
+  },
+  {
+   "t": 487.5982,
+   "olay": "S20 kesme: grafik G5 devam: ~97% (Q2 2026)",
+   "konusmayla_ortusme": 0.47,
+   "db": -25
+  },
+  {
+   "t": 491.4225,
+   "olay": "S20 ayrı nokta ~97% (FRED)",
+   "konusmayla_ortusme": 1.0,
+   "db": -21
+  },
+  {
+   "t": 496.063,
+   "olay": "S20 sarmal dönmeye başlar",
+   "konusmayla_ortusme": 1.0,
+   "db": -22
+  },
+  {
+   "t": 506.9622,
+   "olay": "S20 kesme: üç fren ikonu",
+   "konusmayla_ortusme": 0.5,
+   "db": -27
+  },
+  {
+   "t": 508.4599,
+   "olay": "S20 fren 1 OWN CURRENCY",
+   "konusmayla_ortusme": 1.0,
+   "db": -19
+  },
+  {
+   "t": 510.6399,
+   "olay": "S20 fren 2 LONG LOANS",
+   "konusmayla_ortusme": 1.0,
+   "db": -19
+  },
+  {
+   "t": 518.0999,
+   "olay": "S20 fren 3 LENDERS' TRUST",
+   "konusmayla_ortusme": 1.0,
+   "db": -19
+  },
+  {
+   "t": 520.8962,
+   "olay": "S20 kesme: Leo yakın",
+   "konusmayla_ortusme": 0.6,
+   "db": -27
+  },
+  {
+   "t": 527.6532,
+   "olay": "S21 kesme: masa orta: üç olasılık",
+   "konusmayla_ortusme": 0.44,
+   "db": -25
+  },
+  {
+   "t": 529.0799,
+   "olay": "S21 not A · GROW",
+   "konusmayla_ortusme": 1.0,
+   "db": -19
+  },
+  {
+   "t": 538.6302,
+   "olay": "S21 kesme: buzdolabı: A · B · C dolar",
+   "konusmayla_ortusme": 0.26,
+   "db": -27
+  },
+  {
+   "t": 540.3399,
+   "olay": "S21 not B · CHANGE THE ENVELOPES",
+   "konusmayla_ortusme": 0.67,
+   "db": -19
+  },
+  {
+   "t": 540.7599,
+   "olay": "S21 not C · LET PRICES RISE",
+   "konusmayla_ortusme": 1.0,
+   "db": -19
+  },
+  {
+   "t": 541.9964,
+   "olay": "S22 A · GROW THE PAYCHECK",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 545.165,
+   "olay": "S22 maaş öne geçer",
+   "konusmayla_ortusme": 1.0,
+   "db": -22
+  },
+  {
+   "t": 555.1592,
+   "olay": "S22 kesme: Leo yakın: GROWTH vs RATE",
+   "konusmayla_ortusme": 0.03,
+   "db": -27
+  },
+  {
+   "t": 555.6504,
+   "olay": "S22 GROWTH vs RATE",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 562.9,
+   "olay": "S22 borç defteri öne geçer",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 564.797,
+   "olay": "S22 kırmızı zarf şişer",
+   "konusmayla_ortusme": 0.6,
+   "db": -24
+  },
+  {
+   "t": 566.4362,
+   "olay": "S23 kesme: kuşbakışı: B · CHANGE THE ENVELOPES",
+   "konusmayla_ortusme": 0.46,
+   "db": -25
+  },
+  {
+   "t": 570.3134,
+   "olay": "S23 CUT SPENDING + makas",
+   "konusmayla_ortusme": 0.96,
+   "db": -21
+  },
+  {
+   "t": 578.021,
+   "olay": "S23 silüet (retirees)",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 578.78,
+   "olay": "S23 silüet (patients)",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 579.5,
+   "olay": "S23 silüet (soldiers)",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 579.7,
+   "olay": "S23 silüet (students)",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 580.2832,
+   "olay": "S23 kesme: masa orta: slow and loud",
+   "konusmayla_ortusme": 0.24,
+   "db": -27
+  },
+  {
+   "t": 587.1672,
+   "olay": "S24 kesme: kart: C · LET PRICES RISE",
+   "konusmayla_ortusme": 0.47,
+   "db": -25
+  },
+  {
+   "t": 587.515,
+   "olay": "S24 C · LET PRICES RISE",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 591.58,
+   "olay": "S24 banknotlar küçülür",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 598.3822,
+   "olay": "S24 kesme: 1946: PRICES +18%",
+   "konusmayla_ortusme": 0.35,
+   "db": -27
+  },
+  {
+   "t": 601.7425,
+   "olay": "S24 +18% (1946)",
+   "konusmayla_ortusme": 1.0,
+   "db": -21
+  },
+  {
+   "t": 609.3599,
+   "olay": "S24 market fişi uzar",
+   "konusmayla_ortusme": 0.72,
+   "db": -17
+  },
+  {
+   "t": 609.8622,
+   "olay": "S24 kesme: Leo yakın: zarf geri şişer",
+   "konusmayla_ortusme": 0.76,
+   "db": -27
+  },
+  {
+   "t": 617.877,
+   "olay": "S24 kırmızı zarf şişer + OLD DEBT SHRINKS · NEW RATES RISE",
+   "konusmayla_ortusme": 1.0,
+   "db": -24
+  },
+  {
+   "t": 620.3262,
+   "olay": "S25 kesme: buzdolabı: A B C + LUCK",
+   "konusmayla_ortusme": 0.46,
+   "db": -25
+  },
+  {
+   "t": 624.2999,
+   "olay": "S25 + LUCK notu",
+   "konusmayla_ortusme": 1.0,
+   "db": -19
+  },
+  {
+   "t": 631.938,
+   "olay": "S25 A · B · C → ONE LETTER IN THE COMMENTS",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 632.088,
+   "olay": "S25 A · B · C → ONE LETTER IN THE COMMENTS",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 637.7512,
+   "olay": "S26 kesme: buzdolabı: tez notu + 3 tik",
+   "konusmayla_ortusme": 0.47,
+   "db": -25
+  },
+  {
+   "t": 643.5199,
+   "olay": "S26 tik 1",
+   "konusmayla_ortusme": 1.0,
+   "db": -19
+  },
+  {
+   "t": 644.5599,
+   "olay": "S26 tik 2",
+   "konusmayla_ortusme": 1.0,
+   "db": -19
+  },
+  {
+   "t": 646.5199,
+   "olay": "S26 tik 3",
+   "konusmayla_ortusme": 1.0,
+   "db": -19
+  },
+  {
+   "t": 652.1422,
+   "olay": "S26 kesme: masa geniş: lamba kısılır",
+   "konusmayla_ortusme": 0.35,
+   "db": -27
+  },
+  {
+   "t": 661.7734,
+   "olay": "S26 kırmızı zarftan iç zarf kenarı görünür",
+   "konusmayla_ortusme": 1.0,
+   "db": -21
+  },
+  {
+   "t": 662.9662,
+   "olay": "S27 kesme: masa orta: bir sayı",
+   "konusmayla_ortusme": 0.46,
+   "db": -25
+  },
+  {
+   "t": 672.7625,
+   "olay": "S27 not pencereden uçar",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 673.0609,
+   "olay": "S27 not pencereden uçar",
+   "konusmayla_ortusme": 1.0,
+   "db": -22
+  }
+ ]
+}

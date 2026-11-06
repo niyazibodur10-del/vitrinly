@@ -1,0 +1,20 @@
+kelime=2225 hata=22 WER=%1.0
+replace cerulli -> cerule
+replace heirs -> ayres
+replace cerulli -> cerule
+replace to -> two of
+replace families -> familys
+insert  -> care
+replace cerulli -> cerule
+replace heirs -> airs
+replace cerulli -> cerule
+replace this -> the
+insert  -> last
+replace familys -> families
+replace u s -> us
+replace u k -> uk
+delete pounds -> 
+replace picked -> pick
+replace grey -> gray
+replace cerullis -> cerules
+replace cerulli -> cerule

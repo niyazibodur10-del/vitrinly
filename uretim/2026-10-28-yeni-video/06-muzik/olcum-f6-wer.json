@@ -1,0 +1,9 @@
+{
+ "kelime": 1867,
+ "anlatim_tek_hata": 15,
+ "anlatim_tek_wer": 0.8,
+ "miks_hata": 14,
+ "miks_wer": 0.75,
+ "fark_puan": -0.05,
+ "not": "anlatım-tek ve miks aynı oturumda, aynı model (small.en int8, beam 5)"
+}

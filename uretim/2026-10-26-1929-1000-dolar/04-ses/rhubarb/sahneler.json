@@ -1,0 +1,174 @@
+{
+ "kaynak": "anlatim.wav (48 kHz) -> 16 kHz PCM16 kesitler",
+ "komut": "rhubarb -r pocketSphinx --dialogFile Sxx.txt -f json -o Sxx.json Sxx.wav",
+ "sahneler": [
+  {
+   "sahne": "S01",
+   "ofset_sn": 0.0,
+   "sure_sn": 15.591,
+   "wav": "S01.wav",
+   "metin": "S01.txt"
+  },
+  {
+   "sahne": "S02",
+   "ofset_sn": 15.591,
+   "sure_sn": 19.241,
+   "wav": "S02.wav",
+   "metin": "S02.txt"
+  },
+  {
+   "sahne": "S03",
+   "ofset_sn": 34.832,
+   "sure_sn": 21.126,
+   "wav": "S03.wav",
+   "metin": "S03.txt"
+  },
+  {
+   "sahne": "S04",
+   "ofset_sn": 55.958,
+   "sure_sn": 23.749,
+   "wav": "S04.wav",
+   "metin": "S04.txt"
+  },
+  {
+   "sahne": "S05",
+   "ofset_sn": 79.707,
+   "sure_sn": 35.841,
+   "wav": "S05.wav",
+   "metin": "S05.txt"
+  },
+  {
+   "sahne": "S06",
+   "ofset_sn": 115.548,
+   "sure_sn": 34.112,
+   "wav": "S06.wav",
+   "metin": "S06.txt"
+  },
+  {
+   "sahne": "S07",
+   "ofset_sn": 149.66,
+   "sure_sn": 16.842,
+   "wav": "S07.wav",
+   "metin": "S07.txt"
+  },
+  {
+   "sahne": "S08",
+   "ofset_sn": 166.502,
+   "sure_sn": 32.565,
+   "wav": "S08.wav",
+   "metin": "S08.txt"
+  },
+  {
+   "sahne": "S09",
+   "ofset_sn": 199.067,
+   "sure_sn": 31.051,
+   "wav": "S09.wav",
+   "metin": "S09.txt"
+  },
+  {
+   "sahne": "S10",
+   "ofset_sn": 230.118,
+   "sure_sn": 39.232,
+   "wav": "S10.wav",
+   "metin": "S10.txt"
+  },
+  {
+   "sahne": "S11",
+   "ofset_sn": 269.35,
+   "sure_sn": 17.123,
+   "wav": "S11.wav",
+   "metin": "S11.txt"
+  },
+  {
+   "sahne": "S12",
+   "ofset_sn": 286.473,
+   "sure_sn": 33.408,
+   "wav": "S12.wav",
+   "metin": "S12.txt"
+  },
+  {
+   "sahne": "S13",
+   "ofset_sn": 319.881,
+   "sure_sn": 32.481,
+   "wav": "S13.wav",
+   "metin": "S13.txt"
+  },
+  {
+   "sahne": "S14",
+   "ofset_sn": 352.362,
+   "sure_sn": 20.35,
+   "wav": "S14.wav",
+   "metin": "S14.txt"
+  },
+  {
+   "sahne": "S15",
+   "ofset_sn": 372.712,
+   "sure_sn": 47.055,
+   "wav": "S15.wav",
+   "metin": "S15.txt"
+  },
+  {
+   "sahne": "S16",
+   "ofset_sn": 419.767,
+   "sure_sn": 27.422,
+   "wav": "S16.wav",
+   "metin": "S16.txt"
+  },
+  {
+   "sahne": "S17",
+   "ofset_sn": 447.189,
+   "sure_sn": 6.771,
+   "wav": "S17.wav",
+   "metin": "S17.txt"
+  },
+  {
+   "sahne": "S18",
+   "ofset_sn": 453.96,
+   "sure_sn": 51.248,
+   "wav": "S18.wav",
+   "metin": "S18.txt"
+  },
+  {
+   "sahne": "S19",
+   "ofset_sn": 505.208,
+   "sure_sn": 17.672,
+   "wav": "S19.wav",
+   "metin": "S19.txt"
+  },
+  {
+   "sahne": "S20",
+   "ofset_sn": 522.88,
+   "sure_sn": 25.888,
+   "wav": "S20.wav",
+   "metin": "S20.txt"
+  },
+  {
+   "sahne": "S21",
+   "ofset_sn": 548.768,
+   "sure_sn": 31.312,
+   "wav": "S21.wav",
+   "metin": "S21.txt"
+  },
+  {
+   "sahne": "S22",
+   "ofset_sn": 580.08,
+   "sure_sn": 12.777,
+   "wav": "S22.wav",
+   "metin": "S22.txt"
+  },
+  {
+   "sahne": "S23",
+   "ofset_sn": 592.857,
+   "sure_sn": 25.538,
+   "wav": "S23.wav",
+   "metin": "S23.txt"
+  },
+  {
+   "sahne": "S24",
+   "ofset_sn": 618.395,
+   "sure_sn": 13.235,
+   "wav": "S24.wav",
+   "metin": "S24.txt"
+  }
+ ]
+}

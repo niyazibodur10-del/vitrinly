@@ -1,0 +1,186 @@
+{
+ "K1": {
+  "beklenen": [
+   "WHO",
+   "GETS",
+   "IT",
+   "124T"
+  ],
+  "tam_1280": {
+   "bulunan": [
+    "WHO",
+    "GETS",
+    "IT"
+   ],
+   "oran": 0.75,
+   "ham": "WHO OE GETS IT 8 1247 WHO A GETS IT CN VY"
+  },
+  "mobil_168": {
+   "bulunan": [
+    "WHO",
+    "GETS",
+    "IT"
+   ],
+   "oran": 0.75,
+   "ham": "WHO GETS EP IT WN LO WHO GETS OF IT 3 1247 IE"
+  },
+  "mobil_168_bolge": {
+   "bulunan": [
+    "WHO",
+    "GETS",
+    "IT"
+   ],
+   "oran": 0.75,
+   "ham": "WHO GETS NOP IT 7 WN WHO GETS OF IT FRA"
+  },
+  "mobil_168_kelime_psm7": {
+   "bulunan": [
+    "$124T",
+    "GETS",
+    "IT?"
+   ],
+   "oran": 0.75,
+   "ham": [
+    "124T 124T",
+    "",
+    "GETS GETS",
+    "IT IT"
+   ]
+  },
+  "mobil_korunan": 1.0
+ },
+ "K3": {
+  "beklenen": [
+   "SMALLER",
+   "LATER"
+  ],
+  "tam_1280": {
+   "bulunan": [
+    "SMALLER"
+   ],
+   "oran": 0.5,
+   "ham": "SMALLER 3 4 4 OF SMALLER F"
+  },
+  "mobil_168": {
+   "bulunan": [],
+   "oran": 0.0,
+   "ham": "OF"
+  },
+  "mobil_168_bolge": {
+   "bulunan": [
+    "SMALLER",
+    "LATER"
+   ],
+   "oran": 1.0,
+   "ham": "SMALLER SMALLER LATER"
+  },
+  "mobil_168_kelime_psm7": {
+   "bulunan": [
+    "SMALLER.",
+    "LATER."
+   ],
+   "oran": 1.0,
+   "ham": [
+    "SMALLER SMALLER",
+    "LATER LATER"
+   ]
+  },
+  "mobil_korunan": 0.0
+ },
+ "K4": {
+  "beklenen": [
+   "IT",
+   "KEEPS",
+   "LEAKING"
+  ],
+  "tam_1280": {
+   "bulunan": [
+    "IT",
+    "KEEPS",
+    "LEAKING"
+   ],
+   "oran": 1.0,
+   "ham": "IT KEEPS V LEAKING WK IT KEEPS 2 2 OND"
+  },
+  "mobil_168": {
+   "bulunan": [
+    "IT",
+    "KEEPS",
+    "LEAKING"
+   ],
+   "oran": 1.0,
+   "ham": "ALY IT KEEPS LEAKING A 9 IT KEEPS AY FO I 3"
+  },
+  "mobil_168_bolge": {
+   "bulunan": [
+    "IT",
+    "KEEPS",
+    "LEAKING"
+   ],
+   "oran": 1.0,
+   "ham": "IT KEEPS LEAKING IT KEEPS LEAKING"
+  },
+  "mobil_168_kelime_psm7": {
+   "bulunan": [
+    "IT",
+    "KEEPS",
+    "LEAKING"
+   ],
+   "oran": 1.0,
+   "ham": [
+    "IT IT",
+    "KEEPS KEEPS",
+    "LEAKING LEAKING"
+   ]
+  },
+  "mobil_korunan": 1.0
+ },
+ "K4b": {
+  "beklenen": [
+   "IT",
+   "KEEPS",
+   "LEAKING"
+  ],
+  "tam_1280": {
+   "bulunan": [
+    "IT",
+    "KEEPS",
+    "LEAKING"
+   ],
+   "oran": 1.0,
+   "ham": "ID IT KEEPS WS LEAKING WK 7 IT KEEPS NS 2 2 LEAKING"
+  },
+  "mobil_168": {
+   "bulunan": [
+    "IT",
+    "KEEPS",
+    "LEAKING"
+   ],
+   "oran": 1.0,
+   "ham": "IT KEEPS WHY 9 LEAKING A IT KEEPS ALS ED 23"
+  },
+  "mobil_168_bolge": {
+   "bulunan": [
+    "IT",
+    "KEEPS",
+    "LEAKING"
+   ],
+   "oran": 1.0,
+   "ham": "IT KEEPS LEAKING IT KEEPS LEAKING"
+  },
+  "mobil_168_kelime_psm7": {
+   "bulunan": [
+    "IT",
+    "KEEPS",
+    "LEAKING"
+   ],
+   "oran": 1.0,
+   "ham": [
+    "IT IT",
+    "KEEPS KEEPS",
+    "LEAKING LEAKING"
+   ]
+  },
+  "mobil_korunan": 1.0
+ }
+}

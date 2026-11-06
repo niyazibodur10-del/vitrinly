@@ -1,0 +1,6 @@
+[render-son] render=183.7s loudnorm_olcum=3.4s son_kodlama=2.6s toplam=189.7s
+[render-son] render=44.9s loudnorm_olcum=1.4s son_kodlama=1.4s toplam=47.7s
+[render-son] render=56.3s loudnorm_olcum=1.7s son_kodlama=1.1s toplam=59.1s
+[render-son] render=167.6s loudnorm_olcum=3.9s son_kodlama=2.9s toplam=174.4s
+[render-son] render=47.7s loudnorm_olcum=1.7s son_kodlama=1.3s toplam=50.7s
+[render-son] render=62.2s loudnorm_olcum=1.8s son_kodlama=1.1s toplam=65.1s

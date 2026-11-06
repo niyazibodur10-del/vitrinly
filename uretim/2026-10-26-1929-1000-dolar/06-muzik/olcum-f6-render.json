@@ -1,0 +1,351 @@
+{
+ "miks_onizleme_wav": {
+  "I": -14.0,
+  "LRA": 2.0,
+  "TP": -2.7
+ },
+ "miks_onizleme_m4a": {
+  "I": -14.0,
+  "LRA": 2.0,
+  "TP": -2.4
+ },
+ "muzik_stem": {
+  "I": -35.9,
+  "LRA": 5.1,
+  "TP": -16.6
+ },
+ "sfx_stem": {
+  "I": -28.5,
+  "LRA": 21.1,
+  "TP": -14.0
+ },
+ "seviye_tum": {
+  "konusma_alti_fark_db": 21.7,
+  "muzik_konusmada_lufs_M": -36.1,
+  "muzik_boslukta_lufs_M": -36.2
+ },
+ "bolum_seviye": {
+  "B1 oyun şovu": {
+   "konusma_alti_fark_db": 22.1,
+   "muzik_konusmada_lufs_M": -36.7,
+   "muzik_boslukta_lufs_M": -36.6
+  },
+  "B2a borsa coşkusu": {
+   "konusma_alti_fark_db": 23.8,
+   "muzik_konusmada_lufs_M": -38.7,
+   "muzik_boslukta_lufs_M": -39.3
+  },
+  "B2b çöküş nabzı": {
+   "konusma_alti_fark_db": 20.8,
+   "muzik_konusmada_lufs_M": -35.5,
+   "muzik_boslukta_lufs_M": -35.2
+  },
+  "B3 banka paniği": {
+   "konusma_alti_fark_db": 21.4,
+   "muzik_konusmada_lufs_M": -35.4,
+   "muzik_boslukta_lufs_M": -35.1
+  },
+  "B4 kutu": {
+   "konusma_alti_fark_db": 21.6,
+   "muzik_konusmada_lufs_M": -36.3,
+   "muzik_boslukta_lufs_M": -37.1
+  },
+  "B5 dip 1932": {
+   "konusma_alti_fark_db": 22.0,
+   "muzik_konusmada_lufs_M": -36.4,
+   "muzik_boslukta_lufs_M": -36.4
+  },
+  "B6 Mart 1933 kilit": {
+   "konusma_alti_fark_db": 20.9,
+   "muzik_konusmada_lufs_M": -35.2,
+   "muzik_boslukta_lufs_M": -35.0
+  },
+  "B6 katman saat": {
+   "konusma_alti_fark_db": 20.9,
+   "muzik_konusmada_lufs_M": -35.2,
+   "muzik_boslukta_lufs_M": -35.0
+  },
+  "B7 2026 ters köşe": {
+   "konusma_alti_fark_db": 21.6,
+   "muzik_konusmada_lufs_M": -36.0,
+   "muzik_boslukta_lufs_M": -36.2
+  },
+  "B8 kapanış": {
+   "konusma_alti_fark_db": 23.4,
+   "muzik_konusmada_lufs_M": -37.5,
+   "muzik_boslukta_lufs_M": -37.6
+  }
+ },
+ "sfx_konusma_cakismasi": [
+  {
+   "t": 0.0,
+   "olay": "S01 sepya 1929 kartı: plak/radyo hışırtısı (2.3 sn)",
+   "konusmayla_ortusme": 0.83,
+   "db": -30
+  },
+  {
+   "t": 2.25,
+   "olay": "S01 kesme → stüdyo, üç kapı ışıkla açılır",
+   "konusmayla_ortusme": 0.84,
+   "db": -14
+  },
+  {
+   "t": 4.94,
+   "olay": "S01 mavi kapı yanar (STOCKS)",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 5.82,
+   "olay": "S01 yeşil kapı yanar (BANK)",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 6.62,
+   "olay": "S01 kahve kapı yanar (SHOEBOX)",
+   "konusmayla_ortusme": 1.0,
+   "db": -20
+  },
+  {
+   "t": 14.911,
+   "olay": "S01 \"Let's play\" sunucu zili",
+   "konusmayla_ortusme": 0.47,
+   "db": -12
+  },
+  {
+   "t": 57.244,
+   "olay": "S04 kural kartı 1 çakılır",
+   "konusmayla_ortusme": 0.17,
+   "db": -16
+  },
+  {
+   "t": 58.912,
+   "olay": "S04 kural kartı 2 çakılır",
+   "konusmayla_ortusme": 1.0,
+   "db": -16
+  },
+  {
+   "t": 62.94,
+   "olay": "S04 Stock Leo mavi kapıya yürür",
+   "konusmayla_ortusme": 1.0,
+   "db": -22
+  },
+  {
+   "t": 64.84,
+   "olay": "S04 Bank Leo yeşil kapıya",
+   "konusmayla_ortusme": 1.0,
+   "db": -22
+  },
+  {
+   "t": 67.24,
+   "olay": "S04 Box Leo kahve kapıya",
+   "konusmayla_ortusme": 1.0,
+   "db": -22
+  },
+  {
+   "t": 71.13,
+   "olay": "S04 seyirci kahkahası katman 1",
+   "konusmayla_ortusme": 0.82,
+   "db": -17
+  },
+  {
+   "t": 71.17,
+   "olay": "S04 kahkaha katman 2 (−2 yarım ton)",
+   "konusmayla_ortusme": 0.78,
+   "db": -19
+  },
+  {
+   "t": 71.21,
+   "olay": "S04 kahkaha katman 3 (+2 yarım ton)",
+   "konusmayla_ortusme": 0.8,
+   "db": -19
+  },
+  {
+   "t": 79.257,
+   "olay": "S04→S05 bölüm geçişi (Door One)",
+   "konusmayla_ortusme": 0.42,
+   "db": -16
+  },
+  {
+   "t": 106.32,
+   "olay": "S05 Stock Leo mavi kapıdan geçer",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 114.898,
+   "olay": "S05 \"Nobody knows it yet\" — müzik keser + tek nota gerilim vuruşu",
+   "konusmayla_ortusme": 0.67,
+   "db": -11
+  },
+  {
+   "t": 122.281,
+   "olay": "S06 Kara Pazartesi çizgisi çakılır (−13%)",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 128.051,
+   "olay": "S06 Kara Salı (−12%)",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 149.01,
+   "olay": "S06 \"$1,000 → $500\" yanlış-cevap buzzer'ı",
+   "konusmayla_ortusme": 0.09,
+   "db": -15
+  },
+  {
+   "t": 157.74,
+   "olay": "S07 yeşil kapı açılır, banka kasası",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 165.822,
+   "olay": "S07 \"Right?\" tek nota gerilim vuruşu (↺ Bölüm 3)",
+   "konusmayla_ortusme": 0.73,
+   "db": -11
+  },
+  {
+   "t": 236.28,
+   "olay": "S10 \"~9,000 BANKS\" sayacı döner",
+   "konusmayla_ortusme": 0.7,
+   "db": -21
+  },
+  {
+   "t": 268.75,
+   "olay": "S10 sonu ilk büyük ödül sonucu",
+   "konusmayla_ortusme": 0.53,
+   "db": -14
+  },
+  {
+   "t": 275.52,
+   "olay": "S11 stüdyoya dönüş",
+   "konusmayla_ortusme": 0.74,
+   "db": -18
+  },
+  {
+   "t": 306.18,
+   "olay": "S12 \"−21%\" fiyat sayacı",
+   "konusmayla_ortusme": 1.0,
+   "db": -21
+  },
+  {
+   "t": 319.211,
+   "olay": "S12 \"money got stronger\" ka-ching",
+   "konusmayla_ortusme": 0.46,
+   "db": -12
+  },
+  {
+   "t": 359.062,
+   "olay": "S14 tuzak kartı FIRE",
+   "konusmayla_ortusme": 1.0,
+   "db": -19
+  },
+  {
+   "t": 360.7,
+   "olay": "S14 tuzak kartı THEFT",
+   "konusmayla_ortusme": 1.0,
+   "db": -19
+  },
+  {
+   "t": 363.8,
+   "olay": "S14 tuzak kartı JOB LOSS",
+   "konusmayla_ortusme": 1.0,
+   "db": -19
+  },
+  {
+   "t": 372.032,
+   "olay": "S14→S15 \"Let's jump to the bottom\": rüzgâr + düşüş",
+   "konusmayla_ortusme": 0.57,
+   "db": -11
+  },
+  {
+   "t": 420.02,
+   "olay": "S16 skor tablosu açılır",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 453.29,
+   "olay": "S17 \"every door gets locked\" kasa kilidi",
+   "konusmayla_ortusme": 0.49,
+   "db": -12
+  },
+  {
+   "t": 471.82,
+   "olay": "S18 Roosevelt radyo silueti hışırtısı",
+   "konusmayla_ortusme": 0.77,
+   "db": -30
+  },
+  {
+   "t": 476.567,
+   "olay": "S18 kapı 1 zincir",
+   "konusmayla_ortusme": 0.97,
+   "db": -19
+  },
+  {
+   "t": 476.647,
+   "olay": "S18 kapı 1 asma kilit",
+   "konusmayla_ortusme": 1.0,
+   "db": -21
+  },
+  {
+   "t": 477.267,
+   "olay": "S18 kapı 2 zincir",
+   "konusmayla_ortusme": 1.0,
+   "db": -19
+  },
+  {
+   "t": 477.347,
+   "olay": "S18 kapı 2 asma kilit",
+   "konusmayla_ortusme": 1.0,
+   "db": -21
+  },
+  {
+   "t": 477.967,
+   "olay": "S18 kapı 3 zincir",
+   "konusmayla_ortusme": 0.79,
+   "db": -19
+  },
+  {
+   "t": 488.2,
+   "olay": "S18 \"~4,000 never reopen\" sayacı",
+   "konusmayla_ortusme": 0.84,
+   "db": -21
+  },
+  {
+   "t": 507.54,
+   "olay": "S19 \"9 insured\" dilimi",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 522.2,
+   "olay": "S19→S20 kapı raylarda kayar, 1933→2026",
+   "konusmayla_ortusme": 0.77,
+   "db": -14
+  },
+  {
+   "t": 530.12,
+   "olay": "S20 \"+3.7%\" sayacı",
+   "konusmayla_ortusme": 1.0,
+   "db": -21
+  },
+  {
+   "t": 589.862,
+   "olay": "S22 \"$250,000\" sigorta tabelası",
+   "konusmayla_ortusme": 1.0,
+   "db": -16
+  },
+  {
+   "t": 600.493,
+   "olay": "S23 kazanan kapı",
+   "konusmayla_ortusme": 0.76,
+   "db": -14
+  }
+ ]
+}

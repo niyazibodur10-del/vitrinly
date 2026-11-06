@@ -1,0 +1,284 @@
+{
+ "Hyperinflation_in_the_Weimar_Republic": {
+  "days": 91,
+  "sum90": 29656,
+  "last30": 10834,
+  "daily_avg30": 361,
+  "prev60_avg": 309,
+  "peak": 599,
+  "peakday": "20261015"
+ },
+ "Wall_Street_crash_of_1929": {
+  "days": 91,
+  "sum90": 116979,
+  "last30": 41217,
+  "daily_avg30": 1374,
+  "prev60_avg": 1242,
+  "peak": 2992,
+  "peakday": "20260902"
+ },
+ "Great_Depression": {
+  "days": 91,
+  "sum90": 278129,
+  "last30": 93772,
+  "daily_avg30": 3126,
+  "prev60_avg": 3022,
+  "peak": 4478,
+  "peakday": "20260907"
+ },
+ "Tulip_mania": {
+  "days": 91,
+  "sum90": 65705,
+  "last30": 21442,
+  "daily_avg30": 715,
+  "prev60_avg": 726,
+  "peak": 1083,
+  "peakday": "20260825"
+ },
+ "South_Sea_Company": {
+  "days": 91,
+  "sum90": 35296,
+  "last30": 12709,
+  "daily_avg30": 424,
+  "prev60_avg": 370,
+  "peak": 1500,
+  "peakday": "20260928"
+ },
+ "Mississippi_Company": {
+  "days": 91,
+  "sum90": 3342,
+  "last30": 1159,
+  "daily_avg30": 39,
+  "prev60_avg": 36,
+  "peak": 59,
+  "peakday": "20261021"
+ },
+ "2008_financial_crisis": {
+  "days": 91,
+  "sum90": 208053,
+  "last30": 65531,
+  "daily_avg30": 2184,
+  "prev60_avg": 2336,
+  "peak": 5293,
+  "peakday": "20260914"
+ },
+ "Bankruptcy_of_Lehman_Brothers": {
+  "err": "HTTP Error 429: Too Many Requests"
+ },
+ "Dot-com_bubble": {
+  "err": "HTTP Error 429: Too Many Requests"
+ },
+ "Black_Monday_(1987)": {
+  "err": "HTTP Error 429: Too Many Requests"
+ },
+ "Long-Term_Capital_Management": {
+  "days": 91,
+  "sum90": 31176,
+  "last30": 7705,
+  "daily_avg30": 257,
+  "prev60_avg": 385,
+  "peak": 1428,
+  "peakday": "20260731"
+ },
+ "Enron_scandal": {
+  "days": 91,
+  "sum90": 125716,
+  "last30": 52812,
+  "daily_avg30": 1760,
+  "prev60_avg": 1195,
+  "peak": 3267,
+  "peakday": "20261026"
+ },
+ "Madoff_investment_scandal": {
+  "days": 91,
+  "sum90": 48595,
+  "last30": 15465,
+  "daily_avg30": 516,
+  "prev60_avg": 543,
+  "peak": 855,
+  "peakday": "20260728"
+ },
+ "Bankruptcy_of_FTX": {
+  "err": "HTTP Error 429: Too Many Requests"
+ },
+ "Hyperinflation_in_Zimbabwe": {
+  "err": "HTTP Error 429: Too Many Requests"
+ },
+ "Collapse_of_Silicon_Valley_Bank": {
+  "days": 91,
+  "sum90": 17816,
+  "last30": 5741,
+  "daily_avg30": 191,
+  "prev60_avg": 198,
+  "peak": 491,
+  "peakday": "20260911"
+ },
+ "GameStop_short_squeeze": {
+  "days": 91,
+  "sum90": 65225,
+  "last30": 19684,
+  "daily_avg30": 656,
+  "prev60_avg": 747,
+  "peak": 1131,
+  "peakday": "20260731"
+ },
+ "Japanese_asset_price_bubble": {
+  "days": 91,
+  "sum90": 39442,
+  "last30": 11588,
+  "daily_avg30": 386,
+  "prev60_avg": 457,
+  "peak": 713,
+  "peakday": "20260804"
+ },
+ "1997_Asian_financial_crisis": {
+  "days": 91,
+  "sum90": 52968,
+  "last30": 17620,
+  "daily_avg30": 587,
+  "prev60_avg": 579,
+  "peak": 1065,
+  "peakday": "20261014"
+ },
+ "Nixon_shock": {
+  "days": 91,
+  "sum90": 29311,
+  "last30": 8777,
+  "daily_avg30": 293,
+  "prev60_avg": 337,
+  "peak": 1523,
+  "peakday": "20260805"
+ },
+ "Silver_Thursday": {
+  "days": 91,
+  "sum90": 12565,
+  "last30": 3790,
+  "daily_avg30": 126,
+  "prev60_avg": 144,
+  "peak": 287,
+  "peakday": "20260906"
+ },
+ "Black_Wednesday": {
+  "days": 91,
+  "sum90": 49281,
+  "last30": 14475,
+  "daily_avg30": 482,
+  "prev60_avg": 571,
+  "peak": 1114,
+  "peakday": "20260825"
+ },
+ "Barings_Bank": {
+  "days": 91,
+  "sum90": 30448,
+  "last30": 10345,
+  "daily_avg30": 345,
+  "prev60_avg": 330,
+  "peak": 1506,
+  "peakday": "20261021"
+ },
+ "Panic_of_1907": {
+  "err": "HTTP Error 429: Too Many Requests"
+ },
+ "2008\u20132011_Icelandic_financial_crisis": {
+  "days": 91,
+  "sum90": 15035,
+  "last30": 3870,
+  "daily_avg30": 129,
+  "prev60_avg": 183,
+  "peak": 858,
+  "peakday": "20260830"
+ },
+ "Wirecard_scandal": {
+  "days": 91,
+  "sum90": 18837,
+  "last30": 8662,
+  "daily_avg30": 289,
+  "prev60_avg": 167,
+  "peak": 658,
+  "peakday": "20261005"
+ },
+ "Archegos_Capital_Management": {
+  "days": 91,
+  "sum90": 16979,
+  "last30": 3698,
+  "daily_avg30": 123,
+  "prev60_avg": 218,
+  "peak": 1190,
+  "peakday": "20260731"
+ },
+ "Charles_Ponzi": {
+  "days": 91,
+  "sum90": 64037,
+  "last30": 20841,
+  "daily_avg30": 695,
+  "prev60_avg": 708,
+  "peak": 1501,
+  "peakday": "20260917"
+ },
+ "Bretton_Woods_system": {
+  "days": 91,
+  "sum90": 81028,
+  "last30": 26073,
+  "daily_avg30": 869,
+  "prev60_avg": 901,
+  "peak": 1188,
+  "peakday": "20260903"
+ },
+ "Hyperinflation_in_Venezuela": {
+  "days": 91,
+  "sum90": 9591,
+  "last30": 4086,
+  "daily_avg30": 136,
+  "prev60_avg": 90,
+  "peak": 505,
+  "peakday": "20261002"
+ },
+ "Evergrande_Group": {
+  "days": 91,
+  "sum90": 68375,
+  "last30": 8450,
+  "daily_avg30": 282,
+  "prev60_avg": 982,
+  "peak": 19824,
+  "peakday": "20260820"
+ },
+ "Theranos": {
+  "err": "HTTP Error 429: Too Many Requests"
+ },
+ "Great_Recession": {
+  "days": 91,
+  "sum90": 118268,
+  "last30": 39594,
+  "daily_avg30": 1320,
+  "prev60_avg": 1290,
+  "peak": 1939,
+  "peakday": "20260914"
+ },
+ "Stock_market_crash": {
+  "days": 91,
+  "sum90": 27170,
+  "last30": 9855,
+  "daily_avg30": 328,
+  "prev60_avg": 284,
+  "peak": 639,
+  "peakday": "20260914"
+ },
+ "Bank_run": {
+  "days": 91,
+  "sum90": 20482,
+  "last30": 6524,
+  "daily_avg30": 217,
+  "prev60_avg": 229,
+  "peak": 448,
+  "peakday": "20260914"
+ },
+ "Hyperinflation": {
+  "days": 91,
+  "sum90": 26149,
+  "last30": 8725,
+  "daily_avg30": 291,
+  "prev60_avg": 286,
+  "peak": 568,
+  "peakday": "20260930"
+ }
+}

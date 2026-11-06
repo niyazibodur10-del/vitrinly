@@ -1,0 +1,41 @@
+[1] Meta veri dili (tavsiye/hüküm · şok · küfür)
+  uzun      baslik    0
+  uzun      aciklama  0
+  uzun      etiketler 0
+  shorts-1  baslik    0
+  shorts-1  aciklama  0
+  shorts-1  etiketler 0
+  shorts-2  baslik    0
+  shorts-2  aciklama  0
+  shorts-2  etiketler 0
+  paket.md  pinli     0
+  paket.md  yedek-baslik 0
+[2] AI beyanı
+  uzun      sentetik_medya=True ai_satiri=True yasal_kisa=True
+  shorts-1  sentetik_medya=True ai_satiri=True yasal_kisa=True
+  shorts-2  sentetik_medya=True ai_satiri=True yasal_kisa=True
+[3] Vaat ↔ içerik (kilitli anlatımda geçiyor mu)
+  baslik T1                      VAR
+  thumb A2 ONE IS A DISASTER     VAR
+  thumb B1 THE SURPRISE DOOR     VAR
+  thumb B1 damga 1929            VAR
+  thumb D1 EVERY DOOR LOCKED     VAR
+  shorts-1 baslik                VAR
+  shorts-2 'same box'            VAR
+  shorts-2 'opposite result'     VAR
+  shorts-2 '1932'                VAR
+  shorts-2 '2026'                VAR
+  shorts-2 niteleyici            VAR
+  shorts okuma metni tavsiye deseni: [[], []]
+[4] Lisans kaydı + Content ID itiraz kanıtı
+  cue dosyası 38 · kayıtsız [] · NC/ND/SA []
+  üçüncü taraf 23 · kanıt sayfası eksik []
+  kullanılan CC BY (zorunlu atıf) []
+[5] Yeniden kullanılan sahne oranı (dHash ≤6/64, 1 fps)
+  önceki uretim/ses-testi/pilot/pilot-v1.mp4: 38 kare (2 fps)
+  önceki uretim/ses-testi/pilot/pilot-v2.mp4: 28 kare (2 fps)
+  önceki uretim/ses-testi/yayin-manuel/video.mp4: 38 kare (2 fps)
+  bu video 632 kare, geçerli 632, eşleşen 0 → %0.0 (iç kural ≤ %20)
+[6] Dış görüntü / klip
+  k1929/k1929t video klip dosyası: 0 (görseller Canva üretimi + kod)
+SONUC hata=0

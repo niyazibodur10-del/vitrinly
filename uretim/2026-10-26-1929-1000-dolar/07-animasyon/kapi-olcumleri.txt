@@ -1,0 +1,25 @@
+## blackdetect (d=0.1, pix_th=0.10)
+0
+## freezedetect (n=0.001,d=1)
+donma yok
+## loudness
+    I:         -13.9 LUFS
+## senkron-testi.py (video, birleşik kapılı çizelge)
+en iyi gecikme: -4 kare (-133 ms), korelasyon 0.40, gecikme 0'da 0.33
+KALDI
+## s01 (parça sesi, kapılı)
+en iyi gecikme: -2 kare (-67 ms), korelasyon 0.43, gecikme 0'da 0.39
+GEÇTİ
+## s04 (parça sesi, kapılı)
+en iyi gecikme: -5 kare (-167 ms), korelasyon 0.50, gecikme 0'da 0.29
+KALDI
+## ekranda konuşan ağız aralığı 2.1–8.0 sn (render edilmiş videonun sesi)
+en iyi gecikme: -1 kare (-33 ms), korelasyon 0.46, gecikme 0'da 0.40
+GEÇTİ
+## tam sahne Rhubarb + sessizlik kapısı (sahne-zamanlari.json aralığı): geniş bant / formant bandı 700-3000 Hz
+S01 genis (0, 0.44) formant (1, 0.55)
+S04 genis (0, 0.43) formant (1, 0.59)
+S02 (1,0.38)/(1,0.52) · S03 (1,0.42)/(1,0.57) · S05 (2,0.40)/(2,0.53) · S11 (1,0.49)/(1,0.58) · S13 (1,0.37)/(1,0.54)
+## S04 5 sn pencereleri (tam sahne çizelgesi): 56.0:+1 59.0:-1 62.0:-5 65.0:-5 68.0:-4 71.0:+1 74.0:0 — -5 bölgesi (62–70 sn) ekranda sunucu ağzı YOK (klonlar yürür, dış ses)
+## kare-kare fark (titreme/sıçrama taraması, 320x180 gri)
+medyan 0.66; eşik>max(6×medyan,8) olan kareler: [(63, 135.7), (64, 41.9), (65, 42.7), (66, 42.9), (67, 42.4), (117, 9.3), (119, 9.5), (240, 29.3), (499, 12.2), (500, 15.3), (501, 21.6), (502, 22.0), (503, 20.7), (504, 17.5), (505, 13.1), (506, 8.2), (555, 28.5)] (beklenen kesmeler: 63 sokak→stüdyo, 240 S01→S04, 315 yakın plan)

@@ -1,0 +1,879 @@
+{
+ "kaynak": "07-animasyon/efekt-cue.py (animasyon-yonetmeni)",
+ "eksen": "04-ses/anlatim.wav (0 = anlatım başı)",
+ "fps": 30,
+ "olaylar": [
+  {
+   "sahne": "S01",
+   "t": 0.0,
+   "kare": 0,
+   "olay": "sepya sokak kartı + SEPT 1929 yazısı",
+   "tur": "kart",
+   "oneri": "radyo hışırtısı"
+  },
+  {
+   "sahne": "S01",
+   "t": 2.1,
+   "kare": 63,
+   "olay": "beyaz flaş + yatay kayma kesmesi (sokak → stüdyo)",
+   "tur": "kesme",
+   "oneri": "whoosh"
+  },
+  {
+   "sahne": "S01",
+   "t": 2.42,
+   "kare": 73,
+   "olay": "$1,000 sayacı 0→1000 (0.5 sn)",
+   "tur": "sayac",
+   "oneri": "tıkırtı / ding sonda"
+  },
+  {
+   "sahne": "S01",
+   "t": 4.94,
+   "kare": 148,
+   "olay": "kapı levhası yanar (STOCK)",
+   "tur": "pop",
+   "oneri": "pop-pluck"
+  },
+  {
+   "sahne": "S01",
+   "t": 5.92,
+   "kare": 178,
+   "olay": "kapı levhası yanar (BANK)",
+   "tur": "pop",
+   "oneri": "pop-pluck"
+  },
+  {
+   "sahne": "S01",
+   "t": 6.62,
+   "kare": 199,
+   "olay": "kapı levhası yanar (SHOEBOX)",
+   "tur": "pop",
+   "oneri": "pop-pluck"
+  },
+  {
+   "sahne": "S01",
+   "t": 10.92,
+   "kare": 328,
+   "olay": "DISASTER? yazısı",
+   "tur": "pop",
+   "oneri": "hafif pop"
+  },
+  {
+   "sahne": "S01",
+   "t": 11.7,
+   "kare": 351,
+   "olay": "GAMBLE? yazısı",
+   "tur": "pop",
+   "oneri": "hafif pop"
+  },
+  {
+   "sahne": "S01",
+   "t": 13.0,
+   "kare": 390,
+   "olay": "SURPRISE? yazısı",
+   "tur": "pop",
+   "oneri": "hafif pop"
+  },
+  {
+   "sahne": "S01",
+   "t": 14.146,
+   "kare": 424,
+   "olay": "üç kapı birlikte parlar + punch-in",
+   "tur": "vurgu",
+   "oneri": "oyun şovu zili"
+  },
+  {
+   "sahne": "S02",
+   "t": 20.36,
+   "kare": 611,
+   "olay": "takvim 1929→2026 çevrilir",
+   "tur": "flip",
+   "oneri": "kâğıt çevirme"
+  },
+  {
+   "sahne": "S02",
+   "t": 21.675,
+   "kare": 650,
+   "olay": "takvim 2026→1929",
+   "tur": "flip",
+   "oneri": "kâğıt çevirme"
+  },
+  {
+   "sahne": "S02",
+   "t": 25.54,
+   "kare": 766,
+   "olay": "ekrana punch-in + soru yazısı",
+   "tur": "kamera",
+   "oneri": ""
+  },
+  {
+   "sahne": "S03",
+   "t": 42.289,
+   "kare": 1269,
+   "olay": "G0 kartı açılır",
+   "tur": "kart",
+   "oneri": "pop"
+  },
+  {
+   "sahne": "S03",
+   "t": 52.72,
+   "kare": 1582,
+   "olay": "12 ay kutusundan 8'i dolar",
+   "tur": "sayac",
+   "oneri": "tık ×8"
+  },
+  {
+   "sahne": "S04",
+   "t": 57.66,
+   "kare": 1730,
+   "olay": "kural kartı 1",
+   "tur": "pop",
+   "oneri": "pop-drop"
+  },
+  {
+   "sahne": "S04",
+   "t": 59.5,
+   "kare": 1785,
+   "olay": "kural kartı 2",
+   "tur": "pop",
+   "oneri": "pop-drop"
+  },
+  {
+   "sahne": "S04",
+   "t": 61.879,
+   "kare": 1856,
+   "olay": "Stock Leo yürüyüşe başlar (3.15 sn; varış)",
+   "tur": "yurume",
+   "oneri": "ayak sesi/whoosh"
+  },
+  {
+   "sahne": "S04",
+   "t": 63.802,
+   "kare": 1914,
+   "olay": "Bank Leo yürüyüşe başlar (2.6 sn)",
+   "tur": "yurume",
+   "oneri": ""
+  },
+  {
+   "sahne": "S04",
+   "t": 65.87,
+   "kare": 1976,
+   "olay": "Box Leo kutuyla yürür (2.65 sn)",
+   "tur": "yurume",
+   "oneri": ""
+  },
+  {
+   "sahne": "S04",
+   "t": 70.51,
+   "kare": 2115,
+   "olay": "kahve kapıya punch-in (0.4 sn) + Box Leo büzülür, HA! yazıları",
+   "tur": "vurgu",
+   "oneri": "seyirci kahkahası"
+  },
+  {
+   "sahne": "S04",
+   "t": 72.267,
+   "kare": 2168,
+   "olay": "kesme: yakın plan sunucu",
+   "tur": "kesme",
+   "oneri": ""
+  },
+  {
+   "sahne": "S04",
+   "t": 73.16,
+   "kare": 2195,
+   "olay": "tek göz kırpma (0.38 sn)",
+   "tur": "vurgu",
+   "oneri": "ting"
+  },
+  {
+   "sahne": "S04",
+   "t": 73.73,
+   "kare": 2212,
+   "olay": "mavi kapıya punch-in, kapı parlar",
+   "tur": "kamera",
+   "oneri": "whoosh"
+  },
+  {
+   "sahne": "S05",
+   "t": 80.207,
+   "kare": 2406,
+   "olay": "mavi kapı paneli açılır → C16 (1.1 sn), kamera içeri dalar",
+   "tur": "gecis",
+   "oneri": "kapı açılış"
+  },
+  {
+   "sahne": "S05",
+   "t": 81.843,
+   "kare": 2455,
+   "olay": "G1a grafik kartı",
+   "tur": "kart",
+   "oneri": ""
+  },
+  {
+   "sahne": "S05",
+   "t": 92.36,
+   "kare": 2771,
+   "olay": "×6 yazısı",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S05",
+   "t": 93.407,
+   "kare": 2802,
+   "olay": "C16 borsa önü + ticker şerit yağmuru + Stock Leo aşağıdan girer",
+   "tur": "gecis",
+   "oneri": "kâğıt hışırtısı"
+  },
+  {
+   "sahne": "S05",
+   "t": 109.96,
+   "kare": 3299,
+   "olay": "381.17 büyük sayı",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S05",
+   "t": 112.09,
+   "kare": 3363,
+   "olay": "grafik geri: zirve etiketi THE TOP",
+   "tur": "kart",
+   "oneri": ""
+  },
+  {
+   "sahne": "S06",
+   "t": 120.724,
+   "kare": 3622,
+   "olay": "takvim SEP→OCT",
+   "tur": "flip",
+   "oneri": "kâğıt koparma"
+  },
+  {
+   "sahne": "S06",
+   "t": 125.08,
+   "kare": 3752,
+   "olay": "çubuk −13%",
+   "tur": "pop",
+   "oneri": "darbe"
+  },
+  {
+   "sahne": "S06",
+   "t": 129.16,
+   "kare": 3875,
+   "olay": "çubuk −12%",
+   "tur": "pop",
+   "oneri": "darbe"
+  },
+  {
+   "sahne": "S06",
+   "t": 136.4,
+   "kare": 4092,
+   "olay": "marjin sarmalı oku (drop)",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S06",
+   "t": 137.25,
+   "kare": 4118,
+   "olay": "marjin sarmalı oku (lenders)",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S06",
+   "t": 139.52,
+   "kare": 4186,
+   "olay": "marjin sarmalı oku (sell)",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S06",
+   "t": 140.94,
+   "kare": 4228,
+   "olay": "marjin sarmalı oku (again)",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S06",
+   "t": 147.52,
+   "kare": 4426,
+   "olay": "$1,000 → ~$500 sayacı (≈1.1 sn)",
+   "tur": "sayac",
+   "oneri": "aşağı inen ton / buzzer"
+  },
+  {
+   "sahne": "S07",
+   "t": 157.054,
+   "kare": 4712,
+   "olay": "bölünmüş ekran kayar, banka içi",
+   "tur": "gecis",
+   "oneri": "kasa kapısı"
+  },
+  {
+   "sahne": "S07",
+   "t": 165.28,
+   "kare": 4958,
+   "olay": "RIGHT? sallanan yazı",
+   "tur": "vurgu",
+   "oneri": "gerilim vuruşu"
+  },
+  {
+   "sahne": "S08",
+   "t": 173.34,
+   "kare": 5200,
+   "olay": "boş INSURANCE kutusu",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S08",
+   "t": 178.493,
+   "kare": 5355,
+   "olay": "kesme: ABD haritası",
+   "tur": "kesme",
+   "oneri": ""
+  },
+  {
+   "sahne": "S08",
+   "t": 179.48,
+   "kare": 5384,
+   "olay": "2.400 banka noktası yanar (1.2 sn)",
+   "tur": "parcacik",
+   "oneri": "tıkırtı yağmuru"
+  },
+  {
+   "sahne": "S08",
+   "t": 194.62,
+   "kare": 5839,
+   "olay": "noktalar dalga dalga kırmızı söner (2.6 sn)",
+   "tur": "parcacik",
+   "oneri": ""
+  },
+  {
+   "sahne": "S09",
+   "t": 208.66,
+   "kare": 6260,
+   "olay": "Bank Leo sağdan girer (saatine bakar)",
+   "tur": "giris",
+   "oneri": ""
+  },
+  {
+   "sahne": "S09",
+   "t": 212.604,
+   "kare": 6378,
+   "olay": "kesme: mekanizma kartı",
+   "tur": "kesme",
+   "oneri": ""
+  },
+  {
+   "sahne": "S09",
+   "t": 214.038,
+   "kare": 6421,
+   "olay": "10 madeni para kasaya düşer (1.5 sn)",
+   "tur": "parcacik",
+   "oneri": "para şıngırtısı"
+  },
+  {
+   "sahne": "S09",
+   "t": 218.347,
+   "kare": 6550,
+   "olay": "9 para LOANS okuyla akar",
+   "tur": "hareket",
+   "oneri": "kayma"
+  },
+  {
+   "sahne": "S09",
+   "t": 223.68,
+   "kare": 6710,
+   "olay": "EMPTY damgası",
+   "tur": "damga",
+   "oneri": "mühür"
+  },
+  {
+   "sahne": "S09",
+   "t": 226.64,
+   "kare": 6799,
+   "olay": "kuyruk yan bankaya kayar",
+   "tur": "hareket",
+   "oneri": ""
+  },
+  {
+   "sahne": "S10",
+   "t": 234.171,
+   "kare": 7025,
+   "olay": "G2 çubukları büyür",
+   "tur": "kart",
+   "oneri": "sayaç tıkırtısı"
+  },
+  {
+   "sahne": "S10",
+   "t": 251.06,
+   "kare": 7532,
+   "olay": "~20¢ büyük sayı",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S10",
+   "t": 254.05,
+   "kare": 7622,
+   "olay": "kesme: kasa önü Bank Leo",
+   "tur": "kesme",
+   "oneri": ""
+  },
+  {
+   "sahne": "S10",
+   "t": 263.88,
+   "kare": 7916,
+   "olay": "GAMBLE damgası",
+   "tur": "damga",
+   "oneri": "mühür"
+  },
+  {
+   "sahne": "S11",
+   "t": 270.326,
+   "kare": 8110,
+   "olay": "abone düğmesi (3 sn, SESSİZ — politika: ses yok)",
+   "tur": "abone",
+   "oneri": "SES YOK"
+  },
+  {
+   "sahne": "S11",
+   "t": 275.656,
+   "kare": 8270,
+   "olay": "spot ışığı kahve kapıya kayar",
+   "tur": "isik",
+   "oneri": "spot"
+  },
+  {
+   "sahne": "S11",
+   "t": 277.161,
+   "kare": 8315,
+   "olay": "kahve kapı punch-in + DOOR 3",
+   "tur": "kamera",
+   "oneri": ""
+  },
+  {
+   "sahne": "S11",
+   "t": 284.009,
+   "kare": 8520,
+   "olay": "kutu sallanır + ?",
+   "tur": "vurgu",
+   "oneri": "kutu sallama"
+  },
+  {
+   "sahne": "S12",
+   "t": 291.237,
+   "kare": 8737,
+   "olay": "kesme: C19 vitrin",
+   "tur": "kesme",
+   "oneri": ""
+  },
+  {
+   "sahne": "S12",
+   "t": 294.4,
+   "kare": 8832,
+   "olay": "fiyat etiketleri tek tek küçülür (≈2.3 sn)",
+   "tur": "hareket",
+   "oneri": "küçülme pıt ×11"
+  },
+  {
+   "sahne": "S12",
+   "t": 299.268,
+   "kare": 8978,
+   "olay": "G3 TÜFE kartı",
+   "tur": "kart",
+   "oneri": ""
+  },
+  {
+   "sahne": "S12",
+   "t": 312.16,
+   "kare": 9365,
+   "olay": "$1,000→$1,272 sayacı",
+   "tur": "sayac",
+   "oneri": "yukarı ton"
+  },
+  {
+   "sahne": "S12",
+   "t": 318.52,
+   "kare": 9556,
+   "olay": "banknot parıltısı",
+   "tur": "vurgu",
+   "oneri": "parıltı"
+  },
+  {
+   "sahne": "S13",
+   "t": 337.852,
+   "kare": 10136,
+   "olay": "sunucuya punch-in",
+   "tur": "kamera",
+   "oneri": ""
+  },
+  {
+   "sahne": "S13",
+   "t": 345.1,
+   "kare": 10353,
+   "olay": "haritada kutular belirir, noktalar söner",
+   "tur": "parcacik",
+   "oneri": ""
+  },
+  {
+   "sahne": "S14",
+   "t": 354.43,
+   "kare": 10633,
+   "olay": "NOT SO FAST damgası",
+   "tur": "damga",
+   "oneri": "mühür"
+  },
+  {
+   "sahne": "S14",
+   "t": 357.85,
+   "kare": 10736,
+   "olay": "tuzak kartı çevrilir (earns)",
+   "tur": "flip",
+   "oneri": "kart çevirme"
+  },
+  {
+   "sahne": "S14",
+   "t": 359.36,
+   "kare": 10781,
+   "olay": "tuzak kartı çevrilir (burn)",
+   "tur": "flip",
+   "oneri": "kart çevirme"
+  },
+  {
+   "sahne": "S14",
+   "t": 360.7,
+   "kare": 10821,
+   "olay": "tuzak kartı çevrilir (stolen)",
+   "tur": "flip",
+   "oneri": "kart çevirme"
+  },
+  {
+   "sahne": "S14",
+   "t": 362.12,
+   "kare": 10864,
+   "olay": "tuzak kartı çevrilir (lose)",
+   "tur": "flip",
+   "oneri": "kart çevirme"
+  },
+  {
+   "sahne": "S14",
+   "t": 363.28,
+   "kare": 10898,
+   "olay": "banknotlar tek tek uçar (2.5 sn)",
+   "tur": "parcacik",
+   "oneri": "kâğıt uçuşu"
+  },
+  {
+   "sahne": "S14",
+   "t": 371.103,
+   "kare": 11133,
+   "olay": "kamera aşağı düşer (whip-down 0.6 sn)",
+   "tur": "gecis",
+   "oneri": "düşüş tonu"
+  },
+  {
+   "sahne": "S15",
+   "t": 375.58,
+   "kare": 11267,
+   "olay": "41.22 dip etiketi",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S15",
+   "t": 378.96,
+   "kare": 11369,
+   "olay": "−89%",
+   "tur": "vurgu",
+   "oneri": "darbe"
+  },
+  {
+   "sahne": "S15",
+   "t": 383.04,
+   "kare": 11491,
+   "olay": "$1,000→$108 sayacı",
+   "tur": "sayac",
+   "oneri": ""
+  },
+  {
+   "sahne": "S15",
+   "t": 406.06,
+   "kare": 12182,
+   "olay": "grafik 1954'e uzar",
+   "tur": "hareket",
+   "oneri": ""
+  },
+  {
+   "sahne": "S15",
+   "t": 415.3,
+   "kare": 12459,
+   "olay": "~LATE 1936 çizgisi",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S16",
+   "t": 422.563,
+   "kare": 12677,
+   "olay": "skor sütunu (STOCK)",
+   "tur": "pop",
+   "oneri": "pop"
+  },
+  {
+   "sahne": "S16",
+   "t": 426.541,
+   "kare": 12796,
+   "olay": "skor sütunu (BANK)",
+   "tur": "pop",
+   "oneri": "pop"
+  },
+  {
+   "sahne": "S16",
+   "t": 434.314,
+   "kare": 13029,
+   "olay": "skor sütunu (BOX)",
+   "tur": "pop",
+   "oneri": "pop"
+  },
+  {
+   "sahne": "S16",
+   "t": 441.04,
+   "kare": 13231,
+   "olay": "IN A DECADE OF FALLING PRICES şeridi",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S17",
+   "t": 451.83,
+   "kare": 13555,
+   "olay": "zincir + asma kilit iner (sekme 0.28 sn) — every",
+   "tur": "darbe",
+   "oneri": "metal zincir/kilit"
+  },
+  {
+   "sahne": "S17",
+   "t": 452.25,
+   "kare": 13568,
+   "olay": "zincir + asma kilit iner (sekme 0.28 sn) — door",
+   "tur": "darbe",
+   "oneri": "metal zincir/kilit"
+  },
+  {
+   "sahne": "S17",
+   "t": 452.65,
+   "kare": 13580,
+   "olay": "zincir + asma kilit iner (sekme 0.28 sn) — locked.",
+   "tur": "darbe",
+   "oneri": "metal zincir/kilit"
+  },
+  {
+   "sahne": "S18",
+   "t": 455.771,
+   "kare": 13673,
+   "olay": "harita batıdan doğuya griye döner (~12 sn)",
+   "tur": "hareket",
+   "oneri": ""
+  },
+  {
+   "sahne": "S18",
+   "t": 461.92,
+   "kare": 13858,
+   "olay": "otel notu kartı",
+   "tur": "kart",
+   "oneri": "kâğıt"
+  },
+  {
+   "sahne": "S18",
+   "t": 470.922,
+   "kare": 14128,
+   "olay": "MARCH 6: NATIONWIDE BANK HOLIDAY",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S18",
+   "t": 473.06,
+   "kare": 14192,
+   "olay": "radyo silueti",
+   "tur": "pop",
+   "oneri": "radyo cızırtısı"
+  },
+  {
+   "sahne": "S18",
+   "t": 476.597,
+   "kare": 14298,
+   "olay": "tüm noktalar söner",
+   "tur": "hareket",
+   "oneri": ""
+  },
+  {
+   "sahne": "S18",
+   "t": 478.805,
+   "kare": 14364,
+   "olay": "kasa kapısına kilit iner",
+   "tur": "darbe",
+   "oneri": "kilit"
+  },
+  {
+   "sahne": "S18",
+   "t": 480.692,
+   "kare": 14421,
+   "olay": "C15 sokak: Box Leo yürür",
+   "tur": "gecis",
+   "oneri": "ayak sesi"
+  },
+  {
+   "sahne": "S18",
+   "t": 496.04,
+   "kare": 14881,
+   "olay": "INSURANCE kutusuna tik",
+   "tur": "vurgu",
+   "oneri": "onay tik"
+  },
+  {
+   "sahne": "S19",
+   "t": 510.58,
+   "kare": 15317,
+   "olay": "kilit modern kilide dönüşür",
+   "tur": "vurgu",
+   "oneri": "parıltı/tık"
+  },
+  {
+   "sahne": "S19",
+   "t": 521.02,
+   "kare": 15631,
+   "olay": "kahve kapı raylarda kayar",
+   "tur": "hareket",
+   "oneri": "ray sürtünmesi"
+  },
+  {
+   "sahne": "S19",
+   "t": 521.7,
+   "kare": 15651,
+   "olay": "takvim 1933→2026",
+   "tur": "flip",
+   "oneri": ""
+  },
+  {
+   "sahne": "S20",
+   "t": 531.12,
+   "kare": 15934,
+   "olay": "+3.7%",
+   "tur": "vurgu",
+   "oneri": ""
+  },
+  {
+   "sahne": "S20",
+   "t": 539.5,
+   "kare": 16185,
+   "olay": "banknot destesi küçülür (≈4 sn)",
+   "tur": "hareket",
+   "oneri": ""
+  },
+  {
+   "sahne": "S20",
+   "t": 540.54,
+   "kare": 16216,
+   "olay": "$1,000→$964 sayacı",
+   "tur": "sayac",
+   "oneri": "aşağı ton"
+  },
+  {
+   "sahne": "S21",
+   "t": 551.193,
+   "kare": 16536,
+   "olay": "panel 1 çizilir",
+   "tur": "kart",
+   "oneri": ""
+  },
+  {
+   "sahne": "S21",
+   "t": 558.065,
+   "kare": 16742,
+   "olay": "panel 2 çizilir",
+   "tur": "kart",
+   "oneri": ""
+  },
+  {
+   "sahne": "S21",
+   "t": 565.25,
+   "kare": 16958,
+   "olay": "SAME BOX. OPPOSITE RESULT.",
+   "tur": "vurgu",
+   "oneri": ""
+  },
+  {
+   "sahne": "S22",
+   "t": 584.672,
+   "kare": 17540,
+   "olay": "1934 kilidi modern kilide dönüşür",
+   "tur": "vurgu",
+   "oneri": "tık + parıltı"
+  },
+  {
+   "sahne": "S23",
+   "t": 597.06,
+   "kare": 17912,
+   "olay": "DISASTER etiketi",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S23",
+   "t": 599.44,
+   "kare": 17983,
+   "olay": "GAMBLE etiketi",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S23",
+   "t": 600.02,
+   "kare": 18001,
+   "olay": "SURPRISE etiketi",
+   "tur": "pop",
+   "oneri": ""
+  },
+  {
+   "sahne": "S23",
+   "t": 608.722,
+   "kare": 18262,
+   "olay": "ekran kararır + tez yazısı",
+   "tur": "vurgu",
+   "oneri": ""
+  },
+  {
+   "sahne": "S24",
+   "t": 618.395,
+   "kare": 18552,
+   "olay": "ışıklar kısılır (3 sn)",
+   "tur": "isik",
+   "oneri": ""
+  },
+  {
+   "sahne": "S24",
+   "t": 620.951,
+   "kare": 18629,
+   "olay": "dördüncü kapı silueti belirir",
+   "tur": "vurgu",
+   "oneri": "gizem tonu"
+  },
+  {
+   "sahne": "S24",
+   "t": 630.654,
+   "kare": 18920,
+   "olay": "el sallama + THANKS FOR PLAYING",
+   "tur": "pop",
+   "oneri": ""
+  }
+ ]
+}

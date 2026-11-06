@@ -1,0 +1,658 @@
+{
+ "B1": {
+  "q": "China AI stocks STAR 50 bubble burst",
+  "k": "STAR",
+  "n_rss": 31,
+  "ok": [
+   {
+    "t": "GT Voice: China’s AI stock pullback isn’t a signal of a 'bubble bursting' - Global Times",
+    "url": "https://www.globaltimes.cn/page/202610/1373086.shtml",
+    "src": "Global Times",
+    "kod": "200",
+    "meta_d": null,
+    "rss_d": "2026-10-27"
+   },
+   {
+    "t": "China’s A.I. Stocks Have Lost 40 Percent in Four Months - trendingtopics.eu",
+    "url": "https://www.trendingtopics.eu/china-ai-stocks-crash-star50/",
+    "src": "trendingtopics.eu",
+    "kod": "200",
+    "meta_d": "2026-10-27",
+    "rss_d": "2026-10-27"
+   },
+   {
+    "t": "It Appears That the AI Bubble Has Just Burst in China - Futurism",
+    "url": "https://futurism.com/artificial-intelligence/ai-bubble-burst-china",
+    "src": "Futurism",
+    "kod": "200",
+    "meta_d": "2026-10-27",
+    "rss_d": "2026-10-27"
+   }
+  ],
+  "tried": 5
+ },
+ "B2": {
+  "q": "Anthropic S-1 IPO loss",
+  "k": "Anthropic",
+  "n_rss": 79,
+  "ok": [
+   {
+    "t": "Anthropic’s IPO prospectus shows $16.3 billion in revenue, an $80.7 billion net loss, and goal of an 'age of miracles' - Fortune",
+    "url": "https://fortune.com/2026/10/26/anthropics-s-1/",
+    "src": "Fortune",
+    "kod": "200",
+    "meta_d": "2026-10-26",
+    "rss_d": "2026-10-26"
+   },
+   {
+    "t": "Anthropic's S-1 paperwork reveals the stunning finances behind its meteoric rise ahead of its IPO - Business Insider",
+    "url": "https://www.businessinsider.com/anthropic-s-1-filing-public-finances-compute-deals-2026-10",
+    "src": "Business Insider",
+    "kod": "200",
+    "meta_d": "2026-10-26",
+    "rss_d": "2026-10-26"
+   },
+   {
+    "t": "Anthropic reveals $80 billion loss, huge spending spree ahead of IPO - NBC News",
+    "url": "https://www.nbcnews.com/business/markets/anthropic-releases-ipo-filing-ahead-highly-anticipated-stock-debut-rcna605676",
+    "src": "NBC News",
+    "kod": "200",
+    "meta_d": "2026-10-26",
+    "rss_d": "2026-10-26"
+   }
+  ],
+  "tried": 5
+ },
+ "B3": {
+  "q": "Supreme Court strikes down tariffs refunds",
+  "k": "tariff",
+  "n_rss": 39,
+  "ok": [
+   {
+    "t": "Supreme Court invalidates most of Trump's tariffs - ABC News - Breaking News, Latest News and Videos",
+    "url": "https://abcnews.com/Politics/supreme-court-invalidates-trumps-tariffs/story?id=129036085",
+    "src": "ABC News - Breaking News, Latest News and Videos",
+    "kod": "200",
+    "meta_d": "2026-02-20",
+    "rss_d": "2026-10-27"
+   },
+   {
+    "t": "Can the courts end Trump's illegal tariffs? - Peterson Institute for International Economics",
+    "url": "https://www.piie.com/blogs/realtime-economics/2026/can-courts-end-trumps-illegal-tariffs",
+    "src": "Peterson Institute for International Economics",
+    "kod": "200",
+    "meta_d": "2026-10-26",
+    "rss_d": "2026-10-26"
+   },
+   {
+    "t": "IEEPA Tariffs Struck Down, Replacement Tariffs Expired: What Importers Need to Know Now - JD Supra",
+    "url": "https://www.jdsupra.com/legalnews/ieepa-tariffs-struck-down-replacement-3405179/",
+    "src": "JD Supra",
+    "kod": "200",
+    "meta_d": null,
+    "rss_d": "2026-10-21"
+   }
+  ],
+  "tried": 3
+ },
+ "B4": {
+  "q": "Fed holds rates Warsh December hike",
+  "k": "Warsh",
+  "n_rss": 30,
+  "ok": [
+   {
+    "t": "The Reasons Pointing to December for the Next Fed Rate Hike - Funds Society",
+    "url": "https://www.fundssociety.com/en/news/markets/the-reasons-pointing-to-december-for-the-next-fed-rate-hike/",
+    "src": "Funds Society",
+    "kod": "200",
+    "meta_d": "2026-10-26",
+    "rss_d": "2026-10-26"
+   },
+   {
+    "t": "Fed holds interest rates steady as inflation hits 3-year high - ABC News - Breaking News, Latest News and Videos",
+    "url": "https://abcnews.com/Business/fed-set-make-interest-rate-decision-inflation-hits/story?id=133758112",
+    "src": "ABC News - Breaking News, Latest News and Videos",
+    "kod": "200",
+    "meta_d": "2026-06-17",
+    "rss_d": "2026-10-27"
+   },
+   {
+    "t": "Federal Reserve preview: A pause before a December hike - ing think",
+    "url": "https://think.ing.com/articles/federal-reserve-preview-a-pause-before-a-december-hike/",
+    "src": "ing think",
+    "kod": "200",
+    "meta_d": "2026-10-23",
+    "rss_d": "2026-10-24"
+   }
+  ],
+  "tried": 5
+ },
+ "B5": {
+  "q": "10-year Treasury yield 5% bond",
+  "k": "Treasury",
+  "n_rss": 49,
+  "ok": [
+   {
+    "t": "The 10-year Treasury yield is above 5%. Should savers lock in now? - Yahoo Finance",
+    "url": "https://finance.yahoo.com/personal-finance/investing/article/the-10-year-treasury-yield-is-above-5-should-savers-lock-in-now-193110179.html",
+    "src": "Yahoo Finance",
+    "kod": "200",
+    "meta_d": "2026-10-20",
+    "rss_d": "2026-10-20"
+   },
+   {
+    "t": "The 10-Year Treasury Is Above 5% for the First Time in Almost 20 Years. History Says This Is How the S&P 500 Index Will Perform Over the Next 12 Months. - The Motley Fool",
+    "url": "https://www.fool.com/investing/2026/10/18/10-year-treasury-5-20-years-history-says-sp500/",
+    "src": "The Motley Fool",
+    "kod": "200",
+    "meta_d": "2026-10-18",
+    "rss_d": "2026-10-18"
+   },
+   {
+    "t": "Dad Is 71 and Wants to Sell Every Stock, Put His $1.1 Million in 10-Year Treasuries Now That the Yield Is Above 5% and Live on the Interest. Is It a Crazy Idea? - 24/7 Wall St.",
+    "url": "https://247wallst.com/personal-finance/2026/10/18/dad-is-71-and-wants-to-sell-every-stock-put-his-1-1-million-in-10-year-treasuries-now-that-the-yield-is-above-5-and-live-on-the-interest-is-it-a-crazy-idea/",
+    "src": "24/7 Wall St.",
+    "kod": "200",
+    "meta_d": "2026-10-18",
+    "rss_d": "2026-10-18"
+   }
+  ],
+  "tried": 7
+ },
+ "B6": {
+  "q": "Brent oil Houthi Saudi refinery price",
+  "k": "Brent",
+  "n_rss": 38,
+  "ok": [
+   {
+    "t": "Brent prices hit $115 amid concerns over Saudi refinery attack | Daily Sabah - Daily Sabah",
+    "url": "https://www.dailysabah.com/business/energy/brent-prices-hit-115-amid-concerns-over-saudi-refinery-attack/amp",
+    "src": "Daily Sabah",
+    "kod": "200",
+    "meta_d": "2026-10-28",
+    "rss_d": "2026-10-28"
+   },
+   {
+    "t": "Brent Crude Prices Slip Amidst Houthi Attacks - Marine News Magazine",
+    "url": "https://www.marinelink.com/news/brent-crude-prices-slip-amidst-houthi-543802",
+    "src": "Marine News Magazine",
+    "kod": "200",
+    "meta_d": "2026-10-20",
+    "rss_d": "2026-10-20"
+   },
+   {
+    "t": "Brent Hits $114 as Houthi Attacks Threaten Saudi Energy Infrastructure - Yahoo Finance",
+    "url": "https://finance.yahoo.com/energy/articles/brent-hits-114-houthi-attacks-053350014.html",
+    "src": "Yahoo Finance",
+    "kod": "200",
+    "meta_d": "2026-10-23",
+    "rss_d": "2026-10-23"
+   }
+  ],
+  "tried": 4
+ },
+ "B7": {
+  "q": "rupee 100 dollar RBI",
+  "k": "rupee",
+  "n_rss": 54,
+  "ok": [
+   {
+    "t": "RBI Eases Rupee Jitters; Reserves Under Strain - Briefs Finance",
+    "url": "https://www.briefs.co/news/rbi-steps-cool-rupee-jitters-but-the-heat-isn-t-over/",
+    "src": "Briefs Finance",
+    "kod": "200",
+    "meta_d": "2026-10-15",
+    "rss_d": "2026-10-15"
+   },
+   {
+    "t": "A stronger rupee, shrinking dollar reserve: The balancing act facing RBI - The Times of India",
+    "url": "https://timesofindia.indiatimes.com/business/india-business/a-stronger-rupee-shrinking-dollar-reserve-the-balancing-act-facing-rbi/articleshow/135143408.cms",
+    "src": "The Times of India",
+    "kod": "200",
+    "meta_d": "2026-10-23",
+    "rss_d": "2026-10-23"
+   },
+   {
+    "t": "Rupee closes at 95.15, extends winning streak as RBI curbs dollar demand - TradingView",
+    "url": "https://www.tradingview.com/news/moneycontrol:a7d6679e4094b:0-rupee-closes-at-95-15-extends-winning-streak-as-rbi-curbs-dollar-demand/",
+    "src": "TradingView",
+    "kod": "200",
+    "meta_d": "2026-10-14",
+    "rss_d": "2026-10-14"
+   }
+  ],
+  "tried": 4
+ },
+ "B8": {
+  "q": "gold price falls from record ETF holdings",
+  "k": "gold",
+  "n_rss": 29,
+  "ok": [
+   {
+    "t": "Gold Price Crashed 25%, But Investors are Still Buying - Yahoo Finance",
+    "url": "https://finance.yahoo.com/markets/commodities/articles/gold-price-crashed-25-investors-004642833.html",
+    "src": "Yahoo Finance",
+    "kod": "200",
+    "meta_d": "2026-10-27",
+    "rss_d": "2026-10-27"
+   },
+   {
+    "t": "Fed Rate Risk Pressures Gold, but Record ETF Holdings Support Recovery - Crux Investor",
+    "url": "https://www.cruxinvestor.com/posts/fed-rate-risk-pressures-gold-but-record-etf-holdings-support-recovery",
+    "src": "Crux Investor",
+    "kod": "200",
+    "meta_d": null,
+    "rss_d": "2026-10-19"
+   },
+   {
+    "t": "China buys the gold dip as ETF holdings hit record and holiday demand lifts Q4 outlook – WGC - Kitco",
+    "url": "https://www.kitco.com/news/article/2026-10-15/china-buys-gold-dip-etf-holdings-hit-record-and-holiday-demand-lifts-q4",
+    "src": "Kitco",
+    "kod": "200",
+    "meta_d": "2026-10-15",
+    "rss_d": "2026-10-15"
+   }
+  ],
+  "tried": 4
+ },
+ "B9": {
+  "q": "bank stocks losing streak since 2008",
+  "k": "bank",
+  "n_rss": 22,
+  "ok": [
+   {
+    "t": "US bank stocks' longest losing streak since 2008 clashes with earnings picture - Yahoo Finance",
+    "url": "https://finance.yahoo.com/markets/article/us-bank-stocks-longest-losing-streak-since-2008-clashes-with-earnings-picture-165407807.html",
+    "src": "Yahoo Finance",
+    "kod": "200",
+    "meta_d": "2026-10-19",
+    "rss_d": "2026-10-19"
+   },
+   {
+    "t": "Big US bank stocks head for longest weekly losing streak since 2008 - The Economic Times",
+    "url": "https://m.economictimes.com/markets/us-stocks/wall-street-guide/big-us-bank-stocks-head-for-longest-weekly-losing-streak-since-2008/articleshow/135002546.cms",
+    "src": "The Economic Times",
+    "kod": "200",
+    "meta_d": "2026-10-17",
+    "rss_d": "2026-10-17"
+   },
+   {
+    "t": "After a Streak Not Seen Since 2008, Bank Stocks Face a Five-Day Test - TradingView",
+    "url": "https://www.tradingview.com/news/prnewswire:d3799f6c131cb:0-after-a-streak-not-seen-since-2008-bank-stocks-face-a-five-day-test/",
+    "src": "TradingView",
+    "kod": "200",
+    "meta_d": "2026-10-19",
+    "rss_d": "2026-10-19"
+   }
+  ],
+  "tried": 4
+ },
+ "B10": {
+  "q": "Moody's crypto crash bitcoin 80,000",
+  "k": "bitcoin",
+  "n_rss": 1,
+  "ok": [
+   {
+    "t": "Moody's Flags Crypto Crash as Top Near-Term Shock Just Before Fed Call - BigGo Finance",
+    "url": "https://finance.biggo.com/news/076df19a-6118-4dfc-a3c9-5c52f21e6e39",
+    "src": "BigGo Finance",
+    "kod": "200",
+    "meta_d": "2026-10-27",
+    "rss_d": "2026-10-27"
+   }
+  ],
+  "tried": 1
+ },
+ "B11": {
+  "q": "midterm elections stock market history",
+  "k": "midterm",
+  "n_rss": 23,
+  "ok": [
+   {
+    "t": "History Favors Stocks Post-Midterms, But Experts Say Fundamentals Matter More - Yahoo Finance",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/history-favors-stocks-post-midterms-114829844.html",
+    "src": "Yahoo Finance",
+    "kod": "200",
+    "meta_d": "2026-10-23",
+    "rss_d": "2026-10-23"
+   },
+   {
+    "t": "Midterm Elections Are Usually Good For The Markets. That May Change This Year. - Investor's Business Daily",
+    "url": "https://www.investors.com/news/midterm-elections-stock-market-performance-2026/",
+    "src": "Investor's Business Daily",
+    "kod": "200",
+    "meta_d": "2026-10-22",
+    "rss_d": "2026-10-23"
+   },
+   {
+    "t": "Investors Are Nervous About the Midterm Elections. Stock Market History Shows You Shouldn't Be - MONEY",
+    "url": "https://money.com/midterm-elections-stock-market-2026/",
+    "src": "MONEY",
+    "kod": "200",
+    "meta_d": "2026-10-26",
+    "rss_d": "2026-10-26"
+   }
+  ],
+  "tried": 3
+ },
+ "B12": {
+  "q": "big tech AI capex 2026 earnings Microsoft Meta",
+  "k": "capex",
+  "n_rss": 58,
+  "ok": [
+   {
+    "t": "Microsoft, Meta And Google Just Silenced AI Spending Critics In One Earnings Night As Big Tech Capex Swells To $725B - Stocktwits",
+    "url": "https://stocktwits.com/news-articles/markets/equity/microsoft-meta-and-google-just-silenced-ai-spending-critics-in-one-earnings-night-as-big-tech-capex-swells-to-725-b/cZBtCIgReEx",
+    "src": "Stocktwits",
+    "kod": "200",
+    "meta_d": "2026-04-30",
+    "rss_d": "2026-10-27"
+   },
+   {
+    "t": "Big Tech's capex spending looks different this year as Meta and Tesla save for later - Yahoo Finance",
+    "url": "https://finance.yahoo.com/technology/article/big-techs-capex-spending-looks-different-this-year-as-meta-and-tesla-save-for-later-100000383.html",
+    "src": "Yahoo Finance",
+    "kod": "200",
+    "meta_d": "2026-10-23",
+    "rss_d": "2026-10-23"
+   },
+   {
+    "t": "Big Tech AI Spending: $3.5T Gartner Risk [2026] - shattered.io",
+    "url": "https://shattered.io/big-tech-earnings-ai-spending-gartner-3-5-trillion-risk-2026/",
+    "src": "shattered.io",
+    "kod": "200",
+    "meta_d": "2026-10-27",
+    "rss_d": "2026-10-27"
+   }
+  ],
+  "tried": 3
+ },
+ "B13": {
+  "q": "semi-liquid private credit funds redemptions",
+  "k": "private credit",
+  "n_rss": 25,
+  "ok": [
+   {
+    "t": "Debunking 8 Myths About Private Credit and Semiliquid Funds - Morningstar",
+    "url": "https://www.morningstar.com/funds/debunking-8-myths-about-private-credit-semiliquid-funds",
+    "src": "Morningstar",
+    "kod": "200",
+    "meta_d": "2026-10-16",
+    "rss_d": "2026-10-16"
+   },
+   {
+    "t": "What Is Private Credit and Why Should Americans Care? - Center for American Progress",
+    "url": "https://www.americanprogress.org/article/what-is-private-credit-and-why-should-americans-care/",
+    "src": "Center for American Progress",
+    "kod": "200",
+    "meta_d": "2026-10-19",
+    "rss_d": "2026-10-19"
+   },
+   {
+    "t": "Why private credit is drawing regulatory scrutiny - EY",
+    "url": "https://www.ey.com/en_cn/insights/financial-services/why-regulators-are-zooming-in-on-private-credit",
+    "src": "EY",
+    "kod": "200",
+    "meta_d": "2026-07-22",
+    "rss_d": "2026-10-18"
+   }
+  ],
+  "tried": 6
+ },
+ "B14": {
+  "q": "mortgage rates home prices falling",
+  "k": "mortgage",
+  "n_rss": 55,
+  "ok": [
+   {
+    "t": "Long Island home prices, sales, supply fall as mortgage rates rise - Long Island Business News",
+    "url": "https://libn.com/2026/10/16/long-island-home-prices-sales-fall-mortgage-rates-rise/",
+    "src": "Long Island Business News",
+    "kod": "200",
+    "meta_d": "2026-10-16",
+    "rss_d": "2026-10-16"
+   },
+   {
+    "t": "Fewer Buyers Go Under Contract as Mortgage Rates Remain High - National Association of REALTORS®",
+    "url": "https://www.nar.realtor/news/real-estate-news/economy/fewer-buyers-go-under-contract-as-mortgage-rates-remain-high",
+    "src": "National Association of REALTORS®",
+    "kod": "200",
+    "meta_d": "2026-10-20",
+    "rss_d": "2026-10-20"
+   },
+   {
+    "t": "Why home prices aren't falling despite a growing surplus of sellers - WBFF",
+    "url": "https://foxbaltimore.com/news/nation-world/why-home-prices-arent-falling-despite-a-growing-surplus-of-sellers",
+    "src": "WBFF",
+    "kod": "200",
+    "meta_d": "2026-10-16",
+    "rss_d": "2026-10-16"
+   }
+  ],
+  "tried": 3
+ },
+ "B15": {
+  "q": "Social Security COLA 2027 3.6%",
+  "k": "COLA",
+  "n_rss": 100,
+  "ok": [
+   {
+    "t": "A 3.6% Social Security COLA in 2027 will push some retired couples past $100,000 a year in benefits - Yahoo Finance",
+    "url": "https://finance.yahoo.com/economy/policy/articles/3-6-social-security-cola-123000840.html",
+    "src": "Yahoo Finance",
+    "kod": "200",
+    "meta_d": "2026-10-17",
+    "rss_d": "2026-10-17"
+   },
+   {
+    "t": "The 2027 Social Security COLA is 3.6%: See how your benefits will be impacted - Chase Bank",
+    "url": "https://www.chase.com/personal/investments/learning-and-insights/article/social-security-cost-of-living-adjustment-cola-2027",
+    "src": "Chase Bank",
+    "kod": "200",
+    "meta_d": "2026-10-14",
+    "rss_d": "2026-10-16"
+   },
+   {
+    "t": "Will Social Security’s 3.6% 2027 COLA Hold Up? Here’s What History Says - The Motley Fool",
+    "url": "https://www.fool.com/retirement/2026/10/23/will-social-security-s-3-6-2027-cola-hold-up-here-s-what-history-says/",
+    "src": "The Motley Fool",
+    "kod": "200",
+    "meta_d": "2026-10-23",
+    "rss_d": "2026-10-23"
+   }
+  ],
+  "tried": 5
+ },
+ "B16": {
+  "q": "Bank of England rate hike November 4%",
+  "k": "Bank of England",
+  "n_rss": 53,
+  "ok": [
+   {
+    "t": "Interest rates unlikely to reach 4.75% by next summer, say City economists - The Guardian",
+    "url": "https://www.theguardian.com/business/2026/oct/25/interest-rates-bank-of-england-rises-summer-2027",
+    "src": "The Guardian",
+    "kod": "200",
+    "meta_d": "2026-10-25",
+    "rss_d": "2026-10-25"
+   },
+   {
+    "t": "Why Bank of England Hawks Are Gaining Ground as Inflation Heads Above 4% - Yahoo Finance",
+    "url": "https://finance.yahoo.com/economy/policy/articles/why-bank-england-hawks-gaining-062108382.html",
+    "src": "Yahoo Finance",
+    "kod": "200",
+    "meta_d": "2026-10-26",
+    "rss_d": "2026-10-26"
+   },
+   {
+    "t": "Why we now expect two Bank of England rate hikes - ing think",
+    "url": "https://think.ing.com/articles/monthly-why-we-now-expect-two-bank-of-england-rate-hikes/",
+    "src": "ing think",
+    "kod": "200",
+    "meta_d": "2026-10-15",
+    "rss_d": "2026-10-15"
+   }
+  ],
+  "tried": 4
+ },
+ "B17": {
+  "q": "yen intervention Katayama",
+  "k": "yen",
+  "n_rss": 9,
+  "ok": [
+   {
+    "t": "Japan finance minister Katayama warns of decisive action as yen intervention risks linger - investingLive",
+    "url": "https://investinglive.com/forex/japan-finance-minister-katayama-warns-of-decisive-action-as-yen-intervention-risks-linger/",
+    "src": "investingLive",
+    "kod": "200",
+    "meta_d": "2026-10-27",
+    "rss_d": "2026-10-27"
+   },
+   {
+    "t": "Risk of Yen Intervention Returns to Focus: Katayama Strikes Tough Stance, 200-Day Moving Average Becomes Key Resistance - Moomoo",
+    "url": "https://www.moomoo.com/news/post/1002452242/risk-of-yen-intervention-returns-to-focus-katayama-strikes-tough",
+    "src": "Moomoo",
+    "kod": "200",
+    "meta_d": "2026-10-27",
+    "rss_d": "2026-10-27"
+   },
+   {
+    "t": "Dollar-yen struggles near 158 as Finance Minister Katayama's warning yields limited yen buying - BigGo Finance",
+    "url": "https://finance.biggo.com/news/c4442c58-5831-4940-82e3-4c92d6d5a335",
+    "src": "BigGo Finance",
+    "kod": "200",
+    "meta_d": "2026-10-28",
+    "rss_d": "2026-10-28"
+   }
+  ],
+  "tried": 4
+ },
+ "B18": {
+  "q": "gas prices higher under Trump than Biden",
+  "k": "gas",
+  "n_rss": 48,
+  "ok": [
+   {
+    "t": "Gas under Trump 2.0 is now more expensive than it was under Biden - CNN",
+    "url": "https://www.cnn.com/2026/10/26/economy/gas-oil-trump-iran-election",
+    "src": "CNN",
+    "kod": "200",
+    "meta_d": "2026-10-26",
+    "rss_d": "2026-10-26"
+   },
+   {
+    "t": "Gas prices under Trump 2.0 are now higher on average than during Biden’s 4 years in office - Yahoo Finance",
+    "url": "https://finance.yahoo.com/energy/article/gas-prices-under-trump-20-are-now-higher-on-average-than-during-bidens-4-years-in-office-141656779.html",
+    "src": "Yahoo Finance",
+    "kod": "200",
+    "meta_d": "2026-10-27",
+    "rss_d": "2026-10-27"
+   },
+   {
+    "t": "Trump said gasoline is cheaper now than during Biden, Obama presidencies. Is it? - WLRN",
+    "url": "https://www.wlrn.org/government-politics/2026-10-27/trump-said-gasoline-is-cheaper-now-than-during-biden-obama-presidencies-is-it",
+    "src": "WLRN",
+    "kod": "200",
+    "meta_d": "2026-10-27",
+    "rss_d": "2026-10-27"
+   }
+  ],
+  "tried": 4
+ },
+ "B19": {
+  "q": "holiday sales forecast 2026 trillion NRF",
+  "k": "holiday",
+  "n_rss": 19,
+  "ok": [
+   {
+    "t": "2026 Holiday Sales Forecast to Rise 4.2% to More Than $1 Trillion - CPA Practice Advisor",
+    "url": "https://www.cpapracticeadvisor.com/2026/10/26/2026-holiday-sales-forecast-to-rise-4-2-to-more-than-1-trillion/192428/",
+    "src": "CPA Practice Advisor",
+    "kod": "200",
+    "meta_d": "2026-10-26",
+    "rss_d": "2026-10-26"
+   },
+   {
+    "t": "Inflation expected to push holiday sales above $1 trillion - Talk Business & Politics",
+    "url": "https://talkbusiness.net/2026/10/inflation-expected-to-push-holiday-sales-above-1-trillion/",
+    "src": "Talk Business & Politics",
+    "kod": "200",
+    "meta_d": "2026-10-16",
+    "rss_d": "2026-10-16"
+   },
+   {
+    "t": "NRF forecasts 4.2% holiday sales growth, muted seasonal hiring - Retail Dive",
+    "url": "https://www.retaildive.com/news/nrf-forecasts-2026-holiday-sales-growth-seasonal-hiring/833239/",
+    "src": "Retail Dive",
+    "kod": "200",
+    "meta_d": "2026-10-19",
+    "rss_d": "2026-10-19"
+   }
+  ],
+  "tried": 6
+ },
+ "B20": {
+  "q": "US budget deficit nearly 2 trillion fiscal 2026",
+  "k": "deficit",
+  "n_rss": 39,
+  "ok": [
+   {
+    "t": "Red ink: Federal deficit hits nearly $2 trillion - NPR",
+    "url": "https://www.npr.org/2026/10/16/nx-s1-6005243/red-ink-federal-deficit-hits-nearly-2-trillion",
+    "src": "NPR",
+    "kod": "200",
+    "meta_d": "2026-10-16",
+    "rss_d": "2026-10-16"
+   },
+   {
+    "t": "The US federal budget deficit for 2026 just came in. It’s $1.992 trillion. - Yahoo Finance",
+    "url": "https://finance.yahoo.com/economy/policy/article/the-us-federal-budget-deficit-for-2026-just-came-in-its-1992-trillion-191917669.html",
+    "src": "Yahoo Finance",
+    "kod": "200",
+    "meta_d": "2026-10-16",
+    "rss_d": "2026-10-16"
+   },
+   {
+    "t": "The Federal Government Collected $5.4 Trillion. It Still Can't Pay Its Bills. - Reason Magazine",
+    "url": "https://reason.com/2026/10/15/the-federal-government-collected-5-4-trillion-it-still-cant-pay-its-bills/",
+    "src": "Reason Magazine",
+    "kod": "200",
+    "meta_d": "2026-10-15",
+    "rss_d": "2026-10-15"
+   }
+  ],
+  "tried": 5
+ },
+ "B21": {
+  "q": "CoreWeave debt stock bond yields",
+  "k": "CoreWeave",
+  "n_rss": 37,
+  "ok": [
+   {
+    "t": "CoreWeave Bond Yields Reach 15% as Investors Reassess AI Infrastructure Financing Risks - Yahoo Finance",
+    "url": "https://finance.yahoo.com/technology/ai/articles/coreweave-bond-yields-reach-15-101338344.html",
+    "src": "Yahoo Finance",
+    "kod": "200",
+    "meta_d": "2026-10-19",
+    "rss_d": "2026-10-19"
+   },
+   {
+    "t": "CoreWeave and Data Center Bonds Slide on Capex and Debt Overhang Concerns - Morningstar",
+    "url": "https://www.morningstar.com/bonds/coreweave-data-center-bonds-slide-capex-debt-overhang-concerns",
+    "src": "Morningstar",
+    "kod": "200",
+    "meta_d": "2026-10-16",
+    "rss_d": "2026-10-16"
+   },
+   {
+    "t": "AI Debt Fears Are Suddenly Rippling Across Wall Street As Yields Surge - Business Insider",
+    "url": "https://www.businessinsider.com/ai-debt-hyperscalers-wall-street-bond-yields-rates-coreweave-2026-10",
+    "src": "Business Insider",
+    "kod": "200",
+    "meta_d": "2026-10-16",
+    "rss_d": "2026-10-16"
+   }
+  ],
+  "tried": 4
+ }
+}

@@ -1,0 +1,337 @@
+{
+ "_not": "viralite-analisti F2 girdisi, 2026-11-02 (veri 2026-10-28 F1 + 2026-11-02 API yerel medyan). Puanlar TAHMİNDİR [T]. ana_iddia_dogrulandi=true geçici: finans-dogrulayici paralel. aralik alanını viralite.py okumaz, duyarlılık betiği okur.",
+ "senaryolar": [
+  {
+   "id": "S01",
+   "baslik": "China's AI Stocks Lost $480 Billion. Is America Next?",
+   "merak": 8,
+   "talep": 8,
+   "hook": 8,
+   "kisisel": 6,
+   "zamanlama": 8,
+   "hikaye": 6,
+   "gorsel": 8,
+   "raf": 5,
+   "seri": false,
+   "somut_ozne": true,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "talep": [
+     7,
+     9
+    ],
+    "kisisel": [
+     5,
+     7
+    ],
+    "zamanlama": [
+     7,
+     9
+    ],
+    "hikaye": [
+     5,
+     7
+    ]
+   }
+  },
+  {
+   "id": "S02",
+   "baslik": "Who Is Lending Money to the AI Boom?",
+   "merak": 6,
+   "talep": 4,
+   "hook": 8,
+   "kisisel": 5,
+   "zamanlama": 7,
+   "hikaye": 6,
+   "gorsel": 7,
+   "raf": 5,
+   "seri": false,
+   "somut_ozne": false,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "talep": [
+     4,
+     5
+    ],
+    "kisisel": [
+     4,
+     6
+    ]
+   }
+  },
+  {
+   "id": "S03",
+   "baslik": "An $80 Billion Loss? Reading Anthropic's IPO Paperwork",
+   "merak": 8,
+   "talep": 4,
+   "hook": 8,
+   "kisisel": 4,
+   "zamanlama": 8,
+   "hikaye": 6,
+   "gorsel": 7,
+   "raf": 4,
+   "seri": false,
+   "somut_ozne": true,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "zamanlama": [
+     7,
+     8
+    ],
+    "kisisel": [
+     3,
+     5
+    ]
+   }
+  },
+  {
+   "id": "S04",
+   "baslik": "$130 Billion in Tariff Refunds. Where Is the Money Going?",
+   "merak": 8,
+   "talep": 6,
+   "hook": 7,
+   "kisisel": 6,
+   "zamanlama": 6,
+   "hikaye": 7,
+   "gorsel": 8,
+   "raf": 5,
+   "seri": false,
+   "somut_ozne": true,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "talep": [
+     5,
+     7
+    ],
+    "hook": [
+     6,
+     8
+    ],
+    "kisisel": [
+     5,
+     7
+    ]
+   }
+  },
+  {
+   "id": "S05",
+   "baslik": "The Midterms Are Over. What Happens to Your Money Now?",
+   "merak": 8,
+   "talep": 8,
+   "hook": 7,
+   "kisisel": 7,
+   "zamanlama": 10,
+   "hikaye": 5,
+   "gorsel": 6,
+   "raf": 3,
+   "seri": false,
+   "somut_ozne": false,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "talep": [
+     7,
+     9
+    ],
+    "hook": [
+     6,
+     8
+    ],
+    "kisisel": [
+     6,
+     8
+    ]
+   }
+  },
+  {
+   "id": "S06",
+   "baslik": "The 5% Number That Sets Your Mortgage (It's Not the Fed)",
+   "merak": 8,
+   "talep": 8,
+   "hook": 8,
+   "kisisel": 8,
+   "zamanlama": 7,
+   "hikaye": 5,
+   "gorsel": 9,
+   "raf": 7,
+   "seri": false,
+   "somut_ozne": true,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "merak": [
+     7,
+     8
+    ],
+    "talep": [
+     7,
+     8
+    ],
+    "kisisel": [
+     7,
+     8
+    ],
+    "zamanlama": [
+     6,
+     8
+    ],
+    "hikaye": [
+     4,
+     6
+    ]
+   }
+  },
+  {
+   "id": "S07",
+   "baslik": "Record Home Prices, Fewer Buyers: How Are Both True?",
+   "merak": 7,
+   "talep": 8,
+   "hook": 7,
+   "kisisel": 8,
+   "zamanlama": 6,
+   "hikaye": 5,
+   "gorsel": 7,
+   "raf": 5,
+   "seri": false,
+   "somut_ozne": true,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "merak": [
+     6,
+     8
+    ],
+    "talep": [
+     8,
+     9
+    ]
+   }
+  },
+  {
+   "id": "S08",
+   "baslik": "If America Earned $5,400 a Month, Here's Its Budget",
+   "merak": 8,
+   "talep": 6,
+   "hook": 9,
+   "kisisel": 7,
+   "zamanlama": 6,
+   "hikaye": 6,
+   "gorsel": 9,
+   "raf": 8,
+   "seri": false,
+   "somut_ozne": true,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "merak": [
+     7,
+     9
+    ],
+    "talep": [
+     6,
+     7
+    ],
+    "kisisel": [
+     6,
+     8
+    ]
+   }
+  },
+  {
+   "id": "S09",
+   "baslik": "The Fed Chief Who Pushed Rates to 20%: Hero or Villain?",
+   "merak": 8,
+   "talep": 5,
+   "hook": 8,
+   "kisisel": 6,
+   "zamanlama": 5,
+   "hikaye": 9,
+   "gorsel": 8,
+   "raf": 9,
+   "seri": false,
+   "somut_ozne": true,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "talep": [
+     4,
+     5
+    ]
+   }
+  },
+  {
+   "id": "S10",
+   "baslik": "The First $1 Trillion Holiday Season Is Not What It Seems",
+   "merak": 6,
+   "talep": 3,
+   "hook": 7,
+   "kisisel": 8,
+   "zamanlama": 6,
+   "hikaye": 4,
+   "gorsel": 8,
+   "raf": 4,
+   "seri": false,
+   "somut_ozne": true,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "zamanlama": [
+     5,
+     7
+    ]
+   }
+  },
+  {
+   "id": "S11",
+   "baslik": "What Happens If the Rupee Hits 100 Per Dollar?",
+   "merak": 8,
+   "talep": 4,
+   "hook": 8,
+   "kisisel": 5,
+   "zamanlama": 6,
+   "hikaye": 5,
+   "gorsel": 7,
+   "raf": 6,
+   "seri": false,
+   "somut_ozne": true,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "kisisel": [
+     4,
+     7
+    ]
+   }
+  },
+  {
+   "id": "S12",
+   "baslik": "$115 Oil: Follow One Barrel From the Gulf to Your Gas Pump",
+   "merak": 7,
+   "talep": 8,
+   "hook": 7,
+   "kisisel": 8,
+   "zamanlama": 7,
+   "hikaye": 5,
+   "gorsel": 8,
+   "raf": 5,
+   "seri": false,
+   "somut_ozne": true,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "zamanlama": [
+     4,
+     8
+    ],
+    "talep": [
+     7,
+     8
+    ]
+   }
+  }
+ ]
+}

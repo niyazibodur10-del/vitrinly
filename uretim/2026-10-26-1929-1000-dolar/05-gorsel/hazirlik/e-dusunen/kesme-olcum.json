@@ -1,0 +1,32 @@
+{
+ "girdi": "/home/user/vitrinly/assets/karakter/paket-v1/e-dusunen.png",
+ "zemin_bgr": [
+  122,
+  88,
+  59
+ ],
+ "boyut": [
+  1920,
+  1080
+ ],
+ "M1-renk-anahtari": {
+  "kenar_artigi_orani": 0.079,
+  "sacak_px": 0,
+  "on_plan_px": 471532
+ },
+ "M2-grabcut": {
+  "kenar_artigi_orani": 0.1265,
+  "sacak_px": 256,
+  "on_plan_px": 471796
+ },
+ "M3-grabcut-arindirma": {
+  "kenar_artigi_orani": 0.0728,
+  "sacak_px": 66,
+  "on_plan_px": 471796
+ },
+ "M4-renk-arindirma": {
+  "kenar_artigi_orani": 0.0,
+  "sacak_px": 0,
+  "on_plan_px": 471532
+ }
+}

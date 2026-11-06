@@ -1,0 +1,21 @@
+{
+ "kaynak": "canva-ham/C03.png",
+ "boyut": [
+  1920,
+  1080
+ ],
+ "ekran_ic_xyxy": [
+  829,
+  189,
+  1760,
+  633
+ ],
+ "kursu_on_panel_ic_xyxy": [
+  340,
+  621,
+  606,
+  838
+ ],
+ "kursu_ust_kenar_y_yaklasik": 530,
+ "not": "ekran i\u00e7i = koyu d\u00fcz alan (V<45) en b\u00fcy\u00fck bile\u015fen; k\u00fcrs\u00fc paneli = alt\u0131n \u00e7er\u00e7eve i\u00e7i koyu alan; KOD grafikleri bu kutulara"
+}

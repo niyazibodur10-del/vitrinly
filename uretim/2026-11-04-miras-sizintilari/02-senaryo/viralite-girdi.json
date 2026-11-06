@@ -1,0 +1,365 @@
+{
+ "_not": "viralite-analisti F2 girdisi 2026-11-04, model v0.2. Puanlar TAHMİNDİR [T]. ana_iddia_dogrulandi=true geçici (finans-dogrulayici paralel). somut_ozne yalnız v0.1 karşılaştırması için (v0.2'de tavan kapalı). aralik alanını yalnız duyarlılık betiği okur.",
+ "senaryolar": [
+  {
+   "id": "S01",
+   "baslik": "Bigger Heists, Fewer Thieves: How Stealing Money Changed",
+   "merak": 8,
+   "talep": 8,
+   "hook": 9,
+   "kisisel": 5,
+   "zamanlama": 8,
+   "hikaye": 8,
+   "gorsel": 9,
+   "raf": 7,
+   "seri": true,
+   "somut_ozne": true,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "merak": [
+     7,
+     8
+    ],
+    "talep": [
+     7,
+     9
+    ],
+    "kisisel": [
+     4,
+     6
+    ],
+    "zamanlama": [
+     7,
+     9
+    ]
+   }
+  },
+  {
+   "id": "S02",
+   "baslik": "What Happens to Stolen Money After the Heist?",
+   "merak": 8,
+   "talep": 4,
+   "hook": 8,
+   "kisisel": 5,
+   "zamanlama": 7,
+   "hikaye": 7,
+   "gorsel": 8,
+   "raf": 7,
+   "seri": true,
+   "somut_ozne": false,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "merak": [
+     7,
+     8
+    ],
+    "talep": [
+     3,
+     5
+    ],
+    "hook": [
+     7,
+     8
+    ],
+    "kisisel": [
+     4,
+     6
+    ]
+   }
+  },
+  {
+   "id": "S03",
+   "baslik": "The Biggest Inheritance Ever, and Why Heirs Might Miss It",
+   "merak": 8,
+   "talep": 9,
+   "hook": 7,
+   "kisisel": 9,
+   "zamanlama": 6,
+   "hikaye": 6,
+   "gorsel": 8,
+   "raf": 8,
+   "seri": true,
+   "somut_ozne": true,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "talep": [
+     8,
+     9
+    ],
+    "hook": [
+     7,
+     8
+    ],
+    "kisisel": [
+     8,
+     9
+    ],
+    "hikaye": [
+     5,
+     7
+    ],
+    "zamanlama": [
+     5,
+     7
+    ]
+   }
+  },
+  {
+   "id": "S04",
+   "baslik": "What Happens When the Boomers Sell Their Houses?",
+   "merak": 7,
+   "talep": 8,
+   "hook": 7,
+   "kisisel": 8,
+   "zamanlama": 5,
+   "hikaye": 5,
+   "gorsel": 8,
+   "raf": 8,
+   "seri": true,
+   "somut_ozne": true,
+   "rakip_benzerlik": "benzer_aci",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "talep": [
+     7,
+     8
+    ],
+    "kisisel": [
+     7,
+     9
+    ]
+   }
+  },
+  {
+   "id": "S05",
+   "baslik": "Japan Owes the Most. So Why Isn't It First to Go Broke?",
+   "merak": 9,
+   "talep": 9,
+   "hook": 9,
+   "kisisel": 7,
+   "zamanlama": 8,
+   "hikaye": 6,
+   "gorsel": 8,
+   "raf": 6,
+   "seri": false,
+   "somut_ozne": true,
+   "rakip_benzerlik": "benzer_aci",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "merak": [
+     8,
+     9
+    ],
+    "talep": [
+     8,
+     10
+    ],
+    "kisisel": [
+     6,
+     8
+    ],
+    "zamanlama": [
+     7,
+     9
+    ]
+   }
+  },
+  {
+   "id": "S06",
+   "baslik": "What If Everyone America Owes Asked for It Back?",
+   "merak": 8,
+   "talep": 9,
+   "hook": 8,
+   "kisisel": 6,
+   "zamanlama": 7,
+   "hikaye": 6,
+   "gorsel": 9,
+   "raf": 6,
+   "seri": false,
+   "somut_ozne": true,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "merak": [
+     8,
+     9
+    ],
+    "talep": [
+     8,
+     9
+    ],
+    "kisisel": [
+     5,
+     7
+    ]
+   }
+  },
+  {
+   "id": "S07",
+   "baslik": "The Fraud Was Hiding in a Line That Was Too Smooth",
+   "merak": 7,
+   "talep": 7,
+   "hook": 8,
+   "kisisel": 6,
+   "zamanlama": 4,
+   "hikaye": 9,
+   "gorsel": 8,
+   "raf": 9,
+   "seri": false,
+   "somut_ozne": false,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "merak": [
+     6,
+     8
+    ],
+    "talep": [
+     6,
+     8
+    ]
+   }
+  },
+  {
+   "id": "S08",
+   "baslik": "The Last Tech Boom Ended Like This. Could AI Follow?",
+   "merak": 8,
+   "talep": 8,
+   "hook": 7,
+   "kisisel": 7,
+   "zamanlama": 8,
+   "hikaye": 7,
+   "gorsel": 8,
+   "raf": 6,
+   "seri": false,
+   "somut_ozne": true,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "merak": [
+     8,
+     9
+    ],
+    "talep": [
+     7,
+     9
+    ],
+    "kisisel": [
+     6,
+     8
+    ]
+   }
+  },
+  {
+   "id": "S09",
+   "baslik": "Mansa Musa's Famous Fortune Came From a Website List",
+   "merak": 9,
+   "talep": 7,
+   "hook": 9,
+   "kisisel": 3,
+   "zamanlama": 3,
+   "hikaye": 7,
+   "gorsel": 7,
+   "raf": 9,
+   "seri": false,
+   "somut_ozne": true,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "merak": [
+     8,
+     9
+    ],
+    "talep": [
+     6,
+     7
+    ],
+    "kisisel": [
+     3,
+     4
+    ]
+   }
+  },
+  {
+   "id": "S10",
+   "baslik": "The Worst Trades in History, Judged Without Hindsight",
+   "merak": 7,
+   "talep": 4,
+   "hook": 8,
+   "kisisel": 5,
+   "zamanlama": 3,
+   "hikaye": 6,
+   "gorsel": 8,
+   "raf": 9,
+   "seri": false,
+   "somut_ozne": false,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "talep": [
+     4,
+     5
+    ]
+   }
+  },
+  {
+   "id": "S11",
+   "baslik": "What If Everyone Took Their Money Out at Once?",
+   "merak": 7,
+   "talep": 5,
+   "hook": 8,
+   "kisisel": 8,
+   "zamanlama": 5,
+   "hikaye": 6,
+   "gorsel": 9,
+   "raf": 8,
+   "seri": false,
+   "somut_ozne": false,
+   "rakip_benzerlik": "yok",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "merak": [
+     6,
+     7
+    ],
+    "talep": [
+     4,
+     6
+    ],
+    "kisisel": [
+     7,
+     8
+    ],
+    "zamanlama": [
+     4,
+     6
+    ]
+   }
+  },
+  {
+   "id": "S12",
+   "baslik": "What Happens When Someone Tries to Buy a Whole Market?",
+   "merak": 7,
+   "talep": 8,
+   "hook": 8,
+   "kisisel": 4,
+   "zamanlama": 6,
+   "hikaye": 9,
+   "gorsel": 9,
+   "raf": 9,
+   "seri": false,
+   "somut_ozne": false,
+   "rakip_benzerlik": "benzer_aci",
+   "ana_iddia_dogrulandi": true,
+   "aralik_kotumser_iyimser": {
+    "talep": [
+     7,
+     9
+    ]
+   }
+  }
+ ]
+}

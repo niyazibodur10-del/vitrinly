@@ -1,0 +1,138 @@
+{
+ "K1": {
+  "beklenen": [
+   "WHO",
+   "GETS",
+   "IT",
+   "124T"
+  ],
+  "tam_1280": {
+   "bulunan": [
+    "WHO",
+    "GETS",
+    "IT"
+   ],
+   "oran": 0.75,
+   "ham": "WHO GETS IT WHO A GETS IT 1247"
+  },
+  "mobil_168": {
+   "bulunan": [
+    "WHO",
+    "GETS",
+    "IT"
+   ],
+   "oran": 0.75,
+   "ham": "WHO GETS IH IT 7 WHO GETS OF IT FA"
+  },
+  "mobil_168_bolge": {
+   "bulunan": [
+    "WHO",
+    "GETS",
+    "IT",
+    "124T"
+   ],
+   "oran": 1.0,
+   "ham": "WHO GETS NOP IT RA 124 WHO GETS OF IT RA 124T"
+  },
+  "mobil_168_kelime_psm7": {
+   "bulunan": [
+    "GETS",
+    "IT?"
+   ],
+   "oran": 0.5,
+   "ham": [
+    "1241 1241",
+    "",
+    "GETS GETS",
+    "IT IT"
+   ]
+  },
+  "mobil_korunan": 1.0
+ },
+ "K3": {
+  "beklenen": [
+   "SMALLER",
+   "LATER"
+  ],
+  "tam_1280": {
+   "bulunan": [
+    "SMALLER"
+   ],
+   "oran": 0.5,
+   "ham": "SMALLER 3 4 4 OF SMALLER F"
+  },
+  "mobil_168": {
+   "bulunan": [],
+   "oran": 0.0,
+   "ham": "OF"
+  },
+  "mobil_168_bolge": {
+   "bulunan": [
+    "SMALLER",
+    "LATER"
+   ],
+   "oran": 1.0,
+   "ham": "SMALLER SMALLER LATER"
+  },
+  "mobil_168_kelime_psm7": {
+   "bulunan": [
+    "SMALLER.",
+    "LATER."
+   ],
+   "oran": 1.0,
+   "ham": [
+    "SMALLER SMALLER",
+    "LATER LATER"
+   ]
+  },
+  "mobil_korunan": 0.0
+ },
+ "K4": {
+  "beklenen": [
+   "IT",
+   "KEEPS",
+   "LEAKING"
+  ],
+  "tam_1280": {
+   "bulunan": [
+    "IT",
+    "KEEPS",
+    "LEAKING"
+   ],
+   "oran": 1.0,
+   "ham": "IT KEEPS V LEAKING WK IT KEEPS 2 2 OND"
+  },
+  "mobil_168": {
+   "bulunan": [
+    "IT",
+    "KEEPS",
+    "LEAKING"
+   ],
+   "oran": 1.0,
+   "ham": "ALY IT KEEPS LEAKING A 9 IT KEEPS AY FO I 3"
+  },
+  "mobil_168_bolge": {
+   "bulunan": [
+    "IT",
+    "KEEPS",
+    "LEAKING"
+   ],
+   "oran": 1.0,
+   "ham": "IT KEEPS LEAKING IT KEEPS LEAKING"
+  },
+  "mobil_168_kelime_psm7": {
+   "bulunan": [
+    "IT",
+    "KEEPS",
+    "LEAKING"
+   ],
+   "oran": 1.0,
+   "ham": [
+    "IT IT",
+    "KEEPS KEEPS",
+    "LEAKING LEAKING"
+   ]
+  },
+  "mobil_korunan": 1.0
+ }
+}

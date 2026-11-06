@@ -1,0 +1,98 @@
+{
+ "A1": {
+  "beklenen": [
+   "2",
+   "000",
+   "EVERY",
+   "MONTH"
+  ],
+  "tam_1280": {
+   "bulunan": [
+    "2",
+    "000",
+    "EVERY",
+    "MONTH"
+   ],
+   "oran": 1.0,
+   "ham": "SY AIL AAY 2 000 EVERY V MONTH"
+  },
+  "mobil_168": {
+   "bulunan": [
+    "EVERY",
+    "MONTH"
+   ],
+   "oran": 0.5,
+   "ham": "4 E EVERY ARY MONTH"
+  },
+  "mobil_168_bolge": {
+   "bulunan": [
+    "EVERY",
+    "MONTH"
+   ],
+   "oran": 0.5,
+   "ham": "EVERY MONTH EVERY MONTH"
+  },
+  "mobil_korunan": 0.5
+ },
+ "B1": {
+  "beklenen": [
+   "EVERY",
+   "MONTH",
+   "2",
+   "000"
+  ],
+  "tam_1280": {
+   "bulunan": [
+    "EVERY",
+    "MONTH"
+   ],
+   "oran": 0.5,
+   "ham": "EVERY MONTH SAAS IE GF BAAS"
+  },
+  "mobil_168": {
+   "bulunan": [
+    "EVERY",
+    "MONTH",
+    "2"
+   ],
+   "oran": 0.75,
+   "ham": "EVERY MONTH SEAS MII WI AN 2 LOLS"
+  },
+  "mobil_168_bolge": {
+   "bulunan": [
+    "EVERY",
+    "MONTH",
+    "2",
+    "000"
+   ],
+   "oran": 1.0,
+   "ham": "EVERY MONTH 2 000 1 EVERY MONTH 2 000"
+  },
+  "mobil_korunan": 1.0
+ },
+ "C1": {
+  "beklenen": [
+   "INTEREST",
+   "MILITARY"
+  ],
+  "tam_1280": {
+   "bulunan": [],
+   "oran": 0.0,
+   "ham": "NW FP A V FE SAN"
+  },
+  "mobil_168": {
+   "bulunan": [],
+   "oran": 0.0,
+   "ham": "VIN"
+  },
+  "mobil_168_bolge": {
+   "bulunan": [
+    "INTEREST",
+    "MILITARY"
+   ],
+   "oran": 1.0,
+   "ham": "MILITARY INTEREST MILITARY"
+  },
+  "mobil_korunan": 0.0
+ }
+}

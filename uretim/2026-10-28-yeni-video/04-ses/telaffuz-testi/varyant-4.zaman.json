@@ -1,0 +1,16 @@
+{
+ "ses": "am_fenrir",
+ "hiz": 0.9,
+ "cumleler": [
+  {
+   "metin": "[A](/ˈA/), B, or C: which one do you think will do the most work?",
+   "bas": 0.0,
+   "son": 3.332
+  },
+  {
+   "metin": "[A](+2), B, or C: which one do you think will do the most work?",
+   "bas": 3.982,
+   "son": 7.265
+  }
+ ]
+}

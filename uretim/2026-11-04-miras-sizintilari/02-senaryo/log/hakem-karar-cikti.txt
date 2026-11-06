@@ -1,0 +1,13 @@
+[once] S03 7.58 | S05 6.90 | S01 6.85  → kazanan S03 (açık fark 0.68)
+[sonra] S03 7.98 | S01 7.30 | S05 7.30  → kazanan S03 (açık fark 0.68)
+[once] ±0.05 ağırlık, 30 durum → S03=30; S03-S01 en küçük fark 0.64; S03 dışı kazanan: yok
+[sonra] ±0.05 ağırlık, 30 durum → S03=30; S03-S01 en küçük fark 0.64; S03 dışı kazanan: yok
+[once] uç (S03 köt., S01/S05 iyi.): S03 7.41 | S05 7.02 | S01 6.97 → S03 (açık fark 0.39)
+[sonra] uç (S03 köt., S01/S05 iyi.): S03 7.81 | S01 7.42 | S05 7.42 → S03 (açık fark 0.39)
+[once] S01'in kazanması için viralite ağırlığı ≥ 0.8
+[sonra] S01'in kazanması için viralite ağırlığı ≥ 0.79
+hook S03-eski: 37 kelime ≤40 OK
+hook S03-H1b: 38 kelime ≤40 OK
+hook S03-H1c: 34 kelime ≤40 OK
+S03 105+18=123 vs 124 → sapma %0.8 OK (eş payı toplamın içinde: çıkarılırsa çift sayım); yanlış okuma 124-54-18=52 T$ (metne girmez)
+S01 'bigger heists' monoton artış: HAYIR → başlık/tez değişmeli; Binance/Bybit 4.2 (alt sınır 3.8)

@@ -1,0 +1,20 @@
+0f0ec543ea44 A091RC1Q027SBEA.csv
+20e6d0fa4225 DFEDTARU.csv
+55e2559ffdb3 DGS10.csv
+a28fbf5afa8b DTB3.csv
+837d0a70e242 FYGFGDQ188S.csv
+209e45690e4a GDP.csv
+e6f0e0782ea8 GFDEGDQ188S.csv
+e3b0c44298fc SHA256.txt
+24affd67b919 avg_interest_rates.json
+c37b9e273277 debt_to_penny.json
+3c78b936e560 hesap-cikti.txt
+81a3e21f6701 hesap.py
+e3b0c44298fc hist07z1.xlsx
+67ead12d8f58 indir.sh
+26f03f55ffef mts1.json
+535ca6d506ad mts9.json
+192b1ff1a348 mts9_defense_total_hist.jsonl
+13a883da3846 mts9_net_interest_hist.jsonl
+22646f81d3b2 omb_t7_1_fy2025.xlsx
+shiller_ie_data.xls (1,6 MB) repoya alınmadı: ./indir.sh indirir; sha256 ilk12 = 0df9392b7dac

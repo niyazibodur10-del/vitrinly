@@ -1,0 +1,44 @@
+{
+  "sema": "yayin-paketi/1",
+  "_not": "S03 Shorts 2 (shorts2). ilgili_video = uzun video (Studio adımı, YAYIN.md). paket-uret.py ile üretildi.",
+  "tur": "shorts",
+  "dosyalar": {
+    "video": "../08-kurgu/shorts-2.mp4",
+    "altyazilar": []
+  },
+  "metadata": {
+    "baslik": "Are the Heirs Ready to Run the Family's Giving?",
+    "aciklama": "In a Bank of America survey, 47% of wealthy Americans said the next generation is ready to run the family's giving, down from 55% the time before. And about $18 trillion of the great wealth transfer is expected to go to charity. So where does the money go instead?\n\nSources: Bank of America Private Bank, Study of Wealthy Americans; Cerulli Associates, December 2024.\n\nThe whole road, box by box: \"The Great Wealth Transfer Has a Leak\" on our channel, https://www.youtube.com/@toonomy\n\n[YER TUTUCU: müzik atfı F6 — 06-muzik/atif-satirlari.md]\n\nNot financial advice. For educational purposes only. Leo is a fictional cartoon character, not a financial adviser.\nNarration voice is AI-generated. Visuals are AI-assisted illustrations animated by our team.\n\n#Shorts #Inheritance #GreatWealthTransfer",
+    "etiketler": [
+      "inheritance",
+      "charitable giving",
+      "family philanthropy",
+      "great wealth transfer",
+      "heirs",
+      "shorts",
+      "toonomy"
+    ],
+    "bolumler": [],
+    "kategori_id": "27",
+    "varsayilan_dil": "en",
+    "ses_dili": "en"
+  },
+  "durum": {
+    "gizlilik": "private",
+    "cocuklara_ozel": false,
+    "sentetik_medya": true,
+    "lisans": "youtube",
+    "gomulebilir": true,
+    "yayin_zamani": "2026-11-10T09:00:00-05:00"
+  },
+  "ilgili_video": {
+    "baslik": "The Great Wealth Transfer Has a Leak",
+    "video_id": null,
+    "uygulama": "Studio > Shorts > Ayrıntılar > Related video (Data API v3 videos kaynağında alan yok, 2026-11-04)"
+  },
+  "oynatma_listesi_id": null,
+  "onay": {
+    "niyazi_onayi": false,
+    "tarih": null
+  }
+}

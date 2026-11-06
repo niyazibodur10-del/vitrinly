@@ -1,0 +1,8 @@
+# F0 ortam (2026-11-04, uretim-muhendisi) — SONUÇ: GEÇTİ · İLERLEME: tamam
+- Kurulum: `tools/kurulum.sh` exit 0, 15 sn (kurulu; earshot hazır). `npx remotion compositions` → 85 kompozisyon.
+- Render: `render-son.sh Pilot` (14,1 sn) 60 sn → h264 1920x1080 30 fps + AAC 48 kHz stereo, −13,8 LUFS, TP −1,8 dBFS. `render-parca.sh --parca 150` 83 sn (önbellekten 20 sn), tam render'a PSNR 51,9 dB.
+- Ses: Kokoro am_fenrir 0.9 → 7,5 sn ses (84 sn, soğuk önbellek) · Rhubarb 48 ağız işareti (12 sn) · Whisper small.en WER %0 (54 sn) · earshot describe çalıştı (167 sn soğuk) · test_senkron / test_hata_orani / test_yayin (27) / kadro-kontrol GEÇTİ.
+- Disk: 3,8 → 15,1 GB boş (15.105 MiB). Silinen: ~/.finansal-arac/parca + kurgu-1929 + kurgu-kbutce (3,4 GB), 07-animasyon render'ları (0,6 GB), 10 bayat /tmp Remotion bundle (2,9 GB), pip önbelleği, scratch medya, miks-önizleme WAV. teslim/ finalleri (1929, S08) + Shorts yerinde (6 dosya, symlink hedefleri sağlam).
+- YouTube: ortam değişkenindeki token DÜŞMÜŞ (invalid_grant); dosyadaki token geçerli → `channels.list` 200 "Toonomy" (salt okuma, kapsam `youtube`). Hata: eski kod düşük ortam tokenında dosyayı denemeden cihaz akışına (Niyazi'den kod) geçiyordu → düzeltildi (`yayin_api.yenileme_kaynaklari`, birim testi eklendi).
+- Risk: dosyadaki token konteynerle gider → Niyazi bulut ortam ayarındaki `YOUTUBE_OAUTH_REFRESH_TOKEN`'ı dosyadaki geçerli değerle yenilemeli (değer sohbete yazılmaz).
+- Değişen betikler: `tools/yayin/yayin_api.py`, `tools/yayin/yukle.py` (--yetki-iptal tüm kaynaklar), `tools/disk-durum.sh` (bayat bundle temizliği), `tools/ses/hata-orani.py` (argümansız → çıkış 2).

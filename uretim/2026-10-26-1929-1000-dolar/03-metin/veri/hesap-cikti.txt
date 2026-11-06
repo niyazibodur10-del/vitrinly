@@ -1,0 +1,22 @@
+Borsa kapisi 1000 x 41.22/381.17 = 108 | dusus % -89.2
+Borsa kapisi Kasim 1929 'almost half' -> ~ 500
+Borsa 108$ 1929 alim gucuyle (Eyl29->Tem32 TUFE): 138
+TUFE Eyl1929->Tem1932 % -21.4 | 1000$ alim gucu 1272
+TUFE Eyl1929->Mar1933 % -27.2 | 1000$ alim gucu 1373
+TUFE Eyl2022->Eyl2026 % 13.5 | 1000$ alim gucu 881
+TUFE Eyl2025->Eyl2026 % 3.7 | 1000$ alim gucu 964
+  yillik Eyl1929->Eyl1930 % -4.0
+  yillik Eyl1930->Eyl1931 % -9.6
+  yillik Eyl1931->Eyl1932 % -10.7
+  yillik Eyl1932->Eyl1933 % -1.5
+  yillik Eyl2020->Eyl2021 % 5.4
+  yillik Eyl2021->Eyl2022 % 8.2
+  yillik Eyl2022->Eyl2023 % 3.7
+  yillik Eyl2023->Eyl2024 % 2.4
+  yillik Eyl2024->Eyl2025 % 3.0
+  yillik Eyl2025->Eyl2026 % 3.7
+FDIC 1930-33 askiya alma: 9096 | mevduat bin$ 6830223 | kayip bin$ 1336533 | kayip/mevduat % 19.6 | 1000$ basina 196
+Banka kapisi askiya alinan bankada kalan ortalama: 804
+Tum ticari bank mevduatina gore kayip toplami (4 yil, sutun 4 toplami) % 4.3
+Banka sayisi (FRH-BP: >8000 uye + ~16000 uye degil) ~24000 -> askiya alma payi % 38
+1929 ucret (BEA T6.6A satir 1) 1430$ -> 1000$ = 8.4 aylik ucret

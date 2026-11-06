@@ -1,0 +1,88 @@
+{
+  "sema": "yayin-paketi/1",
+  "_not": "S03 miras sızıntıları uzun video (C). paket.md'den paket-uret.py ile üretildi; elle düzenleme yok. Slot 2026-11-08T12:00:00-05:00 (EST). Yasal not: taslak.",
+  "tur": "uzun",
+  "dosyalar": {
+    "video": "../08-kurgu/final-16x9.mp4",
+    "altyazilar": [
+      {
+        "dosya": "../08-kurgu/final.en.srt",
+        "dil": "en",
+        "ad": "English"
+      }
+    ]
+  },
+  "metadata": {
+    "baslik": "The Great Wealth Transfer Has a Leak",
+    "aciklama": "The great wealth transfer, explained: about $124 trillion is set to pass down in the US through 2048, Cerulli estimates. What reaches the kids?\n\nLeo, our cartoon moving-crew boss, loads one example family's boxes onto a truck marked TO: THE KIDS and follows them down a long road. Some of the money is spent along the way, on a long life and on care. Some goes to charity. A big part stops at a spouse first, so it arrives later, not never. Then there is the house, and there are taxes and time. At the end of the road, Leo opens the truck and reads the inventory: what actually arrived, and when.\n\nThe Okafor family is an illustration, not a real household. Figures are for the US unless stated otherwise.\n\nNot financial advice. For educational purposes only.\n\n{BOLUMLER}\n\nLEGAL NOTE\nThis video is for education and entertainment only and is not financial, investment, tax or legal advice. Leo is a fictional character, and the Okafor family is an illustration, not a real household. Wealth transfer figures: Cerulli Associates estimates through 2048 (December 2024). Figures are for the US unless stated otherwise. Narration voice is AI-generated. Visuals are AI-assisted illustrations animated by our team.\n\nSOURCES\n• Cerulli Associates, \"Cerulli Anticipates $124 Trillion in Wealth Will Transfer Through 2048\" (Dec 5, 2024): https://www.cerulli.com/press-releases/cerulli-anticipates-124-trillion-in-wealth-will-transfer-through-2048\n[YER TUTUCU: F3 birincil kaynaklar — 03-metin/rakam-tablosu.md]\nCharts in this video are our own, built from the sources above.\n\nMUSIC & SOUND\n[YER TUTUCU: müzik atfı F6 — 06-muzik/atif-satirlari.md]\n\nMORE FROM TOONOMY\nNew animated finance stories every week: https://www.youtube.com/@toonomy\n\n#GreatWealthTransfer #Inheritance #FinanceExplained",
+    "etiketler": [
+      "great wealth transfer",
+      "great wealth transfer explained",
+      "baby boomer inheritance",
+      "boomer wealth transfer",
+      "inheritance explained",
+      "intergenerational wealth transfer",
+      "generational wealth",
+      "wealth transfer",
+      "inheritance",
+      "heirs",
+      "baby boomers",
+      "cerulli",
+      "long term care costs",
+      "estate tax explained",
+      "spouse inheritance",
+      "charitable giving",
+      "personal finance explained",
+      "economics explained",
+      "finance animation",
+      "animated explainer",
+      "toonomy"
+    ],
+    "bolumler": [
+      {
+        "zaman": "00:00",
+        "baslik": "The number everyone quotes"
+      },
+      {
+        "zaman": "01:30",
+        "baslik": "One family's truck"
+      },
+      {
+        "zaman": "03:30",
+        "baslik": "The cost of care"
+      },
+      {
+        "zaman": "05:45",
+        "baslik": "Two detours: a spouse and charity"
+      },
+      {
+        "zaman": "08:00",
+        "baslik": "The biggest box: the house"
+      },
+      {
+        "zaman": "10:30",
+        "baslik": "Taxes and time"
+      },
+      {
+        "zaman": "12:00",
+        "baslik": "The truck arrives"
+      }
+    ],
+    "kategori_id": "27",
+    "varsayilan_dil": "en",
+    "ses_dili": "en"
+  },
+  "durum": {
+    "gizlilik": "private",
+    "cocuklara_ozel": false,
+    "sentetik_medya": true,
+    "lisans": "youtube",
+    "gomulebilir": true,
+    "yayin_zamani": "2026-11-08T12:00:00-05:00"
+  },
+  "oynatma_listesi_id": null,
+  "onay": {
+    "niyazi_onayi": false,
+    "tarih": null
+  }
+}

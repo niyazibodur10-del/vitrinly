@@ -1,0 +1,138 @@
+=== yayin-paketi.json
+Paket: yayin-paketi.json
+  [OK]    şema geçerli
+  [OK]    başlık 51/100 karakter
+  [OK]    açıklama (bölümler dahil) 3077/5000 bayt
+  [OK]    etiketler 22 adet, 436/500 karakter (YouTube sayımı)
+  [OK]    video var: ../08-kurgu/final-16x9.mp4 (332.9 MB)
+  [OK]    video 1920x1080, 678.2 sn, h264
+  [OK]    thumbnail 1280x720 jpeg, 111 KB
+  [OK]    SRT final.en.srt: 240 blok, son 678.1 sn, dil en
+  [OK]    bölümler 7 adet, kurallara uygun
+  [OK]    yayin_zamani gelecekte: 2026-11-04T17:00:00Z (+48.2 sa)
+  Sonuç: 0 hata, 0 uyarı, 10 geçen kontrol
+DRY-RUN: videos.insert gövdesi (ağ çağrısı yapılmadı):
+{
+  "snippet": {
+    "title": "If America Earned $5,400 a Month, Here's Its Budget",
+    "description": "The US federal budget and deficit, shrunk to one kitchen table: $5,400 a month i…",
+    "tags": [
+      "us budget explained",
+      "federal budget",
+      "us federal budget 2026",
+      "national debt",
+      "national debt explained",
+      "us national debt",
+      "federal deficit",
+      "budget deficit explained",
+      "interest on the national debt",
+      "net interest",
+      "debt held by the public",
+      "debt to gdp",
+      "treasury yields",
+      "social security",
+      "medicare",
+      "defense spending",
+      "government spending",
+      "us economy explained",
+      "economics explained",
+      "finance animation",
+      "animated explainer",
+      "toonomy"
+    ],
+    "categoryId": "27",
+    "defaultLanguage": "en",
+    "defaultAudioLanguage": "en"
+  },
+  "status": {
+    "privacyStatus": "private",
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": true,
+    "license": "youtube",
+    "embeddable": true,
+    "publishAt": "2026-11-04T17:00:00Z"
+  }
+}
+Plan: videos.insert (resumable) → thumbnails.set → captions.insert ATLANIR (cihaz akışı kapsamı yok → Studio/--akis yerel)
+Not: onay.niyazi_onayi=false → gerçek yükleme reddedilir.
+exit 0
+=== yayin-paketi-shorts-1.json
+Paket: yayin-paketi-shorts-1.json
+  [OK]    şema geçerli
+  [OK]    başlık 51/100 karakter
+  [OK]    açıklama (bölümler dahil) 758/5000 bayt
+  [OK]    etiketler 7 adet, 120/500 karakter (YouTube sayımı)
+  [OK]    video var: ../08-kurgu/shorts-1.mp4 (28.3 MB)
+  [OK]    video 1080x1920, 57.4 sn, h264
+  [OK]    yayin_zamani gelecekte: 2026-11-05T14:00:00Z (+69.2 sa)
+  Sonuç: 0 hata, 0 uyarı, 7 geçen kontrol
+DRY-RUN: videos.insert gövdesi (ağ çağrısı yapılmadı):
+{
+  "snippet": {
+    "title": "Interest vs. the Military: Which US Bill Is Bigger?",
+    "description": "Shrink the US budget to one family earning $5,400 a month. Defense: $965. Intere…",
+    "tags": [
+      "us budget explained",
+      "national debt",
+      "interest on the national debt",
+      "defense spending",
+      "federal budget",
+      "shorts",
+      "toonomy"
+    ],
+    "categoryId": "27",
+    "defaultLanguage": "en",
+    "defaultAudioLanguage": "en"
+  },
+  "status": {
+    "privacyStatus": "private",
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": true,
+    "license": "youtube",
+    "embeddable": true,
+    "publishAt": "2026-11-05T14:00:00Z"
+  }
+}
+Plan: videos.insert (resumable)
+Not: onay.niyazi_onayi=false → gerçek yükleme reddedilir.
+exit 0
+=== yayin-paketi-shorts-2.json
+Paket: yayin-paketi-shorts-2.json
+  [OK]    şema geçerli
+  [OK]    başlık 59/100 karakter
+  [OK]    açıklama (bölümler dahil) 767/5000 bayt
+  [OK]    etiketler 7 adet, 100/500 karakter (YouTube sayımı)
+  [OK]    video var: ../08-kurgu/shorts-2.mp4 (14.9 MB)
+  [OK]    video 1080x1920, 41.9 sn, h264
+  [OK]    yayin_zamani gelecekte: 2026-11-07T14:00:00Z (+117.2 sa)
+  Sonuç: 0 hata, 0 uyarı, 7 geçen kontrol
+DRY-RUN: videos.insert gövdesi (ağ çağrısı yapılmadı):
+{
+  "snippet": {
+    "title": "US Debt Was Bigger Than the Economy in 1946. What Happened?",
+    "description": "In 1946, US debt held by the public was bigger than the whole economy. By 1974 i…",
+    "tags": [
+      "national debt",
+      "debt to gdp",
+      "us debt history",
+      "economic history",
+      "post war economy",
+      "shorts",
+      "toonomy"
+    ],
+    "categoryId": "27",
+    "defaultLanguage": "en",
+    "defaultAudioLanguage": "en"
+  },
+  "status": {
+    "privacyStatus": "private",
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": true,
+    "license": "youtube",
+    "embeddable": true,
+    "publishAt": "2026-11-07T14:00:00Z"
+  }
+}
+Plan: videos.insert (resumable)
+Not: onay.niyazi_onayi=false → gerçek yükleme reddedilir.
+exit 0

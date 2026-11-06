@@ -1,0 +1,45 @@
+08-kurgu/final-16x9.mp4 sag@176.8: düğme dönüş 176.833 sn · klik ses başı 177.125 sn · fark +8.7 kare KALDI
+08-kurgu/final-16x9.mp4 sol@306.3: düğme dönüş 306.367 sn · klik ses başı 307.025 sn · fark +19.8 kare KALDI
+08-kurgu/final-16x9.mp4 sag@450.9: düğme dönüş 450.900 sn · klik ses başı 449.800 sn · fark -33.0 kare KALDI
+08-kurgu/final-16x9.mp4 sol@663.9: düğme dönüş 663.900 sn · klik ses başı 664.285 sn · fark +11.5 kare KALDI
+08-kurgu/shorts-1.mp4 dikey@52.67: düğme dönüş 52.670 sn · klik ses başı 51.695 sn · fark -29.3 kare KALDI
+08-kurgu/shorts-2.mp4 dikey@38.2: düğme dönüş 38.200 sn · klik ses başı 38.295 sn · fark +2.8 kare KALDI
+klik şablonu 0.06 sn
+08-kurgu/final-16x9.mp4 görsel dönüş 176.833 · klik (çapraz korelasyon r=0.34) 177.527 · fark +20.81 kare KALDI
+08-kurgu/final-16x9.mp4 görsel dönüş 306.367 · klik (çapraz korelasyon r=0.08) 307.097 · fark +21.89 kare KALDI
+08-kurgu/final-16x9.mp4 görsel dönüş 450.900 · klik (çapraz korelasyon r=0.14) 450.648 · fark -7.57 kare KALDI
+08-kurgu/final-16x9.mp4 görsel dönüş 663.900 · klik (çapraz korelasyon r=0.15) 664.285 · fark +11.55 kare KALDI
+08-kurgu/shorts-1.mp4 görsel dönüş 52.670 · klik (çapraz korelasyon r=0.12) 51.753 · fark -27.51 kare KALDI
+08-kurgu/shorts-2.mp4 görsel dönüş 38.200 · klik (çapraz korelasyon r=0.12) 39.100 · fark +26.99 kare KALDI
+# final.mp4 sesi ↔ kurgu final-miks.wav hizası (çapraz korelasyon, ±0,6 sn) + klikli/kliksiz miksle benzerlik
+  60.000: gecikme +0.0 ms (+0.00 kare) · artık klikli -52.2 dB / kliksiz -52.2 dB
+ 176.833: gecikme +0.0 ms (+0.00 kare) · artık klikli -44.2 dB / kliksiz -41.4 dB
+ 306.367: gecikme +0.0 ms (+0.00 kare) · artık klikli -43.4 dB / kliksiz -41.0 dB
+ 450.900: gecikme +0.0 ms (+0.00 kare) · artık klikli -43.4 dB / kliksiz -41.1 dB
+ 663.900: gecikme +0.0 ms (+0.00 kare) · artık klikli -44.1 dB / kliksiz -41.2 dB
+# klik şablonu çıkarma testi: hangi gecikmede şablon finaldeki enerjiyi en çok azaltıyor (±0,6 sn, 1 ms adım)
+08-kurgu/final-16x9.mp4 görsel tık 176.833: en iyi şablon gecikmesi +494 ms (+14.82 kare), azaltma 0.1 dB, kazanç -13.5 dB KALDI
+08-kurgu/final-16x9.mp4 görsel tık 450.900: en iyi şablon gecikmesi -2 ms (-0.06 kare), azaltma 0.0 dB, kazanç -13.3 dB OK
+08-kurgu/shorts-1.mp4 görsel tık 52.670: en iyi şablon gecikmesi +376 ms (+11.28 kare), azaltma 0.0 dB, kazanç -12.0 dB KALDI
+08-kurgu/shorts-2.mp4 görsel tık 38.200: en iyi şablon gecikmesi -266 ms (-7.98 kare), azaltma 0.0 dB, kazanç -18.3 dB KALDI
+# klik duyulabilirliği: klik (miks farkı) / kliksiz miks, ilk 30 ms, geniş bant ve 1,5–3 kHz
+ 176.833 geniş : klik -35.5 dB · yatak -12.8 dB · fark -22.8 dB
+ 176.833 1.5-3k: klik -39.6 dB · yatak -25.2 dB · fark -14.4 dB
+ 306.367 geniş : klik -35.7 dB · yatak -11.9 dB · fark -23.7 dB
+ 306.367 1.5-3k: klik -39.7 dB · yatak -26.4 dB · fark -13.3 dB
+ 450.900 geniş : klik -35.5 dB · yatak -11.6 dB · fark -23.9 dB
+ 450.900 1.5-3k: klik -39.6 dB · yatak -23.7 dB · fark -16.0 dB
+ 663.900 geniş : klik -35.5 dB · yatak -12.2 dB · fark -23.3 dB
+ 663.900 1.5-3k: klik -39.6 dB · yatak -19.0 dB · fark -20.6 dB
+# klik ilk 5 ms (tepe enerjisi) / yatak, ERB bantları; anlatım stem'i yok → yatak = kliksiz miks
+ 176.833: 1000Hz -22.4 · 1900Hz -1.1 · 3000Hz -10.3 · 5000Hz -5.4
+ 306.367: 1000Hz -20.5 · 1900Hz +2.9 · 3000Hz -8.7 · 5000Hz -4.2
+ 450.900: 1000Hz -17.5 · 1900Hz -7.2 · 3000Hz -16.3 · 5000Hz -12.0
+ 663.900: 1000Hz -23.4 · 1900Hz -8.6 · 3000Hz -15.9 · 5000Hz -10.0
+# Shorts: kurgu yatağı (w/) ↔ final mp4 gecikmesi + yatakta klik şablonunun yeri (yatak çapraz ilinti, ±0,5 sn)
+08-kurgu/shorts-1.mp4: yatak↔final gecikme +0.0 ms · yatakta klik 53.047 sn vs görsel 52.667 → +11.40 kare
+08-kurgu/shorts-2.mp4: yatak↔final gecikme +0.0 ms · yatakta klik 38.414 sn vs görsel 38.200 → +6.41 kare
+sh1-yatak (anlatımsız): klik şablonu r=0.39 @ 52.668 vs görsel dönüş 52.667 → +0.04 kare
+sh2-yatak (anlatımsız): klik şablonu r=0.52 @ 38.200 vs görsel dönüş 38.200 → +0.00 kare
+sh1: yatak ↔ final Shorts sesi gecikme +0.0 ms
+sh2: yatak ↔ final Shorts sesi gecikme +0.0 ms

@@ -1,0 +1,81 @@
+{
+ "ses": "am_michael",
+ "hiz": 0.95,
+ "cumleler": [
+  {
+   "metin": "Imagine waking up one morning and your savings are worth less than a cup of coffee.",
+   "bas": 0.0,
+   "son": 5.006
+  },
+  {
+   "metin": "Sounds impossible?",
+   "bas": 5.656,
+   "son": 6.957
+  },
+  {
+   "metin": "In 1923, in Germany, that's exactly what happened.",
+   "bas": 7.357,
+   "son": 11.525
+  },
+  {
+   "metin": "People carried cash in wheelbarrows.",
+   "bas": 11.825,
+   "son": 13.914
+  },
+  {
+   "metin": "A single loaf of bread cost billions of marks.",
+   "bas": 14.214,
+   "son": 17.088
+  },
+  {
+   "metin": "Welcome to Financial Rise!",
+   "bas": 17.738,
+   "son": 19.533
+  },
+  {
+   "metin": "Here, we turn the biggest money stories from the past, the present, and the future into stories you'll actually remember.",
+   "bas": 19.833,
+   "son": 27.351
+  },
+  {
+   "metin": "We'll look at crashes, bubbles, and bold what if scenarios.",
+   "bas": 28.001,
+   "son": 31.494
+  },
+  {
+   "metin": "No boring charts.",
+   "bas": 31.794,
+   "son": 33.086
+  },
+  {
+   "metin": "No complicated jargon.",
+   "bas": 33.386,
+   "son": 35.023
+  },
+  {
+   "metin": "Just the truth about money, and why it matters to you.",
+   "bas": 35.323,
+   "son": 38.623
+  },
+  {
+   "metin": "So...",
+   "bas": 39.273,
+   "son": 39.936
+  },
+  {
+   "metin": "what would you do if your money stopped working tomorrow?",
+   "bas": 40.486,
+   "son": 43.576
+  },
+  {
+   "metin": "Stick around.",
+   "bas": 43.976,
+   "son": 44.979
+  },
+  {
+   "metin": "By the end of this video, you might see your wallet a little differently.",
+   "bas": 45.279,
+   "son": 49.358
+  }
+ ]
+}

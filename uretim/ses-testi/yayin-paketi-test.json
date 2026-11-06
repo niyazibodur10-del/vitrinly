@@ -1,0 +1,46 @@
+{
+  "sema": "yayin-paketi/1",
+  "_not": "API TEST YÜKLEMESİ (Adım 8, kilit kontrolü): private, planlamasız. Niyazi talimatı 2026-10-26. Test sonrası silinir.",
+  "tur": "uzun",
+  "dosyalar": {
+    "video": "pilot/pilot-v2.mp4",
+    "thumbnail": "pilot/thumbnail-ornek.jpg",
+    "altyazilar": [
+      {
+        "dosya": "pilot/pilot-v2.en.srt",
+        "dil": "en",
+        "ad": "English"
+      }
+    ]
+  },
+  "metadata": {
+    "baslik": "[TEST] Germany 1923: When Your Savings Became Worth Less Than a Cup of Coffee",
+    "aciklama": "In 1923, prices in Germany doubled every few days. People carried cash in wheelbarrows and a loaf of bread cost billions of marks. How did it happen, and what can it teach us today?\n\n{BOLUMLER}\n\nThis video is for educational purposes only and is not financial advice. Scenarios about the future are illustrations, not predictions.\n\nNarration voice is AI-generated.\n\n#history #inflation #finance",
+    "etiketler": [
+      "hyperinflation",
+      "Weimar Germany",
+      "1923",
+      "inflation explained",
+      "financial history",
+      "economics",
+      "Toonomy"
+    ],
+    "bolumler": [],
+    "kategori_id": "27",
+    "varsayilan_dil": "en",
+    "ses_dili": "en"
+  },
+  "durum": {
+    "gizlilik": "private",
+    "yayin_zamani": null,
+    "cocuklara_ozel": false,
+    "sentetik_medya": true,
+    "lisans": "youtube",
+    "gomulebilir": true
+  },
+  "oynatma_listesi_id": null,
+  "onay": {
+    "niyazi_onayi": true,
+    "tarih": "2026-10-26"
+  }
+}

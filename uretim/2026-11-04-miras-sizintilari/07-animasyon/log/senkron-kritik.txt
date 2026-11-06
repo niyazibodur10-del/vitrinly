@@ -1,0 +1,6 @@
+bant: 700-3000 Hz
+  aralık 12.99-14.86 sn: gecikme 2 kare, korelasyon 0.43
+  aralık 16.47-20.6 sn: gecikme 2 kare, korelasyon 0.53
+  aralık 25.65-27.35 sn: gecikme 1 kare, korelasyon 0.66
+en iyi gecikme: 2 kare (67 ms), korelasyon 0.52, gecikme 0'da 0.38 [3 aralık, 7.7 sn]
+GEÇTİ

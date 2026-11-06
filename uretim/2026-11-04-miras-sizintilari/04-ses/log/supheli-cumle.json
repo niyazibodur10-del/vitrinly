@@ -1,0 +1,452 @@
+{
+ "model": "small.en",
+ "cumleler": [
+  {
+   "i": 67,
+   "metin": "Stop two is care.",
+   "whisper": "Stop to his care.",
+   "kelimeler": [
+    {
+     "w": "Stop",
+     "p": 0.895
+    },
+    {
+     "w": "to",
+     "p": 0.496
+    },
+    {
+     "w": "his",
+     "p": 0.921
+    },
+    {
+     "w": "care.",
+     "p": 0.996
+    }
+   ]
+  },
+  {
+   "i": 107,
+   "metin": "Zero.",
+   "whisper": "Zero.",
+   "kelimeler": [
+    {
+     "w": "Zero.",
+     "p": 0.461
+    }
+   ]
+  },
+  {
+   "i": 117,
+   "metin": "It gives the other leaks more time.",
+   "whisper": "It gives the other leaks more time.",
+   "kelimeler": [
+    {
+     "w": "It",
+     "p": 0.701
+    },
+    {
+     "w": "gives",
+     "p": 0.991
+    },
+    {
+     "w": "the",
+     "p": 0.995
+    },
+    {
+     "w": "other",
+     "p": 0.993
+    },
+    {
+     "w": "leaks",
+     "p": 0.924
+    },
+    {
+     "w": "more",
+     "p": 0.999
+    },
+    {
+     "w": "time.",
+     "p": 0.999
+    }
+   ]
+  },
+  {
+   "i": 137,
+   "metin": "In a Bank of America survey of wealthy Americans, people with millions to invest, forty-seven percent said the next generation is ready to take on the family's giving.",
+   "whisper": "In a Bank of America survey of wealthy Americans, people with millions to invest, 47 percent said the next generation is ready to take on the family's giving.",
+   "kelimeler": [
+    {
+     "w": "In",
+     "p": 0.963
+    },
+    {
+     "w": "a",
+     "p": 0.995
+    },
+    {
+     "w": "Bank",
+     "p": 0.942
+    },
+    {
+     "w": "of",
+     "p": 0.981
+    },
+    {
+     "w": "America",
+     "p": 0.997
+    },
+    {
+     "w": "survey",
+     "p": 0.962
+    },
+    {
+     "w": "of",
+     "p": 0.997
+    },
+    {
+     "w": "wealthy",
+     "p": 0.993
+    },
+    {
+     "w": "Americans,",
+     "p": 0.994
+    },
+    {
+     "w": "people",
+     "p": 0.973
+    },
+    {
+     "w": "with",
+     "p": 0.999
+    },
+    {
+     "w": "millions",
+     "p": 0.991
+    },
+    {
+     "w": "to",
+     "p": 0.997
+    },
+    {
+     "w": "invest,",
+     "p": 0.999
+    },
+    {
+     "w": "47",
+     "p": 0.966
+    },
+    {
+     "w": "percent",
+     "p": 0.833
+    },
+    {
+     "w": "said",
+     "p": 0.993
+    },
+    {
+     "w": "the",
+     "p": 0.993
+    },
+    {
+     "w": "next",
+     "p": 0.996
+    },
+    {
+     "w": "generation",
+     "p": 0.992
+    },
+    {
+     "w": "is",
+     "p": 0.998
+    },
+    {
+     "w": "ready",
+     "p": 0.992
+    },
+    {
+     "w": "to",
+     "p": 0.999
+    },
+    {
+     "w": "take",
+     "p": 0.998
+    },
+    {
+     "w": "on",
+     "p": 0.998
+    },
+    {
+     "w": "the",
+     "p": 0.995
+    },
+    {
+     "w": "family's",
+     "p": 0.884
+    },
+    {
+     "w": "giving.",
+     "p": 0.997
+    }
+   ]
+  },
+  {
+   "i": 143,
+   "metin": "The detour, zero, but more time.",
+   "whisper": "The detour's zero but more time.",
+   "kelimeler": [
+    {
+     "w": "The",
+     "p": 0.863
+    },
+    {
+     "w": "detour's",
+     "p": 0.72
+    },
+    {
+     "w": "zero",
+     "p": 0.924
+    },
+    {
+     "w": "but",
+     "p": 0.828
+    },
+    {
+     "w": "more",
+     "p": 0.999
+    },
+    {
+     "w": "time.",
+     "p": 0.995
+    }
+   ]
+  },
+  {
+   "i": 172,
+   "metin": "For families headed by someone sixty-five to seventy-four, the median net worth was about four hundred ten thousand dollars in twenty twenty-two, the Fed found.",
+   "whisper": "For families headed by someone 65 to 74, the median net worth was about $410,000 in 2022, the Fed found.",
+   "kelimeler": [
+    {
+     "w": "For",
+     "p": 0.95
+    },
+    {
+     "w": "families",
+     "p": 0.997
+    },
+    {
+     "w": "headed",
+     "p": 0.994
+    },
+    {
+     "w": "by",
+     "p": 0.999
+    },
+    {
+     "w": "someone",
+     "p": 0.95
+    },
+    {
+     "w": "65",
+     "p": 0.994
+    },
+    {
+     "w": "to",
+     "p": 0.843
+    },
+    {
+     "w": "74,",
+     "p": 0.997
+    },
+    {
+     "w": "the",
+     "p": 0.991
+    },
+    {
+     "w": "median",
+     "p": 0.999
+    },
+    {
+     "w": "net",
+     "p": 0.996
+    },
+    {
+     "w": "worth",
+     "p": 0.97
+    },
+    {
+     "w": "was",
+     "p": 0.997
+    },
+    {
+     "w": "about",
+     "p": 0.994
+    },
+    {
+     "w": "$410",
+     "p": 0.983
+    },
+    {
+     "w": ",000",
+     "p": 0.989
+    },
+    {
+     "w": "in",
+     "p": 0.984
+    },
+    {
+     "w": "2022,",
+     "p": 0.996
+    },
+    {
+     "w": "the",
+     "p": 0.973
+    },
+    {
+     "w": "Fed",
+     "p": 0.937
+    },
+    {
+     "w": "found.",
+     "p": 0.999
+    }
+   ]
+  },
+  {
+   "i": 191,
+   "metin": "I'm curious how many people picked taxes.",
+   "whisper": "I'm curious how many people pick taxes.",
+   "kelimeler": [
+    {
+     "w": "I'm",
+     "p": 0.964
+    },
+    {
+     "w": "curious",
+     "p": 0.999
+    },
+    {
+     "w": "how",
+     "p": 0.996
+    },
+    {
+     "w": "many",
+     "p": 0.998
+    },
+    {
+     "w": "people",
+     "p": 0.999
+    },
+    {
+     "w": "pick",
+     "p": 0.953
+    },
+    {
+     "w": "taxes.",
+     "p": 0.983
+    }
+   ]
+  },
+  {
+   "i": 209,
+   "metin": "So, how many boxes are left when the doors finally open?",
+   "whisper": "So how many boxes are left when the doors finally open?",
+   "kelimeler": [
+    {
+     "w": "So",
+     "p": 0.909
+    },
+    {
+     "w": "how",
+     "p": 0.902
+    },
+    {
+     "w": "many",
+     "p": 0.995
+    },
+    {
+     "w": "boxes",
+     "p": 0.997
+    },
+    {
+     "w": "are",
+     "p": 0.998
+    },
+    {
+     "w": "left",
+     "p": 1.0
+    },
+    {
+     "w": "when",
+     "p": 0.995
+    },
+    {
+     "w": "the",
+     "p": 0.994
+    },
+    {
+     "w": "doors",
+     "p": 0.975
+    },
+    {
+     "w": "finally",
+     "p": 0.994
+    },
+    {
+     "w": "open?",
+     "p": 0.998
+    }
+   ]
+  },
+  {
+   "i": 211,
+   "metin": "I open the doors, and I read my clipboard out loud.",
+   "whisper": "I opened the doors and I read my clipboard out loud.",
+   "kelimeler": [
+    {
+     "w": "I",
+     "p": 0.99
+    },
+    {
+     "w": "opened",
+     "p": 0.793
+    },
+    {
+     "w": "the",
+     "p": 0.995
+    },
+    {
+     "w": "doors",
+     "p": 0.98
+    },
+    {
+     "w": "and",
+     "p": 0.828
+    },
+    {
+     "w": "I",
+     "p": 0.87
+    },
+    {
+     "w": "read",
+     "p": 0.999
+    },
+    {
+     "w": "my",
+     "p": 0.993
+    },
+    {
+     "w": "clipboard",
+     "p": 0.982
+    },
+    {
+     "w": "out",
+     "p": 0.994
+    },
+    {
+     "w": "loud.",
+     "p": 0.999
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+kelime=1789 hata=45 WER=%2.5
+insert  -> one
+replace stock leo -> stocklea
+replace third -> three rd
+replace eighth -> eight
+replace stock leo -> stockleo
+insert  -> dollars
+replace stock leo -> stockleo
+replace bank leo -> bankleo
+replace is -> was
+replace eleventh -> eleven
+insert  -> one
+insert  -> one
+insert  -> one
+replace looks -> looked
+replace eighth -> eight
+replace stock leo -> stockleo
+insert  -> one
+insert  -> dollars
+replace leo s -> leos
+insert  -> dollars
+replace box leo -> boxleo
+replace twelve -> one thousand two
+insert  -> dollars
+replace fourth -> four th
+replace first -> one
+insert  -> one
+insert  -> one
+insert  -> yes
+replace and a half -> point five
+replace thirties -> thirty s
+insert  -> up

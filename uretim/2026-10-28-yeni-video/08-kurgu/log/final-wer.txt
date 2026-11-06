@@ -1,0 +1,4 @@
+replace c -> seat
+replace buy -> by
+replace two -> ii
+insert  -> work
