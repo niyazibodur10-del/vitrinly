@@ -1,0 +1,39 @@
+d640.wav: 0:00.00-0:30.00 (30.0 s). Loudness -34.7 LUFS integrated, true peak -21.0 dBTP, LRA 20.3 LU; loudest 0:08.50-0:11.50 (-36.3 LUFS short-term). 10 stop-down(s)/gap(s): 0:00.85 1.6 s drop, 0:03.15 4.1 s drop, 0:07.35 1.6 s drop, 0:09.10 1.8 s drop, 0:11.10 1.6 s near silence. Quiet tail 1.4 s (drop). No steady beat grid (pulse clarity 0.00 < 0.15). 4 section(s): 0:00.00-0:03.40 glitch hop music?; 0:03.40-0:10.80 minimal electronic music?, crisp hi-hats; 0:10.80-0:16.30 lo-fi hip hop beat?, crisp hi-hats; 0:16.30-0:30.00 trap beat?, punchy kick drum pattern. 20 events (0.7/s); 12 tagged (5 whoosh, 4 foley, 1 hit, 1 key, 1 drum; tags are hints). Strongest accents over a running bed: 0:03.04 +23 dB (small object dropping on a table). Sync to 11 cues: 100% have an onset within 1 frame (chance 4%), 100% within 100 ms, median |offset| 6 ms; 36% land on a strong accent (>= 54 dB over the bed) within 1 frame (chance 1%).
+
+SECTIONS
+  0:00.00-0:03.40  glitch hop music?  -41 LUFS
+  0:03.40-0:10.80  minimal electronic music?, crisp hi-hats  -34 LUFS
+  0:10.80-0:16.30  lo-fi hip hop beat?, crisp hi-hats  -35 LUFS
+  0:16.30-0:30.00  trap beat?, punchy kick drum pattern  -35 LUFS
+
+TRANSCRIPT   time  kind   what (CLAP tag / runner-up)                     peak  over bed  length  centroid  | sync
+== 0:00.00-0:03.40  glitch hop music?  (+7 untagged onsets, 2.1/s)
+ 0:00.00  HIT    deep cinematic boom / water drop                -32.4 dBFS   silent   979 ms  1.1 kHz
+ 0:00.85  GAP    drop 1.65 s (-68 LUFS)
+ 0:02.75  -      high onset                                      -29.0 dBFS +10.8 dB    32 ms   148 Hz  | kesme -14 ms OK
+ 0:02.96  KEY    mechanical keyboard key press / small object d  -21.0 dBFS +20.9 dB   266 ms   817 Hz  | vurgu -4 ms OK
+ 0:03.04  FOLEY  small object dropping on a table / drum hit     -21.0 dBFS +23.2 dB   102 ms   236 Hz  | strong accent (summary)
+ 0:03.15  GAP    drop 4.10 s (-69 LUFS)
+== 0:03.40-0:10.80  minimal electronic music?, crisp hi-hats
+ 0:07.28  WHOOSH whip pan whoosh transition / cork pop           -22.0 dBFS   silent    68 ms   310 Hz  | pop +12 ms OK
+ 0:07.35  GAP    drop 1.55 s (-70 LUFS)
+ 0:08.91  WHOOSH whip pan whoosh transition / bubble pop         -25.0 dBFS   silent   184 ms   968 Hz  | sayac +12 ms OK
+ 0:09.10  GAP    drop 1.75 s (-70 LUFS)
+== 0:10.80-0:16.30  lo-fi hip hop beat?, crisp hi-hats
+ 0:10.89  WHOOSH whip pan whoosh transition / bubble pop         -25.0 dBFS   silent   184 ms   968 Hz  | sayac -6 ms OK
+ 0:11.10  GAP    near silence 1.65 s (-70 LUFS)
+ 0:12.77  FOLEY  wooden block hit / drum hit                     -24.0 dBFS   silent    36 ms  3.4 kHz  | sayac +1 ms OK
+ 0:12.80  GAP    drop 3.50 s (-70 LUFS)
+== 0:16.30-0:30.00  trap beat?, punchy kick drum pattern
+ 0:16.30  WHOOSH whip pan whoosh transition / bubble pop         -25.0 dBFS   silent   184 ms   968 Hz  | sayac +2 ms OK
+ 0:16.50  GAP    near silence 1.70 s (-70 LUFS)
+ 0:18.23  WHOOSH whip pan whoosh transition / bubble pop         -25.0 dBFS   silent   184 ms   968 Hz  | sayac -8 ms OK
+ 0:18.40  GAP    drop 2.15 s (-70 LUFS)
+ 0:20.57  FOLEY  wooden block hit / drum hit                     -24.0 dBFS   silent    36 ms  3.4 kHz  | sayac +4 ms OK
+ 0:20.60  GAP    drop 3.75 s (-70 LUFS)
+ 0:24.39  FOLEY  wooden block hit / drum hit                     -25.0 dBFS   silent    27 ms  4.1 kHz  | sayac -15 ms OK
+ 0:24.40  GAP    drop 3.25 s (-70 LUFS)
+ 0:27.66  DRUM   drum hit                                        -22.0 dBFS   silent   708 ms   224 Hz  | vurgu -4 ms OK
+ 0:28.65  GAP    drop 1.35 s (-69 LUFS) = tail
+
+NOTES  times, levels, loudness and sync offsets are measurements. Event kinds / tags are CLAP guesses: '?' = the event is less than 12 dB over its bed, so its excerpt is mostly bed and the tag a weak hint (right kind about 1 in 4 on the tuning mixes, 1 in 2 for exposed events; often wrong on music and voice). Where AST ran, its speech overrides the kind with VOICE. Section genres marked ? are weak. 'over bed' = how far the event rises over the level just before it; 'silent' = that bed was below -60 (after a gap the rise means nothing). Full data: --json.

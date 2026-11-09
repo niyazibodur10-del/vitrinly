@@ -383,5 +383,69 @@ class Bekci(unittest.TestCase):
             api.istek, api.yenileme_kaynaklari = eski
 
 
+# ---------- analitik.py (yt-analytics.readonly; ağsız) ----------
+import analitik as an  # noqa: E402
+
+
+class Analitik(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.mkdtemp()
+        self.eski = (an.TOKEN_DOSYASI, an.PKCE_DOSYASI, api.istek, {k: os.environ.get(k) for k in
+                     ("YOUTUBE_ANALYTICS_CLIENT_ID", "YOUTUBE_ANALYTICS_CLIENT_SECRET", "YOUTUBE_ANALYTICS_REFRESH_TOKEN")})
+        an.TOKEN_DOSYASI, an.PKCE_DOSYASI = os.path.join(self.tmp, "t"), os.path.join(self.tmp, "p.json")
+        os.environ.update(YOUTUBE_ANALYTICS_CLIENT_ID="acid", YOUTUBE_ANALYTICS_CLIENT_SECRET="asec")
+        os.environ.pop("YOUTUBE_ANALYTICS_REFRESH_TOKEN", None)
+
+    def tearDown(self):
+        an.TOKEN_DOSYASI, an.PKCE_DOSYASI, api.istek, env = self.eski
+        for k, v in env.items():
+            if v is None: os.environ.pop(k, None)
+            else: os.environ[k] = v
+        shutil.rmtree(self.tmp, ignore_errors=True)
+
+    def test_url_kod_degisimi_ve_kayit(self):
+        url = an.yetki_url(cikti=lambda *a: None)
+        q = {k: v[0] for k, v in __import__("urllib.parse").parse.parse_qs(url.split("?", 1)[1]).items()}
+        self.assertIn("yt-analytics.readonly", q["scope"]); self.assertEqual(q["code_challenge_method"], "S256")
+        self.assertEqual((q["access_type"], q["prompt"], q["redirect_uri"]), ("offline", "consent", "http://127.0.0.1:8765"))
+        self.assertEqual(os.stat(an.PKCE_DOSYASI).st_mode & 0o777, 0o600)
+        with self.assertRaises(api.ApiHatasi):   # yanlış state reddedilir
+            an.yetki_kod("http://127.0.0.1:8765/?state=BASKA&code=C", cikti=lambda *a: None)
+        giden = []
+        api.istek = lambda url, veri=None, *a, **k: (giden.append(veri), (200, {}, json.dumps(
+            {"access_token": "A", "refresh_token": "R9", "scope": an.KAPSAM}).encode()))[1]
+        self.assertEqual(an.yetki_kod(f"http://127.0.0.1:8765/?state={q['state']}&code=C1&scope=x", cikti=lambda *a: None), 0)
+        self.assertIn(b"code_verifier=", giden[0]); self.assertIn(b"code=C1", giden[0])
+        self.assertEqual(open(an.TOKEN_DOSYASI).read(), "R9"); self.assertFalse(os.path.exists(an.PKCE_DOSYASI))
+        self.assertEqual(os.stat(an.TOKEN_DOSYASI).st_mode & 0o777, 0o600)
+
+    def test_kapsam_eksikse_kaydetmez(self):
+        url = an.yetki_url(cikti=lambda *a: None); st = url.split("state=")[1].split("&")[0]
+        api.istek = lambda *a, **k: (200, {}, b'{"access_token":"A","refresh_token":"R","scope":"https://www.googleapis.com/auth/youtube.readonly"}')
+        with self.assertRaises(api.ApiHatasi): an.yetki_kod(f"http://127.0.0.1:8765/?state={st}&code=C", cikti=lambda *a: None)
+        self.assertFalse(os.path.exists(an.TOKEN_DOSYASI))
+
+    def test_sorgu_ve_erisim_isi(self):
+        def sahte(url, veri=None, *a, **k):
+            if url == api.TOKEN_URL: return 200, {}, json.dumps({"access_token": "A", "scope": an.KAPSAM}).encode()
+            if url.startswith(an.ANALYTICS):
+                self.assertIn("filters=video%3D%3DV1%2CV2", url)
+                return 200, {}, json.dumps({"columnHeaders": [{"name": "video"}, {"name": "averageViewDuration"}],
+                                            "rows": [["V1", 95], ["V2", 40]]}).encode()
+            if url.endswith("/jobs") and veri is None: return 200, {}, b'{"jobs":[]}'
+            if url.endswith("/jobs"): return 200, {}, b'{"id":"J1"}'
+            raise AssertionError(url)
+        api.istek = sahte; os.environ["YOUTUBE_ANALYTICS_REFRESH_TOKEN"] = "R"
+        tok = an.erisim_tokeni(lambda *a: None)
+        r = an.sorgu(tok, "2026-10-01", "2026-11-09", "averageViewDuration", "video", "video==V1,V2")
+        self.assertEqual(r, [{"video": "V1", "averageViewDuration": 95}, {"video": "V2", "averageViewDuration": 40}])
+        self.assertEqual(an.erisim_isi(tok, cikti=lambda *a: None), "J1")
+
+    def test_yukleme_tokeni_analitik_sayilmaz(self):   # youtube kapsamlı token analitik yerine geçmez
+        api.istek = lambda *a, **k: (200, {}, b'{"access_token":"A","scope":"https://www.googleapis.com/auth/youtube"}')
+        os.environ["YOUTUBE_ANALYTICS_REFRESH_TOKEN"] = "R"
+        with self.assertRaises(api.ApiHatasi): an.erisim_tokeni(lambda *a: None)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

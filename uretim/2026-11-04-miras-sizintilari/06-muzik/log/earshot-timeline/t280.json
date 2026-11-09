@@ -1,0 +1,1918 @@
+{
+ "file": "/tmp/claude-0/-home-user/98cc376a-1af5-5176-856d-bb81c65c71b0/scratchpad/tl/d280.wav",
+ "video": null,
+ "start": 0.0,
+ "end": 30.0,
+ "duration": 30.0,
+ "file_duration": 30.0,
+ "context": [
+  0.0,
+  30.0
+ ],
+ "has_audio": true,
+ "lossy": false,
+ "loudness": {
+  "integrated_lufs": -40.2,
+  "true_peak_dbtp": -19.0,
+  "digital_silence": false,
+  "max_momentary": {
+   "t": 7.2,
+   "lufs": -33.0
+  },
+  "momentary": {
+   "t0": 0.2,
+   "dt": 0.1,
+   "lufs": [
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -65.3,
+    -54.6,
+    -48.4,
+    -44.0,
+    -43.7,
+    -44.0,
+    -45.4,
+    -54.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -66.7,
+    -49.0,
+    -48.9,
+    -48.9,
+    -48.3,
+    -51.3,
+    -46.2,
+    -36.8,
+    -36.0,
+    -35.7,
+    -35.9,
+    -41.5,
+    -45.4,
+    -55.5,
+    -63.1,
+    -34.4,
+    -33.0,
+    -33.0,
+    -33.0,
+    -38.7,
+    -68.5,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -61.8,
+    -49.0,
+    -48.9,
+    -48.9,
+    -48.1,
+    -48.1,
+    -44.2,
+    -36.0,
+    -36.0,
+    -35.8,
+    -36.2,
+    -45.2,
+    -45.4,
+    -58.6,
+    -44.9,
+    -42.4,
+    -42.4,
+    -42.4,
+    -45.9,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -60.8,
+    -44.9,
+    -44.7,
+    -44.7,
+    -44.8,
+    -59.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -47.7,
+    -47.6,
+    -47.6,
+    -47.6,
+    -47.5,
+    -47.6,
+    -47.6,
+    -47.6,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -56.8,
+    -45.3,
+    -44.9,
+    -44.9,
+    -45.2,
+    -54.7,
+    -67.1,
+    -70.0,
+    -70.0
+   ]
+  },
+  "max_short_term": {
+   "start": 4.5,
+   "end": 7.5,
+   "lufs": -39.8
+  },
+  "short_term": {
+   "t0": 1.5,
+   "dt": 0.5,
+   "lufs": [
+    -52.4,
+    -52.4,
+    -52.4,
+    -70.0,
+    -70.0,
+    -70.0,
+    -57.0,
+    -44.1,
+    -44.1,
+    -39.8,
+    -39.8,
+    -39.8,
+    -39.8,
+    -41.6,
+    -39.9,
+    -44.1,
+    -43.3,
+    -43.3,
+    -43.3,
+    -43.5,
+    -49.4,
+    -51.1,
+    -70.0,
+    -70.0,
+    -70.0,
+    -53.5,
+    -53.5,
+    -53.5,
+    -53.5,
+    -53.5,
+    -53.5,
+    -70.0,
+    -70.0,
+    -56.3,
+    -53.3,
+    -53.3,
+    -53.3,
+    -53.3,
+    -53.3,
+    -56.3,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -53.6,
+    -53.6
+   ]
+  },
+  "lra_lu": 14.1,
+  "silences": [
+   {
+    "start": 0.0,
+    "end": 0.95,
+    "dur": 0.95,
+    "kind": "near silence",
+    "level_lufs": -69.7,
+    "where": "lead-in"
+   },
+   {
+    "start": 1.4,
+    "end": 5.6,
+    "dur": 4.2,
+    "kind": "near silence",
+    "level_lufs": -69.7
+   },
+   {
+    "start": 6.65,
+    "end": 7.05,
+    "dur": 0.4,
+    "kind": "near silence",
+    "level_lufs": -69.6
+   },
+   {
+    "start": 7.2,
+    "end": 9.2,
+    "dur": 2.0,
+    "kind": "drop",
+    "level_lufs": -69.1
+   },
+   {
+    "start": 10.2,
+    "end": 10.55,
+    "dur": 0.35,
+    "kind": "near silence",
+    "level_lufs": -68.4
+   },
+   {
+    "start": 10.65,
+    "end": 15.3,
+    "dur": 4.65,
+    "kind": "drop",
+    "level_lufs": -69.6
+   },
+   {
+    "start": 15.45,
+    "end": 19.25,
+    "dur": 3.8,
+    "kind": "near silence",
+    "level_lufs": -69.9
+   },
+   {
+    "start": 19.3,
+    "end": 19.6,
+    "dur": 0.3,
+    "kind": "drop",
+    "level_lufs": -67.9
+   },
+   {
+    "start": 19.65,
+    "end": 29.1,
+    "dur": 9.45,
+    "kind": "drop",
+    "level_lufs": -69.9
+   },
+   {
+    "start": 29.4,
+    "end": 30.0,
+    "dur": 0.6,
+    "kind": "near silence",
+    "level_lufs": -69.2,
+    "where": "tail"
+   }
+  ],
+  "clipping": {
+   "samples": 0,
+   "runs": 0,
+   "times": []
+  }
+ },
+ "music": {
+  "tempo": 172.1,
+  "tempo_alt": null,
+  "beats": [
+   1.08,
+   1.43,
+   1.78,
+   2.13,
+   2.48,
+   2.83,
+   3.18,
+   3.53,
+   3.88,
+   4.23,
+   4.58,
+   4.93,
+   5.28,
+   5.64,
+   5.97,
+   6.33,
+   6.69,
+   7.05,
+   7.41,
+   7.77,
+   8.13,
+   8.49,
+   8.85,
+   9.2,
+   9.54,
+   9.87,
+   10.2,
+   10.56,
+   10.91,
+   11.26,
+   11.61,
+   11.96,
+   12.31,
+   12.66,
+   13.02,
+   13.38,
+   13.74,
+   14.1,
+   14.46,
+   14.82,
+   15.18,
+   15.52,
+   15.86,
+   16.2,
+   16.54,
+   16.88,
+   17.22,
+   17.56,
+   17.9,
+   18.24,
+   18.58,
+   18.92,
+   19.26,
+   19.61,
+   19.96,
+   20.31,
+   20.66,
+   21.01,
+   21.36,
+   21.71,
+   22.06,
+   22.41,
+   22.76,
+   23.11,
+   23.46,
+   23.81,
+   24.16,
+   24.51,
+   24.86,
+   25.21,
+   25.56,
+   25.91,
+   26.26,
+   26.61,
+   26.96,
+   27.31,
+   27.66,
+   28.01,
+   28.36,
+   28.71,
+   29.07,
+   29.41,
+   29.76
+  ],
+  "downbeats": [
+   2.13,
+   3.53,
+   4.93,
+   6.33,
+   7.77,
+   9.2,
+   10.56,
+   11.96,
+   13.38,
+   14.82,
+   16.2,
+   17.56,
+   18.92,
+   20.31,
+   21.71,
+   23.11,
+   24.51,
+   25.91,
+   27.31,
+   28.71
+  ],
+  "pulse_clarity": 0.295,
+  "beat_regularity": 0.021,
+  "confidence": "weak",
+  "note": "beats at 10 ms resolution; downbeats are a guess (4/4 assumed); tempo may be half/double the felt tempo"
+ },
+ "events": [
+  {
+   "t": 0.923,
+   "shape": "hit",
+   "band": "full",
+   "contrast_db": 28.4,
+   "z": 11.2,
+   "length_ms": 599,
+   "prominence_db": 27.1,
+   "bed_db": -80.0,
+   "peak_dbfs": -34.1,
+   "local_lufs": -52.5,
+   "centroid_hz": 137,
+   "beat_offset_ms": -157.0
+  },
+  {
+   "t": 1.002,
+   "shape": "hit",
+   "band": "full",
+   "contrast_db": 32.7,
+   "z": 10.9,
+   "length_ms": 504,
+   "prominence_db": 38.0,
+   "bed_db": -80.0,
+   "peak_dbfs": -29.0,
+   "local_lufs": -48.3,
+   "centroid_hz": 69,
+   "tags": [
+    {
+     "tag": "a fast air whoosh",
+     "kind": "WHOOSH",
+     "z": 2.72
+    },
+    {
+     "tag": "a whip pan whoosh transition",
+     "kind": "WHOOSH",
+     "z": 2.0
+    },
+    {
+     "tag": "a short swish",
+     "kind": "WHOOSH",
+     "z": 1.94
+    }
+   ],
+   "kind": "WHOOSH",
+   "label": "fast air whoosh",
+   "exposed": true,
+   "beat_offset_ms": -78.0
+  },
+  {
+   "t": 1.073,
+   "shape": "hit",
+   "band": "low",
+   "contrast_db": 24.5,
+   "z": 5.1,
+   "length_ms": 329,
+   "prominence_db": 25.9,
+   "bed_db": -65.6,
+   "peak_dbfs": -29.0,
+   "local_lufs": -45.2,
+   "centroid_hz": 146,
+   "tags": [
+    {
+     "tag": "a fast air whoosh",
+     "kind": "WHOOSH",
+     "z": 2.17
+    },
+    {
+     "tag": "a short swish",
+     "kind": "WHOOSH",
+     "z": 1.84
+    },
+    {
+     "tag": "a small soft footstep",
+     "kind": "STEP",
+     "z": 1.6
+    }
+   ],
+   "kind": "WHOOSH",
+   "label": "fast air whoosh",
+   "exposed": true,
+   "beat_offset_ms": -7.0
+  },
+  {
+   "t": 1.11,
+   "shape": "hit",
+   "band": "full",
+   "contrast_db": 22.9,
+   "z": 13.1,
+   "length_ms": 292,
+   "prominence_db": 22.3,
+   "bed_db": -61.4,
+   "peak_dbfs": -29.0,
+   "local_lufs": -44.0,
+   "centroid_hz": 222,
+   "beat_offset_ms": 30.0
+  },
+  {
+   "t": 1.178,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 24.3,
+   "z": 15.7,
+   "length_ms": 156,
+   "prominence_db": 16.1,
+   "bed_db": -53.5,
+   "peak_dbfs": -29.0,
+   "local_lufs": -43.7,
+   "centroid_hz": 138,
+   "tags": [
+    {
+     "tag": "a fast air whoosh",
+     "kind": "WHOOSH",
+     "z": 2.01
+    },
+    {
+     "tag": "a small soft footstep",
+     "kind": "STEP",
+     "z": 1.82
+    },
+    {
+     "tag": "a soft thump",
+     "kind": "HIT",
+     "z": 1.64
+    }
+   ],
+   "kind": "WHOOSH",
+   "label": "fast air whoosh",
+   "exposed": true,
+   "beat_offset_ms": 98.0
+  },
+  {
+   "t": 1.276,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 18.8,
+   "z": 11.5,
+   "length_ms": 32,
+   "prominence_db": 10.8,
+   "bed_db": -44.8,
+   "peak_dbfs": -29.0,
+   "local_lufs": -43.9,
+   "centroid_hz": 148,
+   "beat_offset_ms": -154.0
+  },
+  {
+   "t": 5.479,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 27.7,
+   "z": 17.7,
+   "length_ms": 1273,
+   "prominence_db": 21.0,
+   "bed_db": -80.0,
+   "peak_dbfs": -26.4,
+   "local_lufs": -49.2,
+   "centroid_hz": 9871,
+   "beat_offset_ms": -161.0
+  },
+  {
+   "t": 5.557,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 33.6,
+   "z": 11.8,
+   "length_ms": 1188,
+   "prominence_db": 46.4,
+   "bed_db": -80.0,
+   "peak_dbfs": -26.4,
+   "local_lufs": -49.0,
+   "centroid_hz": 9891,
+   "tags": [
+    {
+     "tag": "footsteps on grass",
+     "kind": "STEP",
+     "z": 2.4
+    },
+    {
+     "tag": "paper rustling",
+     "kind": "FOLEY",
+     "z": 1.8
+    },
+    {
+     "tag": "a hi-hat",
+     "kind": "DRUM",
+     "z": 1.64
+    }
+   ],
+   "kind": "STEP",
+   "label": "footsteps on grass",
+   "exposed": true,
+   "beat_offset_ms": -83.0
+  },
+  {
+   "t": 5.642,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 35.5,
+   "z": 37.7,
+   "length_ms": 20,
+   "prominence_db": 31.5,
+   "bed_db": -64.6,
+   "peak_dbfs": -26.4,
+   "local_lufs": -48.9,
+   "centroid_hz": 4108,
+   "beat_offset_ms": 2.0
+  },
+  {
+   "t": 5.78,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 9.6,
+   "z": 11.3,
+   "length_ms": 48,
+   "prominence_db": 7.1,
+   "bed_db": -60.1,
+   "peak_dbfs": -46.6,
+   "local_lufs": -48.5,
+   "centroid_hz": 10141,
+   "beat_offset_ms": 140.0
+  },
+  {
+   "t": 5.822,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 13.9,
+   "z": 4.9,
+   "length_ms": 854,
+   "prominence_db": 2.9,
+   "bed_db": -59.4,
+   "peak_dbfs": -33.5,
+   "local_lufs": -50.2,
+   "centroid_hz": 8321,
+   "beat_offset_ms": -148.0
+  },
+  {
+   "t": 5.879,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 16.6,
+   "z": 6.0,
+   "length_ms": 797,
+   "prominence_db": 1.0,
+   "bed_db": -59.6,
+   "peak_dbfs": -25.3,
+   "local_lufs": -51.8,
+   "centroid_hz": 5776,
+   "beat_offset_ms": -91.0
+  },
+  {
+   "t": 5.993,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 32.2,
+   "z": 18.8,
+   "length_ms": 666,
+   "prominence_db": 22.2,
+   "bed_db": -63.0,
+   "peak_dbfs": -19.0,
+   "local_lufs": -46.3,
+   "centroid_hz": 4439,
+   "beat_offset_ms": 23.0
+  },
+  {
+   "t": 6.046,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 26.7,
+   "z": 14.2,
+   "length_ms": 613,
+   "prominence_db": 25.8,
+   "bed_db": -60.8,
+   "peak_dbfs": -19.0,
+   "local_lufs": -41.3,
+   "centroid_hz": 6602,
+   "beat_offset_ms": 76.0
+  },
+  {
+   "t": 6.121,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 26.5,
+   "z": 20.8,
+   "length_ms": 228,
+   "prominence_db": 22.4,
+   "bed_db": -57.4,
+   "peak_dbfs": -19.0,
+   "local_lufs": -36.5,
+   "centroid_hz": 1901,
+   "beat_offset_ms": 151.0
+  },
+  {
+   "t": 6.228,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 31.3,
+   "z": 28.8,
+   "length_ms": 99,
+   "prominence_db": 22.6,
+   "bed_db": -49.2,
+   "peak_dbfs": -19.0,
+   "local_lufs": -36.0,
+   "centroid_hz": 9351,
+   "beat_offset_ms": -102.0
+  },
+  {
+   "t": 6.464,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 43.0,
+   "z": 33.5,
+   "length_ms": 55,
+   "prominence_db": 18.0,
+   "bed_db": -50.1,
+   "peak_dbfs": -20.8,
+   "local_lufs": -38.3,
+   "centroid_hz": 5772,
+   "beat_offset_ms": 134.0
+  },
+  {
+   "t": 6.558,
+   "shape": "hit",
+   "band": "full",
+   "contrast_db": 14.3,
+   "z": 7.0,
+   "length_ms": 92,
+   "prominence_db": 0.0,
+   "bed_db": -48.1,
+   "peak_dbfs": -36.8,
+   "local_lufs": -45.4,
+   "centroid_hz": 10865,
+   "beat_offset_ms": -132.0
+  },
+  {
+   "t": 6.649,
+   "shape": "hit",
+   "band": "full",
+   "contrast_db": 12.2,
+   "z": 4.1,
+   "length_ms": 1,
+   "prominence_db": 0.5,
+   "bed_db": -53.7,
+   "peak_dbfs": -37.5,
+   "local_lufs": -45.4,
+   "centroid_hz": 6389,
+   "beat_offset_ms": -41.0
+  },
+  {
+   "t": 7.054,
+   "shape": "hit",
+   "band": "full",
+   "contrast_db": 59.0,
+   "z": 37.4,
+   "length_ms": 113,
+   "prominence_db": 58.2,
+   "bed_db": -80.0,
+   "peak_dbfs": -21.0,
+   "local_lufs": -33.0,
+   "centroid_hz": 923,
+   "tags": [
+    {
+     "tag": "a chat message pop",
+     "kind": "UI",
+     "z": 2.18
+    },
+    {
+     "tag": "a cork pop",
+     "kind": "FOLEY",
+     "z": 1.95
+    },
+    {
+     "tag": "a short swish",
+     "kind": "WHOOSH",
+     "z": 1.73
+    }
+   ],
+   "kind": "UI",
+   "label": "chat message pop",
+   "exposed": true,
+   "beat_offset_ms": 4.0
+  },
+  {
+   "t": 9.045,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 27.7,
+   "z": 18.2,
+   "length_ms": 1273,
+   "prominence_db": 21.0,
+   "bed_db": -80.0,
+   "peak_dbfs": -26.4,
+   "local_lufs": -50.3,
+   "centroid_hz": 9871,
+   "beat_offset_ms": -155.0
+  },
+  {
+   "t": 9.123,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 33.6,
+   "z": 10.8,
+   "length_ms": 1188,
+   "prominence_db": 46.4,
+   "bed_db": -80.0,
+   "peak_dbfs": -26.4,
+   "local_lufs": -49.0,
+   "centroid_hz": 9896,
+   "tags": [
+    {
+     "tag": "footsteps on grass",
+     "kind": "STEP",
+     "z": 2.4
+    },
+    {
+     "tag": "paper rustling",
+     "kind": "FOLEY",
+     "z": 1.8
+    },
+    {
+     "tag": "a hi-hat",
+     "kind": "DRUM",
+     "z": 1.64
+    }
+   ],
+   "kind": "STEP",
+   "label": "footsteps on grass",
+   "exposed": true,
+   "beat_offset_ms": -77.0
+  },
+  {
+   "t": 9.208,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 35.1,
+   "z": 42.4,
+   "length_ms": 20,
+   "prominence_db": 31.5,
+   "bed_db": -64.6,
+   "peak_dbfs": -26.4,
+   "local_lufs": -48.9,
+   "centroid_hz": 4108,
+   "beat_offset_ms": 8.0
+  },
+  {
+   "t": 9.346,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 10.4,
+   "z": 11.1,
+   "length_ms": 48,
+   "prominence_db": 7.1,
+   "bed_db": -60.1,
+   "peak_dbfs": -46.6,
+   "local_lufs": -48.8,
+   "centroid_hz": 10141,
+   "beat_offset_ms": 146.0
+  },
+  {
+   "t": 9.388,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 12.9,
+   "z": 4.4,
+   "length_ms": 854,
+   "prominence_db": 2.9,
+   "bed_db": -59.4,
+   "peak_dbfs": -33.5,
+   "local_lufs": -48.3,
+   "centroid_hz": 8321,
+   "beat_offset_ms": -152.0
+  },
+  {
+   "t": 9.445,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 16.6,
+   "z": 6.1,
+   "length_ms": 797,
+   "prominence_db": 1.0,
+   "bed_db": -59.6,
+   "peak_dbfs": -25.3,
+   "local_lufs": -51.1,
+   "centroid_hz": 5776,
+   "beat_offset_ms": -95.0
+  },
+  {
+   "t": 9.559,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 32.1,
+   "z": 18.7,
+   "length_ms": 666,
+   "prominence_db": 22.2,
+   "bed_db": -63.0,
+   "peak_dbfs": -19.0,
+   "local_lufs": -45.9,
+   "centroid_hz": 4440,
+   "beat_offset_ms": 19.0
+  },
+  {
+   "t": 9.612,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 27.1,
+   "z": 12.5,
+   "length_ms": 613,
+   "prominence_db": 25.8,
+   "bed_db": -60.8,
+   "peak_dbfs": -19.0,
+   "local_lufs": -42.6,
+   "centroid_hz": 6602,
+   "beat_offset_ms": 72.0
+  },
+  {
+   "t": 9.687,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 26.5,
+   "z": 21.0,
+   "length_ms": 228,
+   "prominence_db": 22.4,
+   "bed_db": -57.4,
+   "peak_dbfs": -19.0,
+   "local_lufs": -36.5,
+   "centroid_hz": 1901,
+   "beat_offset_ms": 147.0
+  },
+  {
+   "t": 9.794,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 32.0,
+   "z": 30.2,
+   "length_ms": 99,
+   "prominence_db": 22.6,
+   "bed_db": -49.2,
+   "peak_dbfs": -19.0,
+   "local_lufs": -36.0,
+   "centroid_hz": 9351,
+   "beat_offset_ms": -76.0
+  },
+  {
+   "t": 10.03,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 42.3,
+   "z": 36.6,
+   "length_ms": 55,
+   "prominence_db": 18.0,
+   "bed_db": -50.1,
+   "peak_dbfs": -20.8,
+   "local_lufs": -38.1,
+   "centroid_hz": 5774,
+   "beat_offset_ms": 160.0
+  },
+  {
+   "t": 10.124,
+   "shape": "hit",
+   "band": "full",
+   "contrast_db": 14.5,
+   "z": 6.8,
+   "length_ms": 92,
+   "prominence_db": 0.0,
+   "bed_db": -48.1,
+   "peak_dbfs": -36.8,
+   "local_lufs": -45.3,
+   "centroid_hz": 10865,
+   "beat_offset_ms": -76.0
+  },
+  {
+   "t": 10.215,
+   "shape": "hit",
+   "band": "full",
+   "contrast_db": 12.1,
+   "z": 4.3,
+   "length_ms": 1,
+   "prominence_db": 0.5,
+   "bed_db": -53.7,
+   "peak_dbfs": -37.5,
+   "local_lufs": -47.6,
+   "centroid_hz": 6389,
+   "beat_offset_ms": 15.0
+  },
+  {
+   "t": 10.567,
+   "shape": "hit",
+   "band": "full",
+   "contrast_db": 52.0,
+   "z": 27.7,
+   "length_ms": 90,
+   "prominence_db": 48.2,
+   "bed_db": -80.0,
+   "peak_dbfs": -28.0,
+   "local_lufs": -42.4,
+   "centroid_hz": 551,
+   "tags": [
+    {
+     "tag": "a plucked string note",
+     "kind": "NOTE",
+     "z": 1.95
+    },
+    {
+     "tag": "a short swish",
+     "kind": "WHOOSH",
+     "z": 1.85
+    },
+    {
+     "tag": "an orchestral stab",
+     "kind": "NOTE",
+     "z": 1.83
+    }
+   ],
+   "kind": "NOTE",
+   "label": "plucked string note",
+   "exposed": true,
+   "beat_offset_ms": 7.0
+  },
+  {
+   "t": 15.224,
+   "shape": "hit",
+   "band": "full",
+   "contrast_db": 28.5,
+   "z": 22.7,
+   "length_ms": 303,
+   "prominence_db": 33.1,
+   "bed_db": -80.0,
+   "peak_dbfs": -30.0,
+   "local_lufs": -44.8,
+   "centroid_hz": 515,
+   "beat_offset_ms": 44.0
+  },
+  {
+   "t": 15.257,
+   "shape": "hit",
+   "band": "full",
+   "contrast_db": 38.3,
+   "z": 5.8,
+   "length_ms": 223,
+   "prominence_db": 41.3,
+   "bed_db": -80.0,
+   "peak_dbfs": -30.0,
+   "local_lufs": -44.7,
+   "centroid_hz": 578,
+   "tags": [
+    {
+     "tag": "a fast air whoosh",
+     "kind": "WHOOSH",
+     "z": 3.14
+    },
+    {
+     "tag": "a whip pan whoosh transition",
+     "kind": "WHOOSH",
+     "z": 3.09
+    },
+    {
+     "tag": "a short swish",
+     "kind": "WHOOSH",
+     "z": 2.16
+    }
+   ],
+   "kind": "WHOOSH",
+   "label": "fast air whoosh",
+   "exposed": true,
+   "beat_offset_ms": 77.0
+  },
+  {
+   "t": 15.328,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 32.2,
+   "z": 7.4,
+   "length_ms": 113,
+   "prominence_db": 47.0,
+   "bed_db": -80.0,
+   "peak_dbfs": -30.0,
+   "local_lufs": -44.7,
+   "centroid_hz": 834,
+   "tags": [
+    {
+     "tag": "a whip pan whoosh transition",
+     "kind": "WHOOSH",
+     "z": 3.13
+    },
+    {
+     "tag": "a fast air whoosh",
+     "kind": "WHOOSH",
+     "z": 3.07
+    },
+    {
+     "tag": "a short swish",
+     "kind": "WHOOSH",
+     "z": 2.22
+    }
+   ],
+   "kind": "WHOOSH",
+   "label": "whip pan whoosh transition",
+   "exposed": true,
+   "beat_offset_ms": 148.0
+  },
+  {
+   "t": 19.274,
+   "shape": "hit",
+   "band": "full",
+   "contrast_db": 57.0,
+   "z": 99.0,
+   "length_ms": 11,
+   "prominence_db": 48.9,
+   "bed_db": -80.0,
+   "peak_dbfs": -23.0,
+   "local_lufs": -47.6,
+   "centroid_hz": 350,
+   "tags": [
+    {
+     "tag": "a wooden block hit",
+     "kind": "FOLEY",
+     "z": 2.42
+    },
+    {
+     "tag": "a drum hit",
+     "kind": "DRUM",
+     "z": 2.09
+    },
+    {
+     "tag": "a small soft footstep",
+     "kind": "STEP",
+     "z": 1.76
+    }
+   ],
+   "kind": "FOLEY",
+   "label": "wooden block hit",
+   "exposed": true,
+   "beat_offset_ms": 14.0
+  },
+  {
+   "t": 19.624,
+   "shape": "hit",
+   "band": "full",
+   "contrast_db": 57.0,
+   "z": 99.0,
+   "length_ms": 11,
+   "prominence_db": 48.9,
+   "bed_db": -80.0,
+   "peak_dbfs": -23.0,
+   "local_lufs": -47.6,
+   "centroid_hz": 349,
+   "beat_offset_ms": 14.0
+  },
+  {
+   "t": 29.074,
+   "shape": "hit",
+   "band": "full",
+   "contrast_db": 27.8,
+   "z": 14.5,
+   "length_ms": 482,
+   "prominence_db": 34.1,
+   "bed_db": -80.0,
+   "peak_dbfs": -30.0,
+   "local_lufs": -47.1,
+   "centroid_hz": 4034,
+   "beat_offset_ms": 4.0
+  },
+  {
+   "t": 29.117,
+   "shape": "hit",
+   "band": "full",
+   "contrast_db": 39.8,
+   "z": 11.0,
+   "length_ms": 318,
+   "prominence_db": 36.2,
+   "bed_db": -80.0,
+   "peak_dbfs": -30.0,
+   "local_lufs": -45.2,
+   "centroid_hz": 3786,
+   "beat_offset_ms": 47.0
+  },
+  {
+   "t": 29.149,
+   "shape": "hit",
+   "band": "full",
+   "contrast_db": 41.2,
+   "z": 18.9,
+   "length_ms": 285,
+   "prominence_db": 43.5,
+   "bed_db": -80.0,
+   "peak_dbfs": -30.0,
+   "local_lufs": -45.0,
+   "centroid_hz": 3117,
+   "beat_offset_ms": 79.0
+  },
+  {
+   "t": 29.193,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 28.9,
+   "z": 10.2,
+   "length_ms": 226,
+   "prominence_db": 45.3,
+   "bed_db": -80.0,
+   "peak_dbfs": -30.0,
+   "local_lufs": -44.9,
+   "centroid_hz": 2348,
+   "tags": [
+    {
+     "tag": "a whip pan whoosh transition",
+     "kind": "WHOOSH",
+     "z": 2.29
+    },
+    {
+     "tag": "a short swish",
+     "kind": "WHOOSH",
+     "z": 1.93
+    },
+    {
+     "tag": "a hi-hat",
+     "kind": "DRUM",
+     "z": 1.78
+    }
+   ],
+   "kind": "WHOOSH",
+   "label": "whip pan whoosh transition",
+   "exposed": true,
+   "beat_offset_ms": 123.0
+  },
+  {
+   "t": 29.253,
+   "shape": "hit",
+   "band": "full",
+   "contrast_db": 20.1,
+   "z": 15.8,
+   "length_ms": 90,
+   "prominence_db": 29.0,
+   "bed_db": -63.8,
+   "peak_dbfs": -30.0,
+   "local_lufs": -44.9,
+   "centroid_hz": 1953,
+   "tags": [
+    {
+     "tag": "a hi-hat",
+     "kind": "DRUM",
+     "z": 2.06
+    },
+    {
+     "tag": "a water drop",
+     "kind": "FOLEY",
+     "z": 1.72
+    },
+    {
+     "tag": "a snare drum hit",
+     "kind": "DRUM",
+     "z": 1.59
+    }
+   ],
+   "kind": "DRUM",
+   "label": "hi-hat",
+   "exposed": true,
+   "beat_offset_ms": -157.0
+  },
+  {
+   "t": 29.309,
+   "shape": "hit",
+   "band": "full",
+   "contrast_db": 4.3,
+   "z": 6.1,
+   "length_ms": 5,
+   "prominence_db": 9.6,
+   "bed_db": -51.8,
+   "peak_dbfs": -37.9,
+   "local_lufs": -44.9,
+   "centroid_hz": 1450,
+   "beat_offset_ms": -101.0
+  }
+ ],
+ "sections": [
+  {
+   "start": 0.0,
+   "end": 5.45,
+   "windows": 1,
+   "coherence": 1.0,
+   "music_genre": [
+    {
+     "tag": "minimal electronic music",
+     "cat": "music_genre",
+     "z": 0.79,
+     "cos": 0.129
+    },
+    {
+     "tag": "epic trailer music",
+     "cat": "music_genre",
+     "z": 0.36,
+     "cos": 0.085
+    }
+   ],
+   "music_mood": [
+    {
+     "tag": "energetic and driving music",
+     "cat": "music_mood",
+     "z": -0.17,
+     "cos": 0.032
+    },
+    {
+     "tag": "calm and relaxing music",
+     "cat": "music_mood",
+     "z": -0.19,
+     "cos": 0.03
+    }
+   ],
+   "instruments": [
+    {
+     "tag": "a deep sub bass",
+     "cat": "instruments",
+     "z": 1.86,
+     "cos": 0.237
+    },
+    {
+     "tag": "a celesta",
+     "cat": "instruments",
+     "z": 0.84,
+     "cos": 0.135
+    }
+   ],
+   "ambience": [
+    {
+     "tag": "a crackling fire",
+     "cat": "ambience",
+     "z": 0.97,
+     "cos": 0.147
+    },
+    {
+     "tag": "wind blowing",
+     "cat": "ambience",
+     "z": 0.69,
+     "cos": 0.119
+    }
+   ],
+   "voice": [
+    {
+     "tag": "someone whispering",
+     "cat": "voice",
+     "z": -0.33,
+     "cos": 0.015
+    },
+    {
+     "tag": "singing vocals",
+     "cat": "voice",
+     "z": -0.37,
+     "cos": 0.012
+    }
+   ],
+   "lufs": -46.1,
+   "digital_silence": false,
+   "label": "unclear (no confident music / ambience / voice tag)"
+  },
+  {
+   "start": 5.45,
+   "end": 9.05,
+   "windows": 2,
+   "coherence": 0.983,
+   "music_genre": [
+    {
+     "tag": "funk music",
+     "cat": "music_genre",
+     "z": 1.3,
+     "cos": 0.15
+    },
+    {
+     "tag": "minimal electronic music",
+     "cat": "music_genre",
+     "z": 1.25,
+     "cos": 0.145
+    }
+   ],
+   "music_mood": [
+    {
+     "tag": "playful and quirky music",
+     "cat": "music_mood",
+     "z": 0.76,
+     "cos": 0.1
+    },
+    {
+     "tag": "suspenseful build-up music",
+     "cat": "music_mood",
+     "z": 0.24,
+     "cos": 0.053
+    }
+   ],
+   "instruments": [
+    {
+     "tag": "crisp hi-hats",
+     "cat": "instruments",
+     "z": 1.39,
+     "cos": 0.158
+    },
+    {
+     "tag": "a ukulele",
+     "cat": "instruments",
+     "z": 1.37,
+     "cos": 0.156
+    }
+   ],
+   "ambience": [
+    {
+     "tag": "an airplane flying overhead",
+     "cat": "ambience",
+     "z": 0.72,
+     "cos": 0.097
+    },
+    {
+     "tag": "a summer meadow with insects",
+     "cat": "ambience",
+     "z": 0.48,
+     "cos": 0.075
+    }
+   ],
+   "voice": [
+    {
+     "tag": "someone whispering",
+     "cat": "voice",
+     "z": -0.58,
+     "cos": -0.02
+    },
+    {
+     "tag": "a woman speaking",
+     "cat": "voice",
+     "z": -0.65,
+     "cos": -0.027
+    }
+   ],
+   "lufs": -35.9,
+   "digital_silence": false,
+   "label": "funk music?"
+  },
+  {
+   "start": 9.05,
+   "end": 15.2,
+   "windows": 1,
+   "coherence": 1.0,
+   "music_genre": [
+    {
+     "tag": "tech house music",
+     "cat": "music_genre",
+     "z": 1.62,
+     "cos": 0.192
+    },
+    {
+     "tag": "minimal electronic music",
+     "cat": "music_genre",
+     "z": 1.31,
+     "cos": 0.161
+    }
+   ],
+   "music_mood": [
+    {
+     "tag": "futuristic music",
+     "cat": "music_mood",
+     "z": 0.98,
+     "cos": 0.129
+    },
+    {
+     "tag": "playful and quirky music",
+     "cat": "music_mood",
+     "z": 0.87,
+     "cos": 0.119
+    }
+   ],
+   "instruments": [
+    {
+     "tag": "crisp hi-hats",
+     "cat": "instruments",
+     "z": 1.45,
+     "cos": 0.175
+    },
+    {
+     "tag": "a synthesizer lead",
+     "cat": "instruments",
+     "z": 0.84,
+     "cos": 0.116
+    }
+   ],
+   "ambience": [
+    {
+     "tag": "ocean waves",
+     "cat": "ambience",
+     "z": 0.78,
+     "cos": 0.11
+    },
+    {
+     "tag": "a gentle breeze in tall grass",
+     "cat": "ambience",
+     "z": 0.37,
+     "cos": 0.07
+    }
+   ],
+   "voice": [
+    {
+     "tag": "singing vocals",
+     "cat": "voice",
+     "z": -0.29,
+     "cos": 0.005
+    },
+    {
+     "tag": "someone whispering",
+     "cat": "voice",
+     "z": -0.3,
+     "cos": 0.004
+    }
+   ],
+   "lufs": -39.8,
+   "digital_silence": false,
+   "label": "tech house music?"
+  },
+  {
+   "start": 15.2,
+   "end": 30.0,
+   "windows": 4,
+   "coherence": 0.807,
+   "music_genre": [
+    {
+     "tag": "trap beat",
+     "cat": "music_genre",
+     "z": 2.18,
+     "cos": 0.311
+    },
+    {
+     "tag": "minimal electronic music",
+     "cat": "music_genre",
+     "z": 1.92,
+     "cos": 0.29
+    }
+   ],
+   "music_mood": [
+    {
+     "tag": "futuristic music",
+     "cat": "music_mood",
+     "z": 1.51,
+     "cos": 0.259
+    },
+    {
+     "tag": "confident and cool music",
+     "cat": "music_mood",
+     "z": 0.74,
+     "cos": 0.199
+    }
+   ],
+   "instruments": [
+    {
+     "tag": "a deep sub bass",
+     "cat": "instruments",
+     "z": 1.55,
+     "cos": 0.262
+    },
+    {
+     "tag": "a synthesizer lead",
+     "cat": "instruments",
+     "z": 1.48,
+     "cos": 0.256
+    }
+   ],
+   "ambience": [
+    {
+     "tag": "an airplane flying overhead",
+     "cat": "ambience",
+     "z": 0.62,
+     "cos": 0.19
+    },
+    {
+     "tag": "skylarks over a meadow",
+     "cat": "ambience",
+     "z": 0.52,
+     "cos": 0.183
+    }
+   ],
+   "voice": [
+    {
+     "tag": "singing vocals",
+     "cat": "voice",
+     "z": 0.19,
+     "cos": 0.157
+    },
+    {
+     "tag": "a person coughing",
+     "cat": "voice",
+     "z": -0.46,
+     "cos": 0.107
+    }
+   ],
+   "lufs": -46.8,
+   "digital_silence": false,
+   "label": "trap beat?, deep sub bass"
+  }
+ ],
+ "sync": {
+  "cues": {
+   "items": [
+    {
+     "t": 1.267,
+     "kind": "kesme",
+     "id": "sahne geçişi (yumuşak whoosh)",
+     "offset_ms": 9.3,
+     "status": "OK",
+     "event_t": 1.276,
+     "event_prominence_db": 10.8,
+     "accent_offset_ms": null,
+     "beat_offset_ms": -163.3
+    },
+    {
+     "t": 5.633,
+     "kind": "vurgu",
+     "id": "koli bandı çekme",
+     "offset_ms": 8.7,
+     "status": "OK",
+     "event_t": 5.642,
+     "event_prominence_db": 31.5,
+     "accent_offset_ms": -76.3,
+     "beat_offset_ms": -6.7
+    },
+    {
+     "t": 7.067,
+     "kind": "damla",
+     "id": "damla",
+     "offset_ms": -12.7,
+     "status": "OK",
+     "event_t": 7.054,
+     "event_prominence_db": 58.2,
+     "event": "chat message pop",
+     "accent_offset_ms": -12.7,
+     "beat_offset_ms": 16.7
+    },
+    {
+     "t": 9.2,
+     "kind": "vurgu",
+     "id": "koli bandı çekme",
+     "offset_ms": 8.0,
+     "status": "OK",
+     "event_t": 9.208,
+     "event_prominence_db": 31.5,
+     "accent_offset_ms": -77.0,
+     "beat_offset_ms": 0.0
+    },
+    {
+     "t": 10.567,
+     "kind": "yazi",
+     "id": "hafif pop",
+     "offset_ms": 0.3,
+     "status": "OK",
+     "event_t": 10.567,
+     "event_prominence_db": 48.2,
+     "event": "plucked string note",
+     "accent_offset_ms": 0.3,
+     "beat_offset_ms": 6.7
+    },
+    {
+     "t": 15.367,
+     "kind": "kesme",
+     "id": "kısa whoosh",
+     "offset_ms": -38.7,
+     "status": "near",
+     "event_t": 15.328,
+     "event_prominence_db": 47.0,
+     "event": "whip pan whoosh transition",
+     "accent_offset_ms": -38.7,
+     "beat_offset_ms": -153.3
+    },
+    {
+     "t": 19.267,
+     "kind": "vurgu",
+     "id": "sinyal tık-tık",
+     "offset_ms": 7.3,
+     "status": "OK",
+     "event_t": 19.274,
+     "event_prominence_db": 48.9,
+     "event": "wooden block hit",
+     "accent_offset_ms": 7.3,
+     "beat_offset_ms": 6.7
+    },
+    {
+     "t": 29.267,
+     "kind": "kesme",
+     "id": "kısa whoosh",
+     "offset_ms": -13.7,
+     "status": "OK",
+     "event_t": 29.253,
+     "event_prominence_db": 29.0,
+     "event": "hi-hat",
+     "accent_offset_ms": -73.7,
+     "beat_offset_ms": -143.3
+    }
+   ],
+   "stats": {
+    "n": 8,
+    "hit_within_1_frame": 0.875,
+    "hit_within_100ms": 1.0,
+    "median_abs_offset_ms": 9.0,
+    "answered_by_swell": 0,
+    "answered_by_level_peak": 0,
+    "no_sound": [],
+    "frame_ms": 33.3,
+    "chance_within_1_frame": 0.092,
+    "chance_within_100ms": 0.159,
+    "accent_min_db": 41.7,
+    "accent_within_1_frame": 0.375,
+    "accent_chance_within_1_frame": 0.019,
+    "accent_within_100ms": 0.875,
+    "accent_chance_within_100ms": 0.055,
+    "on_beat": 0.625,
+    "on_beat_chance": 0.286
+   }
+  }
+ },
+ "cuts": [],
+ "cut_method": null,
+ "fps": null,
+ "model_calls": {
+  "clap_event_windows": 12,
+  "ast_event_windows": 0,
+  "clap_section_windows": 8,
+  "ast_section_windows": 0
+ },
+ "timing_s": {
+  "decode_s": 0.21,
+  "loudness_s": 2.69,
+  "events_s": 2.22,
+  "beats_s": 0.2,
+  "cuts_s": 0.0,
+  "tag_events_s": 4.87,
+  "sections_s": 1.52,
+  "total_s": 11.73
+ },
+ "detail": "low",
+ "summary": "d280.wav: 0:00.00-0:30.00 (30.0 s). Loudness -40.2 LUFS integrated, true peak -19.0 dBTP, LRA 14.1 LU; loudest 0:04.50-0:07.50 (-39.8 LUFS short-term). 8 stop-down(s)/gap(s): 0:01.40 4.2 s near silence, 0:06.65 0.4 s near silence, 0:07.20 2.0 s drop, 0:10.20 0.3 s near silence, 0:10.65 4.7 s drop. Quiet lead-in 0.9 s (near silence) and tail 0.6 s (near silence). Beat grid: ~172 BPM (weak pulse, clarity 0.29, 83 beats). 4 section(s): 0:00.00-0:05.45 unclear (no confident music / ambience / voice tag); 0:05.45-0:09.05 funk music?; 0:09.05-0:15.20 tech house music?; 0:15.20-0:30.00 trap beat?, deep sub bass. 45 events (1.5/s); 12 tagged (6 whoosh, 2 step, 1 ui, 1 note, 1 foley, 1 drum; tags are hints). Strongest accents over a running bed: 0:06.23 +23 dB, 0:09.79 +23 dB, 0:01.18 +16 dB (fast air whoosh). Sync to 8 cues: 88% have an onset within 1 frame (chance 9%), 100% within 100 ms, median |offset| 9 ms; 38% land on a strong accent (>= 42 dB over the bed) within 1 frame (chance 2%); 62% on the beat grid (chance 29%).",
+ "text": "d280.wav: 0:00.00-0:30.00 (30.0 s). Loudness -40.2 LUFS integrated, true peak -19.0 dBTP, LRA 14.1 LU; loudest 0:04.50-0:07.50 (-39.8 LUFS short-term). 8 stop-down(s)/gap(s): 0:01.40 4.2 s near silence, 0:06.65 0.4 s near silence, 0:07.20 2.0 s drop, 0:10.20 0.3 s near silence, 0:10.65 4.7 s drop. Quiet lead-in 0.9 s (near silence) and tail 0.6 s (near silence). Beat grid: ~172 BPM (weak pulse, clarity 0.29, 83 beats). 4 section(s): 0:00.00-0:05.45 unclear (no confident music / ambience / voice tag); 0:05.45-0:09.05 funk music?; 0:09.05-0:15.20 tech house music?; 0:15.20-0:30.00 trap beat?, deep sub bass. 45 events (1.5/s); 12 tagged (6 whoosh, 2 step, 1 ui, 1 note, 1 foley, 1 drum; tags are hints). Strongest accents over a running bed: 0:06.23 +23 dB, 0:09.79 +23 dB, 0:01.18 +16 dB (fast air whoosh). Sync to 8 cues: 88% have an onset within 1 frame (chance 9%), 100% within 100 ms, median |offset| 9 ms; 38% land on a strong accent (>= 42 dB over the bed) within 1 frame (chance 2%); 62% on the beat grid (chance 29%).\n\nSECTIONS\n  0:00.00-0:05.45  unclear (no confident music / ambience / voice tag)  -46 LUFS\n  0:05.45-0:09.05  funk music?  -36 LUFS\n  0:09.05-0:15.20  tech house music?  -40 LUFS\n  0:15.20-0:30.00  trap beat?, deep sub bass  -47 LUFS\n\nTRANSCRIPT   time  kind   what (CLAP tag / runner-up)                     peak  over bed  length  centroid  | sync\n== 0:00.00-0:05.45  unclear (no confident music / ambience / voice tag)  (+2 untagged onsets, 0.4/s)\n 0:00.00  GAP    near silence 0.95 s (-70 LUFS) = lead-in\n 0:01.00  WHOOSH fast air whoosh                                 -29.0 dBFS   silent   504 ms    69 Hz\n 0:01.07  WHOOSH fast air whoosh / small soft footstep           -29.0 dBFS   silent   329 ms   146 Hz\n 0:01.18  WHOOSH fast air whoosh / small soft footstep           -29.0 dBFS +16.1 dB   156 ms   138 Hz  | strong accent (summary)\n 0:01.28  -      high onset                                      -29.0 dBFS +10.8 dB    32 ms   148 Hz  | kesme +9 ms OK\n 0:01.40  GAP    near silence 4.20 s (-70 LUFS)\n== 0:05.45-0:09.05  funk music?  (+11 untagged onsets, 3.1/s)\n 0:05.56  STEP   footsteps on grass / paper rustling             -26.4 dBFS   silent  1188 ms  9.9 kHz\n 0:05.64  -      high onset                                      -26.4 dBFS   silent    20 ms  4.1 kHz  | vurgu +9 ms OK\n 0:06.23  -      high onset                                      -19.0 dBFS +22.6 dB    99 ms  9.4 kHz  | strong accent (summary)\n 0:06.65  GAP    near silence 0.40 s (-70 LUFS)\n 0:07.05  UI     chat message pop / cork pop                     -21.0 dBFS   silent   113 ms   923 Hz  | damla -13 ms OK\n 0:07.20  GAP    drop 2.00 s (-69 LUFS)\n== 0:09.05-0:15.20  tech house music?  (+9 untagged onsets, 1.5/s)\n 0:09.12  STEP   footsteps on grass / paper rustling             -26.4 dBFS   silent  1188 ms  9.9 kHz\n 0:09.21  -      high onset                                      -26.4 dBFS   silent    20 ms  4.1 kHz  | vurgu +8 ms OK\n 0:09.79  -      high onset                                      -19.0 dBFS +22.6 dB    99 ms  9.4 kHz  | strong accent (summary)\n 0:10.20  GAP    near silence 0.35 s (-68 LUFS)\n 0:10.57  NOTE   plucked string note / short swish               -28.0 dBFS   silent    90 ms   551 Hz  | yazi +0 ms OK\n 0:10.65  GAP    drop 4.65 s (-70 LUFS)\n== 0:15.20-0:30.00  trap beat?, deep sub bass  (+6 untagged onsets, 0.4/s)\n 0:15.26  WHOOSH fast air whoosh                                 -30.0 dBFS   silent   223 ms   578 Hz\n 0:15.33  WHOOSH whip pan whoosh transition                      -30.0 dBFS   silent   113 ms   834 Hz  | kesme -39 ms near\n 0:15.45  GAP    near silence 3.80 s (-70 LUFS)\n 0:19.27  FOLEY  wooden block hit / drum hit                     -23.0 dBFS   silent    11 ms   350 Hz  | vurgu +7 ms OK\n 0:19.30  GAP    drop 0.30 s (-68 LUFS)\n 0:19.65  GAP    drop 9.45 s (-70 LUFS)\n 0:29.19  WHOOSH whip pan whoosh transition / hi-hat             -30.0 dBFS   silent   226 ms  2.3 kHz\n 0:29.25  DRUM   hi-hat / water drop                             -30.0 dBFS   silent    90 ms  2.0 kHz  | kesme -14 ms OK\n 0:29.40  GAP    near silence 0.60 s (-69 LUFS) = tail\n\nNOTES  times, levels, loudness and sync offsets are measurements. Event kinds / tags are CLAP guesses: '?' = the event is less than 12 dB over its bed, so its excerpt is mostly bed and the tag a weak hint (right kind about 1 in 4 on the tuning mixes, 1 in 2 for exposed events; often wrong on music and voice). Where AST ran, its speech overrides the kind with VOICE. Section genres marked ? are weak. 'over bed' = how far the event rises over the level just before it; 'silent' = that bed was below -60 (after a gap the rise means nothing). Full data: --json.",
+ "cached": false
+}

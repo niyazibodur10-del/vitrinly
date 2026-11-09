@@ -1,0 +1,1521 @@
+{
+ "file": "/tmp/claude-0/-home-user/98cc376a-1af5-5176-856d-bb81c65c71b0/scratchpad/tl/d640.wav",
+ "video": null,
+ "start": 0.0,
+ "end": 30.0,
+ "duration": 30.0,
+ "file_duration": 30.0,
+ "context": [
+  0.0,
+  30.0
+ ],
+ "has_audio": true,
+ "lossy": false,
+ "loudness": {
+  "integrated_lufs": -34.7,
+  "true_peak_dbtp": -21.0,
+  "digital_silence": false,
+  "max_momentary": {
+   "t": 16.5,
+   "lufs": -30.5
+  },
+  "momentary": {
+   "t0": 0.2,
+   "dt": 0.1,
+   "lufs": [
+    -41.2,
+    -42.3,
+    -43.9,
+    -45.4,
+    -47.2,
+    -49.3,
+    -51.5,
+    -54.6,
+    -58.8,
+    -65.2,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -63.2,
+    -52.5,
+    -47.7,
+    -43.7,
+    -43.7,
+    -43.4,
+    -36.9,
+    -37.2,
+    -37.3,
+    -37.4,
+    -49.1,
+    -60.2,
+    -64.9,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -41.9,
+    -40.1,
+    -40.1,
+    -40.1,
+    -44.8,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -32.1,
+    -30.5,
+    -30.5,
+    -30.5,
+    -35.8,
+    -65.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -46.9,
+    -31.6,
+    -30.5,
+    -30.5,
+    -30.6,
+    -37.2,
+    -69.4,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -44.9,
+    -44.8,
+    -44.8,
+    -44.8,
+    -61.8,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -31.8,
+    -30.5,
+    -30.5,
+    -30.5,
+    -36.6,
+    -67.1,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -32.5,
+    -30.5,
+    -30.5,
+    -30.5,
+    -34.8,
+    -57.4,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -44.9,
+    -44.8,
+    -44.8,
+    -44.8,
+    -61.5,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -48.1,
+    -47.8,
+    -47.8,
+    -47.8,
+    -60.1,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -39.1,
+    -34.9,
+    -33.8,
+    -33.4,
+    -34.5,
+    -37.6,
+    -40.8,
+    -43.6,
+    -46.1,
+    -47.9,
+    -49.6,
+    -52.3,
+    -54.7,
+    -59.0,
+    -65.1,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0,
+    -70.0
+   ]
+  },
+  "max_short_term": {
+   "start": 8.5,
+   "end": 11.5,
+   "lufs": -36.3
+  },
+  "short_term": {
+   "t0": 1.5,
+   "dt": 0.5,
+   "lufs": [
+    -47.1,
+    -44.9,
+    -45.1,
+    -45.1,
+    -45.1,
+    -45.1,
+    -46.2,
+    -70.0,
+    -70.0,
+    -48.9,
+    -48.9,
+    -48.9,
+    -40.2,
+    -38.8,
+    -38.8,
+    -39.3,
+    -36.8,
+    -36.3,
+    -38.1,
+    -39.3,
+    -39.1,
+    -39.1,
+    -45.2,
+    -53.6,
+    -53.6,
+    -53.6,
+    -70.0,
+    -39.3,
+    -39.3,
+    -39.3,
+    -39.3,
+    -36.3,
+    -36.3,
+    -39.3,
+    -39.3,
+    -39.3,
+    -39.1,
+    -53.6,
+    -53.6,
+    -53.6,
+    -53.6,
+    -53.6,
+    -70.0,
+    -56.6,
+    -56.6,
+    -56.6,
+    -56.6,
+    -56.6,
+    -56.6,
+    -70.0,
+    -42.1,
+    -41.7,
+    -41.7,
+    -41.7,
+    -41.7
+   ]
+  },
+  "lra_lu": 20.3,
+  "silences": [
+   {
+    "start": 0.85,
+    "end": 2.5,
+    "dur": 1.65,
+    "kind": "drop",
+    "level_lufs": -68.4
+   },
+   {
+    "start": 3.15,
+    "end": 7.25,
+    "dur": 4.1,
+    "kind": "drop",
+    "level_lufs": -69.2
+   },
+   {
+    "start": 7.35,
+    "end": 8.9,
+    "dur": 1.55,
+    "kind": "drop",
+    "level_lufs": -69.6
+   },
+   {
+    "start": 9.1,
+    "end": 10.85,
+    "dur": 1.75,
+    "kind": "drop",
+    "level_lufs": -69.7
+   },
+   {
+    "start": 11.1,
+    "end": 12.75,
+    "dur": 1.65,
+    "kind": "near silence",
+    "level_lufs": -69.8
+   },
+   {
+    "start": 12.8,
+    "end": 16.3,
+    "dur": 3.5,
+    "kind": "drop",
+    "level_lufs": -69.8
+   },
+   {
+    "start": 16.5,
+    "end": 18.2,
+    "dur": 1.7,
+    "kind": "near silence",
+    "level_lufs": -69.7
+   },
+   {
+    "start": 18.4,
+    "end": 20.55,
+    "dur": 2.15,
+    "kind": "drop",
+    "level_lufs": -69.5
+   },
+   {
+    "start": 20.6,
+    "end": 24.35,
+    "dur": 3.75,
+    "kind": "drop",
+    "level_lufs": -69.8
+   },
+   {
+    "start": 24.4,
+    "end": 27.65,
+    "dur": 3.25,
+    "kind": "drop",
+    "level_lufs": -69.8
+   },
+   {
+    "start": 28.65,
+    "end": 30.0,
+    "dur": 1.35,
+    "kind": "drop",
+    "level_lufs": -68.8,
+    "where": "tail"
+   }
+  ],
+  "clipping": {
+   "samples": 0,
+   "runs": 0,
+   "times": []
+  }
+ },
+ "music": {
+  "tempo": 73.1,
+  "tempo_alt": null,
+  "beats": [
+   0.45,
+   1.28,
+   2.11,
+   2.93,
+   3.8,
+   4.67,
+   5.54,
+   6.4,
+   7.26,
+   8.08,
+   8.9,
+   9.9,
+   10.89,
+   11.82,
+   12.76,
+   13.64,
+   14.52,
+   15.4,
+   16.29,
+   17.26,
+   18.22,
+   19.0,
+   19.78,
+   20.56,
+   21.33,
+   22.09,
+   22.85,
+   23.61,
+   24.37,
+   25.19,
+   26.01,
+   26.83,
+   27.65,
+   28.49,
+   29.31
+  ],
+  "downbeats": [
+   2.11,
+   5.54,
+   8.9,
+   12.76,
+   16.29,
+   19.78,
+   22.85,
+   26.01,
+   29.31
+  ],
+  "pulse_clarity": -0.012,
+  "beat_regularity": 0.078,
+  "confidence": "none",
+  "note": "beats at 10 ms resolution; downbeats are a guess (4/4 assumed); tempo may be half/double the felt tempo"
+ },
+ "events": [
+  {
+   "t": 0.0,
+   "shape": "hit",
+   "band": "full",
+   "contrast_db": 60.0,
+   "z": 0.0,
+   "length_ms": 979,
+   "starts_file": true,
+   "prominence_db": 42.5,
+   "bed_db": -80.0,
+   "peak_dbfs": -32.4,
+   "local_lufs": -41.2,
+   "centroid_hz": 1076,
+   "tags": [
+    {
+     "tag": "a deep cinematic boom",
+     "kind": "HIT",
+     "z": 2.58
+    },
+    {
+     "tag": "a water drop",
+     "kind": "FOLEY",
+     "z": 1.93
+    },
+    {
+     "tag": "a sub bass drop",
+     "kind": "HIT",
+     "z": 1.46
+    }
+   ],
+   "kind": "HIT",
+   "label": "deep cinematic boom",
+   "exposed": true
+  },
+  {
+   "t": 2.4,
+   "shape": "hit",
+   "band": "full",
+   "contrast_db": 28.4,
+   "z": 7.2,
+   "length_ms": 972,
+   "prominence_db": 27.1,
+   "bed_db": -80.0,
+   "peak_dbfs": -34.1,
+   "local_lufs": -52.5,
+   "centroid_hz": 137
+  },
+  {
+   "t": 2.479,
+   "shape": "hit",
+   "band": "full",
+   "contrast_db": 32.7,
+   "z": 5.7,
+   "length_ms": 893,
+   "prominence_db": 38.0,
+   "bed_db": -80.0,
+   "peak_dbfs": -29.0,
+   "local_lufs": -48.5,
+   "centroid_hz": 69
+  },
+  {
+   "t": 2.55,
+   "shape": "hit",
+   "band": "low",
+   "contrast_db": 24.1,
+   "z": 3.3,
+   "length_ms": 822,
+   "prominence_db": 25.9,
+   "bed_db": -65.6,
+   "peak_dbfs": -29.0,
+   "local_lufs": -45.5,
+   "centroid_hz": 146
+  },
+  {
+   "t": 2.587,
+   "shape": "hit",
+   "band": "full",
+   "contrast_db": 23.6,
+   "z": 9.0,
+   "length_ms": 292,
+   "prominence_db": 22.3,
+   "bed_db": -61.4,
+   "peak_dbfs": -29.0,
+   "local_lufs": -44.2,
+   "centroid_hz": 222
+  },
+  {
+   "t": 2.618,
+   "shape": "hit",
+   "band": "full",
+   "contrast_db": 17.4,
+   "z": 8.5,
+   "length_ms": 245,
+   "prominence_db": 16.9,
+   "bed_db": -56.0,
+   "peak_dbfs": -29.0,
+   "local_lufs": -43.7,
+   "centroid_hz": 164
+  },
+  {
+   "t": 2.655,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 24.3,
+   "z": 8.7,
+   "length_ms": 156,
+   "prominence_db": 16.1,
+   "bed_db": -53.5,
+   "peak_dbfs": -29.0,
+   "local_lufs": -43.6,
+   "centroid_hz": 138
+  },
+  {
+   "t": 2.753,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 17.9,
+   "z": 5.9,
+   "length_ms": 32,
+   "prominence_db": 10.8,
+   "bed_db": -44.8,
+   "peak_dbfs": -29.0,
+   "local_lufs": -43.7,
+   "centroid_hz": 148
+  },
+  {
+   "t": 2.963,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 45.1,
+   "z": 14.4,
+   "length_ms": 266,
+   "prominence_db": 20.9,
+   "bed_db": -48.2,
+   "peak_dbfs": -21.0,
+   "local_lufs": -37.0,
+   "centroid_hz": 817,
+   "tags": [
+    {
+     "tag": "a mechanical keyboard key press",
+     "kind": "KEY",
+     "z": 2.51
+    },
+    {
+     "tag": "a spacebar press",
+     "kind": "KEY",
+     "z": 1.96
+    },
+    {
+     "tag": "a small object dropping on a table",
+     "kind": "FOLEY",
+     "z": 1.91
+    }
+   ],
+   "kind": "KEY",
+   "label": "mechanical keyboard key press",
+   "exposed": true
+  },
+  {
+   "t": 3.037,
+   "shape": "hit",
+   "band": "low",
+   "contrast_db": 34.3,
+   "z": 17.7,
+   "length_ms": 102,
+   "prominence_db": 23.2,
+   "bed_db": -47.7,
+   "peak_dbfs": -21.0,
+   "local_lufs": -37.3,
+   "centroid_hz": 236,
+   "tags": [
+    {
+     "tag": "a small object dropping on a table",
+     "kind": "FOLEY",
+     "z": 2.54
+    },
+    {
+     "tag": "a drum hit",
+     "kind": "DRUM",
+     "z": 1.68
+    },
+    {
+     "tag": "a mechanical keyboard key press",
+     "kind": "KEY",
+     "z": 1.66
+    }
+   ],
+   "kind": "FOLEY",
+   "label": "small object dropping on a table",
+   "exposed": true
+  },
+  {
+   "t": 3.371,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 10.6,
+   "z": 5.9,
+   "length_ms": 1,
+   "prominence_db": 0.0,
+   "bed_db": -53.4,
+   "peak_dbfs": -58.7,
+   "local_lufs": -57.7,
+   "centroid_hz": 4452
+  },
+  {
+   "t": 7.279,
+   "shape": "hit",
+   "band": "full",
+   "contrast_db": 58.0,
+   "z": 41.9,
+   "length_ms": 68,
+   "prominence_db": 52.1,
+   "bed_db": -80.0,
+   "peak_dbfs": -22.0,
+   "local_lufs": -40.1,
+   "centroid_hz": 310,
+   "tags": [
+    {
+     "tag": "a whip pan whoosh transition",
+     "kind": "WHOOSH",
+     "z": 1.9
+    },
+    {
+     "tag": "a short swish",
+     "kind": "WHOOSH",
+     "z": 1.79
+    },
+    {
+     "tag": "a cork pop",
+     "kind": "FOLEY",
+     "z": 1.67
+    }
+   ],
+   "kind": "WHOOSH",
+   "label": "whip pan whoosh transition",
+   "exposed": true
+  },
+  {
+   "t": 8.912,
+   "shape": "hit",
+   "band": "full",
+   "contrast_db": 55.0,
+   "z": 51.4,
+   "length_ms": 184,
+   "prominence_db": 57.1,
+   "bed_db": -80.0,
+   "peak_dbfs": -25.0,
+   "local_lufs": -30.5,
+   "centroid_hz": 968,
+   "tags": [
+    {
+     "tag": "a whip pan whoosh transition",
+     "kind": "WHOOSH",
+     "z": 2.16
+    },
+    {
+     "tag": "a bubble pop",
+     "kind": "FOLEY",
+     "z": 2.13
+    },
+    {
+     "tag": "a cork pop",
+     "kind": "FOLEY",
+     "z": 1.92
+    }
+   ],
+   "kind": "WHOOSH",
+   "label": "whip pan whoosh transition",
+   "exposed": true
+  },
+  {
+   "t": 10.894,
+   "shape": "hit",
+   "band": "full",
+   "contrast_db": 55.0,
+   "z": 57.3,
+   "length_ms": 184,
+   "prominence_db": 57.1,
+   "bed_db": -80.0,
+   "peak_dbfs": -25.0,
+   "local_lufs": -30.5,
+   "centroid_hz": 968,
+   "tags": [
+    {
+     "tag": "a whip pan whoosh transition",
+     "kind": "WHOOSH",
+     "z": 2.16
+    },
+    {
+     "tag": "a bubble pop",
+     "kind": "FOLEY",
+     "z": 2.13
+    },
+    {
+     "tag": "a cork pop",
+     "kind": "FOLEY",
+     "z": 1.92
+    }
+   ],
+   "kind": "WHOOSH",
+   "label": "whip pan whoosh transition",
+   "exposed": true
+  },
+  {
+   "t": 12.768,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 57.4,
+   "z": 83.9,
+   "length_ms": 36,
+   "prominence_db": 51.7,
+   "bed_db": -80.0,
+   "peak_dbfs": -24.0,
+   "local_lufs": -44.8,
+   "centroid_hz": 3447,
+   "tags": [
+    {
+     "tag": "a wooden block hit",
+     "kind": "FOLEY",
+     "z": 2.97
+    },
+    {
+     "tag": "a cork pop",
+     "kind": "FOLEY",
+     "z": 1.57
+    },
+    {
+     "tag": "a drum hit",
+     "kind": "DRUM",
+     "z": 1.53
+    }
+   ],
+   "kind": "FOLEY",
+   "label": "wooden block hit",
+   "exposed": true
+  },
+  {
+   "t": 16.302,
+   "shape": "hit",
+   "band": "full",
+   "contrast_db": 55.0,
+   "z": 51.4,
+   "length_ms": 184,
+   "prominence_db": 57.1,
+   "bed_db": -80.0,
+   "peak_dbfs": -25.0,
+   "local_lufs": -30.5,
+   "centroid_hz": 968,
+   "tags": [
+    {
+     "tag": "a whip pan whoosh transition",
+     "kind": "WHOOSH",
+     "z": 2.16
+    },
+    {
+     "tag": "a bubble pop",
+     "kind": "FOLEY",
+     "z": 2.13
+    },
+    {
+     "tag": "a cork pop",
+     "kind": "FOLEY",
+     "z": 1.92
+    }
+   ],
+   "kind": "WHOOSH",
+   "label": "whip pan whoosh transition",
+   "exposed": true
+  },
+  {
+   "t": 18.225,
+   "shape": "hit",
+   "band": "full",
+   "contrast_db": 55.0,
+   "z": 59.3,
+   "length_ms": 184,
+   "prominence_db": 57.1,
+   "bed_db": -80.0,
+   "peak_dbfs": -25.0,
+   "local_lufs": -30.5,
+   "centroid_hz": 968,
+   "tags": [
+    {
+     "tag": "a whip pan whoosh transition",
+     "kind": "WHOOSH",
+     "z": 2.16
+    },
+    {
+     "tag": "a bubble pop",
+     "kind": "FOLEY",
+     "z": 2.12
+    },
+    {
+     "tag": "a cork pop",
+     "kind": "FOLEY",
+     "z": 1.91
+    }
+   ],
+   "kind": "WHOOSH",
+   "label": "whip pan whoosh transition",
+   "exposed": true
+  },
+  {
+   "t": 20.571,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 57.4,
+   "z": 88.0,
+   "length_ms": 36,
+   "prominence_db": 51.7,
+   "bed_db": -80.0,
+   "peak_dbfs": -24.0,
+   "local_lufs": -44.8,
+   "centroid_hz": 3447,
+   "tags": [
+    {
+     "tag": "a wooden block hit",
+     "kind": "FOLEY",
+     "z": 2.98
+    },
+    {
+     "tag": "a cork pop",
+     "kind": "FOLEY",
+     "z": 1.56
+    },
+    {
+     "tag": "a drum hit",
+     "kind": "DRUM",
+     "z": 1.53
+    }
+   ],
+   "kind": "FOLEY",
+   "label": "wooden block hit",
+   "exposed": true
+  },
+  {
+   "t": 24.385,
+   "shape": "hit",
+   "band": "high",
+   "contrast_db": 55.7,
+   "z": 73.1,
+   "length_ms": 27,
+   "prominence_db": 48.5,
+   "bed_db": -80.0,
+   "peak_dbfs": -25.0,
+   "local_lufs": -47.8,
+   "centroid_hz": 4130,
+   "tags": [
+    {
+     "tag": "a wooden block hit",
+     "kind": "FOLEY",
+     "z": 2.9
+    },
+    {
+     "tag": "a drum hit",
+     "kind": "DRUM",
+     "z": 1.82
+    },
+    {
+     "tag": "a toggle switch click",
+     "kind": "UI",
+     "z": 1.62
+    }
+   ],
+   "kind": "FOLEY",
+   "label": "wooden block hit",
+   "exposed": true
+  },
+  {
+   "t": 27.663,
+   "shape": "hit",
+   "band": "full",
+   "contrast_db": 58.0,
+   "z": 81.2,
+   "length_ms": 708,
+   "prominence_db": 53.2,
+   "bed_db": -80.0,
+   "peak_dbfs": -22.0,
+   "local_lufs": -34.2,
+   "centroid_hz": 224,
+   "tags": [
+    {
+     "tag": "a drum hit",
+     "kind": "DRUM",
+     "z": 2.58
+    },
+    {
+     "tag": "a kick drum",
+     "kind": "DRUM",
+     "z": 1.96
+    },
+    {
+     "tag": "a snare drum hit",
+     "kind": "DRUM",
+     "z": 1.65
+    }
+   ],
+   "kind": "DRUM",
+   "label": "drum hit",
+   "exposed": true
+  }
+ ],
+ "sections": [
+  {
+   "start": 0.0,
+   "end": 3.4,
+   "windows": 1,
+   "coherence": 1.0,
+   "music_genre": [
+    {
+     "tag": "glitch hop music",
+     "cat": "music_genre",
+     "z": 1.57,
+     "cos": 0.153
+    },
+    {
+     "tag": "minimal electronic music",
+     "cat": "music_genre",
+     "z": 1.46,
+     "cos": 0.143
+    }
+   ],
+   "music_mood": [
+    {
+     "tag": "warm and cozy music",
+     "cat": "music_mood",
+     "z": 0.63,
+     "cos": 0.071
+    },
+    {
+     "tag": "playful and quirky music",
+     "cat": "music_mood",
+     "z": 0.58,
+     "cos": 0.067
+    }
+   ],
+   "instruments": [
+    {
+     "tag": "a snare roll",
+     "cat": "instruments",
+     "z": 1.35,
+     "cos": 0.133
+    },
+    {
+     "tag": "a celesta",
+     "cat": "instruments",
+     "z": 1.05,
+     "cos": 0.107
+    }
+   ],
+   "ambience": [
+    {
+     "tag": "rain on a window",
+     "cat": "ambience",
+     "z": 1.56,
+     "cos": 0.153
+    },
+    {
+     "tag": "a crackling fire",
+     "cat": "ambience",
+     "z": 0.91,
+     "cos": 0.095
+    }
+   ],
+   "voice": [
+    {
+     "tag": "a person coughing",
+     "cat": "voice",
+     "z": -0.36,
+     "cos": -0.016
+    },
+    {
+     "tag": "a person breathing",
+     "cat": "voice",
+     "z": -0.7,
+     "cos": -0.046
+    }
+   ],
+   "lufs": -41.2,
+   "digital_silence": false,
+   "label": "glitch hop music?"
+  },
+  {
+   "start": 3.4,
+   "end": 10.8,
+   "windows": 2,
+   "coherence": 0.934,
+   "music_genre": [
+    {
+     "tag": "minimal electronic music",
+     "cat": "music_genre",
+     "z": 1.62,
+     "cos": 0.184
+    },
+    {
+     "tag": "trap beat",
+     "cat": "music_genre",
+     "z": 1.56,
+     "cos": 0.178
+    }
+   ],
+   "music_mood": [
+    {
+     "tag": "futuristic music",
+     "cat": "music_mood",
+     "z": 1.12,
+     "cos": 0.136
+    },
+    {
+     "tag": "playful and quirky music",
+     "cat": "music_mood",
+     "z": 0.31,
+     "cos": 0.061
+    }
+   ],
+   "instruments": [
+    {
+     "tag": "crisp hi-hats",
+     "cat": "instruments",
+     "z": 1.59,
+     "cos": 0.181
+    },
+    {
+     "tag": "a plucked synth arpeggio",
+     "cat": "instruments",
+     "z": 1.56,
+     "cos": 0.178
+    }
+   ],
+   "ambience": [
+    {
+     "tag": "skylarks over a meadow",
+     "cat": "ambience",
+     "z": 0.65,
+     "cos": 0.093
+    },
+    {
+     "tag": "birds singing in the morning",
+     "cat": "ambience",
+     "z": 0.34,
+     "cos": 0.064
+    }
+   ],
+   "voice": [
+    {
+     "tag": "singing vocals",
+     "cat": "voice",
+     "z": -0.38,
+     "cos": -0.003
+    },
+    {
+     "tag": "a voice-over narration",
+     "cat": "voice",
+     "z": -0.52,
+     "cos": -0.017
+    }
+   ],
+   "lufs": -33.6,
+   "digital_silence": false,
+   "label": "minimal electronic music?, crisp hi-hats"
+  },
+  {
+   "start": 10.8,
+   "end": 16.3,
+   "windows": 1,
+   "coherence": 1.0,
+   "music_genre": [
+    {
+     "tag": "lo-fi hip hop beat",
+     "cat": "music_genre",
+     "z": 2.07,
+     "cos": 0.28
+    },
+    {
+     "tag": "trap beat",
+     "cat": "music_genre",
+     "z": 1.93,
+     "cos": 0.266
+    }
+   ],
+   "music_mood": [
+    {
+     "tag": "warm and cozy music",
+     "cat": "music_mood",
+     "z": 0.9,
+     "cos": 0.164
+    },
+    {
+     "tag": "calm and relaxing music",
+     "cat": "music_mood",
+     "z": 0.56,
+     "cos": 0.131
+    }
+   ],
+   "instruments": [
+    {
+     "tag": "crisp hi-hats",
+     "cat": "instruments",
+     "z": 1.89,
+     "cos": 0.262
+    },
+    {
+     "tag": "a vocal chop",
+     "cat": "instruments",
+     "z": 1.61,
+     "cos": 0.235
+    }
+   ],
+   "ambience": [
+    {
+     "tag": "a crackling fire",
+     "cat": "ambience",
+     "z": 0.47,
+     "cos": 0.122
+    },
+    {
+     "tag": "ocean waves",
+     "cat": "ambience",
+     "z": 0.45,
+     "cos": 0.12
+    }
+   ],
+   "voice": [
+    {
+     "tag": "singing vocals",
+     "cat": "voice",
+     "z": 0.06,
+     "cos": 0.082
+    },
+    {
+     "tag": "someone whispering",
+     "cat": "voice",
+     "z": -0.08,
+     "cos": 0.068
+    }
+   ],
+   "lufs": -35.3,
+   "digital_silence": false,
+   "label": "lo-fi hip hop beat?, crisp hi-hats"
+  },
+  {
+   "start": 16.3,
+   "end": 30.0,
+   "windows": 4,
+   "coherence": 0.827,
+   "music_genre": [
+    {
+     "tag": "trap beat",
+     "cat": "music_genre",
+     "z": 2.04,
+     "cos": 0.248
+    },
+    {
+     "tag": "minimal electronic music",
+     "cat": "music_genre",
+     "z": 1.43,
+     "cos": 0.189
+    }
+   ],
+   "music_mood": [
+    {
+     "tag": "futuristic music",
+     "cat": "music_mood",
+     "z": 0.67,
+     "cos": 0.116
+    },
+    {
+     "tag": "confident and cool music",
+     "cat": "music_mood",
+     "z": 0.4,
+     "cos": 0.09
+    }
+   ],
+   "instruments": [
+    {
+     "tag": "a punchy kick drum pattern",
+     "cat": "instruments",
+     "z": 1.81,
+     "cos": 0.226
+    },
+    {
+     "tag": "a vocal chop",
+     "cat": "instruments",
+     "z": 1.78,
+     "cos": 0.222
+    }
+   ],
+   "ambience": [
+    {
+     "tag": "birds singing in the morning",
+     "cat": "ambience",
+     "z": 0.3,
+     "cos": 0.08
+    },
+    {
+     "tag": "a quiet countryside morning",
+     "cat": "ambience",
+     "z": -0.15,
+     "cos": 0.037
+    }
+   ],
+   "voice": [
+    {
+     "tag": "singing vocals",
+     "cat": "voice",
+     "z": 0.26,
+     "cos": 0.076
+    },
+    {
+     "tag": "a person coughing",
+     "cat": "voice",
+     "z": -0.16,
+     "cos": 0.036
+    }
+   ],
+   "lufs": -34.7,
+   "digital_silence": false,
+   "label": "trap beat?, punchy kick drum pattern"
+  }
+ ],
+ "sync": {
+  "cues": {
+   "items": [
+    {
+     "t": 2.767,
+     "kind": "kesme",
+     "id": "sahne geçişi (yumuşak whoosh)",
+     "offset_ms": -13.7,
+     "status": "OK",
+     "event_t": 2.753,
+     "event_prominence_db": 10.8,
+     "accent_offset_ms": null
+    },
+    {
+     "t": 2.967,
+     "kind": "vurgu",
+     "id": "metal kapı",
+     "offset_ms": -3.7,
+     "status": "OK",
+     "event_t": 2.963,
+     "event_prominence_db": 20.9,
+     "event": "mechanical keyboard key press",
+     "accent_offset_ms": null
+    },
+    {
+     "t": 7.267,
+     "kind": "pop",
+     "id": "tok",
+     "offset_ms": 12.3,
+     "status": "OK",
+     "event_t": 7.279,
+     "event_prominence_db": 52.1,
+     "event": "whip pan whoosh transition",
+     "accent_offset_ms": null
+    },
+    {
+     "t": 8.9,
+     "kind": "sayac",
+     "id": "inen tık",
+     "offset_ms": 12.0,
+     "status": "OK",
+     "event_t": 8.912,
+     "event_prominence_db": 57.1,
+     "event": "whip pan whoosh transition",
+     "accent_offset_ms": 12.0
+    },
+    {
+     "t": 10.9,
+     "kind": "sayac",
+     "id": "inen tık",
+     "offset_ms": -6.0,
+     "status": "OK",
+     "event_t": 10.894,
+     "event_prominence_db": 57.1,
+     "event": "whip pan whoosh transition",
+     "accent_offset_ms": -6.0
+    },
+    {
+     "t": 12.767,
+     "kind": "sayac",
+     "id": "tık (kayıp yok)",
+     "offset_ms": 1.3,
+     "status": "OK",
+     "event_t": 12.768,
+     "event_prominence_db": 51.7,
+     "event": "wooden block hit",
+     "accent_offset_ms": null
+    },
+    {
+     "t": 16.3,
+     "kind": "sayac",
+     "id": "inen tık",
+     "offset_ms": 2.0,
+     "status": "OK",
+     "event_t": 16.302,
+     "event_prominence_db": 57.1,
+     "event": "whip pan whoosh transition",
+     "accent_offset_ms": 2.0
+    },
+    {
+     "t": 18.233,
+     "kind": "sayac",
+     "id": "inen tık",
+     "offset_ms": -8.3,
+     "status": "OK",
+     "event_t": 18.225,
+     "event_prominence_db": 57.1,
+     "event": "whip pan whoosh transition",
+     "accent_offset_ms": -8.3
+    },
+    {
+     "t": 20.567,
+     "kind": "sayac",
+     "id": "tık (kayıp yok)",
+     "offset_ms": 4.3,
+     "status": "OK",
+     "event_t": 20.571,
+     "event_prominence_db": 51.7,
+     "event": "wooden block hit",
+     "accent_offset_ms": null
+    },
+    {
+     "t": 24.4,
+     "kind": "sayac",
+     "id": "ince tık",
+     "offset_ms": -15.0,
+     "status": "OK",
+     "event_t": 24.385,
+     "event_prominence_db": 48.5,
+     "event": "wooden block hit",
+     "accent_offset_ms": null
+    },
+    {
+     "t": 27.667,
+     "kind": "vurgu",
+     "id": "vuruş",
+     "offset_ms": -3.7,
+     "status": "OK",
+     "event_t": 27.663,
+     "event_prominence_db": 53.2,
+     "event": "drum hit",
+     "accent_offset_ms": null
+    }
+   ],
+   "stats": {
+    "n": 11,
+    "hit_within_1_frame": 1.0,
+    "hit_within_100ms": 1.0,
+    "median_abs_offset_ms": 6.0,
+    "answered_by_swell": 0,
+    "answered_by_level_peak": 0,
+    "no_sound": [],
+    "frame_ms": 33.3,
+    "chance_within_1_frame": 0.044,
+    "chance_within_100ms": 0.105,
+    "accent_min_db": 54.0,
+    "accent_within_1_frame": 0.364,
+    "accent_chance_within_1_frame": 0.01,
+    "accent_within_100ms": 0.364,
+    "accent_chance_within_100ms": 0.03
+   }
+  }
+ },
+ "cuts": [],
+ "cut_method": null,
+ "fps": null,
+ "model_calls": {
+  "clap_event_windows": 12,
+  "ast_event_windows": 0,
+  "clap_section_windows": 8,
+  "ast_section_windows": 0
+ },
+ "timing_s": {
+  "decode_s": 0.17,
+  "loudness_s": 2.51,
+  "events_s": 2.25,
+  "beats_s": 0.26,
+  "cuts_s": 0.0,
+  "tag_events_s": 4.85,
+  "sections_s": 1.3,
+  "total_s": 11.35
+ },
+ "detail": "low",
+ "summary": "d640.wav: 0:00.00-0:30.00 (30.0 s). Loudness -34.7 LUFS integrated, true peak -21.0 dBTP, LRA 20.3 LU; loudest 0:08.50-0:11.50 (-36.3 LUFS short-term). 10 stop-down(s)/gap(s): 0:00.85 1.6 s drop, 0:03.15 4.1 s drop, 0:07.35 1.6 s drop, 0:09.10 1.8 s drop, 0:11.10 1.6 s near silence. Quiet tail 1.4 s (drop). No steady beat grid (pulse clarity 0.00 < 0.15). 4 section(s): 0:00.00-0:03.40 glitch hop music?; 0:03.40-0:10.80 minimal electronic music?, crisp hi-hats; 0:10.80-0:16.30 lo-fi hip hop beat?, crisp hi-hats; 0:16.30-0:30.00 trap beat?, punchy kick drum pattern. 20 events (0.7/s); 12 tagged (5 whoosh, 4 foley, 1 hit, 1 key, 1 drum; tags are hints). Strongest accents over a running bed: 0:03.04 +23 dB (small object dropping on a table). Sync to 11 cues: 100% have an onset within 1 frame (chance 4%), 100% within 100 ms, median |offset| 6 ms; 36% land on a strong accent (>= 54 dB over the bed) within 1 frame (chance 1%).",
+ "text": "d640.wav: 0:00.00-0:30.00 (30.0 s). Loudness -34.7 LUFS integrated, true peak -21.0 dBTP, LRA 20.3 LU; loudest 0:08.50-0:11.50 (-36.3 LUFS short-term). 10 stop-down(s)/gap(s): 0:00.85 1.6 s drop, 0:03.15 4.1 s drop, 0:07.35 1.6 s drop, 0:09.10 1.8 s drop, 0:11.10 1.6 s near silence. Quiet tail 1.4 s (drop). No steady beat grid (pulse clarity 0.00 < 0.15). 4 section(s): 0:00.00-0:03.40 glitch hop music?; 0:03.40-0:10.80 minimal electronic music?, crisp hi-hats; 0:10.80-0:16.30 lo-fi hip hop beat?, crisp hi-hats; 0:16.30-0:30.00 trap beat?, punchy kick drum pattern. 20 events (0.7/s); 12 tagged (5 whoosh, 4 foley, 1 hit, 1 key, 1 drum; tags are hints). Strongest accents over a running bed: 0:03.04 +23 dB (small object dropping on a table). Sync to 11 cues: 100% have an onset within 1 frame (chance 4%), 100% within 100 ms, median |offset| 6 ms; 36% land on a strong accent (>= 54 dB over the bed) within 1 frame (chance 1%).\n\nSECTIONS\n  0:00.00-0:03.40  glitch hop music?  -41 LUFS\n  0:03.40-0:10.80  minimal electronic music?, crisp hi-hats  -34 LUFS\n  0:10.80-0:16.30  lo-fi hip hop beat?, crisp hi-hats  -35 LUFS\n  0:16.30-0:30.00  trap beat?, punchy kick drum pattern  -35 LUFS\n\nTRANSCRIPT   time  kind   what (CLAP tag / runner-up)                     peak  over bed  length  centroid  | sync\n== 0:00.00-0:03.40  glitch hop music?  (+7 untagged onsets, 2.1/s)\n 0:00.00  HIT    deep cinematic boom / water drop                -32.4 dBFS   silent   979 ms  1.1 kHz\n 0:00.85  GAP    drop 1.65 s (-68 LUFS)\n 0:02.75  -      high onset                                      -29.0 dBFS +10.8 dB    32 ms   148 Hz  | kesme -14 ms OK\n 0:02.96  KEY    mechanical keyboard key press / small object d  -21.0 dBFS +20.9 dB   266 ms   817 Hz  | vurgu -4 ms OK\n 0:03.04  FOLEY  small object dropping on a table / drum hit     -21.0 dBFS +23.2 dB   102 ms   236 Hz  | strong accent (summary)\n 0:03.15  GAP    drop 4.10 s (-69 LUFS)\n== 0:03.40-0:10.80  minimal electronic music?, crisp hi-hats\n 0:07.28  WHOOSH whip pan whoosh transition / cork pop           -22.0 dBFS   silent    68 ms   310 Hz  | pop +12 ms OK\n 0:07.35  GAP    drop 1.55 s (-70 LUFS)\n 0:08.91  WHOOSH whip pan whoosh transition / bubble pop         -25.0 dBFS   silent   184 ms   968 Hz  | sayac +12 ms OK\n 0:09.10  GAP    drop 1.75 s (-70 LUFS)\n== 0:10.80-0:16.30  lo-fi hip hop beat?, crisp hi-hats\n 0:10.89  WHOOSH whip pan whoosh transition / bubble pop         -25.0 dBFS   silent   184 ms   968 Hz  | sayac -6 ms OK\n 0:11.10  GAP    near silence 1.65 s (-70 LUFS)\n 0:12.77  FOLEY  wooden block hit / drum hit                     -24.0 dBFS   silent    36 ms  3.4 kHz  | sayac +1 ms OK\n 0:12.80  GAP    drop 3.50 s (-70 LUFS)\n== 0:16.30-0:30.00  trap beat?, punchy kick drum pattern\n 0:16.30  WHOOSH whip pan whoosh transition / bubble pop         -25.0 dBFS   silent   184 ms   968 Hz  | sayac +2 ms OK\n 0:16.50  GAP    near silence 1.70 s (-70 LUFS)\n 0:18.23  WHOOSH whip pan whoosh transition / bubble pop         -25.0 dBFS   silent   184 ms   968 Hz  | sayac -8 ms OK\n 0:18.40  GAP    drop 2.15 s (-70 LUFS)\n 0:20.57  FOLEY  wooden block hit / drum hit                     -24.0 dBFS   silent    36 ms  3.4 kHz  | sayac +4 ms OK\n 0:20.60  GAP    drop 3.75 s (-70 LUFS)\n 0:24.39  FOLEY  wooden block hit / drum hit                     -25.0 dBFS   silent    27 ms  4.1 kHz  | sayac -15 ms OK\n 0:24.40  GAP    drop 3.25 s (-70 LUFS)\n 0:27.66  DRUM   drum hit                                        -22.0 dBFS   silent   708 ms   224 Hz  | vurgu -4 ms OK\n 0:28.65  GAP    drop 1.35 s (-69 LUFS) = tail\n\nNOTES  times, levels, loudness and sync offsets are measurements. Event kinds / tags are CLAP guesses: '?' = the event is less than 12 dB over its bed, so its excerpt is mostly bed and the tag a weak hint (right kind about 1 in 4 on the tuning mixes, 1 in 2 for exposed events; often wrong on music and voice). Where AST ran, its speech overrides the kind with VOICE. Section genres marked ? are weak. 'over bed' = how far the event rises over the level just before it; 'silent' = that bed was below -60 (after a gap the rise means nothing). Full data: --json.",
+ "cached": false
+}

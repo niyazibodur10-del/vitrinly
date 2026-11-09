@@ -129,6 +129,48 @@ oluşturulur; bilgisayarınızda repo + Python 3 ile ortam değişkenleri bu ist
 verilir (127.0.0.1 geri dönüşü + PKCE), `youtube.force-ssl` ile altyazı da yüklenir. Video dosyasının bilgisayarda olması
 gerekir; bu yüzden varsayılan yol cihaz akışı + Studio'dan altyazıdır.
 
+## Ek C — YouTube Analytics yetkisi (AVD, tutma, CTR) — Niyazi'nin tek seferlik işi (~5 dk, ücretsiz)
+**Neden ayrı yol (doğrulandı 2026-11-09):** cihaz akışı (TV kodu) `yt-analytics.readonly`'yi reddediyor (canlı deneme:
+`400 invalid_scope "Invalid device flow scope"`) → `yukle.py --yetki-al`'a eklenemez. Analitik ayrı, salt okuma bir
+kimlikle alınır; yükleme yetkisi etkilenmez. Gösterim + CTR yalnız Reporting API'de (`channel_reach_basic_a1`).
+Araç: `tools/yayin/analitik.py` (başlığında adaylar ve eleme).
+
+**Y1 — önerilen (kalıcı; token sohbete hiç girmez):**
+1. Google Cloud (yükleme projesiyle aynı proje), iki API'yi **Enable**:
+   https://console.cloud.google.com/apis/library/youtubeanalytics.googleapis.com ve
+   https://console.cloud.google.com/apis/library/youtubereporting.googleapis.com
+2. https://console.cloud.google.com/auth/clients → **Create client** → tür **Web application**, ad `analitik-web` →
+   *Authorized redirect URIs*: `https://developers.google.com/oauthplayground` ve `http://127.0.0.1:8765` → Create.
+   Çıkan Client ID / Client secret'ı sohbete yazmayın.
+3. https://developers.google.com/oauthplayground → sağ üst **dişli** → "Use your own OAuth credentials" işaretle →
+   Client ID + secret'ı yapıştır. Sol altta "Input your own scopes" kutusuna tek satır:
+   `https://www.googleapis.com/auth/yt-analytics.readonly https://www.googleapis.com/auth/youtube.readonly` → **Authorize APIs**.
+4. **Beklenen ekranlar:** hesap seçimi (kanal sahibi hesap; marka hesabıysa **Toonomy** kanalını seçin) →
+   "Google hasn't verified this app" → **Advanced → Go to … (unsafe)** (kendi uygulamanız) → izin ekranı:
+   "View YouTube Analytics reports for your YouTube content" + "View your YouTube account" → kutular işaretli → **Continue**.
+5. Playground "Step 2" → **Exchange authorization code for tokens** → "Refresh token" kutusundaki değeri kopyalayın.
+6. Bulut ortamı ayarı → ortam değişkenleri: `YOUTUBE_ANALYTICS_CLIENT_ID`, `YOUTUBE_ANALYTICS_CLIENT_SECRET`,
+   `YOUTUBE_ANALYTICS_REFRESH_TOKEN`. Koordinatöre yalnız "analitik tamam" yazın.
+7. Uygulama "Testing" ise token 7 günde düşer → https://console.cloud.google.com/auth/audience → **Publish app** (bir kez).
+8. Koordinatör (yeni oturumda): `python3 tools/yayin/analitik.py --dogrula` → "Analitik yetkisi ÇALIŞIYOR …";
+   sonra bir kez `--ctr-isi` (CTR rapor işini açar; ilk günlük rapor ~1–2 gün sonra, `--ctr-indir <klasör>`).
+   Video başına: `--video ID [ID …] [--bas YYYY-AA-GG]` (izlenme, izlenme dakikası, AVD, izlenme %, abone).
+
+**Y2 — yedek (Playground istemezseniz; adım 1–2 ve 6'daki ilk İKİ değişken yine gerekli, token dosyada kalır → kalıcı değil):**
+koordinatör `python3 tools/yayin/analitik.py --yetki-url` çalıştırıp çıkan adresi Niyazi'ye verir → Niyazi telefonda
+açar, adım 4'teki ekranlar → son sayfa **"Bu siteye ulaşılamıyor / 127.0.0.1 bağlantıyı reddetti"** (BEKLENEN) → adres
+çubuğundaki adresin TAMAMINI koordinatöre yapıştırır → koordinatör `python3 tools/yayin/analitik.py --yetki-kod '<adres>'`.
+Adresteki kod tek kullanımlık, dakikalar içinde düşer ve kapta tutulan PKCE doğrulayıcısı olmadan işe yaramaz.
+
+## Ek D — Planlı yayın bekçisi (2026-11-09 kök neden sonrası, zorunlu)
+- 2/2 uzun video erken public oldu, 4/4 Shorts zamanında. API adımları neden değil (ayrıntı `tools/yayin/yayin-kontrol.py`
+  başlığı); en olası neden Studio'da görünürlük/plan alanına dokunulması. **Kural:** planlı videoda Studio'da görünürlük
+  ve plan alanı açılmaz/kaydedilmez; Test & Compare (private videoda kurulamaz) ve sabit yorum **açılıştan sonra**.
+  Altyazı ve uç ekran açılıştan önce yapılabilir (görünürlüğe dokunmadan).
+- Koordinatör `send_later` ile: yükleme +1 sa ve açılış −2 sa → `python3 tools/yayin/yayin-kontrol.py <yayin-sonucu.txt>`;
+  açılış +15 dk → aynı kontrol + (`yukle.py --liste-sonra` kullanıldıysa) `yayin-kontrol.py --liste-ekle LISTE VIDEO`.
+  Çıkış 1 = sapma → koordinatöre eskalasyon. Etkileşimsiz: kod istemez; OAuth yoksa API anahtarıyla erken public'i yakalar.
+
 ## Kaynaklar (2026-10-26 okundu)
 - Konsol adresleri (auth/overview, auth/audience, auth/clients): https://support.google.com/cloud/answer/15549257 ve https://support.google.com/cloud/answer/15549945
 - Cihaz akışı ve izinli kapsamlar: https://developers.google.com/identity/protocols/oauth2/limited-input-device ("Allowed scopes")

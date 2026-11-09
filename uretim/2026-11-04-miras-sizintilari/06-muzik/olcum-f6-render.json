@@ -7,7 +7,7 @@
  "miks_onizleme_m4a": {
   "I": -14.0,
   "LRA": 2.0,
-  "TP": 4.5
+  "TP": 0.6
  },
  "muzik_stem": {
   "I": -35.7,
@@ -15,9 +15,9 @@
   "TP": -19.8
  },
  "sfx_stem": {
-  "I": -39.5,
-  "LRA": 14.8,
-  "TP": -19.0
+  "I": -39.4,
+  "LRA": 15.4,
+  "TP": -18.2
  },
  "seviye_tum": {
   "konusma_alti_fark_db": 22.0,
@@ -68,10 +68,16 @@
  },
  "sfx_konusma_cakismasi": [
   {
-   "t": 0.0,
-   "olay": "S01 kesme: kamyon arka kapısı: dev kutu $124T",
-   "konusmayla_ortusme": 0.83,
-   "db": -26
+   "t": 0.0478,
+   "olay": "S01 kamyon arka kapısı açılır, dev kutu $124T",
+   "konusmayla_ortusme": 1.0,
+   "db": -18
+  },
+  {
+   "t": 0.3979,
+   "olay": "S01 kamyon arka kapısı açılır, dev kutu $124T",
+   "konusmayla_ortusme": 1.0,
+   "db": -22
   },
   {
    "t": 1.5895,
@@ -278,10 +284,10 @@
    "db": -25
   },
   {
-   "t": 94.7303,
-   "olay": "S04 ekran yazısı: DETOUR ≠ LEAK",
-   "konusmayla_ortusme": 1.0,
-   "db": -25
+   "t": 94.1677,
+   "olay": "S04 pano: DETOUR ≠ LEAK",
+   "konusmayla_ortusme": 0.68,
+   "db": -22
   },
   {
    "t": 97.0652,
@@ -638,10 +644,10 @@
    "db": -26
   },
   {
-   "t": 339.2693,
-   "olay": "S14 ekran yazısı: BOXES LOST: 0",
+   "t": 339.277,
+   "olay": "S14 SPOUSE −0 yazılır",
    "konusmayla_ortusme": 1.0,
-   "db": -25
+   "db": -21
   },
   {
    "t": 344.7926,
@@ -836,10 +842,10 @@
    "db": -21
   },
   {
-   "t": 492.5203,
-   "olay": "S20 ekran yazısı: TAPE USED: 3",
-   "konusmayla_ortusme": 0.92,
-   "db": -25
+   "t": 492.2397,
+   "olay": "S20 bant 3",
+   "konusmayla_ortusme": 0.78,
+   "db": -16
   },
   {
    "t": 493.5352,
@@ -1178,10 +1184,10 @@
    "db": -22
   },
   {
-   "t": 727.7491,
-   "olay": "S28 kesme: Leo: real, just lumpy",
-   "konusmayla_ortusme": 0.03,
-   "db": -27
+   "t": 728.0383,
+   "olay": "S28 ekran yazısı: THE HEADLINE IS REAL. IT'S JUST LUMPY.",
+   "konusmayla_ortusme": 1.0,
+   "db": -25
   },
   {
    "t": 743.9812,
@@ -1202,9 +1208,9 @@
    "db": -26
   },
   {
-   "t": 770.2626,
+   "t": 770.2661,
    "olay": "S30 kesme: Leo boş kutuyu bırakır, ince ruloyu omzuna atar (sol-orta)",
-   "konusmayla_ortusme": 0.19,
+   "konusmayla_ortusme": 0.03,
    "db": -27
   },
   {
