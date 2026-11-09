@@ -59,8 +59,8 @@ const Itme: React.FC<{ acik: boolean; children: React.ReactNode }> = ({ acik, ch
 // ---------- S21 vurgusu (16:9 ve dikey): 507–520 sn'de ekranda yalnız başlık + vergi çizgisi → yeni rakam yok ----------
 // sahne-YEREL zaman (S21 başı = 0). "typical family" etiketi → zeminden vergi çizgisine uzayan ölçü oku → medyan çubuğuna halka.
 type S21Yer = { cizgi: number; taban: number; ok: number; cip: [number, number]; halka: [number, number]; boy: number };
-const S21_YATAY: S21Yer = { cizgi: 116, taban: 975, ok: 1640, cip: [250, 860], halka: [870, 985], boy: 1 };
-const S21_DIKEY: S21Yer = { cizgi: 400, taban: 1318, ok: 930, cip: [80, 1150], halka: [430, 1318], boy: 0.85 };
+const S21_YATAY: S21Yer = { cizgi: 116, taban: 975, ok: 1640, cip: [250, 770], halka: [900, 978], boy: 1 };
+const S21_DIKEY: S21Yer = { cizgi: 380, taban: 1500, ok: 930, cip: [80, 1150], halka: [490, 1500], boy: 0.85 };
 const S21Vurgu: React.FC<{ y: S21Yer }> = ({ y }) => {
   const frame = useCurrentFrame();
   const g = frame / 30 + SAHNE_BAS.S21; // global sn
@@ -115,7 +115,7 @@ const Snap: React.FC<{ an: number; s: number; oy: string; children: React.ReactN
   return <AbsoluteFill style={{ transform: `scale(${k})`, transformOrigin: `50% ${oy}` }}>{children}</AbsoluteFill>;
 };
 
-// Köprü kartı (son 2 sn): cevap yalnız uzun videoda → alttaki "ilgili video" bağlantısını işaret eder; ok altyazı bandının (≈1340) üstünde
+// Köprü kartı (son 2 sn): cevap yalnız uzun videoda → alttaki "ilgili video" bağlantısını işaret eder; kuyrukta altyazı yok → "BIGGEST LEAK = ?" yazısının (≈1170) altında, güvenli alan ≤1536
 const KopruKarti: React.FC<{ ust: string; alt: string }> = ({ ust, alt }) => {
   const frame = useCurrentFrame();
   const t = frame / 30;
@@ -123,11 +123,11 @@ const KopruKarti: React.FC<{ ust: string; alt: string }> = ({ ust, alt }) => {
   const ok = Math.sin(t * Math.PI * 3) * 10;
   return (
     <AbsoluteFill>
-      <div style={{ position: "absolute", left: 70, top: 940, width: 760, padding: "24px 28px", borderRadius: 22, background: SARI, border: "6px solid #0b0b0b", boxShadow: "0 10px 0 #0b0b0b", textAlign: "center", opacity: p, scale: String(0.8 + 0.2 * p) }}>
+      <div style={{ position: "absolute", left: 70, top: 1220, width: 760, padding: "24px 28px", borderRadius: 22, background: SARI, border: "6px solid #0b0b0b", boxShadow: "0 10px 0 #0b0b0b", textAlign: "center", opacity: p, scale: String(0.8 + 0.2 * p) }}>
         <div style={{ fontFamily: anton, fontSize: 56, color: "#0b0b0b", lineHeight: 1.05 }}>{ust}</div>
         <div style={{ fontFamily: fredoka, fontWeight: 700, fontSize: 34, color: "#0b0b0b", marginTop: 8 }}>{alt}</div>
       </div>
-      <div style={{ position: "absolute", left: 418, top: 1190 + ok, fontFamily: anton, fontSize: 90, color: SARI, textShadow: "0 4px 0 #000", opacity: p }}>↓</div>
+      <div style={{ position: "absolute", left: 418, top: 1400 + ok, fontFamily: anton, fontSize: 90, color: SARI, textShadow: "0 4px 0 #000", opacity: p }}>↓</div>
     </AbsoluteFill>
   );
 };

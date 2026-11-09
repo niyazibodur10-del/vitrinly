@@ -92,7 +92,7 @@ def shorts_plan():
         parcalar.append({"tur": "kuyruk", "kaynak": son["kaynak"], "bas": son["son"], "son": son["son"] + KUYRUK,
                          "kareBas": son["kareBas"] + son["sure"], "sure": kare(KUYRUK), "yer": yer})
         toplam = yer + kare(KUYRUK)
-        ab = {"kare": yer + 3, "sure": 78, "ust": None}
+        ab = {"kare": yer + 3, "sure": 78, "ust": 1330}   # kuyruk planındaki "BIGGEST LEAK = ?" (≈1100–1170) altında
         kopru_bas = yer + 84
         assert ab["kare"] + ab["sure"] <= kopru_bas and toplam <= 60 * FPS
         veri[ad] = {"toplam": toplam, "kopruBas": kopru_bas, "parcalar": parcalar, "abone": ab}
