@@ -1,0 +1,7 @@
+# tools/yeniden-uret.sh tarifi — "<dosya> | <komut>" (repo kökünde; $PY = ~/.finansal-arac/venv/bin/python). Dosya F7 tarafından açıldı; önceki faz satırları sahiplerince eklenmeli.
+# F7 kurgu (kurgu-editoru): kurgu-veri.ts + final.en.srt git içinde; miks, yataklar ve render git dışı
+${KURGU_CIKIS:-$HOME/.finansal-arac/kurgu-kmiras}/final-miks.wav | $PY uretim/2026-11-04-miras-sizintilari/08-kurgu/kurgu_ses.py ana
+video/public/kmiras/sh1-yatak.wav | $PY uretim/2026-11-04-miras-sizintilari/08-kurgu/kurgu_ses.py shorts
+uretim/2026-11-04-miras-sizintilari/08-kurgu/final-16x9.mp4 | tools/render-parca.sh KMirasFinal uretim/2026-11-04-miras-sizintilari/08-kurgu/final-16x9.mp4 --kaynak KMirasTam --ses ${KURGU_CIKIS:-$HOME/.finansal-arac/kurgu-kmiras}/final-miks.wav
+uretim/2026-11-04-miras-sizintilari/08-kurgu/shorts-1.mp4 | tools/render-son.sh KMirasShorts1 uretim/2026-11-04-miras-sizintilari/08-kurgu/shorts-1.mp4
+uretim/2026-11-04-miras-sizintilari/08-kurgu/shorts-2.mp4 | tools/render-son.sh KMirasShorts2 uretim/2026-11-04-miras-sizintilari/08-kurgu/shorts-2.mp4

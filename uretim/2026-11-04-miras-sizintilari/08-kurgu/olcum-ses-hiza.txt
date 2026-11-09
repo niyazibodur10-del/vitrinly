@@ -12,3 +12,5 @@ earshot 105.767 final-miks-kliksiz: final-miks-kliksiz.wav [105.617-106.117 s]: 
 earshot 105.767 final-miks: final-miks.wav [105.617-106.117 s]: 'a computer mouse click' -> no match (z +1.6; would rank #15 among 322 vocabulary descriptions; cosine 0.20). It sounds most like: 'a scroll wheel tick' (z +2.7), '
 earshot 579.2 final-miks-kliksiz: final-miks-kliksiz.wav [579.050-579.550 s]: 'a computer mouse click' -> no match (z -0.2; would rank #183 among 322 vocabulary descriptions; cosine 0.05). It sounds most like: 'aggressive music' (z +2
 earshot 579.2 final-miks: final-miks.wav [579.050-579.550 s]: 'a computer mouse click' -> no match (z +0.9; would rank #61 among 322 vocabulary descriptions; cosine 0.11). It sounds most like: 'chiptune video game music' (z +2
+Shorts sh1: abone kare 1102–1180 / toplam 1243 · görsel tık 38.033 · klik 38.033 · fark +0.00 kare
+Shorts sh2: abone kare 1162–1240 / toplam 1303 · görsel tık 40.033 · klik 40.033 · fark +0.00 kare

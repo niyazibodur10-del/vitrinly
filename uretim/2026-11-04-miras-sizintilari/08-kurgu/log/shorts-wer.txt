@@ -1,0 +1,8 @@
+== sh1 (ref 04-ses/shorts-1-ref.txt)
+kelime=102 hata=1 WER=%1.0
+replace cerulli -> cerule
+== sh2 (ref log/sh2-ref.txt = kurgu kesitleri)
+kelime=111 hata=3 WER=%2.7
+delete taxes -> 
+replace u s -> us
+sh2 'Taxes.' (anlatim 496.55) ↔ Shorts 3.73 sn: kayma -16.6 ms · kor 0.983 → ses var, Whisper silmesi

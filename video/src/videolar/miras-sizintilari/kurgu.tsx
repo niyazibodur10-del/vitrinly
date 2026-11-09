@@ -59,7 +59,7 @@ const Itme: React.FC<{ acik: boolean; children: React.ReactNode }> = ({ acik, ch
 // ---------- S21 vurgusu (16:9 ve dikey): 507–520 sn'de ekranda yalnız başlık + vergi çizgisi → yeni rakam yok ----------
 // sahne-YEREL zaman (S21 başı = 0). "typical family" etiketi → zeminden vergi çizgisine uzayan ölçü oku → medyan çubuğuna halka.
 type S21Yer = { cizgi: number; taban: number; ok: number; cip: [number, number]; halka: [number, number]; boy: number };
-const S21_YATAY: S21Yer = { cizgi: 116, taban: 975, ok: 1640, cip: [250, 770], halka: [900, 978], boy: 1 };
+const S21_YATAY: S21Yer = { cizgi: 116, taban: 975, ok: 1640, cip: [250, 680], halka: [900, 978], boy: 1 };
 const S21_DIKEY: S21Yer = { cizgi: 380, taban: 1500, ok: 930, cip: [80, 1150], halka: [490, 1500], boy: 0.85 };
 const S21Vurgu: React.FC<{ y: S21Yer }> = ({ y }) => {
   const frame = useCurrentFrame();
@@ -179,6 +179,16 @@ export const KurguShorts: React.FC<{ ad: "sh1" | "sh2" }> = ({ ad }) => {
         </Sequence>
       ))}
       {ad === "sh2" ? <FederalSatir /> : null}
+      {/* Shorts 2 kancası: TAX tabelası 0–3,75 durağan, ×1,06 snap koyu planda algılanmadı (kadans ilk olay 4,75) → 1,45 sn metin pop'u */}
+      {ad === "sh2" ? (
+        <AbsoluteFill style={{ alignItems: "center" }}>
+          <Serit bas={1.45} son={3.75} x={0} y={830} boyut={92}>
+            <div style={{ width: 1080, textAlign: "center" }}>
+              THE <span style={{ color: KIRMIZI }}>SCARIEST</span> LEAK?
+            </div>
+          </Serit>
+        </AbsoluteFill>
+      ) : null}
       <Sequence from={v.abone.kare} durationInFrames={v.abone.sure} name="AboneOl" layout="none">
         <AboneOl duzen="dikey" sure={v.abone.sure / 30} ust={v.abone.ust ?? undefined} />
       </Sequence>
