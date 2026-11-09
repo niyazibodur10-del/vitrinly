@@ -344,7 +344,7 @@ export const ekPlan = (ek: "sh1" | "sh2") => {
   });
   const k: Record<string, number> =
     ek === "sh1"
-      ? { damla: 1.6, nearly: c[4].bas + 0.8, zero: c[6].bas }
+      ? { damla: 0.35, son: c[1].bas + 2, nearly: c[4].bas + 0.8, zero: c[6].bas }
       : { so: c[1].bas, fifteen: c[2].bas, median: c[2].bas + 1.0, the: c[3].bas, the2: c[4].bas + 0.4 };
   return { kes, k };
 };

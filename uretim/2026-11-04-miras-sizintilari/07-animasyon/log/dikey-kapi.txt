@@ -1,0 +1,6 @@
+D-Sh1 36.650000s siyah+donma=1
+D-Sh2 19.968000s siyah+donma=0
+D-S01 16.469000s siyah+donma=0
+D-S13 35.882000s siyah+donma=0
+D-S14 38.421000s siyah+donma=0
+D-S22 23.872000s siyah+donma=0
