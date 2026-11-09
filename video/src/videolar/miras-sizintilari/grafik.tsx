@@ -66,7 +66,7 @@ export const Kesik: React.FC<{ ad: string; x: number; alt: number; w: number; do
   <Img src={f(`${ad}.png`)} style={{ position: "absolute", left: x - w / 2, bottom: alt, width: w, rotate: `${donme}deg`, transformOrigin: "50% 100%", opacity: opak, clipPath: kirp }} />
 );
 
-// ---------- Yer tutucu plaka (Canva sahne illüstrasyonu gelene kadar) ----------
+// ---------- Plaka seçici (zaman.ts "yer:<ad>" → Canva plakası; eşlenmeyen → M08 yol / dikey M18) ----------
 // Canva plaka eşlemesi (05-gorsel/sahne-listesi.md; M09 RED → M19). Anahtar = zaman.ts "yer:<ad>".
 export const PLAKA: Record<string, { ad: string; filtre?: string; odakX?: number; dikey?: string }> = {
   harita: { ad: "M08", dikey: "M18" }, yol: { ad: "M08", dikey: "M18" }, viraj: { ad: "M08", dikey: "M18" }, konvoy: { ad: "M08", dikey: "M18" },
@@ -83,11 +83,6 @@ export const YerTutucu: React.FC<{ t0: number; ad: string; plaka?: string }> = (
   return (
     <AbsoluteFill>
       <PlakaArka t0={t0} ad={plk} filtre={p?.filtre} odakX={D && plk === "M18" ? undefined : p?.odakX} dikeyPlaka={D && plk === "M18"} />
-      {!p && !kasa ? (
-        <div style={{ position: "absolute", left: 40, top: 36, padding: "6px 14px", border: "3px dashed rgba(255,255,255,0.35)", borderRadius: 12, ...yaz(D ? 26 : 22, "rgba(255,255,255,0.85)", "fredoka"), WebkitTextStroke: "0px", background: "rgba(0,0,0,0.3)" }}>
-          YER TUTUCU{plaka ? ` · ${plaka}` : ""} — {ad}
-        </div>
-      ) : null}
     </AbsoluteFill>
   );
 };
@@ -577,7 +572,7 @@ export const G4: React.FC<{ t0: number; k: Record<string, number>; eyalet?: bool
         US FEDERAL ESTATE TAX STARTS: ${G.esikVergi / 1e6}M PER PERSON (2026)
       </div>
       <div style={{ position: "absolute", left: L + (D ? 280 : 420), top: taban - Math.max(hm, 6), width: D ? 200 : 220, height: Math.max(hm, 6), background: RENK.mavi, border: "4px solid #111", opacity: gir(t, aM) }} />
-      <div style={{ position: "absolute", left: L + (D ? 50 : 700), top: taban - (D ? 150 : 140), width: D ? 820 : 760, ...yaz(D ? 40 : 42, RENK.mavi, "fredoka"), opacity: gir(t, aM + 0.2) }}>
+      <div style={{ position: "absolute", left: L + (D ? 50 : 700), top: taban - (D ? 420 : 140), width: D ? 820 : 760, ...yaz(D ? 40 : 42, RENK.mavi, "fredoka"), opacity: gir(t, aM + 0.2) }}>
         MEDIAN NET WORTH, AGES 65–74: ~${Math.round(G.medyan / 1000)}K
       </div>
       {!eyalet ? (

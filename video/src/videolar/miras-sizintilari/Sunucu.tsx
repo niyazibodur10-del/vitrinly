@@ -13,9 +13,11 @@ export const yuzRig = (r: Rig) => ({ x: 940 - r.kutu.x, y: 330 - r.kutu.y });
 export const YUZ = yuzRig(RIG_KRITIK);
 
 // Rig uyumlu pozlar (kafa a ile hizalı → ağız yamaları çalışır); diğerleri ifade pozu (ağız/göz sabit)
-export type SunucuPoz = "a" | "G05" | "G05k" | "G05m" | "C12" | "C13" | "C14" | "C21" | "balt" | "c" | "d" | "e" | "f" | "C20";
-const AGIZ_UYUMLU = new Set(["a", "G05", "G05k", "G05m", "C12", "C13", "C14", "C21", "balt"]);
-const GOZ_UYUMLU = new Set(["a", "G05", "G05k", "G05m", "C12", "C13", "C14", "C21"]);
+// M04 pano · M05 bant · M06 yarık kutu · M07 ince rulo · M17 büyüteç: bu videonun tabanları (public/kmiras, kafa a ile hizalı)
+export type SunucuPoz = "a" | "G05" | "G05k" | "G05m" | "C12" | "C13" | "C14" | "C21" | "balt" | "c" | "d" | "e" | "f" | "C20" | "M04" | "M05" | "M06" | "M07" | "M17";
+const VIDEO_POZ = new Set(["M04", "M05", "M06", "M07", "M17"]);
+const AGIZ_UYUMLU = new Set(["a", "G05", "G05k", "G05m", "C12", "C13", "C14", "C21", "balt", "M04", "M05", "M06", "M07", "M17"]);
+const GOZ_UYUMLU = new Set(["a", "G05", "G05k", "G05m", "C12", "C13", "C14", "C21", "M04", "M05", "M06", "M07", "M17"]);
 
 const sekilBul = (cues: Cue[], t: number): string => {
   for (const c of cues) if (t >= c.start && t < c.end) return c.value;
@@ -79,7 +81,7 @@ export const Sunucu: React.FC<{
         ...style,
       }}
     >
-      <Img src={staticFile(`${rig.klasor}/leo-${tabanD ? "b" : poz}.png`)} style={{ position: "absolute", left: 0, top: 0, width: SUNUCU.w, height: SUNUCU.h }} />
+      <Img src={staticFile(`${VIDEO_POZ.has(poz) ? "kmiras" : rig.klasor}/leo-${tabanD ? "b" : poz}.png`)} style={{ position: "absolute", left: 0, top: 0, width: SUNUCU.w, height: SUNUCU.h }} />
       {!tabanD && yamaAd ? <Yama ad={yamaAd} rig={rig} /> : null}
       {kirp ? <Yama ad="goz-kapali-C06" rig={rig} /> : null}
       {winkVar ? <Yama ad="goz-tek-C06" rig={rig} /> : null}

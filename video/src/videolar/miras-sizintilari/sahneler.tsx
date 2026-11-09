@@ -2,9 +2,9 @@ import React from "react";
 import { AbsoluteFill, Easing, interpolate, Sequence, useCurrentFrame, useVideoConfig } from "remotion";
 import { Audio } from "@remotion/media";
 import { ALTYAZI, Cue, SAHNELER, SHORTS_EK } from "./veri-sahne";
+import type { SunucuPoz } from "./Sunucu";
 import { Doku, fredoka } from "./ortak";
 import { f, Leo } from "./kit";
-import { YER_TUTUCU_RIG } from "./rig";
 import { Kes, Olay, plan, sure } from "./zaman";
 import {
   AileKapi, Banknot, BantEl, BantKutu, Bayrak, BuyuyenKutu, DevKutu, Dilim, EkranYazilari, EsTabela, Etiket, Fatura, Faturalar, G1, G19, G2, G3, G4, G5, G7,
@@ -54,6 +54,10 @@ const panoDurum = (sid: string, t0: number, k: Record<string, number>) => {
   }
 };
 
+// Sahneye göre gövde pozu (05-gorsel/sahne-listesi.md): varsayılan M04 pano; büyüteç S04; bant S12/S20; ince rulo S09/S30; yarık kutu S17
+const POZ_SAHNE: Record<string, SunucuPoz> = { S04: "M17", S09: "M07", S12: "M05", S20: "M05", S30: "M07", S17: "M06" };
+const leoPoz = (id?: string): SunucuPoz => (id && POZ_SAHNE[id]) || "M04";
+
 // Konuşan Leo (rig) — Canva plakası üstünde; ağız çizelgesi sahnenin (veya ek kaydın) Rhubarb'ı.
 // tip: kapi (M08 yol + kamyon yan kesiği, Leo sol-orta) · yakin (M08 bulanık) · kasa (M09 kasa içi) · kasaYakin
 const LeoCekim: React.FC<{ id?: string; cues?: Cue[]; t0: number; tip: string; ad: string }> = ({ id, cues, t0, tip }) => {
@@ -65,12 +69,7 @@ const LeoCekim: React.FC<{ id?: string; cues?: Cue[]; t0: number; tip: string; a
     <AbsoluteFill>
       <PlakaArka t0={t0} ad={kasa ? "M19" : D ? "M18" : "M08"} bulanik={yakin ? 5 : kasa ? 2 : 0} odakX={0.5} dikeyPlaka={D && !kasa} />
       {tip === "kapi" ? <Kesik ad="ham-kamyon-yan" x={D ? 760 : 1420} alt={D ? 560 : 70} w={D ? 760 : 900} /> : null}
-      <Leo id={id} cues={cues} x={p.x} y={p.y} s={p.s} pozlar={[[0, "a"]]} tohum={Math.round(t0 * 7) + 3} />
-      {YER_TUTUCU_RIG ? (
-        <div style={{ position: "absolute", left: D ? 70 : 34, top: D ? 300 : 30, padding: "4px 10px", background: "rgba(224,90,79,0.85)", color: "#fff", fontFamily: fredoka, fontWeight: 700, fontSize: 20, borderRadius: 6 }}>
-          RIG: S08 Leo kesiği (aynı karakter; bu videonun pano/bant rig pozları gelince değişir)
-        </div>
-      ) : null}
+      <Leo id={id} cues={cues} x={p.x} y={p.y} s={p.s} pozlar={[[0, leoPoz(id)]]} tohum={Math.round(t0 * 7) + 3} />
     </AbsoluteFill>
   );
 };

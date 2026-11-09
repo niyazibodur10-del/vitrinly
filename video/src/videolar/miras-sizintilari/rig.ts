@@ -1,6 +1,5 @@
-// YER TUTUCU rig (animasyon-yonetmeni, 2026-11-04 iskelet): S08 Leo rig'i (public/kbutce) — bu videonun nakliye-yelekli Leo pozları
-// gelince 07-animasyon/varlik-hazirla.py bu dosyanın üstüne yazar (KLASOR = "kmiras"). YER_TUTUCU_RIG true iken karede uyarı etiketi çıkar.
-export const YER_TUTUCU_RIG = true;
+// Konuşan Leo rig'i: ağız/göz yamaları S08 rig'inden (public/kbutce, aynı karakter); gövde tabanları bu videonun poz kesikleri
+// (public/kmiras/leo-M04/M05/M06/M07/M17.png, 07-animasyon/rig-poz.py: kafa leo-a'ya piksel hizalı, M07 dy +5 dahil).
 export type Kutu = {x: number; y: number; w: number; h: number};
 export const KLASOR = "kbutce";
 export const NESNE: Record<string, [number, number]> = {"G03-kagit": [290, 430], "G03-zarf-acik": [371, 477], "G03-zarf-kapali": [373, 317], "G03-zarf-yigini": [443, 411], "G07-hesap-makinesi": [296, 343], "G07-kart": [347, 232], "G07-kasa": [328, 361], "G07-kumbara": [395, 334], "G07-para": [195, 195]};
