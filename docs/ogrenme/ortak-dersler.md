@@ -68,7 +68,6 @@ Video klasöründe kalan kapı betikleri (1929 videosu, `uretim/2026-10-26-1929-
 - Yükleme `tools/yayin/yukle.py`. Cihaz akışı altyazı yükleyemez → Studio. Test & Compare'de belirsiz sonuçta ilk yüklenen varyant kalır → ilk sıraya en iyi ön tahmin. Planlı/gizli videoda test kurulamaz, API yok (Studio masaüstü). Başlık testi thumbnail testinden sonra.
 - Shorts Related video (2026-11-04): Data API v3 `videos` kaynağında alan yok (docs okundu) → Studio adımı; paketlerde `ilgili_video` alanı taşınır, araç desteği uretim-muhendisi talebinde (`uretim/2026-11-04-miras-sizintilari/09-paket/talep-uretim-muhendisi.md`).
 - YouTube yetkisi (2026-11-04): `yayin_api.yetki_al` önce ortam değişkeni, düşükse dosyadaki tokenı dener; "Kalıcı yetki geçersiz (ortam değişkeni)" satırı = Niyazi ortam ayarındaki tokenı yenilemeli (koordinatör raporlar).
-
 - 2026-11-09 (kanal-analisti, 2 videoda tekrar): 2/2 uzun video planlanandan erken public oldu, Shorts zamanında → uretim-muhendisi yükleme +1 sa ve açılış −2 sa'da privacyStatus/publishAt kontrolü yapar; Niyazi Studio'da görünürlük/plan alanına dokunmaz, Test & Compare ve uç ekran açılıştan sonra. Shorts Related video açılıştan önce + ekran görüntüsü (köprü ölçümü 342 → +5; `uretim/2026-11-04-miras-sizintilari/01-arastirma/teshis-11-09.md`).
 
 ## Araştırma ve veri
