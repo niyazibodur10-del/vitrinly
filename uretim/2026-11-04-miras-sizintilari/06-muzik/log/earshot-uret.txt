@@ -1,0 +1,28 @@
+click-soft click/soft seed 76560324: 0.094 s, onset 0.001 s, peak at 0.004 s, end 0.088 s, -3.0 dBFS, -23.8 LUFS momentary max; checks: clean
+click-thock click/thock seed 992592500: 0.103 s, onset 0.001 s, peak at 0.004 s, end 0.093 s, -3.0 dBFS, -27.6 LUFS momentary max; checks: clean
+drip-drop drip/drop seed 1: 0.334 s, onset 0.004 s, peak at 0.022 s, end 0.271 s, -3.0 dBFS, -14.3 LUFS momentary max; checks: clean
+drip-plink drip/plink seed 1: 0.257 s, onset 0.002 s, peak at 0.030 s, end 0.213 s, -3.0 dBFS, -15.0 LUFS momentary max; checks: clean
+hover-tick hover_tick/mid seed 2026220627: 0.089 s, onset 0.001 s, peak at 0.004 s, end 0.078 s, -3.0 dBFS, -25.8 LUFS momentary max; checks: clean
+impact-deep impact/deep seed 0: 2.500 s, onset 0.000 s, peak at 0.084 s, end 2.477 s, -3.0 dBFS, -13.7 LUFS momentary max; dur 2.500 s (trim, trim 3705 ms); checks: clean
+impact-punch impact/punch seed 0: 1.200 s, onset 0.000 s, peak at 0.066 s, end 1.167 s, -3.0 dBFS, -14.2 LUFS momentary max; dur 1.200 s (trim, trim 1645 ms); checks: clean
+knock-desk knock/desk seed 1: 0.224 s, onset 0.000 s, peak at 0.025 s, end 0.200 s, -3.0 dBFS, -21.1 LUFS momentary max; checks: clean
+knock-wood knock/wood seed 1: 0.154 s, onset 0.012 s, peak at 0.015 s, end 0.130 s, -3.0 dBFS, -24.9 LUFS momentary max; checks: clean
+mallet-celesta mallet/celesta seed 1: 0.414 s, onset 0.001 s, peak at 0.024 s, end 0.344 s, -3.0 dBFS, -15.1 LUFS momentary max; checks: clean
+mallet-glock mallet/glock seed 1: 0.412 s, onset 0.000 s, peak at 0.011 s, end 0.374 s, -3.0 dBFS, -15.4 LUFS momentary max; checks: clean
+notify-wood notify/mid_wood seed 1: 0.317 s, onset 0.004 s, peak at 0.038 s, end 0.294 s, -3.0 dBFS, -15.4 LUFS momentary max; checks: clean
+pop-0 pop/0 seed 1826701615: 0.200 s, onset 0.000 s, peak at 0.004 s, end 0.115 s, -3.0 dBFS, -20.0 LUFS momentary max; checks: clean
+pop-3 pop/3 seed 579362556: 0.160 s, onset 0.000 s, peak at 0.004 s, end 0.085 s, -3.0 dBFS, -20.7 LUFS momentary max; checks: clean
+riser-build riser/build seed 4402: 1.758 s, onset 0.503 s, peak at 1.202 s, end 1.664 s, -3.0 dBFS, -17.2 LUFS momentary max; checks: clean
+shimmer pro_shimmer/m3 seed 579362556: 1.150 s, onset 0.000 s, peak at 0.110 s, end 1.140 s, -3.0 dBFS, -10.1 LUFS momentary max; checks: metallic comb ring in the tail every 2.1 ms (z 16)
+swipe-paper swipe/paper seed 1264633460: 0.700 s, onset 0.017 s, peak at 0.201 s, end 0.489 s, -3.0 dBFS, -18.7 LUFS momentary max; apex 0.200 s (measured 0.201, +0 ms); dur 0.700 s (shape, pad 18 ms); checks: clean
+swish-soft swish/soft seed 1007119508: 0.600 s, onset 0.059 s, peak at 0.251 s, end 0.523 s, -3.0 dBFS, -20.0 LUFS momentary max; apex 0.250 s (measured 0.251, +0 ms); dur 0.600 s (shape, trim 118 ms (fade 150 ms)); checks: clean
+tap-table tap/table seed 929832608: 0.135 s, onset 0.001 s, peak at 0.005 s, end 0.103 s, -3.0 dBFS, -24.2 LUFS momentary max; checks: clean
+toggle-latch toggle/latch seed 98727163: 0.217 s, onset 0.001 s, peak at 0.139 s, end 0.177 s, -3.0 dBFS, -24.8 LUFS momentary max; checks: clean
+typing-run pro_typing_run/tick seed 87989972: 1.266 s, onset 0.004 s, peak at 0.950 s, end 1.243 s, -3.0 dBFS, -23.2 LUFS momentary max; checks: clean
+ui-pop-soft ui_pop/soft seed 1: 0.180 s, onset 0.003 s, peak at 0.042 s, end 0.157 s, -3.0 dBFS, -17.4 LUFS momentary max; checks: clean
+whoosh-gecis pro_whoosh_big/windy seed 23895038: 0.900 s, onset 0.030 s, peak at 0.401 s, end 0.751 s, -3.0 dBFS, -17.6 LUFS momentary max; apex 0.400 s (measured 0.401, +0 ms); dur 0.900 s (shape, pad 18 ms); checks: clean
+whoosh-tight whoosh_fast/tight seed 1621782255: 0.500 s, onset 0.005 s, peak at 0.201 s, end 0.389 s, -3.0 dBFS, -17.7 LUFS momentary max; apex 0.200 s (measured 0.201, +0 ms); dur 0.500 s (shape, trim 22 ms (fade 125 ms)); checks: clean
+whoosh-whip whoosh_fast/whip seed 4503: 0.600 s, onset 0.051 s, peak at 0.201 s, end 0.514 s, -3.0 dBFS, -17.9 LUFS momentary max; apex 0.200 s (measured 0.201, +0 ms); dur 0.600 s (shape, trim 16 ms (fade 150 ms)); checks: clean
+whoosh-yukselen whoosh_big/swell seed 696394185: 1.400 s, onset 0.019 s, peak at 1.000 s, end 1.325 s, -3.0 dBFS, -14.1 LUFS momentary max; apex 1.000 s (measured 1.000, -0 ms); dur 1.400 s (shape, trim 228 ms (fade 150 ms)); checks: clean
+zip-down pro_zip/down_warm seed 87989972: 0.372 s, onset 0.001 s, peak at 0.035 s, end 0.335 s, -3.0 dBFS, -8.5 LUFS momentary max; checks: clean
+zip-up pro_zip/up seed 1826701615: 0.350 s, onset 0.006 s, peak at 0.169 s, end 0.285 s, -3.0 dBFS, -8.0 LUFS momentary max; checks: pitch climbs 20 semitones over 90 ms (0.01-0.10 s): a rising synth whip reads as cheap
