@@ -1,6 +1,10 @@
 # F5 — senkron ve sahne raporu · animasyon-yonetmeni (S03 miras, metin v1.1, ses 13:01)
 
-İLERLEME: kritik test GEÇTİ · tam 16:9 + 9:16 render (tools/render-parca.sh / render-son.sh) → kapılar aşağıda (tam render satırları render bitince dolar).
+İLERLEME: tamam. **SONUÇ: GEÇTİ** — tam 16:9 (`tam-16x9.mp4` 781,4 sn, sha256 f6ea0a2589cc) + 9:16 (7 dosya `dikey/`).
+- Tam: siyah+donma 0 (`log/siyah-donma-tam.txt`) · senkron 40 aralık 179 sn → 1 kare GEÇTİ (`log/senkron-tam.txt`; 3 kısa aralık ±3 = <2,6 sn pencere) · kadans 217 olay, ort. 3,6 sn, >10 sn boşluk 1 (S21 G4 507–520 sn, iki punch-in arası; `log/kadans-tam.txt`).
+- 9:16: D-Sh1 36,7 / D-Sh2 20,0 / D-S01/S13/S14/S21/S22 — siyah+donma 0, ilk görsel olay ≤4 sn (S01 8,25 sn: kamyon itmesi sürekli, kadans eşiği altı), Shorts senkron 1 kare GEÇTİ ×2 (`log/dikey-kapi.txt`).
+- Efekt cue son hâl: `06-muzik/animasyon-efekt-cue.json` tahmini=false, 254 olay (124 kesme, 7 punch-in, 3 abone).
+- ABONE (gerçek ses): 1) k3171 = 1:45,70 (S05 sonu) · 2) k12869 = 7:08,98 (S17 sonu) · 3) k23191 = 12:53,05 (S30 sonu); 16:9 sağ alt 3,5 sn boş.
 **Kapılar (kritik yol, `test-10sn.mp4` 27,4 sn = S01 tamamı + S12 bant gag'i "okay"+1,6 sn):**
 - Senkron (ağız görünür 3 aralık, 7,7 sn, 700–3000 Hz): `python3 tools/senkron-testi.py test-10sn.mp4 log/kritik-agiz.json 30 --araliklar 12.99-14.86,16.47-20.60,25.65-27.35 --bant 700-3000` → en iyi 2 kare, korelasyon 0,52 → GEÇTİ (sınırda; `log/senkron-kritik.txt`). Tüm kesit: 2 kare GEÇTİ.
 - blackdetect (d=0.1, pic_th=0.98) = 0 · freezedetect (−60 dB, 1 sn) = 0 (test-10sn).
