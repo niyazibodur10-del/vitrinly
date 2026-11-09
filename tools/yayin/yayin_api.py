@@ -134,6 +134,17 @@ def yetki_al(akis="cihaz", cikti=print):
     return tok, kapsam, False
 
 
+def sessiz_yetki(cikti=print):
+    """Etkileşimsiz (zamanlanmış kontrol için): yalnız kayıtlı yenileme tokenları; kod/cihaz akışı ASLA başlatılmaz."""
+    cid, sec = kimlik_bilgisi()
+    for yt, kaynak in yenileme_kaynaklari():
+        try:
+            return yenile(cid, sec, yt)[0]
+        except ApiHatasi as e:
+            cikti(f"Kalıcı yetki geçersiz ({kaynak}): {str(e)[:90]}")
+    raise ApiHatasi("geçerli kalıcı yetki yok (yukle.py --yetki-al gerekir)")
+
+
 def kimlik_bilgisi():
     cid, sec = os.environ.get("YOUTUBE_OAUTH_CLIENT_ID"), os.environ.get("YOUTUBE_OAUTH_CLIENT_SECRET")
     if not cid or not sec:

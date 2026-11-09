@@ -9,6 +9,10 @@
 #   python3 tools/yayin/yukle.py --sil VIDEO_ID [--onayli]                         # bizim yüklediğimiz videoyu sil (Niyazi onayıyla)
 #   python3 tools/yayin/yukle.py --yetki-al / --yetki-iptal                         # kalıcı yetkiyi bir kez al / kaldır
 #   python3 tools/yayin/yukle.py --erisim-testi                                      # kimliksiz uç nokta erişimi
+#   ... yayin-paketi.json --liste-sonra [LISTE_ID]   # listeye eklemeyi açılış SONRASINA ertele (yayin-kontrol.py --liste-ekle)
+# Yükleme bitince durum plana karşı hemen doğrulanır (yayin-kontrol.degerlendir); sapma → çıkış 6.
+# Studio kuralı (2026-11-09 kök neden): planlı videoda Studio'da görünürlük/plan alanına DOKUNULMAZ; Test & Compare ve
+# sabit yorum private videoda yapılamaz → açılıştan SONRA. Ayrıntı: yayin-kontrol.py başlığı.
 #
 # Paket şeması (yollar paket dosyasına göre göreli; ayrıntı ve varsayılanlar: yayin_paket.SEMA):
 #   {"sema": "yayin-paketi/1", "tur": "uzun"|"shorts",
@@ -39,6 +43,9 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import yayin_api as api  # noqa: E402
 import yayin_paket as pk  # noqa: E402
+import importlib.util as _iu  # noqa: E402
+_sp = _iu.spec_from_file_location("yayin_kontrol", os.path.join(os.path.dirname(os.path.abspath(__file__)), "yayin-kontrol.py"))
+yk = _iu.module_from_spec(_sp); _sp.loader.exec_module(yk)
 
 
 def main():
@@ -52,6 +59,8 @@ def main():
     ap.add_argument("--sil", metavar="VIDEO_ID", help="yayin-sonucu.txt kaydı olan videoyu sil (geri alınamaz)")
     ap.add_argument("--onayli", action="store_true", help="--sil için: Niyazi silmeyi onayladı")
     ap.add_argument("--yetki-al", action="store_true", help="kalıcı yetkiyi bir kez al (cihaz kodu) ve sakla")
+    ap.add_argument("--liste-sonra", nargs="?", const="", metavar="LISTE_ID",
+                    help="oynatma listesine eklemeyi publishAt+15 dk'ya ertele (varsayılan: paketteki oynatma_listesi_id)")
     ap.add_argument("--yetki-iptal", action="store_true", help="kalıcı yetkiyi Google'da iptal et ve yerel dosyayı sil")
     a = ap.parse_args()
 
@@ -108,7 +117,8 @@ def main():
         if p["dosyalar"].get("thumbnail"): plan.append("thumbnails.set")
         if p["dosyalar"]["altyazilar"]:
             plan.append("captions.insert" if a.akis == "yerel" else "captions.insert ATLANIR (cihaz akışı kapsamı yok → Studio/--akis yerel)")
-        if p.get("oynatma_listesi_id"): plan.append("playlistItems.insert")
+        liste = a.liste_sonra or p.get("oynatma_listesi_id")
+        if liste: plan.append("playlistItems.insert ERTELENDİ (publishAt+15 dk)" if a.liste_sonra is not None else "playlistItems.insert")
         print("Plan: " + " → ".join(plan))
         if not p["onay"]["niyazi_onayi"]:
             print("Not: onay.niyazi_onayi=false → gerçek yükleme reddedilir.")
@@ -140,17 +150,32 @@ def main():
             else:
                 print(f"3) ALTYAZI ATLANDI ({al['dosya']}): cihaz akışı captions.insert kapsamı vermiyor → Studio'dan yükleyin "
                       "(--manuel-paket) veya --akis yerel")
-        if p.get("oynatma_listesi_id"):
+        liste = a.liste_sonra or p.get("oynatma_listesi_id")
+        if liste and a.liste_sonra is None:
             print("4) playlistItems.insert …")
-            api.listeye_ekle(token, p["oynatma_listesi_id"], vid); print("   tamam")
-        d = api.video_durumu(token, vid).get("status", {})
+            api.listeye_ekle(token, liste, vid); print("   tamam")
+        v2 = api.video_durumu(token, vid); d = v2.get("status", {})
         print(f"Son durum: uploadStatus={d.get('uploadStatus')} privacyStatus={d.get('privacyStatus')} "
               f"publishAt={d.get('publishAt')} madeForKids={d.get('selfDeclaredMadeForKids')}")
-        print("UYARI: Denetimsiz API projelerinde video 'private' kilitlenebilir; Studio'da görünürlük ve planı kontrol edin.")
+        simdi = dt.datetime.now(dt.timezone.utc)
         with open(os.path.join(kok, "yayin-sonucu.txt"), "a", encoding="utf-8") as f:  # yalnız id/zaman; token yok
-            f.write(f"{dt.datetime.now(dt.timezone.utc):%Y-%m-%dT%H:%M:%SZ} video_id={vid} durum={d.get('privacyStatus')} "
-                    f"publishAt={d.get('publishAt')}\n")
-        return 0
+            f.write(f"{simdi:%Y-%m-%dT%H:%M:%SZ} video_id={vid} durum={d.get('privacyStatus')} "
+                    f"publishAt={d.get('publishAt')}" + (f" plan={govde['status']['publishAt']}" if govde["status"].get("publishAt") else "")
+                    + "\n")
+            if liste and a.liste_sonra is not None:
+                f.write(f"{simdi:%Y-%m-%dT%H:%M:%SZ} LISTE_BEKLIYOR liste={liste} video_id={vid}\n")
+        plan_s = govde["status"].get("publishAt")
+        if not plan_s:
+            return 0
+        sonuc, msj = yk.degerlendir(v2, yk.zaman(plan_s), simdi)
+        print(f"Plan kontrolü: {sonuc} — {msj}")
+        pl = yk.zaman(plan_s)
+        print("Zamanla (send_later): "
+              f"{yk.z(simdi + dt.timedelta(hours=1))} ve {yk.z(pl - dt.timedelta(hours=2))} → "
+              f"python3 tools/yayin/yayin-kontrol.py {vid} · {yk.z(pl + yk.GEC_TOL)} → aynı kontrol"
+              + (f" + python3 tools/yayin/yayin-kontrol.py --liste-ekle {liste} {vid}" if liste and a.liste_sonra is not None else ""))
+        print("Studio: planlı videoda görünürlük/plan alanına DOKUNMAYIN; Test & Compare + sabit yorum açılıştan SONRA.")
+        return 6 if sonuc == "KALDI" else 0
     except api.ApiHatasi as e:
         print(f"API HATASI: {e}"); return 5
     finally:

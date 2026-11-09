@@ -289,5 +289,99 @@ class KaliciYetki(unittest.TestCase):
             os.environ.pop("YOUTUBE_OAUTH_REFRESH_TOKEN", None)
 
 
+# ---------- planlı yayın bekçisi (yayin-kontrol.py) ----------
+import importlib.util as _iu  # noqa: E402
+_sp = _iu.spec_from_file_location("yayin_kontrol", os.path.join(os.path.dirname(os.path.abspath(__file__)), "yayin-kontrol.py"))
+yk = _iu.module_from_spec(_sp); _sp.loader.exec_module(yk)
+
+
+def _v(ps, pa=None, pub=None):
+    return {"status": {"privacyStatus": ps, **({"publishAt": pa} if pa else {})}, "snippet": {"publishedAt": pub or "2026-11-03T09:50:00Z"}}
+
+
+class Bekci(unittest.TestCase):
+    PLAN = yk.zaman("2026-11-04T17:00:00Z")
+
+    def d(self, v, simdi):
+        return yk.degerlendir(v, self.PLAN, yk.zaman(simdi))
+
+    def test_gercek_vaka_s08_erken(self):   # 2026-11-03 gerçek veri: 29 sa erken public
+        self.assertEqual(self.d(_v("public", pub="2026-11-03T12:00:11Z"), "2026-11-03T13:00:00Z")[0], "KALDI")
+        r, m = self.d(_v("public", pub="2026-11-03T12:00:11Z"), "2026-11-09T07:00:00Z")
+        self.assertEqual(r, "KALDI"); self.assertIn("28 sa 59 dk erken", m)
+
+    def test_planli_dogru(self):
+        self.assertEqual(self.d(_v("private", "2026-11-04T17:00:00Z"), "2026-11-04T15:00:00Z")[0], "TAMAM")
+
+    def test_plan_silinmis_ve_degismis(self):
+        self.assertIn("SİLİNMİŞ", self.d(_v("private"), "2026-11-04T15:00:00Z")[1])
+        self.assertIn("DEĞİŞMİŞ", self.d(_v("private", "2026-11-03T12:00:00Z"), "2026-11-03T10:00:00Z")[1])
+
+    def test_unlisted(self):
+        self.assertEqual(self.d(_v("unlisted"), "2026-11-04T15:00:00Z")[0], "KALDI")
+
+    def test_acilis_sonrasi(self):
+        self.assertEqual(self.d(_v("public", pub="2026-11-04T17:00:28Z"), "2026-11-04T17:15:00Z")[0], "TAMAM")
+        self.assertEqual(self.d(_v("private", "2026-11-04T17:00:00Z"), "2026-11-04T17:05:00Z")[0], "BEKLIYOR")
+        self.assertIn("AÇILMADI", self.d(_v("private", "2026-11-04T17:00:00Z"), "2026-11-04T17:16:00Z")[1])
+        self.assertIn("GEÇ", self.d(_v("public", pub="2026-11-04T18:00:00Z"), "2026-11-04T19:00:00Z")[1])
+        self.assertEqual(self.d(None, "2026-11-04T15:00:00Z")[0], "KALDI")
+
+    def test_sonuc_dosyasi_okuma(self):
+        with tempfile.NamedTemporaryFile("w", suffix=".txt", delete=False) as f:
+            f.write("2026-11-03T09:50:26Z video_id=A durum=private publishAt=2026-11-04T17:00:00Z\n"
+                    "2026-11-03T09:50:27Z LISTE_BEKLIYOR liste=PL video_id=A\n"
+                    "2026-10-26T17:50:19Z video_id=B durum=private publishAt=None\n"
+                    "2026-10-26T17:50:19Z video_id=C durum=private publishAt=2026-11-05T14:00:00Z\n"
+                    "2026-10-26T17:57:32Z video_id=C SILINDI\n"
+                    "2026-11-09T07:00:00Z video_id=D durum=private publishAt=None plan=2026-11-04T17:00:00Z\n")
+        try:
+            p = yk.planlari_oku([f.name])
+        finally:
+            os.unlink(f.name)
+        self.assertEqual(list(p), ["A", "D"]); self.assertEqual(p["A"]["plan"], self.PLAN)
+        self.assertEqual(p["D"]["plan"], self.PLAN)   # publishAt düşmüş olsa da niyet (plan=) okunur
+
+    def test_kontrol_cikis_ve_anahtar_kipi(self):
+        pl = {"A": {"plan": self.PLAN}, "B": {"plan": self.PLAN}}
+        cik = []
+        r = yk.kontrol(pl, yk.zaman("2026-11-04T10:00:00Z"), cik.append,
+                       oku=lambda ids, c: ("oauth", {"A": _v("private", "2026-11-04T17:00:00Z"), "B": _v("public", pub="2026-11-04T09:00:00Z")}))
+        self.assertEqual(r, 1); self.assertTrue(any("ERKEN PUBLIC" in x and "8 sa 0 dk" in x for x in cik))
+        r = yk.kontrol({"A": {"plan": self.PLAN}}, yk.zaman("2026-11-04T10:00:00Z"), cik.append, oku=lambda ids, c: ("anahtar", {}))
+        self.assertEqual(r, 0)   # anahtar kipi: açılış öncesi görünmemek beklenen
+
+    def test_liste_ekle_yalniz_public(self):
+        eski = (api.istek, api.sessiz_yetki, yk.glob.glob)
+        cagri = []
+        def sahte(durum, listede):
+            def f(url, veri=None, *a, **k):
+                cagri.append((url.split("?")[0].rsplit("/", 1)[1], veri is not None))
+                if "/videos?" in url: return 200, {}, json.dumps({"items": [{"status": {"privacyStatus": durum}}]}).encode()
+                if veri is None: return 200, {}, json.dumps({"items": [{"id": "x"}] if listede else []}).encode()
+                return 200, {}, b'{"id":"PI"}'
+            return f
+        api.sessiz_yetki = lambda *a: "T"; yk.glob.glob = lambda *a, **k: []
+        try:
+            api.istek = sahte("private", False); self.assertEqual(yk.liste_ekle("PL", "V", lambda *a: None), 3)
+            self.assertFalse(any(post for _, post in cagri))   # private iken hiçbir yazma çağrısı yok
+            cagri.clear(); api.istek = sahte("public", True); self.assertEqual(yk.liste_ekle("PL", "V", lambda *a: None), 0)
+            self.assertFalse(any(post for _, post in cagri))   # zaten listede → tekrar eklemez
+            cagri.clear(); api.istek = sahte("public", False); self.assertEqual(yk.liste_ekle("PL", "V", lambda *a: None), 0)
+            self.assertEqual(cagri[-1], ("playlistItems", True))
+        finally:
+            api.istek, api.sessiz_yetki, yk.glob.glob = eski
+
+    def test_sessiz_yetki_cihaz_akisi_baslatmaz(self):
+        eski = (api.istek, api.yenileme_kaynaklari)
+        api.yenileme_kaynaklari = lambda: [("R", "dosya")]
+        api.istek = lambda url, *a, **k: (400, {}, b'{"error":"invalid_grant"}') if url == api.TOKEN_URL else (_ for _ in ()).throw(AssertionError(url))
+        os.environ.setdefault("YOUTUBE_OAUTH_CLIENT_ID", "cid"); os.environ.setdefault("YOUTUBE_OAUTH_CLIENT_SECRET", "sec")
+        try:
+            with self.assertRaises(api.ApiHatasi): api.sessiz_yetki(lambda *a: None)
+        finally:
+            api.istek, api.yenileme_kaynaklari = eski
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
