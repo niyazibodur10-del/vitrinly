@@ -8,21 +8,21 @@
    1280,
    720
   ],
-  "bayt": 110690,
+  "bayt": 110349,
   "jpeg_q": 92,
   "kontrast": [
    {
     "metin": "$124T",
     "bbox": [
-     808,
-     505,
-     1104,
-     629
+     793,
+     485,
+     1119,
+     622
     ],
     "zemin_p5": 14.15,
     "zemin_medyan": 14.15,
     "dolgu_kontur": null,
-    "mobil_buyuk_harf_px": 15.4
+    "mobil_buyuk_harf_px": 16.9
    },
    {
     "metin": "WHO",
@@ -65,7 +65,7 @@
    }
   ],
   "sure_damgasi_ihlal_px": 0,
-  "sha256": "5256b742022b9db0"
+  "sha256": "623027240f81abcc"
  },
  "K3": {
   "id": "K3",
@@ -223,5 +223,73 @@
   ],
   "sure_damgasi_ihlal_px": 0,
   "sha256": "2d41878cdcab4e05"
+ },
+ "K1s": {
+  "id": "K1s",
+  "metin": "WHO GETS IT? + $124T",
+  "kelime": 4,
+  "dosya": "adaylar/K1s.jpg",
+  "boyut": [
+   1280,
+   720
+  ],
+  "bayt": 111947,
+  "jpeg_q": 92,
+  "kontrast": [
+   {
+    "metin": "$124T",
+    "bbox": [
+     793,
+     485,
+     1119,
+     622
+    ],
+    "zemin_p5": 14.15,
+    "zemin_medyan": 14.15,
+    "dolgu_kontur": null,
+    "mobil_buyuk_harf_px": 16.9
+   },
+   {
+    "metin": "WHO",
+    "bbox": [
+     48,
+     24,
+     387,
+     198
+    ],
+    "zemin_p5": 7.25,
+    "zemin_medyan": 7.25,
+    "dolgu_kontur": 13.03,
+    "mobil_buyuk_harf_px": 22.6
+   },
+   {
+    "metin": "GETS",
+    "bbox": [
+     48,
+     236,
+     399,
+     410
+    ],
+    "zemin_p5": 7.06,
+    "zemin_medyan": 7.25,
+    "dolgu_kontur": 13.03,
+    "mobil_buyuk_harf_px": 22.6
+   },
+   {
+    "metin": "IT?",
+    "bbox": [
+     48,
+     448,
+     271,
+     621
+    ],
+    "zemin_p5": 7.25,
+    "zemin_medyan": 7.25,
+    "dolgu_kontur": 13.03,
+    "mobil_buyuk_harf_px": 22.6
+   }
+  ],
+  "sure_damgasi_ihlal_px": 0,
+  "sha256": "e4e12be88e90fd64"
  }
 }

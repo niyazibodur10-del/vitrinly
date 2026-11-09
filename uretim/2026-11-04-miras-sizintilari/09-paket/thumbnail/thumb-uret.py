@@ -102,7 +102,7 @@ def metin(lay, kut, x, y, kelimeler, px, kontur=True, plaka=None, kr=LAC):
     return max(b[2][2] for b in boxes), max(b[2][3] for b in boxes)
 
 # ---------- varyantlar ----------
-def varyant_K1(vid, yuz="K1-M06-saskin"):
+def varyant_K1(vid, yuz=os.path.join(KOK, "leo", "K1c-M06-kuskulu")):   # 2026-11-09: şaşkın → bilmiş/kuşkulu (c-isaret kafası; kanal-analisti teşhisi: ifade tekrarı)
     """Duygu: Leo şaşkın, kucağındaki kutunun alt köşesi yarık, banknotlar sola dökülüyor; kutu etiketi $124T. Metin WHO / GETS / IT?"""
     bg = zemin((10, 70, 80), [(960, 260, 620, (64, 168, 172), 0.85), (930, 210, 300, (255, 196, 120), 0.35)])
     s, ox, oy = 0.80, 190, 0
@@ -116,12 +116,12 @@ def varyant_K1(vid, yuz="K1-M06-saskin"):
     for cx, cy, w, a, t in ((bx0 - 10, 676, 120, 18, 0), (bx0 - 70, 610, 110, -24, 12), (bx0 - 40, 540, 100, 38, -8), (bx0 + 40, 700, 104, -8, 6)):
         banknot(bg, cx, cy, w, a, t)
     # kutu etiketi: kraft levha + $124T (Cerulli tahmini, 2048'e kadar; atıf yok, H8)
-    ex = (bx0 + bx1) // 2 + 10; ey = by0 + 44
-    f = font(136); tb = ImageDraw.Draw(lay).textbbox((0, 0), "$124T", font=f); tw, th = tb[2] - tb[0], tb[3] - tb[1]
+    ex = (bx0 + bx1) // 2 + 10; ey = by0 + 24
+    f = font(150); tb = ImageDraw.Draw(lay).textbbox((0, 0), "$124T", font=f); tw, th = tb[2] - tb[0], tb[3] - tb[1]
     lb = (ex - tw // 2 - 26, ey - 16, ex + tw // 2 + 26, ey + th + 30)
     ImageDraw.Draw(bg).rounded_rectangle(lb, 10, fill=KRAFT + (255,), outline=(70, 50, 30, 255), width=5)
     ImageDraw.Draw(lay).text((ex - tw // 2 - tb[0], ey - tb[1] + 6), "$124T", font=f, fill=LAC + (255,))
-    kut.append({"metin": "$124T", "renk": LAC, "bbox": [ex - tw // 2, ey + 6, ex + tw // 2, ey + th + 6], "px": 136, "kontur": 0, "levha": KRAFT})
+    kut.append({"metin": "$124T", "renk": LAC, "bbox": [ex - tw // 2, ey + 6, ex + tw // 2, ey + th + 6], "px": 150, "kontur": 0, "levha": KRAFT})
     # başlık metni: 3 satır, sol 40–580
     # 3 satır yüksekliğe sığdır (16–700 px): satır kutusu yüksekliği ölçülerek px küçültülür
     px = 200
@@ -175,8 +175,8 @@ def varyant_K4(vid, yuz="K4-M05-saskin"):
     metin(lay, kut, 72, yb + 52, [("LEAKING", BEYAZ)], 150, kontur=False, plaka=LAC)
     return bg, lay, kut
 
-VARYANT = {"K1": varyant_K1, "K3": varyant_K3, "K4": varyant_K4, "K4b": lambda v: varyant_K4(v, "K4b-M05-gulumser")}
-METIN = {"K1": "WHO GETS IT? + $124T", "K3": "SMALLER. LATER.", "K4": "IT KEEPS LEAKING", "K4b": "IT KEEPS LEAKING"}
+VARYANT = {"K1": varyant_K1, "K3": varyant_K3, "K4": varyant_K4, "K4b": lambda v: varyant_K4(v, "K4b-M05-gulumser"), "K1s": lambda v: varyant_K1(v, "K1-M06-saskin")}
+METIN = {"K1": "WHO GETS IT? + $124T", "K3": "SMALLER. LATER.", "K4": "IT KEEPS LEAKING", "K4b": "IT KEEPS LEAKING", "K1s": "WHO GETS IT? + $124T"}
 
 # ---------- ölçüm ----------
 def lum(c):

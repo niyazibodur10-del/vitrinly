@@ -2,9 +2,9 @@
  "rakip": {
   "K1": {
    "en_yakin": "Damon Cassidy:i-NkhdYLn3Q",
-   "renk_farki": 96.5,
+   "renk_farki": 95.7,
    "dhash": 29,
-   "rakip_ortalama_renk_farki": 146.2
+   "rakip_ortalama_renk_farki": 145.7
   },
   "K3": {
    "en_yakin": "Professor Blackwood:DDxpT1bUfBU",
@@ -21,12 +21,12 @@
  },
  "finalist_arasi": {
   "K1-K3": {
-   "renk_farki": 175.9,
-   "dhash": 33
+   "renk_farki": 174.8,
+   "dhash": 31
   },
   "K1-K4": {
    "renk_farki": 123.6,
-   "dhash": 26
+   "dhash": 24
   },
   "K3-K4": {
    "renk_farki": 135.0,

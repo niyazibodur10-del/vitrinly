@@ -13,7 +13,7 @@
     "IT"
    ],
    "oran": 0.75,
-   "ham": "WHO GETS IT WHO A GETS IT 1247"
+   "ham": "WHO 1S GETS IT WHO AE GETS IT 124"
   },
   "mobil_168": {
    "bulunan": [
@@ -22,26 +22,26 @@
     "IT"
    ],
    "oran": 0.75,
-   "ham": "WHO GETS IH IT 7 WHO GETS OF IT FA"
+   "ham": "WHO GETS 4 V OE IT 7 WHO GETS EE IT FA"
   },
   "mobil_168_bolge": {
    "bulunan": [
     "WHO",
     "GETS",
-    "IT",
-    "124T"
+    "IT"
    ],
-   "oran": 1.0,
-   "ham": "WHO GETS NOP IT RA 124 WHO GETS OF IT RA 124T"
+   "oran": 0.75,
+   "ham": "WHO GETS OE EG WHO GETS EE IT 4 124"
   },
   "mobil_168_kelime_psm7": {
    "bulunan": [
+    "$124T",
     "GETS",
     "IT?"
    ],
-   "oran": 0.5,
+   "oran": 0.75,
    "ham": [
-    "1241 1241",
+    "124T 124T",
     "",
     "GETS GETS",
     "IT IT"

@@ -9,7 +9,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 KOK = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.abspath(os.path.join(KOK, "..", "..", "..", ".."))
 BASLIK = "The Great Wealth Transfer Has a Leak"   # paket.md T1 (önerilen)
-BEKLENEN = {"K1": "WHO GETS IT 124T", "K3": "SMALLER LATER", "K4": "IT KEEPS LEAKING", "K4b": "IT KEEPS LEAKING"}
+BEKLENEN = {"K1": "WHO GETS IT 124T", "K3": "SMALLER LATER", "K4": "IT KEEPS LEAKING", "K4b": "IT KEEPS LEAKING", "K1s": "WHO GETS IT 124T"}
 DJV = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 DJVB = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 
