@@ -37,6 +37,7 @@ Video klasöründe kalan kapı betikleri (1929 videosu, `uretim/2026-10-26-1929-
 - earshot: daima `tools/earshot <komut>` (venv/bin/earshot değil): oturum açılışında arka planda kurulur, bitmediyse sarmalayıcı bekler, `EARSHOT_OFFLINE=1` verir. Python API: `EARSHOT_OFFLINE=1 ~/.finansal-arac/earshot-venv/bin/python`.
 
 ## Ses ve altyazı
+- 2026-11-09 (muzik-ses-tasarimcisi): Tam dosya Whisper aynı 13 dk sese ±6–8 kelime oynuyor (segment düşürür); miks anlaşılırlık kapısı cümle bazında yapılır: `tools/ses/cumle-whisper.py` + `uretim/2026-11-04-miras-sizintilari/06-muzik/cumle-wer.py` (S03: tam miks 26 = anlatım 26).
 - Anlatıcı her zaman karar verilen ses: Kokoro `am_fenrir` 0.9 (~153 Hz). Render öncesi `video/public/*-ses.wav` kaynağı kontrol edilir (pilot v1 yanlış sesle render edilmişti).
 - **Konuşma hızı: am_fenrir 0.9 uzun metinde 161,6 kelime/dk** (1929: 1.701 kelime = 10:31,6; metin 143 varsaymıştı, −82 sn). Süre tahmini **160 kpm**; ≥10 dk için ≥1.750 kelime (≈10:56, 25+ sn pay). Pay gerekirse hız değil duraklama (`--cumle/--paragraf`) artırılır. İlk 30 sn 168 kpm, rakip bandı 175–225.
 - Mono anlatım stereoya kopyalanınca LUFS ~+3 ölçülür → normalizasyon son stereo dosyada (`tools/render-son.sh`).

@@ -7,7 +7,7 @@
  "miks_onizleme_m4a": {
   "I": -14.0,
   "LRA": 2.0,
-  "TP": 0.6
+  "TP": 4.9
  },
  "muzik_stem": {
   "I": -35.7,
@@ -15,9 +15,9 @@
   "TP": -19.8
  },
  "sfx_stem": {
-  "I": -39.4,
-  "LRA": 15.4,
-  "TP": -18.2
+  "I": -39.5,
+  "LRA": 17.2,
+  "TP": -19.0
  },
  "seviye_tum": {
   "konusma_alti_fark_db": 22.0,
@@ -101,19 +101,19 @@
    "t": 10.1546,
    "olay": "S01 kesme: kamyon yan şeride sinyal: sarı tabela",
    "konusmayla_ortusme": 0.22,
-   "db": -27
+   "db": -29
   },
   {
    "t": 11.9179,
    "olay": "S01 sinyal + SPOUSE FIRST tabelası",
    "konusmayla_ortusme": 1.0,
-   "db": -20
+   "db": -24
   },
   {
    "t": 12.2679,
    "olay": "S01 sinyal + SPOUSE FIRST tabelası",
    "konusmayla_ortusme": 1.0,
-   "db": -20
+   "db": -24
   },
   {
    "t": 15.0969,
@@ -173,7 +173,7 @@
    "t": 16.0812,
    "olay": "S02 kesme: ABD haritası, küçük kamyonlar",
    "konusmayla_ortusme": 0.29,
-   "db": -26
+   "db": -28
   },
   {
    "t": 16.7683,
@@ -191,7 +191,7 @@
    "t": 30.7981,
    "olay": "S02 kesme: Leo kamyon kapısında",
    "konusmayla_ortusme": 0.03,
-   "db": -27
+   "db": -29
   },
   {
    "t": 33.9503,
@@ -209,7 +209,7 @@
    "t": 38.7762,
    "olay": "S03 kesme: Leo kamyon kapısında (yelek, pano, bant)",
    "konusmayla_ortusme": 0.27,
-   "db": -26
+   "db": -28
   },
   {
    "t": 39.4633,
@@ -239,13 +239,13 @@
    "t": 53.7822,
    "olay": "S04 kesme: Leo büyüteçle dev kutunun etiketini okur",
    "konusmayla_ortusme": 0.29,
-   "db": -26
+   "db": -28
   },
   {
    "t": 64.9636,
    "olay": "S04 kesme: grafik G1: tek çubuk $124T",
    "konusmayla_ortusme": 0.22,
-   "db": -27
+   "db": -29
   },
   {
    "t": 70.551,
@@ -263,7 +263,7 @@
    "t": 77.5051,
    "olay": "S04 kesme: Leo: here's the twist",
    "konusmayla_ortusme": 0.03,
-   "db": -27
+   "db": -29
   },
   {
    "t": 79.6526,
@@ -275,25 +275,25 @@
    "t": 86.3426,
    "olay": "S04 ok çubuğa geri döner",
    "konusmayla_ortusme": 1.0,
-   "db": -25
+   "db": -27
   },
   {
    "t": 87.5576,
    "olay": "S04 punch-in: SPOUSE FIRST tabelasına",
    "konusmayla_ortusme": 1.0,
-   "db": -25
+   "db": -27
   },
   {
    "t": 94.1677,
    "olay": "S04 pano: DETOUR ≠ LEAK",
    "konusmayla_ortusme": 0.68,
-   "db": -22
+   "db": -27
   },
   {
    "t": 97.0652,
    "olay": "S05 kesme: harita → kamera tek eve iner",
    "konusmayla_ortusme": 0.27,
-   "db": -26
+   "db": -28
   },
   {
    "t": 103.6103,
@@ -305,7 +305,7 @@
    "t": 105.8492,
    "olay": "S06 kesme: kapı eşiğinde 4 düz siluet + EXAMPLE FAMILY etiketi",
    "konusmayla_ortusme": 0.29,
-   "db": -26
+   "db": -28
   },
   {
    "t": 115.4339,
@@ -383,13 +383,13 @@
    "t": 127.8216,
    "olay": "S06 kesme: Leo her kutuya TO: THE KIDS yazar",
    "konusmayla_ortusme": 0.19,
-   "db": -27
+   "db": -29
   },
   {
    "t": 130.5857,
    "olay": "S06 keçeli: TO: THE KIDS",
    "konusmayla_ortusme": 0.34,
-   "db": -22
+   "db": -27
   },
   {
    "t": 132.2223,
@@ -407,7 +407,7 @@
    "t": 138.3841,
    "olay": "S06 kesme: Leo kameraya: we'll see",
    "konusmayla_ortusme": 0.03,
-   "db": -27
+   "db": -29
   },
   {
    "t": 141.678,
@@ -449,7 +449,7 @@
    "t": 149.2176,
    "olay": "S07 punch-in: TAX tabelasına",
    "konusmayla_ortusme": 1.0,
-   "db": -25
+   "db": -27
   },
   {
    "t": 154.0004,
@@ -467,7 +467,7 @@
    "t": 154.8102,
    "olay": "S08 kesme: durak tabelası LIVING",
    "konusmayla_ortusme": 0.29,
-   "db": -26
+   "db": -28
   },
   {
    "t": 162.293,
@@ -479,7 +479,7 @@
    "t": 174.1741,
    "olay": "S08 kesme: kutular: 2 kutuya SPENT ON LIVING damgası",
    "konusmayla_ortusme": 0.03,
-   "db": -27
+   "db": -29
   },
   {
    "t": 176.3956,
@@ -497,13 +497,13 @@
    "t": 184.8636,
    "olay": "S08 kesme: ekran: ONE COUNTRY-WIDE TOTAL ≠ ONE FAMILY'S BOXES (D-1)",
    "konusmayla_ortusme": 0.56,
-   "db": -27
+   "db": -29
   },
   {
    "t": 193.7462,
    "olay": "S09 kesme: sisli yoldan CARE tabelası belirir",
    "konusmayla_ortusme": 0.27,
-   "db": -26
+   "db": -28
   },
   {
    "t": 193.6726,
@@ -515,7 +515,7 @@
    "t": 199.3572,
    "olay": "S10 kesme: Leo: stop two is care",
    "konusmayla_ortusme": 0.27,
-   "db": -26
+   "db": -28
   },
   {
    "t": 210.8954,
@@ -533,7 +533,7 @@
    "t": 221.2201,
    "olay": "S10 kesme: evde aile / huzurevi siluetleri",
    "konusmayla_ortusme": 0.03,
-   "db": -27
+   "db": -29
   },
   {
    "t": 231.3399,
@@ -545,7 +545,7 @@
    "t": 238.6592,
    "olay": "S11 kesme: Leo: why does this one leak so much?",
    "konusmayla_ortusme": 0.29,
-   "db": -26
+   "db": -28
   },
   {
    "t": 241.2866,
@@ -557,7 +557,7 @@
    "t": 248.4376,
    "olay": "S11 punch-in: MEDICARE levhasına",
    "konusmayla_ortusme": 0.58,
-   "db": -25
+   "db": -27
   },
   {
    "t": 252.0606,
@@ -581,25 +581,25 @@
    "t": 272.4776,
    "olay": "S11 kesme: pano CARE −1",
    "konusmayla_ortusme": 0.28,
-   "db": -27
+   "db": -29
   },
   {
    "t": 274.8148,
    "olay": "S11 CARE −1 kalem çizgisi",
    "konusmayla_ortusme": 0.34,
-   "db": -22
+   "db": -27
   },
   {
    "t": 280.8812,
    "olay": "S12 kesme: kasa içi: Leo (M09)",
    "konusmayla_ortusme": 0.29,
-   "db": -26
+   "db": -28
   },
   {
    "t": 285.4556,
    "olay": "S12 bant 1 çekilir",
    "konusmayla_ortusme": 0.66,
-   "db": -16
+   "db": -20
   },
   {
    "t": 287.0489,
@@ -611,7 +611,7 @@
    "t": 289.0216,
    "olay": "S12 bant 2 çekilir",
    "konusmayla_ortusme": 0.97,
-   "db": -16
+   "db": -20
   },
   {
    "t": 290.5543,
@@ -623,25 +623,25 @@
    "t": 299.2719,
    "olay": "S13 sinyal",
    "konusmayla_ortusme": 1.0,
-   "db": -20
+   "db": -24
   },
   {
    "t": 299.6219,
    "olay": "S13 sinyal",
    "konusmayla_ortusme": 1.0,
-   "db": -20
+   "db": -24
   },
   {
    "t": 309.0676,
    "olay": "S13 kesme: kamyon karşı kaldırıma yanaşır",
    "konusmayla_ortusme": 0.25,
-   "db": -27
+   "db": -29
   },
   {
    "t": 334.4322,
    "olay": "S14 kesme: pano: SPOUSE −0 + kum saati +YEARS",
    "konusmayla_ortusme": 0.29,
-   "db": -26
+   "db": -28
   },
   {
    "t": 339.277,
@@ -653,7 +653,7 @@
    "t": 344.7926,
    "olay": "S14 kesme: park hâlinde kamyon, takvim yaprakları; LIVING/CARE ikinci kez",
    "konusmayla_ortusme": 0.19,
-   "db": -27
+   "db": -29
   },
   {
    "t": 349.4051,
@@ -671,7 +671,7 @@
    "t": 360.0811,
    "olay": "S14 kesme: Leo: more time",
    "konusmayla_ortusme": 0.4,
-   "db": -27
+   "db": -29
   },
   {
    "t": 366.3674,
@@ -683,19 +683,19 @@
    "t": 372.8222,
    "olay": "S15 kesme: GIVING tabelası, küçük kalp",
    "konusmayla_ortusme": 0.29,
-   "db": -26
+   "db": -28
   },
   {
    "t": 373.7169,
    "olay": "S15 kalp parlar",
    "konusmayla_ortusme": 1.0,
-   "db": -22
+   "db": -25
   },
   {
    "t": 379.3192,
    "olay": "S16 kesme: Leo: stop four is giving",
    "konusmayla_ortusme": 0.29,
-   "db": -26
+   "db": -28
   },
   {
    "t": 385.5509,
@@ -725,19 +725,19 @@
    "t": 397.5966,
    "olay": "S16 kesme: kamyon okulun önünde, yeşil kutu kapıya",
    "konusmayla_ortusme": 0.22,
-   "db": -27
+   "db": -29
   },
   {
    "t": 403.3417,
    "olay": "S16 GIVEN etiketi",
    "konusmayla_ortusme": 0.33,
-   "db": -22
+   "db": -27
   },
   {
    "t": 410.1402,
    "olay": "S17 kesme: grafik G3: iki çubuk (sol-orta)",
    "konusmayla_ortusme": 0.29,
-   "db": -26
+   "db": -28
   },
   {
    "t": 417.878,
@@ -779,13 +779,13 @@
    "t": 437.0696,
    "olay": "S18 kesme: kamyonun içi: 6 kutu, 4 kiremit dipte",
    "konusmayla_ortusme": 0.19,
-   "db": -27
+   "db": -29
   },
   {
    "t": 440.9532,
    "olay": "S19 kesme: 4 kiremit kutu yapışık: tek parça ev maketi",
    "konusmayla_ortusme": 0.27,
-   "db": -26
+   "db": -28
   },
   {
    "t": 448.961,
@@ -803,7 +803,7 @@
    "t": 468.6876,
    "olay": "S19 kesme: fatura kartları uçar",
    "konusmayla_ortusme": 0.47,
-   "db": -27
+   "db": -29
   },
   {
    "t": 470.6666,
@@ -827,7 +827,7 @@
    "t": 481.1702,
    "olay": "S20 kesme: kiremit kutudan ince dilim: −A SLICE",
    "konusmayla_ortusme": 0.29,
-   "db": -26
+   "db": -28
   },
   {
    "t": 483.3194,
@@ -845,13 +845,13 @@
    "t": 492.2397,
    "olay": "S20 bant 3",
    "konusmayla_ortusme": 0.78,
-   "db": -16
+   "db": -24
   },
   {
    "t": 493.5352,
    "olay": "S21 kesme: ürkütücü gişe TAX (gölgeli)",
    "konusmayla_ortusme": 0.27,
-   "db": -26
+   "db": -28
   },
   {
    "t": 494.1316,
@@ -869,7 +869,7 @@
    "t": 506.6766,
    "olay": "S21 punch-in: eşik çizgisi",
    "konusmayla_ortusme": 0.22,
-   "db": -25
+   "db": -27
   },
   {
    "t": 513.4379,
@@ -887,7 +887,7 @@
    "t": 522.6976,
    "olay": "S21 punch-in: taban: medyan çubuğu",
    "konusmayla_ortusme": 0.69,
-   "db": -25
+   "db": -27
   },
   {
    "t": 527.6379,
@@ -911,7 +911,7 @@
    "t": 539.0081,
    "olay": "S21 kesme: not: some states have their own taxes",
    "konusmayla_ortusme": 0.03,
-   "db": -27
+   "db": -29
   },
   {
    "t": 552.6398,
@@ -923,7 +923,7 @@
    "t": 555.4272,
    "olay": "S22 kesme: Leo: the surprise of this whole road",
    "konusmayla_ortusme": 0.27,
-   "db": -26
+   "db": -28
   },
   {
    "t": 557.9793,
@@ -941,25 +941,25 @@
    "t": 566.1977,
    "olay": "S22 LIVING altı çizilir",
    "konusmayla_ortusme": 0.34,
-   "db": -22
+   "db": -27
   },
   {
    "t": 567.1457,
    "olay": "S22 CARE altı çizilir",
    "konusmayla_ortusme": 0.34,
-   "db": -22
+   "db": -27
   },
   {
    "t": 568.1477,
    "olay": "S22 TIME altı çizilir",
    "konusmayla_ortusme": 0.43,
-   "db": -22
+   "db": -27
   },
   {
    "t": 569.3176,
    "olay": "S22 kesme: Leo yakın: yorum sorusu",
    "konusmayla_ortusme": 0.19,
-   "db": -27
+   "db": -29
   },
   {
    "t": 575.2123,
@@ -971,7 +971,7 @@
    "t": 579.3062,
    "olay": "S23 kesme: gişenin arkasında dev yol saati",
    "konusmayla_ortusme": 0.27,
-   "db": -26
+   "db": -28
   },
   {
    "t": 584.0979,
@@ -983,7 +983,7 @@
    "t": 584.8912,
    "olay": "S24 kesme: Leo: boxes arrive late",
    "konusmayla_ortusme": 0.29,
-   "db": -26
+   "db": -28
   },
   {
    "t": 587.6184,
@@ -1013,13 +1013,13 @@
    "t": 624.5376,
    "olay": "S24 kesme: iki yol işareti: STARTING OUT / LATER",
    "konusmayla_ortusme": 0.19,
-   "db": -27
+   "db": -29
   },
   {
    "t": 635.7881,
    "olay": "S24 kesme: Leo yakın: same boxes, different job",
    "konusmayla_ortusme": 0.03,
-   "db": -27
+   "db": -29
   },
   {
    "t": 639.1348,
@@ -1031,7 +1031,7 @@
    "t": 642.3582,
    "olay": "S26 kesme: kapılar açılır, Leo panoyu okur",
    "konusmayla_ortusme": 0.27,
-   "db": -26
+   "db": -28
   },
   {
    "t": 642.9028,
@@ -1109,7 +1109,7 @@
    "t": 677.1792,
    "olay": "S27 kesme: iki genç siluet kutuları içeri taşır",
    "konusmayla_ortusme": 0.29,
-   "db": -26
+   "db": -28
   },
   {
    "t": 684.7633,
@@ -1121,7 +1121,7 @@
    "t": 688.7756,
    "olay": "S27 kesme: üç hayalet kamyon yan yana",
    "konusmayla_ortusme": 0.22,
-   "db": -27
+   "db": -29
   },
   {
    "t": 691.6198,
@@ -1145,19 +1145,19 @@
    "t": 695.3236,
    "olay": "S27 punch-in: konvoy",
    "konusmayla_ortusme": 0.56,
-   "db": -25
+   "db": -27
   },
   {
    "t": 700.0576,
    "olay": "S27 punch-in: dolu konvoy",
    "konusmayla_ortusme": 1.0,
-   "db": -25
+   "db": -27
   },
   {
    "t": 706.5202,
    "olay": "S28 kesme: kamera Okafor evinden yükselir, haritaya",
    "konusmayla_ortusme": 0.29,
-   "db": -26
+   "db": -28
   },
   {
    "t": 709.96,
@@ -1193,7 +1193,7 @@
    "t": 743.9812,
    "olay": "S29 kesme: yol haritası (tek yol)",
    "konusmayla_ortusme": 0.29,
-   "db": -26
+   "db": -28
   },
   {
    "t": 753.5783,
@@ -1205,13 +1205,13 @@
    "t": 759.5502,
    "olay": "S30 kesme: Leo kamyon yanında: $124T",
    "konusmayla_ortusme": 0.29,
-   "db": -26
+   "db": -28
   },
   {
    "t": 770.2661,
    "olay": "S30 kesme: Leo boş kutuyu bırakır, ince ruloyu omzuna atar (sol-orta)",
    "konusmayla_ortusme": 0.03,
-   "db": -27
+   "db": -29
   },
   {
    "t": 772.3997,
@@ -1223,7 +1223,7 @@
    "t": 776.3439,
    "olay": "S31 kiremit kutu parlar",
    "konusmayla_ortusme": 1.0,
-   "db": -22
+   "db": -25
   }
  ]
 }

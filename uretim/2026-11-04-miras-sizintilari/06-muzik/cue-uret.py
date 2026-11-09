@@ -35,7 +35,7 @@ ESLEME = [
     (r"damla / kâğıt", [(O + "es-drip-drop.flac", -18, 0), (E + "para-owlishmedia-money_33.flac", -24, 0.05)], 1, 0),
     (r"^damla", [(O + "es-drip-plink.flac", -18, 0)], 1, 0),
     (r"kâğıt kayma|fırça|^kâğıt$", [(O + "es-swipe-paper.flac", -24, 0)], 1, 0),
-    (r"sinyal tık-tık", [(O + "es-click-thock.flac", -20, 0)], 2, 0.35),
+    (r"sinyal tık-tık", [(O + "es-click-thock.flac", -24, 0)], 2, 0.35),
     (r"karton pop ×10", [(O + "es-knock-wood.flac", -24, 0)], 10, 0.08),
     (r"karton tok ×4", [(O + "es-knock-wood.flac", -21, 0)], 4, 0.15),
     (r"karton tok ×2", [(O + "es-knock-wood.flac", -21, 0)], 2, 0.15),
@@ -51,10 +51,10 @@ ESLEME = [
     (r"tabela tok|levha tok|tok vuruş|^tok$", [(O + "es-knock-desk.flac", -19, 0)], 1, 0),
     (r"whoosh ×2", [(O + "es-whoosh-tight.flac", -25, 0)], 2, 0.5),
     (r"yükselen whoosh|rüzgâr", [(O + "es-whoosh-yukselen.flac", -24, 0)], 1, 0),
-    (r"kısa whoosh / tık|whoosh kısa", [(O + "es-whoosh-whip.flac", -25, 0)], 1, 0),
-    (r"^sahne geçişi", [(O + "es-whoosh-gecis.flac", -26, 0)], 1, 0),
-    (r"^kısa whoosh", [W[0], -27, 0], 1, 0),
-    (r"keçeli", [(E + "kalem-owlishmedia-stationery_04.flac", -22, 0)], 1, 0),
+    (r"kısa whoosh / tık|whoosh kısa", [(O + "es-whoosh-whip.flac", -27, 0)], 1, 0),
+    (r"^sahne geçişi", [(O + "es-whoosh-gecis.flac", -28, 0)], 1, 0),
+    (r"^kısa whoosh", [W[0], -29, 0], 1, 0),
+    (r"keçeli", [(E + "kalem-owlishmedia-stationery_04.flac", -27, 0)], 1, 0),
     (r"kalem tık ×6", [(O + "es-click-soft.flac", -21, 0)], 6, 0.25),
     (r"damga thud ×2", [(O + "es-impact-punch.flac", -20, 0)], 2, 0.4),
     (r"tıkırtı", [(O + "es-typing-run.flac", -23, 0)], 1, 0),
@@ -63,10 +63,10 @@ ESLEME = [
     (r"etiket tap", [(O + "es-tap-table.flac", -20, 0)], 1, 0),
     (r"^ding", [(O + "es-mallet-glock.flac", -21, 0)], 1, 0),
     (r"koli bandı çekme", [(E + "bant-owlishmedia-stationery_26.flac", -20, 0)], 1, 0),
-    (r"incelmiş rulo", [(E + "bant-owlishmedia-stationery_08.flac", -22, 0)], 1, 0),
+    (r"incelmiş rulo", [(E + "bant-owlishmedia-stationery_08.flac", -24, 0)], 1, 0),
     (r"kum saati", [(O + "es-notify-wood.flac", -22, 0)], 1, 0),
     (r"bayrak devri", [(O + "es-swish-soft.flac", -23, 0)], 1, 0),
-    (r"sıcak tını", [(O + "es-mallet-celesta.flac", -22, 0)], 1, 0),
+    (r"sıcak tını", [(O + "es-mallet-celesta.flac", -25, 0)], 1, 0),
     (r"kısa müzik vurgusu", [(O + "es-mallet-glock.flac", -22, 0)], 1, 0),
     (r"maket bıçağı", [(E + "bant-owlishmedia-stationery_27.flac", -19, 0)], 1, 0),
     (r"anahtar", [(AE + "kilit-rubberduck-lock_01.flac", -21, 0)], 1, 0),
@@ -116,7 +116,7 @@ for o in sorted(anim["olaylar"], key=lambda x: (x["t"], x["tur"] in ("yazi", "ke
         atlanan.append((o["t"], o["tur"], on, "kural: ses yok (müzik kesme / vuruşsuz)"))
         continue
     if es[0] == r"^kısa whoosh":                  # iki whoosh dosyası dönüşümlü (aynı ses tekrarı duyulmasın)
-        es = (es[0], [(W[sum(1 for x in sfx if x["dosya"] in W) % 2], -27, 0)], 1, 0)
+        es = (es[0], [(W[sum(1 for x in sfx if x["dosya"] in W) % 2], -29, 0)], 1, 0)
     whoosh = "whoosh" in es[1][0][0]
     if o["tur"] == "kesme" and whoosh:
         bosluk = 4.0 if on.startswith("sahne geçişi") else 10.0
