@@ -7,7 +7,7 @@
 - Kalıp/süre istatistiği her zaman kanal içi medyana göre ve "kanal medyanı ≥1.000" filtresiyle; kalıbın kaç kanalda görüldüğünü yaz (n büyük ama 3 kanal = kanal etkisi). Hayatta kalan yanlılığını ve pivot etkisini (Fred) her zaman not et.
 - Kanal seçmeden önce son yükleme tarihini ve dilini (`defaultAudioLanguage`, Devanagari başlık) API'yle ölç; Hintçe kanallar İngilizce başlıkla sızıyor (THE LOST CHAPTER, Truth Vault).
 - Etiket kapısı: `uretim/2026-11-04-miras-sizintilari/01-arastirma/etiket_test.py <md> <tarih> [--bolum A B]` (etiketler API|H|ALT|GÖZ|T|ÖB|AÇK|AÖ); her rakamlı satıra açık etiket, öneri satırları [T: öneri].
-- Hazır betikler (kopyala, parametrele): `uretim/2026-11-04-miras-sizintilari/01-arastirma/olcum/` → `delta90.py` (90 g, iki skor: medyan ve izlenme/abone, Shorts sayısı), `desen90.py`/`desen90b.py`, `sirala90.py` (A/B kanal sırası), `kendi.py` (kendi kanal + sabit yorum ayrımı), `haric.txt`. İlk-video kıyası: `uretim/2026-10-26-1929-1000-dolar/10-yayin-sonrasi/olcum/olc.py`.
+- Hazır betikler (kopyala, parametrele): `uretim/2026-11-04-miras-sizintilari/01-arastirma/olcum/` → `kendi2.py` (kendi kanal, ID argümanlı, izlenme/gün), `kohort.py`/`kohort_analiz.py` (yaşıt kohort), `delta90.py` (90 g, iki skor: medyan ve izlenme/abone, Shorts sayısı), `desen90.py`/`desen90b.py`, `sirala90.py` (A/B kanal sırası), `kendi.py` (kendi kanal + sabit yorum ayrımı), `haric.txt`. İlk-video kıyası: `uretim/2026-10-26-1929-1000-dolar/10-yayin-sonrasi/olcum/olc.py`.
 - Kendi sabit yorumumuz commentCount'u şişirir → `authorChannelId == kanal` ile ayır. Studio CSV'yi 7 g raporundan ÖNCE koordinatörden iste; yoksa CTR/AVD dersleri yazılamaz.
 
 ## Dersler
@@ -17,3 +17,5 @@
 - 2026-11-04 (F1, 90 g delta): küçük→büyük kanıtı izlenme/abone sıralamasıyla bulundu (False Profit 7,8 B abone → 777 B). Kanal medyanı tek başına küçük kanalları gizler; iki skoru birlikte ver.
 - 2026-11-04: patlayan genç kanallar 0–2 Shorts / 40–79 uzun (90 g); bizim Shorts 341 izlenme → uzun +5. Shorts'u büyüme motoru diye önerme; köprü iddiasını ölçmeden yazma.
 - 2026-11-04: API S08'i planlanandan (11-04 17:00Z) önce `public` gösterdi → kendi videolarında her ölçümde `privacyStatus`/`publishAt`'i plana karşı kontrol et, sapmayı koordinatöre ilk satırda bildir.
+- 2026-11-09 (teşhis): genç rakip tabanı hayatta kalan yanlıydı (≥1 B abone, medyan 2.853). Doğru taban = yaşıt kohort `olcum/kohort.py`+`kohort_analiz.py` (ilk yükleme ≥ son 4 ay, ≤25 video): 3–21 g uzun video medyanı 57 → 1929 %67, S08 %9. "İzlenmedi" şikâyetinde önce kohort yüzdeliği ver.
+- 2026-11-09: erken public'i yalnız S08'de yakalamıştım, 1929 da erkendi (publishedAt 09:37 vs plan 16:00). → Kendi videolarında her ölçümde publishedAt'i plana karşı TÜM videolar için tabloya koy (`kendi2.py` yas_gun/izlenme_gun verir).
