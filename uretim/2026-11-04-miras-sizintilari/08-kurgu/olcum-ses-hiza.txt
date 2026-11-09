@@ -1,0 +1,14 @@
+cue vuruş 201 (168 olay; dizi devamı 33) · ilk vuruş görsel olaya bağlı (≤0,5 kare) + vuruş noktası ±2 kare · kayık: 0 []
+stem: olay 168 · cue farkı max 0.00 kare · stem başlangıç farkı medyan 0.00, max 0.00 kare · ±2 kare dışı: 0 []
+abone kare 3134: görsel tık 105.767 sn · ses başı 105.767 sn · fark +0.00 kare
+abone kare 12832: görsel tık 429.033 sn · ses başı 429.033 sn · fark +0.00 kare
+abone kare 17337: görsel tık 579.200 sn · ses başı 579.200 sn · fark +0.00 kare
+abone kare 23154: görsel tık 773.100 sn · ses başı 773.100 sn · fark +0.00 kare
+t= 105.77  RMS artışı +4.15 dB · klik tepe -15.0 dBFS · anlatım tepe -240.0 dBFS (konuşma yok) · KALDI
+t= 429.03  RMS artışı +2.21 dB · klik tepe -15.0 dBFS · anlatım tepe -240.0 dBFS (konuşma yok) · KALDI
+t= 579.20  RMS artışı +0.64 dB · klik tepe -15.0 dBFS · anlatım tepe -240.0 dBFS (konuşma yok) · GEÇTİ
+t= 773.10  RMS artışı +0.60 dB · klik tepe -15.0 dBFS · anlatım tepe -240.0 dBFS (konuşma yok) · GEÇTİ
+earshot 105.767 final-miks-kliksiz: final-miks-kliksiz.wav [105.617-106.117 s]: 'a computer mouse click' -> no match (z -0.6; would rank #230 among 322 vocabulary descriptions; cosine 0.07). It sounds most like: 'dark and tense music' (
+earshot 105.767 final-miks: final-miks.wav [105.617-106.117 s]: 'a computer mouse click' -> no match (z +1.6; would rank #15 among 322 vocabulary descriptions; cosine 0.20). It sounds most like: 'a scroll wheel tick' (z +2.7), '
+earshot 579.2 final-miks-kliksiz: final-miks-kliksiz.wav [579.050-579.550 s]: 'a computer mouse click' -> no match (z -0.2; would rank #183 among 322 vocabulary descriptions; cosine 0.05). It sounds most like: 'aggressive music' (z +2
+earshot 579.2 final-miks: final-miks.wav [579.050-579.550 s]: 'a computer mouse click' -> no match (z +0.9; would rank #61 among 322 vocabulary descriptions; cosine 0.11). It sounds most like: 'chiptune video game music' (z +2

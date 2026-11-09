@@ -47,10 +47,10 @@ def vurus(ad, db):
 ABONE_KLIK_KARE = 39
 ABONE_KLIK = ("ozgun-fare-klik.flac", -12)   # S08 −17 dB hakem notu: kısık → +5 dB (klik_maske + earshot ile kontrol)
 ABONE_ANA = [  # (bas kare, süre kare, taraf, üst px | None) — gerekçe kurgu-rapor.md §4; 1–3 animasyon-efekt-cue.json "abone"
-    (3171, 105, "sag", None),   # ABONE-1 105.70 (S05 sonu nefes → S06 "Meet the Okafors", ev ortada)
-    (12869, 105, "sag", None),  # ABONE-2 428.98 (S17 sonu nefes)
-    (17396, 105, "sol", None),  # ABONE-4 579.87 (S23 geçiş "Which brings us to the last sign"; saat ortada; "It's a clock" 584.1'den önce biter)
-    (23191, 105, "sag", None),  # ABONE-3 773.05 (S30 sonu nefes → S31 köprü)
+    (3134, 105, "sag", None),   # ABONE-1 (cue 105.70) → tık 105.77 = "truck." / "Meet" nefesinde (105.55–106.28)
+    (12832, 105, "sag", None),  # ABONE-2 (cue 428.98) → tık 429.03 = "next." / "Let's" nefesinde (428.83–429.56)
+    (17337, 105, "sol", None),  # ABONE-4 (ek) → tık 579.20 = S22 "taxes." / S23 "Which" nefesinde; "It's a clock" 584.1'den önce biter
+    (23154, 105, "sag", None),  # ABONE-3 (cue 773.05) → tık 773.10 = "tape." / "There's" nefesinde (772.90–773.63)
 ]
 
 # ---------------- Shorts ----------------

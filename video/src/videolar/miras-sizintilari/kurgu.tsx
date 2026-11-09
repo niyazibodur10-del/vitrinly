@@ -79,7 +79,7 @@ const S21Vurgu: React.FC<{ y: S21Yer }> = ({ y }) => {
           <div style={{ position: "absolute", left: y.ok - 22, top: y.taban - boyOk - 30, fontFamily: anton, fontSize: 44, color: SARI, textShadow: "0 2px 0 #000" }}>▲</div>
         </>
       ) : null}
-      {ust > 0 ? <div style={{ position: "absolute", right: 1920 - y.ok - 20 > 0 && y.ok > 1080 ? 1920 - y.ok + 40 : undefined, left: y.ok > 1080 ? undefined : y.ok - 330, top: y.cizgi + 18, opacity: ust, scale: String(0.8 + 0.2 * ust), fontFamily: anton, fontSize: 40 * y.boy, color: KIRMIZI, textShadow: "0 2px 0 #000" }}>THE TAX LINE</div> : null}
+      {ust > 0 ? <div style={{ position: "absolute", left: y.ok - 330, top: y.cizgi + 18, opacity: ust, scale: String(0.8 + 0.2 * ust), fontFamily: anton, fontSize: 40 * y.boy, color: KIRMIZI, textShadow: "0 2px 0 #000" }}>THE TAX LINE</div> : null}
       {halka > 0 ? <div style={{ position: "absolute", left: y.halka[0] - 150, top: y.halka[1] - 60, width: 300, height: 120, borderRadius: "50%", border: `7px solid ${SARI}`, opacity: halka, scale: String(0.7 + 0.3 * Math.min(1, halka * 1.3)), boxShadow: "0 0 26px rgba(255,212,59,0.5)" }} /> : null}
     </AbsoluteFill>
   );
