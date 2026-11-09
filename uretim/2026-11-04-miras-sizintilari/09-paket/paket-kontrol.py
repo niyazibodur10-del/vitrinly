@@ -25,7 +25,6 @@ ns = {"__file__": str(BURA / "paket-uret.py")}; exec(compile(src, "paket-uret.py
 bloklar, doldur, YER, YER_KAYNAK = ns["bloklar"], ns["doldur"], ns["YER"], ns["YER_KAYNAK"]
 V = bloklar((BURA / "paket.md").read_text(encoding="utf-8"))
 F3, F3_KIP = ns["f3"](V); M = {**ns["muzik"](), **F3}
-S2 = "shorts2" if ns["SHORTS2"] == "asil" else "shorts2-yedek"
 
 TAVSIYE = [r"\bshould\b", r"\bmust\b", r"\bneed to\b", r"\bbuy\b", r"\bsell\b", r"\binvest\w*", r"\bguarantee\w*",
            r"\brecommend\w*", r"protect your (money|savings|inheritance)", r"set up a trust", r"gift (it )?now", r"avoid (the )?tax\w*",
@@ -45,6 +44,7 @@ AI = "Narration voice is AI-generated."
 LEGAL = F3["YASAL_NOT"]
 def tara(t, bugun=False):
     t = t.replace(LEGAL, "")
+    t = re.sub(r"https?://\S+", "", t)  # URL'ler muaf (investor.genworth.com)
     for k in ("MUZIK_UZUN", "MUZIK_SHORTS1", "MUZIK_SHORTS2"): t = t.replace(M[k], "")  # atıf satırları muaf
     bul = []
     gr = (("tavsiye", TAVSIYE), ("clickbait", CLICKBAIT), ("kalıp", KALIP), ("K1", K1), ("suçlama", SUCLAMA), ("D1", BOFA), ("D2", CIFT))
@@ -95,8 +95,8 @@ for k in ("great wealth transfer", "$124 trillion", "2048", "Cerulli"): (ok if k
 (ok if V["basliklar"].splitlines()[0].lower() not in p1.lower() else hata)("ilk paragraf başlığı tekrar etmiyor")
 (ok if "Not financial advice" in a else hata)('"Not financial advice" var')
 (ok if "{YASAL_NOT} " + GORSEL in a and LEGAL.rstrip().endswith(AI) else hata)("yasal not sonu = AI satırı, görsel satırı aynı paragrafta")
-(ok if re.search(r"tax or legal advice", LEGAL) else hata)("yasal not 'tax or legal advice' vurgusu (P3)")
-(ok if re.search(r"illustration|example", LEGAL, re.I) else hata)("yasal not: kurgusal aile 'illustration' (P2)")
+(ok if re.search(r"(tax or legal|legal or tax) advice", LEGAL) else hata)("yasal not 'legal/tax advice' vurgusu (P3)")
+(ok if re.search(r"illustration|example|fictional", LEGAL, re.I) else hata)("yasal not: kurgusal aile 'illustration' (P2)")
 (ok if F3_KIP == "rakam-tablosu" else bekle)(f"yasal not kaynağı: {F3_KIP} (F3 rakam-tablosu.md §'Yasal not (açıklama)' birebir)")
 (ok if "{BOLUMLER}" in a else hata)("{BOLUMLER} yer tutucusu (araç Chapters: basar)")
 (ok if 0 <= a.find("LEGAL NOTE") < a.find("SOURCES") else hata)("LEGAL NOTE, SOURCES'ın üstünde")
@@ -115,9 +115,18 @@ m4 = re.search(r"## 4\. YouTube bölümleri.*?```\n(.*?)```", mtf.read_text(enco
 if m4: (ok if [l.split(" ", 1)[1] for l in m4.group(1).splitlines() if l.strip()] == [t for *_, t in bol] else hata)("bölüm adları metin.md §4 birebir")
 else: bekle("03-metin/metin.md §4 yok (F3) → bölüm adları taslak")
 sz = KLAS / "04-ses/sahne-zamanlari.json"
-if sz.is_file() and m4:
-    bilgi("sahne-zamanlari.json var → F8b'de açan sahne listesi (ACAN) metinden doldurulup fark −1…0 ölçülür")
-    bekle("ACAN sahne eşlemesi F8b'de")
+ACAN = ["S01", "S06", "S08", "S13", "S18", "S21", "S26"]  # metin §2 "## Bölüm n" altındaki ilk sahne
+if sz.is_file():
+    mtx = mtf.read_text(encoding="utf-8")
+    ilk = [re.search(r"### (S\d\d)", b).group(1) for b in re.split(r"^## Bölüm \d", mtx, flags=re.M)[1:]]
+    (ok if ilk == ACAN else hata)(f"ACAN = metindeki bölüm açan sahneler {ilk}")
+    j = json.loads(sz.read_text()); bas = {x["sahne"]: x["bas"] for x in j["sahneler"]}
+    of = 0.0  # kurgu ofseti (koordinatör 2026-11-09: 0); F7 kurgu-rapor.md ≠ 0 ise burada
+    for (x, y, t), s_, s in zip(bol, ACAN, sn):
+        f = s - (bas[s_] + of); (ok if -1 < f <= 0 else hata)(f"{x}:{y} {t:<28} ↔ {s_} bas {bas[s_]:7.2f} (fark {f:+.2f})")
+    bilgi(f"toplam {j['toplam_sn']:.3f} sn; uç ekran S31 {bas['S31']:.3f} → {j['toplam_sn'] - bas['S31']:.1f} sn")
+    (ok if 5 <= j["toplam_sn"] - bas["S31"] <= 20 else hata)("uç ekran 5–20 sn")
+    if not (KLAS / "08-kurgu/kurgu-rapor.md").is_file(): bekle("kurgu-rapor.md yok → ofset 0 varsayımı F7'de teyit")
 else: bekle("gerçek sahne zamanları yok (04-ses/sahne-zamanlari.json, F4) → F8b'de kayar")
 
 satir.append("[4] Etiket + hashtag + SRT terimleri")
@@ -135,18 +144,23 @@ if srt.is_file():
 else: bekle("SRT yok → etiket/açıklama terimleri videoda geçiyor mu F8b'de")
 
 satir.append("[5] Shorts")
-for s in ("shorts1", "shorts2", "shorts2-yedek"):
+REF = {"shorts1": ["fifty-four trillion", "forty trillion", "isn't lost", "cerulli"], "shorts2": ["fifteen million", "four hundred ten thousand", "twenty twenty-two", "estate tax"]}
+for s in ("shorts1", "shorts2"):
     b, d = V[f"{s}-baslik"], V[f"{s}-aciklama"]
     (ok if len(b) <= 60 and "<" not in b and ">" not in b and b.endswith("?") else hata)(f"{s} başlık {len(b)} krk, soru · {b}")
     bul = tara(b + "\n" + d, True); (ok if not bul else hata)(f"{s} yasaklı: {bul or 0}")
     (ok if AI + " " + GORSEL in d and "Not financial advice" in d else hata)(f"{s} AI + görsel satırı + Not financial advice")
     (ok if V["basliklar"].splitlines()[0] in d and "youtube.com/@toonomy" in d and "http" not in d.replace("https://www.youtube.com/@toonomy", "") else hata)(f"{s} uzun video başlığı + kanal bağlantısı, URL yer tutucusu yok")
-    (ok if "Cerulli" in d and d.strip().splitlines()[0].rstrip().endswith("?") else hata)(f"{s} kaynak satırı + ilk paragraf soruyla biter (cevap uzun videoda)")
+    (ok if "Source" in d and d.strip().splitlines()[0].rstrip().endswith("?") else hata)(f"{s} kaynak satırı + ilk paragraf soruyla biter (cevap uzun videoda)")
+    sm = re.search(r"### Shorts %s .*?<<(.+?)>>" % s[-1], mtf.read_text(encoding="utf-8"), re.S) if mtf.is_file() else None
+    if sm:
+        eks = [w for w in REF[s] if w not in sm.group(1).lower()]
+        (ok if not eks else hata)(f"{s} açıklama iddiaları Shorts metninde (metin §5 'Okunacak tam metin'): eksik {eks or 0}")
+    else: bekle(f"{s}: metin §5 Shorts metni yok")
     hs = d.strip().splitlines()[-1].split(); (ok if len(hs) == 3 and hs[0] == "#Shorts" else hata)(f"{s} hashtag {hs}")
     (ok if len(doldur(d, M).encode()) <= 5000 else hata)(f"{s} açıklama bayt")
-(ok if "isn't gone" in V["shorts2-yedek-aciklama"] and "delayed" in V["shorts2-yedek-aciklama"] else hata)("shorts2-yedek: eş payı gecikme, kayıp değil (D2)")
-(ok if ns["SHORTS2"] in ("asil", "yedek") else hata)(f"SHORTS2 = {ns['SHORTS2']}")
-bekle("D4 (%47/%55) teyidi → SHORTS2 asil/yedek (finans-dogrulayici F3)") if ns["SHORTS2"] == "asil" and not mtf.is_file() else None
+(ok if "isn't lost" in V["shorts1-aciklama"] and "delayed" in V["shorts1-aciklama"] else hata)("shorts1: eş payı gecikme, kayıp değil (D2)")
+(ok if "as of 2026" in V["shorts2-aciklama"] and "US federal only" in V["shorts2-aciklama"] and "2022" in V["shorts2-aciklama"] else hata)("shorts2: 'as of 2026' + 'US federal only' + 2022 doları (R18/R19, Z2)")
 for n in (1, 2):
     w = KLAS / f"08-kurgu/shorts-{n}-whisper.json"
     if not w.is_file(): bekle(f"shorts-{n} transkripti yok → açıklama iddiaları kesitte var mı F8b'de")
@@ -164,20 +178,20 @@ if mtf.is_file():
     (ok if not eks else hata)(f"sızıntı adları metinde: eksik {eks or 0}")
 else: bekle("sızıntı adları F3 metniyle karşılaştırılacak")
 
-satir.append("[7] Yayın zamanı (EST −05:00, Paz 12:00 / Pzt + Sal 09:00 ET; yedek Çar 12:00 / Per + Cmt)")
+satir.append("[7] Yayın zamanı (EST −05:00, Çar 12:00 / Per + Cmt 09:00 ET; yedek Paz 12:00 / Pzt + Sal)")
 Z = dict(l.split("|", 1) for l in V["yayin-zamani"].splitlines())
-bek = {"uzun": (6, 12), "shorts-1": (0, 9), "shorts-2": (1, 9), "yedek-uzun": (2, 12), "yedek-shorts-1": (3, 9), "yedek-shorts-2": (5, 9)}
+bek = {"uzun": (2, 12), "shorts-1": (3, 9), "shorts-2": (5, 9), "yedek-uzun": (6, 12), "yedek-shorts-1": (0, 9), "yedek-shorts-2": (1, 9)}
 for k, (gun, saat) in bek.items():
     z = dt.datetime.fromisoformat(Z[k])
     (ok if z.weekday() == gun and z.hour == saat and z.utcoffset() == dt.timedelta(hours=-5) else hata)(f"{k}: {Z[k]} = {z.astimezone(dt.timezone.utc):%a %Y-%m-%d %H:%MZ}")
 (ok if Z["uzun"] < Z["shorts-1"] < Z["shorts-2"] and Z["yedek-uzun"] < Z["yedek-shorts-1"] < Z["yedek-shorts-2"] else hata)("Shorts uzun videodan sonra")
-(ok if Z["uzun"].startswith("2026-11-08T12:00") else hata)("slot = senaryo-karari Paz 2026-11-08 12:00 ET (17:00Z)")
+(ok if Z["uzun"].startswith("2026-11-11T12:00") else hata)("slot = koordinatör 2026-11-09: Çar 2026-11-11 12:00 ET (17:00Z)")
 
 satir.append("[8] JSON ↔ paket.md (yayin_paket.py)")
 th = V.get("thumbnail-ana", "").strip()
 for ad_, (tur, bas_, ac, zk) in {"yayin-paketi.json": ("uzun", V["basliklar"].splitlines()[0], V["aciklama"], "uzun"),
         "yayin-paketi-shorts-1.json": ("shorts", V["shorts1-baslik"], V["shorts1-aciklama"], "shorts-1"),
-        "yayin-paketi-shorts-2.json": ("shorts", V[f"{S2}-baslik"], V[f"{S2}-aciklama"], "shorts-2")}.items():
+        "yayin-paketi-shorts-2.json": ("shorts", V["shorts2-baslik"], V["shorts2-aciklama"], "shorts-2")}.items():
     pk = yukle_paket(BURA / ad_); m_, d_ = pk["metadata"], pk["durum"]; sor = []
     if pk["tur"] != tur: sor.append("tur")
     if m_["baslik"] != bas_: sor.append("başlık")

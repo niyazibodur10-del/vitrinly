@@ -1,7 +1,7 @@
 # F8a-erken — Yayın paketi taslağı · S03 "The Leaky Moving Truck" (sütun C)
 
-İLERLEME: F4 taslak tamam (2026-11-04). Bekleyen (betik BEKL listesi, `kapi-cikti.txt`): F3 `03-metin/metin.md` §4 bölüm adları + `rakam-tablosu.md` yasal not ve kaynaklar (`{KAYNAK_F3}`), D4 kararı (Shorts 2 asıl/yedek), thumbnail finalisti, `06-muzik/atif-satirlari.md`, `politika-raporu.md` (`sentetik_medya`), F7 dosyaları + gerçek sahne zamanları (F8b). Yeniden üretim: `python3 -I paket-uret.py && python3 -I paket-kontrol.py`.
-**Hazırlayan:** youtube-paketleyici · **Tarih:** 2026-11-04 · **Durum:** TASLAK (metin kilidinden önce). F8a'da yalnız F3'ün değiştirdiği satırlar güncellenir; F8b'de yalnız bölüm zamanları ve dosyalar.
+İLERLEME: F8b ön güncelleme tamam (2026-11-09): slot Çar 11-11, thumbnail K1, açıklama ilk satır + kaynaklar + yasal not (rakam-tablosu birebir), bölümler sahne-zamanlari.json (ofset 0), Shorts gerçek kesitler (metin §5), müzik atfı, YAYIN.md (teşhis §4 a4/a5/a6). Bekleyen: F7 dosyaları + kurgu ofseti (bölüm kayması, uç ekran), `politika-raporu.md` (`sentetik_medya`), `ilgili_video` araç desteği. Yeniden üretim: `python3 -I paket-uret.py && python3 -I paket-kontrol.py`.
+**Hazırlayan:** youtube-paketleyici · **Tarih:** 2026-11-04, güncelleme 2026-11-09 · **Durum:** KESİN METİN (F3 kilitli metin v1.1). F8b'de yalnız bölüm zamanları, uç ekran ve dosyalar.
 **Girdiler:** `02-senaryo/senaryolar.md` S03, `senaryo-karari.md` §4 (D1–D6, P1–P3, K1, H1b, H6, H8), `on-dogrulama.md` (Cerulli), `01-arastirma/kanal-ozet.md` (3 ders), `docs/viralite-modeli.md` v0.2, `docs/yayin-takvimi.md`, `uretim/kanal-kimligi/kanal-paketi.json`.
 **Doğrulanan kaynak (WebFetch 2026-11-04):** Cerulli basın bülteni, 5 Ara 2024, "Cerulli Anticipates $124 Trillion in Wealth Will Transfer Through 2048": toplam 124 T$, mirasçılara 105 T$, bağışa 18 T$, eşlere 54 T$ (eş payı toplamın içinde → D2: gecikme, kayıp değil).
 **Tek kaynak:** JSON'lar `<!-- veri:… -->` bloklarından `paket-uret.py` ile üretilir; `paket-kontrol.py` birebir karşılaştırır. `{MUZIK_*}` ve `{KAYNAK_F3}` görünür yer tutucu → `--final` kipinde hata.
@@ -44,7 +44,7 @@ Your Parents' Money Is Taking the Long Way to You
 What Happens to Boomer Money Before It Reaches the Kids?
 ```
 
-**Başlık–thumbnail birlikte okunuş (konsept H8; finalistler F8a'da thumbnail-tasarimcisi'nden):**
+**Başlık–thumbnail birlikte okunuş.** Ana: `thumbnail/K1-who-gets-it.jpg` (ifade şaşkın → kuşkulu, ec41405; teşhis a2). Test & Compare sırası **K1, K4, K3** (`thumbnail/thumb-rapor.md`); yalnız video açıldıktan sonra kurulur. Okunuş:
 | Başlık | + "WHO GETS IT?" · "$124T" | Not |
 |---|---|---|
 | T1 | sızıntı var → peki kime kalıyor? İki parça tek soru zinciri, tekrar yok | önerilen eşleşme |
@@ -54,6 +54,7 @@ Thumbnail'da "Bank of America" yok (H8); "$124T" küçük etiket, başlıkta $ y
 
 <!-- veri:thumbnail-ana -->
 ```text
+../09-paket/thumbnail/K1-who-gets-it.jpg
 ```
 
 ---
@@ -62,23 +63,23 @@ Thumbnail'da "Bank of America" yok (H8); "$124T" küçük etiket, başlıkta $ y
 
 | Versiyon | Krk [Ö] | Anahtar ilk 150'de | Karar |
 |---|---|---|---|
-| **A** "The great wealth transfer, explained: about $124 trillion is set to pass down in the US through 2048, Cerulli estimates. What reaches the kids?" | 143 | great wealth transfer (konum 4), $124 trillion, 2048, Cerulli (D1 atıf + dönem) | **SEÇİLDİ** |
+| **A** "The great wealth transfer, explained: Cerulli estimates $124 trillion will pass down in the US through 2048. How much inheritance reaches the kids?" | 147 | great wealth transfer (konum 4) + inheritance (teşhis a1), $124 trillion, 2048, Cerulli (D1) | **SEÇİLDİ** (2026-11-09: "inheritance" eklendi; "in inheritance" denmedi çünkü 124'ün 18'i bağış, R03) |
 | B "Boomer inheritance and the great wealth transfer: follow one family's share of the $124 trillion and count what leaks out before the kids." | 138 | boomer inheritance + great wealth transfer, ama atıf ve dönem yok (D1 ihlali), "leaks" başlığı tekrarlar | elendi |
 
 ---
 
-## 3. Açıklama (uzun video, taslak; F3 rakam-tablosu ile kesinleşir)
+## 3. Açıklama (uzun video, kesin; yasal not `rakam-tablosu.md` §11 birebir, kaynaklar R01–R28 birincil kaynakları)
 
 Düzen: hook → anlatı → örnek notu → "Not financial advice" → `{BOLUMLER}` → LEGAL NOTE (+ AI ve görsel satırı aynı paragrafta) → SOURCES (`{KAYNAK_F3}` = F3'ün eklediği birincil kaynaklar; D4–D6 düşerse yalnız Cerulli kalır) → MUSIC & SOUND → kanal. Uzun video URL'si yok. "Three ways / possibilities" yok (K1).
 
 <!-- veri:yasal-not -->
 ```text
-This video is for education and entertainment only and is not financial, investment, tax or legal advice. Leo is a fictional character, and the Okafor family is an illustration, not a real household. Wealth transfer figures: Cerulli Associates estimates through 2048 (December 2024). Figures are for the US unless stated otherwise. Narration voice is AI-generated.
+This video is for education and entertainment only and is not financial, investment, legal or tax advice. Figures are estimates or survey results as of the dates shown (US unless stated); future amounts are projections, not predictions. The Okafor family is fictional. Leo is a fictional cartoon character. Narration voice is AI-generated.
 ```
 
 <!-- veri:aciklama -->
 ```text
-The great wealth transfer, explained: about $124 trillion is set to pass down in the US through 2048, Cerulli estimates. What reaches the kids?
+The great wealth transfer, explained: Cerulli estimates $124 trillion will pass down in the US through 2048. How much inheritance reaches the kids?
 
 Leo, our cartoon moving-crew boss, loads one example family's boxes onto a truck marked TO: THE KIDS and follows them down a long road. Some of the money is spent along the way, on a long life and on care. Some goes to charity. A big part stops at a spouse first, so it arrives later, not never. Then there is the house, and there are taxes and time. At the end of the road, Leo opens the truck and reads the inventory: what actually arrived, and when.
 
@@ -93,7 +94,16 @@ LEGAL NOTE
 
 SOURCES
 • Cerulli Associates, "Cerulli Anticipates $124 Trillion in Wealth Will Transfer Through 2048" (Dec 5, 2024): https://www.cerulli.com/press-releases/cerulli-anticipates-124-trillion-in-wealth-will-transfer-through-2048
-{KAYNAK_F3}
+• Bank of America Private Bank, 2026 Study of Wealthy Americans (press release, Sep 30, 2026)
+• CareScout (Genworth), 2025 Cost of Care Survey: https://investor.genworth.com/news-events/press-releases/detail/1054
+• ASPE (HHS), long-term services and supports brief (Aug 2022): https://www.govinfo.gov/content/pkg/GOVPUB-HE-PURL-gpo212746/pdf/GOVPUB-HE-PURL-gpo212746.pdf
+• Medicare.gov, Nursing home care: https://www.medicare.gov/coverage/nursing-home-care
+• Medicaid.gov, Estate recovery: https://www.medicaid.gov/medicaid/eligibility-policy/estate-recovery
+• IRS, tax inflation adjustments for tax year 2026: https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill
+• IRS, Retirement topics: Beneficiary: https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-beneficiary
+• Federal Reserve, Survey of Consumer Finances 2022 (Federal Reserve Bulletin, Oct 2023): https://www.federalreserve.gov/publications/files/scf23.pdf
+• Federal Reserve, Distributional Financial Accounts: https://www.federalreserve.gov/releases/z1/dataviz/dfa/
+• GOV.UK, Inheritance Tax: https://www.gov.uk/inheritance-tax
 Charts in this video are our own, built from the sources above.
 
 MUSIC & SOUND
@@ -107,17 +117,19 @@ New animated finance stories every week: https://www.youtube.com/@toonomy
 
 ---
 
-## 4. Bölümler — TASLAK (senaryo yapısı zamanları; F3 metin §4 adları birebir alır, F8b gerçek sahne `bas`'ına kayar)
+## 4. Bölümler — gerçek sahne zamanları (`04-ses/sahne-zamanlari.json`, toplam 781,388 sn = 13:01,4; kurgu ofseti 0, koordinatör 2026-11-09). Adlar `03-metin/metin.md` §4 birebir
+
+Açan sahneler S01, S06, S08, S13, S18, S21, S26 → her bölüm sahnenin `bas`'ına aşağı yuvarlanır (betik [3b], fark −1…0). F7 sonrası `kurgu-rapor.md` ofseti ≠ 0 ise hepsi aynı farkla kayar, 00:00 sabit.
 
 <!-- veri:bolumler -->
 ```text
-00:00 The number everyone quotes
-01:30 One family's truck
-03:30 The cost of care
-05:45 Two detours: a spouse and charity
-08:00 The biggest box: the house
-10:30 Taxes and time
-12:00 The truck arrives
+00:00 The number on the truck
+01:46 Loading the Okafors
+02:35 Living and care
+04:58 The detour and the gift
+07:09 The heaviest box
+08:13 The tax stop
+10:42 Arrival
 ```
 
 ---
@@ -140,84 +152,62 @@ great wealth transfer, great wealth transfer explained, baby boomer inheritance,
 
 ---
 
-## 6. Shorts paketleri
+## 6. Shorts paketleri (F3 metin §5 kesitleri: Shorts 1 "The detour", Shorts 2 "The leak people fear")
 
-**Uzun videoya köprü (kanal dersi 2):** Data API v3 `videos` kaynağında "related video" alanı **yok** [D: developers.google.com/youtube/v3/docs/videos, 2026-11-04; yazılabilir alanlar snippet/status/localizations/recordingDetails/paidProductPlacementDetails]. Bu yüzden Shorts JSON'larında `ilgili_video` alanı (başlık + `video_id: null`) taşınır; araç bunu henüz tanımıyor → dry-run "bilinmeyen alan" UYARISI verir (hata değil) → **uretim-muhendisi talebi:** `talep-uretim-muhendisi.md`. Uygulama Studio'da (YAYIN.md), uzun video herkese açık olduktan sonra, Short'un yayın saatinden önce. Her iki Short da cevabı uzun videoda olan soruyla biter (kesit F7'de kurgu-editoru).
+**Uzun videoya köprü (kanal-ozet ders 2, teşhis a4):** Data API v3 `videos` kaynağında "related video" alanı **yok** [D: developers.google.com/youtube/v3/docs/videos, 2026-11-04]. Shorts JSON'larında `ilgili_video` alanı taşınır (dry-run "bilinmeyen alan" UYARISI; talep `talep-uretim-muhendisi.md`, henüz uygulanmadı). Uygulama **Niyazi'nin zorunlu Studio adımı, Short açılmadan ÖNCE** (`YAYIN.md`). Her iki Short da cevabı yalnız uzun videoda olan soruyla biter (metin §5). D4 (%47/%55) Shorts'a girmedi; önceki "Are the Heirs Ready…" taslağı kaldırıldı.
 
-### Shorts 1 — "What reaches the kids?" (seçildi: a)
+### Shorts 1 — "The detour" (seçildi: a)
 | Aday | Başlık | Krk [Ö] | Karar |
 |---|---|---|---|
-| **a** | The Great Wealth Transfer: What Actually Reaches the Kids? | 58 | SEÇİLDİ: arama kavramı + açık soru; cevap yalnız uzun videoda |
-| b | Why Might Heirs See Far Less Than the Headline Number? | 54 | elendi: "far less" D2 ile çelişir (eş payı geç gelir, kaybolmaz) |
+| **a** | Why Does So Much Inheritance Stop at a Spouse First? | 52 | SEÇİLDİ: kesitin tek olgusu (R04 $54T eş) + açık soru; akışta somut, aramada "inheritance" |
+| b | The Great Wealth Transfer: What Actually Reaches the Kids? | 58 | elendi: kesitin olgusunu (eş durağı) söylemiyor, uzun başlığa fazla yakın |
 
 <!-- veri:shorts1-baslik -->
 ```text
-The Great Wealth Transfer: What Actually Reaches the Kids?
+Why Does So Much Inheritance Stop at a Spouse First?
 ```
 
 <!-- veri:shorts1-aciklama -->
 ```text
-About $124 trillion is set to pass down in the US through 2048, Cerulli estimates. But $18 trillion of it goes to charity, and $54 trillion goes to a spouse first. So what reaches the kids, and when?
+About $124 trillion is expected to pass down in the US through 2048, Cerulli estimates. About $54 trillion of it is expected to stop at a surviving husband or wife first, nearly $40 trillion of that with widowed women. That money isn't lost. It's delayed. So how many boxes are left when the truck finally reaches the kids?
 
 Source: Cerulli Associates, December 2024.
 
-The whole road, box by box: "The Great Wealth Transfer Has a Leak" on our channel, https://www.youtube.com/@toonomy
+The whole road, stop by stop: "The Great Wealth Transfer Has a Leak" on our channel, https://www.youtube.com/@toonomy
 
 {MUZIK_SHORTS1}
 
 Not financial advice. For educational purposes only. Leo is a fictional cartoon character, not a financial adviser.
 Narration voice is AI-generated. Visuals are AI-assisted illustrations animated by our team.
 
-#Shorts #GreatWealthTransfer #Inheritance
+#Shorts #Inheritance #GreatWealthTransfer
 ```
 
-### Shorts 2 — asıl: "Are the heirs ready?" (D4 teyidine bağlı) · yedek: "A spouse first"
+### Shorts 2 — "The leak people fear" (seçildi: a)
 | Aday | Başlık | Krk [Ö] | Karar |
 |---|---|---|---|
-| **a** | Are the Heirs Ready to Run the Family's Giving? | 47 | SEÇİLDİ (D4 teyit edilirse): ankette sorulan şeyle birebir |
-| b | Wealthy Parents Doubt Their Kids. Where Does the Money Go? | 58 | elendi: anket "bağışı yönetmeye hazır mı" sorusunu genel "çocuklarından şüphe"ye büyütür |
-| **yedek** | Why Does So Much Inheritance Stop at a Spouse First? | 52 | D4 düşerse (senaryo-karari D4: Shorts 2 kancası çıkar) → bloklar `shorts2-yedek-*` asıl bloklara taşınır |
+| **a** | If Not Taxes, Where Does the Inheritance Really Go? | 51 | SEÇİLDİ: kesitin kapanış sorusuyla birebir; cevap (sessiz sızıntılar) yalnız uzun videoda |
+| b | The Estate Tax Line vs. a Typical Family's Wealth | 49 | elendi: soru yok, kesitin cevabını başlıkta verir; "vergi" korku etiketi gibi okunabilir |
 
 <!-- veri:shorts2-baslik -->
 ```text
-Are the Heirs Ready to Run the Family's Giving?
+If Not Taxes, Where Does the Inheritance Really Go?
 ```
 
 <!-- veri:shorts2-aciklama -->
 ```text
-In a Bank of America survey, 47% of wealthy Americans said the next generation is ready to run the family's giving, down from 55% the time before. And about $18 trillion of the great wealth transfer is expected to go to charity. So where does the money go instead?
+Taxes sound like the scariest leak when money is passed down. But as of 2026, the US federal estate tax only starts above $15 million per person. For families headed by someone 65 to 74, median net worth was about $410,000 in 2022. So where does the money really go on the way to the kids?
 
-Sources: Bank of America Private Bank, Study of Wealthy Americans; Cerulli Associates, December 2024.
+US federal only; state rules and other countries differ. Sources: IRS, 2026 inflation adjustments; Federal Reserve, Survey of Consumer Finances 2022 (2022 dollars).
 
-The whole road, box by box: "The Great Wealth Transfer Has a Leak" on our channel, https://www.youtube.com/@toonomy
-
-{MUZIK_SHORTS2}
-
-Not financial advice. For educational purposes only. Leo is a fictional cartoon character, not a financial adviser.
-Narration voice is AI-generated. Visuals are AI-assisted illustrations animated by our team.
-
-#Shorts #Inheritance #GreatWealthTransfer
-```
-
-<!-- veri:shorts2-yedek-baslik -->
-```text
-Why Does So Much Inheritance Stop at a Spouse First?
-```
-
-<!-- veri:shorts2-yedek-aciklama -->
-```text
-Of the roughly $124 trillion expected to pass down in the US through 2048, Cerulli estimates $54 trillion goes to a spouse first. That money isn't gone. It's delayed. So when does it reach the kids, and how much of it is left?
-
-Source: Cerulli Associates, December 2024.
-
-The whole road, box by box: "The Great Wealth Transfer Has a Leak" on our channel, https://www.youtube.com/@toonomy
+The whole road, stop by stop: "The Great Wealth Transfer Has a Leak" on our channel, https://www.youtube.com/@toonomy
 
 {MUZIK_SHORTS2}
 
 Not financial advice. For educational purposes only. Leo is a fictional cartoon character, not a financial adviser.
 Narration voice is AI-generated. Visuals are AI-assisted illustrations animated by our team.
 
-#Shorts #Inheritance #GreatWealthTransfer
+#Shorts #Inheritance #EstateTax
 ```
 
 ---
@@ -225,6 +215,7 @@ Narration voice is AI-generated. Visuals are AI-assisted illustrations animated 
 ## 7. Pinli yorum (A seçildi)
 
 K1: "üç olasılık" kapanışı ve A/B/C üçlü yapısı bu videoda yok → soru Leo'nun clipboard'undaki altı durağa bağlanır (metin v0.1 dili: "six stops", tabelalar LIVING/CARE/…/GIVING/TAX), tek soru, numarayla yanıt. Altısına "leak" denmez: 3. durakta "Nothing leaked" (D2). Kişisel miras/servet sorusu yok (mahremiyet, ölüm konusu ağır; P2). Sızıntı adları F3 metniyle birebir (betik BEKL).
+- Teşhis a7 "Which leak surprised you most?" önerdi; "leak" yerine "stop" kalır (3. durak "Nothing leaked", D2), soru biçimi aynı.
 - **A (seçilen):** aşağıdaki blok — durak 1–6, "which surprised you most?" (ilk sürüm "six leaks" metinle çelişti, betik yakaladı → düzeltildi).
 - B (elendi): "Will your generation inherit more or less than it expects?" — kişisel finans tahmini ister, tavsiye zincirine açılır (P1).
 - C (elendi): "What's one thing you hope stays in the truck?" — duygusal ama ölüm/kayıp çağrışımı (P2), yanıtlaması zor.
@@ -247,24 +238,24 @@ Leo's clipboard has six stops between the parents and the kids. Which one surpri
 
 ## 8. Uç ekran, kart, oynatma listesi
 
-- **Uç ekran:** kapanış köprüsü (ABONE-3 kartından sonra; H5), süre F8b'de gerçek sesten (son sahne `bas` → toplam; 5–20 sn). Öğeler: Abone + Video "Best for viewer". Var olmayan videoya söz yok (S04 "evler" yayında değil).
+- **Uç ekran:** S31 köprüsü, ses zamanı **12:53,6–13:01,4 = 7,8 sn** [Ö] (`sahne-zamanlari.json` S31 bas 773,599 → 781,388; YouTube 5–20 sn). F7 kuyruğu/ofseti varsa F8b'de yeniden ölçülür. Öğeler: Abone + video **"You Have $1,000 in 1929. Can You Keep It?" (BVJwZ1C9R1U)**: kanalın en iyi uzun videosu, tarih→gelecek (teşhis a6). S08 gösterilmez. Var olmayan videoya söz yok (S04 yayında değil). Uç ekran video açıldıktan sonra kurulur.
 - **Kart:** S04 yayınlanınca "the house" bölümüne kart (H7 seri devamı). Şimdilik yok.
-- **Oynatma listesi:** **C · Gelecek → "What If…? Future of Money Scenarios"**: bu video listeyi açar (boş liste yok) → F11'de koordinatör `tools/yayin/kanal.py`, sonra `oynatma_listesi_id`. Shorts → "Money Stories in 60 Seconds | Shorts".
+- **Oynatma listesi:** **C · Gelecek → "What If…? Future of Money Scenarios"**. Bu video listeyi açar (boş liste yok): koordinatör `tools/yayin/kanal.py` ile listeyi açar, ekleme `yukle.py --liste-sonra <LISTE_ID>` ile açılış SONRASINA ertelenir (`yayin-kontrol.py --liste-ekle`, açılış +15 dk). Shorts → "Money Stories in 60 Seconds | Shorts", aynı yolla.
 
 ---
 
 ## 9. Takvim ve durum alanları
 
-ABD kış saati (EST, UTC−5). Uzun Paz 2026-11-08 12:00 ET = 17:00 UTC = 20:00 TRT; Pazar videosunun Shorts'u Pzt + Sal 09:00 ET (14:00 UTC; takvim v2). K3 kaçarsa (senaryo-karari §5) koordinatör `yedek` satırlarını üste taşır, `paket-uret.py` yeniden koşar: Çar 11-11 12:00 + Per 11-12 / Cmt 11-14 09:00 ET.
+ABD kış saati (EST, UTC−5). **Paz 11-08 slotu kaçtı (K3)** → stok kuralıyla B slotunun yerine **Çar 2026-11-11 12:00 ET = 17:00 UTC = 20:00 TRT** (koordinatör 2026-11-09). Çarşamba videosunun Shorts'u Per + Cmt 09:00 ET (14:00 UTC; takvim v2). Bir kez daha kayarsa koordinatör `yedek` satırlarını üste taşır, `paket-uret.py` yeniden koşar (Paz 11-15 / Pzt 11-16 / Sal 11-17).
 
 <!-- veri:yayin-zamani -->
 ```text
-uzun|2026-11-08T12:00:00-05:00
-shorts-1|2026-11-09T09:00:00-05:00
-shorts-2|2026-11-10T09:00:00-05:00
-yedek-uzun|2026-11-11T12:00:00-05:00
-yedek-shorts-1|2026-11-12T09:00:00-05:00
-yedek-shorts-2|2026-11-14T09:00:00-05:00
+uzun|2026-11-11T12:00:00-05:00
+shorts-1|2026-11-12T09:00:00-05:00
+shorts-2|2026-11-14T09:00:00-05:00
+yedek-uzun|2026-11-15T12:00:00-05:00
+yedek-shorts-1|2026-11-16T09:00:00-05:00
+yedek-shorts-2|2026-11-17T09:00:00-05:00
 ```
 
 - **`durum.sentetik_medya`:** karar monetizasyon-uyum-uzmani'nin (`09-paket/politika-raporu.md`, F8). Henüz yok → geçici **true** (1929 ve S08 emsali); karar gelince `paket-uret.py` `SENTETIK` sabiti güncellenir, betik karşılaştırır. AI ses satırı her durumda açıklamada.
@@ -277,12 +268,8 @@ yedek-shorts-2|2026-11-14T09:00:00-05:00
 ## 11. Açık işler
 | İş | Sahibi | Not |
 |---|---|---|
-| Bölüm adları (metin §4), yasal not + `{KAYNAK_F3}` (rakam-tablosu), sızıntı adları (pinli yorum), Shorts metinleri | senaryo-yazari / finans-dogrulayici (F3) → paketleyici F8a | betik BEKL → birebir |
-| D4 (%47/%55) teyidi → Shorts 2 asıl/yedek | finans-dogrulayici | düşerse yedek bloklar |
-| Thumbnail finalisti → `veri:thumbnail-ana` | thumbnail-tasarimcisi | konsept H8 |
-| Müzik atfı | muzik-ses-tasarimcisi | `06-muzik/atif-satirlari.md` |
+| F7 dosyaları (`ls 08-kurgu`), kurgu ofseti → bölüm kayması, uç ekran süresi, SRT terim taraması, gerçek dry-run 3/3 | kurgu-editoru → paketleyici F8b | `paket-kontrol.py --final` |
 | `sentetik_medya` | monetizasyon-uyum-uzmani | `politika-raporu.md` |
-| `ilgili_video` alanı SEMA + YAYIN çıktısı | uretim-muhendisi | `talep-uretim-muhendisi.md` |
-| Gerçek sahne zamanları, F7 dosyaları, uç ekran süresi, SRT terim taraması | F8b paketleyici | `--final` |
-| Related video, uç ekran, SRT, Test & Compare, sabit yorum | koordinatör → Niyazi (Studio) | `YAYIN.md` (F8b) |
-| Kanal: "What If…" liste açıklamasındaki "New episodes every other Sunday" gün sözü, tempo 4 hafta tutulmadan yazılmaz kuralıyla çelişiyor | koordinatör (kanal paketi) | liste açılmadan önce düzeltilmeli |
+| `ilgili_video` alanı SEMA + YAYIN çıktısı | uretim-muhendisi | `talep-uretim-muhendisi.md` (açık) |
+| Related video (Short açılmadan önce), Test & Compare, uç ekran, SRT, sabit yorum | Niyazi (Studio) | `YAYIN.md` |
+| Kanal: "What If…" liste açıklamasındaki "New episodes every other Sunday" gün sözü (tempo 4 hafta kuralı; bu video da Çarşamba açılıyor) | koordinatör (kanal paketi) | liste açılmadan önce düzeltilmeli |

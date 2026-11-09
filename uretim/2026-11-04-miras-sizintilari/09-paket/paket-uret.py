@@ -2,8 +2,8 @@
 """paket.md veri bloklarından 3 yayın paketi üretir (tek kaynak; elle JSON yok) — S03 miras sızıntıları.
 Kaynak S08 paket-uret.py (2026-10-28 klasörü); eklenenler: {YASAL_NOT} (F3 rakam-tablosu varsa oradan birebir, yoksa
 paket.md veri:yasal-not), {KAYNAK_F3} (rakam-tablosu "Kaynaklar (açıklama)" bloğu; yoksa görünür yer tutucu),
-Shorts `ilgili_video` alanı (Data API'de karşılığı yok → Studio; uretim-muhendisi talebi), Shorts 2 yedek blok seçimi
-(SHORTS2 = "asil" | "yedek"; D4 kararı). Yollar ../ ile (09-paket/ ve teslim/ kardeş). Şema: tools/yayin/yayin_paket.py SEMA.
+Shorts `ilgili_video` alanı (Data API'de karşılığı yok → Studio; uretim-muhendisi talebi), Shorts blokları metin §5 kesitleri
+(2026-11-09: D4 Shorts'a girmedi, yedek blok kaldırıldı). Yollar ../ ile (09-paket/ ve teslim/ kardeş). Şema: tools/yayin/yayin_paket.py SEMA.
 """
 import json, re, pathlib
 
@@ -11,7 +11,6 @@ BURA = pathlib.Path(__file__).resolve().parent
 KLAS = BURA.parent
 YER = "[YER TUTUCU: müzik atfı F6 — 06-muzik/atif-satirlari.md]"
 YER_KAYNAK = "[YER TUTUCU: F3 birincil kaynaklar — 03-metin/rakam-tablosu.md]"
-SHORTS2 = "asil"  # D4 (%47/%55) teyit edilmezse "yedek" (finans-dogrulayici F3)
 SENTETIK = True   # monetizasyon-uyum-uzmani: politika-raporu.md kararı gelene kadar geçici true (1929, S08 emsali)
 
 def bloklar(s):
@@ -33,7 +32,7 @@ def f3(V):
     yasal, kaynak, kip = V["yasal-not"], YER_KAYNAK, "taslak"
     if rt.is_file():
         t = rt.read_text(encoding="utf-8")
-        y = re.search(r"\*\*Yasal not \(açıklama\):\*\* \"(.+?)\"", t)
+        y = re.search(r"Yasal not \(açıklama[^)]*\):\**\s*\"(.+?)\"", t)
         k = re.search(r"Kaynaklar \(açıklama\).*?```[^\n]*\n(.*?)```", t, re.S)
         if y: yasal, kip = y.group(1), "rakam-tablosu"
         if k: kaynak = k.group(1).strip()
@@ -51,14 +50,12 @@ THUMB = V.get("thumbnail-ana", "").strip() or None
 ONERILEN = V["basliklar"].splitlines()[0]
 ETIKETLER = [t.strip() for t in V["etiketler"].split(",") if t.strip()]
 BOLUMLER = [{"zaman": z, "baslik": b} for z, b in re.findall(r"^(\d{2}:\d{2}) (.+)$", V["bolumler"], re.M)]
-S2 = "shorts2" if SHORTS2 == "asil" else "shorts2-yedek"
 DURUM = {"gizlilik": "private", "cocuklara_ozel": False, "sentetik_medya": SENTETIK, "lisans": "youtube", "gomulebilir": True}
 ONAY = {"niyazi_onayi": False, "tarih": None}
 META = {"kategori_id": "27", "varsayilan_dil": "en", "ses_dili": "en"}
 SHORTS_ETIKET = {
-    1: ["great wealth transfer", "baby boomer inheritance", "inheritance explained", "wealth transfer", "heirs", "shorts", "toonomy"],
-    2: (["inheritance", "charitable giving", "family philanthropy", "great wealth transfer", "heirs", "shorts", "toonomy"] if SHORTS2 == "asil"
-        else ["inheritance", "spouse inheritance", "great wealth transfer", "baby boomer inheritance", "heirs", "shorts", "toonomy"]),
+    1: ["inheritance", "spouse inheritance", "great wealth transfer", "widowed women", "baby boomer inheritance", "shorts", "toonomy"],
+    2: ["estate tax", "estate tax explained", "inheritance", "great wealth transfer", "median net worth", "shorts", "toonomy"],
 }
 ILGILI = {"baslik": ONERILEN, "video_id": None,
           "uygulama": "Studio > Shorts > Ayrıntılar > Related video (Data API v3 videos kaynağında alan yok, 2026-11-04)"}
@@ -71,7 +68,7 @@ paketler = {"yayin-paketi.json": {
     "metadata": {"baslik": ONERILEN, "aciklama": doldur(V["aciklama"], M), "etiketler": ETIKETLER, "bolumler": BOLUMLER, **META},
     "durum": {**DURUM, "yayin_zamani": ZAMAN["uzun"]},
     "oynatma_listesi_id": None, "onay": dict(ONAY)}}
-for n, blok in ((1, "shorts1"), (2, S2)):
+for n, blok in ((1, "shorts1"), (2, "shorts2")):
     paketler[f"yayin-paketi-shorts-{n}.json"] = {
         "sema": "yayin-paketi/1",
         "_not": f"S03 Shorts {n} ({blok}). ilgili_video = uzun video (Studio adımı, YAYIN.md). paket-uret.py ile üretildi.",

@@ -121,3 +121,11 @@ SONUÇ: 1 hata · 15 bekleyen (F8b)
 
 ## 2026-11-04 devam (limit sonrası): 03-metin/metin.md v0.1 çıktı → [6] sızıntı adları HATA ("six leaks" + 'the cost of care', 'taxes and time' metinde yok; 3. durak 'Nothing leaked' D2) → pinli yorum 'six stops' + metin adlarıyla düzeltildi
 python3 -I paket-kontrol.py → 0 hata · 15 bekleyen (paket.md, paket-kontrol.py sha256: b9b768e9b4be a57a32399858 )
+
+## 2026-11-09 F8b ön güncelleme (koordinatör: slot Çar 11-11, thumbnail K1, teşhis §4, müzik atfı, bölümler sahne-zamanlari ofset 0)
+paket-uret.py → 3 JSON · müzik atif-satirlari.md · yasal not rakam-tablosu birebir · thumbnail K1
+python3 -I paket-kontrol.py → 0 hata · 10 bekleyen; 2 koşu aynı (çıktı 50026ac62e84 ×2, JSON üçlüsü eecec8301a9d ×2); girdiler paket.md 31bd34264715 · paket-uret.py d3af1149f434 · paket-kontrol.py 5cc927695283
+[3b] 7/7 bölüm ↔ sahne bas fark −0,97…0; ACAN = metin bölüm açan sahneler; uç ekran S31 7,8 sn (5–20)
+Negatif test (bölüm +5 sn, shorts2 'as of 2026' yok, eski slot) → 6 HATA; geri yüklendi → 0
+dry-run gerçek: yalnız dosya-yok (uzun 2: video+SRT; thumbnail K1 1280x720 108 KB OK; shorts 1/1 + ilgili_video UYARI)
+dry-run sahte medya (bayt-aynı JSON, 781,4 sn 16:9 + 55 sn 9:16, 04-ses/altyazi-taslak.en.srt 296 blok): 0/0/0 hata; publishAt 2026-11-11T17:00Z / 11-12T14:00Z / 11-14T14:00Z
