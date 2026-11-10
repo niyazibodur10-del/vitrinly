@@ -1,0 +1,3 @@
+pencere 125.35+60: ref 157 · ham hata benim 8 / kurgu 7 · benim↔kurgu 1 · ['to→two of', "trucks→truck's", 'sixtyfiveyearold→65 year old', 'twenty→20', '→work']
+pencere 215.4+60: ref 157 · ham hata benim 18 / kurgu 16 · benim↔kurgu 2 · ['us→u s', 'one hundred thirty thousand dollars→$130 000', 'twenty twentyfive→2025', 'longterm→long term', 'one→1', 'seven→7', 'sixtyfive→65', 'one hundred thousand dollars→$100 000']
+TOPLAM ref 314, ham hata 26 (8.3%) — rakam yazım farkları dahil

@@ -1,0 +1,136 @@
+Paket: yayin-paketi.json
+  [OK]    şema geçerli
+  [OK]    başlık 36/100 karakter
+  [OK]    açıklama (bölümler dahil) 3412/5000 bayt
+  [OK]    etiketler 21 adet, 436/500 karakter (YouTube sayımı)
+  [OK]    video var: ../08-kurgu/final-16x9.mp4 (307.4 MB)
+  [OK]    video 1920x1080, 781.4 sn, h264
+  [OK]    thumbnail 1280x720 jpeg, 108 KB
+  [OK]    SRT final.en.srt: 296 blok, son 781.3 sn, dil en
+  [OK]    bölümler 7 adet, kurallara uygun
+  [OK]    yayin_zamani gelecekte: 2026-11-11T17:00:00Z (+30.6 sa)
+  Sonuç: 0 hata, 0 uyarı, 10 geçen kontrol
+DRY-RUN: videos.insert gövdesi (ağ çağrısı yapılmadı):
+{
+  "snippet": {
+    "title": "The Great Wealth Transfer Has a Leak",
+    "description": "The great wealth transfer, explained: Cerulli estimates $124 trillion will pass …",
+    "tags": [
+      "great wealth transfer",
+      "great wealth transfer explained",
+      "baby boomer inheritance",
+      "boomer wealth transfer",
+      "inheritance explained",
+      "intergenerational wealth transfer",
+      "generational wealth",
+      "wealth transfer",
+      "inheritance",
+      "heirs",
+      "baby boomers",
+      "cerulli",
+      "long term care costs",
+      "estate tax explained",
+      "spouse inheritance",
+      "charitable giving",
+      "personal finance explained",
+      "economics explained",
+      "finance animation",
+      "animated explainer",
+      "toonomy"
+    ],
+    "categoryId": "27",
+    "defaultLanguage": "en",
+    "defaultAudioLanguage": "en"
+  },
+  "status": {
+    "privacyStatus": "private",
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": true,
+    "license": "youtube",
+    "embeddable": true,
+    "publishAt": "2026-11-11T17:00:00Z"
+  }
+}
+Plan: videos.insert (resumable) → thumbnails.set → captions.insert ATLANIR (cihaz akışı kapsamı yok → Studio/--akis yerel)
+Not: onay.niyazi_onayi=false → gerçek yükleme reddedilir.
+exit 0 yayin-paketi.json
+Paket: yayin-paketi-shorts-1.json
+  [OK]    şema geçerli
+  [OK]    başlık 52/100 karakter
+  [OK]    açıklama (bölümler dahil) 804/5000 bayt
+  [OK]    etiketler 7 adet, 113/500 karakter (YouTube sayımı)
+  [OK]    video var: ../08-kurgu/shorts-1.mp4 (14.4 MB)
+  [OK]    video 1080x1920, 41.5 sn, h264
+  [OK]    yayin_zamani gelecekte: 2026-11-12T14:00:00Z (+51.6 sa)
+  [UYARI] şema: bilinmeyen alan 'ilgili_video' (yok sayılır)
+  Sonuç: 0 hata, 1 uyarı, 7 geçen kontrol
+DRY-RUN: videos.insert gövdesi (ağ çağrısı yapılmadı):
+{
+  "snippet": {
+    "title": "Why Does So Much Inheritance Stop at a Spouse First?",
+    "description": "About $124 trillion is expected to pass down in the US through 2048, Cerulli est…",
+    "tags": [
+      "inheritance",
+      "spouse inheritance",
+      "great wealth transfer",
+      "widowed women",
+      "baby boomer inheritance",
+      "shorts",
+      "toonomy"
+    ],
+    "categoryId": "27",
+    "defaultLanguage": "en",
+    "defaultAudioLanguage": "en"
+  },
+  "status": {
+    "privacyStatus": "private",
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": true,
+    "license": "youtube",
+    "embeddable": true,
+    "publishAt": "2026-11-12T14:00:00Z"
+  }
+}
+Plan: videos.insert (resumable)
+Not: onay.niyazi_onayi=false → gerçek yükleme reddedilir.
+exit 0 yayin-paketi-shorts-1.json
+Paket: yayin-paketi-shorts-2.json
+  [OK]    şema geçerli
+  [OK]    başlık 51/100 karakter
+  [OK]    açıklama (bölümler dahil) 879/5000 bayt
+  [OK]    etiketler 7 adet, 105/500 karakter (YouTube sayımı)
+  [OK]    video var: ../08-kurgu/shorts-2.mp4 (12.6 MB)
+  [OK]    video 1080x1920, 43.4 sn, h264
+  [OK]    yayin_zamani gelecekte: 2026-11-14T14:00:00Z (+99.6 sa)
+  [UYARI] şema: bilinmeyen alan 'ilgili_video' (yok sayılır)
+  Sonuç: 0 hata, 1 uyarı, 7 geçen kontrol
+DRY-RUN: videos.insert gövdesi (ağ çağrısı yapılmadı):
+{
+  "snippet": {
+    "title": "If Not Taxes, Where Does the Inheritance Really Go?",
+    "description": "Taxes sound like the scariest leak when money is passed down. But as of 2026, th…",
+    "tags": [
+      "estate tax",
+      "estate tax explained",
+      "inheritance",
+      "great wealth transfer",
+      "median net worth",
+      "shorts",
+      "toonomy"
+    ],
+    "categoryId": "27",
+    "defaultLanguage": "en",
+    "defaultAudioLanguage": "en"
+  },
+  "status": {
+    "privacyStatus": "private",
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": true,
+    "license": "youtube",
+    "embeddable": true,
+    "publishAt": "2026-11-14T14:00:00Z"
+  }
+}
+Plan: videos.insert (resumable)
+Not: onay.niyazi_onayi=false → gerçek yükleme reddedilir.
+exit 0 yayin-paketi-shorts-2.json

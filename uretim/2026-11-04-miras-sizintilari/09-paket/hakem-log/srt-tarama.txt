@@ -1,0 +1,3 @@
+296 blok, son 781.34 sn, maks 42 kr, maks 21.0 kr/sn, sorun 0 []
+yazım: 2238 kelime, kilitli metinde olmayan 0: []
+hiza (akustik hizalama): 296/296 blok, maks 0 ms, >150 ms 0

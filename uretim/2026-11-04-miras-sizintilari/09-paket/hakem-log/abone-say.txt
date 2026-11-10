@@ -1,0 +1,14 @@
+08-kurgu/final-16x9.mp4: 3126 kare (4 fps), olay 8
+   104.75– 107.50 sn  sag   y≈712  doluluk 0.64  kırmızı→gri
+   221.50– 226.25 sn  sag   y≈0  doluluk 0.43  GRI
+   241.00– 254.25 sn  sag   y≈0  doluluk 0.43  GRI
+   428.00– 430.75 sn  sag   y≈712  doluluk 0.62  kırmızı→gri
+   477.25– 481.25 sn  sag   y≈0  doluluk 0.45  GRI
+   494.00– 494.00 sn  sol   y≈910  doluluk 0.48  GRI
+   578.00– 581.00 sn  sol   y≈712  doluluk 0.48  kırmızı→gri
+   772.00– 775.00 sn  sag   y≈712  doluluk 0.63  kırmızı→gri
+08-kurgu/shorts-1.mp4: 166 kare (4 fps), olay 1
+    37.00–  39.00 sn  dikey y≈1368  doluluk 0.67  kırmızı→gri
+08-kurgu/shorts-2.mp4: 174 kare (4 fps), olay 2
+     0.00–   0.00 sn  dikey y≈1672  doluluk 0.63  GRI
+    39.00–  41.00 sn  dikey y≈1368  doluluk 0.67  kırmızı→gri
