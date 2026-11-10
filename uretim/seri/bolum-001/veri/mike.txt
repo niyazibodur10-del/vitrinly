@@ -3,10 +3,10 @@ M02	Two best friends. One hundred bucks.
 M03	A million dollars.
 M04	Okay. Three flips. Hear me out.
 M05	And every good one!
-M06	One. A road bike. Eighty bucks. Flat tires, but look at that frame!
+M06	One. A road bike. Sixty bucks. Flat tires, but look at that frame!
 M07	Air is free, Jake.
 M08	Free? What's the catch?
 M09	So we rent a truck, buy paint, and wait. Slow.
 M10	Three. A mystery box of old video games. Forty bucks.
-M11	That's the fun part!
 M12	Jake, we don't need more money. We need guts.
+B01	Bike, dresser, or mystery box?

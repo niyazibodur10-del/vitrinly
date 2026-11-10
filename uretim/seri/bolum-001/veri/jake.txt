@@ -8,6 +8,6 @@ J07	Two. A solid wood dresser. Free. We paint it, flip it.
 J08	It has to go today. And we have a tiny car.
 J09	Slow. But safe.
 J10	Could be a gem. Could be forty bucks of scratched discs.
-J11	That's the scary part.
 J12	A price tag is just a number. Value is what somebody actually pays.
 J13	Fine. We let them decide.
+B02	Tell us in the comments.

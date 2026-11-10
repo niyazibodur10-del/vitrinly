@@ -16,7 +16,7 @@ Görünüş ve kıyafet her bölümde sabittir (PDF s. 4). Mevsim değişikliği
 | Alan | Kural |
 |---|---|
 | Görünüş | Kısa koyu kahverengi saç, hafif sakal, kahverengi gözler. Lacivert kapüşonlu sweatshirt, bej pantolon. Cebinde kalem. |
-| Ses | Orta-pes, sakin, yavaş (~150 kelime/dk hedef). Cümle sonunda perde düşer, kuru ve düz anlatım. Bağırmaz. En büyük tepkisi tek kaş kaldırmak. Aday: Kokoro `am_michael` 0.95 (kanalın ölçülmüş sakin sesi). Karar ses-yonetmeni'nde. |
+| Ses | Orta-pes, sakin, yavaş (~150 kelime/dk hedef). Cümle sonunda perde düşer, kuru ve düz anlatım. Bağırmaz. En büyük tepkisi tek kaş kaldırmak. Seçilen: Kokoro `am_onyx` 0.95 (ses-yonetmeni, `uretim/seri/sesler/rapor.md`). |
 | Mizah | Deadpan. Kısa, kelimesi kelimesine düzeltmeler ("Air is free." → "Tires aren't."). Abartıyı tek kelimeyle söndürür. Fiziksel komedi yapmaz, ona maruz kalır. |
 | Tekrar eden laflar | "Let me run the numbers." · "Slow. But safe." · "That's a no from the spreadsheet." · İmza cümlesi (PDF'ten): **"A price tag is just a number. Value is what somebody actually pays."** Bu cümle en fazla 10 bölümde bir kullanılır. |
 | Alışkanlık | Her parayı buzdolabındaki beyaz tahtaya ("THE BOARD") yazar. Düşünürken kalemi tahtaya vurur. Mike'a takılırken ona "Hype Man" der. |
@@ -27,7 +27,7 @@ Görünüş ve kıyafet her bölümde sabittir (PDF s. 4). Mevsim değişikliği
 | Alan | Kural |
 |---|---|
 | Görünüş | Dağınık kumral saç, mavi gözler. Kırmızı-siyah ekose gömlek, beyaz tişört, koyu kot. Telefonu hep elinde. |
-| Ses | Daha tiz, hızlı (~170 kelime/dk hedef), parlak. Cümle sonunda perde yükselir. Cümle ortasında güler. Aday: Kokoro `am_fenrir` 1.0 (ölçülmüş daha enerjik ses) veya `am_puck`. Karar ses-yonetmeni'nde. İki ses kör testte birbirinden açıkça ayrılmalı. |
+| Ses | Daha tiz, hızlı (~170 kelime/dk hedef), parlak. Cümle sonunda perde yükselir. Cümle ortasında güler. Seçilen: Kokoro `am_fenrir` 1.05 (ses-yonetmeni). Diyalog aracı `tools/ses/diyalog.py`: iki sesi üst üste okutmaz, ortak replik ikiye bölünür. |
 | Mizah | Coşku, abartı, nesnelere isim koyma ("Meet Brenda." = bisiklet), fiziksel komedi (tezgâha vurur, kameraya eğilir). |
 | Tekrar eden laflar | **"Hear me out."** (her bölümde en fazla 1) · "Easy money." (arkasından iş hep zorlaşır) · "Trust the vibe." · İmza cümlesi (PDF'ten): **"Jake, we don't need more money. We need guts."** Bu cümle en fazla 10 bölümde bir kullanılır. |
 | Alışkanlık | Jake'e takılırken ona "Spreadsheet" der. Aldığı her eşyaya isim verir. Sonuçlanmış her satışta kameraya "ding" işareti yapar. |
@@ -84,11 +84,11 @@ Sezon finali: 1 milyona ulaşmak yerine büyük fırsat + çözülmemiş kriz (P
 
 1. **Her bölümde ekranda `BANK: $X`.** Sabit yer: üst-sol güvenli alan (platform arayüzünün altında kalmaz). Değişim animasyonu: artışta yeşil `+$X` ve "ding", azalışta kırmızı `−$X` ve "thud". THE BOARD'da da aynı rakam yazar; ikisi asla çelişmez.
 2. **BANK = nakit** (cep + hesap). Elde tutulan ürün nakit değildir. İsteğe bağlı küçük "STASH" ikonları alış maliyetiyle gösterilir (2. bölümden itibaren).
-3. **Gizli para yok.** Her işlem gösterilir: alış fiyatı, ek maliyetler (parça, boya, benzin, araç kirası, platform ücreti, satış vergisi), satış fiyatı. Bölüm sonu BANK = önceki BANK ± gösterilen işlemler. Kontrol: `uretim/seri/defter.csv` ve bölüm metnindeki BANK sütunu.
+3. **Gizli para yok.** Her işlem gösterilir: alış fiyatı, ek maliyetler (parça, boya, benzin, araç kirası, platform ücreti, alışlarda ödenen satış vergisi), satış fiyatı. Satışlarda satış vergisi satıcı maliyeti olarak yazılmaz: eBay ve Marketplace vergiyi alıcıdan kendileri tahsil eder, bireysel garaj satışında da satıcı maliyeti değildir [AÖ, genel bilgi, `bolum-001/dogrulama.md` D3]. Bölüm sonu BANK = önceki BANK ± gösterilen işlemler. Kontrol: `uretim/seri/defter.csv` ve bölüm metnindeki BANK sütunu.
 4. **Fiyat gerçekçiliği:** her fiyat ABD ikinci el piyasasında gerçekçi bir aralıkta olmalı. Dayanak satılmış ilanlar, perakende fiyat sayfaları ve güncel platform ücret sayfalarıdır; her fiyat için ≥2 kaynak. Kayıt yeri `uretim/seri/fiyat-referans.md`. **finans-dogrulayici her bölümü yayından önce onaylar.** Kaynaksız fiyat `[RAKAM?]` diye işaretlenir ve kullanılmaz.
 5. **Abartılı kazanç yok.** Aşama 1'de tek bir alım-satımın net kârı, kaynakla gösterilmedikçe alış+masrafın yaklaşık 1 katını geçmez. Satış süresi gerçekçidir (gün–hafta), zaman kartıyla gösterilir. Karakterin tahmini ("double our money!") vaat değildir; diğer karakter hemen sorgular.
 6. **Kayıp ve hata gerçek:** her 10 bölümlük aşamada kararların en az ~4'te 1'i başa baş ya da zararla biter [tasarım kuralı]. Hatalar paraya mal olur: gelmeyen alıcı, yanlış parça, düşük teklif, iade.
-7. **Yatırım yok:** BANK hisse, kripto, bahis, piyango ya da benzeri araçlara asla girmez. Hikâye mal alım-satımı ve işletme üzerinedir. Vergi aşama 4'ten itibaren hikâyede "vergi payı ayırdılar" düzeyinde geçer; kişiye özel vergi bilgisi verilmez.
+7. **Yatırım yok:** BANK hisse, kripto, bahis, piyango ya da benzeri araçlara asla girmez. Hikâye mal alım-satımı ve işletme üzerinedir. Vergi aşama 4'ten itibaren hikâyede "vergi payı ayırdılar" düzeyinde geçer; kişiye özel vergi bilgisi verilmez. Yasal olarak kâr ilk satıştan itibaren vergiye tabidir; daha önceki bölümlerde vergiden söz edilmemesi "vergi yok" anlamına gelmez. "Tax-free money" gibi replik yasaktır (D4).
 8. **Seçim anı BANK'a uyar:** BANK'ın karşılayamayacağı seçenek sunulmaz. Borç yalnız aşama 5'te hikâye sonucu olarak görünür; izleyiciye yüksek faizli borç seçeneği sunulmaz.
 
 ---
@@ -105,7 +105,8 @@ Sezon finali: 1 milyona ulaşmak yerine büyük fırsat + çözülmemiş kriz (P
    Buluşmalar gündüz ve kalabalık yerde yapılır; bu tavsiye olarak değil, karakterlerin rutini olarak gösterilir.
 4. **Sonuç zarfı:** her seçeneğin gerçekçi sonucu (yön + BANK aralığı) yayından **önce** bölüm metnine yazılır ve kilitlenir. Kazanan seçenek, yorumlara bakılarak cezalandırılmaz ya da ödüllendirilmez. Güven kuralı budur (PDF s. 3: seçimin sonucu ekranda görünmeli).
 5. Seçim anı bir **duygusal çatışmayla** gelir (ikisi aynı anda paraya uzanır, kapı çalar, ilan "2 dk önce" güncellenir). Kuru bir menü yeterli değildir.
-6. Son replik her bölümde aynıdır: iki karakter kameraya döner, **"What should we do? Tell us in the comments."** Ardından 2–3 sn "Ep. N drops tomorrow" kartı.
+6. **Kapanış sorusu bölüme özgüdür** (koordinatör kararı 2026-11-10, `politika-format.md` §7.3): iki karakter kameraya döner. Biri o bölümün seçeneklerini adıyla sorar, öbürü "Tell us in the comments." ile bitirir. Örnek: "Bike, dresser, or mystery box? Tell us in the comments." Sabit genel cümle ("What should we do?") kullanılmaz: her bölümde aynı genel istek etkileşim yemi sınırına yaklaşır ve şablon izlenimi verir.
+7. **Kapanış kartı gün sözü vermez:** "Ep. N: YOUR call" (2–3 sn). "tomorrow", "drops Friday" gibi tarih ya da gün sözü kartta, replikte ve açıklamada yasaktır. Stok tutulmadığı için yayın kayabilir ve video kalıcı olarak yanlış söz taşır.
 
 ---
 
@@ -118,7 +119,7 @@ Sezon finali: 1 milyona ulaşmak yerine büyük fırsat + çözülmemiş kriz (P
   - Karakterler kararı bir replikle kabul eder ("Okay. The bike it is."). Böylece izleyici kararının hikâyeyi değiştirdiğini duyar.
   - Kullanıcı adı uygunsuzsa ya da kişisel bilgi içeriyorsa kart "A viewer decided: …" olur.
 - Kazanan yoruma kısa yanıt (koordinatör/sistem, Niyazi kalıcı izni): "You're in Ep. N." gibi. Ödül, hediye ya da vaat yoktur.
-- Açıklamada ve bio'da şeffaflık satırı yer alır: "Comments may be shown on screen with your username."
+- Açıklamada ve bio'da şeffaflık ve vazgeçme satırı yer alır: "We may feature your comment in the next episode. Prefer to stay anonymous? Just say so in your comment." Anonim kalmak isteyen yazarın kartı "A viewer decided: …" olur.
 
 ## 7. Seçenek dışı yaratıcı fikirler
 
@@ -129,10 +130,10 @@ Sezon finali: 1 milyona ulaşmak yerine büyük fırsat + çözülmemiş kriz (P
 
 ## 8. Platform kuralları
 
-- **Etkileşim yemi yok** (Meta "engagement bait": oy, yorum, tepki, paylaşım ve etiketleme amaçlı açık istek dağıtımı düşürülür. [arama özeti + Meta Transparency sayfası, 2026-11-10]). Yasak: "comment X", "comment A/B", "like if", "tag a friend", "share to unlock", "Part 2 at 1,000 comments". Serbest olan tek kalıp, hikâyeye gerçekten yön veren açık uçlu soru: "What should we do? Tell us in the comments."
+- **Etkileşim yemi yok** (Meta "engagement bait": oy, yorum, tepki, paylaşım ve etiketleme amaçlı açık istek dağıtımı düşürülür. [arama özeti + Meta Transparency sayfası, 2026-11-10]). Yasak: "comment X", "comment A/B", "like if", "tag a friend", "share to unlock", "Part 2 at 1,000 comments". Serbest olan tek kalıp, hikâyeye gerçekten yön veren ve bölümün seçeneklerini adıyla soran soru + "Tell us in the comments." (§5.6).
 - **Hediye, ödül, çekiliş yok.** "Comment to win" yok. YouTube'un yarışma ve teşvik (incentivization) kuralları bu yüzden devreye girmez.
 - **Yatırım tavsiyesi yok.** Karakterler çizgi film karakteridir, uzman ya da danışman değildir. İzleyiciye "you should …" para tavsiyesi vermezler. Açıklamada "Fiction. Not financial advice." satırı bulunur.
-- **Yapay zekâ beyanı:** sesler ve görseller yapay zekâ ile üretilirse açıklamada "Voices are AI-generated" satırı bulunur. Platform etiketleri (IG AI info, YouTube altered/synthetic, TikTok AI-generated) için karar monetizasyon-uyum-uzmani'ndedir.
+- **Yapay zekâ beyanı:** her açıklamada "Fiction. Not financial advice. Voices and visuals are AI-generated." satırı bulunur. Platform etiketleri (IG AI info, YouTube altered/synthetic, TikTok AI-generated) için karar monetizasyon-uyum-uzmani'ndedir.
 - **Özgünlük:** her bölüm yeni bir olay ve yeni bir karar içerir. Aynı sahne görseli birebir tekrar kullanılmaz (mekân aynı, kompozisyon/prop/ifade farklı). Tanıtım cümlesi her bölümde aynen tekrarlanmaz; bölüm 2'den itibaren tanıtım ≤4 sn'lik "Day N · BANK $X" kartına iner.
 - Çocuklara yönelik değil (genel kitle, "made for kids" = hayır).
 
@@ -145,9 +146,11 @@ Sezon finali: 1 milyona ulaşmak yerine büyük fırsat + çözülmemiş kriz (P
 | 5–25 sn | Kararın sonucu başlar: maliyet görünür, BANK değişir |
 | 25–60 sn | Gelişme + komplikasyon (alıcı, kusur, pazarlık); en az 1 şaka / ~10 sn |
 | 60–80 sn | Yeni ikilem + seçeneklerin artı/bedeli |
-| son 6–8 sn | İkisi kameraya döner, seçim kartı, CTA; ardından "Ep. N drops tomorrow" |
+| son 6–8 sn | İkisi kameraya döner, seçenekleri adıyla soran soru + "Tell us in the comments.", seçim kartı; ardından "Ep. N: YOUR call" kartı (gün sözü yok) |
 
 Kural: her bölümde en az 1 BANK değişimi olur ya da değişmeme nedeni söylenir. Her karakterin imza cümlesi en fazla 1 kez geçer. Süre metin-kontrol betiğiyle ölçülür (`bolum-001/veri/metin-kontrol.py`, kopyala + parametrele). Telaffuz yasakları: charts, complicated, scenarios, truth, crashes, bold. Replikte rakam yerine yazıyla sayı.
+
+**Görsel üretim kısıtı (koordinatör 2026-11-10):** karakter başına 1 konuşma tabanı + 3 ağız durumu + 6 ifade portresi (nötr, sıcak gülümseme, şaşkın, endişeli, heyecanlı, düşünceli). Telefon, kalem, banknot, ilan kartı, ikon ve tahta yazısı kodla eklenir. Sahne notu yeni poz istemez; anlam kamera, ifade değişimi ve kod-prop ile verilir. Önden portreler ağız oynatmadığı için yalnız sessiz anlarda (kameraya bakış, tepki) kullanılır. Ses aracı: `tools/ses/diyalog.py`, girdi `bolum-NNN/bolum.txt` (`metin-kontrol.py --yaz` üretir).
 
 ## 10. Süreklilik dosyaları
 - `uretim/seri/defter.csv`: bolum, olay, tutar, bank_sonra, fiyat_ref. Her bölümde 1+ satır.
