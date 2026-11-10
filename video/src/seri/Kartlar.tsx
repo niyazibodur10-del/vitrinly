@@ -121,14 +121,14 @@ export const KararKartiKatman: React.FC<{ k: KararKarti; sonrakiNo: number }> = 
           transform: `scale(${0.85 + 0.15 * kart})`, opacity: Math.min(1, kart * 1.5),
         }}
       >
-        <div style={{ padding: "34px 34px 30px", borderRadius: 36, background: ZEMIN_KART, border: `4px solid ${ALTIN}`, boxShadow: "0 18px 44px rgba(0,0,0,0.6)" }}>
+        <div style={{ padding: "28px 30px 24px", borderRadius: 36, background: ZEMIN_KART, border: `4px solid ${ALTIN}`, boxShadow: "0 18px 44px rgba(0,0,0,0.6)" }}>
           <div style={{ fontFamily: anton, fontSize: 34, letterSpacing: 5, color: ALTIN }}>YOU DECIDE</div>
-          <div style={{ fontFamily: fredoka, fontWeight: 700, fontSize: 58, lineHeight: 1.12, color: "#fff", marginTop: 8 }}>{k.soru}</div>
-          <div style={{ display: "flex", flexDirection: "column", gap: 16, marginTop: 26 }}>
+          <div style={{ fontFamily: fredoka, fontWeight: 700, fontSize: 54, lineHeight: 1.1, color: "#fff", marginTop: 6 }}>{k.soru}</div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 12, marginTop: 20 }}>
             {k.secenekler.map((s, i) => {
               const p = sec(i);
               return (
-                <div key={i} style={{ display: "flex", alignItems: "center", gap: 20, padding: "14px 18px", borderRadius: 22, background: "rgba(255,255,255,0.08)", opacity: Math.min(1, p * 1.4), transform: `translateX(${(1 - p) * 60}px)` }}>
+                <div key={i} style={{ display: "flex", alignItems: "center", gap: 20, padding: "10px 16px", borderRadius: 22, background: "rgba(255,255,255,0.08)", opacity: Math.min(1, p * 1.4), transform: `translateX(${(1 - p) * 60}px)` }}>
                   <div style={{ flex: "none", width: 72, height: 72, borderRadius: 18, background: HARF_RENK[i], display: "flex", alignItems: "center", justifyContent: "center", fontFamily: anton, fontSize: 48, color: "#fff", boxShadow: "0 4px 0 rgba(0,0,0,0.35)" }}>
                     {"ABC"[i]}
                   </div>
@@ -137,7 +137,7 @@ export const KararKartiKatman: React.FC<{ k: KararKarti; sonrakiNo: number }> = 
               );
             })}
           </div>
-          <div style={{ marginTop: 26, textAlign: "center", opacity: Math.min(1, cagri * 1.4), transform: `scale(${0.8 + 0.2 * cagri})` }}>
+          <div style={{ marginTop: 20, textAlign: "center", opacity: Math.min(1, cagri * 1.4), transform: `scale(${0.8 + 0.2 * cagri})` }}>
             <div style={{ fontFamily: fredoka, fontWeight: 700, fontSize: 48, color: "#fff" }}>
               Tell us in the comments <span style={{ display: "inline-block", transform: `translateY(${ok}px)` }}>👇</span>
             </div>
