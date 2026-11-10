@@ -1,55 +1,45 @@
-# Flip By Vote · karakter + mekân Canva prompt paketi (v1, 2026-11-10)
-İLERLEME: prompt paketi tamam · sıradaki: koordinatör dalga 1'i Canva'da üretir → gorsel-varlik-sanatcisi kontakt sayfası + eleme (`uretim/seri/karakter/rapor.md`).
-- **Kota planı: 11 istek + 1 yedek = 12** (her istek ~4 aday). Sıra: Dalga 1 = J-A, M-A, G-A, P-A, A-A, K-A (6, birbirinden bağımsız) → Dalga 2 = D-A, T-J, T-M (3) → Dalga 3 = AG-J, AG-M (2) → 12. hak: ilk kalan öğenin B varyantı (öncelik: sayfa > taban > plaka > göz kırpma GK-J).
-- **İlk Canva'ya gidecek iki prompt: J-A ve M-A** (aşağıda aynen). Referans yok, aspectRatio `LANDSCAPE_16_9`.
-- Promptlar elle değil `araclar/prompt-uret.py` ile üretildi: kilit blokları (JAKE/MIKE/STYLE) tek yerde, her promptta birebir. Kontrol: `python3 -I araclar/prompt-uret.py canva-promptlari.md` → 0 hata; `--negatif` → 4 bozulma yakalandı.
-- Stil: özgün stilize 3D animasyon filmi görünümü; promptlarda stüdyo/film adı YOK (betik yasaklar). Gerçek kişi/ünlü benzerliği yasak cümlesi her karakter promptunda.
+# Flip By Vote · karakter + mekân Canva prompt paketi (v2, 2026-11-10)
+İLERLEME: J-A + M-A KABUL (rapor.md) · sıradaki: koordinatör L1-A'yı üretir (aşağıdaki sıra) → gorsel-varlik-sanatcisi değerlendirir.
+- **Kota: 12 hakkın 2'si kullanıldı (J-A, M-A); her istek 1 görsel döndürüyor (4 aday değil, koordinatör gözlemi).** Bu yüzden "4 adaydan seç" yok; her istek tek atış, kalanı yeniden deneme hakkından gider.
+- **Bölüm 1 sırası (10 hak):** 3 L1-A → 4 L1-B → 5 T-J → 6 T-M → 7 AG-J → 8 AG-M → 9–12 yedek: (a) kalan öğeyi yeniden dene, (b) L1-C (önce KOD: L1-A tezgâh kırpımı + `buyut.py`), (c) GK-J göz kırpma, (d) D-A ikili.
+- Bölüm 1 yalnız L1 THE KITCHEN kullanıyor (`../seri-incili.md` §2, `../bolum-001/metin.md` §4). Garaj (L4, bölüm 11+), driveway (L3), araba (L2) promptları hazır, sırası gelince üretilir. Eski K-A/K-B (masa) incil L1 ile değişti, kullanılmaz.
+- Referanslar: Jake sayfası `MAHajKKbhbM`, Mike sayfası `MAHajPZXWbU` (imageReferences). Plakalar referanssız (sayfa referansı plakaya karakter sokar).
+- Promptlar `araclar/prompt-uret.py` ile üretilir (kilitler tek yerde, birebir). `python3 -I araclar/prompt-uret.py canva-promptlari.md` → 27 prompt, 0 hata; `--negatif` → 4/4 bozulma yakalandı. Stüdyo adı yasak.
 
 ## 0. Kurallar (Leo deneyiminden taşınan, ölçülmüş)
-- **Kimlik çapası = karakter sayfası; sonraki her poz "taban + EDIT … ONLY CHANGE …"** ile üretilir. Leo'da sıfırdan kilit prompt kafa korelasyonu 0,45 verdi (yasak), düzenleme 0,84–0,96.
-- **Plakalar karaktersiz ve sayfasız** üretilir (sayfa referansı plakaya karakter sokuyor — Leo dersi). Karakter = ayrı kesik (M4 kesme, `uretim/2026-10-28-yeni-video/05-gorsel/araclar/kes-m4.py`) + KOD bindirme.
-- **Ekrana yazı/rakam üretilmez**; tabela, fiyat etiketi, beyaz tahta boş gelir, yazı Remotion'da KOD ile eklenir (izleyici adı kartı dahil).
-- Bakış düzenlemede değişmez ("same eye direction"); aynalama yasak (Jake'in saç ayrımı sağa, aynalanınca kimlik kayar).
-- Taban pozlarda düz slate-blue zemin (M4 Lab anahtarıyla temiz kesim); sayfa ve ikilide açık gri zemin.
+- **Kimlik çapası = karakter sayfası; sonraki her poz "taban + EDIT … ONLY CHANGE …"** (Leo: sıfırdan 0,45, düzenleme 0,84–0,96).
+- **Plakalar karaktersiz ve sayfasız.** Karakter = ayrı kesik (M4, `uretim/2026-10-28-yeni-video/05-gorsel/araclar/kes-m4.py`) + KOD bindirme. Tezgâh plakası: bel üstü kesik tezgâh arkasına oturur (alt gövde üretilmez).
+- **Ekrana yazı/rakam üretilmez**; beyaz tahta boş gelir, "THE BOARD", "$100", ilan kartları, banknot KOD ile.
+- Bakış düzenlemede değişmez; ikili kadrajda Jake solda (sağa bakar), Mike sağda (sola bakar) → tek çekim kesmelerinde birbirlerine bakarlar. Aynalama yasak.
+- Telefon (Mike) ve kalem (Jake) prop'tur: kilide girmez, KOD katmanı veya düzenleme.
 
-## 1. Kota ve dalga planı (en fazla 12 istek)
-| # | ID | Ne | Referans | Bağımlılık |
-|---|---|---|---|---|
-| 1 | J-A | Jake sayfası (dönüş + 6 ifade) | yok | — |
-| 2 | M-A | Mike sayfası | yok | — |
-| 3–6 | G-A, P-A, A-A, K-A | 4 mekân plakası 9:16 | yok | — (dalga 1'de paralel) |
-| 7 | D-A | İkili tam boy, 9:16 | Jake + Mike sayfası | 1, 2 |
-| 8–9 | T-J, T-M | Konuşma tabanı (bel üstü, 9:16, ağız kapalı) | ilgili sayfa | 1, 2 |
-| 10–11 | AG-J, AG-M | Ağız açık düzenlemesi | [taban, sayfa] | 8, 9 |
-| 12 | yedek | Kalan ilk öğenin B varyantı; hiçbiri kalmadıysa GK-J (göz kırpma) | — | — |
+## 1. Bölüm 1 poz gerçeği (metin §4: Jake 10, Mike 10, ikili 3 poz istiyor)
+10 hakla 23 poz üretilemez. Öneri (animasyon-yonetmeni ile): her karakter 1 konuşma tabanı (tezgâh arkası, bel üstü) + 2 ağız durumu + sayfadaki 6 ifade portresi (kameraya bakış anları S2/S8 ve tepki yakın planları) + KOD hareketi (punch-in, sarsıntı, eğilme = ölçek/kaydırma). Kollar bağlı, telefon uzatma, kalemle yazma gibi el pozları bölüm 1'de üretilmez: telefon/kalem prop'u kadraj altından KOD ile girer, yazı tahtada KOD ile belirir. Yedek haklar el pozuna değil tutarlılığa harcanır.
 
-Karar kuralları: sayfa (J-A/M-A) 4 adaydan biri ölçütü geçmezse 12. hak J-B/M-B'ye (bölünmüş yol; B2 ifade düzenlemesi bir hak daha ister → o durumda D-A ertelenir, T-J/T-M dönüş görünümünden üretilir). İkisi de kalırsa ESKALASYON (C varyantı sonraki ay hakkıyla). Plaka B/C varyantları ve G-C (gece) bu 12'nin dışında, sonraki bölümlerin hakkıyla.
-Çıktı boyutu: dikey doğal boyut büyük olasılıkla 944x1680 [tahmin: yatay 1680x944'ün aynası, ilk üretimde `get-assets` ile doğrulanır]. Tam boy için 1080x1920 dikey export tuvali gerekir (`tools/gorsel/canva-indir.md` yöntemi; `resize-design` ile mevcut tuvalden, AI hakkı harcamaz) → uretim-muhendisi/koordinatör. Karakter ≥2048 px için export sonrası `tools/karakter/buyut.py`.
-
-## 2. Tutarlılık testi ve eleme ölçütü (gelen her aday)
-Hedef renkler (Lab ΔE ölçümü, `tools/gorsel/tutarlilik.py`; sayfa seçildikten sonra hedef = seçilen sayfanın ön görünümü):
-| Öğe | Jake hedef | Mike hedef |
+## 2. Tutarlılık testi ve eleme ölçütü (gelen her görsel)
+**Hedef renkler = kabul edilen sayfaların ölçülen medyanı** (`araclar/sayfa-olcum.py`; kanonik kaynak artık sayfa, ilk taslak hex'leri değil):
+| Öğe | Jake (J-A) | Mike (M-A) |
 |---|---|---|
-| Üst | lacivert hoodie ≈ #1F2B47, gri bağcık, baskı/logo yok | kırmızı ≈ #B3272D + siyah büyük kareli flanel, açık; beyaz tişört ≈ #F2F2F0 |
-| Alt | bej chino ≈ #CDB48E, beyaz düz spor ayakkabı | koyu indigo jean ≈ #23314D, kahverengi bot |
-| Saç | kısa koyu kahve ≈ #3B2A20, üst sağa taranmış | dağınık kumral ≈ #A07A4E, alna düşen |
-| Yüz | kahverengi göz, hafif kısa sakal+bıyık, oval yüz | mavi göz, sakalsız, hafif kare yüz, yanak kızarıklığı |
+| Üst | lacivert hoodie #293347, gri bağcık, baskı yok | kırmızı #901B18 + siyah büyük kareli flanel, açık, kol dirsek altı kıvrık; beyaz tişört #E9E5E2 |
+| Alt | bej chino #BCAB91, beyaz spor ayakkabı #E3DEDB | koyu indigo jean #2A3445, kahverengi bot #4C2E1F |
+| Saç | koyu kahve #452E20, kısa, üst sağa | dağınık kestane-kumral #6B3F23, alna düşen |
+| Yüz | kahverengi göz, kısa hafif sakal+bıyık, oval | mavi göz, sakalsız, yanak kızarıklığı, hafif kare |
 
 **Kesin eleme (biri bile → ELE):** yanlış renk/kıyafet (ör. hoodie siyah/gri, flanel başka desen, kapüşon başta, kol kıvrık değil); yazı/logo/harf/rakam (1:1 + 2× kırpım); şapka/gözlük/saat/takı; Jake sakalsız veya dolgun sakallı; Mike'ta sakal; sayfada figürler arası kıyafet/saç farkı (ön-yan-arka ve 6 ifade aynı kişi değil); ekstra kişi; el/parmak bozukluğu ön planda; 2D/çizgi kontur veya fotogerçekçi stil; tanınır ünlü/var olan çizgi film karakteri benzerliği.
 **Puanlama (geçenler arasında seçim):** kontrol listesi Jake 8 / Mike 8 madde (saç şekli, saç rengi, kaş, göz rengi, sakal durumu, üst giysi, alt giysi + ayakkabı, yüz oranı) tam puan şart; sonra (a) sayfa içi tutarlılık: 6 ifade kafası ↔ ön görünüm kafa HSV kor. (ortalama en yüksek kazanır), (b) ifadelerin okunurluğu (6/6 ayırt edilebilir), (c) arka görünümde kapüşon/flanel deseni doğru.
 **Türev pozlar (taban, ağız, ikili) eşikleri:** sayfaya/tabana göre kafa hist kor. ≥0,84, ten ΔE ≤8, saç ΔE ≤10, giysi ΔE ≤8; ağız düzenlemesinde kafa merkez kayması ≤4 px ve ölçek farkı ≤%2 (yama oturmalı), ağız dışındaki yüz farkı (fark maskesi) yalnız ağız bölgesinde.
 **İkili (D-A):** iki yüz kendi sayfasına kor. ≥0,80 (iki kişi tek üretimde, eşik bir basamak düşük), Mike Jake'ten hafif uzun, figürler değmiyor (ayrı kesilebilir).
 **Plakalar:** gerçek boyut 9:16; kişi yok; yazı/logo/plaka yok (1:1 + 2× kırpım); orta %60 şerit y %35–85 boş (bel üstü kesik bindirme testi: T-J/T-M kesiği konulur, ölçek ve ışık uyumu göz incelemesi); alt %25 sakin; 4 plaka birbirine stil olarak uyumlu (aynı render dili, kontur yok; ilk seçilen G-A ile yan yana kontakt sayfada). `stil-olcum.py` 2D için ayarlı → 3D için ilk kabul edilen plaka değerleri taban alınır, diğerleri ±%25 içinde.
-**Kontakt sayfası:** her öğe için referans/sayfa + 4 aday yan yana, elenenler gerekçeyle `uretim/seri/karakter/rapor.md`'ye; her dosyaya prompt ID + Canva media ID + üretim tarihi.
+**Kontakt sayfası:** her öğe için referans sayfa + gelen görsel yan yana, elenenler gerekçeyle `uretim/seri/karakter/rapor.md`'ye; her dosyaya prompt ID + Canva media ID + üretim tarihi.
 
 ## 3. Konuşan sahne yaklaşımı (3D görünümlü stilde en düşük maliyet)
 | Yol | Hak maliyeti (karakter başına) | Risk |
 |---|---|---|
-| **1. Aynı poz, ağız kapalı / yarı açık / açık + yama** | taban 1 + ağız 1 (4 adaydan yarı açık ve açık seçilir; çıkmazsa +1) | Düzenleme ağız dışında yüzü de değiştirebilir (Leo'da bakış değişince 0,70); 3D gölgelendirmede yama sınırı ton basamağı yapabilir → Leo `rig-yama.py` (fark maskesi +11 px, Gauss 4,5) + gerekirse ten Lab eşleme. Yalnız bir kafa açısında konuşur; her yeni açı = 2 hak. |
+| **1. Aynı poz, ağız kapalı / yarı açık / açık + yama** | taban 1 + ağız 1 (istek 1 görsel döndürüyor → 2 durum: kapalı + açık; yarı açık = 2 karelik alfa karışımı) | Düzenleme ağız dışında yüzü de değiştirebilir (Leo'da bakış değişince 0,70); 3D gölgelendirmede yama sınırı ton basamağı yapabilir → Leo `rig-yama.py` (fark maskesi +11 px, Gauss 4,5) + gerekirse ten Lab eşleme. Yalnız bir kafa açısında konuşur; her yeni açı = 2 hak. |
 | 2. Kafa + göz katmanı + ağız yaması (rig) | taban 1 + ağız 1 + göz 1 + kesme işi | 3D ışıkta boyun ekleminde dikiş ve gölge kopukluğu görünür; kafa döndürme 2D'deki gibi inandırıcı değil (perspektif sabit). Leo rig'i 2D düz renkte çalıştı, 3D'de en riskli yol. Kazanç az: kafa sallama KOD ile tüm kesiğe (hafif dönme/ölçek) zaten verilebilir. |
 | 3. Yalnız kamera + altyazı + ifade değişimi | 0 ek (sayfadaki 6 ifade + sahne kesikleri) | Yakın planda konuşan ama ağzı kıpırdamayan yüz "ölü" görünür; Reels'te izleyici fark eder. Geniş plan, sırtı dönük, dinleyen tepki çekimi ve dış ses için sorunsuz. |
 
-**Öneri: 1 + 3 karma.** Konuşan yakın plan yalnız T-J / T-M tabanıyla (2 durumlu ağız: kapalı + açık; yarı açık 4 adaydan çıkarsa 3 durum). Rhubarb eşlemesi: X, A → kapalı; B, C, E, F, G, H → yarı açık (yoksa açık); D → açık. Geçişte 2 karelik alfa karışımı. Her şeye "nefes" (ölçek %0,5 salınım) + konuşma vurgusunda kafa-kesik mikro dönme KOD ile. Diğer tüm çekimler yol 3: ikili/mekân geniş planlar, dinleyenin tepki ifadesi (sayfadan değil, gerekirse ifade düzenlemesi taban üzerinden). Bölüm başına ek hak = 0 (taban ve ağızlar tüm sezon tekrar kullanılır; değişen plaka ve kamera). Göz kırpma: 12. hak kalırsa GK-J; yoksa sonraki ay. Image-to-video (canlı ağız) ücretli olabilir → yalnız Niyazi onayıyla, burada planlanmadı.
+**Öneri: 1 + 3 karma.** Konuşan yakın plan yalnız T-J / T-M tabanıyla (2 durumlu ağız: kapalı + açık; ara kare alfa karışımı). Rhubarb eşlemesi: X, A → kapalı; B, C, E, F, G, H → yarı açık (yoksa açık); D → açık. Geçişte 2 karelik alfa karışımı. Her şeye "nefes" (ölçek %0,5 salınım) + konuşma vurgusunda kafa-kesik mikro dönme KOD ile. Diğer tüm çekimler yol 3: ikili/mekân geniş planlar, dinleyenin tepki ifadesi (sayfadan değil, gerekirse ifade düzenlemesi taban üzerinden). Bölüm başına ek hak = 0 (taban ve ağızlar tüm sezon tekrar kullanılır; değişen plaka ve kamera). Göz kırpma: 12. hak kalırsa GK-J; yoksa sonraki ay. Image-to-video (canlı ağız) ücretli olabilir → yalnız Niyazi onayıyla, burada planlanmadı.
 Not: tek açı = dikey diyalogda karşılıklı kesme (Jake sola, Mike sağa bakar → yan yana kesmede birbirlerine bakarlar).
 
 ## 4. Promptlar (betik çıktısı; elle düzenleme yapma, `araclar/prompt-uret.py`'yi değiştir)
@@ -121,7 +111,7 @@ No text, no letters, no numbers, no labels, no signs, no brand logos, no badges,
 ```
 
 ### D-A · İkili · sıra 1 (dalga 2)
-- aspectRatio: `PORTRAIT_9_16` · referans: [Jake sayfası kazanan, Mike sayfası kazanan] · not: boy/oran referansı + kesilebilir (zeminde ayrı iki figür) · 2763 karakter
+- aspectRatio: `PORTRAIT_9_16` · referans: [MAHajKKbhbM, MAHajPZXWbU] · not: boy/oran referansı + kesilebilir (zeminde ayrı iki figür) · 2763 karakter
 ```
 STYLE LOCK: original stylized 3D animated-feature look, clean high-quality CG render, soft global illumination, gentle subsurface scattering on skin, appealing slightly stylized proportions (head a little larger than realistic, large expressive eyes, simplified rounded forms), smooth matte fabric with subtle weave texture, soft contact shadows. No outlines, no cel-shading, not a 2D drawing, not photorealistic, not claymation. Original character design, not resembling any existing cartoon character, celebrity or real person.
 JAKE LOCK (identical in every image): Jake Miller, an original 26-year-old American man, slim average build, light warm skin, oval face with a defined jaw, short dark-brown hair (short on the sides, neat slightly longer top brushed to his right), straight dark-brown eyebrows, calm warm-brown eyes, short light even stubble on jaw, chin and upper lip (not a full beard). Outfit never changes: plain navy-blue pullover hoodie with the hood down, front kangaroo pocket and two light-grey drawstrings, no print and no logo; beige chino pants; plain white low-top sneakers. No glasses, no hat, no jewelry, no watch. Body language: calm, analytical, composed.
@@ -133,7 +123,7 @@ No text, no letters, no numbers, no labels, no signs, no brand logos, no badges,
 ```
 
 ### D-B · İkili · sıra 2
-- aspectRatio: `PORTRAIT_9_16` · referans: [Jake sayfası, Mike sayfası] · not: diyalog iki-çekimi tabanı; D-A geçerse yalnız yedek hakla · 2596 karakter
+- aspectRatio: `PORTRAIT_9_16` · referans: [MAHajKKbhbM, MAHajPZXWbU] · not: diyalog iki-çekimi tabanı; D-A geçerse yalnız yedek hakla · 2596 karakter
 ```
 STYLE LOCK: original stylized 3D animated-feature look, clean high-quality CG render, soft global illumination, gentle subsurface scattering on skin, appealing slightly stylized proportions (head a little larger than realistic, large expressive eyes, simplified rounded forms), smooth matte fabric with subtle weave texture, soft contact shadows. No outlines, no cel-shading, not a 2D drawing, not photorealistic, not claymation. Original character design, not resembling any existing cartoon character, celebrity or real person.
 JAKE LOCK (identical in every image): Jake Miller, an original 26-year-old American man, slim average build, light warm skin, oval face with a defined jaw, short dark-brown hair (short on the sides, neat slightly longer top brushed to his right), straight dark-brown eyebrows, calm warm-brown eyes, short light even stubble on jaw, chin and upper lip (not a full beard). Outfit never changes: plain navy-blue pullover hoodie with the hood down, front kangaroo pocket and two light-grey drawstrings, no print and no logo; beige chino pants; plain white low-top sneakers. No glasses, no hat, no jewelry, no watch. Body language: calm, analytical, composed.
@@ -145,7 +135,7 @@ No text, no letters, no numbers, no labels, no signs, no brand logos, no badges,
 ```
 
 ### D-C · İkili · sıra 3 (mekânlar kilitlendikten sonra, isteğe bağlı)
-- aspectRatio: `PORTRAIT_9_16` · referans: [G kazanan plaka, Jake sayfası, Mike sayfası] · not: 3 referans bağlayıcıda denenmedi (risk); afiş/tanıtım görseli · 2390 karakter
+- aspectRatio: `PORTRAIT_9_16` · referans: [<G kazanan>, MAHajKKbhbM, MAHajPZXWbU] · not: 3 referans bağlayıcıda denenmedi (risk); afiş/tanıtım görseli · 2390 karakter
 ```
 STYLE LOCK: original stylized 3D animated-feature look, clean high-quality CG render, soft global illumination, gentle subsurface scattering on skin, appealing slightly stylized proportions (head a little larger than realistic, large expressive eyes, simplified rounded forms), smooth matte fabric with subtle weave texture, soft contact shadows. No outlines, no cel-shading, not a 2D drawing, not photorealistic, not claymation. Original character design, not resembling any existing cartoon character, celebrity or real person.
 JAKE LOCK (identical in every image): Jake Miller, an original 26-year-old American man, slim average build, light warm skin, oval face with a defined jaw, short dark-brown hair (short on the sides, neat slightly longer top brushed to his right), straight dark-brown eyebrows, calm warm-brown eyes, short light even stubble on jaw, chin and upper lip (not a full beard). Outfit never changes: plain navy-blue pullover hoodie with the hood down, front kangaroo pocket and two light-grey drawstrings, no print and no logo; beige chino pants; plain white low-top sneakers. No glasses, no hat, no jewelry, no watch. Body language: calm, analytical, composed.
@@ -155,7 +145,7 @@ SHOT: the two friends standing in the open center of the garage, Jake on the lef
 No text, no letters, no numbers, no labels, no signs, no brand logos, no badges, no license plates, no watermark, no color swatches. Vertical 9:16 portrait.
 ```
 
-### G-A · Garaj (merkez üs) · sıra 1 (dalga 1)
+### G-A · Garaj (incil L4, bölüm 11+) · sıra bölüm 11 öncesi
 - aspectRatio: `PORTRAIT_9_16` · referans: yok · 1809 karakter
 ```
 STYLE LOCK: original stylized 3D animated-feature environment, clean high-quality CG render, soft global illumination, slightly exaggerated rounded shapes, tidy simplified detail, believable materials, not photorealistic, not a 2D drawing. Palette: cool, slightly desaturated background tones with warm pools of practical light (warm-colored characters will be composited in front).
@@ -166,7 +156,7 @@ VERTICAL 9:16 FRAME RULES: camera at natural eye level; keep the central vertica
 No text, no letters, no numbers, no labels, no signs, no brand logos, no badges, no license plates, no watermark, no color swatches. Vertical 9:16 portrait.
 ```
 
-### G-B · Garaj (merkez üs) · sıra 2
+### G-B · Garaj (incil L4, bölüm 11+) · sıra bölüm 11 öncesi (B)
 - aspectRatio: `PORTRAIT_9_16` · referans: yok · not: plan/oy sahneleri için (beyaz tahtaya KOD yazı) · 1533 karakter
 ```
 STYLE LOCK: original stylized 3D animated-feature environment, clean high-quality CG render, soft global illumination, slightly exaggerated rounded shapes, tidy simplified detail, believable materials, not photorealistic, not a 2D drawing. Palette: cool, slightly desaturated background tones with warm pools of practical light (warm-colored characters will be composited in front).
@@ -177,13 +167,13 @@ VERTICAL 9:16 FRAME RULES: camera at natural eye level; keep the central vertica
 No text, no letters, no numbers, no labels, no signs, no brand logos, no badges, no license plates, no watermark, no color swatches. Vertical 9:16 portrait.
 ```
 
-### G-C · Garaj (merkez üs) · sıra sonraki ay (gece sürümü)
+### G-C · Garaj (incil L4, bölüm 11+) · sıra sonraki ay (gece sürümü)
 - aspectRatio: `PORTRAIT_9_16` · referans: [G kazanan] · not: kriz/gece bölümleri; 12'lik pakete dahil değil · 421 karakter
 ```
 EDIT the reference image. Keep the same garage, same camera, same objects and same 3D render style. ONLY CHANGE: it is night; the garage door shows a dark blue night sky, the warm ceiling bulbs and the clamp lamp are the main light, deeper cool shadows. No people. No text, no letters, no numbers, no labels, no signs, no brand logos, no badges, no license plates, no watermark, no color swatches. Vertical 9:16 portrait.
 ```
 
-### P-A · Garage sale sokağı · sıra 1 (dalga 1)
+### P-A · Garage sale sokağı (incil L3) · sıra L3 gerekince (B)
 - aspectRatio: `PORTRAIT_9_16` · referans: yok · 1676 karakter
 ```
 STYLE LOCK: original stylized 3D animated-feature environment, clean high-quality CG render, soft global illumination, slightly exaggerated rounded shapes, tidy simplified detail, believable materials, not photorealistic, not a 2D drawing. Palette: cool, slightly desaturated background tones with warm pools of practical light (warm-colored characters will be composited in front).
@@ -194,7 +184,7 @@ VERTICAL 9:16 FRAME RULES: camera at natural eye level; keep the central vertica
 No text, no letters, no numbers, no labels, no signs, no brand logos, no badges, no license plates, no watermark, no color swatches. Vertical 9:16 portrait.
 ```
 
-### P-B · Garage sale sokağı · sıra 2
+### P-B · Garage sale sokağı (incil L3) · sıra L3 gerekince ilk
 - aspectRatio: `PORTRAIT_9_16` · referans: yok · not: pazarlık sahneleri (alıcı-satıcı) · 1525 karakter
 ```
 STYLE LOCK: original stylized 3D animated-feature environment, clean high-quality CG render, soft global illumination, slightly exaggerated rounded shapes, tidy simplified detail, believable materials, not photorealistic, not a 2D drawing. Palette: cool, slightly desaturated background tones with warm pools of practical light (warm-colored characters will be composited in front).
@@ -205,18 +195,18 @@ VERTICAL 9:16 FRAME RULES: camera at natural eye level; keep the central vertica
 No text, no letters, no numbers, no labels, no signs, no brand logos, no badges, no license plates, no watermark, no color swatches. Vertical 9:16 portrait.
 ```
 
-### A-A · Mike'ın arabası · sıra 1 (dalga 1)
-- aspectRatio: `PORTRAIT_9_16` · referans: yok · not: iki koltuk iki-çekim; bel üstü kesikler koltuk önüne, alt gövdeyi ön konsol/direksiyon örter · 1625 karakter
+### A-A · Arkadaşların arabası (incil L2) · sıra bölüm gerektirince
+- aspectRatio: `PORTRAIT_9_16` · referans: yok · not: iki koltuk iki-çekim; bel üstü kesikler koltuk önüne, alt gövdeyi ön konsol/direksiyon örter · 1631 karakter
 ```
 STYLE LOCK: original stylized 3D animated-feature environment, clean high-quality CG render, soft global illumination, slightly exaggerated rounded shapes, tidy simplified detail, believable materials, not photorealistic, not a 2D drawing. Palette: cool, slightly desaturated background tones with warm pools of practical light (warm-colored characters will be composited in front).
-SCENE: inside Mike's old, well-loved compact car (a generic early-2000s hatchback, no brand badges), camera mounted on the dashboard looking back at the two empty front seats side by side, steering wheel at the lower left foreground edge, worn grey fabric seats with headrests, a coffee cup in the holder, a phone mount without a phone, a small crack in the dashboard plastic. Through the rear and side windows: a passing suburban street, slightly blurred.
+SCENE: inside the friends' old, well-loved compact car (a generic early-2000s hatchback, no brand badges), camera mounted on the dashboard looking back at the two empty front seats side by side, steering wheel at the lower left foreground edge, worn grey fabric seats with headrests, a coffee cup in the holder, a phone mount without a phone, a small crack in the dashboard plastic. Through the rear and side windows: a passing suburban street, slightly blurred.
 LIGHT: warm late-afternoon sun through the side windows, cool shade inside the cabin roof.
 EMPTY SET: no people, no characters, no animals, no mannequins, no pictures of faces.
 VERTICAL 9:16 FRAME RULES: camera at natural eye level; keep the central vertical band (middle 60% of the width) open and uncluttered from 35% to 85% of the frame height, where two characters will be composited later; put busy detail at the sides and in the upper background; the bottom 25% of the frame is a calm low-detail area (captions and app interface will cover it); extend the scenery naturally past every edge (room for slow push-in and pan).
 No text, no letters, no numbers, no labels, no signs, no brand logos, no badges, no license plates, no watermark, no color swatches. Vertical 9:16 portrait.
 ```
 
-### A-B · Mike'ın arabası · sıra 2
+### A-B · Arkadaşların arabası (incil L2) · sıra bölüm gerektirince (B)
 - aspectRatio: `PORTRAIT_9_16` · referans: yok · not: tek çekim (Mike sürerken) · 1476 karakter
 ```
 STYLE LOCK: original stylized 3D animated-feature environment, clean high-quality CG render, soft global illumination, slightly exaggerated rounded shapes, tidy simplified detail, believable materials, not photorealistic, not a 2D drawing. Palette: cool, slightly desaturated background tones with warm pools of practical light (warm-colored characters will be composited in front).
@@ -227,7 +217,7 @@ VERTICAL 9:16 FRAME RULES: camera at natural eye level; keep the central vertica
 No text, no letters, no numbers, no labels, no signs, no brand logos, no badges, no license plates, no watermark, no color swatches. Vertical 9:16 portrait.
 ```
 
-### K-A · Daire mutfak masası · sıra 1 (dalga 1)
+### K-A · ESKİ mutfak masası (incil L1 ile değişti) · sıra kullanma
 - aspectRatio: `PORTRAIT_9_16` · referans: yok · not: masa üstü kadraj %62–75'te (Leo dersi): bel üstü kesik masa arkasına oturur, 0 ek üretim · 1787 karakter
 ```
 STYLE LOCK: original stylized 3D animated-feature environment, clean high-quality CG render, soft global illumination, slightly exaggerated rounded shapes, tidy simplified detail, believable materials, not photorealistic, not a 2D drawing. Palette: cool, slightly desaturated background tones with warm pools of practical light (warm-colored characters will be composited in front).
@@ -238,7 +228,7 @@ VERTICAL 9:16 FRAME RULES: camera at natural eye level; keep the central vertica
 No text, no letters, no numbers, no labels, no signs, no brand logos, no badges, no license plates, no watermark, no color swatches. Vertical 9:16 portrait.
 ```
 
-### K-B · Daire mutfak masası · sıra 2
+### K-B · ESKİ mutfak masası (incil L1 ile değişti) · sıra kullanma
 - aspectRatio: `PORTRAIT_9_16` · referans: yok · not: kuruluş çekimi · 1490 karakter
 ```
 STYLE LOCK: original stylized 3D animated-feature environment, clean high-quality CG render, soft global illumination, slightly exaggerated rounded shapes, tidy simplified detail, believable materials, not photorealistic, not a 2D drawing. Palette: cool, slightly desaturated background tones with warm pools of practical light (warm-colored characters will be composited in front).
@@ -249,42 +239,75 @@ VERTICAL 9:16 FRAME RULES: camera at natural eye level; keep the central vertica
 No text, no letters, no numbers, no labels, no signs, no brand logos, no badges, no license plates, no watermark, no color swatches. Vertical 9:16 portrait.
 ```
 
+### L1-A · L1 Mutfak · A geniş tezgâh ikili · sıra 1 (bölüm 1)
+- aspectRatio: `PORTRAIT_9_16` · referans: yok · not: S1, S3–S8; masa/tezgâh dersi: bel üstü taban kesiği tezgâh arkasına oturur · 1853 karakter
+```
+STYLE LOCK: original stylized 3D animated-feature environment, clean high-quality CG render, soft global illumination, slightly exaggerated rounded shapes, tidy simplified detail, believable materials, not photorealistic, not a 2D drawing. Palette: cool, slightly desaturated background tones with warm pools of practical light (warm-colored characters will be composited in front).
+SCENE: a small, lived-in American apartment kitchen, the friends' home base, on a bright morning: muted blue-grey cabinets, a light wood countertop, a small window with soft morning sky and a fire escape outside, a tall white fridge with a large blank white dry-erase board on its door. Camera across the breakfast counter at standing chest height, straight-on. The countertop runs across the bottom of the frame and is clear except a ceramic mug and a small fruit bowl at the far left edge. Behind it: open kitchen floor space, the stove and cabinets, the window on the left, the fridge with the blank whiteboard at the right edge.
+LIGHT: warm morning sun from the window, soft cool fill in the shadows.
+EMPTY SET: no people, no characters, no animals, no mannequins, no pictures of faces.
+VERTICAL 9:16 FRAME RULES: camera at natural eye level; the front edge of the countertop sits at 68-72% of the frame height and the counter continues past the bottom edge; the central 60% of the width between 22% and 70% of the frame height is open kitchen space (two waist-up characters will be composited standing behind the counter, their lower bodies hidden by it); busy detail only at the sides and top; extend the scenery naturally past every edge (room for slow push-in and pan).
+No text, no letters, no numbers, no labels, no signs, no brand logos, no badges, no license plates, no watermark, no color swatches. The whiteboard is completely blank. Vertical 9:16 portrait.
+```
+
+### L1-B · L1 Mutfak · B buzdolabı tahtası · sıra 2 (bölüm 1)
+- aspectRatio: `PORTRAIT_9_16` · referans: yok · not: S2, S4 tahta; yazılar KOD (THE BOARD, $100, $1,000,000) · 1604 karakter
+```
+STYLE LOCK: original stylized 3D animated-feature environment, clean high-quality CG render, soft global illumination, slightly exaggerated rounded shapes, tidy simplified detail, believable materials, not photorealistic, not a 2D drawing. Palette: cool, slightly desaturated background tones with warm pools of practical light (warm-colored characters will be composited in front).
+SCENE: a small, lived-in American apartment kitchen, the friends' home base, on a bright morning: muted blue-grey cabinets, a light wood countertop, a small window with soft morning sky and a fire escape outside, a tall white fridge with a large blank white dry-erase board on its door. Closer angle on the fridge: the fridge door fills the right half of the frame; the large blank white whiteboard is mounted on it with its top at 18% and bottom at 58% of the frame height, a marker on a small tray, a few plain round magnets. The left half is an open area of kitchen wall and counter edge where one waist-up character will be composited.
+LIGHT: warm morning sun from the window, soft cool fill in the shadows.
+EMPTY SET: no people, no characters, no animals, no mannequins, no pictures of faces.
+VERTICAL 9:16 FRAME RULES: camera at natural eye level, straight-on to the fridge door (whiteboard not skewed, flat rectangle); bottom 25% of the frame is calm low-detail lower fridge and floor; extend the scenery past every edge.
+No text, no letters, no numbers, no labels, no signs, no brand logos, no badges, no license plates, no watermark, no color swatches. The whiteboard is completely blank. Vertical 9:16 portrait.
+```
+
+### L1-C · L1 Mutfak · C tezgâh insert · sıra 3 (önce KOD: L1-A tezgâh kırpımı + büyütme; yetmezse)
+- aspectRatio: `PORTRAIT_9_16` · referans: yok · not: S1 SLAM insert, S7 banknot yakın; banknot KOD · 1508 karakter
+```
+STYLE LOCK: original stylized 3D animated-feature environment, clean high-quality CG render, soft global illumination, slightly exaggerated rounded shapes, tidy simplified detail, believable materials, not photorealistic, not a 2D drawing. Palette: cool, slightly desaturated background tones with warm pools of practical light (warm-colored characters will be composited in front).
+SCENE: extreme close-up of the light wood countertop of small, lived-in American apartment kitchen, the friends' home base, on a bright morning: muted blue-grey cabinets, a light wood countertop, a small window with soft morning sky and a fire escape outside, a tall white fridge with a large blank white dry-erase board on its door. Low camera just above the counter surface, shallow depth of field: the counter surface fills the lower 60% of the frame with an empty clear spot in the center (a hand and a bill will be composited there later), a ceramic cereal bowl with a spoon at the right edge, the kitchen and window softly blurred behind.
+LIGHT: warm morning sun from the window, soft cool fill in the shadows.
+EMPTY SET: no people, no characters, no animals, no mannequins, no pictures of faces.
+VERTICAL 9:16 FRAME RULES: keep the empty counter spot between 45% and 70% of the frame height, centered; extend past every edge.
+No text, no letters, no numbers, no labels, no signs, no brand logos, no badges, no license plates, no watermark, no color swatches. The whiteboard is completely blank. Vertical 9:16 portrait.
+```
+
 ### T-J · Konuşma tabanı Jake · sıra 1 (dalga 2)
-- aspectRatio: `PORTRAIT_9_16` · referans: [Jake sayfası kazanan] · not: Mike'a bakar (kadraj solu) · 1892 karakter
+- aspectRatio: `PORTRAIT_9_16` · referans: [MAHajKKbhbM] · not: Mike'a bakar (kadraj sağı); ikili kadrajda Jake solda · 1894 karakter
 ```
 STYLE LOCK: original stylized 3D animated-feature look, clean high-quality CG render, soft global illumination, gentle subsurface scattering on skin, appealing slightly stylized proportions (head a little larger than realistic, large expressive eyes, simplified rounded forms), smooth matte fabric with subtle weave texture, soft contact shadows. No outlines, no cel-shading, not a 2D drawing, not photorealistic, not claymation. Original character design, not resembling any existing cartoon character, celebrity or real person.
 JAKE LOCK (identical in every image): Jake Miller, an original 26-year-old American man, slim average build, light warm skin, oval face with a defined jaw, short dark-brown hair (short on the sides, neat slightly longer top brushed to his right), straight dark-brown eyebrows, calm warm-brown eyes, short light even stubble on jaw, chin and upper lip (not a full beard). Outfit never changes: plain navy-blue pullover hoodie with the hood down, front kangaroo pocket and two light-grey drawstrings, no print and no logo; beige chino pants; plain white low-top sneakers. No glasses, no hat, no jewelry, no watch. Body language: calm, analytical, composed.
 The reference image is the model sheet of Jake Miller; the face, hair and outfit must match it exactly.
-SHOT: waist-up portrait of Jake Miller alone, body and head turned about 20 degrees toward frame-left, eyes looking toward frame-left at someone just off-screen at eye level, relaxed neutral expression, mouth gently closed, arms relaxed and out of frame below; top of the head at 18% of the frame height, body continues past the bottom edge, centered.
+SHOT: waist-up portrait of Jake Miller alone, body and head turned about 20 degrees toward frame-right, eyes looking toward frame-right at someone just off-screen at eye level, relaxed neutral expression, mouth gently closed, arms relaxed and out of frame below; top of the head at 18% of the frame height, body continues past the bottom edge, centered.
 BACKGROUND: plain flat medium slate-blue background, evenly lit, no shadows on the background.
 No text, no letters, no numbers, no labels, no signs, no brand logos, no badges, no license plates, no watermark, no color swatches. Vertical 9:16 portrait.
 ```
 
 ### T-M · Konuşma tabanı Mike · sıra 1 (dalga 2)
-- aspectRatio: `PORTRAIT_9_16` · referans: [Mike sayfası kazanan] · not: Jake'e bakar (kadraj sağı) · 1974 karakter
+- aspectRatio: `PORTRAIT_9_16` · referans: [MAHajPZXWbU] · not: Jake'e bakar (kadraj solu); ikili kadrajda Mike sağda · 1972 karakter
 ```
 STYLE LOCK: original stylized 3D animated-feature look, clean high-quality CG render, soft global illumination, gentle subsurface scattering on skin, appealing slightly stylized proportions (head a little larger than realistic, large expressive eyes, simplified rounded forms), smooth matte fabric with subtle weave texture, soft contact shadows. No outlines, no cel-shading, not a 2D drawing, not photorealistic, not claymation. Original character design, not resembling any existing cartoon character, celebrity or real person.
 MIKE LOCK (identical in every image): Mike Carter, an original 27-year-old American man, a little taller and broader than his friend Jake (athletic build, about 6 feet tall), fair skin with a light warm flush on the cheeks, slightly square face, messy tousled light-brown (dark-blond) hair, medium length on top falling loosely over the forehead, shorter sides, bright blue eyes, clean-shaven. Outfit never changes: red-and-black buffalo-check flannel shirt (large even squares) worn unbuttoned and open over a plain white crew-neck T-shirt, flannel sleeves rolled up to just below the elbows; dark-indigo slim jeans; brown leather lace-up boots. No glasses, no hat, no jewelry, no watch. Body language: energetic, playful, confident.
 The reference image is the model sheet of Mike Carter; the face, hair and outfit must match it exactly.
-SHOT: waist-up portrait of Mike Carter alone, body and head turned about 20 degrees toward frame-right, eyes looking toward frame-right at someone just off-screen at eye level, relaxed neutral expression, mouth gently closed, arms relaxed and out of frame below; top of the head at 18% of the frame height, body continues past the bottom edge, centered.
+SHOT: waist-up portrait of Mike Carter alone, body and head turned about 20 degrees toward frame-left, eyes looking toward frame-left at someone just off-screen at eye level, relaxed neutral expression, mouth gently closed, arms relaxed and out of frame below; top of the head at 18% of the frame height, body continues past the bottom edge, centered.
 BACKGROUND: plain flat medium slate-blue background, evenly lit, no shadows on the background.
 No text, no letters, no numbers, no labels, no signs, no brand logos, no badges, no license plates, no watermark, no color swatches. Vertical 9:16 portrait.
 ```
 
 ### AG-J · Ağız açık Jake · sıra 1 (dalga 3)
-- aspectRatio: `PORTRAIT_9_16` · referans: [T-J kazanan, Jake sayfası] · not: 4 adaydan yarı-açık + açık iki durum seçilir · 704 karakter
+- aspectRatio: `PORTRAIT_9_16` · referans: [<T-J media>, MAHajKKbhbM] · not: tek görsel: açık durum; ara kare KOD alfa karışımı · 704 karakter
 ```
 EDIT the first reference image. Keep EVERYTHING identical: same man (Jake), same face, same hair, same navy hoodie with grey drawstrings, same stubble, same framing and camera distance, same body position, head stays in exactly the same place and angle, same eye direction, same plain slate-blue background, same lighting and same stylized 3D render style. The second reference is the character model sheet; the face must match it. ONLY CHANGE: mouth open mid-word in a relaxed talking shape: jaw dropped slightly, lips in a soft open oval, a little of the upper teeth visible, NOT smiling, NOT shouting; the rest of the face (eyes, eyebrows, cheeks) unchanged. No text, no logos. Vertical 9:16 portrait.
 ```
 
 ### AG-M · Ağız açık Mike · sıra 1 (dalga 3)
-- aspectRatio: `PORTRAIT_9_16` · referans: [T-M kazanan, Mike sayfası] · 755 karakter
+- aspectRatio: `PORTRAIT_9_16` · referans: [<T-M media>, MAHajPZXWbU] · 755 karakter
 ```
 EDIT the first reference image. Keep EVERYTHING identical: same man (Mike), same face, same hair, same open red-and-black buffalo-check flannel over the white T-shirt, rolled sleeves, clean-shaven face, same framing and camera distance, same body position, head stays in exactly the same place and angle, same eye direction, same plain slate-blue background, same lighting and same stylized 3D render style. The second reference is the character model sheet; the face must match it. ONLY CHANGE: mouth open mid-word in a relaxed talking shape: jaw dropped slightly, lips in a soft open oval, a little of the upper teeth visible, NOT smiling, NOT shouting; the rest of the face (eyes, eyebrows, cheeks) unchanged. No text, no logos. Vertical 9:16 portrait.
 ```
 
 ### GK-J · Göz kırpma Jake · sıra yedek-2
-- aspectRatio: `PORTRAIT_9_16` · referans: [T-J kazanan, Jake sayfası] · not: yedek hak kalırsa · 568 karakter
+- aspectRatio: `PORTRAIT_9_16` · referans: [<T-J media>, MAHajKKbhbM] · not: yedek hak kalırsa · 568 karakter
 ```
 EDIT the first reference image. Keep EVERYTHING identical: same man (Jake), same face, same hair, same navy hoodie with grey drawstrings, same stubble, same framing and camera distance, same body position, head stays in exactly the same place and angle, same eye direction, same plain slate-blue background, same lighting and same stylized 3D render style. The second reference is the character model sheet; the face must match it. ONLY CHANGE: both eyelids fully closed in a natural blink, eyebrows relaxed, mouth unchanged. No text, no logos. Vertical 9:16 portrait.
 ```
