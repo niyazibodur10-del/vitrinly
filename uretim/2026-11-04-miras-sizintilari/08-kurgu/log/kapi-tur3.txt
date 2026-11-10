@@ -1,0 +1,22 @@
+== final-16x9 2ceb894f2bb5 1920,1080,30/1, 0/0 781.400000 
+ I: -14.0 LUFS  Peak: -3.2 dBFS 
+siyah/donma: 0
+== shorts-1 e7f7bd2cfa55 1080,1920,30/1, 0/0 41.450000 
+ I: -14.0 LUFS  Peak: -3.7 dBFS 
+siyah/donma: 0
+== shorts-2 944a0177446d 1080,1920,30/1, 0/0 43.434000 
+ I: -14.0 LUFS  Peak: -3.8 dBFS 
+siyah/donma: 0
+maks |gecikme| ms: 0.0
+kelime=2225 hata=27 WER=%1.2
+kelime=102 hata=1 WER=%1.0
+kelime=111 hata=3 WER=%2.7
+== shorts-2 0c031e36d414
+ I: -14.0 LUFS  Peak: -3.8 dBFS  siyah/donma: 0
+== shorts-2 (son) a60d40f882af 43.434000
+ I: -14.0 LUFS  Peak: -3.8 dBFS  siyah/donma: 0
+abone kare 3134: görsel tık 105.767 sn · ses başı 105.767 sn · fark +0.00 kare
+abone kare 12832: görsel tık 429.033 sn · ses başı 429.033 sn · fark +0.00 kare
+abone kare 17337: görsel tık 579.200 sn · ses başı 579.200 sn · fark +0.00 kare
+abone kare 23154: görsel tık 773.100 sn · ses başı 773.100 sn · fark +0.00 kare
+kod taraması: 0

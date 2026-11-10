@@ -58,9 +58,9 @@ const Itme: React.FC<{ acik: boolean; children: React.ReactNode }> = ({ acik, ch
 
 // ---------- S21 vurgusu (16:9 ve dikey): 507–520 sn'de ekranda yalnız başlık + vergi çizgisi → yeni rakam yok ----------
 // sahne-YEREL zaman (S21 başı = 0). "typical family" etiketi → zeminden vergi çizgisine uzayan ölçü oku → medyan çubuğuna halka.
-type S21Yer = { cizgi: number; taban: number; ok: number; cip: [number, number]; halka: [number, number]; boy: number };
-const S21_YATAY: S21Yer = { cizgi: 116, taban: 975, ok: 1640, cip: [250, 680], halka: [900, 978], boy: 1 };
-const S21_DIKEY: S21Yer = { cizgi: 380, taban: 1500, ok: 930, cip: [80, 1150], halka: [490, 1500], boy: 0.85 };
+type S21Yer = { etiket: number; cizgi: number; taban: number; ok: number; cip: [number, number]; halka: [number, number]; boy: number };
+const S21_YATAY: S21Yer = { etiket: 330, cizgi: 116, taban: 975, ok: 1640, cip: [250, 680], halka: [900, 978], boy: 1 };
+const S21_DIKEY: S21Yer = { etiket: 470, cizgi: 380, taban: 1500, ok: 930, cip: [80, 1150], halka: [490, 1500], boy: 0.85 };
 const S21Vurgu: React.FC<{ y: S21Yer }> = ({ y }) => {
   const frame = useCurrentFrame();
   const g = frame / 30 + SAHNE_BAS.S21; // global sn
@@ -79,7 +79,7 @@ const S21Vurgu: React.FC<{ y: S21Yer }> = ({ y }) => {
           <div style={{ position: "absolute", left: y.ok - 22, top: y.taban - boyOk - 30, fontFamily: anton, fontSize: 44, color: SARI, textShadow: "0 2px 0 #000" }}>▲</div>
         </>
       ) : null}
-      {ust > 0 ? <div style={{ position: "absolute", left: y.ok - 330, top: y.cizgi + 18, opacity: ust, scale: String(0.8 + 0.2 * ust), fontFamily: anton, fontSize: 40 * y.boy, color: KIRMIZI, textShadow: "0 2px 0 #000" }}>THE TAX LINE</div> : null}
+      {ust > 0 ? <div style={{ position: "absolute", left: y.ok - 330, top: y.etiket, opacity: ust, scale: String(0.8 + 0.2 * ust), fontFamily: anton, fontSize: 40 * y.boy, color: KIRMIZI, textShadow: "0 2px 0 #000" }}>THE TAX LINE</div> : null}
       {halka > 0 ? <div style={{ position: "absolute", left: y.halka[0] - 150, top: y.halka[1] - 60, width: 300, height: 120, borderRadius: "50%", border: `7px solid ${SARI}`, opacity: halka, scale: String(0.7 + 0.3 * Math.min(1, halka * 1.3)), boxShadow: "0 0 26px rgba(255,212,59,0.5)" }} /> : null}
     </AbsoluteFill>
   );
@@ -133,12 +133,18 @@ const KopruKarti: React.FC<{ ust: string; alt: string }> = ({ ust, alt }) => {
 };
 const KOPRU = { ust: "THE ANSWER IS IN THE FULL VIDEO", alt: "The Great Wealth Transfer Has a Leak" };
 
-// Shorts 2 politika satırı (metin §5, Z2): sabit, güvenli alanın üstünde
-const FederalSatir: React.FC = () => (
-  <div style={{ position: "absolute", left: 60, width: 840, top: 196, textAlign: "center", padding: "6px 0", borderRadius: 10, background: "rgba(0,0,0,0.55)", fontFamily: fredoka, fontWeight: 700, fontSize: 28, color: "#e8ecf4", letterSpacing: 0.5 }}>
-    US FEDERAL ONLY · STATE &amp; OTHER COUNTRIES DIFFER
-  </div>
-);
+// Shorts 2 politika satırı (metin §5, Z2): sabit. Ek planlarında üstte (y 196); S21 kesitinde punch-in'li başlık oraya taştığı için
+// kırmızı vergi çizgisinin hemen altında (y 400). Altta altyazı (iki satır) ve zemin çizgisi var → alta konmaz.
+const FederalSatir: React.FC = () => {
+  const frame = useCurrentFrame();
+  const p = KURGU_SHORTS.sh2.parcalar.find((x) => x.tur === "sahne")!;
+  const s21 = frame >= p.yer && frame < p.yer + p.sure;
+  return (
+    <div style={{ position: "absolute", left: 60, width: 840, top: s21 ? 400 : 196, textAlign: "center", padding: "6px 0", borderRadius: 10, background: "rgba(0,0,0,0.55)", fontFamily: fredoka, fontWeight: 700, fontSize: 28, color: "#e8ecf4", letterSpacing: 0.5 }}>
+      US FEDERAL ONLY · STATE &amp; OTHER COUNTRIES DIFFER
+    </div>
+  );
+};
 
 // Kuyruk: ek kaydın son planı sessiz, altyazısız; yavaş itme (donma kapısı)
 const Kuyruk: React.FC<{ ek: "sh1" | "sh2"; kareBas: number; sure: number }> = ({ ek, kareBas, sure }) => {

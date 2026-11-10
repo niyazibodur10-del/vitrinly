@@ -557,6 +557,7 @@ export const G19: React.FC<{ t0: number; k: Record<string, number> }> = ({ t0, k
 };
 
 // ---------- G4: vergi eşiği $15M vs medyan ~$410K (R18, R19; aynı doğrusal ölçek) ----------
+// 16:9 başlık çizginin ALTINDA (kurgu-editoru F7, 2026-11-10): S21'in iki ×1,08 punch-in'i üstteki başlığı kadraj dışına itiyordu (508–513 sn)
 export const G4: React.FC<{ t0: number; k: Record<string, number>; eyalet?: boolean }> = ({ t0, k, eyalet }) => {
   const t = useT();
   const D = useDikey();
@@ -568,7 +569,7 @@ export const G4: React.FC<{ t0: number; k: Record<string, number>; eyalet?: bool
     <Zemin t0={t0}>
       <div style={{ position: "absolute", left: L - 40, top: taban, width: D ? 900 : 1300, height: 5, background: "rgba(255,255,255,0.5)" }} />
       <div style={{ position: "absolute", left: L - 40, top: taban - H * pe, width: D ? 900 : 1300, height: 10, background: RENK.kirmizi, border: "3px solid #111", opacity: pe }} />
-      <div style={{ position: "absolute", left: L - 40, top: taban - H - 130, ...yaz(D ? 52 : 60, RENK.kirmizi), opacity: eyalet ? 1 : gir(t, t0), width: D ? 900 : 1300 }}>
+      <div style={{ position: "absolute", left: L - 40, top: D || eyalet ? taban - H - 130 : taban - H + 22, ...yaz(D ? 52 : 60, RENK.kirmizi), opacity: eyalet ? 1 : gir(t, t0), width: D ? 900 : 1300 }}>
         US FEDERAL ESTATE TAX STARTS: ${G.esikVergi / 1e6}M PER PERSON (2026)
       </div>
       <div style={{ position: "absolute", left: L + (D ? 280 : 420), top: taban - Math.max(hm, 6), width: D ? 200 : 220, height: Math.max(hm, 6), background: RENK.mavi, border: "4px solid #111", opacity: gir(t, aM) }} />

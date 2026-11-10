@@ -1,7 +1,8 @@
 # F7 kurgu raporu — 2026-11-04-miras-sizintilari (S03 The Great Wealth Transfer Has a Leak)
 
 **İLERLEME: tamam (kurgu)** · büyük medya git dışı → `yeniden-uret.adimlar` F7 satırları.
-**SONUÇ: RED (tek madde, animasyon kaynaklı).** Kurgu kapılarının hepsi geçti; ancak animasyonda `rig.ts` `YER_TUTUCU_RIG = true` her Leo planına kırmızı hata ayıklama etiketi basıyor ("RIG: S08 Leo kesiği…", `sahneler.tsx:69`). Final ve iki Shorts'ta görünüyor → yayınlanamaz. Düzeltme animasyon-yonetmeni'nde; sonra `render-parca.sh` yalnız Leo içeren parçaları, `render-son.sh` Shorts'u yeniden üretir (kurgu kodu değişmez).
+**SONUÇ (tur 3, 2026-11-10): GEÇTİ.** RIG etiketi kaldırıldı (554d69c), final + 2 Shorts yeniden render, kapılar yeniden ölçüldü (§6). Aşağıdaki tur 1 notu tarihsel:
+**Tur 1 SONUÇ: RED (tek madde, animasyon kaynaklı).** Kurgu kapılarının hepsi geçti; ancak animasyonda `rig.ts` `YER_TUTUCU_RIG = true` her Leo planına kırmızı hata ayıklama etiketi basıyor ("RIG: S08 Leo kesiği…", `sahneler.tsx:69`). Final ve iki Shorts'ta görünüyor → yayınlanamaz. Düzeltme animasyon-yonetmeni'nde; sonra `render-parca.sh` yalnız Leo içeren parçaları, `render-son.sh` Shorts'u yeniden üretir (kurgu kodu değişmez).
 | Kapı | Sonuç |
 |---|---|
 | ffprobe final (`e08e065ef7af`) | 1920x1080, 30 fps, H.264 + AAC 48 kHz stereo, 781,40 sn (≥10 dk) |
@@ -39,3 +40,10 @@ Kazanç −17 → −12 dB (+5). Konuşmanın üstünde earshot "mouse click" yi
 - Dikey S21'de animasyonun "MEDIAN NET WORTH" etiketi altyazı bandına biniyor (513–519); animasyon-yonetmeni'ne not.
 - Disk: oturum ortasında kök bölüm %100 doldu (eski Remotion paketleri); koordinatör temizledi, iş sonunda 6,3 GB boş.
 - Rastgele 10 kare (tohum 11) RIG etiketi dışında kusursuz (`log/rastgele-10-kare.txt`).
+
+## 6. Tur 3 (2026-11-10) — RIG düzeltmesi sonrası
+- Render: KMirasFinal render-parca 13/14 parça (Leo her bölümde) + başlık düzeltmesi 2/14; Shorts render-son. sha: `sha256.txt`.
+- Kapılar (`log/kapi-tur3.txt`): final 781,40 sn, −14,0 LUFS / TP −3,2, siyah/donma 0, kayma 0,0 ms · sh1 41,45 sn −14,0/−3,7 · sh2 43,43 sn −14,0/−3,8 · WER final %1,2 · sh1 %1,0 · sh2 %2,7 · abone 4+1+1, tık ↔ klik 0,00 kare (`kareler/abone-klik-kare38-39.jpg`: +38 SUBSCRIBE, +39 SUBSCRIBED).
+- 30 rastgele kare (tohum 30; final 20 + 2 başlık karesi, Shorts 10): `kareler/kontrol-final-20-rastgele.jpg`, `kareler/kontrol-shorts-10-rastgele.jpg` → hata ayıklama / yer tutucu yazı 0. Kod taraması `RIG:|YER_TUTUCU|DEBUG|PLACEHOLDER` (miras-sizintilari + ortak) = 0.
+- **G4 başlığı kesikti (politika raporu, 508–513):** neden animasyonun S21'deki iki ×1,08 punch-in'i, başlık çizginin üstündeydi (y 30–160). Düzeltme `grafik.tsx` G4: yalnız 16:9 ve eyalet olmayan planda başlık çizginin altına (`taban − H + 22`); dikey/eyalet aynı. Kurgu etiketim "THE TAX LINE" y 330'a indi. Yalnız 8. parça (+ izin kararsız saydığı 11.) yeniden render; 509,5/510,2/510,8/511,5 karelerinde başlık tam.
+- Shorts 2 politika şeridi S21 kesitinde punch-in'li başlığa biniyordu → bölüme göre konum (ek planları y 196, S21 y 400 kırmızı çizginin altı); alt konum altyazıya binince reddedildi (`kareler/shorts-2-politika-seridi.jpg`). İlk olay 1,5 sn korunuyor.
