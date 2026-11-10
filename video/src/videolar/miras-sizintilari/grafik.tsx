@@ -573,9 +573,17 @@ export const G4: React.FC<{ t0: number; k: Record<string, number>; eyalet?: bool
         US FEDERAL ESTATE TAX STARTS: ${G.esikVergi / 1e6}M PER PERSON (2026)
       </div>
       <div style={{ position: "absolute", left: L + (D ? 280 : 420), top: taban - Math.max(hm, 6), width: D ? 200 : 220, height: Math.max(hm, 6), background: RENK.mavi, border: "4px solid #111", opacity: gir(t, aM) }} />
-      <div style={{ position: "absolute", left: L + (D ? 50 : 700), top: taban - (D ? 420 : 140), width: D ? 820 : 760, ...yaz(D ? 40 : 42, RENK.mavi, "fredoka"), opacity: gir(t, aM + 0.2) }}>
-        MEDIAN NET WORTH, AGES 65–74: ~${Math.round(G.medyan / 1000)}K
-      </div>
+      {D ? (
+        // R1 (hakem F9): dikeyde S21Vurgu ölçü oku x≈930'dan dikine geçer → etiket 2 satır, sağ kenar ≤ ~840 (okun 80+ px solunda)
+        <div style={{ position: "absolute", left: L + 50, top: taban - 470, width: 680, ...yaz(40, RENK.mavi, "fredoka"), opacity: gir(t, aM + 0.2) }}>
+          MEDIAN NET WORTH, AGES 65–74
+          <div style={{ fontSize: 84, marginTop: 6 }}>~${Math.round(G.medyan / 1000)}K</div>
+        </div>
+      ) : (
+        <div style={{ position: "absolute", left: L + 700, top: taban - 140, width: 760, ...yaz(42, RENK.mavi, "fredoka"), opacity: gir(t, aM + 0.2) }}>
+          MEDIAN NET WORTH, AGES 65–74: ~${Math.round(G.medyan / 1000)}K
+        </div>
+      )}
       {!eyalet ? (
         <div style={{ position: "absolute", left: L + (D ? 330 : 470), top: taban - H + 30, height: Math.max(0, H - hm - 60) * interpolate(t, [aB, aB + 0.6], [0, 1], CL), width: 8, background: RENK.sari }} />
       ) : null}
