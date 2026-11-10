@@ -94,14 +94,14 @@ Educational content, not financial advice. Narration voice is AI-generated.
 
 #### 2. The Collapse: Financial History Explained
 ```text
-The biggest financial crashes, bubbles and collapses in history, told as animated stories: the 1929 stock market crash, Weimar hyperinflation, tulip mania, Lehman Brothers, FTX and more. Step inside each crisis, see how it unfolded and what it teaches us about money today. New episodes every other Sunday.
+The biggest financial crashes, bubbles and collapses in history, told as animated stories: the 1929 stock market crash, Weimar hyperinflation, tulip mania, Lehman Brothers, FTX and more. Step inside each crisis, see how it unfolded and what it teaches us about money today.
 
 Educational content, not financial advice. Narration voice is AI-generated.
 ```
 
 #### 3. What If…? Future of Money Scenarios
 ```text
-Animated what-if scenarios about the future of money: What if the dollar lost its reserve status? What if AI replaced millions of jobs? What if your bank went digital-only? Each episode explores a plausible scenario step by step. These are scenarios, not predictions. New episodes every other Sunday.
+Animated what-if scenarios about the future of money: What if the dollar lost its reserve status? What if AI replaced millions of jobs? What if your bank went digital-only? Each episode explores a plausible scenario step by step. These are scenarios, not predictions.
 
 Educational content, not financial advice. Narration voice is AI-generated.
 ```
