@@ -3,7 +3,7 @@
 
 Kullanım (kokoro-venv):
   ~/.finansal-arac/kokoro-venv/bin/python tools/ses/diyalog.py <diyalog.txt> <cikis.wav>
-      [--ses JAKE=am_michael:0.92 --ses MIKE=am_fenrir:1.05] [--ham]
+      [--ses JAKE=am_onyx:0.95 --ses MIKE=am_fenrir:1.05] [--ham]
 Girdi satırları:
   JAKE: Hold on. A price is just a number until someone pays it.
   MIKE (0.15): Jake, we don't need more money, we need more guts!   <- parantez = bu satırdan ÖNCEKİ boşluk (sn), elle
@@ -29,7 +29,7 @@ import argparse, json, os, re, subprocess, sys, tempfile
 import numpy as np, soundfile as sf
 
 SR = 24000
-VARSAYILAN_SES = {"JAKE": "am_michael:0.92", "MIKE": "am_fenrir:1.05"}  # rapor.md kazanan çift
+VARSAYILAN_SES = {"JAKE": "am_onyx:0.95", "MIKE": "am_fenrir:1.05"}  # rapor.md kazanan çift
 VARSAYILAN_BOSLUK = {"JAKE": 0.42, "MIKE": 0.22}  # konuşmacı değişiminde, yanıtlayanın karakterine göre
 DIGER_BOSLUK, AYNI_KONUSMACI, CUMLE, CUMLE_VURGU, BAS, SON = 0.30, 0.45, 0.28, 0.32, 0.15, 0.30
 SATIR = re.compile(r"^\s*([A-Za-z][\w ]*?)\s*(?:\(\s*([\d.]+)\s*\))?\s*:\s*(.+?)\s*$")
