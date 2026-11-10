@@ -1,12 +1,15 @@
 // ŞABLON DEMOSU (test/kanıt): yer tutucu görseller + Kokoro demo diyaloğu. Yayın kapısı bunu REDDEDER (yer tutucu, süre).
-// Ses: tools/seri/demo-diyalog.py uretim/seri/sablon-demo/demo-girdi.json → public/seri/demo/diyalog.wav + demo.satirlar.json
-// Ağız: tools/seri/agiz-cue.py public/seri/demo/diyalog.wav demo.satirlar.json demo.agiz.json
+// Ses (ses-yonetmeni aracı, Jake am_onyx 0.95 / Mike am_fenrir 1.05):
+//   kokoro-venv/bin/python tools/ses/diyalog.py uretim/seri/sablon-demo/demo-diyalog.txt video/public/seri/demo/diyalog.wav
+//   → diyalog.zaman.json buraya demo.satirlar.json olarak kopyalanır (biçim olduğu gibi; satirDosyasi() çevirir)
+// Ağız: python3 -I tools/seri/agiz-cue.py video/public/seri/demo/diyalog.wav video/src/seri/bolumler/demo.satirlar.json video/src/seri/bolumler/demo.agiz.json
 // Üç ağız yolu tek bölümde sınanır: S1 yama, S2 ifade, S3 kamera.
-import type { AgizDosyasi, Bolum, KarakterSahne, SatirDosyasi } from "../tipler";
+import type { AgizDosyasi, Bolum, KarakterSahne, ZamanJson } from "../tipler";
+import { satirDosyasi } from "../zaman";
 import satirlarJson from "./demo.satirlar.json";
 import agizJson from "./demo.agiz.json";
 
-const satirlar = satirlarJson as SatirDosyasi;
+const satirlar = satirDosyasi(satirlarJson as ZamanJson);
 const agiz = agizJson as AgizDosyasi;
 
 const ARKA = { yerTutucu: "blok", renk: "#3a4658", renk2: "#262c37" } as const;

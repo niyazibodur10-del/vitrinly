@@ -3,8 +3,10 @@
 
 Kullanım:
   python3 -I tools/seri/agiz-cue.py <diyalog.wav> <satirlar.json> <agiz.json> [--is 2] [--pay 0.05]
-  Girdi: ses-yonetmeni biçimi (satirlar.json: satirlar[] = konusmaci, bas, bitis, metin).
-  Çıktı: {"kaynak": {...sha}, "jake": [{"bas","bitis","sekil"}], "mike": [...]} (saniye, wav başına göre; satır dışı = X).
+  Girdi: ses-yonetmeni çıktısı olduğu gibi (tools/ses/diyalog.py → <ad>.wav + <ad>.zaman.json; satirlar[] = no,
+  konusmaci "JAKE"/"MIKE", bas, bitis, metin). <ad>-<KONUSMACI>.wav (yalnız o konuşmacı, aynı uzunluk) varsa kesit ondan
+  alınır → ±pay içine diğer konuşmacının sesi sızmaz; yoksa ana wav.
+  Çıktı: {"kaynak": {...sha}, "jake": [{"bas","bitis","sekil"}], "mike": [...]} (anahtar küçük harf; saniye, wav başına göre).
 Yöntem: her satır ±pay ile ffmpeg'le kesilir, Rhubarb (PocketSphinx + --dialogFile satır metni) ayrı koşar, ofset eklenir,
 satır sınırına kırpılır. Seçim (2026-11-10, uretim-muhendisi): satır başına Rhubarb (konuşmacı ayrımı satır verisinden gelir,
 çakışma yok) > tüm wav'a tek Rhubarb + satırla bölme (cümle sınırında ağız diğer konuşmacıya taşar, elendi) > phonetic
@@ -24,6 +26,9 @@ def sha12(p):
 
 def satir_isle(arg):
     i, s, wav, td, pay, esz = arg
+    iz = Path(wav).with_name(f"{Path(wav).stem}-{s['konusmaci'].upper()}.wav")
+    if iz.exists():
+        wav = str(iz)
     bas = max(0.0, s["bas"] - pay); bit = s["bitis"] + pay
     parca = os.path.join(td, f"s{i}.wav"); metin = os.path.join(td, f"s{i}.txt")
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{bas:.3f}", "-to", f"{bit:.3f}", "-i", wav,
@@ -38,7 +43,7 @@ def satir_isle(arg):
         cb = max(s["bas"], bas + c["start"]); cs = min(s["bitis"], bas + c["end"])
         if cs - cb > 1e-3:
             cues.append({"bas": round(cb, 3), "bitis": round(cs, 3), "sekil": c["value"]})
-    return s["konusmaci"], cues
+    return s["konusmaci"].lower(), cues
 
 
 def main():
@@ -63,7 +68,9 @@ def main():
     for k in list(sonuc):
         if k != "kaynak":
             sonuc[k].sort(key=lambda c: c["bas"])
-    json.dump(sonuc, open(a.cikis, "w", encoding="utf-8"), indent=0, ensure_ascii=False)
+    with open(a.cikis, "w", encoding="utf-8") as f:  # cue başına bir satır (okunur diff)
+        f.write("{\n" + ",\n".join(f'"{k}": ' + (json.dumps(v) if k == "kaynak" else
+                "[\n" + ",\n".join(json.dumps(c) for c in v) + "\n]") for k, v in sonuc.items()) + "\n}\n")
     print(" ".join(f"{k}={len(v)} cue" for k, v in sonuc.items() if k != "kaynak"))
 
 

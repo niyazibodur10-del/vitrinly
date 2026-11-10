@@ -1,4 +1,14 @@
-import type { AgizCue, AgizSekli, Kelime, Konusmaci, Satir } from "./tipler";
+import type { AgizCue, AgizSekli, Kelime, Konusmaci, Satir, SatirDosyasi, ZamanJson } from "./tipler";
+
+/** ses-yonetmeni'nin <ad>.zaman.json'unu (tools/ses/diyalog.py) şablon biçimine çevirir. */
+export const satirDosyasi = (j: ZamanJson): SatirDosyasi => ({
+  sure: j.sure,
+  satirlar: j.satirlar.map((s, i) => {
+    const k = s.konusmaci.toLowerCase();
+    if (k !== "jake" && k !== "mike") throw new Error(`[seri] satır ${s.no ?? i + 1}: bilinmeyen konuşmacı ${s.konusmaci}`);
+    return { konusmaci: k, bas: s.bas, bitis: s.bitis, metin: s.metin, kelimeler: s.kelimeler };
+  }),
+});
 
 /** t anında konuşan satır (yoksa null). */
 export const aktifSatir = (satirlar: Satir[], t: number): Satir | null =>

@@ -16,9 +16,16 @@ export type Gorsel = string | YerTutucu;
 export type AgizYolu = "yama" | "ifade" | "kamera";
 
 export type Kelime = { k: string; bas: number; bitis: number };
-/** ses-yonetmeni çıktısı (satirlar.json → satirlar[]). kelimeler opsiyonel; yoksa harf sayısına göre dağıtılır. */
+/** Şablonun iç satır biçimi (konuşmacı küçük harf). kelimeler opsiyonel; yoksa harf sayısına göre dağıtılır. */
 export type Satir = { konusmaci: Konusmaci; bas: number; bitis: number; metin: string; kelimeler?: Kelime[] };
 export type SatirDosyasi = { ses?: string; sure?: number; satirlar: Satir[] };
+/** ses-yonetmeni çıktısı olduğu gibi: tools/ses/diyalog.py → <ad>.zaman.json
+ *  {"sesler":{JAKE:"am_onyx:0.95",...}, "sure", "satirlar":[{"no","konusmaci":"JAKE","bas","bitis","metin", "kelimeler"?}]}
+ *  zaman.ts satirDosyasi() ile şablon biçimine çevrilir (konuşmacı küçük harfe, bilinmeyen konuşmacı → hata). */
+export type ZamanJson = {
+  sesler?: Record<string, string>; sure?: number;
+  satirlar: { no?: number; konusmaci: string; bas: number; bitis: number; metin: string; kelimeler?: Kelime[] }[];
+};
 export type AgizCue = { bas: number; bitis: number; sekil: AgizSekli | string };
 export type AgizDosyasi = Partial<Record<Konusmaci, AgizCue[]>> & { kaynak?: unknown };
 
