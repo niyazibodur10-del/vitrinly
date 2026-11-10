@@ -1,0 +1,7 @@
+Pano durak katmanı (hakem F9 risk 1) — Sunucu.tsx PanoYazi, yalnız poz M04 + pano prop'u verilen çekimler.
+Durak eşlemesi (sahneler.tsx panoDurak): S01–S07 hiçbiri vurgulu değil · S08 LIVING · S09–S12 CARE · S13–S14 SPOUSE · S15–S17 GIVING · S19–S20 HOUSE · S21–S25 TAX & TIME · S26+ hepsi çizili · sh2 = TAX & TIME · sh1 = katman yok (Shorts-1 değişmez).
+Komut: cd video && node scripts/kare-ornek.mjs KMirasFinal <dizin> 405,1260,1410,4230,5400,6060,9900,10860,12210,13740,14955,16800,19350,22200 0.5
+Kare sırası (sn): 13,5 42 47 141 180 202 330 362 407 458 498,5 560 645 740 → 14/14 render ok; yazı yalnız kâğıt içinde (x 640–~860, y 594–842 görüntü uzayı), yüz/ağız yaması (y ≤ 431) ile kesişme yok.
+Yakın plan (s 0,95): son satır ekranda y ≤ ~905, altyazı ≈ 920'den başlar; altyazı zaten üst katman (kapatılmaz).
+Shorts-2: KMirasShorts2 135,150,170 → S21 yakın Leo panosunda "6 TAX & TIME" vurgulu; ek kaydın Leo'su (sh2) aynı kural.
+Kod taraması: grep -rn "RIG:\|YER_TUTUCU\|DEBUG\|PLACEHOLDER" video/src → 0

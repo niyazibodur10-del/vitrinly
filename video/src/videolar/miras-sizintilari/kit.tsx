@@ -104,7 +104,8 @@ export const Leo: React.FC<{
   konusmaz?: boolean;
   opak?: number;
   cues?: Cue[]; // ek kayıt (Shorts) ağız çizelgesi: sahne kimliği yerine
-}> = ({ id, x, y, s, pozlar, tohum = 1, wink, rozet, giris, cikis, konusmaz, opak = 1, cues }) => {
+  pano?: number; // M04 panosunda aktif durak (Sunucu PanoYazi)
+}> = ({ id, x, y, s, pozlar, tohum = 1, wink, rozet, giris, cikis, konusmaz, opak = 1, cues, pano }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = frame / fps;
@@ -128,7 +129,7 @@ export const Leo: React.FC<{
   return (
     <div style={{ position: "absolute", left: x - YUZ_T.x * s + dx, top: y - YUZ_T.y * s + dy, scale: String(s), transformOrigin: "0 0", opacity: op }}>
       <div style={{ position: "relative", scale: String(otur), transformOrigin: `${YUZ_T.x}px ${RIG_T.kutu.h}px` }}>
-        <Sunucu cues={cues ?? (veri ? veri.agiz : [])} ofs={0} poz={poz} tohum={tohum} wink={wink} rig={RIG_T} konusmaz={konusmaz || (!veri && !cues)} />
+        <Sunucu cues={cues ?? (veri ? veri.agiz : [])} ofs={0} poz={poz} tohum={tohum} wink={wink} rig={RIG_T} konusmaz={konusmaz || (!veri && !cues)} pano={pano} />
         {rozet ? <Rozet {...rozet} x={YUZ_T.x + 125} y={YUZ_T.y + 330} boyut={1.7} /> : null}
       </div>
     </div>

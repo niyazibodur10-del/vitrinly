@@ -2,6 +2,8 @@ import React from "react";
 import { Img, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { AGIZ_YAMA, Kutu, KLASOR, SUNUCU_T, YAMA_T } from "./rig";
 import type { Cue } from "./veri-sahne";
+import { fredoka } from "./ortak";
+import { DURAK } from "./veri-grafik";
 
 // Kaynak: video/src/k1929/Sunucu.tsx (G05 zarftan-zarf pozu eklendi; kafa a ile hizalı). Konuşan Leo rig'i (cut-out): bel üstü poz (a / C12; aynı kadraj) + Rhubarb ağız yamaları + göz kırpma + tek göz kırpma.
 // Yamalar 05-gorsel/rig/rig-yamalar.json konumlarında (SUNUCU kırpım kutusuna göre). Eşleme: A,X = taban · B,G = C07 ·
@@ -18,6 +20,28 @@ export type SunucuPoz = "a" | "G05" | "G05k" | "G05m" | "C12" | "C13" | "C14" | 
 const VIDEO_POZ = new Set(["M04", "M05", "M06", "M07", "M17"]);
 const AGIZ_UYUMLU = new Set(["a", "G05", "G05k", "G05m", "C12", "C13", "C14", "C21", "balt", "M04", "M05", "M06", "M07", "M17"]);
 const GOZ_UYUMLU = new Set(["a", "G05", "G05k", "G05m", "C12", "C13", "C14", "C21", "M04", "M05", "M06", "M07", "M17"]);
+
+// M04 panosunun boş yüzüne 6 durak listesi (05-gorsel/canva-promptlari.md "6 durak satırı KOD"; hakem F9 riski 1).
+// Koordinatlar leo-M04.png piksel uzayı: kâğıt x 587–896, y 577–957; eller y 740–880'de kenarı x 628–845'e daraltır → satırlar x 640'tan.
+// aktif: −1 = hiçbiri (yol başlamadı) · 0–5 = o anki durak (sarı fosforlu) · 6 = hepsi geçildi (varış). Geçilenler kırmızı çizili.
+// Yakın planda (s 0,95) altyazı ekran y ≈ 920'den başlar → liste kâğıdın üst kısmında, son satır y ≤ 842 (ekranda ≤ ~905).
+const PANO_ROW0 = 640, PANO_UST = 594, PANO_SATIR = 42;
+export const PanoYazi: React.FC<{ aktif: number }> = ({ aktif }) => (
+  <div style={{ position: "absolute", left: 0, top: 0, pointerEvents: "none" }}>
+    {DURAK.map(([ad], i) => {
+      const gecti = i < aktif, simdi = i === aktif;
+      const renk = simdi ? "#141a26" : gecti ? "#8d939d" : aktif < 0 ? "#2a3242" : "#9aa1ab";
+      return (
+        <div key={ad} style={{ position: "absolute", left: PANO_ROW0, top: PANO_UST + i * PANO_SATIR, height: 40, display: "flex", alignItems: "center", fontFamily: fredoka, fontWeight: 700, fontSize: 30, color: renk, whiteSpace: "nowrap" }}>
+          {simdi ? <div style={{ position: "absolute", left: -10, right: -10, top: 5, bottom: 4, background: "rgba(255,212,59,0.85)", borderRadius: 6, transform: "rotate(-1deg)" }} /> : null}
+          <span style={{ position: "relative", width: 30, color: simdi ? "#c0392b" : renk }}>{i + 1}</span>
+          <span style={{ position: "relative" }}>{ad}</span>
+          {gecti ? <div style={{ position: "absolute", left: -4, right: -6, top: 19, height: 4, background: "#d64a3a", borderRadius: 2, transform: "rotate(-2deg)" }} /> : null}
+        </div>
+      );
+    })}
+  </div>
+);
 
 const sekilBul = (cues: Cue[], t: number): string => {
   for (const c of cues) if (t >= c.start && t < c.end) return c.value;
@@ -52,7 +76,8 @@ export const Sunucu: React.FC<{
   style?: React.CSSProperties;
   rig?: Rig;
   konusmaz?: boolean; // dış ses sırasında ağız kapalı
-}> = ({ cues, ofs, poz = "a", tohum = 1, wink, giris = false, zorlaSekil, style, rig = RIG_KRITIK, konusmaz = false }) => {
+  pano?: number; // M04 panosundaki aktif durak (PanoYazi); yoksa pano boş
+}> = ({ cues, ofs, poz = "a", tohum = 1, wink, giris = false, zorlaSekil, style, rig = RIG_KRITIK, konusmaz = false, pano }) => {
   const SUNUCU = rig.kutu;
   const YUZ = yuzRig(rig);
   const frame = useCurrentFrame();
@@ -82,6 +107,7 @@ export const Sunucu: React.FC<{
       }}
     >
       <Img src={staticFile(`${VIDEO_POZ.has(poz) ? "kmiras" : rig.klasor}/leo-${tabanD ? "b" : poz}.png`)} style={{ position: "absolute", left: 0, top: 0, width: SUNUCU.w, height: SUNUCU.h }} />
+      {poz === "M04" && pano !== undefined ? <PanoYazi aktif={pano} /> : null}
       {!tabanD && yamaAd ? <Yama ad={yamaAd} rig={rig} /> : null}
       {kirp ? <Yama ad="goz-kapali-C06" rig={rig} /> : null}
       {winkVar ? <Yama ad="goz-tek-C06" rig={rig} /> : null}

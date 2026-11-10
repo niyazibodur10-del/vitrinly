@@ -58,9 +58,18 @@ const panoDurum = (sid: string, t0: number, k: Record<string, number>) => {
 const POZ_SAHNE: Record<string, SunucuPoz> = { S04: "M17", S09: "M07", S12: "M05", S20: "M05", S30: "M07", S17: "M06" };
 const leoPoz = (id?: string): SunucuPoz => (id && POZ_SAHNE[id]) || "M04";
 
+// Pano yazısı: sahne → o anki durak (metin.md bölümleri). Yalnız uzun video sahneleri + Shorts-2 (vergi durağı);
+// Shorts-1 (sh1) yayına hazır, panosu değişmez → undefined.
+const panoDurak = (sid: string): number | undefined => {
+  if (sid === "sh2") return 5;
+  if (!/^S\d+$/.test(sid)) return undefined;
+  const n = Number(sid.slice(1));
+  return n <= 7 ? -1 : n === 8 ? 0 : n <= 12 ? 1 : n <= 14 ? 2 : n <= 17 ? 3 : n <= 20 ? 4 : n <= 25 ? 5 : 6;
+};
+
 // Konuşan Leo (rig) — Canva plakası üstünde; ağız çizelgesi sahnenin (veya ek kaydın) Rhubarb'ı.
 // tip: kapi (M08 yol + kamyon yan kesiği, Leo sol-orta) · yakin (M08 bulanık) · kasa (M09 kasa içi) · kasaYakin
-const LeoCekim: React.FC<{ id?: string; cues?: Cue[]; t0: number; tip: string; ad: string }> = ({ id, cues, t0, tip }) => {
+const LeoCekim: React.FC<{ sid: string; id?: string; cues?: Cue[]; t0: number; tip: string; ad: string }> = ({ sid, id, cues, t0, tip }) => {
   const D = useDikey();
   const yakin = tip === "yakin" || tip === "kasaYakin";
   const kasa = tip.startsWith("kasa");
@@ -69,7 +78,7 @@ const LeoCekim: React.FC<{ id?: string; cues?: Cue[]; t0: number; tip: string; a
     <AbsoluteFill>
       <PlakaArka t0={t0} ad={kasa ? "M19" : D ? "M18" : "M08"} bulanik={yakin ? 5 : kasa ? 2 : 0} odakX={0.5} dikeyPlaka={D && !kasa} />
       {tip === "kapi" ? <Kesik ad="ham-kamyon-yan" x={D ? 760 : 1420} alt={D ? 560 : 70} w={D ? 760 : 900} /> : null}
-      <Leo id={id} cues={cues} x={p.x} y={p.y} s={p.s} pozlar={[[0, leoPoz(id)]]} tohum={Math.round(t0 * 7) + 3} />
+      <Leo id={id} cues={cues} x={p.x} y={p.y} s={p.s} pozlar={[[0, leoPoz(id)]]} tohum={Math.round(t0 * 7) + 3} pano={panoDurak(sid)} />
     </AbsoluteFill>
   );
 };
@@ -80,7 +89,7 @@ export const Cekim: React.FC<{ sid: string; leoId?: string; leoCues?: Cue[]; kes
   const [anahtar, param] = cekim.split(":");
   switch (anahtar) {
     case "leo":
-      return <LeoCekim id={leoId} cues={leoCues} t0={t0} tip={param ?? "kapi"} ad={ad} />;
+      return <LeoCekim sid={sid} id={leoId} cues={leoCues} t0={t0} tip={param ?? "kapi"} ad={ad} />;
     case "devKutu":
       return <DevKutu t0={t0} k={k} />;
     case "esTabela":
