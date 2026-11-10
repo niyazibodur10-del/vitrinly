@@ -1,5 +1,15 @@
 # Finans Animasyon Kanalı — proje talimatları
 
+> **FORMAT DEĞİŞİKLİĞİ (Niyazi kararı 2026-11-10) — aşağıdaki eski finans formatının önüne geçer:**
+> Kanal, izleyicinin yön verdiği interaktif animasyon dizisine dönüşüyor (konsept: "Interactive Animation Series" PDF'i).
+> Jake Miller ve Mike Carter 100 dolarla başlıyor, hedefleri 1 milyon dolar. Her bölüm 60–90 sn, dikey 9:16, 3D görünümlü görsel, Amerikan İngilizcesi.
+> - **Yayın:** her gün 1 bölüm. Hazır bölüm stoku tutulmaz (Niyazi: "ilk 10 bölüm hazırda durmasın").
+> - **Karar döngüsü:** her bölüm bir seçim anında biter → yorumlar toplanır → kazanan fikir sonraki bölümde **ekranda kullanıcı adıyla gösterilir**.
+> - **Kanallar:** Instagram Reels ana kanal; YouTube Shorts ve TikTok eş zamanlı. Instagram hesabını Niyazi bağlayacak.
+> - **Yorum yanıtlarını koordinatör/sistem kendisi gönderir** (Niyazi kalıcı izni 2026-11-10). Bitmiş bölümün yayını, para harcama ve diğer dış mesajlar onay kuralına tabidir.
+> - **Eski finans videoları gizlenir** (Niyazi onayı 2026-11-10). Kanal adı yeni formata göre, Instagram uygunluğu kontrol edilerek önerilir.
+> - Eski uzun video akışı (`/bugunun-videosu` F0–F12) yeni formata uyarlanana kadar referanstır. Yarım kalan "miras-sizintilari" videosu durduruldu, yayınlanmayacak.
+
 Kullanıcı (Niyazi) kanalın sahibidir ve son onayı verir. Niyazi ile Türkçe konuş; **video içeriği İngilizce**.
 Bu repo artık yalnızca bu YouTube kanalı içindir. Eski Vitrinly ürünü ve Nutrigold bu projede KULLANILMAZ
 (global `~/.claude/CLAUDE.md` içindeki Nutrigold talimatları bu repoda geçersizdir; Niyazi isterse açılır).
