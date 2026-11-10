@@ -59,9 +59,9 @@ const Itme: React.FC<{ acik: boolean; children: React.ReactNode }> = ({ acik, ch
 
 // ---------- S21 vurgusu (16:9 ve dikey): 507–520 sn'de ekranda yalnız başlık + vergi çizgisi → yeni rakam yok ----------
 // sahne-YEREL zaman (S21 başı = 0). "typical family" etiketi → zeminden vergi çizgisine uzayan ölçü oku → medyan çubuğuna halka.
-type S21Yer = { etiket: number; cizgi: number; taban: number; ok: number; cip: [number, number]; halka: [number, number]; boy: number };
-const S21_YATAY: S21Yer = { etiket: 330, cizgi: 116, taban: 975, ok: 1640, cip: [250, 680], halka: [900, 978], boy: 1 };
-const S21_DIKEY: S21Yer = { etiket: 530, cizgi: 380, taban: 1500, ok: 930, cip: [80, 1150], halka: [490, 1500], boy: 0.85 };
+type S21Yer = { etiket: number; okUst: number; cizgi: number; taban: number; ok: number; cip: [number, number]; halka: [number, number]; boy: number };
+const S21_YATAY: S21Yer = { etiket: 330, okUst: 310, cizgi: 116, taban: 975, ok: 1050, cip: [250, 680], halka: [900, 978], boy: 1 };
+const S21_DIKEY: S21Yer = { etiket: 530, okUst: 380, cizgi: 380, taban: 1500, ok: 930, cip: [80, 1150], halka: [490, 1500], boy: 0.85 };
 const S21Vurgu: React.FC<{ y: S21Yer }> = ({ y }) => {
   const frame = useCurrentFrame();
   const g = frame / 30 + SAHNE_BAS.S21; // global sn
@@ -70,7 +70,7 @@ const S21Vurgu: React.FC<{ y: S21Yer }> = ({ y }) => {
   const ok = interpolate(g, [509.3, 512.3], [0, 1], { ...CL, easing: Easing.inOut(Easing.cubic) });
   const ust = interpolate(g, [512.3, 512.55], [0, 1], { ...CL, easing: Easing.out(Easing.back(2)) });
   const halka = interpolate(g, [515.0, 515.3, 516.6], [0, 1, 0.75], CL);
-  const boyOk = (y.taban - y.cizgi) * ok;
+  const boyOk = (y.taban - y.okUst) * ok; // 16:9: başlık çizginin altında (G4) → ok başlığın altında biter, yazıya binmez
   return (
     <AbsoluteFill style={{ pointerEvents: "none" }}>
       <div style={{ position: "absolute", left: y.cip[0], top: y.cip[1], opacity: cip, scale: String(0.8 + 0.2 * cip), transformOrigin: "0% 50%", padding: "8px 18px", borderRadius: 10, background: "rgba(10,14,26,0.85)", border: `4px solid ${SARI}`, fontFamily: anton, fontSize: 46 * y.boy, color: SARI, letterSpacing: 1 }}>A TYPICAL FAMILY ↓</div>

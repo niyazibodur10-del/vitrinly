@@ -47,3 +47,12 @@ Kazanç −17 → −12 dB (+5). Konuşmanın üstünde earshot "mouse click" yi
 - 30 rastgele kare (tohum 30; final 20 + 2 başlık karesi, Shorts 10): `kareler/kontrol-final-20-rastgele.jpg`, `kareler/kontrol-shorts-10-rastgele.jpg` → hata ayıklama / yer tutucu yazı 0. Kod taraması `RIG:|YER_TUTUCU|DEBUG|PLACEHOLDER` (miras-sizintilari + ortak) = 0.
 - **G4 başlığı kesikti (politika raporu, 508–513):** neden animasyonun S21'deki iki ×1,08 punch-in'i, başlık çizginin üstündeydi (y 30–160). Düzeltme `grafik.tsx` G4: yalnız 16:9 ve eyalet olmayan planda başlık çizginin altına (`taban − H + 22`); dikey/eyalet aynı. Kurgu etiketim "THE TAX LINE" y 330'a indi. Yalnız 8. parça (+ izin kararsız saydığı 11.) yeniden render; 509,5/510,2/510,8/511,5 karelerinde başlık tam.
 - Shorts 2 politika şeridi S21 kesitinde punch-in'li başlığa biniyordu → bölüme göre konum (ek planları y 196, S21 y 400 kırmızı çizginin altı); alt konum altyazıya binince reddedildi (`kareler/shorts-2-politika-seridi.jpg`). İlk olay 1,5 sn korunuyor.
+
+## 7. Tur 4 (2026-11-10) — F9 R2 + pano katmanı + R1 sonrası
+- Girdi HEAD 47d1982 (e469e41 R1, 0fe3f56 pano). Shorts-1'e dokunulmadı (e7f7bd2cfa55).
+- Render: KMirasShorts2 render-son; KMirasFinal `--oto-yok --yeniden 0..13` tam render (14/14, 1657 sn) + ölçü oku düzeltmesi 2 parça. Disk dibi 839 MB (`log/disk-izleme.txt`); disk-durum --temizle koşuldu.
+- Kapılar (`log/kapi-tur4.txt`): final 41ba5c473c18 781,40 sn −14,0/−3,2, siyah/donma 0, kayma 0 ms, WER %1,2 · sh2 1cbd883bc96d 43,43 sn −14,0/−3,8, siyah/donma 0, WER %2,7, ilk olay 1,5 · SFX kayık 0 · abone 4+1, tık ↔ klik 0 kare (`kareler/abone-klik-tur4.jpg`) · kod taraması 0.
+- 30 rastgele kare (tohum 40, final 20 + sh2 10): `kareler/kontrol-final-20-tur4.jpg`, `kareler/kontrol-shorts2-10-tur4.jpg` → hata ayıklama/yer tutucu 0. 10 pano karesi (`kareler/pano-10-kare.jpg`, `log/pano-10-kare.txt`) + yakın plan (`kareler/pano-yakin-altyazi.jpg`): pano yazısı kâğıt içinde, yüz/ağza binmiyor, son satır altyazının ~10 px üstünde.
+- R2 düzeltmesi (`kareler/r2-politika-seridi.jpg`): şerit G4 kesmesinde y 460, öncesinde y 196.
+- Kendi hatam, düzeltildi: 16:9 S21 ölçü oku x 1640'ta "MEDIAN NET WORTH, AGES 65–74" etiketini kesiyordu → x 1050, tepe y 310 (indirilen G4 başlığının altında) (`kareler/s21-olcu-oku-tur4.jpg`).
+- Açık (animasyon-yonetmeni): Shorts-2 ek planı G4 (~27–30 sn) "DOZENS OF TIMES HIGHER" ve sarı ok, medyan etiketinin "…TH, AGES 65–74" kısmına biniyor (`kareler/shorts-2-dozens-medyan.jpg`).

@@ -1,6 +1,1 @@
-npm notice
-npm notice New major version of npm available! 10.9.4 -> 12.2.2
-npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
-npm notice To update run: npm install -g npm@12.2.2
-npm notice
-[render-son] render=88.4s loudnorm_olcum=2.9s son_kodlama=2.3s toplam=93.5s
+[render-son] render=91.4s loudnorm_olcum=2.6s son_kodlama=2.2s toplam=96.2s
