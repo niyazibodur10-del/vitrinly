@@ -1,0 +1,40 @@
+dilim-266.73.mp4: 0:00.00-0:30.02 (30.0 s). Loudness -14.4 LUFS integrated, true peak -3.5 dBTP, LRA 1.8 LU; loudest 0:00.50-0:03.50 (-13.3 LUFS short-term). 5 stop-down(s)/gap(s): 0:05.65 0.4 s drop, 0:13.85 0.7 s drop, 0:18.40 0.3 s drop, 0:19.55 0.3 s drop, 0:28.35 0.4 s drop. No steady beat grid (pulse clarity 0.04 < 0.15). 3 section(s): 0:00.00-0:09.40 funk music, vocal chop, confident and cool; 0:09.40-0:13.90 tech house music?, electric guitar, confident and cool; 0:13.90-0:30.02 funk music?, vocal chop, confident and cool | voice: voice-over narration. 150 events (5.0/s); 12 tagged (9 ui, 2 voice, 1 foley; tags are hints). Strongest accents over a running bed: 0:06.29 +43 dB (chat message pop), 0:19.11 +40 dB, 0:15.05 +37 dB. Sync to 8 cuts: 38% have an onset within 1 frame (chance 33%), 62% within 100 ms, median |offset| 45 ms; 12% land on a strong accent (>= 21 dB over the bed) within 1 frame (chance 7%); 1 only by a level peak (soft whoosh / swell?); 2 without a hit: 0:18.67, 0:23.73. Sync to 11 cues: 46% have an onset within 1 frame (chance 33%), 73% within 100 ms, median |offset| 53 ms; 18% land on a strong accent (>= 21 dB over the bed) within 1 frame (chance 8%); 3 without a hit: 0:05.93, 0:18.67, 0:23.73.
+
+SECTIONS
+  0:00.00-0:09.40  funk music, vocal chop, confident and cool  -14 LUFS
+  0:09.40-0:13.90  tech house music?, electric guitar, confident and cool  -14 LUFS
+  0:13.90-0:30.02  funk music?, vocal chop, confident and cool | voice: voice-over narration  -14 LUFS
+
+TRANSCRIPT   time  kind   what (CLAP tag / runner-up)                     peak  over bed  length  centroid  | sync
+== 0:00.00-0:09.40  funk music, vocal chop, confident and cool  (+47 untagged onsets, 5.0/s)
+ 0:00.73  CUT     no onset; level peak +37 ms, rising 43 dB (a soft whoosh / swell, or just the bed?)  <- CHECK
+ 0:02.79  FOLEY? paper rustling / sub bass drop                   -3.8 dBFS  +4.8 dB   951 ms   422 Hz  | cut -15 ms OK
+ 0:05.65  GAP    drop 0.40 s (-45 LUFS)
+ 0:05.93  CUE    kesme k\u0131sa whoosh  no onset within 100 ms (strong sound at -102 ms)  <- NO HIT (a soft build-up can still be missed: look at the sheet)
+ 0:06.06  UI     chat message pop / laptop key click              -4.2 dBFS +37.3 dB   309 ms   365 Hz  | cut +89 ms near
+ 0:06.29  UI     chat message pop / sub bass drop                 -4.4 dBFS +43.0 dB    50 ms   450 Hz  | strong accent (summary)
+ 0:08.68  UI     chat message pop / bubble pop                    -3.7 dBFS +20.6 dB   306 ms   477 Hz  | vurgu +8 ms OK
+== 0:09.40-0:13.90  tech house music?, electric guitar, confident and cool  (+19 untagged onsets, 4.2/s)
+ 0:09.87  -      high onset                                       -4.0 dBFS +22.5 dB  1005 ms   417 Hz  | cut -27 ms OK; kesme -27 ms OK
+ 0:09.95  UI     chat message pop / sub bass drop                 -4.0 dBFS +23.8 dB   931 ms   490 Hz
+ 0:13.85  GAP    drop 0.70 s (-44 LUFS)
+== 0:13.90-0:30.02  funk music?, vocal chop, confident and cool | voice: voice-over narration  (+68 untagged onsets, 4.2/s)
+ 0:14.59  UI     chat message pop / sub bass drop                 -4.3 dBFS +33.3 dB  1015 ms   329 Hz  | cut +53 ms near; kesme +53 ms near
+ 0:15.05  -      full swell                                       -3.9 dBFS +37.1 dB   490 ms   450 Hz  | strong accent (summary)
+ 0:18.40  GAP    drop 0.35 s (-45 LUFS)
+ 0:18.67  CUT     no onset within 100 ms (strong sound at +113 ms)  <- NO HIT
+ 0:18.67  CUE    kesme k\u0131sa whoosh  no onset within 100 ms (strong sound at +113 ms)  <- NO HIT (a soft build-up can still be missed: look at the sheet)
+ 0:18.96  VOICE  short vocal sound / laptop key click             -4.2 dBFS +12.7 dB   191 ms  1.8 kHz  | vurgu +62 ms near
+ 0:19.11  -      full swell                                       -4.6 dBFS +40.4 dB    50 ms   363 Hz  | strong accent (summary)
+ 0:19.55  GAP    drop 0.35 s (-43 LUFS)
+ 0:20.25  UI?    chat message pop / bubble pop                    -4.0 dBFS  +3.5 dB    56 ms   535 Hz
+ 0:20.40  UI?    chat message pop / sub bass drop                 -3.6 dBFS  +5.9 dB    81 ms   421 Hz  | damla +63 ms near
+ 0:22.45  VOICE? short vocal sound / bubble pop                   -4.3 dBFS  +4.7 dB   130 ms   497 Hz  | vurgu -20 ms OK
+ 0:23.73  CUT     no onset within 100 ms (strong sound at +108 ms)  <- NO HIT
+ 0:23.73  CUE    kesme k\u0131sa whoosh  no onset within 100 ms (strong sound at +108 ms)  <- NO HIT (a soft build-up can still be missed: look at the sheet)
+ 0:23.84  UI     chat message pop / sub bass drop                 -3.6 dBFS +23.8 dB   558 ms   461 Hz  | yazi +8 ms OK
+ 0:28.35  GAP    drop 0.40 s (-39 LUFS)
+ 0:28.64  -      high onset                                       -4.3 dBFS  +4.6 dB  1225 ms   514 Hz  | cut -31 ms OK; kesme +3 ms OK
+ 0:28.75  UI     chat message pop / sub bass drop                 -4.3 dBFS +31.0 dB   683 ms   671 Hz
+
+NOTES  times, levels, loudness and sync offsets are measurements. Event kinds / tags are CLAP guesses: '?' = the event is less than 12 dB over its bed, so its excerpt is mostly bed and the tag a weak hint (right kind about 1 in 4 on the tuning mixes, 1 in 2 for exposed events; often wrong on music and voice). Where AST ran, its speech overrides the kind with VOICE. Section genres marked ? are weak. 'over bed' = how far the event rises over the level just before it; 'silent' = that bed was below -60 (after a gap the rise means nothing). Full data: --json.
