@@ -13,7 +13,6 @@
 ## Dersler
 - 2026-10-26: Kaynak sayfa çözünürlüğü düşük; ≥2048 px yakın plan için ESRGAN x4 (spandrel, yerel, `trust_remote_code` yasak) yine yumuşak.
 - 2026-10-26: "talking/mouth open" gülümseme üretir; şekli tarif et ("tall oval 'aah', NOT smiling"). Canva 5 paralel iş sorunsuz, iş başı 20–40 sn.
-- 2026-10-26: paket-v1 kafa üst boşluğu dar (saç üstü y≈30–47) → punch-in olur, pan-up olmaz.
 - 2026-10-27: Referanssız (ve C01 stil referanslı) dönem plakaları boyamsı çıktı (doku 2,6–5,2 vs Leo 0,6–0,9); Niyazi stil kararıyla kabul, kendi aralarında tek stil şart. Yürüme düzenlemesi yön tutmayabilir → sahneyi yöne uydur.
 - 2026-10-27: Ara karar (ör. kazanan plaka) SubagentHandback yerine rapordaki erken karar satırına yazılıp yalnız o dosya commit+push. OCR yok → Canny kenar yoğunluğu + 2× kırpım.
 - 2026-10-27: Büyük ara PNG'ler scratchpad'e (koordinatör repo'daki her şeyi commit edebiliyor).
@@ -27,5 +26,5 @@
 - 2026-11-05 (S03 dalga 1a): Kafa-sabit + "eyes looking straight at the camera" kalıbı 4/4 geçti (kor. 0,87–0,92, kayma ≤1,4 px; kol yukarıda M07 dy +5 → ofset). Kasa içi gibi ahşap/doku isteyen plakada referanssız prompt resimsi çıktı (kontur 0,06) → stil-olcum'a kontur ≥1,0 ekle, çizgi film nesne sayfasını referans ver.
 - 2026-11-05: Kafa değişiminde maske alt sınırı sert kesilirse çene altında ton basamağı → 40 px rampa (`kafa-degis.py`). Elli ifade kafası (e-dusunen) taşınmaz: el kolsuz kalır.
 - 2026-11-05 (S03 dalga 1b/2): Zemine yakın pastel/lila nesne M4'te silinir → dışbükey zarf köşe keser; dikdörtgen dolgu + ΔE<12 zemin temizliği çalıştı. Yapraklı dış mekân plakaları düzlük 43–47 verir (boyamsı değil) → "tolere" yaz, son hakkı harcama. Hook entegre plaka kesik bindirmeden iyi (gece ışığı).
-- 2026-11-10 (Flip By Vote, 3D dikey seri): 12 hak tavanında plan = sayfa 2 + plaka 4 + ikili 1 + konuşma tabanı 2 + ağız 2 + 1 yedek; ağız yarı/açık 4 adaylık tek istekten seçilir. Üretici betik içine kontrol + `--negatif` koy (ilk koşuda EDIT promptlarında eksik oran cümlesini yakaladı). Sonuç gelince bu satıra ölçüm yaz.
 - 2026-11-10 (seri sayfaları): Canva isteği 1 görsel döndürüyor (4 aday değil) → plan "tek atış + yedek hak". Tek görselde dönüş+6 ifade sayfası ilk denemede geçti (Mike kor. 0,93; Jake 0,76: gülen/heyecanlı portrede ten kayması). Kabulden sonra hedef renk = sayfa medyanı (`uretim/seri/karakter/araclar/sayfa-olcum.py`). Prompt yazmadan önce seri incili mekân/poz listesini oku.
+- 2026-11-10 (seri tur 2): "eyes toward frame-right" iki tabanda da sola baktı → yönü prompt'a bırakma, asimetrik kimlik öğesi olmayan karakteri aynala. Lacivert giysi + slate-blue zemin M4'ü bozar (ΔE 7,6) → `uretim/seri/karakter/araclar/kes-gc.py`; sonraki tabanlarda zemin rengi giysiye zıt seçilsin. Yarı ağız = DIS akış ara karesi (`agiz-yama.py`); sayfa portresi tezgâh arkasına konmaz, yalnız ekstrem yakın plan.

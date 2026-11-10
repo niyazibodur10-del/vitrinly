@@ -1,5 +1,5 @@
 # Flip By Vote · karakter sayfaları değerlendirmesi (2026-11-10, gorsel-varlik-sanatcisi)
-İLERLEME: J-A + M-A değerlendirildi → ikisi de KABUL. Sıradaki: L1-A (bkz. `canva-promptlari.md` sıra listesi).
+İLERLEME: J-A, M-A, L1-A, L1-B, T-J, T-M KABUL; kesim + yerleşim + ifade varlıkları `video/public/seri/bolum-001/` (VARLIKLAR.md). Sıradaki: koordinatör AG-J + AG-M → `araclar/agiz-yama.py` ile kapalı/yarı/açık yamaları. Kota 6/12.
 - **J-A KABUL** (Jake, `MAHajKKbhbM`): kontrol listesi 8/8, sayfa içi yüz kor. ort 0,76 (nötr 0,91; gülen 0,67 / heyecanlı 0,60 → ten açık-pembe kaymış, yüz yapısı aynı).
 - **M-A KABUL** (Mike, `MAHajPZXWbU`): kontrol listesi 8/8, sayfa içi yüz kor. ort 0,93 (0,90–0,95). Saç hedef taslaktan koyu (kestane, ΔE 24,6) → kumral tanımına uyuyor; sayfa kanonik kabul edildi.
 - Çözünürlük: ikisi 1920x1080 (doğal 1680x944 export). Yazı/logo/ekstra kişi: yok (1:1 göz incelemesi).
@@ -28,3 +28,14 @@ Taslak hedef hex'ler prompt öncesi tahmindi. Kabulden sonra hedef = sayfanın �
 ## Not (koordinatöre)
 - Araba: seri incili L2'ye göre Jake'in arabası, brief'e göre Mike'ın. Prompt nötr ("the friends' car"), karar senaryo-yazari'nda.
 - Bölüm 1 metni 23 poz istiyor; 10 hakla bu mümkün değil. Plan için `canva-promptlari.md` §1'e bak (animasyon-yonetmeni'ne iletilecek).
+
+## Tur 2 (2026-11-10): L1-A, L1-B, T-J, T-M
+Girdi sha256: T-J `c3bb924da25b`, T-M `b78bbd97b630`, L1-A `de4cc07a70ce`, L1-B `798280488f68`. Kontakt: `kontak-v2.jpg`.
+- **L1-A KABUL** (MAHajNE3GRU): kişi yok; 2× kırpımda yazı/logo yok (raftaki kitap sırtları dahil); tezgâh arka kenarı y=1186 (sütun taraması 1179–1191). İstenen ön kenar %68–72 yerine arka kenar %62; bel üstü kesik yine tezgâh arkasına oturuyor.
+- **L1-B KABUL** (MAHajDYp1b8): tahta boş ve düz (y 12–37 %), mıknatıs + kalem var. Tabanlar burada kullanılamaz (kesik kollar buzdolabı önünde açıkta kalır) → L1-B = tahta insert'i.
+- **T-J KABUL** (MAHajBqI-Qs): kontrol listesi 8/8. Sayfa nötr portresine yüz kor. 0,78, ten ΔE 9,7, hoodie 4,9, saç 5,1. Kafa 20° dönük olduğu için kor. aynı açıdaki düzenleme eşiğinin (0,84) altında; kimlik göz incelemesinde aynı kişi. Bakış istenenin TERSİ (kadraj solu).
+- **T-M KABUL** (MAHajIzpXBs): 8/8, kor. 0,83, ten ΔE 5,3, flanel 7,6, tişört 1,6, saç 5,2. Bakış kadraj solu → **Mike aynalandı** (aynalama yasağı Leo'nun saati içindi; Mike'ta asimetrik kimlik öğesi yok, Jake'in saç yönü aynalanmaz). İkilide Mike solda, Jake sağda.
+- **Kesim:** M4 (`kes-m4.py`) T-J'de lacivert omzu yedi (kenar artığı 0,174; ışıklı omuz zemine ΔE 7,6) → ELENDİ. Yeni `araclar/kes-gc.py`: Lab tohumlu GrabCut, gövdede σ7 kontur yumuşatma, T-J'de dışbükey zarf, zemin cebi temizliği (Mike 9.412 px), saç saçağının rengini saç tonuna çekme. Yeşil önizleme temiz. İki koşu birebir aynı (`cmp`).
+- **Yerleşim** (`araclar/yerlesim.py`): tezgâh ön katmanında dikdörtgenle başlatılan GrabCut blok verdi → elle çizilmiş bölge ve tohumla yeniden yapıldı. İlk ikilide Mike 0,50'de Jake'ten kısa göründü → 0,55'e çıktı, Jake 0,58 önde; açıkta kalan kesik pikseli 0.
+- **İfade portreleri** (`araclar/ifade-hazirla.py`): sayfa kartı → Lanczos 1080 + keskinleştirme → kes-gc → ten Lab eşleme (Jake ΔE 2,7–5,1 → ≤1,4; Mike 5,3–9,9 → ≤2,3). Tezgâh arkasına baş-omuz olarak yerleştirince dev kafa ve gri hale çıktı → RED. Düzeltme: alfa 2 px içeri, Mike aynalı, kullanım yalnız ekstrem yakın plan. Boyunda ton basamağı (ten maskesi satırdan kesilmişti) → tüm ten maskesine geçildi, giderildi. ESRGAN x4, başka ajanların ağır CPU işiyle çakıştığı için durduruldu. Yeniden üretim: `tools/karakter/buyut.py <kart> <çıkış> tam` (kart başına ~1–3 dk), sonra `ifade-hazirla.py`.
+- **Ağız aracı** (`araclar/agiz-yama.py`): Leo a/b çiftiyle sınandı. Hiza: bölge dışı fark %0,22, dikiş %0,57. Yarı açık = DIS optik akış t=0,5 ara karesi; ilk sürümde akış yönleri ters eşlenmişti (çift ağız gölgesi) → düzeltildi, tek ağız, temiz. Deterministik (`cmp`).

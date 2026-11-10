@@ -37,6 +37,7 @@ BG_SHEET = "plain flat light neutral-grey studio background, even soft frontal l
 BG_CUT = "plain flat medium slate-blue background, evenly lit, no shadows on the background"
 L169, P916 = "LANDSCAPE_16_9", "PORTRAIT_9_16"
 J_SAYFA, M_SAYFA = "MAHajKKbhbM", "MAHajPZXWbU"  # J-A, M-A kabul (2026-11-10)
+TJ, TM = "MAHajBqI-Qs", "MAHajIzpXBs"  # T-J, T-M kabul (2026-11-10)
 ORAN = {L169: "16:9 landscape.", P916: "Vertical 9:16 portrait."}
 
 def sheet(lock, ad, oran=L169, yerlesim=None):
@@ -198,11 +199,11 @@ ekle("L1-C", "L1 Mutfak · C tezgâh insert", "3 (önce KOD: L1-A tezgâh kırp�
      "S1 SLAM insert, S7 banknot yakın; banknot KOD")
 
 # 5 konuşma tabanı + ağız
-ekle("T-J", "Konuşma tabanı Jake", "1 (dalga 2)", f"[{J_SAYFA}]", P916, taban(JAKE, "Jake Miller", "right"), "Mike'a bakar (kadraj sağı); ikili kadrajda Jake solda")
-ekle("T-M", "Konuşma tabanı Mike", "1 (dalga 2)", f"[{M_SAYFA}]", P916, taban(MIKE, "Mike Carter", "left"), "Jake'e bakar (kadraj solu); ikili kadrajda Mike sağda")
-ekle("AG-J", "Ağız açık Jake", "1 (dalga 3)", f"[<T-J media>, {J_SAYFA}]", P916, edit("Jake", J_KIY, AGIZ), "tek görsel: açık durum; ara kare KOD alfa karışımı")
-ekle("AG-M", "Ağız açık Mike", "1 (dalga 3)", f"[<T-M media>, {M_SAYFA}]", P916, edit("Mike", M_KIY, AGIZ), "")
-ekle("GK-J", "Göz kırpma Jake", "yedek-2", f"[<T-J media>, {J_SAYFA}]", P916,
+ekle("T-J", "Konuşma tabanı Jake", "1 (dalga 2)", f"[{J_SAYFA}]", P916, taban(JAKE, "Jake Miller", "right"), "ÜRETİLDİ: kadraj soluna baktı → Jake ikilide SAĞDA, aynalanmaz")
+ekle("T-M", "Konuşma tabanı Mike", "1 (dalga 2)", f"[{M_SAYFA}]", P916, taban(MIKE, "Mike Carter", "left"), "ÜRETİLDİ: kadraj soluna baktı → Mike AYNALANIR, ikilide SOLDA")
+ekle("AG-J", "Ağız açık Jake", "1 (dalga 3)", f"[{TJ}, {J_SAYFA}]", P916, edit("Jake", J_KIY, AGIZ), "tek görsel: açık durum; yarı = agiz-yama.py optik akış ara karesi")
+ekle("AG-M", "Ağız açık Mike", "1 (dalga 3)", f"[{TM}, {M_SAYFA}]", P916, edit("Mike", M_KIY, AGIZ), "")
+ekle("GK-J", "Göz kırpma Jake", "yedek-2", f"[{TJ}, {J_SAYFA}]", P916,
      edit("Jake", J_KIY, "both eyelids fully closed in a natural blink, eyebrows relaxed, mouth unchanged."), "yedek hak kalırsa")
 
 YASAK = ["pixar", "dreamworks", "disney", "illumination entertainment", "sony pictures", "#"]

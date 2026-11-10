@@ -3,8 +3,8 @@
 Neden: T-J lacivert hoodie'nin ışıklı omzu slate-blue zemine ΔE≈8 → M4 renk anahtarı omzu yedi (kenar artığı 0,17).
 Tohum: kesin ön plan = Lab uzaklığı >18 olan en büyük bileşen + delik doldurma, 25 px aşındırılmış; kesin zemin = uzaklık <4 ve
 ön plana 60 px'ten uzak, kenara bağlı; arası GrabCut (5 tur). Alfa = maske, 2 px Gauss; renk arındırma (zemin rengi saçaktan çıkarılır).
-Kullanım: python -I kes-gc.py <girdi.png> <cikis_rgba.png> <yesil.jpg> [gövde_baslangic_y: altı σ7 kontur yumuşatma] [--zarf]"""
-import sys, json, cv2, numpy as np
+Kullanım: python -I kes-gc.py <girdi.png> <cikis_rgba.png> <yesil.jpg> [gövde_baslangic_y: altı σ7 kontur yumuşatma] [--zarf]   ortam: SAC_PX (saç bölgesi yüksekliği, varsayılan 320)"""
+import sys, os, json, cv2, numpy as np
 def lab(i): return cv2.cvtColor(i, cv2.COLOR_BGR2LAB).astype(np.float32)*np.array([100/255,1,1],np.float32)-np.array([0,128,128],np.float32)
 img=cv2.imread(sys.argv[1]); h,w=img.shape[:2]
 c=np.concatenate([img[:30,:30].reshape(-1,3),img[:30,-30:].reshape(-1,3)]); bgc=np.median(c,0)
@@ -39,7 +39,7 @@ soft=np.clip((d-3)/18,0,1); hb=band.copy(); hb[Y0:]=False; a[hb]=np.minimum(a[hb
 out=img.astype(np.float32); edge=(a>0.02)&(a<0.98)
 aa=np.clip(a[...,None],0.15,1); fix=(out-(1-aa)*bgc)/aa; out[edge]=np.clip(fix[edge],0,255)
 # saç saçağı: saç bölgesinde (ön plan tepesinden 320 px) yarı saydam piksellerin renk tonunu saç medyanına çek (L korunur)
-ty=int(np.where(m.any(1))[0][0]); hz=np.zeros((h,w),bool); hz[ty:ty+320]=True
+ty=int(np.where(m.any(1))[0][0]); hz=np.zeros((h,w),bool); SAC=int(os.environ.get("SAC_PX",320)); hz[ty:ty+SAC]=True
 core_h=hz&(a>0.99)&(d>25); fr=hz&(a<0.99)&(a>0.01)
 if core_h.any() and fr.any():
     L=cv2.cvtColor(np.clip(out,0,255).astype(np.uint8),cv2.COLOR_BGR2LAB); hab=np.median(L[core_h][:,1:],0)

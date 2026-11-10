@@ -273,7 +273,7 @@ No text, no letters, no numbers, no labels, no signs, no brand logos, no badges,
 ```
 
 ### T-J · Konuşma tabanı Jake · sıra 1 (dalga 2)
-- aspectRatio: `PORTRAIT_9_16` · referans: [MAHajKKbhbM] · not: Mike'a bakar (kadraj sağı); ikili kadrajda Jake solda · 1894 karakter
+- aspectRatio: `PORTRAIT_9_16` · referans: [MAHajKKbhbM] · not: ÜRETİLDİ: kadraj soluna baktı → Jake ikilide SAĞDA, aynalanmaz · 1894 karakter
 ```
 STYLE LOCK: original stylized 3D animated-feature look, clean high-quality CG render, soft global illumination, gentle subsurface scattering on skin, appealing slightly stylized proportions (head a little larger than realistic, large expressive eyes, simplified rounded forms), smooth matte fabric with subtle weave texture, soft contact shadows. No outlines, no cel-shading, not a 2D drawing, not photorealistic, not claymation. Original character design, not resembling any existing cartoon character, celebrity or real person.
 JAKE LOCK (identical in every image): Jake Miller, an original 26-year-old American man, slim average build, light warm skin, oval face with a defined jaw, short dark-brown hair (short on the sides, neat slightly longer top brushed to his right), straight dark-brown eyebrows, calm warm-brown eyes, short light even stubble on jaw, chin and upper lip (not a full beard). Outfit never changes: plain navy-blue pullover hoodie with the hood down, front kangaroo pocket and two light-grey drawstrings, no print and no logo; beige chino pants; plain white low-top sneakers. No glasses, no hat, no jewelry, no watch. Body language: calm, analytical, composed.
@@ -284,7 +284,7 @@ No text, no letters, no numbers, no labels, no signs, no brand logos, no badges,
 ```
 
 ### T-M · Konuşma tabanı Mike · sıra 1 (dalga 2)
-- aspectRatio: `PORTRAIT_9_16` · referans: [MAHajPZXWbU] · not: Jake'e bakar (kadraj solu); ikili kadrajda Mike sağda · 1972 karakter
+- aspectRatio: `PORTRAIT_9_16` · referans: [MAHajPZXWbU] · not: ÜRETİLDİ: kadraj soluna baktı → Mike AYNALANIR, ikilide SOLDA · 1972 karakter
 ```
 STYLE LOCK: original stylized 3D animated-feature look, clean high-quality CG render, soft global illumination, gentle subsurface scattering on skin, appealing slightly stylized proportions (head a little larger than realistic, large expressive eyes, simplified rounded forms), smooth matte fabric with subtle weave texture, soft contact shadows. No outlines, no cel-shading, not a 2D drawing, not photorealistic, not claymation. Original character design, not resembling any existing cartoon character, celebrity or real person.
 MIKE LOCK (identical in every image): Mike Carter, an original 27-year-old American man, a little taller and broader than his friend Jake (athletic build, about 6 feet tall), fair skin with a light warm flush on the cheeks, slightly square face, messy tousled light-brown (dark-blond) hair, medium length on top falling loosely over the forehead, shorter sides, bright blue eyes, clean-shaven. Outfit never changes: red-and-black buffalo-check flannel shirt (large even squares) worn unbuttoned and open over a plain white crew-neck T-shirt, flannel sleeves rolled up to just below the elbows; dark-indigo slim jeans; brown leather lace-up boots. No glasses, no hat, no jewelry, no watch. Body language: energetic, playful, confident.
@@ -295,19 +295,19 @@ No text, no letters, no numbers, no labels, no signs, no brand logos, no badges,
 ```
 
 ### AG-J · Ağız açık Jake · sıra 1 (dalga 3)
-- aspectRatio: `PORTRAIT_9_16` · referans: [<T-J media>, MAHajKKbhbM] · not: tek görsel: açık durum; ara kare KOD alfa karışımı · 704 karakter
+- aspectRatio: `PORTRAIT_9_16` · referans: [MAHajBqI-Qs, MAHajKKbhbM] · not: tek görsel: açık durum; yarı = agiz-yama.py optik akış ara karesi · 704 karakter
 ```
 EDIT the first reference image. Keep EVERYTHING identical: same man (Jake), same face, same hair, same navy hoodie with grey drawstrings, same stubble, same framing and camera distance, same body position, head stays in exactly the same place and angle, same eye direction, same plain slate-blue background, same lighting and same stylized 3D render style. The second reference is the character model sheet; the face must match it. ONLY CHANGE: mouth open mid-word in a relaxed talking shape: jaw dropped slightly, lips in a soft open oval, a little of the upper teeth visible, NOT smiling, NOT shouting; the rest of the face (eyes, eyebrows, cheeks) unchanged. No text, no logos. Vertical 9:16 portrait.
 ```
 
 ### AG-M · Ağız açık Mike · sıra 1 (dalga 3)
-- aspectRatio: `PORTRAIT_9_16` · referans: [<T-M media>, MAHajPZXWbU] · 755 karakter
+- aspectRatio: `PORTRAIT_9_16` · referans: [MAHajIzpXBs, MAHajPZXWbU] · 755 karakter
 ```
 EDIT the first reference image. Keep EVERYTHING identical: same man (Mike), same face, same hair, same open red-and-black buffalo-check flannel over the white T-shirt, rolled sleeves, clean-shaven face, same framing and camera distance, same body position, head stays in exactly the same place and angle, same eye direction, same plain slate-blue background, same lighting and same stylized 3D render style. The second reference is the character model sheet; the face must match it. ONLY CHANGE: mouth open mid-word in a relaxed talking shape: jaw dropped slightly, lips in a soft open oval, a little of the upper teeth visible, NOT smiling, NOT shouting; the rest of the face (eyes, eyebrows, cheeks) unchanged. No text, no logos. Vertical 9:16 portrait.
 ```
 
 ### GK-J · Göz kırpma Jake · sıra yedek-2
-- aspectRatio: `PORTRAIT_9_16` · referans: [<T-J media>, MAHajKKbhbM] · not: yedek hak kalırsa · 568 karakter
+- aspectRatio: `PORTRAIT_9_16` · referans: [MAHajBqI-Qs, MAHajKKbhbM] · not: yedek hak kalırsa · 568 karakter
 ```
 EDIT the first reference image. Keep EVERYTHING identical: same man (Jake), same face, same hair, same navy hoodie with grey drawstrings, same stubble, same framing and camera distance, same body position, head stays in exactly the same place and angle, same eye direction, same plain slate-blue background, same lighting and same stylized 3D render style. The second reference is the character model sheet; the face must match it. ONLY CHANGE: both eyelids fully closed in a natural blink, eyebrows relaxed, mouth unchanged. No text, no logos. Vertical 9:16 portrait.
 ```
