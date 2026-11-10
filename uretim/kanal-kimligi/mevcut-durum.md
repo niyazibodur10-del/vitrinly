@@ -26,3 +26,10 @@ API ile değiştirilemez: profil fotoğrafı, kanal adı, @tanıtıcı (Studio).
 - 2026-10-27: Hakkında'ya "Researched, written and produced by the Toonomy team." eklendi (hakem ŞY-1, Ö9), API ile uygulandı.
 - 2026-10-28: oynatma listesi 'The Collapse: Financial History Explained' açıldı (ilk video BVJwZ1C9R1U).
 - 2026-11-04: oynatma listesi açıklamalarından gün sözü ("New episodes every …") çıkarıldı (gün sözü kuralı); canlıda The Collapse + Money News güncellendi (API).
+
+## 2026-11-10 — Format değişikliği (Niyazi onayı)
+- Yeni format: izleyicinin yön verdiği interaktif animasyon dizisi (bkz. CLAUDE.md).
+- API ile GİZLENDİ (private, silinmedi): 2kaz6kXdZlw, YLZQj6ecYE4, 6LQGcQg4hpk, ghLjMbrweCw, QFC8GdDTW2c, BVJwZ1C9R1U. Eski 4 video (2025-07) zaten gizliydi.
+- Oynatma listeleri gizlendi: PLD0_rVnRy-yo, PLZTj26FYW6IY, PLQFkX-t2X0rU.
+- YouTube kalıcı yetki yenilendi (cihaz kodu, 2026-11-10).
+- Kanal adı önerileri: uretim/kanal-kimligi/yeni-format-ad-onerileri.md (öneri: You Call The Flip · @youcalltheflip).
