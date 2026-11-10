@@ -1,0 +1,51 @@
+{
+ "sesler": {
+  "JAKE": "am_onyx:0.95",
+  "MIKE": "am_puck:1.08"
+ },
+ "sure": 23.442,
+ "satirlar": [
+  {
+   "no": 1,
+   "konusmaci": "JAKE",
+   "bas": 0.15,
+   "bitis": 4.128,
+   "metin": "Hold on. A price is just a number until someone pays it."
+  },
+  {
+   "no": 2,
+   "konusmaci": "MIKE",
+   "bas": 4.348,
+   "bitis": 6.544,
+   "metin": "Jake, we don't need more money, we need more guts!"
+  },
+  {
+   "no": 3,
+   "konusmaci": "JAKE",
+   "bas": 6.964,
+   "bitis": 11.731,
+   "metin": "Guts don't pay rent, Mike. We have exactly one hundred dollars."
+  },
+  {
+   "no": 4,
+   "konusmaci": "MIKE",
+   "bas": 11.951,
+   "bitis": 15.992,
+   "metin": "Exactly! One hundred bucks, one garage sale, and my lucky sneakers."
+  },
+  {
+   "no": 5,
+   "konusmaci": "JAKE",
+   "bas": 16.412,
+   "bitis": 19.596,
+   "metin": "Your lucky sneakers lost us twenty dollars last week."
+  },
+  {
+   "no": 6,
+   "konusmaci": "MIKE",
+   "bas": 19.816,
+   "bitis": 23.142,
+   "metin": "That was a warm-up. Today, we flip it. You in, or not?"
+  }
+ ]
+}

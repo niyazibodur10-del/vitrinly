@@ -1,0 +1,370 @@
+{
+"kaynak": {
+"wav": "9fddd5000ea8",
+"satirlar": "a7372dd5f658"
+},
+"jake": [
+{
+"bas": 0.5,
+"bitis": 0.53,
+"sekil": "X"
+},
+{
+"bas": 0.53,
+"bitis": 0.6,
+"sekil": "F"
+},
+{
+"bas": 0.6,
+"bitis": 0.73,
+"sekil": "C"
+},
+{
+"bas": 0.73,
+"bitis": 1.15,
+"sekil": "B"
+},
+{
+"bas": 1.15,
+"bitis": 1.57,
+"sekil": "E"
+},
+{
+"bas": 1.57,
+"bitis": 1.71,
+"sekil": "B"
+},
+{
+"bas": 1.71,
+"bitis": 1.96,
+"sekil": "X"
+},
+{
+"bas": 1.96,
+"bitis": 2.01,
+"sekil": "B"
+},
+{
+"bas": 2.01,
+"bitis": 2.06,
+"sekil": "C"
+},
+{
+"bas": 2.06,
+"bitis": 2.2,
+"sekil": "B"
+},
+{
+"bas": 2.2,
+"bitis": 2.41,
+"sekil": "E"
+},
+{
+"bas": 2.41,
+"bitis": 2.48,
+"sekil": "F"
+},
+{
+"bas": 2.48,
+"bitis": 2.55,
+"sekil": "B"
+},
+{
+"bas": 2.55,
+"bitis": 2.76,
+"sekil": "D"
+},
+{
+"bas": 2.76,
+"bitis": 2.9,
+"sekil": "B"
+},
+{
+"bas": 2.9,
+"bitis": 2.953,
+"sekil": "X"
+},
+{
+"bas": 4.771,
+"bitis": 4.801,
+"sekil": "X"
+},
+{
+"bas": 4.801,
+"bitis": 4.861,
+"sekil": "E"
+},
+{
+"bas": 4.861,
+"bitis": 5.131,
+"sekil": "C"
+},
+{
+"bas": 5.131,
+"bitis": 5.341,
+"sekil": "B"
+},
+{
+"bas": 5.341,
+"bitis": 5.411,
+"sekil": "E"
+},
+{
+"bas": 5.411,
+"bitis": 5.481,
+"sekil": "F"
+},
+{
+"bas": 5.481,
+"bitis": 5.621,
+"sekil": "B"
+},
+{
+"bas": 5.621,
+"bitis": 5.701,
+"sekil": "A"
+},
+{
+"bas": 5.701,
+"bitis": 5.861,
+"sekil": "H"
+},
+{
+"bas": 5.861,
+"bitis": 6.211,
+"sekil": "C"
+},
+{
+"bas": 6.211,
+"bitis": 6.257,
+"sekil": "X"
+},
+{
+"bas": 9.462,
+"bitis": 9.492,
+"sekil": "X"
+},
+{
+"bas": 9.492,
+"bitis": 9.552,
+"sekil": "F"
+},
+{
+"bas": 9.552,
+"bitis": 9.752,
+"sekil": "B"
+},
+{
+"bas": 9.752,
+"bitis": 9.832,
+"sekil": "A"
+},
+{
+"bas": 9.832,
+"bitis": 9.982,
+"sekil": "C"
+},
+{
+"bas": 9.982,
+"bitis": 10.052,
+"sekil": "B"
+},
+{
+"bas": 10.052,
+"bitis": 10.192,
+"sekil": "G"
+},
+{
+"bas": 10.192,
+"bitis": 10.612,
+"sekil": "B"
+},
+{
+"bas": 10.612,
+"bitis": 10.712,
+"sekil": "A"
+},
+{
+"bas": 10.712,
+"bitis": 10.902,
+"sekil": "B"
+},
+{
+"bas": 10.902,
+"bitis": 11.042,
+"sekil": "C"
+},
+{
+"bas": 11.042,
+"bitis": 11.112,
+"sekil": "B"
+},
+{
+"bas": 11.112,
+"bitis": 11.182,
+"sekil": "G"
+},
+{
+"bas": 11.182,
+"bitis": 11.252,
+"sekil": "D"
+},
+{
+"bas": 11.252,
+"bitis": 11.462,
+"sekil": "C"
+},
+{
+"bas": 11.462,
+"bitis": 11.542,
+"sekil": "A"
+},
+{
+"bas": 11.542,
+"bitis": 11.622,
+"sekil": "C"
+},
+{
+"bas": 11.622,
+"bitis": 11.832,
+"sekil": "B"
+},
+{
+"bas": 11.832,
+"bitis": 11.882,
+"sekil": "X"
+}
+],
+"mike": [
+{
+"bas": 3.203,
+"bitis": 3.233,
+"sekil": "X"
+},
+{
+"bas": 3.233,
+"bitis": 3.493,
+"sekil": "E"
+},
+{
+"bas": 3.493,
+"bitis": 3.633,
+"sekil": "B"
+},
+{
+"bas": 3.633,
+"bitis": 3.703,
+"sekil": "E"
+},
+{
+"bas": 3.703,
+"bitis": 3.773,
+"sekil": "F"
+},
+{
+"bas": 3.773,
+"bitis": 4.053,
+"sekil": "B"
+},
+{
+"bas": 4.053,
+"bitis": 4.193,
+"sekil": "C"
+},
+{
+"bas": 4.193,
+"bitis": 4.403,
+"sekil": "B"
+},
+{
+"bas": 4.403,
+"bitis": 4.521,
+"sekil": "X"
+},
+{
+"bas": 6.507,
+"bitis": 6.647,
+"sekil": "E"
+},
+{
+"bas": 6.647,
+"bitis": 6.787,
+"sekil": "D"
+},
+{
+"bas": 6.787,
+"bitis": 6.927,
+"sekil": "B"
+},
+{
+"bas": 6.927,
+"bitis": 6.997,
+"sekil": "C"
+},
+{
+"bas": 6.997,
+"bitis": 7.137,
+"sekil": "B"
+},
+{
+"bas": 7.137,
+"bitis": 7.277,
+"sekil": "G"
+},
+{
+"bas": 7.277,
+"bitis": 7.487,
+"sekil": "B"
+},
+{
+"bas": 7.487,
+"bitis": 7.697,
+"sekil": "C"
+},
+{
+"bas": 7.697,
+"bitis": 7.787,
+"sekil": "A"
+},
+{
+"bas": 7.787,
+"bitis": 8.017,
+"sekil": "C"
+},
+{
+"bas": 8.017,
+"bitis": 8.077,
+"sekil": "G"
+},
+{
+"bas": 8.077,
+"bitis": 8.337,
+"sekil": "B"
+},
+{
+"bas": 8.337,
+"bitis": 8.417,
+"sekil": "A"
+},
+{
+"bas": 8.417,
+"bitis": 8.637,
+"sekil": "C"
+},
+{
+"bas": 8.637,
+"bitis": 8.777,
+"sekil": "B"
+},
+{
+"bas": 8.777,
+"bitis": 9.127,
+"sekil": "C"
+},
+{
+"bas": 9.127,
+"bitis": 9.212,
+"sekil": "X"
+}
+]
+}

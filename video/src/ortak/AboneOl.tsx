@@ -42,7 +42,13 @@ export const AboneOl: React.FC<{
   tutamac?: string;
   resim?: string; // public/ altındaki yol
   ust?: number; // kartın üst kenarı (px) — varsayılan yerleşimi sahne içeriğine göre kaydırmak için
-}> = ({ ust: ustVerilen, duzen = "yatay", taraf = "sol", sure = ABONE_SURE_SN, klik = ABONE_KLIK_SN, ad = "Toonomy", tutamac = "@toonomy", resim = "ortak/toonomy-profil.png" }) => {
+  // 2026-11-10 (uretim-muhendisi, Flip By Vote dikey dizi): takip metni + resim yerine düğüm + ad yazı boyutu.
+  // Varsayılanlar eski davranışın aynısı (SUBSCRIBE / ✓ SUBSCRIBED / resim / 42 px).
+  dugme?: string;
+  dugmeSonra?: string;
+  profil?: React.ReactNode;
+  adBoyut?: number;
+}> = ({ ust: ustVerilen, duzen = "yatay", taraf = "sol", sure = ABONE_SURE_SN, klik = ABONE_KLIK_SN, ad = "Toonomy", tutamac = "@toonomy", resim = "ortak/toonomy-profil.png", dugme: dugmeMetni = "SUBSCRIBE", dugmeSonra = "✓ SUBSCRIBED", profil, adBoyut = 42 }) => {
   const frame = useCurrentFrame();
   const { fps, width } = useVideoConfig();
   const t = frame / fps;
@@ -78,10 +84,10 @@ export const AboneOl: React.FC<{
     <div style={{ position: "absolute", left: sol, top: ust, width: W, height: H, scale: String(olcek), transformOrigin: "0 0", translate: `${kay}px 0px`, opacity: opak, pointerEvents: "none" }}>
       <div style={{ position: "absolute", inset: 0, borderRadius: 64, background: "rgba(14,16,24,0.9)", border: "3px solid rgba(255,255,255,0.16)", boxShadow: "0 10px 26px rgba(0,0,0,0.55)" }} />
       <div style={{ position: "absolute", left: 16, top: 16, width: 96, height: 96, borderRadius: 48, overflow: "hidden", boxShadow: "0 0 0 4px #ffffff" }}>
-        <Img src={staticFile(resim)} style={{ width: 96, height: 96 }} />
+        {profil ?? <Img src={staticFile(resim)} style={{ width: 96, height: 96 }} />}
       </div>
       <div style={{ position: "absolute", left: 132, top: 22, width: 200, fontFamily: "Fredoka", fontWeight: 700 }}>
-        <div style={{ fontSize: 42, lineHeight: 1.1, color: "#ffffff" }}>{ad}</div>
+        <div style={{ fontSize: adBoyut, lineHeight: 1.1, color: "#ffffff", whiteSpace: "nowrap" }}>{ad}</div>
         <div style={{ fontSize: 24, color: "#aeb6c4", marginTop: 4 }}>{tutamac}</div>
       </div>
       <div
@@ -92,7 +98,7 @@ export const AboneOl: React.FC<{
           fontFamily: "Fredoka", fontWeight: 700, fontSize: abone ? 28 : 31, letterSpacing: 1, color: abone ? "#e4e4e4" : "#ffffff", overflow: "hidden",
         }}
       >
-        {abone ? "✓ SUBSCRIBED" : "SUBSCRIBE"}
+        {abone ? dugmeSonra : dugmeMetni}
         {dalga > 0 && dalga < 1 ? (
           <div style={{ position: "absolute", left: BTN_MERKEZ.x - BTN.x - 90 * dalga, top: BTN_MERKEZ.y - BTN.y - 90 * dalga, width: 180 * dalga, height: 180 * dalga, borderRadius: "50%", background: `rgba(255,255,255,${0.45 * (1 - dalga)})` }} />
         ) : null}
