@@ -7,7 +7,8 @@
 > - **Karar döngüsü:** her bölüm bir seçim anında biter → yorumlar toplanır → kazanan fikir sonraki bölümde **ekranda kullanıcı adıyla gösterilir**.
 > - **Kanallar:** Instagram Reels ana kanal; YouTube Shorts ve TikTok eş zamanlı. Instagram hesabını Niyazi bağlayacak.
 > - **Yorum yanıtlarını koordinatör/sistem kendisi gönderir** (Niyazi kalıcı izni 2026-11-10). Bitmiş bölümün yayını, para harcama ve diğer dış mesajlar onay kuralına tabidir.
-> - **Eski finans videoları gizlenir** (Niyazi onayı 2026-11-10). Kanal adı yeni formata göre, Instagram uygunluğu kontrol edilerek önerilir.
+> - **Eski finans videoları gizlendi** (Niyazi onayı 2026-11-10; 6 video + 3 liste private).
+> - **Kanal adı: Flip By Vote · @flipbyvote** (Niyazi seçti ve Instagram'da aldı, 2026-11-10). YouTube ve TikTok'ta da aynı ad kullanılacak.
 > - Eski uzun video akışı (`/bugunun-videosu` F0–F12) yeni formata uyarlanana kadar referanstır. Yarım kalan "miras-sizintilari" videosu durduruldu, yayınlanmayacak.
 
 Kullanıcı (Niyazi) kanalın sahibidir ve son onayı verir. Niyazi ile Türkçe konuş; **video içeriği İngilizce**.
