@@ -7,6 +7,7 @@ import { anton, fredoka } from "./ortak";
 import { ABONE_ANA, KURGU_SHORTS } from "./kurgu-veri";
 import { AboneOl } from "../../ortak/AboneOl";
 import { SAHNELER } from "./veri-sahne";
+import { plan } from "./zaman";
 
 // F7 kurgu katmanı (kurgu-editoru) — S03 The Great Wealth Transfer Has a Leak. Kaynak desen: videolar/yeni-video/kurgu.tsx.
 // KMirasTam'ı altyazısız sarar → kurgu vurguları + abone → altyazı en üstte. Vurgusuz karelerde KMirasTam ile piksel-aynı.
@@ -60,7 +61,7 @@ const Itme: React.FC<{ acik: boolean; children: React.ReactNode }> = ({ acik, ch
 // sahne-YEREL zaman (S21 başı = 0). "typical family" etiketi → zeminden vergi çizgisine uzayan ölçü oku → medyan çubuğuna halka.
 type S21Yer = { etiket: number; cizgi: number; taban: number; ok: number; cip: [number, number]; halka: [number, number]; boy: number };
 const S21_YATAY: S21Yer = { etiket: 330, cizgi: 116, taban: 975, ok: 1640, cip: [250, 680], halka: [900, 978], boy: 1 };
-const S21_DIKEY: S21Yer = { etiket: 470, cizgi: 380, taban: 1500, ok: 930, cip: [80, 1150], halka: [490, 1500], boy: 0.85 };
+const S21_DIKEY: S21Yer = { etiket: 530, cizgi: 380, taban: 1500, ok: 930, cip: [80, 1150], halka: [490, 1500], boy: 0.85 };
 const S21Vurgu: React.FC<{ y: S21Yer }> = ({ y }) => {
   const frame = useCurrentFrame();
   const g = frame / 30 + SAHNE_BAS.S21; // global sn
@@ -135,12 +136,15 @@ const KOPRU = { ust: "THE ANSWER IS IN THE FULL VIDEO", alt: "The Great Wealth T
 
 // Shorts 2 politika satırı (metin §5, Z2): sabit. Ek planlarında üstte (y 196); S21 kesitinde punch-in'li başlık oraya taştığı için
 // kırmızı vergi çizgisinin hemen altında (y 400). Altta altyazı (iki satır) ve zemin çizgisi var → alta konmaz.
+const G4_KES = plan("S21").kes.find((c) => c[3] === "g4")![0]; // S21 yerel sn: G4 grafiğine kesme
 const FederalSatir: React.FC = () => {
   const frame = useCurrentFrame();
   const p = KURGU_SHORTS.sh2.parcalar.find((x) => x.tur === "sahne")!;
-  const s21 = frame >= p.yer && frame < p.yer + p.sure;
+  // S21 kesitinde G4 planı: başlık punch-in'den önce y 310–420, sonra ~230–330; kırmızı çizgi 440 → ~375 → şerit çizginin ALTINDA (460).
+  // R2 (hakem F9): y 400'de punch-in öncesi başlığın 2. satırına biniyordu. Leo planında (G4'ten önce) ve ek planlarında üstte (196).
+  const g4 = frame >= p.yer && frame < p.yer + p.sure && p.kareBas + (frame - p.yer) >= kare(SAHNE_BAS.S21 + G4_KES);
   return (
-    <div style={{ position: "absolute", left: 60, width: 840, top: s21 ? 400 : 196, textAlign: "center", padding: "6px 0", borderRadius: 10, background: "rgba(0,0,0,0.55)", fontFamily: fredoka, fontWeight: 700, fontSize: 28, color: "#e8ecf4", letterSpacing: 0.5 }}>
+    <div style={{ position: "absolute", left: 60, width: 840, top: g4 ? 460 : 196, textAlign: "center", padding: "6px 0", borderRadius: 10, background: "rgba(0,0,0,0.55)", fontFamily: fredoka, fontWeight: 700, fontSize: 28, color: "#e8ecf4", letterSpacing: 0.5 }}>
       US FEDERAL ONLY · STATE &amp; OTHER COUNTRIES DIFFER
     </div>
   );
