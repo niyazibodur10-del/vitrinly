@@ -1,0 +1,896 @@
+{
+ "model": "small.en",
+ "cumleler": [
+  {
+   "i": 0,
+   "metin": "That's it. Every dollar we have.",
+   "whisper": "That's it, every dollar we have.",
+   "kelimeler": [
+    {
+     "w": "That's",
+     "p": 0.956
+    },
+    {
+     "w": "it,",
+     "p": 0.986
+    },
+    {
+     "w": "every",
+     "p": 0.976
+    },
+    {
+     "w": "dollar",
+     "p": 0.991
+    },
+    {
+     "w": "we",
+     "p": 0.998
+    },
+    {
+     "w": "have.",
+     "p": 0.999
+    }
+   ]
+  },
+  {
+   "i": 1,
+   "metin": "Rent's paid. Fridge has mustard. That's everything.",
+   "whisper": "Rent's paid. Fridge has mustard. That's everything.",
+   "kelimeler": [
+    {
+     "w": "Rent's",
+     "p": 0.627
+    },
+    {
+     "w": "paid.",
+     "p": 0.978
+    },
+    {
+     "w": "Fridge",
+     "p": 0.967
+    },
+    {
+     "w": "has",
+     "p": 0.993
+    },
+    {
+     "w": "mustard.",
+     "p": 0.58
+    },
+    {
+     "w": "That's",
+     "p": 0.992
+    },
+    {
+     "w": "everything.",
+     "p": 0.99
+    }
+   ]
+  },
+  {
+   "i": 2,
+   "metin": "Two best friends. One hundred bucks.",
+   "whisper": "Two best friends, one hundred bucks.",
+   "kelimeler": [
+    {
+     "w": "Two",
+     "p": 0.677
+    },
+    {
+     "w": "best",
+     "p": 0.77
+    },
+    {
+     "w": "friends,",
+     "p": 0.995
+    },
+    {
+     "w": "one",
+     "p": 0.214
+    },
+    {
+     "w": "hundred",
+     "p": 0.96
+    },
+    {
+     "w": "bucks.",
+     "p": 0.996
+    }
+   ]
+  },
+  {
+   "i": 3,
+   "metin": "One slightly crazy goal.",
+   "whisper": "one slightly crazy goal.",
+   "kelimeler": [
+    {
+     "w": "one",
+     "p": 0.591
+    },
+    {
+     "w": "slightly",
+     "p": 0.989
+    },
+    {
+     "w": "crazy",
+     "p": 0.998
+    },
+    {
+     "w": "goal.",
+     "p": 0.992
+    }
+   ]
+  },
+  {
+   "i": 4,
+   "metin": "A million dollars.",
+   "whisper": "A Million Dollars",
+   "kelimeler": [
+    {
+     "w": "A",
+     "p": 0.575
+    },
+    {
+     "w": "Million",
+     "p": 0.337
+    },
+    {
+     "w": "Dollars",
+     "p": 0.896
+    }
+   ]
+  },
+  {
+   "i": 5,
+   "metin": "And we don't make the moves. You do.",
+   "whisper": "And we don't make the moves, you do.",
+   "kelimeler": [
+    {
+     "w": "And",
+     "p": 0.511
+    },
+    {
+     "w": "we",
+     "p": 0.984
+    },
+    {
+     "w": "don't",
+     "p": 0.99
+    },
+    {
+     "w": "make",
+     "p": 0.998
+    },
+    {
+     "w": "the",
+     "p": 0.986
+    },
+    {
+     "w": "moves,",
+     "p": 0.983
+    },
+    {
+     "w": "you",
+     "p": 0.958
+    },
+    {
+     "w": "do.",
+     "p": 0.99
+    }
+   ]
+  },
+  {
+   "i": 6,
+   "metin": "Okay. Three flips. Hear me out.",
+   "whisper": "OK, three flips. Hear me out.",
+   "kelimeler": [
+    {
+     "w": "OK,",
+     "p": 0.192
+    },
+    {
+     "w": "three",
+     "p": 0.711
+    },
+    {
+     "w": "flips.",
+     "p": 0.992
+    },
+    {
+     "w": "Hear",
+     "p": 0.973
+    },
+    {
+     "w": "me",
+     "p": 0.986
+    },
+    {
+     "w": "out.",
+     "p": 0.999
+    }
+   ]
+  },
+  {
+   "i": 7,
+   "metin": "Every bad idea starts with hear me out.",
+   "whisper": "Every bad idea starts with Hear Me Out.",
+   "kelimeler": [
+    {
+     "w": "Every",
+     "p": 0.614
+    },
+    {
+     "w": "bad",
+     "p": 0.956
+    },
+    {
+     "w": "idea",
+     "p": 0.99
+    },
+    {
+     "w": "starts",
+     "p": 0.995
+    },
+    {
+     "w": "with",
+     "p": 0.996
+    },
+    {
+     "w": "Hear",
+     "p": 0.544
+    },
+    {
+     "w": "Me",
+     "p": 0.672
+    },
+    {
+     "w": "Out.",
+     "p": 0.985
+    }
+   ]
+  },
+  {
+   "i": 8,
+   "metin": "And every good one!",
+   "whisper": "and every good one.",
+   "kelimeler": [
+    {
+     "w": "and",
+     "p": 0.507
+    },
+    {
+     "w": "every",
+     "p": 0.948
+    },
+    {
+     "w": "good",
+     "p": 0.995
+    },
+    {
+     "w": "one.",
+     "p": 0.999
+    }
+   ]
+  },
+  {
+   "i": 9,
+   "metin": "One. A road bike. Sixty bucks. Flat tires, but look at that frame!",
+   "whisper": "1. A road bike. 60 bucks. Flat tires, but look at that frame.",
+   "kelimeler": [
+    {
+     "w": "1.",
+     "p": 0.475
+    },
+    {
+     "w": "A",
+     "p": 0.925
+    },
+    {
+     "w": "road",
+     "p": 0.829
+    },
+    {
+     "w": "bike.",
+     "p": 0.979
+    },
+    {
+     "w": "60",
+     "p": 0.496
+    },
+    {
+     "w": "bucks.",
+     "p": 0.969
+    },
+    {
+     "w": "Flat",
+     "p": 0.978
+    },
+    {
+     "w": "tires,",
+     "p": 0.984
+    },
+    {
+     "w": "but",
+     "p": 0.995
+    },
+    {
+     "w": "look",
+     "p": 0.996
+    },
+    {
+     "w": "at",
+     "p": 0.999
+    },
+    {
+     "w": "that",
+     "p": 0.984
+    },
+    {
+     "w": "frame.",
+     "p": 0.999
+    }
+   ]
+  },
+  {
+   "i": 10,
+   "metin": "That's most of our money on a bike that can't roll.",
+   "whisper": "That's most of our money on a bike that can't roll.",
+   "kelimeler": [
+    {
+     "w": "That's",
+     "p": 0.931
+    },
+    {
+     "w": "most",
+     "p": 0.991
+    },
+    {
+     "w": "of",
+     "p": 0.994
+    },
+    {
+     "w": "our",
+     "p": 0.994
+    },
+    {
+     "w": "money",
+     "p": 0.998
+    },
+    {
+     "w": "on",
+     "p": 0.995
+    },
+    {
+     "w": "a",
+     "p": 0.996
+    },
+    {
+     "w": "bike",
+     "p": 0.997
+    },
+    {
+     "w": "that",
+     "p": 0.997
+    },
+    {
+     "w": "can't",
+     "p": 0.997
+    },
+    {
+     "w": "roll.",
+     "p": 0.998
+    }
+   ]
+  },
+  {
+   "i": 11,
+   "metin": "Air is free, Jake.",
+   "whisper": "Air is free, Jake.",
+   "kelimeler": [
+    {
+     "w": "Air",
+     "p": 0.503
+    },
+    {
+     "w": "is",
+     "p": 0.92
+    },
+    {
+     "w": "free,",
+     "p": 0.908
+    },
+    {
+     "w": "Jake.",
+     "p": 0.99
+    }
+   ]
+  },
+  {
+   "i": 12,
+   "metin": "Tires aren't.",
+   "whisper": "Tires aren't.",
+   "kelimeler": [
+    {
+     "w": "Tires",
+     "p": 0.872
+    },
+    {
+     "w": "aren't.",
+     "p": 0.952
+    }
+   ]
+  },
+  {
+   "i": 13,
+   "metin": "Two. A solid wood dresser. Free. We paint it, flip it.",
+   "whisper": "To a solid wood dresser. Free. We paint it, flip it.",
+   "kelimeler": [
+    {
+     "w": "To",
+     "p": 0.282
+    },
+    {
+     "w": "a",
+     "p": 0.684
+    },
+    {
+     "w": "solid",
+     "p": 0.793
+    },
+    {
+     "w": "wood",
+     "p": 0.959
+    },
+    {
+     "w": "dresser.",
+     "p": 0.983
+    },
+    {
+     "w": "Free.",
+     "p": 0.855
+    },
+    {
+     "w": "We",
+     "p": 0.987
+    },
+    {
+     "w": "paint",
+     "p": 0.971
+    },
+    {
+     "w": "it,",
+     "p": 0.992
+    },
+    {
+     "w": "flip",
+     "p": 0.974
+    },
+    {
+     "w": "it.",
+     "p": 0.998
+    }
+   ]
+  },
+  {
+   "i": 14,
+   "metin": "Free? What's the catch?",
+   "whisper": "Free. What's the catch?",
+   "kelimeler": [
+    {
+     "w": "Free.",
+     "p": 0.673
+    },
+    {
+     "w": "What's",
+     "p": 0.99
+    },
+    {
+     "w": "the",
+     "p": 0.981
+    },
+    {
+     "w": "catch?",
+     "p": 0.952
+    }
+   ]
+  },
+  {
+   "i": 15,
+   "metin": "It has to go today. And we have a tiny car.",
+   "whisper": "It has to go today, and we have a tiny car.",
+   "kelimeler": [
+    {
+     "w": "It",
+     "p": 0.692
+    },
+    {
+     "w": "has",
+     "p": 0.994
+    },
+    {
+     "w": "to",
+     "p": 0.996
+    },
+    {
+     "w": "go",
+     "p": 0.998
+    },
+    {
+     "w": "today,",
+     "p": 0.996
+    },
+    {
+     "w": "and",
+     "p": 0.98
+    },
+    {
+     "w": "we",
+     "p": 0.998
+    },
+    {
+     "w": "have",
+     "p": 0.997
+    },
+    {
+     "w": "a",
+     "p": 0.993
+    },
+    {
+     "w": "tiny",
+     "p": 0.966
+    },
+    {
+     "w": "car.",
+     "p": 0.997
+    }
+   ]
+  },
+  {
+   "i": 16,
+   "metin": "So we rent a truck, buy paint, and wait. Slow.",
+   "whisper": "So we rent a truck by paint and wait. Slow.",
+   "kelimeler": [
+    {
+     "w": "So",
+     "p": 0.713
+    },
+    {
+     "w": "we",
+     "p": 0.944
+    },
+    {
+     "w": "rent",
+     "p": 0.787
+    },
+    {
+     "w": "a",
+     "p": 0.989
+    },
+    {
+     "w": "truck",
+     "p": 0.999
+    },
+    {
+     "w": "by",
+     "p": 0.973
+    },
+    {
+     "w": "paint",
+     "p": 0.992
+    },
+    {
+     "w": "and",
+     "p": 0.978
+    },
+    {
+     "w": "wait.",
+     "p": 0.996
+    },
+    {
+     "w": "Slow.",
+     "p": 0.954
+    }
+   ]
+  },
+  {
+   "i": 17,
+   "metin": "Slow. But safe.",
+   "whisper": "slow, but safe.",
+   "kelimeler": [
+    {
+     "w": "slow,",
+     "p": 0.484
+    },
+    {
+     "w": "but",
+     "p": 0.995
+    },
+    {
+     "w": "safe.",
+     "p": 0.97
+    }
+   ]
+  },
+  {
+   "i": 18,
+   "metin": "Three. A mystery box of old video games. Forty bucks.",
+   "whisper": "3. A mystery box of old video games. 40 bucks.",
+   "kelimeler": [
+    {
+     "w": "3.",
+     "p": 0.651
+    },
+    {
+     "w": "A",
+     "p": 0.98
+    },
+    {
+     "w": "mystery",
+     "p": 0.715
+    },
+    {
+     "w": "box",
+     "p": 0.997
+    },
+    {
+     "w": "of",
+     "p": 0.998
+    },
+    {
+     "w": "old",
+     "p": 0.995
+    },
+    {
+     "w": "video",
+     "p": 0.928
+    },
+    {
+     "w": "games.",
+     "p": 0.998
+    },
+    {
+     "w": "40",
+     "p": 0.621
+    },
+    {
+     "w": "bucks.",
+     "p": 0.95
+    }
+   ]
+  },
+  {
+   "i": 19,
+   "metin": "Could be a gem. Could be forty bucks of scratched discs.",
+   "whisper": "could be a gem, could be 40 bucks of scratch discs.",
+   "kelimeler": [
+    {
+     "w": "could",
+     "p": 0.426
+    },
+    {
+     "w": "be",
+     "p": 0.998
+    },
+    {
+     "w": "a",
+     "p": 0.992
+    },
+    {
+     "w": "gem,",
+     "p": 0.921
+    },
+    {
+     "w": "could",
+     "p": 0.99
+    },
+    {
+     "w": "be",
+     "p": 0.999
+    },
+    {
+     "w": "40",
+     "p": 0.663
+    },
+    {
+     "w": "bucks",
+     "p": 0.985
+    },
+    {
+     "w": "of",
+     "p": 0.989
+    },
+    {
+     "w": "scratch",
+     "p": 0.847
+    },
+    {
+     "w": "discs.",
+     "p": 0.653
+    }
+   ]
+  },
+  {
+   "i": 20,
+   "metin": "Jake, we don't need more money. We need guts.",
+   "whisper": "Jake, we don't need more money. We need guts.",
+   "kelimeler": [
+    {
+     "w": "Jake,",
+     "p": 0.872
+    },
+    {
+     "w": "we",
+     "p": 0.984
+    },
+    {
+     "w": "don't",
+     "p": 0.998
+    },
+    {
+     "w": "need",
+     "p": 0.998
+    },
+    {
+     "w": "more",
+     "p": 0.998
+    },
+    {
+     "w": "money.",
+     "p": 0.999
+    },
+    {
+     "w": "We",
+     "p": 0.994
+    },
+    {
+     "w": "need",
+     "p": 0.997
+    },
+    {
+     "w": "guts.",
+     "p": 0.927
+    }
+   ]
+  },
+  {
+   "i": 21,
+   "metin": "A price tag is just a number. Value is what somebody actually pays.",
+   "whisper": "A price tag is just a number, value is what somebody actually pays.",
+   "kelimeler": [
+    {
+     "w": "A",
+     "p": 0.901
+    },
+    {
+     "w": "price",
+     "p": 0.977
+    },
+    {
+     "w": "tag",
+     "p": 0.997
+    },
+    {
+     "w": "is",
+     "p": 0.996
+    },
+    {
+     "w": "just",
+     "p": 0.995
+    },
+    {
+     "w": "a",
+     "p": 0.983
+    },
+    {
+     "w": "number,",
+     "p": 0.998
+    },
+    {
+     "w": "value",
+     "p": 0.905
+    },
+    {
+     "w": "is",
+     "p": 0.996
+    },
+    {
+     "w": "what",
+     "p": 0.99
+    },
+    {
+     "w": "somebody",
+     "p": 0.963
+    },
+    {
+     "w": "actually",
+     "p": 0.996
+    },
+    {
+     "w": "pays.",
+     "p": 0.994
+    }
+   ]
+  },
+  {
+   "i": 22,
+   "metin": "Fine. We let them decide.",
+   "whisper": "Fine, we let them decide.",
+   "kelimeler": [
+    {
+     "w": "Fine,",
+     "p": 0.918
+    },
+    {
+     "w": "we",
+     "p": 0.982
+    },
+    {
+     "w": "let",
+     "p": 0.988
+    },
+    {
+     "w": "them",
+     "p": 0.999
+    },
+    {
+     "w": "decide.",
+     "p": 0.995
+    }
+   ]
+  },
+  {
+   "i": 23,
+   "metin": "Bike, dresser, or mystery box?",
+   "whisper": "Bike, dresser, or mystery box.",
+   "kelimeler": [
+    {
+     "w": "Bike,",
+     "p": 0.46
+    },
+    {
+     "w": "dresser,",
+     "p": 0.91
+    },
+    {
+     "w": "or",
+     "p": 0.979
+    },
+    {
+     "w": "mystery",
+     "p": 0.998
+    },
+    {
+     "w": "box.",
+     "p": 0.999
+    }
+   ]
+  },
+  {
+   "i": 24,
+   "metin": "Tell us in the comments.",
+   "whisper": "Tell us in the comments.",
+   "kelimeler": [
+    {
+     "w": "Tell",
+     "p": 0.894
+    },
+    {
+     "w": "us",
+     "p": 0.996
+    },
+    {
+     "w": "in",
+     "p": 0.998
+    },
+    {
+     "w": "the",
+     "p": 0.998
+    },
+    {
+     "w": "comments.",
+     "p": 0.987
+    }
+   ]
+  }
+ ]
+}

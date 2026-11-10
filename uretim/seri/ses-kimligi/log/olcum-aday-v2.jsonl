@@ -1,0 +1,6 @@
+{"dosya": "dongu-a.wav", "sure": 17.1, "lufs": -17.0, "lra": 1.0, "tp": -1.0, "konusma_bandi": 0.067, "merkez_hz": 544, "bpm": 75.0, "st_std_db": 0.3, "maske_snr_db": 19.6}
+{"dosya": "dongu-b.wav", "sure": 15.5, "lufs": -17.6, "lra": 1.2, "tp": -0.9, "konusma_bandi": 0.062, "merkez_hz": 522, "bpm": 61.9, "st_std_db": 0.4, "maske_snr_db": 21.3}
+{"dosya": "dongu-c.wav", "sure": 20.0, "lufs": -14.8, "lra": 3.3, "tp": -1.0, "konusma_bandi": 0.104, "merkez_hz": 740, "bpm": 60.6, "st_std_db": 1.1, "maske_snr_db": 21.9}
+{"dosya": "gerilim-a.wav", "sure": 20.0, "lufs": -14.2, "lra": 0.9, "tp": -1.0, "konusma_bandi": 0.013, "merkez_hz": 249, "bpm": 95.2, "st_std_db": 0.6, "maske_snr_db": 27.2}
+{"dosya": "gerilim-b.wav", "sure": 19.2, "lufs": -16.9, "lra": 2.5, "tp": -0.9, "konusma_bandi": 0.131, "merkez_hz": 1082, "bpm": 100.0, "st_std_db": 0.8, "maske_snr_db": 20.3}
+{"dosya": "gerilim-c.wav", "sure": 26.7, "lufs": -12.8, "lra": 0.3, "tp": -1.0, "konusma_bandi": 0.0, "merkez_hz": 105, "bpm": 72.3, "st_std_db": 0.1, "maske_snr_db": 45.1}

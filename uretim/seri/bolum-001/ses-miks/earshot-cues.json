@@ -1,0 +1,155 @@
+{
+ "fps": 30,
+ "events": [
+  {
+   "f": 0,
+   "kind": "sfx",
+   "id": "S1-carpma"
+  },
+  {
+   "f": 138,
+   "kind": "sfx",
+   "id": "S1-hardal"
+  },
+  {
+   "f": 216,
+   "kind": "sfx",
+   "id": "S2-tahta-100"
+  },
+  {
+   "f": 364,
+   "kind": "sfx",
+   "id": "S2-tahta-milyon"
+  },
+  {
+   "f": 378,
+   "kind": "sfx",
+   "id": "S2-sifir-1"
+  },
+  {
+   "f": 381,
+   "kind": "sfx",
+   "id": "S2-sifir-2"
+  },
+  {
+   "f": 385,
+   "kind": "sfx",
+   "id": "S2-sifir-3"
+  },
+  {
+   "f": 388,
+   "kind": "sfx",
+   "id": "S2-sifir-4"
+  },
+  {
+   "f": 392,
+   "kind": "sfx",
+   "id": "S2-sifir-5"
+  },
+  {
+   "f": 396,
+   "kind": "sfx",
+   "id": "S2-sifir-6"
+  },
+  {
+   "f": 481,
+   "kind": "sfx",
+   "id": "S2-you-decide"
+  },
+  {
+   "f": 519,
+   "kind": "sfx",
+   "id": "S3-telefon"
+  },
+  {
+   "f": 738,
+   "kind": "sfx",
+   "id": "S4-ilan-bisiklet"
+  },
+  {
+   "f": 913,
+   "kind": "sfx",
+   "id": "S4-tahta-hesap"
+  },
+  {
+   "f": 1052,
+   "kind": "sfx",
+   "id": "S4-gag-durus"
+  },
+  {
+   "f": 1125,
+   "kind": "sfx",
+   "id": "S5-ilan-sifonyer"
+  },
+  {
+   "f": 1243,
+   "kind": "sfx",
+   "id": "S5-portre-saskin"
+  },
+  {
+   "f": 1420,
+   "kind": "sfx",
+   "id": "S5-siluet-araba"
+  },
+  {
+   "f": 1431,
+   "kind": "sfx",
+   "id": "S5-siluet-sifonyer"
+  },
+  {
+   "f": 1463,
+   "kind": "sfx",
+   "id": "S5-ikon-truck"
+  },
+  {
+   "f": 1474,
+   "kind": "sfx",
+   "id": "S5-ikon-paint"
+  },
+  {
+   "f": 1487,
+   "kind": "sfx",
+   "id": "S5-ikon-clock"
+  },
+  {
+   "f": 1605,
+   "kind": "sfx",
+   "id": "S6-ilan-kutu"
+  },
+  {
+   "f": 1641,
+   "kind": "sfx",
+   "id": "S6-kutu-titrer"
+  },
+  {
+   "f": 1748,
+   "kind": "sfx",
+   "id": "S6-ikon-kartus"
+  },
+  {
+   "f": 1820,
+   "kind": "sfx",
+   "id": "S6-ikon-disk"
+  },
+  {
+   "f": 1861,
+   "kind": "sfx",
+   "id": "S7-gerilim"
+  },
+  {
+   "f": 2156,
+   "kind": "abone",
+   "id": "S8-abone-klik"
+  },
+  {
+   "f": 2234,
+   "kind": "sfx",
+   "id": "S8-karar-karti"
+  },
+  {
+   "f": 2358,
+   "kind": "sfx",
+   "id": "S8-ep2-ding"
+  }
+ ]
+}
