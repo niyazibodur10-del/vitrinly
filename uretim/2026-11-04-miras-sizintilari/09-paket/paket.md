@@ -1,6 +1,6 @@
 # F8a-erken — Yayın paketi taslağı · S03 "The Leaky Moving Truck" (sütun C)
 
-İLERLEME: F8b ön güncelleme tamam (2026-11-09): slot Çar 11-11, thumbnail K1, açıklama ilk satır + kaynaklar + yasal not (rakam-tablosu birebir), bölümler sahne-zamanlari.json (ofset 0), Shorts gerçek kesitler (metin §5), müzik atfı, YAYIN.md (teşhis §4 a4/a5/a6). Bekleyen: F7 dosyaları + kurgu ofseti (bölüm kayması, uç ekran), `politika-raporu.md` (`sentetik_medya`), `ilgili_video` araç desteği. Yeniden üretim: `python3 -I paket-uret.py && python3 -I paket-kontrol.py`.
+İLERLEME: tamam (F8b, 2026-11-10). F7 GEÇTİ (48d36ff): final 781,40 sn = anlatım 781,388 sn → kurgu ofseti 0, bölümler değişmedi (betik [3b] 7/7); Shorts 41,45 / 43,43 sn; uç ekran ABONE-4 kartından sonra 12:55,3–13:01,4 (6,1 sn); `sentetik_medya: true` = politika-raporu.md. `paket-kontrol.py --final` 0 hata · 0 bekleyen; `yukle.py --dry-run` 3/3 0 hata (`kapi-cikti.txt`). Açık: `ilgili_video` araç desteği (talep) → YAYIN.md zorunlu Studio adımı.
 **Hazırlayan:** youtube-paketleyici · **Tarih:** 2026-11-04, güncelleme 2026-11-09 · **Durum:** KESİN METİN (F3 kilitli metin v1.1). F8b'de yalnız bölüm zamanları, uç ekran ve dosyalar.
 **Girdiler:** `02-senaryo/senaryolar.md` S03, `senaryo-karari.md` §4 (D1–D6, P1–P3, K1, H1b, H6, H8), `on-dogrulama.md` (Cerulli), `01-arastirma/kanal-ozet.md` (3 ders), `docs/viralite-modeli.md` v0.2, `docs/yayin-takvimi.md`, `uretim/kanal-kimligi/kanal-paketi.json`.
 **Doğrulanan kaynak (WebFetch 2026-11-04):** Cerulli basın bülteni, 5 Ara 2024, "Cerulli Anticipates $124 Trillion in Wealth Will Transfer Through 2048": toplam 124 T$, mirasçılara 105 T$, bağışa 18 T$, eşlere 54 T$ (eş payı toplamın içinde → D2: gecikme, kayıp değil).
@@ -238,7 +238,7 @@ Leo's clipboard has six stops between the parents and the kids. Which one surpri
 
 ## 8. Uç ekran, kart, oynatma listesi
 
-- **Uç ekran:** S31 köprüsü, ses zamanı **12:53,6–13:01,4 = 7,8 sn** [Ö] (`sahne-zamanlari.json` S31 bas 773,599 → 781,388; YouTube 5–20 sn). F7 kuyruğu/ofseti varsa F8b'de yeniden ölçülür. Öğeler: Abone + video **"You Have $1,000 in 1929. Can You Keep It?" (BVJwZ1C9R1U)**: kanalın en iyi uzun videosu, tarih→gelecek (teşhis a6). S08 gösterilmez. Var olmayan videoya söz yok (S04 yayında değil). Uç ekran video açıldıktan sonra kurulur.
+- **Uç ekran:** **12:55,3–13:01,4 = 6,1 sn** [Ö] (final 781,40 sn; başlangıç = ABONE-4 kartının bitişi 775,30 sn: tık 773,10 − 1,3 + 3,5 sn kart süresi, `08-kurgu/log/kapi-tur3.txt` + `AboneOl.tsx`; S31 köprüsü 773,60'ta başlar ama kartla çakışmaz). Studio'da son 6 sn. Öğeler: Abone + video **"You Have $1,000 in 1929. Can You Keep It?" (BVJwZ1C9R1U)** (teşhis a6). S08 gösterilmez; var olmayan videoya söz yok. Açılıştan sonra kurulur.
 - **Kart:** S04 yayınlanınca "the house" bölümüne kart (H7 seri devamı). Şimdilik yok.
 - **Oynatma listesi:** **C · Gelecek → "What If…? Future of Money Scenarios"**. Bu video listeyi açar (boş liste yok): koordinatör `tools/yayin/kanal.py` ile listeyi açar, ekleme `yukle.py --liste-sonra <LISTE_ID>` ile açılış SONRASINA ertelenir (`yayin-kontrol.py --liste-ekle`, açılış +15 dk). Shorts → "Money Stories in 60 Seconds | Shorts", aynı yolla.
 
@@ -258,9 +258,9 @@ yedek-shorts-1|2026-11-16T09:00:00-05:00
 yedek-shorts-2|2026-11-17T09:00:00-05:00
 ```
 
-- **`durum.sentetik_medya`:** karar monetizasyon-uyum-uzmani'nin (`09-paket/politika-raporu.md`, F8). Henüz yok → geçici **true** (1929 ve S08 emsali); karar gelince `paket-uret.py` `SENTETIK` sabiti güncellenir, betik karşılaştırır. AI ses satırı her durumda açıklamada.
+- **`durum.sentetik_medya`: true** = monetizasyon-uyum-uzmani kararı (`politika-raporu.md`, 2026-11-10); betik karşılaştırır. AI ses satırı açıklamada.
 - **`gizlilik` = private + `yayin_zamani`**, `onay.niyazi_onayi` = false (üç pakette).
-- **Dosyalar:** `../08-kurgu/final-16x9.mp4`, `../08-kurgu/final.en.srt`, `../08-kurgu/shorts-{1,2}.mp4` (S08 adlandırması, varsayım; F8b'de `ls 08-kurgu` ile teyit).
+- **Dosyalar (F7, `ls 08-kurgu` ile teyitli):** `../08-kurgu/final-16x9.mp4` (1920x1080, 781,40 sn), `../08-kurgu/final.en.srt` (296 blok), `../08-kurgu/shorts-1.mp4` (1080x1920, 41,45 sn), `../08-kurgu/shorts-2.mp4` (1080x1920, 43,43 sn).
 
 ## 10. Test kapısı
 `python3 -I paket-uret.py` → `python3 -I paket-kontrol.py` (taslak kipi; F8b `--final`) → `tools/yayin/yukle.py --dry-run` iki kipte (gerçek: yalnız dosya-yok; sahte medyalı bayt-aynı kopya: 0 hata). Çıktı: `kapi-cikti.txt`.

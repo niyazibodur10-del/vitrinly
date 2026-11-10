@@ -129,3 +129,11 @@ python3 -I paket-kontrol.py → 0 hata · 10 bekleyen; 2 koşu aynı (çıktı 5
 Negatif test (bölüm +5 sn, shorts2 'as of 2026' yok, eski slot) → 6 HATA; geri yüklendi → 0
 dry-run gerçek: yalnız dosya-yok (uzun 2: video+SRT; thumbnail K1 1280x720 108 KB OK; shorts 1/1 + ilgili_video UYARI)
 dry-run sahte medya (bayt-aynı JSON, 781,4 sn 16:9 + 55 sn 9:16, 04-ses/altyazi-taslak.en.srt 296 blok): 0/0/0 hata; publishAt 2026-11-11T17:00Z / 11-12T14:00Z / 11-14T14:00Z
+
+## 2026-11-10 F8b final (F7 GEÇTİ 48d36ff; medya sha256 final 2ceb894f2bb5 · sh1 e7f7bd2cfa55 · sh2 a60d40f882af = 08-kurgu/sha256.txt)
+python3 -I paket-kontrol.py --final → exit 0 · 0 hata · 0 bekleyen; 2 koşu aynı (çıktı 59791c88348c ×2, JSON üçlüsü 2499ce12f8b5 ×2); paket.md 6df57e258412 · paket-uret.py d3af1149f434 · paket-kontrol.py 6ead821dff89 · YAYIN.md aaf259fea8e0
+Ofset: final 781,400 ↔ anlatım 781,388 (+0,012) → 0; bölümler 7/7 fark −0,97…0, metin §4 birebir
+Uç ekran: ABONE-4 tık 773,10 → kart bitişi 775,30 → 12:55,3–13:01,4 = 6,1 sn (5–20)
+SRT terimleri 9/9; 'great wealth transfer' SRT'de yok [T]: Cerulli 124 T$ tahmininin adı, konu S01–S04 (politika-raporu §3 vaat↔içerik ✓)
+Shorts 41,45 / 43,43 sn ≤60; açıklama iddiaları metin §5'te 2/2
+yukle.py --dry-run gerçek dosyalar: uzun 0 hata 0 uyarı 10 OK (1920x1080 781,4 sn, thumb K1 1280x720 108 KB, SRT 296 blok, 7 bölüm, publishAt 2026-11-11T17:00Z) · sh1 0 hata 1 uyarı (ilgili_video) 7 OK, 14:00Z 11-12 · sh2 0 hata 1 uyarı 7 OK, 14:00Z 11-14 · containsSyntheticMedia true 3/3

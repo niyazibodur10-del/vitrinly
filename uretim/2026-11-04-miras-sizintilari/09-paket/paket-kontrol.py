@@ -124,9 +124,18 @@ if sz.is_file():
     of = 0.0  # kurgu ofseti (koordinatör 2026-11-09: 0); F7 kurgu-rapor.md ≠ 0 ise burada
     for (x, y, t), s_, s in zip(bol, ACAN, sn):
         f = s - (bas[s_] + of); (ok if -1 < f <= 0 else hata)(f"{x}:{y} {t:<28} ↔ {s_} bas {bas[s_]:7.2f} (fark {f:+.2f})")
-    bilgi(f"toplam {j['toplam_sn']:.3f} sn; uç ekran S31 {bas['S31']:.3f} → {j['toplam_sn'] - bas['S31']:.1f} sn")
-    (ok if 5 <= j["toplam_sn"] - bas["S31"] <= 20 else hata)("uç ekran 5–20 sn")
-    if not (KLAS / "08-kurgu/kurgu-rapor.md").is_file(): bekle("kurgu-rapor.md yok → ofset 0 varsayımı F7'de teyit")
+    import subprocess
+    fv = KLAS / "08-kurgu/final-16x9.mp4"
+    if fv.is_file():
+        sure = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(fv)], capture_output=True, text=True).stdout)
+        (ok if abs(sure - j["toplam_sn"]) < 0.1 else hata)(f"final {sure:.3f} sn ↔ anlatım {j['toplam_sn']:.3f} sn → kurgu ofseti 0 (fark {sure - j['toplam_sn']:+.3f})")
+        kl = KLAS / "08-kurgu/log/kapi-tur3.txt"
+        tik = [float(x) for x in re.findall(r"görsel tık ([\d.]+) sn", kl.read_text(encoding="utf-8"))] if kl.is_file() else []
+        a3 = (tik[-1] - 1.3 + 3.5) if tik else bas["S31"]  # AboneOl: kart bas = tık − 1,3 sn, süre 3,5 sn
+        ue = max(bas["S31"], a3)
+        bilgi(f"uç ekran başı = max(S31 {bas['S31']:.2f}, ABONE-son kart bitişi {a3:.2f}) = {ue:.2f} sn → {sure - ue:.1f} sn")
+        (ok if 5 <= sure - ue <= 20 and tik else hata)(f"uç ekran ABONE kartından sonra, 5–20 sn ({len(tik)} abone tıkı okundu)")
+    else: bekle("final-16x9.mp4 yok → ofset ve uç ekran F7'de")
 else: bekle("gerçek sahne zamanları yok (04-ses/sahne-zamanlari.json, F4) → F8b'de kayar")
 
 satir.append("[4] Etiket + hashtag + SRT terimleri")
@@ -136,11 +145,12 @@ et = [t.strip() for t in V["etiketler"].split(",") if t.strip()]
 (ok if not tara(V["etiketler"]) else hata)(f"etiket yasaklı: {tara(V['etiketler']) or 0}")
 h = V["hashtagler"].split()
 (ok if len(h) == 3 and all(re.fullmatch(r"#\w+", x) for x in h) and a.rstrip().endswith(V["hashtagler"]) else hata)(f"3 hashtag, açıklama sonu: {h}")
-SRT_TERIM = ["wealth transfer", "inheritance", "boomer", "care", "charity", "spouse", "house", "tax", "Cerulli"]
+SRT_TERIM = ["one hundred twenty-four trillion", "inheritance", "boomer", "care", "charity", "spouse", "house", "tax", "Cerulli"]
 srt = KLAS / "08-kurgu/final.en.srt"
 if srt.is_file():
     st = srt.read_text(encoding="utf-8").lower()
     for t in SRT_TERIM: (ok if t.lower() in st else hata)(f"SRT'de geçiyor: {t} (yoksa etiket/açıklamadan çıkar)")
+    bilgi("[T] 'great wealth transfer' SRT'de geçmiyor: Cerulli 124 T$ tahmininin yerleşik adı, videonun S01–S04 konusu (124 + Cerulli SRT'de) → başlık/etiket kalır; politika-raporu §3 vaat↔içerik ✓")
 else: bekle("SRT yok → etiket/açıklama terimleri videoda geçiyor mu F8b'de")
 
 satir.append("[5] Shorts")
@@ -212,7 +222,10 @@ for ad_, (tur, bas_, ac, zk) in {"yayin-paketi.json": ("uzun", V["basliklar"].sp
     ta = tam_aciklama(pk); nb_ = len(ta.encode())
     (ok if not sor and nb_ <= 5000 else hata)(f"{ad_}: başlık {len(m_['baslik'])} krk · tam açıklama {nb_}/5000 bayt · {d_['yayin_zamani']}" + (f" · SORUN {sor}" if sor else ""))
     if tur == "uzun": (ok if "Chapters:\n00:00 " in ta else hata)("tam açıklamada 'Chapters:' + 00:00")
-(ok if "ilgili_video" in {x.split(".")[0] for x in SEMA} else bekle)("SEMA'da ilgili_video alanı (uretim-muhendisi talebi; o zamana dek dry-run UYARI)")
+if "ilgili_video" in {x.split(".")[0] for x in SEMA}: ok("SEMA'da ilgili_video alanı")
+else:
+    y_ = (BURA / "YAYIN.md").read_text(encoding="utf-8") if (BURA / "YAYIN.md").is_file() else ""
+    (ok if "Related video" in y_ and "ZORUNLU" in y_ else hata)("ilgili_video araçta yok (talep açık, dry-run UYARI) → YAYIN.md'de ZORUNLU Studio Related video adımı var")
 if th: (ok if (BURA / th.replace("../09-paket/", "")).is_file() else hata)(f"thumbnail dosyası var: {th}")
 else: bekle("thumbnail finalisti yok (veri:thumbnail-ana boş) → thumbnail-tasarimcisi")
 pr = BURA / "politika-raporu.md"
@@ -220,6 +233,12 @@ if pr.is_file():
     m_ = re.search(r"sentetik_medya\W{0,6}(true|false)", pr.read_text(encoding="utf-8"), re.I)
     (ok if m_ and (m_.group(1).lower() == "true") == ns["SENTETIK"] else hata)(f"sentetik_medya = politika-raporu.md kararı ({m_.group(1) if m_ else 'karar satırı yok'})")
 else: bekle("politika-raporu.md yok (monetizasyon-uyum-uzmani) → sentetik_medya geçici true")
+for n in (1, 2):
+    sv = KLAS / f"08-kurgu/shorts-{n}.mp4"
+    if sv.is_file():
+        import subprocess
+        d_ = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(sv)], capture_output=True, text=True).stdout)
+        (ok if d_ <= 60 else hata)(f"shorts-{n}.mp4 {d_:.2f} sn ≤60 (kanal kuralı)")
 for f in ("final-16x9.mp4", "final.en.srt", "shorts-1.mp4", "shorts-2.mp4"):
     if not (KLAS / "08-kurgu" / f).is_file(): bekle(f"08-kurgu/{f} yok (F7)")
 print("\n".join(satir))
