@@ -1,14 +1,64 @@
-import type { AgizCue, AgizSekli, Kelime, Konusmaci, Satir, SatirDosyasi, ZamanJson } from "./tipler";
+import type {
+  AgizCue,
+  AgizSekli,
+  Kelime,
+  Konusmaci,
+  Satir,
+  SatirDosyasi,
+  ZamanJson,
+} from "./tipler";
 
-/** ses-yonetmeni'nin <ad>.zaman.json'unu (tools/ses/diyalog.py) şablon biçimine çevirir. */
-export const satirDosyasi = (j: ZamanJson): SatirDosyasi => ({
-  sure: j.sure,
-  satirlar: j.satirlar.map((s, i) => {
-    const k = s.konusmaci.toLowerCase();
-    if (k !== "jake" && k !== "mike") throw new Error(`[seri] satır ${s.no ?? i + 1}: bilinmeyen konuşmacı ${s.konusmaci}`);
-    return { konusmaci: k, bas: s.bas, bitis: s.bitis, metin: s.metin, kelimeler: s.kelimeler };
-  }),
-});
+/** Whisper kelime dosyası (ses-yonetmeni `kelimeler.json`: {"words":[{"w","s","e","p"}]}). */
+export type WhisperKelimeler = { words: { w: string; s: number; e: number }[] };
+
+/** ses-yonetmeni'nin <ad>.zaman.json'unu (tools/ses/diyalog.py) şablon biçimine çevirir.
+ *  `kelime` verilirse her Whisper kelimesi en çok örtüştüğü satıra atanır (Whisper boşluğa taşan kelime başı verebilir;
+ *  orta nokta kuralı bölüm 001'de 177 kelimeden 1'ini düşürdü, 2026-11-10) → altyazı kesin zamanlı olur. */
+export const satirDosyasi = (
+  j: ZamanJson,
+  kelime?: WhisperKelimeler,
+): SatirDosyasi => {
+  const ortus = (
+    w: { s: number; e: number },
+    s: { bas: number; bitis: number },
+  ) => Math.min(w.e, s.bitis) - Math.max(w.s, s.bas);
+  const sahip = (kelime?.words ?? []).map((w) => {
+    let en = -1,
+      deger = -Infinity;
+    j.satirlar.forEach((s, i) => {
+      const o = ortus(w, s);
+      if (o > deger) {
+        deger = o;
+        en = i;
+      }
+    });
+    return en;
+  });
+  return {
+    sure: j.sure,
+    satirlar: j.satirlar.map((s, i) => {
+      const k = s.konusmaci.toLowerCase();
+      if (k !== "jake" && k !== "mike")
+        throw new Error(
+          `[seri] satır ${s.no ?? i + 1}: bilinmeyen konuşmacı ${s.konusmaci}`,
+        );
+      const ws = kelime?.words
+        .filter((_, wi) => sahip[wi] === i)
+        .map((w) => ({
+          k: w.w.trim(),
+          bas: Math.min(Math.max(w.s, s.bas), s.bitis),
+          bitis: Math.max(Math.min(w.e, s.bitis), s.bas),
+        }));
+      return {
+        konusmaci: k,
+        bas: s.bas,
+        bitis: s.bitis,
+        metin: s.metin,
+        kelimeler: ws?.length ? ws : s.kelimeler,
+      };
+    }),
+  };
+};
 
 /** t anında konuşan satır (yoksa null). */
 export const aktifSatir = (satirlar: Satir[], t: number): Satir | null =>
@@ -39,7 +89,8 @@ export const kelimeler = (s: Satir): Kelime[] => {
 export const ekranKelimeleri = (s: Satir): Kelime[] => {
   const ks = kelimeler(s);
   const metin = s.metin.split(/\s+/).filter(Boolean);
-  if (metin.length === ks.length) return ks.map((k, i) => ({ ...k, k: metin[i] }));
+  if (metin.length === ks.length)
+    return ks.map((k, i) => ({ ...k, k: metin[i] }));
   return ks;
 };
 
@@ -58,7 +109,10 @@ export const obekler = (s: Satir, max = 4): Kelime[][] => {
   return out;
 };
 
-export const agizSekli = (cues: AgizCue[] | undefined, t: number): AgizSekli => {
+export const agizSekli = (
+  cues: AgizCue[] | undefined,
+  t: number,
+): AgizSekli => {
   if (!cues) return "X";
   const c = cues.find((x) => t >= x.bas && t < x.bitis);
   return ((c?.sekil as AgizSekli) ?? "X") as AgizSekli;

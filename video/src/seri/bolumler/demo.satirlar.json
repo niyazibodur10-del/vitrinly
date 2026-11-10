@@ -1,211 +1,44 @@
 {
- "ses": "diyalog.wav",
- "sure": 12.132,
+ "sesler": {
+  "JAKE": "am_onyx:0.95",
+  "MIKE": "am_fenrir:1.05"
+ },
+ "sure": 16.088,
  "satirlar": [
   {
-   "konusmaci": "jake",
-   "bas": 0.5,
-   "bitis": 2.953,
-   "metin": "One hundred dollars. That's all we've got.",
-   "kelimeler": [
-    {
-     "k": "One",
-     "bas": 0.517,
-     "bitis": 0.717
-    },
-    {
-     "k": "hundred",
-     "bas": 0.717,
-     "bitis": 1.092
-    },
-    {
-     "k": "dollars",
-     "bas": 1.092,
-     "bitis": 1.792
-    },
-    {
-     "k": "That's",
-     "bas": 1.892,
-     "bitis": 2.192
-    },
-    {
-     "k": "all",
-     "bas": 2.192,
-     "bitis": 2.392
-    },
-    {
-     "k": "we've",
-     "bas": 2.392,
-     "bitis": 2.592
-    },
-    {
-     "k": "got",
-     "bas": 2.592,
-     "bitis": 2.953
-    }
-   ]
+   "no": 1,
+   "konusmaci": "JAKE",
+   "bas": 0.15,
+   "bitis": 3.227,
+   "metin": "One hundred dollars. That's all we've got."
   },
   {
-   "konusmaci": "mike",
-   "bas": 3.203,
-   "bitis": 4.521,
-   "metin": "Wrong. That's all we NEED, Jake.",
-   "kelimeler": [
-    {
-     "k": "Wrong",
-     "bas": 3.203,
-     "bitis": 3.386
-    },
-    {
-     "k": "That's",
-     "bas": 3.436,
-     "bitis": 3.623
-    },
-    {
-     "k": "all",
-     "bas": 3.623,
-     "bitis": 3.723
-    },
-    {
-     "k": "we",
-     "bas": 3.723,
-     "bitis": 3.798
-    },
-    {
-     "k": "NEED",
-     "bas": 3.798,
-     "bitis": 3.961
-    },
-    {
-     "k": "Jake",
-     "bas": 3.998,
-     "bitis": 4.521
-    }
-   ]
+   "no": 2,
+   "konusmaci": "MIKE",
+   "bas": 3.447,
+   "bitis": 5.442,
+   "metin": "Wrong. That's all we NEED, Jake."
   },
   {
-   "konusmaci": "jake",
-   "bas": 4.771,
-   "bitis": 6.257,
-   "metin": "Okay. So what's the plan?",
-   "kelimeler": [
-    {
-     "k": "Okay",
-     "bas": 4.771,
-     "bitis": 5.211
-    },
-    {
-     "k": "So",
-     "bas": 5.261,
-     "bitis": 5.374
-    },
-    {
-     "k": "what's",
-     "bas": 5.374,
-     "bitis": 5.574
-    },
-    {
-     "k": "the",
-     "bas": 5.574,
-     "bitis": 5.674
-    },
-    {
-     "k": "plan",
-     "bas": 5.674,
-     "bitis": 6.257
-    }
-   ]
+   "no": 3,
+   "konusmaci": "JAKE",
+   "bas": 5.862,
+   "bitis": 8.242,
+   "metin": "Okay. So what's the plan?"
   },
   {
-   "konusmaci": "mike",
-   "bas": 6.507,
-   "bitis": 9.212,
-   "metin": "Garage sale. Vintage camera. Fifteen bucks. Done.",
-   "kelimeler": [
-    {
-     "k": "Garage",
-     "bas": 6.507,
-     "bitis": 6.839
-    },
-    {
-     "k": "sale",
-     "bas": 6.839,
-     "bitis": 7.114
-    },
-    {
-     "k": "Vintage",
-     "bas": 7.164,
-     "bitis": 7.489
-    },
-    {
-     "k": "camera",
-     "bas": 7.489,
-     "bitis": 7.914
-    },
-    {
-     "k": "Fifteen",
-     "bas": 7.989,
-     "bitis": 8.389
-    },
-    {
-     "k": "bucks",
-     "bas": 8.389,
-     "bitis": 8.714
-    },
-    {
-     "k": "Done",
-     "bas": 8.764,
-     "bitis": 9.212
-    }
-   ]
+   "no": 4,
+   "konusmaci": "MIKE",
+   "bas": 8.462,
+   "bitis": 12.442,
+   "metin": "Garage sale. Vintage camera. Fifteen bucks. Done."
   },
   {
-   "konusmaci": "jake",
-   "bas": 9.462,
-   "bitis": 11.882,
-   "metin": "You just spent fifteen percent of our company.",
-   "kelimeler": [
-    {
-     "k": "You",
-     "bas": 9.462,
-     "bitis": 9.561
-    },
-    {
-     "k": "just",
-     "bas": 9.561,
-     "bitis": 9.761
-    },
-    {
-     "k": "spent",
-     "bas": 9.761,
-     "bitis": 10.086
-    },
-    {
-     "k": "fifteen",
-     "bas": 10.086,
-     "bitis": 10.636
-    },
-    {
-     "k": "percent",
-     "bas": 10.636,
-     "bitis": 11.073
-    },
-    {
-     "k": "of",
-     "bas": 11.073,
-     "bitis": 11.148
-    },
-    {
-     "k": "our",
-     "bas": 11.148,
-     "bitis": 11.286
-    },
-    {
-     "k": "company",
-     "bas": 11.286,
-     "bitis": 11.882
-    }
-   ]
+   "no": 5,
+   "konusmaci": "JAKE",
+   "bas": 12.862,
+   "bitis": 15.788,
+   "metin": "You just spent fifteen percent of our company."
   }
  ]
 }

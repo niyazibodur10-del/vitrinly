@@ -37,25 +37,25 @@ export const DEMO: Bolum = {
   agizYolu: "yama",
   sahneler: [
     {
-      id: "s1-yama", bas: 0, bitis: 4.65, arka: ARKA, agizYolu: "yama",
+      id: "s1-yama", bas: 0, bitis: 5.65, arka: ARKA, agizYolu: "yama",
       karakterler: [
         jake({ agiz: { x: 255, y: 868, w: 90, h: 52, sekiller: AGIZ } }),
         mike({ agiz: { x: 735, y: 868, w: 90, h: 52, sekiller: AGIZ } }),
       ],
     },
     {
-      id: "s2-ifade", bas: 4.65, bitis: 9.35, arka: ARKA2, agizYolu: "ifade", kamera: { zoom: [1.04, 1.1] },
+      id: "s2-ifade", bas: 5.65, bitis: 12.65, arka: ARKA2, agizYolu: "ifade", kamera: { zoom: [1.04, 1.1] },
       karakterler: [
         jake({ ifadeler: { notr: JAKE_N, konusur: JAKE_K } }),
         mike({ ifadeler: { notr: MIKE_N, konusur: MIKE_K } }),
       ],
     },
     {
-      id: "s3-kamera", bas: 9.35, bitis: 20, arka: ARKA, agizYolu: "kamera", kamera: { zoom: [1, 1.04] },
+      id: "s3-kamera", bas: 12.65, bitis: 20, arka: ARKA, agizYolu: "kamera", kamera: { zoom: [1, 1.04] },
       karakterler: [jake(), mike()],
     },
   ],
-  bank: { baslangic: 100, olaylar: [{ t: 8.7, deger: 85 }] },
+  bank: { baslangic: 100, olaylar: [{ t: 11.6, deger: 85 }] },
   ses: { diyalog: "seri/demo/diyalog.wav" },
   kazananYorum: { kullanici: "@sarah_flips", metin: "Buy the cheapest thing at a garage sale and flip it!", begeni: 1243, sure: 3.5 },
   karar: {
@@ -88,7 +88,7 @@ export const DEMO90: Bolum = {
       ...s, id: `${s.id}-${i}`, bas: i * 17 + s.bas, bitis: j === 2 ? (i === 4 ? 90 : (i + 1) * 17) : i * 17 + s.bitis,
     })),
   ).flat(),
-  bank: { baslangic: 100, olaylar: Array.from({ length: 5 }, (_, i) => ({ t: 8.7 + i * 17, deger: 100 - 15 * (i + 1) + 40 * i })) },
+  bank: { baslangic: 100, olaylar: Array.from({ length: 5 }, (_, i) => ({ t: 11.6 + i * 17, deger: 100 - 15 * (i + 1) + 40 * i })) },
   ses: { diyalog: "seri/demo/diyalog90.wav" },
   karar: { ...DEMO.karar, sure: 7 },
 };

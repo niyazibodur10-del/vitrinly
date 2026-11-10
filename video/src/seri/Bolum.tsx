@@ -99,7 +99,7 @@ export const BolumKompozisyon: React.FC<BolumProps> = ({ bolumId, taslak, kilavu
       {b.ses.sfx ? <Audio src={staticFile(b.ses.sfx.dosya)} volume={b.ses.sfx.ses ?? 1} /> : null}
       {sablonSfx ? (
         <>
-          <Sequence from={0} durationInFrames={k(1)} layout="none"><Audio src={staticFile(SFX.damga)} volume={0.6} /></Sequence>
+          <Sequence durationInFrames={k(1)} layout="none"><Audio src={staticFile(SFX.damga)} volume={0.6} /></Sequence>
           {b.kazananYorum ? <Sequence from={k(yorumBas)} durationInFrames={k(1)} layout="none"><Audio src={staticFile(SFX.kart)} volume={0.5} /></Sequence> : null}
           {aboneBas !== null ? <Sequence from={k(aboneBas + ABONE_KLIK_SN)} durationInFrames={k(1)} layout="none"><Audio src={staticFile(SFX.klik)} volume={0.9} /></Sequence> : null}
           <Sequence from={k(kararBas)} durationInFrames={k(1)} layout="none"><Audio src={staticFile(SFX.kart)} volume={0.6} /></Sequence>
