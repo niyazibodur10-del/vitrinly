@@ -13,6 +13,7 @@ import { KButceKompozisyonlar } from "./videolar/yeni-video/Kompozisyonlar";
 import { KButceKurgu } from "./videolar/yeni-video/kurgu";
 import { KMirasKompozisyonlar } from "./videolar/miras-sizintilari/Kompozisyonlar";
 import { KMirasKurgu } from "./videolar/miras-sizintilari/kurgu";
+import { SeriKompozisyonlar } from "./seri/Kompozisyonlar";
 // yeni-video.sh: import
 
 const PilotDikey: React.FC = () => (
@@ -70,6 +71,8 @@ export const RemotionRoot: React.FC = () => {
       <KMirasKompozisyonlar />
       {/* 2026-11-04-miras-sizintilari F7 kurgu (kurgu-editoru): KMirasFinal, KMirasIlk30-A/B/C, KMirasShorts1/2 */}
       <KMirasKurgu />
+      {/* Flip By Vote dikey dizi (video/src/seri/README.md): bölüm başına FBV-Bxxx */}
+      <SeriKompozisyonlar />
       {/* yeni-video.sh: kompozisyon */}
     </>
   );

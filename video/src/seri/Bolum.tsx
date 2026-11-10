@@ -14,7 +14,9 @@ import type { Bolum, BolumProps } from "./tipler";
 // Flip By Vote bölüm kompozisyonu: veri (bolumler/bolum-XXX.ts) → 1080x1920 30 fps video.
 // Katman sırası (alttan üste): sahne kartları (sert kesme) → altyazı → BANK → açılış damgası → kazanan yorum
 // → abone/takip kartı → karar kartı (karartma + kart). Ses: diyalog + müzik + SFX stem'i + şablon efektleri.
-// Veri kapısı calculateMetadata'da: yayın modunda (taslak=false, varsayılan) yer tutucu / kural ihlali render'ı durdurur.
+// Veri kapısı: yayın modunda (taslak=false, varsayılan) yer tutucu / kural ihlali İLK KAREDE hata fırlatır → render durur.
+// calculateMetadata'da DEĞİL: orada fırlatmak `remotion compositions` listesini (tüm kanalın kompozisyonlarını) kırıyor
+// (2026-11-10 ölçüldü); calculateMetadata yalnız yapısal hatada (bölüm yok) durur.
 
 export const DAMGA_SN = 1.8;
 
@@ -29,8 +31,6 @@ export const zamanlar = (b: Bolum) => {
 export const bolumMetadata: CalculateMetadataFunction<BolumProps> = ({ props }) => {
   const b = bolumBul(props.bolumId);
   if (!b) throw new Error(`[seri] bölüm yok: ${props.bolumId}`);
-  const hatalar = dogrula(b, { taslak: props.taslak, kilavuz: props.kilavuz });
-  if (hatalar.length) throw new Error(`[seri kapı] ${b.id} ${props.taslak ? "(taslak)" : "(yayın)"}:\n- ${hatalar.join("\n- ")}`);
   return { durationInFrames: Math.round(b.sure * FPS), fps: FPS, width: 1080, height: 1920 };
 };
 
@@ -48,8 +48,15 @@ const Kilavuz: React.FC = () => (
   </AbsoluteFill>
 );
 
-export const BolumKompozisyon: React.FC<BolumProps> = ({ bolumId, kilavuz }) => {
+export const kapiHatalari = (p: BolumProps) => {
+  const b = bolumBul(p.bolumId);
+  return b ? dogrula(b, { taslak: p.taslak, kilavuz: p.kilavuz }) : [`bölüm yok: ${p.bolumId}`];
+};
+
+export const BolumKompozisyon: React.FC<BolumProps> = ({ bolumId, taslak, kilavuz }) => {
   const { fps } = useVideoConfig();
+  const hatalar = React.useMemo(() => kapiHatalari({ bolumId, taslak, kilavuz }), [bolumId, taslak, kilavuz]);
+  if (hatalar.length) throw new Error(`[seri kapı] ${bolumId} ${taslak ? "(taslak)" : "(yayın)"}:\n- ${hatalar.join("\n- ")}`);
   const b = bolumBul(bolumId)!;
   const k = (sn: number) => Math.round(sn * fps);
   const { kararSure, kararBas, yorumBas, aboneBas } = zamanlar(b);
