@@ -1,7 +1,7 @@
 # thumbnail-tasarimcisi — hafıza
 
 ## Kurallar
-- Grafik/nesne metnin arkasından geçmez; metin kutusu üretimden önce yasak bölge (2 kez doğrulandı: banner 1,94, 1929 p5 1,1).
+- Grafik/nesne metnin arkasından geçmez; metin kutusu üretimden önce yasak bölge (2 kez doğrulandı).
 - Metin kontrastı p5 (en kötü %5) ile ölçülür; okunurluk = küçült → x4 → tesseract.
 
 ## Dersler
