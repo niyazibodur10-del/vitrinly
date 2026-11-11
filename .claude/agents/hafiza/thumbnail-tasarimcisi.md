@@ -1,6 +1,8 @@
 # thumbnail-tasarimcisi — hafıza
 
 ## Kurallar
+- Grafik/nesne metnin arkasından geçmez; metin kutusu üretimden önce yasak bölge (2 kez doğrulandı: banner 1,94, 1929 p5 1,1).
+- Metin kontrastı p5 (en kötü %5) ile ölçülür; okunurluk = küçült → x4 → tesseract.
 
 ## Dersler
 
@@ -8,14 +10,12 @@
 - Banner'da tasarımı belirleyen şey mobil/masaüstü bandı (y 508–931, 2560 tuvalde): jest/el bu bandın dışındaysa görünmez → işaret pozu ELENDİ (el ucu y=1006). Pozu seçmeden önce el/kafa koordinatını bantla ölç. Kaynak: YouTube answer/10456525 (2048'de 1235x338 → x1,25).
 - Bel kesitli karakteri banner'da tuvalin altından taşacak kadar büyütmek (boy > H−üst) kafayı büyütür ve yarım kalan elleri bant dışına iter; "karakter alt kenara otursun" ölçeği yetersiz.
 - Profil kontrastında yalnız WCAG parlaklığı yanıltır (ten–yeşil 1.11 ama ΔE 92): saç/gömlek siluet kontrastı + ΔE + daire kenarının açık/koyu tema kontrastını birlikte ölç. 36 px'te yüz dairenin ≥%40'ı olmalı; rozet/ikon eklemek 36 px'te okunmuyor (P3 elendi).
-- Metni olan arka plan grafiği metnin arkasından geçirme: slogan en kötü %5 kontrast 1.94'e düştü; grafik metnin altına indirilince 12.4.
 - Ad/slogan her zaman parametre: kanal adı değişebilir. Sığdırmada önce adı küçült, sloganı koru; tek satır vs iki satırı ayrı ayrı sığdırıp büyük olanı seç (6–20 karakter test).
 
 ### 2026-10-27 — S03 1929 thumbnail (F8, 3 finalist: A2 kapılar / B1 kutu / D1 kilitler)
 - Mevcut Canva varlıkları yetti (yeni üretim 0): aynı kadrajlı bel üstü pozlarda kafa değişimi (C14 gövde + d-saskin kafa, satırlar ±3 px) duyguyu sıfır maliyetle değiştirir. Önce alfa satır genişliklerini karşılaştır; kayık pozlarda (c-isaret +50 px) yapma.
 - Anton'un boşluğu dar: 168x94'te kelimeler birleşiyor (OCR "ONES A"). Kelime kelime çiz, boşluk 0,32 em → OCR 2/4 → 4/4. Kural: her thumbnail metninde geniş boşluk.
 - Ölçülebilir okunurluk: 168x94 → x4 büyüt → tesseract (normal + ters çevrilmiş gri, psm 11); tam boyuttaki OCR'ı taban al (araç sınırı: sağa yaslı yığın metinde tam boyutta da kaçırıyor). `09-paket/thumbnail/thumb-test.py` yeniden kullanılabilir.
-- Metin ↔ zemin kontrastını p5 (en kötü %5) ile ölç: zincir/kilit gibi kod grafikleri metne değince p5 1,1'e düştü; grafiği metnin altına al (yine aynı ders, ikinci kez — üretimden önce metin kutusunu yasak bölge yap).
 - Anlam tutarlılığı: "EVERY DOOR LOCKED" derken görünen her kapı kilitli olmalı (ilk sürümde kahve kapı açıktı). Gerçek ama alarm dili ("EVERY BANK CLOSED") yerine videonun kendi bölüm/oyun dili seçildi. Çapa verisiyle çizilen grafik küçükte üçgen okunuyor → veri grafiği thumbnail'ın kahramanı olmaz. Rakip thumbnail'ları ve onları içeren ızgaralar repo dışında tutulur.
 
 ### 2026-11-02 — S08 bütçe thumbnail (F8, A1 −$2,000 / C1 faiz>ordu / B1 hesap makinesi)
@@ -32,3 +32,7 @@
 - Leo'nun yanındaki levha veya etiket metni psm 11'de kaçıyor, psm 7 kırpımı ise "$" ve "T" harflerinde zayıf ("1241"). İkisini birlikte raporla (thumb-test v3). Oran gösteren nesne kıyasında alan oranı = veri (kutu-hesap 6/10 → kenar √0,6).
 - 2026-11-09 (kanal-analisti teşhisi): Leo'nun aynı "ağzı açık şaşkın" yüzü S08 A1 + miras K1/K3/K4'te; en iyi giden 1929 A2 sahne + işaret eden sakin Leo (zayıf kanıt, CTR yok). → İfade/poz döndür, aynı yüz ardışık iki videoda yok, hikâye nesnesi ana öğe.
 - 2026-11-09 revizyon: S08 ve miras finallerinin hepsinde aynı şaşkın Leo vardı, bu kanal düzeyinde bir tekrar deseni (kanal-analisti teşhisi). Kural: 3 finalde aynı ifade en fazla 1 kez kullanılır, önceki videonun finallerine de bakılır. Eğik kafada (c-isaret) hizanın bulduğu en iyi dx (−48) boyunda basamak bırakıyor. dx'i yaka bandı farkını en küçük yapacak şekilde uzlaştır (−36 → 9,8). Maskede eski kafayı premultiplied karışımla sil (`kafa-degis.py`).
+
+### 2026-11-11 — Flip By Vote banner (A karşı karşıya seçildi / B metin sol + ikili sağ elendi)
+- Anton'un çapası mürekkebin ~56 px üstünde: konumu `textbbox` ile mürekkep üstüne göre ver (`flipbyvote-banner.py` Metin.yaz). İfade portrelerinin düz kesik alt/yan kenarı TV görünümünde görünür → alfa'yı alttan ve omuz yanlarından erit.
+- İki karakter metni iki yandan sarınca mobil OCR tam satır okudu; metin solda büyük + ikili sağda olunca 390 px'te "$100" kayboldu (altın, sarı halo üstünde p5 5,1). Profil logosu videodaki FOLLOW avatarıyla bağlı: okunuyorsa değiştirme.
