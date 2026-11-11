@@ -16,10 +16,8 @@
 ## Dersler
 - 2026-10-26 (kanal): Tanıtıcı müsaitliği `channels?part=id&forHandle=@x` (1 birim) + RDAP .com ile ucuz eleme, sonra kısa listeye search. Yakın yazım/sesli çakışmayı da ara (Toonomy ↔ Tonomy). Maskot adı da marka taramasına girer; kanal adı maskot adı olmaz.
 - 2026-10-26: Kanal ilk 150 krk aranan kavramlarla başlar; ritim sözü (gün) tempo 4 hafta tutulmadan yazılmaz. "toon" adı çocuk-içeriği riski → kitle ayarını risk tablosuna yaz.
-- 2026-10-26: Eski içerikte "true story" iddialarını kaynakla kontrol et (Grace Walker → gerçek Grace Groner).
 - 2026-10-27: Başlık merak + somut özne; açıklama ilk paragrafı arama ifadesini ilk 10 krk'de taşır; başlığı tekrar eden versiyon elenir.
 - 2026-10-27: Thumbnail metni okunurluk modeliyle (kutu 704x324, ≤3 satır, eşik 9 px): ≤4 kelime; alt not isteyen sayı thumbnail'a girmez.
-- 2026-10-28: Google Trends 429; YouTube `totalResults` talep ölçüsü değil → üst sonuç izlenmesini "API verisi, talep değil" etiketle.
 - 2026-11-02 (S08 F8a): Eksik girdiler için `veri:thumbnail-ana` (boşsa alan yok), `{MUZIK_*}` belirteci, `veri:yayin-zamani` (yedek slot satırları) → F8b'de unutma imkânsız.
 - 2026-11-02 (S08 F8b): F7 dosyaları ve politika kararı yokken metin işi biter; ama "08-kurgu dosyası var" ve "politika-raporu.md kararı = sentetik_medya" kontrolleri betikte olmalı → paket-kontrol'e eklendi (BEKL / --final hata), F7 sonrası tek komut kalır.
 - 2026-11-04 (S03 F4 erken taslak): F3 yokken de paket biter: `{YASAL_NOT}` (rakam-tablosu varsa birebir, yoksa `veri:yasal-not`), `{KAYNAK_F3}`, Shorts 2 asıl/yedek blok + `SHORTS2` sabiti; hepsi BEKL. Kaynak satırını birincil sayfadan teyit et (Cerulli WebFetch).
@@ -30,3 +28,5 @@
 - 2026-11-10 (S03 F8b): Uç ekran başı = max(son sahne bas, son ABONE kartı bitişi = tık − 1,3 + 3,5 sn) → betikte; ofset = ffprobe final − anlatım toplamı. Başlık terimi SRT'de yoksa (Great Wealth Transfer) yalnız konu adıysa [T] ile kalır, raporda risk olarak söyle.
 - 2026-11-10 (yeni format ad taraması): Çok platformlu tanıtıcı kontrolü `uretim/kanal-kimligi/ad-kontrol.py`: IG og:title "(@ad)" / `PolarisErrorRoot`, 302 = belirsiz; TT `statusCode` 0/10221/10222; YT API+web. Önce bilinen var/yok hesapla doğrula. UA taklidi yasak (bot-check atlatma).
 - 2026-11-10: Ad adayı konsepti birebir anlatan TV/marka var mı ara (HGTV "Flip to a Million"); jenerik kelime + fiil bileşiği ("You Call The Flip") hem boş hem düşük risk.
+- 2026-11-11 (Flip By Vote B001): Çok platformlu dizi paketi tek betikte (`seri/bolum-001/paket/paket-uret.py`): politika+anonim satırı birebir 4 metinde, yasak regex (gün sözü/yem), soru `bolum.txt`'de; negatif testle. Sonraki bölüm: kopyala, metni değiştir.
+- 2026-11-11: Dikey kapak = video karesi (karartmasız an: karar kartı sonrası) + alt metin paneli, yüz bölgesi y=285'ten → 4:5 ve 3:4 ızgarada aynı kalır (`kapak.py`). "We have $100" tipi başlık kurguyu gerçek deneme gibi gösterir → ele.
