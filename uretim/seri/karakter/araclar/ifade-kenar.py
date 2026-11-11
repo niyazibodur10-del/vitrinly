@@ -16,9 +16,11 @@ def edt(b): return cv2.distanceTransform(b.astype(np.uint8), cv2.DIST_L2, 5)
 ic = edt(dolu)
 val = hsv[..., 2] / 255.0
 ust = np.zeros((H, W), bool); ust[: int(H * 0.55)] = True
+sac = np.zeros((H, W), bool); sac[: int(H * 0.40)] = True  # soluk-tel kuralı yalnız saç yüksekliğinde (boyun gölgesi teni yenmesin)
 yabanci = dolu & (ic <= 20) & (sat < 0.22)
 # kafada zemine karışmış tel ucu: soluk (s<0,33) ve ten kadar parlak değil (v<0,80); saç s≥0,45, ten v≥0,8
-yabanci |= dolu & ust & (ic <= 24) & (sat < 0.33) & (val < 0.80)
+yabanci |= dolu & sac & (ic <= 24) & (sat < 0.33) & (val < 0.80)
+yabanci |= dolu & ust & (ic <= 24) & (sat < 0.18)  # parlak gri hale (ten s≥0,25 korunur)
 m = dolu & ~yabanci
 k = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (9, 9))
 m = cv2.morphologyEx(m.astype(np.uint8), cv2.MORPH_CLOSE, k); m = cv2.morphologyEx(m, cv2.MORPH_OPEN, k)
@@ -29,7 +31,10 @@ for (x, y) in [(0, 0), (W - 1, 0)]:
     if ff[y, x]: cv2.floodFill(ff, msk, (x, y), 2)
 m = np.where(ff == 1, 1, m).astype(np.uint8)  # kenara bağlı olmayan zemin = delik → doldur
 # alt kenar (kart kesiği) ve yanlar: pürüzsüzleştirme sırasında kadraj kenarında aşınma olmasın diye yansıtmalı sınır
-ms = cv2.GaussianBlur(m.astype(np.float32), (0, 0), 3, borderType=cv2.BORDER_REPLICATE) > 0.5
+m3 = cv2.GaussianBlur(m.astype(np.float32), (0, 0), 3, borderType=cv2.BORDER_REPLICATE)
+m5 = cv2.GaussianBlur(m.astype(np.float32), (0, 0), 5, borderType=cv2.BORDER_REPLICATE)
+gec = np.clip((np.arange(H)[:, None] - H * 0.40) / (H * 0.08), 0, 1)  # saçta σ5 (tel basamakları), yüz/gövdede σ3, arada geçiş
+ms = (m5 * (1 - gec) + m3 * gec) > 0.5
 a = cv2.GaussianBlur(ms.astype(np.float32), (0, 0), 2, borderType=cv2.BORDER_REPLICATE)
 # renk: temiz iç = kenardan >8 px içeride; dışı ve ince bant en yakın temiz iç rengini alır
 d_in = edt(ms)

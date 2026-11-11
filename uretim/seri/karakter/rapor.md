@@ -46,3 +46,19 @@ Girdi sha256: AG-J `c0df33b400eb`, AG-M `0974fc910889`.
 - **AG-M KABUL** (MAHajG_s9zc): tüm kare fark %0,56, ama saçta ve flanelde de küçük oynamalar var (%0,1–0,7). Yama yalnız ağız bölgesini aldığı için bunlar tabana taşınmaz.
 - `agiz-yama.py`: bölge dışı fark Jake %0,03 / Mike %0,24 (kabul ≤%1), dikiş %0. Açık/yarı çene taban silüeti dışına taşmıyor (0 px). Yeni `--siluet` seçeneği: Mike'ın yama kutusundaki 1.916 ham zemin pikseli saydam yapıldı (Remotion'da mavi boyamasın). Mike yamaları aynalı. İki koşu birebir aynı (`cmp`).
 - Göz incelemesi (3 durum, 1,5×): tek ağız, gölgesiz, dikiş yok; açıkta üst dişler görünüyor, gülümseme yok.
+
+## Z3b (2026-11-11): ifade portresi kenar temizliği → GEÇTİ (kendi testim; hakem fark kontrolü bekleniyor)
+- **Kök neden:** `kes-gc.py` saç saçağı adımı zemine karışmış tellerin renk tonunu saç tonuna çekip açıklığını bırakmıştı → Mike'ta kızıl, Jake'te bordo/koyu lekeler. Üstüne ikili GrabCut maskesi 4,3× büyütülmüş kartta tırtık ve kopuk uç bırakmıştı. Önceki `sac-hale-temizle.py` yalnız gri haleyi silmişti.
+- **Düzeltme:** 12 portre kaynak kırpımdan `IFADE_SAC_PX=0 ifade-hazirla.py` ile yeniden üretildi (saç renk adımı kapalı) ve sonuna yeni `araclar/ifade-kenar.py` eklendi. Kenar aracının adımları:
+  - kenar bandında yabancı piksel silme (gri halede s<0,22; saçta soluk tel s<0,33 & v<0,80; parlak gri s<0,18);
+  - alfa kapama + açma (r=4), en büyük bileşen, delik doldurma;
+  - kontur Gauss σ5 (saç) / σ3 (yüz-gövde), sonra σ2 yumuşak kenar;
+  - kenardan 8 px'e kadar renk = en yakın temiz iç pikselin rengi (temiz iç: 14 px içeride ve kafada s>0,30), 8–14 px arası geçiş.
+- **Ara elemeler** (göz kontrolü, 1:1):
+  - v1 (renk bandı 4–8 px): tel uçlarında gri kaldı.
+  - v2 (14 px): kaynak pikselin kendisi soluk olduğu için gri kaldı.
+  - v3: soluk-tel kuralı boyun gölgesini yedi, boyunda çentik oluştu → kural saç yüksekliğine (üst %40) sınırlandı.
+  - v4: saç konturunda ~10 px basamak → saçta σ5.
+- **Ölçüm (12/12):** alfa adası 1; kafa kenar bandında gri piksel (s<0,18, kenara ≤6 px) 0; yüz içi (kenardan >30 px) eski varlığa ortalama fark 0,2–0,9 (yüz değişmedi). Boyut ve konum aynı, `yerlesim.json` / `mekan-l1.ts` değişmeden çalışır. İki koşu birebir aynı (`cmp`, 12 dosya).
+- **Teslim:** `video/public/seri/bolum-001/ifade/` aynı adlar. Mike'ın `-temiz.png` dosyaları (gulen, saskin, endiseli, heyecanli) yeni sürümün kopyası. sha256: mike-heyecanli-temiz `77f705048e50`, jake-dusunceli `74ee5a42fee6`.
+- **Kanıt:** `kontak-z3b.jpg` (üst: önce/sonra 1:1 yeşil zemin, Mike sağ saç-kulak ve Jake sol saç; alt: 12 portre yeşil zeminde).
