@@ -1,11 +1,11 @@
 # Bölüm 001 paket raporu (youtube-paketleyici, 2026-11-11)
-İLERLEME: tamam · **SONUÇ: GEÇTİ** · v2 (yeniden render 83,2 sn, sha 23839dd0b183; kapak karesi 81,00 sn = kare 2430, koordinatör kararı; alternatif 0,10 sn)
+İLERLEME: tamam · **SONUÇ: GEÇTİ** · v2 (yeniden render 83,2 sn, sha 6d01844629ec (tur 3); kapak karesi 81,00 sn = kare 2430, koordinatör kararı; alternatif 0,10 sn)
 | Kapı | Komut → sonuç |
 |---|---|
 | Paket kapısı (politika satırları birebir ×4, yasak kalıp, sınırlar, kanal.py dogrula) | `python3 uretim/seri/bolum-001/paket/paket-uret.py` → 0 hata; negatif test (satır eksik + "drops tomorrow" + 61 krk) 4/4 yakalandı |
 | YouTube dry-run | `python3 tools/yayin/yukle.py uretim/seri/bolum-001/teslim/yayin-paketi.json --dry-run` → 0 hata, 1 uyarı (yayin_zamani yok = yer tutucu); planlı kopya (12:00 ET) → 0 hata, publishAt 17:00Z |
-| Dosya kontrolü (paket-uret) | video sha256 23839dd0b183 + süre 83,2 ± 0,05 + kapak karesi video içinde; negatif test (eski sha/85 sn/90 sn) 3/3 yakalandı |
-| Kapak determinizmi | `kapak.py bolum-001.mp4 81.0 150 1010 … --olcek 1.08` 2 koşu → sha256 1e53e945aefe aynı |
+| Dosya kontrolü (paket-uret) | video sha256 6d01844629ec + süre 83,2 ± 0,05 + kapak karesi video içinde; negatif test (eski sha/85 sn/90 sn) 3/3 yakalandı |
+| Kapak determinizmi | `kapak.py bolum-001.mp4 81.0 150 1010 … --olcek 1.08` 2 koşu → sha256 eb8144a28e28 (tur 3) |
 | Kapak güvenli alanı | metin alt sınırı 1585 ≤ 1615 (4:5 y 285–1635; 3:4 y 240–1680 kapsar); 200 px ızgara önizlemesinde "$100 → $1,000,000" okunur |
 
 ## Adaylar ve eleme

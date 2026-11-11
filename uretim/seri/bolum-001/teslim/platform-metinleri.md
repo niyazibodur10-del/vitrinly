@@ -1,6 +1,6 @@
 # Bölüm 001 · platform metinleri (betik çıktısı: paket/paket-uret.py — elle düzenleme yok)
 
-Video: `bolum-001.mp4` · 83.2 sn · 1080x1920 · sha256 23839dd0b183
+Video: `bolum-001.mp4` · 83.2 sn · 1080x1920 · sha256 6d01844629ec
 
 ## YouTube Shorts
 Başlık (48 krk):

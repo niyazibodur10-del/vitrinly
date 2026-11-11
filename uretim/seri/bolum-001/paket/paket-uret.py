@@ -31,7 +31,7 @@ IG_ACIKLAMA = "\n".join([
     "Jake & Mike have $100 and one goal: $1,000,000. Every episode, the comments decide the next move.",
     SORU, "", ANONIM, "", POLITIKA, "", "#flipbyvote #animatedseries #sidehustle #flipping #youdecide"])
 IG_KAPAK_SN = 81.0  # kare 2430 (koordinatör kapak kararı); yüklenen kapak bu kareden; uygulamada kare seçilirse 1:21
-VIDEO_SHA12, VIDEO_SURE = "23839dd0b183", 83.2  # yeniden render 2026-11-11
+VIDEO_SHA12, VIDEO_SURE = "6d01844629ec", 83.2  # tur 3 render 2026-11-11
 IG_SABIT_YORUM = PIN_YORUM
 
 # ---- TikTok ----

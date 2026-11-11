@@ -1,6 +1,6 @@
 # YAYIN — Flip By Vote · Bölüm 1 "Every Dollar We Have"
 
-Dosyalar (bu klasör): `bolum-001.mp4` (83,2 sn, 1080x1920, sha256 23839dd0b183) · `kapak-1080x1920.jpg` · `kapak-1080x1350.jpg` · `yayin-paketi.json` · `platform-metinleri.md` (kopyalanacak tüm metinler).
+Dosyalar (bu klasör): `bolum-001.mp4` (83,2 sn, 1080x1920, sha256 6d01844629ec) · `kapak-1080x1920.jpg` · `kapak-1080x1350.jpg` · `yayin-paketi.json` · `platform-metinleri.md` (kopyalanacak tüm metinler).
 YouTube yüklemesini biz yaparız. Instagram ve TikTok bağlanana kadar elle paylaşılır.
 
 ## Yayın saati önerisi: 12:00 ET (17:00 UTC, 20:00 Türkiye) — üç platformda aynı anda
