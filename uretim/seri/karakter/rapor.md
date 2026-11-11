@@ -1,5 +1,5 @@
 # Flip By Vote · karakter sayfaları değerlendirmesi (2026-11-10, gorsel-varlik-sanatcisi)
-İLERLEME: J-A, M-A, L1-A, L1-B, T-J, T-M KABUL; kesim + yerleşim + ifade varlıkları `video/public/seri/bolum-001/` (VARLIKLAR.md). Sıradaki: koordinatör AG-J + AG-M → `araclar/agiz-yama.py` ile kapalı/yarı/açık yamaları. Kota 6/12.
+İLERLEME: J-A, M-A, L1-A, L1-B, T-J, T-M KABUL; kesim + yerleşim + ifade varlıkları `video/public/seri/bolum-001/` (VARLIKLAR.md). AG-J + AG-M KABUL, ağız yamaları teslim. Kota 8/12 (4 yedek).
 - **J-A KABUL** (Jake, `MAHajKKbhbM`): kontrol listesi 8/8, sayfa içi yüz kor. ort 0,76 (nötr 0,91; gülen 0,67 / heyecanlı 0,60 → ten açık-pembe kaymış, yüz yapısı aynı).
 - **M-A KABUL** (Mike, `MAHajPZXWbU`): kontrol listesi 8/8, sayfa içi yüz kor. ort 0,93 (0,90–0,95). Saç hedef taslaktan koyu (kestane, ΔE 24,6) → kumral tanımına uyuyor; sayfa kanonik kabul edildi.
 - Çözünürlük: ikisi 1920x1080 (doğal 1680x944 export). Yazı/logo/ekstra kişi: yok (1:1 göz incelemesi).
@@ -39,3 +39,10 @@ Girdi sha256: T-J `c3bb924da25b`, T-M `b78bbd97b630`, L1-A `de4cc07a70ce`, L1-B 
 - **Yerleşim** (`araclar/yerlesim.py`): tezgâh ön katmanında dikdörtgenle başlatılan GrabCut blok verdi → elle çizilmiş bölge ve tohumla yeniden yapıldı. İlk ikilide Mike 0,50'de Jake'ten kısa göründü → 0,55'e çıktı, Jake 0,58 önde; açıkta kalan kesik pikseli 0.
 - **İfade portreleri** (`araclar/ifade-hazirla.py`): sayfa kartı → Lanczos 1080 + keskinleştirme → kes-gc → ten Lab eşleme (Jake ΔE 2,7–5,1 → ≤1,4; Mike 5,3–9,9 → ≤2,3). Tezgâh arkasına baş-omuz olarak yerleştirince dev kafa ve gri hale çıktı → RED. Düzeltme: alfa 2 px içeri, Mike aynalı, kullanım yalnız ekstrem yakın plan. Boyunda ton basamağı (ten maskesi satırdan kesilmişti) → tüm ten maskesine geçildi, giderildi. ESRGAN x4, başka ajanların ağır CPU işiyle çakıştığı için durduruldu. Yeniden üretim: `tools/karakter/buyut.py <kart> <çıkış> tam` (kart başına ~1–3 dk), sonra `ifade-hazirla.py`.
 - **Ağız aracı** (`araclar/agiz-yama.py`): Leo a/b çiftiyle sınandı. Hiza: bölge dışı fark %0,22, dikiş %0,57. Yarı açık = DIS optik akış t=0,5 ara karesi; ilk sürümde akış yönleri ters eşlenmişti (çift ağız gölgesi) → düzeltildi, tek ağız, temiz. Deterministik (`cmp`).
+
+## Tur 3 (2026-11-11): AG-J, AG-M
+Girdi sha256: AG-J `c0df33b400eb`, AG-M `0974fc910889`.
+- **AG-J KABUL** (MAHajI3OgKw): tabana tüm kare ham fark %0,56, fark kutusu yalnız ağız-çene (x 517–660, y 614–765). Kafa yerinde, kimlik aynı.
+- **AG-M KABUL** (MAHajG_s9zc): tüm kare fark %0,56, ama saçta ve flanelde de küçük oynamalar var (%0,1–0,7). Yama yalnız ağız bölgesini aldığı için bunlar tabana taşınmaz.
+- `agiz-yama.py`: bölge dışı fark Jake %0,03 / Mike %0,24 (kabul ≤%1), dikiş %0. Açık/yarı çene taban silüeti dışına taşmıyor (0 px). Yeni `--siluet` seçeneği: Mike'ın yama kutusundaki 1.916 ham zemin pikseli saydam yapıldı (Remotion'da mavi boyamasın). Mike yamaları aynalı. İki koşu birebir aynı (`cmp`).
+- Göz incelemesi (3 durum, 1,5×): tek ağız, gölgesiz, dikiş yok; açıkta üst dişler görünüyor, gülümseme yok.

@@ -3,7 +3,8 @@
 (gorsel-varlik-sanatcisi 2026-11-10; Leo rig-yama.py'den: fark maskesi +11 px, Gauss 4,5, 6 px kutu rampası; bölge parametreli.)
 Hiza testi: bölge dışı ham fark (>30) oranı ≤ %1 (düzenleme yüzün geri kalanını oynatmadı mı); dikiş halkası farkı; geri kurma hatası.
 --ayna: çıktılar yatay aynalanır (Mike tabanı aynalı kullanılıyor), konum x' = W - x - w.
-Kullanım: python -I agiz-yama.py <kapali.png> <acik.png> <x0,y0,x1,y1> <cikis_klasoru> <onek> [--ayna]"""
+Kullanım: python -I agiz-yama.py <kapali.png> <acik.png> <x0,y0,x1,y1> <cikis_klasoru> <onek> [--ayna] [--siluet <kesik_rgba_aynalanmamis.png>]
+--siluet: yama alfası tabanın kesim alfasıyla kırpılır (yama kutusundaki ham zemin pikseli saydam alana boyanmasın)."""
 import sys, os, json, cv2, numpy as np
 k = cv2.imread(sys.argv[1]); o = cv2.imread(sys.argv[2]); x0, y0, x1, y1 = map(int, sys.argv[3].split(",")); out, on = sys.argv[4], sys.argv[5]
 ayna = "--ayna" in sys.argv; os.makedirs(out, exist_ok=True); H, W = k.shape[:2]
@@ -31,6 +32,10 @@ gy, gx = np.mgrid[0:kk.shape[0], 0:kk.shape[1]].astype(np.float32)
 wk = cv2.remap(kk, gx - 0.5 * f_ko[..., 0], gy - 0.5 * f_ko[..., 1], cv2.INTER_LINEAR, borderMode=cv2.BORDER_REPLICATE)
 wo = cv2.remap(oo, gx - 0.5 * f_ok[..., 0], gy - 0.5 * f_ok[..., 1], cv2.INTER_LINEAR, borderMode=cv2.BORDER_REPLICATE)
 yari_tam = k.copy(); yari_tam[cy0:cy1, cx0:cx1] = (0.5 * wk.astype(np.float32) + 0.5 * wo.astype(np.float32)).astype(np.uint8)
+zemin_px = 0
+if "--siluet" in sys.argv:
+    sa = cv2.imread(sys.argv[sys.argv.index("--siluet") + 1], cv2.IMREAD_UNCHANGED)[by0:by1, bx0:bx1, 3].astype(np.float32) / 255
+    zemin_px = int(((al > 0.02) & (sa < 0.5)).sum()); al = np.minimum(al, sa)
 res = {}
 for ad, src in [("kapali", k), ("yari", yari_tam), ("acik", o)]:
     rgba = cv2.cvtColor(src[by0:by1, bx0:bx1], cv2.COLOR_BGR2BGRA); rgba[..., 3] = (al * 255).astype(np.uint8)
@@ -40,6 +45,6 @@ rec = k.astype(np.float32).copy(); rec[by0:by1, bx0:bx1] = o[by0:by1, bx0:bx1] *
 e = float(np.abs(rec[by0:by1, bx0:bx1] - o[by0:by1, bx0:bx1]).max(2)[op[by0:by1, bx0:bx1] > 0].mean())
 X = W - bx1 if ayna else bx0
 J = {"kapali": sys.argv[1], "acik": sys.argv[2], "konum_xy": [int(X), int(by0)], "boyut_wh": [int(bx1 - bx0), int(by1 - by0)], "aynali": ayna,
-     "bolge_disi_ham_%": round(dis * 100, 3), "dikis_halka_%": round(dikis * 100, 2), "geri_kurma_degisen_px_ort_abs": round(e, 2),
+     "bolge_disi_ham_%": round(dis * 100, 3), "dikis_halka_%": round(dikis * 100, 2), "siluetle_kirpilan_px": zemin_px, "geri_kurma_degisen_px_ort_abs": round(e, 2),
      "kabul_hiza": dis <= 0.01}
 json.dump(J, open(os.path.join(out, f"{on}-agiz.json"), "w"), ensure_ascii=False, indent=1); print(json.dumps(J, ensure_ascii=False))

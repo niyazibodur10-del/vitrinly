@@ -9,7 +9,7 @@ Kaynak: Canva AI (Niyazi aboneliği). Ham dosyalar ve prompt'lar `uretim/seri/ka
 | karakter/jake-taban.png | Jake, bel üstü, ağız kapalı, kadraj soluna (Mike'a) bakıyor. RGBA. | MAHajBqI-Qs |
 | karakter/mike-taban.png | Mike, bel üstü, ağız kapalı, AYNALI, kadraj sağına (Jake'e) bakıyor. RGBA. | MAHajIzpXBs (aynalandı) |
 | ifade/<kim>-<ifade>.png | 6 ifade × 2 karakter: notr, gulen, saskin, endiseli, heyecanli, dusunceli. RGBA, ten tabana eşlendi, Mike aynalı. | J-A MAHajKKbhbM / M-A MAHajPZXWbU |
-| agiz/ | Ağız yamaları kapalı / yari / acik. AG-J ve AG-M gelince eklenecek. | — |
+| agiz/<kim>-agiz-{kapali,yari,acik}.png + <kim>-agiz.json | Ağız yamaları (RGBA). Konum `konum_xy` (taban koordinatı, Mike'ınki aynalı tabana göre). Yarı = optik akış ara karesi. Alfa taban silüetiyle kırpıldı. | AG-J MAHajI3OgKw, AG-M MAHajG_s9zc |
 
 ## Yerleşim kuralları
 - **Ekran yönü:** ikili çekimde Mike SOLDA, Jake SAĞDA (birbirlerine bakarlar). Tekli çekimler arasında kesme yapılınca bakışlar karşılıklı tutar.
@@ -19,5 +19,20 @@ Kaynak: Canva AI (Niyazi aboneliği). Ham dosyalar ve prompt'lar `uretim/seri/ka
 - **Tekli:** karakter ölçek 1 (0,0). Plaka 1,25 yakınlaştırılır, çapa noktası Jake için (760,1186), Mike için (320,1186); tezgâh ön katmanı aynı dönüşümle.
 - **İfade portreleri** yalnız ekstrem yakın plan olarak kullanılır: ölçek 1,3, `yerlesim.json` içindeki `ifade_tekli.konum`. Arka plan L1-A 1,6× yakınlaştırılmış ve bulanık (σ6), tezgâh katmanı yok. Tezgâh arkasına baş-omuz olarak KONMAZ (dev kafa gibi görünür, test edildi). Kullanım yerleri: tepki tutuşları ve kameraya bakış anları (S2, S8). Bu karelerde ağız kıpırdamaz.
 - **L1-B'de karakter yok:** tabanların kesik kenarı buzdolabının önünde açıkta kalır. L1-B tahta insert'i olarak kullanılır; konuşma L1-A'da geçer.
-- **Konuşma:** taban + `agiz/` yaması (konum yamanın JSON'unda). Rhubarb eşlemesi: X ve A → kapalı; B, C, E, F, G, H → yari; D → acik. Geçiş alfa karışımıyla 2 kare. Ağız yalnız tekli ve ikili tabanlarda oynar.
+- **Konuşma:** taban + `agiz/` yaması, tabanla aynı ölçek ve konumda üst üste (Jake (479,594), Mike (555,496); boyutlar JSON'da). Yama yalnız tekli ve ikili tabanlarda kullanılır, ifade portrelerinde kullanılmaz.
+- **Rhubarb → 3 durum** (cue'lar `uretim/seri/bolum-001/ses/rhubarb/JAKE.json`, `MIKE.json`):
+
+  | Rhubarb | Ses | Durum |
+  |---|---|---|
+  | X | sessizlik | kapali |
+  | A | M, B, P (dudak kapalı) | kapali |
+  | B | dişler hafif aralık (çoğu ünsüz) | yari |
+  | F | büzük (UW, OW, W) | yari |
+  | G | F, V | yari |
+  | H | L | yari |
+  | C | açık (EH, AE) | acik |
+  | D | geniş açık (AA) | acik |
+  | E | yuvarlak (AO, ER) | acik |
+
+  Konuşma içindeki dağılım: Jake kapalı %6 / yarı %61 / açık %34, Mike %8 / %60 / %32. 2 kareden kısa cue sayısı: Jake 9/214, Mike 11/147. Bunlar bir önceki durumla birleştirilir; durum geçişinde 2 karelik alfa karışımı yapılır. Konuşmayan karakter X (kapalı) kalır.
 - **Işık:** karakterler düz stüdyo ışığında, plaka sıcak sabah güneşinde. İstenirse karakter katmanına hafif sıcak ton (kurgu/animasyon kararı).
