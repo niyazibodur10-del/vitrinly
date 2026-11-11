@@ -1,5 +1,6 @@
 // Flip By Vote · Bölüm 001 "Every Dollar We Have" — kesme listesi (animasyon-yonetmeni 2026-11-11).
-// Metin/çekim sözlüğü: uretim/seri/bolum-001/metin.md · ses kilidi: uretim/seri/bolum-001/ses/kilit.md (78,77 sn, sha 289da660bbd0).
+// Metin/çekim sözlüğü: uretim/seri/bolum-001/metin.md · ses kilidi: uretim/seri/bolum-001/ses/kilit.json (Pocket TTS, 69,32 sn, sha 1d0d8235acd4).
+// 2026-11-11 ses değişimi: tüm zamanlar uretim/seri/bolum-001/animasyon/zaman-esle.py ile (eski→yeni kelime çapaları, LCS) taşındı.
 // Zamanlar kilitli satır zamanlarından (bolum-001.satirlar.json) ve Whisper kelimelerinden; kesme = satır başından ~0,1 sn önce.
 // Görsel olaylar (SFX'e bağlananlar) ve abone anı: uretim/seri/bolum-001/animasyon-efekt-cue.json (aynı sayılar, kare doğru).
 // Ses stem'i (müzik + SFX, şablon efektleri dahil) muzik-ses-tasarimcisi'nin bolum-ses.py'si ile o dosyadan üretilir → sablonSfx:false.
@@ -21,68 +22,68 @@ type Ek = Partial<Pick<Sahne, "kamera" | "proplar" | "vurus" | "sarsinti" | "oda
 const K: [string, number, number, string, Ek?][] = [
   // S1 — KANCA (tur 2, Ö2): tezgâh insert'i, kamera kare 0'da hareket halinde (1,45 → 1,22, out eğrisi);
   // büyük banknot 3 karede düşer, kare 3'te (0,1 sn) çarpar (SFX onset) + 2 karelik sarsıntı; BANK pop
-  ["s01", 0, 0.6, "genis", {
+  ["s01", 0, 0.455, "genis", {
     kamera: { zoom: [1.45, 1.22], egri: "out", kay: { y: [60, 0] } }, odak: { x: 545, y: 1380 },
     proplar: [{ tur: "banknot", bas: 0, dus: true, yukseklik: 380, ...BANKNOT_TEZGAH, y: 1300, olcek: 1.7 }], sarsinti: [{ t: 0.1, sure: 0.07, guc: 18 }],
   }],
-  ["s02", 0.6, 2.55, "yakin:mike", { kamera: { zoom: [1.08, 1.13] } }], // M01 hızlı punch-in
-  ["s03", 2.55, 7.1, "yakin:jake", { kamera: { zoom: [1.02, 1.08] }, proplar: [{ tur: "ikon", ad: "hardal", bas: 4.6, bitis: 5.5, x: 205, y: 800, boyut: 170 }] }],
+  ["s02", 0.455, 1.961, "yakin:mike", { kamera: { zoom: [1.08, 1.13] } }], // M01 hızlı punch-in
+  ["s03", 1.961, 5.115, "yakin:jake", { kamera: { zoom: [1.02, 1.08] }, proplar: [{ tur: "ikon", ad: "hardal", bas: 3.42, bitis: 4.016, x: 205, y: 800, boyut: 170 }] }],
   // S2 — tahta "$100" (SFX 7,206), Mike, Jake, tahta "$1,000,000" sıfırlar tek tek (12,588 … 13,188), "You do" → YOU DECIDE
-  ["s04", 7.1, 8.4, "tahta", { kamera: { zoom: [1.14, 1.2] } }],
-  ["s05", 8.4, 10.06, "yakin:mike", { kamera: { zoom: [1.03, 1.08] } }],
-  ["s06", 10.06, 12.05, "yakin:jake", { kamera: { zoom: [1.04, 1.1] } }],
-  ["s07", 12.05, 13.72, "tahta", { kamera: { zoom: [1.12, 1.22] } }],
-  ["s08", 13.72, 16.75, "yakin:jake", { kamera: { zoom: [1.02, 1.06] }, vurus: [{ t: 16.04, olcek: 1.1, sure: 0.12 }], proplar: [{ tur: "yazi", metin: "YOU DECIDE", bas: 16.04, bitis: 17.15, y: 860 }] }],
-  ["s09", 16.75, 17.15, "portre:jake:gulen", { kamera: { zoom: [1.0, 1.02] }, proplar: [{ tur: "yazi", metin: "YOU DECIDE", bas: 16.04, bitis: 17.15, y: 860 }] }],
+  ["s04", 5.115, 6.095, "tahta", { kamera: { zoom: [1.14, 1.2] } }],
+  ["s05", 6.095, 7.333, "yakin:mike", { kamera: { zoom: [1.03, 1.08] } }],
+  ["s06", 7.333, 8.672, "yakin:jake", { kamera: { zoom: [1.04, 1.1] } }],
+  ["s07", 8.672, 10.344, "tahta", { kamera: { zoom: [1.12, 1.22] } }],
+  ["s08", 10.344, 12.315, "yakin:jake", { kamera: { zoom: [1.02, 1.06] }, vurus: [{ t: 11.92, olcek: 1.1, sure: 0.12 }], proplar: [{ tur: "yazi", metin: "YOU DECIDE", bas: 11.92, bitis: 12.715, y: 860 }] }],
+  ["s09", 12.315, 12.715, "portre:jake:gulen", { kamera: { zoom: [1.0, 1.02] }, proplar: [{ tur: "yazi", metin: "YOU DECIDE", bas: 11.92, bitis: 12.715, y: 860 }] }],
   // S3 — telefon alttan (17,303), 3 ilan
-  ["s10", 17.15, 20.2, "genis", {
+  ["s10", 12.715, 15.69, "genis", {
     kamera: { zoom: [1.04, 1.09] },
-    proplar: [banknot(0), { tur: "telefon", bas: 17.2, bitis: 20.2, ogeler: [{ ikon: "bisiklet", fiyat: "$60" }, { ikon: "sifonyer", fiyat: "FREE" }, { ikon: "kutu", fiyat: "$40" }] }],
+    proplar: [banknot(0), { tur: "telefon", bas: 12.765, bitis: 15.69, ogeler: [{ ikon: "bisiklet", fiyat: "$60" }, { ikon: "sifonyer", fiyat: "FREE" }, { ikon: "kutu", fiyat: "$40" }] }],
   }],
-  ["s11", 20.2, 22.8, "yakin:jake", { kamera: { zoom: [1.03, 1.07] } }],
-  ["s12", 22.8, 24.02, "yakin:mike", { kamera: { zoom: [1.06, 1.1] } }],
-  ["s13", 24.02, 24.5, "portre:mike:gulen", { kamera: { zoom: [1.0, 1.02] } }], // sırıtma (sessiz)
+  ["s11", 15.69, 17.869, "yakin:jake", { kamera: { zoom: [1.03, 1.07] } }],
+  ["s12", 17.869, 18.967, "yakin:mike", { kamera: { zoom: [1.06, 1.1] } }],
+  ["s13", 18.967, 19.447, "portre:mike:gulen", { kamera: { zoom: [1.0, 1.02] } }], // sırıtma (sessiz)
   // S4 — ilan ROAD BIKE alçak kart (whoosh apex 24,6; yüz açık), "Flat tires" punch, "look at that frame!" sıçrama kesmesi + bisiklet pop
-  ["s14", 24.5, 27.62, "yakin:mike", { kamera: { zoom: [1.02, 1.06] }, vurus: [{ t: 26.52, olcek: 1.06, sure: 0.1 }], proplar: [{ tur: "ilan", yer: "alt", bas: 24.5, bitis: 26.75, ikon: "bisiklet", baslik: "ROAD BIKE", fiyat: "$60", not: "flat tires" }] }],
-  ["s14b", 27.62, 29.55, "yakin:mike", { kamera: { zoom: [1.16, 1.22] }, proplar: [{ tur: "ikon", ad: "bisiklet", bas: 28.6, bitis: 29.55, x: 220, y: 880, boyut: 190 }] }],
-  ["s15", 29.55, 32.48, "yakin:jake", { kamera: { zoom: [1.02, 1.05] }, vurus: [{ t: 31.48, olcek: 1.08, sure: 0.1 }], proplar: [{ tur: "tahtaKose", bas: 29.9, bitis: 32.48, yaz: 30.44, metin: "$100 − $60 = $40", x: 80, y: 870 }] }],
-  ["s16", 32.48, 33.92, "genis", { kamera: { zoom: [1.03, 1.06] }, proplar: [banknot(0)] }],
+  ["s14", 19.447, 23.903, "yakin:mike", { kamera: { zoom: [1.02, 1.06] }, vurus: [{ t: 20.9, olcek: 1.06, sure: 0.1 }], proplar: [{ tur: "ilan", yer: "alt", bas: 19.447, bitis: 22.214, ikon: "bisiklet", baslik: "ROAD BIKE", fiyat: "$60", not: "flat tires" }] }],
+  ["s14b", 23.903, 25.738, "yakin:mike", { kamera: { zoom: [1.16, 1.22] }, proplar: [{ tur: "ikon", ad: "bisiklet", bas: 24.915, bitis: 25.738, x: 220, y: 880, boyut: 190 }] }],
+  ["s15", 25.738, 28.037, "yakin:jake", { kamera: { zoom: [1.02, 1.05] }, vurus: [{ t: 27.38, olcek: 1.08, sure: 0.1 }], proplar: [{ tur: "tahtaKose", bas: 26.022, bitis: 28.037, yaz: 26.54, metin: "$100 − $60 = $40", x: 80, y: 870 }] }],
+  ["s16", 28.037, 29.365, "genis", { kamera: { zoom: [1.03, 1.06] }, proplar: [banknot(0)] }],
   // "Tires aren't." sert punch-in (33,95), satır sonrası sessiz tutuş; plak cızırtısının ardından Mike'ın yüzü düşer (görsel gag)
-  ["s17", 33.92, 35.3, "yakin:jake", { kamera: { zoom: [1.02, 1.03] }, vurus: [{ t: 33.95, olcek: 1.24, sure: 0.08 }] }],
-  ["s18", 35.3, 35.7, "portre:mike:endiseli", { kamera: { zoom: [1.0, 1.03] } }],
+  ["s17", 29.365, 30.535, "yakin:jake", { kamera: { zoom: [1.02, 1.03] }, vurus: [{ t: 29.395, olcek: 1.24, sure: 0.08 }] }],
+  ["s18", 30.535, 30.935, "portre:mike:endiseli", { kamera: { zoom: [1.0, 1.03] } }],
   // S5 — ilan DRESSER alçak kart (37,5), "We paint it, flip it" sıçrama kesmesi + boya pop; "Free?" = konuşan tabana punch-in (Z3)
-  ["s19", 35.7, 39.3, "yakin:jake", { kamera: { zoom: [1.02, 1.07] }, proplar: [{ tur: "ilan", yer: "alt", bas: 37.38, bitis: 39.3, ikon: "sifonyer", baslik: "DRESSER", fiyat: "FREE", not: "must go today" }] }],
-  ["s19b", 39.3, 41.38, "yakin:jake", { kamera: { zoom: [1.16, 1.2] }, proplar: [{ tur: "ikon", ad: "boya", bas: 39.64, bitis: 41.38, x: 220, y: 880, boyut: 180 }] }],
-  ["s20", 41.38, 43.5, "yakin:mike", { kamera: { zoom: [1.04, 1.06] }, vurus: [{ t: 41.45, olcek: 1.2, sure: 0.08 }], sarsinti: [{ t: 41.45, sure: 0.1, guc: 8 }] }],
-  ["s22", 43.5, 47.25, "yakin:jake", { kamera: { zoom: [1.02, 1.05] }, vurus: [{ t: 46.18, olcek: 1.12, sure: 0.1 }], proplar: [{ tur: "ikon", ad: "araba", bas: 46.18, bitis: 47.25, x: 220, y: 880, boyut: 180 }] }],
-  ["s23", 47.25, 48.12, "portre:jake:endiseli", {
+  ["s19", 30.935, 33.401, "yakin:jake", { kamera: { zoom: [1.02, 1.07] }, proplar: [{ tur: "ilan", yer: "alt", bas: 32.355, bitis: 33.401, ikon: "sifonyer", baslik: "DRESSER", fiyat: "FREE", not: "must go today" }] }],
+  ["s19b", 33.401, 35.055, "yakin:jake", { kamera: { zoom: [1.16, 1.2] }, proplar: [{ tur: "ikon", ad: "boya", bas: 33.98, bitis: 35.055, x: 220, y: 880, boyut: 180 }] }],
+  ["s20", 35.055, 36.934, "yakin:mike", { kamera: { zoom: [1.04, 1.06] }, vurus: [{ t: 35.125, olcek: 1.2, sure: 0.08 }], sarsinti: [{ t: 35.125, sure: 0.1, guc: 8 }] }],
+  ["s22", 36.934, 39.485, "yakin:jake", { kamera: { zoom: [1.02, 1.05] }, vurus: [{ t: 38.84, olcek: 1.12, sure: 0.1 }], proplar: [{ tur: "ikon", ad: "araba", bas: 38.84, bitis: 39.485, x: 220, y: 880, boyut: 180 }] }],
+  ["s23", 39.485, 40.355, "portre:jake:endiseli", {
     kamera: { zoom: [1.0, 1.03] },
-    proplar: [{ tur: "ikonSira", bas: 47.25, bitis: 48.12, y: 400, ayrac: "↔", boyut: 200, ogeler: [{ ad: "araba", t: 47.349 }, { ad: "sifonyer", t: 47.699 }] }],
+    proplar: [{ tur: "ikonSira", bas: 39.485, bitis: 40.355, y: 400, ayrac: "↔", boyut: 200, ogeler: [{ ad: "araba", t: 39.584 }, { ad: "sifonyer", t: 39.934 }] }],
   }],
-  ["s24", 48.12, 51.15, "yakin:mike", {
+  ["s24", 40.355, 44.393, "yakin:mike", {
     kamera: { zoom: [1.03, 1.07] },
-    proplar: [{ tur: "ikonSira", bas: 48.12, bitis: 51.15, y: 880, boyut: 170, ogeler: [{ ad: "kamyon", t: 48.76 }, { ad: "boya", t: 49.14 }, { ad: "saat", t: 49.58 }] }],
+    proplar: [{ tur: "ikonSira", bas: 40.355, bitis: 44.393, y: 880, boyut: 170, ogeler: [{ ad: "kamyon", t: 40.98 }, { ad: "boya", t: 41.52 }, { ad: "saat", t: 42.02 }] }],
   }],
-  ["s25", 51.15, 53.48, "yakin:jake", { kamera: { zoom: [1.03, 1.11] } }], // "Slow. But safe." hafif push-in
+  ["s25", 44.393, 46.371, "yakin:jake", { kamera: { zoom: [1.03, 1.11] } }], // "Slow. But safe." hafif push-in
   // S6 — Mike kadraja eğilir; ilan GARAGE SALE BOX alçak kart (53,51), kapak titrer (54,7); "Forty bucks" punch; kartuş / çizik diskler
-  ["s26", 53.48, 57.62, "yakin:mike", {
-    kamera: { zoom: [1.0, 1.14] }, vurus: [{ t: 56.56, olcek: 1.06, sure: 0.1 }],
-    proplar: [{ tur: "ilan", yer: "alt", bas: 53.48, bitis: 56.3, ikon: "kutu", baslik: "GARAGE SALE BOX", fiyat: "$40", not: "old games", titre: 54.7 }],
+  ["s26", 46.371, 52.037, "yakin:mike", {
+    kamera: { zoom: [1.0, 1.14] }, vurus: [{ t: 49.44, olcek: 1.06, sure: 0.1 }],
+    proplar: [{ tur: "ilan", yer: "alt", bas: 46.371, bitis: 49.44, ikon: "kutu", baslik: "GARAGE SALE BOX", fiyat: "$40", not: "old games", titre: 48.28 }],
   }],
-  ["s27", 57.62, 62.0, "yakin:jake", {
-    kamera: { zoom: [1.02, 1.05] }, vurus: [{ t: 60.34, olcek: 1.08, sure: 0.1 }],
-    proplar: [{ tur: "ikonSira", bas: 57.62, bitis: 62.0, y: 860, ayrac: "/", boyut: 200, ogeler: [{ ad: "kartus", t: 58.26 }, { ad: "disk", t: 60.674 }] }],
+  ["s27", 52.037, 55.273, "yakin:jake", {
+    kamera: { zoom: [1.02, 1.05] }, vurus: [{ t: 54.22, olcek: 1.08, sure: 0.1 }],
+    proplar: [{ tur: "ikonSira", bas: 52.037, bitis: 55.273, y: 860, ayrac: "/", boyut: 200, ogeler: [{ ad: "kartus", t: 52.5 }, { ad: "disk", t: 54.471 }] }],
   }],
   // S7 — 1,0 sn sessiz bakışma, banknot ortada, yavaş push-in (gerilim 62,019)
-  ["s28", 62.0, 63.08, "genis", { kamera: { zoom: [1.04, 1.1] }, odak: { x: 540, y: 1100 }, proplar: [banknot(0)] }],
-  ["s29", 63.08, 65.88, "yakin:mike", { kamera: { zoom: [1.04, 1.12] } }],
-  ["s30", 65.88, 70.95, "yakin:jake", { kamera: { zoom: [1.01, 1.05] }, proplar: [banknot(0)] }],
-  ["s31", 70.95, 71.4, "portre:jake:dusunceli", { kamera: { zoom: [1.0, 1.02] } }], // iç çekiş (sessiz)
-  ["s32", 71.4, 74.45, "yakin:jake", { kamera: { zoom: [1.03, 1.07] }, proplar: [banknot(0)] }],
+  ["s28", 55.273, 56.353, "genis", { kamera: { zoom: [1.04, 1.1] }, odak: { x: 540, y: 1100 }, proplar: [banknot(0)] }],
+  ["s29", 56.353, 58.649, "yakin:mike", { kamera: { zoom: [1.04, 1.12] } }],
+  ["s30", 58.649, 62.828, "yakin:jake", { kamera: { zoom: [1.01, 1.05] }, proplar: [banknot(0)] }],
+  ["s31", 62.828, 63.269, "portre:jake:dusunceli", { kamera: { zoom: [1.0, 1.02] } }], // iç çekiş (sessiz)
+  ["s32", 63.269, 65.546, "yakin:jake", { kamera: { zoom: [1.03, 1.07] }, proplar: [banknot(0)] }],
   // S8 — Mike soruyu sorar (geniş, kamera ortaya); karar kartı "box?"tan sonraki boşlukta (76,0) girer (whoosh kelimeye binmez, Ö1);
   // 78,59 ikisi kameraya: "Ep. 2: YOUR call" + ding; karar kartı 81,0'da çıkar, takip kartı 81,0–83,2 (çakışmasız, kısa kuyruk)
-  ["s33", 74.45, 78.59, "genis", { kamera: { zoom: [1.02, 1.08] }, proplar: [banknot(0)] }],
-  ["s34", 78.59, 83.2, "ikiPortre", { kamera: { zoom: [1.0, 1.04] } }],
+  ["s33", 65.546, 69.136, "genis", { kamera: { zoom: [1.02, 1.08] }, proplar: [banknot(0)] }],
+  ["s34", 69.136, 74.55, "ikiPortre", { kamera: { zoom: [1.0, 1.04] } }],
 ];
 
 const IKI_PORTRE = { sol: { kim: "mike" as const, ifade: "heyecanli" }, sag: { kim: "jake" as const, ifade: "dusunceli" } };
@@ -99,9 +100,9 @@ const sahneler: Sahne[] = K.map(([id, bas, bitis, anahtar, ek]) => {
   const tahta: Prop[] = tur === "tahta"
     ? [{
         tur: "tahtaYazi", bas: 0, satirlar: [
-          { metin: "$100", x: 600, y: 300, boyut: 120, t: 7.206, sure: 0.5 },
-          { metin: "GOAL:", x: 604, y: 470, boyut: 56, t: 12.05, sure: 0.01, renk: "#b3261e" },
-          { metin: "$1,000,000", x: 575, y: 540, boyut: 62, t: 12.138, sure: 0.3, renk: "#b3261e", tik: [12.588, 12.708, 12.828, 12.948, 13.068, 13.188] },
+          { metin: "$100", x: 600, y: 300, boyut: 120, t: 5.221, sure: 0.5 },
+          { metin: "GOAL:", x: 604, y: 470, boyut: 56, t: 8.672, sure: 0.01, renk: "#b3261e" },
+          { metin: "$1,000,000", x: 575, y: 540, boyut: 62, t: 8.73, sure: 0.3, renk: "#b3261e", tik: [9.247, 9.407, 9.522, 9.637, 9.752, 9.866] },
         ],
       }]
     : [];
@@ -111,7 +112,7 @@ const sahneler: Sahne[] = K.map(([id, bas, bitis, anahtar, ek]) => {
 export const B001: Bolum = {
   id: "FBV-B001",
   no: 1,
-  sure: 83.2,
+  sure: 74.55,
   satirlar,
   agiz: agizJson as AgizDosyasi,
   agizYolu: "yama",
@@ -128,10 +129,10 @@ export const B001: Bolum = {
     soru: "Bike, dresser, or mystery box?",
     secenekler: ["ROAD BIKE $60", "FREE DRESSER", "MYSTERY BOX $40"],
     ikonlar: ["bisiklet", "sifonyer", "kutu"],
-    bas: 76.0,
+    bas: 67.333,
     sure: 5,
-    kapanis: 78.59,
+    kapanis: 69.136,
   },
-  abone: { bas: 81.0, ust: 1010, sure: 2.2, klik: 0.9 },
+  abone: { bas: 72.35, ust: 1010, sure: 2.2, klik: 0.9 },
   damga: { ust: 262, olcek: 0.55, sag: true }, // "EP. 1" çipi sağ üst köşe (BANK sol üstte), kancayı örtmez
 };
