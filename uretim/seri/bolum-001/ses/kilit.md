@@ -1,3 +1,5 @@
+> **GEÇERSİZ (2026-11-11):** Kokoro kilidi. Bölüm sesi Pocket TTS (JAKE george, MIKE marius) ile yeniden üretildi; yerini `kilit.json` aldı.
+
 # Bölüm 001 ses kilidi (ses-yonetmeni, 2026-11-10)
 İLERLEME: tamam · **KİLİTLİ** — çift A: JAKE `am_onyx` 0.95 · MIKE `am_fenrir` 1.05 (`tools/ses/diyalog.py` varsayılanı)
 | Kapı | Sonuç |

@@ -16,7 +16,7 @@ Görünüş ve kıyafet her bölümde sabittir (PDF s. 4). Mevsim değişikliği
 | Alan | Kural |
 |---|---|
 | Görünüş | Kısa koyu kahverengi saç, hafif sakal, kahverengi gözler. Lacivert kapüşonlu sweatshirt, bej pantolon. Cebinde kalem. |
-| Ses | Orta-pes, sakin, yavaş (~150 kelime/dk hedef). Cümle sonunda perde düşer, kuru ve düz anlatım. Bağırmaz. En büyük tepkisi tek kaş kaldırmak. Seçilen: Kokoro `am_onyx` 0.95 (ses-yonetmeni, `uretim/seri/sesler/rapor.md`). |
+| Ses | Orta-pes, sakin, yavaş (~150 kelime/dk hedef). Cümle sonunda perde düşer, kuru ve düz anlatım. Bağırmaz. En büyük tepkisi tek kaş kaldırmak. Seçilen (Niyazi kör dinleme, 2026-11-11): Kyutai Pocket TTS `george` (A5; VCTK p315, CC BY 4.0) — bölümde ~120 Hz, ölçülen tempo ~200 kpm (hedeften hızlı; tempo boşluk/metinle ayarlanır). Eski: Kokoro `am_onyx` 0.95. Rapor `uretim/seri/sesler/gercekci/rapor.md`. |
 | Mizah | Deadpan. Kısa, kelimesi kelimesine düzeltmeler ("Air is free." → "Tires aren't."). Abartıyı tek kelimeyle söndürür. Fiziksel komedi yapmaz, ona maruz kalır. |
 | Tekrar eden laflar | "Let me run the numbers." · "Slow. But safe." · "That's a no from the spreadsheet." · İmza cümlesi (PDF'ten): **"A price tag is just a number. Value is what somebody actually pays."** Bu cümle en fazla 10 bölümde bir kullanılır. |
 | Alışkanlık | Her parayı buzdolabındaki beyaz tahtaya ("THE BOARD") yazar. Düşünürken kalemi tahtaya vurur. Mike'a takılırken ona "Hype Man" der. |
@@ -27,7 +27,7 @@ Görünüş ve kıyafet her bölümde sabittir (PDF s. 4). Mevsim değişikliği
 | Alan | Kural |
 |---|---|
 | Görünüş | Dağınık kumral saç, mavi gözler. Kırmızı-siyah ekose gömlek, beyaz tişört, koyu kot. Telefonu hep elinde. |
-| Ses | Daha tiz, hızlı (~170 kelime/dk hedef), parlak. Cümle sonunda perde yükselir. Cümle ortasında güler. Seçilen: Kokoro `am_fenrir` 1.05 (ses-yonetmeni). Diyalog aracı `tools/ses/diyalog.py`: iki sesi üst üste okutmaz, ortak replik ikiye bölünür. |
+| Ses | Daha tiz, hızlı (~170 kelime/dk hedef), parlak. Cümle sonunda perde yükselir. Cümle ortasında güler. Seçilen (Niyazi kör dinleme, 2026-11-11): Kyutai Pocket TTS `marius` (A3; gönüllü bağış, CC0) — ~150 Hz, enerjik, ~196 kpm. Eski: Kokoro `am_fenrir` 1.05. Bölüm sesi tek komut: `tools/ses/bolum-ses.sh <bolum-dizini> --ses JAKE=pocket:george --ses MIKE=pocket:marius`. Atıf: "Voices: Kyutai Pocket TTS (CC BY 4.0); VCTK corpus (CC BY 4.0)". Diyalog aracı `tools/ses/diyalog.py`: iki sesi üst üste okutmaz, ortak replik ikiye bölünür. |
 | Mizah | Coşku, abartı, nesnelere isim koyma ("Meet Brenda." = bisiklet), fiziksel komedi (tezgâha vurur, kameraya eğilir). |
 | Tekrar eden laflar | **"Hear me out."** (her bölümde en fazla 1) · "Easy money." (arkasından iş hep zorlaşır) · "Trust the vibe." · İmza cümlesi (PDF'ten): **"Jake, we don't need more money. We need guts."** Bu cümle en fazla 10 bölümde bir kullanılır. |
 | Alışkanlık | Jake'e takılırken ona "Spreadsheet" der. Aldığı her eşyaya isim verir. Sonuçlanmış her satışta kameraya "ding" işareti yapar. |
