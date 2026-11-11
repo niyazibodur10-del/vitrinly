@@ -1,5 +1,27 @@
 # Hakem raporu (F9): Flip By Vote · Bölüm 001 "Every Dollar We Have"
-İLERLEME: tamam (tur 2 fark kontrolü). Sıradaki adım: yalnız Z3b, sonra kapak yenilenir, sonra hakem fark kontrolü yapar (1:1 kırpım + sha + ebur128 + siyah/donma).
+İLERLEME: tamam (tur 3). Bölüm F10 teslime hazır.
+**KARAR (tur 3): GEÇTİ.** Z3b kapandı: kapanış ikili portresinde (80,5 / 81,0 sn) ve kapakta 1:1 incelemede kopuk saç ucu, tırtık ya da kızıl saçak yok. Ses ve görüntü kapıları tur 3 dosyasında yeniden ölçüldü. Paket yeni sha ile tutarlı.
+Gerekçe:
+1. Tur 1'de bulunan bütün zorunlu maddeler ölçümle kapandı: Z1 altyazı 25/25 = metin; Z2 kırpma kapağı; Z3 ve Z3b saç kenarı; Z4 BANK–yüz kesişmesi 0.
+2. Kapılar: 83,2 sn · 1080x1920 · 30 fps · −14,0 LUFS / TP −2,5 · siyah/donma 0. Senkron 0 ve +1/+1 kare, SFX 21/21 ±2 kare, final miks WER'i 72–79 sn penceresinde doğru. Karar kartında harf ve gün sözü yok. Abone/takip kartı 1 kez, sonda. Ses ve zaman tur 2 ile aynı; tur 3 yalnız portre PNG'lerini değiştirdi (LUFS/TP birebir).
+3. Paket: dry-run 0 hata. Kapak 81,0 sn'den yeniden üretildi, kenarı temiz, 108x192'de okunuyor. sha 6d01844629ec YAYIN.md ve platform metinleriyle tutarlı.
+Kanca 6/10 (izleyici gözüyle, tur 2 ile aynı). Kalan riskler: R4 göz kapağı ovali, R5 kart girişi, R6 aşağıda.
+
+## T3. Tur 3 fark kontrolü (girdi sha256 **6d01844629ec**)
+| Kapı | Benim ölçümüm | Durum |
+|---|---|---|
+| Format / süre | ffprobe → 1080x1920, 30/1, 2496 kare = 83,20 sn; ses 83,20 | GEÇTİ |
+| Ses | `ebur128=peak=true` → I −14,0 LUFS, TP −2,5 dBFS (`tur3/ebur128.txt`) | GEÇTİ |
+| Siyah / donmuş | `blackdetect d=0.1 pix_th=0.10` + `freezedetect -60dB d=0.5` → 0 / 0 | GEÇTİ |
+| Z3b kapanış kenarı | 80,5 ve 81,0 sn, 1:1 600x700 kırpım (`tur3/kenar-80.5-81.0.png`): Mike'ın sağ saç/kulak kenarı ve Jake'in sol saçı düzgün; kopuk uç 0, kızıl saçak 0 | GEÇTİ |
+| Kapak kenarı + okunurluk | `kapak-1080x1920.jpg` 1:1 (`tur3/kapak-kontrol.png`): kenar temiz; 108x192 ve 4:5'te "$100 → $1,000,000" okunuyor; BANK yüzle kesişmiyor | GEÇTİ |
+| Diğer portreler (gerileme) | 5 portre çekimi (`bolum-001.ts`: 16,75 / 24,02 / 35,3 / 47,25 / 70,95), `tur3/portreler.png` + 1:1 `tur3/mike-portre-sac-1e1.png`: kopuk parça yok, kızıl saçak yok | GEÇTİ (R6) |
+| Paket | `yukle.py --dry-run` → 0 hata, 1 uyarı; sha 6d01844629ec YAYIN.md ve platform-metinleri.md'de; gün sözü 0 | GEÇTİ |
+
+- **R6:** Mike'ın uç yakın portrelerinde (24,02–24,5 "gülen"; 35,3–35,7 "endişeli"; 0,4–0,5 sn, büyütülmüş ve yumuşak) saç ucunun sol üstünde ~40 px'lik açık bir leke var. Kapı değil: kısa süreli ve telefonda ~15 pt [T]. Sonraki bölümde gorsel-varlik-sanatcisi aynı temizliği uç yakın ölçekte de doğrulamalı.
+
+---
+# Tur 2 (arşiv, sha 23839dd0b183)
 **KARAR (tur 2): KALDI, tek madde (Z3b).** Kapanış ikili portresinde (76,0–83,2 sn) ve kapakta Mike'ın sağ saç/kulak kenarı tırtıklı; kopuk saç parçaları ve kızıl lekeler görünüyor. Jake'in sol saç kenarında da düzensiz koyu saçak var. Hata varlık dosyasından geliyor (`ifade/mike-heyecanli-temiz.png`, yeşil zeminde de görünüyor). Z1, Z2, Z4 ve Ö1–Ö4 kapandı. Diğer bütün kapılar yeniden ölçüldü ve geçti.
 Gerekçe:
 1. Z3'ün kabul testi "diğer Mike portreleri (heyecanlı, kapanış) de aynı kontrolden geçer" diyordu. 1:1 kırpımda kapanış portresi geçmiyor (`hakem-log/tur2/kapanis-sac-81.png`, `kapak-sac-1e1.png`, `mike-heyecanli-yesil.jpg`). Bu kare videonun son 7 sn'si ve aynı zamanda kapak.
