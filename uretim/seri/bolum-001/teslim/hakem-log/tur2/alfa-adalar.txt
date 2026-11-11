@@ -1,0 +1,6 @@
+mike-heyecanli-temiz.png: alfa adası 1 (ana dışı 0; sonraki en büyük: [] px)
+mike-heyecanli.png: alfa adası 1 (ana dışı 0; sonraki en büyük: [] px)
+jake-dusunceli.png: alfa adası 1 (ana dışı 0; sonraki en büyük: [] px)
+mike-saskin-temiz.png: alfa adası 1 (ana dışı 0; sonraki en büyük: [] px)
+mike-gulen-temiz.png: alfa adası 1 (ana dışı 0; sonraki en büyük: [] px)
+mike-endiseli-temiz.png: alfa adası 1 (ana dışı 0; sonraki en büyük: [] px)

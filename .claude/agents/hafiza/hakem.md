@@ -16,3 +16,4 @@
 - 2026-11-11 (FBV B001, KALDI): Altyazı **yazımını** satır bazında betikle denetle (ekran kelimeleri = `metin.split()`). Şablon, kelime sayısı tutmayınca ham Whisper'a düşüyordu ("To a", "truck by"). Ajanların 20 karelik denetimi yalnız güvenli alana bakıyor.
 - 2026-11-11: Rastgele karelere ek olarak 1:1 yüz kırpımları aç: göz kırpma anını (4 kare), tam ekran portrelerin saç kenarını ve son karede rozet/yüz kesişimini. Küçük kontaktta bu üçü görünmüyor.
 - 2026-11-11: Kapanış sorusunu 7 sn'lik pencerede final ile kuru ses karşılaştırarak dinlet. WER geçse bile SFX anahtar kelimeyi bozabilir ("Bike" → "Like").
+- 2026-11-11 (B001 tur 2): Kenar kusuru için PNG'yi yeşil zemine bindirip incele; alfa ada sayısı 1 çıksa bile tırtık ve renk bulaşığı kalabilir. Kabul testinde "diğer kullanımlar"ı (kapanış/kapak) adıyla yaz, ajan yalnız adı geçen kareyi düzeltiyor. Tesseract renkli/konturlu altyazıda işe yaramıyor, kare aç.

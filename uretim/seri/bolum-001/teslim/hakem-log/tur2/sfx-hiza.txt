@@ -1,0 +1,4 @@
+earshot ±2 kare: 18/21; kontrol: [(12.6, -87.0), (60.667, 70.3), (76.067, -70.7)]
+stem onset 12.6: 12.5 -> -3.0 kare
+stem onset 60.667: 60.672 -> 0.15 kare
+stem onset 76.067: 75.967 -> -3.0 kare

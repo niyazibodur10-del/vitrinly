@@ -1,5 +1,41 @@
 # Hakem raporu (F9): Flip By Vote · Bölüm 001 "Every Dollar We Have"
-İLERLEME: tamam (tur 1). Sıradaki adım: Z1–Z4 düzeltmeleri, yeniden render, ardından hakemin fark kontrolü.
+İLERLEME: tamam (tur 2 fark kontrolü). Sıradaki adım: yalnız Z3b, sonra kapak yenilenir, sonra hakem fark kontrolü yapar (1:1 kırpım + sha + ebur128 + siyah/donma).
+**KARAR (tur 2): KALDI, tek madde (Z3b).** Kapanış ikili portresinde (76,0–83,2 sn) ve kapakta Mike'ın sağ saç/kulak kenarı tırtıklı; kopuk saç parçaları ve kızıl lekeler görünüyor. Jake'in sol saç kenarında da düzensiz koyu saçak var. Hata varlık dosyasından geliyor (`ifade/mike-heyecanli-temiz.png`, yeşil zeminde de görünüyor). Z1, Z2, Z4 ve Ö1–Ö4 kapandı. Diğer bütün kapılar yeniden ölçüldü ve geçti.
+Gerekçe:
+1. Z3'ün kabul testi "diğer Mike portreleri (heyecanlı, kapanış) de aynı kontrolden geçer" diyordu. 1:1 kırpımda kapanış portresi geçmiyor (`hakem-log/tur2/kapanis-sac-81.png`, `kapak-sac-1e1.png`, `mike-heyecanli-yesil.jpg`). Bu kare videonun son 7 sn'si ve aynı zamanda kapak.
+2. Düzeltme ucuz ve yerel: yalnız 2 PNG'nin kenarı + 3,3 dk render + kapak. Ses, altyazı ve zaman değişmez.
+3. Seçenekler: (a) ŞARTLI ONAY, çünkü telefonda ~1/2,8 ölçekte kusur ince görünüyor; (b) KALDI. Seçimim (b): kusur, en çok bakılan durağan karede (kapanış + kapak) duruyor ve kapı ölçümle kalıyor. (a)'nın riski, 100 bölümlük dizinin ilk kapağında "yapıştırma" izlenimi bırakmak.
+Kanca (tur 2): **6/10** (tur 1'de 5). Tempo 24–58 sn: kabul edilebilir (§T2).
+Paket v2: **kontrol edildi, geçti**. Kapak Z3b'den sonra aynı kareden (81,0) yeniden üretilecek.
+
+## T2. Tur 2 fark kontrolü (girdi sha256 **23839dd0b183**; animasyon raporundakiyle aynı)
+| Kapı | Benim ölçümüm (komut → sonuç) | Durum |
+|---|---|---|
+| Format / süre | ffprobe → h264 1080x1920, 30/1, 2496 kare = 83,20 sn; aac 83,20 sn | GEÇTİ |
+| Ses | `ebur128=peak=true` → I **−14,0** LUFS, TP **−2,5** dBFS, LRA 2,6 | GEÇTİ |
+| Siyah / donmuş | `blackdetect d=0.1 pix_th=0.10` + `freezedetect -60dB d=0.5` → 0 / 0 | GEÇTİ |
+| Z1 altyazı | `animasyon/altyazi-z1-testi.ts` (esbuild+node) → 25/25 ekran = metin. `zaman.ts` LCS kodunu okudum: ekrana yalnız `metin` kelimesi yazılıyor. Kareler (`tur2/z1-kareler.png`): 35,85 "Two." · 38,6 "Free." · 48,95 "buy" · 49,95 "Slow." | GEÇTİ |
+| Z2 göz kırpma | Kırpma takvimini koddan çıkardım (`kirpmaTakvimi`), 5 kırpmada 2'şer kare (`tur2/z2-kirpma.png`), 1:1 4 kare (`tur2/z2-goz-1e1.png`): düz çizgi 0, tek renk disk 0, kirpik kavisli; Mike yakın çekim ve kancada kırpma kapalı | GEÇTİ (R4) |
+| Z3 şaşkın portre | 41,6 / 42,0: konuşan Mike tabanı + punch-in; ağız "Free?" ile oynuyor | GEÇTİ |
+| **Z3b kapanış portreleri** | 1:1 kırpım 80,5 / 81,0 + kapak + varlık yeşil zeminde: Mike sağ saç/kulak kenarı tırtıklı, kopuk saç ucu, kızıl saçak; Jake sol saçında koyu saçak. Alfa adası sayısı 1 (`tur2/alfa-adalar.txt`): ada yok, kenar tırtıklı ve renk bulaşığı var | **KALDI** |
+| Z4 BANK–yüz | 80,0 / 82,0 / 81,0 ve kapak: rozet Mike'ın saç üstünde, kaşla arasında boşluk var, yüzle kesişme 0 | GEÇTİ |
+| Ö1 kapanış sorusu | 72–79 sn final Whisper → "We let them decide. Bike dresser or mystery box? Tell us in the comments." (`tur2/whisper-72-79.txt`) | GEÇTİ |
+| Ağız senkronu | piksel 0 kare (r 0,621, 1027 kare) · Rhubarb +1/+1 (`tur2/senkron.txt`) | GEÇTİ |
+| SFX ±2 (earshot, 2,3–32,3 + 50,0–80,0) | 18/21. 3 aykırıyı stem'de açtım: tik 12,585 (−0,4 kare, earshot tahta sesine eşledi), disk +0,15, karar-kartı whoosh apex 76,03–76,05 (−0,5…−1) → **21/21** (`tur2/sfx-hiza.txt`) | GEÇTİ |
+| Abone/takip kartı | 1 kez, 81,0–83,2. Klik stem onset 81,900; FOLLOW→FOLLOWING değişimi 81,88 (0 kare) (`tur2/abone-klik.png`) | GEÇTİ |
+| 30 rastgele kare (seed 91131) | `tur2/rastgele30/kontak.jpg`: yer tutucu 0, BANK $100 30/30, altyazı güvenli alanda 30/30, yeni dikiş 0 (kapanış kenarı yalnız 1:1'de görünüyor) | GEÇTİ |
+| Paket v2 | dry-run "0 hata, 1 uyarı"; made for kids=false, sentetik=true; AI satırı 3/3; gün sözü 0; kapak 108x192'de "$100 → $1,000,000" okunuyor (`tur2/kapak-kucuk.png`); sha/süre 23839dd0b183 / 83,2 | GEÇTİ (kapak Z3b'ye bağlı) |
+
+**Z3b düzeltmesi.** Sahip: gorsel-varlik-sanatcisi (`mike-heyecanli-temiz.png`, `jake-dusunceli.png`); ardından animasyon-yonetmeni render alır, youtube-paketleyici kapağı 81,0 sn'den yeniden üretir. Yöntem: alfa üzerinde açma/kapama (3–5 px) ile tırtık ve kopuk uç temizliği, 2–3 px feather, kenardaki kızıl/koyu bulaşık piksellerin saç tonuna çekilmesi (`sac-hale-temizle.py` aynı mantığı yalnız haleye uyguluyordu, tırtığa uygulamıyordu).
+**Kabul testi:** yeşil zemin kompoziti + 80,5 / 81,0 sn 1:1 kırpım + kapak 1:1. Kenarda kopuk saç ucu, tırtık ve kızıl saçak olmayacak.
+
+**T2 izleyici gözüyle.**
+- **Kanca 6/10.** Kare 0'da büyük banknot havada ve kamera hareketli; çarpma 0,1 sn'de net okunuyor. Marka çipi köşeye alınmış. Eksisi: ilk 0,5 sn'de kadraj gövde üstünde, yüz yok, yani ilk karede duygu yok. Tavsiyem: kadrajın en az bir yüz içermesi; sonraki bölüm için not, kapı değil.
+- **Tempo 24–58 sn** (`tur2/tempo-24-58.jpg`, 1 fps): her 1–3 sn'de kesme, punch-in ya da ikon var; ilanlar yüzü kapatmıyor. Tur 1'deki "menü" hissi azaldı.
+- 37,4 sn'de şifonyer kartı uçarak girerken 2 kare boyunca altyazının üstünden geçiyor (`tur2/kart-giris-30fps.jpg`). Altyazı üstte kaldığı için okunuyor (R5).
+
+---
+# Tur 1 (arşiv, sha 8588a182aeba)
 **KARAR: KALDI.** 4 zorunlu düzeltme var: Z1 altyazı yazımı, Z2 göz kırpma kapağı, Z3 Mike portresinin saç kesiği, Z4 kapanışta BANK'ın yüze binmesi. Hepsi tek render turunda (≈3,3 dk) kapanır. Ses, süre, format, senkron, SFX, WER, karar kartı, abone kartı ve paket geçti.
 Gerekçe:
 1. **Altyazı yazım kapısı kaldı** (`docs/kalite-kapilari.md`: "yazım hatası yok"). 25 satırın 2'sinde ekrandaki yazı ham Whisper çıktısı: "**To** a solid wood dresser." (doğrusu "Two. … Free." — "Free." hiç görünmüyor) ve "So we rent a truck **by** paint and wait." (doğrusu "buy"; "Slow." görünmüyor). Kök neden `video/src/seri/zaman.ts` → `ekranKelimeleri`: kelime sayısı tutmayınca kilitli metne değil Whisper token'ına düşüyor.
@@ -55,6 +91,8 @@ Zayıf anlar:
 - R1: Z1'in kök nedeni şablonda. Düzeltilmezse her bölümde Whisper'ın eşsesli hatası (two/to, buy/by) ekrana çıkar. Bu şablon riskidir, tek bölüm sorunu değil.
 - R2: Mike'ın önden portreleri tabandan daha çizgi filmsi. Günlük dizide izleyici bunu "farklı çizim" diye fark edebilir [T]. 5 bölümlük denetimde ölçülmeli (`karakter/rapor.md` kor. ölçümüyle).
 - R3: Takip kartında "FOLLOW" yazıyor. YouTube'daki karşılığı "Subscribe". Aynı video üç platformda kullanıldığı için kabul edilebilir, ama karar koordinatörde.
+- R4 (tur 2): Göz kapağı 1:1'de hâlâ hafif bir oval olarak seçiliyor; sağ gözde kapağın üstünden orijinal kirpik ucu taşıyor. Telefon ölçeğinde 4 karelik kırpmada fark edilmez [T]. Kapı değil, şablon iyileştirmesi.
+- R5 (tur 2): İlan kartları uçarak girerken 2 kare altyazının üstünden geçiyor. Altyazı üstte kaldığı için okunuyor. Kapı değil.
 
 ## 5. Yeniden ölçüm planı (Z1–Z4 sonrası, fark kontrolü)
 sha256 → ffprobe + ebur128 + black/freeze (tam) → Z1 betiği 25/25 → Z2/Z3/Z4 kontakt kareleri → 72–79 sn pencere Whisper (Ö1) → `cmp` ile değişmeyen ses yolunda WER'i yeniden koşmadan geç. Ham çıktılar: `teslim/hakem-log/`.
