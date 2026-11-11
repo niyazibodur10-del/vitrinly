@@ -1,6 +1,6 @@
 # Bölüm 001 · platform metinleri (betik çıktısı: paket/paket-uret.py — elle düzenleme yok)
 
-Video: `bolum-001.mp4` · 83.2 sn · 1080x1920 · sha256 6d01844629ec
+Video: `bolum-001.mp4` · 74.58 sn · 1080x1920 · sha256 171b2487fb09
 
 ## YouTube Shorts
 Başlık (48 krk):
@@ -42,7 +42,7 @@ Voices: Kyutai Pocket TTS (CC BY 4.0); VCTK corpus (CC BY 4.0).
 
 #flipbyvote #animatedseries #sidehustle #flipping #youdecide
 ```
-Kapak: `kapak-1080x1920.jpg` yükle (kaynak kare 81.00 sn = kare 2430 = 1:21; uygulamada kare seçilirse 1:21); profil ızgarası kırpımı: `kapak-1080x1350.jpg`.
+Kapak: `kapak-1080x1920.jpg` yükle (kaynak kare 72.33 sn = kare 2170 = 1:12; uygulamada kare seçilirse 1:12); profil ızgarası kırpımı: `kapak-1080x1350.jpg`.
 AI etiketi ("AI info"): AÇIK (politika §3).
 
 Sabit yorum (ilk yorum olarak yazılır ve sabitlenir):
@@ -64,4 +64,4 @@ Voices: Kyutai Pocket TTS (CC BY 4.0); VCTK corpus (CC BY 4.0).
 
 #flipbyvote #animation #sidehustle #reselling #youdecide
 ```
-Kapak: `kapak-1080x1920.jpg` (veya kare 1:21). AI-generated etiketi: AÇIK. Otomatik yorum yanıtı YOK (politika §5).
+Kapak: `kapak-1080x1920.jpg` (veya kare 1:12). AI-generated etiketi: AÇIK. Otomatik yorum yanıtı YOK (politika §5).

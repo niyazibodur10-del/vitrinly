@@ -44,5 +44,5 @@
     "niyazi_onayi": true,
     "tarih": "2026-11-11"
   },
-  "_not": "yayin_zamani 17:00Z = 20:00 TSİ (koordinatör, Niyazi onayı 2026-11-11). sentetik_medya=true: politika-format.md §3 kararı (altered/synthetic = Yes). cocuklara_ozel=false zorunlu (§0 koşul 2). Video 83.2 sn, sha256 6d01844629ec. Kaynak: paket/paket-uret.py; elle düzenleme yok."
+  "_not": "yayin_zamani 17:00Z = 20:00 TSİ (koordinatör, Niyazi onayı 2026-11-11). sentetik_medya=true: politika-format.md §3 kararı (altered/synthetic = Yes). cocuklara_ozel=false zorunlu (§0 koşul 2). Video 74.58 sn, sha256 171b2487fb09. Kaynak: paket/paket-uret.py; elle düzenleme yok."
 }

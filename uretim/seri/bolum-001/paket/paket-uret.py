@@ -31,8 +31,8 @@ IG_ACIKLAMA = "\n".join([
     "Bike, dresser, or mystery box? You pick our first flip.",
     "Jake & Mike have $100 and one goal: $1,000,000. Every episode, the comments decide the next move.",
     SORU, "", ANONIM, "", POLITIKA, SES_ATIF, "", "#flipbyvote #animatedseries #sidehustle #flipping #youdecide"])
-IG_KAPAK_SN = 81.0  # kare 2430 (koordinatör kapak kararı); yüklenen kapak bu kareden; uygulamada kare seçilirse 1:21
-VIDEO_SHA12, VIDEO_SURE = "6d01844629ec", 83.2  # tur 3 render 2026-11-11 — Kyutai sesli render gelince güncellenecek
+IG_KAPAK_SN = 72.333  # kare 2170 (animasyon-yonetmeni önerisi, Kyutai render); yüklenen kapak bu kareden; uygulamada kare seçilirse 1:12
+VIDEO_SHA12, VIDEO_SURE = "171b2487fb09", 74.58  # Kyutai sesli render 2026-11-11
 YAYIN_ZAMANI = "2026-11-11T17:00:00Z"  # koordinatör yazdı (commit 92d4f4a, YouTube 0wzaf2391nU planı)
 ONAY = {"niyazi_onayi": True, "tarih": "2026-11-11"}  # koordinatör yazdı (92d4f4a); paketleyici onay vermez, yalnız korur
 IG_SABIT_YORUM = PIN_YORUM
@@ -133,11 +133,11 @@ def main():
           f"Etiketler: `{', '.join(YT_ETIKET)}` · Kategori 24 Entertainment · made for kids: No · altered/synthetic: Yes · dil en",
           f"\nSabit yorum (yayından sonra; Studio/uygulamada sabitlenir):\n```\n{PIN_YORUM}\n```",
           f"\n## Instagram Reels\nAçıklama ({len(IG_ACIKLAMA)}/2200 krk):\n```\n{IG_ACIKLAMA}\n```",
-          f"Kapak: `kapak-1080x1920.jpg` yükle (kaynak kare {IG_KAPAK_SN:.2f} sn = kare {round(IG_KAPAK_SN*30)} = 1:21; uygulamada kare seçilirse 1:21); profil ızgarası kırpımı: `kapak-1080x1350.jpg`.",
+          f"Kapak: `kapak-1080x1920.jpg` yükle (kaynak kare {IG_KAPAK_SN:.2f} sn = kare {round(IG_KAPAK_SN*30)} = 1:12; uygulamada kare seçilirse 1:12); profil ızgarası kırpımı: `kapak-1080x1350.jpg`.",
           "AI etiketi (\"AI info\"): AÇIK (politika §3).",
           f"\nSabit yorum (ilk yorum olarak yazılır ve sabitlenir):\n```\n{IG_SABIT_YORUM}\n```",
           f"\n## TikTok\nAçıklama ({len(TT_ACIKLAMA)} krk):\n```\n{TT_ACIKLAMA}\n```",
-          "Kapak: `kapak-1080x1920.jpg` (veya kare 1:21). AI-generated etiketi: AÇIK. Otomatik yorum yanıtı YOK (politika §5).", ""]
+          "Kapak: `kapak-1080x1920.jpg` (veya kare 1:12). AI-generated etiketi: AÇIK. Otomatik yorum yanıtı YOK (politika §5).", ""]
     open(os.path.join(TESLIM, "platform-metinleri.md"), "w", encoding="utf-8").write("\n".join(md))
     for x in h: print("HATA:", x)
     print(f"kapı: {len(h)} hata · YT başlık {len(YT_BASLIK)} · kanal açıklama {len(KANAL_ACIKLAMA)} · ilk 150: {KANAL_ACIKLAMA[:150]!r}")
