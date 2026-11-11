@@ -23,6 +23,8 @@ Seviye: her konuşmacının etkin (>-40 dBFS) RMS'i ortak hedefe eşitlenir (Kok
   tüm diyalog tts-son.sh'tan geçer (highpass 70, de-ess, hafif kompresör, sınırlayıcı, 2 geçişli loudnorm). Gürültü
   giderme (temizle.sh/RNNoise) TTS'te KULLANILMAZ — temiz kaynakta artefakt yapar (hafıza 2026-10-26).
   Konuşmacı izleri son işlenmiş dosyadan zaman maskesiyle kesilir (10 ms rampa) → seviye ve zaman ana dosyayla aynı.
+Motorlar (2026-11-11): --ses JAKE=pocket:michael gibi "motor:ses[:hiz]" (tools/ses/gercekci_tts.py); gerçekçi motorlar için
+  ~/.finansal-arac/gercekci-venv/bin/python ile çalıştır (kokoro da orada). Tam bölüm hattı: tools/ses/bolum-ses.sh.
 Yazan: ses-yonetmeni 2026-11-10 (seçim raporu uretim/seri/sesler/rapor.md).
 """
 import argparse, json, os, re, subprocess, sys, tempfile
@@ -71,10 +73,35 @@ def etkin_rms(y):
     return float(np.sqrt(np.mean(r ** 2))) if len(r) else 1e-6
 
 
+def _olc(yol, ek=""):
+    o = subprocess.run(["ffmpeg", "-hide_banner", "-nostats", "-i", yol, "-af", ek + "loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json",
+                        "-f", "null", "-"], capture_output=True, text=True).stderr
+    return json.loads(o[o.rindex("{"):o.rindex("}") + 1])
+
+
+def lufs_duzelt(yol):
+    """tts-son.sh tepe sınırına takılıp −14,5'in altında kalırsa (Pocket: tepe/ortalama oranı yüksek; 2026-11-11 Bölüm 1
+    −14,6 LUFS) kazanç + 4x aşırı örneklemeli sınırlayıcı (true peak ≤ −1,5) uygular; I hedefe gelene kadar sınırı indirir."""
+    I = float(_olc(yol)["input_i"])
+    if I >= -14.5:
+        return
+    kaynak = yol + ".kaynak.wav"; os.replace(yol, kaynak)
+    for ek_kazanc in (0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0):
+        g = -14.0 - I + ek_kazanc
+        af = (f"volume={g:.2f}dB,aresample=192000,alimiter=limit=-2.2dB:attack=0.5:release=50:level=false,"
+              "aresample=48000")
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", kaynak, "-af", af, "-ar", "48000", "-ac", "1",
+                        "-c:a", "pcm_s24le", yol], check=True)
+        j = _olc(yol)
+        if float(j["input_i"]) >= -14.3 and float(j["input_tp"]) <= -1.0:
+            break
+    os.remove(kaynak)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("metin"); ap.add_argument("cikis")
-    ap.add_argument("--ses", action="append", default=[], help="KONUSMACI=ses:hiz (ses karışımı: am_a+am_b)")
+    ap.add_argument("--ses", action="append", default=[], help="KONUSMACI=motor:ses[:hiz] (pocket:michael, supertonic:M4, am_onyx:0.95)")
     ap.add_argument("--bosluk", action="append", default=[], help="KONUSMACI=sn (bu konuşmacı yanıt verirken)")
     ap.add_argument("--ham", action="store_true")
     a = ap.parse_args()
@@ -84,21 +111,23 @@ def main():
     satirlar = oku(a.metin)
     eksik = {s["konusmaci"] for s in satirlar} - set(sesler)
     if eksik:
-        sys.exit(f"ses tanımı yok: {sorted(eksik)} (--ses AD=am_x:1.0)")
-    ayar = {k: (v.split(":")[0].replace("+", ","), float(v.split(":")[1]) if ":" in v else 1.0) for k, v in sesler.items()}
-
+        sys.exit(f"ses tanımı yok: {sorted(eksik)} (--ses AD=pocket:michael)")
     import torch
     torch.set_num_threads(os.cpu_count() or 4)
-    from kokoro import KPipeline
-    pipe = KPipeline(lang_code="a", repo_id="hexgrad/Kokoro-82M")
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from gercekci_tts import Motor  # motor:ses:hiz (pocket/supertonic/kokoro); "am_x:hiz" = kokoro
+    motor = {k: Motor(v) for k, v in sesler.items() if k in {s["konusmaci"] for s in satirlar}}
 
-    # 1) her satırı cümle cümle üret
+    # 1) satırları üret: gerçekçi motorlar satırı tek parça (doğal prozodi), Kokoro cümle cümle + duraklama
     for s in satirlar:
-        ses, hiz = ayar[s["konusmaci"]]
+        mo = motor[s["konusmaci"]]
+        metin = duz(s["metin"]) if mo.motor != "kokoro" else s["metin"]  # misaki IPA işareti yalnız Kokoro'da geçerli
+        if mo.satir_butun:
+            s["y"] = kirp(mo.uret(metin))
+            continue
         parca = []
-        for c in cumleler(s["metin"]):
-            y = np.concatenate([x.numpy() for _, _, x in pipe(c, voice=ses, speed=hiz, split_pattern=None)])
-            parca += [kirp(y.astype(np.float32)), np.zeros(int((CUMLE_VURGU if c[-1] in "!?" else CUMLE) * SR), np.float32)]
+        for c in cumleler(metin):
+            parca += [kirp(mo.uret(c)), np.zeros(int((CUMLE_VURGU if c[-1] in "!?" else CUMLE) * SR), np.float32)]
         s["y"] = np.concatenate(parca[:-1])
 
     # 2) konuşmacı seviyesi eşitle (etkin RMS, ortak hedef = konuşmacı ortalamalarının geometrik ortası)
@@ -128,6 +157,7 @@ def main():
         hy = f"{taban}-ham.wav" if a.ham else os.path.join(tmp, "ham.wav")
         sf.write(hy, ham, SR, subtype="FLOAT")
         subprocess.run(["bash", os.path.join(araclar, "tts-son.sh"), hy, a.cikis], check=True)
+    lufs_duzelt(a.cikis)
     son, sr2 = sf.read(a.cikis, dtype="float32")
     rampa = int(0.010 * sr2)
     for k in sorted(rms):

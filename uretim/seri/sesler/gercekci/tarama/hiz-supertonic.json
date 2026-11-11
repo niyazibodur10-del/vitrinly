@@ -1,0 +1,32 @@
+{
+ "supertonic:M1": {
+  "yukleme": 1.0,
+  "uretim": 2.9,
+  "ses": 13.8,
+  "rtf": 0.212
+ },
+ "supertonic:M2": {
+  "yukleme": 0.0,
+  "uretim": 1.2,
+  "ses": 13.6,
+  "rtf": 0.091
+ },
+ "supertonic:M3": {
+  "yukleme": 0.0,
+  "uretim": 1.2,
+  "ses": 12.6,
+  "rtf": 0.092
+ },
+ "supertonic:M4": {
+  "yukleme": 0.0,
+  "uretim": 1.2,
+  "ses": 14.2,
+  "rtf": 0.081
+ },
+ "supertonic:M5": {
+  "yukleme": 0.0,
+  "uretim": 1.2,
+  "ses": 15.6,
+  "rtf": 0.075
+ }
+}

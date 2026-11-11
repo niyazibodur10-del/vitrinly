@@ -1,0 +1,56 @@
+{
+ "A1": {
+  "wer": 0.0,
+  "guven": 0.92,
+  "f0": 95,
+  "f0_std_st": 1.88,
+  "kpm": 180,
+  "bosluk": 2,
+  "whisper": "Every dollar we have a hundred bucks Jake. This is the start of something big Or the start of a very short story hold on a price is just a number until someone pays it"
+ },
+ "A2": {
+  "wer": 0.0,
+  "guven": 0.955,
+  "f0": 98,
+  "f0_std_st": 4.59,
+  "kpm": 166,
+  "bosluk": 6,
+  "whisper": "Every dollar we have. A hundred bucks. Jake, this is the start of something big. Or the start of a very short story. Hold on. A price is just a number until someone pays it."
+ },
+ "A3": {
+  "wer": 0.029,
+  "guven": 0.941,
+  "f0": 150,
+  "f0_std_st": 3.81,
+  "kpm": 196,
+  "bosluk": 5,
+  "whisper": "Every dollar we have, a hundred bucks. Jake, this is the start of something big. Or the start of a very short story. Hold on. The price is just a number until someone pays it."
+ },
+ "A4": {
+  "wer": 0.0,
+  "guven": 0.972,
+  "f0": 82,
+  "f0_std_st": 0.48,
+  "kpm": 137,
+  "bosluk": 6,
+  "whisper": "Every dollar we have, a hundred bucks. Jake, this is the start of something big. Or the start of a very short story. Hold on. A price is just a number until someone pays it."
+ },
+ "A5": {
+  "wer": 0.0,
+  "guven": 0.961,
+  "f0": 115,
+  "f0_std_st": 2.39,
+  "kpm": 203,
+  "bosluk": 6,
+  "whisper": "Every dollar we have. A hundred bucks. Jake, this is the start of something big. Or the start of a very short story. Hold on. A price is just a number until someone pays it."
+ },
+ "A6": {
+  "wer": 0.0,
+  "guven": 0.965,
+  "f0": 122,
+  "f0_std_st": 5.59,
+  "kpm": 148,
+  "bosluk": 6,
+  "whisper": "Every dollar we have, a hundred bucks. Jake, this is the start of something big. Or the start of a very short story. Hold on, a price is just a number until someone pays it."
+ }
+}
