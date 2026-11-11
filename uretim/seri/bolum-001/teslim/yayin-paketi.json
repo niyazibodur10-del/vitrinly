@@ -33,7 +33,7 @@
   },
   "durum": {
     "gizlilik": "private",
-    "yayin_zamani": null,
+    "yayin_zamani": "2026-11-11T17:00:00Z",
     "cocuklara_ozel": false,
     "sentetik_medya": true,
     "lisans": "youtube",
@@ -41,8 +41,8 @@
   },
   "oynatma_listesi_id": null,
   "onay": {
-    "niyazi_onayi": false,
-    "tarih": null
+    "niyazi_onayi": true,
+    "tarih": "2026-11-11"
   },
   "_not": "yayin_zamani YER TUTUCU: Niyazi onayında belirlenir. Öneri 12:00 ET = 17:00Z = 20:00 TSİ (EST −05:00, 2026-11-01 sonrası). sentetik_medya=true: politika-format.md §3 kararı (altered/synthetic = Yes). cocuklara_ozel=false zorunlu (§0 koşul 2). Video 83.2 sn, sha256 6d01844629ec. Kaynak: paket/paket-uret.py; elle düzenleme yok."
 }
