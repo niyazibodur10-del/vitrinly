@@ -1,4 +1,7 @@
 # Bölüm 001 animasyon + senkron raporu (animasyon-yonetmeni, 2026-11-11)
+**TUR 3 (Z3b varlıkları, kod değişmedi):** `teslim/bolum-001.mp4` sha256 **6d01844629ec** · 83,20 sn · 1080x1920 30 fps · I −14,0 LUFS / TP −2,5 · blackdetect + freezedetect(d=0.5) 0/0 · çıktı kapısı GEÇTİ.
+Kenar (hakem yöntemi): `kanit/tur3/yesil-kontak.jpg` + `yesil-*.jpg` (kullanılan 8 kesik varlık yeşil zeminde, 1:1) ve `kare-80.5/81.0-*-1e1.png` (Mike sağ saç-kulak, Jake sol saç, kapanış üst yarı): tırtık, kopuk uç, kızıl/gri saçak görülmedi. `kenar-olcum.txt`: portrelerde alfa adası 1, kenar bandında açık-gri saçak 0 px; Jake tabanında 1–5 px'lik 5 ada (kulak/saç kenarı, görünmez). Açık kesik kenar: yeşil zeminde kesikler yalnız görsel alt/yan sınırında; render'da hepsi kadraj dışında, tezgâh altında ya da maskeli (20+20 rastgele kare ve 1:1 kırpımlarda 0).
+
 İLERLEME: tamam · **TUR 2 (hakem KALDI → düzeltme): GEÇTİ** — `teslim/bolum-001.mp4` sha256 **23839dd0b183**, 1080x1920, 30 fps, 83,20 sn, I −14,0 LUFS / TP −2,5.
 | Kapı (tur 2) | Komut → sonuç |
 |---|---|
