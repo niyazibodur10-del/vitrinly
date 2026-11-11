@@ -1,5 +1,7 @@
 # Bölüm 001 · platform metinleri (betik çıktısı: paket/paket-uret.py — elle düzenleme yok)
 
+Video: `bolum-001.mp4` · 83.2 sn · 1080x1920 · sha256 23839dd0b183
+
 ## YouTube Shorts
 Başlık (48 krk):
 ```
@@ -38,7 +40,7 @@ Fiction. Not financial advice. Voices and visuals are AI-generated.
 
 #flipbyvote #animatedseries #sidehustle #flipping #youdecide
 ```
-Kapak: `kapak-1080x1920.jpg` yükle (kaynak kare 81.6 sn = 1:21); profil ızgarası kırpımı: `kapak-1080x1350.jpg`.
+Kapak: `kapak-1080x1920.jpg` yükle (kaynak kare 81.00 sn = kare 2430 = 1:21; uygulamada kare seçilirse 1:21); profil ızgarası kırpımı: `kapak-1080x1350.jpg`.
 AI etiketi ("AI info"): AÇIK (politika §3).
 
 Sabit yorum (ilk yorum olarak yazılır ve sabitlenir):

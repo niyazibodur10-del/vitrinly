@@ -30,7 +30,8 @@ IG_ACIKLAMA = "\n".join([
     "Bike, dresser, or mystery box? You pick our first flip.",
     "Jake & Mike have $100 and one goal: $1,000,000. Every episode, the comments decide the next move.",
     SORU, "", ANONIM, "", POLITIKA, "", "#flipbyvote #animatedseries #sidehustle #flipping #youdecide"])
-IG_KAPAK_SN = 81.6  # yüklenen kapak bu kareden; uygulamada kare seçilirse aynı an (1:21)
+IG_KAPAK_SN = 81.0  # kare 2430 (koordinatör kapak kararı); yüklenen kapak bu kareden; uygulamada kare seçilirse 1:21
+VIDEO_SHA12, VIDEO_SURE = "23839dd0b183", 83.2  # yeniden render 2026-11-11
 IG_SABIT_YORUM = PIN_YORUM
 
 # ---- TikTok ----
@@ -79,6 +80,17 @@ def kontrol():
     if len(IG_ACIKLAMA) > 2200: h.append("IG açıklama > 2200")
     if len(TT_ACIKLAMA) > 2200: h.append("TikTok açıklama > 2200 (güvenli sınır)")
     if IG_ACIKLAMA.count("#") > 5 or TT_ACIKLAMA.count("#") > 5: h.append("hashtag > 5")
+    # dosya kontrolü: paket doğru videoya bağlı mı
+    import hashlib, subprocess
+    vy = os.path.join(TESLIM, "bolum-001.mp4")
+    if not os.path.isfile(vy): h.append("video yok")
+    else:
+        sha = hashlib.sha256(open(vy, "rb").read()).hexdigest()[:12]
+        if sha != VIDEO_SHA12: h.append(f"video sha {sha} ≠ {VIDEO_SHA12}")
+        sure = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", vy],
+                                    capture_output=True, text=True).stdout)
+        if abs(sure - VIDEO_SURE) > 0.05: h.append(f"video süresi {sure:.2f} ≠ {VIDEO_SURE}")
+        if not 0 < IG_KAPAK_SN < sure: h.append("kapak karesi video dışında")
     # videodaki soru = paketteki soru (metin B01+B02)
     bt = open(os.path.join(BOL, "bolum.txt"), encoding="utf-8").read()
     for parca in ("Bike, dresser, or mystery box?", "Tell us in the comments."):
@@ -97,7 +109,7 @@ def main():
           "oynatma_listesi_id": None, "onay": {"niyazi_onayi": False, "tarih": None},
           "_not": ("yayin_zamani YER TUTUCU: Niyazi onayında belirlenir. Öneri 12:00 ET = 17:00Z = 20:00 TSİ (EST −05:00, 2026-11-01 sonrası). "
                    "sentetik_medya=true: politika-format.md §3 kararı (altered/synthetic = Yes). cocuklara_ozel=false zorunlu (§0 koşul 2). "
-                   "Kaynak: paket/paket-uret.py; elle düzenleme yok.")}
+                   f"Video {VIDEO_SURE} sn, sha256 {VIDEO_SHA12}. Kaynak: paket/paket-uret.py; elle düzenleme yok.")}
     json.dump(yp, open(os.path.join(TESLIM, "yayin-paketi.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=2)
     kp = {"aciklama": KANAL_ACIKLAMA, "anahtar_kelimeler": KANAL_KELIME, "varsayilan_dil": "en", "ulke": "TR",
           "oynatma_listeleri": [LISTE], "fragman_video_id": None, "banner_metni": BANNER,
@@ -110,11 +122,12 @@ def main():
     sys.path.insert(0, os.path.join(KOK, "tools/yayin")); km = importlib.util.module_from_spec(sp); sp.loader.exec_module(km)
     h += [f"kanal.py: {x}" for x in km.dogrula(kp, None)]
     md = ["# Bölüm 001 · platform metinleri (betik çıktısı: paket/paket-uret.py — elle düzenleme yok)", "",
+          f"Video: `bolum-001.mp4` · {VIDEO_SURE} sn · 1080x1920 · sha256 {VIDEO_SHA12}", "",
           f"## YouTube Shorts\nBaşlık ({len(YT_BASLIK)} krk):\n```\n{YT_BASLIK}\n```\nAçıklama ({len(YT_ACIKLAMA)} krk):\n```\n{YT_ACIKLAMA}\n```",
           f"Etiketler: `{', '.join(YT_ETIKET)}` · Kategori 24 Entertainment · made for kids: No · altered/synthetic: Yes · dil en",
           f"\nSabit yorum (yayından sonra; Studio/uygulamada sabitlenir):\n```\n{PIN_YORUM}\n```",
           f"\n## Instagram Reels\nAçıklama ({len(IG_ACIKLAMA)}/2200 krk):\n```\n{IG_ACIKLAMA}\n```",
-          f"Kapak: `kapak-1080x1920.jpg` yükle (kaynak kare {IG_KAPAK_SN} sn = 1:21); profil ızgarası kırpımı: `kapak-1080x1350.jpg`.",
+          f"Kapak: `kapak-1080x1920.jpg` yükle (kaynak kare {IG_KAPAK_SN:.2f} sn = kare {round(IG_KAPAK_SN*30)} = 1:21; uygulamada kare seçilirse 1:21); profil ızgarası kırpımı: `kapak-1080x1350.jpg`.",
           "AI etiketi (\"AI info\"): AÇIK (politika §3).",
           f"\nSabit yorum (ilk yorum olarak yazılır ve sabitlenir):\n```\n{IG_SABIT_YORUM}\n```",
           f"\n## TikTok\nAçıklama ({len(TT_ACIKLAMA)} krk):\n```\n{TT_ACIKLAMA}\n```",

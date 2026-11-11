@@ -119,7 +119,7 @@ Sezon finali: 1 milyona ulaşmak yerine büyük fırsat + çözülmemiş kriz (P
   - Karakterler kararı bir replikle kabul eder ("Okay. The bike it is."). Böylece izleyici kararının hikâyeyi değiştirdiğini duyar.
   - Kullanıcı adı uygunsuzsa ya da kişisel bilgi içeriyorsa kart "A viewer decided: …" olur.
 - Kazanan yoruma kısa yanıt (koordinatör/sistem, Niyazi kalıcı izni): "You're in Ep. N." gibi. Ödül, hediye ya da vaat yoktur.
-- Açıklamada ve bio'da şeffaflık ve vazgeçme satırı yer alır: "We may feature your comment in the next episode. Prefer to stay anonymous? Just say so in your comment." Anonim kalmak isteyen yazarın kartı "A viewer decided: …" olur.
+- Açıklamada ve bio'da şeffaflık ve vazgeçme satırı yer alır: "We may show winning comments on screen with your username. Prefer to stay anonymous? Just say so in your comment." Anonim kalmak isteyen yazarın kartı "A viewer decided: …" olur.
 
 ## 7. Seçenek dışı yaratıcı fikirler
 

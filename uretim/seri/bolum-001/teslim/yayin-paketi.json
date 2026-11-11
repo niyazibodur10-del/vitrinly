@@ -44,5 +44,5 @@
     "niyazi_onayi": false,
     "tarih": null
   },
-  "_not": "yayin_zamani YER TUTUCU: Niyazi onayında belirlenir. Öneri 12:00 ET = 17:00Z = 20:00 TSİ (EST −05:00, 2026-11-01 sonrası). sentetik_medya=true: politika-format.md §3 kararı (altered/synthetic = Yes). cocuklara_ozel=false zorunlu (§0 koşul 2). Kaynak: paket/paket-uret.py; elle düzenleme yok."
+  "_not": "yayin_zamani YER TUTUCU: Niyazi onayında belirlenir. Öneri 12:00 ET = 17:00Z = 20:00 TSİ (EST −05:00, 2026-11-01 sonrası). sentetik_medya=true: politika-format.md §3 kararı (altered/synthetic = Yes). cocuklara_ozel=false zorunlu (§0 koşul 2). Video 83.2 sn, sha256 23839dd0b183. Kaynak: paket/paket-uret.py; elle düzenleme yok."
 }

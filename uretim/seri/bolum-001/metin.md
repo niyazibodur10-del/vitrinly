@@ -153,7 +153,7 @@ Kullanılan portreler: Jake 3 (düşünceli, sıcak gülümseme, endişeli), Mik
 Bike, dresser, or mystery box? You pick our first flip.
 Jake & Mike have $100 and one goal: $1,000,000. Every episode, the comments decide the next move.
 Bike, dresser, or mystery box? Tell us in the comments.
-We may feature your comment in the next episode. Prefer to stay anonymous? Just say so in your comment.
+We may show winning comments on screen with your username. Prefer to stay anonymous? Just say so in your comment.
 Fiction. Not financial advice. Voices and visuals are AI-generated.
 #flipbyvote #animatedseries #sidehustle #flipping #youdecide
 ```
@@ -161,14 +161,14 @@ Fiction. Not financial advice. Voices and visuals are AI-generated.
 ```
 Jake & Mike start with $100. The goal: $1,000,000. You decide every move.
 Episode 1: a road bike, a free dresser, or a mystery box of old games. Tell us in the comments.
-We may feature your comment in the next episode. Prefer to stay anonymous? Just say so in your comment.
+We may show winning comments on screen with your username. Prefer to stay anonymous? Just say so in your comment.
 Fiction. Not financial advice. Voices and visuals are AI-generated.
 #Shorts #flipbyvote #animation
 ```
 **TikTok**
 ```
 Bike, dresser, or mystery box? You pick our first flip. Ep. 1 of $100 → $1,000,000. Tell us in the comments.
-We may feature your comment in the next episode. Prefer to stay anonymous? Just say so in your comment.
+We may show winning comments on screen with your username. Prefer to stay anonymous? Just say so in your comment.
 Fiction. Not financial advice. Voices and visuals are AI-generated.
 #flipbyvote #animation #sidehustle #reselling #youdecide
 ```

@@ -1,6 +1,6 @@
 # YAYIN — Flip By Vote · Bölüm 1 "Every Dollar We Have"
 
-Dosyalar (bu klasör): `bolum-001.mp4` (85 sn, 1080x1920) · `kapak-1080x1920.jpg` · `kapak-1080x1350.jpg` · `yayin-paketi.json` · `platform-metinleri.md` (kopyalanacak tüm metinler).
+Dosyalar (bu klasör): `bolum-001.mp4` (83,2 sn, 1080x1920, sha256 23839dd0b183) · `kapak-1080x1920.jpg` · `kapak-1080x1350.jpg` · `yayin-paketi.json` · `platform-metinleri.md` (kopyalanacak tüm metinler).
 YouTube yüklemesini biz yaparız. Instagram ve TikTok bağlanana kadar elle paylaşılır.
 
 ## Yayın saati önerisi: 12:00 ET (17:00 UTC, 20:00 Türkiye) — üç platformda aynı anda
@@ -21,7 +21,7 @@ YouTube yüklemesini biz yaparız. Instagram ve TikTok bağlanana kadar elle pay
 ## B. Bölüm 1 yayını
 3. **Bitmiş videoyu ve yayın saatini onayla.** Koordinatör pakete `onay.niyazi_onayi=true` ve `yayin_zamani`'nı yazar (ör. `2026-11-12T12:00:00-05:00`), sonra `yukle.py` ile planlı ve private yükler. Videodaki ayarlar: made for kids **Hayır** · altered/synthetic **Evet** · kategori Entertainment · dil en.
    - Planlı videoda Studio'da görünürlük ve plan alanına **dokunma**.
-   - Shorts kapağı: API ile yüklenen Short'ta kareyi YouTube seçer. Uygulamada kare seçimi açılırsa **1:21**'i seç [doğrulanmadı].
+   - Shorts kapağı: API ile yüklenen Short'ta kareyi YouTube seçer. Uygulamada kare seçimi açılırsa **1:21** (81,00 sn, kare 2430; alternatif 0:00, 0,10 sn)'i seç [doğrulanmadı].
 4. **Instagram Reels** (aynı saatte, elle):
    - Video: `bolum-001.mp4`
    - Açıklama: `platform-metinleri.md` → Instagram
