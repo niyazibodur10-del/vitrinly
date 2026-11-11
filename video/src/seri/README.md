@@ -33,6 +33,18 @@ Bir bölüm = **tek veri dosyası** (`bolumler/bolum-XXX.ts`) + varlıklar (`vid
 
 **Logo:** `Bolum.logo` yoksa geçici logo (mavi/kırmızı yarım para + ✓) kullanılır; temiz ve yayınlanabilir, yer tutucu sayılmaz. Gerçek logo gelince `logo: "seri/ortak/logo.png"`.
 
+## Çekim çatısı (animasyon-yonetmeni 2026-11-11, bölüm 001'den itibaren)
+Sahnede `cekim` alanı varsa `Cekim.tsx` çizer (yoksa eski `SahneKarti`). Çekim anahtarları: `genis` · `yakin:kim` · `portre:kim:ifade` ·
+`ikiPortre` · `tahta`. Mekân + rig seti `bolumler/mekan-l1.ts` (`Bolum.mekan`): plakalar, ikili/tekli yerleşim (yerlesim.json), ağız yamaları
+(3 durum), göz elipsleri. `Rig.tsx`: taban + ağız (Rhubarb → `ucDurumAgiz`, <2 kare birleşir, sınıra ortalı 2 karelik alfa karışımı) +
+kodla göz kırpma (3–5 sn, 4 kare) + nefes (ölçek ≥1, alt kenara yaslı → kesik kenar içeri girmez). `Proplar.tsx` + `Ikonlar.tsx`: banknot,
+ilan kartı, telefon, tahta yazısı (tik ile sıfır ekleme), köşe tahta, ikon sırası, büyük yazı. Kamera: `kamera.zoom/kay` + `vurus` (punch-in)
++ `sarsinti`. Örnek: `bolumler/bolum-001.ts` (kesme listesi tek tablo). Görsel olay çizelgesi `uretim/seri/bolum-NNN/animasyon-efekt-cue.json`
+→ `uretim/seri/ses-kimligi/bolum-ses.py cevir --gorsel` (stem'deki SFX görsel olay karesine oturur).
+Karar kartı: `karar.bas` / `karar.kapanis` ("Ep. N: YOUR call"); takip kartı `abone.bas/ust`; açılış damgası `damgaUst`.
+Kontrol: `video/scripts/bundle-kaydet.mjs <dizin>` + `BUNDLE=<dizin> node scripts/kare-ornek.mjs` (bundle ~585 MB, disk dar).
+Kapı notu: `tools/seri/kapi.py` yalnız bölüm dosyasındaki düz yolları sayar; `mekan-l1.ts` birleştirilmiş yolları denetlenmez (uretim-muhendisi'ne).
+
 ## Güvenli alan (1080x1920)
 Platform arayüzü (Reels/TikTok/Shorts) üstü, altı ve sağ kenarı kapatır. Platformlar organik içerik için resmi piksel değeri yayımlamıyor;
 kaynaklar farklı (arama özeti 2026-11-10: Shorts reklam şablonu üst 288 / alt 672 / sağ 192; TikTok ölçümü üst ~130 / alt ~480 / sağ ~150;

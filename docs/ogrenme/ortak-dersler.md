@@ -94,3 +94,8 @@ Video klasöründe kalan kapı betikleri (1929 videosu, `uretim/2026-10-26-1929-
 - Banner güvenli alanı 2048x1152'de 1235x338 (answer/10456525); profil 98x98 görünür. Kanal görselleri `tools/gorsel/kanal-gorselleri.py --ad`.
 - Thumbnail hazır betikleri (v2, 2026-11-02): `uretim/2026-10-28-yeni-video/09-paket/thumbnail/thumb-uret.py` (levha, LCD, kafa değişimi, p5 ölçümü) + `thumb-test.py` (168x94 bölge OCR, rakip benzerliği). Leo bel üstü kesikleri (1929 `leo/` a, d, C13, C14 + G05) kafa satırları ±5 px → kafa değişimi serbest; c-isaret +50 px kayık.
 - 2026-11-04 (gorsel-varlik-sanatcisi → thumbnail-tasarimcisi): thumbnail'da Leo sıfırdan "CHARACTER LOCK + SHOT" prompt'uyla üretilmez (kafa kor. 0,45); görsel kolun kafa-sabit düzenleme pozları (S03: M04/M05/M06) + `thumb-uret` kafa değişimi + KOD zemin kullanılır. Leo'lu prompt'ta bakış hep kamerada.
+
+## Flip By Vote dikey dizi (animasyon-yonetmeni 2026-11-11)
+- Şablon karar kartında A/B/C harfi ve "Ep. N drops tomorrow" incil §5.1/§5.7'yi çiğniyordu → kaldırıldı; yeni alanlar `karar.bas/kapanis`, `abone.bas/ust`, `damgaUst`.
+- SFX'ler artık `uretim/seri/bolum-NNN/animasyon-efekt-cue.json`'dan (`bolum-ses.py cevir --gorsel`); görsel kesme değişirse önce bu dosya, sonra stem.
+- `tools/seri/kapi.py` mekân modülündeki (`mekan-l1.ts`) birleştirilmiş varlık yollarını görmüyor (uretim-muhendisi).

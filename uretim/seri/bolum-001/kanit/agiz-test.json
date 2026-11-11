@@ -1,0 +1,24 @@
+{
+ "istatistik": {
+  "jake": {
+   "ham": 236,
+   "uc_durum": 194,
+   "kisa_ham": 9,
+   "kisa_sonra": 0
+  },
+  "mike": {
+   "ham": 170,
+   "uc_durum": 129,
+   "kisa_ham": 11,
+   "kisa_sonra": 0
+  }
+ },
+ "kareler": {
+  "jake-kapali": 112,
+  "jake-yari": 103,
+  "jake-acik": 85,
+  "mike-kapali": 28,
+  "mike-yari": 37,
+  "mike-acik": 45
+ }
+}
