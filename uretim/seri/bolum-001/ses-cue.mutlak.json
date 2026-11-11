@@ -1,7 +1,7 @@
 {
  "bolum": "001",
- "sure": 85.0,
- "karar_bas": 78.0,
+ "sure": 83.2,
+ "karar_bas": 78.2,
  "fps": 30,
  "konusma": [
   [
@@ -331,8 +331,8 @@
    "dosya": "seri/ortak/sfx/pop-yumusak.flac",
    "hiza": "onset",
    "db": -10,
-   "t": 41.38,
-   "kare": 1241,
+   "t": 41.45,
+   "kare": 1244,
    "kaynak": "gorsel"
   },
   {
@@ -442,8 +442,8 @@
    "hiza": "onset",
    "db": -6,
    "tur": "abone",
-   "t": 82.8,
-   "kare": 2484,
+   "t": 81.9,
+   "kare": 2457,
    "kaynak": "gorsel"
   },
   {
@@ -452,8 +452,8 @@
    "dosya": "seri/ortak/sfx/whoosh-kart.flac",
    "hiza": "apex",
    "db": -7,
-   "t": 74.5,
-   "kare": 2235,
+   "t": 76.05,
+   "kare": 2282,
    "kaynak": "gorsel"
   },
   {

@@ -56,6 +56,8 @@ export type Kamera = {
   kay?: { x?: [number, number]; y?: [number, number] };
   /** konuşmacıya punch-in ölçeği (yama/ifade yolunda hafif, kamera yolunda güçlü). 1 = kapalı. */
   punch?: number;
+  /** zoom eğrisi: "inOut" (varsayılan) veya "out" (kare 0'da hareket halinde başlar — kanca) */
+  egri?: "inOut" | "out";
   /** konuşmacı değişiminde geçiş süresi (sn); 0 = kesme (sert punch-in) */
   gecis?: number;
 };
@@ -98,10 +100,10 @@ export type IkonAdi = "hardal" | "kamyon" | "boya" | "saat" | "kartus" | "disk" 
 
 /** Kod-prop. Zamanlar bölüm saniyesi. uzay "ekran" = kamera dışı (güvenli alan), "sahne" = plaka pikseli (kamerayla oynar). */
 export type Prop =
-  | { tur: "banknot"; bas: number; bitis?: number; x: number; y: number; aci?: number; olcek?: number; dus?: boolean }
+  | { tur: "banknot"; bas: number; bitis?: number; x: number; y: number; aci?: number; olcek?: number; dus?: boolean; /** düşüş mesafesi (px) */ yukseklik?: number }
   | { tur: "ikon"; ad: IkonAdi; bas: number; bitis: number; x: number; y: number; boyut?: number; parla?: boolean; uzay?: "ekran" | "sahne" }
   | { tur: "ikonSira"; bas: number; bitis: number; y: number; ogeler: { ad: IkonAdi; t: number; etiket?: string }[]; ayrac?: string; boyut?: number }
-  | { tur: "ilan"; bas: number; bitis: number; ikon: IkonAdi; baslik: string; fiyat: string; not: string; titre?: number }
+  | { tur: "ilan"; bas: number; bitis: number; ikon: IkonAdi; baslik: string; fiyat: string; not: string; titre?: number; /** "alt" = yüzü kapatmayan alçak, yatay kart */ yer?: "ust" | "alt" }
   | { tur: "telefon"; bas: number; bitis: number; ogeler: { ikon: IkonAdi; fiyat: string }[] }
   | { tur: "tahtaYazi"; bas: number; satirlar: { metin: string; x: number; y: number; boyut: number; t: number; sure?: number; renk?: string; tik?: number[] }[] }
   | { tur: "tahtaKose"; bas: number; bitis: number; metin: string; yaz: number; x: number; y: number }
@@ -165,9 +167,9 @@ export type Bolum = {
   kazananYorum?: KazananYorum;
   karar: KararKarti;
   /** abone/takip kartı; varsayılan karar kartından 0,4 sn önce biter. false = yok */
-  abone?: { bas?: number; ust?: number } | false;
-  /** açılış damgasının üst kenarı (px); yoksa kart bandı. Konuşan yüzü örtmesin diye taşınır. */
-  damgaUst?: number;
+  abone?: { bas?: number; ust?: number; sure?: number; klik?: number } | false;
+  /** açılış damgası yerleşimi: üst kenar (px), ölçek, sağa yaslı çip. Yoksa kart bandında, ortada, tam boy. */
+  damga?: { ust?: number; olcek?: number; sag?: boolean };
   /** çekim çatısı mekân + rig seti (sahne.cekim kullanılıyorsa zorunlu) */
   mekan?: MekanSeti;
   /** logo dosyası (public/); yoksa şablonun geçici logosu */

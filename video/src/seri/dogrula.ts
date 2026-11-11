@@ -57,7 +57,9 @@ export const dogrula = (b: Bolum, o: { taslak: boolean; kilavuz: boolean }): str
     if (!b.kazananYorum.kullanici.trim()) h.push("kazanan yorum: kullanıcı adı boş");
   }
   if (b.karar.bas !== undefined && b.karar.bas + kSure > S + 1e-6) h.push("karar kartı bölüm sonunu aşıyor");
-  if (b.abone && b.abone.bas !== undefined && b.abone.bas + 3.5 > S + 1e-6) h.push("abone kartı bölüm sonunu aşıyor");
+  if (b.abone && b.abone.bas !== undefined && b.abone.bas + (b.abone.sure ?? 3.5) > S + 1e-6) h.push("abone kartı bölüm sonunu aşıyor");
+  if (b.abone && b.karar.bas !== undefined && b.abone.bas !== undefined && b.abone.bas < b.karar.bas + kSure - 1e-6 && b.abone.bas + (b.abone.sure ?? 3.5) > b.karar.bas)
+    h.push("abone kartı karar kartıyla zamanda çakışıyor");
   for (const e of b.bank.olaylar ?? []) if (e.t < 0 || e.t > S) h.push(`BANK olayı bölüm dışında (${e.t})`);
   if (!o.taslak) {
     if (S < 60 || S > 90) h.push(`yayın süresi 60–90 sn olmalı (${S})`);

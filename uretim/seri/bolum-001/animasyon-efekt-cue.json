@@ -2,8 +2,8 @@
  "bolum": "001",
  "sahip": "animasyon-yonetmeni",
  "fps": 30,
- "sure": 85.0,
- "not": "Tek kaynak: video/src/seri/bolumler/bolum-001.ts (aynı sayılar). id = ses-cue.json SFX kimliği → bolum-ses.py cevir --gorsel bu dosyayı okur. tur: giris/vurus/sayac/kilit/kesme/abone. Abone: tek kez, sonda (81,5–85,0), karar kartıyla çakışmaz; alanı 9:16 alt-orta (y 1010–1164).",
+ "sure": 83.2,
+ "not": "Tek kaynak: video/src/seri/bolumler/bolum-001.ts (aynı sayılar). id = ses-cue.json SFX kimliği → bolum-ses.py cevir --gorsel bu dosyayı okur. tur: giris/vurus/sayac/kilit/kesme/abone. Abone: tek kez, sonda (81,0–83,2), karar kartıyla çakışmaz; alanı 9:16 alt-orta (y 1010–1164).",
  "olaylar": [
   {
    "id": "S1-carpma",
@@ -119,10 +119,10 @@
   },
   {
    "id": "S5-portre-saskin",
-   "t": 41.38,
-   "kare": 1241,
-   "tur": "kesme",
-   "olay": "PORTRE-M şaşkın kesmesi"
+   "t": 41.45,
+   "kare": 1244,
+   "tur": "vurus",
+   "olay": "'Free?' konuşan tabana punch-in (x1,2) + sarsıntı (Z3: portre kaldırıldı)"
   },
   {
    "id": "S5-siluet-araba",
@@ -196,10 +196,10 @@
   },
   {
    "id": "S8-karar-karti",
-   "t": 74.5,
-   "kare": 2235,
+   "t": 76.05,
+   "kare": 2282,
    "tur": "kilit",
-   "olay": "karar kartı girer (bas 74,45)"
+   "olay": "karar kartı 'box?' sonrası boşlukta girer (bas 76,0; Ö1)"
   },
   {
    "id": "S8-ep2-ding",
@@ -210,20 +210,41 @@
   },
   {
    "id": "S8-abone-klik",
-   "t": 82.8,
-   "kare": 2484,
+   "t": 81.9,
+   "kare": 2457,
    "tur": "abone",
-   "olay": "takip kartı imleç tıklaması (kart 81,5–85,0; karar kartı 81,45'te çıktı)"
+   "olay": "takip kartı imleç tıklaması (kart 81,0–83,2; karar kartı 81,0 sn'de çıktı)"
+  },
+  {
+   "id": "G-bisiklet-pop",
+   "t": 28.6,
+   "kare": 858,
+   "tur": "giris",
+   "olay": "bisiklet ikonu pop (SFX kimliği yok)"
+  },
+  {
+   "id": "G-boya-pop",
+   "t": 39.64,
+   "kare": 1189,
+   "tur": "giris",
+   "olay": "boya ikonu pop ('paint')"
+  },
+  {
+   "id": "G-araba-pop",
+   "t": 46.18,
+   "kare": 1385,
+   "tur": "vurus",
+   "olay": "'tiny car' punch-in + araba ikonu"
   }
  ],
  "abone": [
   {
    "tur": "abone",
-   "bas": 81.5,
-   "bitis": 85.0,
-   "klik": 82.8,
-   "kare_bas": 2445,
-   "kare_klik": 2484,
+   "bas": 81.0,
+   "bitis": 83.2,
+   "klik": 81.9,
+   "kare_bas": 2430,
+   "kare_klik": 2457,
    "alan": {
     "x": 70,
     "y": 1010,
@@ -286,6 +307,10 @@
    "kare": 735
   },
   {
+   "t": 27.62,
+   "kare": 829
+  },
+  {
    "t": 29.55,
    "kare": 886
   },
@@ -306,12 +331,12 @@
    "kare": 1071
   },
   {
-   "t": 41.38,
-   "kare": 1241
+   "t": 39.3,
+   "kare": 1179
   },
   {
-   "t": 41.9,
-   "kare": 1257
+   "t": 41.38,
+   "kare": 1241
   },
   {
    "t": 43.5,

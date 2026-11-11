@@ -15,6 +15,11 @@ import type { AgizDurum } from "./zaman";
 
 const CL = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 
+export const KIRPMA_BAS = 3;
+export const IKI_PORTRE_OLCEK = 0.64;
+/** ikiPortre: yüzler bu kadar aşağıda (BANK rozeti y 270–360 alın/kaşa binmesin — hakem Z4) */
+export const IKI_PORTRE_UST = 130;
+
 export type AgizDurumlari = Partial<Record<Konusmaci, { bas: number; bitis: number; sekil: AgizDurum }[]>>;
 
 const PlakaKatman: React.FC<{ src: string; olcek?: number; capa?: [number, number]; bulanik?: number; children?: React.ReactNode }> = ({ src, olcek = 1, capa = [0, 0], bulanik, children }) => (
@@ -36,7 +41,7 @@ export const CekimKarti: React.FC<{ sahne: Sahne; mekan: MekanSeti; agiz: AgizDu
 
   // --- kamera ---
   const [z0, z1] = kam.zoom ?? [1.0, 1.04];
-  let S = interpolate(yerel, [0, sure], [z0, z1], { ...CL, easing: Easing.inOut(Easing.quad) });
+  let S = interpolate(yerel, [0, sure], [z0, z1], { ...CL, easing: kam.egri === "out" ? Easing.out(Easing.cubic) : Easing.inOut(Easing.quad) });
   for (const v of sahne.vurus ?? []) {
     S *= interpolate(t, [v.t, v.t + (v.sure ?? 0.1)], [1, v.olcek], { ...CL, easing: Easing.out(Easing.cubic) });
   }
@@ -50,8 +55,9 @@ export const CekimKarti: React.FC<{ sahne: Sahne; mekan: MekanSeti; agiz: AgizDu
     return { x: GEN / 2, y: 760 };
   };
   const od = sahne.odak ?? varsayilanOdak();
-  let fx = od.x + (kam.kay?.x ? interpolate(yerel, [0, sure], kam.kay.x, CL) : 0);
-  let fy = od.y + (kam.kay?.y ? interpolate(yerel, [0, sure], kam.kay.y, CL) : 0);
+  const kayE = kam.egri === "out" ? Easing.out(Easing.cubic) : (x: number) => x;
+  let fx = od.x + (kam.kay?.x ? interpolate(yerel, [0, sure], kam.kay.x, { ...CL, easing: kayE }) : 0);
+  let fy = od.y + (kam.kay?.y ? interpolate(yerel, [0, sure], kam.kay.y, { ...CL, easing: kayE }) : 0);
   for (const sh of sahne.sarsinti ?? []) {
     const d = t - sh.t, ss = sh.sure ?? 0.12;
     if (d >= 0 && d < ss) {
@@ -64,7 +70,12 @@ export const CekimKarti: React.FC<{ sahne: Sahne; mekan: MekanSeti; agiz: AgizDu
   fx = Math.min(GEN - yarW, Math.max(yarW, fx));
   fy = Math.min(YUK - yarH, Math.max(yarH, fy));
 
-  const rig = (kim: Konusmaci) => <RigKatman kim={kim} r={mekan.karakterler[kim]} t={t} agiz={agiz[kim]} />;
+  // göz kırpma kapısı (hakem Z2): kancada (t<3) ve yüzün ekran ölçeği ≥1,15 olan çekimlerde kırpma yok; tekli portrede yok
+  const enS = Math.max(z0, z1) * (sahne.vurus ?? []).reduce((a, v) => a * v.olcek, 1);
+  const yuzOlcek = c.tur === "genis" ? Math.max(mekan.ikili.jake.olcek, mekan.ikili.mike.olcek) * enS
+    : c.tur === "yakin" ? enS : c.tur === "ikiPortre" ? IKI_PORTRE_OLCEK * enS : 99;
+  const kirp = t >= KIRPMA_BAS && yuzOlcek < 1.15;
+  const rig = (kim: Konusmaci) => <RigKatman kim={kim} r={mekan.karakterler[kim]} t={t} agiz={agiz[kim]} kirp={kirp} />;
 
   let icerik: React.ReactNode = null;
   if (c.tur === "genis") {
@@ -105,22 +116,22 @@ export const CekimKarti: React.FC<{ sahne: Sahne; mekan: MekanSeti; agiz: AgizDu
       icerik = (
         <>
           <PlakaKatman src={mekan.genis} olcek={pa.olcek} capa={pa.capa} bulanik={pa.bulanik} />
-          <PortreKatman kim={c.kim} p={p} t={t} />
+          <PortreKatman kim={c.kim} p={p} t={t} kirp={false} />
         </>
       );
     } else {
       // ikili kameraya bakış: iki portre yan yana (0,8), yüzler üst yarıda; alt kenar maskeyle söner (kesik kenar görünmez)
       const yerles = (kim: Konusmaci, ifade: string, merkezX: number) => {
         const p = mekan.karakterler[kim].portreler[ifade];
-        const o = 0.74;
-        return { ...p, olcek: o, xy: [merkezX - (p.w / 2) * o, 10] as [number, number] };
+        const o = IKI_PORTRE_OLCEK;
+        return { ...p, olcek: o, xy: [merkezX - (p.w / 2) * o, IKI_PORTRE_UST] as [number, number] };
       };
       const maske = "linear-gradient(to bottom, #000 0, #000 1300px, rgba(0,0,0,0) 1500px)";
       icerik = (
         <>
           <PlakaKatman src={mekan.genis} olcek={pa.olcek} capa={pa.capa} bulanik={pa.bulanik} />
-          <PortreKatman kim={c.sol.kim} p={yerles(c.sol.kim, c.sol.ifade, 285)} t={t} maske={maske} />
-          <PortreKatman kim={c.sag.kim} p={yerles(c.sag.kim, c.sag.ifade, 805)} t={t} maske={maske} />
+          <PortreKatman kim={c.sol.kim} p={yerles(c.sol.kim, c.sol.ifade, 300)} t={t} maske={maske} kirp={kirp} />
+          <PortreKatman kim={c.sag.kim} p={yerles(c.sag.kim, c.sag.ifade, 790)} t={t} maske={maske} kirp={kirp} />
           <div style={{ position: "absolute", left: 0, right: 0, top: 900, bottom: 0, background: "linear-gradient(to bottom, rgba(8,10,16,0) 0%, rgba(8,10,16,0.75) 45%, rgba(8,10,16,0.9) 100%)" }} />
         </>
       );

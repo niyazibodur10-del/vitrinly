@@ -85,13 +85,43 @@ export const kelimeler = (s: Satir): Kelime[] => {
   });
 };
 
-/** Altyazı için kelimeyi satır metnindeki yazımla eşle (Kokoro/Whisper token'ı noktalamasız olabilir). */
+/** Altyazı kelimeleri: yazı DAİMA kilitli satır metninden (s.metin), zaman Whisper'dan.
+ *  (Hakem Z1, 2026-11-11: sayı tutmayınca Whisper token'ı ekrana çıkıyordu — "To a solid", "truck by paint".)
+ *  Metin ve Whisper kelimeleri normalize edilip LCS ile hizalanır; eşleşen metin kelimesi Whisper zamanını alır,
+ *  eşleşmeyenler (Whisper'ın kaçırdığı/yanlış duyduğu) iki komşu çapa arasına harf sayısıyla dağıtılır. */
+const normK = (w: string) => w.toLowerCase().replace(/[’']/g, "").replace(/[^a-z0-9]/g, "");
 export const ekranKelimeleri = (s: Satir): Kelime[] => {
   const ks = kelimeler(s);
   const metin = s.metin.split(/\s+/).filter(Boolean);
-  if (metin.length === ks.length)
-    return ks.map((k, i) => ({ ...k, k: metin[i] }));
-  return ks;
+  const n = metin.length, m = ks.length;
+  // LCS tablosu
+  const L: number[][] = Array.from({ length: n + 1 }, () => new Array(m + 1).fill(0));
+  for (let i = n - 1; i >= 0; i--)
+    for (let j = m - 1; j >= 0; j--)
+      L[i][j] = normK(metin[i]) === normK(ks[j].k) && normK(metin[i]) !== "" ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1]);
+  const es: (number | null)[] = new Array(n).fill(null);
+  for (let i = 0, j = 0; i < n && j < m; ) {
+    if (normK(metin[i]) === normK(ks[j].k) && normK(metin[i]) !== "") { es[i] = j; i++; j++; }
+    else if (L[i + 1][j] >= L[i][j + 1]) i++;
+    else j++;
+  }
+  const out: Kelime[] = metin.map((k) => ({ k, bas: 0, bitis: 0 }));
+  let i = 0;
+  while (i < n) {
+    if (es[i] !== null) { const w = ks[es[i]!]; out[i].bas = w.bas; out[i].bitis = w.bitis; i++; continue; }
+    let j = i;
+    while (j < n && es[j] === null) j++;
+    const a0 = i > 0 ? out[i - 1].bitis : s.bas;
+    const a1 = j < n ? ks[es[j]!].bas : s.bitis;
+    const top = metin.slice(i, j).reduce((t, w) => t + w.length + 1, 0);
+    let t = a0;
+    for (let q = i; q < j; q++) {
+      const d = ((metin[q].length + 1) / top) * Math.max(0, a1 - a0);
+      out[q].bas = t; out[q].bitis = t + d; t += d;
+    }
+    i = j;
+  }
+  return out;
 };
 
 /** Altyazı öbekleri: satır içinde en fazla `max` kelime veya noktalama sonunda bölünür. */

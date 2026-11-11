@@ -3,6 +3,8 @@
 "kim": "mike",
 "bas": 0.6,
 "bitis": 2.55,
+"sahne_bas": 0.6,
+"sahne_bitis": 2.55,
 "z0": 1.08,
 "z1": 1.13
 },
@@ -10,6 +12,8 @@
 "kim": "jake",
 "bas": 2.55,
 "bitis": 7.1,
+"sahne_bas": 2.55,
+"sahne_bitis": 7.1,
 "z0": 1.02,
 "z1": 1.08
 },
@@ -17,6 +21,8 @@
 "kim": "mike",
 "bas": 8.4,
 "bitis": 10.06,
+"sahne_bas": 8.4,
+"sahne_bitis": 10.06,
 "z0": 1.03,
 "z1": 1.08
 },
@@ -24,6 +30,8 @@
 "kim": "jake",
 "bas": 10.06,
 "bitis": 12.05,
+"sahne_bas": 10.06,
+"sahne_bitis": 12.05,
 "z0": 1.04,
 "z1": 1.1
 },
@@ -31,6 +39,8 @@
 "kim": "jake",
 "bas": 20.2,
 "bitis": 22.8,
+"sahne_bas": 20.2,
+"sahne_bitis": 22.8,
 "z0": 1.03,
 "z1": 1.07
 },
@@ -38,52 +48,44 @@
 "kim": "mike",
 "bas": 22.8,
 "bitis": 24.02,
+"sahne_bas": 22.8,
+"sahne_bitis": 24.02,
 "z0": 1.06,
 "z1": 1.1
 },
 {
 "kim": "mike",
-"bas": 26.95,
+"bas": 27.62,
 "bitis": 29.55,
-"sahne_bas": 24.5,
+"sahne_bas": 27.62,
 "sahne_bitis": 29.55,
-"z0": 1.02,
-"z1": 1.08
+"z0": 1.16,
+"z1": 1.22
 },
 {
 "kim": "jake",
-"bas": 29.55,
-"bitis": 32.48,
-"z0": 1.02,
-"z1": 1.06
-},
-{
-"kim": "jake",
-"bas": 39.900000000000006,
+"bas": 39.3,
 "bitis": 41.38,
-"sahne_bas": 35.7,
+"sahne_bas": 39.3,
 "sahne_bitis": 41.38,
-"z0": 1.02,
-"z1": 1.08
+"z0": 1.16,
+"z1": 1.2
 },
 {
 "kim": "mike",
-"bas": 41.9,
-"bitis": 43.5,
-"z0": 1.04,
-"z1": 1.08
-},
-{
-"kim": "jake",
-"bas": 43.5,
-"bitis": 47.25,
-"z0": 1.02,
+"bas": 48.12,
+"bitis": 51.15,
+"sahne_bas": 48.12,
+"sahne_bitis": 51.15,
+"z0": 1.03,
 "z1": 1.07
 },
 {
 "kim": "jake",
 "bas": 51.15,
 "bitis": 53.48,
+"sahne_bas": 51.15,
+"sahne_bitis": 53.48,
 "z0": 1.03,
 "z1": 1.11
 },
@@ -91,13 +93,17 @@
 "kim": "mike",
 "bas": 63.08,
 "bitis": 65.88,
+"sahne_bas": 63.08,
+"sahne_bitis": 65.88,
 "z0": 1.04,
-"z1": 1.15
+"z1": 1.12
 },
 {
 "kim": "jake",
 "bas": 65.88,
 "bitis": 70.95,
+"sahne_bas": 65.88,
+"sahne_bitis": 70.95,
 "z0": 1.01,
 "z1": 1.05
 },
@@ -105,6 +111,8 @@
 "kim": "jake",
 "bas": 71.4,
 "bitis": 74.45,
+"sahne_bas": 71.4,
+"sahne_bitis": 74.45,
 "z0": 1.03,
 "z1": 1.07
 }

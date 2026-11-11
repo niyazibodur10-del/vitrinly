@@ -1,4 +1,21 @@
 # Bölüm 001 animasyon + senkron raporu (animasyon-yonetmeni, 2026-11-11)
+İLERLEME: tamam · **TUR 2 (hakem KALDI → düzeltme): GEÇTİ** — `teslim/bolum-001.mp4` sha256 **23839dd0b183**, 1080x1920, 30 fps, 83,20 sn, I −14,0 LUFS / TP −2,5.
+| Kapı (tur 2) | Komut → sonuç |
+|---|---|
+| Z1 altyazı = metin | `animasyon/altyazi-z1-testi.ts` (esbuild+node) → **25/25** satır ekran kelimeleri = `metin.split()` (sıra + satır aralığı); kareler `kanit/tur2/z1-*.jpg`: "Free." 38,8, "buy" 49,0, "Slow." 50,3 |
+| Z2 göz kırpma | kapak artık göz altı derisinin aynası + üstten ten gölgesi + kontur kavisli kirpik; kanca 0–3 sn ve yüz ölçeği ≥1,15 çekimlerde, tekli portrede kırpma yok → `kanit/tur2/z2-kirpma-kontak.jpg` (2 yakın + 2 geniş + ikili portre, 4'er kare) |
+| Z3 saç halesi | 41,38–43,5 portre kaldırıldı → konuşan Mike tabanına punch-in (×1,2) + sarsıntı (`kare-41.60/42.00.jpg`); diğer Mike portreleri (gülen, endişeli, heyecanlı) `animasyon/sac-hale-temizle.py` ile koddan temizlendi (*-temiz.png) |
+| Z4 BANK–yüz | ikili portre 0,64 ölçek, y +130 → rozet (y 270–360) yalnız saç üstünde; kaş/yüz kutusu y ≥ ~435 → kesişim 0 (`kare-80.00/82.00.jpg`) |
+| Ö1 | karar kartı + whoosh "box?" sonrası boşlukta (76,0/76,05) → final 72–79 sn Whisper: "Bike dresser or mystery box? Tell us in the comments." |
+| Siyah/donma | `blackdetect d=0.1` + `freezedetect -60dB d=0.5` → 0 / 0 |
+| Ağız-ses (piksel) | `agiz-piksel-senkron.py … aralik-tam.json` → 13 yakın, 1027 kare, gecikme **0**, r 0,62 · Rhubarb `senkron-testi.py` +1/+1 kare |
+| 20 rastgele kare | `kanit/tur2/kontak-rastgele20.jpg` (seed 20261112): dikiş 0, açık kesik kenar 0, altyazı güvenli alanda 20/20, BANK $100 20/20 |
+- Ö2 kanca: kare 0'da kamera hareketli (1,45→1,22, out eğrisi), büyük banknot (×1,7) kadrajda düşer, "FLIP BY VOTE · EP. 1" çipi sağ üst köşede (0,55). Ö3: ilan kartları alçak yatay kart (y 805–1105), yüz açık. Ö4: araba ikonları saçın üstünde (y 400). Tempo 24–58: 2 sıçrama kesmesi (27,62 / 39,3) + 6 punch-in + 3 ikon pop. Ölü kuyruk: karar kartı 76,0–81,0, takip kartı 81,0–83,2 (2,2 sn, çakışma 0; toplam 85,0 → 83,2).
+- **Kapak önerisi (youtube-paketleyici): 81,00 sn = kare 2430** (`kanit/tur2/kapak-onerisi-81.00.jpg`): iki yüz kameraya, karar kartı çıkmış, takip kartı henüz görünmüyor, BANK yalnız saçta. Alternatif kanca karesi 0,10 sn (banknot çarpma).
+- Stem: `bolum-ses.py cevir --sure 83.2 --karar-sure 5 --gorsel animasyon-efekt-cue.json` + `miks` (araçta değişiklik yok). Not: wide çekimlerde BANK rozeti Mike'ın alın üstüne yakın (yüz değil, saç/alın sınırı) — tur 3 gerekirse geniş çekimde odak.
+
+---
+## Tur 1 (arşiv)
 İLERLEME: tamam · **SONUÇ: GEÇTİ** — `teslim/bolum-001.mp4` sha256 8588a182aeba, 1080x1920, 30 fps, 2550 kare = 85,00 sn, h264+aac 48 kHz.
 | Kapı | Komut → sonuç |
 |---|---|

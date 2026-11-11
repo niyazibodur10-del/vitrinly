@@ -1,6 +1,7 @@
 // L1 THE KITCHEN mekân seti + Jake/Mike rig'i (animasyon-yonetmeni 2026-11-11). Her bölüm yeniden kullanır (incil §2).
 // Kaynak: video/public/seri/bolum-001/yerlesim.json + VARLIKLAR.md (gorsel-varlik-sanatcisi) ve goz-kapak.json
 // (göz elipsleri: uretim/seri/bolum-001/animasyon/goz-kapak-olc.py). Değerler oradan kopyalandı; değişirse burası güncellenir.
+// Mike portreleri (şaşkın, gülen, endişeli, heyecanlı): saç halesi koddan temizlenmiş *-temiz.png (animasyon/sac-hale-temizle.py, hakem Z3).
 // Mike tabanının ten rengi yanaktan elle düzeltildi (#f8b89c, #e49a80): göz altı örneği kapakta turuncu kalıyordu.
 import type { GozElips, MekanSeti } from "../tipler";
 
@@ -38,10 +39,10 @@ export const MUTFAK_L1: MekanSeti = {
       yuz: { x: 610, y: 500 },
       portreler: {
       notr: { dosya: "seri/bolum-001/ifade/mike-notr.png", w: 1080, h: 1602, xy: [-162, 423], olcek: 1.3 },
-      gulen: { dosya: "seri/bolum-001/ifade/mike-gulen.png", w: 1080, h: 1602, xy: [-162, 407], olcek: 1.3 },
-      saskin: { dosya: "seri/bolum-001/ifade/mike-saskin.png", w: 1080, h: 1602, xy: [-162, 419], olcek: 1.3 },
-      endiseli: { dosya: "seri/bolum-001/ifade/mike-endiseli.png", w: 1080, h: 1602, xy: [-162, 429], olcek: 1.3 },
-      heyecanli: { dosya: "seri/bolum-001/ifade/mike-heyecanli.png", w: 1080, h: 1602, xy: [-162, 419], olcek: 1.3, gozler: GOZ["mike-heyecanli"] },
+      gulen: { dosya: "seri/bolum-001/ifade/mike-gulen-temiz.png", w: 1080, h: 1602, xy: [-162, 407], olcek: 1.3 },
+      saskin: { dosya: "seri/bolum-001/ifade/mike-saskin-temiz.png", w: 1080, h: 1602, xy: [-162, 419], olcek: 1.3 },
+      endiseli: { dosya: "seri/bolum-001/ifade/mike-endiseli-temiz.png", w: 1080, h: 1602, xy: [-162, 429], olcek: 1.3 },
+      heyecanli: { dosya: "seri/bolum-001/ifade/mike-heyecanli-temiz.png", w: 1080, h: 1602, xy: [-162, 419], olcek: 1.3, gozler: GOZ["mike-heyecanli"] },
       dusunceli: { dosya: "seri/bolum-001/ifade/mike-dusunceli.png", w: 1080, h: 1602, xy: [-162, 537], olcek: 1.3 },
       },
     },

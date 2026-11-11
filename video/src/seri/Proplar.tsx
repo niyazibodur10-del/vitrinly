@@ -30,6 +30,32 @@ const IlanKarti: React.FC<{ p: Extract<Prop, { tur: "ilan" }>; t: number }> = ({
   const g = yay(t, p.bas, { damping: 14, stiffness: 170, mass: 0.8 });
   const c = cikis(t, p.bitis);
   const titre = p.titre !== undefined && t >= p.titre && t < p.titre + 0.6 ? Math.sin((t - p.titre) * 70) * 5 * (1 - (t - p.titre) / 0.6) : 0;
+  if (p.yer === "alt") {
+    // alçak yatay kart (tur 2, hakem Ö3): y 800–1120 → konuşanın yüzü ve ağzı açık kalır; altyazı bandının (1150) üstünde
+    const karart = interpolate(t, [p.bas, p.bas + 0.15], [0, 1], CL) * c;
+    return (
+      <>
+        <div style={{ position: "absolute", left: 0, right: 0, top: 760, height: 420, background: `linear-gradient(to bottom, rgba(6,10,18,0) 0%, rgba(6,10,18,${0.5 * karart}) 40%)` }} />
+        <div style={{ position: "absolute", left: GUVENLI.sol + 20, width: GUVENLI_W - 40, top: 805, transform: `translateY(${(1 - g) * 700}px) rotate(${(1 - g) * 6 - 1.5}deg)`, opacity: c }}>
+          <div style={{ display: "flex", borderRadius: 30, background: "#ffffff", overflow: "hidden", boxShadow: "0 18px 40px rgba(0,0,0,0.55)", height: 300 }}>
+            <div style={{ width: 290, flex: "none", background: "linear-gradient(160deg,#eef3f9,#d6e1ee)", display: "flex", alignItems: "center", justifyContent: "center", position: "relative" }}>
+              <div style={{ transform: `rotate(${titre}deg) translateY(${Math.abs(titre) * -2}px)` }}>
+                <Ikon ad={p.ikon} boyut={230} hale={false} />
+              </div>
+              <div style={{ position: "absolute", left: 14, top: 12, padding: "4px 12px", borderRadius: 12, background: "#1d1b22", color: "#fff", fontFamily: fredoka, fontWeight: 700, fontSize: 22, letterSpacing: 2 }}>
+                LISTING
+              </div>
+            </div>
+            <div style={{ padding: "22px 24px", display: "flex", flexDirection: "column", justifyContent: "center", gap: 6 }}>
+              <div style={{ fontFamily: anton, fontSize: 52, lineHeight: 1.02, color: "#1d1b22", letterSpacing: 1 }}>{p.baslik}</div>
+              <div style={{ fontFamily: anton, fontSize: 78, lineHeight: 1, color: "#2fae6a" }}>{p.fiyat}</div>
+              <div style={{ fontFamily: fredoka, fontWeight: 700, fontSize: 36, color: "#e2564a" }}>{p.not}</div>
+            </div>
+          </div>
+        </div>
+      </>
+    );
+  }
   const karart = interpolate(t, [p.bas, p.bas + 0.15], [0, 0.55], CL) * c;
   return (
     <>
@@ -105,7 +131,7 @@ export const PropKatman: React.FC<{ proplar: Prop[]; t: number; uzay: "ekran" | 
       switch (p.tur) {
         case "banknot": {
           // düşüş: 3 kare (üstten), çarpma anında hafif sekme
-          const d = p.dus ? interpolate(t, [p.bas, p.bas + 0.1], [-700, 0], { ...CL, easing: Easing.in(Easing.quad) }) : 0;
+          const d = p.dus ? interpolate(t, [p.bas, p.bas + 0.1], [-(p.yukseklik ?? 700), 0], { ...CL, easing: Easing.in(Easing.quad) }) : 0;
           const sek = p.dus ? interpolate(t, [p.bas + 0.1, p.bas + 0.16, p.bas + 0.24], [0, -14, 0], CL) : 0;
           return (
             <div key={i} style={{ position: "absolute", left: p.x, top: p.y, transform: `translate(-50%,-50%) translateY(${d + sek}px) rotate(${p.aci ?? 0}deg) scale(${p.olcek ?? 1})`, filter: "drop-shadow(0 10px 8px rgba(0,0,0,0.35))" }}>

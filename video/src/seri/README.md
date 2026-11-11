@@ -45,6 +45,10 @@ Karar kartı: `karar.bas` / `karar.kapanis` ("Ep. N: YOUR call"); takip kartı `
 Kontrol: `video/scripts/bundle-kaydet.mjs <dizin>` + `BUNDLE=<dizin> node scripts/kare-ornek.mjs` (bundle ~585 MB, disk dar).
 Kapı notu: `tools/seri/kapi.py` yalnız bölüm dosyasındaki düz yolları sayar; `mekan-l1.ts` birleştirilmiş yolları denetlenmez (uretim-muhendisi'ne).
 
+**Altyazı yazımı (2026-11-11, hakem Z1 — tüm bölümleri etkiler):** `zaman.ts ekranKelimeleri` ekrana DAİMA kilitli satır metnini yazar;
+Whisper yalnız zaman verir (LCS hizalama, eşleşmeyen kelime komşu çapalar arasına harf oranıyla). Eskiden kelime sayısı tutmazsa Whisper
+token'ı ("To", "by") ekrana çıkıyordu. Test: `uretim/seri/bolum-001/animasyon/altyazi-z1-testi.ts`.
+
 ## Güvenli alan (1080x1920)
 Platform arayüzü (Reels/TikTok/Shorts) üstü, altı ve sağ kenarı kapatır. Platformlar organik içerik için resmi piksel değeri yayımlamıyor;
 kaynaklar farklı (arama özeti 2026-11-10: Shorts reklam şablonu üst 288 / alt 672 / sağ 192; TikTok ölçümü üst ~130 / alt ~480 / sağ ~150;

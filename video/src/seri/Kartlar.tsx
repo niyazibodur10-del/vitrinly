@@ -28,7 +28,7 @@ export const GeciciLogo: React.FC<{ boyut: number; logo?: string }> = ({ boyut, 
 };
 
 /** Açılış damgası: "FLIP BY VOTE · EP. N" + logo. Varsayılan 1,8 sn (≤2 sn kuralı). */
-export const AcilisDamgasi: React.FC<{ no: number; sure?: number; logo?: string; ust?: number }> = ({ no, sure = 1.8, logo, ust = BANT.kart.ust + 40 }) => {
+export const AcilisDamgasi: React.FC<{ no: number; sure?: number; logo?: string; ust?: number; olcek?: number; sag?: boolean }> = ({ no, sure = 1.8, logo, ust = BANT.kart.ust + 40, olcek = 1, sag = false }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = frame / fps;
@@ -40,8 +40,9 @@ export const AcilisDamgasi: React.FC<{ no: number; sure?: number; logo?: string;
     <div
       style={{
         position: "absolute", left: GUVENLI.sol, width: GUVENLI_W, top: ust,
-        display: "flex", justifyContent: "center", opacity: 1 - cik,
-        transform: `translateY(${-cik * 40}px) scale(${0.6 + 0.4 * gir})`,
+        display: "flex", justifyContent: sag ? "flex-end" : "center", opacity: 1 - cik,
+        transformOrigin: sag ? "100% 0" : "50% 0",
+        transform: `translateY(${-cik * 40}px) scale(${(0.6 + 0.4 * gir) * olcek})`,
       }}
     >
       <div style={{ display: "flex", alignItems: "center", gap: 22, padding: "20px 34px", borderRadius: 30, background: ZEMIN_KART, border: `3px solid ${ALTIN}`, boxShadow: "0 12px 30px rgba(0,0,0,0.5)" }}>

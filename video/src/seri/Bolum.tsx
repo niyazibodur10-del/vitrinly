@@ -26,8 +26,10 @@ export const zamanlar = (b: Bolum) => {
   const kararSure = b.karar.sure ?? 7;
   const kararBas = b.karar.bas ?? b.sure - kararSure;
   const yorumBas = b.kazananYorum ? b.kazananYorum.bas ?? DAMGA_SN : 0;
-  const aboneBas = b.abone === false ? null : b.abone?.bas ?? kararBas - 0.4 - ABONE_SURE_SN;
-  return { kararSure, kararBas, yorumBas, aboneBas };
+  const aboneSure = (b.abone ? b.abone.sure : undefined) ?? ABONE_SURE_SN;
+  const aboneKlik = (b.abone ? b.abone.klik : undefined) ?? ABONE_KLIK_SN;
+  const aboneBas = b.abone === false ? null : b.abone?.bas ?? kararBas - 0.4 - aboneSure;
+  return { kararSure, kararBas, yorumBas, aboneBas, aboneSure, aboneKlik };
 };
 
 export const bolumMetadata: CalculateMetadataFunction<BolumProps> = ({ props }) => {
@@ -61,7 +63,7 @@ export const BolumKompozisyon: React.FC<BolumProps> = ({ bolumId, taslak, kilavu
   if (hatalar.length) throw new Error(`[seri kapı] ${bolumId} ${taslak ? "(taslak)" : "(yayın)"}:\n- ${hatalar.join("\n- ")}`);
   const b = bolumBul(bolumId)!;
   const k = (sn: number) => Math.round(sn * fps);
-  const { kararSure, kararBas, yorumBas, aboneBas } = zamanlar(b);
+  const { kararSure, kararBas, yorumBas, aboneBas, aboneSure, aboneKlik } = zamanlar(b);
   const sablonSfx = b.ses.sablonSfx !== false;
   const satirlar = b.satirlar.satirlar;
   // çekim çatısı: Rhubarb → 3 durum, 2 kareden kısa cue birleşir (geçişte 2 karelik alfa karışımı Rig.tsx'te)
@@ -85,7 +87,7 @@ export const BolumKompozisyon: React.FC<BolumProps> = ({ bolumId, taslak, kilavu
       <Altyazi satirlar={satirlar} />
       <BankSayaci baslangic={b.bank.baslangic} olaylar={b.bank.olaylar ?? []} sesAcik={sablonSfx} />
       <Sequence durationInFrames={k(DAMGA_SN)} name="açılış damgası">
-        <AcilisDamgasi no={b.no} sure={DAMGA_SN} logo={b.logo} ust={b.damgaUst} />
+        <AcilisDamgasi no={b.no} sure={DAMGA_SN} logo={b.logo} ust={b.damga?.ust} olcek={b.damga?.olcek} sag={b.damga?.sag} />
       </Sequence>
       {b.kazananYorum ? (
         <Sequence from={k(yorumBas)} durationInFrames={k(b.kazananYorum.sure ?? 4)} name="kazanan yorum">
@@ -93,10 +95,10 @@ export const BolumKompozisyon: React.FC<BolumProps> = ({ bolumId, taslak, kilavu
         </Sequence>
       ) : null}
       {aboneBas !== null ? (
-        <Sequence from={k(aboneBas)} durationInFrames={k(ABONE_SURE_SN)} name="takip">
+        <Sequence from={k(aboneBas)} durationInFrames={k(aboneSure)} name="takip">
           <AboneOl
             duzen="dikey" ust={(b.abone ? b.abone.ust : undefined) ?? BANT.kart.ust + 60} ad="Flip By Vote" tutamac="@flipbyvote" adBoyut={30}
-            dugme="FOLLOW" dugmeSonra="✓ FOLLOWING" profil={<GeciciLogo boyut={96} logo={b.logo} />}
+            dugme="FOLLOW" dugmeSonra="✓ FOLLOWING" sure={aboneSure} klik={aboneKlik} profil={<GeciciLogo boyut={96} logo={b.logo} />}
           />
         </Sequence>
       ) : null}
@@ -113,7 +115,7 @@ export const BolumKompozisyon: React.FC<BolumProps> = ({ bolumId, taslak, kilavu
         <>
           <Sequence durationInFrames={k(1)} layout="none"><Audio src={staticFile(SFX.damga)} volume={0.6} /></Sequence>
           {b.kazananYorum ? <Sequence from={k(yorumBas)} durationInFrames={k(1)} layout="none"><Audio src={staticFile(SFX.kart)} volume={0.5} /></Sequence> : null}
-          {aboneBas !== null ? <Sequence from={k(aboneBas + ABONE_KLIK_SN)} durationInFrames={k(1)} layout="none"><Audio src={staticFile(SFX.klik)} volume={0.9} /></Sequence> : null}
+          {aboneBas !== null ? <Sequence from={k(aboneBas + aboneKlik)} durationInFrames={k(1)} layout="none"><Audio src={staticFile(SFX.klik)} volume={0.9} /></Sequence> : null}
           <Sequence from={k(kararBas)} durationInFrames={k(1)} layout="none"><Audio src={staticFile(SFX.kart)} volume={0.6} /></Sequence>
         </>
       ) : null}
