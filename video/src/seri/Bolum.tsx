@@ -9,6 +9,8 @@ import { dogrula } from "./dogrula";
 import { AcilisDamgasi, GeciciLogo, KararKartiKatman, KazananYorumKarti } from "./Kartlar";
 import { BANT, FPS, GUVENLI, SFX } from "./sabitler";
 import { SahneKarti } from "./SahneKarti";
+import { CekimKarti, type AgizDurumlari } from "./Cekim";
+import { ucDurumAgiz } from "./zaman";
 import type { Bolum, BolumProps } from "./tipler";
 
 // Flip By Vote bölüm kompozisyonu: veri (bolumler/bolum-XXX.ts) → 1080x1920 30 fps video.
@@ -22,7 +24,7 @@ export const DAMGA_SN = 1.8;
 
 export const zamanlar = (b: Bolum) => {
   const kararSure = b.karar.sure ?? 7;
-  const kararBas = b.sure - kararSure;
+  const kararBas = b.karar.bas ?? b.sure - kararSure;
   const yorumBas = b.kazananYorum ? b.kazananYorum.bas ?? DAMGA_SN : 0;
   const aboneBas = b.abone === false ? null : b.abone?.bas ?? kararBas - 0.4 - ABONE_SURE_SN;
   return { kararSure, kararBas, yorumBas, aboneBas };
@@ -62,18 +64,28 @@ export const BolumKompozisyon: React.FC<BolumProps> = ({ bolumId, taslak, kilavu
   const { kararSure, kararBas, yorumBas, aboneBas } = zamanlar(b);
   const sablonSfx = b.ses.sablonSfx !== false;
   const satirlar = b.satirlar.satirlar;
+  // çekim çatısı: Rhubarb → 3 durum, 2 kareden kısa cue birleşir (geçişte 2 karelik alfa karışımı Rig.tsx'te)
+  const agiz3 = React.useMemo<AgizDurumlari>(() => {
+    const o: AgizDurumlari = {};
+    for (const kim of ["jake", "mike"] as const) if (b.agiz?.[kim]) o[kim] = ucDurumAgiz(b.agiz[kim]!, 2 / FPS - 1e-6);
+    return o;
+  }, [b]);
 
   return (
     <AbsoluteFill style={{ backgroundColor: "#000" }}>
       {b.sahneler.map((s) => (
         <Sequence key={s.id} from={k(s.bas)} durationInFrames={k(s.bitis) - k(s.bas)} name={`sahne ${s.id}`}>
-          <SahneKarti sahne={s} satirlar={satirlar} agiz={b.agiz} agizYolu={b.agizYolu} />
+          {s.cekim && b.mekan ? (
+            <CekimKarti sahne={s} mekan={b.mekan} agiz={agiz3} />
+          ) : (
+            <SahneKarti sahne={s} satirlar={satirlar} agiz={b.agiz} agizYolu={b.agizYolu} />
+          )}
         </Sequence>
       ))}
       <Altyazi satirlar={satirlar} />
       <BankSayaci baslangic={b.bank.baslangic} olaylar={b.bank.olaylar ?? []} sesAcik={sablonSfx} />
       <Sequence durationInFrames={k(DAMGA_SN)} name="açılış damgası">
-        <AcilisDamgasi no={b.no} sure={DAMGA_SN} logo={b.logo} />
+        <AcilisDamgasi no={b.no} sure={DAMGA_SN} logo={b.logo} ust={b.damgaUst} />
       </Sequence>
       {b.kazananYorum ? (
         <Sequence from={k(yorumBas)} durationInFrames={k(b.kazananYorum.sure ?? 4)} name="kazanan yorum">
@@ -83,13 +95,13 @@ export const BolumKompozisyon: React.FC<BolumProps> = ({ bolumId, taslak, kilavu
       {aboneBas !== null ? (
         <Sequence from={k(aboneBas)} durationInFrames={k(ABONE_SURE_SN)} name="takip">
           <AboneOl
-            duzen="dikey" ust={BANT.kart.ust + 60} ad="Flip By Vote" tutamac="@flipbyvote" adBoyut={30}
+            duzen="dikey" ust={(b.abone ? b.abone.ust : undefined) ?? BANT.kart.ust + 60} ad="Flip By Vote" tutamac="@flipbyvote" adBoyut={30}
             dugme="FOLLOW" dugmeSonra="✓ FOLLOWING" profil={<GeciciLogo boyut={96} logo={b.logo} />}
           />
         </Sequence>
       ) : null}
       <Sequence from={k(kararBas)} durationInFrames={k(kararSure)} name="karar kartı">
-        <KararKartiKatman k={b.karar} sonrakiNo={b.no + 1} />
+        <KararKartiKatman k={b.karar} sonrakiNo={b.no + 1} bas={kararBas} />
       </Sequence>
       {kilavuz ? <Kilavuz /> : null}
 

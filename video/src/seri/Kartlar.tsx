@@ -1,9 +1,10 @@
 import React from "react";
 import { Easing, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { ALTIN, anton, BANT, fredoka, GUVENLI, GUVENLI_W, RENK, ZEMIN_KART } from "./sabitler";
+import { Ikon } from "./Ikonlar";
 import type { KararKarti, KazananYorum } from "./tipler";
 
-// Dizinin kart katmanları: geçici logo, açılış damgası (≤2 sn), kazanan yorum kartı (3–5 sn), karar kartı (son 5–8 sn).
+// Dizinin kart katmanları: geçici logo, açılış damgası (≤2 sn), kazanan yorum kartı (3–5 sn), karar kartı (5–8 sn).
 // Hepsi BANT.kart (y 400–1110) içinde, güvenli alanın yatay sınırlarında (x 60–890). Sesler Bolum.tsx'te yerleşir.
 
 const CL = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
@@ -27,7 +28,7 @@ export const GeciciLogo: React.FC<{ boyut: number; logo?: string }> = ({ boyut, 
 };
 
 /** Açılış damgası: "FLIP BY VOTE · EP. N" + logo. Varsayılan 1,8 sn (≤2 sn kuralı). */
-export const AcilisDamgasi: React.FC<{ no: number; sure?: number; logo?: string }> = ({ no, sure = 1.8, logo }) => {
+export const AcilisDamgasi: React.FC<{ no: number; sure?: number; logo?: string; ust?: number }> = ({ no, sure = 1.8, logo, ust = BANT.kart.ust + 40 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = frame / fps;
@@ -38,7 +39,7 @@ export const AcilisDamgasi: React.FC<{ no: number; sure?: number; logo?: string 
   return (
     <div
       style={{
-        position: "absolute", left: GUVENLI.sol, width: GUVENLI_W, top: BANT.kart.ust + 40,
+        position: "absolute", left: GUVENLI.sol, width: GUVENLI_W, top: ust,
         display: "flex", justifyContent: "center", opacity: 1 - cik,
         transform: `translateY(${-cik * 40}px) scale(${0.6 + 0.4 * gir})`,
       }}
@@ -99,50 +100,63 @@ export const KazananYorumKarti: React.FC<{ y: KazananYorum }> = ({ y }) => {
   );
 };
 
-const HARF_RENK = [RENK.jake.ana, RENK.mike.ana, ALTIN];
+const SECENEK_RENK = [RENK.jake.ana, RENK.mike.ana, ALTIN];
 
-/** Karar kartı: soru + 2–3 seçenek (A/B/C) + yorum çağrısı + "Ep. N drops tomorrow". Bölümün son 5–8 sn'si. */
-export const KararKartiKatman: React.FC<{ k: KararKarti; sonrakiNo: number }> = ({ k, sonrakiNo }) => {
+/** Karar kartı: soru + 2–3 seçenek (isim + fiyat; harf/numara YOK — incil §5.1) + "Tell us in the comments 👇"
+ *  + "Ep. N: YOUR call" (gün sözü yok — incil §5.7). `k.kapanis` verilirse kart o ana kadar kart bandının altına yaslı
+ *  durur (üstte konuşan yüzler görünür), kapanışta altyazı bandına iner ve "Ep. N: YOUR call" damgası belirir. */
+export const KararKartiKatman: React.FC<{ k: KararKarti; sonrakiNo: number; bas: number }> = ({ k, sonrakiNo, bas }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = frame / fps;
+  const kapanis = k.kapanis !== undefined ? k.kapanis - bas : 0;
   const kart = spring({ frame, fps, config: { damping: 16, stiffness: 140, mass: 0.9 } });
-  const karart = interpolate(t, [0, 0.3], [0, 0.55], CL);
   const sec = (i: number) => spring({ frame: frame - Math.round((0.35 + i * 0.18) * fps), fps, config: { damping: 14, stiffness: 160 } });
   const cagri = spring({ frame: frame - Math.round((0.35 + k.secenekler.length * 0.18 + 0.15) * fps), fps, config: { damping: 12, stiffness: 150 } });
+  const ep = spring({ frame: frame - Math.round(kapanis * fps), fps, config: { damping: 10, stiffness: 190, mass: 0.7 } });
+  const in_ = k.kapanis !== undefined ? spring({ frame: frame - Math.round(kapanis * fps), fps, config: { damping: 18, stiffness: 120 } }) : 1;
+  const karart = interpolate(t, [0, 0.3], [0, 0.35], CL) + 0.2 * in_;
   const ok = Math.sin(t * 6) * 6 * cagri;
+  const cik = interpolate(t, [(k.sure ?? 7) - 0.25, k.sure ?? 7], [0, 1], { ...CL, easing: Easing.in(Easing.cubic) });
+  // alt kenar: kart bandı (1110) → altyazı bandı (1420)
+  const ust0 = k.kapanis !== undefined ? BANT.altyazi.ust - 10 : BANT.kart.alt;
+  const alt = 1920 - (ust0 + (BANT.altyazi.alt - ust0) * in_);
   return (
     <>
-      <div style={{ position: "absolute", inset: 0, background: `rgba(5,8,14,${karart})` }} />
+      <div style={{ position: "absolute", inset: 0, background: `linear-gradient(to bottom, rgba(5,8,14,${karart * 0.3}) 0%, rgba(5,8,14,${karart}) 55%)`, opacity: 1 - cik }} />
       <div
         style={{
-          position: "absolute", left: GUVENLI.sol, width: GUVENLI_W, top: BANT.kart.ust, height: BANT.kart.alt - BANT.kart.ust,
-          display: "flex", flexDirection: "column", justifyContent: "center",
-          transform: `scale(${0.85 + 0.15 * kart})`, opacity: Math.min(1, kart * 1.5),
+          position: "absolute", left: GUVENLI.sol, width: GUVENLI_W, bottom: alt,
+          transform: `scale(${(0.85 + 0.15 * kart) * (1 - 0.1 * cik)})`, transformOrigin: "50% 100%", opacity: Math.min(1, kart * 1.5) * (1 - cik),
         }}
       >
-        <div style={{ padding: "28px 30px 24px", borderRadius: 36, background: ZEMIN_KART, border: `4px solid ${ALTIN}`, boxShadow: "0 18px 44px rgba(0,0,0,0.6)" }}>
-          <div style={{ fontFamily: anton, fontSize: 34, letterSpacing: 5, color: ALTIN }}>YOU DECIDE</div>
-          <div style={{ fontFamily: fredoka, fontWeight: 700, fontSize: 54, lineHeight: 1.1, color: "#fff", marginTop: 6 }}>{k.soru}</div>
-          <div style={{ display: "flex", flexDirection: "column", gap: 12, marginTop: 20 }}>
+        <div style={{ padding: "22px 28px 20px", borderRadius: 36, background: ZEMIN_KART, border: `4px solid ${ALTIN}`, boxShadow: "0 18px 44px rgba(0,0,0,0.6)" }}>
+          <div style={{ fontFamily: anton, fontSize: 30, letterSpacing: 5, color: ALTIN }}>YOU DECIDE</div>
+          <div style={{ fontFamily: fredoka, fontWeight: 700, fontSize: 50, lineHeight: 1.08, color: "#fff", marginTop: 4 }}>{k.soru}</div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 10, marginTop: 14 }}>
             {k.secenekler.map((s, i) => {
               const p = sec(i);
+              const ikon = k.ikonlar?.[i];
               return (
-                <div key={i} style={{ display: "flex", alignItems: "center", gap: 20, padding: "10px 16px", borderRadius: 22, background: "rgba(255,255,255,0.08)", opacity: Math.min(1, p * 1.4), transform: `translateX(${(1 - p) * 60}px)` }}>
-                  <div style={{ flex: "none", width: 72, height: 72, borderRadius: 18, background: HARF_RENK[i], display: "flex", alignItems: "center", justifyContent: "center", fontFamily: anton, fontSize: 48, color: "#fff", boxShadow: "0 4px 0 rgba(0,0,0,0.35)" }}>
-                    {"ABC"[i]}
-                  </div>
-                  <div style={{ fontFamily: fredoka, fontWeight: 700, fontSize: 44, lineHeight: 1.12, color: "#fff" }}>{s}</div>
+                <div key={i} style={{ display: "flex", alignItems: "center", gap: 18, padding: "6px 14px", borderRadius: 20, background: "rgba(255,255,255,0.08)", borderLeft: `8px solid ${SECENEK_RENK[i]}`, opacity: Math.min(1, p * 1.4), transform: `translateX(${(1 - p) * 60}px)` }}>
+                  {ikon ? <Ikon ad={ikon} boyut={56} hale={false} /> : null}
+                  <div style={{ fontFamily: fredoka, fontWeight: 700, fontSize: 40, lineHeight: 1.1, color: "#fff" }}>{s}</div>
                 </div>
               );
             })}
           </div>
-          <div style={{ marginTop: 20, textAlign: "center", opacity: Math.min(1, cagri * 1.4), transform: `scale(${0.8 + 0.2 * cagri})` }}>
-            <div style={{ fontFamily: fredoka, fontWeight: 700, fontSize: 48, color: "#fff" }}>
+          <div style={{ marginTop: 14, textAlign: "center", opacity: Math.min(1, cagri * 1.4), transform: `scale(${0.8 + 0.2 * cagri})` }}>
+            <div style={{ fontFamily: fredoka, fontWeight: 700, fontSize: 46, color: "#fff" }}>
               Tell us in the comments <span style={{ display: "inline-block", transform: `translateY(${ok}px)` }}>👇</span>
             </div>
-            <div style={{ fontFamily: fredoka, fontWeight: 700, fontSize: 42, color: ALTIN, marginTop: 6 }}>Ep. {sonrakiNo} drops tomorrow</div>
           </div>
+          {t >= kapanis ? (
+            <div style={{ marginTop: 10, textAlign: "center", transform: `scale(${0.5 + 0.5 * ep})`, opacity: Math.min(1, ep * 1.5) }}>
+              <span style={{ display: "inline-block", padding: "6px 26px", borderRadius: 18, background: ALTIN, fontFamily: anton, fontSize: 52, letterSpacing: 2, color: "#14110a" }}>
+                Ep. {sonrakiNo}: YOUR call
+              </span>
+            </div>
+          ) : null}
         </div>
       </div>
     </>

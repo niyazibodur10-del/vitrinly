@@ -27,7 +27,7 @@ Bir bölüm = **tek veri dosyası** (`bolumler/bolum-XXX.ts`) + varlıklar (`vid
 | ağız yolları (`agizYolu`, bölüm veya sahne düzeyi) | **yama**: karakterin `agiz` kutusuna Rhubarb A–H/X karesi (eksik şekil en yakına düşer). **ifade**: `ifadeler` (`notr`, `konusur`, + sahne `ifadeler[]` atamaları). **kamera**: ağız yok, kamera konuşana kayar (ölçek 1,28, 0,35 sn). |
 | `Altyazi.tsx` | ≤4 kelimelik öbek, kelime söylenince belirir; o anki kelime konuşmacı renginde (Jake `#4DA8FF`, Mike `#FF5A4E`) + ad hapı. |
 | `BankSayaci.tsx` | Sol üst "BANK: $100"; `bank.olaylar[{t, deger}]` → 0,9 sn sayma, renk parlaması, "+$X/−$X" etiketi, ses (artış ka-ching, düşüş bozuk para; `ses:false` sessiz). |
-| `Kartlar.tsx` | Açılış damgası (1,8 sn, "FLIP BY VOTE · EP. N" + logo), kazanan yorum kartı (3–5 sn, varsayılan 1,8 sn'de), karar kartı (son 5–8 sn: soru, A/B/C, "Tell us in the comments 👇", "Ep. N+1 drops tomorrow"), geçici logo. |
+| `Kartlar.tsx` | Açılış damgası (1,8 sn, "FLIP BY VOTE · EP. N" + logo), kazanan yorum kartı (3–5 sn, varsayılan 1,8 sn'de), karar kartı (5–8 sn, `karar.bas` ile taşınır: soru, isim+fiyat seçenekleri (harf yok, incil §5.1), "Tell us in the comments 👇", `karar.kapanis` anında "Ep. N+1: YOUR call" (gün sözü yok, §5.7)), geçici logo. |
 | `../ortak/AboneOl.tsx` | Dikey takip kartı ("FOLLOW → ✓ FOLLOWING", @flipbyvote). Varsayılan: karar kartından 0,4 sn önce biter (1 kez). `abone:false` kapatır, `abone.bas` taşır. Eski kullanım piksel-aynı (2026-11-10 cmp). |
 | `Bolum.tsx` | Katmanları ve sesi birleştirir: diyalog + `ses.muzik` (vars. 0,18) + `ses.sfx` stem'i + şablon efektleri (`ses.sablonSfx:false` ile kapanır — stem'de varsa çift olmasın). |
 

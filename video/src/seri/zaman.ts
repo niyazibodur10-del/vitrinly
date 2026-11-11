@@ -122,3 +122,51 @@ export const konusuyor = (satirlar: Satir[], kim: Konusmaci, t: number) =>
   satirlar.some((s) => s.konusmaci === kim && t >= s.bas && t < s.bitis);
 
 export const kare = (sn: number, fps: number) => Math.round(sn * fps);
+
+/** Rhubarb A–H/X → 3 durum (kapali/yari/acik) — görsel-varlık eşlemesi (VARLIKLAR.md):
+ *  X,A → kapali · B,F,G,H → yari · C,D,E → acik. Aynı durumlar birleşir; `minSn`'den kısa cue bir öncekine katılır
+ *  (2 kareden kısa ağız titremesi okunmaz, göz yorar). Çıktı sekil alanı durum adıdır. */
+export type AgizDurum = "kapali" | "yari" | "acik";
+export const DURUM_ESLEME: Record<string, AgizDurum> = {
+  X: "kapali", A: "kapali", B: "yari", F: "yari", G: "yari", H: "yari", C: "acik", D: "acik", E: "acik",
+};
+export const ucDurumAgiz = (cues: AgizCue[], minSn: number): { bas: number; bitis: number; sekil: AgizDurum }[] => {
+  const birlestir = (l: { bas: number; bitis: number; sekil: AgizDurum }[]) => {
+    const o: typeof l = [];
+    for (const c of l) {
+      const son = o[o.length - 1];
+      if (son && son.sekil === c.sekil) son.bitis = c.bitis;
+      else o.push({ ...c });
+    }
+    return o;
+  };
+  const ham = birlestir(cues.map((c) => ({ bas: c.bas, bitis: c.bitis, sekil: DURUM_ESLEME[c.sekil] ?? "kapali" })));
+  const out: typeof ham = [];
+  for (const c of ham) {
+    const son = out[out.length - 1];
+    if (son && c.bitis - c.bas < minSn - 1e-6) son.bitis = c.bitis; // kısa cue öncekine katılır
+    else out.push({ ...c });
+  }
+  return birlestir(out);
+};
+
+/** t anındaki ağız: iki durum ve karışım oranı. Geçiş cue sınırına ORTALI `gecisSn` (2 kare: sınırdan 1 kare önce
+ *  %0 → sınırda %50 → 1 kare sonra %100) — gecikme yok, ses ile ağız aynı karede döner. Sonuç: `alt` tam, `ust` p ile üstte. */
+export const agizDurumu = (
+  cues: { bas: number; bitis: number; sekil: AgizDurum }[] | undefined, t: number, gecisSn: number,
+): { alt: AgizDurum; ust: AgizDurum; p: number } => {
+  const bul = (x: number): AgizDurum => {
+    if (!cues) return "kapali";
+    let lo = 0, hi = cues.length - 1, i = -1;
+    while (lo <= hi) { const m = (lo + hi) >> 1; if (cues[m].bas <= x) { i = m; lo = m + 1; } else hi = m - 1; }
+    return i >= 0 && x < cues[i].bitis ? cues[i].sekil : "kapali";
+  };
+  const h = gecisSn / 2;
+  const once = bul(t - h), sonra = bul(t + h);
+  if (once === sonra || gecisSn <= 0) return { alt: bul(t), ust: bul(t), p: 1 };
+  // sınır anı: (t-h, t+h] içinde durum değişimi; oran sınıra göre
+  let lo = t - h, hi = t + h;
+  for (let k = 0; k < 20; k++) { const m = (lo + hi) / 2; if (bul(m) === once) lo = m; else hi = m; }
+  const p = Math.min(1, Math.max(0, (t - (hi - h)) / gecisSn));
+  return { alt: once, ust: sonra, p };
+};

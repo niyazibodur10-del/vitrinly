@@ -2,7 +2,7 @@
  "fps": 30,
  "events": [
   {
-   "f": 0,
+   "f": 3,
    "kind": "sfx",
    "id": "S1-carpma"
   },
@@ -77,12 +77,12 @@
    "id": "S4-gag-durus"
   },
   {
-   "f": 1125,
+   "f": 1124,
    "kind": "sfx",
    "id": "S5-ilan-sifonyer"
   },
   {
-   "f": 1243,
+   "f": 1241,
    "kind": "sfx",
    "id": "S5-portre-saskin"
   },
@@ -112,7 +112,7 @@
    "id": "S5-ikon-clock"
   },
   {
-   "f": 1605,
+   "f": 1607,
    "kind": "sfx",
    "id": "S6-ilan-kutu"
   },
@@ -132,17 +132,17 @@
    "id": "S6-ikon-disk"
   },
   {
-   "f": 1861,
+   "f": 1860,
    "kind": "sfx",
    "id": "S7-gerilim"
   },
   {
-   "f": 2156,
+   "f": 2484,
    "kind": "abone",
    "id": "S8-abone-klik"
   },
   {
-   "f": 2234,
+   "f": 2235,
    "kind": "sfx",
    "id": "S8-karar-karti"
   },

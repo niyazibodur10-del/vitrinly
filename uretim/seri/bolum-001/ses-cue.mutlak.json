@@ -1,7 +1,7 @@
 {
  "bolum": "001",
- "sure": 81.472,
- "karar_bas": 74.472,
+ "sure": 85.0,
+ "karar_bas": 78.0,
  "fps": 30,
  "konusma": [
   [
@@ -171,9 +171,9 @@
    "dosya": "seri/ortak/sfx/tezgah-carpma.flac",
    "hiza": "onset",
    "db": 0,
-   "t": 0.0,
-   "kare": 0,
-   "kaynak": "satir"
+   "t": 0.1,
+   "kare": 3,
+   "kaynak": "gorsel"
   },
   {
    "id": "S1-hardal",
@@ -183,7 +183,7 @@
    "db": -9,
    "t": 4.6,
    "kare": 138,
-   "kaynak": "kelime-whisper"
+   "kaynak": "gorsel"
   },
   {
    "id": "S2-tahta-100",
@@ -193,7 +193,7 @@
    "db": -10,
    "t": 7.206,
    "kare": 216,
-   "kaynak": "satir"
+   "kaynak": "gorsel"
   },
   {
    "id": "S2-tahta-milyon",
@@ -203,7 +203,7 @@
    "db": -11,
    "t": 12.138,
    "kare": 364,
-   "kaynak": "satir"
+   "kaynak": "gorsel"
   },
   {
    "id": "S2-sifir-1",
@@ -213,7 +213,7 @@
    "db": -8,
    "t": 12.588,
    "kare": 378,
-   "kaynak": "satir"
+   "kaynak": "gorsel"
   },
   {
    "id": "S2-sifir-2",
@@ -223,7 +223,7 @@
    "db": -8,
    "t": 12.708,
    "kare": 381,
-   "kaynak": "satir"
+   "kaynak": "gorsel"
   },
   {
    "id": "S2-sifir-3",
@@ -233,7 +233,7 @@
    "db": -8,
    "t": 12.828,
    "kare": 385,
-   "kaynak": "satir"
+   "kaynak": "gorsel"
   },
   {
    "id": "S2-sifir-4",
@@ -243,7 +243,7 @@
    "db": -8,
    "t": 12.948,
    "kare": 388,
-   "kaynak": "satir"
+   "kaynak": "gorsel"
   },
   {
    "id": "S2-sifir-5",
@@ -253,7 +253,7 @@
    "db": -8,
    "t": 13.068,
    "kare": 392,
-   "kaynak": "satir"
+   "kaynak": "gorsel"
   },
   {
    "id": "S2-sifir-6",
@@ -263,7 +263,7 @@
    "db": -8,
    "t": 13.188,
    "kare": 396,
-   "kaynak": "satir"
+   "kaynak": "gorsel"
   },
   {
    "id": "S2-you-decide",
@@ -273,7 +273,7 @@
    "db": -8,
    "t": 16.04,
    "kare": 481,
-   "kaynak": "kelime-whisper"
+   "kaynak": "gorsel"
   },
   {
    "id": "S3-telefon",
@@ -281,9 +281,9 @@
    "dosya": "seri/ortak/sfx/swipe.flac",
    "hiza": "apex",
    "db": -9,
-   "t": 17.303,
+   "t": 17.3,
    "kare": 519,
-   "kaynak": "satir"
+   "kaynak": "gorsel"
   },
   {
    "id": "S4-ilan-bisiklet",
@@ -291,9 +291,9 @@
    "dosya": "seri/ortak/sfx/whoosh-kart.flac",
    "hiza": "apex",
    "db": -6,
-   "t": 24.595,
+   "t": 24.6,
    "kare": 738,
-   "kaynak": "satir"
+   "kaynak": "gorsel"
   },
   {
    "id": "S4-tahta-hesap",
@@ -303,7 +303,7 @@
    "db": -13,
    "t": 30.44,
    "kare": 913,
-   "kaynak": "kelime-whisper"
+   "kaynak": "gorsel"
   },
   {
    "id": "S4-gag-durus",
@@ -313,7 +313,7 @@
    "db": -4,
    "t": 35.054,
    "kare": 1052,
-   "kaynak": "satir"
+   "kaynak": "gorsel"
   },
   {
    "id": "S5-ilan-sifonyer",
@@ -321,9 +321,9 @@
    "dosya": "seri/ortak/sfx/whoosh-kart.flac",
    "hiza": "apex",
    "db": -8,
-   "t": 37.5,
-   "kare": 1125,
-   "kaynak": "kelime-whisper"
+   "t": 37.48,
+   "kare": 1124,
+   "kaynak": "gorsel"
   },
   {
    "id": "S5-portre-saskin",
@@ -331,9 +331,9 @@
    "dosya": "seri/ortak/sfx/pop-yumusak.flac",
    "hiza": "onset",
    "db": -10,
-   "t": 41.421,
-   "kare": 1243,
-   "kaynak": "satir"
+   "t": 41.38,
+   "kare": 1241,
+   "kaynak": "gorsel"
   },
   {
    "id": "S5-siluet-araba",
@@ -343,7 +343,7 @@
    "db": -5,
    "t": 47.349,
    "kare": 1420,
-   "kaynak": "satir"
+   "kaynak": "gorsel"
   },
   {
    "id": "S5-siluet-sifonyer",
@@ -353,7 +353,7 @@
    "db": -5,
    "t": 47.699,
    "kare": 1431,
-   "kaynak": "satir"
+   "kaynak": "gorsel"
   },
   {
    "id": "S5-ikon-truck",
@@ -363,7 +363,7 @@
    "db": -11,
    "t": 48.76,
    "kare": 1463,
-   "kaynak": "kelime-whisper"
+   "kaynak": "gorsel"
   },
   {
    "id": "S5-ikon-paint",
@@ -373,7 +373,7 @@
    "db": -11,
    "t": 49.14,
    "kare": 1474,
-   "kaynak": "kelime-whisper"
+   "kaynak": "gorsel"
   },
   {
    "id": "S5-ikon-clock",
@@ -383,7 +383,7 @@
    "db": -11,
    "t": 49.58,
    "kare": 1487,
-   "kaynak": "kelime-whisper"
+   "kaynak": "gorsel"
   },
   {
    "id": "S6-ilan-kutu",
@@ -391,9 +391,9 @@
    "dosya": "seri/ortak/sfx/whoosh-kart.flac",
    "hiza": "apex",
    "db": -6,
-   "t": 53.51,
-   "kare": 1605,
-   "kaynak": "satir"
+   "t": 53.56,
+   "kare": 1607,
+   "kaynak": "gorsel"
   },
   {
    "id": "S6-kutu-titrer",
@@ -403,7 +403,7 @@
    "db": -12,
    "t": 54.7,
    "kare": 1641,
-   "kaynak": "kelime-whisper"
+   "kaynak": "gorsel"
   },
   {
    "id": "S6-ikon-kartus",
@@ -413,7 +413,7 @@
    "db": -13,
    "t": 58.26,
    "kare": 1748,
-   "kaynak": "kelime-whisper"
+   "kaynak": "gorsel"
   },
   {
    "id": "S6-ikon-disk",
@@ -423,7 +423,7 @@
    "db": -11,
    "t": 60.674,
    "kare": 1820,
-   "kaynak": "kelime-oran"
+   "kaynak": "gorsel"
   },
   {
    "id": "S7-gerilim",
@@ -431,9 +431,9 @@
    "dosya": "seri/ortak/sfx/gerilim-dusus.flac",
    "hiza": "onset",
    "db": -6,
-   "t": 62.019,
-   "kare": 1861,
-   "kaynak": "satir"
+   "t": 62.0,
+   "kare": 1860,
+   "kaynak": "gorsel"
   },
   {
    "id": "S8-abone-klik",
@@ -442,9 +442,9 @@
    "hiza": "onset",
    "db": -6,
    "tur": "abone",
-   "t": 71.872,
-   "kare": 2156,
-   "kaynak": "sablon"
+   "t": 82.8,
+   "kare": 2484,
+   "kaynak": "gorsel"
   },
   {
    "id": "S8-karar-karti",
@@ -452,9 +452,9 @@
    "dosya": "seri/ortak/sfx/whoosh-kart.flac",
    "hiza": "apex",
    "db": -7,
-   "t": 74.472,
-   "kare": 2234,
-   "kaynak": "sablon"
+   "t": 74.5,
+   "kare": 2235,
+   "kaynak": "gorsel"
   },
   {
    "id": "S8-ep2-ding",
@@ -462,9 +462,9 @@
    "dosya": "seri/ortak/sfx/ding.flac",
    "hiza": "onset",
    "db": -4,
-   "t": 78.592,
+   "t": 78.59,
    "kare": 2358,
-   "kaynak": "satir"
+   "kaynak": "gorsel"
   }
  ],
  "girdi": {

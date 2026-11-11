@@ -33,8 +33,9 @@ export const BankSayaci: React.FC<{ baslangic: number; olaylar: BankOlayi[]; ses
   const artis = son ? son.deger >= sonOnceki : true;
   const vurgu = interpolate(dt, [0, 0.12, SAY + 0.5], [0, 1, 0], CL);
   const pop = interpolate(dt, [0, 0.1, 0.25, 0.4], [1, 1.16, 0.97, 1], CL);
-  const renk = artis ? "61,220,132" : "255,77,77";
   const fark = son ? son.deger - sonOnceki : 0;
+  // aynı değer olayı = yalnız "pop" (giriş vurgusu, altın), etiket yok
+  const renk = fark === 0 ? "255,201,60" : artis ? "61,220,132" : "255,77,77";
   const etiket = interpolate(dt, [0, 0.15, 1.2, 1.6], [0, 1, 1, 0], CL);
 
   return (
@@ -52,7 +53,7 @@ export const BankSayaci: React.FC<{ baslangic: number; olaylar: BankOlayi[]; ses
           {para(deger)}
         </span>
       </div>
-      {son && etiket > 0 ? (
+      {son && etiket > 0 && fark !== 0 ? (
         <div
           style={{
             position: "absolute", left: GUVENLI.sol + 24, top: BANT.bank.ust + 96 - 30 * Math.min(1, dt / 1.2), opacity: etiket,

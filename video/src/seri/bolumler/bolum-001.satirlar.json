@@ -1,0 +1,184 @@
+{
+ "sesler": {
+  "JAKE": "am_onyx:0.95",
+  "MIKE": "am_fenrir:1.05"
+ },
+ "sure": 78.772,
+ "satirlar": [
+  {
+   "no": 1,
+   "konusmaci": "MIKE",
+   "bas": 0.15,
+   "bitis": 2.232,
+   "metin": "That's it. Every dollar we have."
+  },
+  {
+   "no": 2,
+   "konusmaci": "JAKE",
+   "bas": 2.652,
+   "bitis": 6.986,
+   "metin": "Rent's paid. Fridge has mustard. That's everything."
+  },
+  {
+   "no": 3,
+   "konusmaci": "MIKE",
+   "bas": 7.506,
+   "bitis": 9.741,
+   "metin": "Two best friends. One hundred bucks."
+  },
+  {
+   "no": 4,
+   "konusmaci": "JAKE",
+   "bas": 10.161,
+   "bitis": 12.168,
+   "metin": "One slightly crazy goal."
+  },
+  {
+   "no": 5,
+   "konusmaci": "MIKE",
+   "bas": 12.388,
+   "bitis": 13.402,
+   "metin": "A million dollars."
+  },
+  {
+   "no": 6,
+   "konusmaci": "JAKE",
+   "bas": 13.822,
+   "bitis": 16.733,
+   "metin": "And we don't make the moves. You do."
+  },
+  {
+   "no": 7,
+   "konusmaci": "MIKE",
+   "bas": 17.253,
+   "bitis": 19.883,
+   "metin": "Okay. Three flips. Hear me out."
+  },
+  {
+   "no": 8,
+   "konusmaci": "JAKE",
+   "bas": 20.303,
+   "bitis": 22.695,
+   "metin": "Every bad idea starts with hear me out."
+  },
+  {
+   "no": 9,
+   "konusmaci": "MIKE",
+   "bas": 22.915,
+   "bitis": 23.995,
+   "metin": "And every good one!"
+  },
+  {
+   "no": 10,
+   "konusmaci": "MIKE",
+   "bas": 24.645,
+   "bitis": 29.238,
+   "metin": "One. A road bike. Sixty bucks. Flat tires, but look at that frame!"
+  },
+  {
+   "no": 11,
+   "konusmaci": "JAKE",
+   "bas": 29.658,
+   "bitis": 32.363,
+   "metin": "That's most of our money on a bike that can't roll."
+  },
+  {
+   "no": 12,
+   "konusmaci": "MIKE",
+   "bas": 32.583,
+   "bitis": 33.578,
+   "metin": "Air is free, Jake."
+  },
+  {
+   "no": 13,
+   "konusmaci": "JAKE",
+   "bas": 33.998,
+   "bitis": 35.034,
+   "metin": "Tires aren't."
+  },
+  {
+   "no": 14,
+   "konusmaci": "JAKE",
+   "bas": 35.784,
+   "bitis": 41.261,
+   "metin": "Two. A solid wood dresser. Free. We paint it, flip it."
+  },
+  {
+   "no": 15,
+   "konusmaci": "MIKE",
+   "bas": 41.481,
+   "bitis": 43.178,
+   "metin": "Free? What's the catch?"
+  },
+  {
+   "no": 16,
+   "konusmaci": "JAKE",
+   "bas": 43.598,
+   "bitis": 47.199,
+   "metin": "It has to go today. And we have a tiny car."
+  },
+  {
+   "no": 17,
+   "konusmaci": "MIKE",
+   "bas": 48.219,
+   "bitis": 50.817,
+   "metin": "So we rent a truck, buy paint, and wait. Slow."
+  },
+  {
+   "no": 18,
+   "konusmaci": "JAKE",
+   "bas": 51.237,
+   "bitis": 53.04,
+   "metin": "Slow. But safe."
+  },
+  {
+   "no": 19,
+   "konusmaci": "MIKE",
+   "bas": 53.56,
+   "bitis": 57.277,
+   "metin": "Three. A mystery box of old video games. Forty bucks."
+  },
+  {
+   "no": 20,
+   "konusmaci": "JAKE",
+   "bas": 57.697,
+   "bitis": 61.939,
+   "metin": "Could be a gem. Could be forty bucks of scratched discs."
+  },
+  {
+   "no": 21,
+   "konusmaci": "MIKE",
+   "bas": 63.159,
+   "bitis": 65.535,
+   "metin": "Jake, we don't need more money. We need guts."
+  },
+  {
+   "no": 22,
+   "konusmaci": "JAKE",
+   "bas": 65.955,
+   "bitis": 70.907,
+   "metin": "A price tag is just a number. Value is what somebody actually pays."
+  },
+  {
+   "no": 23,
+   "konusmaci": "JAKE",
+   "bas": 71.357,
+   "bitis": 73.729,
+   "metin": "Fine. We let them decide."
+  },
+  {
+   "no": 24,
+   "konusmaci": "MIKE",
+   "bas": 74.549,
+   "bitis": 76.158,
+   "metin": "Bike, dresser, or mystery box?"
+  },
+  {
+   "no": 25,
+   "konusmaci": "JAKE",
+   "bas": 76.578,
+   "bitis": 78.472,
+   "metin": "Tell us in the comments."
+  }
+ ]
+}

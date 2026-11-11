@@ -60,6 +60,53 @@ export type Kamera = {
   gecis?: number;
 };
 
+// ---- Çekim çatısı (animasyon-yonetmeni 2026-11-11, bölüm 001+) ----
+// Sahne `cekim` alanı varsa Cekim.tsx çizer (mekân plakası + rig + kod-prop + kamera); yoksa eski SahneKarti.
+/** Göz kapağı (kodla kırpma): görsel pikselinde göz elipsi + ten rengi. */
+export type GozElips = { cx: number; cy: number; rx: number; ry: number; aci: number; ten: string };
+/** Bir karakterin rig varlıkları: taban görseli + ağız yaması (3 durum) + gözler; ifade portreleri ayrı. */
+export type RigKarakter = {
+  taban: string; w: number; h: number;
+  agiz: { x: number; y: number; w: number; h: number; kapali: string; yari: string; acik: string };
+  gozler: GozElips[];
+  /** yüz merkezi (taban pikseli): kamera odağı */
+  yuz: { x: number; y: number };
+  /** ifade portreleri: ad → {dosya, xy, gozler?} (yerlesim.json ifade_tekli) */
+  portreler: Record<string, { dosya: string; w: number; h: number; xy: [number, number]; olcek: number; gozler?: GozElips[] }>;
+};
+/** Mekân seti (L1 mutfak): plakalar + karakterlerin geniş/tekli yerleşimi (yerlesim.json). */
+export type MekanSeti = {
+  genis: string; on?: string; tahta: string;
+  /** tahta plakasında yazı alanı (px) */
+  tahtaAlan: { x: number; y: number; w: number; h: number };
+  ikili: Record<Konusmaci, { olcek: number; xy: [number, number] }>;
+  /** ikili çekimde önde olan */
+  onde: Konusmaci;
+  tekli: Record<Konusmaci, { plakaOlcek: number; capa: [number, number] }>;
+  portreArka: { olcek: number; capa: [number, number]; bulanik: number };
+  karakterler: Record<Konusmaci, RigKarakter>;
+};
+
+export type Cekim =
+  | { tur: "genis" }
+  | { tur: "yakin"; kim: Konusmaci }
+  | { tur: "portre"; kim: Konusmaci; ifade: string }
+  | { tur: "ikiPortre"; sol: { kim: Konusmaci; ifade: string }; sag: { kim: Konusmaci; ifade: string } }
+  | { tur: "tahta" };
+
+export type IkonAdi = "hardal" | "kamyon" | "boya" | "saat" | "kartus" | "disk" | "araba" | "sifonyer" | "bisiklet" | "kutu";
+
+/** Kod-prop. Zamanlar bölüm saniyesi. uzay "ekran" = kamera dışı (güvenli alan), "sahne" = plaka pikseli (kamerayla oynar). */
+export type Prop =
+  | { tur: "banknot"; bas: number; bitis?: number; x: number; y: number; aci?: number; olcek?: number; dus?: boolean }
+  | { tur: "ikon"; ad: IkonAdi; bas: number; bitis: number; x: number; y: number; boyut?: number; parla?: boolean; uzay?: "ekran" | "sahne" }
+  | { tur: "ikonSira"; bas: number; bitis: number; y: number; ogeler: { ad: IkonAdi; t: number; etiket?: string }[]; ayrac?: string; boyut?: number }
+  | { tur: "ilan"; bas: number; bitis: number; ikon: IkonAdi; baslik: string; fiyat: string; not: string; titre?: number }
+  | { tur: "telefon"; bas: number; bitis: number; ogeler: { ikon: IkonAdi; fiyat: string }[] }
+  | { tur: "tahtaYazi"; bas: number; satirlar: { metin: string; x: number; y: number; boyut: number; t: number; sure?: number; renk?: string; tik?: number[] }[] }
+  | { tur: "tahtaKose"; bas: number; bitis: number; metin: string; yaz: number; x: number; y: number }
+  | { tur: "yazi"; bas: number; bitis: number; metin: string; y: number; renk?: string; boyut?: number };
+
 export type Sahne = {
   id: string;
   bas: number; bitis: number;
@@ -67,6 +114,14 @@ export type Sahne = {
   karakterler?: KarakterSahne[];
   agizYolu?: AgizYolu; // sahne düzeyinde; yoksa bölümün varsayılanı
   kamera?: Kamera;
+  /** çekim çatısı (varsa Cekim.tsx); kamera.zoom/kay bu çekimde de geçerli */
+  cekim?: Cekim;
+  proplar?: Prop[];
+  /** hızlı punch-in vuruşları (bölüm saniyesi): olcek'e `sure` içinde atlar ve kalır; sarsıntı: kısa titreme */
+  vurus?: { t: number; olcek: number; sure?: number }[];
+  sarsinti?: { t: number; sure?: number; guc?: number }[];
+  /** kamera odağı (sahne pikseli); yoksa çekim türünün varsayılanı */
+  odak?: { x: number; y: number };
   /** satır aralığına ifade ataması ("ifade" yolu): bu aralıkta kim hangi ifadede */
   ifadeler?: { bas: number; bitis: number; kim: Konusmaci; ifade: string }[];
 };
@@ -79,6 +134,12 @@ export type KararKarti = {
   soru: string;
   secenekler: string[]; // 2–3 seçenek; harfler A/B/C otomatik
   sure?: number; // 5–8 sn, bölüm sonuna yaslanır
+  /** başlangıç (bölüm sn); yoksa sure − kararSure */
+  bas?: number;
+  /** kapanış anı (bölüm sn): "Ep. N: YOUR call" belirir, kart alta (altyazı bandına) iner. Yoksa baştan görünür. */
+  kapanis?: number;
+  /** seçenek önündeki renkli ikonlar (harf yok — incil §5.1) */
+  ikonlar?: IkonAdi[];
 };
 
 export type SesKatmanlari = {
@@ -104,7 +165,11 @@ export type Bolum = {
   kazananYorum?: KazananYorum;
   karar: KararKarti;
   /** abone/takip kartı; varsayılan karar kartından 0,4 sn önce biter. false = yok */
-  abone?: { bas?: number } | false;
+  abone?: { bas?: number; ust?: number } | false;
+  /** açılış damgasının üst kenarı (px); yoksa kart bandı. Konuşan yüzü örtmesin diye taşınır. */
+  damgaUst?: number;
+  /** çekim çatısı mekân + rig seti (sahne.cekim kullanılıyorsa zorunlu) */
+  mekan?: MekanSeti;
   /** logo dosyası (public/); yoksa şablonun geçici logosu */
   logo?: string;
 };
