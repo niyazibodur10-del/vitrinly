@@ -9,3 +9,6 @@ Canva istek sayacı (seri planı 12): 2/12. Her istek 1 görsel döndürdü (4 a
 | T-J (Jake konuşma tabanı) | MAHajBqI-Qs | s.66 | 2026-11-10 |
 | T-M (Mike konuşma tabanı) | MAHajIzpXBs | s.67 | 2026-11-10 |
 Canva istek sayacı: 6/12.
+| AG-J (Jake ağız açık) | MAHajI3OgKw | s.68 | 2026-11-11 |
+| AG-M (Mike ağız açık) | MAHajG_s9zc | s.69 | 2026-11-11 |
+Canva istek sayacı: 8/12.
