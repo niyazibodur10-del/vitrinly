@@ -10,6 +10,7 @@
 > - **Kanallar:** Instagram Reels ana kanal; YouTube Shorts ve TikTok eş zamanlı. **Instagram bağlandı (2026-11-11):** Meta system-user token (EAA…, süresiz) ortamın ağ secret'ı olarak `graph.facebook.com`'a proxy ile enjekte edilir (değer repoda/sohbette yok). IG hesap ID `17841419169966345` (@flipbyvote). Kullanım: `curl https://graph.facebook.com/v21.0/17841419169966345/media` (başlık eklenmez). `graph.instagram.com` için kayıtlı değer geçersiz, kullanılmaz.
 > - **Yorum yanıtlarını koordinatör/sistem kendisi gönderir** (Niyazi kalıcı izni 2026-11-10). Bitmiş bölümün yayını, para harcama ve diğer dış mesajlar onay kuralına tabidir.
 > - **Eski finans videoları gizlendi** (Niyazi onayı 2026-11-10; 6 video + 3 liste private).
+> - **Karakter sesleri (Niyazi kör dinlemeyle seçti, 2026-11-11):** Kyutai Pocket TTS (kod MIT, ağırlık CC BY 4.0; yerel, ücretsiz) — **Jake = `george`** (VCTK p315, CC BY 4.0), **Mike = `marius`** (CC0). Üretim: `tools/ses/bolum-ses.sh <bolum> --ses JAKE=pocket:george --ses MIKE=pocket:marius`. Açıklamaya atıf: "Voices: Kyutai Pocket TTS (CC BY 4.0); VCTK corpus (CC BY 4.0)." Kokoro artık dizide kullanılmaz.
 > - **Kanal adı: Flip By Vote · @flipbyvote** (Niyazi seçti ve Instagram'da aldı, 2026-11-10). YouTube ve TikTok'ta da aynı ad kullanılacak.
 > - Eski uzun video akışı (`/bugunun-videosu` F0–F12) yeni formata uyarlanana kadar referanstır. Yarım kalan "miras-sizintilari" videosu durduruldu, yayınlanmayacak.
 
