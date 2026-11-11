@@ -2,8 +2,8 @@
  "bolum": "001",
  "sahip": "animasyon-yonetmeni",
  "fps": 30,
- "sure": 83.2,
- "not": "Tek kaynak: video/src/seri/bolumler/bolum-001.ts (aynı sayılar). id = ses-cue.json SFX kimliği → bolum-ses.py cevir --gorsel bu dosyayı okur. tur: giris/vurus/sayac/kilit/kesme/abone. Abone: tek kez, sonda (81,0–83,2), karar kartıyla çakışmaz; alanı 9:16 alt-orta (y 1010–1164).",
+ "sure": 74.55,
+ "not": "Tek kaynak: video/src/seri/bolumler/bolum-001.ts (aynı sayılar). id = ses-cue.json SFX kimliği → bolum-ses.py cevir --gorsel bu dosyayı okur. tur: giris/vurus/sayac/kilit/kesme/abone. Abone: tek kez, sonda (72,35–74,55), karar kartıyla çakışmaz; alanı 9:16 alt-orta (y 1010–1164). Ses 2026-11-11 Pocket TTS ile yeniden kilitlendi (1d0d8235acd4); zamanlar zaman-esle.py ile taşındı.",
  "olaylar": [
   {
    "id": "S1-carpma",
@@ -14,225 +14,225 @@
   },
   {
    "id": "S1-hardal",
-   "t": 4.6,
-   "kare": 138,
+   "t": 3.42,
+   "kare": 103,
    "tur": "giris",
    "olay": "hardal ikonu pop"
   },
   {
    "id": "S2-tahta-100",
-   "t": 7.206,
-   "kare": 216,
+   "t": 5.221,
+   "kare": 157,
    "tur": "giris",
    "olay": "tahtaya $100 yazılmaya başlar"
   },
   {
    "id": "S2-tahta-milyon",
-   "t": 12.138,
-   "kare": 364,
+   "t": 8.73,
+   "kare": 262,
    "tur": "giris",
    "olay": "tahtaya $1 yazılır"
   },
   {
    "id": "S2-sifir-1",
-   "t": 12.588,
-   "kare": 378,
+   "t": 9.247,
+   "kare": 277,
    "tur": "sayac",
    "olay": "sıfır 1"
   },
   {
    "id": "S2-sifir-2",
-   "t": 12.708,
-   "kare": 381,
+   "t": 9.407,
+   "kare": 282,
    "tur": "sayac",
    "olay": "sıfır 2"
   },
   {
    "id": "S2-sifir-3",
-   "t": 12.828,
-   "kare": 385,
+   "t": 9.522,
+   "kare": 286,
    "tur": "sayac",
    "olay": "sıfır 3"
   },
   {
    "id": "S2-sifir-4",
-   "t": 12.948,
-   "kare": 388,
+   "t": 9.637,
+   "kare": 289,
    "tur": "sayac",
    "olay": "sıfır 4"
   },
   {
    "id": "S2-sifir-5",
-   "t": 13.068,
-   "kare": 392,
+   "t": 9.752,
+   "kare": 293,
    "tur": "sayac",
    "olay": "sıfır 5"
   },
   {
    "id": "S2-sifir-6",
-   "t": 13.188,
-   "kare": 396,
+   "t": 9.866,
+   "kare": 296,
    "tur": "sayac",
    "olay": "sıfır 6"
   },
   {
    "id": "S2-you-decide",
-   "t": 16.04,
-   "kare": 481,
+   "t": 11.92,
+   "kare": 358,
    "tur": "vurus",
    "olay": "YOU DECIDE yazısı + punch-in"
   },
   {
    "id": "S3-telefon",
-   "t": 17.3,
-   "kare": 519,
+   "t": 12.848,
+   "kare": 385,
    "tur": "giris",
    "olay": "telefon alttan girer (en hızlı an)"
   },
   {
    "id": "S4-ilan-bisiklet",
-   "t": 24.6,
-   "kare": 738,
+   "t": 19.547,
+   "kare": 586,
    "tur": "giris",
    "olay": "ROAD BIKE ilan kartı uçuşta"
   },
   {
    "id": "S4-tahta-hesap",
-   "t": 30.44,
-   "kare": 913,
+   "t": 26.54,
+   "kare": 796,
    "tur": "giris",
    "olay": "köşe tahta: $100 − $60 = $40 yazımı"
   },
   {
    "id": "S4-gag-durus",
-   "t": 35.054,
-   "kare": 1052,
+   "t": 30.289,
+   "kare": 909,
    "tur": "vurus",
    "olay": "Tires aren't sonrası tutuş (müzik durur); 35,30 Mike endişeli portre"
   },
   {
    "id": "S5-ilan-sifonyer",
-   "t": 37.48,
-   "kare": 1124,
+   "t": 32.426,
+   "kare": 973,
    "tur": "giris",
    "olay": "DRESSER ilan kartı uçuşta"
   },
   {
    "id": "S5-portre-saskin",
-   "t": 41.45,
-   "kare": 1244,
+   "t": 35.125,
+   "kare": 1054,
    "tur": "vurus",
    "olay": "'Free?' konuşan tabana punch-in (x1,2) + sarsıntı (Z3: portre kaldırıldı)"
   },
   {
    "id": "S5-siluet-araba",
-   "t": 47.349,
-   "kare": 1420,
+   "t": 39.584,
+   "kare": 1188,
    "tur": "giris",
    "olay": "araba ikonu"
   },
   {
    "id": "S5-siluet-sifonyer",
-   "t": 47.699,
-   "kare": 1431,
+   "t": 39.934,
+   "kare": 1198,
    "tur": "giris",
    "olay": "şifonyer ikonu"
   },
   {
    "id": "S5-ikon-truck",
-   "t": 48.76,
-   "kare": 1463,
+   "t": 40.98,
+   "kare": 1229,
    "tur": "giris",
    "olay": "kamyon ikonu"
   },
   {
    "id": "S5-ikon-paint",
-   "t": 49.14,
-   "kare": 1474,
+   "t": 41.52,
+   "kare": 1246,
    "tur": "giris",
    "olay": "boya ikonu"
   },
   {
    "id": "S5-ikon-clock",
-   "t": 49.58,
-   "kare": 1487,
+   "t": 42.02,
+   "kare": 1261,
    "tur": "giris",
    "olay": "saat ikonu"
   },
   {
    "id": "S6-ilan-kutu",
-   "t": 53.56,
-   "kare": 1607,
+   "t": 46.451,
+   "kare": 1394,
    "tur": "giris",
    "olay": "GARAGE SALE BOX ilan kartı uçuşta"
   },
   {
    "id": "S6-kutu-titrer",
-   "t": 54.7,
-   "kare": 1641,
+   "t": 48.28,
+   "kare": 1448,
    "tur": "vurus",
    "olay": "kutu titrer (0,6 sn)"
   },
   {
    "id": "S6-ikon-kartus",
-   "t": 58.26,
-   "kare": 1748,
+   "t": 52.5,
+   "kare": 1575,
    "tur": "giris",
    "olay": "parlayan kartuş"
   },
   {
    "id": "S6-ikon-disk",
-   "t": 60.674,
-   "kare": 1820,
+   "t": 54.471,
+   "kare": 1634,
    "tur": "giris",
    "olay": "çizik diskler"
   },
   {
    "id": "S7-gerilim",
-   "t": 62.0,
-   "kare": 1860,
+   "t": 55.273,
+   "kare": 1658,
    "tur": "kesme",
    "olay": "geniş: sessiz bakışma, yavaş push-in"
   },
   {
    "id": "S8-karar-karti",
-   "t": 76.05,
-   "kare": 2282,
+   "t": 67.383,
+   "kare": 2021,
    "tur": "kilit",
    "olay": "karar kartı 'box?' sonrası boşlukta girer (bas 76,0; Ö1)"
   },
   {
    "id": "S8-ep2-ding",
-   "t": 78.59,
-   "kare": 2358,
+   "t": 69.136,
+   "kare": 2074,
    "tur": "kilit",
    "olay": "kameraya bakış kesmesi + Ep. 2: YOUR call"
   },
   {
    "id": "S8-abone-klik",
-   "t": 81.9,
-   "kare": 2457,
+   "t": 73.25,
+   "kare": 2198,
    "tur": "abone",
    "olay": "takip kartı imleç tıklaması (kart 81,0–83,2; karar kartı 81,0 sn'de çıktı)"
   },
   {
    "id": "G-bisiklet-pop",
-   "t": 28.6,
-   "kare": 858,
+   "t": 24.915,
+   "kare": 747,
    "tur": "giris",
    "olay": "bisiklet ikonu pop (SFX kimliği yok)"
   },
   {
    "id": "G-boya-pop",
-   "t": 39.64,
-   "kare": 1189,
+   "t": 33.98,
+   "kare": 1019,
    "tur": "giris",
    "olay": "boya ikonu pop ('paint')"
   },
   {
    "id": "G-araba-pop",
-   "t": 46.18,
-   "kare": 1385,
+   "t": 38.84,
+   "kare": 1165,
    "tur": "vurus",
    "olay": "'tiny car' punch-in + araba ikonu"
   }
@@ -240,11 +240,11 @@
  "abone": [
   {
    "tur": "abone",
-   "bas": 81.0,
-   "bitis": 83.2,
-   "klik": 81.9,
-   "kare_bas": 2430,
-   "kare_klik": 2457,
+   "bas": 72.35,
+   "bitis": 74.55,
+   "klik": 73.25,
+   "kare_bas": 2170,
+   "kare_klik": 2198,
    "alan": {
     "x": 70,
     "y": 1010,
@@ -255,140 +255,140 @@
  ],
  "kesmeler": [
   {
-   "t": 0.6,
-   "kare": 18
+   "t": 0.455,
+   "kare": 14
   },
   {
-   "t": 2.55,
-   "kare": 76
+   "t": 1.961,
+   "kare": 59
   },
   {
-   "t": 7.1,
-   "kare": 213
+   "t": 5.115,
+   "kare": 153
   },
   {
-   "t": 8.4,
-   "kare": 252
+   "t": 6.095,
+   "kare": 183
   },
   {
-   "t": 10.06,
-   "kare": 302
+   "t": 7.333,
+   "kare": 220
   },
   {
-   "t": 12.05,
-   "kare": 362
+   "t": 8.672,
+   "kare": 260
   },
   {
-   "t": 13.72,
-   "kare": 412
+   "t": 10.344,
+   "kare": 310
   },
   {
-   "t": 16.75,
-   "kare": 502
+   "t": 12.315,
+   "kare": 369
   },
   {
-   "t": 17.15,
-   "kare": 514
+   "t": 12.715,
+   "kare": 381
   },
   {
-   "t": 20.2,
-   "kare": 606
+   "t": 15.69,
+   "kare": 471
   },
   {
-   "t": 22.8,
-   "kare": 684
+   "t": 17.869,
+   "kare": 536
   },
   {
-   "t": 24.02,
-   "kare": 721
+   "t": 18.967,
+   "kare": 569
   },
   {
-   "t": 24.5,
-   "kare": 735
+   "t": 19.447,
+   "kare": 583
   },
   {
-   "t": 27.62,
-   "kare": 829
+   "t": 23.903,
+   "kare": 717
   },
   {
-   "t": 29.55,
-   "kare": 886
+   "t": 25.738,
+   "kare": 772
   },
   {
-   "t": 32.48,
-   "kare": 974
+   "t": 28.037,
+   "kare": 841
   },
   {
-   "t": 33.92,
-   "kare": 1018
+   "t": 29.365,
+   "kare": 881
   },
   {
-   "t": 35.3,
-   "kare": 1059
+   "t": 30.535,
+   "kare": 916
   },
   {
-   "t": 35.7,
-   "kare": 1071
+   "t": 30.935,
+   "kare": 928
   },
   {
-   "t": 39.3,
-   "kare": 1179
+   "t": 33.401,
+   "kare": 1002
   },
   {
-   "t": 41.38,
-   "kare": 1241
+   "t": 35.055,
+   "kare": 1052
   },
   {
-   "t": 43.5,
-   "kare": 1305
+   "t": 36.934,
+   "kare": 1108
   },
   {
-   "t": 47.25,
-   "kare": 1418
+   "t": 39.485,
+   "kare": 1185
   },
   {
-   "t": 48.12,
-   "kare": 1444
+   "t": 40.355,
+   "kare": 1211
   },
   {
-   "t": 51.15,
-   "kare": 1534
+   "t": 44.393,
+   "kare": 1332
   },
   {
-   "t": 53.48,
-   "kare": 1604
+   "t": 46.371,
+   "kare": 1391
   },
   {
-   "t": 57.62,
-   "kare": 1729
+   "t": 52.037,
+   "kare": 1561
   },
   {
-   "t": 62.0,
-   "kare": 1860
+   "t": 55.273,
+   "kare": 1658
   },
   {
-   "t": 63.08,
-   "kare": 1892
+   "t": 56.353,
+   "kare": 1691
   },
   {
-   "t": 65.88,
-   "kare": 1976
+   "t": 58.649,
+   "kare": 1759
   },
   {
-   "t": 70.95,
-   "kare": 2128
+   "t": 62.828,
+   "kare": 1885
   },
   {
-   "t": 71.4,
-   "kare": 2142
+   "t": 63.269,
+   "kare": 1898
   },
   {
-   "t": 74.45,
-   "kare": 2234
+   "t": 65.546,
+   "kare": 1966
   },
   {
-   "t": 78.59,
-   "kare": 2358
+   "t": 69.136,
+   "kare": 2074
   }
  ]
 }

@@ -7,147 +7,147 @@
    "id": "S1-carpma"
   },
   {
-   "f": 138,
+   "f": 103,
    "kind": "sfx",
    "id": "S1-hardal"
   },
   {
-   "f": 216,
+   "f": 157,
    "kind": "sfx",
    "id": "S2-tahta-100"
   },
   {
-   "f": 364,
+   "f": 262,
    "kind": "sfx",
    "id": "S2-tahta-milyon"
   },
   {
-   "f": 378,
+   "f": 277,
    "kind": "sfx",
    "id": "S2-sifir-1"
   },
   {
-   "f": 381,
+   "f": 282,
    "kind": "sfx",
    "id": "S2-sifir-2"
   },
   {
-   "f": 385,
+   "f": 286,
    "kind": "sfx",
    "id": "S2-sifir-3"
   },
   {
-   "f": 388,
+   "f": 289,
    "kind": "sfx",
    "id": "S2-sifir-4"
   },
   {
-   "f": 392,
+   "f": 293,
    "kind": "sfx",
    "id": "S2-sifir-5"
   },
   {
-   "f": 396,
+   "f": 296,
    "kind": "sfx",
    "id": "S2-sifir-6"
   },
   {
-   "f": 481,
+   "f": 358,
    "kind": "sfx",
    "id": "S2-you-decide"
   },
   {
-   "f": 519,
+   "f": 385,
    "kind": "sfx",
    "id": "S3-telefon"
   },
   {
-   "f": 738,
+   "f": 586,
    "kind": "sfx",
    "id": "S4-ilan-bisiklet"
   },
   {
-   "f": 913,
+   "f": 796,
    "kind": "sfx",
    "id": "S4-tahta-hesap"
   },
   {
-   "f": 1052,
+   "f": 909,
    "kind": "sfx",
    "id": "S4-gag-durus"
   },
   {
-   "f": 1124,
+   "f": 973,
    "kind": "sfx",
    "id": "S5-ilan-sifonyer"
   },
   {
-   "f": 1244,
+   "f": 1054,
    "kind": "sfx",
    "id": "S5-portre-saskin"
   },
   {
-   "f": 1420,
+   "f": 1188,
    "kind": "sfx",
    "id": "S5-siluet-araba"
   },
   {
-   "f": 1431,
+   "f": 1198,
    "kind": "sfx",
    "id": "S5-siluet-sifonyer"
   },
   {
-   "f": 1463,
+   "f": 1229,
    "kind": "sfx",
    "id": "S5-ikon-truck"
   },
   {
-   "f": 1474,
+   "f": 1246,
    "kind": "sfx",
    "id": "S5-ikon-paint"
   },
   {
-   "f": 1487,
+   "f": 1261,
    "kind": "sfx",
    "id": "S5-ikon-clock"
   },
   {
-   "f": 1607,
+   "f": 1394,
    "kind": "sfx",
    "id": "S6-ilan-kutu"
   },
   {
-   "f": 1641,
+   "f": 1448,
    "kind": "sfx",
    "id": "S6-kutu-titrer"
   },
   {
-   "f": 1748,
+   "f": 1575,
    "kind": "sfx",
    "id": "S6-ikon-kartus"
   },
   {
-   "f": 1820,
+   "f": 1634,
    "kind": "sfx",
    "id": "S6-ikon-disk"
   },
   {
-   "f": 1860,
+   "f": 1658,
    "kind": "sfx",
    "id": "S7-gerilim"
   },
   {
-   "f": 2457,
+   "f": 2198,
    "kind": "abone",
    "id": "S8-abone-klik"
   },
   {
-   "f": 2282,
+   "f": 2021,
    "kind": "sfx",
    "id": "S8-karar-karti"
   },
   {
-   "f": 2358,
+   "f": 2074,
    "kind": "sfx",
    "id": "S8-ep2-ding"
   }

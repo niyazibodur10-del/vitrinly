@@ -1,4 +1,12 @@
 # Bölüm 001 animasyon + senkron raporu (animasyon-yonetmeni, 2026-11-11)
+**TUR 4 (yeni ses: Pocket TTS, kilit 1d0d8235acd4, 69,32 sn):** `teslim/bolum-001.mp4` sha256 **171b2487fb09** · **74,57 sn** · 1080x1920 30 fps · I −14,0 LUFS / TP −2,3 · blackdetect + freezedetect(d=0.5) 0/0 · çıktı kapısı GEÇTİ.
+- Zamanlar: `animasyon/zaman-esle.py` (eski→yeni kelime çapaları, LCS, parça doğrusal) ile 34 kesme + tüm prop/vuruş/tik/BANK olayları + `animasyon-efekt-cue.json` taşındı; kapanış: karar kartı 67,33–72,33 ("Ep. 2: YOUR call" 69,14), takip kartı 72,35–74,55.
+- Ağız: yeni Rhubarb (JAKE 204 / MIKE 168 cue) → piksel senkron 13 yakın, 861 kare, gecikme **0** (r 0,52); Rhubarb `senkron-testi.py` +1/+1. Altyazı Z1 testi **25/25**.
+- Stem: `bolum-ses.py cevir --sure 74.55 --karar-sure 5 --gorsel animasyon-efekt-cue.json` + `miks`.
+- Takip kartı ve açılış çipi: yeni profil resmi (`video/public/seri/ortak/flipbyvote-profil.png`, 256 px, yuvarlak).
+- Kanıt `kanit/tur4/`: 20 rastgele kare (seed 20261113) dikiş 0, açık kesik kenar 0, altyazı güvenli alanda 20/20, BANK $100 20/20; kapanış 1:1 (70,00 / 72,33 / 73,33): saç kenarı temiz.
+- **Kapak önerisi: 72,33 sn = kare 2170** (`kanit/tur4/kapak-onerisi-72.33.png`): karar kartı çıkmış, takip kartı henüz yok, iki yüz kameraya.
+
 **TUR 3 (Z3b varlıkları, kod değişmedi):** `teslim/bolum-001.mp4` sha256 **6d01844629ec** · 83,20 sn · 1080x1920 30 fps · I −14,0 LUFS / TP −2,5 · blackdetect + freezedetect(d=0.5) 0/0 · çıktı kapısı GEÇTİ.
 Kenar (hakem yöntemi): `kanit/tur3/yesil-kontak.jpg` + `yesil-*.jpg` (kullanılan 8 kesik varlık yeşil zeminde, 1:1) ve `kare-80.5/81.0-*-1e1.png` (Mike sağ saç-kulak, Jake sol saç, kapanış üst yarı): tırtık, kopuk uç, kızıl/gri saçak görülmedi. `kenar-olcum.txt`: portrelerde alfa adası 1, kenar bandında açık-gri saçak 0 px; Jake tabanında 1–5 px'lik 5 ada (kulak/saç kenarı, görünmez). Açık kesik kenar: yeşil zeminde kesikler yalnız görsel alt/yan sınırında; render'da hepsi kadraj dışında, tezgâh altında ya da maskeli (20+20 rastgele kare ve 1:1 kırpımlarda 0).
 

@@ -1,5 +1,6 @@
 // Flip By Vote · Bölüm 001 "Every Dollar We Have" — kesme listesi (animasyon-yonetmeni 2026-11-11).
 // Metin/çekim sözlüğü: uretim/seri/bolum-001/metin.md · ses kilidi: uretim/seri/bolum-001/ses/kilit.json (Pocket TTS, 69,32 sn, sha 1d0d8235acd4).
+// Satır içi yorumlardaki saniyeler ESKİ sese (78,8 sn) aittir; geçerli değer tablodaki sayıdır.
 // 2026-11-11 ses değişimi: tüm zamanlar uretim/seri/bolum-001/animasyon/zaman-esle.py ile (eski→yeni kelime çapaları, LCS) taşındı.
 // Zamanlar kilitli satır zamanlarından (bolum-001.satirlar.json) ve Whisper kelimelerinden; kesme = satır başından ~0,1 sn önce.
 // Görsel olaylar (SFX'e bağlananlar) ve abone anı: uretim/seri/bolum-001/animasyon-efekt-cue.json (aynı sayılar, kare doğru).
@@ -80,8 +81,8 @@ const K: [string, number, number, string, Ek?][] = [
   ["s30", 58.649, 62.828, "yakin:jake", { kamera: { zoom: [1.01, 1.05] }, proplar: [banknot(0)] }],
   ["s31", 62.828, 63.269, "portre:jake:dusunceli", { kamera: { zoom: [1.0, 1.02] } }], // iç çekiş (sessiz)
   ["s32", 63.269, 65.546, "yakin:jake", { kamera: { zoom: [1.03, 1.07] }, proplar: [banknot(0)] }],
-  // S8 — Mike soruyu sorar (geniş, kamera ortaya); karar kartı "box?"tan sonraki boşlukta (76,0) girer (whoosh kelimeye binmez, Ö1);
-  // 78,59 ikisi kameraya: "Ep. 2: YOUR call" + ding; karar kartı 81,0'da çıkar, takip kartı 81,0–83,2 (çakışmasız, kısa kuyruk)
+  // S8 — Mike soruyu sorar (geniş, kamera ortaya); karar kartı "box?"tan sonraki boşlukta (67,33) girer (whoosh kelimeye binmez, Ö1);
+  // 69,14 ikisi kameraya: "Ep. 2: YOUR call" + ding; karar kartı 72,33'te çıkar, takip kartı 72,35–74,55 (çakışmasız, kısa kuyruk)
   ["s33", 65.546, 69.136, "genis", { kamera: { zoom: [1.02, 1.08] }, proplar: [banknot(0)] }],
   ["s34", 69.136, 74.55, "ikiPortre", { kamera: { zoom: [1.0, 1.04] } }],
 ];
@@ -134,5 +135,6 @@ export const B001: Bolum = {
     kapanis: 69.136,
   },
   abone: { bas: 72.35, ust: 1010, sure: 2.2, klik: 0.9 },
+  logo: "seri/ortak/flipbyvote-profil.png", // kanal profil resmi (takip kartı + açılış çipi)
   damga: { ust: 262, olcek: 0.55, sag: true }, // "EP. 1" çipi sağ üst köşe (BANK sol üstte), kancayı örtmez
 };

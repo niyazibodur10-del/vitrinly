@@ -11,7 +11,7 @@ const CL = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 
 /** Geçici logo: Jake mavisi / Mike kırmızısı iki yarım para + oy işareti (✓). Gerçek logo gelince Bolum.logo ile değişir. */
 export const GeciciLogo: React.FC<{ boyut: number; logo?: string }> = ({ boyut, logo }) => {
-  if (logo) return <Img src={staticFile(logo)} style={{ width: boyut, height: boyut, objectFit: "contain" }} />;
+  if (logo) return <Img src={staticFile(logo)} style={{ width: boyut, height: boyut, objectFit: "cover", borderRadius: "50%" }} />;
   return (
     <svg width={boyut} height={boyut} viewBox="0 0 100 100">
       <defs>
