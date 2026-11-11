@@ -9,6 +9,7 @@ BOL = os.path.join(KOK, "uretim/seri/bolum-001")
 TESLIM = os.path.join(BOL, "teslim")
 
 POLITIKA = "Fiction. Not financial advice. Voices and visuals are AI-generated."
+SES_ATIF = "Voices: Kyutai Pocket TTS (CC BY 4.0); VCTK corpus (CC BY 4.0)."  # koordinatör 2026-11-11: AI satırının hemen altı
 ANONIM = "We may show winning comments on screen with your username. Prefer to stay anonymous? Just say so in your comment."
 SORU = "Bike, dresser, or mystery box? Tell us in the comments."  # B01 + B02, videodaki soru birebir
 
@@ -17,7 +18,7 @@ YT_BASLIK = "$100 to $1,000,000 — You Make Every Move · Ep. 1"
 YT_ACIKLAMA = "\n".join([
     "Jake & Mike start with $100. The goal: $1,000,000. You decide every move.",
     "Episode 1: a $60 road bike with flat tires, a free dresser that has to go today, or a $40 mystery box of old games. " + SORU,
-    "", ANONIM, "", POLITIKA, "", "#Shorts #flipbyvote #animatedseries"])
+    "", ANONIM, "", POLITIKA, SES_ATIF, "", "#Shorts #flipbyvote #animatedseries"])
 YT_ETIKET = ["Flip By Vote", "flipbyvote", "animated series", "interactive story", "you decide", "100 to 1 million",
              "flipping", "reselling", "side hustle", "garage sale", "furniture flip", "bike flip", "mystery box",
              "Jake and Mike", "animation", "cartoon"]
@@ -29,15 +30,17 @@ PIN_YORUM = ("Mike wants the bike. Jake wants the dresser. Nobody trusts the box
 IG_ACIKLAMA = "\n".join([
     "Bike, dresser, or mystery box? You pick our first flip.",
     "Jake & Mike have $100 and one goal: $1,000,000. Every episode, the comments decide the next move.",
-    SORU, "", ANONIM, "", POLITIKA, "", "#flipbyvote #animatedseries #sidehustle #flipping #youdecide"])
+    SORU, "", ANONIM, "", POLITIKA, SES_ATIF, "", "#flipbyvote #animatedseries #sidehustle #flipping #youdecide"])
 IG_KAPAK_SN = 81.0  # kare 2430 (koordinatör kapak kararı); yüklenen kapak bu kareden; uygulamada kare seçilirse 1:21
-VIDEO_SHA12, VIDEO_SURE = "6d01844629ec", 83.2  # tur 3 render 2026-11-11
+VIDEO_SHA12, VIDEO_SURE = "6d01844629ec", 83.2  # tur 3 render 2026-11-11 — Kyutai sesli render gelince güncellenecek
+YAYIN_ZAMANI = "2026-11-11T17:00:00Z"  # koordinatör yazdı (commit 92d4f4a, YouTube 0wzaf2391nU planı)
+ONAY = {"niyazi_onayi": True, "tarih": "2026-11-11"}  # koordinatör yazdı (92d4f4a); paketleyici onay vermez, yalnız korur
 IG_SABIT_YORUM = PIN_YORUM
 
 # ---- TikTok ----
 TT_ACIKLAMA = "\n".join([
     "Bike, dresser, or mystery box? You pick our first flip. Ep. 1 of $100 → $1,000,000. Tell us in the comments.",
-    "", ANONIM, "", POLITIKA, "", "#flipbyvote #animation #sidehustle #reselling #youdecide"])
+    "", ANONIM, "", POLITIKA, SES_ATIF, "", "#flipbyvote #animation #sidehustle #reselling #youdecide"])
 
 # ---- Kanal (YouTube) ----
 KANAL_ACIKLAMA = "\n".join([
@@ -72,6 +75,9 @@ def kontrol():
         satirlar = m.split("\n")
         if not any(s == POLITIKA or s.startswith(POLITIKA + " ") for s in satirlar): h.append(f"{ad}: politika satırı birebir yok")
         if not any(s.endswith(ANONIM) for s in satirlar): h.append(f"{ad}: anonim satırı birebir yok")
+        if ad != "Kanal açıklama":  # ses atfı: bölüm açıklamalarında AI satırının hemen altında
+            i = satirlar.index(POLITIKA) if POLITIKA in satirlar else -1
+            if i < 0 or i + 1 >= len(satirlar) or satirlar[i + 1] != SES_ATIF: h.append(f"{ad}: ses atıf satırı AI satırının hemen altında birebir yok")
     for ad, m in {**metinler, "pinli yorum": PIN_YORUM, "başlık": YT_BASLIK, "liste": LISTE["aciklama"], "banner": " ".join(BANNER.values())}.items():
         for y in YASAK.findall(m): h.append(f"{ad}: yasak kalıp '{y}'")
     if len(YT_BASLIK) > 60: h.append(f"YT başlık {len(YT_BASLIK)} > 60")
@@ -104,10 +110,10 @@ def main():
           "dosyalar": {"video": "bolum-001.mp4", "altyazilar": []},
           "metadata": {"baslik": YT_BASLIK, "aciklama": YT_ACIKLAMA, "etiketler": YT_ETIKET, "bolumler": [],
                        "kategori_id": YT_KATEGORI, "varsayilan_dil": "en", "ses_dili": "en"},
-          "durum": {"gizlilik": "private", "yayin_zamani": None, "cocuklara_ozel": False, "sentetik_medya": True,
+          "durum": {"gizlilik": "private", "yayin_zamani": YAYIN_ZAMANI, "cocuklara_ozel": False, "sentetik_medya": True,
                     "lisans": "youtube", "gomulebilir": True},
-          "oynatma_listesi_id": None, "onay": {"niyazi_onayi": False, "tarih": None},
-          "_not": ("yayin_zamani YER TUTUCU: Niyazi onayında belirlenir. Öneri 12:00 ET = 17:00Z = 20:00 TSİ (EST −05:00, 2026-11-01 sonrası). "
+          "oynatma_listesi_id": None, "onay": ONAY,
+          "_not": ("yayin_zamani 17:00Z = 20:00 TSİ (koordinatör, Niyazi onayı 2026-11-11). "
                    "sentetik_medya=true: politika-format.md §3 kararı (altered/synthetic = Yes). cocuklara_ozel=false zorunlu (§0 koşul 2). "
                    f"Video {VIDEO_SURE} sn, sha256 {VIDEO_SHA12}. Kaynak: paket/paket-uret.py; elle düzenleme yok.")}
     json.dump(yp, open(os.path.join(TESLIM, "yayin-paketi.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=2)
