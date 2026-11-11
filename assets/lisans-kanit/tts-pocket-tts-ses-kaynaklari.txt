@@ -1,0 +1,2 @@
+21:    "marius": "hf://kyutai/tts-voices/voice-donations/Selfie.wav",
+32:    "george": "hf://kyutai/tts-voices/vctk/p315_023_enhanced.wav",

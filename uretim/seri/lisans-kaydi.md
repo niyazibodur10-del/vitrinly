@@ -41,6 +41,21 @@ Yeniden üretim (kendi üretim, deterministik, 2 koşu sha256 aynı 2026-11-10):
 
 Not: Bölüm 001 zamanları `uretim/seri/bolum-001/ses-cue.mutlak.json` (ses kilidi `bolum-001.wav` 289da660bbd0). Şablon efektleri bölüm 001'de stem'de; bölüm tanımında `ses.sablonSfx: false`.
 
+## TTS — karakter sesleri (ses-yonetmeni, 2026-11-11; hakem ŞY-1)
+**Kapsam notu:** Bu kaydın başındaki "yalnız CC0, CC BY yasak" kuralı müzik ve SFX içindir (`politika-format.md` §6). Karakter sesleri Niyazi'nin 2026-11-11 kör dinleme kararıyla CC BY 4.0'dır; atıf satırı zorunludur. `lisans-kontrol.py` müzik/SFX tablolarını denetler, bu bölüm onun dışındadır. §6'yı güncellemek monetizasyon-uyum-uzmani'nin işi (hakem notu).
+Kullanım: Bölüm 001 ve sonrası. Kilit `uretim/seri/bolum-001/ses/kilit.json` (`bolum-001.wav` sha 1d0d8235acd4). Yerel üretim, ücretsiz, ses klonlama yok (yalnız hazır katalog sesleri).
+
+| Bileşen | Lisans | Kaynak URL (erişim 2026-11-11) | Kanıt (alıntı + kopya, sha256 ilk 12) |
+|---|---|---|---|
+| Pocket TTS kodu (pip `pocket-tts` 4.0.1) | MIT | https://github.com/kyutai-labs/pocket-tts (LICENSE: https://raw.githubusercontent.com/kyutai-labs/pocket-tts/main/LICENSE) | "Permission is hereby granted, free of charge, to any person obtaining a copy of this software…" → `assets/lisans-kanit/tts-pocket-tts-kod-LICENSE.txt` (23f18e03dc49) |
+| Pocket TTS ağırlıkları (`kyutai/pocket-tts-without-voice-cloning`, varsayılan `english`; kapısız) | CC BY 4.0 | https://huggingface.co/kyutai/pocket-tts-without-voice-cloning | Model kartı başlığı "license: cc-by-4.0". Yasak kullanımlar: izinsiz ses taklidi/klonlama, üretimi gerçek kayıt gibi sunmak (bizde yok, AI beyanı var) → `assets/lisans-kanit/tts-pocket-tts-model-karti.md` (c01f4a60dca7) |
+| Jake sesi `george` = VCTK p315 (`hf://kyutai/tts-voices/vctk/p315_023_enhanced.wav`) | CC BY 4.0 | https://huggingface.co/kyutai/tts-voices (vctk/) · veri seti https://datashare.ed.ac.uk/handle/10283/3443 | tts-voices README: "From the Voice Cloning Toolkit dataset, licensed under the Creative Commons License: Attribution 4.0 International." → `assets/lisans-kanit/tts-kyutai-tts-voices-README.md` (47c610f38e0e). Edinburgh DataShare sayfası: "Creative Commons Attribution 4.0 International Public License" → `assets/lisans-kanit/tts-vctk-datashare-10283-3443.html` (2b1dc190f83a). Ses → kaynak eşlemesi (paket kodu `pocket_tts/utils/utils.py`): `assets/lisans-kanit/tts-pocket-tts-ses-kaynaklari.txt` (d80481190dab) |
+| Mike sesi `marius` = Unmute gönüllü ses bağışı `voice-donations/Selfie.wav` | CC0 | https://huggingface.co/kyutai/tts-voices (voice-donations/) | README: "Voices of volunteers submitted through our Unmute Voice Donation Project, licensed as CC0." → aynı README kopyası (47c610f38e0e) + eşleme dosyası (d80481190dab) |
+
+Lisans metinleri: CC BY 4.0 `assets/lisans-kanit/cc-by-4.0-legalcode.html` · CC0 `assets/lisans-kanit/cc0-1.0-legalcode.html`.
+**Açıklamadaki atıf (CC BY 4.0 şartı, üç platform):** "Voices: Kyutai Pocket TTS (CC BY 4.0); VCTK corpus (CC BY 4.0)." Bölüm 001'de `uretim/seri/bolum-001/teslim/platform-metinleri.md` ve `teslim/yayin-paketi.json` içinde var (üretici `paket/paket-uret.py`; hakem-raporu.md Paket satırı 3/3). Ses değişirse (VCTK dışı bir ses seçilirse) VCTK kısmı düşer. `marius` CC0 olduğu için atıf gerekmez.
+Kullanılmayan ve yasak Pocket sesleri: `jean` (EARS, CC BY-NC), `cosette` (Expresso, CC BY-NC). `tools/ses/gercekci_tts.py` izinli liste dışını reddeder.
+
 ## Değerlendirilip alınmayan
 | Aday | Neden |
 |---|---|
