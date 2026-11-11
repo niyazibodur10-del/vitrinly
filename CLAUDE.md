@@ -5,7 +5,7 @@
 > Jake Miller ve Mike Carter 100 dolarla başlıyor, hedefleri 1 milyon dolar. Her bölüm 60–90 sn, dikey 9:16, 3D görünümlü görsel, Amerikan İngilizcesi.
 > - **Yayın:** her gün 1 bölüm. Hazır bölüm stoku tutulmaz (Niyazi: "ilk 10 bölüm hazırda durmasın").
 > - **Karar döngüsü:** her bölüm bir seçim anında biter → yorumlar toplanır → kazanan fikir sonraki bölümde **ekranda kullanıcı adıyla gösterilir**.
-> - **Kanallar:** Instagram Reels ana kanal; YouTube Shorts ve TikTok eş zamanlı. Instagram hesabını Niyazi bağlayacak.
+> - **Kanallar:** Instagram Reels ana kanal; YouTube Shorts ve TikTok eş zamanlı. **Instagram bağlandı (2026-11-11):** Meta system-user token (EAA…, süresiz) ortamın ağ secret'ı olarak `graph.facebook.com`'a proxy ile enjekte edilir (değer repoda/sohbette yok). IG hesap ID `17841419169966345` (@flipbyvote). Kullanım: `curl https://graph.facebook.com/v21.0/17841419169966345/media` (başlık eklenmez). `graph.instagram.com` için kayıtlı değer geçersiz, kullanılmaz.
 > - **Yorum yanıtlarını koordinatör/sistem kendisi gönderir** (Niyazi kalıcı izni 2026-11-10). Bitmiş bölümün yayını, para harcama ve diğer dış mesajlar onay kuralına tabidir.
 > - **Eski finans videoları gizlendi** (Niyazi onayı 2026-11-10; 6 video + 3 liste private).
 > - **Kanal adı: Flip By Vote · @flipbyvote** (Niyazi seçti ve Instagram'da aldı, 2026-11-10). YouTube ve TikTok'ta da aynı ad kullanılacak.
