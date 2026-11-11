@@ -1,0 +1,26 @@
+12.0 t=12.133 off=4.7 ms (+0.1 kare) OK S2-tahta-milyon
+12.0 t=12.600 off=-87.0 ms (-2.6 kare) KONTROL S2-sifir-1
+12.0 t=12.700 off=8.0 ms (+0.2 kare) OK S2-sifir-2
+12.0 t=12.833 off=-5.3 ms (-0.2 kare) OK S2-sifir-3
+12.0 t=12.933 off=12.7 ms (+0.4 kare) OK S2-sifir-4
+12.0 t=13.067 off=1.3 ms (+0.0 kare) OK S2-sifir-5
+12.0 t=13.200 off=-14.0 ms (-0.4 kare) OK S2-sifir-6
+12.0 t=16.033 off=-42.3 ms (-1.3 kare) OK S2-you-decide
+12.0 t=17.300 off=-8.0 ms (-0.2 kare) OK S3-telefon
+12.0 t=24.600 off=-43.0 ms (-1.3 kare) OK S4-ilan-bisiklet
+12.0 t=30.433 off=10.7 ms (+0.3 kare) OK S4-tahta-hesap
+12.0 t=35.067 off=-12.7 ms (-0.4 kare) OK S4-gag-durus
+12.0 t=37.467 off=-37.7 ms (-1.1 kare) OK S5-ilan-sifonyer
+12.0 t=41.367 off=12.3 ms (+0.4 kare) OK S5-portre-saskin
+45.7 t=47.333 off=18.7 ms (+0.6 kare) OK S5-siluet-araba
+45.7 t=47.700 off=-1.0 ms (-0.0 kare) OK S5-siluet-sifonyer
+45.7 t=48.767 off=-7.7 ms (-0.2 kare) OK S5-ikon-truck
+45.7 t=49.133 off=1.7 ms (+0.1 kare) OK S5-ikon-paint
+45.7 t=49.567 off=13.3 ms (+0.4 kare) OK S5-ikon-clock
+45.7 t=53.567 off=43.3 ms (+1.3 kare) OK S6-ilan-kutu
+45.7 t=54.700 off=-16.0 ms (-0.5 kare) OK S6-kutu-titrer
+45.7 t=58.267 off=-6.7 ms (-0.2 kare) OK S6-ikon-kartus
+45.7 t=60.667 off=70.3 ms (+2.1 kare) KONTROL S6-ikon-disk
+45.7 t=62.000 off=-1.0 ms (-0.0 kare) OK S7-gerilim
+45.7 t=74.500 off=-48.0 ms (-1.4 kare) OK S8-karar-karti
+±2 kare: 23/25

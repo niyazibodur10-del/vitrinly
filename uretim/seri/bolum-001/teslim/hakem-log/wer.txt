@@ -1,0 +1,7 @@
+kelime=176 hata=6 WER=%3.4
+replace two -> to
+delete free -> 
+replace buy -> by
+delete slow -> 
+replace scratched -> scratch
+replace bike -> like
