@@ -33,3 +33,4 @@ API ile değiştirilemez: profil fotoğrafı, kanal adı, @tanıtıcı (Studio).
 - Oynatma listeleri gizlendi: PLD0_rVnRy-yo, PLZTj26FYW6IY, PLQFkX-t2X0rU.
 - YouTube kalıcı yetki yenilendi (cihaz kodu, 2026-11-10).
 - Kanal adı önerileri: uretim/kanal-kimligi/yeni-format-ad-onerileri.md (öneri: You Call The Flip · @youcalltheflip).
+- 2026-11-11: Flip By Vote banner (uretim/kanal-kimligi/flipbyvote-banner.png) API ile yüklendi; açıklama+anahtar kelimeler güncel; Season 1 listesi PLTBOcjoZ5K6I; Bölüm 1 0wzaf2391nU planlı 17:00Z.
