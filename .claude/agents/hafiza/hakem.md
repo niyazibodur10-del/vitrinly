@@ -1,24 +1,18 @@
 # hakem — hafıza
 
 ## Kurallar
+- F2: bileşik puanı iki durumda hesapla (bugünkü renk + zorunlu düzeltme sonrası); eşitlik bozucuyu ve ±0.05 duyarlılığı `hakem-karar.py`'de koş, kazananı değiştiren oynatmaları tek tek listele. Fark eşik altıysa "puan değil kural" diye yaz.
+- F2 yedek: aynı slotu kurtaran (aynı konu, YEŞİL/YEŞİL) adayı seç. Politika "önerme" dediği aday ilk 3'e girmez. `roast` alt ajanda çalışmıyor, 5 açıyı elle uygula.
+- Karne: ajanın kendi işaretlediği eksik hafif sayılır, başkasının yakaladığı hata ağır sayılır. RED yalnız ölçümle kalan kapıya verilir; kanal metni eksiği ŞY-n olarak yazılır.
+- Senkron ve WER her zaman **miksli finalde** ölçülür. Whisper small.en deterministik → `cmp` ile kanıt yeterli. ffmpeg döngülerinde her zaman `-nostdin` kullan.
+- Abone/klik: kör ses dedektörü kullanma. Doğru yöntem: kart kutusunda kırmızı→gri dönüşü + SFX stem'inde onset. earshot cue'sunu yalnız SFX olaylarından kur (kesmeleri katma).
+- SFX ±2 dışında kalan her vuruşu stem'de elle aç: earshot çoğu zaman bir önceki sesi eşliyor (3 videoda 3 sahte aykırı).
 
 ## Dersler
-- 2026-10-26: Yeni görev — her ajan teslimatını `docs/ajan-karnesi.md`'ye 1–10 puanla (kalite, test kanıtı, protokol uyumu, hız). Rakip analizi v1 ve viralite modeli v0.1 henüz puanlanmadı ("—").
-- 2026-10-27 (F2 secim, S03 kazanan / S01 yedek): Bileşik puanı **iki durumda** hesapla: taramaların bugünkü rengi ve zorunlu düzeltmeler sonrası kalan risk. Bu turda düzeltme öncesinde S01 0.22 öndeydi (eşik altı), düzeltme sonrasında S03 30/30 kazandı. Bu yüzden karar "şartlı kazanan + ölçülebilir yedek tetikleri" diye yazıldı. Tek durumla hesap yanıltır.
-- 2026-10-27: Eşitlik bozucuyu (ilk 15 sn = viralite hook puanı) betiğe göm (`hakem-karar.py`) ve ±0.05 ağırlık duyarlılığını her iki durum için çalıştır. Kazananı değiştiren oynatmaları listele, "çoğu" gibi yazma (bu turda "çoğu" yazmıştım, liste "tamamı" gösterdi, düzelttim).
-- 2026-10-27: Yedek seçiminde ölçüt "aynı slotu kim kurtarır": aynı konu + YEŞİL/YEŞİL olan, F3'e sıfırdan araştırmayla dönen farklı konudan iyidir. Farklı konu yalnız ana konu taramada çökerse tercih edilir.
-- 2026-10-27: Karne puanında ajanın kendi işaretlediği eksiği (ör. viralite tur 2'yi doğrulamasız yapması) daha hafif, başka ajanın yakaladığı hatayı (KH-A12, son-20 medyanı) daha ağır say.
-- 2026-10-27: `roast` skill'i alt ajanda giriş soruları sorduğu için çağrılamıyor; 5 açıyı (eleştirmen, savunucu, analist, araştırmacı, izleyici) elle uygula ve bunu dosyada belirt.
-- 2026-10-27 (F9 1929-1000-dolar, ONAY + ŞY-1): Senkron kapısını **miksli finalde** yeniden koş (F5 müziksiz kaynakta ölçmüştü). Komut: `senkron-testi.py final.mp4 07-animasyon/rhubarb/tum-kapili.json 30 --araliklar <agiz-gorunur.json>` (+ `--bant formant`). Sonuç değişmedi (+1), ama kapının gerçek dosyada geçtiği ancak böyle kanıtlanır.
-- 2026-10-27: Whisper (faster-whisper small.en, int8) deterministik. Kendi JSON'um kurgu-editoru'nunkiyle bayt bayt aynı çıktı. Sonraki sefer `cmp` ile hızlı bağımsız kanıt al: 10 dk ses ≈2 dk 10 sn (4 çekirdek). Kalan küçük fark yalnız zaman ondalığında olur.
-- 2026-10-27: "Açık risk" listesini kendi karelerimle ölç (4 fps kontakt): S18 "~1 sn" dediği an gerçekte ~1,5–1,75 sn çıktı. Ajanın verdiği süreyi değil kendi ölçtüğümü yaz. Kapıyı bozmayan ama ölçülebilen risk RED gerekçesi değildir. RED ancak bir kapı ölçümle kalınca verilir; aksi zevke dayanır.
-- 2026-10-27: Ö1–Ö12'de "kısmi" kalan ve video dosyası dışında (kanal metni) olan madde için RED yerine adlandırılmış, sahibi belli bir yayın öncesi şart (ŞY-n) yaz. Dosya değişmez, slot korunur.
-- 2026-10-27: Teslim paketindeki yayin-paketi*.json'ları değiştirmeden kopyala (yollar `../08-kurgu` → `teslim/` kardeş klasör olduğu için çözülür). mp4'leri sembolik bağla ver ve dry-run'ı `teslim/` içinden koş.
-- 2026-10-28 (F9b fark kontrolü): Abone animasyonunu sayarken ajanın bant dedektörüne güvenme, **tüm karede** saf kırmızı piksel dedektörü koş (4 fps, 1/4 ölçek, ~2 dk): yanlış pozitif yoksa sayım bağımsız kanıtlanmış olur. Bu turda sonuç 4/1/1. `bash while read` döngüsünde ffmpeg stdin'i yutar → her zaman `-nostdin` kullan (pencerelerin yarısı bozuldu). Tam dosya WER'i artarsa SRT blok sınırına oturan pencerelerle ölç: uzun dosya segmentasyon artefaktı pencerede %0'a iner.
-- 2026-11-02 (F2 yeni-video, S08/S06): Bileşik fark eşik altındaysa (0.01) kazananı hook kuralı verir; bunu raporun ilk satırlarında "puan değil kural" diye yaz, uç durumu (rakip iyimser/kazanan kötümser viralite) da hesapla. Hook rakamlarını birincil veriyle betikte ±%1 kontrol et (`hakem-karar.py` v2).
-- 2026-11-02: Slot belirsizse kazanan seçiminde "kayma maliyeti"ni (raf ömrü, hook'ta zaman bağı) tart; K1–K3 saatli kontrol noktası + takvim 24 sa kuralına bağlı kayma hedefi yaz.
-- 2026-11-02 (F9 S08): Klik hizasını kör ses dedektörüyle ölçme (müzik altında bant tepesi/şablon yanlış yer buluyor: +15 kare sahte). Doğrusu: final sesi ↔ kurgunun klikli/kliksiz miksi çapraz ilinti (gecikme) + pencere artığı; Shorts'ta anlatımsız yatakta şablon. Abone sayımında düğme kutusu + kırmızı→gri dönüşü tek güvenilir imza (tüm kare kırmızı = zarf yanlış pozitifi). Betikler `uretim/2026-10-28-yeni-video/09-paket/hakem-log/`.
-- 2026-11-02: SFX görsel-başı dedektörü sahne kesmesini yakalayabilir; ±2 dışı her vuruşu 30 fps kontaktla elle aç (438,64: dedektör +4, gerçek +0,7). Uç ekran başlangıcını son abone kartı bitişiyle karşılaştır (ŞY).
-- 2026-11-04 (F2 miras-sizintilari, S03/S01): Taramanın bulgusunu (S01 tez monotonluğu, S03 105+18≈124) betikte teyit et; çift sayım gibi bir hata çoğu zaman hook'un ters köşesine çevrilebilir, düzeltmeyi kazanca yaz. Politika "bu slotta önerme" dediği adayı ilk 3'e alma, sıradakini al ve nedenini tabloya yaz.
-- 2026-11-04: Açık farkta da "rakip hangi ağırlıkta kazanır" eşiğini hesapla (viralite ≥0.79); eşik hook kuralıyla tetikleniyorsa bunu yaz. Klasör adını değiştirirken `git grep -l eski-ad | xargs sed` ile referansları da güncelle (`grep -r` repo kökünde zaman aşımına giriyor).
-- 2026-11-10 (F9 miras, KALDI yalnız Sh2): earshot cue'sunu `cue.json` sfx'inden kur (efekt-cue'nun tamamı değil): `atlanan` kesmeler sahte NO HIT verir. Rastgele kareye ek olarak her grafiğin 9:16 kesitini 0,5 sn kontaktla aç; dikeyde çizgi/şerit metin üstüne biniyor (16:9 temizken).
+- 2026-10-27: "Açık risk" sürelerini kendi kontakt karemle ölç; ajanın verdiği süreyi değil kendi ölçtüğünü yaz.
+- 2026-10-27: Teslimdeki yayin-paketi*.json'ları değiştirmeden kopyala, dry-run'ı `teslim/` içinden koş.
+- 2026-11-02: Uç ekran başlangıcını son abone kartının bitişiyle karşılaştır (ŞY).
+- 2026-11-10 (miras): her grafiğin 9:16 kesitini 0,5 sn kontaktla aç; dikeyde metin üstüne binme oluyor.
+- 2026-11-11 (FBV B001, KALDI): Altyazı **yazımını** satır bazında betikle denetle (ekran kelimeleri = `metin.split()`). Şablon, kelime sayısı tutmayınca ham Whisper'a düşüyordu ("To a", "truck by"). Ajanların 20 karelik denetimi yalnız güvenli alana bakıyor.
+- 2026-11-11: Rastgele karelere ek olarak 1:1 yüz kırpımları aç: göz kırpma anını (4 kare), tam ekran portrelerin saç kenarını ve son karede rozet/yüz kesişimini. Küçük kontaktta bu üçü görünmüyor.
+- 2026-11-11: Kapanış sorusunu 7 sn'lik pencerede final ile kuru ses karşılaştırarak dinlet. WER geçse bile SFX anahtar kelimeyi bozabilir ("Bike" → "Like").
