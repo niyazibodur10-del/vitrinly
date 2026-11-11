@@ -1,0 +1,69 @@
+{
+ "girdi_sha256_12": {
+  "mike-gulen-temiz": "f2177f8dc2f8",
+  "jake-gulen": "e521877db075"
+ },
+ "P1": {
+  "mike": {
+   "kutu": [
+    69,
+    150,
+    405,
+    533
+   ],
+   "genislik_cap_orani": 0.42,
+   "48px_yuz_genisligi": 20.2,
+   "98px_yuz_genisligi": 41.2,
+   "daire_icinde": true
+  },
+  "jake": {
+   "kutu": [
+    399,
+    150,
+    740,
+    533
+   ],
+   "genislik_cap_orani": 0.426,
+   "48px_yuz_genisligi": 20.5,
+   "98px_yuz_genisligi": 41.8,
+   "daire_icinde": true
+  },
+  "daire_kenari_wcag_acik_tema": 1.64,
+  "daire_kenari_wcag_koyu_tema": 11.72,
+  "sac_zemin_wcag": 8.07
+ },
+ "P2": {
+  "mike": {
+   "kutu": [
+    69,
+    150,
+    405,
+    533
+   ],
+   "genislik_cap_orani": 0.42,
+   "48px_yuz_genisligi": 20.2,
+   "98px_yuz_genisligi": 41.2,
+   "daire_icinde": true
+  },
+  "jake": {
+   "kutu": [
+    399,
+    150,
+    740,
+    533
+   ],
+   "genislik_cap_orani": 0.426,
+   "48px_yuz_genisligi": 20.5,
+   "98px_yuz_genisligi": 41.8,
+   "daire_icinde": true
+  },
+  "daire_kenari_wcag_acik_tema": 2.74,
+  "daire_kenari_wcag_koyu_tema": 6.99,
+  "sac_zemin_wcag": 5.19
+ },
+ "dosya": {
+  "yol": "/home/user/vitrinly/uretim/kanal-kimligi/flipbyvote-profil-800.png",
+  "bayt": 441257,
+  "kazanan": "P1"
+ }
+}

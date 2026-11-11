@@ -33,6 +33,7 @@
 - 2026-11-09 (kanal-analisti teşhisi): Leo'nun aynı "ağzı açık şaşkın" yüzü S08 A1 + miras K1/K3/K4'te; en iyi giden 1929 A2 sahne + işaret eden sakin Leo (zayıf kanıt, CTR yok). → İfade/poz döndür, aynı yüz ardışık iki videoda yok, hikâye nesnesi ana öğe.
 - 2026-11-09 revizyon: S08 ve miras finallerinin hepsinde aynı şaşkın Leo vardı, bu kanal düzeyinde bir tekrar deseni (kanal-analisti teşhisi). Kural: 3 finalde aynı ifade en fazla 1 kez kullanılır, önceki videonun finallerine de bakılır. Eğik kafada (c-isaret) hizanın bulduğu en iyi dx (−48) boyunda basamak bırakıyor. dx'i yaka bandı farkını en küçük yapacak şekilde uzlaştır (−36 → 9,8). Maskede eski kafayı premultiplied karışımla sil (`kafa-degis.py`).
 
-### 2026-11-11 — Flip By Vote banner (A karşı karşıya seçildi / B metin sol + ikili sağ elendi)
+### 2026-11-11 — Flip By Vote banner (A seçildi) + profil v2 (P1 altın)
 - Anton'un çapası mürekkebin ~56 px üstünde: konumu `textbbox` ile mürekkep üstüne göre ver (`flipbyvote-banner.py` Metin.yaz). İfade portrelerinin düz kesik alt/yan kenarı TV görünümünde görünür → alfa'yı alttan ve omuz yanlarından erit.
-- İki karakter metni iki yandan sarınca mobil OCR tam satır okudu; metin solda büyük + ikili sağda olunca 390 px'te "$100" kayboldu (altın, sarı halo üstünde p5 5,1). Profil logosu videodaki FOLLOW avatarıyla bağlı: okunuyorsa değiştirme.
+- İki karakter metni iki yandan sarınca mobil OCR tam satır okudu; metin solda büyük + ikili sağda olunca 390 px'te "$100" kayboldu (altın, sarı halo üstünde p5 5,1).
+- Profilde tik/rozet yok (doğrulama rozeti riski, Niyazi). İki yüz: yüz genişliği çapın ≥%42 (48 px'te 20 px); öndeki portrenin kesik kenarını arkadakine erit; altın zemin saçla 8,1.
