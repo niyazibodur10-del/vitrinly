@@ -18,3 +18,4 @@
 - 2026-11-11: Kapanış sorusunu 7 sn'lik pencerede final ile kuru ses karşılaştırarak dinlet. WER geçse bile SFX anahtar kelimeyi bozabilir ("Bike" → "Like").
 - 2026-11-11 (B001 tur 2): Kenar kusuru için PNG'yi yeşil zemine bindirip incele; alfa ada sayısı 1 çıksa bile tırtık ve renk bulaşığı kalabilir. Kabul testinde "diğer kullanımlar"ı (kapanış/kapak) adıyla yaz, ajan yalnız adı geçen kareyi düzeltiyor. Tesseract renkli/konturlu altyazıda işe yaramıyor, kare aç.
 - 2026-11-11 (B001 tur 3 GEÇTİ): Varlık düzeltmesinden sonra yalnız istenen kareye değil, o varlığın her kullanımına bak (`bolum-NNN.ts` içinde `portre:` grep → çekim zamanları). Ucuz ve gerilemeyi yakalıyor.
+- 2026-11-11 (B001 tur 4): earshot cue'sunu yine efekt-cue'nun tamamından kurdum, sesi olmayan "G-" görsel olayı sahte aykırı verdi. Kural: cue = `ses-cue.mutlak.json` → `sfx` (id + t). Ses değişince TTS lisans satırını `lisans-kaydi.md`'de ara (lisans-kontrol.py TTS'i kapsamıyor).

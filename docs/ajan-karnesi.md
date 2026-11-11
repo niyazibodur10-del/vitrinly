@@ -79,3 +79,7 @@ Kurallar: son 3 işin ortalaması < 6 → uyarı + yeniden yazım; ardışık 2 
 | 2026-11-11 | animasyon-yonetmeni | Bölüm 001 tur 3 render | 8 | Yalnız varlık değişti, ses ve zaman korundu (LUFS/TP birebir), siyah/donma 0, 1:1 kenar kanıtı verdi; ölçümleri benimkiyle çelişmedi |
 | 2026-11-11 | youtube-paketleyici | Bölüm 001 paket v3 (kapak) | 9 | Kapak 81,0 sn'den, sha 6d01844629ec tutarlı, dry-run 0 hata (benim koşum); kapak 1:1 temiz, 108x192 okunuyor |
 | 2026-11-11 | hakem | F9 bölüm 001 tur 2–3 | — | kendini puanlamaz; ik-direktoru puanlar |
+| 2026-11-11 | ses-yonetmeni | Bölüm 001 ses kilidi v2 (Pocket TTS george/marius) | 8 | Final miks WER %0,6 (benim ölçümüm), −14 LUFS, yeni Rhubarb + kelimeler.json zinciri tutarlı. Eksi: TTS lisansı `lisans-kaydi.md`'ye yazılmadı (ŞY-1) |
+| 2026-11-11 | animasyon-yonetmeni | Bölüm 001 tur 4 yeniden hizalama (74,57 sn) | 9 | 34 kesme + bütün olaylar LCS çapasıyla taşındı; benim ölçümlerim birebir (senkron 0 ve +1/+1, 25/25, SFX 15/15, siyah/donma 0, kapanış 1:1 temiz); yeni profil resmi takip kartında; hızlı teslim |
+| 2026-11-11 | youtube-paketleyici | Bölüm 001 paket v4 (Kyutai render) | 9 | dry-run 0 hata / 0 uyarı, atıf satırı 3/3, sha ve süre güncel, kapak 72,33 sn 1:1 temiz |
+| 2026-11-11 | hakem | F9 bölüm 001 tur 4 | — | kendini puanlamaz; ik-direktoru puanlar |

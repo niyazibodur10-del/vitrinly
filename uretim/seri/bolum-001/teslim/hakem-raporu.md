@@ -1,5 +1,33 @@
 # Hakem raporu (F9): Flip By Vote · Bölüm 001 "Every Dollar We Have"
-İLERLEME: tamam (tur 3). Bölüm F10 teslime hazır.
+İLERLEME: tamam (tur 4, yeni sesler: Pocket TTS, Jake george, Mike marius). Bölüm F10 teslime hazır; tek yayın öncesi şart ŞY-1.
+**KARAR (tur 4): GEÇTİ + ŞY-1.** Video kapılarının hepsi yeni render'da yeniden ölçüldü ve geçti. Kapak ve paket yeni sha ile tutarlı. ŞY-1: `uretim/seri/lisans-kaydi.md`'de TTS satırı yok. Video dosyası değişmez, ama yayından (17:00Z) önce kapanmalı.
+Gerekçe:
+1. Ses değişti, ama zamanlama zinciri ölçümle tutuyor: final miks WER %0,6 (1/176, tek hata Whisper'ın p=0,07 güvenle eklediği "Jake"), senkron 0 kare (piksel) ve +1/+1 (Rhubarb), altyazı 25/25 = metin, SFX 15/15 ±2 kare.
+2. Görüntü: 74,57 sn, 1080x1920, 30 fps, −14,0 LUFS / TP −2,3, siyah/donma 0. 20 rastgele karede yer tutucu 0, BANK $100 20/20, dikiş 0. Kapanış 1:1 temiz. Takip kartında yeni profil resmi; klik ile buton değişimi aynı karede.
+3. Paket: dry-run "0 hata, 0 uyarı". Ses atıf satırı açıklamalarda var (CLAUDE.md 2026-11-11 kararıyla aynı metin). AI satırı var, gün sözü 0. Kapak 72,33 sn karesinden: 1:1 temiz, 108x192'de okunuyor.
+
+## T4. Tur 4 ölçümleri (girdi sha256 **171b2487fb09**; animasyon raporuyla aynı)
+| Kapı | Benim ölçümüm | Durum |
+|---|---|---|
+| Süre / format | ffprobe → 74,567 sn, 2237 kare, 1080x1920, 30/1; aac 48 kHz stereo 74,58 sn | GEÇTİ |
+| Ses | `ebur128=peak=true` → I −14,0 LUFS, TP −2,3 dBFS, LRA 5,1 (`tur4/ebur128.txt`) | GEÇTİ |
+| Siyah / donmuş | `blackdetect d=0.1 pix_th=0.10` + `freezedetect -60dB d=0.5` → 0 / 0 | GEÇTİ |
+| 20 rastgele kare (seed 91141) | `tur4/r20/kontak.jpg`: yer tutucu 0, dikiş 0, altyazı güvenli alanda 20/20, BANK $100 20/20, karar kartı harfsiz + "Ep. 2: YOUR call" | GEÇTİ |
+| Altyazı 25/25 | `altyazi-z1-testi.ts` → 25/25. Video tarafındaki `bolum-001.kelimeler.json` ile yeni `ses/kelimeler.json` zamanları birebir aynı (en büyük fark 0,0 sn) | GEÇTİ |
+| Ağız senkronu | `agiz-piksel-senkron.py` → 13 yakın çekim, 861 kare, gecikme 0, r 0,522 · `senkron-testi.py` yeni `rhubarb/{JAKE,MIKE}.json` → +1 / +1 (`tur4/senkron.txt`) | GEÇTİ |
+| WER (final miks, tam) | `yaziya-dok.py small.en` + `hata-orani.py` → **%0,6** (1/176, 28,88 sn'de p=0,07 güvenle tekrarlanmış "Jake", sesli bir hata değil). Referans = kilitli metin | GEÇTİ |
+| SFX + ses çakışması (earshot, 7,3–37,3) | 13/16 cue ±2. Aykırıların stem kontrolü: tahta-hesap 26,53 (0 kare), şifonyer whoosh apex 32,42 (0 kare); 33,98 "G-boya-pop" görsel olay, ses cue'su yok (cue dosyamın hatası). Sonuç **15/15**. Konuşma maskesi: WER %0,6 ve kapanış sorusu doğru | GEÇTİ |
+| Kapanış 1:1 | 70,0 / 72,33 sn 600x700 kırpım (`tur4/kapanis-1e1.png`): saç ve kulak kenarı temiz, BANK yüzle kesişmiyor | GEÇTİ |
+| Takip kartı + profil resmi | 1 kez, 72,35–74,55. Yeni avatar (Jake + Mike, sarı zemin) 410 px'lik kırpımda okunuyor. Klik stem onset 73,250, FOLLOW→FOLLOWING 73,267 (0 kare) (`tur4/takip-klik.png`) | GEÇTİ |
+| Kapak | 72,33 sn karesi (paketleyici commit 860fb54): 1:1 temiz, 108x192 ve 4:5'te "$100 → $1,000,000" okunuyor (`tur4/kapak-kontrol.png`) | GEÇTİ |
+| Paket | dry-run 0 hata / 0 uyarı; sha 171b2487fb09 YAYIN.md ve platform-metinleri.md'de; "Voices: Kyutai Pocket TTS (CC BY 4.0); VCTK corpus (CC BY 4.0)." platform-metinleri.md'de 3/3; AI satırı var; gün sözü 0 | GEÇTİ |
+| Lisans | `lisans-kontrol.py` → eksik 0, yasak 0 (müzik/SFX). **TTS satırı `lisans-kaydi.md`'de yok** (yalnız `ses/kilit.json`'da ses adı geçiyor) | ŞY-1 |
+
+**ŞY-1 (sahip: ses-yonetmeni, son saat 17:00Z yayından önce).** `uretim/seri/lisans-kaydi.md`'ye TTS bölümü eklenecek. Satırlar: Pocket TTS kodu (MIT) ve ağırlıkları (CC BY 4.0), `george` = VCTK p315 (CC BY 4.0), `marius` (CC0); kaynak URL, erişim tarihi, lisans kanıt kopyası (`assets/lisans-kanit/`), açıklamadaki atıf metni. Video yeniden render edilmez.
+Not: politika-format.md §6 "yalnız CC0 + kendi üretim" diyordu. Niyazi'nin 2026-11-11 ses kararı (CLAUDE.md) atıflı CC BY'ye izin veriyor. Atıf satırı paketin üç açıklamasında da var. monetizasyon-uyum-uzmani §6'yı bu karara göre güncellemeli (sonraki bölüm, engel değil).
+
+---
+# Tur 3 (arşiv, sha 6d01844629ec)
 **KARAR (tur 3): GEÇTİ.** Z3b kapandı: kapanış ikili portresinde (80,5 / 81,0 sn) ve kapakta 1:1 incelemede kopuk saç ucu, tırtık ya da kızıl saçak yok. Ses ve görüntü kapıları tur 3 dosyasında yeniden ölçüldü. Paket yeni sha ile tutarlı.
 Gerekçe:
 1. Tur 1'de bulunan bütün zorunlu maddeler ölçümle kapandı: Z1 altyazı 25/25 = metin; Z2 kırpma kapağı; Z3 ve Z3b saç kenarı; Z4 BANK–yüz kesişmesi 0.
