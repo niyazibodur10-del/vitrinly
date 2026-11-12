@@ -1,0 +1,6 @@
+kelime=194 hata=7 WER=%3.6
+replace comments -> comment
+insert  -> her
+replace counter -> count her
+replace counter -> count her
+insert  -> you

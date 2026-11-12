@@ -1,0 +1,58 @@
+bolum-002.mp4: 0:42.20-1:12.20 (30.0 s). Loudness -14.0 LUFS integrated, true peak -3.5 dBTP, LRA 5.3 LU; loudest 0:45.20-0:48.20 (-12.4 LUFS short-term). 19 stop-down(s)/gap(s): 0:42.20 0.3 s drop, 0:43.15 0.3 s drop, 0:44.25 0.8 s drop, 0:46.00 0.9 s drop, 0:48.00 0.4 s drop. No steady beat grid (pulse clarity 0.06 < 0.15). 2 section(s): 0:42.20-0:48.05 funk music, vocal chop, confident and cool; 0:48.05-1:12.20 funk music?, vocal chop, confident and cool. 167 events (5.6/s); 12 tagged (6 ui, 3 note, 2 foley, 1 voice; tags are hints). Strongest accents over a running bed: 0:45.68 +44 dB, 1:10.00 +34 dB, 0:45.08 +34 dB. Sync to 17 cuts: 29% have an onset within 1 frame (chance 36%), 82% within 100 ms, median |offset| 48 ms; 6% land on a strong accent (>= 24 dB over the bed, ranked over the +-30 s context) within 1 frame (chance 7%); 3 without a hit: 0:46.80, 0:47.97, 0:51.70. Sync to 8 cues: 88% have an onset within 1 frame (chance 36%), 88% within 100 ms, median |offset| 14 ms; 38% land on a strong accent (>= 24 dB over the bed, ranked over the +-30 s context) within 1 frame (chance 6%); 1 without a hit: 0:47.93.
+
+SECTIONS
+  0:42.20-0:48.05  funk music, vocal chop, confident and cool  -13 LUFS
+  0:48.05-1:12.20  funk music?, vocal chop, confident and cool  -14 LUFS
+
+TRANSCRIPT   time  kind   what (CLAP tag / runner-up)                     peak  over bed  length  centroid  | sync
+== 0:42.20-0:48.05  funk music, vocal chop, confident and cool  (+24 untagged onsets, 4.1/s)
+ 0:42.20  GAP    drop 0.30 s (-45 LUFS)
+ 0:43.15  GAP    drop 0.30 s (-41 LUFS)
+ 0:43.29  -      high onset                                       -4.4 dBFS  +0.0 dB  1627 ms  1.4 kHz  | cut -77 ms near
+ 0:44.25  GAP    drop 0.80 s (-39 LUFS)
+ 0:45.08  -      full onset                                       -7.2 dBFS +33.9 dB    63 ms   401 Hz  | strong accent (summary)
+ 0:45.68  -      full swell                                       -4.9 dBFS +43.6 dB    60 ms   530 Hz  | strong accent (summary)
+ 0:46.00  GAP    drop 0.95 s (-39 LUFS)
+ 0:46.80  CUT     no onset within 100 ms (strong sound at +180 ms)  <- NO HIT
+ 0:46.98  UI     chat message pop / glockenspiel note             -4.7 dBFS +30.9 dB  1012 ms   969 Hz  | sfx +13 ms OK
+ 0:47.93  CUE    sfx S6-gecis  no onset or level peak within 250 ms  <- NO HIT
+ 0:47.97  CUT     no onset or level peak within 250 ms  <- NO HIT
+ 0:48.00  GAP    drop 0.40 s (-48 LUFS)
+== 0:48.05-1:12.20  funk music?, vocal chop, confident and cool  (+119 untagged onsets, 4.9/s)
+ 0:48.40  UI     toggle switch click / spacebar press            -10.6 dBFS +32.2 dB    11 ms  4.3 kHz  | sfx +0 ms OK
+ 0:48.69  -      high onset                                      -10.4 dBFS +29.0 dB   204 ms   397 Hz  | sfx -6 ms OK
+ 0:48.95  FOLEY  lego bricks clicking / plucked string note      -11.0 dBFS +17.7 dB    88 ms  1.7 kHz  | sfx +17 ms OK
+ 0:49.00  GAP    drop 0.40 s (-40 LUFS)
+ 0:49.30  -      high onset                                       -4.5 dBFS  +7.2 dB  1086 ms   275 Hz  | cut +3 ms OK
+ 0:50.30  GAP    drop 0.30 s (-40 LUFS)
+ 0:50.55  UI     chat message pop / glockenspiel note             -4.9 dBFS +25.0 dB  2000 ms   227 Hz  | cut +53 ms near
+ 0:51.35  GAP    drop 0.45 s (-37 LUFS)
+ 0:51.70  CUT     no onset within 100 ms (strong sound at +126 ms)  <- NO HIT
+ 0:51.83  UI     chat message pop / spoken word                   -4.6 dBFS +30.0 dB  2000 ms   328 Hz
+ 0:51.88  -      high onset                                       -4.6 dBFS +29.6 dB   806 ms   495 Hz  | cut +17 ms OK
+ 0:53.45  NOTE   glockenspiel note / chat message pop            -12.5 dBFS +23.6 dB   635 ms  2.1 kHz  | cut +50 ms near; sfx -17 ms OK
+ 0:53.68  -      low onset                                       -20.4 dBFS  +6.4 dB   371 ms   205 Hz  | cut +80 ms near
+ 0:54.17  FOLEY  lego bricks clicking / chat message pop          -4.6 dBFS +19.2 dB  1577 ms  4.0 kHz  | cut +70 ms near
+ 0:55.27  -      high onset                                       -6.0 dBFS  +6.2 dB    82 ms  3.9 kHz  | cut -31 ms OK
+ 0:55.60  GAP    drop 1.75 s (-38 LUFS)
+ 0:58.37  NOTE   glockenspiel note / chat message pop            -10.6 dBFS +14.7 dB   520 ms  2.1 kHz  | cut -31 ms OK
+ 0:58.45  NOTE   glockenspiel note / notification ding           -10.6 dBFS +22.2 dB   441 ms  2.0 kHz  | sfx -17 ms OK
+ 0:58.80  GAP    drop 0.60 s (-35 LUFS)
+ 0:59.44  UI     chat message pop / bubble pop                    -5.5 dBFS +23.8 dB   110 ms   477 Hz  | cut +40 ms near
+ 0:59.55  GAP    drop 0.40 s (-38 LUFS)
+ 1:00.50  GAP    drop 0.35 s (-37 LUFS)
+ 1:00.55  -      low onset                                       -26.8 dBFS  +0.0 dB  1597 ms    92 Hz  | cut -45 ms near
+ 1:02.15  GAP    drop 0.45 s (-40 LUFS)
+ 1:02.47  UI?    chat message pop / spoken word                   -4.4 dBFS  +8.7 dB  2000 ms   245 Hz  | cut -34 ms near
+ 1:03.29  -      low onset                                        -4.5 dBFS  +0.0 dB    76 ms   530 Hz  | sfx -14 ms OK
+ 1:04.15  GAP    drop 1.00 s (-39 LUFS)
+ 1:05.70  GAP    drop 0.35 s (-39 LUFS)
+ 1:06.60  GAP    drop 0.30 s (-36 LUFS)
+ 1:06.80  -      high onset                                       -4.6 dBFS  +3.4 dB  2000 ms   216 Hz  | cut +2 ms OK
+ 1:07.45  GAP    drop 0.45 s (-39 LUFS)
+ 1:09.05  GAP    drop 0.95 s (-42 LUFS)
+ 1:10.00  -      high onset                                       -4.8 dBFS +34.4 dB   275 ms   288 Hz  | strong accent (summary)
+ 1:10.30  GAP    drop 1.30 s (-38 LUFS)
+ 1:11.62  VOICE  spoken word / chat message pop                   -4.6 dBFS +25.4 dB   542 ms  1.7 kHz  | cut +55 ms near
+
+NOTES  times, levels, loudness and sync offsets are measurements. Event kinds / tags are CLAP guesses: '?' = the event is less than 12 dB over its bed, so its excerpt is mostly bed and the tag a weak hint (right kind about 1 in 4 on the tuning mixes, 1 in 2 for exposed events; often wrong on music and voice). Where AST ran, its speech overrides the kind with VOICE. Section genres marked ? are weak. 'over bed' = how far the event rises over the level just before it; 'silent' = that bed was below -60 (after a gap the rise means nothing). Full data: --json.

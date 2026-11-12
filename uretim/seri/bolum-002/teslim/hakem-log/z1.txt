@@ -1,0 +1,1 @@
+Z1: 29/29 satır ekran = metin (sıra+aralık dahil)

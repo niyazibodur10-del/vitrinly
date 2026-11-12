@@ -83,3 +83,7 @@ Kurallar: son 3 işin ortalaması < 6 → uyarı + yeniden yazım; ardışık 2 
 | 2026-11-11 | animasyon-yonetmeni | Bölüm 001 tur 4 yeniden hizalama (74,57 sn) | 9 | 34 kesme + bütün olaylar LCS çapasıyla taşındı; benim ölçümlerim birebir (senkron 0 ve +1/+1, 25/25, SFX 15/15, siyah/donma 0, kapanış 1:1 temiz); yeni profil resmi takip kartında; hızlı teslim |
 | 2026-11-11 | youtube-paketleyici | Bölüm 001 paket v4 (Kyutai render) | 9 | dry-run 0 hata / 0 uyarı, atıf satırı 3/3, sha ve süre güncel, kapak 72,33 sn 1:1 temiz |
 | 2026-11-11 | hakem | F9 bölüm 001 tur 4 | — | kendini puanlamaz; ik-direktoru puanlar |
+| 2026-11-12 | animasyon-yonetmeni | Bölüm 002 render (88,27 sn) | 9 | Ölçümlerim birebir (senkron 0 ve +1/+1, 29/29, siyah/donma 0, kapanış temiz); 4 yeniden kanca, yeni mekân L3; ikame SFX'leri raporda kendisi işaretledi. Eksi: SERIAL CHECK kartı konuşan ağzı kapatıyor |
+| 2026-11-12 | ses-yonetmeni | Bölüm 002 ses kilidi (Pocket TTS) | 9 | Final miks WER %3,6, pencerede doğru; TTS lisans satırları kayıtta (B001 ŞY-1 kapandı) |
+| 2026-11-12 | youtube-paketleyici | Bölüm 002 paket + kapak | 8 | dry-run 0 hata, Z2 atıf satırı 3/3 + Sources, sha tutarlı. Eksi: kapak Bölüm 1'in şablonunun aynısı, bölüme özgü kanca yok (Ö2) |
+| 2026-11-12 | hakem | F9 bölüm 002 | — | kendini puanlamaz; ik-direktoru puanlar |

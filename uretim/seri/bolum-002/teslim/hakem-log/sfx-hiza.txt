@@ -1,0 +1,8 @@
+earshot-0.0.json ±2 kare 9/14; aykırı: [(2.5, -96.0), (5.267, -76.7), (15.833, -73.3), (21.4, -91.0), (22.3, -90.0)]
+earshot-42.2.json ±2 kare 7/8; aykırı: [(47.933, None)]
+2.5: stem onset 2.485 (-0.5 kare), tepe 2.515 -9 dB
+5.267: stem onset 5.257 (-0.3 kare), tepe 5.257 -8 dB
+15.833: stem onset 15.838 (0.2 kare), tepe 15.843 -15 dB
+21.4: stem onset 21.28 (-3.6 kare), tepe 21.4 -10 dB
+22.3: stem onset 22.18 (-3.6 kare), tepe 22.3 -9 dB
+47.933: stem onset 47.823 (-3.3 kare), tepe 47.948 -8 dB

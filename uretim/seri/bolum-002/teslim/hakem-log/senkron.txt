@@ -1,0 +1,3 @@
+{"gecikme_kare": 0, "korelasyon": 0.568, "lag0": 0.568, "aralik_kare": 930, "egri": {"-8":
+en iyi gecikme: 1 kare (33 ms), korelasyon 0.33, gecikme 0'da 0.31 GEÇTİ  JAKE
+en iyi gecikme: 1 kare (33 ms), korelasyon 0.40, gecikme 0'da 0.37 GEÇTİ  MIKE
