@@ -28,3 +28,4 @@
 - 2026-11-11: Kodla göz kırpma: maske-PNG ve elips "boş göz" yapar → badem klip + kapalıda tam dolgu + kirpik kavisi; ten rengi göz altından değil yanaktan. Disk dar: bundle 585 MB → `scripts/bundle-kaydet.mjs` ile bir kez, paylaşılan /tmp'yi süpürme.
 - 2026-11-11 (B001 tur 2, hakem KALDI): altyazı yazısı daima kilitli metinden (LCS; Whisper yalnız zaman). Göz kapağı = göz altı derisinin aynası + gölge + kontur kirpik; yakın ≥1,15 ve kancada kırpma yok. Saç halesi: kenar bandında renk-dışı pikselleri sil (`sac-hale-temizle.py`). Rozet/kart yüz çakışmasını kutu kesişimiyle ölç.
 - 2026-11-11 (ses değişimi, 2 sa sınır): mutlak zamanlı kesme tablosu `animasyon/zaman-esle.py` (eski→yeni kelime çapası) ile 20 dk'da taşındı; sonraki bölümde zamanları baştan satır/kelime çapasıyla yaz.
+- 2026-11-12 (B002): disk darken render `--public-dir=<symlink dizini>` (bundle 600→40 MB); yeni sahne için ses-cue taslağı + görsel olaylar tek seferde, ilk render GEÇTİ (88 sn, 3,5 dk).
