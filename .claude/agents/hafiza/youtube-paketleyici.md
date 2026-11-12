@@ -15,7 +15,6 @@
 
 ## Dersler
 - 2026-10-26 (kanal): Tanıtıcı müsaitliği `channels?part=id&forHandle=@x` (1 birim) + RDAP .com ile ucuz eleme, sonra kısa listeye search. Yakın yazım/sesli çakışmayı da ara (Toonomy ↔ Tonomy). Maskot adı da marka taramasına girer; kanal adı maskot adı olmaz.
-- 2026-10-26: Kanal ilk 150 krk aranan kavramlarla başlar; ritim sözü (gün) tempo 4 hafta tutulmadan yazılmaz. "toon" adı çocuk-içeriği riski → kitle ayarını risk tablosuna yaz.
 - 2026-10-27: Başlık merak + somut özne; açıklama ilk paragrafı arama ifadesini ilk 10 krk'de taşır; başlığı tekrar eden versiyon elenir.
 - 2026-10-27: Thumbnail metni okunurluk modeliyle (kutu 704x324, ≤3 satır, eşik 9 px): ≤4 kelime; alt not isteyen sayı thumbnail'a girmez.
 - 2026-11-02 (S08 F8a): Eksik girdiler için `veri:thumbnail-ana` (boşsa alan yok), `{MUZIK_*}` belirteci, `veri:yayin-zamani` (yedek slot satırları) → F8b'de unutma imkânsız.
@@ -30,3 +29,4 @@
 - 2026-11-10: Ad adayı konsepti birebir anlatan TV/marka var mı ara (HGTV "Flip to a Million"); jenerik kelime + fiil bileşiği ("You Call The Flip") hem boş hem düşük risk.
 - 2026-11-11 (Flip By Vote B001): Çok platformlu dizi paketi tek betikte (`seri/bolum-001/paket/paket-uret.py`): politika+anonim satırı birebir 4 metinde, yasak regex (gün sözü/yem), soru `bolum.txt`'de; negatif testle. Sonraki bölüm: kopyala, metni değiştir.
 - 2026-11-11: Dikey kapak = video karesi (karartmasız an: karar kartı sonrası) + alt metin paneli, yüz bölgesi y=285'ten → 4:5 ve 3:4 ızgarada aynı kalır (`kapak.py`). "We have $100" tipi başlık kurguyu gerçek deneme gibi gösterir → ele.
+- 2026-11-12 (B002): CC BY atfı = lisans URI + üretici + değişiklik beyanı ("synthesized from"); kapıda satır yeri de denetlenir. Render yokken paket BEKL kipinde biter (`--final` hata); dry-run sahte medyalı kopya.
