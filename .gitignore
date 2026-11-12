@@ -13,3 +13,5 @@ video/public/k1929/
 !uretim/**/07-animasyon/*onizleme*.mp4
 video/public/k1929t/
 uretim/**/07-animasyon/dikey/*.mp4
+# diyalog.py satır önbelleği (ham satır sesi, ~7 MB/bölüm; tek replik yeniden üretimi için, konteynerle gider)
+uretim/**/*.satirlar.npz

@@ -104,6 +104,8 @@ def main():
     ap.add_argument("--ses", action="append", default=[], help="KONUSMACI=motor:ses[:hiz] (pocket:michael, supertonic:M4, am_onyx:0.95)")
     ap.add_argument("--bosluk", action="append", default=[], help="KONUSMACI=sn (bu konuşmacı yanıt verirken)")
     ap.add_argument("--ham", action="store_true")
+    ap.add_argument("--yenile", action="store_true", help="satır önbelleğini yok say, hepsini yeniden üret")
+    ap.add_argument("--yeniden", default="", help="yalnız bu satır numaralarını yeniden örnekle (ör. 6,17); öteki satırlar önbellekten")
     a = ap.parse_args()
 
     sesler = dict(VARSAYILAN_SES); sesler.update(dict(x.split("=", 1) for x in a.ses))
@@ -116,19 +118,37 @@ def main():
     torch.set_num_threads(os.cpu_count() or 4)
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     from gercekci_tts import Motor  # motor:ses:hiz (pocket/supertonic/kokoro); "am_x:hiz" = kokoro
-    motor = {k: Motor(v) for k, v in sesler.items() if k in {s["konusmaci"] for s in satirlar}}
+    motor = {}  # tembel yükleme: yalnız önbellekte olmayan satır varsa model yüklenir
+
+    # 0) satır önbelleği (2026-11-12): <ad>.satirlar.npz = kırpılmış ham satır sesi, anahtar = sha1(ses tanımı + metin).
+    #    Pocket örnekleme yaptığı için her koşu farklı ses verir → değişmeyen satırlar önbellekten AYNEN gelir, yalnız
+    #    değişen/yeni satır üretilir ("tek replik değişti" durumunda öteki 24 satırın sesi ve zamanlaması korunur).
+    #    --yenile ile önbellek yok sayılır (tam yeniden üretim).
+    import hashlib
+    onb_yol = re.sub(r"\.wav$", "", a.cikis) + ".satirlar.npz"
+    onb = {} if a.yenile or not os.path.exists(onb_yol) else dict(np.load(onb_yol))
+    anahtar = lambda s: hashlib.sha1(f"{sesler[s['konusmaci']]}|{s['metin']}".encode()).hexdigest()[:16]
+    uretilen = 0
 
     # 1) satırları üret: gerçekçi motorlar satırı tek parça (doğal prozodi), Kokoro cümle cümle + duraklama
-    for s in satirlar:
-        mo = motor[s["konusmaci"]]
+    yeniden = {int(x) for x in a.yeniden.split(",") if x.strip()}
+    for i, s in enumerate(satirlar, 1):
+        k = anahtar(s)
+        if k in onb and i not in yeniden:
+            s["y"] = onb[k].astype(np.float32); continue
+        if s["konusmaci"] not in motor:
+            motor[s["konusmaci"]] = Motor(sesler[s["konusmaci"]])
+        mo = motor[s["konusmaci"]]; uretilen += 1
         metin = duz(s["metin"]) if mo.motor != "kokoro" else s["metin"]  # misaki IPA işareti yalnız Kokoro'da geçerli
         if mo.satir_butun:
             s["y"] = kirp(mo.uret(metin))
-            continue
-        parca = []
-        for c in cumleler(metin):
-            parca += [kirp(mo.uret(c)), np.zeros(int((CUMLE_VURGU if c[-1] in "!?" else CUMLE) * SR), np.float32)]
-        s["y"] = np.concatenate(parca[:-1])
+        else:
+            parca = []
+            for c in cumleler(metin):
+                parca += [kirp(mo.uret(c)), np.zeros(int((CUMLE_VURGU if c[-1] in "!?" else CUMLE) * SR), np.float32)]
+            s["y"] = np.concatenate(parca[:-1])
+    np.savez(onb_yol, **{anahtar(s): s["y"] for s in satirlar})
+    print(f"satır: {uretilen} üretildi, {len(satirlar) - uretilen} önbellekten ({os.path.basename(onb_yol)})")
 
     # 2) konuşmacı seviyesi eşitle (etkin RMS, ortak hedef = konuşmacı ortalamalarının geometrik ortası)
     rms = {k: etkin_rms(np.concatenate([s["y"] for s in satirlar if s["konusmaci"] == k]))
