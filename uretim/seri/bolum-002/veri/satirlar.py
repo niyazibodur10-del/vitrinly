@@ -2,11 +2,11 @@
 (id, sahne, konuşan, replik, sessiz_vuruş_sn_önce)
 konuşan: JAKE / MIKE. sessiz = diyalog.py otomatik boşluğuna EK sessizlik (SFX, grafik, tutuş)."""
 SATIRLAR = [
-    # S1 KANCA — YAKIN-M, kare 0'da bisiklet (G1) sağdan kadraja yuvarlanıyor, patlak lastik "flap-flap" 0.1 sn
-    ("M01", "S1", "MIKE", "Meet Brenda!", 0.15),
-    ("J01", "S1", "JAKE", "Brenda has two flat tires.", 0.0),
-    # S2 SIFIR OY — kart "0 votes · Mike picked: THE BIKE" aksiyonun üstüne (1.5–5.5 sn)
-    ("J02", "S2", "JAKE", "No votes yet. So Mike picked.", 0.0),
+    # S1 KANCA + PREVIOUSLY (≤3 sn) — YAKIN-M, kare 0'da bisiklet (G1) sağdan yuvarlanıyor, "flap-flap" 0.1 sn;
+    # üstte önceki seçim kartı BIKE ✓ · DRESSER · BOX + "0 votes" + ilerleme şeridi "Ep. 2 · BANK $100 → $1,000,000"
+    ("M01", "S1", "MIKE", "No votes, so I picked. Meet Brenda!", 0.15),
+    # S2 AÇIK DÖNGÜ + ZERO-OY KABULÜ — "Was he right?" bölüm sonuna kadar açık kalır
+    ("J01", "S2", "JAKE", "Was he right? Brenda has two flat tires.", 0.0),
     ("M02", "S2", "MIKE", "Brenda couldn't wait!", 0.0),
     ("J03", "S2", "JAKE", "Next time, you decide. Please.", 0.0),
     # S3 BEDEL — BANK 100 → 40, seri numarası rutini

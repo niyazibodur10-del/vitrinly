@@ -67,12 +67,12 @@ if onceki.exists():
     g_simdi = gram([r[6] for r in tablo]); g_onceki = set(gram([x[3] for x in yukle(onceki).SATIRLAR]))
     ort = sum(1 for g in g_simdi if g in g_onceki) / max(1, len(g_simdi))
 print(f"Toplam kelime {W} (Jake {wj}, Mike {wm}) | süre tek-tip {KPM_TEK} kpm {t_tek:.1f} sn | karakter bazlı (J{KPM['JAKE']}/M{KPM['MIKE']}) {t_kar:.1f} sn (diyalog wav ≈{ses_kar:.1f} + son tutuş)")
-print(f"İlk replik başlangıcı {tablo[0][4]:.2f} sn (≤2) | sıfır-oy/kabul satırı {sahne_bas['S2']:.1f}–{sahne_bit['S2']:.1f} sn (başlangıç ≤5)")
+print(f"İlk replik {tablo[0][4]:.2f}–{tablo[0][5]:.2f} sn (başlangıç ≤2, bitiş ≤3,5) | sıfır-oy/kabul satırı {sahne_bas['S2']:.1f}–{sahne_bit['S2']:.1f} sn (başlangıç ≤5)")
 print(f"BANK {s.BANK_BAS} → {bank} (beklenen {s.BANK_SON}) | 5-gram örtüşmesi B{int(BOLUM)-1:03d} ile %{ort*100:.1f} (≤10)")
 for sh in sahne_bas: print(f"  {sh}: {sahne_bas[sh]:5.1f}–{sahne_bit[sh]:5.1f}")
 kap = [("süre 60–90 (iki model)", 60 <= t_tek <= 90 and 60 <= t_kar <= 90),
        (f"kelime {KELIME_MIN}–{KELIME_MAX}", KELIME_MIN <= W <= KELIME_MAX),
-       ("ilk replik ≤2 sn", tablo[0][4] <= 2.0), ("sıfır-oy repliği ≤5 sn'de başlar (kart penceresi)", sahne_bas['S2'] <= 5.0),
+       ("ilk replik ≤2 sn", tablo[0][4] <= 2.0), ("previously/kanca repliği ≤3,5 sn'de biter (A1/A2)", tablo[0][5] <= 3.5), ("sıfır-oy repliği ≤5 sn'de başlar (kart penceresi)", sahne_bas['S2'] <= 5.0),
        ("son: seçenekler adıyla soru + CTA", tablo[-2][6].endswith("?") and tablo[-1][6] == CTA),
        ("BANK zinciri tutarlı, eksi yok", bank_ok and not any("BANK" in h for h in hata)),
        ("5-gram örtüşmesi ≤%10", ort <= 0.10),

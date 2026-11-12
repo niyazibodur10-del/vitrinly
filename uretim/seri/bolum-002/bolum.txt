@@ -1,8 +1,7 @@
 # Flip By Vote — Bölüm 002 diyaloğu (tools/ses/diyalog.py girdisi). Kaynak: veri/satirlar.py (metin-kontrol.py --yaz üretir)
 # M01 S1
-MIKE (0.15): Meet Brenda!
-JAKE: Brenda has two flat tires.
-JAKE: No votes yet. So Mike picked.
+MIKE (0.15): No votes, so I picked. Meet Brenda!
+JAKE: Was he right? Brenda has two flat tires.
 MIKE: Brenda couldn't wait!
 JAKE: Next time, you decide. Please.
 # J04 S3

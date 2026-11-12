@@ -1,4 +1,4 @@
-M01	Meet Brenda!
+M01	No votes, so I picked. Meet Brenda!
 M02	Brenda couldn't wait!
 M03	He seemed nice.
 M04	See? Brenda's innocent.

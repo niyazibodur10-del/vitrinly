@@ -1,5 +1,4 @@
-J01	Brenda has two flat tires.
-J02	No votes yet. So Mike picked.
+J01	Was he right? Brenda has two flat tires.
 J03	Next time, you decide. Please.
 J04	Sixty dollars. Did you haggle?
 J05	So, no.
