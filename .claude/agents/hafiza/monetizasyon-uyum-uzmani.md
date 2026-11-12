@@ -15,7 +15,7 @@
 - Kaynak metin örtüşmesi (Ö8): kaynağı scratchpad'e indir, 8-gram ölç, repoya koyma.
 
 ## Dersler
-- Kanal kuralı adayı: ilk 5 videoda "çöküş + Leo kaybeder" tekrarlanmasın; 5 videoluk denetimde Leo sonuç tipi sayılır. Kayıt: 1929 = kazanan açıklanır; 10-28 havuzu (12 senaryo) 12 farklı rol, kaybeden yok.
+- Kanal kuralı adayı: ilk 5 videoda "çöküş + Leo kaybeder" tekrarlanmasın; 5 videoluk denetimde Leo sonuç tipi sayılır. 
 - 2026-10-27 (1929): ayrıştırıcı "BULUNAMADI" → yetkili satırdan oku; eklenen cümleyi sonraki 2 cümleyle oku; deyim+SFX klişesi görselde yoksa YEŞİL.
 - 2026-11-02 (F2, 12 senaryo): 8 YEŞİL / 4 SARI / 0 KIRMIZI. Çıkar çatışması (metni yazan modelin şirketi konu) için YouTube'da kural yok → KIRMIZI'yı kaynakla destekleyemezsin; SARI-yüksek + "bu slotta önerilmez" + beyan metni + hakem tarafsızlık kontrolü yaz, kendi modelini açıkça belirt.
 - 2026-11-02: Seçim sonrası günü yayın → "who won" yalnız resmi/AP çağrısına dayansın, "too close to call" yedeği zorunlu; "your money" başlığı siyaset + finans persona riskini birleştirir → "markets".
