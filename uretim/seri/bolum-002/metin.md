@@ -1,10 +1,10 @@
 # Bölüm 002: "Meet Brenda"
 
 İLERLEME: tamam (metin v1 + koordinatör A1/A2/A4 teşhis düzeltmesi, 2026-11-12). Sıradaki: finans-dogrulayici (3 `[RAKAM?]`) ‖ monetizasyon-uyum-uzmani → kilit → ses-yonetmeni `bolum.txt`.
-**KAPI ÖZETİ** (`python3 veri/metin-kontrol.py --yaz`, satirlar.py sha256 ce442ec7599f, metin-kontrol.py v2 d1b6859b17bb, çıkış 0; iki koşu aynı md5):
+**KAPI ÖZETİ** (`python3 veri/metin-kontrol.py --yaz`, satirlar.py sha256 c3b53f17a3b3 (Z1), metin-kontrol.py v2 d1b6859b17bb, çıkış 0; iki koşu aynı md5):
 - Kelime **202** (Jake 102, Mike 100). Süre: tek tip 200 kpm **78,9 sn**; karakter bazlı (Jake 207 / Mike 170, Bölüm 1 Pocket TTS ölçümü) **83,2 sn** (diyalog wav ≈80,2 + 3 sn kart) → GEÇTİ (60–90). Kalibrasyon: aynı model Bölüm 1'de 69,8 sn tahmin etti, ölçülen wav 69,3 (+0,4 sn).
 - Kanca: ilk replik 0,3–2,8 sn (kare 0'da Mike'ın yüzü + yuvarlanan bisiklet, "flap" SFX 0,1 sn) → GEÇTİ. Previously/sıfır oy ≤3 sn, konuşmalı tanıtım yok (A1/A2).
-- Sıfır oy esprili ve suçlamasız: "No votes, so I picked." + Jake: "Next time, you decide. Please." → GEÇTİ.
+- Sıfır oy esprili ve suçlamasız: "No comments, so I picked." (Z1) + Jake: "Next time, you decide. Please." → GEÇTİ.
 - BANK $100 → $40 → **$24** (2 işlem, eksi yok). 5-gram örtüşmesi B001 ile %0,0. Yasak kelime/rakam/tavsiye 0.
 - Son: "Take the ninety, hold out, or counter?" + "Tell us in the comments." + "Ep. 3: YOUR call" (gün sözü yok) → GEÇTİ.
 - Açık: liste/teklif fiyatları $140 / $90 / $115 `[RAKAM?]` → finans-dogrulayici (§7). Ses ölçümü 88 sn'yi aşarsa kesme: M04 + J06'nın "though" kısmı (−2 sn) ve M02 (−1,3 sn).
@@ -29,7 +29,7 @@ Gerekçe:
 ## 1. Kanca adayları (ölçüt 1–5: kare 0'da yüz+aksiyon ×2, 2 sn netlik, previously ≤3 sn uyumu (A1/A2), karakter, üretim)
 | Aday | Özet | Yüz+aksiyon ×2 | Netlik | Previously | Karakter | Üretim | Toplam |
 |---|---|---|---|---|---|---|---|
-| **K1 BRENDA GİRİŞİ** ✔ | Kare 0: YAKIN-M yüz + bisiklet sağdan kadraja yuvarlanır, patlak lastik "flap-flap". Mike: "No votes, so I picked. Meet Brenda!" Üstte önceki seçim kartı (BIKE ✓ · DRESSER · BOX, 0 votes) + ilerleme şeridi. Jake: "Was he right?" | 5×2 | 5 | 5 | 5 | 4 | **29** |
+| **K1 BRENDA GİRİŞİ** ✔ | Kare 0: YAKIN-M yüz + bisiklet sağdan kadraja yuvarlanır, patlak lastik "flap-flap". Mike: "No comments, so I picked. Meet Brenda!" Üstte önceki seçim kartı (BIKE ✓ · DRESSER · BOX, rozet yok) + ilerleme şeridi. Jake: "Was he right?" | 5×2 | 5 | 5 | 5 | 4 | **29** |
 | K2 SIFIR TAHTASI | Kare 0: YAKIN-J, tahtaya "VOTES: 0" yazılır; "Zero votes." → Mike: "So I picked!" bisiklet çarpar | 3×2 | 4 | 4 | 4 | 4 | 22 |
 | K3 PATLAYAN İÇ LASTİK | Kare 0: Mike pompalar, PAT!, şaşkın portre: "Air is free?!" (olayın ortasından başlar) | 5×2 | 2 | 1 | 4 | 4 | 21 |
 
@@ -51,8 +51,8 @@ Gerekçe: E1 herkesin yaşadığı bir pazarlık anı ("lowball" mesajı); rakam
 
 | # | Zaman sn | Çekim | Konuşan | Replik | İfade | Kamera + kod-prop | BANK |
 |---|---|---|---|---|---|---|---|
-| S1 | 0,0–0,3 | YAKIN-M (L1-A) | — | *(0,1 sn: "flap-flap" patlak lastik)* | heyecanlı | **Kare 0: Mike'ın yüzü kadrajda, G1 bisiklet sağ kenardan hareket halinde girer** (kodla kaydırma + hafif zıplama). Üst bant 0–3 sn: önceki seçim kartı `BIKE ✓ · DRESSER · BOX` + `0 votes` rozeti; ilerleme şeridi `Ep. 2 · BANK $100 → $1,000,000` | $100 |
-| | 0,3–2,8 | YAKIN-M | MIKE | No votes, so I picked. Meet Brenda! | heyecanlı | "picked" anında karttaki BIKE'a ✓ "pop"; "Brenda" anında bisikletin üstüne el yazısı isim etiketi "BRENDA" | $100 |
+| S1 | 0,0–0,3 | YAKIN-M (L1-A) | — | *(0,1 sn: "flap-flap" patlak lastik)* | heyecanlı | **Kare 0: Mike'ın yüzü kadrajda, G1 bisiklet sağ kenardan hareket halinde girer** (kodla kaydırma + hafif zıplama). Üst bant 0–3 sn: önceki seçim kartı `BIKE ✓ · DRESSER · BOX`; ilerleme şeridi `Ep. 2 · BANK $100 → $1,000,000` | $100 |
+| | 0,3–2,8 | YAKIN-M | MIKE | No comments, so I picked. Meet Brenda! | heyecanlı | "picked" anında karttaki BIKE'a ✓ "pop"; "Brenda" anında bisikletin üstüne el yazısı isim etiketi "BRENDA" | $100 |
 | S2 | 3,2–5,5 | YAKIN-J | JAKE | Was he right? Brenda has two flat tires. | düz | "flat tires" anında lastiklere iki kırmızı halka (kod). Merak döngüsü açılır: "Was he right?" (S7'de hâlâ açık) | $100 |
 | | 5,7–6,8 | YAKIN-M | MIKE | Brenda couldn't wait! | sırıtma | Bisikleti okşar gibi kod eğilme | $100 |
 | | 7,2–8,7 | YAKIN-J → PORTRE-J:nötr 0,6 sn | JAKE | Next time, you decide. Please. | düz → kameraya bakış | "Please" sonrası sessiz önden portre (dördüncü duvar, kazanan kartı anı §6) | $100 |
@@ -101,7 +101,7 @@ TTS notları: "a hundred and forty / fifteen" yazıyla (rakam okuma hatası risk
 | **G1** (öncelik 1) | Eski çelik yol bisikleti, yan görünüm, iki lastik belirgin şekilde sönük/basık, logosuz, marka yazısız; düz yeşil/açık zeminde (kesilecek), karakterlerle aynı 3D-görünümlü çizgi stil | S1 giriş, S4, S5 ilan kartı, S6, Bölüm 3'te tekrar (lastikler kodla "dolu" sürümüne yamanır ya da ikinci kare: aynı bisiklet şişik lastikli; Canva tek istekte 2 varyant verirse) | Kask yok, kişi yok, marka/logo yok |
 | **G2** (öncelik 2) | L3-A garaj yolu geniş plaka, 9:16, gündüz, banliyö sokağı, uzakta yürüyen insanlar/araba (kalabalık, gündüz = güvenli buluşma rutini), orta alan boş (bisiklet + taban yerleşimi için), ev numarası ve tabela yok | S6 gelmeyen alıcı (44,9–54,6). İncil §2 L3 bölüm 1–10'da kullanılacak, Bölüm 3'te satış buluşmasında yeniden kullanılır | Tabanlar kadraj altından bel hizasında kesilebilsin; uymazsa yalnız portre inset |
 Yedek: G2 üretilemezse S6 L1-A'da kalır, saat kartı + telefon mesajı yeterli (mekân değişimi kancası zayıflar).
-Kodla eklenecek: önceki seçim kartı (BIKE ✓ · DRESSER · BOX, "0 votes"), ilerleme şeridi `Ep. 2 · BANK $100 → $1,000,000`, "BRENDA" isim etiketi, lastik halkaları, "Day 2" çipi, seri no kontrol ekranı, pompa ikonu, iki iç lastik ikonu + "$8 × 2", ilan kartı $140, tahta hesapları, mesaj balonları (3), saat kartı, "yazıyor…" noktaları, seçim kartı, "Ep. 3: YOUR call", BANK −$60 / −$16 animasyonları. Kullanılan portreler: Jake nötr, düşünceli, gülen, endişeli; Mike şaşkın, endişeli, heyecanlı. Logo/marka yok.
+Kodla eklenecek: önceki seçim kartı (BIKE ✓ · DRESSER · BOX; sayı rozeti yok, Z1), ilerleme şeridi `Ep. 2 · BANK $100 → $1,000,000`, "BRENDA" isim etiketi, lastik halkaları, "Day 2" çipi, seri no kontrol ekranı, pompa ikonu, iki iç lastik ikonu + "$8 × 2", ilan kartı $140, tahta hesapları, mesaj balonları (3), saat kartı, "yazıyor…" noktaları, seçim kartı, "Ep. 3: YOUR call", BANK −$60 / −$16 animasyonları. Kullanılan portreler: Jake nötr, düşünceli, gülen, endişeli; Mike şaşkın, endişeli, heyecanlı. Logo/marka yok.
 
 ## 6. Paket metinleri (A4: başlık ve IG ilk satırı = seçim sorusu; 3–5 niş hashtag; "comment X" yok)
 **Başlıklar (3)**
@@ -109,12 +109,12 @@ Kodla eklenecek: önceki seçim kartı (BIKE ✓ · DRESSER · BOX, "0 votes"), 
 |---|---|---|---|
 | T1 ✔ | Take $90, Hold Out, or Counter? You Pick · Ep. 2 | 48 | YouTube Shorts (A4) |
 | T2 | Take the $90 or Wait for $140? You Pick Our Next Move · Ep. 2 | 60 | Yedek |
-| T3 | No Votes, So Mike Picked the Bike · Ep. 2 | 41 | Yedek; "Was he right?" açısı |
+| T3 | No Comments, So Mike Picked the Bike · Ep. 2 | 44 | Yedek; "Was he right?" açısı |
 
 **YouTube Shorts** (başlık T1)
 ```
 Take $90, hold out for $140, or counter at $115? You pick.
-Jake & Mike have $100 and one goal: $1,000,000. Nobody voted last time, so Mike picked the bike. Two torn tubes and one no-show buyer later, Brenda finally has an offer.
+Jake & Mike have $100 and one goal: $1,000,000. Nobody commented last time, so Mike picked the bike. Two torn tubes and one no-show buyer later, Brenda finally has an offer.
 Take the ninety, hold out, or counter? Tell us in the comments.
 
 We may show winning comments on screen with your username. Prefer to stay anonymous? Just say so in your comment.
@@ -127,7 +127,7 @@ Voices: Kyutai Pocket TTS (CC BY 4.0); VCTK corpus (CC BY 4.0).
 **Instagram Reels**
 ```
 Take $90, hold out for $140, or counter at $115? You pick · Ep. 2
-No votes last time, so Mike picked the bike. Then the tubes tore and the buyer never showed.
+Nobody commented last time, so Mike picked the bike. Then the tubes tore and the buyer never showed.
 Take the ninety, hold out, or counter? Tell us in the comments.
 
 We may show winning comments on screen with your username. Prefer to stay anonymous? Just say so in your comment.

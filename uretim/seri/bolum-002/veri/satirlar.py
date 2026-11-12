@@ -3,8 +3,8 @@
 konuşan: JAKE / MIKE. sessiz = diyalog.py otomatik boşluğuna EK sessizlik (SFX, grafik, tutuş)."""
 SATIRLAR = [
     # S1 KANCA + PREVIOUSLY (≤3 sn) — YAKIN-M, kare 0'da bisiklet (G1) sağdan yuvarlanıyor, "flap-flap" 0.1 sn;
-    # üstte önceki seçim kartı BIKE ✓ · DRESSER · BOX + "0 votes" + ilerleme şeridi "Ep. 2 · BANK $100 → $1,000,000"
-    ("M01", "S1", "MIKE", "No votes, so I picked. Meet Brenda!", 0.15),
+    # üstte önceki seçim kartı BIKE ✓ · DRESSER · BOX (rozet yok, Z1) + ilerleme şeridi "Ep. 2 · BANK $100 → $1,000,000"
+    ("M01", "S1", "MIKE", "No comments, so I picked. Meet Brenda!", 0.15),
     # S2 AÇIK DÖNGÜ + ZERO-OY KABULÜ — "Was he right?" bölüm sonuna kadar açık kalır
     ("J01", "S2", "JAKE", "Was he right? Brenda has two flat tires.", 0.0),
     ("M02", "S2", "MIKE", "Brenda couldn't wait!", 0.0),

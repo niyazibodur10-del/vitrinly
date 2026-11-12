@@ -1,6 +1,6 @@
 | ID | Sahne | Konuşan | Kelime | Başlangıç sn | Bitiş sn | Replik |
 |---|---|---|---|---|---|---|
-| M01 | S1 | MIKE | 7 | 0.3 | 2.8 | No votes, so I picked. Meet Brenda! |
+| M01 | S1 | MIKE | 7 | 0.3 | 2.8 | No comments, so I picked. Meet Brenda! |
 | J01 | S2 | JAKE | 8 | 3.2 | 5.5 | Was he right? Brenda has two flat tires. |
 | M02 | S2 | MIKE | 3 | 5.7 | 6.8 | Brenda couldn't wait! |
 | J03 | S2 | JAKE | 5 | 7.2 | 8.7 | Next time, you decide. Please. |
