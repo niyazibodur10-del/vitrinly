@@ -7,7 +7,7 @@ Başlık (48 krk):
 ```
 $100 to $1,000,000 — You Make Every Move · Ep. 1
 ```
-Açıklama (530 krk):
+Açıklama (722 krk):
 ```
 Jake & Mike start with $100. The goal: $1,000,000. You decide every move.
 Episode 1: a $60 road bike with flat tires, a free dresser that has to go today, or a $40 mystery box of old games. Bike, dresser, or mystery box? Tell us in the comments.
@@ -15,7 +15,8 @@ Episode 1: a $60 road bike with flat tires, a free dresser that has to go today,
 We may show winning comments on screen with your username. Prefer to stay anonymous? Just say so in your comment.
 
 Fiction. Not financial advice. Voices and visuals are AI-generated.
-Voices: Kyutai Pocket TTS (CC BY 4.0); VCTK corpus (CC BY 4.0).
+Voices: Kyutai Pocket TTS; Jake's voice synthesized from the VCTK corpus (CSTR, University of Edinburgh). CC BY 4.0: creativecommons.org/licenses/by/4.0
+Sources: huggingface.co/kyutai/pocket-tts-without-voice-cloning · datashare.ed.ac.uk/handle/10283/3443
 
 #Shorts #flipbyvote #animatedseries
 ```
@@ -29,7 +30,7 @@ We may show winning comments on screen with your username. Prefer to stay anonym
 ```
 
 ## Instagram Reels
-Açıklama (519/2200 krk):
+Açıklama (608/2200 krk):
 ```
 Bike, dresser, or mystery box? You pick our first flip.
 Jake & Mike have $100 and one goal: $1,000,000. Every episode, the comments decide the next move.
@@ -38,7 +39,7 @@ Bike, dresser, or mystery box? Tell us in the comments.
 We may show winning comments on screen with your username. Prefer to stay anonymous? Just say so in your comment.
 
 Fiction. Not financial advice. Voices and visuals are AI-generated.
-Voices: Kyutai Pocket TTS (CC BY 4.0); VCTK corpus (CC BY 4.0).
+Voices: Kyutai Pocket TTS; Jake's voice synthesized from the VCTK corpus (CSTR, University of Edinburgh). CC BY 4.0: creativecommons.org/licenses/by/4.0
 
 #flipbyvote #animatedseries #sidehustle #flipping #youdecide
 ```
@@ -53,14 +54,14 @@ We may show winning comments on screen with your username. Prefer to stay anonym
 ```
 
 ## TikTok
-Açıklama (414 krk):
+Açıklama (503 krk):
 ```
 Bike, dresser, or mystery box? You pick our first flip. Ep. 1 of $100 → $1,000,000. Tell us in the comments.
 
 We may show winning comments on screen with your username. Prefer to stay anonymous? Just say so in your comment.
 
 Fiction. Not financial advice. Voices and visuals are AI-generated.
-Voices: Kyutai Pocket TTS (CC BY 4.0); VCTK corpus (CC BY 4.0).
+Voices: Kyutai Pocket TTS; Jake's voice synthesized from the VCTK corpus (CSTR, University of Edinburgh). CC BY 4.0: creativecommons.org/licenses/by/4.0
 
 #flipbyvote #animation #sidehustle #reselling #youdecide
 ```

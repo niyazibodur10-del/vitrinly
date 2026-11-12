@@ -9,7 +9,9 @@ BOL = os.path.join(KOK, "uretim/seri/bolum-001")
 TESLIM = os.path.join(BOL, "teslim")
 
 POLITIKA = "Fiction. Not financial advice. Voices and visuals are AI-generated."
-SES_ATIF = "Voices: Kyutai Pocket TTS (CC BY 4.0); VCTK corpus (CC BY 4.0)."  # koordinatör 2026-11-11: AI satırının hemen altı
+SES_ATIF = ("Voices: Kyutai Pocket TTS; Jake's voice synthesized from the VCTK corpus (CSTR, University of Edinburgh). "
+            "CC BY 4.0: creativecommons.org/licenses/by/4.0")  # politika Z2 (bolum-002/politika-denetimi.md): AI satırının hemen altı
+SES_KAYNAK = "Sources: huggingface.co/kyutai/pocket-tts-without-voice-cloning · datashare.ed.ac.uk/handle/10283/3443"  # yalnız YouTube, SES_ATIF'in altı
 ANONIM = "We may show winning comments on screen with your username. Prefer to stay anonymous? Just say so in your comment."
 SORU = "Bike, dresser, or mystery box? Tell us in the comments."  # B01 + B02, videodaki soru birebir
 
@@ -18,7 +20,7 @@ YT_BASLIK = "$100 to $1,000,000 — You Make Every Move · Ep. 1"
 YT_ACIKLAMA = "\n".join([
     "Jake & Mike start with $100. The goal: $1,000,000. You decide every move.",
     "Episode 1: a $60 road bike with flat tires, a free dresser that has to go today, or a $40 mystery box of old games. " + SORU,
-    "", ANONIM, "", POLITIKA, SES_ATIF, "", "#Shorts #flipbyvote #animatedseries"])
+    "", ANONIM, "", POLITIKA, SES_ATIF, SES_KAYNAK, "", "#Shorts #flipbyvote #animatedseries"])
 YT_ETIKET = ["Flip By Vote", "flipbyvote", "animated series", "interactive story", "you decide", "100 to 1 million",
              "flipping", "reselling", "side hustle", "garage sale", "furniture flip", "bike flip", "mystery box",
              "Jake and Mike", "animation", "cartoon"]
@@ -101,6 +103,8 @@ def kontrol():
     bt = open(os.path.join(BOL, "bolum.txt"), encoding="utf-8").read()
     for parca in ("Bike, dresser, or mystery box?", "Tell us in the comments."):
         if parca not in bt: h.append(f"soru videoda yok: {parca}")
+    i = YT_ACIKLAMA.split("\n").index(SES_ATIF) if SES_ATIF in YT_ACIKLAMA.split("\n") else -1
+    if i < 0 or YT_ACIKLAMA.split("\n")[i + 1] != SES_KAYNAK: h.append("YT açıklama: kaynak satırı ses atfının hemen altında yok")
     return h
 
 
@@ -139,6 +143,10 @@ def main():
           f"\n## TikTok\nAçıklama ({len(TT_ACIKLAMA)} krk):\n```\n{TT_ACIKLAMA}\n```",
           "Kapak: `kapak-1080x1920.jpg` (veya kare 1:12). AI-generated etiketi: AÇIK. Otomatik yorum yanıtı YOK (politika §5).", ""]
     open(os.path.join(TESLIM, "platform-metinleri.md"), "w", encoding="utf-8").write("\n".join(md))
+    # yayındaki YouTube videosunun açıklaması (koordinatör API ile günceller; snippet.description = bu dosya)
+    import yayin_paket as ypk
+    yp["_kok"] = TESLIM
+    open(os.path.join(TESLIM, "aciklama-guncel-youtube.txt"), "w", encoding="utf-8").write(ypk.tam_aciklama(yp) + "\n")
     for x in h: print("HATA:", x)
     print(f"kapı: {len(h)} hata · YT başlık {len(YT_BASLIK)} · kanal açıklama {len(KANAL_ACIKLAMA)} · ilk 150: {KANAL_ACIKLAMA[:150]!r}")
     return 1 if h else 0
