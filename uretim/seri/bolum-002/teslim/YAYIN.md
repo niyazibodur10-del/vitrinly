@@ -4,8 +4,8 @@
 **Yorum penceresi:** 12 saat. 13 Kasım 08:00 TSİ (05:00Z) kapanır.
 
 **Dosyalar** (bu klasörde):
-- `bolum-002.mp4` (render bekleniyor)
-- `kapak-1080x1920.jpg`, `kapak-1080x1350.jpg` (render'dan sonra üretilir)
+- `bolum-002.mp4` (88,28 sn, sha256 8ba870ac5b0e)
+- `kapak-1080x1920.jpg`, `kapak-1080x1350.jpg` (kare 86,00 sn)
 - `yayin-paketi.json`
 - `platform-metinleri.md`: kopyalanacak bütün metinler burada.
 

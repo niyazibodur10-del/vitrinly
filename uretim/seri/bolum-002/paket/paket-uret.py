@@ -11,8 +11,8 @@ sys.path.insert(0, os.path.join(KOK, "tools/yayin"))
 
 EP = 2
 VIDEO = "bolum-002.mp4"  # seri-render çıktı adı (B001 kalıbı); render gelince ls ile teyit
-VIDEO_SHA12, VIDEO_SURE = None, None  # render gelince yazılır
-KAPAK_SN = None  # animasyon-yonetmeni önerisi gelince
+VIDEO_SHA12, VIDEO_SURE = "8ba870ac5b0e", 88.28  # render 2026-11-12
+KAPAK_SN = 86.0  # kare 2580 (animasyon-yonetmeni; alternatif 0,5 sn)
 YAYIN_ZAMANI = "2026-11-12T17:00:00Z"  # 20:00 TSİ (CLAUDE.md yayın saati)
 ONAY = {"niyazi_onayi": False, "tarih": None}  # onayı paketleyici vermez
 

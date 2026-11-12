@@ -1,6 +1,6 @@
 # Bölüm 002 · platform metinleri (betik çıktısı: paket/paket-uret.py — elle düzenleme yok)
 
-Video: `bolum-002.mp4` · None sn · 1080x1920 · sha256 None · yayın 20:00 TSİ (17:00Z), üç platform aynı anda
+Video: `bolum-002.mp4` · 88.28 sn · 1080x1920 · sha256 8ba870ac5b0e · yayın 20:00 TSİ (17:00Z), üç platform aynı anda
 
 ## YouTube Shorts
 Başlık (48 krk):
@@ -44,7 +44,7 @@ Voices: Kyutai Pocket TTS; Jake's voice synthesized from the VCTK corpus (CSTR, 
 
 #flipbyvote #flipping #animatedseries #bikeflip
 ```
-Kapak: `kapak-1080x1920.jpg` (kaynak kare: render bekleniyor); profil ızgarası: `kapak-1080x1350.jpg`. AI label: AÇIK. Platform müziği yok.
+Kapak: `kapak-1080x1920.jpg` (kaynak kare 86.00 sn = kare 2580); profil ızgarası: `kapak-1080x1350.jpg`. AI label: AÇIK. Platform müziği yok.
 
 ## TikTok
 Açıklama (531 krk):
