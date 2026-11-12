@@ -62,3 +62,20 @@ Girdi sha256: AG-J `c0df33b400eb`, AG-M `0974fc910889`.
 - **Ölçüm (12/12):** alfa adası 1; kafa kenar bandında gri piksel (s<0,18, kenara ≤6 px) 0; yüz içi (kenardan >30 px) eski varlığa ortalama fark 0,2–0,9 (yüz değişmedi). Boyut ve konum aynı, `yerlesim.json` / `mekan-l1.ts` değişmeden çalışır. İki koşu birebir aynı (`cmp`, 12 dosya).
 - **Teslim:** `video/public/seri/bolum-001/ifade/` aynı adlar. Mike'ın `-temiz.png` dosyaları (gulen, saskin, endiseli, heyecanli) yeni sürümün kopyası. sha256: mike-heyecanli-temiz `77f705048e50`, jake-dusunceli `74ee5a42fee6`.
 - **Kanıt:** `kontak-z3b.jpg` (üst: önce/sonra 1:1 yeşil zemin, Mike sağ saç-kulak ve Jake sol saç; alt: 12 portre yeşil zeminde).
+
+## Bölüm 2 (2026-11-12): B2-G1 bisiklet + L3-A garaj yolu → KABUL. Kota 10/12.
+Girdi sha256: B2-G1 `1fd7b5f4b449`, L3-A `5990fc1c22f8`. Kanıt: `kontak-b2.jpg`.
+- **B2-G1 KABUL** (MAHarTobDG0): yan görünüm, bordo çelik gövde, iki lastik basık; 2× kırpımda yazı/çıkartma/logo yok.
+- **L3-A KABUL** (MAHarbC_Rog): kişi yok; posta kutusunda numara yok, plakalar okunmuyor; orta şerit boş.
+- **Kesim:** yeni `araclar/kes-yesil.py`. Yumuşak Lab anahtarı, yeşil sızıntı giderme, delik doldurma yok (teller arası boşluk zemin kalır). Sonuç: 1 ada, 655 px gürültü silindi. Temas gölgesi nötr koyuya çevrildi. İki koşu birebir aynı (`cmp`).
+- **Şişik sürüm** (`araclar/bisiklet-lastik.py`): teker alt bölgesi temiz yan sektörün radyal lastik profiliyle boyandı. Teker alt bölgesi dışında değişen piksel 0.
+  - Elenen ara sürümler (göz kontrolü 1:1):
+    - aynalama: üstteki fren kaliperi alta taşındı;
+    - üst kenar ölçümü ön tekerde gidona takıldı;
+    - basık kalıntısı ve iç jant yayı kaldı → doygunluk + yapı tensörüyle silindi;
+    - silme kutusu aynakolu yedi → yalnız taban satırlarıyla sınırlandı;
+    - boyanan halka aynakol dişlerini kesti → yalnız alt bölge + geçiş bandında yalnız boş pikseller;
+    - daire modeli arka tekeri 68 px kaçırdı → eksen hizalı elips, aykırı ayıklama (arka teker: 49 nokta, sapma 2,0 px); ön tekerde nokta az → daire yedeği.
+  - Bilinen kalıntı: 1:1'de zincirin alt kolunda küçük bir basamak var → şişik sürüm ≤0,45 ölçek kuralı.
+- **Yerleşim** (`araclar/yerlesim-b2.py`): ayrıntı ve kurallar `video/public/seri/bolum-002/VARLIKLAR.md` ve `yerlesim.json`'da. Önizlemeler kontağın alt satırında.
+- **Brenda:** yeni karakter değil, bisikletin adı; görsel gerekmez.

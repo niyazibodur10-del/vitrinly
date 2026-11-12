@@ -1,0 +1,56 @@
+{
+ "plaka": "plaka/L3-A.png",
+ "olcum": {
+  "derz_y": 1408,
+  "ufuk_garaj_tabani_y": 600,
+  "garaj_yolu_genislik_px": {
+   "y790": 520,
+   "y1260": 1060
+  },
+  "px_per_m_y1260": 330
+ },
+ "genis_l3": {
+  "bisiklet": {
+   "dosya": "nesne/bisiklet-basik.png | bisiklet-sisik.png",
+   "olcek": 0.33,
+   "zemin_y": 1250,
+   "xy_basik": [
+    276,
+    967
+   ],
+   "xy_sisik": [
+    276,
+    959
+   ],
+   "not": "iki sürüm aynı tuval; takasta yalnız y farkı (zemin_y_sisik)"
+  }
+ },
+ "yakin_l3": {
+  "plaka": "L3-A x1.3, çapa (540,600), Gauss σ4 (alan derinliği)",
+  "taban": {
+   "olcek": 1.0,
+   "xy": [
+    0,
+    0
+   ],
+   "dosya": "../bolum-001/karakter/<kim>-taban.png"
+  },
+  "agiz": "../bolum-001/agiz/<kim>-agiz-*.png aynı konum (bölüm 1 VARLIKLAR.md)",
+  "kural": "kesik kollar kadraj kenarında, alt kadraj altı: ek ön katman gerekmez"
+ },
+ "portre_l3": {
+  "plaka": "L3-A x1.6, çapa (540,700), σ6",
+  "konum": "../bolum-001/yerlesim.json → ifade_tekli.konum (aynı)"
+ },
+ "s1_mutfak_giris": {
+  "plaka": "bölüm 1 tekli Mike (L1-A x1.25, çapa (320,1186)) + tezgah-on",
+  "bisiklet": {
+   "olcek": 0.7,
+   "zemin_y": 1945,
+   "x_bas": 1080,
+   "x_son": 430,
+   "katman": "tezgah-on ÜSTÜNDE (kameraya en yakın)",
+   "ziplama": "y ±8 px, tekerlek dönüşü yok (statik görsel)"
+  }
+ }
+}

@@ -1,0 +1,46 @@
+{
+ "arka": {
+  "merkez": [
+   357,
+   563
+  ],
+  "dis_yaricap": 328,
+  "uydurma_nokta": 49,
+  "uydurma_max_sapma_px": 2.0,
+  "basik_alt_y": 856,
+  "sisik_alt_y": 879,
+  "elips_ax_by": [
+   340.3,
+   315.8
+  ],
+  "yontem": "elips"
+ },
+ "on": {
+  "merkez": [
+   1272,
+   572
+  ],
+  "dis_yaricap": 311,
+  "uydurma_nokta": 14,
+  "uydurma_max_sapma_px": 0.0,
+  "basik_alt_y": 859,
+  "sisik_alt_y": 883,
+  "elips_ax_by": [
+   311.0,
+   311.0
+  ],
+  "yontem": "daire"
+ },
+ "kirpim_xyxy": [
+  151,
+  107,
+  1751,
+  1024
+ ],
+ "boyut": [
+  1600,
+  917
+ ],
+ "zemin_y_basik": 859,
+ "zemin_y_sisik": 883
+}
