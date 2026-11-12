@@ -41,8 +41,9 @@ export const dogrula = (b: Bolum, o: { taslak: boolean; kilavuz: boolean }): str
       if (!s.karakterler?.some((k) => k.agiz)) h.push(`sahne ${s.id}: yama yolu en az bir karakterde agiz kutusu ister`);
     }
     if (s.cekim) {
-      if (!b.mekan) h.push(`sahne ${s.id}: çekim çatısı bolum.mekan ister`);
-      else if (s.cekim.tur === "portre" && !b.mekan.karakterler[s.cekim.kim].portreler[s.cekim.ifade]) h.push(`sahne ${s.id}: portre yok (${s.cekim.kim}:${s.cekim.ifade})`);
+      const mk = s.mekan ?? b.mekan;
+      if (!mk) h.push(`sahne ${s.id}: çekim çatısı bolum.mekan ister`);
+      else if (s.cekim.tur === "portre" && !mk.karakterler[s.cekim.kim].portreler[s.cekim.ifade]) h.push(`sahne ${s.id}: portre yok`);
     } else {
       if (yol === "ifade" && !s.karakterler?.some((k) => k.ifadeler)) h.push(`sahne ${s.id}: ifade yolu karakter ifadeleri ister`);
     }

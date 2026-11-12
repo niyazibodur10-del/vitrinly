@@ -85,6 +85,8 @@ export type MekanSeti = {
   /** ikili çekimde önde olan */
   onde: Konusmaci;
   tekli: Record<Konusmaci, { plakaOlcek: number; capa: [number, number] }>;
+  /** tekli çekimde plakanın alan derinliği bulanıklığı (px); ön katmanı olmayan dış mekânlar için */
+  tekliBulanik?: number;
   portreArka: { olcek: number; capa: [number, number]; bulanik: number };
   karakterler: Record<Konusmaci, RigKarakter>;
 };
@@ -94,20 +96,33 @@ export type Cekim =
   | { tur: "yakin"; kim: Konusmaci }
   | { tur: "portre"; kim: Konusmaci; ifade: string }
   | { tur: "ikiPortre"; sol: { kim: Konusmaci; ifade: string }; sag: { kim: Konusmaci; ifade: string } }
-  | { tur: "tahta" };
+  | { tur: "tahta" }
+  /** yalnız plaka + prop (karakter yok): mekân açılışı, nesne çekimi */
+  | { tur: "bos" };
 
-export type IkonAdi = "hardal" | "kamyon" | "boya" | "saat" | "kartus" | "disk" | "araba" | "sifonyer" | "bisiklet" | "kutu";
+export type IkonAdi = "hardal" | "kamyon" | "boya" | "saat" | "kartus" | "disk" | "araba" | "sifonyer" | "bisiklet" | "kutu" | "pompa" | "iclastik" | "donut";
 
 /** Kod-prop. Zamanlar bölüm saniyesi. uzay "ekran" = kamera dışı (güvenli alan), "sahne" = plaka pikseli (kamerayla oynar). */
 export type Prop =
   | { tur: "banknot"; bas: number; bitis?: number; x: number; y: number; aci?: number; olcek?: number; dus?: boolean; /** düşüş mesafesi (px) */ yukseklik?: number }
   | { tur: "ikon"; ad: IkonAdi; bas: number; bitis: number; x: number; y: number; boyut?: number; parla?: boolean; uzay?: "ekran" | "sahne" }
   | { tur: "ikonSira"; bas: number; bitis: number; y: number; ogeler: { ad: IkonAdi; t: number; etiket?: string }[]; ayrac?: string; boyut?: number }
-  | { tur: "ilan"; bas: number; bitis: number; ikon: IkonAdi; baslik: string; fiyat: string; not: string; titre?: number; /** "alt" = yüzü kapatmayan alçak, yatay kart */ yer?: "ust" | "alt" }
+  | { tur: "ilan"; bas: number; bitis: number; ikon: IkonAdi; /** ikon yerine görsel (public/ yolu) */ gorsel?: string; baslik: string; fiyat: string; not: string; titre?: number; /** "alt" = yüzü kapatmayan alçak, yatay kart */ yer?: "ust" | "alt" }
   | { tur: "telefon"; bas: number; bitis: number; ogeler: { ikon: IkonAdi; fiyat: string }[] }
   | { tur: "tahtaYazi"; bas: number; satirlar: { metin: string; x: number; y: number; boyut: number; t: number; sure?: number; renk?: string; tik?: number[] }[] }
   | { tur: "tahtaKose"; bas: number; bitis: number; metin: string; yaz: number; x: number; y: number }
-  | { tur: "yazi"; bas: number; bitis: number; metin: string; y: number; renk?: string; boyut?: number };
+  | { tur: "yazi"; bas: number; bitis: number; metin: string; y: number; renk?: string; boyut?: number }
+  /** görsel nesne (ör. bisiklet): x0→x1 kayar (hareketSure), zıplar; zeminY = görselin zemin satırının ekrandaki yeri.
+   *  halkalar: daire listesi (görsel pikseli) t anında kırmızı halka; etiket: el yazısı isim etiketi */
+  | { tur: "nesne"; bas: number; bitis?: number; dosya: string; w: number; h: number; zemin: number; olcek: number; x0: number; x1?: number;
+      hareketSure?: number; zeminY: number; ziplama?: number; uzay?: "ekran" | "sahne";
+      halkalar?: { cx: number; cy: number; r: number }[]; halkaT?: number; etiket?: { metin: string; t: number; x: number; y: number } }
+  /** önceki bölümün seçim kartı (üst bant, BANK'ın sağında): seçilen ✓ ile işaretlenir; sayı/oy rozeti YOK */
+  | { tur: "oncekiSecim"; bas: number; bitis: number; secenekler: string[]; secilen: number; tikT: number }
+  /** üst bant ince şerit / çip: metinler sırayla (t anında değişir) */
+  | { tur: "cip"; bas: number; bitis: number; y: number; metinler: { metin: string; t: number }[]; boyut?: number; renk?: string; ortala?: boolean }
+  /** telefon sohbeti (logosuz): mesajlar t anında belirir; yaziyor = "…" balonu */
+  | { tur: "mesaj"; bas: number; bitis: number; mesajlar: { metin: string; t: number; ben?: boolean; onay?: boolean }[]; yaziyor?: number; baslik?: string };
 
 export type Sahne = {
   id: string;
@@ -116,6 +131,8 @@ export type Sahne = {
   karakterler?: KarakterSahne[];
   agizYolu?: AgizYolu; // sahne düzeyinde; yoksa bölümün varsayılanı
   kamera?: Kamera;
+  /** bu sahnenin mekânı (yoksa Bolum.mekan) */
+  mekan?: MekanSeti;
   /** çekim çatısı (varsa Cekim.tsx); kamera.zoom/kay bu çekimde de geçerli */
   cekim?: Cekim;
   proplar?: Prop[];
@@ -169,7 +186,7 @@ export type Bolum = {
   /** abone/takip kartı; varsayılan karar kartından 0,4 sn önce biter. false = yok */
   abone?: { bas?: number; ust?: number; sure?: number; klik?: number } | false;
   /** açılış damgası yerleşimi: üst kenar (px), ölçek, sağa yaslı çip. Yoksa kart bandında, ortada, tam boy. */
-  damga?: { ust?: number; olcek?: number; sag?: boolean };
+  damga?: { ust?: number; olcek?: number; sag?: boolean } | false;
   /** çekim çatısı mekân + rig seti (sahne.cekim kullanılıyorsa zorunlu) */
   mekan?: MekanSeti;
   /** logo dosyası (public/); yoksa şablonun geçici logosu */

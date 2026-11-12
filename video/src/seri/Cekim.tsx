@@ -101,7 +101,7 @@ export const CekimKarti: React.FC<{ sahne: Sahne; mekan: MekanSeti; agiz: AgizDu
     const tk = mekan.tekli[c.kim];
     icerik = (
       <>
-        <PlakaKatman src={mekan.genis} olcek={tk.plakaOlcek} capa={tk.capa} />
+        <PlakaKatman src={mekan.genis} olcek={tk.plakaOlcek} capa={tk.capa} bulanik={mekan.tekliBulanik} />
         {rig(c.kim)}
         {mekan.on ? <PlakaKatman src={mekan.on} olcek={tk.plakaOlcek} capa={tk.capa} /> : null}
         <div style={{ position: "absolute", left: 0, top: 0, width: GEN, height: YUK, transformOrigin: `${tk.capa[0]}px ${tk.capa[1]}px`, transform: `scale(${tk.plakaOlcek})` }}>
@@ -136,6 +136,12 @@ export const CekimKarti: React.FC<{ sahne: Sahne; mekan: MekanSeti; agiz: AgizDu
         </>
       );
     }
+  } else if (c.tur === "bos") {
+    icerik = (
+      <PlakaKatman src={mekan.genis}>
+        <PropKatman proplar={proplar} t={t} uzay="sahne" />
+      </PlakaKatman>
+    );
   } else if (c.tur === "tahta") {
     icerik = (
       <PlakaKatman src={mekan.tahta}>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Easing, interpolate, spring } from "remotion";
+import { Easing, Img, interpolate, spring, staticFile } from "remotion";
 import { Ikon } from "./Ikonlar";
 import { ALTIN, anton, fredoka, GUVENLI, GUVENLI_W } from "./sabitler";
 import type { Prop } from "./tipler";
@@ -40,7 +40,7 @@ const IlanKarti: React.FC<{ p: Extract<Prop, { tur: "ilan" }>; t: number }> = ({
           <div style={{ display: "flex", borderRadius: 30, background: "#ffffff", overflow: "hidden", boxShadow: "0 18px 40px rgba(0,0,0,0.55)", height: 300 }}>
             <div style={{ width: 290, flex: "none", background: "linear-gradient(160deg,#eef3f9,#d6e1ee)", display: "flex", alignItems: "center", justifyContent: "center", position: "relative" }}>
               <div style={{ transform: `rotate(${titre}deg) translateY(${Math.abs(titre) * -2}px)` }}>
-                <Ikon ad={p.ikon} boyut={230} hale={false} />
+                {p.gorsel ? <Img src={staticFile(p.gorsel)} style={{ width: 270, height: 230, objectFit: "contain" }} /> : <Ikon ad={p.ikon} boyut={230} hale={false} />}
               </div>
               <div style={{ position: "absolute", left: 14, top: 12, padding: "4px 12px", borderRadius: 12, background: "#1d1b22", color: "#fff", fontFamily: fredoka, fontWeight: 700, fontSize: 22, letterSpacing: 2 }}>
                 LISTING
@@ -121,10 +121,116 @@ const ElYazisi: React.FC<{ metin: string; ilerleme: number; boyut: number; renk:
   </div>
 );
 
+/** Görsel nesne: kayarak girer (out eğrisi), yürürken zıplar; halkalar ve isim etiketi kare-doğru pop. */
+const Nesne: React.FC<{ p: Extract<Prop, { tur: "nesne" }>; t: number }> = ({ p, t }) => {
+  const ilerle = p.x1 !== undefined ? interpolate(t, [p.bas, p.bas + (p.hareketSure ?? 1)], [0, 1], { ...CL, easing: Easing.out(Easing.cubic) }) : 1;
+  const x = p.x1 !== undefined ? p.x0 + (p.x1 - p.x0) * ilerle : p.x0;
+  const hareket = p.x1 !== undefined && ilerle < 1;
+  const zip = hareket ? -Math.abs(Math.sin((t - p.bas) * 14)) * (p.ziplama ?? 8) : 0;
+  const top = p.zeminY - p.zemin * p.olcek + zip;
+  const halka = p.halkaT !== undefined ? yay(t, p.halkaT, { damping: 9, stiffness: 200, mass: 0.6 }) : 0;
+  const nabiz = p.halkaT !== undefined && t > p.halkaT ? 1 + 0.06 * Math.sin((t - p.halkaT) * 9) : 1;
+  const et = p.etiket ? yay(t, p.etiket.t, { damping: 10, stiffness: 200, mass: 0.6 }) : 0;
+  return (
+    <div style={{ position: "absolute", left: x, top, width: p.w * p.olcek, height: p.h * p.olcek }}>
+      <div style={{ position: "absolute", left: 0, top: 0, width: p.w, height: p.h, transformOrigin: "0 0", transform: `scale(${p.olcek})` }}>
+        <Img src={staticFile(p.dosya)} style={{ position: "absolute", left: 0, top: 0, width: p.w, height: p.h }} />
+        {halka > 0 && p.halkalar ? (
+          <svg viewBox={`0 0 ${p.w} ${p.h}`} width={p.w} height={p.h} style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }}>
+            {p.halkalar.map((h, j) => (
+              <circle key={j} cx={h.cx} cy={h.cy} r={h.r * (0.6 + 0.4 * halka) * nabiz} fill="none" stroke="#ff3b30" strokeWidth={22} opacity={Math.min(1, halka * 1.4)} />
+            ))}
+          </svg>
+        ) : null}
+        {p.etiket && et > 0 ? (
+          <div style={{ position: "absolute", left: p.etiket.x, top: p.etiket.y, transform: `translate(-50%,-50%) scale(${et}) rotate(-6deg)`, padding: "18px 48px", borderRadius: 26, background: "#fff7d6", border: "8px solid #1d1b22", boxShadow: "0 14px 0 rgba(0,0,0,0.3)" }}>
+            <span style={{ fontFamily: anton, fontSize: 150, letterSpacing: 6, color: "#e2564a" }}>{p.etiket.metin}</span>
+          </div>
+        ) : null}
+      </div>
+    </div>
+  );
+};
+
+/** Önceki seçim kartı: BANK rozetinin sağında, üst bantta (y 262–330). Seçilene ✓ pop; sayı/oy rozeti yok. */
+const OncekiSecim: React.FC<{ p: Extract<Prop, { tur: "oncekiSecim" }>; t: number }> = ({ p, t }) => {
+  const g = yay(t, p.bas);
+  const c = cikis(t, p.bitis, 0.25);
+  const tik = yay(t, p.tikT, { damping: 9, stiffness: 220, mass: 0.6 });
+  return (
+    <div style={{ position: "absolute", left: 400, right: 1080 - GUVENLI.sag, top: 262, display: "flex", justifyContent: "flex-end", opacity: c, transform: `translateY(${(1 - g) * -40}px)` }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 8, padding: "8px 14px", borderRadius: 18, background: "rgba(10,14,22,0.88)", border: `3px solid ${ALTIN}` }}>
+        {p.secenekler.map((s, j) => {
+          const sec = j === p.secilen && t >= p.tikT;
+          return (
+            <React.Fragment key={j}>
+              {j > 0 ? <span style={{ color: "#8a8f99", fontFamily: anton, fontSize: 28 }}>·</span> : null}
+              <span style={{ fontFamily: anton, fontSize: 34, letterSpacing: 1, color: sec ? "#14110a" : j === p.secilen ? "#fff" : "#8a8f99", background: sec ? ALTIN : "transparent", padding: "0 10px", borderRadius: 10, transform: sec ? `scale(${0.8 + 0.2 * tik})` : undefined, display: "inline-block" }}>
+                {s}{sec ? " ✓" : ""}
+              </span>
+            </React.Fragment>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
+/** Üst bant çipi / ilerleme şeridi: metinler sırayla değişir (her değişimde küçük pop). */
+const Cip: React.FC<{ p: Extract<Prop, { tur: "cip" }>; t: number }> = ({ p, t }) => {
+  let aktif = p.metinler[0];
+  for (const m of p.metinler) if (t >= m.t) aktif = m;
+  const g = yay(t, aktif.t, { damping: 11, stiffness: 210, mass: 0.6 });
+  const c = cikis(t, p.bitis, 0.2);
+  return (
+    <div style={{ position: "absolute", left: p.ortala ? GUVENLI.sol : 400, right: 1080 - GUVENLI.sag, top: p.y, display: "flex", justifyContent: p.ortala ? "center" : "flex-end", opacity: c }}>
+      <div style={{ padding: "6px 16px", borderRadius: 14, background: p.renk ?? "rgba(10,14,22,0.82)", transform: `scale(${0.85 + 0.15 * g})`, transformOrigin: "100% 50%" }}>
+        <span style={{ fontFamily: anton, fontSize: p.boyut ?? 28, letterSpacing: 2, color: "#ffffff", whiteSpace: "nowrap" }}>{aktif.metin}</span>
+      </div>
+    </div>
+  );
+};
+
+/** Telefon sohbeti (logosuz, emojisiz): alttan girer, mesajlar t anında belirir; yazıyor balonu üç nokta. */
+const Mesaj: React.FC<{ p: Extract<Prop, { tur: "mesaj" }>; t: number }> = ({ p, t }) => {
+  const g = yay(t, p.bas, { damping: 15, stiffness: 160, mass: 0.8 });
+  const c = cikis(t, p.bitis, 0.15);
+  const W = 560;
+  return (
+    <div style={{ position: "absolute", left: GUVENLI.sol + (GUVENLI_W - W) / 2, top: 760, width: W, transform: `translateY(${(1 - g) * 800}px) rotate(${-2 + (1 - g) * 6}deg)`, opacity: c }}>
+      <div style={{ borderRadius: 44, background: "#16171d", padding: 14, boxShadow: "0 24px 50px rgba(0,0,0,0.55)" }}>
+        <div style={{ borderRadius: 32, background: "#f3f5f9", padding: "18px 18px 22px", minHeight: 300 }}>
+          <div style={{ fontFamily: fredoka, fontWeight: 700, fontSize: 26, color: "#6b7280", textAlign: "center", marginBottom: 12 }}>{p.baslik ?? "Messages"}</div>
+          {p.mesajlar.map((m, j) => {
+            if (t < m.t) return null;
+            const q = yay(t, m.t, { damping: 12, stiffness: 220, mass: 0.6 });
+            return (
+              <div key={j} style={{ display: "flex", justifyContent: m.ben ? "flex-end" : "flex-start", marginTop: 10 }}>
+                <div style={{ maxWidth: 440, padding: "14px 20px", borderRadius: 26, background: m.onay ? "#2fae6a" : m.ben ? "#3b8de0" : "#ffffff", color: m.ben || m.onay ? "#fff" : "#1d1b22", fontFamily: fredoka, fontWeight: 700, fontSize: 40, lineHeight: 1.15, boxShadow: "0 3px 8px rgba(0,0,0,0.12)", transform: `scale(${q})`, transformOrigin: m.ben ? "100% 100%" : "0 100%" }}>
+                  {m.metin}
+                </div>
+              </div>
+            );
+          })}
+          {p.yaziyor !== undefined && t >= p.yaziyor ? (
+            <div style={{ display: "flex", marginTop: 10 }}>
+              <div style={{ padding: "16px 22px", borderRadius: 26, background: "#ffffff", display: "flex", gap: 10 }}>
+                {[0, 1, 2].map((d) => (
+                  <div key={d} style={{ width: 16, height: 16, borderRadius: 8, background: "#8a8f99", transform: `translateY(${-6 * Math.max(0, Math.sin((t - p.yaziyor!) * 8 - d * 0.9))}px)` }} />
+                ))}
+              </div>
+            </div>
+          ) : null}
+        </div>
+      </div>
+    </div>
+  );
+};
+
 export const PropKatman: React.FC<{ proplar: Prop[]; t: number; uzay: "ekran" | "sahne" }> = ({ proplar, t, uzay }) => (
   <>
     {proplar.map((p, i) => {
-      const pu = p.tur === "banknot" || p.tur === "tahtaYazi" ? "sahne" : p.tur === "ikon" ? p.uzay ?? "ekran" : "ekran";
+      const pu = p.tur === "banknot" || p.tur === "tahtaYazi" ? "sahne" : p.tur === "ikon" || p.tur === "nesne" ? p.uzay ?? "ekran" : "ekran";
       if (pu !== uzay) return null;
       if (t < p.bas - 1e-6) return null;
       if ("bitis" in p && p.bitis !== undefined && t >= p.bitis) return null;
@@ -175,6 +281,14 @@ export const PropKatman: React.FC<{ proplar: Prop[]; t: number; uzay: "ekran" | 
         }
         case "ilan":
           return <IlanKarti key={i} p={p} t={t} />;
+        case "nesne":
+          return <Nesne key={i} p={p} t={t} />;
+        case "oncekiSecim":
+          return <OncekiSecim key={i} p={p} t={t} />;
+        case "cip":
+          return <Cip key={i} p={p} t={t} />;
+        case "mesaj":
+          return <Mesaj key={i} p={p} t={t} />;
         case "telefon":
           return <Telefon key={i} p={p} t={t} />;
         case "tahtaYazi":

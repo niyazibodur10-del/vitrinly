@@ -78,7 +78,7 @@ export const BolumKompozisyon: React.FC<BolumProps> = ({ bolumId, taslak, kilavu
       {b.sahneler.map((s) => (
         <Sequence key={s.id} from={k(s.bas)} durationInFrames={k(s.bitis) - k(s.bas)} name={`sahne ${s.id}`}>
           {s.cekim && b.mekan ? (
-            <CekimKarti sahne={s} mekan={b.mekan} agiz={agiz3} />
+            <CekimKarti sahne={s} mekan={s.mekan ?? b.mekan} agiz={agiz3} />
           ) : (
             <SahneKarti sahne={s} satirlar={satirlar} agiz={b.agiz} agizYolu={b.agizYolu} />
           )}
@@ -86,9 +86,11 @@ export const BolumKompozisyon: React.FC<BolumProps> = ({ bolumId, taslak, kilavu
       ))}
       <Altyazi satirlar={satirlar} />
       <BankSayaci baslangic={b.bank.baslangic} olaylar={b.bank.olaylar ?? []} sesAcik={sablonSfx} />
-      <Sequence durationInFrames={k(DAMGA_SN)} name="açılış damgası">
-        <AcilisDamgasi no={b.no} sure={DAMGA_SN} logo={b.logo} ust={b.damga?.ust} olcek={b.damga?.olcek} sag={b.damga?.sag} />
-      </Sequence>
+      {b.damga !== false ? (
+        <Sequence durationInFrames={k(DAMGA_SN)} name="açılış damgası">
+          <AcilisDamgasi no={b.no} sure={DAMGA_SN} logo={b.logo} ust={b.damga?.ust} olcek={b.damga?.olcek} sag={b.damga?.sag} />
+        </Sequence>
+      ) : null}
       {b.kazananYorum ? (
         <Sequence from={k(yorumBas)} durationInFrames={k(b.kazananYorum.sure ?? 4)} name="kazanan yorum">
           <KazananYorumKarti y={b.kazananYorum} />

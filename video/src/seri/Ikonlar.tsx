@@ -86,6 +86,31 @@ const CIZIM: Record<IkonAdi, React.ReactNode> = {
       <path d="M8 78 q8 6 20 2" stroke="#8a8f99" strokeWidth={4} />
     </g>
   ),
+  pompa: (
+    <g {...s}>
+      <path d="M44 8 h12 v14 h-12z" fill="#2a2d36" />
+      <path d="M38 22 h24 v56 h-24z" fill="#e2564a" />
+      <path d="M30 78 h40 v10 h-40z" fill="#2a2d36" />
+      <path d="M50 30 v40" stroke="#ffffff" strokeWidth={4} />
+      <path d="M62 34 c22 4 26 26 18 44" fill="none" strokeWidth={5} />
+    </g>
+  ),
+  iclastik: (
+    <g {...s}>
+      <circle cx="50" cy="50" r="36" fill="none" stroke={K} strokeWidth={18} />
+      <circle cx="50" cy="50" r="36" fill="none" stroke="#4a4f5c" strokeWidth={12} />
+      <path d="M78 30 l8 -6 M80 40 l10 -2 M74 22 l4 -8" stroke="#e2564a" strokeWidth={4} />
+      <path d="M70 26 l10 8" stroke="#f2f4f7" strokeWidth={5} />
+    </g>
+  ),
+  donut: (
+    <g {...s}>
+      <circle cx="50" cy="52" r="38" fill="#e2a65a" />
+      <path d="M16 46 c6 -26 62 -30 70 0 c4 10 -4 8 -8 14 c-4 6 -10 0 -16 6 c-6 4 -10 -4 -18 0 c-8 4 -10 -6 -18 -4 c-8 0 -12 -6 -10 -16z" fill="#f28fb8" />
+      <circle cx="50" cy="50" r="11" fill="#ffffff" />
+      <path d="M34 34 l5 3 M58 30 l2 6 M68 42 l6 0 M28 52 l4 4" stroke="#7b5cd6" strokeWidth={4} />
+    </g>
+  ),
   kutu: (
     <g {...s}>
       <path d="M12 40 l38-14 l38 14 v40 l-38 14 l-38-14z" fill="#c8945a" />
