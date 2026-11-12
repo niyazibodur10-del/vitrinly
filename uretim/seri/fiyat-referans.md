@@ -1,9 +1,10 @@
 # Fiyat referansı — ABD ikinci el (finans-dogrulayici)
-Etiket: [K] kaynak sayfası okundu · [AÖ] arama özeti, ≥2 kaynak · [T] tahmin/hesap. Ayrıntı ve kaynak listesi: `bolum-001/dogrulama.md` §1, §5. Son güncelleme 2026-11-10.
+Etiket: [K] kaynak sayfası okundu · [AÖ] arama özeti, ≥2 kaynak · [T] tahmin/hesap. Ayrıntı ve kaynak listesi: `bolum-001/dogrulama.md` §1, §5. Son güncelleme 2026-11-12.
 
 | Kalem | Aralık | Etiket | Not |
 |---|---|---|---|
 | Eski/ucuz yol bisikleti (kusurlu) alış | $50–100 | [AÖ][K] | Düz lastik fiyatı düşürür; satış 7–21 gün [K] |
+| Tamir edilmiş ucuz yol bisikleti satış | ilan $140–175; satış [T] $100–140; düşük teklif ~ilanın %60–70'i [T] | [K][AÖ] | B002; satılmış kayıt yok, istenen fiyatlar $150–600 (eski çelik) [AÖ]; satış 7–21 gün [K] |
 | İç lastik (adet) | $5–12 | [AÖ] | |
 | Yol lastiği (adet) | $25–70 | [AÖ] | Bütçe lastik alt uç |
 | Dükkân işçiliği (teker başı) | $10–30 | [AÖ] | |
