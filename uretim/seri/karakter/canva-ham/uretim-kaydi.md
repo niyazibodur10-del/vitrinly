@@ -12,3 +12,6 @@ Canva istek sayacı: 6/12.
 | AG-J (Jake ağız açık) | MAHajI3OgKw | s.68 | 2026-11-11 |
 | AG-M (Mike ağız açık) | MAHajG_s9zc | s.69 | 2026-11-11 |
 Canva istek sayacı: 8/12.
+| B2-G1 (bisiklet) | MAHarTobDG0 | s.70 | 2026-11-12 |
+| L3-A (garaj yolu) | MAHarbC_Rog | s.71 | 2026-11-12 |
+Canva istek sayacı: 10/12.
