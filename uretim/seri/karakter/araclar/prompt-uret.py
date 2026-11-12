@@ -198,6 +198,27 @@ ekle("L1-C", "L1 Mutfak · C tezgâh insert", "3 (önce KOD: L1-A tezgâh kırp�
      "VERTICAL 9:16 FRAME RULES: keep the empty counter spot between 45% and 70% of the frame height, centered; extend past every edge."),
      "S1 SLAM insert, S7 banknot yakın; banknot KOD")
 
+# 6 Bölüm 2 (2026-11-12): G1 bisiklet nesnesi + L3-A garaj yolu plakası (Canva hakkı 2)
+STYLE_PROP = ("STYLE LOCK: original stylized 3D animated-feature prop, clean high-quality CG render, soft even studio light, slightly "
+              "exaggerated rounded shapes, tidy simplified detail, believable worn materials, not photorealistic, not a 2D drawing.")
+ekle("B2-G1", "Bölüm 2 · G1 bisiklet (Brenda)", "1 (bölüm 2)", "yok", L169,
+     f"{STYLE_PROP}\nPROP: one old steel road bike from the 1980s, exact side view (profile, front wheel on the right), the whole bike inside "
+     "the frame with wide empty margin on every side. Thin steel frame painted dusty burgundy red with small chips and scratches, curved "
+     "drop handlebars wrapped in worn black tape, a plain black saddle, silver spoked wheels, chain and pedals visible. BOTH tires are "
+     "clearly flat: the black rubber is squashed and bulging at the bottom of each wheel, the rims sitting low, as if resting on an "
+     "invisible floor. No rider, no kickstand, no bags, no lights, no bell.\n"
+     "BACKGROUND: plain flat solid bright green background, evenly lit, no floor, no horizon, no cast shadow, no reflections.\n"
+     f"No brand name, no decals, no stickers, no letters, no numbers, no logos anywhere on the bike, no watermark. {ORAN[L169]}",
+     "düz yeşil zemin → M4/kes-gc renk anahtarı; jant içi delikler zemin (kapalı delik kuralı); lastik dolu sürümü KOD")
+L3_SAHNE = ("a quiet American suburban street on a sunny afternoon, seen from the sidewalk at standing eye level looking "
+            "up a wide light-grey concrete driveway toward a modest one-story house with a closed white garage door, a small lawn and "
+            "low shrubs on both sides, a tree on the left. Far down the street: two parked cars and more houses, softly out of focus. "
+            "The driveway in the center is empty and clear (a bike and two characters will be composited there later). Mailbox without "
+            "numbers, no house number, no signs.")
+ekle("L3-A", "L3 Garaj yolu · A geniş (gündüz)", "2 (bölüm 2)", "yok", P916, plate(L3_SAHNE,
+     "warm afternoon sun from the side, soft cool blue shade under the tree and on the garage door, bright clear sky."),
+     "L1 stil kilidi aynı (STYLE_SET); kişi yok: güvenli buluşma hissi gündüz + park arabalar + açık sokakla verilir")
+
 # 5 konuşma tabanı + ağız
 ekle("T-J", "Konuşma tabanı Jake", "1 (dalga 2)", f"[{J_SAYFA}]", P916, taban(JAKE, "Jake Miller", "right"), "ÜRETİLDİ: kadraj soluna baktı → Jake ikilide SAĞDA, aynalanmaz")
 ekle("T-M", "Konuşma tabanı Mike", "1 (dalga 2)", f"[{M_SAYFA}]", P916, taban(MIKE, "Mike Carter", "left"), "ÜRETİLDİ: kadraj soluna baktı → Mike AYNALANIR, ikilide SOLDA")
@@ -218,7 +239,7 @@ def kontrol(c):
         if not p.startswith("EDIT") and c["grup"] != "İkili" and JAKE not in p: h.append("JAKE kilidi birebir değil")
     if "Mike" in c["grup"] and "arabası" not in c["grup"] and not p.startswith("EDIT") and MIKE not in p: h.append("MIKE kilidi birebir değil")
     if c["grup"] == "İkili" and not (JAKE in p and MIKE in p): h.append("ikili kilit eksik")
-    if (c["id"][0] in "GPAK" or c["id"].startswith("L1")) and not p.startswith("EDIT") and NOPPL not in p: h.append("NOPPL yok")
+    if (c["id"][0] in "GPAK" or c["id"].startswith("L1") or c["id"].startswith("L3")) and not p.startswith("EDIT") and NOPPL not in p: h.append("NOPPL yok")
     if not p.startswith("EDIT") and "STYLE LOCK" not in p: h.append("stil kilidi yok")
     return h
 

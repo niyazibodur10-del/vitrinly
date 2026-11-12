@@ -272,6 +272,26 @@ VERTICAL 9:16 FRAME RULES: keep the empty counter spot between 45% and 70% of th
 No text, no letters, no numbers, no labels, no signs, no brand logos, no badges, no license plates, no watermark, no color swatches. The whiteboard is completely blank. Vertical 9:16 portrait.
 ```
 
+### B2-G1 · Bölüm 2 · G1 bisiklet (Brenda) · sıra 1 (bölüm 2)
+- aspectRatio: `LANDSCAPE_16_9` · referans: yok · not: düz yeşil zemin → M4/kes-gc renk anahtarı; jant içi delikler zemin (kapalı delik kuralı); lastik dolu sürümü KOD · 1056 karakter
+```
+STYLE LOCK: original stylized 3D animated-feature prop, clean high-quality CG render, soft even studio light, slightly exaggerated rounded shapes, tidy simplified detail, believable worn materials, not photorealistic, not a 2D drawing.
+PROP: one old steel road bike from the 1980s, exact side view (profile, front wheel on the right), the whole bike inside the frame with wide empty margin on every side. Thin steel frame painted dusty burgundy red with small chips and scratches, curved drop handlebars wrapped in worn black tape, a plain black saddle, silver spoked wheels, chain and pedals visible. BOTH tires are clearly flat: the black rubber is squashed and bulging at the bottom of each wheel, the rims sitting low, as if resting on an invisible floor. No rider, no kickstand, no bags, no lights, no bell.
+BACKGROUND: plain flat solid bright green background, evenly lit, no floor, no horizon, no cast shadow, no reflections.
+No brand name, no decals, no stickers, no letters, no numbers, no logos anywhere on the bike, no watermark. 16:9 landscape.
+```
+
+### L3-A · L3 Garaj yolu · A geniş (gündüz) · sıra 2 (bölüm 2)
+- aspectRatio: `PORTRAIT_9_16` · referans: yok · not: L1 stil kilidi aynı (STYLE_SET); kişi yok: güvenli buluşma hissi gündüz + park arabalar + açık sokakla verilir · 1711 karakter
+```
+STYLE LOCK: original stylized 3D animated-feature environment, clean high-quality CG render, soft global illumination, slightly exaggerated rounded shapes, tidy simplified detail, believable materials, not photorealistic, not a 2D drawing. Palette: cool, slightly desaturated background tones with warm pools of practical light (warm-colored characters will be composited in front).
+SCENE: a quiet American suburban street on a sunny afternoon, seen from the sidewalk at standing eye level looking up a wide light-grey concrete driveway toward a modest one-story house with a closed white garage door, a small lawn and low shrubs on both sides, a tree on the left. Far down the street: two parked cars and more houses, softly out of focus. The driveway in the center is empty and clear (a bike and two characters will be composited there later). Mailbox without numbers, no house number, no signs.
+LIGHT: warm afternoon sun from the side, soft cool blue shade under the tree and on the garage door, bright clear sky.
+EMPTY SET: no people, no characters, no animals, no mannequins, no pictures of faces.
+VERTICAL 9:16 FRAME RULES: camera at natural eye level; keep the central vertical band (middle 60% of the width) open and uncluttered from 35% to 85% of the frame height, where two characters will be composited later; put busy detail at the sides and in the upper background; the bottom 25% of the frame is a calm low-detail area (captions and app interface will cover it); extend the scenery naturally past every edge (room for slow push-in and pan).
+No text, no letters, no numbers, no labels, no signs, no brand logos, no badges, no license plates, no watermark, no color swatches. Vertical 9:16 portrait.
+```
+
 ### T-J · Konuşma tabanı Jake · sıra 1 (dalga 2)
 - aspectRatio: `PORTRAIT_9_16` · referans: [MAHajKKbhbM] · not: ÜRETİLDİ: kadraj soluna baktı → Jake ikilide SAĞDA, aynalanmaz · 1894 karakter
 ```
