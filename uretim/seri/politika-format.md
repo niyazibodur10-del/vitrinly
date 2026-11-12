@@ -54,7 +54,7 @@ YPP eşiği Shorts yolunda 10 M / 90 gün, 2027-02-01'den itibaren yeni başvuru
 | YouTube | "AI-generated or altered content that seems realistic". Muaf: "non-realistic content", "AI-generated… animation… in a fully animated video" [B-3] | Stilize 3D çizgi film (karakter sayfası kontrol edildi, fotogerçekçi değil). TTS sesi gerçek kişi klonu değil | Zorunlu değil. **Öneri: altered/synthetic = Yes**. Bedeli yok, kanal kararıyla tutarlı (`docs/monetizasyon.md` §6) |
 | Instagram/Meta | "photorealistic video or realistic-sounding audio that was digitally created or altered… we may apply penalties" [B-9]. Etiket "AI info" [B-10] | Görsel fotogerçekçi değil, ama **TTS insan gibi gerçekçi ses** | Katı okumada ses gerekçesiyle **zorunlu sayılır**. Esnek okuma (kurgu karakter, gerçek kişi yok) metinle desteklenmiyor → **AI etiketi AÇIK** |
 | TikTok | "label AI-generated or significantly edited content that shows realistic-looking scenes or people"; etiketsiz içerik "may be removed, restricted, or labeled" [B-7]. Çizgi film stili kurala girmez [AÖ: Fortune 2024] | Gerçekçi görünmüyor | Zorunlu değil. **Öneri: AIGC etiketi AÇIK**. C2PA ile otomatik etiket de gelebilir [AÖ]; tek kural her yerde aynı |
-Açıklama satırı (her platform, sabit): **"Fiction. Not financial advice. Voices and visuals are AI-generated."**
+Açıklama satırı (her platform, sabit): **"Fiction. Not financial advice. Voices and visuals are AI-generated."** + §6 atıf satırı.
 Etiketin erişimi düşürdüğüne dair birincil kaynak bulunamadı [T: etkisi bilinmiyor].
 Canva AI koşulları da içeriği insan yapımı diye sunmayı yasaklıyor [AÖ, `docs/monetizasyon.md` A14].
 
@@ -84,12 +84,21 @@ Canva AI koşulları da içeriği insan yapımı diye sunmayı yasaklıyor [AÖ,
 - Hassas ya da taciz içeren yorumlara otomatik yanıt verilmez. Bunlar Niyazi'ye işaretlenir.
 - Gönderilen her yanıt `bolum-NNN/yanitlar.log` dosyasına yazılır (zaman, platform, yorum kimliği, metin). Bu, denetimde kanıt olur.
 
-## 6. Müzik / SFX lisansı
-Mevcut kayıt (`assets/LISANSLAR.md`) CC0 (OGA, Kenney), CC BY, kendi üretim ve Kokoro Apache-2.0 kaynaklarından oluşuyor. Bu lisanslar platformdan bağımsızdır, IG ve TikTok'ta da geçerlidir. **Ancak dizi için henüz kayıt yok.**
-- `uretim/seri/lisans-kaydi.md` açılmalı (sahibi muzik-ses-tasarimcisi): dosya, kaynak URL, lisans, sha256 ve kanıt sayfası.
-- **Yalnız CC0 ve kendi üretim kullanılsın.** CC BY her platformun açıklamasında atıf ister ve TikTok açıklaması kısadır. Earshot ile üretilen SFX kendi üretimimiz sayılır (araç MIT lisanslı).
-- **Platform müzik kütüphaneleri kullanılmaz** (IG/TikTok sesleri). Lisansları o platformla sınırlıdır ve çapraz yayında Content ID iddiası doğabilir [ÖB].
-- Canva AI görsellerinin ticari kullanım koşulu hâlâ yalnız [AÖ] düzeyinde. Niyazi'nin ekran görüntüsü kanıtı bekleniyor (`docs/monetizasyon.md` aksiyon 12).
+## 6. Müzik / SFX / ses lisansı (güncelleme 2026-11-12: Niyazi ses kararı, Pocket TTS)
+- **Dizi kaydı açıldı:** `uretim/seri/lisans-kaydi.md`. Kanıtlar `assets/lisans-kanit/tts-*` altında.
+- **Sesler (Niyazi 2026-11-11):** Kyutai Pocket TTS kodu MIT, ağırlıkları **CC BY 4.0**. Jake = `george` (VCTK p315, **CC BY 4.0**). Mike = `marius` (CC0, atıf gerekmez). Kokoro dizide kullanılmıyor. Yasak sesler: NC lisanslı `jean` ve `cosette`.
+- **CC BY 4.0 §3(a)(1) şartları** (yerel lisans metni `assets/lisans-kanit/cc-by-4.0-legalcode.html`, 2026-11-12'de okundu):
+  - eser sahibini belirtmek;
+  - lisansın metnini ya da "URI or hyperlink"ini vermek;
+  - "indicate if You modified the Licensed Material";
+  - "reasonably practicable" ise esere bağlantı vermek.
+  - "Any reasonable manner based on the medium" esnekliği var.
+  - Mevcut satırda ("Voices: Kyutai Pocket TTS (CC BY 4.0); VCTK corpus (CC BY 4.0).") **lisans bağlantısı, değişiklik beyanı ve VCTK üreticisi yok.** Bu bir zorunlu düzeltmedir. İhlalde lisans sona erer, 30 gün içinde düzeltilirse geri gelir (§6(b)).
+- **Atıf satırı (üç platform, açıklama):**
+  `Voices: Kyutai Pocket TTS; Jake's voice synthesized from the VCTK corpus (CSTR, University of Edinburgh). CC BY 4.0: creativecommons.org/licenses/by/4.0`
+  YouTube açıklamasında bağlantı tıklanır olduğu için ek satır yazılır: `Sources: huggingface.co/kyutai/pocket-tts-without-voice-cloning · datashare.ed.ac.uk/handle/10283/3443`. IG ve TikTok'ta kaynak bağlantısı "reasonably practicable" değil (açıklamada bağlantı tıklanmaz) → lisans bağlantısı yeterli [esnek okuma; kaynak cümlesi §3(a)(2)].
+- **Müzik/SFX:** yalnız CC0 ve kendi üretim (earshot çıktısı kendi üretimimiz sayılır, araç MIT). CC BY müzik eklenmesin: atıf satırı zaten ses için dolu. Platform müzik kütüphaneleri kullanılmaz; lisansları platformla sınırlı, çapraz yayında Content ID iddiası doğabilir [ÖB].
+- Canva AI ticari koşulu hâlâ yalnız [AÖ] düzeyinde. Niyazi'nin ekran görüntüsü kanıtı bekleniyor (`docs/monetizasyon.md` aksiyon 12).
 
 ## 7. Bölüm 001 metin taraması (`uretim/seri/bolum-001/metin.md`, satirlar.py sha256 952323bcb19b)
 **KARAR: DÜZELT.** Replikler GEÇTİ (zorunlu 0). Paket taslağında 2 zorunlu satır, metinde 1 önerilen değişiklik var.
