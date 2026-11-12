@@ -1,0 +1,118 @@
+== paket-kontrol.py S03 (F8b --final) ==
+[1] Başlıklar (≤60, < > yok, çıplak $ rakam / yıl yok, yasaklı/kalıp/K1 0)
+  OK   36 krk · The Great Wealth Transfer Has a Leak
+  OK   42 krk · Where Will the Boomers' Money Actually Go?
+  OK   51 krk · The Great Wealth Transfer Is Smaller Than It Sounds
+  OK   54 krk · The Boomers' Money Is Coming. Just Not When You Think.
+  OK   57 krk · The Biggest Inheritance Ever, and Why Heirs Might Miss It
+  OK   49 krk · Your Parents' Money Is Taking the Long Way to You
+  OK   56 krk · What Happens to Boomer Money Before It Reaches the Kids?  (elenen; bulgu [('kalıp', 'What Happens to Boomer')])
+[2] Puan = .30 merak + .20 arama + .20 thumb + .20 politika + .10 mobil (≤45:10 ≤50:9 ≤60:7) − kalıp
+       T1 8.40 · The Great Wealth Transfer Has a Leak
+       T3 7.70 · Where Will the Boomers' Money Actually Go?
+       T4 7.40 · The Great Wealth Transfer Is Smaller Than It Sounds
+       T7 7.30 · The Boomers' Money Is Coming. Just Not When You Think.
+       T5 6.90 · The Biggest Inheritance Ever, and Why Heirs Might Miss It
+       T2 6.60 · Your Parents' Money Is Taking the Long Way to You
+       T6 6.00 · What Happens to Boomer Money Before It Reaches the Kids?
+  OK   en yüksek T1 = önerilen başlık
+  OK   en düşük 2 ['T2', 'T6'] = elenenler
+  OK   varyant sırası = puan sırası
+  OK   7 aday ≥6
+[3] Açıklama
+       ilk paragraf 147 krk: The great wealth transfer, explained: Cerulli estimates $124 trillion will pass down in the US through 2048. How much inheritance reaches the kids?
+  OK   ilk paragraf ≤150 krk (kesilmeden okunur)
+  OK   ilk 150 krk: great wealth transfer
+  OK   ilk 150 krk: $124 trillion
+  OK   ilk 150 krk: 2048
+  OK   ilk 150 krk: Cerulli
+  OK   arama ifadesi ilk 10 krk içinde (konum 4)
+  OK   ilk paragraf başlığı tekrar etmiyor
+  OK   "Not financial advice" var
+  OK   yasal not sonu = AI satırı, görsel satırı aynı paragrafta
+  OK   yasal not 'legal/tax advice' vurgusu (P3)
+  OK   yasal not: kurgusal aile 'illustration' (P2)
+  OK   yasal not kaynağı: rakam-tablosu (F3 rakam-tablosu.md §'Yasal not (açıklama)' birebir)
+  OK   {BOLUMLER} yer tutucusu (araç Chapters: basar)
+  OK   LEGAL NOTE, SOURCES'ın üstünde
+  OK   Cerulli birincil kaynak bağlantısı (D1)
+  OK   F3 ek kaynakları ({KAYNAK_F3}; D4–D6)
+  OK   açıklama 3249/5000 bayt, < > yok
+  OK   açıklama yasaklı/tavsiye/K1/D1/D2: 0
+  OK   müzik atfı 06-muzik/atif-satirlari.md'den
+[3b] Bölümler
+  OK   7 bölüm, 00:00, artan, ≥10 sn
+  OK   bölüm adları yasaklı/K1: 0
+  OK   bölüm adları metin.md §4 birebir
+  OK   ACAN = metindeki bölüm açan sahneler ['S01', 'S06', 'S08', 'S13', 'S18', 'S21', 'S26']
+  OK   00:00 The number on the truck      ↔ S01 bas    0.00 (fark +0.00)
+  OK   01:46 Loading the Okafors          ↔ S06 bas  106.25 (fark -0.25)
+  OK   02:35 Living and care              ↔ S08 bas  155.21 (fark -0.21)
+  OK   04:58 The detour and the gift      ↔ S13 bas  298.97 (fark -0.97)
+  OK   07:09 The heaviest box             ↔ S18 bas  429.53 (fark -0.53)
+  OK   08:13 The tax stop                 ↔ S21 bas  493.93 (fark -0.93)
+  OK   10:42 Arrival                      ↔ S26 bas  642.75 (fark -0.75)
+  OK   final 781.400 sn ↔ anlatım 781.388 sn → kurgu ofseti 0 (fark +0.012)
+       uç ekran başı = max(S31 773.60, ABONE-son kart bitişi 775.30) = 775.30 sn → 6.1 sn
+  OK   uç ekran ABONE kartından sonra, 5–20 sn (4 abone tıkı okundu)
+[4] Etiket + hashtag + SRT terimleri
+  OK   etiket 21 adet, 436/500
+  OK   etiket tekrarı yok
+  OK   etiket yasaklı: 0
+  OK   3 hashtag, açıklama sonu: ['#GreatWealthTransfer', '#Inheritance', '#FinanceExplained']
+  OK   SRT'de geçiyor: one hundred twenty-four trillion (yoksa etiket/açıklamadan çıkar)
+  OK   SRT'de geçiyor: inheritance (yoksa etiket/açıklamadan çıkar)
+  OK   SRT'de geçiyor: boomer (yoksa etiket/açıklamadan çıkar)
+  OK   SRT'de geçiyor: care (yoksa etiket/açıklamadan çıkar)
+  OK   SRT'de geçiyor: charity (yoksa etiket/açıklamadan çıkar)
+  OK   SRT'de geçiyor: spouse (yoksa etiket/açıklamadan çıkar)
+  OK   SRT'de geçiyor: house (yoksa etiket/açıklamadan çıkar)
+  OK   SRT'de geçiyor: tax (yoksa etiket/açıklamadan çıkar)
+  OK   SRT'de geçiyor: Cerulli (yoksa etiket/açıklamadan çıkar)
+       [T] 'great wealth transfer' SRT'de geçmiyor: Cerulli 124 T$ tahmininin yerleşik adı, videonun S01–S04 konusu (124 + Cerulli SRT'de) → başlık/etiket kalır; politika-raporu §3 vaat↔içerik ✓
+[5] Shorts
+  OK   shorts1 başlık 52 krk, soru · Why Does So Much Inheritance Stop at a Spouse First?
+  OK   shorts1 yasaklı: 0
+  OK   shorts1 AI + görsel satırı + Not financial advice
+  OK   shorts1 uzun video başlığı + kanal bağlantısı, URL yer tutucusu yok
+  OK   shorts1 kaynak satırı + ilk paragraf soruyla biter (cevap uzun videoda)
+  OK   shorts1 açıklama iddiaları Shorts metninde (metin §5 'Okunacak tam metin'): eksik 0
+  OK   shorts1 hashtag ['#Shorts', '#Inheritance', '#GreatWealthTransfer']
+  OK   shorts1 açıklama bayt
+  OK   shorts2 başlık 51 krk, soru · If Not Taxes, Where Does the Inheritance Really Go?
+  OK   shorts2 yasaklı: 0
+  OK   shorts2 AI + görsel satırı + Not financial advice
+  OK   shorts2 uzun video başlığı + kanal bağlantısı, URL yer tutucusu yok
+  OK   shorts2 kaynak satırı + ilk paragraf soruyla biter (cevap uzun videoda)
+  OK   shorts2 açıklama iddiaları Shorts metninde (metin §5 'Okunacak tam metin'): eksik 0
+  OK   shorts2 hashtag ['#Shorts', '#Inheritance', '#EstateTax']
+  OK   shorts2 açıklama bayt
+  OK   shorts1: eş payı gecikme, kayıp değil (D2)
+  OK   shorts2: 'as of 2026' + 'US federal only' + 2022 doları (R18/R19, Z2)
+[6] Pinli yorum
+  OK   tek soru (1 '?')
+  OK   1–6 numaralı sızıntı listesi
+  OK   A/B/C üçlü yapı yok (K1)
+  OK   nötr (tavsiye/K1/kişisel servet/bugün 0): 0
+  OK   sızıntı adları metinde: eksik 0
+[7] Yayın zamanı (EST −05:00, Çar 12:00 / Per + Cmt 09:00 ET; yedek Paz 12:00 / Pzt + Sal)
+  OK   uzun: 2026-11-11T12:00:00-05:00 = Wed 2026-11-11 17:00Z
+  OK   shorts-1: 2026-11-12T09:00:00-05:00 = Thu 2026-11-12 14:00Z
+  OK   shorts-2: 2026-11-14T09:00:00-05:00 = Sat 2026-11-14 14:00Z
+  OK   yedek-uzun: 2026-11-15T12:00:00-05:00 = Sun 2026-11-15 17:00Z
+  OK   yedek-shorts-1: 2026-11-16T09:00:00-05:00 = Mon 2026-11-16 14:00Z
+  OK   yedek-shorts-2: 2026-11-17T09:00:00-05:00 = Tue 2026-11-17 14:00Z
+  OK   Shorts uzun videodan sonra
+  OK   slot = koordinatör 2026-11-09: Çar 2026-11-11 12:00 ET (17:00Z)
+[8] JSON ↔ paket.md (yayin_paket.py)
+  OK   yayin-paketi.json: başlık 36 krk · tam açıklama 3412/5000 bayt · 2026-11-11T12:00:00-05:00
+  OK   tam açıklamada 'Chapters:' + 00:00
+  OK   yayin-paketi-shorts-1.json: başlık 52 krk · tam açıklama 804/5000 bayt · 2026-11-12T09:00:00-05:00
+  OK   yayin-paketi-shorts-2.json: başlık 51 krk · tam açıklama 879/5000 bayt · 2026-11-14T09:00:00-05:00
+  OK   ilgili_video araçta yok (talep açık, dry-run UYARI) → YAYIN.md'de ZORUNLU Studio Related video adımı var
+  OK   thumbnail dosyası var: ../09-paket/thumbnail/K1-who-gets-it.jpg
+  OK   sentetik_medya = politika-raporu.md kararı (true)
+  OK   shorts-1.mp4 41.45 sn ≤60 (kanal kuralı)
+  OK   shorts-2.mp4 43.43 sn ≤60 (kanal kuralı)
+SONUÇ: 0 hata · 0 bekleyen (F8b)
+exit 0

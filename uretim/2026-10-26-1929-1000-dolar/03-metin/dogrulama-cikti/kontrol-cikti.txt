@@ -1,0 +1,263 @@
+## ANLATIM (yazıyla sayılar)
+S01	'nineteen twenty-nine'	1929	T01
+S01	'one thousand'	1000	C01
+S01	'Three'	3	C05/Y
+S01	'nineteen thirty-three'	1933	T01
+S01	'one'	1	Y/C26
+S01	'one'	1	Y/C26
+S01	'one'	1	Y/C26
+S02	'nineteen twenty-nine'	1929	T01
+S02	'nineteen twenty-nine'	1929	T01
+S03	'thousand'	1000	C01
+S03	'nineteen twenty-nine'	1929	T01
+S03	'one thousand four hundred thirty'	1430	C02
+S03	'eight'	8	C02/C04/C19
+S04	'one'	1	Y/C26
+S04	'one'	1	Y/C26
+S04	'first'	1	Y/C26
+S04	'nineteen twenty-nine'	1929	T01
+S05	'eight'	8	C02/C04/C19
+S05	'nineteen twenty-one'	1921	C03
+S05	'sixty-three'	63	C03
+S05	'nineteen twenty-nine'	1929	T01
+S05	'three hundred eighty-one'	381	C04
+S05	'six'	6	C04
+S05	'ten'	10	C06/C08
+S05	'third'	3	C05/Y
+S05	'three hundred eighty-one point one seven'	381.17	C05
+S06	'twenty-eighth'	28	C07
+S06	'thirteen'	13	C07
+S06	'twelve'	12	C07/C30
+S06	'one thousand'	1000	C01
+S06	'five hundred'	500	C08
+S07	'ten'	10	C06/C08
+S08	'nineteen twenty-nine'	1929	T01
+S08	'eight thousand'	8000	C11
+S08	'sixteen thousand'	16000	C11
+S08	'nineteen thirty'	1930	C10
+S08	'hundreds'	100	C10
+S09	'eleventh'	11	C12
+S09	'nineteen thirty'	1930	C10
+S09	'fourth'	4	C12/C24
+S09	'thousand'	1000	C01
+S09	'one'	1	Y/C26
+S10	'two'	2	Y/C26
+S10	'one'	1	Y/C26
+S10	'two'	2	Y/C26
+S10	'nineteen thirty'	1930	C10
+S10	'nineteen thirty-three'	1933	T01
+S10	'nine thousand'	9000	C13
+S10	'one'	1	Y/C26
+S10	'three'	3	C05/Y
+S10	'Thousands'	1000	C22/C25
+S10	'one'	1	Y/C26
+S10	'twenty'	20	C15
+S10	'two hundred'	200	C16
+S10	'two'	2	Y/C26
+S11	'one'	1	Y/C26
+S11	'One'	1	Y/C26
+S11	'one'	1	Y/C26
+S12	'thousand'	1000	C01
+S12	'nineteen twenty-nine'	1929	T01
+S12	'nineteen thirty-two'	1932	C19
+S12	'twenty-one'	21	C17
+S12	'thousand'	1000	C01
+S12	'one thousand two hundred seventy'	1270	C17
+S12	'nineteen twenty-nine'	1929	T01
+S13	'thirty'	30	C18
+S13	'nineteen thirty'	1930	C10
+S13	'nineteen thirty-three'	1933	T01
+S13	'One'	1	Y/C26
+S15	'eighth'	8	C02/C04/C19
+S15	'nineteen thirty-two'	1932	C19
+S15	'forty-one point two two'	41.22	C19
+S15	'eighty-nine'	89	C19
+S15	'thousand'	1000	C01
+S15	'one hundred and eight'	108	C19
+S15	'one hundred thirty-eight'	138	C19
+S15	'nineteen twenty-nine'	1929	T01
+S15	'one thousand'	1000	C01
+S15	'two'	2	Y/C26
+S15	'nineteen twenty-nine'	1929	T01
+S15	'nineteen fifty-four'	1954	C20
+S15	'one'	1	Y/C26
+S15	'nineteen thirty-six'	1936	C21
+S15	'seven'	7	C21
+S16	'nineteen thirty-two'	1932	C19
+S16	'one hundred and eight'	108	C19
+S16	'eight hundred'	800	C16
+S16	'one thousand'	1000	C01
+S16	'twelve hundred seventy'	1270	C17
+S17	'nineteen thirty-three'	1933	T01
+S18	'nineteen thirty-three'	1933	T01
+S18	'first'	1	Y/C26
+S18	'fourth'	4	C12/C24
+S18	'Two'	2	Y/C26
+S18	'four thousand'	4000	C25
+S18	'nineteen thirty-three'	1933	T01
+S18	'first'	1	Y/C26
+S18	'nineteen thirty-four'	1934	C26
+S18	'two thousand five hundred'	2500	C26
+S19	'nineteen thirty-four'	1934	C26
+S19	'nine'	9	C27
+S19	'nineteen twenty-nine'	1929	T01
+S20	'thousand'	1000	C01
+S20	'twenty twenty-five'	2025	C30
+S20	'Twelve'	12	C07/C30
+S20	'three point seven'	3.7	C30
+S20	'twenty twenty-six'	2026	C30
+S20	'thousand'	1000	C01
+S20	'nine hundred sixty-four'	964	C31
+S21	'two'	2	Y/C26
+S21	'nineteen twenty-nine'	1929	T01
+S21	'nineteen thirty-three'	1933	T01
+S21	'twenty-seven'	27	C32
+S21	'twenty twenty-two'	2022	C32
+S21	'twenty twenty-six'	2026	C30
+S21	'thirteen and a half'	13.5	C32
+S21	'nineteen thirties'	1930	C10
+S21	'twenty twenty-six'	2026	C30
+S22	'nineteen thirty-four'	1934	C26
+S22	'two hundred fifty thousand'	250000	C33
+S23	'nineteen twenty-nine'	1929	T01
+S23	'one'	1	Y/C26
+S23	'three'	3	C05/Y
+
+## SHORTS satırları
+Shorts	'nineteen twenty-nine'	1929	T01
+Shorts	'one'	1	Y/C26
+Shorts	'nineteen thirty-two'	1932	C19
+Shorts	'twenty twenty-six'	2026	C30
+Shorts	'nineteen twenty-nine'	1929	T01
+Shorts	'one'	1	Y/C26
+Shorts	'one thousand'	1000	C01
+Shorts	'Three'	3	C05/Y
+Shorts	'one thousand'	1000	C01
+Shorts	'five hundred'	500	C08
+Shorts	'two'	2	Y/C26
+Shorts	'one'	1	Y/C26
+Shorts	'two'	2	Y/C26
+Shorts	'nineteen thirty'	1930	C10
+Shorts	'nineteen thirty-three'	1933	T01
+Shorts	'nine thousand'	9000	C13
+Shorts	'nineteen thirty-two'	1932	C19
+Shorts	'one hundred and eight'	108	C19
+Shorts	'eight hundred'	800	C16
+Shorts	'one thousand'	1000	C01
+Shorts	'twelve hundred seventy'	1270	C17
+Shorts	'nineteen thirty-two'	1932	C19
+Shorts	'twenty twenty-six'	2026	C30
+Shorts	'nineteen twenty-nine'	1929	T01
+Shorts	'nineteen thirty-two'	1932	C19
+Shorts	'twenty-one'	21	C17
+Shorts	'thousand'	1000	C01
+Shorts	'one thousand two hundred seventy'	1270	C17
+Shorts	'nineteen twenty-nine'	1929	T01
+Shorts	'Twelve'	12	C07/C30
+Shorts	'three point seven'	3.7	C30
+Shorts	'twenty twenty-six'	2026	C30
+Shorts	'thousand'	1000	C01
+Shorts	'nine hundred sixty-four'	964	C31
+Shorts	'nineteen thirties'	1930	C10
+Shorts	'twenty twenty-six'	2026	C30
+
+## GÖRSEL (rakamlar, benzersiz)
+1929	S01,S02,S03,S05,S08,S12,S15,S16,S21	T01
+$1,000	S01,S03,S06,S10,S12,S15,S16,S20	C01
+2026	S02,S19,S20,S23	C30
+$1,430	S03	C02
+12	S03,S20	C02
+8	S03,S15	C02
+1	S04,S15,S21,S22	Y
+2	S04,S06,S15	Y
+3	S04,S05,S06,S07,S11,S15	C05
+1921	S05,S10,S15	C03
+63	S05,S15	C03
+381.17	S05,S15	C05
+381	S05,S15	C04
+10%	S05	C06
+3,	S05	C05
+28	S06	C07
+≈299,	S06	C06b
+−13%	S06	C07
+29	S06	C07
+−12%	S06	C07
+1.000	S06,S10,S12,S15,S21	C01
+1,000	S06,S12,S15	C01
+~500	S06,S15	C08
+~$500	S06	C08
+−50%	S07	C08
+~10	S07	C08
+≈24.000	S08	C14
+1930	S08,S09,S10,S13,S23	C10
+8,000	S08	C11
+~16,000	S08	C11
+11,	S09	C12
+1933	S10,S12,S13,S17,S18,S19	T01
+506	S10	C13
+366	S10	C13
+646	S10	C13
+775	S10	C13
+617	S10	C13
+975	S10	C13
+669	S10	C13
+498	S10	C13
+659	S10	C13
+1,350	S10	C13
+2,293	S10	C13
+1,453	S10	C13
+4,000	S10,S19	C13/C25
+33	S10,S21	C13
+≈9,100	S10	C13
+~20	S10	C15
+$1	S10	C15
+1,34	S10	C15
+6,83	S10	C15
+5	S10,S14,S19	Y
+~$800	S10,S16	C16
+~9,000	S10	C13
+17.3	S12	C17
+1932	S12,S15	C19
+13.6	S12	C17
+12.6	S12	C32
+1,272	S12	C17
+1,373	S12,S21	C32
+−21%	S12	C17
+$1,272	S12,S16	C17
+~30%	S13	C18
+0%	S14	Y
+41.22	S15	C19
+1954	S15	C20
+108	S15	C19
+~$138	S15	C19
+1936	S15	C21
+2009	S15	C21
+8,	S15	C19
+−89%	S15	C19
+$108	S15,S16	C19
+4	S16,S18	C24
+6	S18,S24	C26
+~4,000	S18	C25
+16,	S18	C26
+1,	S18	C26
+1934	S18,S19,S22	C26
+$2,500	S18,S22	C26
+61	S19	C27
+9	S19	C27
+7	S19	Y
++3.7%	S20	C30
+$964	S20	C31
+100	S21	C32
+72.8	S21	C32
+−27.2%	S21	C32
+2022	S21	C32
+26	S21	C32
+113.5	S21	C32
++13.5%	S21	C32
+881	S21	C32
+42	S21	C32
+48	S21	C32
+$250,000	S22	C33
+
+Sayım: ANLATIM 123 · Shorts 36 · GÖRSEL benzersiz 96
+Eşlenmeyen (ANLATIM+Shorts+GÖRSEL): 0

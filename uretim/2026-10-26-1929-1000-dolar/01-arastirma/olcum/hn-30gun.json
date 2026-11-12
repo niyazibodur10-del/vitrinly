@@ -1,0 +1,267 @@
+{
+ "bubble": {
+  "nbHits": 3,
+  "top": [
+   [
+    177,
+    48,
+    "Show HN: I put employees inside S&P 500 market-cap bubbles",
+    "2026-10-25",
+    "https://news.ycombinator.com/item?id=50232312"
+   ],
+   [
+    132,
+    66,
+    "New plastic pollution discovered: 'Plasticorals' coral rubble fused with plastic",
+    "2026-10-21",
+    "https://news.ycombinator.com/item?id=50183512"
+   ],
+   [
+    69,
+    56,
+    "Show HN: K10s \u2013 A Clickable Kubernetes TUI (Go, Bubble Tea)",
+    "2026-10-08",
+    "https://news.ycombinator.com/item?id=50009904"
+   ]
+  ]
+ },
+ "crash": {
+  "nbHits": 14,
+  "top": [
+   [
+    176,
+    88,
+    "Codex Desktop continuously generates Crashpad pending dumps",
+    "2026-10-17",
+    "https://news.ycombinator.com/item?id=50133231"
+   ],
+   [
+    136,
+    72,
+    "Firebase SDK is crashing all iOS apps since this morning",
+    "2026-09-29",
+    "https://news.ycombinator.com/item?id=49889934"
+   ],
+   [
+    132,
+    31,
+    "Show HN: Hob - Open-source, on device alternative to Claude Cowork and ChatGPT",
+    "2026-10-26",
+    "https://news.ycombinator.com/item?id=50246238"
+   ]
+  ]
+ },
+ "hyperinflation": {
+  "nbHits": 0,
+  "top": []
+ },
+ "inflation": {
+  "nbHits": 1,
+  "top": [
+   [
+    297,
+    158,
+    "1 in 8 cancer cases worldwide are caused by infections, study finds",
+    "2026-09-29",
+    "https://news.ycombinator.com/item?id=49892120"
+   ]
+  ]
+ },
+ "1929": {
+  "nbHits": 69,
+  "top": [
+   [
+    389,
+    75,
+    "Show HN: TitleArt \u2013 Make text like it's 1997",
+    "2026-10-26",
+    "https://news.ycombinator.com/item?id=50238708"
+   ],
+   [
+    278,
+    112,
+    "56k.rip \u2013 the 1996 dial-up internet experience",
+    "2026-09-30",
+    "https://news.ycombinator.com/item?id=49915126"
+   ],
+   [
+    194,
+    110,
+    "Booted up in 1993, this server still runs \u2013 but not for much longer (2017)",
+    "2026-09-27",
+    "https://news.ycombinator.com/item?id=49870376"
+   ]
+  ]
+ },
+ "dot-com": {
+  "nbHits": 2,
+  "top": [
+   [
+    363,
+    250,
+    "Example.com just launched the biggest redesign in decades",
+    "2026-10-05",
+    "https://news.ycombinator.com/item?id=49971921"
+   ],
+   [
+    61,
+    55,
+    "Show HN: I built a task system to handle the drudgery so I could focus on tasks",
+    "2026-10-19",
+    "https://news.ycombinator.com/item?id=50151980"
+   ]
+  ]
+ },
+ "oil shock": {
+  "nbHits": 0,
+  "top": []
+ },
+ "stagflation": {
+  "nbHits": 0,
+  "top": []
+ },
+ "bank run": {
+  "nbHits": 13,
+  "top": [
+   [
+    778,
+    245,
+    "Tell HN: I've been paying for a rural Tanzanian's education for 10 years",
+    "2026-10-08",
+    "https://news.ycombinator.com/item?id=50006366"
+   ],
+   [
+    163,
+    136,
+    "Launch HN: Agent37 (YC F26) \u2013 Low-cost agent sandboxes for running agents",
+    "2026-10-12",
+    "https://news.ycombinator.com/item?id=50059096"
+   ],
+   [
+    140,
+    46,
+    "Show HN: Corgi, a helpful {agent, terminal} multiplexer",
+    "2026-10-23",
+    "https://news.ycombinator.com/item?id=50214373"
+   ]
+  ]
+ },
+ "Ponzi": {
+  "nbHits": 0,
+  "top": []
+ },
+ "FTX": {
+  "nbHits": 19,
+  "top": [
+   [
+    273,
+    143,
+    "Blaise Pascal invented fixed route public transport (2024)",
+    "2026-10-22",
+    "https://news.ycombinator.com/item?id=50200152"
+   ],
+   [
+    227,
+    93,
+    "Postgres 19 delayed after AI reviewers find more bugs than humans can fix",
+    "2026-10-16",
+    "https://news.ycombinator.com/item?id=50119991"
+   ],
+   [
+    176,
+    35,
+    "Move Slow and Fix Things (2024)",
+    "2026-10-23",
+    "https://news.ycombinator.com/item?id=50204754"
+   ]
+  ]
+ },
+ "Enron": {
+  "nbHits": 3,
+  "top": [
+   [
+    215,
+    118,
+    "Germany transforms former coal mines into Europe's largest lake landscape",
+    "2026-10-09",
+    "https://news.ycombinator.com/item?id=50021540"
+   ],
+   [
+    177,
+    50,
+    "Clinical trial of a prion disease drug candidate begins enrolling participants",
+    "2026-10-09",
+    "https://news.ycombinator.com/item?id=50028027"
+   ],
+   [
+    70,
+    57,
+    "Show HN: We had AI write a wiki from 45k Enron emails, every fact cited",
+    "2026-10-23",
+    "https://news.ycombinator.com/item?id=50207620"
+   ]
+  ]
+ },
+ "Lehman": {
+  "nbHits": 0,
+  "top": []
+ },
+ "Volcker": {
+  "nbHits": 3,
+  "top": [
+   [
+    878,
+    368,
+    "Docker is weird",
+    "2026-10-22",
+    "https://news.ycombinator.com/item?id=50202681"
+   ],
+   [
+    163,
+    136,
+    "Launch HN: Agent37 (YC F26) \u2013 Low-cost agent sandboxes for running agents",
+    "2026-10-12",
+    "https://news.ycombinator.com/item?id=50059096"
+   ],
+   [
+    114,
+    34,
+    "Show HN: Omnara \u2013 Open-source alternative to Claude Managed Agents",
+    "2026-10-21",
+    "https://news.ycombinator.com/item?id=50183892"
+   ]
+  ]
+ },
+ "gold standard": {
+  "nbHits": 0,
+  "top": []
+ },
+ "CoreWeave": {
+  "nbHits": 1,
+  "top": [
+   [
+    434,
+    301,
+    "OpenAI annualised revenues $20B less than previously signalled",
+    "2026-10-08",
+    "https://news.ycombinator.com/item?id=50008187"
+   ]
+  ]
+ },
+ "private credit": {
+  "nbHits": 0,
+  "top": []
+ },
+ "recession": {
+  "nbHits": 0,
+  "top": []
+ },
+ "tulip": {
+  "nbHits": 0,
+  "top": []
+ },
+ "Black Monday": {
+  "nbHits": 0,
+  "top": []
+ }
+}

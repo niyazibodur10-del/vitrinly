@@ -1,0 +1,20 @@
+{
+ "anlatim_tek": {
+  "hata": 19,
+  "wer": 0.85
+ },
+ "muzik_tek_miks": {
+  "hata": 22,
+  "wer": 0.99
+ },
+ "tam_miks": {
+  "hata": 27,
+  "wer": 1.21
+ },
+ "kelime": 2225,
+ "not": "anlatim_tek / muzik_tek_miks / tam_miks_ham = ham toplam (loudnorm yok, aynı seviye, karşılaştırılabilir); tam_miks = loudnorm'lu önizleme (−14 LUFS, farklı kazanç). Hepsi aynı oturum, small.en int8 beam 5",
+ "tam_miks_ham": {
+  "hata": 27,
+  "wer": 1.21
+ }
+}

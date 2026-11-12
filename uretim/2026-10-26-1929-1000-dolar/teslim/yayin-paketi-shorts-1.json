@@ -1,0 +1,39 @@
+{
+  "sema": "yayin-paketi/1",
+  "_not": "1929-1000-dolar Shorts 1. Related video = uzun video (Studio adımı, YAYIN.md). paket-uret.py ile üretildi.",
+  "tur": "shorts",
+  "dosyalar": {
+    "video": "../08-kurgu/shorts-1.mp4",
+    "altyazilar": []
+  },
+  "metadata": {
+    "baslik": "$1,000 in 1929: Which Door Would You Pick?",
+    "aciklama": "It's 1929 and you have $1,000: the stock market, a bank or a shoebox under your bed. Here's the scoreboard by July 1932, and why falling prices decided it.\n\nFull game, all three doors from 1929 to 1933 plus the 2026 twist: \"You Have $1,000 in 1929. Can You Keep It?\" on our channel, https://www.youtube.com/@toonomy\n\nSources: Federal Reserve History; FDIC, A Brief History of Deposit Insurance; U.S. BLS CPI via FRED (CPIAUCNS). Stock figure is price only, before dividends.\nMusic: \"Catchy Swing\" by Doge (CC0, OpenGameArt.org).\n\nNot financial advice. For educational purposes only. Leo is a fictional cartoon character, not a financial adviser.\nNarration voice is AI-generated. Visuals are AI-assisted illustrations animated by our team.\n\n#Shorts #GreatDepression #FinancialHistory",
+    "etiketler": [
+      "1929 stock market crash",
+      "great depression",
+      "1929 crash",
+      "bank runs",
+      "financial history",
+      "shorts",
+      "toonomy"
+    ],
+    "bolumler": [],
+    "kategori_id": "27",
+    "varsayilan_dil": "en",
+    "ses_dili": "en"
+  },
+  "durum": {
+    "gizlilik": "private",
+    "cocuklara_ozel": false,
+    "sentetik_medya": true,
+    "lisans": "youtube",
+    "gomulebilir": true,
+    "yayin_zamani": "2026-11-02T09:00:00-05:00"
+  },
+  "oynatma_listesi_id": null,
+  "onay": {
+    "niyazi_onayi": false,
+    "tarih": null
+  }
+}

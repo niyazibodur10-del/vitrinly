@@ -1,0 +1,43 @@
+bant: 700-3000 Hz
+  aralık 12.99-14.86 sn: gecikme 2 kare, korelasyon 0.43
+  aralık 31-37.06 sn: gecikme 1 kare, korelasyon 0.46
+  aralık 39.17-45.21 sn: gecikme 2 kare, korelasyon 0.51
+  aralık 45.21-48.84 sn: gecikme 1 kare, korelasyon 0.53
+  aralık 54.18-59.14 sn: gecikme 1 kare, korelasyon 0.54
+  aralık 77.7-79.27 sn: gecikme 1 kare, korelasyon 0.66
+  aralık 92.91-97.46 sn: gecikme 1 kare, korelasyon 0.68
+  aralık 128.02-132.13 sn: gecikme 1 kare, korelasyon 0.52
+  aralık 138.58-140.65 sn: gecikme -3 kare, korelasyon 0.75
+  aralık 140.65-141.38 sn: gecikme 2 kare, korelasyon 0.46
+  aralık 177.97-185.07 sn: gecikme 1 kare, korelasyon 0.63
+  aralık 190.1-194.14 sn: gecikme 2 kare, korelasyon 0.75
+  aralık 197.22-199.75 sn: gecikme 3 kare, korelasyon 0.68
+  aralık 199.75-204.45 sn: gecikme 2 kare, korelasyon 0.55
+  aralık 239.06-240.9 sn: gecikme 0 kare, korelasyon 0.55
+  aralık 281.28-285.41 sn: gecikme 1 kare, korelasyon 0.59
+  aralık 290.46-295.38 sn: gecikme 2 kare, korelasyon 0.67
+  aralık 296.83-298.97 sn: gecikme -2 kare, korelasyon 0.67
+  aralık 325-334.83 sn: gecikme 1 kare, korelasyon 0.65
+  aralık 342.82-345 sn: gecikme 3 kare, korelasyon 0.71
+  aralık 360.28-364.54 sn: gecikme 2 kare, korelasyon 0.62
+  aralık 377.47-379.72 sn: gecikme 2 kare, korelasyon 0.76
+  aralık 379.72-381.24 sn: gecikme 2 kare, korelasyon 0.84
+  aralık 405.09-410.54 sn: gecikme 2 kare, korelasyon 0.56
+  aralık 455.64-460.54 sn: gecikme 2 kare, korelasyon 0.56
+  aralık 490.25-493.93 sn: gecikme 1 kare, korelasyon 0.67
+  aralık 497.58-499.61 sn: gecikme 1 kare, korelasyon 0.78
+  aralık 555.82-563.17 sn: gecikme 1 kare, korelasyon 0.59
+  aralık 569.52-579.7 sn: gecikme 1 kare, korelasyon 0.59
+  aralık 585.29-587.76 sn: gecikme 0 kare, korelasyon 0.56
+  aralık 609.77-617.06 sn: gecikme 2 kare, korelasyon 0.64
+  aralık 635.99-638.93 sn: gecikme 1 kare, korelasyon 0.78
+  aralık 642.75-647.18 sn: gecikme 1 kare, korelasyon 0.54
+  aralık 679.16-688.98 sn: gecikme 0 kare, korelasyon 0.59
+  aralık 701.39-706.92 sn: gecikme 2 kare, korelasyon 0.53
+  aralık 727.95-730.98 sn: gecikme 0 kare, korelasyon 0.64
+  aralık 736.68-744.38 sn: gecikme 1 kare, korelasyon 0.65
+  aralık 753.29-759.95 sn: gecikme 2 kare, korelasyon 0.54
+  aralık 759.95-765.54 sn: gecikme 1 kare, korelasyon 0.47
+  aralık 770.47-773.6 sn: gecikme 1 kare, korelasyon 0.69
+en iyi gecikme: 1 kare (33 ms), korelasyon 0.58, gecikme 0'da 0.51 [40 aralık, 179.1 sn]
+GEÇTİ

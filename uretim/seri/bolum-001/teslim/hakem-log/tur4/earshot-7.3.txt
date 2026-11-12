@@ -1,0 +1,67 @@
+bolum-001.mp4: 0:07.30-0:37.30 (30.0 s). Loudness -13.8 LUFS integrated, true peak -2.3 dBTP, LRA 5.1 LU; loudest 0:15.80-0:18.80 (-12.0 LUFS short-term). 16 stop-down(s)/gap(s): 0:10.00 0.5 s drop, 0:12.25 0.6 s drop, 0:13.10 1.1 s drop, 0:15.35 0.5 s drop, 0:17.70 0.3 s drop. No steady beat grid (pulse clarity 0.08 < 0.15). 3 section(s): 0:07.30-0:15.85 funk music, vocal chop, confident and cool; 0:15.85-0:22.30 chiptune video game music?, vocal chop, confident and cool; 0:22.30-0:37.30 funk music, vocal chop, confident and cool. 167 events (5.6/s); 12 tagged (4 ui, 3 whoosh, 2 note, 2 foley, 1 voice; tags are hints). Strongest accents over a running bed: 0:32.34 +46 dB (chat message pop), 0:10.86 +42 dB, 0:22.29 +37 dB (chat message pop). Sync to 24 cuts: 25% have an onset within 1 frame (chance 37%), 67% within 100 ms, median |offset| 72 ms; 0% land on a strong accent (>= 22 dB over the bed, ranked over the +-30 s context) within 1 frame (chance 9%); 8 without a hit: 0:10.33, 0:12.30, 0:12.70, 0:15.70, 0:28.03, 0:29.37. Sync to 16 cues: 62% have an onset within 1 frame (chance 36%), 88% within 100 ms, median |offset| 14 ms; 6% land on a strong accent (>= 22 dB over the bed, ranked over the +-30 s context) within 1 frame (chance 9%); 1 met by a whoosh / riser peak; 1 only by a level peak (soft whoosh / swell?).
+
+SECTIONS
+  0:07.30-0:15.85  funk music, vocal chop, confident and cool  -14 LUFS
+  0:15.85-0:22.30  chiptune video game music?, vocal chop, confident and cool  -13 LUFS
+  0:22.30-0:37.30  funk music, vocal chop, confident and cool  -14 LUFS
+
+TRANSCRIPT   time  kind   what (CLAP tag / runner-up)                     peak  over bed  length  centroid  | sync
+== 0:07.30-0:15.85  funk music, vocal chop, confident and cool  (+33 untagged onsets, 3.9/s)
+ 0:08.73  -      high onset                                      -15.5 dBFS  +0.0 dB   153 ms  3.7 kHz  | cut +65 ms near; sfx -1 ms OK
+ 0:09.23  CUE    sfx S2-sifir-1  no onset; level peak -33 ms, rising 21 dB (a soft whoosh / swell, or just the bed?)  <- CHECK
+ 0:09.41  -      high onset                                       -4.6 dBFS  +1.5 dB    57 ms   318 Hz  | sfx +7 ms OK
+ 0:09.52  -      high onset                                       -4.7 dBFS  +1.4 dB   173 ms   723 Hz  | sfx -12 ms OK
+ 0:09.64  -      high onset                                       -4.7 dBFS  +0.0 dB    57 ms  1.0 kHz  | sfx +4 ms OK
+ 0:09.75  -      high onset                                      -10.1 dBFS  +0.0 dB     8 ms   638 Hz  | sfx -15 ms OK
+ 0:09.87  -      high onset                                      -10.2 dBFS  +4.0 dB   107 ms  3.7 kHz  | sfx -1 ms OK
+ 0:10.00  GAP    drop 0.45 s (-44 LUFS)
+ 0:10.33  CUT     no onset within 100 ms (strong sound at +161 ms)  <- NO HIT
+ 0:10.86  -      full swell                                       -4.5 dBFS +41.6 dB   100 ms   588 Hz  | strong accent (summary)
+ 0:11.88  VOICE  short vocal sound / plucked string note          -2.7 dBFS +29.0 dB   322 ms   239 Hz  | cut -85 ms near; sfx -51 ms near
+ 0:12.25  GAP    drop 0.55 s (-41 LUFS)
+ 0:12.30  CUT     no onset within 100 ms (strong sound at -220 ms)  <- NO HIT
+ 0:12.70  CUT     no onset within 100 ms (strong sound at -111 ms)  <- NO HIT
+ 0:12.84  WHOOSH fast air whoosh / punchy impact hit              -4.5 dBFS +28.5 dB   267 ms   475 Hz  | sfx +3 ms OK
+ 0:12.95  UI     chat message pop / short vocal sound             -4.5 dBFS +28.2 dB   166 ms   530 Hz  | cut +46 ms near
+ 0:13.10  GAP    drop 1.10 s (-40 LUFS)
+ 0:15.35  GAP    drop 0.45 s (-42 LUFS)
+ 0:15.70  CUT     no onset within 100 ms (strong sound at +129 ms)  <- NO HIT
+== 0:15.85-0:22.30  chiptune video game music?, vocal chop, confident and cool  (+31 untagged onsets, 4.8/s)
+ 0:17.70  GAP    drop 0.30 s (-43 LUFS)
+ 0:17.95  NOTE   glockenspiel note / chat message pop             -4.7 dBFS +34.0 dB  2000 ms   740 Hz  | cut +79 ms near
+ 0:18.90  GAP    drop 0.35 s (-36 LUFS)
+ 0:19.02  -      high onset                                      -17.4 dBFS  +0.0 dB   811 ms   737 Hz  | cut +50 ms near
+ 0:19.53  WHOOSH whip pan whoosh transition / uplifter sweep     -11.1 dBFS +14.3 dB    63 ms   612 Hz  | cut +93 ms near; cut -41 ms near; sfx -7 ms OK
+ 0:19.80  GAP    drop 0.60 s (-41 LUFS)
+ 0:20.92  -      high onset                                      -19.5 dBFS  +0.0 dB    30 ms  3.3 kHz  | cut -11 ms OK
+ 0:20.95  GAP    drop 1.30 s (-41 LUFS)
+ 0:22.24  -      high onset                                       -4.7 dBFS +29.0 dB  1653 ms  4.9 kHz  | cut +39 ms near
+ 0:22.29  UI     chat message pop / whip pan whoosh transition    -4.7 dBFS +36.8 dB   155 ms   439 Hz  | strong accent (summary)
+== 0:22.30-0:37.30  funk music, vocal chop, confident and cool  (+74 untagged onsets, 4.9/s)
+ 0:22.85  GAP    drop 1.10 s (-39 LUFS)
+ 0:23.95  FOLEY  lego bricks clicking / chat message pop          -4.7 dBFS +28.7 dB  1464 ms   682 Hz  | cut +45 ms near
+ 0:24.94  -      high onset                                       -4.5 dBFS  +7.1 dB    88 ms   632 Hz  | sfx +36 ms near
+ 0:25.40  GAP    drop 0.45 s (-36 LUFS)
+ 0:25.72  -      low onset                                        -4.5 dBFS  +7.5 dB  2000 ms   445 Hz  | cut -14 ms OK
+ 0:26.73  -      high swell                                       -3.8 dBFS +34.2 dB   400 ms  1.0 kHz  | sfx +197 ms swell
+ 0:27.38  -      high onset                                       -4.7 dBFS +12.0 dB   179 ms   772 Hz  | cut -19 ms OK
+ 0:28.03  CUT     no onset within 100 ms (strong sound at +147 ms)  <- NO HIT
+ 0:29.00  GAP    drop 0.45 s (-39 LUFS)
+ 0:29.37  CUT     no onset within 100 ms (strong sound at +108 ms)  <- NO HIT
+ 0:30.29  WHOOSH whip pan whoosh transition / uplifter sweep     -11.0 dBFS +13.9 dB   423 ms  2.6 kHz  | sfx -11 ms OK
+ 0:30.54  -      low onset                                       -16.2 dBFS  +2.5 dB    24 ms   621 Hz  | cut +4 ms OK
+ 0:30.70  GAP    drop 0.35 s (-32 LUFS)
+ 0:30.93  CUT     no onset within 100 ms (strong sound at +117 ms)  <- NO HIT
+ 0:31.25  GAP    drop 0.50 s (-42 LUFS)
+ 0:32.34  UI     chat message pop / plucked string note           -3.9 dBFS +45.9 dB   460 ms   462 Hz  | sfx -93 ms near; strong accent (summary)
+ 0:32.48  -      high onset                                       -4.7 dBFS  +0.9 dB   122 ms   846 Hz  | cut +16 ms OK
+ 0:33.33  NOTE   plucked string note / chat message pop           -4.8 dBFS +22.4 dB   119 ms   367 Hz
+ 0:33.38  -      low onset                                        -7.5 dBFS  +8.4 dB    34 ms   696 Hz  | cut -18 ms OK
+ 0:33.45  GAP    drop 0.40 s (-36 LUFS)
+ 0:33.88  UI     chat message pop / spoken word                   -4.6 dBFS +27.7 dB    85 ms   250 Hz  | sfx -85 ms near
+ 0:35.15  FOLEY  bubble pop / chat message pop                    -4.6 dBFS +21.5 dB   323 ms  4.2 kHz  | cut +83 ms near; sfx +17 ms OK
+ 0:35.50  GAP    drop 0.45 s (-37 LUFS)
+ 0:36.70  GAP    drop 0.35 s (-38 LUFS)
+ 0:36.93  CUT     no onset within 100 ms (strong sound at +155 ms)  <- NO HIT
+
+NOTES  times, levels, loudness and sync offsets are measurements. Event kinds / tags are CLAP guesses: '?' = the event is less than 12 dB over its bed, so its excerpt is mostly bed and the tag a weak hint (right kind about 1 in 4 on the tuning mixes, 1 in 2 for exposed events; often wrong on music and voice). Where AST ran, its speech overrides the kind with VOICE. Section genres marked ? are weak. 'over bed' = how far the event rises over the level just before it; 'silent' = that bed was below -60 (after a gap the rise means nothing). Full data: --json.

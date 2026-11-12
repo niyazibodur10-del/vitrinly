@@ -1,0 +1,15 @@
+K1929D-S01.mp4 1080,1920,  15.616000  black=0
+K1929D-S06.mp4 1080,1920,  34.154000  black=0
+K1929D-S10.mp4 1080,1920,  39.253000  black=0
+K1929D-S12.mp4 1080,1920,  33.408000  black=0
+K1929D-S16.mp4 1080,1920,  27.434000  black=0
+K1929D-S20.mp4 1080,1920,  25.920000  black=0
+K1929D-S21.mp4 1080,1920,  31.317000  black=0
+K1929D-Sh1Ek.mp4 1080,1920,  9.514000  black=0
+K1929D-Sh2Ek.mp4 1080,1920,  6.549000  black=0
+## Sh1Ek senkron (formant bandı)
+en iyi gecikme: 1 kare (33 ms), korelasyon 0.58, gecikme 0'da 0.54
+GEÇTİ
+## Sh2Ek senkron (formant bandı)
+en iyi gecikme: 2 kare (67 ms), korelasyon 0.52, gecikme 0'da 0.47
+GEÇTİ

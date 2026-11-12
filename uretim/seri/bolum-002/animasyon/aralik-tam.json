@@ -1,0 +1,128 @@
+[
+{
+"kim": "jake",
+"bas": 3.37,
+"bitis": 6.25,
+"sahne_bas": 3.37,
+"sahne_bitis": 6.25,
+"z0": 1.02,
+"z1": 1.07
+},
+{
+"kim": "mike",
+"bas": 6.25,
+"bitis": 7.7,
+"sahne_bas": 6.25,
+"sahne_bitis": 7.7,
+"z0": 1.04,
+"z1": 1.11
+},
+{
+"kim": "jake",
+"bas": 7.7,
+"bitis": 9.9,
+"sahne_bas": 7.7,
+"sahne_bitis": 9.9,
+"z0": 1.02,
+"z1": 1.06
+},
+{
+"kim": "mike",
+"bas": 12.7,
+"bitis": 13.85,
+"sahne_bas": 12.7,
+"sahne_bitis": 13.85,
+"z0": 1.05,
+"z1": 1.08
+},
+{
+"kim": "mike",
+"bas": 17.7,
+"bitis": 20.05,
+"sahne_bas": 17.7,
+"sahne_bitis": 20.05,
+"z0": 1.03,
+"z1": 1.08
+},
+{
+"kim": "jake",
+"bas": 25.3,
+"bitis": 27.6,
+"sahne_bas": 25.3,
+"sahne_bitis": 27.6,
+"z0": 1.02,
+"z1": 1.06
+},
+{
+"kim": "jake",
+"bas": 33.1,
+"bitis": 35.2,
+"sahne_bas": 33.1,
+"sahne_bitis": 35.2,
+"z0": 1.02,
+"z1": 1.06
+},
+{
+"kim": "jake",
+"bas": 49.3,
+"bitis": 50.5,
+"sahne_bas": 49.3,
+"sahne_bitis": 50.5,
+"z0": 1.03,
+"z1": 1.06
+},
+{
+"kim": "mike",
+"bas": 50.5,
+"bitis": 51.7,
+"sahne_bas": 50.5,
+"sahne_bitis": 51.7,
+"z0": 1.04,
+"z1": 1.07
+},
+{
+"kim": "mike",
+"bas": 55.5,
+"bitis": 58.4,
+"sahne_bas": 54.1,
+"sahne_bitis": 58.4,
+"z0": 1.02,
+"z1": 1.12
+},
+{
+"kim": "mike",
+"bas": 60.800000000000004,
+"bitis": 62.5,
+"sahne_bas": 59.4,
+"sahne_bitis": 62.5,
+"z0": 1.03,
+"z1": 1.08
+},
+{
+"kim": "jake",
+"bas": 62.5,
+"bitis": 66.8,
+"sahne_bas": 62.5,
+"sahne_bitis": 66.8,
+"z0": 1.02,
+"z1": 1.07
+},
+{
+"kim": "jake",
+"bas": 72.5,
+"bitis": 74.45,
+"sahne_bas": 72.5,
+"sahne_bitis": 74.45,
+"z0": 1.02,
+"z1": 1.06
+},
+{
+"kim": "mike",
+"bas": 74.45,
+"bitis": 77.75,
+"sahne_bas": 74.45,
+"sahne_bitis": 77.75,
+"z0": 1.03,
+"z1": 1.08
+}
+]

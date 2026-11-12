@@ -1,0 +1,1 @@
+{"girdi": "canva-ham/M05.png", "zemin_bgr": [123, 89, 58], "kenar_artigi_orani": 0.0001, "sacak_px": 0, "on_plan_px": 583294, "kapali_delikler_>=100px": [{"alan": 1902, "d_med": 2.4, "dolduruldu": false}, {"alan": 1129, "d_med": 2.7, "dolduruldu": false}], "on_plan_bbox_xyxy": [522, 38, 1430, 1079]}

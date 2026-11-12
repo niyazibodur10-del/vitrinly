@@ -1,0 +1,8 @@
+== JAKE
+bant: 700-3000 Hz
+en iyi gecikme: 1 kare (33 ms), korelasyon 0.35, gecikme 0'da 0.32
+GEÇTİ
+== MIKE
+bant: 700-3000 Hz
+en iyi gecikme: 1 kare (33 ms), korelasyon 0.33, gecikme 0'da 0.33
+GEÇTİ

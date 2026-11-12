@@ -1,0 +1,15 @@
+{
+ "cerulli_2024_12_05": {"url": "https://www.cerulli.com/press-releases/cerulli-anticipates-124-trillion-in-wealth-will-transfer-through-2048",
+   "toplam_T": 124, "mirascilara_T": 105, "bagis_T": 18, "ese_T": 54, "dul_kadin_T": 40, "boomer_ve_yasli_T": 100, "boomer_pay_yuzde": 81,
+   "hnw_T": 62, "hnw_hane_yuzde": 2, "millennial_T": 46, "genx_10y_T": 14, "genx_mill_T": 85, "donem_son": 2048,
+   "alinti_es": "$54 trillion will be passed on to spouses before eventually transferring intergenerationally to heirs and to charities"},
+ "bofa_2026_09_30": {"kaynak": "PRNewswire bülteni (finviz kopyası) + Fortune 2026-10-06", "hazir_2026": 47, "hazir_2024": 55, "taahhut_2026": 65, "taahhut_2024": 76, "n": 1431, "esik_M_usd": 3, "saha": "2026-01-08..2026-02-05"},
+ "carescout_2026_03_02": {"url": "https://investor.genworth.com/news-events/press-releases/detail/1054", "nh_ozel_gun": 355, "nh_ozel_yil": 129575, "nh_ortak_gun": 315, "nh_ortak_yil": 114975, "assisted_ay": 6200, "assisted_yil": 74400, "veri": "2025 Tem-Kas, >25.000 fiyat, ulusal medyan"},
+ "aspe_2022_08": {"url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE-PURL-gpo212746/pdf/GOVPUB-HE-PURL-gpo212746.pdf", "ltss_ihtiyac_yuzde": 56, "5yil_uzeri_yuzde": 22, "ort_maliyet_usd_2020": 120900, "cepten_yuzde": 37, "100k_uzeri_cepten_yuzde": 14, "yasam_65_sonrasi_yil": 20.5, "kohort": "2021-2025'te 65 olanlar"},
+ "cdc_2024_secondary": {"kaynak": "CBS/HealthLeaders: Mortality in the United States, 2024", "yasam_65_yil": 19.7},
+ "irs_2026": {"url": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill", "muafiyet_usd": 15000000, "muafiyet_2025_usd": 13990000},
+ "scf_2022": {"url": "https://www.federalreserve.gov/publications/files/scf23.pdf", "medyan_65_74_k": 409.9, "medyan_75p_k": 335.6, "ort_65_74_k": 1794.6, "ort_75p_k": 1624.1, "birim": "bin 2022 $"},
+ "govuk_iht": {"url": "https://www.gov.uk/inheritance-tax", "esik_gbp": 325000, "oran_yuzde": 40},
+ "medicaid_estate_recovery": {"url": "https://www.medicaid.gov/medicaid/eligibility-policy/estate-recovery", "yas": 55},
+ "fed_hedef_enflasyon_yuzde": 2
+}

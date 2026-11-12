@@ -1,0 +1,10 @@
+srt blok=228 maks satır=42 kar, maks süre=5.5 sn, çakışma=0
+ara (tahmini zamanlı): [('and', 383.49), ('and', 424.03)]
+kelime=1701 (kilitli metin 1701) whisper=1669 bolme=30 ara=2
+atilan Whisper kelimeleri (metinde karşılığı yok): [(547.88, 'Yes.', 0.118), (600.32, 'up.', 0.223)]
+altyazi_kelime=1701 whisper_kelime=1613 eslesen=1468 (%86) ort=16 ms p95=63 ms maks=920 ms
+eşik üstü: [('Three', 97), ("I'm", 81), ('The', 75), ('By', 832), ('In', 109), ('So', 101), ('Here', 128), ('You', 634), ('Stock', -251), ('Bank', -168), ('And', -192), ('Remember', -213), ('Door', -170), ('In', 563), ('Ordinary', -173), ('That', 617), ('When', 605), ('Half', 150), ("That's", 554), ('Right?', -240)]
+KALDI
+cümle=192 | hizalı baş fark p50=4 p95=7 maks=23 ms | hizalı son fark p50=7 p95=15 maks=23 ms
+karşılaştırma ham Whisper en yakın kelime başı: p50=46 p95=257 maks=499 ms
+KAPI GEÇTİ

@@ -1,0 +1,459 @@
+{
+ "bolum": "001",
+ "surum": 1,
+ "sahip": "muzik-ses-tasarimcisi",
+ "not": "Göreli cue: zamanlar satır kimliğine (veri/satirlar.py) bağlı. Mutlak zaman + kare: python3 uretim/seri/ses-kimligi/bolum-ses.py cevir ... → ses-cue.mutlak.json. Gorsel olay karesi (animasyon) gelirse --gorsel ile cue kimliği bazında ezilir. Seviye: muzik 'ses_lu' = diyaloğun etkin LUFS'una göre (konuşma altında); boşlukta +acik_db. SFX 'db' = diyaloğa göre yaklaşık momentary-max farkı. 'hiza': apex = dosyanın zarf tepesi cue anına; onset = ilk örnek > tepe·0.1 cue anına. Şablon efektleri bu stem'de: bölüm tanımında ses.sablonSfx=false.",
+ "muzik": {
+  "ses_lu": -21,
+  "acik_db": 6,
+  "acik_min_bosluk": 0.6,
+  "atak": 0.12,
+  "birak": 0.35,
+  "parcalar": [
+   {
+    "id": "M-damga",
+    "dosya": "seri/ortak/muzik/jingle-flip.flac",
+    "bas": {
+     "sablon": "damga"
+    },
+    "ses_lu": -20.5,
+    "duck": false,
+    "dongu": false,
+    "ruh": "seri damgası (coin-flip ting + marimba F5-A5-C6 + F majör akor)"
+   },
+   {
+    "id": "M-strut",
+    "dosya": "seri/ortak/muzik/dongu-strut-112.flac",
+    "bas": {
+     "satir": "M01",
+     "nokta": "bas",
+     "ofset": -0.15
+    },
+    "bitis": {
+     "satir": "J06",
+     "nokta": "bitis",
+     "ofset": 0.02
+    },
+    "fade_in": 0.4,
+    "fade_out": 0.03,
+    "dongu": true,
+    "ruh": "sitcom slap bas + şıklatma, 112 BPM, F majör (kurulum, şakalar)"
+   },
+   {
+    "id": "M-hustle",
+    "dosya": "seri/ortak/muzik/dongu-hustle-124.flac",
+    "bas": {
+     "satir": "J07",
+     "nokta": "bas",
+     "ofset": -0.25
+    },
+    "bitis": {
+     "satir": "J10",
+     "nokta": "bitis",
+     "ofset": 0.05
+    },
+    "fade_in": 0.08,
+    "fade_out": 0.25,
+    "dongu": true,
+    "ruh": "pizzicato arpej, 124 BPM, C majör (seçenekler 2–3, tempo artışı)"
+   },
+   {
+    "id": "M-gerilim",
+    "dosya": "seri/ortak/muzik/gerilim-saat-96.flac",
+    "bas": {
+     "satir": "J10",
+     "nokta": "bitis",
+     "ofset": 0.05
+    },
+    "bitis": {
+     "satir": "B02",
+     "nokta": "bitis",
+     "ofset": 0.1
+    },
+    "fade_in": 0.6,
+    "fade_out": 0.15,
+    "dongu": true,
+    "ruh": "oyun şovu saati, 96 BPM, D minör (çatışma + karar anı)"
+   },
+   {
+    "id": "M-kapanis",
+    "dosya": "seri/ortak/muzik/jingle-flip.flac",
+    "bas": {
+     "satir": "B02",
+     "nokta": "bitis",
+     "ofset": 0.35
+    },
+    "ses_lu": -10,
+    "duck": false,
+    "dongu": false,
+    "ruh": "'Ep. 2: YOUR call' kart damgası (açılış damgasının tekrarı)"
+   }
+  ]
+ },
+ "sfx": [
+  {
+   "id": "S1-carpma",
+   "olay": "100 dolar tezgâha çarpar (SLAM) + kamera sarsıntısı",
+   "dosya": "seri/ortak/sfx/tezgah-carpma.flac",
+   "an": {
+    "satir": "M01",
+    "nokta": "bas",
+    "ofset": -0.4,
+    "en_az": 0.0
+   },
+   "hiza": "onset",
+   "db": 0
+  },
+  {
+   "id": "S1-hardal",
+   "olay": "'mustard' anında hardal ikonu pop",
+   "dosya": "seri/ortak/sfx/pop-pluck.flac",
+   "an": {
+    "satir": "J01",
+    "kelime": "mustard"
+   },
+   "hiza": "onset",
+   "db": -9
+  },
+  {
+   "id": "S2-tahta-100",
+   "olay": "tahtaya '$100' yazılır",
+   "dosya": "seri/ortak/sfx/tahta-kalem-kisa.flac",
+   "an": {
+    "satir": "M02",
+    "nokta": "bas",
+    "ofset": -0.3
+   },
+   "hiza": "onset",
+   "db": -10
+  },
+  {
+   "id": "S2-tahta-milyon",
+   "olay": "tahtaya '$1,000,000' yazılır",
+   "dosya": "seri/ortak/sfx/tahta-kalem-kisa.flac",
+   "an": {
+    "satir": "M03",
+    "nokta": "bas",
+    "ofset": -0.25
+   },
+   "hiza": "onset",
+   "db": -11
+  },
+  {
+   "id": "S2-sifir-1",
+   "olay": "sıfır 1 'tık'",
+   "dosya": "seri/ortak/sfx/tik.flac",
+   "an": {
+    "satir": "M03",
+    "nokta": "bas",
+    "ofset": 0.2
+   },
+   "hiza": "onset",
+   "db": -8
+  },
+  {
+   "id": "S2-sifir-2",
+   "olay": "sıfır 2 'tık'",
+   "dosya": "seri/ortak/sfx/tik.flac",
+   "an": {
+    "satir": "M03",
+    "nokta": "bas",
+    "ofset": 0.32
+   },
+   "hiza": "onset",
+   "db": -8
+  },
+  {
+   "id": "S2-sifir-3",
+   "olay": "sıfır 3 'tık'",
+   "dosya": "seri/ortak/sfx/tik.flac",
+   "an": {
+    "satir": "M03",
+    "nokta": "bas",
+    "ofset": 0.44
+   },
+   "hiza": "onset",
+   "db": -8
+  },
+  {
+   "id": "S2-sifir-4",
+   "olay": "sıfır 4 'tık'",
+   "dosya": "seri/ortak/sfx/tik.flac",
+   "an": {
+    "satir": "M03",
+    "nokta": "bas",
+    "ofset": 0.56
+   },
+   "hiza": "onset",
+   "db": -8
+  },
+  {
+   "id": "S2-sifir-5",
+   "olay": "sıfır 5 'tık'",
+   "dosya": "seri/ortak/sfx/tik.flac",
+   "an": {
+    "satir": "M03",
+    "nokta": "bas",
+    "ofset": 0.68
+   },
+   "hiza": "onset",
+   "db": -8
+  },
+  {
+   "id": "S2-sifir-6",
+   "olay": "sıfır 6 'tık'",
+   "dosya": "seri/ortak/sfx/tik.flac",
+   "an": {
+    "satir": "M03",
+    "nokta": "bas",
+    "ofset": 0.8
+   },
+   "hiza": "onset",
+   "db": -8
+  },
+  {
+   "id": "S2-you-decide",
+   "olay": "'You do' → portreye kesme + 'YOU DECIDE' yazısı",
+   "dosya": "seri/ortak/sfx/whoosh-kart.flac",
+   "an": {
+    "satir": "J03",
+    "kelime": "You"
+   },
+   "hiza": "apex",
+   "db": -8
+  },
+  {
+   "id": "S3-telefon",
+   "olay": "telefon alttan kadraja girer (3 ilan kartı)",
+   "dosya": "seri/ortak/sfx/swipe.flac",
+   "an": {
+    "satir": "M04",
+    "nokta": "bas",
+    "ofset": 0.05
+   },
+   "hiza": "apex",
+   "db": -9
+  },
+  {
+   "id": "S4-ilan-bisiklet",
+   "olay": "ilan kartı 'ROAD BIKE · $60' tam kadraj",
+   "dosya": "seri/ortak/sfx/whoosh-kart.flac",
+   "an": {
+    "satir": "M06",
+    "nokta": "bas",
+    "ofset": -0.05
+   },
+   "hiza": "apex",
+   "db": -6
+  },
+  {
+   "id": "S4-tahta-hesap",
+   "olay": "köşe tahta '$100 − $60 = $40' yazılır",
+   "dosya": "seri/ortak/sfx/tahta-kalem-uzun.flac",
+   "an": {
+    "satir": "J05",
+    "kelime": "money"
+   },
+   "hiza": "onset",
+   "db": -13
+  },
+  {
+   "id": "S4-gag-durus",
+   "olay": "'Tires aren't.' sert punch-in sonrası 0,3 sn tutuş: müzik plak cızırtısıyla durur",
+   "dosya": "seri/ortak/sfx/plak-cizik.flac",
+   "an": {
+    "satir": "J06",
+    "nokta": "bitis",
+    "ofset": 0.02
+   },
+   "hiza": "onset",
+   "db": -4
+  },
+  {
+   "id": "S5-ilan-sifonyer",
+   "olay": "ilan kartı 'DRESSER · FREE'",
+   "dosya": "seri/ortak/sfx/whoosh-kart.flac",
+   "an": {
+    "satir": "J07",
+    "kelime": "dresser."
+   },
+   "hiza": "apex",
+   "db": -8
+  },
+  {
+   "id": "S5-portre-saskin",
+   "olay": "PORTRE-M şaşkın 0,5 sn ('Free?')",
+   "dosya": "seri/ortak/sfx/pop-yumusak.flac",
+   "an": {
+    "satir": "M08",
+    "nokta": "bas",
+    "ofset": -0.06
+   },
+   "hiza": "onset",
+   "db": -10
+  },
+  {
+   "id": "S5-siluet-araba",
+   "olay": "sessiz grafik: minik hatchback silueti",
+   "dosya": "seri/ortak/sfx/pop-yumusak.flac",
+   "an": {
+    "satir": "J08",
+    "nokta": "bitis",
+    "ofset": 0.15
+   },
+   "hiza": "onset",
+   "db": -5
+  },
+  {
+   "id": "S5-siluet-sifonyer",
+   "olay": "sessiz grafik: şifonyer silueti (↔)",
+   "dosya": "seri/ortak/sfx/pop-yumusak.flac",
+   "an": {
+    "satir": "J08",
+    "nokta": "bitis",
+    "ofset": 0.5
+   },
+   "hiza": "onset",
+   "db": -5
+  },
+  {
+   "id": "S5-ikon-truck",
+   "olay": "ikon: truck",
+   "dosya": "seri/ortak/sfx/pop-pluck.flac",
+   "an": {
+    "satir": "M09",
+    "kelime": "truck,"
+   },
+   "hiza": "onset",
+   "db": -11
+  },
+  {
+   "id": "S5-ikon-paint",
+   "olay": "ikon: paint can",
+   "dosya": "seri/ortak/sfx/pop-pluck.flac",
+   "an": {
+    "satir": "M09",
+    "kelime": "paint,"
+   },
+   "hiza": "onset",
+   "db": -11
+  },
+  {
+   "id": "S5-ikon-clock",
+   "olay": "ikon: clock",
+   "dosya": "seri/ortak/sfx/pop-pluck.flac",
+   "an": {
+    "satir": "M09",
+    "kelime": "wait."
+   },
+   "hiza": "onset",
+   "db": -11
+  },
+  {
+   "id": "S6-ilan-kutu",
+   "olay": "ilan kartı 'GARAGE SALE BOX · $40'",
+   "dosya": "seri/ortak/sfx/whoosh-kart.flac",
+   "an": {
+    "satir": "M10",
+    "nokta": "bas",
+    "ofset": -0.05
+   },
+   "hiza": "apex",
+   "db": -6
+  },
+  {
+   "id": "S6-kutu-titrer",
+   "olay": "kutu kapağı titrer",
+   "dosya": "seri/ortak/sfx/kutu-tikirti.flac",
+   "an": {
+    "satir": "M10",
+    "kelime": "box"
+   },
+   "hiza": "onset",
+   "db": -12
+  },
+  {
+   "id": "S6-ikon-kartus",
+   "olay": "split: parlayan kartuş ikonu ('gem')",
+   "dosya": "seri/ortak/sfx/ding.flac",
+   "an": {
+    "satir": "J10",
+    "kelime": "gem."
+   },
+   "hiza": "onset",
+   "db": -13
+  },
+  {
+   "id": "S6-ikon-disk",
+   "olay": "split: çizik disk yığını ikonu ('scratched')",
+   "dosya": "seri/ortak/sfx/pop-yumusak.flac",
+   "an": {
+    "satir": "J10",
+    "kelime": "scratched"
+   },
+   "hiza": "onset",
+   "db": -11
+  },
+  {
+   "id": "S7-gerilim",
+   "olay": "1,0 sn sessiz bakışma, banknot tezgâhta, yavaş push-in (gerilim girişi)",
+   "dosya": "seri/ortak/sfx/gerilim-dusus.flac",
+   "an": {
+    "satir": "J10",
+    "nokta": "bitis",
+    "ofset": 0.08
+   },
+   "hiza": "onset",
+   "db": -6
+  },
+  {
+   "id": "S8-abone-klik",
+   "olay": "abone/takip kartı: imleç tıklar (şablon aboneBas + 1,3 sn)",
+   "dosya": "seri/ortak/sfx/fare-klik.flac",
+   "an": {
+    "sablon": "abone_klik"
+   },
+   "hiza": "onset",
+   "db": -6,
+   "tur": "abone"
+  },
+  {
+   "id": "S8-karar-karti",
+   "olay": "seçim kartı girer (şablon kararBas)",
+   "dosya": "seri/ortak/sfx/whoosh-kart.flac",
+   "an": {
+    "sablon": "karar"
+   },
+   "hiza": "apex",
+   "db": -7
+  },
+  {
+   "id": "S8-ep2-ding",
+   "olay": "kare donar, 'Ep. 2: YOUR call' kartı + ding",
+   "dosya": "seri/ortak/sfx/ding.flac",
+   "an": {
+    "satir": "B02",
+    "nokta": "bitis",
+    "ofset": 0.12
+   },
+   "hiza": "onset",
+   "db": -4
+  }
+ ],
+ "entegrasyon": {
+  "bolum_ses": {
+   "diyalog": "seri/bolum-001/<diyalog>.wav",
+   "muzik": {
+    "dosya": "seri/bolum-001/muzik-stem.wav",
+    "ses": 1
+   },
+   "sfx": {
+    "dosya": "seri/bolum-001/sfx-stem.wav",
+    "ses": 1
+   },
+   "sablonSfx": false
+  },
+  "uyari": "Bolum.tsx muzik varsayılan volume 0.18 → ses: 1 verilmezse müzik 15 dB düşer. Bölüm sure'u stem süresiyle aynı olmalı (81.472 = son satır bitişi + SON_TUTUS 3.0); farklıysa: bolum-ses.py cevir --sure <S> --karar-sure <k> ve miks yeniden.",
+  "yeniden_uret": "~/.finansal-arac/earshot-venv/bin/python uretim/seri/ses-kimligi/bolum-ses.py cevir uretim/seri/bolum-001/ses-cue.json uretim/seri/bolum-001/ses/bolum-001.zaman.json uretim/seri/bolum-001/veri/satirlar.py --kelimeler uretim/seri/bolum-001/ses/kelimeler.json -o uretim/seri/bolum-001/ses-cue.mutlak.json && ~/.finansal-arac/earshot-venv/bin/python uretim/seri/ses-kimligi/bolum-ses.py miks uretim/seri/bolum-001/ses-cue.mutlak.json uretim/seri/bolum-001/ses/bolum-001.wav uretim/seri/bolum-001/ses-miks && cp uretim/seri/bolum-001/ses-miks/*-stem.wav video/public/seri/bolum-001/"
+ }
+}

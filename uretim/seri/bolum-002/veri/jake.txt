@@ -1,0 +1,15 @@
+J01	Was he right? Brenda has two flat tires.
+J03	Next time, you decide. Please.
+J04	Sixty dollars. Did you haggle?
+J05	So, no.
+J06	I checked the serial number, though. Not stolen.
+J07	Air is free. Tubes are not.
+J08	Both tubes are torn. New ones are eight bucks each.
+J09	Tires aren't free. I did say that.
+J10	She cost us seventy-six. So, sixty-four profit. If she sells.
+J11	He's not on his way.
+J12	Forty-five minutes of traffic?
+J13	Ninety is still fourteen profit. Fast. And safe.
+J14	And if the next guy doesn't show either?
+J15	And maybe he walks. Then Brenda lives here.
+B02	Tell us in the comments.

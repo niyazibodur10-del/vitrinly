@@ -1,0 +1,474 @@
+{
+ "bolum": "001",
+ "sure": 74.55,
+ "karar_bas": 69.55,
+ "fps": 30,
+ "konusma": [
+  [
+   0.15,
+   1.643
+  ],
+  [
+   2.063,
+   5.001
+  ],
+  [
+   5.521,
+   7.014
+  ],
+  [
+   7.434,
+   8.75
+  ],
+  [
+   8.97,
+   10.026
+  ],
+  [
+   10.446,
+   12.298
+  ],
+  [
+   12.818,
+   15.373
+  ],
+  [
+   15.793,
+   17.764
+  ],
+  [
+   17.984,
+   18.942
+  ],
+  [
+   19.592,
+   25.426
+  ],
+  [
+   25.846,
+   27.92
+  ],
+  [
+   28.14,
+   29.023
+  ],
+  [
+   29.443,
+   30.269
+  ],
+  [
+   31.019,
+   34.936
+  ],
+  [
+   35.156,
+   36.612
+  ],
+  [
+   37.032,
+   39.434
+  ],
+  [
+   40.454,
+   44.071
+  ],
+  [
+   44.491,
+   45.931
+  ],
+  [
+   46.451,
+   51.694
+  ],
+  [
+   52.114,
+   55.212
+  ],
+  [
+   56.432,
+   58.304
+  ],
+  [
+   58.724,
+   62.785
+  ],
+  [
+   63.235,
+   64.825
+  ],
+  [
+   65.645,
+   67.436
+  ],
+  [
+   67.856,
+   69.018
+  ]
+ ],
+ "muzik": {
+  "ses_lu": -21,
+  "acik_db": 6,
+  "acik_min_bosluk": 0.6,
+  "atak": 0.12,
+  "birak": 0.35,
+  "parcalar": [
+   {
+    "id": "M-damga",
+    "dosya": "seri/ortak/muzik/jingle-flip.flac",
+    "bas": 0.0,
+    "ses_lu": -20.5,
+    "duck": false,
+    "dongu": false,
+    "ruh": "seri damgası (coin-flip ting + marimba F5-A5-C6 + F majör akor)",
+    "bitis": null
+   },
+   {
+    "id": "M-strut",
+    "dosya": "seri/ortak/muzik/dongu-strut-112.flac",
+    "bas": 0.0,
+    "bitis": 30.289,
+    "fade_in": 0.4,
+    "fade_out": 0.03,
+    "dongu": true,
+    "ruh": "sitcom slap bas + şıklatma, 112 BPM, F majör (kurulum, şakalar)"
+   },
+   {
+    "id": "M-hustle",
+    "dosya": "seri/ortak/muzik/dongu-hustle-124.flac",
+    "bas": 30.769,
+    "bitis": 55.262,
+    "fade_in": 0.08,
+    "fade_out": 0.25,
+    "dongu": true,
+    "ruh": "pizzicato arpej, 124 BPM, C majör (seçenekler 2–3, tempo artışı)"
+   },
+   {
+    "id": "M-gerilim",
+    "dosya": "seri/ortak/muzik/gerilim-saat-96.flac",
+    "bas": 55.262,
+    "bitis": 69.118,
+    "fade_in": 0.6,
+    "fade_out": 0.15,
+    "dongu": true,
+    "ruh": "oyun şovu saati, 96 BPM, D minör (çatışma + karar anı)"
+   },
+   {
+    "id": "M-kapanis",
+    "dosya": "seri/ortak/muzik/jingle-flip.flac",
+    "bas": 69.368,
+    "ses_lu": -10,
+    "duck": false,
+    "dongu": false,
+    "ruh": "'Ep. 2: YOUR call' kart damgası (açılış damgasının tekrarı)",
+    "bitis": null
+   }
+  ]
+ },
+ "sfx": [
+  {
+   "id": "S1-carpma",
+   "olay": "100 dolar tezgâha çarpar (SLAM) + kamera sarsıntısı",
+   "dosya": "seri/ortak/sfx/tezgah-carpma.flac",
+   "hiza": "onset",
+   "db": 0,
+   "t": 0.1,
+   "kare": 3,
+   "kaynak": "gorsel"
+  },
+  {
+   "id": "S1-hardal",
+   "olay": "'mustard' anında hardal ikonu pop",
+   "dosya": "seri/ortak/sfx/pop-pluck.flac",
+   "hiza": "onset",
+   "db": -9,
+   "t": 3.42,
+   "kare": 103,
+   "kaynak": "gorsel"
+  },
+  {
+   "id": "S2-tahta-100",
+   "olay": "tahtaya '$100' yazılır",
+   "dosya": "seri/ortak/sfx/tahta-kalem-kisa.flac",
+   "hiza": "onset",
+   "db": -10,
+   "t": 5.221,
+   "kare": 157,
+   "kaynak": "gorsel"
+  },
+  {
+   "id": "S2-tahta-milyon",
+   "olay": "tahtaya '$1,000,000' yazılır",
+   "dosya": "seri/ortak/sfx/tahta-kalem-kisa.flac",
+   "hiza": "onset",
+   "db": -11,
+   "t": 8.73,
+   "kare": 262,
+   "kaynak": "gorsel"
+  },
+  {
+   "id": "S2-sifir-1",
+   "olay": "sıfır 1 'tık'",
+   "dosya": "seri/ortak/sfx/tik.flac",
+   "hiza": "onset",
+   "db": -8,
+   "t": 9.247,
+   "kare": 277,
+   "kaynak": "gorsel"
+  },
+  {
+   "id": "S2-sifir-2",
+   "olay": "sıfır 2 'tık'",
+   "dosya": "seri/ortak/sfx/tik.flac",
+   "hiza": "onset",
+   "db": -8,
+   "t": 9.407,
+   "kare": 282,
+   "kaynak": "gorsel"
+  },
+  {
+   "id": "S2-sifir-3",
+   "olay": "sıfır 3 'tık'",
+   "dosya": "seri/ortak/sfx/tik.flac",
+   "hiza": "onset",
+   "db": -8,
+   "t": 9.522,
+   "kare": 286,
+   "kaynak": "gorsel"
+  },
+  {
+   "id": "S2-sifir-4",
+   "olay": "sıfır 4 'tık'",
+   "dosya": "seri/ortak/sfx/tik.flac",
+   "hiza": "onset",
+   "db": -8,
+   "t": 9.637,
+   "kare": 289,
+   "kaynak": "gorsel"
+  },
+  {
+   "id": "S2-sifir-5",
+   "olay": "sıfır 5 'tık'",
+   "dosya": "seri/ortak/sfx/tik.flac",
+   "hiza": "onset",
+   "db": -8,
+   "t": 9.752,
+   "kare": 293,
+   "kaynak": "gorsel"
+  },
+  {
+   "id": "S2-sifir-6",
+   "olay": "sıfır 6 'tık'",
+   "dosya": "seri/ortak/sfx/tik.flac",
+   "hiza": "onset",
+   "db": -8,
+   "t": 9.866,
+   "kare": 296,
+   "kaynak": "gorsel"
+  },
+  {
+   "id": "S2-you-decide",
+   "olay": "'You do' → portreye kesme + 'YOU DECIDE' yazısı",
+   "dosya": "seri/ortak/sfx/whoosh-kart.flac",
+   "hiza": "apex",
+   "db": -8,
+   "t": 11.92,
+   "kare": 358,
+   "kaynak": "gorsel"
+  },
+  {
+   "id": "S3-telefon",
+   "olay": "telefon alttan kadraja girer (3 ilan kartı)",
+   "dosya": "seri/ortak/sfx/swipe.flac",
+   "hiza": "apex",
+   "db": -9,
+   "t": 12.848,
+   "kare": 385,
+   "kaynak": "gorsel"
+  },
+  {
+   "id": "S4-ilan-bisiklet",
+   "olay": "ilan kartı 'ROAD BIKE · $60' tam kadraj",
+   "dosya": "seri/ortak/sfx/whoosh-kart.flac",
+   "hiza": "apex",
+   "db": -6,
+   "t": 19.547,
+   "kare": 586,
+   "kaynak": "gorsel"
+  },
+  {
+   "id": "S4-tahta-hesap",
+   "olay": "köşe tahta '$100 − $60 = $40' yazılır",
+   "dosya": "seri/ortak/sfx/tahta-kalem-uzun.flac",
+   "hiza": "onset",
+   "db": -13,
+   "t": 26.54,
+   "kare": 796,
+   "kaynak": "gorsel"
+  },
+  {
+   "id": "S4-gag-durus",
+   "olay": "'Tires aren't.' sert punch-in sonrası 0,3 sn tutuş: müzik plak cızırtısıyla durur",
+   "dosya": "seri/ortak/sfx/plak-cizik.flac",
+   "hiza": "onset",
+   "db": -4,
+   "t": 30.289,
+   "kare": 909,
+   "kaynak": "gorsel"
+  },
+  {
+   "id": "S5-ilan-sifonyer",
+   "olay": "ilan kartı 'DRESSER · FREE'",
+   "dosya": "seri/ortak/sfx/whoosh-kart.flac",
+   "hiza": "apex",
+   "db": -8,
+   "t": 32.426,
+   "kare": 973,
+   "kaynak": "gorsel"
+  },
+  {
+   "id": "S5-portre-saskin",
+   "olay": "PORTRE-M şaşkın 0,5 sn ('Free?')",
+   "dosya": "seri/ortak/sfx/pop-yumusak.flac",
+   "hiza": "onset",
+   "db": -10,
+   "t": 35.125,
+   "kare": 1054,
+   "kaynak": "gorsel"
+  },
+  {
+   "id": "S5-siluet-araba",
+   "olay": "sessiz grafik: minik hatchback silueti",
+   "dosya": "seri/ortak/sfx/pop-yumusak.flac",
+   "hiza": "onset",
+   "db": -5,
+   "t": 39.584,
+   "kare": 1188,
+   "kaynak": "gorsel"
+  },
+  {
+   "id": "S5-siluet-sifonyer",
+   "olay": "sessiz grafik: şifonyer silueti (↔)",
+   "dosya": "seri/ortak/sfx/pop-yumusak.flac",
+   "hiza": "onset",
+   "db": -5,
+   "t": 39.934,
+   "kare": 1198,
+   "kaynak": "gorsel"
+  },
+  {
+   "id": "S5-ikon-truck",
+   "olay": "ikon: truck",
+   "dosya": "seri/ortak/sfx/pop-pluck.flac",
+   "hiza": "onset",
+   "db": -11,
+   "t": 40.98,
+   "kare": 1229,
+   "kaynak": "gorsel"
+  },
+  {
+   "id": "S5-ikon-paint",
+   "olay": "ikon: paint can",
+   "dosya": "seri/ortak/sfx/pop-pluck.flac",
+   "hiza": "onset",
+   "db": -11,
+   "t": 41.52,
+   "kare": 1246,
+   "kaynak": "gorsel"
+  },
+  {
+   "id": "S5-ikon-clock",
+   "olay": "ikon: clock",
+   "dosya": "seri/ortak/sfx/pop-pluck.flac",
+   "hiza": "onset",
+   "db": -11,
+   "t": 42.02,
+   "kare": 1261,
+   "kaynak": "gorsel"
+  },
+  {
+   "id": "S6-ilan-kutu",
+   "olay": "ilan kartı 'GARAGE SALE BOX · $40'",
+   "dosya": "seri/ortak/sfx/whoosh-kart.flac",
+   "hiza": "apex",
+   "db": -6,
+   "t": 46.451,
+   "kare": 1394,
+   "kaynak": "gorsel"
+  },
+  {
+   "id": "S6-kutu-titrer",
+   "olay": "kutu kapağı titrer",
+   "dosya": "seri/ortak/sfx/kutu-tikirti.flac",
+   "hiza": "onset",
+   "db": -12,
+   "t": 48.28,
+   "kare": 1448,
+   "kaynak": "gorsel"
+  },
+  {
+   "id": "S6-ikon-kartus",
+   "olay": "split: parlayan kartuş ikonu ('gem')",
+   "dosya": "seri/ortak/sfx/ding.flac",
+   "hiza": "onset",
+   "db": -13,
+   "t": 52.5,
+   "kare": 1575,
+   "kaynak": "gorsel"
+  },
+  {
+   "id": "S6-ikon-disk",
+   "olay": "split: çizik disk yığını ikonu ('scratched')",
+   "dosya": "seri/ortak/sfx/pop-yumusak.flac",
+   "hiza": "onset",
+   "db": -11,
+   "t": 54.471,
+   "kare": 1634,
+   "kaynak": "gorsel"
+  },
+  {
+   "id": "S7-gerilim",
+   "olay": "1,0 sn sessiz bakışma, banknot tezgâhta, yavaş push-in (gerilim girişi)",
+   "dosya": "seri/ortak/sfx/gerilim-dusus.flac",
+   "hiza": "onset",
+   "db": -6,
+   "t": 55.273,
+   "kare": 1658,
+   "kaynak": "gorsel"
+  },
+  {
+   "id": "S8-abone-klik",
+   "olay": "abone/takip kartı: imleç tıklar (şablon aboneBas + 1,3 sn)",
+   "dosya": "seri/ortak/sfx/fare-klik.flac",
+   "hiza": "onset",
+   "db": -6,
+   "tur": "abone",
+   "t": 73.25,
+   "kare": 2198,
+   "kaynak": "gorsel"
+  },
+  {
+   "id": "S8-karar-karti",
+   "olay": "seçim kartı girer (şablon kararBas)",
+   "dosya": "seri/ortak/sfx/whoosh-kart.flac",
+   "hiza": "apex",
+   "db": -7,
+   "t": 67.383,
+   "kare": 2021,
+   "kaynak": "gorsel"
+  },
+  {
+   "id": "S8-ep2-ding",
+   "olay": "kare donar, 'Ep. 2: YOUR call' kartı + ding",
+   "dosya": "seri/ortak/sfx/ding.flac",
+   "hiza": "onset",
+   "db": -4,
+   "t": 69.136,
+   "kare": 2074,
+   "kaynak": "gorsel"
+  }
+ ],
+ "girdi": {
+  "zaman": "uretim/seri/bolum-001/ses/bolum-001.zaman.json",
+  "cue": "uretim/seri/bolum-001/ses-cue.json"
+ }
+}

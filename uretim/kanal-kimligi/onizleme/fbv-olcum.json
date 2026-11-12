@@ -1,0 +1,159 @@
+{
+ "girdi_sha256_12": {
+  "uretim/seri/karakter/canva-ham/L1-A.png": "de4cc07a70ce",
+  "video/public/seri/bolum-001/ifade/mike-heyecanli-temiz.png": "77f705048e50",
+  "video/public/seri/bolum-001/ifade/jake-dusunceli.png": "74ee5a42fee6"
+ },
+ "A": {
+  "metin": [
+   {
+    "metin": "FLIP BY VOTE",
+    "kutu": [
+     872,
+     538,
+     1691,
+     693
+    ],
+    "wcag_p5": 12.58,
+    "wcag_medyan": 19.02
+   },
+   {
+    "metin": "$100",
+    "kutu": [
+     899,
+     727,
+     1082,
+     823
+    ],
+    "wcag_p5": 8.46,
+    "wcag_medyan": 11.66
+   },
+   {
+    "metin": "$1,000,000",
+    "kutu": [
+     1223,
+     727,
+     1660,
+     830
+    ],
+    "wcag_p5": 10.53,
+    "wcag_medyan": 19.02
+   },
+   {
+    "metin": "You decide every move.",
+    "kutu": [
+     965,
+     856,
+     1594,
+     914
+    ],
+    "wcag_p5": 9.49,
+    "wcag_medyan": 12.98
+   }
+  ],
+  "guvenli_alan_disi": [],
+  "yuz": {
+   "mike-heyecanli-temiz": {
+    "kutu": [
+     606,
+     530,
+     919,
+     889
+    ],
+    "guvenli_alanda": true
+   },
+   "jake-dusunceli": {
+    "kutu": [
+     1650,
+     530,
+     1961,
+     889
+    ],
+    "guvenli_alanda": true
+   }
+  },
+  "ocr_mobil_390": "FLIP BY VOTE er $100 ~ SI, 000,000, ecide every move.",
+  "ocr_mobil_x3_1170": "b FLIP BY VOTE Qs SE eee wy",
+  "ocr_mobil_390_tam": false,
+  "dosya": {
+   "yol": "uretim/kanal-kimligi/flipbyvote-banner.png",
+   "bayt": 883399,
+   "boyut": [
+    2560,
+    1440
+   ]
+  }
+ },
+ "B": {
+  "metin": [
+   {
+    "metin": "FLIP BY VOTE",
+    "kutu": [
+     543,
+     530,
+     1334,
+     679
+    ],
+    "wcag_p5": 9.8,
+    "wcag_medyan": 18.26
+   },
+   {
+    "metin": "$100",
+    "kutu": [
+     538,
+     709,
+     710,
+     800
+    ],
+    "wcag_p5": 5.13,
+    "wcag_medyan": 10.09
+   },
+   {
+    "metin": "$1,000,000",
+    "kutu": [
+     846,
+     709,
+     1258,
+     807
+    ],
+    "wcag_p5": 13.41,
+    "wcag_medyan": 18.06
+   },
+   {
+    "metin": "You decide every move.",
+    "kutu": [
+     541,
+     837,
+     1128,
+     892
+    ],
+    "wcag_p5": 7.25,
+    "wcag_medyan": 13.06
+   }
+  ],
+  "guvenli_alan_disi": [],
+  "yuz": {
+   "jake-dusunceli": {
+    "kutu": [
+     1726,
+     526,
+     2037,
+     885
+    ],
+    "guvenli_alanda": true
+   },
+   "mike-heyecanli-temiz": {
+    "kutu": [
+     1433,
+     526,
+     1746,
+     885
+    ],
+    "guvenli_alanda": true
+   }
+  },
+  "ocr_mobil_390": "FLIP BY VOTE 100) Ue 000, 000 eo",
+  "ocr_mobil_x3_1170": "FLIP BY VOTE LL) Be OL ol 000 eo",
+  "ocr_mobil_390_tam": false
+ }
+}

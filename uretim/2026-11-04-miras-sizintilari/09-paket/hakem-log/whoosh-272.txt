@@ -1,0 +1,2 @@
+dosya: 06-muzik/kaynak/ozgun/es-whoosh-whip.flac tepe 0.2024 sn (cue vurus_ofset 0.2024)
+stem'de dosya başı 272.478 · tepe 272.680 · görsel kesme 272.68 → -0.00 kare

@@ -1,0 +1,5 @@
+[render-parca] önbellek KMirasTam'ten tohumlandı
+[render-parca] iz: 7 değişen parça (0,1,7,8,9,11,12)
+[render-parca] kare=23442 parca=1800 yeni_render=7/14 iz=194s goruntu=955s ses+birlestirme=92s toplam=1241s
+exit 0
+/dev/vda        252G   33G  6.3G  84% /

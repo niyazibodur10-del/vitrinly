@@ -1,0 +1,13 @@
+G01  PLK  10/10  GEÇTİ
+G02  PLK  10/10  GEÇTİ
+G03  PROP 10/10  GEÇTİ
+G04  LEO  11/11  GEÇTİ
+G05  LEO  11/11  GEÇTİ
+G06  PLK  12/12  GEÇTİ
+G07  PROP 10/10  GEÇTİ
+G08  LEO  11/11  GEÇTİ
+G09  PLK  12/12  GEÇTİ
+G10  PLK  12/12  GEÇTİ
+
+Toplam 10 prompt (Leo'lu 3, nesne 2, plaka 5) · tavan 12 · id sırası GEÇTİ
+KAPI: GEÇTİ

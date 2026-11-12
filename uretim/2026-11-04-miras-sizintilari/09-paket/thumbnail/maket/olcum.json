@@ -1,0 +1,204 @@
+{
+ "K1a": {
+  "kelime": 4,
+  "satirlar": [
+   {
+    "kelimeler": [
+     "WHO",
+     "GETS"
+    ],
+    "ocr168_bulunan": [
+     "WHO",
+     "GETS"
+    ],
+    "buyuk_harf_168_px": 22.6
+   },
+   {
+    "kelimeler": [
+     "IT?"
+    ],
+    "ocr168_bulunan": [
+     "IT?"
+    ],
+    "buyuk_harf_168_px": 22.6
+   },
+   {
+    "kelimeler": [
+     "$124T"
+    ],
+    "ocr168_bulunan": [
+     "$124T"
+    ],
+    "buyuk_harf_168_px": 13.5
+   }
+  ],
+  "kontrast_p5_min": 5.01,
+  "sure_damgasi_ihlal": false
+ },
+ "K1b": {
+  "kelime": 2,
+  "satirlar": [
+   {
+    "kelimeler": [
+     "WHAT'S"
+    ],
+    "ocr168_bulunan": [],
+    "buyuk_harf_168_px": 23.8
+   },
+   {
+    "kelimeler": [
+     "LEFT?"
+    ],
+    "ocr168_bulunan": [
+     "LEFT?"
+    ],
+    "buyuk_harf_168_px": 23.8
+   }
+  ],
+  "kontrast_p5_min": 6.48,
+  "sure_damgasi_ihlal": false
+ },
+ "K2a": {
+  "kelime": 2,
+  "satirlar": [
+   {
+    "kelimeler": [
+     "IT",
+     "LEAKS"
+    ],
+    "ocr168_bulunan": [
+     "IT",
+     "LEAKS"
+    ],
+    "buyuk_harf_168_px": 24.9
+   }
+  ],
+  "kontrast_p5_min": 11.51,
+  "sure_damgasi_ihlal": false
+ },
+ "K2b": {
+  "kelime": 4,
+  "satirlar": [
+   {
+    "kelimeler": [
+     "LEAKING"
+    ],
+    "ocr168_bulunan": [
+     "LEAKING"
+    ],
+    "buyuk_harf_168_px": 16.9
+   },
+   {
+    "kelimeler": [
+     "ALL",
+     "THE",
+     "WAY"
+    ],
+    "ocr168_bulunan": [
+     "ALL",
+     "THE",
+     "WAY"
+    ],
+    "buyuk_harf_168_px": 16.9
+   }
+  ],
+  "kontrast_p5_min": 11.51,
+  "sure_damgasi_ihlal": false
+ },
+ "K3a": {
+  "kelime": 2,
+  "satirlar": [
+   {
+    "kelimeler": [
+     "SMALLER."
+    ],
+    "ocr168_bulunan": [
+     "SMALLER."
+    ],
+    "buyuk_harf_168_px": 19.2
+   },
+   {
+    "kelimeler": [
+     "LATER."
+    ],
+    "ocr168_bulunan": [
+     "LATER."
+    ],
+    "buyuk_harf_168_px": 16.9
+   }
+  ],
+  "kontrast_p5_min": 5.01,
+  "sure_damgasi_ihlal": false
+ },
+ "K3b": {
+  "kelime": 4,
+  "satirlar": [
+   {
+    "kelimeler": [
+     "SENT",
+     "BIG,",
+     "GOT",
+     "SMALL"
+    ],
+    "ocr168_bulunan": [
+     "SENT",
+     "BIG,",
+     "GOT"
+    ],
+    "buyuk_harf_168_px": 19.2
+   }
+  ],
+  "kontrast_p5_min": 3.87,
+  "sure_damgasi_ihlal": false
+ },
+ "K4a": {
+  "kelime": 3,
+  "satirlar": [
+   {
+    "kelimeler": [
+     "IT",
+     "KEEPS"
+    ],
+    "ocr168_bulunan": [
+     "IT",
+     "KEEPS"
+    ],
+    "buyuk_harf_168_px": 19.2
+   },
+   {
+    "kelimeler": [
+     "LEAKING"
+    ],
+    "ocr168_bulunan": [
+     "LEAKING"
+    ],
+    "buyuk_harf_168_px": 19.2
+   }
+  ],
+  "kontrast_p5_min": 5.1,
+  "sure_damgasi_ihlal": false
+ },
+ "K4b": {
+  "kelime": 2,
+  "satirlar": [
+   {
+    "kelimeler": [
+     "MORE"
+    ],
+    "ocr168_bulunan": [],
+    "buyuk_harf_168_px": 26.0
+   },
+   {
+    "kelimeler": [
+     "TAPE?"
+    ],
+    "ocr168_bulunan": [
+     "TAPE?"
+    ],
+    "buyuk_harf_168_px": 26.0
+   }
+  ],
+  "kontrast_p5_min": 5.1,
+  "sure_damgasi_ihlal": false
+ }
+}

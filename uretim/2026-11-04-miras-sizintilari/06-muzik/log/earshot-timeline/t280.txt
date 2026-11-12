@@ -1,0 +1,42 @@
+d280.wav: 0:00.00-0:30.00 (30.0 s). Loudness -40.2 LUFS integrated, true peak -19.0 dBTP, LRA 14.1 LU; loudest 0:04.50-0:07.50 (-39.8 LUFS short-term). 8 stop-down(s)/gap(s): 0:01.40 4.2 s near silence, 0:06.65 0.4 s near silence, 0:07.20 2.0 s drop, 0:10.20 0.3 s near silence, 0:10.65 4.7 s drop. Quiet lead-in 0.9 s (near silence) and tail 0.6 s (near silence). Beat grid: ~172 BPM (weak pulse, clarity 0.29, 83 beats). 4 section(s): 0:00.00-0:05.45 unclear (no confident music / ambience / voice tag); 0:05.45-0:09.05 funk music?; 0:09.05-0:15.20 tech house music?; 0:15.20-0:30.00 trap beat?, deep sub bass. 45 events (1.5/s); 12 tagged (6 whoosh, 2 step, 1 ui, 1 note, 1 foley, 1 drum; tags are hints). Strongest accents over a running bed: 0:06.23 +23 dB, 0:09.79 +23 dB, 0:01.18 +16 dB (fast air whoosh). Sync to 8 cues: 88% have an onset within 1 frame (chance 9%), 100% within 100 ms, median |offset| 9 ms; 38% land on a strong accent (>= 42 dB over the bed) within 1 frame (chance 2%); 62% on the beat grid (chance 29%).
+
+SECTIONS
+  0:00.00-0:05.45  unclear (no confident music / ambience / voice tag)  -46 LUFS
+  0:05.45-0:09.05  funk music?  -36 LUFS
+  0:09.05-0:15.20  tech house music?  -40 LUFS
+  0:15.20-0:30.00  trap beat?, deep sub bass  -47 LUFS
+
+TRANSCRIPT   time  kind   what (CLAP tag / runner-up)                     peak  over bed  length  centroid  | sync
+== 0:00.00-0:05.45  unclear (no confident music / ambience / voice tag)  (+2 untagged onsets, 0.4/s)
+ 0:00.00  GAP    near silence 0.95 s (-70 LUFS) = lead-in
+ 0:01.00  WHOOSH fast air whoosh                                 -29.0 dBFS   silent   504 ms    69 Hz
+ 0:01.07  WHOOSH fast air whoosh / small soft footstep           -29.0 dBFS   silent   329 ms   146 Hz
+ 0:01.18  WHOOSH fast air whoosh / small soft footstep           -29.0 dBFS +16.1 dB   156 ms   138 Hz  | strong accent (summary)
+ 0:01.28  -      high onset                                      -29.0 dBFS +10.8 dB    32 ms   148 Hz  | kesme +9 ms OK
+ 0:01.40  GAP    near silence 4.20 s (-70 LUFS)
+== 0:05.45-0:09.05  funk music?  (+11 untagged onsets, 3.1/s)
+ 0:05.56  STEP   footsteps on grass / paper rustling             -26.4 dBFS   silent  1188 ms  9.9 kHz
+ 0:05.64  -      high onset                                      -26.4 dBFS   silent    20 ms  4.1 kHz  | vurgu +9 ms OK
+ 0:06.23  -      high onset                                      -19.0 dBFS +22.6 dB    99 ms  9.4 kHz  | strong accent (summary)
+ 0:06.65  GAP    near silence 0.40 s (-70 LUFS)
+ 0:07.05  UI     chat message pop / cork pop                     -21.0 dBFS   silent   113 ms   923 Hz  | damla -13 ms OK
+ 0:07.20  GAP    drop 2.00 s (-69 LUFS)
+== 0:09.05-0:15.20  tech house music?  (+9 untagged onsets, 1.5/s)
+ 0:09.12  STEP   footsteps on grass / paper rustling             -26.4 dBFS   silent  1188 ms  9.9 kHz
+ 0:09.21  -      high onset                                      -26.4 dBFS   silent    20 ms  4.1 kHz  | vurgu +8 ms OK
+ 0:09.79  -      high onset                                      -19.0 dBFS +22.6 dB    99 ms  9.4 kHz  | strong accent (summary)
+ 0:10.20  GAP    near silence 0.35 s (-68 LUFS)
+ 0:10.57  NOTE   plucked string note / short swish               -28.0 dBFS   silent    90 ms   551 Hz  | yazi +0 ms OK
+ 0:10.65  GAP    drop 4.65 s (-70 LUFS)
+== 0:15.20-0:30.00  trap beat?, deep sub bass  (+6 untagged onsets, 0.4/s)
+ 0:15.26  WHOOSH fast air whoosh                                 -30.0 dBFS   silent   223 ms   578 Hz
+ 0:15.33  WHOOSH whip pan whoosh transition                      -30.0 dBFS   silent   113 ms   834 Hz  | kesme -39 ms near
+ 0:15.45  GAP    near silence 3.80 s (-70 LUFS)
+ 0:19.27  FOLEY  wooden block hit / drum hit                     -23.0 dBFS   silent    11 ms   350 Hz  | vurgu +7 ms OK
+ 0:19.30  GAP    drop 0.30 s (-68 LUFS)
+ 0:19.65  GAP    drop 9.45 s (-70 LUFS)
+ 0:29.19  WHOOSH whip pan whoosh transition / hi-hat             -30.0 dBFS   silent   226 ms  2.3 kHz
+ 0:29.25  DRUM   hi-hat / water drop                             -30.0 dBFS   silent    90 ms  2.0 kHz  | kesme -14 ms OK
+ 0:29.40  GAP    near silence 0.60 s (-69 LUFS) = tail
+
+NOTES  times, levels, loudness and sync offsets are measurements. Event kinds / tags are CLAP guesses: '?' = the event is less than 12 dB over its bed, so its excerpt is mostly bed and the tag a weak hint (right kind about 1 in 4 on the tuning mixes, 1 in 2 for exposed events; often wrong on music and voice). Where AST ran, its speech overrides the kind with VOICE. Section genres marked ? are weak. 'over bed' = how far the event rises over the level just before it; 'silent' = that bed was below -60 (after a gap the rise means nothing). Full data: --json.

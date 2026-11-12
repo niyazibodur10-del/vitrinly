@@ -1,0 +1,19 @@
+# 1929-1000-dolar yeniden üretim tarifi (tools/yeniden-uret.sh 2026-10-26-1929-1000-dolar). uretim-muhendisi, 2026-10-28.
+# Zincir: anlatım m4a (git) → wav → müzik/SFX stem'leri (f6.py) → kurgu miksi + Shorts yatakları (kurgu_ses.py) → render.
+# Ses kaynağı git'teki 194 kb/s AAC (anlatim.m4a); orijinal 24-bit wav git dışıydı. Görüntü kareleri kod + git'teki
+# görsellerden (video/public/k1929t/*.png|jpg) gelir. Ölçülen ölçüm dosyaları (olcum-f6-render.json) geri alınır.
+uretim/2026-10-26-1929-1000-dolar/04-ses/anlatim.wav | ffmpeg -v error -y -i uretim/2026-10-26-1929-1000-dolar/04-ses/anlatim.m4a -c:a pcm_s24le uretim/2026-10-26-1929-1000-dolar/04-ses/anlatim.wav
+uretim/2026-10-26-1929-1000-dolar/04-ses/shorts-1-ek.wav | ffmpeg -v error -y -i uretim/2026-10-26-1929-1000-dolar/04-ses/shorts-1-ek.m4a -c:a pcm_s24le uretim/2026-10-26-1929-1000-dolar/04-ses/shorts-1-ek.wav
+uretim/2026-10-26-1929-1000-dolar/04-ses/shorts-2-ek.wav | ffmpeg -v error -y -i uretim/2026-10-26-1929-1000-dolar/04-ses/shorts-2-ek.m4a -c:a pcm_s24le uretim/2026-10-26-1929-1000-dolar/04-ses/shorts-2-ek.wav
+video/public/k1929t/anlatim.wav | cp uretim/2026-10-26-1929-1000-dolar/04-ses/anlatim.wav video/public/k1929t/anlatim.wav
+video/public/k1929t/shorts-1-ek.wav | cp uretim/2026-10-26-1929-1000-dolar/04-ses/shorts-1-ek.wav video/public/k1929t/shorts-1-ek.wav
+video/public/k1929t/shorts-2-ek.wav | cp uretim/2026-10-26-1929-1000-dolar/04-ses/shorts-2-ek.wav video/public/k1929t/shorts-2-ek.wav
+uretim/2026-10-26-1929-1000-dolar/06-muzik/stems/sfx-stem.wav | G=$(mktemp -d); F6_GECICI=$G $PY uretim/2026-10-26-1929-1000-dolar/06-muzik/f6.py render >/dev/null; rm -rf $G; git checkout -- uretim/2026-10-26-1929-1000-dolar/06-muzik/olcum-f6-render.json uretim/2026-10-26-1929-1000-dolar/06-muzik/stems/miks-onizleme.m4a 2>/dev/null || true
+uretim/2026-10-26-1929-1000-dolar/06-muzik/stems/muzik-stem.wav | echo "f6.py render üretmeliydi" >&2; exit 1
+uretim/2026-10-26-1929-1000-dolar/06-muzik/stems/shorts-1-muzik-stem.wav | echo "f6.py render üretmeliydi" >&2; exit 1
+${KURGU_CIKIS:-$HOME/.finansal-arac/kurgu-1929}/final-miks.wav | $PY uretim/2026-10-26-1929-1000-dolar/08-kurgu/kurgu_ses.py ana
+video/public/k1929t/sh1-yatak.wav | $PY uretim/2026-10-26-1929-1000-dolar/08-kurgu/kurgu_ses.py shorts && git diff --quiet video/src/k1929/kurgu-veri.ts
+video/public/k1929t/sh2-yatak.wav | echo "kurgu_ses.py shorts üretmeliydi" >&2; exit 1
+uretim/2026-10-26-1929-1000-dolar/08-kurgu/final-16x9.mp4 | tools/render-parca.sh K1929Final uretim/2026-10-26-1929-1000-dolar/08-kurgu/final-16x9.mp4 --ses ${KURGU_CIKIS:-$HOME/.finansal-arac/kurgu-1929}/final-miks.wav
+uretim/2026-10-26-1929-1000-dolar/08-kurgu/shorts-1.mp4 | tools/render-son.sh K1929Shorts1 uretim/2026-10-26-1929-1000-dolar/08-kurgu/shorts-1.mp4
+uretim/2026-10-26-1929-1000-dolar/08-kurgu/shorts-2.mp4 | tools/render-son.sh K1929Shorts2 uretim/2026-10-26-1929-1000-dolar/08-kurgu/shorts-2.mp4

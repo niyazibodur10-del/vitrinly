@@ -1,0 +1,13 @@
+karakter/jake-taban.png: alfa adası 6 (200 px altı 5), kenar bandı açık-gri saçak px 0 / 8551 (0.00%)
+karakter/mike-taban.png: alfa adası 2 (200 px altı 1), kenar bandı açık-gri saçak px 16 / 12678 (0.13%)
+ifade/jake-gulen.png: alfa adası 1 (200 px altı 0), kenar bandı açık-gri saçak px 0 / 9309 (0.00%)
+ifade/jake-endiseli.png: alfa adası 1 (200 px altı 0), kenar bandı açık-gri saçak px 0 / 9280 (0.00%)
+ifade/jake-dusunceli.png: alfa adası 1 (200 px altı 0), kenar bandı açık-gri saçak px 0 / 9127 (0.00%)
+ifade/mike-gulen-temiz.png: alfa adası 1 (200 px altı 0), kenar bandı açık-gri saçak px 0 / 9357 (0.00%)
+ifade/mike-endiseli-temiz.png: alfa adası 1 (200 px altı 0), kenar bandı açık-gri saçak px 0 / 9220 (0.00%)
+ifade/mike-heyecanli-temiz.png: alfa adası 1 (200 px altı 0), kenar bandı açık-gri saçak px 0 / 9362 (0.00%)
+2 414 761
+5 444 766
+1 473 766
+4 474 277
+1 547 744

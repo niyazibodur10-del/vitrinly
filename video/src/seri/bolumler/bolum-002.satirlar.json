@@ -1,0 +1,212 @@
+{
+ "sesler": {
+  "JAKE": "pocket:george",
+  "MIKE": "pocket:marius"
+ },
+ "sure": 85.069,
+ "satirlar": [
+  {
+   "no": 1,
+   "konusmaci": "MIKE",
+   "bas": 0.15,
+   "bitis": 3.058,
+   "metin": "No comments, so I picked. Meet Brenda!"
+  },
+  {
+   "no": 2,
+   "konusmaci": "JAKE",
+   "bas": 3.478,
+   "bitis": 6.127,
+   "metin": "Was he right? Brenda has two flat tires."
+  },
+  {
+   "no": 3,
+   "konusmaci": "MIKE",
+   "bas": 6.347,
+   "bitis": 7.389,
+   "metin": "Brenda couldn't wait!"
+  },
+  {
+   "no": 4,
+   "konusmaci": "JAKE",
+   "bas": 7.809,
+   "bitis": 9.841,
+   "metin": "Next time, you decide. Please."
+  },
+  {
+   "no": 5,
+   "konusmaci": "JAKE",
+   "bas": 10.591,
+   "bitis": 12.566,
+   "metin": "Sixty dollars. Did you haggle?"
+  },
+  {
+   "no": 6,
+   "konusmaci": "MIKE",
+   "bas": 12.786,
+   "bitis": 13.481,
+   "metin": "He seemed nice."
+  },
+  {
+   "no": 7,
+   "konusmaci": "JAKE",
+   "bas": 13.901,
+   "bitis": 14.835,
+   "metin": "So, no."
+  },
+  {
+   "no": 8,
+   "konusmaci": "JAKE",
+   "bas": 15.284,
+   "bitis": 17.557,
+   "metin": "I checked the serial number, though. Not stolen."
+  },
+  {
+   "no": 9,
+   "konusmaci": "MIKE",
+   "bas": 17.777,
+   "bitis": 19.403,
+   "metin": "See? Brenda's innocent."
+  },
+  {
+   "no": 10,
+   "konusmaci": "MIKE",
+   "bas": 20.153,
+   "bitis": 23.975,
+   "metin": "Now we pump her up. Air is free. Easy money!"
+  },
+  {
+   "no": 11,
+   "konusmaci": "JAKE",
+   "bas": 25.395,
+   "bitis": 27.251,
+   "metin": "Air is free. Tubes are not."
+  },
+  {
+   "no": 12,
+   "konusmaci": "JAKE",
+   "bas": 27.701,
+   "bitis": 30.899,
+   "metin": "Both tubes are torn. New ones are eight bucks each."
+  },
+  {
+   "no": 13,
+   "konusmaci": "MIKE",
+   "bas": 31.119,
+   "bitis": 32.772,
+   "metin": "Sixteen dollars for rubber donuts?"
+  },
+  {
+   "no": 14,
+   "konusmaci": "JAKE",
+   "bas": 33.192,
+   "bitis": 35.144,
+   "metin": "Tires aren't free. I did say that."
+  },
+  {
+   "no": 15,
+   "konusmaci": "MIKE",
+   "bas": 35.764,
+   "bitis": 38.418,
+   "metin": "Okay, Brenda rides! I'm listing her for a hundred and forty."
+  },
+  {
+   "no": 16,
+   "konusmaci": "JAKE",
+   "bas": 38.838,
+   "bitis": 43.213,
+   "metin": "She cost us seventy-six. So, sixty-four profit. If she sells."
+  },
+  {
+   "no": 17,
+   "konusmaci": "MIKE",
+   "bas": 43.433,
+   "bitis": 47.933,
+   "metin": "Oh, she sells. A guy already wrote back. On my way!"
+  },
+  {
+   "no": 18,
+   "konusmaci": "JAKE",
+   "bas": 49.353,
+   "bitis": 50.369,
+   "metin": "He's not on his way."
+  },
+  {
+   "no": 19,
+   "konusmaci": "MIKE",
+   "bas": 50.589,
+   "bitis": 51.376,
+   "metin": "Maybe traffic?"
+  },
+  {
+   "no": 20,
+   "konusmaci": "JAKE",
+   "bas": 51.796,
+   "bitis": 53.3,
+   "metin": "Forty-five minutes of traffic?"
+  },
+  {
+   "no": 21,
+   "konusmaci": "MIKE",
+   "bas": 54.12,
+   "bitis": 58.313,
+   "metin": "He says, sorry, found one cheaper. Brenda deserved better."
+  },
+  {
+   "no": 22,
+   "konusmaci": "MIKE",
+   "bas": 59.363,
+   "bitis": 62.184,
+   "metin": "Wait. New message. Ninety bucks, cash, today."
+  },
+  {
+   "no": 23,
+   "konusmaci": "JAKE",
+   "bas": 62.604,
+   "bitis": 66.678,
+   "metin": "Ninety is still fourteen profit. Fast. And safe."
+  },
+  {
+   "no": 24,
+   "konusmaci": "MIKE",
+   "bas": 66.898,
+   "bitis": 72.201,
+   "metin": "Fourteen? She's worth a hundred and forty! We wait. Trust the vibe."
+  },
+  {
+   "no": 25,
+   "konusmaci": "JAKE",
+   "bas": 72.621,
+   "bitis": 74.298,
+   "metin": "And if the next guy doesn't show either?"
+  },
+  {
+   "no": 26,
+   "konusmaci": "MIKE",
+   "bas": 74.518,
+   "bitis": 77.471,
+   "metin": "Then we counter. Meet him at a hundred and fifteen."
+  },
+  {
+   "no": 27,
+   "konusmaci": "JAKE",
+   "bas": 77.891,
+   "bitis": 80.507,
+   "metin": "And maybe he walks. Then Brenda lives here."
+  },
+  {
+   "no": 28,
+   "konusmaci": "MIKE",
+   "bas": 81.527,
+   "bitis": 83.195,
+   "metin": "Take the ninety, hold out, or counter?"
+  },
+  {
+   "no": 29,
+   "konusmaci": "JAKE",
+   "bas": 83.615,
+   "bitis": 84.769,
+   "metin": "Tell us in the comments."
+  }
+ ]
+}

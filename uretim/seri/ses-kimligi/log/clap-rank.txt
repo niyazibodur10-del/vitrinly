@@ -1,0 +1,15 @@
+== playful sitcom comedy background music with bass and finger snaps
+Ranked 3 files for 'playful sitcom comedy background music with bass and finger snaps'. Best: dongu-b.wav (z +3.2, strong), dongu-a.wav (z +3.2, strong), dongu-c.wav (z +2.6, plausible). 2 strong, 1 plausible, 0 weak match(es). In a held-out test 'strong' was right 98% of the time, 61% when a close variant (a mouth pop for a cork pop) counts as wrong.
+  1. z  +3.2  strong    cos 0.247  dongu-b.wav  (sounds most like chiptune video game music (z +3.2))
+  2. z  +3.2  strong    cos 0.265  dongu-a.wav  (sounds most like chiptune video game music (z +3.3))
+  3. z  +2.6  plausible cos 0.214  dongu-c.wav  (sounds most like chiptune video game music (z +2.4))
+== suspenseful game show thinking music countdown
+Ranked 3 files for 'suspenseful game show thinking music countdown'. Best: gerilim-b.wav (z +1.5, no match), gerilim-a.wav (z +1.0, no match), gerilim-c.wav (z +0.4, no match). 0 strong, 0 plausible, 0 weak match(es). Even the best is not a match: it sounds more like an alarm clock beeping (z +2.5).
+  1. z  +1.5  no match  cos 0.125  gerilim-b.wav  (sounds most like an alarm clock beeping (z +2.5))
+  2. z  +1.0  no match  cos 0.106  gerilim-a.wav  (sounds most like chiptune video game music (z +3.0))
+  3. z  +0.4  no match  cos 0.131  gerilim-c.wav  (sounds most like ambient synth pad music (z +4.0))
+== short cheerful TV show logo jingle
+Ranked 3 files for 'short cheerful TV show logo jingle'. Best: jingle-b.wav (z +2.1, weak), jingle-a.wav (z +1.9, no match), jingle-c.wav (z +1.1, no match). 0 strong, 0 plausible, 1 weak match(es). Even the best is only a weak match: it sounds more like a plucked synth arpeggio (z +2.5).
+  1. z  +2.1  weak      cos 0.180  jingle-b.wav  (sounds most like a plucked synth arpeggio (z +2.5))
+  2. z  +1.9  no match  cos 0.212  jingle-a.wav  (sounds most like a success chime (z +3.5))
+  3. z  +1.1  no match  cos 0.086  jingle-c.wav  (sounds most like a doorbell (z +2.3))

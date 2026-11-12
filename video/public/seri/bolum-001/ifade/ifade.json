@@ -1,0 +1,134 @@
+{
+ "jake-dusunceli": {
+  "boyut": [
+   1080,
+   1564
+  ],
+  "kenar_kesik_baslangic_y": 1150,
+  "alt_kesik_y": 1564,
+  "ten_dE_once": 2.7,
+  "ten_dE_sonra": 1.0,
+  "sacak_px": 1
+ },
+ "jake-endiseli": {
+  "boyut": [
+   1080,
+   1564
+  ],
+  "kenar_kesik_baslangic_y": 1191,
+  "alt_kesik_y": 1564,
+  "ten_dE_once": 3.5,
+  "ten_dE_sonra": 1.4,
+  "sacak_px": 0
+ },
+ "jake-gulen": {
+  "boyut": [
+   1080,
+   1564
+  ],
+  "kenar_kesik_baslangic_y": 1202,
+  "alt_kesik_y": 1564,
+  "ten_dE_once": 4.2,
+  "ten_dE_sonra": 0.0,
+  "sacak_px": 0
+ },
+ "jake-heyecanli": {
+  "boyut": [
+   1080,
+   1564
+  ],
+  "kenar_kesik_baslangic_y": 1190,
+  "alt_kesik_y": 1564,
+  "ten_dE_once": 5.1,
+  "ten_dE_sonra": 0.0,
+  "sacak_px": 0
+ },
+ "jake-notr": {
+  "boyut": [
+   1080,
+   1564
+  ],
+  "kenar_kesik_baslangic_y": 1198,
+  "alt_kesik_y": 1564,
+  "ten_dE_once": 4.8,
+  "ten_dE_sonra": 0.0,
+  "sacak_px": 0
+ },
+ "jake-saskin": {
+  "boyut": [
+   1080,
+   1564
+  ],
+  "kenar_kesik_baslangic_y": 1200,
+  "alt_kesik_y": 1564,
+  "ten_dE_once": 3.3,
+  "ten_dE_sonra": 0.0,
+  "sacak_px": 0
+ },
+ "mike-dusunceli": {
+  "boyut": [
+   1080,
+   1602
+  ],
+  "kenar_kesik_baslangic_y": 1071,
+  "alt_kesik_y": 1602,
+  "ten_dE_once": 5.6,
+  "ten_dE_sonra": 1.0,
+  "sacak_px": 0
+ },
+ "mike-endiseli": {
+  "boyut": [
+   1080,
+   1602
+  ],
+  "kenar_kesik_baslangic_y": 1154,
+  "alt_kesik_y": 1602,
+  "ten_dE_once": 7.1,
+  "ten_dE_sonra": 1.0,
+  "sacak_px": 2
+ },
+ "mike-gulen": {
+  "boyut": [
+   1080,
+   1602
+  ],
+  "kenar_kesik_baslangic_y": 1171,
+  "alt_kesik_y": 1602,
+  "ten_dE_once": 7.2,
+  "ten_dE_sonra": 1.0,
+  "sacak_px": 2
+ },
+ "mike-heyecanli": {
+  "boyut": [
+   1080,
+   1602
+  ],
+  "kenar_kesik_baslangic_y": 1162,
+  "alt_kesik_y": 1602,
+  "ten_dE_once": 7.5,
+  "ten_dE_sonra": 1.5,
+  "sacak_px": 1
+ },
+ "mike-notr": {
+  "boyut": [
+   1080,
+   1602
+  ],
+  "kenar_kesik_baslangic_y": 1159,
+  "alt_kesik_y": 1602,
+  "ten_dE_once": 5.7,
+  "ten_dE_sonra": 1.4,
+  "sacak_px": 0
+ },
+ "mike-saskin": {
+  "boyut": [
+   1080,
+   1602
+  ],
+  "kenar_kesik_baslangic_y": 1162,
+  "alt_kesik_y": 1602,
+  "ten_dE_once": 9.9,
+  "ten_dE_sonra": 2.3,
+  "sacak_px": 0
+ }
+}

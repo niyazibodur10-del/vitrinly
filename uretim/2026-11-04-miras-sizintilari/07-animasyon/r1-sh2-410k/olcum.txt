@@ -1,0 +1,6 @@
+R1 (hakem F9) Shorts-2 KMirasShorts2, kareler 630-805 (21,0-26,8 sn), scale 1
+Komut: cd video && node scripts/kare-ornek.mjs KMirasShorts2 <dizin> 630,675,720,765,790,805 1
+Ölçüm: mavi etiket piksellerinin (y 950-1120) en sağ x'i; S21Vurgu kesikli ok x≈926-934
+ÖNCE : 982 / 984 / 986 / 990  -> ok etiketin üstünden geçiyor ("~$4¦0K")
+SONRA: 820 / 822 / 822 / 824 / 826 / 826 -> oka ≥100 px boşluk; "~$410K" ayrı satır 84 px (1080 px'te ~300 px genişlik; 168 px küçültmede ~47 px)
+16:9 dalı değişmedi (yalnız useDikey() true dalı).

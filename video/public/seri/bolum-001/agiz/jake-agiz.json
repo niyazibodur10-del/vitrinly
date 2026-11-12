@@ -1,0 +1,18 @@
+{
+ "kapali": "/home/user/vitrinly/uretim/seri/karakter/canva-ham/T-J.png",
+ "acik": "/home/user/vitrinly/uretim/seri/karakter/canva-ham/AG-J.png",
+ "konum_xy": [
+  479,
+  594
+ ],
+ "boyut_wh": [
+  208,
+  186
+ ],
+ "aynali": false,
+ "bolge_disi_ham_%": 0.03,
+ "dikis_halka_%": 0.0,
+ "siluetle_kirpilan_px": 0,
+ "geri_kurma_degisen_px_ort_abs": 0.0,
+ "kabul_hiza": true
+}

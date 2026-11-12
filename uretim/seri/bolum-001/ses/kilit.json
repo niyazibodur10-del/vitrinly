@@ -1,0 +1,31 @@
+{
+ "tarih": "2026-11-11T12:35Z",
+ "sesler": {
+  "JAKE": "pocket:george",
+  "MIKE": "pocket:marius"
+ },
+ "sure_sn": 69.317,
+ "wer_yuzde": 0.6,
+ "lufs": -14.2,
+ "tp_dbfs": -2.2,
+ "uretim_sn": 77,
+ "toplam_sn": 113,
+ "sha256_12": {
+  "bolum-tts.txt": "c34705bae369",
+  "bolum-001.wav": "1d0d8235acd4",
+  "bolum-001-JAKE.wav": "339fda4d4f79",
+  "bolum-001-MIKE.wav": "8b70c3691280"
+ },
+ "rhubarb": {
+  "JAKE": {
+   "cue": 204,
+   "satir_hareketli": 13,
+   "satir": 13
+  },
+  "MIKE": {
+   "cue": 168,
+   "satir_hareketli": 12,
+   "satir": 12
+  }
+ }
+}

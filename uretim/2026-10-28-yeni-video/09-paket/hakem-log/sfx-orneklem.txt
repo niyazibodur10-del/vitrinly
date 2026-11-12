@@ -1,0 +1,6 @@
+t_olay  30.239 | S03 kesme: Leo yakın: I'm Leo                      | whoosh-kisa.flac     | stem vuruşu  30.239 (+0.0) · görsel başı  30.239 (+0.0) · fark +0.0 kare OK
+t_olay 237.264 | S10 alacaklı ikonu (pension)                       | pop-drop.flac        | stem vuruşu 237.264 (+0.0) · görsel başı 237.197 (-2.0) · fark +2.0 kare OK
+t_olay 367.080 | S15 ibre yükselir                                  | riser.flac           | stem vuruşu 367.080 (+0.0) · görsel başı 367.013 (-2.0) · fark +2.0 kare OK
+t_olay 432.460 | S17 PAY IT ALL BACK? üstü çizilir                  | kagit-rubberduck-pap | stem vuruşu 432.460 (+0.0) · görsel başı 432.393 (-2.0) · fark +2.0 kare OK
+t_olay 438.643 | S18 3 · IT CAN GIVE ITSELF A RAISE                 | pop-pluck.flac       | stem vuruşu 438.643 (+0.0) · görsel başı 438.510 (-4.0) · fark +4.0 kare KALDI
+SONUÇ: 4/5 ±2 kare

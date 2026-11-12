@@ -1,0 +1,16 @@
+{
+ "ses": "am_fenrir",
+ "hiz": 0.9,
+ "cumleler": [
+  {
+   "metin": "A shoebox of cash gained power in nineteen thirty-two.",
+   "bas": 0.0,
+   "son": 3.043
+  },
+  {
+   "metin": "In twenty twenty-six, the same math runs the other way.",
+   "bas": 3.343,
+   "son": 6.519
+  }
+ ]
+}

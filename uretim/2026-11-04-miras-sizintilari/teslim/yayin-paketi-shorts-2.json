@@ -1,0 +1,44 @@
+{
+  "sema": "yayin-paketi/1",
+  "_not": "S03 Shorts 2 (shorts2). ilgili_video = uzun video (Studio adımı, YAYIN.md). paket-uret.py ile üretildi.",
+  "tur": "shorts",
+  "dosyalar": {
+    "video": "../08-kurgu/shorts-2.mp4",
+    "altyazilar": []
+  },
+  "metadata": {
+    "baslik": "If Not Taxes, Where Does the Inheritance Really Go?",
+    "aciklama": "Taxes sound like the scariest leak when money is passed down. But as of 2026, the US federal estate tax only starts above $15 million per person. For families headed by someone 65 to 74, median net worth was about $410,000 in 2022. So where does the money really go on the way to the kids?\n\nUS federal only; state rules and other countries differ. Sources: IRS, 2026 inflation adjustments; Federal Reserve, Survey of Consumer Finances 2022 (2022 dollars).\n\nThe whole road, stop by stop: \"The Great Wealth Transfer Has a Leak\" on our channel, https://www.youtube.com/@toonomy\n\nMusic: \"Lone Scavenger\" by vitalezzz (CC0, OpenGameArt.org).\n\nNot financial advice. For educational purposes only. Leo is a fictional cartoon character, not a financial adviser.\nNarration voice is AI-generated. Visuals are AI-assisted illustrations animated by our team.\n\n#Shorts #Inheritance #EstateTax",
+    "etiketler": [
+      "estate tax",
+      "estate tax explained",
+      "inheritance",
+      "great wealth transfer",
+      "median net worth",
+      "shorts",
+      "toonomy"
+    ],
+    "bolumler": [],
+    "kategori_id": "27",
+    "varsayilan_dil": "en",
+    "ses_dili": "en"
+  },
+  "durum": {
+    "gizlilik": "private",
+    "cocuklara_ozel": false,
+    "sentetik_medya": true,
+    "lisans": "youtube",
+    "gomulebilir": true,
+    "yayin_zamani": "2026-11-14T09:00:00-05:00"
+  },
+  "ilgili_video": {
+    "baslik": "The Great Wealth Transfer Has a Leak",
+    "video_id": null,
+    "uygulama": "Studio > Shorts > Ayrıntılar > Related video (Data API v3 videos kaynağında alan yok, 2026-11-04)"
+  },
+  "oynatma_listesi_id": null,
+  "onay": {
+    "niyazi_onayi": false,
+    "tarih": null
+  }
+}

@@ -1,0 +1,8 @@
+# uzun: final mp4 ↔ kurgu klikli miks gecikmesi + klik (miks farkı) başlangıcı ↔ görsel tık
+105.77: final↔miks +0.0 ms · klik başı 105.767 → -0.10 kare · klik tepe -12.2 dBFS
+429.03: final↔miks +0.0 ms · klik başı 429.033 → +0.10 kare · klik tepe -12.2 dBFS
+579.2: final↔miks +0.0 ms · klik başı 579.200 → +0.00 kare · klik tepe -12.2 dBFS
+773.1: final↔miks +0.0 ms · klik başı 773.100 → +0.00 kare · klik tepe -12.2 dBFS
+shorts yatakları: ['sh2-yatak.wav', 'sh1-yatak.wav']
+sh1: yatakta klik r=0.23 @ 38.032 vs tık 38.03 → +0.05 kare · yatak↔final +0.0 ms
+sh2: yatakta klik r=0.26 @ 40.032 vs tık 40.03 → +0.05 kare · yatak↔final +0.0 ms

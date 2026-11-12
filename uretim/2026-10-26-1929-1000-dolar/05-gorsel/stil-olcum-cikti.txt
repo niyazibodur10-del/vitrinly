@@ -1,0 +1,7 @@
+C02-tam-boy.png            {'kontur_%': 1.15, 'duzluk_%': 61.0, 'doku_std_med': 0.94, 'doygunluk_med': 23}
+a-konusma-kapali.png       {'kontur_%': 0.61, 'duzluk_%': 71.2, 'doku_std_med': 0.57, 'doygunluk_med': 25}
+C01.png                    {'kontur_%': 0.26, 'duzluk_%': 67.7, 'doku_std_med': 0.78, 'doygunluk_med': 206}
+C16.png                    {'kontur_%': 1.98, 'duzluk_%': 25.6, 'doku_std_med': 5.15, 'doygunluk_med': 36}
+C17.png                    {'kontur_%': 1.57, 'duzluk_%': 26.0, 'doku_std_med': 4.09, 'doygunluk_med': 48}
+C18.png                    {'kontur_%': 1.03, 'duzluk_%': 37.5, 'doku_std_med': 2.63, 'doygunluk_med': 40}
+C19.png                    {'kontur_%': 1.78, 'duzluk_%': 34.6, 'doku_std_med': 3.43, 'doygunluk_med': 63}

@@ -1,0 +1,21 @@
+# Yorum yanıt taslakları — ilk 48 saat · "The Great Wealth Transfer Has a Leak" (TASLAK, F3 sonrası rakamlar teyit)
+
+**Hazırlayan:** youtube-paketleyici · 2026-11-04 · **Gönderim:** yalnız Niyazi onaylar/gönderir (dışarıya mesaj kuralı). Ajanlar yorum yazmaz.
+**Kurallar:** tavsiye/emir yok (P1: "you should / set up a trust / gift it now" yok); kuşak suçlaması yok (P2); ölüm ve yas yorumlarında rakam ve şaka yok; rakam yalnız videodaki/açıklamadaki kaynaklı rakam (yeni rakam → önce finans-dogrulayici); "three possibilities" dili yok (K1); ses "we", ≤3 cümle, mümkünse soruyla biter.
+**Öncelik:** ilk 2 saatte her gerçek yoruma yanıt + kalp [T]; spam hemen gizle/bildir.
+
+| # | Yorum türü (örnek) | Yanıt taslağı | Not |
+|---|---|---|---|
+| 1 | **Numara cevabı** — "5" / "3, didn't know that" | "Stop 3 surprises a lot of people: that money isn't gone, it just takes a longer road. What made it click for you?" (numaraya göre 1 "a long life spends it", 2 "care", 4 "giving", 5 "the house", 6 "taxes") | Pinli soruya ana tür; hüküm verme |
+| 2 | **"Ben hiç miras almayacağım"** — "My parents have nothing, this isn't for me" | "That's true for a lot of families, and it's part of the point: the headline number is real for some households and much smaller, or later, for most. The house part still touches buyers too. Which part felt closest to you?" | Genç kitle; "bölünmüş tablo" kartı; kişisel bilgi isteme |
+| 3 | **Kişisel tavsiye** — "Should I set up a trust / gift money now / sell the house?" | "We can't give personal financial, tax or legal advice, and Leo is a cartoon moving-crew boss. The video only shows how the money moves. For your family's situation, a licensed professional is the right person to ask." | **En kritik tür.** Evet/hayır yok, araç adı tekrarlanmaz |
+| 4 | **Kuşak suçlaması** — "Boomers took everything" / "Millennials are entitled" | "We tried to keep this one about the road, not about whose fault it is: Leo carries both generations' boxes. Which stop do you think gets talked about least?" | Tartışmaya girme; tekrar ederse yanıtlama, hakaret varsa gizle |
+| 5 | **Rakam itirazı** — "It's $84T, not $124T" / "That's a global number" | "Different studies and time windows give different totals. We used Cerulli Associates' December 2024 estimate for the US through 2048, linked in the description. Which source are you looking at?" | Yeni rakam verme; somut iddia → koordinatör → finans-dogrulayici |
+| 6 | **Çift sayım fark eden** — "Spouse money isn't lost, it still goes to the kids later" | "Exactly, and that's why we called it a detour, not a leak: it arrives later. Good catch. Did the timing part change how you read the headline number?" | Videonun D2 tezi; kalp |
+| 7 | **Vergi ayrıntısı** — "Estate tax only hits the very rich" / "In the UK it's different" | "Right, the rules depend on the country and the size of the estate, and they change over time. We kept it to how the mechanism works, with US figures as of the date in the description. Where are you watching from?" | Eşik rakamı yalnız rakam-tablosunda varsa; ülke sorusu = global kitle verisi |
+| 8 | **Yas / kişisel kayıp** — "Lost my dad last year, this hit hard" | "We're sorry for your loss, and thank you for sharing it here." | Soru yok, rakam yok, şaka yok; kalp |
+| 9 | **AI/ses sorusu** — "AI voice?" | "Yes, the narration voice is AI-generated, and the description says so. Research, script, fact checks and animation are done by our team. What would you change?" | Şeffaflık |
+| 10 | **Konu isteği / övgü / eleştiri** — "Do the housing one next" · "Great video" · "Too long" | İstek: "Noted, the house box could fill a whole video. What would you want answered first?" · Övgü: "Thank you! Which stop stuck with you?" · Eleştiri: "Fair, thanks. Where did it lose you? A timestamp helps us a lot." | S04'e söz/tarih verme; eleştiri zaman damgası → kanal-analisti |
+| 11 | **Spam / dolandırıcılık** — WhatsApp "mentor", "inheritance recovery" servisi, taklit hesap | YANIT YOK → gizle + bildir | Studio engellenen kelimeler (Niyazi): whatsapp, telegram, mentor, "dm me", "recovery", signal |
+
+**Ölçüm (F12):** 48 sa yorum sayısı, 1–6 numara dağılımı, tür dağılımı (özellikle #2 ve #3 oranı), konu istekleri → kanal-analisti.

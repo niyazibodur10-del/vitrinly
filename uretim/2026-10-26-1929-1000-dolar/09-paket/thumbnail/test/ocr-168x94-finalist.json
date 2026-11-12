@@ -1,0 +1,79 @@
+{
+ "A2": {
+  "beklenen": [
+   "ONE",
+   "IS",
+   "A",
+   "DISASTER"
+  ],
+  "tam_1280": {
+   "bulunan": [
+    "ONE",
+    "IS",
+    "A",
+    "DISASTER"
+   ],
+   "oran": 1.0,
+   "ham": "ONE 8 A DISASTER 9 9 9 Z VV 2S R ONE IS A DISASTER R 99 9 VV"
+  },
+  "mobil_168": {
+   "bulunan": [
+    "ONE",
+    "IS",
+    "A",
+    "DISASTER"
+   ],
+   "oran": 1.0,
+   "ham": "ONE IS A DISASTER 229 V A ONE IS A DISASTER 2 I A VV"
+  },
+  "mobil_korunan": 1.0
+ },
+ "B1": {
+  "beklenen": [
+   "THE",
+   "SURPRISE",
+   "DOOR"
+  ],
+  "tam_1280": {
+   "bulunan": [
+    "SURPRISE"
+   ],
+   "oran": 0.33,
+   "ham": "Y SURPRISE 1929 8 Y SURPRISE PI 1929"
+  },
+  "mobil_168": {
+   "bulunan": [
+    "SURPRISE"
+   ],
+   "oran": 0.33,
+   "ham": "Y SURPRISE"
+  },
+  "mobil_korunan": 1.0
+ },
+ "D1": {
+  "beklenen": [
+   "EVERY",
+   "DOOR",
+   "LOCKED"
+  ],
+  "tam_1280": {
+   "bulunan": [
+    "EVERY",
+    "DOOR",
+    "LOCKED"
+   ],
+   "oran": 1.0,
+   "ham": "EVERY DOOR S LOCKED S I EVERY DOOR LOCKED CE SY ON TE A SE"
+  },
+  "mobil_168": {
+   "bulunan": [
+    "EVERY",
+    "DOOR",
+    "LOCKED"
+   ],
+   "oran": 1.0,
+   "ham": "EVERY DOOR LOCKED S IA EVERY DOOR LOCKED A8 IA"
+  },
+  "mobil_korunan": 1.0
+ }
+}

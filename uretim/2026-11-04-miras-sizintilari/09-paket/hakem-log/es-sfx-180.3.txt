@@ -1,0 +1,38 @@
+dilim-180.3.mp4: 0:00.00-0:30.02 (30.0 s). Loudness -14.0 LUFS integrated, true peak -2.3 dBTP, LRA 1.8 LU; loudest 0:26.50-0:29.50 (-13.2 LUFS short-term). 7 stop-down(s)/gap(s): 0:02.00 0.3 s drop, 0:09.50 0.3 s drop, 0:16.65 0.3 s drop, 0:18.65 0.8 s drop, 0:20.55 0.4 s drop. No steady beat grid (pulse clarity 0.02 < 0.15). 3 section(s): 0:00.00-0:18.75 funk music?, electric guitar, confident and cool; 0:18.75-0:24.30 funk music, vocal chop, confident and cool | voice: voice-over narration; 0:24.30-0:30.02 funk music, vocal chop, confident and cool. 154 events (5.1/s); 12 tagged (9 ui, 2 voice, 1 drum; tags are hints). Strongest accents over a running bed: 0:19.91 +44 dB (chat message pop), 0:21.00 +42 dB (hi-hat), 0:17.46 +42 dB. Sync to 8 cuts: 38% have an onset within 1 frame (chance 33%), 62% within 100 ms, median |offset| 74 ms; 12% land on a strong accent (>= 24 dB over the bed) within 1 frame (chance 7%); 1 met by a whoosh / riser peak; 2 without a hit: 0:09.80, 0:24.17. Sync to 4 cues: 50% have an onset within 1 frame (chance 34%), 100% within 100 ms, median |offset| 36 ms; 25% land on a strong accent (>= 24 dB over the bed) within 1 frame (chance 7%).
+
+SECTIONS
+  0:00.00-0:18.75  funk music?, electric guitar, confident and cool  -14 LUFS
+  0:18.75-0:24.30  funk music, vocal chop, confident and cool | voice: voice-over narration  -14 LUFS
+  0:24.30-0:30.02  funk music, vocal chop, confident and cool  -13 LUFS
+
+TRANSCRIPT   time  kind   what (CLAP tag / runner-up)                     peak  over bed  length  centroid  | sync
+== 0:00.00-0:18.75  funk music?, electric guitar, confident and cool  (+90 untagged onsets, 4.8/s)
+ 0:01.41  UI?    chat message pop / plucked string note           -4.2 dBFS  +0.5 dB    78 ms   625 Hz  | cut -24 ms OK
+ 0:02.00  GAP    drop 0.35 s (-37 LUFS)
+ 0:02.57  UI     chat message pop / spoken word                   -4.4 dBFS   silent    90 ms  3.2 kHz
+ 0:04.75  -      high onset                                       -3.3 dBFS +19.6 dB  1715 ms  1.1 kHz  | cut -17 ms OK; sfx -17 ms OK
+ 0:04.86  UI     chat message pop / sub bass drop                 -3.3 dBFS   silent    80 ms   809 Hz
+ 0:07.81  VOICE  spoken word / chat message pop                   -4.6 dBFS +28.7 dB    80 ms   391 Hz
+ 0:09.50  GAP    drop 0.35 s (-36 LUFS)
+ 0:09.80  CUT     no onset within 100 ms (strong sound at +110 ms)  <- NO HIT
+ 0:13.89  UI     chat message pop / bubble pop                   -11.7 dBFS +14.1 dB    49 ms  7.1 kHz  | cut +54 ms near; sfx +54 ms near
+ 0:14.28  -      high onset                                       -4.1 dBFS  +6.0 dB  1238 ms   542 Hz  | sfx -51 ms near
+ 0:14.40  VOICE  spoken word / chat message pop                   -4.5 dBFS +26.9 dB   110 ms   297 Hz
+ 0:16.65  GAP    drop 0.35 s (-48 LUFS)
+ 0:17.03  UI     chat message pop / breath                        -4.3 dBFS +39.8 dB   237 ms   356 Hz  | cut +94 ms near
+ 0:17.46  -      full swell                                       -4.3 dBFS +41.8 dB   290 ms   427 Hz  | strong accent (summary)
+ 0:18.65  GAP    drop 0.80 s (-46 LUFS)
+== 0:18.75-0:24.30  funk music, vocal chop, confident and cool | voice: voice-over narration  (+23 untagged onsets, 4.1/s)
+ 0:19.49  UI     chat message pop / cork pop                      -4.3 dBFS +28.8 dB   230 ms  7.3 kHz  | cut +20 ms OK; sfx +20 ms OK
+ 0:19.91  UI     chat message pop / short swish                   -4.4 dBFS +44.3 dB   200 ms   329 Hz  | strong accent (summary)
+ 0:20.55  GAP    drop 0.40 s (-48 LUFS)
+ 0:21.00  DRUM   hi-hat / chat message pop                        -5.4 dBFS +42.4 dB    98 ms  6.0 kHz  | strong accent (summary)
+ 0:23.85  GAP    drop 0.40 s (-46 LUFS)
+ 0:24.17  CUT     no onset within 100 ms (strong sound at +120 ms)  <- NO HIT
+== 0:24.30-0:30.02  funk music, vocal chop, confident and cool  (+25 untagged onsets, 4.4/s)
+ 0:27.75  GAP    drop 0.40 s (-43 LUFS)
+ 0:28.37  -      full swell                                       -4.1 dBFS +38.9 dB   270 ms   363 Hz  | cut +270 ms swell
+ 0:28.63  UI     chat message pop / whip pan whoosh transition    -7.3 dBFS   silent    30 ms  7.5 kHz
+ 0:29.39  UI     chat message pop / spoken word                   -4.5 dBFS   silent    90 ms  4.7 kHz
+
+NOTES  times, levels, loudness and sync offsets are measurements. Event kinds / tags are CLAP guesses: '?' = the event is less than 12 dB over its bed, so its excerpt is mostly bed and the tag a weak hint (right kind about 1 in 4 on the tuning mixes, 1 in 2 for exposed events; often wrong on music and voice). Where AST ran, its speech overrides the kind with VOICE. Section genres marked ? are weak. 'over bed' = how far the event rises over the level just before it; 'silent' = that bed was below -60 (after a gap the rise means nothing). Full data: --json.

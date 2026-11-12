@@ -1,0 +1,47 @@
+{
+  "sema": "yayin-paketi/1",
+  "tur": "shorts",
+  "dosyalar": {
+    "video": "bolum-002.mp4",
+    "altyazilar": []
+  },
+  "metadata": {
+    "baslik": "Take $90, Hold Out, or Counter? You Pick · Ep. 2",
+    "aciklama": "Nobody commented last time, so Mike picked the bike. Two torn tubes and one no-show buyer later, Brenda finally has an offer: $90 cash, today.\nTake $90, hold out for $140, or counter at $115? Tell us in the comments.\nJake & Mike started with $100. The goal: $1,000,000. You decide the moves.\n\nWe may show winning comments on screen with your username. Prefer to stay anonymous? Just say so in your comment.\n\nFiction. Not financial advice. Voices and visuals are AI-generated.\nVoices: Kyutai Pocket TTS; Jake's voice synthesized from the VCTK corpus (CSTR, University of Edinburgh). CC BY 4.0: creativecommons.org/licenses/by/4.0\nSources: huggingface.co/kyutai/pocket-tts-without-voice-cloning · datashare.ed.ac.uk/handle/10283/3443\n\n#Shorts #flipbyvote #flipping #bikeflip",
+    "etiketler": [
+      "Flip By Vote",
+      "flipbyvote",
+      "animated series",
+      "interactive story",
+      "you decide",
+      "bike flip",
+      "road bike",
+      "flipping",
+      "reselling",
+      "side hustle",
+      "haggling",
+      "lowball offer",
+      "Jake and Mike",
+      "animation",
+      "cartoon"
+    ],
+    "bolumler": [],
+    "kategori_id": "24",
+    "varsayilan_dil": "en",
+    "ses_dili": "en"
+  },
+  "durum": {
+    "gizlilik": "private",
+    "yayin_zamani": "2026-11-12T17:00:00Z",
+    "cocuklara_ozel": false,
+    "sentetik_medya": true,
+    "lisans": "youtube",
+    "gomulebilir": true
+  },
+  "oynatma_listesi_id": null,
+  "onay": {
+    "niyazi_onayi": false,
+    "tarih": null
+  },
+  "_not": "Bölüm 2. yayin_zamani 17:00Z = 20:00 TSİ. sentetik_medya=true (politika-format §3), cocuklara_ozel=false. Video None sn, sha256 None. #Shorts yalnız YouTube'da: yukle.py kapısı ister (A4 'gerekmiyor'). Kaynak: paket/paket-uret.py; elle düzenleme yok."
+}

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# earshot sarmalayıcısı (uretim-muhendisi 2026-11-02): kurulu değilse tools/kurulum.sh --earshot ile kurar
+# (arka plan kurulumu sürüyorsa aynı kilitte bekler), sonra EARSHOT_OFFLINE=1 ile çalıştırır. Kullanım: tools/earshot <komut> ...
+# Python API için: EARSHOT_OFFLINE=1 ~/.finansal-arac/earshot-venv/bin/python betik.py (önce: tools/earshot doctor).
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"; ARAC="${ARAC_DIZINI:-$HOME/.finansal-arac}"; ARAC="$(cd "$ARAC" 2>/dev/null && pwd -P || echo "$ARAC")"
+"$ROOT/tools/kurulum.sh" --earshot >&2   # kuruluysa ~10 ms (damga + 2 dosya testi); değilse kurar/bekler
+export EARSHOT_OFFLINE=1 EARSHOT_HOME="${EARSHOT_HOME:-$HOME/.cache/earshot}"
+exec "$ARAC/earshot-venv/bin/earshot" "$@"

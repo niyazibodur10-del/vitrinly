@@ -1,0 +1,121 @@
+# F8a kapı çıktısı · 2026-11-02T05:07:51Z · paket.md sha256 4742bb8e393f · paket-kontrol.py 4edb0b2c5c30
+yazıldı yayin-paketi.json · müzik: YER TUTUCU · thumbnail: None
+yazıldı yayin-paketi-shorts-1.json · müzik: YER TUTUCU · thumbnail: None
+yazıldı yayin-paketi-shorts-2.json · müzik: YER TUTUCU · thumbnail: None
+== paket-kontrol.py (F8a) ==
+[1] Başlıklar (≤60, < > yok, somut özne America/US, yasaklı/kalıp 0)
+  OK   51 krk · If America Earned $5,400 a Month, Here's Its Budget
+  OK   45 krk · America's Budget, Shrunk to One Kitchen Table
+  OK   51 krk · America Pays More in Interest Than for Its Military
+  OK   57 krk · The US Spends Nearly $7 for Every $5 It Earns. Then What?
+  OK   51 krk · America's Interest Bill Tripled in Five Years. Why?
+  OK   47 krk · A Country Isn't a Family. Its Interest Bill Is.
+  OK   45 krk · US Interest Payments Just Passed the Military  (elenen; bulgu [('kalıp', 'Just Passed')])
+[2] Puan = .30 merak + .20 arama + .20 thumb + .20 politika + .10 mobil (≤45:10 ≤50:9 ≤60:7) − kalıp
+       T1 8.20 · If America Earned $5,400 a Month, Here's Its Budget
+       T4 8.10 · America's Budget, Shrunk to One Kitchen Table
+       T3 7.50 · America Pays More in Interest Than for Its Military
+       T2 7.30 · The US Spends Nearly $7 for Every $5 It Earns. Then What?
+       T7 7.00 · America's Interest Bill Tripled in Five Years. Why?
+       T5 6.50 · A Country Isn't a Family. Its Interest Bill Is.
+       T6 5.30 · US Interest Payments Just Passed the Military
+  OK   en yüksek T1 = önerilen başlık
+  OK   en düşük 2 ['T5', 'T6'] = elenenler
+  OK   varyant sırası = puan sırası
+[3] Açıklama
+       ilk paragraf 130 krk: The US federal budget and deficit, shrunk to one kitchen table: $5,400 a month in, about $7,400 out. Where does the $2,000 gap go?
+  OK   ilk paragraf ≤150 krk (kesilmeden okunur)
+  OK   ilk 150 krk: US federal budget
+  OK   ilk 150 krk: deficit
+  OK   ilk 150 krk: $5,400
+  OK   arama ifadesi ilk 10 krk içinde (konum 4)
+  OK   "Not financial advice" var
+  OK   yasal not rakam-tablosu §6 birebir
+  OK   AI satırı (yasal notun sonu) + görsel satırı aynı paragrafta birebir
+  OK   ölçek notu var
+  OK   {BOLUMLER} yer tutucusu (araç Chapters: basar)
+  OK   LEGAL NOTE, SOURCES'ın üstünde
+  OK   kaynak satırı 8, hepsi bağlantılı (MTS, DttP, ort. faiz, OMB, FRED×3, Shiller)
+  OK   açıklama 2533/5000 bayt, < > yok
+  OK   açıklama yasaklı/tavsiye/siyasi: 0
+  BEKL müzik atfı 06-muzik/atif-satirlari.md'den (yoksa yer tutucu)
+[3b] Bölümler
+  OK   7 bölüm, 00:00, artan, ≥10 sn
+  OK   bölüm adları metin.md §4 birebir
+  OK   bölümler metin §2 sahne başlangıçlarıyla aynı (betik zamanı)
+  BEKL gerçek sahne zamanları yok (04-ses/sahne-zamanlari.json) → F8b'de kayar
+[4] Etiket + hashtag
+  OK   etiket 22 adet, 436/500
+  OK   etiket yasaklı: 0
+  OK   3 hashtag, açıklama sonu: ['#USBudget', '#NationalDebt', '#EconomyExplained']
+[5] Shorts
+  OK   shorts1 başlık 51 krk · Interest vs. the Military: Which US Bill Is Bigger?
+  OK   shorts1 yasaklı: 0
+  OK   shorts1 AI + görsel satırı + Not financial advice
+  OK   shorts1 uzun video başlığı + kanal bağlantısı, URL yer tutucusu yok
+  OK   shorts1 hashtag ['#Shorts', '#NationalDebt', '#USBudget']
+  BEKL shorts1 müzik atfı
+  OK   shorts2 başlık 59 krk · US Debt Was Bigger Than the Economy in 1946. What Happened?
+  OK   shorts2 yasaklı: 0
+  OK   shorts2 AI + görsel satırı + Not financial advice
+  OK   shorts2 uzun video başlığı + kanal bağlantısı, URL yer tutucusu yok
+  OK   shorts2 hashtag ['#Shorts', '#NationalDebt', '#EconomicHistory']
+  BEKL shorts2 müzik atfı
+  OK   shorts2: oran küçüldü, borç büyüdü (R33/R34) ifadesi
+[6] Pinli yorum
+  OK   tek soru (1 '?')
+  OK   A/B/C seçenekleri
+  OK   nötr (tavsiye/siyasi/vergi-kesinti/bugün 0): 0
+[7] Yayın zamanı (EST −05:00, Çar 12:00 / Per + Cmt 09:00 ET)
+  OK   uzun: 2026-11-04T12:00:00-05:00 = Wed 2026-11-04 17:00Z
+  OK   shorts-1: 2026-11-05T09:00:00-05:00 = Thu 2026-11-05 14:00Z
+  OK   shorts-2: 2026-11-07T09:00:00-05:00 = Sat 2026-11-07 14:00Z
+  OK   yedek-uzun: 2026-11-08T12:00:00-05:00 = Sun 2026-11-08 17:00Z
+  OK   yedek-shorts-1: 2026-11-09T09:00:00-05:00 = Mon 2026-11-09 14:00Z
+  OK   yedek-shorts-2: 2026-11-10T09:00:00-05:00 = Tue 2026-11-10 14:00Z
+  OK   Shorts uzun videodan sonra
+[8] JSON ↔ paket.md (yayin_paket.py)
+  OK   yayin-paketi.json: başlık 51 krk · tam açıklama 2741/5000 bayt · 2026-11-04T12:00:00-05:00
+  OK   tam açıklamada 'Chapters:' + 00:00
+  OK   yayin-paketi-shorts-1.json: başlık 51 krk · tam açıklama 745/5000 bayt · 2026-11-05T09:00:00-05:00
+  OK   yayin-paketi-shorts-2.json: başlık 59 krk · tam açıklama 760/5000 bayt · 2026-11-07T09:00:00-05:00
+  BEKL thumbnail finalisti yok (veri:thumbnail-ana boş) → thumbnail-tasarimcisi raporundan
+SONUÇ: 0 hata · 5 bekleyen (F8b)
+exit=0 (2 koşu çıktı sha256 aynı: 001cdc1320f2; --final exit 1 beklenen; negatif test R04+pin yakalandı)
+
+## dry-run kip 1 (gerçek paket; yalnız dosya-yok beklenir)
+-- yayin-paketi
+  [UYARI] uzun video için thumbnail verilmemiş
+  [HATA]  video yok: /home/user/vitrinly/uretim/2026-10-28-yeni-video/08-kurgu/final-16x9.mp4
+  [HATA]  altyazı yok: /home/user/vitrinly/uretim/2026-10-28-yeni-video/08-kurgu/final.en.srt
+  Sonuç: 2 hata, 1 uyarı, 6 geçen kontrol
+-- yayin-paketi-shorts-1
+  [HATA]  video yok: /home/user/vitrinly/uretim/2026-10-28-yeni-video/08-kurgu/shorts-1.mp4
+  Sonuç: 1 hata, 0 uyarı, 5 geçen kontrol
+-- yayin-paketi-shorts-2
+  [HATA]  video yok: /home/user/vitrinly/uretim/2026-10-28-yeni-video/08-kurgu/shorts-2.mp4
+  Sonuç: 1 hata, 0 uyarı, 5 geçen kontrol
+
+## dry-run kip 2 (bayt-aynı JSON + sahte medya: 704 sn 16:9, 50/42 sn 9:16, 176 blok SRT)
+-- yayin-paketi
+  [UYARI] uzun video için thumbnail verilmemiş
+  Sonuç: 0 hata, 1 uyarı, 9 geçen kontrol
+    "containsSyntheticMedia": true,
+    "publishAt": "2026-11-04T17:00:00Z"
+-- yayin-paketi-shorts-1
+  Sonuç: 0 hata, 0 uyarı, 7 geçen kontrol
+    "containsSyntheticMedia": true,
+    "publishAt": "2026-11-05T14:00:00Z"
+-- yayin-paketi-shorts-2
+  Sonuç: 0 hata, 0 uyarı, 7 geçen kontrol
+    "containsSyntheticMedia": true,
+    "publishAt": "2026-11-07T14:00:00Z"
+
+## 2026-11-02T10:52:19Z thumbnail A1 işlendi: paket-kontrol 0 hata · 4 bekleyen; dry-run uzun: thumbnail 1280x720 jpeg 111 KB OK, kalan 2 hata = video/SRT yok (F7)
+
+## 2026-11-02 F8b (youtube-paketleyici)
+paket-uret.py → 3 JSON, müzik: atif-satirlari.md (CC0)
+paket-kontrol.py → 0 hata · 5 bekleyen (politika-raporu.md yok; 08-kurgu 4 dosya yok) · 2 koşu sha256 398faa223fa0 · --final exit 1 (beklenen)
+[3b] 7/7 bölüm ↔ sahne bas fark −0,85…0 (sahne-zamanlari.json, toplam 678,195 sn)
+dry-run gerçek: yalnız dosya-yok (2/1/1 hata) · sahte medya bayt-aynı JSON (678,2 sn 16:9 + 55 sn 9:16, taslak SRT): 0/0/0 hata, 10/7/7 geçen
+uç ekran S27 = 15,0 sn

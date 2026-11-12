@@ -1,0 +1,4 @@
+srt blok=240 maks satır=42 kar, maks süre=5.3 sn, çakışma=0
+ara (tahmini zamanlı): [('dollars', 38.43), ('dollars.', 193.3), ('So', 295.526), ('inside', 295.846), ('the', 296.196), ('borrowed', 296.546), ('envelope,', 296.896), ("there's", 297.246), ('another', 297.596), ('interest', 297.946), ('envelope.', 298.296)]
+kelime=1878 (kilitli metin 1878) whisper=1842 bolme=25 ara=11
+atilan Whisper kelimeleri (metinde karşılığı yok): [(270.64, '5.', 0.166), (383.62, 'hip.', 0.013), (522.66, 'However,', 0.022)]

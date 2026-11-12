@@ -1,0 +1,1 @@
+{'OK': 27, 'near': 1} max|offset| 38.7 ms (±2 kare = 66.7 ms) kötü: [('t280', 15.367, 'kısa whoosh', 'near', -38.7)]

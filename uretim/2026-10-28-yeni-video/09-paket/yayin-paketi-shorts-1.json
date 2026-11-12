@@ -1,0 +1,39 @@
+{
+  "sema": "yayin-paketi/1",
+  "_not": "S08 Shorts 1. Related video = uzun video (Studio adımı, YAYIN.md). paket-uret.py ile üretildi.",
+  "tur": "shorts",
+  "dosyalar": {
+    "video": "../08-kurgu/shorts-1.mp4",
+    "altyazilar": []
+  },
+  "metadata": {
+    "baslik": "Interest vs. the Military: Which US Bill Is Bigger?",
+    "aciklama": "Shrink the US budget to one family earning $5,400 a month. Defense: $965. Interest: about $1,050, and it buys nothing. Then the interest envelope turns out to hold another one: borrowed.\n\nScale: $1 a month here = $1 billion a year for the US government. FY2026 (Oct 2025–Sep 2026), Monthly Treasury Statement.\n\nThe whole kitchen table: \"If America Earned $5,400 a Month, Here's Its Budget\" on our channel, https://www.youtube.com/@toonomy\n\nMusic: \"Deliberate Concealment\" by northivanastan (CC0, OpenGameArt.org).\n\nNot financial advice. For educational purposes only. Leo is a fictional cartoon character, not a financial adviser.\nNarration voice is AI-generated. Visuals are AI-assisted illustrations animated by our team.\n\n#Shorts #NationalDebt #USBudget",
+    "etiketler": [
+      "us budget explained",
+      "national debt",
+      "interest on the national debt",
+      "defense spending",
+      "federal budget",
+      "shorts",
+      "toonomy"
+    ],
+    "bolumler": [],
+    "kategori_id": "27",
+    "varsayilan_dil": "en",
+    "ses_dili": "en"
+  },
+  "durum": {
+    "gizlilik": "private",
+    "cocuklara_ozel": false,
+    "sentetik_medya": true,
+    "lisans": "youtube",
+    "gomulebilir": true,
+    "yayin_zamani": "2026-11-05T09:00:00-05:00"
+  },
+  "oynatma_listesi_id": null,
+  "onay": {
+    "niyazi_onayi": true,
+    "tarih": "2026-11-03"
+  }
+}

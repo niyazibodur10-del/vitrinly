@@ -1,0 +1,56 @@
+[1] Meta veri dili (tavsiye · şok/korku · P1 siyaset)
+  uzun      baslik       0
+  uzun      aciklama     0
+  uzun      etiket       0
+  shorts-1  baslik       0
+  shorts-1  aciklama     0
+  shorts-1  etiket       0
+  shorts-2  baslik       0
+  shorts-2  aciklama     0
+  shorts-2  etiket       0
+  paket.md  yedek-baslik 0
+  paket.md  pinli        0
+[2] AI beyanı
+  uzun      sentetik_medya=True ai_satiri=True not_financial_advice=True cocuk=False
+  shorts-1  sentetik_medya=True ai_satiri=True not_financial_advice=True cocuk=False
+  shorts-2  sentetik_medya=True ai_satiri=True not_financial_advice=True cocuk=False
+[3] Vaat ↔ kilitli anlatım
+  T1 baslik 'Has a Leak'             VAR
+  T3 yedek 'Boomers' Money … Go'     VAR
+  T4 yedek 'Smaller Than It Sounds'  VAR
+  T7 yedek 'Not When You Think'      VAR
+  T5 yedek 'Biggest Inheritance Ever' VAR
+  thumb K1 WHO GETS IT? + $124T      VAR
+  thumb K4 IT KEEPS LEAKING          VAR
+  thumb K3 SMALLER. LATER.           VAR
+  aciklama 'later, not never' (es)   VAR
+  shorts-1 spouse first              VAR
+  shorts-2 taxes / where             VAR
+  shorts-2 niteleyici (US)           VAR
+  pinli 6 durak                      VAR
+  shorts okuma metni tavsiye: [[], []]
+[4] Lisans + Content ID kanıtı
+  cue dosyası 45 · kayıtsız [] · NC/ND/SA [] · kanıt eksik []
+[5] Yeniden kullanılan sahne oranı (1 fps dHash ≤6/64)
+  önceki uretim/2026-10-26-1929-1000-dolar/08-kurgu/final-16x9.mp4: 632 kare
+  önceki uretim/2026-10-28-yeni-video/08-kurgu/final-16x9.mp4: 678 kare
+  bu video geçerli 781 kare · dHash aday 210 → üst sınır %26.9 · eşleşen kaynak kare 27 adet [('2026-10-26-192', 213), ('2026-10-26-192', 214), ('2026-10-26-192', 217), ('2026-10-26-192', 218), ('2026-10-26-192', 219), ('2026-10-26-192', 227), ('2026-10-26-192', 228), ('2026-10-26-192', 229)]
+  2. aşama 32x18 MAD ≤5 (pozitif kontrol 2.8): doğrulanmış 0 → %0.0 (≤ %20) · örnek []
+[6] Dış klip
+  video/public/kmiras video klip: 0
+[7] Kanal tekrar desenleri (önceki 2 metne karşı; bilgi, hata saymaz)
+  2026-10-26-1929-1000-dol sahne 24 · kapanış(son 3) ortak 4-gram 0 [] · tüm metin ortak 4-gram 1
+  2026-10-28-yeni-video    sahne 27 · kapanış(son 3) ortak 4-gram 0 [] · tüm metin ortak 4-gram 6
+  kalıp "i'm leo"                  bu=1 son_sahne=False
+  kalıp 'thanks for playing'       bu=0 son_sahne=False
+  kalıp 'story for another'        bu=0 son_sahne=False
+  kalıp 'game for another'         bu=0 son_sahne=False
+  kalıp 'in the comments'          bu=1 son_sahne=False
+  kalıp 'just one letter'          bu=0 son_sahne=False
+  kalıp 'keeps finding'            bu=0 son_sahne=False
+  kalıp 'need more tape'           bu=1 son_sahne=False
+  kalıp "by the end you'll know"   bu=0 son_sahne=False
+  kalıp 'a b or c'                 bu=0 son_sahne=False
+  kalıp 'three possibilities'      bu=0 son_sahne=False
+SONUC hata=0
+exit=0

@@ -1,0 +1,44 @@
+{
+  "sema": "yayin-paketi/1",
+  "_not": "S03 Shorts 1 (shorts1). ilgili_video = uzun video (Studio adımı, YAYIN.md). paket-uret.py ile üretildi.",
+  "tur": "shorts",
+  "dosyalar": {
+    "video": "../08-kurgu/shorts-1.mp4",
+    "altyazilar": []
+  },
+  "metadata": {
+    "baslik": "Why Does So Much Inheritance Stop at a Spouse First?",
+    "aciklama": "About $124 trillion is expected to pass down in the US through 2048, Cerulli estimates. About $54 trillion of it is expected to stop at a surviving husband or wife first, nearly $40 trillion of that with widowed women. That money isn't lost. It's delayed. So how many boxes are left when the truck finally reaches the kids?\n\nSource: Cerulli Associates, December 2024.\n\nThe whole road, stop by stop: \"The Great Wealth Transfer Has a Leak\" on our channel, https://www.youtube.com/@toonomy\n\nMusic: \"Remember this shadow\" by Komiku (CC0, OpenGameArt.org).\n\nNot financial advice. For educational purposes only. Leo is a fictional cartoon character, not a financial adviser.\nNarration voice is AI-generated. Visuals are AI-assisted illustrations animated by our team.\n\n#Shorts #Inheritance #GreatWealthTransfer",
+    "etiketler": [
+      "inheritance",
+      "spouse inheritance",
+      "great wealth transfer",
+      "widowed women",
+      "baby boomer inheritance",
+      "shorts",
+      "toonomy"
+    ],
+    "bolumler": [],
+    "kategori_id": "27",
+    "varsayilan_dil": "en",
+    "ses_dili": "en"
+  },
+  "durum": {
+    "gizlilik": "private",
+    "cocuklara_ozel": false,
+    "sentetik_medya": true,
+    "lisans": "youtube",
+    "gomulebilir": true,
+    "yayin_zamani": "2026-11-12T09:00:00-05:00"
+  },
+  "ilgili_video": {
+    "baslik": "The Great Wealth Transfer Has a Leak",
+    "video_id": null,
+    "uygulama": "Studio > Shorts > Ayrıntılar > Related video (Data API v3 videos kaynağında alan yok, 2026-11-04)"
+  },
+  "oynatma_listesi_id": null,
+  "onay": {
+    "niyazi_onayi": false,
+    "tarih": null
+  }
+}

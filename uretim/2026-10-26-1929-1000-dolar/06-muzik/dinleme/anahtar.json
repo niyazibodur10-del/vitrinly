@@ -1,0 +1,42 @@
+{
+ "b1-oyun-sovu": {
+  "X": "ragtime-jazz-tarush-singhal.mp3",
+  "Y": "electro-swing-type-gp.mp3",
+  "Z": "catchy-swing-doge.ogg"
+ },
+ "b2-borsa-kapisi": {
+  "X": "ozgun-yatak-nabiz-90bpm.flac",
+  "Y": "osanpo-rag-yubatake.ogg",
+  "Z": "ragtime-jazz-tarush-singhal.mp3"
+ },
+ "b3-banka-panigi": {
+  "X": "tension-komiku.mp3",
+  "Y": "ozgun-yatak-nabiz-90bpm.flac",
+  "Z": "backup-plan-zane-little.ogg"
+ },
+ "b4-kutu": {
+  "X": "black-tea-rag-decimnet.mp3",
+  "Y": "fridge-is-hungry-congusbongus.ogg",
+  "Z": "osanpo-rag-yubatake.ogg"
+ },
+ "b5-dip-1932": {
+  "X": "cold-silence-eponasoft.ogg",
+  "Y": "ozgun-yatak-dip-drone.flac",
+  "Z": "at-the-end-of-hope-emma-ma.mp3"
+ },
+ "b6-mart-1933-kilit": {
+  "X": "merak-unsolved-investigation-isaiah658.ogg",
+  "Y": "tension-komiku.mp3",
+  "Z": "ozgun-yatak-kilit-saat-100bpm.flac"
+ },
+ "b7-2026-ters-kose": {
+  "X": "electro-swing-type-gp.mp3",
+  "Y": "the-way-it-is-zane-little.mp3",
+  "Z": "enerji-down-to-business-zane-little.mp3"
+ },
+ "b8-kapanis": {
+  "X": "a-new-start-wolfgang.ogg",
+  "Y": "positive-melancholy-dizzy-crow.ogg",
+  "Z": "happy-moments-centurion.ogg"
+ }
+}

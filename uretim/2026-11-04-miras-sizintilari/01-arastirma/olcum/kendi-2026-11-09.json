@@ -1,0 +1,145 @@
+{
+ "olcum_utc": "2026-11-09T07:18:38+00:00",
+ "kaynak": "YouTube Data API v3",
+ "kanal": {
+  "id": "UC1XHlwovdELe_cs6048KD6w",
+  "ad": "Toonomy",
+  "acilis": "2013-09-11T20:16:46Z",
+  "viewCount": "599",
+  "subscriberCount": "3",
+  "hiddenSubscriberCount": false,
+  "videoCount": "6"
+ },
+ "yukleme_listesi_gorunen": [
+  "2kaz6kXdZlw",
+  "YLZQj6ecYE4",
+  "6LQGcQg4hpk",
+  "ghLjMbrweCw",
+  "QFC8GdDTW2c",
+  "BVJwZ1C9R1U"
+ ],
+ "videolar": [
+  {
+   "id": "BVJwZ1C9R1U",
+   "baslik": "You Have $1,000 in 1929. Can You Keep It?",
+   "publishedAt": "2026-10-28T09:37:48Z",
+   "yas_gun": 11.9,
+   "izlenme_gun": 17.5,
+   "sure": "PT10M32S",
+   "gizlilik": "public",
+   "publishAt": null,
+   "dil": "en",
+   "kategori": "27",
+   "viewCount": "208",
+   "likeCount": "1",
+   "favoriteCount": "0",
+   "commentCount": "1"
+  },
+  {
+   "id": "QFC8GdDTW2c",
+   "baslik": "$1,000 in 1929: Which Door Would You Pick?",
+   "publishedAt": "2026-11-02T14:00:28Z",
+   "yas_gun": 6.72,
+   "izlenme_gun": 50.9,
+   "sure": "PT50S",
+   "gizlilik": "public",
+   "publishAt": null,
+   "dil": "en",
+   "kategori": "27",
+   "viewCount": "342",
+   "likeCount": "5",
+   "favoriteCount": "0",
+   "commentCount": "0"
+  },
+  {
+   "id": "6LQGcQg4hpk",
+   "baslik": "Same Box of Cash, Opposite Result: 1932 vs 2026",
+   "publishedAt": "2026-11-03T14:00:09Z",
+   "yas_gun": 5.72,
+   "izlenme_gun": 4.0,
+   "sure": "PT57S",
+   "gizlilik": "public",
+   "publishAt": null,
+   "dil": "en",
+   "kategori": "27",
+   "viewCount": "23",
+   "likeCount": "0",
+   "favoriteCount": "0",
+   "commentCount": "0"
+  },
+  {
+   "id": "ghLjMbrweCw",
+   "baslik": "If America Earned $5,400 a Month, Here's Its Budget",
+   "publishedAt": "2026-11-03T12:00:11Z",
+   "yas_gun": 5.8,
+   "izlenme_gun": 0.9,
+   "sure": "PT11M19S",
+   "gizlilik": "public",
+   "publishAt": null,
+   "dil": "en",
+   "kategori": "27",
+   "viewCount": "5",
+   "likeCount": "1",
+   "favoriteCount": "0",
+   "commentCount": "0"
+  },
+  {
+   "id": "YLZQj6ecYE4",
+   "baslik": "Interest vs. the Military: Which US Bill Is Bigger?",
+   "publishedAt": "2026-11-05T14:00:16Z",
+   "yas_gun": 3.72,
+   "izlenme_gun": 0.3,
+   "sure": "PT58S",
+   "gizlilik": "public",
+   "publishAt": null,
+   "dil": "en",
+   "kategori": "27",
+   "viewCount": "1",
+   "likeCount": "0",
+   "favoriteCount": "0",
+   "commentCount": "0"
+  },
+  {
+   "id": "2kaz6kXdZlw",
+   "baslik": "US Debt Was Bigger Than the Economy in 1946. What Happened?",
+   "publishedAt": "2026-11-07T14:00:27Z",
+   "yas_gun": 1.72,
+   "izlenme_gun": 12.8,
+   "sure": "PT42S",
+   "gizlilik": "public",
+   "publishAt": null,
+   "dil": "en",
+   "kategori": "27",
+   "viewCount": "22",
+   "likeCount": "0",
+   "favoriteCount": "0",
+   "commentCount": "0"
+  }
+ ],
+ "yorum": {
+  "BVJwZ1C9R1U": {
+   "toplam": 1,
+   "kendi": 1
+  },
+  "QFC8GdDTW2c": {
+   "toplam": 0,
+   "kendi": 0
+  },
+  "6LQGcQg4hpk": {
+   "toplam": 0,
+   "kendi": 0
+  },
+  "ghLjMbrweCw": {
+   "toplam": 0,
+   "kendi": 0
+  },
+  "YLZQj6ecYE4": {
+   "toplam": 0,
+   "kendi": 0
+  },
+  "2kaz6kXdZlw": {
+   "toplam": 0,
+   "kendi": 0
+  }
+ }
+}

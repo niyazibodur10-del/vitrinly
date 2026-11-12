@@ -1,0 +1,8 @@
+K1a kelime 4 | OCR168 4 / 4 | harf168 min 13.5 px | p5 5.01 | damga False
+K1b kelime 2 | OCR168 1 / 2 | harf168 min 23.8 px | p5 6.48 | damga False
+K2a kelime 2 | OCR168 2 / 2 | harf168 min 24.9 px | p5 11.51 | damga False
+K2b kelime 4 | OCR168 4 / 4 | harf168 min 16.9 px | p5 11.51 | damga False
+K3a kelime 2 | OCR168 2 / 2 | harf168 min 16.9 px | p5 5.01 | damga False
+K3b kelime 4 | OCR168 3 / 4 | harf168 min 19.2 px | p5 3.87 | damga False
+K4a kelime 3 | OCR168 3 / 3 | harf168 min 19.2 px | p5 5.1 | damga False
+K4b kelime 2 | OCR168 1 / 2 | harf168 min 26.0 px | p5 5.1 | damga False

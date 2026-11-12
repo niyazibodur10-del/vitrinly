@@ -1,0 +1,966 @@
+{
+ "ses": "am_fenrir",
+ "hiz": 0.9,
+ "cumleler": [
+  {
+   "metin": "It's September nineteen twenty-nine.",
+   "bas": 0.0,
+   "son": 1.841
+  },
+  {
+   "metin": "You have one thousand dollars.",
+   "bas": 2.141,
+   "son": 3.727
+  },
+  {
+   "metin": "Three doors: the stock market, a bank, or a shoebox under your bed.",
+   "bas": 4.027,
+   "son": 7.875
+  },
+  {
+   "metin": "By nineteen thirty-three, one door is a disaster, one is a gamble, and one is a surprise.",
+   "bas": 8.175,
+   "son": 13.816
+  },
+  {
+   "metin": "Let's play.",
+   "bas": 14.116,
+   "son": 14.941
+  },
+  {
+   "metin": "I'm Leo, and tonight I'm your host.",
+   "bas": 15.591,
+   "son": 17.321
+  },
+  {
+   "metin": "I'm a cartoon, so nobody in [this](/ðˈɪs/) studio loses real money.",
+   "bas": 17.621,
+   "son": 21.225
+  },
+  {
+   "metin": "The people of nineteen twenty-nine did.",
+   "bas": 21.525,
+   "son": 23.486
+  },
+  {
+   "metin": "Their question was simple: where was money safe in nineteen twenty-nine?",
+   "bas": 23.786,
+   "son": 27.822
+  },
+  {
+   "metin": "By the end, you'll know which door won, why it won, and why the same math runs the other way today.",
+   "bas": 28.222,
+   "son": 34.182
+  },
+  {
+   "metin": "Here's the idea this game will test: a safe place for money isn't really a place.",
+   "bas": 34.832,
+   "son": 39.782
+  },
+  {
+   "metin": "It depends on what prices are doing.",
+   "bas": 40.082,
+   "son": 41.959
+  },
+  {
+   "metin": "Now, how big is this thousand dollars?",
+   "bas": 42.259,
+   "son": 44.239
+  },
+  {
+   "metin": "In nineteen twenty-nine, an average full-time worker earned about one thousand four hundred thirty dollars a year.",
+   "bas": 44.639,
+   "son": 51.651
+  },
+  {
+   "metin": "So this is roughly eight months of pay.",
+   "bas": 51.951,
+   "son": 53.848
+  },
+  {
+   "metin": "You don't want to lose it.",
+   "bas": 54.148,
+   "son": 55.308
+  },
+  {
+   "metin": "Here are the rules.",
+   "bas": 55.958,
+   "son": 56.964
+  },
+  {
+   "metin": "You can't switch doors.",
+   "bas": 57.264,
+   "son": 58.512
+  },
+  {
+   "metin": "You can't see the future.",
+   "bas": 58.812,
+   "son": 60.146
+  },
+  {
+   "metin": "Each door gets a player.",
+   "bas": 60.446,
+   "son": 61.699
+  },
+  {
+   "metin": "Stock Leo takes the blue door.",
+   "bas": 61.999,
+   "son": 63.622
+  },
+  {
+   "metin": "Bank Leo takes the green door.",
+   "bas": 63.922,
+   "son": 65.558
+  },
+  {
+   "metin": "[And](/ˈænd/) Box Leo takes the brown one, holding an actual shoebox.",
+   "bas": 65.858,
+   "son": 69.538
+  },
+  {
+   "metin": "The studio audience laughs at Box Leo.",
+   "bas": 69.838,
+   "son": 72.037
+  },
+  {
+   "metin": "Remember that laugh.",
+   "bas": 72.337,
+   "son": 73.5
+  },
+  {
+   "metin": "Door one goes first, and in nineteen twenty-nine, it looks like the smartest choice in the room.",
+   "bas": 73.8,
+   "son": 79.057
+  },
+  {
+   "metin": "To see why, look at the last eight years.",
+   "bas": 79.707,
+   "son": 81.713
+  },
+  {
+   "metin": "In August nineteen twenty-one, the Dow Jones Industrial Average stood at sixty-three.",
+   "bas": 82.013,
+   "son": 87.413
+  },
+  {
+   "metin": "By September nineteen twenty-nine, it was at three hundred eighty-one.",
+   "bas": 87.713,
+   "son": 91.741
+  },
+  {
+   "metin": "That's six times higher.",
+   "bas": 92.041,
+   "son": 93.377
+  },
+  {
+   "metin": "Ordinary people, not just bankers, were putting their savings in.",
+   "bas": 93.677,
+   "son": 97.453
+  },
+  {
+   "metin": "Many didn't even pay the full price.",
+   "bas": 97.753,
+   "son": 99.637
+  },
+  {
+   "metin": "They put down part of it, sometimes as little as ten percent, and borrowed the rest.",
+   "bas": 99.937,
+   "son": 104.724
+  },
+  {
+   "metin": "Stock Leo walks through the blue door on September third.",
+   "bas": 105.024,
+   "son": 107.947
+  },
+  {
+   "metin": "That day, the Dow closes at three hundred eighty-one point one seven.",
+   "bas": 108.247,
+   "son": 112.16
+  },
+  {
+   "metin": "It's the top.",
+   "bas": 112.46,
+   "son": 113.357
+  },
+  {
+   "metin": "Nobody knows it yet.",
+   "bas": 113.657,
+   "son": 114.898
+  },
+  {
+   "metin": "For a few weeks, prices swing up and down, with sudden drops and quick recoveries.",
+   "bas": 115.548,
+   "son": 120.374
+  },
+  {
+   "metin": "Then October arrives.",
+   "bas": 120.674,
+   "son": 121.881
+  },
+  {
+   "metin": "On Monday, October twenty-eighth, the Dow falls nearly thirteen percent in a single day.",
+   "bas": 122.181,
+   "son": 127.651
+  },
+  {
+   "metin": "On Tuesday, it falls almost twelve percent more.",
+   "bas": 127.951,
+   "son": 130.688
+  },
+  {
+   "metin": "People will call them Black Monday and Black Tuesday.",
+   "bas": 130.988,
+   "son": 133.77
+  },
+  {
+   "metin": "The borrowed money makes it worse.",
+   "bas": 134.07,
+   "son": 135.595
+  },
+  {
+   "metin": "When prices drop, lenders want their loans covered, so people sell, and prices drop again.",
+   "bas": 135.895,
+   "son": 141.488
+  },
+  {
+   "metin": "By mid-November, the Dow has lost almost half its value.",
+   "bas": 141.788,
+   "son": 145.195
+  },
+  {
+   "metin": "Stock Leo's one thousand dollars is now about five hundred.",
+   "bas": 145.495,
+   "son": 149.01
+  },
+  {
+   "metin": "Half gone in about ten weeks.",
+   "bas": 149.66,
+   "son": 151.208
+  },
+  {
+   "metin": "That hurts.",
+   "bas": 151.508,
+   "son": 152.324
+  },
+  {
+   "metin": "But Stock Leo stays calm.",
+   "bas": 152.624,
+   "son": 154.113
+  },
+  {
+   "metin": "He thinks this is a dip, and dips come back.",
+   "bas": 154.413,
+   "son": 156.924
+  },
+  {
+   "metin": "Over at the green door, Bank Leo is even calmer.",
+   "bas": 157.224,
+   "son": 159.938
+  },
+  {
+   "metin": "His money sits in a bank, with a vault and a marble floor.",
+   "bas": 160.238,
+   "son": 163.484
+  },
+  {
+   "metin": "That's the safe door.",
+   "bas": 163.784,
+   "son": 164.95
+  },
+  {
+   "metin": "Right?",
+   "bas": 165.25,
+   "son": 165.852
+  },
+  {
+   "metin": "Here's the part that surprises people today.",
+   "bas": 166.502,
+   "son": 168.822
+  },
+  {
+   "metin": "In nineteen twenty-nine, a bank account in America had no federal deposit insurance.",
+   "bas": 169.122,
+   "son": 174.658
+  },
+  {
+   "metin": "If your bank closed, nobody promised you'd get your money back.",
+   "bas": 174.958,
+   "son": 178.363
+  },
+  {
+   "metin": "And there were a lot of banks.",
+   "bas": 178.663,
+   "son": 179.996
+  },
+  {
+   "metin": "When the trouble began, over eight thousand banks belonged to the Federal Reserve System, and nearly sixteen thousand did not.",
+   "bas": 180.296,
+   "son": 188.15
+  },
+  {
+   "metin": "Many were small and local.",
+   "bas": 188.45,
+   "son": 189.805
+  },
+  {
+   "metin": "For a year, Bank Leo [is](/ˈɪz/) fine.",
+   "bas": 190.105,
+   "son": 191.797
+  },
+  {
+   "metin": "Then, in late nineteen thirty, banks start to fail in waves.",
+   "bas": 192.097,
+   "son": 195.508
+  },
+  {
+   "metin": "Within a few weeks, hundreds close their doors.",
+   "bas": 195.808,
+   "son": 198.417
+  },
+  {
+   "metin": "On December eleventh, nineteen thirty, the fourth-largest bank in New York City, the Bank of United States, stops operating.",
+   "bas": 199.067,
+   "son": 206.72
+  },
+  {
+   "metin": "Picture the street outside.",
+   "bas": 207.02,
+   "son": 208.4
+  },
+  {
+   "metin": "A long line of people, all asking for their money at the same time.",
+   "bas": 208.7,
+   "son": 212.474
+  },
+  {
+   "metin": "Here's the problem.",
+   "bas": 212.774,
+   "son": 213.808
+  },
+  {
+   "metin": "A bank doesn't keep your thousand dollars in a box with your name on it.",
+   "bas": 214.108,
+   "son": 217.897
+  },
+  {
+   "metin": "It lends most of it out.",
+   "bas": 218.197,
+   "son": 219.505
+  },
+  {
+   "metin": "So when everyone comes at once, even a healthy bank can run out of cash.",
+   "bas": 219.805,
+   "son": 224.265
+  },
+  {
+   "metin": "And when one bank falls, people at the next bank get nervous, and the line moves there.",
+   "bas": 224.565,
+   "son": 229.468
+  },
+  {
+   "metin": "Now the score for door two.",
+   "bas": 230.118,
+   "son": 231.506
+  },
+  {
+   "metin": "It isn't one number.",
+   "bas": 231.806,
+   "son": 232.988
+  },
+  {
+   "metin": "It's two.",
+   "bas": 233.288,
+   "son": 234.041
+  },
+  {
+   "metin": "From nineteen thirty to nineteen thirty-three, about nine thousand banks suspended operations.",
+   "bas": 234.341,
+   "son": 240.197
+  },
+  {
+   "metin": "That's more than one bank in three.",
+   "bas": 240.497,
+   "son": 242.298
+  },
+  {
+   "metin": "Some reopened later.",
+   "bas": 242.598,
+   "son": 243.79
+  },
+  {
+   "metin": "Thousands never did.",
+   "bas": 244.09,
+   "son": 245.343
+  },
+  {
+   "metin": "If your bank was one of them, the FDIC's own numbers show depositors lost about twenty cents of every dollar, on average.",
+   "bas": 245.643,
+   "son": 253.92
+  },
+  {
+   "metin": "For Bank Leo, that's around two hundred dollars gone, and he might wait a long time for the rest.",
+   "bas": 254.22,
+   "son": 259.812
+  },
+  {
+   "metin": "If your bank survived, you kept everything.",
+   "bas": 260.112,
+   "son": 262.339
+  },
+  {
+   "metin": "That's why door two is the gamble.",
+   "bas": 262.639,
+   "son": 264.375
+  },
+  {
+   "metin": "It all depends on which bank you picked, and nobody could see inside.",
+   "bas": 264.675,
+   "son": 268.7
+  },
+  {
+   "metin": "Quick pause.",
+   "bas": 269.35,
+   "son": 270.196
+  },
+  {
+   "metin": "If you like history played as a game, subscribing helps Leo build the next one.",
+   "bas": 270.496,
+   "son": 275.326
+  },
+  {
+   "metin": "Now, back to the studio.",
+   "bas": 275.626,
+   "son": 277.031
+  },
+  {
+   "metin": "One door is still closed.",
+   "bas": 277.331,
+   "son": 278.712
+  },
+  {
+   "metin": "Box Leo.",
+   "bas": 279.012,
+   "son": 279.829
+  },
+  {
+   "metin": "The one everybody laughed at.",
+   "bas": 280.129,
+   "son": 281.583
+  },
+  {
+   "metin": "He hasn't touched his money once.",
+   "bas": 281.883,
+   "son": 283.559
+  },
+  {
+   "metin": "And something strange is happening to it.",
+   "bas": 283.859,
+   "son": 285.823
+  },
+  {
+   "metin": "Box Leo's thousand dollars never changes.",
+   "bas": 286.473,
+   "son": 288.916
+  },
+  {
+   "metin": "Same stack of bills, every morning.",
+   "bas": 289.216,
+   "son": 291.107
+  },
+  {
+   "metin": "But the world around the box does change.",
+   "bas": 291.407,
+   "son": 293.527
+  },
+  {
+   "metin": "Prices are falling.",
+   "bas": 293.827,
+   "son": 294.973
+  },
+  {
+   "metin": "Not just a few prices.",
+   "bas": 295.273,
+   "son": 296.745
+  },
+  {
+   "metin": "The average price of what families buy.",
+   "bas": 297.045,
+   "son": 299.138
+  },
+  {
+   "metin": "The official price index shows it.",
+   "bas": 299.438,
+   "son": 301.19
+  },
+  {
+   "metin": "From September nineteen twenty-nine to July nineteen thirty-two, consumer prices fell by about twenty-one percent.",
+   "bas": 301.49,
+   "son": 308.725
+  },
+  {
+   "metin": "So the same thousand dollars now buys what about one thousand two hundred seventy dollars bought in nineteen twenty-nine.",
+   "bas": 309.025,
+   "son": 316.152
+  },
+  {
+   "metin": "Box Leo did nothing, and his money got stronger.",
+   "bas": 316.452,
+   "son": 319.231
+  },
+  {
+   "metin": "Why were prices falling?",
+   "bas": 319.881,
+   "son": 321.169
+  },
+  {
+   "metin": "Fewer jobs meant less spending.",
+   "bas": 321.569,
+   "son": 323.217
+  },
+  {
+   "metin": "And money itself was shrinking.",
+   "bas": 323.517,
+   "son": 325.15
+  },
+  {
+   "metin": "Federal Reserve History says the money supply fell by nearly thirty percent from the fall of nineteen thirty to the winter of nineteen thirty-three.",
+   "bas": 325.45,
+   "son": 334.601
+  },
+  {
+   "metin": "Less money for the same goods means lower prices.",
+   "bas": 334.901,
+   "son": 337.672
+  },
+  {
+   "metin": "Here's the strange part.",
+   "bas": 337.972,
+   "son": 339.23
+  },
+  {
+   "metin": "While banks were failing, people across the country did exactly what Box Leo did.",
+   "bas": 339.53,
+   "son": 344.628
+  },
+  {
+   "metin": "They pulled cash out and kept it at home.",
+   "bas": 344.928,
+   "son": 346.964
+  },
+  {
+   "metin": "One shoebox looks safe.",
+   "bas": 347.264,
+   "son": 348.722
+  },
+  {
+   "metin": "A whole country of shoeboxes made the banks weaker.",
+   "bas": 349.022,
+   "son": 351.712
+  },
+  {
+   "metin": "So Box Leo is the champion?",
+   "bas": 352.362,
+   "son": 354.0
+  },
+  {
+   "metin": "Not so fast.",
+   "bas": 354.4,
+   "son": 355.478
+  },
+  {
+   "metin": "A shoebox has its own traps.",
+   "bas": 355.778,
+   "son": 357.4
+  },
+  {
+   "metin": "It earns nothing.",
+   "bas": 357.7,
+   "son": 358.732
+  },
+  {
+   "metin": "It can burn.",
+   "bas": 359.032,
+   "son": 359.932
+  },
+  {
+   "metin": "It can be stolen.",
+   "bas": 360.232,
+   "son": 361.331
+  },
+  {
+   "metin": "And if you lose your job, you spend it, bill by bill, until the box is empty.",
+   "bas": 361.631,
+   "son": 366.371
+  },
+  {
+   "metin": "Box Leo still has to survive the hardest moment of the whole game.",
+   "bas": 366.671,
+   "son": 370.473
+  },
+  {
+   "metin": "Let's jump to the bottom.",
+   "bas": 370.773,
+   "son": 372.062
+  },
+  {
+   "metin": "July eighth, nineteen thirty-two.",
+   "bas": 372.712,
+   "son": 374.393
+  },
+  {
+   "metin": "The Dow closes at forty-one point two two.",
+   "bas": 374.693,
+   "son": 376.992
+  },
+  {
+   "metin": "From the top, that's a fall of about eighty-nine percent.",
+   "bas": 377.292,
+   "son": 380.239
+  },
+  {
+   "metin": "Stock Leo's thousand dollars is now about one hundred and eight dollars.",
+   "bas": 380.539,
+   "son": 384.802
+  },
+  {
+   "metin": "That's price only, before dividends.",
+   "bas": 385.101,
+   "son": 387.138
+  },
+  {
+   "metin": "Even with falling prices, it buys only what about one hundred thirty-eight dollars bought in nineteen twenty-nine.",
+   "bas": 387.438,
+   "son": 394.075
+  },
+  {
+   "metin": "Dividends did help, but look at the gap.",
+   "bas": 394.375,
+   "son": 396.527
+  },
+  {
+   "metin": "So how long until he's back to one thousand?",
+   "bas": 396.827,
+   "son": 399.269
+  },
+  {
+   "metin": "There are two answers, and they're far apart.",
+   "bas": 399.669,
+   "son": 401.865
+  },
+  {
+   "metin": "The Dow's price didn't get back to its nineteen twenty-nine peak until November nineteen fifty-four.",
+   "bas": 402.165,
+   "son": 408.175
+  },
+  {
+   "metin": "Counting dividends and falling prices, one well-known analysis puts the break-even point much earlier, in late nineteen thirty-six.",
+   "bas": 408.475,
+   "son": 417.072
+  },
+  {
+   "metin": "Still, that's seven years of waiting.",
+   "bas": 417.372,
+   "son": 419.117
+  },
+  {
+   "metin": "Here's the scoreboard in July nineteen thirty-two.",
+   "bas": 419.767,
+   "son": 422.333
+  },
+  {
+   "metin": "Stock Leo: about one hundred and eight dollars, on price alone.",
+   "bas": 422.633,
+   "son": 426.311
+  },
+  {
+   "metin": "Bank Leo: a question mark.",
+   "bas": 426.611,
+   "son": 428.284
+  },
+  {
+   "metin": "Maybe all of it, buying just as much as Box Leo's.",
+   "bas": 428.584,
+   "son": 431.379
+  },
+  {
+   "metin": "Maybe around eight hundred, maybe still waiting.",
+   "bas": 431.679,
+   "son": 434.084
+  },
+  {
+   "metin": "Box Leo: one thousand dollars that buy like twelve hundred seventy.",
+   "bas": 434.384,
+   "son": 438.489
+  },
+  {
+   "metin": "Every result on this board belongs to that decade.",
+   "bas": 438.789,
+   "son": 441.727
+  },
+  {
+   "metin": "A decade when prices were falling.",
+   "bas": 442.027,
+   "son": 443.807
+  },
+  {
+   "metin": "That's what made a pile of cash look so clever.",
+   "bas": 444.107,
+   "son": 446.539
+  },
+  {
+   "metin": "But the game isn't over.",
+   "bas": 447.189,
+   "son": 448.46
+  },
+  {
+   "metin": "It ends in March nineteen thirty-three.",
+   "bas": 448.76,
+   "son": 450.793
+  },
+  {
+   "metin": "And March is when every door gets locked.",
+   "bas": 451.093,
+   "son": 453.31
+  },
+  {
+   "metin": "Winter, nineteen thirty-three.",
+   "bas": 453.96,
+   "son": 455.441
+  },
+  {
+   "metin": "Panic jumps from state to state.",
+   "bas": 455.741,
+   "son": 457.495
+  },
+  {
+   "metin": "Visitors who come to Washington for the new president's first day find notes in their hotel rooms: checks from out-of-town banks won't be accepted.",
+   "bas": 457.795,
+   "son": 466.888
+  },
+  {
+   "metin": "By March fourth, every state has declared a bank holiday.",
+   "bas": 467.188,
+   "son": 470.592
+  },
+  {
+   "metin": "Two days later, the new president, Franklin Roosevelt, closes every bank in the nation.",
+   "bas": 470.892,
+   "son": 476.267
+  },
+  {
+   "metin": "Good banks and bad banks, all shut.",
+   "bas": 476.567,
+   "son": 478.525
+  },
+  {
+   "metin": "Bank Leo stands at a locked door.",
+   "bas": 478.825,
+   "son": 480.562
+  },
+  {
+   "metin": "For a few days, cash at home is suddenly very useful, and Box Leo is the only player holding any.",
+   "bas": 480.862,
+   "son": 487.365
+  },
+  {
+   "metin": "When the holiday ends, about four thousand banks never reopen.",
+   "bas": 487.665,
+   "son": 491.35
+  },
+  {
+   "metin": "Then, in June nineteen thirty-three, a new law creates federal deposit insurance.",
+   "bas": 491.65,
+   "son": 496.894
+  },
+  {
+   "metin": "It starts on January first, nineteen thirty-four, and covers up to two thousand five hundred dollars per depositor.",
+   "bas": 497.194,
+   "son": 504.558
+  },
+  {
+   "metin": "In nineteen thirty-four, only nine insured banks suspended.",
+   "bas": 505.208,
+   "son": 508.662
+  },
+  {
+   "metin": "The gamble door finally gets a lock that works.",
+   "bas": 508.962,
+   "son": 511.487
+  },
+  {
+   "metin": "So Box Leo wins nineteen twenty-nine: the same gain in buying power, without the gamble.",
+   "bas": 511.787,
+   "son": 517.566
+  },
+  {
+   "metin": "Now let's do something unfair.",
+   "bas": 517.866,
+   "son": 519.473
+  },
+  {
+   "metin": "Let's take his winning door and move it to today.",
+   "bas": 519.773,
+   "son": 522.23
+  },
+  {
+   "metin": "Same shoebox.",
+   "bas": 522.88,
+   "son": 523.856
+  },
+  {
+   "metin": "Same thousand dollars.",
+   "bas": 524.156,
+   "son": 525.42
+  },
+  {
+   "metin": "Start in September twenty twenty-five.",
+   "bas": 525.72,
+   "son": 527.869
+  },
+  {
+   "metin": "Twelve months later, [U.S.](/jˌuˈɛs/) consumer prices are three point seven percent higher.",
+   "bas": 528.169,
+   "son": 533.179
+  },
+  {
+   "metin": "That's the official number for the year to September twenty twenty-six.",
+   "bas": 533.479,
+   "son": 537.503
+  },
+  {
+   "metin": "So the thousand dollars now buys what about nine hundred sixty-four dollars bought a year earlier.",
+   "bas": 537.803,
+   "son": 543.819
+  },
+  {
+   "metin": "Nothing was stolen.",
+   "bas": 544.119,
+   "son": 545.206
+  },
+  {
+   "metin": "The bills are all there.",
+   "bas": 545.506,
+   "son": 546.685
+  },
+  {
+   "metin": "They just buy less.",
+   "bas": 546.985,
+   "son": 548.118
+  },
+  {
+   "metin": "Now put the two periods side by side.",
+   "bas": 548.768,
+   "son": 550.863
+  },
+  {
+   "metin": "From September nineteen twenty-nine to March nineteen thirty-three, prices fell about twenty-seven percent.",
+   "bas": 551.163,
+   "son": 557.735
+  },
+  {
+   "metin": "From September twenty twenty-two to September twenty twenty-six, prices rose about thirteen and a half percent.",
+   "bas": 558.035,
+   "son": 564.92
+  },
+  {
+   "metin": "Same box.",
+   "bas": 565.22,
+   "son": 566.065
+  },
+  {
+   "metin": "Opposite result.",
+   "bas": 566.365,
+   "son": 567.371
+  },
+  {
+   "metin": "In the early nineteen thirties, cash gained power because prices were falling.",
+   "bas": 567.671,
+   "son": 572.171
+  },
+  {
+   "metin": "In twenty twenty-six, prices are rising, so the same math runs the other way.",
+   "bas": 572.471,
+   "son": 577.52
+  },
+  {
+   "metin": "That's arithmetic, not a plan.",
+   "bas": 577.82,
+   "son": 579.43
+  },
+  {
+   "metin": "The bank door changed too.",
+   "bas": 580.08,
+   "son": 581.526
+  },
+  {
+   "metin": "That lock from nineteen thirty-four is still there.",
+   "bas": 581.826,
+   "son": 584.342
+  },
+  {
+   "metin": "Today, the FDIC says deposits are insured to at least two hundred fifty thousand dollars at each insured bank.",
+   "bas": 584.642,
+   "son": 592.207
+  },
+  {
+   "metin": "So, which door was safe?",
+   "bas": 592.857,
+   "son": 594.136
+  },
+  {
+   "metin": "In nineteen twenty-nine, the door that [looked](/lˈʊktʰ/) smart hurt the most.",
+   "bas": 594.536,
+   "son": 597.992
+  },
+  {
+   "metin": "The door everyone laughed at came out on top.",
+   "bas": 598.292,
+   "son": 600.523
+  },
+  {
+   "metin": "Not because a shoebox is clever, but because of one thing outside all three doors: what prices were doing in that decade.",
+   "bas": 600.823,
+   "son": 608.592
+  },
+  {
+   "metin": "That's the idea we started with.",
+   "bas": 608.892,
+   "son": 610.683
+  },
+  {
+   "metin": "A safe place for money isn't really a place.",
+   "bas": 610.983,
+   "son": 613.314
+  },
+  {
+   "metin": "It depends on what prices are doing, and on the rules around each door.",
+   "bas": 613.614,
+   "son": 617.745
+  },
+  {
+   "metin": "Falling prices made a shoebox the winner.",
+   "bas": 618.395,
+   "son": 620.501
+  },
+  {
+   "metin": "But history also has a time when prices rose so fast that people's savings melted in a single year.",
+   "bas": 620.801,
+   "son": 627.412
+  },
+  {
+   "metin": "That's a game for another night.",
+   "bas": 627.712,
+   "son": 629.276
+  },
+  {
+   "metin": "I'm Leo.",
+   "bas": 629.576,
+   "son": 630.324
+  },
+  {
+   "metin": "Thanks for playing.",
+   "bas": 630.624,
+   "son": 631.63
+  }
+ ]
+}

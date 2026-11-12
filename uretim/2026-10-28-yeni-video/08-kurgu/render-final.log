@@ -1,0 +1,4 @@
+[render-parca] önbellek KButceTam'ten tohumlandı
+[render-parca] iz: 6 değişen parça (0,2,5,7,8,11)
+[render-parca] kare=20346 parca=1800 yeni_render=6/12 iz=273s goruntu=1210s ses+birlestirme=91s toplam=1574s
+exit 0

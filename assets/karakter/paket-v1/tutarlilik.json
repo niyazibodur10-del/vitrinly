@@ -1,0 +1,142 @@
+[
+ {
+  "dosya": "a-konusma-kapali.png",
+  "cozunurluk": [
+   1920,
+   1080
+  ],
+  "ten_dE": 0.0,
+  "sac_dE": 0.0,
+  "gomlek_dE": 0.0,
+  "kafa_hist_kor": 1.0,
+  "kafa_merkez_kayma_yuzde": 0.0,
+  "kafa_olcek_fark_yuzde": 0.0,
+  "gecti": true,
+  "kafa_kutusu": [
+   799,
+   37,
+   1080,
+   449
+  ]
+ },
+ {
+  "dosya": "b-alt-gulumseyerek-konusma.png",
+  "cozunurluk": [
+   1920,
+   1080
+  ],
+  "ten_dE": 2.7314122226648805,
+  "sac_dE": 0.0,
+  "gomlek_dE": 0.39215755462646484,
+  "kafa_hist_kor": 0.8938448834018109,
+  "kafa_merkez_kayma_yuzde": 0.0,
+  "kafa_olcek_fark_yuzde": 0.24271844660194164,
+  "gecti": true,
+  "kafa_kutusu": [
+   799,
+   36,
+   1080,
+   447
+  ]
+ },
+ {
+  "dosya": "b-konusma-acik.png",
+  "cozunurluk": [
+   1920,
+   1080
+  ],
+  "ten_dE": 2.5266766038997246,
+  "sac_dE": 1.0,
+  "gomlek_dE": 0.39215755462646484,
+  "kafa_hist_kor": 0.8661311977003346,
+  "kafa_merkez_kayma_yuzde": 0.0,
+  "kafa_olcek_fark_yuzde": 0.24271844660194164,
+  "gecti": true,
+  "kafa_kutusu": [
+   799,
+   37,
+   1080,
+   448
+  ]
+ },
+ {
+  "dosya": "c-isaret.png",
+  "cozunurluk": [
+   1920,
+   1080
+  ],
+  "ten_dE": 1.270882061743366,
+  "sac_dE": 1.2708844159408716,
+  "gomlek_dE": 0.7843141555786133,
+  "kafa_hist_kor": 0.9599708764751933,
+  "kafa_merkez_kayma_yuzde": 2.8385416666666665,
+  "kafa_olcek_fark_yuzde": 2.9126213592232997,
+  "gecti": true,
+  "kafa_kutusu": [
+   859,
+   43,
+   1129,
+   443
+  ]
+ },
+ {
+  "dosya": "d-saskin.png",
+  "cozunurluk": [
+   1920,
+   1080
+  ],
+  "ten_dE": 4.224026876055473,
+  "sac_dE": 1.2708844159408716,
+  "gomlek_dE": 1.0741450310133211,
+  "kafa_hist_kor": 0.8417190527524565,
+  "kafa_merkez_kayma_yuzde": 0.10416666666666667,
+  "kafa_olcek_fark_yuzde": 1.2135922330097193,
+  "gecti": true,
+  "kafa_kutusu": [
+   799,
+   30,
+   1084,
+   447
+  ]
+ },
+ {
+  "dosya": "e-dusunen.png",
+  "cozunurluk": [
+   1920,
+   1080
+  ],
+  "ten_dE": 2.8554838986820945,
+  "sac_dE": 1.0741446828385564,
+  "gomlek_dE": 1.5686273574829102,
+  "kafa_hist_kor": 0.8472477878584841,
+  "kafa_merkez_kayma_yuzde": 2.890625,
+  "kafa_olcek_fark_yuzde": 3.398058252427183,
+  "gecti": true,
+  "kafa_kutusu": [
+   741,
+   47,
+   1027,
+   445
+  ]
+ },
+ {
+  "dosya": "f-sevincli.png",
+  "cozunurluk": [
+   1920,
+   1080
+  ],
+  "ten_dE": 1.467579059414754,
+  "sac_dE": 1.0,
+  "gomlek_dE": 0.7843141555786133,
+  "kafa_hist_kor": 0.9150054165413463,
+  "kafa_merkez_kayma_yuzde": 0.46875,
+  "kafa_olcek_fark_yuzde": 5.339805825242716,
+  "gecti": true,
+  "kafa_kutusu": [
+   782,
+   28,
+   1079,
+   418
+  ]
+ }
+]

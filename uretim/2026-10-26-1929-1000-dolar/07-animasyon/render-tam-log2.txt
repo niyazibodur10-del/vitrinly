@@ -1,0 +1,5 @@
+[render-parca] kare=18949 parca=1800 yeni_render=1/11 goruntu=163s ses+birlestirme=48s toplam=211s
+
+real	3m31.486s
+user	1m56.957s
+sys	0m10.160s

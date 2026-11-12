@@ -1,0 +1,408 @@
+{
+ "bolum": "002",
+ "sahip": "animasyon-yonetmeni",
+ "fps": 30,
+ "sure": 88.25,
+ "not": "Tek kaynak: video/src/seri/bolumler/bolum-002.ts. id = ses-cue.json SFX kimliği → bolum-ses.py cevir --gorsel. Abone tek kez sonda (86,05–88,25), karar kartıyla (81,0–86,0) çakışmaz; alanı 9:16 alt-orta (y 1010–1164).",
+ "olaylar": [
+  {
+   "id": "S1-flap",
+   "t": 0.1,
+   "kare": 3,
+   "tur": "giris",
+   "olay": "Brenda sağdan yuvarlanır (patlak lastik)"
+  },
+  {
+   "id": "S1-tik",
+   "t": 0.86,
+   "kare": 26,
+   "tur": "giris",
+   "olay": "önceki seçim kartında BIKE ✓ ('picked')"
+  },
+  {
+   "id": "S1-etiket",
+   "t": 2.5,
+   "kare": 75,
+   "tur": "giris",
+   "olay": "BRENDA isim etiketi"
+  },
+  {
+   "id": "S2-halka",
+   "t": 5.26,
+   "kare": 158,
+   "tur": "vurus",
+   "olay": "'flat' teker halkaları"
+  },
+  {
+   "id": "S3-bank-60",
+   "t": 10.74,
+   "kare": 322,
+   "tur": "sayac",
+   "olay": "BANK −$60 → $40 ('Sixty')"
+  },
+  {
+   "id": "S3-gag",
+   "t": 14.04,
+   "kare": 421,
+   "tur": "vurus",
+   "olay": "'So, no.' sert punch-in"
+  },
+  {
+   "id": "S3-seri",
+   "t": 15.84,
+   "kare": 475,
+   "tur": "giris",
+   "olay": "SERIAL CHECK ✓"
+  },
+  {
+   "id": "S4-pompa-1",
+   "t": 20.44,
+   "kare": 613,
+   "tur": "giris",
+   "olay": "pompa"
+  },
+  {
+   "id": "S4-pompa-2",
+   "t": 21.4,
+   "kare": 642,
+   "tur": "giris",
+   "olay": "pompa"
+  },
+  {
+   "id": "S4-pompa-3",
+   "t": 22.3,
+   "kare": 669,
+   "tur": "giris",
+   "olay": "pompa"
+  },
+  {
+   "id": "S4-pat",
+   "t": 24.0,
+   "kare": 720,
+   "tur": "vurus",
+   "olay": "PAT: iç lastik patlar (ikinci kanca) + sarsıntı"
+  },
+  {
+   "id": "S4-pat-cizik",
+   "t": 24.05,
+   "kare": 722,
+   "tur": "vurus",
+   "olay": "müzik durur"
+  },
+  {
+   "id": "S4-lastik-1",
+   "t": 28.42,
+   "kare": 853,
+   "tur": "giris",
+   "olay": "iç lastik ikonu"
+  },
+  {
+   "id": "S4-lastik-2",
+   "t": 28.62,
+   "kare": 859,
+   "tur": "giris",
+   "olay": "iç lastik ikonu + $8 × 2"
+  },
+  {
+   "id": "S4-bank-16",
+   "t": 30.22,
+   "kare": 907,
+   "tur": "sayac",
+   "olay": "BANK −$16 → $24 ('each')"
+  },
+  {
+   "id": "S4-donut",
+   "t": 32.22,
+   "kare": 967,
+   "tur": "giris",
+   "olay": "donut ikonları"
+  },
+  {
+   "id": "S5-ilan",
+   "t": 37.2,
+   "kare": 1116,
+   "tur": "giris",
+   "olay": "ilan kartı $140"
+  },
+  {
+   "id": "S5-tahta-1",
+   "t": 38.98,
+   "kare": 1169,
+   "tur": "giris",
+   "olay": "$60 + $16"
+  },
+  {
+   "id": "S5-tahta-2",
+   "t": 39.42,
+   "kare": 1183,
+   "tur": "giris",
+   "olay": "= $76"
+  },
+  {
+   "id": "S5-tahta-3",
+   "t": 40.46,
+   "kare": 1214,
+   "tur": "giris",
+   "olay": "$140 − $76"
+  },
+  {
+   "id": "S5-tahta-4",
+   "t": 41.24,
+   "kare": 1237,
+   "tur": "giris",
+   "olay": "= $64?"
+  },
+  {
+   "id": "S5-mesaj",
+   "t": 46.98,
+   "kare": 1409,
+   "tur": "giris",
+   "olay": "'On my way!'"
+  },
+  {
+   "id": "S6-gecis",
+   "t": 47.95,
+   "kare": 1438,
+   "tur": "kesme",
+   "olay": "mekân değişimi L3"
+  },
+  {
+   "id": "S6-saat-1",
+   "t": 48.4,
+   "kare": 1452,
+   "tur": "sayac",
+   "olay": "2:15 PM"
+  },
+  {
+   "id": "S6-saat-2",
+   "t": 48.7,
+   "kare": 1461,
+   "tur": "sayac",
+   "olay": "2:30 PM"
+  },
+  {
+   "id": "S6-saat-3",
+   "t": 48.95,
+   "kare": 1468,
+   "tur": "sayac",
+   "olay": "2:45 PM"
+  },
+  {
+   "id": "S6-mesaj",
+   "t": 53.45,
+   "kare": 1604,
+   "tur": "giris",
+   "olay": "'sorry, found one cheaper'"
+  },
+  {
+   "id": "S7-mesaj",
+   "t": 58.45,
+   "kare": 1754,
+   "tur": "vurus",
+   "olay": "'$90 cash, today?' (üçüncü kanca)"
+  },
+  {
+   "id": "S7-tahta-14",
+   "t": 63.3,
+   "kare": 1899,
+   "tur": "giris",
+   "olay": "$90 − $76 = $14"
+  },
+  {
+   "id": "S7-saat",
+   "t": 73.68,
+   "kare": 2210,
+   "tur": "giris",
+   "olay": "saat ikonu"
+  },
+  {
+   "id": "S7-tahta-115",
+   "t": 76.48,
+   "kare": 2294,
+   "tur": "giris",
+   "olay": "$115?"
+  },
+  {
+   "id": "S7-yaziyor",
+   "t": 78.4,
+   "kare": 2352,
+   "tur": "kilit",
+   "olay": "yazıyor… balonu"
+  },
+  {
+   "id": "S8-karar-karti",
+   "t": 81.05,
+   "kare": 2432,
+   "tur": "kilit",
+   "olay": "karar kartı girer (bas 81,0; 'Take' öncesi boşluk)"
+  },
+  {
+   "id": "S8-ep3-ding",
+   "t": 84.9,
+   "kare": 2547,
+   "tur": "kilit",
+   "olay": "ikisi kameraya + 'Ep. 3: YOUR call'"
+  },
+  {
+   "id": "S8-abone-klik",
+   "t": 86.95,
+   "kare": 2608,
+   "tur": "abone",
+   "olay": "takip kartı tık (kart 86,05–88,25)"
+  }
+ ],
+ "abone": [
+  {
+   "tur": "abone",
+   "bas": 86.05,
+   "bitis": 88.25,
+   "klik": 86.95,
+   "kare_bas": 2582,
+   "kare_klik": 2608,
+   "alan": {
+    "x": 70,
+    "y": 1010,
+    "w": 806,
+    "h": 154
+   }
+  }
+ ],
+ "kesmeler": [
+  {
+   "t": 3.37,
+   "kare": 101
+  },
+  {
+   "t": 6.25,
+   "kare": 188
+  },
+  {
+   "t": 7.7,
+   "kare": 231
+  },
+  {
+   "t": 9.9,
+   "kare": 297
+  },
+  {
+   "t": 10.5,
+   "kare": 315
+  },
+  {
+   "t": 12.7,
+   "kare": 381
+  },
+  {
+   "t": 13.85,
+   "kare": 416
+  },
+  {
+   "t": 17.7,
+   "kare": 531
+  },
+  {
+   "t": 20.05,
+   "kare": 602
+  },
+  {
+   "t": 23.98,
+   "kare": 719
+  },
+  {
+   "t": 25.3,
+   "kare": 759
+  },
+  {
+   "t": 27.6,
+   "kare": 828
+  },
+  {
+   "t": 31.0,
+   "kare": 930
+  },
+  {
+   "t": 33.1,
+   "kare": 993
+  },
+  {
+   "t": 35.2,
+   "kare": 1056
+  },
+  {
+   "t": 35.7,
+   "kare": 1071
+  },
+  {
+   "t": 38.75,
+   "kare": 1162
+  },
+  {
+   "t": 43.35,
+   "kare": 1300
+  },
+  {
+   "t": 47.95,
+   "kare": 1438
+  },
+  {
+   "t": 49.3,
+   "kare": 1479
+  },
+  {
+   "t": 50.5,
+   "kare": 1515
+  },
+  {
+   "t": 51.7,
+   "kare": 1551
+  },
+  {
+   "t": 53.4,
+   "kare": 1602
+  },
+  {
+   "t": 54.1,
+   "kare": 1623
+  },
+  {
+   "t": 58.4,
+   "kare": 1752
+  },
+  {
+   "t": 59.4,
+   "kare": 1782
+  },
+  {
+   "t": 62.5,
+   "kare": 1875
+  },
+  {
+   "t": 66.8,
+   "kare": 2004
+  },
+  {
+   "t": 72.5,
+   "kare": 2175
+  },
+  {
+   "t": 74.45,
+   "kare": 2234
+  },
+  {
+   "t": 77.75,
+   "kare": 2332
+  },
+  {
+   "t": 80.5,
+   "kare": 2415
+  },
+  {
+   "t": 81.0,
+   "kare": 2430
+  },
+  {
+   "t": 84.9,
+   "kare": 2547
+  }
+ ]
+}

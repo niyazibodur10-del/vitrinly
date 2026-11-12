@@ -1,0 +1,8 @@
+LIVING                       -2 → 8
+CARE                         -1 → 7
+SPOUSE (detour, +years)      +0 → 7
+GIVING                       -1 → 6
+HOUSE (slice)                +0 → 6
+TAX & TIME                   +0 → 6
+Teslim: 6 kutu − dilim, 2 çocuk → ≈3 − (dilim/2) her biri
+D2/R27 yasak kalıp taraması: 0 → GEÇTİ

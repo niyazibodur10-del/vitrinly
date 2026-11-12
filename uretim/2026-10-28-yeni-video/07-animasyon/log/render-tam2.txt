@@ -1,0 +1,2 @@
+[render-parca] iz: 12 değişen parça (0,1,2,3,4,5,6,7,8,9,10,11)
+[render-parca] kare=20346 parca=1800 yeni_render=12/12 iz=214s goruntu=2564s ses+birlestirme=1095s toplam=3873s

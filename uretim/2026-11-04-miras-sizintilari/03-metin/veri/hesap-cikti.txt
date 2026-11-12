@@ -1,0 +1,22 @@
+[D2] 105 + 18 = 123 ≈ 124 (fark 1 T$, %0.8) → son varış noktaları toplamı
+[D2] 105+18+54 = 177 > 124 → 54 ek kalem DEĞİL (aynı paranın durağı)
+[D2] YASAK çıkarma: 124-54-18 = 52 → metin/grafik/Shorts'ta geçerse RED
+[R05] 40 / 54 = %74 eş transferi dul kadınlara
+[R06] 100/124 = %80.6 (bülten: %81, 'nearly 100')
+[R07] 62/124 = %50.0 → bültenin '>50%' ifadesi yuvarlama sınırında; metin 'about half' der
+[R03] bağış payı 18/124 = %14.5 (~1/7)
+[R08] 85 - 46 = 39 T$ Gen X (25 yıl)
+[R09] 55% → 47% = -8 puan
+[R13] huzurevi özel oda 355$/gün ×365 = 129,575$/yıl; ortak 114,975; assisted 74,400
+[R13] ayda ≈ 10,798$ (özel oda)
+[R18] 15 M$ / 65–74 medyan 409.9k$ = 37x (birim farkı: 2026 nominal vs 2022 $ → yalnız 'dozens of times' yazılır)
+[R19] ortalama/medyan 65–74: 4.4x; 75+: 4.8x
+[R18] çift muafiyet (evli) 2×15 = 30 M$ [AÖ: portability; metne girmez]
+[R21] %2 enflasyonda 10 yıl: 1$ alım gücü 0.820
+[R21] %2 enflasyonda 20 yıl: 1$ alım gücü 0.673
+[R21] %2 enflasyonda 24 yıl: 1$ alım gücü 0.622
+[R22] DFA 2026:Q2 net servet payı: Silent 10.7%, BabyBoom 52.5%, GenX 25.7%, Millennial 11.2%
+[R23] DFA 2026:Q2 gayrimenkul payı: Silent 7.6%, BabyBoom 41.3%, GenX 28.7%, Millennial 22.4%
+[R22] DFA 2026:Q2 boomer net servet 97.4 T$ / toplam 185.7 T$ = %52.5; boomer gayrimenkul 20.5 T$
+[R24] DFA 2026:Q2 en üst %10 = 68.9% · en üst %1 = 32.5% · alt %50 = 2.3%
+ASSERT: hepsi geçti

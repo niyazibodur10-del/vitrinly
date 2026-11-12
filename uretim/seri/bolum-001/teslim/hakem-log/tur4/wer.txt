@@ -1,0 +1,2 @@
+kelime=176 hata=1 WER=%0.6
+insert  -> jake

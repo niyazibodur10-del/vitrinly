@@ -1,0 +1,36 @@
+# Flip By Vote — Bölüm 001 diyaloğu (tools/ses/diyalog.py girdisi). Kaynak: veri/satirlar.py (metin-kontrol.py --yaz üretir)
+# ses-yonetmeni TTS kopyası: bolum.txt + 2 fonetik işaret (Two→/tʰˈu/ "Do" hatası, gem→/ʤˈɪm/ "jam" hatası). Metin aynı.
+# M01 S1
+MIKE (0.40): That's it. Every dollar we have.
+JAKE: Rent's paid. Fridge has mustard. That's everything.
+# M02 S2
+MIKE (0.52): Two best friends. One hundred bucks.
+JAKE: One slightly crazy goal.
+MIKE: A million dollars.
+JAKE: And we don't make the moves. You do.
+# M04 S3
+MIKE (0.52): Okay. Three flips. Hear me out.
+JAKE: Every bad idea starts with hear me out.
+MIKE: And every good one!
+# M06 S4
+MIKE (0.65): One. A road bike. Sixty bucks. Flat tires, but look at that frame!
+JAKE: That's most of our money on a bike that can't roll.
+MIKE: Air is free, Jake.
+JAKE: Tires aren't.
+# J07 S5
+JAKE (0.75): [Two](/tʰˈu/). A solid wood dresser. Free. We paint it, flip it.
+MIKE: Free? What's the catch?
+JAKE: It has to go today. And we have a tiny car.
+# M09 S5
+MIKE (1.02): So we rent a truck, buy paint, and wait. Slow.
+JAKE: Slow. But safe.
+# M10 S6
+MIKE (0.52): Three. A mystery box of old video games. Forty bucks.
+JAKE: Could be a [gem](/ʤˈɪm/). Could be forty bucks of scratched discs.
+# M12 S7
+MIKE (1.22): Jake, we don't need more money. We need guts.
+JAKE: A price tag is just a number. Value is what somebody actually pays.
+JAKE: Fine. We let them decide.
+# B01 S8
+MIKE (0.82): Bike, dresser, or mystery box?
+JAKE: Tell us in the comments.

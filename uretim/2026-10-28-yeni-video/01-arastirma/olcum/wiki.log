@@ -1,0 +1,4 @@
+Black_Friday_(1869) ERR HTTP Error 429: Too Many Requests
+Panic_of_1907 {'days': 91, 'sum90': 21721, 'last30': 7498, 'daily_avg30': 250, 'prev60_avg': 233, 'peak': 781, 'peakday': '20261022'}
+Anthropic {'days': 91, 'sum90': 774168, 'last30': 254542, 'daily_avg30': 8485, 'prev60_avg': 8518, 'peak': 25541, 'peakday': '20260914'}
+CoreWeave ERR HTTP Error 429: Too Many Requests

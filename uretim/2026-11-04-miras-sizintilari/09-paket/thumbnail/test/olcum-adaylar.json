@@ -1,0 +1,295 @@
+{
+ "K1": {
+  "id": "K1",
+  "metin": "WHO GETS IT? + $124T",
+  "kelime": 4,
+  "dosya": "adaylar/K1.jpg",
+  "boyut": [
+   1280,
+   720
+  ],
+  "bayt": 110349,
+  "jpeg_q": 92,
+  "kontrast": [
+   {
+    "metin": "$124T",
+    "bbox": [
+     793,
+     485,
+     1119,
+     622
+    ],
+    "zemin_p5": 14.15,
+    "zemin_medyan": 14.15,
+    "dolgu_kontur": null,
+    "mobil_buyuk_harf_px": 16.9
+   },
+   {
+    "metin": "WHO",
+    "bbox": [
+     48,
+     24,
+     387,
+     198
+    ],
+    "zemin_p5": 7.25,
+    "zemin_medyan": 7.25,
+    "dolgu_kontur": 13.03,
+    "mobil_buyuk_harf_px": 22.6
+   },
+   {
+    "metin": "GETS",
+    "bbox": [
+     48,
+     236,
+     399,
+     410
+    ],
+    "zemin_p5": 7.06,
+    "zemin_medyan": 7.25,
+    "dolgu_kontur": 13.03,
+    "mobil_buyuk_harf_px": 22.6
+   },
+   {
+    "metin": "IT?",
+    "bbox": [
+     48,
+     448,
+     271,
+     621
+    ],
+    "zemin_p5": 7.25,
+    "zemin_medyan": 7.25,
+    "dolgu_kontur": 13.03,
+    "mobil_buyuk_harf_px": 22.6
+   }
+  ],
+  "sure_damgasi_ihlal_px": 0,
+  "sha256": "623027240f81abcc"
+ },
+ "K3": {
+  "id": "K3",
+  "metin": "SMALLER. LATER.",
+  "kelime": 2,
+  "dosya": "adaylar/K3.jpg",
+  "boyut": [
+   1280,
+   720
+  ],
+  "bayt": 113419,
+  "jpeg_q": 92,
+  "kontrast": [
+   {
+    "metin": "SMALLER.",
+    "bbox": [
+     48,
+     56,
+     625,
+     196
+    ],
+    "zemin_p5": 14.52,
+    "zemin_medyan": 14.52,
+    "dolgu_kontur": 18.81,
+    "mobil_buyuk_harf_px": 18.1
+   },
+   {
+    "metin": "LATER.",
+    "bbox": [
+     72,
+     269,
+     358,
+     372
+    ],
+    "zemin_p5": 5.01,
+    "zemin_medyan": 5.01,
+    "dolgu_kontur": null,
+    "mobil_buyuk_harf_px": 13.5
+   }
+  ],
+  "sure_damgasi_ihlal_px": 0,
+  "sha256": "5509f04fce408bec",
+  "kutu_yuklenen": 10,
+  "kutu_teslim": 6,
+  "kenar_orani": 0.7746,
+  "buyuk_h": 290,
+  "kucuk_h": 225
+ },
+ "K4": {
+  "id": "K4",
+  "metin": "IT KEEPS LEAKING",
+  "kelime": 3,
+  "dosya": "adaylar/K4.jpg",
+  "boyut": [
+   1280,
+   720
+  ],
+  "bayt": 111500,
+  "jpeg_q": 92,
+  "kontrast": [
+   {
+    "metin": "IT",
+    "bbox": [
+     48,
+     86,
+     155,
+     233
+    ],
+    "zemin_p5": 5.1,
+    "zemin_medyan": 5.1,
+    "dolgu_kontur": 18.81,
+    "mobil_buyuk_harf_px": 19.3
+   },
+   {
+    "metin": "KEEPS",
+    "bbox": [
+     210,
+     85,
+     593,
+     234
+    ],
+    "zemin_p5": 4.66,
+    "zemin_medyan": 5.1,
+    "dolgu_kontur": 18.81,
+    "mobil_buyuk_harf_px": 19.3
+   },
+   {
+    "metin": "LEAKING",
+    "bbox": [
+     72,
+     333,
+     518,
+     464
+    ],
+    "zemin_p5": 18.81,
+    "zemin_medyan": 18.81,
+    "dolgu_kontur": null,
+    "mobil_buyuk_harf_px": 16.9
+   }
+  ],
+  "sure_damgasi_ihlal_px": 0,
+  "sha256": "6bf2d245ba416031"
+ },
+ "K4b": {
+  "id": "K4b",
+  "metin": "IT KEEPS LEAKING",
+  "kelime": 3,
+  "dosya": "adaylar/K4b.jpg",
+  "boyut": [
+   1280,
+   720
+  ],
+  "bayt": 111135,
+  "jpeg_q": 92,
+  "kontrast": [
+   {
+    "metin": "IT",
+    "bbox": [
+     48,
+     86,
+     155,
+     233
+    ],
+    "zemin_p5": 5.1,
+    "zemin_medyan": 5.1,
+    "dolgu_kontur": 18.81,
+    "mobil_buyuk_harf_px": 19.3
+   },
+   {
+    "metin": "KEEPS",
+    "bbox": [
+     210,
+     85,
+     593,
+     234
+    ],
+    "zemin_p5": 4.66,
+    "zemin_medyan": 5.1,
+    "dolgu_kontur": 18.81,
+    "mobil_buyuk_harf_px": 19.3
+   },
+   {
+    "metin": "LEAKING",
+    "bbox": [
+     72,
+     333,
+     518,
+     464
+    ],
+    "zemin_p5": 18.81,
+    "zemin_medyan": 18.81,
+    "dolgu_kontur": null,
+    "mobil_buyuk_harf_px": 16.9
+   }
+  ],
+  "sure_damgasi_ihlal_px": 0,
+  "sha256": "2d41878cdcab4e05"
+ },
+ "K1s": {
+  "id": "K1s",
+  "metin": "WHO GETS IT? + $124T",
+  "kelime": 4,
+  "dosya": "adaylar/K1s.jpg",
+  "boyut": [
+   1280,
+   720
+  ],
+  "bayt": 111947,
+  "jpeg_q": 92,
+  "kontrast": [
+   {
+    "metin": "$124T",
+    "bbox": [
+     793,
+     485,
+     1119,
+     622
+    ],
+    "zemin_p5": 14.15,
+    "zemin_medyan": 14.15,
+    "dolgu_kontur": null,
+    "mobil_buyuk_harf_px": 16.9
+   },
+   {
+    "metin": "WHO",
+    "bbox": [
+     48,
+     24,
+     387,
+     198
+    ],
+    "zemin_p5": 7.25,
+    "zemin_medyan": 7.25,
+    "dolgu_kontur": 13.03,
+    "mobil_buyuk_harf_px": 22.6
+   },
+   {
+    "metin": "GETS",
+    "bbox": [
+     48,
+     236,
+     399,
+     410
+    ],
+    "zemin_p5": 7.06,
+    "zemin_medyan": 7.25,
+    "dolgu_kontur": 13.03,
+    "mobil_buyuk_harf_px": 22.6
+   },
+   {
+    "metin": "IT?",
+    "bbox": [
+     48,
+     448,
+     271,
+     621
+    ],
+    "zemin_p5": 7.25,
+    "zemin_medyan": 7.25,
+    "dolgu_kontur": 13.03,
+    "mobil_buyuk_harf_px": 22.6
+   }
+  ],
+  "sure_damgasi_ihlal_px": 0,
+  "sha256": "e4e12be88e90fd64"
+ }
+}

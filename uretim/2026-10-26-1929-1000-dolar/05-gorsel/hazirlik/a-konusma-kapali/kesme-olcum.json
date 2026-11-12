@@ -1,0 +1,32 @@
+{
+ "girdi": "/home/user/vitrinly/assets/karakter/paket-v1/a-konusma-kapali.png",
+ "zemin_bgr": [
+  123,
+  89,
+  61
+ ],
+ "boyut": [
+  1920,
+  1080
+ ],
+ "M1-renk-anahtari": {
+  "kenar_artigi_orani": 0.0743,
+  "sacak_px": 0,
+  "on_plan_px": 499439
+ },
+ "M2-grabcut": {
+  "kenar_artigi_orani": 0.1366,
+  "sacak_px": 256,
+  "on_plan_px": 500223
+ },
+ "M3-grabcut-arindirma": {
+  "kenar_artigi_orani": 0.0664,
+  "sacak_px": 48,
+  "on_plan_px": 500223
+ },
+ "M4-renk-arindirma": {
+  "kenar_artigi_orani": 0.0013,
+  "sacak_px": 0,
+  "on_plan_px": 499439
+ }
+}

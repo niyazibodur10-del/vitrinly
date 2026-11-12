@@ -1,0 +1,250 @@
+[
+ {
+  "bolum": "B1",
+  "dilim": [
+   21.32,
+   42.26
+  ],
+  "kelime": 66,
+  "anlatim_tek_hata": 0,
+  "adaylar": [
+   {
+    "aday": "catchy-swing",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 21.7,
+    "muzik_konusmada_lufs_M": -36.2,
+    "muzik_boslukta_lufs_M": -36.5
+   },
+   {
+    "aday": "ragtime-jazz",
+    "duck": 23,
+    "oyuk": true,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 23.0,
+    "muzik_konusmada_lufs_M": -38.2,
+    "muzik_boslukta_lufs_M": -38.8
+   }
+  ]
+ },
+ {
+  "bolum": "B2",
+  "dilim": [
+   87.51,
+   108.25
+  ],
+  "kelime": 60,
+  "anlatim_tek_hata": 4,
+  "adaylar": [
+   {
+    "aday": "ragtime-jazz",
+    "duck": 23,
+    "oyuk": true,
+    "hata": 5,
+    "fark_hata": 1,
+    "konusma_alti_fark_db": 23.1,
+    "muzik_konusmada_lufs_M": -38.2,
+    "muzik_boslukta_lufs_M": -38.7
+   },
+   {
+    "aday": "osanpo-rag",
+    "duck": 23,
+    "oyuk": true,
+    "hata": 5,
+    "fark_hata": 1,
+    "konusma_alti_fark_db": 22.8,
+    "muzik_konusmada_lufs_M": -37.4,
+    "muzik_boslukta_lufs_M": -37.8
+   }
+  ]
+ },
+ {
+  "bolum": "B3",
+  "dilim": [
+   206.82,
+   224.56
+  ],
+  "kelime": 59,
+  "anlatim_tek_hata": 0,
+  "adaylar": [
+   {
+    "aday": "tension",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 25.4,
+    "muzik_konusmada_lufs_M": -41.7,
+    "muzik_boslukta_lufs_M": -42.2
+   },
+   {
+    "aday": "backup-plan",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 20.8,
+    "muzik_konusmada_lufs_M": -35.3,
+    "muzik_boslukta_lufs_M": -35.3
+   }
+  ]
+ },
+ {
+  "bolum": "B4",
+  "dilim": [
+   308.82,
+   325.45
+  ],
+  "kelime": 43,
+  "anlatim_tek_hata": 1,
+  "adaylar": [
+   {
+    "aday": "fridge",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 1,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 22.6,
+    "muzik_konusmada_lufs_M": -36.6,
+    "muzik_boslukta_lufs_M": -36.2
+   },
+   {
+    "aday": "black-tea-rag",
+    "duck": 23,
+    "oyuk": true,
+    "hata": 1,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 23.0,
+    "muzik_konusmada_lufs_M": -37.3,
+    "muzik_boslukta_lufs_M": -37.6
+   }
+  ]
+ },
+ {
+  "bolum": "B5",
+  "dilim": [
+   394.18,
+   417.37
+  ],
+  "kelime": 67,
+  "anlatim_tek_hata": 0,
+  "adaylar": [
+   {
+    "aday": "end-of-hope",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 22.5,
+    "muzik_konusmada_lufs_M": -36.6,
+    "muzik_boslukta_lufs_M": -36.9
+   },
+   {
+    "aday": "dip-drone",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 20.9,
+    "muzik_konusmada_lufs_M": -35.2,
+    "muzik_boslukta_lufs_M": -34.7
+   }
+  ]
+ },
+ {
+  "bolum": "B6",
+  "dilim": [
+   470.69,
+   491.65
+  ],
+  "kelime": 58,
+  "anlatim_tek_hata": 0,
+  "adaylar": [
+   {
+    "aday": "unsolved",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 22.0,
+    "muzik_konusmada_lufs_M": -36.5,
+    "muzik_boslukta_lufs_M": -36.1
+   },
+   {
+    "aday": "kilit-saat",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 22.1,
+    "muzik_konusmada_lufs_M": -36.6,
+    "muzik_boslukta_lufs_M": -35.9
+   }
+  ]
+ },
+ {
+  "bolum": "B7",
+  "dilim": [
+   543.92,
+   558.03
+  ],
+  "kelime": 36,
+  "anlatim_tek_hata": 0,
+  "adaylar": [
+   {
+    "aday": "electro-swing",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 22.1,
+    "muzik_konusmada_lufs_M": -36.2,
+    "muzik_boslukta_lufs_M": -36.2
+   },
+   {
+    "aday": "the-way-it-is",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 22.4,
+    "muzik_konusmada_lufs_M": -36.4,
+    "muzik_boslukta_lufs_M": -36.1
+   }
+  ]
+ },
+ {
+  "bolum": "B8",
+  "dilim": [
+   598.09,
+   620.8
+  ],
+  "kelime": 68,
+  "anlatim_tek_hata": 0,
+  "adaylar": [
+   {
+    "aday": "positive-melancholy",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 22.8,
+    "muzik_konusmada_lufs_M": -37.4,
+    "muzik_boslukta_lufs_M": -37.3
+   },
+   {
+    "aday": "happy-moments",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 23.2,
+    "muzik_konusmada_lufs_M": -37.5,
+    "muzik_boslukta_lufs_M": -36.3
+   }
+  ]
+ }
+]

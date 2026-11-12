@@ -1,0 +1,10 @@
+[once] S08 7.64 | S06 7.62 | S01 7.04  → kazanan S08 (eşit (<0.30), hook belirledi)
+[sonra] S08 7.79 | S06 7.78 | S01 7.34  → kazanan S08 (eşit (<0.30), hook belirledi)
+[once] ±0.05 ağırlık, 30 durum → S08=30; S06-S08 en büyük |fark| 0.17; S08 dışı kazanan: yok
+[sonra] ±0.05 ağırlık, 30 durum → S08=30; S06-S08 en büyük |fark| 0.16; S08 dışı kazanan: yok
+[once] hook'suz sıra: S08 > S06 > S01
+[sonra] hook'suz sıra: S08 > S06 > S01
+hook S08: 37 kelime ≤40 OK
+hook S06: 39 kelime ≤40 OK
+S08 ölçek ($/ay = milyar $/yıl): gelir 5403 → 'five thousand four hundred' OK; gider 7396 → 'about seven thousand four hundred' OK; açık/ay 1992.5 → thumbnail '-$2,000/MO' OK
+S08 faiz/gelir 19.5% → 'one in every five dollars' OK; gider/gelir 1.369 → '$7 for every $5' (1.4) OK; hane borcu 481.7K $ (toplam borç)

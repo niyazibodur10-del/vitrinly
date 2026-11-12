@@ -1,0 +1,39 @@
+# Flip By Vote — Bölüm 002 diyaloğu (tools/ses/diyalog.py girdisi). Kaynak: veri/satirlar.py (metin-kontrol.py --yaz üretir)
+# M01 S1
+MIKE (0.15): No comments, so I picked. Meet Brenda!
+JAKE: Was he right? Brenda has two flat tires.
+MIKE: Brenda couldn't wait!
+JAKE: Next time, you decide. Please.
+# J04 S3
+JAKE (0.75): Sixty dollars. Did you haggle?
+MIKE: He seemed nice.
+JAKE: So, no.
+JAKE: I checked the serial number, though. Not stolen.
+MIKE: See? Brenda's innocent.
+# M05 S4
+MIKE (0.75): Now we pump her up. Air is free. Easy money!
+# J07 S4
+JAKE (1.42): Air is free. Tubes are not.
+JAKE: Both tubes are torn. New ones are eight bucks each.
+MIKE: Sixteen dollars for rubber donuts?
+JAKE: Tires aren't free. I did say that.
+# M07 S5
+MIKE (0.62): Okay, Brenda rides! I'm listing her for a hundred and forty.
+JAKE: She cost us seventy-six. So, sixty-four profit. If she sells.
+MIKE: Oh, she sells. A guy already wrote back. On my way!
+# J11 S6
+JAKE (1.42): He's not on his way.
+MIKE: Maybe traffic?
+JAKE: Forty-five minutes of traffic?
+# M10 S6
+MIKE (0.82): He says, sorry, found one cheaper. Brenda deserved better.
+# M11 S7
+MIKE (1.05): Wait. New message. Ninety bucks, cash, today.
+JAKE: Ninety is still fourteen profit. Fast. And safe.
+MIKE: Fourteen? She's worth a hundred and forty! We wait. Trust the vibe.
+JAKE: And if the next guy doesn't show either?
+MIKE: Then we counter. Meet him at a hundred and fifteen.
+JAKE: And maybe he walks. Then Brenda lives here.
+# B01 S8
+MIKE (1.02): Take the ninety, hold out, or counter?
+JAKE: Tell us in the comments.

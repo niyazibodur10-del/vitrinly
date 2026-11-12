@@ -1,0 +1,44 @@
+Sahne 31 · anlatım 2155 kelime · Shorts 2 · başlık ['The Biggest Inheritance Ever, and Why Heirs Might Miss It']
+
+[P1 anlatım] 0
+
+[P1 GÖRSEL] 2
+   …** R18, R19, R20, R26. P1: yasa değişikliği, parti, politikacı yok. **↺ 8:40 "Stop si…
+   …OT A PLAN. A MAP." **Kaynak:** [T] (koşullu; parti/politikacı yok, P1). **↺ 12:45 "Co…
+
+[P1 renk] 0
+
+[P1 Shorts] 0
+
+[P1 başlık] 0
+
+[P2 korku dili (cümle)] 0
+
+[P3 anlatım] 4
+   …it. The other needs the cash. If neither can buy the other out, the house goes up f…
+   …on this road is a house someone else gets to buy. Maybe you. Oh, and there's my thi…
+   …n also grow while they wait, if the money is invested. But a box that is being spent c…
+   …f wealthy Americans, people with millions to invest, forty-seven percent said the next…
+
+[P3 Shorts] 0
+
+[P3 GÖRSEL/ekran] 1
+   …Private Bank survey · 1,431 people with $3M+ investable assets" (R09, koordinatör (5))…
+
+[İlk 30 sn şok/küfür] 0
+
+[Şok/küfür tüm] 0
+
+[Savaş görseli (GÖRSEL)] 2
+   …"te kapıda kutu; "buying a home"da kapıdan çıkan kutular, içeri giren genç siluet (…
+   …ERALLY NOT COVERED"; "MEDICAID" kapısından çıkan bir el, kamyondaki yeşil kutuya "E…
+
+[Zaman sözcüğü] 0
+
+[Shorts 1] 103 kelime ≈39 sn · niteleyici: YOK · anlatımda olmayan cümle: ['One hundred twenty-four trillion dollars is expected to pass down in America by twenty forty-eight.', "That's an estimate from Cerulli Associates.", "But here's the twist.", "About fifty-four trillion of it doesn't go to the kids first.", 'It stops at a surviving husband or wife.', 'Nearly forty trillion of that goes to widowed women.', 'So is that a leak?', 'No.', "It isn't lost.", 'The truck just takes a detour, and the kids wait.', "But the wait isn't free.", 'Something keeps happening to the boxes while they sit in that one home.', 'So how many boxes are left when the truck finally reaches the kids?']
+
+[Shorts 2] 100 kelime ≈38 sn · niteleyici: YOK · anlatımda olmayan cümle: ["Here's the leak people fear most when money is passed down.", "So let's read the sign.", 'Now look at a typical family.', 'The tax line is dozens of times higher.', 'So for most families, the scary stop is just a sign by the road.', 'Then where does the money really go on the way to the kids?']
+
+[Ö7] ../../2026-10-26-1929-1000-dolar/03-metin/metin.md: 0.0 % (GEÇTİ) · ortak: []
+
+[Ö7] ../../2026-10-28-yeni-video/03-metin/metin.md: 0.1 % (GEÇTİ) · ortak: ['health insurance for older americans', 'is a story for another']

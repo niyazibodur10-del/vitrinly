@@ -1,0 +1,31 @@
+# F3 doğrulama — S08 metin v1.1 (finans-dogrulayici) · 2026-11-02
+
+İLERLEME: tamam (v1.2 ONAY).
+**METİN KİLİDİ ONAY (v1.2, 4d3183b, metin.md sha256 c833cb696030):** Z1–Z6 grep ile teyit edildi ("paid first", "every new loan", "106%", "22%", "→ 2025" 0 kez; yeni ifadeler 112/75/178/261/134. satırlarda). v1.1 ile karşılaştırınca ANLATIM sayı farkı yalnız Z1 ("three to three and a half") ve Z2 ("one more dollar") kaynaklı, yeni rakam 0. S20 "safest places to lend money" görüş olarak uygun.
+**KARAR: DÜZELT (küçük, 6 zorunlu madde, hepsi tek cümlelik).** Rakamların hepsi doğru. Sorunlar yalnız ifade ve bağlamda: 2 sahne kendi içinde çelişiyor, 2 olgu fazla kesin söylenmiş, 2 ekran/grafik etiketi yanlış. Rakam eklenmez, ses dışı yeniden ölçüm gerekmez. Düzeltme sonrası yalnız bu 6 satır grep ile yeniden kontrol edilir.
+**Tavsiye dili:** 0 (al/sat/"you should"/"protect your money"/varlık önerisi yok; S21 ve Shorts 2'de "not a forecast" var). **Karalama/suçlama:** 0 (parti, kişi, şirket yok; S18 kararı "voters"a bırakıyor). **Yanıltıcı içerik (spiral/default):** S20 "possibility" + 3 karşı kanıt. Uygun.
+**Girdi:** metin.md sha256 89bebe18d3d4 (eb9770a sonrası) · rakam-tablosu.md (9a1437e) · veri/olcek-cikti.txt.
+**Kanıt:** ANLATIM sütunundan sayı-kelime regex'i ile 120 sayı ifadesi çıkarıldı → hepsi R01–R35 veya olcek-cikti.txt [H] ile eşleşti. Tabloda olmayan rakam: 0. Ölçek dışı [H] kontroller: "more than half of the gap" = 1.051,8 / 1.992,5 = %52,8 ✓ · "more than three thousand seven hundred" = 1.667,1 + 1.072,6 + 1.025,6 = 3.765,3 ✓ · "about one thousand six hundred" (everything else) = 7.395,8 − 5.782,3 = 1.613,5 ✓ (geri kalan fonksiyonlar ve −155 offsetting receipts netlenmiş hâli) · "$64,800" (S09 G2b) = 5.403,3 × 12 = 64.840 ✓ · "three kinds of taxes = most" = 4.981 / 5.403 = %92 ✓ · ~389 bin $ ✓ (olcek 389.160 yuvarlanmış girdiden; sesli "about 390 thousand" doğru).
+
+## 1. Zorunlu düzeltmeler (senaryo-yazari)
+| # | Yer | Sorun | Düzeltme (2–3 seçenek; ilki önerilen) |
+|---|---|---|---|
+| Z1 | S08 "On average, it costs about three percent a year" + G2 "≈ 3%" | 2 dk sonra S13 "about three and a half percent" diyor. İzleyici çelişki görür. %3,2 = net faiz/borç (ima), %3,5 = Treasury ortalama kupon (R22, R31) | A) "On average, it costs **only about three to three and a half percent** a year." Ekran "≈ 3–3.5% a year, not card rates" · B) "it costs only a few percent a year" (rakamsız) · C) S08'de de "about three and a half percent" (R22, Sep 2026) |
+| Z2 | S15 "So the average rate keeps climbing, even if the household never borrows one more dollar." | Koşulsuz söylenmiş. Ortalama faiz, yalnız yeni krediler vadesi dolan eskilerden pahalıysa yükselir | A) "...keeps climbing **as long as new loans cost more than the old ones they replace**, even if the household never borrows one more dollar." · B) "So, for now, the average rate keeps climbing…" |
+| Z3 | S15 "The lender gets paid first, before any other bill." · S26 "paid first, every month" | ABD'de faize yasal bir öncelik sırası yok (borç tavanı dönemlerinde tartışmalı bir konu). "First" olgu iddiası olarak okunuyor | A) S15: "**And it's the one bill this household can't skip.**" · S26: "Rate times balance, **every single month.**" · B) "The lender has to be paid, whatever else happens." Ekrandaki "PAID FIRST" → "CAN'T SKIP" |
+| Z4 | S27 "one number that sets the price of **every** new loan in this kitchen" | 10 yıllık getiri bütün yeni borçlanmanın fiyatını belirlemez. Kısa vadeli borçlanma ~%4 (R24), bunu metin S14'te kendisi söylüyor | A) "There's one number that **helps set the price of many** new loans in this kitchen, and of a lot of mortgages outside it." · B) "...that sets the price of the long loans in this kitchen…" |
+| Z5 | Shorts 2, 9:16 notu: "1946: 106% → 1974: 22%" | 1974 değeri **%23,2** (R33). 106,1 baskıdan baskıya ±1–2 puan oynuyor; tablo ondalıklı yazımı yasaklıyor | Ekran: "**1946: >100% → 1974: ~23%**" (uzun video G5 ile aynı) |
+| Z6 | S19 G5 "çizgisi 1946 → 1974 → 2025" | OMB T7.1 (FY2025 baskısı) gerçekleşen değerleri **FY2023'te bitiriyor** (%97,2). 2024 ve sonrası **tahmin**. Grafiğe tahmin değerleri girerse "gerçek veri" olarak okunur | OMB çizgisi FY1946–FY2023'te biter (son nokta "97% (FY2023)"). 2026 noktası S20'de **ayrı işaretle** gösterilir: "~97% (Q2 2026) · FRED FYGFGDQ188S". İki kaynak lejantta ayrı yazılır |
+
+## 2. İsteğe bağlı (doğruluk artar, kapıyı etkilemez)
+| # | Yer | Öneri |
+|---|---|---|
+| O1 | S02 "the rate it pays is **the** starting point for car loans and mortgages" | "...is **a** starting point for many loans, like mortgages and car loans." Mortgage'lar 10 yıllık getiriye bağlı, araç kredileri daha çok kısa vadeli faize. "The" fazla kesin |
+| O2 | S04 "Taxes on people's paychecks" + "payroll taxes" | İkisi de maaştan kesiliyor, izleyici karıştırır. → "**Income taxes** on what people earn." |
+| O3 | S12 "So this household borrows money to pay interest" | Para birbirinin yerine geçebildiği için doğru, ama mekanizma olarak "**In effect,** this household borrows…" daha dürüst |
+
+## 3. Yasal not ve açıklama (youtube-paketleyici ‖ monetizasyon-uyum-uzmani)
+Metin `rakam-tablosu.md` §6'daki yasal notu kullanır (eğitim/eğlence amaçlı; finansal, yatırım, vergi veya hukuki tavsiye değildir · Leo kurgusal bir karakter · kaynaklar MTS FY2026, Debt to the Penny 30 Eyl 2026, OMB T7.1, FRED · ölçek "$1 a month = $1 billion a year" · "Narration voice is AI-generated"). Sponsor veya ortaklık yok, bu yüzden FTC bildirimi gerekmez. Thumbnail "-$2,000/MO" doğru (R03). Alt-2 başlığı kullanılırsa "Nearly $7 for Every $5" olmalı (R04 = 6,84).
+
+## 4. Doğrulanan iddialar (özet)
+S01/S07 5.400 / ~7.400 / ~2.000 (R01–R03) · S05 1.667 / 1.073 / 1.026 (R09–R11) · S06 savunma 965, faiz ~1.050, 3. büyük fatura, gelirin 1/5'i (R06–R08, R12) · S08–S09 32,4 T$ halkın elindeki borç, ~390 bin $, 6 yıllık gelir (R28–R30) · S10 alacaklı listesi (tasarruf bonosu, Fed dahil; halkın elindeki borcun bileşenleri, OMB T7.1) · S13 %1,4 → %3,5, 5 yılda ~3 kat, 352 → 1.050 $ (R18, R19, R22) · S14 ~%5 ve ~%4, Eki 2026 sonu tarihli (R23, R24) · S19 1946 >%100 → 1974 <%25, borcun dolar tutarı arttı (R33, R34) · S20 ~%97 (R32) · S24 1946'da +%18 (R35). Shorts 1 ve 2 metinleri aynı satırlarla eşleşiyor.

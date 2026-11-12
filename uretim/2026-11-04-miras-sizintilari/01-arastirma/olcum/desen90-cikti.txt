@@ -1,0 +1,257 @@
+niş n= 959 kanal 38
+What Happens If / If               n= 30 medyan= 1.09 >=2x= 37% >=5x=  4
+   değil                           n=929 medyan= 1.06 >=2x= 24% >=5x= 80
+Why ...                            n=144 medyan= 0.97 >=2x= 17% >=5x= 11
+   değil                           n=815 medyan= 1.07 >=2x= 26% >=5x= 73
+How ...                            n= 51 medyan= 1.44 >=2x= 35% >=5x=  5
+   değil                           n=908 medyan= 1.05 >=2x= 24% >=5x= 79
+Here's / This is                   n= 22 medyan= 1.43 >=2x= 41% >=5x=  4
+   değil                           n=937 medyan= 1.05 >=2x= 24% >=5x= 80
+Nobody/No one                      n= 29 medyan= 1.03 >=2x= 28% >=5x=  5
+   değil                           n=930 medyan= 1.06 >=2x= 24% >=5x= 79
+Collapse/Crisis/Crash/Bubble       n=108 medyan= 1.35 >=2x= 36% >=5x= 16
+   değil                           n=851 medyan= 1.02 >=2x= 23% >=5x= 68
+Rakam/$                            n=183 medyan= 0.95 >=2x= 19% >=5x= 16
+   değil                           n=776 medyan= 1.10 >=2x= 26% >=5x= 68
+Yıl (19xx/20xx)                    n= 65 medyan= 0.95 >=2x= 22% >=5x= 11
+   değil                           n=894 medyan= 1.07 >=2x= 24% >=5x= 73
+Soru ?                             n= 99 medyan= 1.04 >=2x= 19% >=5x=  8
+   değil                           n=860 medyan= 1.06 >=2x= 25% >=5x= 76
+Sen/You                            n= 78 medyan= 1.06 >=2x= 22% >=5x=  4
+   değil                           n=881 medyan= 1.06 >=2x= 25% >=5x= 80
+Ülke öznesi                        n=277 medyan= 1.06 >=2x= 23% >=5x= 27
+   değil                           n=682 medyan= 1.06 >=2x= 25% >=5x= 57
+Trump                              n= 14 medyan= 0.93 >=2x=  7% >=5x=  1
+   değil                           n=945 medyan= 1.06 >=2x= 25% >=5x= 83
+AI                                 n= 61 medyan= 1.26 >=2x= 30% >=5x=  6
+   değil                           n=898 medyan= 1.05 >=2x= 24% >=5x= 78
+Tarih/Empire/Rise-fall             n=168 medyan= 1.02 >=2x= 27% >=5x= 20
+   değil                           n=791 medyan= 1.07 >=2x= 24% >=5x= 64
+Zengin/Billionaire                 n= 19 medyan= 1.02 >=2x= 21% >=5x=  1
+   değil                           n=940 medyan= 1.06 >=2x= 24% >=5x= 83
+Fiyat/pahalı/ev                    n= 45 medyan= 1.11 >=2x= 16% >=5x=  2
+   değil                           n=914 medyan= 1.06 >=2x= 25% >=5x= 82
+TÜMÜ BÜYÜK kelime                  n=222 medyan= 1.00 >=2x= 24% >=5x= 24
+süre 4-10 dk                       n=  6 medyan= 1.06 >=2x= 33% >=5x=  0
+süre 10-15 dk                      n= 83 medyan= 1.11 >=2x= 18% >=5x=  2
+süre 15-20 dk                      n=203 medyan= 1.23 >=2x= 27% >=5x= 12
+süre 20-30 dk                      n=369 medyan= 1.03 >=2x= 24% >=5x= 37
+süre 30-60 dk                      n=261 medyan= 1.04 >=2x= 28% >=5x= 33
+süre 60-999 dk                     n= 37 medyan= 0.66 >=2x=  0% >=5x=  0
+abone         0-                   n=186 medyan= 0.97 >=2x= 19% >=5x= 19
+abone     10000-                   n=184 medyan= 0.92 >=2x= 27% >=5x= 20
+abone    100000-                   n=362 medyan= 1.06 >=2x= 28% >=5x= 36
+abone   1000000-                   n=227 medyan= 1.29 >=2x= 21% >=5x=  9
+
+TOP skor_med (>=3x, >=30k):
+  364.0x ab=99.10    776925  21.1dk   77g DoG6_3PFHN0 False Profit          (7840) | What Happens When Economists Run a Country
+   65.7x ab=71.89    226452  27.6dk   58g n-UEu-fh8Dk History Beneath       (3150) | THE HISTORY OF MORINGA — The Ancient Tree That Became a Modern Superfood
+   51.4x ab=31.79   4259536  19.1dk   18g AyMHJBLc_tA Finance Bureau        (134000) | What Happens If Trump Loses The Midterms?
+   36.0x ab=16.58    766023  18.3dk   15g ayTQn2jGtS0 Why X                 (46200) | Silver Is Running Out... So Why Is It Crashing?
+   33.3x ab=15.66   1691726  30.9dk   16g 36J1tL9ulGA Markets of the Past   (108000) | The Real Reason Hitler Never Invaded Switzerland
+   31.9x ab= 4.14   4600075  44.2dk   32g Zw0I7kb6zg4 New Money             (1110000) | 'Big Short' Investor Explains How the AI Bubble Will Burst
+   30.3x ab= 4.29    558152  28.2dk   42g deeMYKK3-98 Nolan Matthias        (130000) | The Crash That Will Change A Generation
+   24.5x ab= 8.36    995273  55.2dk   46g wNeYkism9sk Paul McAllister       (119000) | The Horrors of the Oregon Trail
+   22.2x ab= 1.04    313985  26.4dk   76g -8K5iJCdhv8 SLICE History         (302000) | The Sailor Who Photographed the Death of an Empire I SLICE HISTORY | FULL DOCUME
+   21.4x ab= 3.03    394381  25.4dk   51g aTaNYr_jkMY Nolan Matthias        (130000) | This Is What "ALWAYS" Happens Before A Financial Crisis
+   18.0x ab=41.19    273111  21.1dk   16g _Ybq9G4zSKk theunfilteredguy      (6630) | 2030 Prediction: The Male Exodus Will BANKRUPT These 5 American Universities
+   17.5x ab= 8.26    891720  31.9dk   60g B-KUG2U1k60 Markets of the Past   (108000) | The Real Reason Japan Attacked Pearl Harbor
+   16.6x ab=18.20     57317  28.1dk   68g hv-W6AO56e0 History Beneath       (3150) | THE HISTORY OF COAL — The Rock That Built the Modern World
+   16.2x ab=17.50    537283  24.1dk   37g cdEGg2-C6bI Marcus Explains       (30700) | How All-You-Can-Eat Buffets Make Money? (It's Not Food)
+   15.8x ab= 5.38    640756  54.5dk   32g eXYQi1McPW4 Paul McAllister       (119000) | The Most Impossible Rise of a Company Ever: Tupperware
+   15.4x ab=16.66    511522  25.1dk   84g 5lpKA72DQmo Marcus Explains       (30700) | The Economics of Money Laundering
+   14.3x ab= 3.90     30596  14.0dk   53g rNiHjxe9g_A False Profit          (7840) | Economics Explained Is A Junk Channel
+   14.2x ab=15.39    472441  25.8dk   47g wfj8Poa5ZMo Marcus Explains       (30700) | How Pawn Shops Actually Make Money
+   13.8x ab= 1.96    254635  22.9dk   73g HzVv1mwzTHs Nolan Matthias        (130000) | This Is What "ALWAYS" Happens Before a Revolution
+   13.0x ab= 4.00    358006  24.5dk   84g 0fdYlaYf-uw TechButMakeItReal     (89400) | What happens to Life Insurance and Pensions If AI Bubble bursts?
+   12.9x ab= 4.97     65651  40.9dk   15g 3i9pmZuLvPo  Fred - Money Historia(13200) | October Diesel Supply Crisis Deepens
+   12.4x ab=13.41    411834  25.8dk   29g el7Pero46oo Marcus Explains       (30700) | How All-Inclusive Resorts Make Money
+   12.3x ab= 5.79    625826  32.7dk   26g ahUtiSKEVDc Markets of the Past   (108000) | The Real Reason Hitler Invaded the Soviet Union
+   12.2x ab=13.26    406932  26.8dk   68g RmhbDOMmQdU Marcus Explains       (30700) | The Economics of Music Labels
+   12.2x ab=13.20    405315  25.9dk   78g OizVergac0k Marcus Explains       (30700) | The Economics of Nightclubs
+   12.2x ab= 4.16    495135  54.2dk   24g 5O8Z5H-xN9A Paul McAllister       (119000) | Why Nobody Wants to Visit Laughlin
+   12.0x ab= 4.62     60932  41.4dk   20g RwZrPUh924M  Fred - Money Historia(13200) | Why The U.S. Diesel Crisis Is Only Getting Started
+   11.9x ab=27.18    180216  20.1dk   33g gRup-a3ckSc theunfilteredguy      (6630) | 2028 Prediction: The Male Exodus Will Collapse These 5 Industries
+   11.7x ab= 1.66    215156  16.7dk   21g OlIb3KybFKA Nolan Matthias        (130000) | This Is What "ALWAYS" Happens Before A Monetary Reset
+   11.7x ab= 1.51   1679904  13.7dk   68g PMwIW8ZT69o New Money             (1110000) | Elon Musk Explains How the AI Bubble Will Burst.
+   11.5x ab= 0.32   4896076  32.1dk   61g T9d6lrvzM9o The Infographics Show (15500000) | What if the AI Bubble Bursts (Day by Day)
+   11.0x ab= 5.17    558541  30.6dk   82g d2ANMl30_AE Markets of the Past   (108000) | The True Origin of World War II: It Didn’t Start in 1939
+   10.1x ab= 0.47    143167  45.6dk   66g wPz4SJ0TlvE SLICE History         (302000) | 1945: The Race for Berlin and the Collapse of the Third Reich I SLICE HISTORY | 
+   10.1x ab=11.03     34733  23.8dk   42g ijFqgvylOFc History Beneath       (3150) | THE HISTORY OF BITTER MELON — The Fruit Nobody Should Have Wanted
+    9.9x ab= 0.27   4237191  20.0dk    7g MgngwkPAuqQ The Infographics Show (15500000) | The AI bubble is about to pop...
+    9.6x ab= 4.44    205314  16.8dk   23g X_GxttgyvGg Why X                 (46200) | America Just Asked Russia for Diesel
+    9.5x ab= 3.67     48460  40.2dk   18g c_nSo7Rl74A  Fred - Money Historia(13200) | $100 Oil, Record Debt: What's Really Happening to Saudi Arabia's Money
+    9.2x ab= 3.14    373577  57.7dk   17g TAAsZAkr8Ks Paul McAllister       (119000) | Why Nobody Lives in America's Most Beautiful Town
+    9.0x ab= 4.23    456573  29.5dk   14g gDg4Pz55kl4 Markets of the Past   (108000) | The Real Reason Hitler Never Invaded Sweden
+    8.7x ab=19.79    131212  19.7dk   46g vmztaYOPplQ theunfilteredguy      (6630) | 2027 Prediction: The Male Exodus Is About to Hit EVERY Industry
+    8.5x ab= 0.40    120087  57.7dk   40g 0t1yz-BM9HA SLICE History         (302000) | World War II Through Women’s Eyes I SLICE HISTORY | FULL DOCUMENTARY
+    8.2x ab= 3.86    416784  27.0dk   71g TjAYB4kZU9U Markets of the Past   (108000) | The Real Reason Christianity Split in Two — The Great Schism of 1054
+    8.2x ab= 2.78    330992  54.1dk   20g zqFOMrzSr9g Paul McAllister       (119000) | Why America Stopped Shopping at Kmart
+    8.1x ab= 0.16    202628  43.9dk    9g JFftvxOns_0 Your Rich BFF         (1290000) | Why the Economy Hasn't Crashed Yet (And What To Do Now) | Networth & Chill
+    8.1x ab= 3.79    409503  28.4dk   85g gHbVXy-BKCU Markets of the Past   (108000) | The True Origin of the Crusades: What Historians Get Wrong
+    8.1x ab= 0.38    114025  51.8dk   19g C1Y-8COxtXI SLICE History         (302000) | 1914: How the Sarajevo Crisis Became a World War I SLICE HISTORY | FULL DOCUMENT
+    7.8x ab=17.85    118370  21.1dk   28g IbiRc8efPrQ theunfilteredguy      (6630) | 2030 Prediction: The Male Exodus Will Wipe Out BILLIONS From the Economy
+    7.8x ab= 3.65    394257  30.4dk   32g eU23Br73NkM Markets of the Past   (108000) | The True Origin of Christianity’s Break With Judaism: What Historians Get Wrong
+    7.6x ab= 0.36    107722  52.0dk   24g jos77fovLh0 SLICE History         (302000) | Middle East Wars: Fighting for Power in the Name of God I SLICE HISTORY | FULL D
+    7.6x ab= 2.58    306930  55.5dk   44g nq1THJuH6vA Paul McAllister       (119000) | Why America's Greatest Horse Ranch Fell Apart
+    7.3x ab= 0.75   1917152  36.2dk   65g fbH8KiyAu60 Minority Mindset      (2540000) | It's Over: America Is Now Buying Its Own Debt
+    7.3x ab=16.63    110252  19.0dk   63g STFR7XkVYec theunfilteredguy      (6630) | The Great Male Exodus Has BEGUN and Society ISN'T Ready for It.
+    7.2x ab= 2.47    293710  54.0dk   38g WPWEQqIco3s Paul McAllister       (119000) | Why America's Most Powerful Ranch Fell Apart
+    7.1x ab= 3.26    150425  18.7dk   19g aCBpulZOxz8 Why X                 (46200) | China Knows Something About Gold You Don't
+    7.0x ab= 3.29    355538  25.2dk   72g BmKL1F2_ZQ8 Markets of the Past   (108000) | The True Origin of the Vietnam War: What Historians Get Wrong
+    6.8x ab= 8.19    716038  23.8dk   68g OJkIvz2Yzu8 Dial-Up Days          (87400) | Legends of the Hidden Temple Was Rigged!?
+    6.7x ab= 4.11    551365  20.0dk   40g sdMmIXw8vhE Finance Bureau        (134000) | The UK is COLLAPSING (and it can't stop it)
+    6.4x ab=14.70     97434  16.0dk   50g 66crDQvEHRw theunfilteredguy      (6630) | The Male Exodus Has a Price Tag — And Society Is Paying It
+    6.4x ab= 0.18   2731994  32.7dk   54g IDZPvfsyzzA The Infographics Show (15500000) | He started his new job at 7:30 AM. By 9:45 AM, he grounded America.
+    6.4x ab= 0.91    117650  24.5dk   58g MJMhWCan8dI Nolan Matthias        (130000) | This Is The SCARIEST Economic Experiment In American History
+    6.3x ab= 0.17   2709972  18.1dk   30g O4yWBv2Nj68 The Infographics Show (15500000) | What Lethal Radiation Does to Your Body (Hour by Hour)
+    6.3x ab= 0.17   2698719  18.7dk   59g UVKmPMTwglI The Infographics Show (15500000) | The Leaked Audit That Exposes OpenAI's Real Financial Crisis
+    6.3x ab= 2.14    255088  58.0dk   24g xeFLoB1f8Ko Paul McAllister       (119000) | The Most Impossible Rise of a Company Ever: Barbie
+    6.3x ab= 0.29     88836  50.0dk   42g mLtM044yUYY SLICE History         (302000) | Germany 1933-1934: Hitler’s Rise to Power I SLICE HISTORY
+    6.2x ab= 2.10    250495  54.7dk   16g 24qz2nZ4MDo Paul McAllister       (119000) | The Most Impossible Rise of a Company Ever: Pyrex
+    6.0x ab= 2.05    244293  55.8dk   36g kVsfLptBw-4 Paul McAllister       (119000) | Why America Buried the Largest Vineyard on Earth
+    6.0x ab= 2.75    126976  16.4dk   15g HndaLYywJn4 Why X                 (46200) | Central Banks Are Buying Gold... So Why Is It Falling?
+    5.7x ab= 2.63    121335  17.7dk   19g _la_RF14ELk Why X                 (46200) | Japan Stopped Lending to America. Who Pays Now?
+    5.5x ab=12.61     83615  20.3dk   10g _P6vah2OLWQ theunfilteredguy      (6630) | The Male Exodus Already Hit Japan — It CLOSED 450 Schools a Year. America’s Univ
+    5.5x ab= 0.26     77628  48.4dk   41g 8h8xZNRKZEE SLICE History         (302000) | Europe’s Lost Prehistory: The Civilizations Beneath the Sea I SLICE HISTORY | FU
+    5.5x ab= 1.69    151203  26.3dk   14g RmLCmqiVo3o TechButMakeItReal     (89400) | Your credit card is WAY more political than you think
+    5.4x ab=12.39     82170  23.0dk   18g gzlIoywqjIg theunfilteredguy      (6630) | 2030 Prediction: The Male Exodus Will EMPTY These 5 American Cities
+    5.4x ab= 2.54    274708  30.3dk    7g n9jBeN9SaOA Markets of the Past   (108000) | The Real Reason America Became Richer Than Latin America
+    5.4x ab=15.76     30409  23.1dk   76g Ely7ktQPnsc Who Gets Paid         (1930) | The Economy of the United States Explained
+    5.2x ab= 5.63    172729  27.2dk   55g 4KKNhlm5OkI Marcus Explains       (30700) | How Rap Labels Actually Make Money (It's Not Music)
+    5.1x ab=11.62     77042  22.6dk   25g eydRhh7ZaMQ theunfilteredguy      (6630) | 2029 Prediction: The Male Exodus Will BREAK the Housing Market (Nobody Is Ready)
+    5.1x ab= 2.39    257851  23.5dk   19g DYqKaCZlR1E Markets of the Past   (108000) | The True Origin of the 1987 Stock Market Crash: What Historians Get Wrong
+    5.0x ab= 1.72    204962  55.0dk   36g FvgtodKja9M Paul McAllister       (119000) | Why Nobody Wants to Visit Sun Valley
+    5.0x ab= 5.45    167281  25.1dk   53g LDX9CAohnls Marcus Explains       (30700) | How Used Car Dealerships Actually Make Money?
+    5.0x ab= 3.09    413654  18.9dk   34g YhiJGLCmOxs Finance Bureau        (134000) | Oracle JUST Started the AI COLLAPSE (It's Over)
+    4.9x ab= 1.66    197980  55.7dk   37g yg4KVd4SKwI Paul McAllister       (119000) | Why 165,000 People Live in the Middle of Nowhere With Zero Resources
+    4.7x ab= 2.18   1789293  23.1dk   76g c_rDUnXpmfc GEN                   (819000) | How Private Equity Killed Fast Food
+    4.7x ab= 2.20    238105  28.4dk   61g T9jSz_7hNQ8 Markets of the Past   (108000) | The Real Reason Japan Became a World Power — The Meiji Restoration
+    4.7x ab= 3.97   1186935  23.7dk   58g 52cVI0iERf8 How Business Worked   (299000) | How Did America Pay Off The National Debt Last Time?
+    4.6x ab= 2.18    234902  34.3dk   59g UWdfjJhUBgQ Markets of the Past   (108000) | The Real Reason Japan Lost the Battle of Midway — It Wasn’t Just American Codebr
+    4.6x ab= 0.13   1967669  21.1dk   56g 0PoPniOz9Oo The Infographics Show (15500000) | South Korea is Collapsing Faster Than Any Nation in History
+    4.6x ab= 0.13   1964111  43.5dk   36g OQSHHdcp9MM The Infographics Show (15500000) | Why Did Hitler Hate Jews
+    4.6x ab= 2.12     97918  18.5dk   11g FnyQgKGNWhI Why X                 (46200) | The AI Bubble Just Cracked... And Oil Made It Worse
+    4.6x ab= 0.13   1955884  33.2dk   40g UOUM1QT5GgU The Infographics Show (15500000) | Voyager 2 Discovered Something Strange at the Edge of Our Solar System
+    4.6x ab= 0.13   1947935  19.2dk   41g F91uY7QiZUs The Infographics Show (15500000) | The Collapse of AI Software Engineering
+    4.5x ab= 4.87    149650  25.9dk   42g EMVm5kjAJx0 Marcus Explains       (30700) | How Dollar Stores Actually Make Money
+    4.5x ab= 6.54     37518  26.4dk   40g Y02uTUXCST4 Meerkat Explains Finan(5740) | If You Don't Understand Bonds, You Don't Understand Money
+    4.5x ab= 5.33    465571  26.0dk   80g 3Jp_eonC6C0 Dial-Up Days          (87400) | The Double Dare Episode That Went Horribly Wrong
+    4.3x ab= 2.00    216522  33.1dk   75g 3HbiCTTnexU Markets of the Past   (108000) | The True Origin of the 2008 Financial Crisis: What Historians Get Wrong
+    4.2x ab= 2.60    348449  17.8dk   28g cg0sRRWQ7Sc Finance Bureau        (134000) | How LIV Golf Went BANKRUPT With Unlimited Money
+    4.2x ab= 1.93   1577924  22.6dk   60g xPjop4OC1XY GEN                   (819000) | WTF Is Happening To The Stock Market?
+    4.2x ab= 3.36    911337  17.2dk   57g 5yMj92G9wbA Fin Tek               (271000) | Michael Burry Just Bet on a $3 Trillion Financial Time Bomb
+    4.0x ab= 1.89    203905  30.0dk   22g 7en4_PIbu3I Markets of the Past   (108000) | The True Origin of the British Empire’s Wealth: What Historians Get Wrong
+    4.0x ab= 1.37    162567  56.0dk   35g dbkcoXXO--w Paul McAllister       (119000) | The Most Impossible Rise of a Company Town Ever: Anaheim
+    4.0x ab= 1.85   1514574  22.7dk   28g KU_0gLgJSks GEN                   (819000) | If Housing is F*cked, Why Hasn’t It Crashed?
+    3.9x ab= 4.20    129084  26.5dk   64g lvDHlKidO_Q Marcus Explains       (30700) | How Sports Teams Actually Make Money (It’s Not the Sports)
+    3.9x ab= 1.31    156285  55.5dk   29g xD1HVM2N2Hg Paul McAllister       (119000) | Why Nobody Wants to Visit Santa Barbara
+    3.8x ab= 1.76   3091323  18.6dk   58g QmWyQ-BCD8E How Money Works       (1760000) | Why A National Debt Default Now Looks Genuinely Possible... (sort of)
+    3.8x ab= 1.77    191108  29.9dk   17g pvzptXfgY4E Markets of the Past   (108000) | The Real Reason Britain’s Coal Industry Collapsed — It Wasn’t Just Thatcher
+    3.7x ab= 0.10   1566134  23.2dk   65g cq36YXrfyJE The Infographics Show (15500000) | Ads You See Online Are Now Police Surveillance
+    3.6x ab= 0.10   1524543  16.3dk   53g 7QquPaacViA The Infographics Show (15500000) | Sam Altman is panicking...
+    3.5x ab= 5.16   8418142  32.0dk   62g fXuWQg7uJKg Historically          (1630000) | The ENTIRE History of CHINA [No AI]
+    3.5x ab= 0.17     49869  26.0dk   45g -hWyyMkV6Sw SLICE History         (302000) | The Lost Cities of the Swahili: The Forgotten Kingdom of Kilwa I SLICE HISTORY |
+    3.5x ab= 0.17     49994  25.8dk   83g Dok_wYrKbzg SLICE History         (302000) | Teotihuacan: The First Metropolis in the Americas I SLICE HISTORY | FULL DOCUMEN
+    3.5x ab= 3.80    116619  27.2dk   82g i4DkYJzMIQg Marcus Explains       (30700) | The Economics of Fake Sneaker Business
+    3.5x ab= 0.10   1481735  16.0dk   55g SzR-CBRNxvA The Infographics Show (15500000) | The Mistake That Exposed Osama Bin Laden
+    3.5x ab= 1.60     73806  17.7dk   16g qPT--u2bUd4 Why X                 (46200) | The World Is Quietly Moving Out of the Dollar
+    3.4x ab= 1.17    139648  58.5dk   12g N4ffNWmNmw8 Paul McAllister       (119000) | The Rise and Fall of America's Emptiest Casino Town
+    3.4x ab= 1.58     73055  21.6dk   12g m4SCP9-inHA Why X                 (46200) | Japan Is Falling Behind... And It Holds America's Debt
+    3.4x ab= 7.73     51253  25.0dk   23g 1-fb1oOuPXk theunfilteredguy      (6630) | 2030 Prediction: The Male Exodus Will Collapse These 7 Everyday Brands
+    3.4x ab= 2.08    278761  17.9dk   38g XsPqQhMbVnU Finance Bureau        (134000) | China Just Declared WAR On The AI Bubble
+    3.4x ab= 2.08    278888  19.1dk   38g 9gguyVmEbww Finance Bureau        (134000) | France is FALLING Apart (It Can't Be Stopped)
+    3.3x ab= 1.27    472064  15.7dk   60g f8kUx5_1cWc Wall Street Millennial(371000) | China Will Create A Historic Memory Glut
+    3.3x ab= 1.12    133178  57.1dk   20g Sog4U-IV668 Paul McAllister       (119000) | The Most Impossible Rise of a City Ever: Bakersfield
+    3.2x ab= 0.46     59878  18.3dk   65g PQWdj8hTYY4 Nolan Matthias        (130000) | What Happens To The Dollar When The Bond Market Collapses
+    3.2x ab= 0.09   1372207  19.8dk   26g dt5ocYfjths The Infographics Show (15500000) | An Ozempic Overdose Hour by Hour: The Biology of a 7-Day Gastric Freeze
+    3.2x ab= 0.09   1373628  17.6dk   67g qWQMyeRrabA The Infographics Show (15500000) | THIS is Coming to Your Phone NEXT... I Warned You
+    3.2x ab= 3.47    106442  26.8dk   66g 5cQOgOM5QrA Marcus Explains       (30700) | How Souvenir Shops Actually Make Money (It's NOT Souvenir)
+    3.2x ab= 1.50    162522  26.9dk   88g oLonuWMx7VA Markets of the Past   (108000) | The True Origin of the Protestant Reformation: What Historians Get Wrong
+    3.2x ab= 1.96    262547  18.8dk   50g kjidbXaUjBM Finance Bureau        (134000) | Meta Is FALLING Apart And Zuckerberg Is TERRIFIED
+    3.1x ab= 0.45     58133  23.9dk   89g RSay3VlpMlI Nolan Matthias        (130000) | What Happens To The Dollar When The Japanese Yen Collapses
+    3.1x ab= 0.09   1339362  13.6dk   39g 25l71qrDu7w The Infographics Show (15500000) | What Nicotine Pouches and Vapes Actually Do to Your Body
+    3.1x ab= 0.61   1773380  14.2dk   34g QtZfbWOkoIY Economics Explained   (2890000) | Australia May Have Just Solved The Housing Crisis
+    3.1x ab= 1.46    157302  29.2dk   81g OxXd97i-oRw Markets of the Past   (108000) | The True Origin of the Russian Revolution: It Didn’t Start With Lenin
+    3.1x ab= 0.44     56989  19.7dk   28g VbBYo5rARj4 Nolan Matthias        (130000) | This Is What "ALWAYS" Happens Before A Real Estate Crash
+    3.1x ab= 1.41     65327  19.0dk    9g 7I6yV8dX_q0 Why X                 (46200) | India Just Opened the Door to Silver... And the Price Fell
+    3.0x ab= 3.30    101286  27.8dk   44g meEJeSp0SUk Marcus Explains       (30700) | The F1 Business Is A Lot More Complicated Than You Think
+    3.0x ab= 1.03    122340  56.8dk   46g rOl_SIiGuRQ Paul McAllister       (119000) | Why America Can't Save Its Last Cheap Beach
+
+TOP izlenme/abone (>=2, >=100k):
+ ab=  99.1 med=364.0x    776925  21.1dk DoG6_3PFHN0 False Profit          (7840) | What Happens When Economists Run a Country
+ ab=  71.9 med= 65.7x    226452  27.6dk n-UEu-fh8Dk History Beneath       (3150) | THE HISTORY OF MORINGA — The Ancient Tree That Became a Modern Superfood
+ ab=  41.2 med= 18.0x    273111  21.1dk _Ybq9G4zSKk theunfilteredguy      (6630) | 2030 Prediction: The Male Exodus Will BANKRUPT These 5 American Universities
+ ab=  31.8 med= 51.4x   4259536  19.1dk AyMHJBLc_tA Finance Bureau        (134000) | What Happens If Trump Loses The Midterms?
+ ab=  27.2 med= 11.9x    180216  20.1dk gRup-a3ckSc theunfilteredguy      (6630) | 2028 Prediction: The Male Exodus Will Collapse These 5 Industries
+ ab=  19.8 med=  8.7x    131212  19.7dk vmztaYOPplQ theunfilteredguy      (6630) | 2027 Prediction: The Male Exodus Is About to Hit EVERY Industry
+ ab=  17.9 med=  7.8x    118370  21.1dk IbiRc8efPrQ theunfilteredguy      (6630) | 2030 Prediction: The Male Exodus Will Wipe Out BILLIONS From the Economy
+ ab=  17.5 med= 16.2x    537283  24.1dk cdEGg2-C6bI Marcus Explains       (30700) | How All-You-Can-Eat Buffets Make Money? (It's Not Food)
+ ab=  16.7 med= 15.4x    511522  25.1dk 5lpKA72DQmo Marcus Explains       (30700) | The Economics of Money Laundering
+ ab=  16.6 med=  7.3x    110252  19.0dk STFR7XkVYec theunfilteredguy      (6630) | The Great Male Exodus Has BEGUN and Society ISN'T Ready for It.
+ ab=  16.6 med= 36.0x    766023  18.3dk ayTQn2jGtS0 Why X                 (46200) | Silver Is Running Out... So Why Is It Crashing?
+ ab=  15.7 med= 33.3x   1691726  30.9dk 36J1tL9ulGA Markets of the Past   (108000) | The Real Reason Hitler Never Invaded Switzerland
+ ab=  15.4 med= 14.2x    472441  25.8dk wfj8Poa5ZMo Marcus Explains       (30700) | How Pawn Shops Actually Make Money
+ ab=  13.4 med= 12.4x    411834  25.8dk el7Pero46oo Marcus Explains       (30700) | How All-Inclusive Resorts Make Money
+ ab=  13.3 med= 12.2x    406932  26.8dk RmhbDOMmQdU Marcus Explains       (30700) | The Economics of Music Labels
+ ab=  13.2 med= 12.2x    405315  25.9dk OizVergac0k Marcus Explains       (30700) | The Economics of Nightclubs
+ ab=   8.4 med= 24.5x    995273  55.2dk wNeYkism9sk Paul McAllister       (119000) | The Horrors of the Oregon Trail
+ ab=   8.3 med= 17.5x    891720  31.9dk B-KUG2U1k60 Markets of the Past   (108000) | The Real Reason Japan Attacked Pearl Harbor
+ ab=   8.2 med=  6.8x    716038  23.8dk OJkIvz2Yzu8 Dial-Up Days          (87400) | Legends of the Hidden Temple Was Rigged!?
+ ab=   5.8 med= 12.3x    625826  32.7dk ahUtiSKEVDc Markets of the Past   (108000) | The Real Reason Hitler Invaded the Soviet Union
+ ab=   5.6 med=  5.2x    172729  27.2dk 4KKNhlm5OkI Marcus Explains       (30700) | How Rap Labels Actually Make Money (It's Not Music)
+ ab=   5.5 med=  5.0x    167281  25.1dk LDX9CAohnls Marcus Explains       (30700) | How Used Car Dealerships Actually Make Money?
+ ab=   5.4 med= 15.8x    640756  54.5dk eXYQi1McPW4 Paul McAllister       (119000) | The Most Impossible Rise of a Company Ever: Tupperware
+ ab=   5.3 med=  4.5x    465571  26.0dk 3Jp_eonC6C0 Dial-Up Days          (87400) | The Double Dare Episode That Went Horribly Wrong
+ ab=   5.2 med= 11.0x    558541  30.6dk d2ANMl30_AE Markets of the Past   (108000) | The True Origin of World War II: It Didn’t Start in 1939
+ ab=   5.2 med=  3.5x   8418142  32.0dk fXuWQg7uJKg Historically          (1630000) | The ENTIRE History of CHINA [No AI]
+ ab=   4.9 med=  4.5x    149650  25.9dk EMVm5kjAJx0 Marcus Explains       (30700) | How Dollar Stores Actually Make Money
+ ab=   4.4 med=  9.6x    205314  16.8dk X_GxttgyvGg Why X                 (46200) | America Just Asked Russia for Diesel
+ ab=   4.3 med= 30.3x    558152  28.2dk deeMYKK3-98 Nolan Matthias        (130000) | The Crash That Will Change A Generation
+ ab=   4.2 med=  9.0x    456573  29.5dk gDg4Pz55kl4 Markets of the Past   (108000) | The Real Reason Hitler Never Invaded Sweden
+ ab=   4.2 med=  3.9x    129084  26.5dk lvDHlKidO_Q Marcus Explains       (30700) | How Sports Teams Actually Make Money (It’s Not the Sports)
+ ab=   4.2 med= 12.2x    495135  54.2dk 5O8Z5H-xN9A Paul McAllister       (119000) | Why Nobody Wants to Visit Laughlin
+ ab=   4.1 med= 31.9x   4600075  44.2dk Zw0I7kb6zg4 New Money             (1110000) | 'Big Short' Investor Explains How the AI Bubble Will Burst
+ ab=   4.1 med=  6.7x    551365  20.0dk sdMmIXw8vhE Finance Bureau        (134000) | The UK is COLLAPSING (and it can't stop it)
+ ab=   4.0 med= 13.0x    358006  24.5dk 0fdYlaYf-uw TechButMakeItReal     (89400) | What happens to Life Insurance and Pensions If AI Bubble bursts?
+ ab=   4.0 med=  4.7x   1186935  23.7dk 52cVI0iERf8 How Business Worked   (299000) | How Did America Pay Off The National Debt Last Time?
+ ab=   3.9 med=  1.4x    614202  16.9dk uifXyu6UN-s Grant Rudow           (156000) | Why Money Laundering Works Every Time
+ ab=   3.9 med=  8.2x    416784  27.0dk TjAYB4kZU9U Markets of the Past   (108000) | The Real Reason Christianity Split in Two — The Great Schism of 1054
+ ab=   3.8 med=  3.5x    116619  27.2dk i4DkYJzMIQg Marcus Explains       (30700) | The Economics of Fake Sneaker Business
+ ab=   3.8 med=  8.1x    409503  28.4dk gHbVXy-BKCU Markets of the Past   (108000) | The True Origin of the Crusades: What Historians Get Wrong
+ ab=   3.6 med=  7.8x    394257  30.4dk eU23Br73NkM Markets of the Past   (108000) | The True Origin of Christianity’s Break With Judaism: What Historians Get Wrong
+ ab=   3.5 med=  3.2x    106442  26.8dk 5cQOgOM5QrA Marcus Explains       (30700) | How Souvenir Shops Actually Make Money (It's NOT Souvenir)
+ ab=   3.4 med=  4.2x    911337  17.2dk 5yMj92G9wbA Fin Tek               (271000) | Michael Burry Just Bet on a $3 Trillion Financial Time Bomb
+ ab=   3.3 med=  3.0x    101286  27.8dk meEJeSp0SUk Marcus Explains       (30700) | The F1 Business Is A Lot More Complicated Than You Think
+ ab=   3.3 med=  7.0x    355538  25.2dk BmKL1F2_ZQ8 Markets of the Past   (108000) | The True Origin of the Vietnam War: What Historians Get Wrong
+ ab=   3.3 med=  7.1x    150425  18.7dk aCBpulZOxz8 Why X                 (46200) | China Knows Something About Gold You Don't
+ ab=   3.1 med=  9.2x    373577  57.7dk TAAsZAkr8Ks Paul McAllister       (119000) | Why Nobody Lives in America's Most Beautiful Town
+ ab=   3.1 med=  2.6x    273433  27.1dk dZ5NbnkD__0 Dial-Up Days          (87400) | The Truth About Nickelodeon GUTS Was Kinda Brutal
+ ab=   3.1 med=  2.6x    272896  26.7dk vwmpqy6IhLE Dial-Up Days          (87400) | How a Beloved ’90s Sitcom Became a COMPLETLY Different Show
+ ab=   3.1 med=  5.0x    413654  18.9dk YhiJGLCmOxs Finance Bureau        (134000) | Oracle JUST Started the AI COLLAPSE (It's Over)
+ ab=   3.1 med=  2.5x    267252  27.1dk 4vyOx00nAOw Dial-Up Days          (87400) | The Heartbreaking Story About The Man Inside Binyah Binyah
+ ab=   3.0 med= 21.4x    394381  25.4dk aTaNYr_jkMY Nolan Matthias        (130000) | This Is What "ALWAYS" Happens Before A Financial Crisis
+ ab=   2.8 med=  8.2x    330992  54.1dk zqFOMrzSr9g Paul McAllister       (119000) | Why America Stopped Shopping at Kmart
+ ab=   2.8 med=  6.0x    126976  16.4dk HndaLYywJn4 Why X                 (46200) | Central Banks Are Buying Gold... So Why Is It Falling?
+ ab=   2.8 med=  2.3x    240466  23.4dk lHSakKOEHjk Dial-Up Days          (87400) | The Sad True Story Behind Life with Louie
+ ab=   2.6 med=  5.7x    121335  17.7dk _la_RF14ELk Why X                 (46200) | Japan Stopped Lending to America. Who Pays Now?
+ ab=   2.6 med=  4.2x    348449  17.8dk cg0sRRWQ7Sc Finance Bureau        (134000) | How LIV Golf Went BANKRUPT With Unlimited Money
+ ab=   2.6 med=  7.6x    306930  55.5dk nq1THJuH6vA Paul McAllister       (119000) | Why America's Greatest Horse Ranch Fell Apart
+ ab=   2.5 med=  5.4x    274708  30.3dk n9jBeN9SaOA Markets of the Past   (108000) | The Real Reason America Became Richer Than Latin America
+ ab=   2.5 med=  7.2x    293710  54.0dk WPWEQqIco3s Paul McAllister       (119000) | Why America's Most Powerful Ranch Fell Apart
+ ab=   2.4 med=  5.1x    257851  23.5dk DYqKaCZlR1E Markets of the Past   (108000) | The True Origin of the 1987 Stock Market Crash: What Historians Get Wrong
+ ab=   2.4 med=  2.8x    712169  23.5dk obpLLwCSByE How Business Worked   (299000) | How Is Yahoo Still A Thing?
+ ab=   2.4 med=  2.9x    641987  18.1dk D2xXLuw74zc Fin Tek               (271000) | If You Missed Nvidia, This is Even Bigger
+ ab=   2.3 med=  1.9x    199406  25.8dk diIo67mbRiM Dial-Up Days          (87400) | Burger King Had to Warn Parents About Small Soldiers
+ ab=   2.2 med=  1.9x    196274  23.6dk 3ks1s0C1bZI Dial-Up Days          (87400) | The Disturbing True Story Behind 3 Ninjas
+ ab=   2.2 med=  4.7x    238105  28.4dk T9jSz_7hNQ8 Markets of the Past   (108000) | The Real Reason Japan Became a World Power — The Meiji Restoration
+ ab=   2.2 med=  4.7x   1789293  23.1dk c_rDUnXpmfc GEN                   (819000) | How Private Equity Killed Fast Food
+ ab=   2.2 med=  4.6x    234902  34.3dk UWdfjJhUBgQ Markets of the Past   (108000) | The Real Reason Japan Lost the Battle of Midway — It Wasn’t Just American Codebr
+ ab=   2.1 med=  6.3x    255088  58.0dk xeFLoB1f8Ko Paul McAllister       (119000) | The Most Impossible Rise of a Company Ever: Barbie
+ ab=   2.1 med=  1.8x    186594  26.0dk TrQdrFwlvoU Dial-Up Days          (87400) | Halloweentown Was Built on One Enormous Lie
+ ab=   2.1 med=  6.2x    250495  54.7dk 24qz2nZ4MDo Paul McAllister       (119000) | The Most Impossible Rise of a Company Ever: Pyrex
+ ab=   2.1 med=  3.4x    278761  17.9dk XsPqQhMbVnU Finance Bureau        (134000) | China Just Declared WAR On The AI Bubble
+ ab=   2.1 med=  3.4x    278888  19.1dk 9gguyVmEbww Finance Bureau        (134000) | France is FALLING Apart (It Can't Be Stopped)
+ ab=   2.0 med=  6.0x    244293  55.8dk kVsfLptBw-4 Paul McAllister       (119000) | Why America Buried the Largest Vineyard on Earth
+ ab=   2.0 med=  4.3x    216522  33.1dk 3HbiCTTnexU Markets of the Past   (108000) | The True Origin of the 2008 Financial Crisis: What Historians Get Wrong
+ ab=   2.0 med=  2.5x    540855  22.0dk iiU6ZzBG_IQ Fin Tek               (271000) | The Smart Money Just Doubled Down

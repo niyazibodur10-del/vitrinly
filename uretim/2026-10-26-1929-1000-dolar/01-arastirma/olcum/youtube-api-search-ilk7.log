@@ -1,0 +1,31 @@
+weimar 48452 1 | 12m long: 11323 [(189012, 'The Gold Mistake Everyone Makes During Hyperinflation', 'Independent Financial Historia', '2026-02-24', '2e4ZhZaoK7U')]
+crash1929 222493 6 | 12m long: 422497 [(1663973, 'THE GREAT DEPRESSION 1929 - KISAH SATU NEGARA JATUH MISKIN DALAM WAKTU', 'Nadia Omara', '2026-07-26', 'Y3LkdRd9Hpc')]
+tulip 109287 1 | 12m long: 18726 [(552577, "The Pokemon Card 'Investing' Epidemic, Explained", 'Grant Rudow', '2026-07-25', 'fkEe53FXT1E')]
+southsea 122171 5 | 12m long: 3320 [(90078, 'How a financial crash created Britain’s first prime minister | The Sto', 'The Story of Money Podcast | F', '2026-07-15', 'anGOn7sL6d4')]
+johnlaw 1162 1 | 12m long: 951 [(53923, 'The Gambler Who Bankrupted an Empire (True Story)', 'Cinematic History Tales', '2025-11-30', 'pnkRhKlDwbQ')]
+gfc2008 212529 4 | 12m long: 1305466 [(8763058, 'Financial Crash Expert: The 90-Day Collapse Timeline They Are Desperat', 'The Diary Of A CEO', '2026-04-06', 'PUO51DoSEqk')]
+dotcom 448519 2 | 12m long: 1124779 [(4814317, 'What if the AI Bubble Bursts (Day by Day)', 'The Infographics Show', '2026-09-03', 'T9d6lrvzM9o')]
+Traceback (most recent call last):
+  File "/tmp/claude-0/-home-user-vitrinly/98cc376a-1af5-5176-856d-bb81c65c71b0/scratchpad/yt.py", line 16, in <module>
+    s=get("search",part="snippet",q=q,type="video",maxResults=15,relevanceLanguage="en",videoDuration="long" if mode=="12m" else "any",**extra)
+  File "/tmp/claude-0/-home-user-vitrinly/98cc376a-1af5-5176-856d-bb81c65c71b0/scratchpad/yt.py", line 10, in get
+    raise err
+  File "/tmp/claude-0/-home-user-vitrinly/98cc376a-1af5-5176-856d-bb81c65c71b0/scratchpad/yt.py", line 7, in get
+    try: return json.load(urllib.request.urlopen(u,timeout=30))
+                          ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/urllib/request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/urllib/request.py", line 495, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.13/urllib/request.py", line 604, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python3.13/urllib/request.py", line 533, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "/usr/lib/python3.13/urllib/request.py", line 466, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.13/urllib/request.py", line 613, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests

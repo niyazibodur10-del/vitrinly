@@ -1,0 +1,15 @@
+muzik/jingle-flip.flac	f8bcc251eaf5	← jingle-a
+muzik/dongu-strut-112.flac	8728869b394c	← dongu-a
+muzik/dongu-hustle-124.flac	914b99359eda	← dongu-b
+muzik/gerilim-saat-96.flac	3d6fb6a2de10	← gerilim-a
+sfx/tahta-kalem-kisa.flac	bd90aa0a1898	← sfx-tahta-kisa
+sfx/tahta-kalem-uzun.flac	3caf3e52279f	← sfx-tahta-uzun
+sfx/plak-cizik.flac	4bbb7643a10c	← sfx-plak-cizik
+sfx/kutu-tikirti.flac	e1b468587a2f	← sfx-kutu-tikirti
+sfx/tik.flac	d27b48b028f6	← es-tik
+sfx/swipe.flac	283973b7a7fd	← es-swipe
+sfx/ding.flac	9edea6264d28	← es-ding
+sfx/pop-yumusak.flac	f6374e5f7789	← es-pop-yumusak
+sfx/whoosh-kart.flac	360b8c91237f	← es-whoosh-kart
+sfx/gerilim-dusus.flac	fe78b684764d	← es-gerilim-dusus
+sfx/tezgah-carpma.flac	7367658cf3d9	← es-carpma-desk + 0.55·es-carpma-punch

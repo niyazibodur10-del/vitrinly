@@ -1,0 +1,21 @@
+{
+ "ses": "am_fenrir",
+ "hiz": 0.9,
+ "cumleler": [
+  {
+   "metin": "Imagine waking up one morning and your savings are worth less than a cup of coffee.",
+   "bas": 0.0,
+   "son": 5.0
+  },
+  {
+   "metin": "Sounds impossible?",
+   "bas": 5.65,
+   "son": 6.793
+  },
+  {
+   "metin": "In 1923, in Germany, that's exactly what happened.",
+   "bas": 7.193,
+   "son": 11.084
+  }
+ ]
+}

@@ -1,0 +1,149 @@
+{
+ "1973_oil_crisis": {
+  "days": 91,
+  "sum90": 68816,
+  "last30": 21907,
+  "daily_avg30": 730,
+  "prev60_avg": 769,
+  "peak": 2715,
+  "peakday": "20260810"
+ },
+ "1979_oil_crisis": {
+  "err": "HTTP Error 429: Too Many Requests"
+ },
+ "Paul_Volcker": {
+  "days": 91,
+  "sum90": 42003,
+  "last30": 10612,
+  "daily_avg30": 354,
+  "prev60_avg": 515,
+  "peak": 1702,
+  "peakday": "20260917"
+ },
+ "Stagflation": {
+  "days": 91,
+  "sum90": 23509,
+  "last30": 7665,
+  "daily_avg30": 256,
+  "prev60_avg": 260,
+  "peak": 827,
+  "peakday": "20260916"
+ },
+ "1970s_energy_crisis": {
+  "days": 91,
+  "sum90": 29349,
+  "last30": 8684,
+  "daily_avg30": 289,
+  "prev60_avg": 339,
+  "peak": 1168,
+  "peakday": "20260917"
+ },
+ "AI_bubble": {
+  "err": "HTTP Error 429: Too Many Requests"
+ },
+ "CoreWeave": {
+  "days": 91,
+  "sum90": 86026,
+  "last30": 51291,
+  "daily_avg30": 1710,
+  "prev60_avg": 569,
+  "peak": 7545,
+  "peakday": "20261015"
+ },
+ "Private_credit": {
+  "err": "HTTP Error 429: Too Many Requests"
+ },
+ "National_debt_of_the_United_States": {
+  "days": 91,
+  "sum90": 92560,
+  "last30": 16961,
+  "daily_avg30": 565,
+  "prev60_avg": 1239,
+  "peak": 10493,
+  "peakday": "20260820"
+ },
+ "Gold_as_an_investment": {
+  "days": 91,
+  "sum90": 13500,
+  "last30": 3959,
+  "daily_avg30": 132,
+  "prev60_avg": 156,
+  "peak": 418,
+  "peakday": "20260829"
+ },
+ "Bankruptcy_of_Lehman_Brothers": {
+  "days": 91,
+  "sum90": 60711,
+  "last30": 21452,
+  "daily_avg30": 715,
+  "prev60_avg": 644,
+  "peak": 1692,
+  "peakday": "20260915"
+ },
+ "Dot-com_bubble": {
+  "err": "HTTP Error 429: Too Many Requests"
+ },
+ "Black_Monday_(1987)": {
+  "err": "HTTP Error 429: Too Many Requests"
+ },
+ "Bankruptcy_of_FTX": {
+  "err": "HTTP Error 429: Too Many Requests"
+ },
+ "Hyperinflation_in_Zimbabwe": {
+  "days": 91,
+  "sum90": 23046,
+  "last30": 7921,
+  "daily_avg30": 264,
+  "prev60_avg": 248,
+  "peak": 399,
+  "peakday": "20260910"
+ },
+ "Panic_of_1907": {
+  "days": 91,
+  "sum90": 21791,
+  "last30": 7510,
+  "daily_avg30": 250,
+  "prev60_avg": 234,
+  "peak": 781,
+  "peakday": "20261022"
+ },
+ "Lehman_Brothers": {
+  "days": 91,
+  "sum90": 149738,
+  "last30": 46116,
+  "daily_avg30": 1537,
+  "prev60_avg": 1699,
+  "peak": 3225,
+  "peakday": "20260915"
+ },
+ "FTX": {
+  "err": "HTTP Error 429: Too Many Requests"
+ },
+ "Rai_stones": {
+  "days": 91,
+  "sum90": 14856,
+  "last30": 5717,
+  "daily_avg30": 191,
+  "prev60_avg": 150,
+  "peak": 617,
+  "peakday": "20260904"
+ },
+ "John_Law_(economist)": {
+  "days": 91,
+  "sum90": 15373,
+  "last30": 5052,
+  "daily_avg30": 168,
+  "prev60_avg": 169,
+  "peak": 279,
+  "peakday": "20260929"
+ },
+ "Hunt_brothers": {
+  "days": 78,
+  "sum90": 58,
+  "last30": 27,
+  "daily_avg30": 1,
+  "prev60_avg": 1,
+  "peak": 4,
+  "peakday": "20261011"
+ }
+}

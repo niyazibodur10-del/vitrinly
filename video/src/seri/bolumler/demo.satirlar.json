@@ -1,0 +1,44 @@
+{
+ "sesler": {
+  "JAKE": "am_onyx:0.95",
+  "MIKE": "am_fenrir:1.05"
+ },
+ "sure": 16.088,
+ "satirlar": [
+  {
+   "no": 1,
+   "konusmaci": "JAKE",
+   "bas": 0.15,
+   "bitis": 3.227,
+   "metin": "One hundred dollars. That's all we've got."
+  },
+  {
+   "no": 2,
+   "konusmaci": "MIKE",
+   "bas": 3.447,
+   "bitis": 5.442,
+   "metin": "Wrong. That's all we NEED, Jake."
+  },
+  {
+   "no": 3,
+   "konusmaci": "JAKE",
+   "bas": 5.862,
+   "bitis": 8.242,
+   "metin": "Okay. So what's the plan?"
+  },
+  {
+   "no": 4,
+   "konusmaci": "MIKE",
+   "bas": 8.462,
+   "bitis": 12.442,
+   "metin": "Garage sale. Vintage camera. Fifteen bucks. Done."
+  },
+  {
+   "no": 5,
+   "konusmaci": "JAKE",
+   "bas": 12.862,
+   "bitis": 15.788,
+   "metin": "You just spent fifteen percent of our company."
+  }
+ ]
+}

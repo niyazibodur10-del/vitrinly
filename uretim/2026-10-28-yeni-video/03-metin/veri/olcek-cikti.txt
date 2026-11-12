@@ -1,0 +1,12 @@
+olcek: 1 $/ay = 1 milyar $/yil | gelir 5403.3 $/ay | gider 7395.8 $/ay | acik 1992.5 $/ay
+sosyal_guvenlik: 1667.1 $/ay
+medicare: 1072.6 $/ay
+saglik: 1025.6 $/ay
+net_faiz: 1051.8 $/ay
+savunma: 965.2 $/ay
+ilk 3 zarf toplami: 3765.3 $/ay
+diger her sey: 1613.5 $/ay
+faiz/gelir: 19.5 % | faiz/acik: 52.8 % | faiz-savunma: 86.6 $/ay
+hane borcu (halk): 389,160 $ = 6.00 yillik gelir
+hane borcu (toplam): 482,040 $ = 7.43 yillik gelir
+[RAKAM?] ort. faiz 2021->2026: 1.47 -> 3.518 % = x2.39

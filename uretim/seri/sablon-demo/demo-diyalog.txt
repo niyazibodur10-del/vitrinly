@@ -1,0 +1,6 @@
+# Seri şablonu demo diyaloğu (yalnız test; içerik senaryo-yazari'nin değil)
+JAKE: One hundred dollars. That's all we've got.
+MIKE: Wrong. That's all we NEED, Jake.
+JAKE: Okay. So what's the plan?
+MIKE: Garage sale. Vintage camera. Fifteen bucks. Done.
+JAKE: You just spent fifteen percent of our company.

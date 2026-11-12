@@ -1,0 +1,110 @@
+{
+ "pocket_bill_boerst": {
+  "wer": 0.0,
+  "guven": 0.915,
+  "f0": 118,
+  "f0_std_st": 2.29,
+  "kpm": 166,
+  "bosluk": 0,
+  "whisper": "Every dollar we have a hundred bucks Jake this is the start of something big or the start of a very short story Hold on a price is just a number until someone pays it"
+ },
+ "pocket_george": {
+  "wer": 0.0,
+  "guven": 0.916,
+  "f0": 115,
+  "f0_std_st": 2.09,
+  "kpm": 202,
+  "bosluk": 2,
+  "whisper": "Every dollar we have a hundred bucks Jake. This is the start of something big Or the start of a very short story hold on a price is just a number until someone pays it"
+ },
+ "pocket_javert": {
+  "wer": 0.0,
+  "guven": 0.971,
+  "f0": 81,
+  "f0_std_st": 0.7,
+  "kpm": 137,
+  "bosluk": 6,
+  "whisper": "Every dollar we have, a hundred bucks. Jake, this is the start of something big. Or the start of a very short story. Hold on. A price is just a number until someone pays it."
+ },
+ "pocket_marius": {
+  "wer": 0.029,
+  "guven": 0.946,
+  "f0": 153,
+  "f0_std_st": 5.06,
+  "kpm": 195,
+  "bosluk": 5,
+  "whisper": "Every dollar we have, a hundred bucks. Jake, this is the start of something big. Or the start of a very short story. Hold on. The price is just a number until someone pays it."
+ },
+ "pocket_michael": {
+  "wer": 0.0,
+  "guven": 0.922,
+  "f0": 95,
+  "f0_std_st": 1.83,
+  "kpm": 180,
+  "bosluk": 2,
+  "whisper": "Every dollar we have a hundred bucks Jake. This is the start of something big Or the start of a very short story hold on a price is just a number until someone pays it"
+ },
+ "pocket_peter_yearsley": {
+  "wer": 0.0,
+  "guven": 0.956,
+  "f0": 99,
+  "f0_std_st": 4.48,
+  "kpm": 166,
+  "bosluk": 6,
+  "whisper": "Every dollar we have. A hundred bucks. Jake, this is the start of something big. Or the start of a very short story. Hold on. A price is just a number until someone pays it."
+ },
+ "pocket_stuart_bell": {
+  "wer": 0.0,
+  "guven": 0.964,
+  "f0": 128,
+  "f0_std_st": 5.04,
+  "kpm": 148,
+  "bosluk": 6,
+  "whisper": "Every dollar we have, a hundred bucks. Jake, this is the start of something big. Or the start of a very short story. Hold on, a price is just a number until someone pays it."
+ },
+ "supertonic_M1": {
+  "wer": 0.059,
+  "guven": 0.948,
+  "f0": 146,
+  "f0_std_st": 5.04,
+  "kpm": 150,
+  "bosluk": 6,
+  "whisper": "every dollar we have, a hundred bucks, jake, this is the start of something big, or the start of a very short story. Hold on, is just a number until someone pays it."
+ },
+ "supertonic_M2": {
+  "wer": 0.0,
+  "guven": 0.933,
+  "f0": 86,
+  "f0_std_st": 1.81,
+  "kpm": 152,
+  "bosluk": 5,
+  "whisper": "every dollar we have, a hundred bucks, jake this is the start of something big, or the start of a very short story, hold on, a price is just a number until someone pays it."
+ },
+ "supertonic_M3": {
+  "wer": 0.029,
+  "guven": 0.939,
+  "f0": 110,
+  "f0_std_st": 2.96,
+  "kpm": 163,
+  "bosluk": 5,
+  "whisper": "Every dollar we have, a hundred bucks. This is the start of something big. Or the start of a very short story. Hold on. A price is just a number until someone pays it."
+ },
+ "supertonic_M4": {
+  "wer": 0.0,
+  "guven": 0.967,
+  "f0": 129,
+  "f0_std_st": 3.37,
+  "kpm": 146,
+  "bosluk": 6,
+  "whisper": "Every dollar we have. A hundred bucks. Jake, this is the start of something big. Or the start of a very short story. Hold on. A price is just a number until someone pays it."
+ },
+ "supertonic_M5": {
+  "wer": 0.088,
+  "guven": 0.94,
+  "f0": 99,
+  "f0_std_st": 3.34,
+  "kpm": 132,
+  "bosluk": 4,
+  "whisper": "Every dollar we have, a hundred bucks, Jake this is the start of something big, or the start of a very short story. Price is just a number until someone pays it."
+ }
+}

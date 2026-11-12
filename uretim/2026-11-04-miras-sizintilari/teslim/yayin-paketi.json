@@ -1,0 +1,89 @@
+{
+  "sema": "yayin-paketi/1",
+  "_not": "S03 miras sızıntıları uzun video (C). paket.md'den paket-uret.py ile üretildi; elle düzenleme yok. Slot 2026-11-11T12:00:00-05:00 (EST). Yasal not: rakam-tablosu.",
+  "tur": "uzun",
+  "dosyalar": {
+    "video": "../08-kurgu/final-16x9.mp4",
+    "altyazilar": [
+      {
+        "dosya": "../08-kurgu/final.en.srt",
+        "dil": "en",
+        "ad": "English"
+      }
+    ],
+    "thumbnail": "../09-paket/thumbnail/K1-who-gets-it.jpg"
+  },
+  "metadata": {
+    "baslik": "The Great Wealth Transfer Has a Leak",
+    "aciklama": "The great wealth transfer, explained: Cerulli estimates $124 trillion will pass down in the US through 2048. How much inheritance reaches the kids?\n\nLeo, our cartoon moving-crew boss, loads one example family's boxes onto a truck marked TO: THE KIDS and follows them down a long road. Some of the money is spent along the way, on a long life and on care. Some goes to charity. A big part stops at a spouse first, so it arrives later, not never. Then there is the house, and there are taxes and time. At the end of the road, Leo opens the truck and reads the inventory: what actually arrived, and when.\n\nThe Okafor family is an illustration, not a real household. Figures are for the US unless stated otherwise.\n\nNot financial advice. For educational purposes only.\n\n{BOLUMLER}\n\nLEGAL NOTE\nThis video is for education and entertainment only and is not financial, investment, legal or tax advice. Figures are estimates or survey results as of the dates shown (US unless stated); future amounts are projections, not predictions. The Okafor family is fictional. Leo is a fictional cartoon character. Narration voice is AI-generated. Visuals are AI-assisted illustrations animated by our team.\n\nSOURCES\n• Cerulli Associates, \"Cerulli Anticipates $124 Trillion in Wealth Will Transfer Through 2048\" (Dec 5, 2024): https://www.cerulli.com/press-releases/cerulli-anticipates-124-trillion-in-wealth-will-transfer-through-2048\n• Bank of America Private Bank, 2026 Study of Wealthy Americans (press release, Sep 30, 2026)\n• CareScout (Genworth), 2025 Cost of Care Survey: https://investor.genworth.com/news-events/press-releases/detail/1054\n• ASPE (HHS), long-term services and supports brief (Aug 2022): https://www.govinfo.gov/content/pkg/GOVPUB-HE-PURL-gpo212746/pdf/GOVPUB-HE-PURL-gpo212746.pdf\n• Medicare.gov, Nursing home care: https://www.medicare.gov/coverage/nursing-home-care\n• Medicaid.gov, Estate recovery: https://www.medicaid.gov/medicaid/eligibility-policy/estate-recovery\n• IRS, tax inflation adjustments for tax year 2026: https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill\n• IRS, Retirement topics: Beneficiary: https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-beneficiary\n• Federal Reserve, Survey of Consumer Finances 2022 (Federal Reserve Bulletin, Oct 2023): https://www.federalreserve.gov/publications/files/scf23.pdf\n• Federal Reserve, Distributional Financial Accounts: https://www.federalreserve.gov/releases/z1/dataviz/dfa/\n• GOV.UK, Inheritance Tax: https://www.gov.uk/inheritance-tax\nCharts in this video are our own, built from the sources above.\n\nMUSIC & SOUND\nMusic (CC0, OpenGameArt.org): \"Wasteland Caravan\" and \"Lone Scavenger\" by vitalezzz · \"Sunny Side Up\" and \"Joy Ride\" by Pro Sensory · \"Insistent\" by yd · \"Remember this shadow\" and \"The road we use to travel when we were kids\" by Komiku\nSound effects (CC0, OpenGameArt.org): OwlishMedia, GGBotNet, looneybits, rubberduck; additional sound design by Toonomy (made with earshot).\n\nMORE FROM TOONOMY\nNew animated finance stories every week: https://www.youtube.com/@toonomy\n\n#GreatWealthTransfer #Inheritance #FinanceExplained",
+    "etiketler": [
+      "great wealth transfer",
+      "great wealth transfer explained",
+      "baby boomer inheritance",
+      "boomer wealth transfer",
+      "inheritance explained",
+      "intergenerational wealth transfer",
+      "generational wealth",
+      "wealth transfer",
+      "inheritance",
+      "heirs",
+      "baby boomers",
+      "cerulli",
+      "long term care costs",
+      "estate tax explained",
+      "spouse inheritance",
+      "charitable giving",
+      "personal finance explained",
+      "economics explained",
+      "finance animation",
+      "animated explainer",
+      "toonomy"
+    ],
+    "bolumler": [
+      {
+        "zaman": "00:00",
+        "baslik": "The number on the truck"
+      },
+      {
+        "zaman": "01:46",
+        "baslik": "Loading the Okafors"
+      },
+      {
+        "zaman": "02:35",
+        "baslik": "Living and care"
+      },
+      {
+        "zaman": "04:58",
+        "baslik": "The detour and the gift"
+      },
+      {
+        "zaman": "07:09",
+        "baslik": "The heaviest box"
+      },
+      {
+        "zaman": "08:13",
+        "baslik": "The tax stop"
+      },
+      {
+        "zaman": "10:42",
+        "baslik": "Arrival"
+      }
+    ],
+    "kategori_id": "27",
+    "varsayilan_dil": "en",
+    "ses_dili": "en"
+  },
+  "durum": {
+    "gizlilik": "private",
+    "cocuklara_ozel": false,
+    "sentetik_medya": true,
+    "lisans": "youtube",
+    "gomulebilir": true,
+    "yayin_zamani": "2026-11-11T12:00:00-05:00"
+  },
+  "oynatma_listesi_id": null,
+  "onay": {
+    "niyazi_onayi": false,
+    "tarih": null
+  }
+}

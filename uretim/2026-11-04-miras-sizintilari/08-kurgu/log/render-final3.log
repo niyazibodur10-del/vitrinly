@@ -1,0 +1,4 @@
+[render-parca] iz: 13 değişen parça (0,1,2,3,4,5,6,7,8,9,10,11,12)
+[render-parca] kare=23442 parca=1800 yeni_render=13/14 iz=294s goruntu=1914s ses+birlestirme=73s toplam=2281s
+exit 0
+/dev/vda        252G   33G  5.9G  85% /

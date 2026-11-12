@@ -1,0 +1,10 @@
+== shorts-1 223cae19facd
+1080,1920,30/1, 0/0 41.450000 
+ I: -14.0 LUFS  Peak: -3.7 dBFS 
+siyah/donma: 0
+ilk olay 1.5 olay 16 ort 2.59 >10 []
+== shorts-2 fcf8d5aada7b
+1080,1920,30/1, 0/0 43.434000 
+ I: -14.0 LUFS  Peak: -3.8 dBFS 
+siyah/donma: 0
+ilk olay 4.75 olay 11 ort 3.95 >10 []

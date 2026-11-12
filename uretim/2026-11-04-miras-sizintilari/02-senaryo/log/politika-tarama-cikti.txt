@@ -1,0 +1,34 @@
+## A. Yayın metni (EN)
+| ID | Kelime | Tavsiye dili | Hassas | Gerçek kişi/kurum | Başlık/thumb vaat kalıbı | Önceki 5-gram | En yakın senaryo |
+|---|---|---|---|---|---|---|---|
+| S01 | 171 | — | heist, theft, thie | binance | — | 0.0 % | 0.0 % (S12) |
+| S02 | 130 | — | heist, stole, stolen, thie, victims | madoff | — | 0.0 % | 3.2 % (S07) |
+| S03 | 162 | — | — | — | — | 0.0 % | 0.0 % (S12) |
+| S04 | 129 | — | — | japan | — | 0.0 % | 0.0 % (S12) |
+| S05 | 133 | your money | — | france, japan | — | 0.0 % | 0.0 % (S12) |
+| S06 | 144 | — | — | china | — | 0.0 % | 0.0 % (S12) |
+| S07 | 128 | — | fraud, victims | madoff | — | 0.0 % | 3.3 % (S02) |
+| S08 | 128 | — | — | — | — | 0.0 % | 0.0 % (S12) |
+| S09 | 135 | — | — | mansa musa | — | 0.0 % | 0.0 % (S12) |
+| S10 | 149 | — | — | — | — | 0.0 % | 0.0 % (S12) |
+| S11 | 144 | — | panic | silicon valley bank | — | 0.0 % | 0.0 % (S12) |
+| S12 | 147 | — | — | — | — | 0.0 % | 0.0 % (S11) |
+
+## B. Tüm blok (TR+EN) işaret sayıları
+| ID | Siyaset | Şiddet/suç/mağdur | AI/Anthropic | 1929+S08 format işareti |
+|---|---|---|---|---|
+| S01 | 0 | 7 | 0 | — |
+| S02 | 0 | 7 | 0 | hane |
+| S03 | 0 | 1 | 0 | — |
+| S04 | 0 | 0 | 0 | — |
+| S05 | 0 | 0 | 0 | bütçe |
+| S06 | 0 | 0 | 0 | bütçe, hane |
+| S07 | 1 | 5 | 0 | — |
+| S08 | 0 | 2 | 1 | — |
+| S09 | 0 | 1 | 0 | — |
+| S10 | 0 | 1 | 0 | oyun |
+| S11 | 0 | 0 | 0 | — |
+| S12 | 0 | 3 | 0 | — |
+
+Senaryo: 12 · önceki metin 5-gram: 3590 · en yüksek senaryo çifti: 3.3 % (S02–S07)
+Ö7 (önceki ≤ 10 %): GEÇTİ

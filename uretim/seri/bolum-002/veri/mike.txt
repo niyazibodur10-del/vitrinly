@@ -1,0 +1,14 @@
+M01	No comments, so I picked. Meet Brenda!
+M02	Brenda couldn't wait!
+M03	He seemed nice.
+M04	See? Brenda's innocent.
+M05	Now we pump her up. Air is free. Easy money!
+M06	Sixteen dollars for rubber donuts?
+M07	Okay, Brenda rides! I'm listing her for a hundred and forty.
+M08	Oh, she sells. A guy already wrote back. On my way!
+M09	Maybe traffic?
+M10	He says, sorry, found one cheaper. Brenda deserved better.
+M11	Wait. New message. Ninety bucks, cash, today.
+M12	Fourteen? She's worth a hundred and forty! We wait. Trust the vibe.
+M13	Then we counter. Meet him at a hundred and fifteen.
+B01	Take the ninety, hold out, or counter?

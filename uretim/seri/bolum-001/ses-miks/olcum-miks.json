@@ -1,0 +1,80 @@
+{
+ "diyalog_lufs_konusma": -14.49,
+ "muzik_alti_fark_db": {
+  "medyan": -21.4,
+  "min": -24.9,
+  "max": -17.0,
+  "satir": [
+   -17.0,
+   -20.9,
+   -21.7,
+   -22.0,
+   -23.3,
+   -21.5,
+   -17.1,
+   -22.5,
+   -24.9,
+   -18.9,
+   -22.8,
+   -23.9,
+   -18.3,
+   -20.4,
+   -20.7,
+   -21.7,
+   -19.0,
+   -20.7,
+   -19.4,
+   -21.4,
+   -24.8,
+   -22.0,
+   -20.9,
+   -21.8,
+   -21.1
+  ]
+ },
+ "muzik_bosluk_fark_db": -12.1,
+ "sfx_sayisi": 30,
+ "parcalar": [
+  {
+   "id": "M-damga",
+   "dosya_lufs": -16.0,
+   "alti_lu": -21,
+   "acik_lu": -20.5,
+   "bas": 0.0,
+   "bitis": 1.8
+  },
+  {
+   "id": "M-strut",
+   "dosya_lufs": -16.9,
+   "alti_lu": -21,
+   "acik_lu": -15,
+   "bas": 0.0,
+   "bitis": 30.289
+  },
+  {
+   "id": "M-hustle",
+   "dosya_lufs": -17.6,
+   "alti_lu": -21,
+   "acik_lu": -15,
+   "bas": 30.769,
+   "bitis": 55.262
+  },
+  {
+   "id": "M-gerilim",
+   "dosya_lufs": -14.2,
+   "alti_lu": -21,
+   "acik_lu": -15,
+   "bas": 55.262,
+   "bitis": 69.118
+  },
+  {
+   "id": "M-kapanis",
+   "dosya_lufs": -16.0,
+   "alti_lu": -21,
+   "acik_lu": -10,
+   "bas": 69.368,
+   "bitis": 71.168
+  }
+ ],
+ "stem_tepe_dbfs": -6.3
+}

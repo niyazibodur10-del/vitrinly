@@ -1,0 +1,378 @@
+[
+ {
+  "bolum": "B1",
+  "dilim": [
+   29.12,
+   50.95
+  ],
+  "kelime": 67,
+  "anlatim_tek_hata": 1,
+  "adaylar": [
+   {
+    "kor": "B",
+    "ofset_sn": 203.0,
+    "aday": "wasteland-caravan",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 1,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 22.3,
+    "muzik_konusmada_lufs_M": -36.2,
+    "muzik_boslukta_lufs_M": -36.2
+   },
+   {
+    "kor": "C",
+    "ofset_sn": 136.0,
+    "aday": "lone-scavenger",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 1,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 21.8,
+    "muzik_konusmada_lufs_M": -36.4,
+    "muzik_boslukta_lufs_M": -37.0
+   },
+   {
+    "kor": "A",
+    "ofset_sn": 49.0,
+    "aday": "remember-shadow",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 1,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 22.1,
+    "muzik_konusmada_lufs_M": -36.4,
+    "muzik_boslukta_lufs_M": -36.3
+   }
+  ]
+ },
+ {
+  "bolum": "B2",
+  "dilim": [
+   115.22,
+   138.65
+  ],
+  "kelime": 68,
+  "anlatim_tek_hata": 2,
+  "adaylar": [
+   {
+    "kor": "C",
+    "ofset_sn": 85.0,
+    "aday": "sunny-side-up",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 2,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 21.6,
+    "muzik_konusmada_lufs_M": -36.4,
+    "muzik_boslukta_lufs_M": -36.9
+   },
+   {
+    "kor": "A",
+    "ofset_sn": 45.0,
+    "aday": "joy-ride",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 2,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 21.4,
+    "muzik_konusmada_lufs_M": -36.6,
+    "muzik_boslukta_lufs_M": -37.6
+   },
+   {
+    "kor": "B",
+    "ofset_sn": 93.0,
+    "aday": "country",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 2,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 22.0,
+    "muzik_konusmada_lufs_M": -36.6,
+    "muzik_boslukta_lufs_M": -36.1
+   }
+  ]
+ },
+ {
+  "bolum": "B3",
+  "dilim": [
+   197.09,
+   221.49
+  ],
+  "kelime": 64,
+  "anlatim_tek_hata": 0,
+  "adaylar": [
+   {
+    "kor": "A",
+    "ofset_sn": 23.0,
+    "aday": "insistent",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 23.9,
+    "muzik_konusmada_lufs_M": -39.9,
+    "muzik_boslukta_lufs_M": -37.0
+   },
+   {
+    "kor": "B",
+    "ofset_sn": 136.0,
+    "aday": "lone-scavenger",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 22.0,
+    "muzik_konusmada_lufs_M": -36.4,
+    "muzik_boslukta_lufs_M": -35.7
+   },
+   {
+    "kor": "C",
+    "ofset_sn": 46.0,
+    "aday": "deliberate-concealment",
+    "duck": 23,
+    "oyuk": true,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 23.2,
+    "muzik_konusmada_lufs_M": -37.2,
+    "muzik_boslukta_lufs_M": -37.1
+   }
+  ]
+ },
+ {
+  "bolum": "B4",
+  "dilim": [
+   336.25,
+   360.23
+  ],
+  "kelime": 71,
+  "anlatim_tek_hata": 0,
+  "adaylar": [
+   {
+    "kor": "B",
+    "ofset_sn": 49.0,
+    "aday": "remember-shadow",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 21.8,
+    "muzik_konusmada_lufs_M": -36.5,
+    "muzik_boslukta_lufs_M": -36.3
+   },
+   {
+    "kor": "C",
+    "ofset_sn": 93.0,
+    "aday": "country",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 22.5,
+    "muzik_konusmada_lufs_M": -36.6,
+    "muzik_boslukta_lufs_M": -35.8
+   },
+   {
+    "kor": "A",
+    "ofset_sn": 29.0,
+    "aday": "midnight-cruiser",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 21.7,
+    "muzik_konusmada_lufs_M": -36.4,
+    "muzik_boslukta_lufs_M": -36.7
+   }
+  ]
+ },
+ {
+  "bolum": "B5",
+  "dilim": [
+   445.69,
+   465.2
+  ],
+  "kelime": 58,
+  "anlatim_tek_hata": 0,
+  "adaylar": [
+   {
+    "kor": "C",
+    "ofset_sn": 88.0,
+    "aday": "the-road",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 23.7,
+    "muzik_konusmada_lufs_M": -40.3,
+    "muzik_boslukta_lufs_M": -37.0
+   },
+   {
+    "kor": "A",
+    "ofset_sn": 279.0,
+    "aday": "sunset-plains",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 21.6,
+    "muzik_konusmada_lufs_M": -36.2,
+    "muzik_boslukta_lufs_M": -36.3
+   },
+   {
+    "kor": "B",
+    "ofset_sn": 49.0,
+    "aday": "remember-shadow",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 21.7,
+    "muzik_konusmada_lufs_M": -36.4,
+    "muzik_boslukta_lufs_M": -36.7
+   }
+  ]
+ },
+ {
+  "bolum": "B6",
+  "dilim": [
+   539.08,
+   557.96
+  ],
+  "kelime": 49,
+  "anlatim_tek_hata": 3,
+  "adaylar": [
+   {
+    "kor": "A",
+    "ofset_sn": 136.0,
+    "aday": "lone-scavenger",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 2,
+    "fark_hata": -1,
+    "konusma_alti_fark_db": 21.9,
+    "muzik_konusmada_lufs_M": -36.4,
+    "muzik_boslukta_lufs_M": -35.7
+   },
+   {
+    "kor": "B",
+    "ofset_sn": 23.0,
+    "aday": "insistent",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 2,
+    "fark_hata": -1,
+    "konusma_alti_fark_db": 24.4,
+    "muzik_konusmada_lufs_M": -40.2,
+    "muzik_boslukta_lufs_M": -35.0
+   },
+   {
+    "kor": "C",
+    "ofset_sn": 48.0,
+    "aday": "mysterious-clock",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 2,
+    "fark_hata": -1,
+    "konusma_alti_fark_db": 28.5,
+    "muzik_konusmada_lufs_M": -42.3,
+    "muzik_boslukta_lufs_M": -37.1
+   }
+  ]
+ },
+ {
+  "bolum": "B7",
+  "dilim": [
+   677.38,
+   695.48
+  ],
+  "kelime": 54,
+  "anlatim_tek_hata": 0,
+  "adaylar": [
+   {
+    "kor": "B",
+    "ofset_sn": 88.0,
+    "aday": "the-road",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 22.7,
+    "muzik_konusmada_lufs_M": -39.5,
+    "muzik_boslukta_lufs_M": -42.4
+   },
+   {
+    "kor": "C",
+    "ofset_sn": 203.0,
+    "aday": "wasteland-caravan",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 22.0,
+    "muzik_konusmada_lufs_M": -36.2,
+    "muzik_boslukta_lufs_M": -36.0
+   },
+   {
+    "kor": "A",
+    "ofset_sn": 94.0,
+    "aday": "the-way-it-is",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 21.6,
+    "muzik_konusmada_lufs_M": -36.3,
+    "muzik_boslukta_lufs_M": -36.4
+   }
+  ]
+ },
+ {
+  "bolum": "B8",
+  "dilim": [
+   759.75,
+   781.39
+  ],
+  "kelime": 64,
+  "anlatim_tek_hata": 0,
+  "adaylar": [
+   {
+    "kor": "C",
+    "ofset_sn": 45.0,
+    "aday": "joy-ride",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 22.5,
+    "muzik_konusmada_lufs_M": -36.6,
+    "muzik_boslukta_lufs_M": -35.2
+   },
+   {
+    "kor": "A",
+    "ofset_sn": 94.0,
+    "aday": "the-way-it-is",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 22.2,
+    "muzik_konusmada_lufs_M": -36.4,
+    "muzik_boslukta_lufs_M": -36.0
+   },
+   {
+    "kor": "B",
+    "ofset_sn": 85.0,
+    "aday": "sunny-side-up",
+    "duck": 22,
+    "oyuk": false,
+    "hata": 0,
+    "fark_hata": 0,
+    "konusma_alti_fark_db": 22.3,
+    "muzik_konusmada_lufs_M": -36.3,
+    "muzik_boslukta_lufs_M": -36.0
+   }
+  ]
+ }
+]

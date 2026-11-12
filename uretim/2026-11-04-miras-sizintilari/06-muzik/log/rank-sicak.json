@@ -1,0 +1,198 @@
+{
+ "summary": "Ranked 19 files for 'warm hopeful acoustic guitar road trip music'. Best: remember-this-shadow-komiku.mp3 (z +3.4, strong), sunny-side-up-pro-sensory.mp3 (z +3.1, strong), wasteland-caravan-vitalezzz.mp3 (z +2.8, plausible). 2 strong, 4 plausible, 4 weak match(es). In a held-out test 'strong' was right 98% of the time, 61% when a close variant (a mouth pop for a cork pop) counts as wrong.",
+ "query": "warm hopeful acoustic guitar road trip music",
+ "n_files": 19,
+ "results": [
+  {
+   "path": "kaynak/muzik/remember-this-shadow-komiku.mp3",
+   "name": "remember-this-shadow-komiku.mp3",
+   "z": 3.47,
+   "cosine": 0.311,
+   "vocab_percentile": 99.4,
+   "verdict": "strong",
+   "near_silent": false,
+   "sounds_most_like": "jazz music (z +3.8)"
+  },
+  {
+   "path": "kaynak/muzik/sunny-side-up-pro-sensory.mp3",
+   "name": "sunny-side-up-pro-sensory.mp3",
+   "z": 3.16,
+   "cosine": 0.278,
+   "vocab_percentile": 99.1,
+   "verdict": "strong",
+   "near_silent": false,
+   "sounds_most_like": "jazz music (z +4.6)"
+  },
+  {
+   "path": "kaynak/muzik/wasteland-caravan-vitalezzz.mp3",
+   "name": "wasteland-caravan-vitalezzz.mp3",
+   "z": 2.83,
+   "cosine": 0.343,
+   "vocab_percentile": 98.1,
+   "verdict": "plausible",
+   "near_silent": false,
+   "sounds_most_like": "dreamy and ethereal music (z +3.7)"
+  },
+  {
+   "path": "kaynak/muzik/the-road-we-used-to-travel-komiku.mp3",
+   "name": "the-road-we-used-to-travel-komiku.mp3",
+   "z": 2.81,
+   "cosine": 0.289,
+   "vocab_percentile": 97.5,
+   "verdict": "plausible",
+   "near_silent": false,
+   "sounds_most_like": "jazz music (z +3.4)"
+  },
+  {
+   "path": "kaynak/muzik/lone-scavenger-vitalezzz.mp3",
+   "name": "lone-scavenger-vitalezzz.mp3",
+   "z": 2.77,
+   "cosine": 0.308,
+   "vocab_percentile": 97.8,
+   "verdict": "plausible",
+   "near_silent": false,
+   "sounds_most_like": "dreamy and ethereal music (z +3.3)"
+  },
+  {
+   "path": "kaynak/muzik/joy-ride-pro-sensory.ogg",
+   "name": "joy-ride-pro-sensory.ogg",
+   "z": 2.51,
+   "cosine": 0.207,
+   "vocab_percentile": 96.6,
+   "verdict": "plausible",
+   "near_silent": false,
+   "sounds_most_like": "jazz music (z +3.6)"
+  },
+  {
+   "path": "kaynak/muzik/desert-settlement-vitalezzz.mp3",
+   "name": "desert-settlement-vitalezzz.mp3",
+   "z": 2.36,
+   "cosine": 0.301,
+   "vocab_percentile": 97.5,
+   "verdict": "weak",
+   "near_silent": false,
+   "sounds_most_like": "dreamy and ethereal music (z +3.7)"
+  },
+  {
+   "path": "kaynak/muzik/exploration-johnclark.ogg",
+   "name": "exploration-johnclark.ogg",
+   "z": 2.26,
+   "cosine": 0.235,
+   "vocab_percentile": 97.5,
+   "verdict": "weak",
+   "near_silent": false,
+   "sounds_most_like": "a bass guitar (z +4.0)"
+  },
+  {
+   "path": "kaynak/muzik/down-the-river-komiku.mp3",
+   "name": "down-the-river-komiku.mp3",
+   "z": 2.16,
+   "cosine": 0.143,
+   "vocab_percentile": 97.2,
+   "verdict": "weak",
+   "near_silent": false,
+   "sounds_most_like": "pizzicato strings (z +4.0)"
+  },
+  {
+   "path": "kaynak/muzik/road-trip-umplix.ogg",
+   "name": "road-trip-umplix.ogg",
+   "z": 2.06,
+   "cosine": 0.206,
+   "vocab_percentile": 96.0,
+   "verdict": "weak",
+   "near_silent": false,
+   "sounds_most_like": "funk music (z +5.0)"
+  },
+  {
+   "path": "kaynak/muzik/freeway-fumes-zane-little.mp3",
+   "name": "freeway-fumes-zane-little.mp3",
+   "z": 1.98,
+   "cosine": 0.186,
+   "vocab_percentile": 94.7,
+   "verdict": "no match",
+   "near_silent": false,
+   "sounds_most_like": "funk music (z +3.2)"
+  },
+  {
+   "path": "kaynak/muzik/sunset-plains-yoiyami.ogg",
+   "name": "sunset-plains-yoiyami.ogg",
+   "z": 1.78,
+   "cosine": 0.248,
+   "vocab_percentile": 93.5,
+   "verdict": "no match",
+   "near_silent": false,
+   "sounds_most_like": "dreamy and ethereal music (z +3.5)"
+  },
+  {
+   "path": "kaynak/muzik/banjo-something-gp.mp3",
+   "name": "banjo-something-gp.mp3",
+   "z": 1.67,
+   "cosine": 0.192,
+   "vocab_percentile": 94.1,
+   "verdict": "no match",
+   "near_silent": false,
+   "sounds_most_like": "celebratory and joyful music (z +4.0)"
+  },
+  {
+   "path": "kaynak/muzik/country-pro-sensory.mp3",
+   "name": "country-pro-sensory.mp3",
+   "z": 1.45,
+   "cosine": 0.226,
+   "vocab_percentile": 90.4,
+   "verdict": "no match",
+   "near_silent": false,
+   "sounds_most_like": "a music box melody (z +2.9)"
+  },
+  {
+   "path": "kaynak/muzik/midnight-cruiser-zane-little.mp3",
+   "name": "midnight-cruiser-zane-little.mp3",
+   "z": 0.79,
+   "cosine": 0.082,
+   "vocab_percentile": 82.9,
+   "verdict": "no match",
+   "near_silent": false,
+   "sounds_most_like": "funk music (z +4.5)"
+  },
+  {
+   "path": "kaynak/muzik/detour-zane-little.mp3",
+   "name": "detour-zane-little.mp3",
+   "z": 0.74,
+   "cosine": 0.058,
+   "vocab_percentile": 79.5,
+   "verdict": "no match",
+   "near_silent": false,
+   "sounds_most_like": "funk music (z +3.8)"
+  },
+  {
+   "path": "kaynak/muzik/empty-stretch-zane-little.mp3",
+   "name": "empty-stretch-zane-little.mp3",
+   "z": 0.59,
+   "cosine": 0.03,
+   "vocab_percentile": 77.0,
+   "verdict": "no match",
+   "near_silent": false,
+   "sounds_most_like": "funk music (z +3.4)"
+  },
+  {
+   "path": "kaynak/muzik/drive-zane-little.mp3",
+   "name": "drive-zane-little.mp3",
+   "z": 0.49,
+   "cosine": 0.053,
+   "vocab_percentile": 75.5,
+   "verdict": "no match",
+   "near_silent": false,
+   "sounds_most_like": "funk music (z +4.4)"
+  },
+  {
+   "path": "kaynak/muzik/desert-travel-djcrisp.ogg",
+   "name": "desert-travel-djcrisp.ogg",
+   "z": 0.44,
+   "cosine": 0.081,
+   "vocab_percentile": 68.3,
+   "verdict": "no match",
+   "near_silent": false,
+   "sounds_most_like": "synthwave music (z +3.3)"
+  }
+ ],
+ "skipped": []
+}

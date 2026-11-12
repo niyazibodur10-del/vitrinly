@@ -1,0 +1,8 @@
+== sh1
+kelime=146 hata=3 WER=%2.1
+replace four -> for
+insert  -> borrowed
+insert  -> people
+== sh2
+kelime=117 hata=1 WER=%0.9
+delete how -> 

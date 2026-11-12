@@ -1,0 +1,9 @@
+D-Sh1 1080,1920, 36.650000s siyah+donma=0 ilk_olay/bosluk>10=3.0 []
+D-Sh2 1080,1920, 19.968000s siyah+donma=0 ilk_olay/bosluk>10=4.0 []
+D-S01 1080,1920, 16.469000s siyah+donma=0 ilk_olay/bosluk>10=8.25 []
+D-S13 1080,1920, 35.882000s siyah+donma=0 ilk_olay/bosluk>10=0.5 []
+D-S14 1080,1920, 38.421000s siyah+donma=0 ilk_olay/bosluk>10=0.5 []
+D-S21 1080,1920, 61.909000s siyah+donma=0 ilk_olay/bosluk>10=3.75 [[13.0, 13.25]]
+D-S22 1080,1920, 23.872000s siyah+donma=0 ilk_olay/bosluk>10=2.25 []
+en iyi gecikme: 1 kare (33 ms), korelasyon 0.51, gecikme 0'da 0.44 GEÇTİ 
+en iyi gecikme: 1 kare (33 ms), korelasyon 0.59, gecikme 0'da 0.51 GEÇTİ 

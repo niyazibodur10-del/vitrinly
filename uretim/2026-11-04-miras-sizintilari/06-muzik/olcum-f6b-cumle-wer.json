@@ -1,0 +1,51 @@
+{
+ "kelime": 2225,
+ "hata": {
+  "anlatim": 26,
+  "muzik": 23,
+  "tam": 26
+ },
+ "wer_%": {
+  "anlatim": 1.17,
+  "muzik": 1.03,
+  "tam": 1.17
+ },
+ "tam_anlatimdan_kotu_cumle": [
+  {
+   "i": 7,
+   "metin": "Maybe you're buying a home another family is leaving.",
+   "anlatim": "Maybe you're buying a home another family is leaving.",
+   "tam": "But maybe you're buying a home another family is leaving.",
+   "h_anlatim": 0,
+   "h_muzik": 1,
+   "h_tam": 1
+  },
+  {
+   "i": 50,
+   "metin": "Stop one is good news.",
+   "anlatim": "Stop one is good news.",
+   "tam": "Stop when it's good news.",
+   "h_anlatim": 0,
+   "h_muzik": 0,
+   "h_tam": 2
+  },
+  {
+   "i": 102,
+   "metin": "Nearly forty trillion of that is expected to go to widowed women from ",
+   "anlatim": "Nearly 40 trillion of that is expected to go to widowed women from the",
+   "tam": "But nearly 40 trillion of that is expected to go to widowed women from",
+   "h_anlatim": 0,
+   "h_muzik": 1,
+   "h_tam": 1
+  },
+  {
+   "i": 237,
+   "metin": "And Fed data tells a similar story about the wealth households hold.",
+   "anlatim": "And Fed data tells a similar story about the wealth households hold.",
+   "tam": "And FedData tells a similar story about the wealth households hold.",
+   "h_anlatim": 0,
+   "h_muzik": 0,
+   "h_tam": 2
+  }
+ ]
+}

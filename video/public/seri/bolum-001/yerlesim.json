@@ -1,0 +1,171 @@
+{
+ "tezgah_y": 1186,
+ "on_katman": "plaka/L1-A-tezgah-on.png (karakterlerin ÜSTÜNE; tekli/ifade çekimde plakayla aynı 1.25 dönüşüm)",
+ "ikili": {
+  "mike": {
+   "olcek": 0.55,
+   "xy": [
+    0,
+    141
+   ],
+   "z": 1
+  },
+  "jake": {
+   "olcek": 0.58,
+   "xy": [
+    454,
+    141
+   ],
+   "z": 2
+  },
+  "kural": "Jake Mike'ın önünde; Jake'in sol omzu Mike'ın iç kol kesiğini örter (açık kesik piksel = 0)"
+ },
+ "tekli": {
+  "jake": {
+   "plaka_olcek": 1.25,
+   "plaka_capa_xy": [
+    760,
+    1186
+   ],
+   "karakter_olcek": 1.0,
+   "karakter_xy": [
+    0,
+    0
+   ]
+  },
+  "mike": {
+   "plaka_olcek": 1.25,
+   "plaka_capa_xy": [
+    320,
+    1186
+   ],
+   "karakter_olcek": 1.0,
+   "karakter_xy": [
+    0,
+    0
+   ]
+  }
+ },
+ "kural": "kesik tabanların kol kenarı düz kesik: ölçek <1 iken dış kenar kadraj kenarına yaslanmalı; aksi halde kesik görünür",
+ "ifade_tekli": {
+  "tur": "ekstrem yakın plan (tepki/deadpan tutuşu, kameraya bakış S2/S8)",
+  "plaka": "L1-A x1.6 (çapa x=540, y=900) + Gauss σ6 bulanık; tezgâh ön katmanı YOK",
+  "kural": "portrenin kenar kesiği kadraj altının dışında (y≥1930); tezgâh arkasına baş-omuz olarak konmaz (dev kafa görünür, test RED)",
+  "konum": {
+   "jake-dusunceli": {
+    "olcek": 1.3,
+    "xy": [
+     -162,
+     435
+    ],
+    "sac_tepesi_y_kadrajda": 555
+   },
+   "jake-endiseli": {
+    "olcek": 1.3,
+    "xy": [
+     -162,
+     381
+    ],
+    "sac_tepesi_y_kadrajda": 503
+   },
+   "jake-gulen": {
+    "olcek": 1.3,
+    "xy": [
+     -162,
+     367
+    ],
+    "sac_tepesi_y_kadrajda": 503
+   },
+   "jake-heyecanli": {
+    "olcek": 1.3,
+    "xy": [
+     -162,
+     383
+    ],
+    "sac_tepesi_y_kadrajda": 507
+   },
+   "jake-notr": {
+    "olcek": 1.3,
+    "xy": [
+     -162,
+     372
+    ],
+    "sac_tepesi_y_kadrajda": 486
+   },
+   "jake-saskin": {
+    "olcek": 1.3,
+    "xy": [
+     -162,
+     370
+    ],
+    "sac_tepesi_y_kadrajda": 506
+   },
+   "mike-dusunceli": {
+    "olcek": 1.3,
+    "xy": [
+     -162,
+     537
+    ],
+    "sac_tepesi_y_kadrajda": 668
+   },
+   "mike-endiseli": {
+    "olcek": 1.3,
+    "xy": [
+     -162,
+     429
+    ],
+    "sac_tepesi_y_kadrajda": 521
+   },
+   "mike-gulen": {
+    "olcek": 1.3,
+    "xy": [
+     -162,
+     407
+    ],
+    "sac_tepesi_y_kadrajda": 507
+   },
+   "mike-heyecanli": {
+    "olcek": 1.3,
+    "xy": [
+     -162,
+     419
+    ],
+    "sac_tepesi_y_kadrajda": 517
+   },
+   "mike-notr": {
+    "olcek": 1.3,
+    "xy": [
+     -162,
+     423
+    ],
+    "sac_tepesi_y_kadrajda": 515
+   },
+   "mike-saskin": {
+    "olcek": 1.3,
+    "xy": [
+     -162,
+     419
+    ],
+    "sac_tepesi_y_kadrajda": 511
+   }
+  }
+ },
+ "taban": {
+  "jake": {
+   "dosya": "karakter/jake-taban.png",
+   "bakis": "kadraj solu (Mike'a)",
+   "aynali": false,
+   "sol_kenar_kesik_y": 1308,
+   "sag_kenar_kesik_y": 1063,
+   "sac_tepesi_y": 102
+  },
+  "mike": {
+   "dosya": "karakter/mike-taban.png",
+   "bakis": "kadraj sağı (Jake'e)",
+   "aynali": true,
+   "sol_kenar_kesik_y": 1433,
+   "sag_kenar_kesik_y": 924,
+   "sac_tepesi_y": 73
+  }
+ }
+}

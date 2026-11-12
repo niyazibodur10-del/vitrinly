@@ -1,0 +1,36 @@
+{
+ "ses": "am_fenrir",
+ "hiz": 0.9,
+ "cumleler": [
+  {
+   "metin": "Stop [two](/tˈu/) [is](/ˈɪz/) care.",
+   "bas": 0.0,
+   "son": 1.164
+  },
+  {
+   "metin": "Stop two [is](+2) care.",
+   "bas": 1.814,
+   "son": 2.98
+  },
+  {
+   "metin": "I'm curious how many people [picked](/pˈɪkt/) taxes.",
+   "bas": 3.63,
+   "son": 6.062
+  },
+  {
+   "metin": "I'm curious how many people [picked](/pˈɪkʰt/) taxes.",
+   "bas": 6.712,
+   "son": 9.167
+  },
+  {
+   "metin": "I [open](/ˈOpən/) the doors, and I read my clipboard out loud.",
+   "bas": 9.817,
+   "son": 12.7
+  },
+  {
+   "metin": "I [open](/ˈOpᵊn/) the doors, and I read my clipboard out loud.",
+   "bas": 13.35,
+   "son": 16.257
+  }
+ ]
+}

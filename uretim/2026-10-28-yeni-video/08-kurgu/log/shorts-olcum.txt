@@ -1,0 +1,10 @@
+== shorts-1 1ec621210e9f
+1080,1920,30/1, 0/0 57.386000 
+ I: -14.0 LUFS  Peak: -3.2 dBFS 
+siyah/donma: 0
+ilk olay 0.5 olay 22 ort 2.6 >10 []
+== shorts-2 c0b2aec801fc
+1080,1920,30/1, 0/0 41.920000 
+ I: -13.9 LUFS  Peak: -3.6 dBFS 
+siyah/donma: 0
+ilk olay 0.5 olay 13 ort 3.23 >10 []
